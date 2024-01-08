@@ -2,7 +2,7 @@ local VERSION = '0.1'
 
 print('Elden Ring LiveStreamingTool v0.1')
 
-package.cpath = './?.dll;' .. package.cpath
+package.cpath = './?.dll;./bin/?.dll;' .. package.cpath
 
 local uv = require('luv')
 local lfs = require('lfs')

@@ -1,6 +1,9 @@
 local cjson = require('cjson')
 
--- Aux functions
+-- Only display rememberance bosses
+local only_rememberance = false
+
+-- aux functions
 local function read_file(path)
     local file = io.open(path, 'rb')
     if not file then return nil end
@@ -16,6 +19,8 @@ local event_flag_address = 0
 -- boss data
 local regions = {}
 local bosses = {}
+local rememberance_bosses = {}
+local rememberance_boss_count = 0
 local region_name = {}
 local boss_count = 0
 
@@ -32,6 +37,11 @@ for _, v in pairs(bosses) do
     boss_count = boss_count + 1
     v2.offset = tonumber(string.sub(v2.offset, 3), 16)
     v2.bit = 1 << tonumber(v2.bit)
+    local rem = v2.rememberance
+    if rem ~= nil and rem > 0 then
+      rememberance_bosses[rem] = v2
+      rememberance_boss_count = rememberance_boss_count + 1
+    end
   end
 end
 
@@ -72,6 +82,7 @@ local function update()
   if not process.game_running() then
     if last_running then
       last_running = false
+      last_count = 0
       event_flag_address = 0
       f = io.open(config.output_folder .. 'bosses.txt', 'w')
       f:close()
@@ -84,40 +95,62 @@ local function update()
   end
   update_memory_address()
   local count = 0
-  local rcount = 0
-  local region_bosses = {}
-  local r = regions[get_map_area() // 1000]
-  for i, v in ipairs(bosses) do
-    local is_current = i == r
-    for _, v2 in pairs(v) do
-      if (read_flag(v2.offset) & v2.bit) > 0 then
+  if only_rememberance then
+    cbosses = {}
+    for i, v in ipairs(rememberance_bosses) do
+      if (read_flag(v.offset) & v.bit) > 0 then
         count = count + 1
-        if is_current then
-          rcount = rcount + 1
-          region_bosses[#region_bosses + 1] = {'☑', v2.boss, v2.place}
-        end
+        cbosses[#cbosses + 1] = {'☑', v.boss}
       else
-        if is_current then
-          region_bosses[#region_bosses + 1] = {'☐', v2.boss, v2.place}
+        cbosses[#cbosses + 1] = {'☐', v.boss}
+      end
+    end
+    if count == last_count then return end
+    last_count = count
+    f = io.open(config.output_folder .. 'bosses.txt', 'w')
+    if f == nil then
+      return
+    end
+    f:write(string.format('追忆Boss: %d/%d\n', count, rememberance_boss_count))
+    for _, v in pairs(cbosses) do
+      f:write(string.format('%s %s\n', v[1], v[2]))
+    end
+  else
+    local rcount = 0
+    local region_bosses = {}
+    local r = regions[get_map_area() // 1000]
+    for i, v in ipairs(bosses) do
+      local is_current = i == r
+      for _, v2 in pairs(v) do
+        if (read_flag(v2.offset) & v2.bit) > 0 then
+          count = count + 1
+          if is_current then
+            rcount = rcount + 1
+            region_bosses[#region_bosses + 1] = {'☑', v2.boss, v2.place}
+          end
+        else
+          if is_current then
+            region_bosses[#region_bosses + 1] = {'☐', v2.boss, v2.place}
+          end
         end
       end
     end
-  end
-  if count == last_count and r == last_region then return end
-  last_count = count
-  last_region = r
-  f = io.open(config.output_folder .. 'bosses.txt', 'w')
-  if f == nil then
-    return
-  end
-  f:write(string.format('全Boss: %d/%d\n', count, boss_count))
-  if r ~= nil then
-    f:write(string.format('%sBoss: %d/%d\n', region_name[r], rcount, #bosses[r]))
-    for _, v in pairs(region_bosses) do
-      if #v[3] > 0 then
-        f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
-      else
-        f:write(string.format('%s %s\n', v[1], v[2]))
+    if count == last_count and r == last_region then return end
+    last_count = count
+    last_region = r
+    f = io.open(config.output_folder .. 'bosses.txt', 'w')
+    if f == nil then
+      return
+    end
+    f:write(string.format('全Boss: %d/%d\n', count, boss_count))
+    if r ~= nil then
+      f:write(string.format('%sBoss: %d/%d\n', region_name[r], rcount, #bosses[r]))
+      for _, v in pairs(region_bosses) do
+        if #v[3] > 0 then
+          f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
+        else
+          f:write(string.format('%s %s\n', v[1], v[2]))
+        end
       end
     end
   end

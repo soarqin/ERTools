@@ -227,7 +227,8 @@
                 "boss": "“接肢”葛瑞克",
                 "place": "史东薇尔城",
                 "offset": "0x151C33",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 1
             }
         ]
     },
@@ -442,7 +443,8 @@
                 "boss": "“满月女王”蕾娜菈",
                 "place": "aya Lucaria",
                 "offset": "0x158146",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 2
             }
         ]
     },
@@ -541,7 +543,8 @@
                 "boss": "“碎星”拉塔恩",
                 "place": "恸哭沙丘",
                 "offset": "0x1A1B02",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 3
             }
         ]
     },
@@ -891,7 +894,8 @@
                 "boss": "噬神大蛇 & “亵渎君王”拉卡德",
                 "place": "火山官邸",
                 "offset": "0x159BA4",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 4
             }
         ]
     },
@@ -934,7 +938,8 @@
                 "boss": "“恶兆王”蒙葛特",
                 "place": "艾尔登宝座",
                 "offset": "0x152DC7",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 5
             }
         ]
     },
@@ -1024,7 +1029,8 @@
                 "boss": "火焰巨人",
                 "place": "火焰之巅",
                 "offset": "0x1AAC07",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 6
             }
         ]
     },
@@ -1046,13 +1052,15 @@
                 "boss": "“龙王”普拉顿桑克斯",
                 "place": "大桥侧边",
                 "offset": "0x15741A",
-                "bit": "1"
+                "bit": "1",
+                "rememberance": 11
             },
             {
                 "boss": "“黑剑”玛利喀斯",
                 "place": "",
                 "offset": "0x157417",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 12
             }
         ]
     },
@@ -1136,7 +1144,8 @@
                 "boss": "“米凯拉的锋刃”玛莲妮亚 & “腐败女神”玛莲妮亚",
                 "place": "",
                 "offset": "0x158E75",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 13
             }
         ]
     },
@@ -1171,7 +1180,8 @@
                 "boss": "祖灵之王",
                 "place": "角骸灵地",
                 "offset": "0x156FB2",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 7
             },
             {
                 "boss": "英雄石像鬼 & 英雄石像鬼（双头剑）",
@@ -1193,7 +1203,8 @@
                 "boss": "“鲜血君王”蒙格",
                 "place": "",
                 "offset": "0x155E1E",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 10
             }
         ]
     },
@@ -1222,7 +1233,8 @@
                 "boss": "“黑暗弃子”艾丝缇",
                 "place": "大回廊",
                 "offset": "0x1559B9",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 8
             }
         ]
     },
@@ -1250,7 +1262,8 @@
                 "boss": "“死龙”弗尔桑克斯",
                 "place": "",
                 "offset": "0x15555A",
-                "bit": "5"
+                "bit": "5",
+                "rememberance": 9
             }
         ]
     },
@@ -1273,13 +1286,15 @@
                 "boss": "“初始之王”葛孚雷",
                 "place": "艾尔登宝座",
                 "offset": "0x15322C",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 14
             },
             {
                 "boss": "“黄金律法”拉达冈 & 艾尔登之兽",
                 "place": "濒毁玛莉卡",
                 "offset": "0x15C331",
-                "bit": "7"
+                "bit": "7",
+                "rememberance": 15
             }
         ]
     }
