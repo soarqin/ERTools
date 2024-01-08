@@ -1,88 +1,90 @@
 local memreader = require('memreader')
 local process = nil
-local event_flag_man_addr = 0
-local field_area_addr = 0
-local game_data_man_addr = 0
-local event_flag_address = 0
+
+local address_table = {
+  event_flag_man_addr = 0,
+  field_area_addr = 0,
+  game_data_man_addr = 0
+}
 
 local function get_offset_table()
   local ver = process:version().file
   print('  > Version: ' .. ver.major .. '.' .. ver.minor .. '.' .. ver.build)
   if ver.major == 1 and ver.minor == 2 and ver.build == 0 then
-    event_flag_man_addr = 0x3c526e8
-    field_area_addr = 0x3c53470
-    game_data_man_addr = 0x3c481b8
+    address_table.event_flag_man_addr = 0x3c526e8
+    address_table.field_area_addr = 0x3c53470
+    address_table.game_data_man_addr = 0x3c481b8
   elseif ver.major == 1 and ver.minor == 2 and ver.build == 1 then
-    event_flag_man_addr = 0x3c52708
-    field_area_addr = 0x3c53490
-    game_data_man_addr = 0x3c481d8
+    address_table.event_flag_man_addr = 0x3c52708
+    address_table.field_area_addr = 0x3c53490
+    address_table.game_data_man_addr = 0x3c481d8
   elseif ver.major == 1 and ver.minor == 2 and ver.build == 2 then
-    event_flag_man_addr = 0x3c52728
-    field_area_addr = 0x3c534b0
-    game_data_man_addr = 0x3c481f8
+    address_table.event_flag_man_addr = 0x3c52728
+    address_table.field_area_addr = 0x3c534b0
+    address_table.game_data_man_addr = 0x3c481f8
   elseif ver.major == 1 and ver.minor == 2 and ver.build == 3 then
-    event_flag_man_addr = 0x3c55748
-    field_area_addr = 0x3c564d0
-    game_data_man_addr = 0x3c4b218
+    address_table.event_flag_man_addr = 0x3c55748
+    address_table.field_area_addr = 0x3c564d0
+    address_table.game_data_man_addr = 0x3c4b218
   elseif ver.major == 1 and ver.minor == 3 and ver.build == 0 then
-    event_flag_man_addr = 0x3c672a8
-    field_area_addr = 0x3c68040
-    game_data_man_addr = 0x3c5cd78
+    address_table.event_flag_man_addr = 0x3c672a8
+    address_table.field_area_addr = 0x3c68040
+    address_table.game_data_man_addr = 0x3c5cd78
   elseif ver.major == 1 and ver.minor == 3 and ver.build == 1 then
-    event_flag_man_addr = 0x3c672a8
-    field_area_addr = 0x3c68040
-    game_data_man_addr = 0x3c5cd78
+    address_table.event_flag_man_addr = 0x3c672a8
+    address_table.field_area_addr = 0x3c68040
+    address_table.game_data_man_addr = 0x3c5cd78
   elseif ver.major == 1 and ver.minor == 3 and ver.build == 2 then
-    event_flag_man_addr = 0x3c672a8
-    field_area_addr = 0x3c68040
-    game_data_man_addr = 0x3c5cd78
+    address_table.event_flag_man_addr = 0x3c672a8
+    address_table.field_area_addr = 0x3c68040
+    address_table.game_data_man_addr = 0x3c5cd78
   elseif ver.major == 1 and ver.minor == 4 and ver.build == 0 then
-    event_flag_man_addr = 0x3c0a538
-    field_area_addr = 0x3c0b2c0
-    game_data_man_addr = 0x3c00028
+    address_table.event_flag_man_addr = 0x3c0a538
+    address_table.field_area_addr = 0x3c0b2c0
+    address_table.game_data_man_addr = 0x3c00028
   elseif ver.major == 1 and ver.minor == 4 and ver.build == 1 then
-    event_flag_man_addr = 0x3c0a538
-    field_area_addr = 0x3c0b2c0
-    game_data_man_addr = 0x3c00028
+    address_table.event_flag_man_addr = 0x3c0a538
+    address_table.field_area_addr = 0x3c0b2c0
+    address_table.game_data_man_addr = 0x3c00028
   elseif ver.major == 1 and ver.minor == 5 and ver.build == 0 then
-    event_flag_man_addr = 0x3c222e8
-    field_area_addr = 0x3c23070
-    game_data_man_addr = 0x3c17ee8
+    address_table.event_flag_man_addr = 0x3c222e8
+    address_table.field_area_addr = 0x3c23070
+    address_table.game_data_man_addr = 0x3c17ee8
   elseif ver.major == 1 and ver.minor == 6 and ver.build == 0 then
-    event_flag_man_addr = 0x3c33508
-    field_area_addr = 0x3c34298
-    game_data_man_addr = 0x3c29108
+    address_table.event_flag_man_addr = 0x3c33508
+    address_table.field_area_addr = 0x3c34298
+    address_table.game_data_man_addr = 0x3c29108
   elseif ver.major == 1 and ver.minor == 7 and ver.build == 0 then
-    event_flag_man_addr = 0x3c4dec8
-    field_area_addr = 0x3c4ec50
-    game_data_man_addr = 0x3c43ac8
+    address_table.event_flag_man_addr = 0x3c4dec8
+    address_table.field_area_addr = 0x3c4ec50
+    address_table.game_data_man_addr = 0x3c43ac8
   elseif ver.major == 1 and ver.minor == 8 and ver.build == 0 then
-    event_flag_man_addr = 0x3cdbdf8
-    field_area_addr = 0x3cdcb80
-    game_data_man_addr = 0x3cd1948
+    address_table.event_flag_man_addr = 0x3cdbdf8
+    address_table.field_area_addr = 0x3cdcb80
+    address_table.game_data_man_addr = 0x3cd1948
   elseif ver.major == 1 and ver.minor == 8 and ver.build == 1 then
-    event_flag_man_addr = 0x3cdbdf8
-    field_area_addr = 0x3cdcb80
-    game_data_man_addr = 0x3cd1948
+    address_table.event_flag_man_addr = 0x3cdbdf8
+    address_table.field_area_addr = 0x3cdcb80
+    address_table.game_data_man_addr = 0x3cd1948
   elseif ver.major == 1 and ver.minor == 9 and ver.build == 0 then
-    event_flag_man_addr = 0x3cdf238
-    field_area_addr = 0x3cdffc0
-    game_data_man_addr = 0x3cd4d88
+    address_table.event_flag_man_addr = 0x3cdf238
+    address_table.field_area_addr = 0x3cdffc0
+    address_table.game_data_man_addr = 0x3cd4d88
   elseif ver.major == 1 and ver.minor == 9 and ver.build == 1 then
-    event_flag_man_addr = 0x3cdf238
-    field_area_addr = 0x3cdffc0
-    game_data_man_addr = 0x3cd4d88
+    address_table.event_flag_man_addr = 0x3cdf238
+    address_table.field_area_addr = 0x3cdffc0
+    address_table.game_data_man_addr = 0x3cd4d88
   elseif ver.major == 2 and ver.minor == 0 and ver.build == 0 then
-    event_flag_man_addr = 0x3cdf238
-    field_area_addr = 0x3cdffc0
-    game_data_man_addr = 0x3cd4d88
+    address_table.event_flag_man_addr = 0x3cdf238
+    address_table.field_area_addr = 0x3cdffc0
+    address_table.game_data_man_addr = 0x3cd4d88
   end
-  event_flag_man_addr = process.base + event_flag_man_addr
-  field_area_addr = process.base + field_area_addr
-  game_data_man_addr = process.base + game_data_man_addr
-  print("  > EventFlagMan address: 0x" .. tostring(event_flag_man_addr))
-  print("  > FieldArea address: 0x" .. tostring(field_area_addr))
-  print("  > GameDataMan address: 0x" .. tostring(game_data_man_addr))
+  address_table.event_flag_man_addr = process.base + address_table.event_flag_man_addr
+  address_table.field_area_addr = process.base + address_table.field_area_addr
+  address_table.game_data_man_addr = process.base + address_table.game_data_man_addr
+  print("  > EventFlagMan address: 0x" .. tostring(address_table.event_flag_man_addr))
+  print("  > FieldArea address: 0x" .. tostring(address_table.field_area_addr))
+  print("  > GameDataMan address: 0x" .. tostring(address_table.game_data_man_addr))
 end
 
 local function search_for_game_process()
@@ -109,62 +111,24 @@ local function update()
     print('- Game closed')
     return
   end
-  local addrstr = process:read(event_flag_man_addr, 8)
-  if addrstr == nil then return end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process:read(addr + 0x28, 8)
-  if addrstr == nil then return end
-  event_flag_address = string.unpack('=I8', addrstr)
 end
 
 local function game_running()
   return process ~= nil
 end
 
-local function read_flag(offset)
-  if process == nil or event_flag_address == 0 then
-    return 0
-  end
-  local str = process:read(event_flag_address + offset, 1)
-  if str == nil then return 0 end
-  return string.byte(str)
+local function get_address_table()
+  return address_table
 end
 
-local function get_map_area()
-  local addrstr = process:read(field_area_addr, 8)
-  if addrstr == nil then return 0 end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process:read(addr + 0xE4, 4)
-  if addrstr == nil then return 0 end
-  local area, _ = string.unpack('=I4', addrstr)
-  return area
-end
-
-local function get_player_attr()
-  local addrstr = process:read(game_data_man_addr, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process:read(addr + 0xA0, 4)
-  if addrstr == nil then return nil end
-  igt = string.unpack('=I4', addrstr)
-  addrstr = process:read(addr + 0x120, 4)
-  if addrstr == nil then return nil end
-  rounds = string.unpack('=I4', addrstr)
-  addrstr = process:read(addr + 8, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process:read(addr + 0x3C, 0x38)
-  if addrstr == nil then return nil end
-  res = {string.unpack('=I4I4I4I4I4I4I4I4I4I4I4I4I4I4', addrstr)}
-  res[9] = igt
-  res[10] = rounds + 1
-  return res
+local function read_memory(addr, size)
+  if process == nil then return nil end
+  return process:read(addr, size)
 end
 
 return {
   update = update,
   game_running = game_running,
-  read_flag = read_flag,
-  get_map_area = get_map_area,
-  get_player_attr = get_player_attr
+  get_address_table = get_address_table,
+  read_memory = read_memory
 }

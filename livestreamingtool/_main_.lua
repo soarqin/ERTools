@@ -2,18 +2,21 @@ package.cpath = './?.dll;' .. package.cpath
 
 local uv = require('luv')
 local lfs = require('lfs')
+local current_script = string.gsub(debug.getinfo(1, 'S').short_src, '\\', '/')
+local script_filename = string.match(current_script, '[^/]+$')
+local sciprt_directory = string.sub(current_script, 1, #current_script - #script_filename)
 
 -- load process and plugins
 process = require('process')
 local plugins = {}
 print('+ Loading plugins...')
-for file in lfs.dir('plugins') do
-  if file ~= '.' and file ~= '..' then
-    local f = 'plugins/'..file
-    local attr = lfs.attributes(f)
+for file in lfs.dir(sciprt_directory) do
+  if file ~= '.' and file ~= '..' and file ~= script_filename then
+    local filename = sciprt_directory .. file
+    local attr = lfs.attributes(filename)
     if attr.mode ~= 'directory' and string.sub(file, -4) == '.lua' then
     	print('  > ' .. string.sub(file, 1, -5))
-    	plugins[#plugins + 1] = require(string.sub(f, 1, -5))
+    	plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
     end
   end
 end
