@@ -73,7 +73,7 @@ local function update()
     if last_running then
       last_running = false
       event_flag_address = 0
-      f = io.open("bosses.txt", "w")
+      f = io.open(config.output_folder .. 'bosses.txt', 'w')
       f:close()
     end
     return
@@ -106,7 +106,7 @@ local function update()
   if count == last_count and r == last_region then return end
   last_count = count
   last_region = r
-  f = io.open("bosses.txt", "w")
+  f = io.open(config.output_folder .. 'bosses.txt', 'w')
   if f == nil then
     return
   end

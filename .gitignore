@@ -40,4 +40,4 @@ luac.out
 *.hex
 
 # Output files
-*.txt
+/output/

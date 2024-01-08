@@ -4,15 +4,17 @@ local uv = require('luv')
 local lfs = require('lfs')
 local current_script = string.gsub(debug.getinfo(1, 'S').short_src, '\\', '/')
 local script_filename = string.match(current_script, '[^/]+$')
-local sciprt_directory = string.sub(current_script, 1, #current_script - #script_filename)
+local script_directory = string.sub(current_script, 1, #current_script - #script_filename)
 
 -- load process and plugins
-process = require('process')
+process = require('common.process')
+config = require(script_directory .. '_config_')
+lfs.mkdir(config.output_folder)
 local plugins = {}
 print('+ Loading plugins...')
-for file in lfs.dir(sciprt_directory) do
-  if file ~= '.' and file ~= '..' and file ~= script_filename then
-    local filename = sciprt_directory .. file
+for file in lfs.dir(script_directory) do
+  if file ~= '.' and file ~= '..' and file ~= script_filename and string.sub(file, 1, 1) ~= '_' then
+    local filename = script_directory .. file
     local attr = lfs.attributes(filename)
     if attr.mode ~= 'directory' and string.sub(file, -4) == '.lua' then
     	print('  > ' .. string.sub(file, 1, -5))
