@@ -9,7 +9,7 @@ local address_table = {
 
 local function get_offset_table()
   local version = process:version()
-  if version = nil then
+  if version == nil then
     return
   end
   local ver = version.file
