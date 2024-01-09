@@ -12,6 +12,7 @@ local script_directory = string.sub(current_script, 1, #current_script - #script
 
 -- load process and plugins
 process = require('common.process')
+util = require('common.util')
 config = require(script_directory .. '_config_')
 lfs.mkdir(config.output_folder)
 local plugins = {}
@@ -21,8 +22,8 @@ for file in lfs.dir(script_directory) do
     local filename = script_directory .. file
     local attr = lfs.attributes(filename)
     if attr.mode ~= 'directory' and string.sub(file, -4) == '.lua' then
-    	print('  > ' .. string.sub(file, 1, -5))
-    	plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
+      print('  > ' .. string.sub(file, 1, -5))
+      plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
     end
   end
 end
@@ -35,10 +36,10 @@ uv.new_signal():start('sighup', function(...) os.exit(-1) end)
 
 -- add update timer
 uv.new_timer():start(1000, 1000, function()
-	process.update()
-	for _, plugin in pairs(plugins) do
-		plugin.update()
-	end
+  process.update()
+  for _, plugin in pairs(plugins) do
+    plugin.update()
+  end
 end)
 
 -- enter loop

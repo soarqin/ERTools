@@ -8,6 +8,9 @@ local function get_player_attr()
   local addrstr = process.read_memory(address_table.game_data_man_addr, 8)
   if addrstr == nil then return nil end
   addr = string.unpack('=I8', addrstr)
+  addrstr = process.read_memory(addr + 0x94, 4)
+  if addrstr == nil then return nil end
+  deathnum = string.unpack('=I4', addrstr)
   addrstr = process.read_memory(addr + 0xA0, 4)
   if addrstr == nil then return nil end
   igt = string.unpack('=I4', addrstr)
@@ -22,6 +25,7 @@ local function get_player_attr()
   res = {string.unpack('=I4I4I4I4I4I4I4I4I4I4I4I4I4I4', addrstr)}
   res[9] = igt
   res[10] = rounds + 1
+  res[11] = deathnum
   return res
 end
 
@@ -29,6 +33,7 @@ local function update()
   if not process.game_running() then
     if last_running then
       last_running = false
+      last_attr = ''
       f = io.open(config.output_folder .. 'info.txt', 'w')
       f:close()
     end
@@ -45,7 +50,7 @@ local function update()
     end
     return
   end
-  attr_str = string.format('游戏时间 %02d:%02d\n　周目数 %d\n持有卢恩 %d\n累计获得 %d\n　　等级 %d\n　　生命 %d\n　　集中 %d\n　　耐力 %d\n　　力气 %d\n　　灵巧 %d\n　　智力 %d\n　　信仰 %d\n　　感应 %d', attr[9] // 3600000, (attr[9] // 60000) % 60, attr[10], attr[13], attr[14], attr[12], attr[1], attr[2], attr[3], attr[4], attr[5], attr[6], attr[7], attr[8])
+  attr_str = string.format('游戏时间 %02d:%02d\n第%d周目\n卢恩 %d\n累计 %d\n死亡 %d\n等级 %d\n生命 %d\n集中 %d\n耐力 %d\n力气 %d\n灵巧 %d\n智力 %d\n信仰 %d\n感应 %d', attr[9] // 3600000, (attr[9] // 60000) % 60, attr[10], attr[13], attr[14], attr[11], attr[12], attr[1], attr[2], attr[3], attr[4], attr[5], attr[6], attr[7], attr[8])
   if last_attr == attr_str then return end
   last_attr = attr_str
   f = io.open(config.output_folder .. 'info.txt', 'w')

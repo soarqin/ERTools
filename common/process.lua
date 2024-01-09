@@ -8,7 +8,11 @@ local address_table = {
 }
 
 local function get_offset_table()
-  local ver = process:version().file
+  local version = process:version()
+  if version = nil then
+    return
+  end
+  local ver = version.file
   print('  > Version: ' .. ver.major .. '.' .. ver.minor .. '.' .. ver.build)
   if ver.major == 1 and ver.minor == 2 and ver.build == 0 then
     address_table.event_flag_man_addr = 0x3c526e8
@@ -106,6 +110,9 @@ local function update()
     search_for_game_process()
     return
   end
+  if address_table == nil then
+    get_offset_table()
+  end
   if process:exitcode() ~= nil then
     process = nil
     print('- Game closed')
@@ -114,7 +121,7 @@ local function update()
 end
 
 local function game_running()
-  return process ~= nil
+  return process ~= nil and address_table ~= nil
 end
 
 local function get_address_table()

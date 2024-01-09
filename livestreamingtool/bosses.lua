@@ -3,15 +3,6 @@ local cjson = require('cjson')
 -- Only display rememberance bosses
 local only_rememberance = false
 
--- aux functions
-local function read_file(path)
-    local file = io.open(path, 'rb')
-    if not file then return nil end
-    local content = file:read('*a')
-    file:close()
-    return content
-end
-
 -- addresses
 local address_table = nil
 local event_flag_address = 0
@@ -24,7 +15,7 @@ local rememberance_boss_count = 0
 local region_name = {}
 local boss_count = 0
 
-for k, v in pairs(cjson.decode(read_file('data/bosses.json'))) do
+for k, v in pairs(cjson.decode(util.read_file('data/bosses.json'))) do
   local index = #bosses + 1
   for _, v2 in pairs(v.regions) do
     regions[v2] = index
