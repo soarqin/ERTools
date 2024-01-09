@@ -1,6 +1,6 @@
-local VERSION = '0.1'
+local VERSION = '0.2'
 
-print('Elden Ring LiveStreamingTool v0.1')
+print('Elden Ring LiveStreamingTool v' .. VERSION)
 
 package.cpath = './?.dll;./bin/?.dll;' .. package.cpath
 
