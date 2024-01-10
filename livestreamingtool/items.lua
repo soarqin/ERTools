@@ -46,9 +46,10 @@ local function update_inventory_address()
   addrstr = process.read_memory(addr + 8, 8)
   if addrstr == nil then return nil end
   addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0x420, 4)
+  addrstr = process.read_memory(addr + 0x420, 8)
   if addrstr == nil then return nil end
-  inventory_size = string.unpack('=I4', addrstr)
+  local sz1, sz2 = string.unpack('=I4I4', addrstr)
+  inventory_size = sz1 + sz2
   addrstr = process.read_memory(addr + 0x418, 8)
   if addrstr == nil then
     inventory_size = 0
