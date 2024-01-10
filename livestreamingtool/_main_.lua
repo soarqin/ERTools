@@ -35,7 +35,7 @@ uv.new_signal():start('sigbreak', function(...) os.exit(-1) end)
 uv.new_signal():start('sighup', function(...) os.exit(-1) end)
 
 -- add update timer
-uv.new_timer():start(1000, 1000, function()
+uv.new_timer():start(0, config.update_interval, function()
   process.update()
   for _, plugin in pairs(plugins) do
     plugin.update()
