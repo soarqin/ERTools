@@ -1,4 +1,4 @@
-local VERSION = '0.2'
+local VERSION = '0.3'
 
 print('Elden Ring LiveStreamingTool v' .. VERSION)
 
