@@ -82,6 +82,10 @@ local function get_offset_table()
     address_table.event_flag_man_addr = 0x3cdf238
     address_table.field_area_addr = 0x3cdffc0
     address_table.game_data_man_addr = 0x3cd4d88
+  else
+    address_table.event_flag_man_addr = 0x3cdf238
+    address_table.field_area_addr = 0x3cdffc0
+    address_table.game_data_man_addr = 0x3cd4d88
   end
   address_table.event_flag_man_addr = process.base + address_table.event_flag_man_addr
   address_table.field_area_addr = process.base + address_table.field_area_addr
@@ -133,9 +137,41 @@ local function read_memory(addr, size)
   return process:read(addr, size)
 end
 
+local function read_u8(addr)
+  if process == nil then return 0 end
+  local str = process:read(addr, 1)
+  if str == nil then return 0 end
+  return string.unpack('=I1', str)
+end
+
+local function read_u16(addr)
+  if process == nil then return 0 end
+  local str = process:read(addr, 2)
+  if str == nil then return 0 end
+  return string.unpack('=I2', str)
+end
+
+local function read_u32(addr)
+  if process == nil then return 0 end
+  local str = process:read(addr, 4)
+  if str == nil then return 0 end
+  return string.unpack('=I4', str)
+end
+
+local function read_u64(addr)
+  if process == nil then return 0 end
+  local str = process:read(addr, 8)
+  if str == nil then return 0 end
+  return string.unpack('=I8', str)
+end
+
 return {
   update = update,
   game_running = game_running,
   get_address_table = get_address_table,
-  read_memory = read_memory
+  read_memory = read_memory,
+  read_u8 = read_u8,
+  read_u16 = read_u16,
+  read_u32 = read_u32,
+  read_u64 = read_u64
 }

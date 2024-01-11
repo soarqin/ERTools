@@ -40,54 +40,49 @@ end
 
 local function update_inventory_address()
   -- [[GameDataMan]+8]+418
-  local addrstr = process.read_memory(address_table.game_data_man_addr, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 8, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0x420, 8)
-  if addrstr == nil then return nil end
-  local sz1, sz2 = string.unpack('=I4I4', addrstr)
-  inventory_size = sz1 + sz2
-  addrstr = process.read_memory(addr + 0x418, 8)
-  if addrstr == nil then
+  addr = process.read_u64(address_table.game_data_man_addr)
+  if addr == 0 then return end
+  addr = process.read_u64(addr + 8)
+  if addr == 0 then return end
+  inventory_address = process.read_u64(addr + 0x418)
+  if inventory_address == 0 then
     inventory_size = 0
-    return nil
+    return
   end
-  inventory_address = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0x8B0, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
+  inventory_size = process.read_u32(addr + 0x420)
 
-  addrstr = process.read_memory(addr + 0x18, 4)
-  if addrstr == nil then return nil end
-  storage_size = string.unpack('=I4', addrstr)
-  addrstr = process.read_memory(addr + 0x10, 8)
-  if addrstr == nil then
+  addr = process.read_u64(addr + 0x8B0)
+  if addr == 0 then return end
+  storage_address = process.read_u64(addr + 0x10)
+  if storage_address == 0 then
     storage_size = 0
-    return nil
+    return
   end
-  storage_address = string.unpack('=I8', addrstr)
+  storage_size = process.read_u32(addr + 0x18)
 end
 
-local function calculate_items_count(wcount, pcount, addr_start, item_count)
+local function calculate_items_count(wcount, pcount, addr_start, item_count, max_count)
   local addr = addr_start + 4
-  for idx = 0, item_count-1 do
-    local addrstr = process.read_memory(addr, 4)
-    if addrstr == nil then break end
-    local id = string.unpack('=I4', addrstr)
-    local type = id >> 28
-    id = id & 0xFFFFFFF
-    if type == 0 then
-      local ridx = weapons_by_id[id // 10000 * 10000]
-      if ridx ~= nil then
-        wcount[ridx] = (wcount[ridx] or 0) + 1
+  local total = 0
+  for idx = 0, max_count-1 do
+    local id = process.read_u32(addr)
+    if id ~= 0 and id ~= 0xFFFFFFFF then
+      local type = id >> 28
+      id = id & 0xFFFFFFF
+      if type == 0 then
+        local ridx = weapons_by_id[id // 10000 * 10000]
+        if ridx ~= nil then
+          wcount[ridx] = (wcount[ridx] or 0) + 1
+        end
+      elseif type == 1 then
+        local ridx = protectors_by_id[id]
+        if ridx ~= nil then
+          pcount[ridx] = (pcount[ridx] or 0) + 1
+        end
       end
-    elseif type == 1 then
-      local ridx = protectors_by_id[id]
-      if ridx ~= nil then
-        pcount[ridx] = (pcount[ridx] or 0) + 1
+      total = total + 1
+      if total >= item_count then
+        break
       end
     end
     addr = addr + 0x14
@@ -111,10 +106,10 @@ local function update()
   local pcount = {}
   local wcount = {}
   if inventory_address ~= 0 then
-    calculate_items_count(wcount, pcount, inventory_address, inventory_size)
+    calculate_items_count(wcount, pcount, inventory_address, inventory_size, 2688)
   end
   if storage_address ~= 0 then
-    calculate_items_count(wcount, pcount, storage_address, storage_size)
+    calculate_items_count(wcount, pcount, storage_address, storage_size, 1920)
   end
   local weapon_count = 0
   local protector_count = 0
@@ -134,7 +129,11 @@ local function update()
     end
   end
   if #wstr > 0 then
-    wstr = string.format('武器收集进度: %d/%d\n未收集武器(仅显示10个):', weapon_count, #weapons) .. wstr
+    if weapon_count + 10 < #weapons then
+      wstr = string.format('武器收集进度: %d/%d\n未收集武器(仅显示10个):', weapon_count, #weapons) .. wstr
+    else
+      wstr = string.format('武器收集进度: %d/%d\n未收集武器:', weapon_count, #weapons) .. wstr
+    end
   else
     wstr = string.format('武器收集进度: %d/%d', weapon_count, #weapons)
   end
@@ -148,7 +147,11 @@ local function update()
     end
   end
   if #pstr > 0 then
-    wstr = wstr .. string.format('\n防具收集进度: %d/%d\n未收集防具(仅显示10个):', protector_count, #protectors) .. pstr
+    if protector_count + 10 < #protectors then
+      wstr = wstr .. string.format('\n防具收集进度: %d/%d\n未收集防具(仅显示10个):', protector_count, #protectors) .. pstr
+    else
+      wstr = wstr .. string.format('\n防具收集进度: %d/%d\n未收集防具:', protector_count, #protectors) .. pstr
+    end
   else
     wstr = wstr .. string.format('\n防具收集进度: %d/%d', protector_count, #protectors)
   end

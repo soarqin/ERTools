@@ -41,12 +41,9 @@ local last_region = 0
 local last_running = false
 
 local function update_memory_address()
-  local addrstr = process.read_memory(address_table.event_flag_man_addr, 8)
-  if addrstr == nil then return end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0x28, 8)
-  if addrstr == nil then return end
-  event_flag_address = string.unpack('=I8', addrstr)
+  local addr = process.read_u64(address_table.event_flag_man_addr)
+  if addr == 0 then return end
+  event_flag_address = process.read_u64(addr + 0x28)
 end
 
 
@@ -54,19 +51,13 @@ local function read_flag(offset)
   if event_flag_address == 0 then
     return 0
   end
-  local str = process.read_memory(event_flag_address + offset, 1)
-  if str == nil then return 0 end
-  return string.byte(str)
+  return process.read_u8(event_flag_address + offset)
 end
 
 local function get_map_area()
-  local addrstr = process.read_memory(address_table.field_area_addr, 8)
-  if addrstr == nil then return 0 end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0xE4, 4)
-  if addrstr == nil then return 0 end
-  local area, _ = string.unpack('=I4', addrstr)
-  return area
+  local addr = process.read_u64(address_table.field_area_addr)
+  if addr == 0 then return 0 end
+  return process.read_u32(addr + 0xE4)
 end
 
 local function update()

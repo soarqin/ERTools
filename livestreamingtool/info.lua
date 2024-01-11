@@ -5,21 +5,13 @@ local last_attr = ''
 local last_running = false
 
 local function get_player_attr()
-  local addrstr = process.read_memory(address_table.game_data_man_addr, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
-  addrstr = process.read_memory(addr + 0x94, 4)
-  if addrstr == nil then return nil end
-  deathnum = string.unpack('=I4', addrstr)
-  addrstr = process.read_memory(addr + 0xA0, 4)
-  if addrstr == nil then return nil end
-  igt = string.unpack('=I4', addrstr)
-  addrstr = process.read_memory(addr + 0x120, 4)
-  if addrstr == nil then return nil end
-  rounds = string.unpack('=I4', addrstr)
-  addrstr = process.read_memory(addr + 8, 8)
-  if addrstr == nil then return nil end
-  addr = string.unpack('=I8', addrstr)
+  local addr = process.read_u64(address_table.game_data_man_addr)
+  if addr == 0 then return nil end
+  deathnum = process.read_u32(addr + 0x94)
+  igt = process.read_u32(addr + 0xA0)
+  rounds = process.read_u32(addr + 0x120)
+  addr = process.read_u64(addr + 8)
+  if addr == 0 then return nil end
   addrstr = process.read_memory(addr + 0x3C, 0x38)
   if addrstr == nil then return nil end
   res = {string.unpack('=I4I4I4I4I4I4I4I4I4I4I4I4I4I4', addrstr)}
