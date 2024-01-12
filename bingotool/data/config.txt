@@ -1,0 +1,34 @@
+; 单个格子边长
+CellSize=150
+; 格子间距
+CellSpacing=5
+; 目标文字颜色
+TextColor=255,255,255
+; 格子透明度(0完全透明，255完全不透明)
+Alpha=160
+; 目标文字字体
+FontFile=data/font.ttf
+; 目标文字字体大小
+FontSize=24
+; 玩家1颜色(红,绿,蓝)
+Color1=255,32,32
+; 玩家2颜色(红,绿,蓝)
+Color2=32,32,255
+; 积分面板透明度(0完全透明，255完全不透明)
+ScoreAlpha=0
+; 积分文字字体
+ScoreFontFile=data/font.ttf
+; 积分文字字体大小
+ScoreFontSize=24
+; 首先完成积分
+FirstScores=2,4,6,8,10
+; 非首先完成积分
+NonFirstScores=1,2,3,4,5
+; 连线积分
+LineScore=3
+; 每行最大可完成任务数
+MaxPerRow=3
+; 玩家1名
+Player1=Right丶
+; 玩家2名
+Player2=Iridium_ore
