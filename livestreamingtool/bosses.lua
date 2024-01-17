@@ -1,7 +1,9 @@
-local cjson = require('cjson')
+-- begin of configs
+--    Only display rememberance bosses
+local only_rememberance = true
+-- end of configs
 
--- Only display rememberance bosses
-local only_rememberance = false
+local cjson = require('cjson')
 
 -- addresses
 local address_table = nil
@@ -73,6 +75,7 @@ local function update()
   end
   if not last_running then
     last_running = true
+    last_count = -1
     address_table = process.get_address_table()
   end
   update_memory_address()
