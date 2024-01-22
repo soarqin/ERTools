@@ -107,11 +107,9 @@ struct ScoreWindow {
             for (auto &c: r) {
                 switch (c.status) {
                     case 1:
-                    case 3:
                         count[0]++;
                         break;
                     case 2:
-                    case 4:
                         count[1]++;
                         break;
                 }
@@ -356,9 +354,22 @@ static void postLoad() {
             std::getline(ifs2, line);
             auto &cell = gCells[i][j];
             cell.text = line;
-            auto *surface = TTF_RenderUTF8_Blended_Wrapped(gFont, cell.text.c_str(), gTextColor, gCellSize * 9 / 10);
-            cell.texture = SDL_CreateTextureFromSurface(gRenderer, surface);
-            SDL_DestroySurface(surface);
+            auto *font = gFont;
+            auto fontSize = gFontSize;
+            while (true) {
+                auto *surface =
+                    TTF_RenderUTF8_Blended_Wrapped(font, cell.text.c_str(), gTextColor, gCellSize * 9 / 10);
+                if (surface->h <= gCellSize * 9 / 10) {
+                    cell.texture = SDL_CreateTextureFromSurface(gRenderer, surface);
+                    SDL_DestroySurface(surface);
+                    break;
+                }
+                fontSize--;
+                font = TTF_OpenFont(gFontFile.c_str(), fontSize);
+            }
+            if (font != gFont) {
+                TTF_CloseFont(font);
+            }
         }
     }
 }
@@ -375,7 +386,7 @@ static void saveState() {
             n.emplace_back(std::to_string(c.status));
         }
     }
-    int x, y, w, h;
+    int x, y;
     SDL_GetWindowPosition(gWindow, &x, &y);
     n.emplace_back(std::to_string(x));
     n.emplace_back(std::to_string(y));
