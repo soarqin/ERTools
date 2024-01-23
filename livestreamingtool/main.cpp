@@ -202,6 +202,7 @@ struct Panel {
     int y = 0;
     int w = 250;
     int h = 500;
+    int border = 10;
     std::string fontFile = "data/font.ttf";
     int fontSize = 24;
     SDL_Color textColor = {0xff, 0xff, 0xff, 0xff};
@@ -263,34 +264,46 @@ static int luaLog(lua_State *L) {
     return 0;
 }
 
+static int luaPanelCreate(lua_State *L) {
+    const char *name = luaL_checkstring(L, 1);
+    auto *panel = &gPanels[name];
+    if (panel->window != nullptr) {
+        return 0;
+    }
+    panel->name = name;
+    panel->loadFromConfig();
+    panel->window = SDL_CreateWindow(name,
+                                     panel->w,
+                                     panel->h,
+                                     (panel->autoSize ? 0 : SDL_WINDOW_RESIZABLE)
+                                                 | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
+    SDL_SetWindowPosition(panel->window, panel->x, panel->y);
+    if (panel->renderer != nullptr) SDL_DestroyRenderer(panel->renderer);
+    panel->renderer =
+        SDL_CreateRenderer(panel->window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    if (panel->font != nullptr) TTF_CloseFont(panel->font);
+    panel->font = TTF_OpenFont(panel->fontFile.c_str(), panel->fontSize);
+    panel->textColorBrush =
+        CreateSolidBrush(RGB(panel->textColor.r, panel->textColor.g, panel->textColor.b));
+    panel->backgroundColorBrush = CreateSolidBrush(RGB(panel->backgroundColor.r,
+                                                       panel->backgroundColor.g,
+                                                       panel->backgroundColor.b));
+    SDL_SetWindowHitTest(panel->window, HitTestCallback, nullptr);
+
+    if (panel->settingsTexture == nullptr) {
+        panel->settingsTexture = loadTexture(panel->renderer, settings_png, sizeof(settings_png));
+    }
+    return 0;
+}
+
 static int luaPanelBegin(lua_State *L) {
     const char *name = luaL_checkstring(L, 1);
-    gCurrentPanel = &gPanels[name];
-    if (gCurrentPanel->window == nullptr) {
-        gCurrentPanel->name = name;
-        gCurrentPanel->loadFromConfig();
-        gCurrentPanel->window = SDL_CreateWindow(name,
-                                                 gCurrentPanel->w,
-                                                 gCurrentPanel->h,
-                                                 (gCurrentPanel->autoSize ? 0 : SDL_WINDOW_RESIZABLE)
-                                                     | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
-        SDL_SetWindowPosition(gCurrentPanel->window, gCurrentPanel->x, gCurrentPanel->y);
-        if (gCurrentPanel->renderer != nullptr) SDL_DestroyRenderer(gCurrentPanel->renderer);
-        gCurrentPanel->renderer =
-            SDL_CreateRenderer(gCurrentPanel->window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-        if (gCurrentPanel->font != nullptr) TTF_CloseFont(gCurrentPanel->font);
-        gCurrentPanel->font = TTF_OpenFont(gCurrentPanel->fontFile.c_str(), gCurrentPanel->fontSize);
-        gCurrentPanel->textColorBrush =
-            CreateSolidBrush(RGB(gCurrentPanel->textColor.r, gCurrentPanel->textColor.g, gCurrentPanel->textColor.b));
-        gCurrentPanel->backgroundColorBrush = CreateSolidBrush(RGB(gCurrentPanel->backgroundColor.r,
-                                                                   gCurrentPanel->backgroundColor.g,
-                                                                   gCurrentPanel->backgroundColor.b));
-        SDL_SetWindowHitTest(gCurrentPanel->window, HitTestCallback, nullptr);
-
-        if (gCurrentPanel->settingsTexture == nullptr) {
-            gCurrentPanel->settingsTexture = loadTexture(gCurrentPanel->renderer, settings_png, sizeof(settings_png));
-        }
+    auto ite = gPanels.find(name);
+    if (ite == gPanels.end()) {
+        gCurrentPanel = nullptr;
+        return 0;
     }
+    gCurrentPanel = &ite->second;
     gCurrentPanel->text.clear();
     return 0;
 }
@@ -651,6 +664,8 @@ int wmain(int argc, wchar_t *argv[]) {
     luaL_openpkgs(L);
     lua_pushcfunction(L, luaLog);
     lua_setglobal(L, "log");
+    lua_pushcfunction(L, luaPanelCreate);
+    lua_setglobal(L, "panel_create");
     lua_pushcfunction(L, luaPanelBegin);
     lua_setglobal(L, "panel_begin");
     lua_pushcfunction(L, luaPanelEnd);

@@ -309,8 +309,7 @@ local function update()
   end
 end
 
-panel_begin("Items")
-panel_end()
+panel_create("Items")
 
 return {
   update = update

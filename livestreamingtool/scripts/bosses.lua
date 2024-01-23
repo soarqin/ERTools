@@ -138,8 +138,7 @@ local function update()
   end
 end
 
-panel_begin("Bosses")
-panel_end()
+panel_create("Bosses")
 
 return {
   update = update

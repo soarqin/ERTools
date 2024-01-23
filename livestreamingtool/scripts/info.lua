@@ -50,8 +50,7 @@ local function update()
   panel_end()
 end
 
-panel_begin("Info")
-panel_end()
+panel_create("Info")
 
 return {
   update = update
