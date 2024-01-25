@@ -144,17 +144,39 @@ struct Panel {
         }
     }
 
-    void updateText() {
+    void updateTextTexture() {
         if (texture != nullptr) {
             SDL_DestroyTexture(texture);
             texture = nullptr;
         }
         if (!text.empty()) {
-            auto *surface = TTF_RenderUTF8_Blended_Wrapped(font, text[0].c_str(), textColor, 0);
+            auto *surface = TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), textColor, 0);
             if (surface != nullptr) {
                 texture = SDL_CreateTextureFromSurface(renderer, surface);
                 SDL_DestroySurface(surface);
+                if (texture != nullptr) {
+                    updateTextRenderRect();
+                }
             }
+        }
+    }
+
+    void updateTextRenderRect() {
+        int ww, hh;
+        SDL_QueryTexture(texture, nullptr, nullptr, &ww, &hh);
+        dstRect = {(float)border, (float)border, (float)ww, (float)hh};
+        srcRect = {0, 0, (float)ww, (float)hh};
+        auto fw = ww + border * 2;
+        auto fh = hh + border * 2;
+        if (autoSize) {
+            if (fw < DLG_SIZE_MIN) fw = DLG_SIZE_MIN;
+            if (fh < DLG_SIZE_MIN) fh = DLG_SIZE_MIN;
+            if (w != fw || h != fh) {
+                SDL_SetWindowSize(window, fw, fh);
+            }
+        } else if (w < fw || h < fh) {
+            dstRect = {(float)border, (float)border, (float)(w - border * 2), (float)(h - border * 2)};
+            srcRect = {0, 0, (float)(w - border * 2), (float)(h - border * 2)};
         }
     }
 
@@ -170,14 +192,14 @@ struct Panel {
         }
         font = ft;
         fontSize = newSize;
-        updateText();
+        updateTextTexture();
         return true;
     }
 
     bool setNewTextAlpha(int newVal) {
         if (newVal == textColor.a) return false;
         textColor.a = newVal;
-        updateText();
+        updateTextTexture();
         return true;
     }
 
@@ -187,12 +209,43 @@ struct Panel {
         return true;
     }
 
+    bool setNewBorder(int newVal) {
+        if (newVal == border) return false;
+        border = newVal;
+        updateTextRenderRect();
+        return true;
+    }
+
+    void render() {
+        auto &col = backgroundColor;
+        SDL_SetRenderDrawColor(renderer, col.r, col.g, col.b, col.a);
+        SDL_RenderClear(renderer);
+        if (texture) {
+            SDL_RenderTexture(renderer, texture, &srcRect, &dstRect);
+        }
+        if (SDL_GetKeyboardFocus() == window) {
+            float mx, my;
+            SDL_GetGlobalMouseState(&mx, &my);
+            int rx = (int)mx, ry = (int)my;
+            int wx = x, wy = y, wx2 = wx + w, wy2 = wy + h;
+            if (rx >= wx && rx < wx2 && ry >= wy && ry < wy2) {
+                const SDL_FRect rect =
+                    {(float)(w - MOUSE_GRAB_PADDING - SETTINGS_ICON_SIZE), MOUSE_GRAB_PADDING,
+                     SETTINGS_ICON_SIZE, SETTINGS_ICON_SIZE};
+                SDL_RenderTexture(renderer, settingsTexture, nullptr, &rect);
+            }
+        }
+        SDL_RenderPresent(renderer);
+    }
+
     SDL_Window *window = nullptr;
     SDL_Renderer *renderer = nullptr;
-    std::vector<std::string> text;
+    std::string text;
     TTF_Font *font = nullptr;
     SDL_Texture *texture = nullptr;
     SDL_Texture *settingsTexture = nullptr;
+    SDL_FRect srcRect = {0, 0, 0, 0};
+    SDL_FRect dstRect = {0, 0, 0, 0};
 
     HBRUSH textColorBrush = nullptr;
     HBRUSH backgroundColorBrush = nullptr;
@@ -272,9 +325,7 @@ static int luaPanelCreate(lua_State *L) {
     }
     panel->name = name;
     panel->loadFromConfig();
-    panel->window = SDL_CreateWindow(name,
-                                     panel->w,
-                                     panel->h,
+    panel->window = SDL_CreateWindow(name, panel->w, panel->h,
                                      (panel->autoSize ? 0 : SDL_WINDOW_RESIZABLE)
                                                  | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
     SDL_SetWindowPosition(panel->window, panel->x, panel->y);
@@ -289,7 +340,8 @@ static int luaPanelCreate(lua_State *L) {
                                                        panel->backgroundColor.g,
                                                        panel->backgroundColor.b));
     SDL_SetWindowHitTest(panel->window, HitTestCallback, nullptr);
-
+    panel->text = name;
+    panel->updateTextTexture();
     if (panel->settingsTexture == nullptr) {
         panel->settingsTexture = loadTexture(panel->renderer, settings_png, sizeof(settings_png));
     }
@@ -311,15 +363,18 @@ static int luaPanelBegin(lua_State *L) {
 static int luaPanelEnd(lua_State *L) {
     (void)L;
     if (gCurrentPanel != nullptr) {
-        gCurrentPanel->updateText();
+        gCurrentPanel->updateTextTexture();
         gCurrentPanel = nullptr;
     }
     return 0;
 }
 
 static int luaPanelOutput(lua_State *L) {
-    if (gCurrentPanel)
-        gCurrentPanel->text.emplace_back(luaL_checkstring(L, 1));
+    if (gCurrentPanel) {
+        const auto *newText = luaL_checkstring(L, 1);
+        gCurrentPanel->text.push_back('\n');
+        gCurrentPanel->text.append(newText);
+    }
     return 0;
 }
 
@@ -346,7 +401,12 @@ static void initConfigDialog(HWND hwnd, Panel *panel) {
     udc = GetDlgItem(hwnd, 1010);
     SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(255, 0));
 
-    auto chc = GetDlgItem(hwnd, 1011);
+    edc = GetDlgItem(hwnd, 1011);
+    SetWindowTextW(edc, std::to_wstring(panel->border).c_str());
+    udc = GetDlgItem(hwnd, 1012);
+    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+
+    auto chc = GetDlgItem(hwnd, 1013);
     SendMessageW(chc, BM_SETCHECK, panel->autoSize ? BST_CHECKED : BST_UNCHECKED, 0);
     noEnChangeNotification = false;
 }
@@ -447,7 +507,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
                                 TTF_CloseFont(panel->font);
                             }
                             panel->font = font;
-                            panel->updateText();
+                            panel->updateTextTexture();
                             auto edc = GetDlgItem(hwnd, 1001);
                             SetWindowTextW(edc, szFileRel);
                         }
@@ -475,7 +535,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
                     }
                     panel->textColorBrush = CreateSolidBrush(cc.rgbResult);
                     InvalidateRect(GetDlgItem(hwnd, 1005), nullptr, TRUE);
-                    panel->updateText();
+                    panel->updateTextTexture();
                     break;
                 }
                 case MAKEWPARAM(1006, STN_CLICKED): {
@@ -501,7 +561,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
                     }
                     panel->backgroundColorBrush = CreateSolidBrush(cc.rgbResult);
                     InvalidateRect(GetDlgItem(hwnd, 1006), nullptr, TRUE);
-                    panel->updateText();
+                    panel->updateTextTexture();
                     break;
                 }
                 case MAKEWPARAM(1004, EN_CHANGE): {
@@ -590,7 +650,36 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
                     }
                     break;
                 }
-                case MAKEWPARAM(1011, BN_CLICKED): {
+                case MAKEWPARAM(1011, EN_CHANGE): {
+                    if (noEnChangeNotification) break;
+                    auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
+                    if (panel == nullptr) break;
+                    wchar_t text[16];
+                    GetWindowTextW((HWND)lParam, text, 16);
+                    if (text[0] == 0) break;
+                    auto newVal = (int)std::wcstol(text, nullptr, 10);
+                    auto changed = false;
+                    if (newVal < 0) {
+                        newVal = 0;
+                        changed = true;
+                    } else if (newVal > 100) {
+                        newVal = 100;
+                        changed = true;
+                    }
+                    if (!panel->setNewBorder(newVal)) {
+                        noEnChangeNotification = true;
+                        SetWindowTextW((HWND)lParam, std::to_wstring(panel->border).c_str());
+                        noEnChangeNotification = false;
+                        break;
+                    }
+                    if (changed) {
+                        noEnChangeNotification = true;
+                        SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+                        noEnChangeNotification = false;
+                    }
+                    break;
+                }
+                case MAKEWPARAM(1013, BN_CLICKED): {
                     auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
                     auto newAuto = SendMessageW((HWND)lParam, BM_GETCHECK, 0, 0) == BST_CHECKED;
                     if (newAuto == panel->autoSize) break;
@@ -736,35 +825,7 @@ int wmain(int argc, wchar_t *argv[]) {
         }
         for (auto &p: gPanels) {
             auto *panel = &p.second;
-            auto *renderer = panel->renderer;
-            auto *texture = panel->texture;
-            auto &col = panel->backgroundColor;
-            SDL_SetRenderDrawColor(renderer, col.r, col.g, col.b, col.a);
-            SDL_RenderClear(renderer);
-            if (texture) {
-                int w, h;
-                SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
-                SDL_FRect rect = {0, 0, (float)w, (float)h};
-                SDL_RenderTexture(renderer, texture, nullptr, &rect);
-                if (w < DLG_SIZE_MIN) w = DLG_SIZE_MIN;
-                if (h < DLG_SIZE_MIN) h = DLG_SIZE_MIN;
-                if (panel->autoSize && (panel->w != w || panel->h != h)) {
-                    SDL_SetWindowSize(panel->window, w, h);
-                }
-            }
-            if (SDL_GetKeyboardFocus() == panel->window) {
-                float x, y;
-                SDL_GetGlobalMouseState(&x, &y);
-                int rx = (int)x, ry = (int)y;
-                int wx = panel->x, wy = panel->y, wx2 = wx + panel->w, wy2 = wy + panel->h;
-                if (rx >= wx && rx < wx2 && ry >= wy && ry < wy2) {
-                    const SDL_FRect rect =
-                        {(float)(panel->w - MOUSE_GRAB_PADDING - SETTINGS_ICON_SIZE), MOUSE_GRAB_PADDING,
-                         SETTINGS_ICON_SIZE, SETTINGS_ICON_SIZE};
-                    SDL_RenderTexture(renderer, panel->settingsTexture, nullptr, &rect);
-                }
-            }
-            SDL_RenderPresent(renderer);
+            panel->render();
         }
     }
     QUIT:
