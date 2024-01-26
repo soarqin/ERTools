@@ -1,13 +1,18 @@
 return {
+    -- Output folder for txt files
     output_folder = 'output/',
-    -- milliseconds
+    -- Interval for memory reading, in milliseconds
     update_interval = 1000,
+    -- Set plugins to load (set to false or remove certain items to disable them)
     plugins = {
-        bosses = false
+        info = true,
+        bosses = true,
+        items = true,
     },
+    -- Config entries for plugins
     bosses = {
         -- Show only rememberance bosses
-        only_rememberance = true
+        only_rememberance = true,
     },
     items = {
         -- Show weapon collection progress
@@ -15,6 +20,6 @@ return {
         -- Show protector collection progress
         show_protector_collections = false,
         -- Show equipped items
-        show_equipped = true
+        show_equipped = true,
     }
 }

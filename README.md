@@ -1,21 +1,25 @@
-# 艾尔登法环小工具合集
-用Lua语言编写
+# Tools for Elden Ring
+Written by [Lua](https://www.lua.org/)
 
-#### 注意事项
-* 法环必须绕过小蓝熊运行，目前有两个办法可以快速绕过小蓝熊运行游戏：
-  1. (推荐) 在法环的`eldenring.exe`所在目录创建一个`steam_appid.txt`，里面写上`1245620`，然后用`eldenring.exe`启动游戏
-  2. 备份并删除`start_protected_game.exe`，把`eldenring.exe`改名为`start_protected_game.exe`
+#### Notes
+* Please start `Elden Ring` without EAC, there are two methods:
+  1. (Suggested) Create a `steam_appid.txt` in the same folder of `eldenring.exe`, put `1245620` in the txt file, then start game with `eldenring.exe`.
+  2. Backup and delete `start_protected_game.exe`, rename `eldenring.exe` to `start_protected_game.exe`
 
-## 直播工具
-#### 用法
-* 直接使用
-  + 运行 `livestreamingtool.bat`，会开始自动寻找运行的游戏进程，自动判断游戏的开关
-    - 当游戏开启后会自动寻找对应的内存数据并输出到特定文件
-    - 当游戏关闭后会清空输出文件的内容
-  + 输出`info.txt`, `items.txt`和`bosses.txt`到`output`目录，可以直接用直播工具读取显示(注意部分直播工具可能要选择文本编码为`UTF-8`)
-    - `info.txt`: 当前游戏和角色信息，包含游戏时间、周目数、卢恩数和角色等级属性
-    - `items.txt`: 道具收集进度，目前支持武器和防具
-    - `bosses.txt`: boss击杀进度，全165个boss，会显示总进度和当前所在区域的击杀进度
-* 自定义
-  + 修改`livestreamingtool`目录下的`_config_.lua`配置一些选项，可以修改输出目录等
-  + 修改`livestreamingtool`目录下的`info.lua`, `items.lua`和`bosses.lua`来改变输出文件的格式，你可能需要少量lua的编程知识
+## Live-Streaming Tool
+#### Usage
+* Start
+  + Run `livestreamingtool.bat`, it will find running game process automatically.
+    - When game is started, the tool will try to output to text files from reading game memory blocks
+    - When game is closed, output text files will be cleaned up
+  + By default, the tool writes to `info.txt`, `items.txt` and `bosses.txt` in `output` folder, you can read them in your live-streaming tools (Set text Encoding to `UTF-8` for some tools)
+    - `info.txt`: Game and character information, including game time, NG+ count, death count, runes, character levels and attributes.
+    - `items.txt`:
+      - Rread bag and box to calculate progress of item collections, weapons and armors are supported currently.
+      - Display current equipped items.
+    - `bosses.txt`: show progress of boss slains, you can switch the output in 2 modes:
+      - 165 bosses (Display total progression and current region progression).
+      - 15 rememberance bosses.
+* Customization
+  + Edit `_config_.lua` in folder `livestreamingtool`, to change some options
+  + Modify `info.lua`, `items.lua` and `bosses.lua` in folder `livestreamingtool` to change output content. You may need some knowledge about Lua language.
