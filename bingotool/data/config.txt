@@ -28,6 +28,10 @@ NonFirstScores=1,2,3,4,5
 LineScore=3
 ; 每行最大可完成任务数
 MaxPerRow=3
+; 先通关者的额外积分
+ClearScore=0
+; 通关后的任务差积分倍率
+ClearQuestMultiplier=2
 ; 玩家1名
 Player1=Right丶
 ; 玩家2名

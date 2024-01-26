@@ -34,6 +34,8 @@ static int gScores[5] = {2, 4, 6, 8, 10};
 static int gNFScores[5] = {1, 2, 3, 4, 5};
 static int gLineScore = 3;
 static int gMaxPerRow = 3;
+static int gClearScore = 0;
+static int gClearQuestMultiplier = 2;
 static std::wstring gPlayerName[2] = {L"红方", L"蓝方"};
 
 static SDL_Window *gWindow = nullptr;
@@ -115,7 +117,7 @@ struct ScoreWindow {
                 }
             }
         }
-        extraScore = count[idx] - count[1 - idx];
+        extraScore = gClearScore + gClearQuestMultiplier * (count[idx] - count[1 - idx]);
         hasExtraScore = true;
     }
 
@@ -329,6 +331,10 @@ static void load() {
             gLineScore = std::stoi(value);
         } else if (key == "MaxPerRow") {
             gMaxPerRow = std::stoi(value);
+        } else if (key == "ClearScore") {
+            gClearScore = std::stoi(value);
+        } else if (key == "ClearQuestMultiplier") {
+            gClearQuestMultiplier = std::stoi(value);
         } else if (key == "Player1") {
             wchar_t name[256];
             MultiByteToWideChar(CP_UTF8, 0, value.c_str(), -1, name, 256);
@@ -513,9 +519,9 @@ int wmain(int argc, wchar_t *argv[]) {
                     AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                     AppendMenuW(menu, (cell.status == 0 ? MF_DISABLED : 0) | MF_STRING, 3, L"重置");
                     AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                    AppendMenuW(menu, MF_STRING, 4,
+                    AppendMenuW(menu, MF_STRING | (gScoreWindows[1].hasExtraScore ? MF_DISABLED : 0), 4,
                                 (gPlayerName[0] + (gScoreWindows[0].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
-                    AppendMenuW(menu, MF_STRING, 5,
+                    AppendMenuW(menu, MF_STRING | (gScoreWindows[0].hasExtraScore ? MF_DISABLED : 0), 5,
                                 (gPlayerName[1] + (gScoreWindows[1].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
                     AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                     AppendMenuW(menu, MF_STRING, 6, L"重新开始");
