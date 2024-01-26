@@ -355,10 +355,9 @@ static void postLoad() {
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
     std::ifstream ifs2("data/squares.txt");
     std::string line;
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
+    for (auto & row : gCells) {
+        for (auto & cell : row) {
             std::getline(ifs2, line);
-            auto &cell = gCells[i][j];
             cell.text = line;
             auto *font = gFont;
             auto fontSize = gFontSize;
@@ -585,6 +584,8 @@ int wmain(int argc, wchar_t *argv[]) {
                         }
                         case 7:
                             goto QUIT;
+                        default:
+                            break;
                     }
                     break;
                 }
@@ -596,7 +597,7 @@ int wmain(int argc, wchar_t *argv[]) {
         for (int i = 0; i < 5; i++) {
             auto y = (float)(i * (gCellSize + gCellSpacing));
             for (int j = 0; j < 5; j++) {
-                float x = (float)(j * (gCellSize + gCellSpacing));
+                auto x = (float)(j * (gCellSize + gCellSpacing));
                 auto &cell = gCells[i][j];
                 bool dbl = cell.status > 2;
                 auto &col = gColors[dbl ? (cell.status - 2) : cell.status];
@@ -622,8 +623,7 @@ int wmain(int argc, wchar_t *argv[]) {
                 }
             }
         }
-        for (int i = 0; i < 2; i++) {
-            auto &sw = gScoreWindows[i];
+        for (auto &sw : gScoreWindows) {
             SDL_SetRenderDrawColor(sw.renderer, 0, 0, 0, gScoreAlpha);
             SDL_RenderClear(sw.renderer);
             SDL_RenderTexture(sw.renderer, sw.texture, nullptr, nullptr);
