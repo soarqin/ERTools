@@ -262,7 +262,7 @@ void Panel::render() {
 }
 
 void Panel::addText(const char *str) {
-    text.push_back('\n');
+    if (!text.empty()) text.push_back('\n');
     text.append(str);
 }
 
@@ -435,6 +435,7 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             if (newAuto == autoSize) break;
             autoSize = newAuto;
             SDL_SetWindowResizable(window, newAuto ? SDL_FALSE : SDL_TRUE);
+            updateTextRenderRect();
             break;
         }
         default:
@@ -444,9 +445,10 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
 }
 
 INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
+    if (noEnChangeNotification)
+        return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
         case 1003: {
-            if (noEnChangeNotification) break;
             wchar_t str[16];
             GetWindowTextW((HWND)lParam, str, 16);
             auto newVal = (int)std::wcstol(str, nullptr, 10);
@@ -472,7 +474,6 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case 1007: {
-            if (noEnChangeNotification) break;
             wchar_t str[16];
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
@@ -499,7 +500,6 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case 1009: {
-            if (noEnChangeNotification) break;
             wchar_t str[16];
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
@@ -526,7 +526,6 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case 1011: {
-            if (noEnChangeNotification) break;
             wchar_t str[16];
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
@@ -610,11 +609,10 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 }
 
 void Panel::showSettingsWindow() {
-    auto hwnd =
-        (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
     if (configDialog) {
-        initConfigDialog(hwnd);
+        initConfigDialog(configDialog);
     } else {
+        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
     ShowWindow(configDialog, SW_SHOW);
