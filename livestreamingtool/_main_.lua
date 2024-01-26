@@ -22,8 +22,12 @@ for file in lfs.dir(script_directory) do
     local filename = script_directory .. file
     local attr = lfs.attributes(filename)
     if attr.mode ~= 'directory' and string.sub(file, -4) == '.lua' then
-      print('  > ' .. string.sub(file, 1, -5))
-      plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
+      local plugin_name = string.sub(file, 1, -5);
+      local plugin_status = config.plugins[plugin_name]
+      if plugin_status == nil or plugin_status then
+        print('  > ' .. plugin_name)
+        plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
+      end
     end
   end
 end

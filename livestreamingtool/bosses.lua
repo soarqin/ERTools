@@ -1,9 +1,5 @@
--- begin of configs
---    Only display rememberance bosses
-local only_rememberance = true
--- end of configs
-
 local cjson = require('cjson')
+local only_rememberance = config.bosses.only_rememberance
 
 -- addresses
 local address_table = nil

@@ -1,11 +1,6 @@
--- begin of configs
---    show weapon collection progress
-local show_weapon_collections = false
---    show protector collection progress
-local show_protector_collections = false
---    show equipped items
-local show_equipped = true
--- end of configs
+local show_weapon_collections = config.items.show_weapon_collections
+local show_protector_collections = config.items.show_protector_collections
+local show_equipped = config.items.show_equipped
 
 local cjson = require('cjson')
 
