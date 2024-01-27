@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Traveler's Clothes"
+  },
+  {
+    "id": 1020200,
+    "name": "Traveler's Manchettes"
+  },
+  {
+    "id": 1020300,
+    "name": "Traveler's Boots"
+  },
+  {
+    "id": 810000,
+    "name": "Commoner's Headband"
+  },
+  {
+    "id": 811000,
+    "name": "Commoner's Headband (Altered)"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Commoner's Garb/Commoner's Garb (Altered)"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Commoner's Simple Garb/Commoner's Simple Garb (Altered)"
+  },
+  {
+    "id": 810300,
+    "name": "Commoner's Shoes"
+  },
+  {
+    "id": 370000,
+    "name": "Aristocrat Headband"
+  },
+  {
+    "id": 380000,
+    "name": "Aristocrat Hat"
+  },
+  {
+    "id": 370100,
+    "name": "Aristocrat Garb"
+  },
+  {
+    "id": 371100,
+    "name": "Aristocrat Garb (Altered)"
+  },
+  {
+    "id": 380100,
+    "name": "Aristocrat Coat"
+  },
+  {
+    "id": 370300,
+    "name": "Aristocrat Boots"
+  },
+  {
+    "id": 390000,
+    "name": "Old Aristocrat Cowl"
+  },
+  {
+    "id": 390100,
+    "name": "Old Aristocrat Gown"
+  },
+  {
+    "id": 390300,
+    "name": "Old Aristocrat Shoes"
+  },
+  {
+    "id": 220000,
+    "name": "Page Hood"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Page Garb/Page Garb (Altered)"
+  },
+  {
+    "id": 220300,
+    "name": "Page Trousers"
+  },
+  {
+    "id": 1990000,
+    "name": "High Page Hood"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "High Page Clothes/High Page Clothes (Altered)"
+  },
+  {
+    "id": 330000,
+    "name": "Guardian Mask"
+  },
+  {
+    "id": 331100,
+    "name": "Guardian Garb"
+  },
+  {
+    "id": 330100,
+    "name": "Guardian Garb (Full Bloom)"
+  },
+  {
+    "id": 330200,
+    "name": "Guardian Bracers"
+  },
+  {
+    "id": 330300,
+    "name": "Guardian Greaves"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Festive Hood/Festive Hood (Altered)"
+  },
+  {
+    "id": 800100,
+    "name": "Festive Garb"
+  },
+  {
+    "id": 801100,
+    "name": "Festive Garb (Altered)"
+  },
+  {
+    "id": 802000,
+    "name": "Blue Festive Hood"
+  },
+  {
+    "id": 802100,
+    "name": "Blue Festive Garb"
+  },
+  {
+    "id": 160000,
+    "name": "Guilty Hood"
+  },
+  {
+    "id": 160100,
+    "name": "Cloth Garb"
+  },
+  {
+    "id": 160300,
+    "name": "Cloth Trousers"
+  },
+  {
+    "id": 890000,
+    "name": "Prisoner Iron Mask"
+  },
+  {
+    "id": 890100,
+    "name": "Prisoner Clothing"
+  },
+  {
+    "id": 890300,
+    "name": "Prisoner Trousers"
+  },
+  {
+    "id": 891000,
+    "name": "Blackguard's Iron Mask"
+  },
+  {
+    "id": 964000,
+    "name": "Bloodsoaked Mask"
+  },
+  {
+    "id": 964100,
+    "name": "Official's Attire"
+  },
+  {
+    "id": 963200,
+    "name": "Bloodsoaked Manchettes"
+  },
+  {
+    "id": 2020000,
+    "name": "Black Dumpling"
+  },
+  {
+    "id": 1130000,
+    "name": "Mushroom Head"
+  },
+  {
+    "id": 2010000,
+    "name": "Mushroom Crown"
+  },
+  {
+    "id": 1130100,
+    "name": "Mushroom Body"
+  },
+  {
+    "id": 1130200,
+    "name": "Mushroom Arms"
+  },
+  {
+    "id": 1130300,
+    "name": "Mushroom Legs"
+  },
+  {
+    "id": 630000,
+    "name": "Astrologer Hood"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Astrologer Robe/Astrologer Robe (Altered)"
+  },
+  {
+    "id": 630200,
+    "name": "Astrologer Gloves"
+  },
+  {
+    "id": 630300,
+    "name": "Astrologer Trousers"
+  },
+  {
+    "id": 1030000,
+    "name": "Juvenile Scholar Cap"
+  },
+  {
+    "id": 1030100,
+    "name": "Juvenile Scholar Robe"
+  },
+  {
+    "id": 833000,
+    "name": "Karolos Glintstone Crown"
+  },
+  {
+    "id": 831000,
+    "name": "Olivinus Glintstone Crown"
+  },
+  {
+    "id": 830000,
+    "name": "Twinsage Glintstone Crown"
+  },
+  {
+    "id": 834000,
+    "name": "Witch's Glintstone Crown"
+  },
+  {
+    "id": 830100,
+    "name": "Raya Lucarian Robe"
+  },
+  {
+    "id": 830200,
+    "name": "Sorcerer Manchettes"
+  },
+  {
+    "id": 830300,
+    "name": "Sorcerer Leggings"
+  },
+  {
+    "id": 832000,
+    "name": "Lazuli Glintstone Crown"
+  },
+  {
+    "id": 2030000,
+    "name": "Lazuli Robe"
+  },
+  {
+    "id": 1000000,
+    "name": "Haima Glintstone Crown"
+  },
+  {
+    "id": 1000100,
+    "name": "Battlemage Robe"
+  },
+  {
+    "id": 1000200,
+    "name": "Battlemage Manchettes"
+  },
+  {
+    "id": 1000300,
+    "name": "Battlemage Legwraps"
+  },
+  {
+    "id": 990000,
+    "name": "Hierodas Glintstone Crown"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Errant Sorcerer Robe/Errant Sorcerer Robe (Altered)"
+  },
+  {
+    "id": 990200,
+    "name": "Errant Sorcerer Manchettes"
+  },
+  {
+    "id": 990300,
+    "name": "Errant Sorcerer Boots"
+  },
+  {
+    "id": 130000,
+    "name": "Spellblade's Pointed Hat"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Spellblade's Traveling Attire/Spellblade's Traveling Attire (Altered)"
+  },
+  {
+    "id": 130200,
+    "name": "Spellblade's Gloves"
+  },
+  {
+    "id": 130300,
+    "name": "Spellblade's Trousers"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Alberich's Pointed Hat/Alberich's Pointed Hat (Altered)"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Alberich's Robe/Alberich's Robe (Altered)"
+  },
+  {
+    "id": 120200,
+    "name": "Alberich's Bracers"
+  },
+  {
+    "id": 120300,
+    "name": "Alberich's Trousers"
+  },
+  {
+    "id": 910000,
+    "name": "Preceptor's Big Hat"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Preceptor's Long Gown/Preceptor's Long Gown (Altered)"
+  },
+  {
+    "id": 910200,
+    "name": "Preceptor's Gloves"
+  },
+  {
+    "id": 910300,
+    "name": "Preceptor's Trousers"
+  },
+  {
+    "id": 911000,
+    "name": "Mask of Confidence"
+  },
+  {
+    "id": 581000,
+    "name": "Azur's Glintstone Crown"
+  },
+  {
+    "id": 581100,
+    "name": "Azur's Glintstone Robe"
+  },
+  {
+    "id": 581200,
+    "name": "Azur's Manchettes"
+  },
+  {
+    "id": 580000,
+    "name": "Lusat's Glintstone Crown"
+  },
+  {
+    "id": 580100,
+    "name": "Lusat's Robe"
+  },
+  {
+    "id": 580200,
+    "name": "Lusat's Manchettes"
+  },
+  {
+    "id": 580300,
+    "name": "Old Sorcerer's Legwraps"
+  },
+  {
+    "id": 510000,
+    "name": "Queen's Crescent Crown"
+  },
+  {
+    "id": 510100,
+    "name": "Queen's Robe"
+  },
+  {
+    "id": 510200,
+    "name": "Queen's Bracelets"
+  },
+  {
+    "id": 510300,
+    "name": "Queen's Leggings"
+  },
+  {
+    "id": 1010000,
+    "name": "Snow Witch Hat"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Snow Witch Robe/Snow Witch Robe (Altered)"
+  },
+  {
+    "id": 1010300,
+    "name": "Snow Witch Skirt"
+  },
+  {
+    "id": 1940000,
+    "name": "Fia's Hood"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Fia's Robe/Fia's Robe (Altered)"
+  },
+  {
+    "id": 1930100,
+    "name": "Deathbed Dress"
+  },
+  {
+    "id": 620000,
+    "name": "Prophet Blindfold"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Prophet Robe (Altered)/Prophet Robe"
+  },
+  {
+    "id": 620300,
+    "name": "Prophet Trousers"
+  },
+  {
+    "id": 620100,
+    "name": "Corhyn's Robe"
+  },
+  {
+    "id": 900000,
+    "name": "Traveling Maiden Hood"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Traveling Maiden Robe/Traveling Maiden Robe (Altered)"
+  },
+  {
+    "id": 900200,
+    "name": "Traveling Maiden Gloves"
+  },
+  {
+    "id": 900300,
+    "name": "Traveling Maiden Boots"
+  },
+  {
+    "id": 902000,
+    "name": "Finger Maiden Fillet"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Finger Maiden Robe/Finger Maiden Robe (Altered)"
+  },
+  {
+    "id": 902300,
+    "name": "Finger Maiden Shoes"
+  },
+  {
+    "id": 430000,
+    "name": "Sage Hood"
+  },
+  {
+    "id": 430100,
+    "name": "Sage Robe"
+  },
+  {
+    "id": 430300,
+    "name": "Sage Trousers"
+  },
+  {
+    "id": 1600000,
+    "name": "Greathood"
+  },
+  {
+    "id": 1040000,
+    "name": "Radiant Gold Mask"
+  },
+  {
+    "id": 1040100,
+    "name": "Goldmask's Rags"
+  },
+  {
+    "id": 1040200,
+    "name": "Gold Bracelets"
+  },
+  {
+    "id": 1040300,
+    "name": "Gold Waistwrap"
+  },
+  {
+    "id": 90000,
+    "name": "Perfumer Hood"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Perfumer Robe/Perfumer Robe (Altered)"
+  },
+  {
+    "id": 90200,
+    "name": "Perfumer Gloves"
+  },
+  {
+    "id": 90300,
+    "name": "Perfumer Sarong"
+  },
+  {
+    "id": 100000,
+    "name": "Traveler's Hat"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Perfumer's Traveling Garb/Perfumer's Traveling Garb (Altered)"
+  },
+  {
+    "id": 100200,
+    "name": "Traveler's Gloves"
+  },
+  {
+    "id": 100300,
+    "name": "Traveler's Slops"
+  },
+  {
+    "id": 540000,
+    "name": "Depraved Perfumer Headscarf"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Depraved Perfumer Robe/Depraved Perfumer Robe (Altered)"
+  },
+  {
+    "id": 540200,
+    "name": "Depraved Perfumer Gloves"
+  },
+  {
+    "id": 540300,
+    "name": "Depraved Perfumer Trousers"
+  },
+  {
+    "id": 962100,
+    "name": "Upper-Class Robe"
+  },
+  {
+    "id": 961000,
+    "name": "Ruler's Mask"
+  },
+  {
+    "id": 961100,
+    "name": "Ruler's Robe"
+  },
+  {
+    "id": 960000,
+    "name": "Consort's Mask"
+  },
+  {
+    "id": 960100,
+    "name": "Consort's Robe"
+  },
+  {
+    "id": 960300,
+    "name": "Consort's Trousers"
+  },
+  {
+    "id": 963000,
+    "name": "Marais Mask"
+  },
+  {
+    "id": 963100,
+    "name": "Marais Robe"
+  },
+  {
+    "id": 300000,
+    "name": "Great Horned Headband"
+  },
+  {
+    "id": 300100,
+    "name": "Fur Raiment"
+  },
+  {
+    "id": 300300,
+    "name": "Fur Leggings"
+  },
+  {
+    "id": 301000,
+    "name": "Shining Horned Headband"
+  },
+  {
+    "id": 301100,
+    "name": "Shaman Furs"
+  },
+  {
+    "id": 301300,
+    "name": "Shaman Leggings"
+  },
+  {
+    "id": 520000,
+    "name": "Godskin Apostle Hood"
+  },
+  {
+    "id": 520100,
+    "name": "Godskin Apostle Robe"
+  },
+  {
+    "id": 520200,
+    "name": "Godskin Apostle Bracelets"
+  },
+  {
+    "id": 520300,
+    "name": "Godskin Apostle Trousers"
+  },
+  {
+    "id": 530000,
+    "name": "Godskin Noble Hood"
+  },
+  {
+    "id": 530100,
+    "name": "Godskin Noble Robe"
+  },
+  {
+    "id": 530200,
+    "name": "Godskin Noble Bracelets"
+  },
+  {
+    "id": 530300,
+    "name": "Godskin Noble Trousers"
+  },
+  {
+    "id": 1050100,
+    "name": "Fell Omen Cloak"
+  },
+  {
+    "id": 320000,
+    "name": "Sanguine Noble Hood"
+  },
+  {
+    "id": 320100,
+    "name": "Sanguine Noble Robe"
+  },
+  {
+    "id": 320300,
+    "name": "Sanguine Noble Waistcloth"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Lord of Blood's Robe/Lord of Blood's Robe (Altered)"
+  },
+  {
+    "id": 1910000,
+    "name": "Crimson Tear Scarab"
+  },
+  {
+    "id": 1920000,
+    "name": "Cerulean Tear Scarab"
+  },
+  {
+    "id": 1900000,
+    "name": "Ash-of-War Scarab"
+  },
+  {
+    "id": 1902000,
+    "name": "Glintstone Scarab"
+  },
+  {
+    "id": 1901000,
+    "name": "Incantation Scarab"
+  },
+  {
+    "id": 1080000,
+    "name": "Imp Head (Cat)"
+  },
+  {
+    "id": 1084000,
+    "name": "Imp Head (Wolf)"
+  },
+  {
+    "id": 1081000,
+    "name": "Imp Head (Fanged)"
+  },
+  {
+    "id": 1082000,
+    "name": "Imp Head (Long-Tongued)"
+  },
+  {
+    "id": 1083000,
+    "name": "Imp Head (Corpse)"
+  },
+  {
+    "id": 1085000,
+    "name": "Imp Head (Elder)"
+  },
+  {
+    "id": 1300000,
+    "name": "Nox Mirrorhelm"
+  },
+  {
+    "id": 1301000,
+    "name": "Iji's Mirrorhelm"
+  },
+  {
+    "id": 1090000,
+    "name": "Silver Tear Mask"
+  },
+  {
+    "id": 820000,
+    "name": "Envoy Crown"
+  },
+  {
+    "id": 1110000,
+    "name": "Octopus Head"
+  },
+  {
+    "id": 1120000,
+    "name": "Jar"
+  },
+  {
+    "id": 1060000,
+    "name": "Albinauric Mask"
+  },
+  {
+    "id": 1060100,
+    "name": "Dirty Chainmail"
+  },
+  {
+    "id": 1400000,
+    "name": "Black Hood"
+  },
+  {
+    "id": 1400100,
+    "name": "Leather Armor"
+  },
+  {
+    "id": 1400200,
+    "name": "Leather Gloves"
+  },
+  {
+    "id": 1400300,
+    "name": "Leather Boots"
+  },
+  {
+    "id": 670000,
+    "name": "Blue Cloth Cowl"
+  },
+  {
+    "id": 670100,
+    "name": "Blue Cloth Vest"
+  },
+  {
+    "id": 670200,
+    "name": "Warrior Gauntlets"
+  },
+  {
+    "id": 670300,
+    "name": "Warrior Greaves"
+  },
+  {
+    "id": 740000,
+    "name": "Crimson Hood"
+  },
+  {
+    "id": 741000,
+    "name": "Navy Hood"
+  },
+  {
+    "id": 740100,
+    "name": "Noble's Traveling Garb"
+  },
+  {
+    "id": 740200,
+    "name": "Noble's Gloves"
+  },
+  {
+    "id": 740300,
+    "name": "Noble's Trousers"
+  },
+  {
+    "id": 680000,
+    "name": "White Mask"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "War Surgeon Gown/War Surgeon Gown (Altered)"
+  },
+  {
+    "id": 680200,
+    "name": "War Surgeon Gloves"
+  },
+  {
+    "id": 680300,
+    "name": "War Surgeon Trousers"
+  },
+  {
+    "id": 250000,
+    "name": "Nomadic Merchant's Chapeau"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Nomadic Merchant's Finery/Nomadic Merchant's Finery (Altered)"
+  },
+  {
+    "id": 250300,
+    "name": "Nomadic Merchant's Trousers"
+  },
+  {
+    "id": 1401000,
+    "name": "Bandit Mask"
+  },
+  {
+    "id": 931100,
+    "name": "Bandit Garb"
+  },
+  {
+    "id": 930200,
+    "name": "Bandit Manchettes"
+  },
+  {
+    "id": 930300,
+    "name": "Bandit Boots"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Confessor Hood/Confessor Hood (Altered)"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Confessor Armor/Confessor Armor (Altered)"
+  },
+  {
+    "id": 880200,
+    "name": "Confessor Gloves"
+  },
+  {
+    "id": 880300,
+    "name": "Confessor Boots"
+  },
+  {
+    "id": 1890000,
+    "name": "Omensmirk Mask"
+  },
+  {
+    "id": 1890100,
+    "name": "Omenkiller Robe"
+  },
+  {
+    "id": 1890200,
+    "name": "Omenkiller Long Gloves"
+  },
+  {
+    "id": 1890300,
+    "name": "Omenkiller Boots"
+  },
+  {
+    "id": 930000,
+    "name": "Skeletal Mask"
+  },
+  {
+    "id": 930100,
+    "name": "Raptor's Black Feathers"
+  },
+  {
+    "id": 1830000,
+    "name": "Foot Soldier Cap"
+  },
+  {
+    "id": 1830100,
+    "name": "Chain-Draped Tabard"
+  },
+  {
+    "id": 1830200,
+    "name": "Foot Soldier Gauntlets"
+  },
+  {
+    "id": 1830300,
+    "name": "Foot Soldier Greaves"
+  },
+  {
+    "id": 1840000,
+    "name": "Foot Soldier Helmet"
+  },
+  {
+    "id": 1840100,
+    "name": "Foot Soldier Tabard"
+  },
+  {
+    "id": 1860000,
+    "name": "Foot Soldier Helm"
+  },
+  {
+    "id": 1860100,
+    "name": "Scarlet Tabard"
+  },
+  {
+    "id": 1850000,
+    "name": "Gilded Foot Soldier Cap"
+  },
+  {
+    "id": 1850100,
+    "name": "Leather-Draped Tabard"
+  },
+  {
+    "id": 1880000,
+    "name": "Sacred Crown Helm"
+  },
+  {
+    "id": 1880100,
+    "name": "Ivory-Draped Tabard"
+  },
+  {
+    "id": 1870100,
+    "name": "Bloodsoaked Tabard"
+  },
+  {
+    "id": 1980000,
+    "name": "Highwayman Hood"
+  },
+  {
+    "id": 1980100,
+    "name": "Highwayman Cloth Armor"
+  },
+  {
+    "id": 1980200,
+    "name": "Highwayman Gauntlets"
+  },
+  {
+    "id": 420000,
+    "name": "Vulgar Militia Helm"
+  },
+  {
+    "id": 420100,
+    "name": "Vulgar Militia Armor"
+  },
+  {
+    "id": 420200,
+    "name": "Vulgar Militia Gauntlets"
+  },
+  {
+    "id": 420300,
+    "name": "Vulgar Militia Greaves"
+  },
+  {
+    "id": 310000,
+    "name": "Duelist Helm"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Gravekeeper Cloak/Gravekeeper Cloak (Altered)"
+  },
+  {
+    "id": 310300,
+    "name": "Duelist Greaves"
+  },
+  {
+    "id": 2000000,
+    "name": "Rotten Duelist Helm"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Rotten Gravekeeper Cloak/Rotten Gravekeeper Cloak (Altered)"
+  },
+  {
+    "id": 2000300,
+    "name": "Rotten Duelist Greaves"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Nox Monk Hood/Nox Monk Hood (Altered)"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Nox Monk Armor/Nox Monk Armor (Altered)"
+  },
+  {
+    "id": 290200,
+    "name": "Nox Bracelets"
+  },
+  {
+    "id": 290300,
+    "name": "Nox Greaves"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Nox Swordstress Crown/Nox Swordstress Crown (Altered)"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Nox Swordstress Armor/Nox Swordstress Armor (Altered)"
+  },
+  {
+    "id": 293000,
+    "name": "Night Maiden Twin Crown"
+  },
+  {
+    "id": 293100,
+    "name": "Night Maiden Armor"
+  },
+  {
+    "id": 730000,
+    "name": "Champion Headband"
+  },
+  {
+    "id": 730100,
+    "name": "Champion Pauldron"
+  },
+  {
+    "id": 730200,
+    "name": "Champion Bracers"
+  },
+  {
+    "id": 730300,
+    "name": "Champion Gaiters"
+  },
+  {
+    "id": 1100000,
+    "name": "Chain Coif"
+  },
+  {
+    "id": 1100100,
+    "name": "Chain Armor"
+  },
+  {
+    "id": 1102100,
+    "name": "Tree Surcoat"
+  },
+  {
+    "id": 1101100,
+    "name": "Eye Surcoat"
+  },
+  {
+    "id": 1100200,
+    "name": "Gauntlets"
+  },
+  {
+    "id": 1100300,
+    "name": "Chain Leggings"
+  },
+  {
+    "id": 40000,
+    "name": "Iron Helmet"
+  },
+  {
+    "id": 40100,
+    "name": "Scale Armor"
+  },
+  {
+    "id": 40200,
+    "name": "Iron Gauntlets"
+  },
+  {
+    "id": 40300,
+    "name": "Leather Trousers"
+  },
+  {
+    "id": 1700000,
+    "name": "Godrick Soldier Helm"
+  },
+  {
+    "id": 1700100,
+    "name": "Tree-and-Beast Surcoat"
+  },
+  {
+    "id": 1700200,
+    "name": "Godrick Soldier Gauntlets"
+  },
+  {
+    "id": 1700300,
+    "name": "Godrick Soldier Greaves"
+  },
+  {
+    "id": 1710000,
+    "name": "Raya Lucarian Helm"
+  },
+  {
+    "id": 1710100,
+    "name": "Cuckoo Surcoat"
+  },
+  {
+    "id": 1710200,
+    "name": "Raya Lucarian Gauntlets"
+  },
+  {
+    "id": 1710300,
+    "name": "Raya Lucarian Greaves"
+  },
+  {
+    "id": 1730000,
+    "name": "Radahn Soldier Helm"
+  },
+  {
+    "id": 1730100,
+    "name": "Redmane Surcoat"
+  },
+  {
+    "id": 1730200,
+    "name": "Radahn Soldier Gauntlets"
+  },
+  {
+    "id": 1730300,
+    "name": "Radahn Soldier Greaves"
+  },
+  {
+    "id": 1720000,
+    "name": "Leyndell Soldier Helm"
+  },
+  {
+    "id": 1720100,
+    "name": "Erdtree Surcoat"
+  },
+  {
+    "id": 1720200,
+    "name": "Leyndell Soldier Gauntlets"
+  },
+  {
+    "id": 1720300,
+    "name": "Leyndell Soldier Greaves"
+  },
+  {
+    "id": 1750000,
+    "name": "Haligtree Helm"
+  },
+  {
+    "id": 1750100,
+    "name": "Haligtree Crest Surcoat"
+  },
+  {
+    "id": 1750200,
+    "name": "Haligtree Gauntlets"
+  },
+  {
+    "id": 1750300,
+    "name": "Haligtree Greaves"
+  },
+  {
+    "id": 1740100,
+    "name": "Mausoleum Surcoat"
+  },
+  {
+    "id": 1740200,
+    "name": "Mausoleum Gauntlets"
+  },
+  {
+    "id": 1740300,
+    "name": "Mausoleum Greaves"
+  },
+  {
+    "id": 190000,
+    "name": "Exile Hood"
+  },
+  {
+    "id": 190100,
+    "name": "Exile Armor"
+  },
+  {
+    "id": 190200,
+    "name": "Exile Gauntlets"
+  },
+  {
+    "id": 190300,
+    "name": "Exile Greaves"
+  },
+  {
+    "id": 50000,
+    "name": "Kaiden Helm"
+  },
+  {
+    "id": 50100,
+    "name": "Kaiden Armor"
+  },
+  {
+    "id": 50200,
+    "name": "Kaiden Gauntlets"
+  },
+  {
+    "id": 50300,
+    "name": "Kaiden Trousers"
+  },
+  {
+    "id": 870000,
+    "name": "Land of Reeds Helm"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Land of Reeds Armor/Land of Reeds Armor (Altered)"
+  },
+  {
+    "id": 870200,
+    "name": "Land of Reeds Gauntlets"
+  },
+  {
+    "id": 870300,
+    "name": "Land of Reeds Greaves"
+  },
+  {
+    "id": 872000,
+    "name": "Okina Mask"
+  },
+  {
+    "id": 872100,
+    "name": "White Reed Armor"
+  },
+  {
+    "id": 872200,
+    "name": "White Reed Gauntlets"
+  },
+  {
+    "id": 872300,
+    "name": "White Reed Greaves"
+  },
+  {
+    "id": 150000,
+    "name": "Iron Kasa"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Ronin's Armor/Ronin's Armor (Altered)"
+  },
+  {
+    "id": 150200,
+    "name": "Ronin's Gauntlets"
+  },
+  {
+    "id": 150300,
+    "name": "Ronin's Greaves"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Eccentric's Hood/Eccentric's Hood (Altered)"
+  },
+  {
+    "id": 940100,
+    "name": "Eccentric's Armor"
+  },
+  {
+    "id": 940200,
+    "name": "Eccentric's Manchettes"
+  },
+  {
+    "id": 940300,
+    "name": "Eccentric's Breeches"
+  },
+  {
+    "id": 840000,
+    "name": "Marionette Soldier Helm"
+  },
+  {
+    "id": 850000,
+    "name": "Marionette Soldier Birdhelm"
+  },
+  {
+    "id": 840100,
+    "name": "Marionette Soldier Armor"
+  },
+  {
+    "id": 240000,
+    "name": "Blue Silver Mail Hood"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Blue Silver Mail Armor/Blue Silver Mail Armor (Altered)"
+  },
+  {
+    "id": 240200,
+    "name": "Blue Silver Bracelets"
+  },
+  {
+    "id": 240300,
+    "name": "Blue Silver Mail Skirt"
+  },
+  {
+    "id": 350000,
+    "name": "Fire Monk Hood"
+  },
+  {
+    "id": 350100,
+    "name": "Fire Monk Armor"
+  },
+  {
+    "id": 350200,
+    "name": "Fire Monk Gauntlets"
+  },
+  {
+    "id": 350300,
+    "name": "Fire Monk Greaves"
+  },
+  {
+    "id": 351000,
+    "name": "Blackflame Monk Hood"
+  },
+  {
+    "id": 351100,
+    "name": "Blackflame Monk Armor"
+  },
+  {
+    "id": 351200,
+    "name": "Blackflame Monk Gauntlets"
+  },
+  {
+    "id": 351300,
+    "name": "Blackflame Monk Greaves"
+  },
+  {
+    "id": 1070000,
+    "name": "Zamor Mask"
+  },
+  {
+    "id": 1070100,
+    "name": "Zamor Armor"
+  },
+  {
+    "id": 1070200,
+    "name": "Zamor Bracelets"
+  },
+  {
+    "id": 1070300,
+    "name": "Zamor Legwraps"
+  },
+  {
+    "id": 180000,
+    "name": "Black Knife Hood"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Black Knife Armor/Black Knife Armor (Altered)"
+  },
+  {
+    "id": 180200,
+    "name": "Black Knife Gauntlets"
+  },
+  {
+    "id": 180300,
+    "name": "Black Knife Greaves"
+  },
+  {
+    "id": 770000,
+    "name": "Malenia's Winged Helm"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Malenia's Armor/Malenia's Armor (Altered)"
+  },
+  {
+    "id": 770200,
+    "name": "Malenia's Gauntlet"
+  },
+  {
+    "id": 770300,
+    "name": "Malenia's Greaves"
+  },
+  {
+    "id": 460000,
+    "name": "Elden Lord Crown"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Elden Lord Armor/Elden Lord Armor (Altered)"
+  },
+  {
+    "id": 460200,
+    "name": "Elden Lord Bracers"
+  },
+  {
+    "id": 460300,
+    "name": "Elden Lord Greaves"
+  },
+  {
+    "id": 1500000,
+    "name": "Knight Helm"
+  },
+  {
+    "id": 1500100,
+    "name": "Knight Armor"
+  },
+  {
+    "id": 1500200,
+    "name": "Knight Gauntlets"
+  },
+  {
+    "id": 1500300,
+    "name": "Knight Greaves"
+  },
+  {
+    "id": 660000,
+    "name": "Vagabond Knight Helm"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Vagabond Knight Armor/Vagabond Knight Armor (Altered)"
+  },
+  {
+    "id": 660200,
+    "name": "Vagabond Knight Gauntlets"
+  },
+  {
+    "id": 660300,
+    "name": "Vagabond Knight Greaves"
+  },
+  {
+    "id": 1101000,
+    "name": "Greathelm"
+  },
+  {
+    "id": 980000,
+    "name": "Carian Knight Helm"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Carian Knight Armor/Carian Knight Armor (Altered)"
+  },
+  {
+    "id": 980200,
+    "name": "Carian Knight Gauntlets"
+  },
+  {
+    "id": 980300,
+    "name": "Carian Knight Greaves"
+  },
+  {
+    "id": 1770000,
+    "name": "Godrick Knight Helm"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Godrick Knight Armor/Godrick Knight Armor (Altered)"
+  },
+  {
+    "id": 1770200,
+    "name": "Godrick Knight Gauntlets"
+  },
+  {
+    "id": 1770300,
+    "name": "Godrick Knight Greaves"
+  },
+  {
+    "id": 1780000,
+    "name": "Cuckoo Knight Helm"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Cuckoo Knight Armor/Cuckoo Knight Armor (Altered)"
+  },
+  {
+    "id": 1780200,
+    "name": "Cuckoo Knight Gauntlets"
+  },
+  {
+    "id": 1780300,
+    "name": "Cuckoo Knight Greaves"
+  },
+  {
+    "id": 1800000,
+    "name": "Redmane Knight Helm"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Redmane Knight Armor/Redmane Knight Armor (Altered)"
+  },
+  {
+    "id": 1800200,
+    "name": "Redmane Knight Gauntlets"
+  },
+  {
+    "id": 1800300,
+    "name": "Redmane Knight Greaves"
+  },
+  {
+    "id": 1760000,
+    "name": "Gelmir Knight Helm"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Gelmir Knight Armor/Gelmir Knight Armor (Altered)"
+  },
+  {
+    "id": 1760200,
+    "name": "Gelmir Knight Gauntlets"
+  },
+  {
+    "id": 1760300,
+    "name": "Gelmir Knight Greaves"
+  },
+  {
+    "id": 1790000,
+    "name": "Leyndell Knight Helm"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Leyndell Knight Armor/Leyndell Knight Armor (Altered)"
+  },
+  {
+    "id": 1790200,
+    "name": "Leyndell Knight Gauntlets"
+  },
+  {
+    "id": 1790300,
+    "name": "Leyndell Knight Greaves"
+  },
+  {
+    "id": 1820000,
+    "name": "Haligtree Knight Helm"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Haligtree Knight Armor/Haligtree Knight Armor (Altered)"
+  },
+  {
+    "id": 1820200,
+    "name": "Haligtree Knight Gauntlets"
+  },
+  {
+    "id": 1820300,
+    "name": "Haligtree Knight Greaves"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Mausoleum Knight Armor/Mausoleum Knight Armor (Altered)"
+  },
+  {
+    "id": 1810200,
+    "name": "Mausoleum Knight Gauntlets"
+  },
+  {
+    "id": 1810300,
+    "name": "Mausoleum Knight Greaves"
+  },
+  {
+    "id": 790000,
+    "name": "Bloodhound Knight Helm"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Bloodhound Knight Armor/Bloodhound Knight Armor (Altered)"
+  },
+  {
+    "id": 790200,
+    "name": "Bloodhound Knight Gauntlets"
+  },
+  {
+    "id": 790300,
+    "name": "Bloodhound Knight Greaves"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Cleanrot Helm/Cleanrot Helm (Altered)"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Cleanrot Armor/Cleanrot Armor (Altered)"
+  },
+  {
+    "id": 340200,
+    "name": "Cleanrot Gauntlets"
+  },
+  {
+    "id": 340300,
+    "name": "Cleanrot Greaves"
+  },
+  {
+    "id": 860000,
+    "name": "Raging Wolf Helm"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Raging Wolf Armor/Raging Wolf Armor (Altered)"
+  },
+  {
+    "id": 860200,
+    "name": "Raging Wolf Gauntlets"
+  },
+  {
+    "id": 860300,
+    "name": "Raging Wolf Greaves"
+  },
+  {
+    "id": 650000,
+    "name": "Hoslow's Helm"
+  },
+  {
+    "id": 651000,
+    "name": "Diallos's Mask"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Hoslow's Armor/Hoslow's Armor (Altered)"
+  },
+  {
+    "id": 650200,
+    "name": "Hoslow's Gauntlets"
+  },
+  {
+    "id": 650300,
+    "name": "Hoslow's Greaves"
+  },
+  {
+    "id": 600000,
+    "name": "Twinned Helm"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Twinned Armor/Twinned Armor (Altered)"
+  },
+  {
+    "id": 600200,
+    "name": "Twinned Gauntlets"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Twinned Greaves/Twinned Greaves (Altered)"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Drake Knight Helm/Drake Knight Helm (Altered)"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Drake Knight Armor/Drake Knight Armor (Altered)"
+  },
+  {
+    "id": 60200,
+    "name": "Drake Knight Gauntlets"
+  },
+  {
+    "id": 60300,
+    "name": "Drake Knight Greaves"
+  },
+  {
+    "id": 170000,
+    "name": "Black Wolf Mask"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Blaidd's Armor/Blaidd's Armor (Altered)"
+  },
+  {
+    "id": 170200,
+    "name": "Blaidd's Gauntlets"
+  },
+  {
+    "id": 170300,
+    "name": "Blaidd's Greaves"
+  },
+  {
+    "id": 210000,
+    "name": "Briar Helm"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Briar Armor/Briar Armor (Altered)"
+  },
+  {
+    "id": 210200,
+    "name": "Briar Gauntlets"
+  },
+  {
+    "id": 210300,
+    "name": "Briar Greaves"
+  },
+  {
+    "id": 950000,
+    "name": "Fingerprint Helm"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Fingerprint Armor/Fingerprint Armor (Altered)"
+  },
+  {
+    "id": 950200,
+    "name": "Fingerprint Gauntlets"
+  },
+  {
+    "id": 950300,
+    "name": "Fingerprint Greaves"
+  },
+  {
+    "id": 690000,
+    "name": "Royal Remains Helm"
+  },
+  {
+    "id": 690100,
+    "name": "Royal Remains Armor"
+  },
+  {
+    "id": 690200,
+    "name": "Royal Remains Gauntlets"
+  },
+  {
+    "id": 690300,
+    "name": "Royal Remains Greaves"
+  },
+  {
+    "id": 590000,
+    "name": "All-Knowing Helm"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "All-Knowing Armor/All-Knowing Armor (Altered)"
+  },
+  {
+    "id": 590200,
+    "name": "All-Knowing Gauntlets"
+  },
+  {
+    "id": 590300,
+    "name": "All-Knowing Greaves"
+  },
+  {
+    "id": 280000,
+    "name": "Royal Knight Helm"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Royal Knight Armor/Royal Knight Armor (Altered)"
+  },
+  {
+    "id": 280200,
+    "name": "Royal Knight Gauntlets"
+  },
+  {
+    "id": 280300,
+    "name": "Royal Knight Greaves"
+  },
+  {
+    "id": 760000,
+    "name": "Maliketh's Helm"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Maliketh's Armor/Maliketh's Armor (Altered)"
+  },
+  {
+    "id": 760200,
+    "name": "Maliketh's Gauntlets"
+  },
+  {
+    "id": 760300,
+    "name": "Maliketh's Greaves"
+  },
+  {
+    "id": 200000,
+    "name": "Banished Knight Helm"
+  },
+  {
+    "id": 201000,
+    "name": "Banished Knight Helm (Altered)"
+  },
+  {
+    "id": 200100,
+    "name": "Banished Knight Armor"
+  },
+  {
+    "id": 201100,
+    "name": "Banished Knight Armor (Altered)"
+  },
+  {
+    "id": 200200,
+    "name": "Banished Knight Gauntlets"
+  },
+  {
+    "id": 200300,
+    "name": "Banished Knight Greaves"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Night's Cavalry Helm/Night's Cavalry Helm (Altered)"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Night's Cavalry Armor/Night's Cavalry Armor (Altered)"
+  },
+  {
+    "id": 230200,
+    "name": "Night's Cavalry Gauntlets"
+  },
+  {
+    "id": 230300,
+    "name": "Night's Cavalry Greaves"
+  },
+  {
+    "id": 780000,
+    "name": "Veteran's Helm"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Veteran's Armor/Veteran's Armor (Altered)"
+  },
+  {
+    "id": 780200,
+    "name": "Veteran's Gauntlets"
+  },
+  {
+    "id": 780300,
+    "name": "Veteran's Greaves"
+  },
+  {
+    "id": 80000,
+    "name": "Scaled Helm"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Scaled Armor/Scaled Armor (Altered)"
+  },
+  {
+    "id": 80200,
+    "name": "Scaled Gauntlets"
+  },
+  {
+    "id": 80300,
+    "name": "Scaled Greaves"
+  },
+  {
+    "id": 720000,
+    "name": "Beast Champion Helm"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Beast Champion Armor/Beast Champion Armor (Altered)"
+  },
+  {
+    "id": 720200,
+    "name": "Beast Champion Gauntlets"
+  },
+  {
+    "id": 720300,
+    "name": "Beast Champion Greaves"
+  },
+  {
+    "id": 270000,
+    "name": "Tree Sentinel Helm"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Tree Sentinel Armor/Tree Sentinel Armor (Altered)"
+  },
+  {
+    "id": 270200,
+    "name": "Tree Sentinel Gauntlets"
+  },
+  {
+    "id": 270300,
+    "name": "Tree Sentinel Greaves"
+  },
+  {
+    "id": 260000,
+    "name": "Malformed Dragon Helm"
+  },
+  {
+    "id": 260100,
+    "name": "Malformed Dragon Armor"
+  },
+  {
+    "id": 260200,
+    "name": "Malformed Dragon Gauntlets"
+  },
+  {
+    "id": 260300,
+    "name": "Malformed Dragon Greaves"
+  },
+  {
+    "id": 570000,
+    "name": "Crucible Axe Helm"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Crucible Axe Armor/Crucible Axe Armor (Altered)"
+  },
+  {
+    "id": 570200,
+    "name": "Crucible Gauntlets"
+  },
+  {
+    "id": 570300,
+    "name": "Crucible Greaves"
+  },
+  {
+    "id": 571000,
+    "name": "Crucible Tree Helm"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Crucible Tree Armor/Crucible Tree Armor (Altered)"
+  },
+  {
+    "id": 470000,
+    "name": "Radahn's Redmane Helm"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Radahn's Lion Armor/Radahn's Lion Armor (Altered)"
+  },
+  {
+    "id": 470200,
+    "name": "Radahn's Gauntlets"
+  },
+  {
+    "id": 470300,
+    "name": "Radahn's Greaves"
+  },
+  {
+    "id": 640000,
+    "name": "Lionel's Helm"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Lionel's Armor/Lionel's Armor (Altered)"
+  },
+  {
+    "id": 640200,
+    "name": "Lionel's Gauntlets"
+  },
+  {
+    "id": 640300,
+    "name": "Lionel's Greaves"
+  },
+  {
+    "id": 140000,
+    "name": "Bull-Goat Helm"
+  },
+  {
+    "id": 140100,
+    "name": "Bull-Goat Armor"
+  },
+  {
+    "id": 140200,
+    "name": "Bull-Goat Gauntlets"
+  },
+  {
+    "id": 140300,
+    "name": "Bull-Goat Greaves"
+  },
+  {
+    "id": 970000,
+    "name": "Omen Helm"
+  },
+  {
+    "id": 970100,
+    "name": "Omen Armor"
+  },
+  {
+    "id": 970200,
+    "name": "Omen Gauntlets"
+  },
+  {
+    "id": 970300,
+    "name": "Omen Greaves"
+  },
+  {
+    "id": 360000,
+    "name": "Fire Prelate Helm"
+  },
+  {
+    "id": 360100,
+    "name": "Fire Prelate Armor"
+  },
+  {
+    "id": 361100,
+    "name": "Fire Prelate Armor (Altered)"
+  },
+  {
+    "id": 360200,
+    "name": "Fire Prelate Gauntlets"
+  },
+  {
+    "id": 360300,
+    "name": "Fire Prelate Greaves"
+  },
+  {
+    "id": 440000,
+    "name": "Pumpkin Helm"
+  }
+]

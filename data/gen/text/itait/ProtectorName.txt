@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]Rasati
+1100	[ERROR]Radi
+1200	[ERROR]Corti
+1300	[ERROR]All'indietro
+1400	[ERROR]Coda di cavallo
+1500	[ERROR]Selvaggi
+1600	[ERROR]Riga in mezzo
+1700	[ERROR]Semi-lunghi
+1800	[ERROR]Ricci
+1900	[ERROR]Caschetto
+2000	[ERROR]Maschio 11
+2100	[ERROR]Maschio 12
+2200	[ERROR]Maschio 13
+2300	[ERROR]Maschio 14
+2400	[ERROR]Maschio 15
+2500	[ERROR]Maschio 16
+2600	[ERROR]Maschio 17
+2700	[ERROR]Maschio 18
+2800	[ERROR]Maschio 19
+2900	[ERROR]Maschio 20
+3000	[ERROR]Rasati
+3100	[ERROR]Molto corti
+3200	[ERROR]Mossi
+3300	[ERROR]Lisci A
+3400	[ERROR]Lisci B
+3500	[ERROR]Coda di cavallo A
+3600	[ERROR]Coda di cavallo B
+3700	[ERROR]Codini
+3800	[ERROR]Crocchia
+3900	[ERROR]Intrecciati
+4000	[ERROR]Femmina 11
+4100	[ERROR]Femmina 12
+4200	[ERROR]Femmina 13
+4300	[ERROR]Femmina 14
+4400	[ERROR]Femmina 15
+4500	[ERROR]Femmina 16
+4600	[ERROR]Femmina 17
+4700	[ERROR]Femmina 18
+4800	[ERROR]Femmina 19
+4900	[ERROR]Femmina 20
+5000	[ERROR]Acconciatura da viandante
+10000	Testa
+10100	Corpo
+10200	Braccia
+10300	Gambe
+40000	Elmo di ferro
+40100	Armatura a scaglie
+40200	Guanti di ferro
+40300	Pantaloni di cuoio
+50000	Elmo di Kaiden
+50100	Armatura di Kaiden
+50200	Guanti di Kaiden
+50300	Pantaloni di Kaiden
+60000	Elmo da cavaliere del drago
+60100	Corazza da cavaliere del drago
+60200	Guanti d'arme da cavaliere del drago
+60300	Schinieri da cavaliere del drago
+61000	Elmo da cavaliere del drago alterato
+61100	Corazza da cavaliere del drago alterata
+80000	Elmo a scaglie
+80100	Corazza a scaglie
+80200	Guanti d'arme a scaglie
+80300	Schinieri a scaglie
+81100	Corazza a scaglie alterata
+90000	Tagelmust da profumiere
+90100	Veste da profumiere
+90200	Guanti da profumiere
+90300	Sarong da profumiere
+91100	Veste da profumiere alterata
+100000	Cappello da viaggiatore
+100100	Abito da viaggio da profumiere
+100200	Guanti del viaggiatore
+100300	Brache del viaggiatore
+101100	Abito da viaggio da profumiere alterato
+120000	Cappello a punta di Alberich
+120100	Veste di Alberich
+120200	Parabraccia di Alberich
+120300	Stivali di Alberich
+121000	Cappello a punta di Alberich alterato
+121100	Veste di Alberich alterata
+130000	Cappello a punta da incantatore
+130100	Tenuta da viaggio da incantatore
+130200	Guanti da incantatore
+130300	Pantaloni da incantatore
+131100	Tenuta da viaggio da incantatore alterata
+140000	Elmo dell'ariete
+140100	Corazza dell'ariete
+140200	Guanti d'arme dell'ariete
+140300	Schinieri dell'ariete
+150000	Kasa di ferro
+150100	Armatura da ronin
+150200	Guanti d'arme da ronin
+150300	Schinieri da ronin
+151100	Armatura da ronin alterata
+160000	Cappuccio da colpevole
+160100	Abito di tessuto
+160200	
+160300	Pantaloni di tessuto
+170000	Maschera da lupo nero
+170100	Corazza di Blaidd
+170200	Guanti d'arme di Blaidd
+170300	Schinieri di Blaidd
+171100	Corazza di Blaidd alterata
+180000	Cappuccio dei Neri Coltelli
+180100	Corazza dei Neri Coltelli
+180200	Guanti d'arme dei Neri Coltelli
+180300	Schinieri dei Neri Coltelli
+181100	Corazza dei Neri Coltelli alterata
+190000	Cappuccio da esule
+190100	Corazza da esule
+190200	Guanti d'arme da esule
+190300	Schinieri da esule
+200000	Elmo da cavaliere esule
+200100	Corazza da cavaliere esule
+200200	Guanti d'arme da cavaliere esule
+200300	Schinieri da cavaliere esule
+201000	Elmo da cavaliere esule alterato
+201100	Corazza da cavaliere esule alterata
+202100	[ERROR]
+210000	Elmo del rovo
+210100	Corazza del rovo
+210200	Guanti d'arme del rovo
+210300	Schinieri del rovo
+211100	Corazza del rovo alterata
+220000	Cappuccio da paggio
+220100	Abito da paggio
+220300	Pantaloni da paggio
+221100	Abito da paggio alterato
+230000	Elmo dei cavalieri notturni
+230100	Corazza dei cavalieri notturni
+230200	Guanti d'arme dei cavalieri notturni
+230300	Schinieri dei cavalieri notturni
+231000	Elmo dei cavalieri notturni alterato
+231100	Corazza dei cavalieri notturni alterato
+240000	Camaglio d'argento blu
+240100	Usbergo d'argento blu
+240200	Polsini d'argento blu
+240300	Gonna di maglia d'argento blu
+241100	Usbergo d'argento blu alterato
+250000	Cappello da mercante nomade
+250100	Abito da mercante nomade
+250300	Pantaloni da mercante nomade
+251100	Abito da mercante nomade alterato
+260000	Elmo draconico
+260100	Corazza draconica
+260200	Guanti d'arme draconici
+260300	Schinieri draconici
+270000	Elmo da sentinella dell'albero
+270100	Corazza da sentinella dell'albero
+270200	Guanti da sentinella dell'albero
+270300	Schinieri da sentinella dell'albero
+271100	Corazza da sentinella dell'albero alt.
+280000	Elmo da cavaliere reale
+280100	Corazza da cavaliere reale
+280200	Guanti d'arme da cavaliere reale
+280300	Schinieri da cavaliere reale
+281100	Corazza da cavaliere reale alterata
+290000	Gutrah da monaco Nox
+290100	Corazza da monaco Nox
+290200	Guanti da Nox
+290300	Schinieri da Nox
+291000	Gutrah da monaco Nox alterata
+291100	Corazza da monaco Nox alterata
+292000	Hennin da spadaccina Nox
+292100	Corazza da spadaccina Nox
+293000	Mitra gemella della vergine dell'oscurità
+293100	Corazza della vergine dell'oscurità
+294000	Hennin da spadaccina Nox alterato
+294100	Corazza da spadaccina Nox alterata
+300000	Grandi corna
+300100	Pelliccia
+300300	Gambali di pelliccia
+301000	Grandi corna luminose
+301100	Pelliccia da sciamano
+301300	Gambali da sciamano
+310000	Elmo da duellante
+310100	Manto da custode di tombe
+310300	Schinieri da duellante
+311100	Manto da custode di tombe alterato
+320000	Cappuccio da sanguigno nobiliare
+320100	Veste da sanguigno nobiliare
+320300	Gonna da sanguigno nobiliare
+330000	Maschera da guardiano
+330100	Farsetto fiorito da guardiano
+330200	Parabraccia da guardiano
+330300	Schinieri da guardiano
+331100	Farsetto da guardiano
+340000	Elmo del marcescente
+340100	Corazza del marcescente
+340200	Guanti d'arme del marcescente
+340300	Schinieri del marcescente
+341000	Elmo del marcescente alterato
+341100	Corazza del marcescente alterata
+350000	Cappuccio da monaco del fuoco
+350100	Corazza da monaco del fuoco
+350200	Guanti da monaco del fuoco
+350300	Schinieri da monaco del fuoco
+351000	Cappuccio da monaco della nera fiamma
+351100	Corazza da monaco della nera fiamma
+351200	Guanti d'arme da monaco della nera fiamma
+351300	Schinieri da monaco della nera fiamma
+360000	Elmo da prelato del fuoco
+360100	Corazza da prelato del fuoco
+360200	Guanti da prelato del fuoco
+360300	Schinieri da prelato del fuoco
+361100	Corazza da prelato del fuoco alterata
+370000	Fascia da aristocratico
+370100	Abito da aristocratico
+370300	Stivali da aristocratico
+371100	Abito da aristocratico alterato
+380000	Cappello da aristocratico
+380100	Cappotto da aristocratico
+390000	Chaperon da aristocratico attempato
+390100	Veste da aristocratico attempato
+390300	Scarpe da aristocratico attempato
+420000	Elmo da masnadiere
+420100	Corazza da masnadiere
+420200	Guanti da masnadiere
+420300	Schinieri da masnadiere
+430000	Cappuccio da saggio
+430100	Veste da saggio
+430300	Pantaloni da saggio
+440000	Elmo zucca
+460000	Corona da Lord ancestrale
+460100	Corazza da Lord ancestrale
+460200	Parabraccia da Lord ancestrale
+460300	Schinieri da Lord ancestrale
+461100	Corazza da Lord ancestrale alterata
+470000	Chioma rossa di Radahn
+470100	Corazza leonina di Radahn
+470200	Guanti d'arme di Radahn
+470300	Schinieri di Radahn
+471100	Corazza leonina di Radahn alterata
+480100	Veste del Signore del sangue
+481100	Veste del Signore del sangue alterata
+510000	Corona della luna crescente
+510100	Veste della regina
+510200	Polsini della regina
+510300	Pantaloni della regina
+520000	Cappuccio da apostolo Sacriderma
+520100	Veste da apostolo Sacriderma
+520200	Parabraccia da apostolo Sacriderma
+520300	Pantaloni da apostolo Sacriderma
+530000	Cappuccio da nobile Sacriderma
+530100	Veste da nobile Sacriderma
+530200	Polsini da nobile Sacriderma
+530300	Pantaloni da nobile Sacriderma
+540000	Tagelmust da profumiere corrotto
+540100	Veste da profumiere corrotto
+540200	Guanti da profumiere corrotto
+540300	Pantaloni da profumiere corrotto
+541100	Veste da profumiere corrotto alterata
+570000	Elmo ascia del Crogiolo
+570100	Corazza ascia del Crogiolo
+570200	Guanti d'arme del Crogiolo
+570300	Schinieri del Crogiolo
+571000	Elmo arboreo del Crogiolo
+571100	Corazza arborea del Crogiolo
+572100	Corazza ascia del Crogiolo alterata
+573100	Corazza arborea del Crogiolo alterata
+580000	Corona di scintipietra di Lusat
+580100	Veste di scintipietra di Lusat
+580200	Fasciature di Lusat
+580300	Mollettiere da vecchio stregone
+581000	Corona di scintipietra di Azur
+581100	Veste di scintipietra di Azur
+581200	Fasciature di Azur
+590000	Elmo dell'onniscienza
+590100	Corazza dell'onniscienza
+590200	Guanti d'arme dell'onniscienza
+590300	Schinieri dell'onniscienza
+591100	Corazza dell'onniscienza alterata
+600000	Elmo gemello
+600100	Corazza gemella
+600200	Guanti d'arme gemelli
+600300	Schinieri gemelli
+601100	Corazza gemella alterata
+601300	Schinieri gemelli alterati
+610000	Copricapo rovinato
+610100	Corazza rovinata
+610200	Guanti rovinati
+610300	Brache rovinate
+611000	Copricapo rovinato alterato
+611100	Corazza rovinata alterata
+620000	Benda da profeta
+620100	Veste di Corhyn
+620300	Pantaloni da profeta
+621100	Veste da profeta alterata
+622100	Veste da profeta
+630000	Cappuccio da astrologo
+630100	Veste da astrologo
+630200	Guanti da astrologo
+630300	Pantaloni da astrologo
+631100	Veste da astrologo alterata
+640000	Elmo di Lionel
+640100	Corazza di Lionel
+640200	Guanti d'arme di Lionel
+640300	Schinieri di Lionel
+641100	Corazza di Lionel alterata
+650000	Elmo degli Hoslow
+650100	Corazza degli Hoslow
+650200	Guanti d'arme degli Hoslow
+650300	Schinieri degli Hoslow
+651000	Maschera di Diallos
+652100	Corazza degli Hoslow alterata
+660000	Elmo da cavaliere errante
+660100	Corazza da cavaliere errante
+660200	Guanti d'arme da cavaliere errante
+660300	Schinieri da cavaliere errante
+661100	Corazza da cavaliere errante alterata
+670000	Turbante di stoffa azzurra
+670100	Veste di stoffa azzurra
+670200	Guanti d'arme da guerriero
+670300	Schinieri da guerriero
+680000	Maschera bianca
+680100	Veste da cerusico da campo
+680200	Guanti da cerusico da campo
+680300	Pantaloni da cerusico da campo
+681100	Veste da cerusico da campo alterata
+690000	Elmo delle spoglie reali
+690100	Corazza delle spoglie reali
+690200	Guanti d'arme delle spoglie reali
+690300	Schinieri delle spoglie reali
+700000	[ERROR]Fascia di corda da valoroso
+700100	[ERROR]Tenuta da valoroso
+700200	[ERROR]Parabraccia da valoroso
+700300	[ERROR]Stivali da valoroso
+701000	[ERROR]Elmo di cuoio da valoroso
+702000	[ERROR]Tenuta da valoroso alterata
+720000	Elmo da campione bestiale
+720100	Corazza da campione bestiale
+720200	Guanti d'arme da campione bestiale
+720300	Schinieri da campione bestiale
+721100	Corazza da campione bestiale alterata
+730000	Copricapo del campione
+730100	Spallaccio del campione
+730200	Parabraccia del campione
+730300	Ghette del campione
+740000	Cappuccio cremisi
+740100	Abito da viaggio nobiliare
+740200	Guanti nobiliari
+740300	Pantaloni nobiliari
+741000	Cappuccio blu
+742000	[ERROR]
+760000	Elmo di Maliketh
+760100	Corazza di Maliketh
+760200	Guanti d'arme di Maliketh
+760300	Schinieri di Maliketh
+761100	Corazza di Maliketh alterata
+770000	Elmo alato di Malenia
+770100	Corazza di Malenia
+770200	Guanto d'arme di Malenia
+770300	Schinieri di Malenia
+771100	Corazza di Malenia alterata
+780000	Elmo da veterano
+780100	Corazza da veterano
+780200	Guanti d'arme da veterano
+780300	Schinieri da veterano
+781100	Corazza da veterano alterata
+790000	Elmo da cavalier limiere
+790100	Corazza da cavalier limiere
+790200	Guanti d'arme da cavalier limiere
+790300	Schinieri da cavalier limiere
+791100	Corazza da cavalier limiere alterata
+800000	Copricapo festivo
+800100	Abito festivo
+801000	Copricapo festivo alterato
+801100	Abito festivo alterato
+802000	Copricapo festivo blu
+802100	Abito festivo blu
+810000	Fascia da popolano
+810100	Abito da popolano
+810300	Scarpe da popolano
+811000	Fascia da popolano alterata
+811100	Abito da popolano alterato
+812000	Abito semplice da popolano
+812100	Abito semplice da popolano alterato
+820000	Turbante da messaggero
+830000	Maschera di scintipietra del bisavio
+830100	Veste di Raya Lucaria
+830200	Fasciature da stregone
+830300	Mollettiere da stregone
+831000	Maschera di scintipietra di Olivinus
+832000	Maschera di scintipietra di Lazuli
+833000	Maschera di scintipietra di Karolos
+834000	Maschera di scintipietra di Grana
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Elmo da soldato marionetta
+840100	Corazza da soldato marionetta
+850000	Elmobecco da soldato marionetta
+860000	Elmo del Lupo sanguinario
+860100	Corazza del Lupo sanguinario
+860200	Guanti del Lupo sanguinario
+860300	Schinieri del Lupo sanguinario
+861100	Corazza del Lupo sanguinario alterata
+870000	Elmo dei giunchi
+870100	Corazza dei giunchi
+870200	Guanti dei giunchi
+870300	Schinieri dei giunchi
+871100	Corazza dei giunchi alterata
+872000	Maschera di Okina
+872100	Corazza dei giunchi bianchi
+872200	Guanti d'arme dei giunchi bianchi
+872300	Schinieri dei giunchi bianchi
+873000	[ERROR]
+880000	Cappuccio da confessore
+880100	Abito da confessore
+880200	Guanti da confessore
+880300	Stivali da confessore
+881000	Cappuccio da confessore alterato
+881100	Abito da confessore alterato
+890000	Maschera da prigioniero
+890100	Tenuta da prigioniero
+890300	Pantaloni da prigioniero
+891000	Maschera di ferro da brigante
+892100	[ERROR]
+900000	Cappuccio da vergine viandante
+900100	Veste da vergine viandante
+900200	Guanti da vergine viandante
+900300	Stivali da vergine viandante
+901100	Veste da vergine viandante alterata
+901200	[ERROR]
+901600	[ERROR]
+902000	Torque da vergine delle Dita
+902100	Veste da vergine delle Dita
+902300	Scarpe da vergine delle Dita
+903100	Veste da vergine delle Dita alterata
+904100	[ERROR]
+910000	Gran cappello del precettore
+910100	Veste lunga del precettore
+910200	Guanti del precettore
+910300	Pantaloni del precettore
+911000	Maschera del precettore
+911100	Veste lunga del precettore alterata
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Maschera scheletrica
+930100	Piume nere di rapace
+930200	Polsini da fuorilegge
+930300	Stivali da fuorilegge
+931100	Abito da fuorilegge
+940000	Maschera dell'eccentrico
+940100	Corazza dell'eccentrico
+940200	Fasciature dell'eccentrico
+940300	Calzoni dell'eccentrico
+941000	Maschera dell'eccentrico alterata
+950000	Elmo dell'impronta
+950100	Corazza dell'impronta
+950200	Guanti d'arme dell'impronta
+950300	Schinieri dell'impronta
+951100	Corazza dell'impronta alterata
+960000	Maschera della consorte
+960100	Veste della consorte
+960300	Pantaloni della consorte
+961000	Maschera del signore
+961100	Veste del signore
+962100	Veste d'alto bordo
+963000	Maschera di Marais
+963100	Veste di Marais
+963200	Bendaggi intrisi di sangue
+964000	Maschera intrisa di sangue
+964100	Tenuta del funzionario
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Elmo da presagio
+970100	Corazza da presagio
+970200	Guanti d'arme da presagio
+970300	Schinieri da presagio
+980000	Elmo da cavaliere cariano
+980100	Corazza da cavaliere cariano
+980200	Guanti da cavaliere cariano
+980300	Schinieri da cavaliere cariano
+981100	Corazza da cavaliere cariano alterata
+990000	Maschera di scintipietra di Hierodas
+990100	Veste da stregone errante
+990200	Polsini da stregone errante
+990300	Stivali da stregone errante
+991100	Veste da stregone errante alterata
+992000	[ERROR]
+1000000	Maschera di scintipietra di Haima
+1000100	Veste da mago guerriero
+1000200	Fasciature da mago guerriero
+1000300	Mollettiere da mago guerriero
+1010000	Cappello da strega delle nevi
+1010100	Veste da strega delle nevi
+1010300	Gonna da strega delle nevi
+1011100	Veste da strega delle nevi alterata
+1020100	Abito da viaggiatore
+1020200	Parabraccia da viaggiatore
+1020300	Stivali da viaggiatore
+1030000	Tocco da neofita
+1030100	Veste da neofita
+1040000	Maschera d'oro radiante
+1040100	Stracci di Maschera d'oro
+1040200	Bracciali d'oro
+1040300	Cintura d'oro
+1050100	Mantello del Presagio implacabile
+1060000	Maschera da albinauro
+1060100	Cotta di maglia sporca
+1070000	Maschera di Zamor
+1070100	Corazza di Zamor
+1070200	Fasciature di Zamor
+1070300	Mollettiere di Zamor
+1080000	Testa di demone felino
+1081000	Testa di demone zannuto
+1082000	Testa di demone satiro
+1083000	Testa di demone cadaverico
+1084000	Testa di demone lupo
+1085000	Testa di demone ancestrale
+1090000	Maschera della lacrima d'argento
+1100000	Camaglio
+1100100	Cotta di maglia
+1100200	Guanti d'arme
+1100300	Gambali di maglia
+1101000	Grande elmo
+1101100	Sopravveste dell'occhio
+1102100	Sopravveste dell'albero
+1110000	Polpo in testa
+1120000	Vaso
+1130000	Testa fungina
+1130100	Corpo fungino
+1130200	Braccia fungine
+1130300	Gambe fungine
+1300000	Elmo specchiato da Nox
+1301000	Elmo specchiato di Iji
+1400000	Cappuccio nero
+1400100	Corazza di cuoio
+1400200	Guanti di cuoio
+1400300	Stivali di cuoio
+1401000	Bandana da fuorilegge
+1500000	Elmo da cavaliere
+1500100	Corazza da cavaliere
+1500200	Guanti d'arme da cavaliere
+1500300	Schinieri da cavaliere
+1600000	Grancappuccio
+1610000	[ERROR]
+1700000	Elmo da soldato di Godrick
+1700100	Sopravveste con albero e bestia
+1700200	Guanti d'arme da soldato di Godrick
+1700300	Schinieri da soldato di Godrick
+1710000	Elmo di Raya Lucaria
+1710100	Sopravveste del Cuculo
+1710200	Guanti d'arme di Raya Lucaria
+1710300	Schinieri di Raya Lucaria
+1720000	Elmo da soldato di Leyndell
+1720100	Sopravveste dell'Albero Madre
+1720200	Guanti d'arme da soldato di Leyndell
+1720300	Schinieri da soldato di Leyndell
+1730000	Elmo da soldato di Radahn
+1730100	Sopravveste del Mantorosso
+1730200	Guanti d'arme da soldato di Radahn
+1730300	Schinieri da soldato di Radahn
+1740100	Sopravveste del mausoleo
+1740200	Guanti d'arme del mausoleo
+1740300	Schinieri del mausoleo
+1750000	Elmo del Sacro Albero
+1750100	Sopravveste del Sacro Albero
+1750200	Guanti d'arme del Sacro Albero
+1750300	Schinieri del Sacro Albero
+1760000	Elmo da cavaliere di Gelmir
+1760100	Corazza da cavaliere di Gelmir
+1760200	Guanti d'arme da cavaliere di Gelmir
+1760300	Schinieri da cavaliere di Gelmir
+1761100	Corazza da cavaliere di Gelmir alterata
+1770000	Elmo da cavaliere di Godrick
+1770100	Corazza da cavaliere di Godrick
+1770200	Guanti d'arme da cavaliere di Godrick
+1770300	Schinieri da cavaliere di Godrick
+1771100	Corazza da cavaliere di Godrick alterata
+1780000	Elmo da cavaliere del Cuculo
+1780100	Corazza da cavaliere del Cuculo
+1780200	Guanti d'arme da cavaliere del Cuculo
+1780300	Schinieri da cavaliere del Cuculo
+1781100	Corazza da cavaliere del Cuculo alterata
+1790000	Elmo da cavaliere di Leyndell
+1790100	Corazza da cavaliere di Leyndell
+1790200	Guanti d'arme da cavaliere di Leyndell
+1790300	Schinieri da cavaliere di Leyndell
+1791100	Corazza da cavaliere di Leyndell alterata
+1800000	Elmo da cavaliere Mantorosso
+1800100	Corazza da cavaliere Mantorosso
+1800200	Guanti d'arme da cavaliere Mantorosso
+1800300	Schinieri da cavaliere Mantorosso
+1801100	Corazza da cavaliere Mantorosso alterata
+1810100	Corazza da cavaliere del mausoleo
+1810200	Guanti da cavaliere del mausoleo
+1810300	Schinieri da cavaliere del mausoleo
+1811100	Corazza da cavaliere del mausoleo alterata
+1820000	Elmo da cavaliere del Sacro Albero
+1820100	Corazza da cavaliere del Sacro Albero
+1820200	Guanti d'arme da cavaliere del Sacro Albero
+1820300	Schinieri da cavaliere del Sacro Albero
+1821100	Corazza da cavaliere del Sacro Albero alt.
+1830000	Cappello d'arme da fante
+1830100	Tabarro di maglia drappeggiato
+1830200	Guanti d'arme da fante
+1830300	Schinieri da fante
+1840000	Cervelliera da fante
+1840100	Tabarro da fante
+1850000	Morione dorato da fante
+1850100	Tabarro di cuoio drappeggiato
+1860000	Elmo da fante
+1860100	Tabarro scarlatto
+1870100	Tabarro insanguinato
+1880000	Morione della sacra corona
+1880100	Tabarro avorio drappeggiato
+1890000	Maschera del presagio ghignante
+1890100	Veste da ammazzapresagi
+1890200	Guanti lunghi da ammazzapresagi
+1890300	Stivali da ammazzapresagi
+1900000	Scarabeo delle ceneri di guerra
+1901000	Scarabeo degli incantesimi
+1902000	Scarabeo della scintipietra
+1910000	Scarabeo della lacrima cremisi
+1920000	Scarabeo della lacrima cerulea
+1930100	Vestito funebre
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Cappuccio di Fia
+1940100	Veste di Fia
+1941100	Veste di Fia alterata
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Cappuccio da grassatore
+1980100	Armatura di stoffa da grassatore
+1980200	Guanti d'arme da grassatore
+1990000	Cappuccio da valletto
+1990100	Abito da valletto
+1991100	Abito da valletto alterato
+2000000	Elmo da duellante putrido
+2000100	Manto putrido da custode di tombe
+2000300	Schinieri da duellante putrido
+2001100	Manto putrido da custode di tombe alterato
+2010000	Corona fungina
+2020000	Canederlo nero
+2030000	Veste di Lazuli

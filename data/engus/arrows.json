@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Arrow"
+  },
+  {
+    "id": 50010000,
+    "name": "Fire Arrow"
+  },
+  {
+    "id": 50020000,
+    "name": "Serpent Arrow"
+  },
+  {
+    "id": 50030000,
+    "name": "Bone Arrow (Fletched)"
+  },
+  {
+    "id": 50040000,
+    "name": "St. Trina's Arrow"
+  },
+  {
+    "id": 50060000,
+    "name": "Shattershard Arrow (Fletched)"
+  },
+  {
+    "id": 50080000,
+    "name": "Rainbow Stone Arrow (Fletched)"
+  },
+  {
+    "id": 50090000,
+    "name": "Golden Arrow"
+  },
+  {
+    "id": 50100000,
+    "name": "Dwelling Arrow"
+  },
+  {
+    "id": 50110000,
+    "name": "Bone Arrow"
+  },
+  {
+    "id": 50130000,
+    "name": "Firebone Arrow (Fletched)"
+  },
+  {
+    "id": 50140000,
+    "name": "Firebone Arrow"
+  },
+  {
+    "id": 50150000,
+    "name": "Poisonbone Arrow (Fletched)"
+  },
+  {
+    "id": 50160000,
+    "name": "Poisonbone Arrow"
+  },
+  {
+    "id": 50170000,
+    "name": "Sleepbone Arrow (Fletched)"
+  },
+  {
+    "id": 50180000,
+    "name": "Sleepbone Arrow"
+  },
+  {
+    "id": 50190000,
+    "name": "Stormwing Bone Arrow"
+  },
+  {
+    "id": 50200000,
+    "name": "Lightningbone Arrow (Fletched)"
+  },
+  {
+    "id": 50210000,
+    "name": "Lightningbone Arrow"
+  },
+  {
+    "id": 50220000,
+    "name": "Rainbow Stone Arrow"
+  },
+  {
+    "id": 50230000,
+    "name": "Shattershard Arrow"
+  },
+  {
+    "id": 50240000,
+    "name": "Spiritflame Arrow"
+  },
+  {
+    "id": 50260000,
+    "name": "Magicbone Arrow (Fletched)"
+  },
+  {
+    "id": 50270000,
+    "name": "Magicbone Arrow"
+  },
+  {
+    "id": 50280000,
+    "name": "Haligbone Arrow (Fletched)"
+  },
+  {
+    "id": 50290000,
+    "name": "Haligbone Arrow"
+  },
+  {
+    "id": 50300000,
+    "name": "Bloodbone Arrow (Fletched)"
+  },
+  {
+    "id": 50310000,
+    "name": "Bloodbone Arrow"
+  },
+  {
+    "id": 50320000,
+    "name": "Coldbone Arrow (Fletched)"
+  },
+  {
+    "id": 50330000,
+    "name": "Coldbone Arrow"
+  },
+  {
+    "id": 50340000,
+    "name": "Rotbone Arrow (Fletched)"
+  },
+  {
+    "id": 50350000,
+    "name": "Rotbone Arrow"
+  },
+  {
+    "id": 51000000,
+    "name": "Great Arrow"
+  },
+  {
+    "id": 51010000,
+    "name": "Golem's Great Arrow"
+  },
+  {
+    "id": 51020000,
+    "name": "Golden Great Arrow"
+  },
+  {
+    "id": 51030000,
+    "name": "Golem's Magic Arrow"
+  },
+  {
+    "id": 51040000,
+    "name": "Radahn's Spear"
+  },
+  {
+    "id": 51050000,
+    "name": "Bone Great Arrow (Fletched)"
+  },
+  {
+    "id": 51060000,
+    "name": "Bone Great Arrow"
+  },
+  {
+    "id": 52000000,
+    "name": "Bolt"
+  },
+  {
+    "id": 52010000,
+    "name": "Lightning Bolt"
+  },
+  {
+    "id": 52020000,
+    "name": "Perfumer's Bolt"
+  },
+  {
+    "id": 52030000,
+    "name": "Black-Key Bolt"
+  },
+  {
+    "id": 52040000,
+    "name": "Burred Bolt"
+  },
+  {
+    "id": 52050000,
+    "name": "Meteor Bolt"
+  },
+  {
+    "id": 52060000,
+    "name": "Explosive Bolt"
+  },
+  {
+    "id": 52070000,
+    "name": "Golden Bolt"
+  },
+  {
+    "id": 52080000,
+    "name": "Lordsworn's Bolt"
+  },
+  {
+    "id": 52090000,
+    "name": "Bone Bolt"
+  },
+  {
+    "id": 52100000,
+    "name": "Firebone Bolt"
+  },
+  {
+    "id": 52110000,
+    "name": "Lightningbone Bolt"
+  },
+  {
+    "id": 52120000,
+    "name": "Magicbone Bolt"
+  },
+  {
+    "id": 52130000,
+    "name": "Haligbone Bolt"
+  },
+  {
+    "id": 52140000,
+    "name": "Poisonbone Bolt"
+  },
+  {
+    "id": 52150000,
+    "name": "Bloodbone Bolt"
+  },
+  {
+    "id": 52160000,
+    "name": "Coldbone Bolt"
+  },
+  {
+    "id": 52170000,
+    "name": "Rotbone Bolt"
+  },
+  {
+    "id": 52180000,
+    "name": "Sleepbone Bolt"
+  },
+  {
+    "id": 52190000,
+    "name": "Flaming Bolt"
+  },
+  {
+    "id": 53000000,
+    "name": "Ballista Bolt"
+  },
+  {
+    "id": 53010000,
+    "name": "Lightning Greatbolt"
+  },
+  {
+    "id": 53020000,
+    "name": "Explosive Greatbolt"
+  },
+  {
+    "id": 53030000,
+    "name": "Bone Ballista Bolt"
+  }
+]

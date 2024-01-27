@@ -1,0 +1,366 @@
+[
+  {
+    "id": 10600,
+    "name": "Cenere di guerra: Impronta (montante)"
+  },
+  {
+    "id": 10700,
+    "name": "Cenere di guerra: Impronta (spazzata)"
+  },
+  {
+    "id": 11000,
+    "name": "Cenere di guerra: Furia di colpi"
+  },
+  {
+    "id": 10000,
+    "name": "Cenere di guerra: Artiglio leonino"
+  },
+  {
+    "id": 60700,
+    "name": "Cenere di guerra: Lama rocciosa"
+  },
+  {
+    "id": 50300,
+    "name": "Cenere di guerra: Calcio"
+  },
+  {
+    "id": 70000,
+    "name": "Cenere di guerra: Tenacia"
+  },
+  {
+    "id": 50600,
+    "name": "Cenere di guerra: Schianto a terra"
+  },
+  {
+    "id": 21200,
+    "name": "Cenere di guerra: Battiterra"
+  },
+  {
+    "id": 50900,
+    "name": "Cenere di guerra: Colpo di Hoarah Loux"
+  },
+  {
+    "id": 65100,
+    "name": "Cenere di guerra: Grido di guerra"
+  },
+  {
+    "id": 65000,
+    "name": "Cenere di guerra: Ruggito barbarico"
+  },
+  {
+    "id": 65400,
+    "name": "Cenere di guerra: Ruggito dello spaccone"
+  },
+  {
+    "id": 65300,
+    "name": "Cenere di guerra: Ruggito del troll"
+  },
+  {
+    "id": 10300,
+    "name": "Cenere di guerra: Taglio rotante"
+  },
+  {
+    "id": 10100,
+    "name": "Cenere di guerra: Impalamento"
+  },
+  {
+    "id": 10200,
+    "name": "Cenere di guerra: Zanna perforante"
+  },
+  {
+    "id": 10900,
+    "name": "Cenere di guerra: Affondo ripetuto"
+  },
+  {
+    "id": 11200,
+    "name": "Cenere di guerra: Doppio taglio"
+  },
+  {
+    "id": 12400,
+    "name": "Cenere di guerra: Danza della spada"
+  },
+  {
+    "id": 11400,
+    "name": "Cenere di guerra: Sfoderamento"
+  },
+  {
+    "id": 80000,
+    "name": "Cenere di guerra: Passo veloce"
+  },
+  {
+    "id": 80100,
+    "name": "Cenere di guerra: Passo del limiere"
+  },
+  {
+    "id": 80200,
+    "name": "Cenere di guerra: Rapace delle nebbie"
+  },
+  {
+    "id": 65200,
+    "name": "Cenere di guerra: Ruggito della bestia"
+  },
+  {
+    "id": 11500,
+    "name": "Cenere di guerra: Posizionamento"
+  },
+  {
+    "id": 10500,
+    "name": "Cenere di guerra: Carica avanti"
+  },
+  {
+    "id": 11100,
+    "name": "Cenere di guerra: Colpi rotanti"
+  },
+  {
+    "id": 11600,
+    "name": "Cenere di guerra: Caccia gigante"
+  },
+  {
+    "id": 21000,
+    "name": "Cenere di guerra: Lama Tempesta"
+  },
+  {
+    "id": 12200,
+    "name": "Cenere di guerra: Assalto tempestoso"
+  },
+  {
+    "id": 12300,
+    "name": "Cenere di guerra: Echi di tempesta"
+  },
+  {
+    "id": 50200,
+    "name": "Cenere di guerra: Pestone Tempesta"
+  },
+  {
+    "id": 22000,
+    "name": "Cenere di guerra: Squarcio dell'oblio"
+  },
+  {
+    "id": 22500,
+    "name": "Cenere di guerra: Fendente fantasma"
+  },
+  {
+    "id": 60000,
+    "name": "Cenere di guerra: Determinazione"
+  },
+  {
+    "id": 60100,
+    "name": "Cenere di guerra: Coraggio del cavaliere"
+  },
+  {
+    "id": 20300,
+    "name": "Cenere di guerra: Ciottolo di scintipietra"
+  },
+  {
+    "id": 20000,
+    "name": "Cenere di guerra: Falange di scintilama"
+  },
+  {
+    "id": 21900,
+    "name": "Cenere di guerra: Spadone cariano"
+  },
+  {
+    "id": 21800,
+    "name": "Cenere di guerra: Fasti cariani"
+  },
+  {
+    "id": 12000,
+    "name": "Cenere di guerra: Arma rotante"
+  },
+  {
+    "id": 11800,
+    "name": "Cenere di guerra: Fendente di Loretta"
+  },
+  {
+    "id": 20900,
+    "name": "Cenere di guerra: Gravitas"
+  },
+  {
+    "id": 50800,
+    "name": "Cenere di guerra: Onde di tenebra"
+  },
+  {
+    "id": 21400,
+    "name": "Cenere di guerra: Attacco fiammante"
+  },
+  {
+    "id": 50500,
+    "name": "Cenere di guerra: Fiamma del Mantorosso"
+  },
+  {
+    "id": 20700,
+    "name": "Cenere di guerra: Eruzione"
+  },
+  {
+    "id": 11300,
+    "name": "Cenere di guerra: Carica del prelato"
+  },
+  {
+    "id": 22100,
+    "name": "Cenere di guerra: Tornado di nera fiamma"
+  },
+  {
+    "id": 21600,
+    "name": "Cenere di guerra: Folgore"
+  },
+  {
+    "id": 21700,
+    "name": "Cenere di guerra: Fendente del fulmine"
+  },
+  {
+    "id": 50400,
+    "name": "Cenere di guerra: Ariete folgorante"
+  },
+  {
+    "id": 20100,
+    "name": "Cenere di guerra: Lama sacra"
+  },
+  {
+    "id": 20800,
+    "name": "Cenere di guerra: Attacco devoto"
+  },
+  {
+    "id": 22200,
+    "name": "Cenere di guerra: Sacro anello di luce"
+  },
+  {
+    "id": 60400,
+    "name": "Cenere di guerra: Sacro ordine"
+  },
+  {
+    "id": 60500,
+    "name": "Cenere di guerra: Ordine condiviso"
+  },
+  {
+    "id": 21300,
+    "name": "Cenere di guerra: Terra aurea"
+  },
+  {
+    "id": 50700,
+    "name": "Cenere di guerra: Schianto aureo"
+  },
+  {
+    "id": 60300,
+    "name": "Cenere di guerra: Voto aureo"
+  },
+  {
+    "id": 70100,
+    "name": "Cenere di guerra: Voto dell'indomito"
+  },
+  {
+    "id": 70200,
+    "name": "Cenere di guerra: Terra Santa"
+  },
+  {
+    "id": 22800,
+    "name": "Cenere di guerra: Foschia velenosa"
+  },
+  {
+    "id": 11900,
+    "name": "Cenere di guerra: Volo venefico"
+  },
+  {
+    "id": 22400,
+    "name": "Cenere di guerra: Lama di sangue"
+  },
+  {
+    "id": 20400,
+    "name": "Cenere di guerra: Fendente sanguinario"
+  },
+  {
+    "id": 10800,
+    "name": "Cenere di guerra: Tributo di sangue"
+  },
+  {
+    "id": 60600,
+    "name": "Cenere di guerra: Seppuku"
+  },
+  {
+    "id": 20200,
+    "name": "Cenere di guerra: Lancia di ghiaccio"
+  },
+  {
+    "id": 22700,
+    "name": "Cenere di guerra: Foschia glaciale"
+  },
+  {
+    "id": 50100,
+    "name": "Cenere di guerra: Pestone brinoso"
+  },
+  {
+    "id": 22600,
+    "name": "Cenere di guerra: Lancia spettrale"
+  },
+  {
+    "id": 20500,
+    "name": "Cenere di guerra: Pugno assorbivita"
+  },
+  {
+    "id": 85000,
+    "name": "Cenere di guerra: Pallida esca"
+  },
+  {
+    "id": 60200,
+    "name": "Cenere di guerra: Mossa del sicario"
+  },
+  {
+    "id": 40200,
+    "name": "Cenere di guerra: Colpo poderoso"
+  },
+  {
+    "id": 40000,
+    "name": "Cenere di guerra: Fino in fondo"
+  },
+  {
+    "id": 40100,
+    "name": "Cenere di guerra: Sbarramento"
+  },
+  {
+    "id": 40500,
+    "name": "Cenere di guerra: Colpo celeste"
+  },
+  {
+    "id": 40400,
+    "name": "Cenere di guerra: Colpo incantato"
+  },
+  {
+    "id": 40600,
+    "name": "Cenere di guerra: Pioggia di strali"
+  },
+  {
+    "id": 30200,
+    "name": "Cenere di guerra: Parata"
+  },
+  {
+    "id": 30700,
+    "name": "Cenere di guerra: Parata aurea"
+  },
+  {
+    "id": 30600,
+    "name": "Cenere di guerra: Muro tempestoso"
+  },
+  {
+    "id": 30000,
+    "name": "Cenere di guerra: Colpo di scudo"
+  },
+  {
+    "id": 30800,
+    "name": "Cenere di guerra: Schianto di scudo"
+  },
+  {
+    "id": 30100,
+    "name": "Cenere di guerra: Scudo barricata"
+  },
+  {
+    "id": 31000,
+    "name": "Cenere di guerra: Barriera di Thops"
+  },
+  {
+    "id": 30500,
+    "name": "Cenere di guerra: Rappresaglia cariana"
+  },
+  {
+    "id": 30900,
+    "name": "Cenere di guerra: nessuna abilità"
+  }
+]

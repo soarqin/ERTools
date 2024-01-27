@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Soin d'urgence"
+  },
+  {
+    "id": 6421,
+    "name": "Soin"
+  },
+  {
+    "id": 6422,
+    "name": "Soins supérieurs"
+  },
+  {
+    "id": 6423,
+    "name": "Soins seigneuriaux"
+  },
+  {
+    "id": 6440,
+    "name": "Soin du poison"
+  },
+  {
+    "id": 6441,
+    "name": "Assistance seigneuriale"
+  },
+  {
+    "id": 6460,
+    "name": "Renforcement magique"
+  },
+  {
+    "id": 6450,
+    "name": "Renforcement ardent"
+  },
+  {
+    "id": 6470,
+    "name": "Renforcement électrique"
+  },
+  {
+    "id": 6480,
+    "name": "Renforcement divin"
+  },
+  {
+    "id": 6490,
+    "name": "Renforcement divin seigneurial"
+  },
+  {
+    "id": 6400,
+    "name": "Rejet"
+  },
+  {
+    "id": 6520,
+    "name": "Ombre trompeuse"
+  },
+  {
+    "id": 6530,
+    "name": "Ténèbres"
+  },
+  {
+    "id": 6510,
+    "name": "Approche d'assassin"
+  },
+  {
+    "id": 6600,
+    "name": "Serment doré"
+  },
+  {
+    "id": 6330,
+    "name": "Barrière d'or"
+  },
+  {
+    "id": 7903,
+    "name": "Renforcement électrique doré"
+  },
+  {
+    "id": 6340,
+    "name": "Protection de l'Arbre-Monde"
+  },
+  {
+    "id": 6410,
+    "name": "Courroux doré"
+  },
+  {
+    "id": 6424,
+    "name": "Soins de l'Arbre-Monde"
+  },
+  {
+    "id": 6430,
+    "name": "Bénédiction curative"
+  },
+  {
+    "id": 6431,
+    "name": "Bénédiction de l'Arbre-Monde"
+  },
+  {
+    "id": 7520,
+    "name": "Aspects du Creuset : souffle"
+  },
+  {
+    "id": 7500,
+    "name": "Aspects du Creuset : queue"
+  },
+  {
+    "id": 7510,
+    "name": "Aspects du Creuset : cornes"
+  },
+  {
+    "id": 6720,
+    "name": "Étoiles d'Elden"
+  },
+  {
+    "id": 7530,
+    "name": "Lame d'ébène"
+  },
+  {
+    "id": 6700,
+    "name": "Disque de lumière"
+  },
+  {
+    "id": 6701,
+    "name": "Triple halos de lumière"
+  },
+  {
+    "id": 6710,
+    "name": "Halos de lumière de Radagon"
+  },
+  {
+    "id": 6750,
+    "name": "Anathème"
+  },
+  {
+    "id": 6780,
+    "name": "Purification de l'Ordre"
+  },
+  {
+    "id": 6770,
+    "name": "Lame de l'Ordre"
+  },
+  {
+    "id": 6740,
+    "name": "Bouclier immuable"
+  },
+  {
+    "id": 6760,
+    "name": "Décret de causalité"
+  },
+  {
+    "id": 6730,
+    "name": "Décret de régression"
+  },
+  {
+    "id": 6900,
+    "name": "Lance de foudre"
+  },
+  {
+    "id": 6920,
+    "name": "Foudroiement"
+  },
+  {
+    "id": 6930,
+    "name": "Foudre ciblée"
+  },
+  {
+    "id": 6940,
+    "name": "Lance de foudre des dragons anciens"
+  },
+  {
+    "id": 6910,
+    "name": "Éclair des dragons anciens"
+  },
+  {
+    "id": 6950,
+    "name": "Glaive de Lansseax"
+  },
+  {
+    "id": 6941,
+    "name": "Lance de foudre de Fortissax"
+  },
+  {
+    "id": 6921,
+    "name": "Lance de foudre glacée"
+  },
+  {
+    "id": 5040,
+    "name": "Éclairs funestes"
+  },
+  {
+    "id": 6960,
+    "name": "Électrification de l'arme"
+  },
+  {
+    "id": 6971,
+    "name": "Bénédiction électrifiante du dragon"
+  },
+  {
+    "id": 6970,
+    "name": "Éclair draconique de Vyke"
+  },
+  {
+    "id": 6000,
+    "name": "Embrasement"
+  },
+  {
+    "id": 6001,
+    "name": "Ô Flamme !"
+  },
+  {
+    "id": 6010,
+    "name": "Boule de feu ardente"
+  },
+  {
+    "id": 6100,
+    "name": "Grande boule de feu"
+  },
+  {
+    "id": 6020,
+    "name": "Flamme, abats-toi sur eux !"
+  },
+  {
+    "id": 6110,
+    "name": "Flamme du dieu cruel"
+  },
+  {
+    "id": 6220,
+    "name": "Déferle, ô Flamme !"
+  },
+  {
+    "id": 6030,
+    "name": "Tourbillonne, ô Flamme !"
+  },
+  {
+    "id": 6120,
+    "name": "Brûle, ô Flamme !"
+  },
+  {
+    "id": 6040,
+    "name": "Flamme, purifie-moi"
+  },
+  {
+    "id": 6060,
+    "name": "Flamme, protège-moi"
+  },
+  {
+    "id": 6050,
+    "name": "Flamme, renforce-moi"
+  },
+  {
+    "id": 7900,
+    "name": "Flammes pécheresses"
+  },
+  {
+    "id": 6210,
+    "name": "Boule de feu noire"
+  },
+  {
+    "id": 6230,
+    "name": "Fouet de flammes noires"
+  },
+  {
+    "id": 6240,
+    "name": "Rituel des flammes noires"
+  },
+  {
+    "id": 6250,
+    "name": "Lame de flammes noires"
+  },
+  {
+    "id": 6260,
+    "name": "Flamme noire protectrice"
+  },
+  {
+    "id": 6270,
+    "name": "Noble présence"
+  },
+  {
+    "id": 6820,
+    "name": "Griffes bestiales"
+  },
+  {
+    "id": 6830,
+    "name": "Griffes bestiales de Gurranq"
+  },
+  {
+    "id": 6800,
+    "name": "Fronde bestiale"
+  },
+  {
+    "id": 6810,
+    "name": "Pierre de Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Constitution bestiale"
+  },
+  {
+    "id": 6840,
+    "name": "Vitalité bestiale"
+  },
+  {
+    "id": 7210,
+    "name": "Essaim de mouches"
+  },
+  {
+    "id": 6300,
+    "name": "Serres de feu sanguin"
+  },
+  {
+    "id": 6310,
+    "name": "Faveur sanguine"
+  },
+  {
+    "id": 6320,
+    "name": "Lame de feu sanguin"
+  },
+  {
+    "id": 7220,
+    "name": "Nuage de poison"
+  },
+  {
+    "id": 7200,
+    "name": "Fils putréfiés"
+  },
+  {
+    "id": 7230,
+    "name": "Empoisonnement de l'arme"
+  },
+  {
+    "id": 7240,
+    "name": "Floraison écarlate d'Ivoine"
+  },
+  {
+    "id": 7310,
+    "name": "Flamme exaltée"
+  },
+  {
+    "id": 7311,
+    "name": "Frénésie intolérable"
+  },
+  {
+    "id": 7320,
+    "name": "Explosion exaltée"
+  },
+  {
+    "id": 7330,
+    "name": "Cri de Shabriri"
+  },
+  {
+    "id": 7300,
+    "name": "Frénésie irrésistible"
+  },
+  {
+    "id": 7000,
+    "name": "Flamme draconique"
+  },
+  {
+    "id": 7001,
+    "name": "Flamme d'Agheel"
+  },
+  {
+    "id": 7010,
+    "name": "Souffle de magma"
+  },
+  {
+    "id": 7011,
+    "name": "Magma de Theodorix"
+  },
+  {
+    "id": 7040,
+    "name": "Souffle de pierre d'éclat"
+  },
+  {
+    "id": 7041,
+    "name": "Souffle de pierre d'éclat de Smarag"
+  },
+  {
+    "id": 7030,
+    "name": "Souffle putréfié"
+  },
+  {
+    "id": 7031,
+    "name": "Putréfaction d'Ekzykes"
+  },
+  {
+    "id": 7020,
+    "name": "Glace draconique"
+  },
+  {
+    "id": 7021,
+    "name": "Blizzard de Borealis"
+  },
+  {
+    "id": 7050,
+    "name": "Ruine de Placidusax"
+  },
+  {
+    "id": 7060,
+    "name": "Griffe de dragon"
+  },
+  {
+    "id": 7080,
+    "name": "Gueule de dragon"
+  },
+  {
+    "id": 7090,
+    "name": "Cri de Greyoll"
+  }
+]

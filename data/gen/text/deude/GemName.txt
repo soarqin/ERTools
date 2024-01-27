@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Kriegsasche: Löwenkralle
+10100	Kriegsasche: Aufspießender Stoß
+10200	Kriegsasche: Bohrender Reißzahn
+10300	Kriegsasche: Wirbelhieb
+10500	Kriegsasche: Wuchtiger Ansturm
+10600	Kriegsasche: Stampfer (Aufwärtsschnitt)
+10700	Kriegsasche: Stampfer (Feger)
+10800	Kriegsasche: Blutzoll
+10900	Kriegsasche: Stoßhagel
+11000	Kriegsasche: Wilde Schläge
+11100	Kriegsasche: Wirbelhiebe
+11200	Kriegsasche: Doppelschnitt
+11300	Kriegsasche: Ansturm des Prälaten
+11400	Kriegsasche: Iaido
+11500	Kriegsasche: Duell
+11600	Kriegsasche: Riesenjagd
+11700	Kriegsasche: Fackelangriff
+11800	Kriegsasche: Lorettas Schnitt
+11900	Kriegsasche: Giftiger Falter
+12000	Kriegsasche: Wirbelnde Waffe
+12100	
+12200	Kriegsasche: Sturmangriff
+12300	Kriegsasche: Sturmrufer
+12400	Kriegsasche: Schwerttanz
+12500	Kriegsasche: Wirbelnde Kette
+20000	Kriegsasche: Schimmerphalanx
+20100	Kriegsasche: Heilige Klinge
+20200	Kriegsasche: Eisspeer
+20300	Kriegsasche: Schimmersteinkiesel
+20400	Kriegsasche: Blutiger Schnitt
+20500	Kriegsasche: Vampirfaust
+20700	Kriegsasche: Eruption
+20800	Kriegsasche: Gebetsschlag
+20900	Kriegsasche: Gravitation
+21000	Kriegsasche: Sturmklinge
+21200	Kriegsasche: Erderschütterer
+21300	Kriegsasche: Goldenes Land
+21400	Kriegsasche: Flammender Schlag
+21600	Kriegsasche: Donnerblitz
+21700	Kriegsasche: Blitzschnitt
+21800	Kriegsasche: Carianische Erhabenheit
+21900	Kriegsasche: Cariagroßschwert
+22000	Kriegsasche: Vakuumschnitt
+22100	Kriegsasche: Schwarzflammentornado
+22200	Kriegsasche: Heiliger Lichtring
+22300	Kriegsasche: Feuerspeier
+22400	Kriegsasche: Blutklinge
+22500	Kriegsasche: Phantomschnitt
+22600	Kriegsasche: Spektrallanze
+22700	Kriegsasche: Frostnebel
+22800	Kriegsasche: Giftiger Nebel
+30000	Kriegsasche: Schildschlag
+30100	Kriegsasche: Barrikadenschild
+30200	Kriegsasche: Parade
+30300	Kriegsasche: Faustschildparade
+30400	Kriegsasche: Parade
+30500	Kriegsasche: Carianischer Gegenschlag
+30600	Kriegsasche: Sturmwall
+30700	Kriegsasche: Goldene Parade
+30800	Kriegsasche: Schildaufprall
+30900	Kriegsasche: Kein Talent
+31000	Kriegsasche: Thops' Barriere
+40000	Kriegsasche: Durch und durch
+40100	Kriegsasche: Sperrfeuer
+40200	Kriegsasche: Mächtiger Schuss
+40400	Kriegsasche: Verzauberter Schuss
+40500	Kriegsasche: Himmelsschuss
+40600	Kriegsasche: Pfeilhagel
+40700	
+50100	Kriegsasche: Raureifstampfer
+50200	Kriegsasche: Sturmstampfer
+50300	Kriegsasche: Tritt
+50400	Kriegsasche: Blitzbock
+50500	Kriegsasche: Flamme der Rotmähnen
+50600	Kriegsasche: Bodenschlag
+50700	Kriegsasche: Goldener Schlag
+50800	Kriegsasche: Wellen der Finsternis
+50900	Kriegsasche: Hoarah Loux' Erschütterer
+60000	Kriegsasche: Eiserner Wille
+60100	Kriegsasche: Mut der Königsritter
+60200	Kriegsasche: Schachzug des Assassinen
+60300	Kriegsasche: Goldener Schwur
+60400	Kriegsasche: Heilige Ordnung
+60500	Kriegsasche: Geteilte Ordnung
+60600	Kriegsasche: Seppuku
+60700	Kriegsasche: Felsklinge
+65000	Kriegsasche: Barbarenbrüllen
+65100	Kriegsasche: Kriegsgebrüll
+65200	Kriegsasche: Schrei der Bestie
+65300	Kriegsasche: Trollbrüllen
+65400	Kriegsasche: Prahlendes Brüllen
+70000	Kriegsasche: Beharren
+70100	Kriegsasche: Unbeugsamer Schwur
+70200	Kriegsasche: Heiliger Boden
+80000	Kriegsasche: Schnellschritt
+80100	Kriegsasche: Bluthundschritt
+80200	Kriegsasche: Nebelraptor
+85000	Kriegsasche: Ruf des Weißen Schatten

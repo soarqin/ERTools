@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Popiół wojny: Lwi pazur
+10100	Popiół wojny: Nadziewające pchnięcie
+10200	Popiół wojny: Przebijający kieł
+10300	Popiół wojny: Cięcie z obrotu
+10500	Popiół wojny: Szarża naprzód
+10600	Popiół wojny: Tupnięcie (cięcie w górę)
+10700	Popiół wojny: Tupnięcie (zamaszyste)
+10800	Popiół wojny: Krwawy podatek
+10900	Popiół wojny: Napierające pchnięcie
+11000	Popiół wojny: Szał
+11100	Popiół wojny: Uderzenia z obrotu
+11200	Popiół wojny: Podwójne cięcie
+11300	Popiół wojny: Szarża prałata
+11400	Popiół wojny: Dobycie
+11500	Popiół wojny: Konfrontacja
+11600	Popiół wojny: Polowanie na olbrzymy
+11700	Popiół wojny: Atak pochodnią
+11800	Popiół wojny: Cięcie Loretty
+11900	Popiół wojny: Lot trującej ćmy
+12000	Popiół wojny: Wirujący oręż
+12100	
+12200	Popiół wojny: Burzowe natarcie
+12300	Popiół wojny: Władca Burz
+12400	Popiół wojny: Taniec miecza
+12500	Popiół wojny: Wirujący łańcuch
+20000	Popiół wojny: Falanga błyskostrza
+20100	Popiół wojny: Święte ostrze
+20200	Popiół wojny: Lodowa włócznia
+20300	Popiół wojny: Błyskamienny pocisk
+20400	Popiół wojny: Krwawe cięcie
+20500	Popiół wojny: Pięść kradzieży życia
+20700	Popiół wojny: Erupcja
+20800	Popiół wojny: Modlitewne uderzenie
+20900	Popiół wojny: Gravitas
+21000	Popiół wojny: Burzowe ostrze
+21200	Popiół wojny: Trzęsienie ziemi
+21300	Popiół wojny: Złota kraina
+21400	Popiół wojny: Płonące uderzenie
+21600	Popiół wojny: Grom
+21700	Popiół wojny: Cięcie błyskawicy
+21800	Popiół wojny: Karyjski majestat
+21900	Popiół wojny: Karyjski wielki miecz
+22000	Popiół wojny: Cięcie próżni
+22100	Popiół wojny: Tornado czarnego płomienia
+22200	Popiół wojny: Święty krąg światła
+22300	Popiół wojny: Ogniste zionięcie
+22400	Popiół wojny: Krwawe ostrze
+22500	Popiół wojny: Widmowe cięcie
+22600	Popiół wojny: Widmowa lanca
+22700	Popiół wojny: Chłodna mgła
+22800	Popiół wojny: Trująca mgła
+30000	Popiół wojny: Cios tarczą
+30100	Popiół wojny: Barykada z tarczy
+30200	Popiół wojny: Odbicie
+30300	Popiół wojny: Odbicie puklerzem
+30400	Popiół wojny: Odbicie
+30500	Popiół wojny: Karyjski odwet
+30600	Popiół wojny: Burzowa ściana
+30700	Popiół wojny: Złote parowanie
+30800	Popiół wojny: Szarża z tarczą
+30900	Popiół wojny: Brak umiejętności
+31000	Popiół wojny: Bariera Thopsa
+40000	Popiół wojny: Na wylot
+40100	Popiół wojny: Grad
+40200	Popiół wojny: Potężny strzał
+40400	Popiół wojny: Zaklęty strzał
+40500	Popiół wojny: Strzał w niebo
+40600	Popiół wojny: Deszcz strzał
+40700	
+50100	Popiół wojny: Szronowe stąpnięcie
+50200	Popiół wojny: Burzowe stąpnięcie
+50300	Popiół wojny: Kopnięcie
+50400	Popiół wojny: Taran błyskawicy
+50500	Popiół wojny: Płomień Lwiej Grzywy
+50600	Popiół wojny: Rzucenie na ziemię
+50700	Popiół wojny: Złoty rzut
+50800	Popiół wojny: Fale ciemności
+50900	Popiół wojny: Tąpnięcie Hoarah Louxa
+60000	Popiół wojny: Gorliwość
+60100	Popiół wojny: Rycerski hart
+60200	Popiół wojny: Gambit zabójcy
+60300	Popiół wojny: Złota przysięga
+60400	Popiół wojny: Święty Porządek
+60500	Popiół wojny: Wspólny Porządek
+60600	Popiół wojny: Seppuku
+60700	Popiół wojny: Wyszczerbione ostrze
+65000	Popiół wojny: Barbarzyński ryk
+65100	Popiół wojny: Okrzyk bojowy
+65200	Popiół wojny: Ryk bestii
+65300	Popiół wojny: Ryk trolla
+65400	Popiół wojny: Ryk samochwały
+70000	Popiół wojny: Wytrwałość
+70100	Popiół wojny: Przysięga niezłomnych
+70200	Popiół wojny: Uświęcona ziemia
+80000	Popiół wojny: Szybki odskok
+80100	Popiół wojny: Krok wasalnego rycerza
+80200	Popiół wojny: Drapieżnik z mgieł
+85000	Popiół wojny: Przynęta białego cienia

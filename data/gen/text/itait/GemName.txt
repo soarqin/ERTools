@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Cenere di guerra: Artiglio leonino
+10100	Cenere di guerra: Impalamento
+10200	Cenere di guerra: Zanna perforante
+10300	Cenere di guerra: Taglio rotante
+10500	Cenere di guerra: Carica avanti
+10600	Cenere di guerra: Impronta (montante)
+10700	Cenere di guerra: Impronta (spazzata)
+10800	Cenere di guerra: Tributo di sangue
+10900	Cenere di guerra: Affondo ripetuto
+11000	Cenere di guerra: Furia di colpi
+11100	Cenere di guerra: Colpi rotanti
+11200	Cenere di guerra: Doppio taglio
+11300	Cenere di guerra: Carica del prelato
+11400	Cenere di guerra: Sfoderamento
+11500	Cenere di guerra: Posizionamento
+11600	Cenere di guerra: Caccia gigante
+11700	Cenere di guerra: Colpo di torcia
+11800	Cenere di guerra: Fendente di Loretta
+11900	Cenere di guerra: Volo venefico
+12000	Cenere di guerra: Arma rotante
+12100	
+12200	Cenere di guerra: Assalto tempestoso
+12300	Cenere di guerra: Echi di tempesta
+12400	Cenere di guerra: Danza della spada
+12500	Cenere di guerra: Catena vorticosa
+20000	Cenere di guerra: Falange di scintilama
+20100	Cenere di guerra: Lama sacra
+20200	Cenere di guerra: Lancia di ghiaccio
+20300	Cenere di guerra: Ciottolo di scintipietra
+20400	Cenere di guerra: Fendente sanguinario
+20500	Cenere di guerra: Pugno assorbivita
+20700	Cenere di guerra: Eruzione
+20800	Cenere di guerra: Attacco devoto
+20900	Cenere di guerra: Gravitas
+21000	Cenere di guerra: Lama Tempesta
+21200	Cenere di guerra: Battiterra
+21300	Cenere di guerra: Terra aurea
+21400	Cenere di guerra: Attacco fiammante
+21600	Cenere di guerra: Folgore
+21700	Cenere di guerra: Fendente del fulmine
+21800	Cenere di guerra: Fasti cariani
+21900	Cenere di guerra: Spadone cariano
+22000	Cenere di guerra: Squarcio dell'oblio
+22100	Cenere di guerra: Tornado di nera fiamma
+22200	Cenere di guerra: Sacro anello di luce
+22300	Cenere di guerra: Afflato rovente
+22400	Cenere di guerra: Lama di sangue
+22500	Cenere di guerra: Fendente fantasma
+22600	Cenere di guerra: Lancia spettrale
+22700	Cenere di guerra: Foschia glaciale
+22800	Cenere di guerra: Foschia velenosa
+30000	Cenere di guerra: Colpo di scudo
+30100	Cenere di guerra: Scudo barricata
+30200	Cenere di guerra: Parata
+30300	Cenere di guerra: Parata di brocchiero
+30400	Cenere di guerra: Parata
+30500	Cenere di guerra: Rappresaglia cariana
+30600	Cenere di guerra: Muro tempestoso
+30700	Cenere di guerra: Parata aurea
+30800	Cenere di guerra: Schianto di scudo
+30900	Cenere di guerra: nessuna abilità
+31000	Cenere di guerra: Barriera di Thops
+40000	Cenere di guerra: Fino in fondo
+40100	Cenere di guerra: Sbarramento
+40200	Cenere di guerra: Colpo poderoso
+40400	Cenere di guerra: Colpo incantato
+40500	Cenere di guerra: Colpo celeste
+40600	Cenere di guerra: Pioggia di strali
+40700	
+50100	Cenere di guerra: Pestone brinoso
+50200	Cenere di guerra: Pestone Tempesta
+50300	Cenere di guerra: Calcio
+50400	Cenere di guerra: Ariete folgorante
+50500	Cenere di guerra: Fiamma del Mantorosso
+50600	Cenere di guerra: Schianto a terra
+50700	Cenere di guerra: Schianto aureo
+50800	Cenere di guerra: Onde di tenebra
+50900	Cenere di guerra: Colpo di Hoarah Loux
+60000	Cenere di guerra: Determinazione
+60100	Cenere di guerra: Coraggio del cavaliere
+60200	Cenere di guerra: Mossa del sicario
+60300	Cenere di guerra: Voto aureo
+60400	Cenere di guerra: Sacro ordine
+60500	Cenere di guerra: Ordine condiviso
+60600	Cenere di guerra: Seppuku
+60700	Cenere di guerra: Lama rocciosa
+65000	Cenere di guerra: Ruggito barbarico
+65100	Cenere di guerra: Grido di guerra
+65200	Cenere di guerra: Ruggito della bestia
+65300	Cenere di guerra: Ruggito del troll
+65400	Cenere di guerra: Ruggito dello spaccone
+70000	Cenere di guerra: Tenacia
+70100	Cenere di guerra: Voto dell'indomito
+70200	Cenere di guerra: Terra Santa
+80000	Cenere di guerra: Passo veloce
+80100	Cenere di guerra: Passo del limiere
+80200	Cenere di guerra: Rapace delle nebbie
+85000	Cenere di guerra: Pallida esca

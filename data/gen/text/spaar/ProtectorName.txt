@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1300	[ERROR]
+1400	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+2300	[ERROR]
+2400	[ERROR]
+2500	[ERROR]
+2600	[ERROR]
+2700	[ERROR]
+2800	[ERROR]
+2900	[ERROR]
+3000	[ERROR]
+3100	[ERROR]
+3200	[ERROR]
+3300	[ERROR]
+3400	[ERROR]
+3500	[ERROR]
+3600	[ERROR]
+3700	[ERROR]
+3800	[ERROR]
+3900	[ERROR]
+4000	[ERROR]
+4100	[ERROR]
+4200	[ERROR]
+4300	[ERROR]
+4400	[ERROR]
+4500	[ERROR]
+4600	[ERROR]
+4700	[ERROR]
+4800	[ERROR]
+4900	[ERROR]
+5000	[ERROR]
+10000	Cabeza
+10100	Cuerpo
+10200	Brazos
+10300	Piernas
+40000	Casco de hierro
+40100	Armadura de escamas
+40200	Guanteletes de hierro
+40300	Pantalones de cuero
+50000	Yelmo de Kaiden
+50100	Armadura de Kaiden
+50200	Guanteletes de Kaiden
+50300	Pantalones de Kaiden
+60000	Yelmo de caballero draco
+60100	Armadura de caballero draco
+60200	Guanteletes de caballero draco
+60300	Grebas de caballero draco
+61000	Yelmo de caballero draco (modificado)
+61100	Armadura de caballero draco (modificada)
+80000	Yelmo escamado
+80100	Armadura escamada
+80200	Guanteletes escamados
+80300	Grebas escamadas
+81100	Armadura escamada (modificada)
+90000	Capucha de perfumista
+90100	Túnica de perfumista
+90200	Guantes de perfumista
+90300	Sarong de perfumista
+91100	Túnica de perfumista (modificada)
+100000	Sombrero de viajero
+100100	Vestimenta de viaje de perfumista
+100200	Guantes de viajero
+100300	Pantalón bombacho de viajero
+101100	Vestimenta de viaje de perfumista (modificada)
+120000	Sombrero puntiagudo de Alberich
+120100	Túnica de Alberich
+120200	Brazales de Alberich
+120300	Pantalones de Alberich
+121000	Sombrero puntiagudo de Alberich (modificado)
+121100	Túnica de Alberich (modificada)
+130000	Sombrero puntiagudo de hechicero
+130100	Atuendo de viaje de hechicero
+130200	Guantes de hechicero
+130300	Pantalones de hechicero
+131100	Atuendo de viaje de hechicero (modificado)
+140000	Yelmo de toro-cabra
+140100	Armadura de toro-cabra
+140200	Guanteletes de toro-cabra
+140300	Grebas de toro-cabra
+150000	Kasa de hierro
+150100	Armadura de Ronin
+150200	Guanteletes de Ronin
+150300	Grebas de Ronin
+151100	Armadura de Ronin (modificada)
+160000	Capucha de culpable
+160100	Vestimenta de tela
+160200	
+160300	Pantalones de tela
+170000	Máscara de lobo negro
+170100	Armadura de Blaidd
+170200	Guanteletes de Blaidd
+170300	Grebas de Blaidd
+171100	Armadura de Blaidd (modificada)
+180000	Capucha de Cuchillo Negro
+180100	Armadura de Cuchillo Negro
+180200	Guanteletes de Cuchillo Negro
+180300	Grebas de Cuchillo Negro
+181100	Armadura de Cuchillo Negro (modificada)
+190000	Capucha de exiliado
+190100	Armadura de exiliado
+190200	Guanteletes de exiliado
+190300	Grebas de exiliado
+200000	Yelmo de caballero desterrado
+200100	Armadura de caballero desterrado
+200200	Guanteletes de caballero desterrado
+200300	Grebas de caballero desterrado
+201000	Yelmo de caballero desterrado (modificado)
+201100	Armadura de caballero desterrado (modificada)
+202100	[ERROR]
+210000	Yelmo de zarza
+210100	Armadura de zarza
+210200	Guanteletes de zarza
+210300	Grebas de zarza
+211100	Armadura de zarza (modificada)
+220000	Capucha de paje
+220100	Vestimenta de paje
+220300	Pantalones de paje
+221100	Vestimenta de Paje (modificada)
+230000	Yelmo de la Caballería de la Noche
+230100	Armadura de la Caballería de la Noche
+230200	Guanteletes de la Caballería de la Noche
+230300	Grebas de la Caballería de la Noche
+231000	Yelmo de la Caballería de la Noche (modificado)
+231100	Armadura de la Caballería de la Noche (modificada)
+240000	Capucha mallada de plata
+240100	Armadura mallada de plata
+240200	Brazaletes de plata
+240300	Falda mallada de plata
+241100	Armadura mallada azul plata (modificada)
+250000	Sombrero de mercader nómade
+250100	Ropa elegante de mercader nómade
+250300	Pantalones de mercader nómade
+251100	Ropa elegante de mercader nómade (modificada)
+260000	Yelmo de dragón grotesco
+260100	Armadura de dragón grotesco
+260200	Guanteletes de dragón grotesco
+260300	Grebas de dragón grotesco
+270000	Yelmo de centinela arbóreo
+270100	Armadura de centinela arbóreo
+270200	Guanteletes de centinela arbóreo
+270300	Grebas de centinela arbóreo
+271100	Armadura de centinela arbóreo (modificada)
+280000	Yelmo de caballero real
+280100	Armadura de caballero real
+280200	Guanteletes de caballero real
+280300	Grebas de caballero real
+281100	Armadura de caballero real (modificada)
+290000	Capucha de monje de Nox
+290100	Armadura de monje de Nox
+290200	Brazaletes de nox
+290300	Grebas de nox
+291000	Capucha de monje nox (modificada)
+291100	Armadura de monje nox (modificada)
+292000	Corona de espadachina nox
+292100	Armadura de espadachina nox
+293000	Corona doble de doncella de la noche
+293100	Armadura de doncella de la noche
+294000	Corona de espadachina nox (modificada)
+294100	Armadura de espadachina nox (modificada)
+300000	Cinta para la cabeza con grandes cuernos
+300100	Ropaje de piel
+300300	Medias largas de piel
+301000	Cinta brillante para la cabeza con cuernos
+301100	Pieles de chamán
+301300	Medias largas de chamán
+310000	Yelmo de duelista
+310100	Capa de guardián de tumbas
+310300	Grebas de duelista
+311100	Capa de guardián de tumbas (modificada)
+320000	Capucha de noble sanguinario
+320100	Túnica de noble sanguinario
+320300	faldón de noble sanguinario
+330000	Máscara de guardián
+330100	Vestimenta de guardián (plena floración)
+330200	Brazales de guardián
+330300	Grebas de guardián
+331100	Vestimenta de guardián
+340000	Yelmo de purificador
+340100	Armadura de purificador
+340200	Guanteletes de purificador
+340300	Grebas de purificador
+341000	Yelmo de purificador (modificado)
+341100	Armadura de purificador (modificada)
+350000	Yelmo de monje de fuego
+350100	Armadura de monje de fuego
+350200	Guanteletes de monje de fuego
+350300	Grebas de monje de fuego
+351000	Capucha de monje de llama negra
+351100	Armadura de monje de llama negra
+351200	Guanteletes de monje de llama negra
+351300	Grebas de monje de llama negra
+360000	Yelmo de abad de fuego
+360100	Armadura de abad de fuego
+360200	Guanteletes de abad de fuego
+360300	Grebas de abad de fuego
+361100	Armadura de abad de fuego (modificada)
+370000	Cinta para la cabeza de aristócrata
+370100	Vestimenta de aristócrata
+370300	Botas de aristócrata
+371100	Vestimenta de aristócrata (modificada)
+380000	Sombrero de aristócrata
+380100	Abrigo de aristócrata
+390000	Capuz de viejo aristócrata
+390100	Toga vieja de aristócrata
+390300	Calzado viejo de aristócrata
+420000	Yelmo de milicia vulgar
+420100	Armadura de milicia vulgar
+420200	Guanteletes de milicia vulgar
+420300	Grebas de milicia vulgar
+430000	Capucha de sabio
+430100	Túnica de sabio
+430300	Pantalones de sabio
+440000	Yelmo calabaza
+460000	Corona del Señor de Elden
+460100	Armadura del Señor de Elden
+460200	Brazales del Señor de Elden
+460300	Grebas del Señor de Elden
+461100	Armadura del Señor de Elden (modificada)
+470000	Yelmo de melenarroja de Radahn
+470100	Armadura de león de Radahn
+470200	Guanteletes de Radahn
+470300	Grebas de Radahn
+471100	Armadura de león de Radahn (modificada)
+480100	Túnica del Señor de la Sangre
+481100	Túnica del Señor de la Sangre (modificada)
+510000	Corona creciente de la reina
+510100	Túnica de la reina
+510200	Brazaletes de la reina
+510300	Medias largas de la reina
+520000	Capucha de apóstol piel de dios
+520100	Túnica de apóstol piel de dios
+520200	Brazaletes de apóstol piel de dios
+520300	Pantalones de apóstol piel de dios
+530000	Capucha de noble piel de dios
+530100	Túnica de noble piel de dios
+530200	Brazaletes de noble piel de dios
+530300	Pantalones de noble piel de dios
+540000	Pañuelo para la cabeza de perfumista corrompido
+540100	Túnica de perfumista corrompido
+540200	Guantes de perfumista corrompido
+540300	Pantalones de perfumista corrompido
+541100	Túnica de perfumista corrompido (modificada)
+570000	Yelmo de hacha del Crisol
+570100	Armadura de hacha del Crisol
+570200	Guanteletes del Crisol
+570300	Grebas del Crisol
+571000	Yelmo de árbol del Crisol
+571100	Armadura de árbol del Crisol
+572100	Armadura de hacha del Crisol (modificada)
+573100	Armadura de árbol del Crisol (modificada)
+580000	Corona de destellita de Lusat
+580100	Túnica de Lusat
+580200	Mangas de Lusat
+580300	Vendas de pierna viejas de hechicero
+581000	Corona de destellita de Azur
+581100	Túnica de destellita de Azur
+581200	Mangas de Azur
+590000	Yelmo del Omnisciente
+590100	Armadura del Omnisciente
+590200	Guanteletes del Omnisciente
+590300	Grebas del Omnisciente
+591100	Armadura del Omnisciente (modificada)
+600000	Yelmo del hermanado
+600100	Armadura del hermanado
+600200	Guanteletes del hermanado
+600300	Grebas del hermanado
+601100	Armadura gemela (modificada)
+601300	Grebas gemelas (modificadas)
+610000	Sombrero andrajoso
+610100	Armadura andrajosa
+610200	Guantes andrajosos
+610300	Taparrabos andrajoso
+611000	Sombrero andrajoso (modificado)
+611100	Armadura andrajosa (modificada)
+620000	Venda para ojos de profeta
+620100	Túnica de Corhyn
+620300	Pantalones de profeta
+621100	Túnica de profeta (modificada)
+622100	Túnica de profeta
+630000	Capucha de astrólogo
+630100	Túnica de astrólogo
+630200	Guantes de astrólogo
+630300	Pantalones de astrólogo
+631100	Túnica de astrólogo (modificada)
+640000	Yelmo de Lionel
+640100	Armadura de Lionel
+640200	Guanteletes de Lionel
+640300	Grebas de Lionel
+641100	Armadura de Lionel (modificada)
+650000	Yelmo de Hondal
+650100	Armadura de Hondal
+650200	Guanteletes de Hondal
+650300	Grebas de Hondal
+651000	Máscara de Diallos
+652100	Armadura de Hondal (modificada)
+660000	Yelmo de caballero vagabundo
+660100	Armadura de caballero vagabundo
+660200	Guanteletes de caballero vagabundo
+660300	Grebas de caballero vagabundo
+661100	Armadura de caballero vagabundo (modificada)
+670000	Capuz de tela azul
+670100	Chaleco de tela azul
+670200	Guanteletes de espadachín
+670300	Grebas de espadachín
+680000	Máscara blanca
+680100	Toga de cirujano de guerra
+680200	Guantes de cirujano de guerra
+680300	Pantalones de cirujano de guerra
+681100	Toga de cirujano de guerra (modificada)
+690000	Yelmo de restos reales
+690100	Armadura de restos reales
+690200	Guanteletes de restos reales
+690300	Grebas de restos reales
+700000	[ERROR]
+700100	[ERROR]
+700200	[ERROR]
+700300	[ERROR]
+701000	[ERROR]
+702000	[ERROR]
+720000	Yelmo de campeón de bestias
+720100	Armadura de campeón de bestias
+720200	Guanteletes de campeón de bestias
+720300	Grebas de campeón de bestias
+721100	Armadura de campeón de bestias (modificada)
+730000	Cinta para la cabeza de campeón
+730100	Hombrera de campeón
+730200	Brazales de campeón
+730300	Polainas de campeón
+740000	Capucha carmesí
+740100	Vestimenta de viaje de noble
+740200	Guantes de noble
+740300	Pantalones de noble
+741000	Capucha azul marino
+742000	[ERROR]
+760000	Yelmo de Maliketh
+760100	Armadura de Maliketh
+760200	Guanteletes de Maliketh
+760300	Grebas de Maliketh
+761100	Armadura de Maliketh (modificada)
+770000	Yelmo alado de Malenia
+770100	Armadura de Malenia
+770200	Guanteletes de Malenia
+770300	Grebas de Malenia
+771100	Armadura de Malenia (modificada)
+780000	Yelmo de veterano
+780100	Armadura de veterano
+780200	Guanteletes de veterano
+780300	Grebas de veterano
+781100	Armadura de veterano (modificada)
+790000	Yelmo de caballero sabueso
+790100	Armadura de caballero sabueso
+790200	Guanteletes de caballero sabueso
+790300	Grebas de caballero sabueso
+791100	Armadura de caballero sabueso (modificada)
+800000	Corona festiva
+800100	Vestimenta festiva
+801000	Capucha festiva (modificada)
+801100	Vestimenta festiva (modificada)
+802000	Capucha festiva azul
+802100	Vestimenta festiva azul
+810000	Cinta para la cabeza de plebeyo
+810100	Vestimenta de plebeyo
+810300	Calzado de plebeyo
+811000	Cinta para la cabeza de plebeyo (modificada)
+811100	Vestimenta de plebeyo (modificada)
+812000	Vestimenta simple de plebeyo
+812100	Vestimenta simple de plebeyo (modificada)
+820000	Corona de enviado
+830000	Corona de destellita de Sabios Gemelos
+830100	Túnica de Raya Lucaria
+830200	Mangas de hechicero
+830300	Medias largas de hechicero
+831000	Corona de destellita de Olivinus
+832000	Corona de destellita de Lazuli
+833000	Corona de destellita de Karolos
+834000	Corona de destellita de la bruja
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Yelmo de soldado guiñol
+840100	Armadura de soldado guiñol
+850000	Yelmo de pájaro de soldado guiñol
+860000	Yelmo de Lobo Furioso
+860100	Armadura de Lobo Furioso
+860200	Guanteletes de Lobo Furioso
+860300	Grebas de Lobo Furioso
+861100	Armadura de Lobo Furioso (modificada)
+870000	Yelmo de los Juncales
+870100	Armadura de los Juncales
+870200	Guanteletes de los Juncales
+870300	Grebas de los Juncales
+871100	Armadura de los Juncales (modificada)
+872000	Máscara de Okina
+872100	Armadura de Junco Blanco
+872200	Guanteletes de Junco Blanco
+872300	Grebas de Junco Blanco
+873000	[ERROR]
+880000	Capucha de confesor
+880100	Armadura de confesor
+880200	Guantes de confesor
+880300	Botas de confesor
+881000	Capucha de confesor (modificada)
+881100	Armadura de confesor (modificada)
+890000	Máscara de hierro del prisionero
+890100	Ropa de prisionero
+890300	Pantalones de prisionero
+891000	Máscara de hierro de canalla
+892100	[ERROR]
+900000	Capucha de doncella ambulante
+900100	Túnica de doncella ambulante
+900200	Guantes de doncella ambulante
+900300	Botas de doncella ambulante
+901100	Túnica de doncella nómade (modificada)
+901200	[ERROR]
+901600	[ERROR]
+902000	Banda para el pelo de Doncella de los Dedos
+902100	Túnica de Doncella de los Dedos
+902300	Calzado de Doncella de los Dedos
+903100	Túnica de Doncella de los Dedos (modificada)
+904100	[ERROR]
+910000	Sombrero grande de preceptor
+910100	Toga larga de preceptor
+910200	Guantes de preceptor
+910300	Pantalones de preceptor
+911000	Máscara de confianza
+911100	Toga larga de preceptor (modificada)
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Máscara esquelética
+930100	Plumas negras de ave rapaz
+930200	Mangas de bandido
+930300	Botas de bandido
+931100	Vestimenta de bandido
+940000	Capucha del excéntrico
+940100	Armadura del excéntrico
+940200	Mangas del excéntrico
+940300	Pantalón bombacho del excéntrico
+941000	Capucha de excéntrico (modificada)
+950000	Yelmo con huellas dactilares
+950100	Armadura con huellas dactilares
+950200	Guanteletes con huellas dactilares
+950300	Grebas con huellas dactilares
+951100	Armadura con huellas dactilares (modificada)
+960000	Máscara de consorte
+960100	Túnica de consorte
+960300	Pantalones de consorte
+961000	Máscara de gobernante
+961100	Túnica de gobernante
+962100	Túnica de clase alta
+963000	Máscara de Marais
+963100	Túnica de Marais
+963200	Mangas empapadas de sangre
+964000	Máscara empapada de sangre
+964100	Atavío de oficial
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Yelmo de aojo
+970100	Armadura de aojo
+970200	Guanteletes de aojo
+970300	Grebas de aojo
+980000	Yelmo de caballero de Caria
+980100	Armadura de caballero de Caria
+980200	Guanteletes de caballero de Caria
+980300	Grebas de caballero de Caria
+981100	Armadura de caballero de Caria (modificada)
+990000	Corona de destellita de Hierodas
+990100	Túnica de hechicero errante
+990200	Mangas de hechicero errante
+990300	Botas de hechicero errante
+991100	Túnica de hechicero errante (modificada)
+992000	[ERROR]
+1000000	Corona de destellita de Haima
+1000100	Túnica de mago de batalla
+1000200	Mangas de mago de batalla
+1000300	Vendas de pierna de mago de batalla
+1010000	Sombrero de bruja de la nieve
+1010100	Túnica de bruja de la nieve
+1010300	Falda de bruja de la nieve
+1011100	Túnica de bruja de la nieve (modificada)
+1020100	Ropa de viaje
+1020200	Mangas de viajero
+1020300	Botas de viajero
+1030000	Casco de joven erudito
+1030100	Túnica de joven erudito
+1040000	Máscara de oro radiante
+1040100	Harapos de Máscara de Oro
+1040200	Brazaletes de oro
+1040300	Cintura de oro
+1050100	Capa de Aojo Cruel
+1060000	Máscara albináurica
+1060100	Cota de malla sucia
+1070000	Máscara de Zamor
+1070100	Armadura de Zamor
+1070200	Brazaletes de Zamor
+1070300	Vendas de pierna de Zamor
+1080000	Cabeza de diablillo (gato)
+1081000	Cabeza de diablillo (con cuernos)
+1082000	Cabeza de diablillo (con lengua larga)
+1083000	Cabeza de diablillo (cadáver)
+1084000	Cabeza de diablillo (lobo)
+1085000	Cabeza de diablillo (anciano)
+1090000	Máscara de lágrima plateada
+1100000	Cofia de malla
+1100100	Armadura de malla
+1100200	Guanteletes
+1100300	Grebas de malla
+1101000	Gran yelmo
+1101100	Sobreveste de ojo
+1102100	Sobreveste de árbol
+1110000	Cabeza de pulpo
+1120000	Recipiente
+1130000	Cabeza de hongo
+1130100	Cuerpo de hongo
+1130200	Brazos de hongo
+1130300	Piernas de hongo
+1300000	Yelmo espejo de Nox
+1301000	Yelmo espejo de Iji
+1400000	Capucha negra
+1400100	Armadura de cuero
+1400200	Guantes de cuero
+1400300	Botas de cuero
+1401000	Máscara de bandido
+1500000	Yelmo de caballero
+1500100	Armadura de caballero
+1500200	Guanteletes de caballero
+1500300	Grebas de caballero
+1600000	Gran capucha
+1610000	[ERROR]
+1700000	Yelmo de soldado de Godric
+1700100	Sobreveste de árbol y bestia
+1700200	Guanteletes de soldado de Godric
+1700300	Grebas de soldado de Godric
+1710000	Yelmo de Raya Lucaria
+1710100	Sobreveste de Cuco
+1710200	Guanteletes de Raya Lucaria
+1710300	Grebas de Raya Lucaria
+1720000	Yelmo de soldado de Leyndell
+1720100	Sobreveste de Terrárbol
+1720200	Guanteletes de soldado de Leyndell
+1720300	Grebas de soldado de Leyndell
+1730000	Yelmo de soldado de Radahn
+1730100	Sobreveste de melenarroja
+1730200	Guanteletes de soldado de Radahn
+1730300	Grebas de soldado de Radahn
+1740100	Sobreveste del mausoleo
+1740200	Guanteletes del mausoleo
+1740300	Grebas del mausoleo
+1750000	Yelmo de Santoárbol
+1750100	Sobreveste de emblema de Santoárbol
+1750200	Guanteletes de Santoárbol
+1750300	Grebas de Santoárbol
+1760000	Yelmo de caballero de Gelmir
+1760100	Armadura de caballero de Gelmir
+1760200	Guanteletes de caballero de Gelmir
+1760300	Grebas de caballero de Gelmir
+1761100	Armadura de caballero de Gelmir (modificada)
+1770000	Yelmo de caballero de Godric
+1770100	Armadura de caballero de Godric
+1770200	Guanteletes de caballero de Godric
+1770300	Grebas de caballero de Godric
+1771100	Armadura de caballero de Godric (modificada)
+1780000	Yelmo de caballero de Cuco
+1780100	Armadura de caballero de Cuco
+1780200	Guanteletes de caballero de Cuco
+1780300	Grebas de caballero de Cuco
+1781100	Armadura de caballero de Cuco (modificada)
+1790000	Yelmo de caballero de Leyndell
+1790100	Armadura de caballero de Leyndell
+1790200	Guanteletes de caballero de Leyndell
+1790300	Grebas de caballero de Leyndell
+1791100	Armadura de caballero de Leyndell (modificada)
+1800000	Yelmo de caballero melenarroja
+1800100	Armadura de caballero melenarroja
+1800200	Guanteletes de caballero melenarroja
+1800300	Grebas de caballero melenarroja
+1801100	Armadura de caballero melenarroja (modificada)
+1810100	Armadura de caballero del mausoleo
+1810200	Guanteletes de caballero del mausoleo
+1810300	Grebas de caballero del mausoleo
+1811100	Armadura de caballero del mausoleo (modificada)
+1820000	Yelmo de caballero de Santoárbol
+1820100	Armadura de caballero de Santoárbol
+1820200	Guanteletes de caballero de Santoárbol
+1820300	Grebas de caballero de Santoárbol
+1821100	Armadura de caballero de Santoárbol (modificada)
+1830000	Casco de soldado de infantería
+1830100	Tabardo revestido de malla
+1830200	Guanteletes de soldado de infantería
+1830300	Grebas de soldado de infantería
+1840000	Casco de soldado de infantería
+1840100	Tabardo de soldado de infantería
+1850000	Casco bañado en oro de soldado de infantería
+1850100	Tabardo revestido de cuero
+1860000	Yelmo de soldado de infantería
+1860100	Tabardo escarlata
+1870100	Tabardo empapado de sangre
+1880000	Yelmo de corona sagrada
+1880100	Tabardo revestido de marfil
+1890000	Máscara de aojo sonriente
+1890100	Túnica de asesinaojos
+1890200	Guantes largos de asesinaojos
+1890300	Botas de asesinaojos
+1900000	Escarabajo de ceniza de guerra
+1901000	Escarabajo de rezo
+1902000	Escarabajo de destellita
+1910000	Escarabajo de lágrima carmesí
+1920000	Escarabajo de lágrima cerúlea
+1930100	Vestido de lecho de muerte
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Capucha de Fia
+1940100	Túnica de Fia
+1941100	Túnica de Fia (modificada)
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Capucha de salteador de caminos
+1980100	Armadura de tela de salteador de caminos
+1980200	Guanteletes de salteador de caminos
+1990000	Capucha de paje mayor
+1990100	Ropa de paje mayor
+1991100	Ropa de paje mayor (modificada)
+2000000	Yelmo de duelista podrido
+2000100	Capa podrida de guardián de tumbas
+2000300	Grebas de duelista podrido
+2001100	Capa de guardián de tumbas (modificada)
+2010000	Corona de hongo
+2020000	Bola negra
+2030000	Túnica de Lazuli

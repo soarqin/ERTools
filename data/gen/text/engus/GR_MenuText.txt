@@ -1,0 +1,2715 @@
+1010	 x
+3010	<?null?>
+3011	<?null?>
+3012	
+3013	
+3014	
+3015	
+3016	
+3017	
+3018	
+3019	
+3020	 
+3021	 
+3500	Choose revival location
+3501	Stake of Marika
+3502	Last site of grace visited
+4100	Use
+4101	Leave
+4102	Discard
+4103	
+4104	
+4105	
+4106	
+4107	
+4108	
+4109	
+4110	Use selected number
+4111	Leave selected number
+4112	Discard selected number
+5100	Use how many?
+5101	Leave how many?
+5102	Discard how many?
+5103	
+5104	Purchase how many?
+5105	Sell how many?
+5106	Store how many?
+5107	Take how many?
+5108	Make how many?
+5109	Receive how many?
+5501	Explanation
+5502	View Controls
+5600	Menu Explanation
+5700	Toggle multiplayer status display
+5701	
+5702	
+5703	
+5704	
+5705	
+5706	
+5707	
+5708	
+5709	
+5710	Toggle multiplayer status display
+6100	Default Order
+6101	
+6102	
+6103	
+6104	
+6105	Item Type
+6106	
+6107	
+6108	
+6109	
+6110	Number Held
+6111	Weight
+6112	
+6113	
+6114	
+6115	
+6116	
+6117	
+6118	
+6119	
+6120	FP Cost
+6121	Slots Used
+6122	
+6123	
+6124	
+6125	
+6126	
+6127	
+6128	
+6129	
+6130	Attack Power
+6131	
+6132	
+6133	
+6134	
+6135	
+6136	
+6137	
+6138	
+6139	
+6140	Guarded Damage Negation
+6170	Damage Negation
+6171	
+6172	
+6173	
+6174	
+6175	
+6176	
+6177	
+6178	
+6179	
+6180	Resistance
+6181	
+6182	
+6183	
+6184	
+6185	
+6186	
+6187	
+6188	
+6189	
+6190	Order of Acquisition
+10100	Name
+10101	Body Type
+10102	Origin
+10103	Keepsake
+10200	Level
+10201	Runes Held
+10202	Runes Needed
+10203	
+10204	Great Runes
+10300	Faction
+10301	Age
+10400	Vigor
+10401	Endurance
+10402	Mind
+10403	Strength
+10404	Dexterity
+10405	
+10406	Intelligence
+10407	Faith
+10408	
+10409	Arcane
+10500	HP
+10501	FP
+10502	Stamina
+10503	
+10504	
+10505	
+10506	
+10507	
+10508	
+10509	
+10510	Equip Load
+10511	
+10512	Max Equip Load
+10513	Light Load
+10514	Med. Load
+10515	Heavy Load
+10516	Overloaded
+10517	
+10518	
+10519	
+10520	R Armament 1
+10521	R Armament 2
+10522	R Armament 3
+10523	L Armament 1
+10524	L Armament 2
+10525	L Armament 3
+10526	
+10527	
+10528	
+10529	
+10530	Physical
+10531	VS Strike
+10532	VS Slash
+10533	VS Pierce
+10534	Magic
+10535	Fire
+10536	Lightning
+10537	Holy
+10538	
+10539	
+10540	Immunity
+10541	Robustness
+10542	Focus
+10543	Vitality
+10561	Memory Slots
+10562	Discovery
+10563	
+10564	
+10565	
+10566	
+10567	
+10568	
+10569	
+10570	Poise
+11001	Armament Type
+11002	Spell Type
+11003	Attack Affinity
+11004	No. Held
+11005	Stored
+11006	Skill
+11007	Held
+11008	
+11009	Containers
+11010	Physical
+11011	Magic
+11012	Fire
+11013	Lightning
+11014	Holy
+11015	
+11016	
+11017	
+11018	
+11019	
+11020	Physical
+11021	Magic
+11022	Fire
+11023	Lightning
+11024	Holy
+11025	
+11026	
+11027	
+11028	
+11029	
+11030	Critical
+11031	Guard Boost
+11032	Range
+11033	
+11034	FP Cost
+11035	Sorcery Scaling
+11036	Incant Scaling
+11037	
+11038	
+11039	
+11040	Slots Used
+11041	FP Cost
+11042	FP Cost
+11043	HP Cost
+11180	Physical
+11181	VS Strike
+11182	VS Slash
+11183	VS Pierce
+11184	Magic
+11185	Fire
+11186	Lightning
+11187	Holy
+11188	
+11189	
+11190	Immunity
+11191	Robustness
+11192	Focus
+11193	Vitality
+11194	
+11195	
+11196	
+11197	
+11198	
+11199	
+11200	Poise
+11300	Str
+11301	Dex
+11302	Int
+11303	Fai
+11304	Arc
+11305	
+11306	
+11307	
+11308	
+11309	
+11310	Str
+11311	Dex
+11312	Int
+11313	Fai
+11314	Str
+11315	Dex
+11316	Int
+11317	Fai
+11318	Arc
+11319	Arc
+11320	-
+11321	S
+11322	A
+11323	B
+11324	C
+11325	D
+11326	E
+11327	
+11328	
+11329	
+11330	Consumable
+11331	Reusable
+11351	Weight
+11352	
+11353	
+11354	
+11355	
+11356	
+11357	
+11358	
+11359	
+11360	Item Type
+11400	Containers Held
+12000	Runes Required
+12001	
+12002	
+12003	
+12004	
+12005	
+12006	
+12007	
+12008	
+12009	
+12010	Runes Offered
+20000	Attack Power
+20001	Guarded Damage Negation
+20002	Attributes Required
+20003	Attribute Scaling
+20004	Passive Effects
+20005	
+20006	Item Effect
+20007	Obtained
+20008	Attribute Points
+20009	Base Stats
+20010	Defense/Dmg Negation
+20011	Defense Power
+20012	Damage Negation
+20013	Protection
+20014	Body
+20015	Lineage
+20016	Equipment
+20017	Resistance
+20050	Damage Negation
+20051	Resistance
+20100	Mixing Status
+20200	Necessary Stats
+30100	This character's name
+30101	This character's body type
+30102	This character's background\nWhat winding paths brought them here
+30103	The keepsake held by this character\nEach a reflection of its owner
+30200	A cumulative figure that represents overall\nattribute strength.\nYou can level up using runes.
+30201	Total runes in possession.\nUpon dying, you will drop any runes in your possession at the site of your death.
+30202	Number of runes required to raise a level.\nWhen you level up, you can choose an attribute to increase.
+30203	
+30204	The number of Great Runes in your possession
+30301	Character's apparent age
+30400	Attribute governing HP.\nAlso affects fire resistance\nand immunity.
+30401	Attribute governing stamina.\nAlso affects robustness.\nThis attribute also determines how\nheavy your equipment can be.
+30402	Attribute that determines FP.\nAlso affects focus.
+30403	Attribute required to wield heavy armaments.\nAlso boosts attack power of strength-scaling\narmaments and affects your physical defense.
+30404	Attribute required to wield advanced armaments.\nAlso boosts attack power of dexterity-scaling\narmaments, reduces casting time of spells,\nsoftens fall damage, and makes it harder to\nbe knocked off your horse.
+30405	
+30406	Attribute required to perform glintstone\nsorceries. Also boosts magic power of\nintelligence-scaling sorceries and improves\nmagic resistance.
+30407	Attribute required to perform sacred\nincantations. Also boosts magic power\nof faith-scaling incantations.
+30408	
+30409	Attribute governing discovery.\nAlso affects holy defense, vitality,\nand certain sorceries and incantations.
+30500	Your life. If reduced to nothing, you die.\nReplenish it by drinking from the Flask of\nCrimson Tears or resting at a site of grace.
+30501	Energy consumed to use spells and skills.\nReplenish it by drinking from the Flask of\nCerulean Tears or resting at a site of grace.
+30502	Required for various actions.\nDepletes when certain actions are taken,\nbut recovers automatically.
+30503	
+30504	
+30505	
+30506	
+30507	
+30508	
+30509	
+30510	Total weight of equipped armaments and\narmor. Movement slows as load increases.\nThe rightmost number is the maximum\nweight that can be equipped; exceed it\nand movement slows dramatically.
+30511	
+30512	Max weight of equippable\narmaments and armor.\nMovement slows as load\nincreases. Exceed this number and\nmovement slows dramatically.
+30513	
+30514	
+30515	
+30516	
+30517	
+30518	
+30519	
+30520	Attack power of the armament\nequipped in right hand slot 1
+30521	Attack power of the armament\nequipped in right hand slot 2
+30522	Attack power of the armament\nequipped in right hand slot 3
+30523	Attack power of the armament\nequipped in left hand slot 1
+30524	Attack power of the armament\nequipped in left hand slot 2
+30525	Attack power of the armament\nequipped in left hand slot 3
+30526	
+30527	
+30528	
+30529	
+30530	The body's capacity to endure\nstandard physical damage
+30531	The body's capacity to endure\nstriking physical damage
+30532	The body's capacity to endure\nslashing physical damage
+30533	The body's capacity to endure\npiercing physical damage
+30534	The body's capacity to endure\nmagical damage
+30535	The body's capacity to endure\nfire damage
+30536	The body's capacity to endure\nlightning damage
+30537	The body's capacity to endure\nholy damage
+30538	
+30539	
+30540	The body's capacity to resist various\npoisons and rot.\nHigher values make it more difficult to succumb to these ailments.
+30541	The body's capacity to resist\nblood loss and frostbite.\nHigher values make it more difficult to succumb to these ailments.
+30542	The body's capacity to resist\nsleep and bouts of madness.\nHigher values make it more difficult to succumb to these ailments.
+30543	The body's capacity to resist death.\nHigher values make it more difficult to be afflicted with instant death.
+30561	The number of slots available for\nmemorizing sorceries and incantations
+30562	Governs likelihood of finding items\non the corpses of defeated foes
+30563	
+30564	
+30565	
+30566	
+30567	
+30568	
+30569	
+30570	The degree to which you can resist\ncollapsing under enemy attacks
+30571	
+30572	
+30573	
+30574	
+30575	
+30576	
+30577	
+30578	
+30579	
+30580	Your defense power and damage negation\nagainst standard physical attacks. The\nformer is calculated via attributes, while\nthe latter is calculated via defensive gear\nand any additional effects.
+30581	Your defense power and damage negation\nagainst striking physical attacks. The\nformer is calculated via attributes, while\nthe latter is calculated via defensive gear\nand any additional effects.
+30582	Your defense power and damage negation\nagainst slashing physical attacks. The\nformer is calculated via attributes, while\nthe latter is calculated via defensive gear\nand any additional effects.
+30583	Your defense power and damage negation\nagainst piercing physical attacks. The\nformer is calculated via attributes, while\nthe latter is calculated via defensive gear\nand any additional effects.
+30584	Your defense power and damage negation\nagainst magical attacks. The former is\ncalculated via attributes, while the latter\nis calculated via defensive gear\nand any additional effects.
+30585	Your defense power and damage negation\nagainst fire attacks. The former is\ncalculated via attributes, while the latter\nis calculated via defensive gear\nand any additional effects.
+30586	Your defense power and damage negation\nagainst lightning attacks. The former is\ncalculated via attributes, while the latter\nis calculated via defensive gear\nand any additional effects.
+30587	Your defense power and damage negation\nagainst holy attacks. The former is\ncalculated via attributes, while the\nlatter is calculated via defensive gear\nand any additional effects.
+30588	
+30589	
+30590	Your resistance to various poisons and\nrot. The higher the number, the\nlower your susceptibility. Governed by\nyour attributes, as well as defensive\ngear and any additional effects.
+30591	Your resistance to blood loss and\nfrostbite. The higher the number, the\nlower your susceptibility. Governed by\nyour attributes, as well as defensive\ngear and any additional effects.
+30592	Your resistance to sleep and bouts of\nmadness. The higher the number, the\nlower your susceptibility. Governed by\nyour attributes, as well as defensive\ngear and any additional effects.
+30593	Your resistance to death. The higher the\nnumber, the lower your susceptibility to\ninstant death. Governed by your attributes,\nas well as defensive gear and any additional effects.
+31001	Armament category.\nArmaments belonging to the same\ncategory exhibit similar properties.
+31002	Sorceries and incantations
+31003	The types of physical damage dealt\nby this armament. Other than standard\nphysical damage, striking, slashing,\nand piercing damage can also be dealt.
+31004	Number of this item currently held.\nThe rightmost number indicates\nthe maximum you may hold at one time.
+31005	Number of this item currently\nstored in chest. The rightmost number\nindicates the maximum you may hold\nat one time.
+31006	The names of skills you can use.\nUsing most skills consumes FP.
+31007	Number of containers currently held
+31008	Container items, essential to crafting, come in various forms, such as cracked pots and perfume bottles. The left number indicates how many containers are currently in use. The right number indicates how many you possess.
+31009	Number of containers remaining\nto use in crafting
+31010	Physical attack power
+31011	Magic attack power
+31012	Fire attack power
+31013	Lightning attack power
+31014	Holy attack power
+31015	
+31016	
+31017	
+31018	
+31019	
+31020	The degree to which physical damage\nis negated while guarding
+31021	The degree to which magic damage\nis negated while guarding
+31022	The degree to which fire damage\nis negated while guarding
+31023	The degree to which lightning damage\nis negated while guarding
+31024	The degree to which holy damage\nis negated while guarding
+31025	
+31026	
+31027	
+31028	
+31029	
+31030	The strength of critical hits,\nwhich can be performed on enemies\nyou have got behind or stance-broken.
+31031	The stability of character's defense.\nThe higher this value, the smaller\nthe amount of stamina consumed\nwhen guarding attacks.
+31032	Distance of ranged weapons
+31033	
+31034	The amount of FP required to\nperform this skill
+31035	The degree to which sorceries\nincrease in power
+31036	The degree to which incantations\nincrease in power
+31037	
+31038	
+31039	
+31040	The number of slots needed to memorize\nsorceries and incantations
+31041	The amount of FP required to\ncast this spell
+31042	The amount of FP required to\nuse this item
+31043	The amount of HP required to use this item
+31180	The degree to which incoming\nstandard physical damage is negated
+31181	The degree to which incoming\nstriking physical damage is negated
+31182	The degree to which incoming\nslashing physical damage is negated
+31183	The degree to which incoming\npiercing physical damage is negated
+31184	The degree to which incoming\nmagic damage is negated
+31185	The degree to which incoming\nfire damage is negated
+31186	The degree to which incoming\nlightning damage is negated
+31187	The degree to which incoming\nholy damage is negated
+31188	
+31189	
+31190	The resistance your armor offers to various poisons and rot. Higher values make it more difficult to succumb to these ailments.
+31191	The resistance your armor offers to blood loss and frostbite. Higher values make it more difficult to succumb to these ailments.
+31192	The resistance your armor offers to sleep and bouts of madness. Higher values make it more difficult to succumb to these ailments.
+31193	The resistance your armor offers to death. Higher values make it more difficult to be afflicted with instant death.
+31194	
+31195	
+31196	
+31197	
+31198	
+31199	
+31200	The degree to which you can resist\ncollapsing under enemy attacks
+31300	Strength required to master this armament.\nWithout sufficient strength, this armament's\ndamage is greatly reduced.
+31301	Dexterity required to master this armament.\nWithout sufficient dexterity, this\narmament's damage is greatly reduced.
+31302	Intelligence required to master this\narmament. Without sufficient intelligence,\nthis armament's damage is greatly reduced.
+31303	Faith required to master this armament.\nWithout sufficient faith, this armament's\ndamage is greatly reduced.
+31304	Arcane required to master this armament.\nWithout sufficient arcane, this armament's\ndamage is greatly reduced.
+31305	
+31306	
+31307	Intelligence required to cast this sorcery\nor incantation.\nWithout sufficient intelligence, it cannot\nbe used.
+31308	Faith required to cast this sorcery\nor incantation.\nWithout sufficient faith, it cannot\nbe used.
+31309	Arcane required to cast this sorcery\nor incantation.\nWithout sufficient arcane, it cannot\nbe used.
+31310	The degree to which this armament's \nattacks scale with strength
+31311	The degree to which this armament's\nattacks scale with dexterity
+31312	The degree to which this armament's\nattacks scale with intelligence
+31313	The degree to which this armament's\nattacks scale with faith
+31314	The degree to which this armament's power\nor passive effects scale with strength
+31315	The degree to which this armament's power\nor passive effects scale with dexterity
+31316	The degree to which this armament's power\nor passive effects scale with intelligence
+31317	The degree to which this armament's power\nor passive effects scale with faith
+31318	The degree to which this armament's power\nor passive effects scale with arcane
+31319	The degree to which this armament's \nattacks scale with arcane
+31351	Weight of this equipment
+31352	
+31353	
+31354	
+31355	
+31356	
+31357	
+31358	
+31359	
+31360	Type of item.\nShows whether or not\nit will be consumed with use.
+31500	This armament's innate effects
+31511	Skill granted by these Ashes of War
+31512	Armament types that these Ashes of War can alter
+31513	Affinity that these Ashes of War can grant.\nThis can be expanded with whetblades.
+32000	Number of runes required to buy
+32001	Number of runes required to upgrade
+32002	Number of runes required to grant
+32003	
+32004	Number of runes required to receive power\nfrom remembrances
+32005	
+32006	
+32007	
+32008	
+32009	
+32010	Number of runes gained when sold
+40110	Confirm
+40111	
+40112	
+40113	
+40114	
+40115	
+40116	
+40117	
+40118	
+40119	
+40120	None entered
+40300	On
+40301	Off
+40302	Mild
+40303	Auto
+40304	
+40305	
+40306	
+40307	
+40308	
+40309	
+40310	Normal
+40311	Reversed
+40312	
+40313	
+40314	
+40315	
+40316	
+40317	
+40318	
+40319	
+40320	Allowed
+40321	Restricted
+40322	
+40323	
+40324	
+40325	
+40326	
+40327	
+40328	
+40329	
+40330	Defaults
+40331	Next
+40332	
+40333	
+40334	
+40335	
+40336	
+40337	
+40338	
+40339	
+40340	Perform Matchmaking
+40341	No Matchmaking
+40342	
+40343	
+40344	
+40345	
+40346	
+40347	
+40348	
+40349	
+40350	No Password
+40351	
+40352	
+40353	
+40354	
+40355	
+40356	
+40357	
+40358	
+40359	
+40360	Play Online
+40361	Play Offline
+40362	Asynchronous Online Play
+40363	
+40364	
+40365	
+40366	
+40367	
+40368	
+40369	
+40370	Disable
+40371	Enable
+40372	
+40373	
+40374	
+40375	Agree
+40376	Decline
+40377	Prioritize Quality
+40378	Prioritize Frame Rate
+40379	
+40380	Game Pad
+40381	Keyboard and Mouse
+40400	Fullscreen
+40401	Windowed
+40402	Borderless Windowed
+40403	
+40404	
+40405	
+40406	
+40407	
+40408	
+40409	
+40410	x
+40411	
+40412	
+40413	
+40414	
+40415	
+40416	
+40417	
+40418	
+40419	
+40420	Custom
+40421	Low
+40422	Medium
+40423	High
+40424	Maximum
+40440	On
+40441	Off
+40500	Tools
+40501	Melee Armaments
+40502	
+40503	
+40504	Shields
+40505	Head
+40506	Chest
+40507	Arms
+40508	Legs
+40509	Talismans
+40510	Sorceries/Incantations
+40511	Arrows/Bolts
+40512	Bolstering Materials
+40513	Key Items
+40514	
+40515	
+40516	Crafting Materials
+40517	Info
+40518	Crystal Tears
+40519	Ranged Weapons / Catalysts
+40520	Ashes
+40521	Sorceries
+40522	Incantations
+40523	Ashes of War
+40524	
+40525	
+40526	
+40527	
+40528	
+40529	
+40530	Equipped Armaments
+40531	Equipped Ashes
+40532	Equipped Armaments
+40550	Armaments
+40551	Armor
+40552	
+40553	
+40554	
+40555	
+40556	
+40557	
+40558	
+40559	
+40560	All Items
+40561	
+40562	Consumables
+40563	
+40564	
+40565	
+40566	
+40567	
+40568	
+40569	
+40570	
+40571	Throwing Pots
+40572	Perfume Arts
+40573	
+40574	
+40575	
+40576	
+40577	
+40578	
+40579	
+40580	Ashes
+40581	Special Ashes
+40582	
+40583	
+40584	
+40585	
+40586	
+40587	
+40588	
+40589	
+40590	Sorceries/Incantations
+40591	Offensive Sorceries
+40592	Support Sorceries
+40593	Offensive Incantations
+40594	Support Incantations
+40595	
+40596	
+40597	
+40598	
+40599	
+40600	
+40601	
+40602	Character Status
+50000	None
+50001	
+50002	
+50003	
+50004	
+50005	Standard
+50050	Strike
+50051	
+50052	
+50053	
+50054	
+50055	Standard/Strike
+50500	Slash
+50501	
+50502	
+50503	
+50504	
+50505	Standard/Slash
+50550	Strike/Slash
+50551	
+50552	
+50553	
+50554	
+50555	Standard/Strike/Slash
+55000	Pierce
+55001	
+55002	
+55003	
+55004	
+55005	Standard/Pierce
+55050	Strike/Pierce
+55051	
+55052	
+55053	
+55054	
+55055	Standard/Strike/Pierce
+55500	Slash/Pierce
+55501	
+55502	
+55503	
+55504	
+55505	Standard/Slash/Pierce
+55550	Strike/Slash/Pierce
+55551	
+55552	
+55553	
+55554	
+55555	Standard/Strike/Slash/Pierce
+60000	All Armaments
+60001	, 
+60002	
+60003	
+60004	
+60005	
+60006	
+60007	
+60008	
+60009	
+60010	Dagger
+60011	
+60012	
+60013	
+60014	
+60015	Straight Sword
+60016	
+60017	
+60018	
+60019	
+60020	Greatsword
+60021	
+60022	
+60023	
+60024	
+60025	Colossal Sword
+60026	
+60027	
+60028	
+60029	
+60030	Curved Sword
+60031	
+60032	
+60033	
+60034	
+60035	Curved Greatsword
+60036	
+60037	
+60038	
+60039	
+60040	Katana
+60041	
+60042	
+60043	Twinblade
+60044	
+60045	Thrusting Sword
+60046	Heavy Thrusting Sword
+60047	
+60048	
+60049	
+60050	Axe
+60051	
+60052	
+60053	
+60054	
+60055	Greataxe
+60056	
+60057	
+60058	
+60059	
+60060	Hammer
+60061	
+60062	
+60063	
+60064	
+60065	Great Hammer
+60066	
+60067	Flail
+60068	
+60069	
+60070	Spear
+60071	
+60072	
+60073	
+60074	
+60075	
+60076	
+60077	Great Spear
+60078	
+60079	
+60080	Halberd
+60081	
+60082	
+60083	
+60084	
+60085	Reaper
+60086	
+60087	
+60088	
+60089	
+60090	Fist
+60091	
+60092	
+60093	
+60094	
+60095	
+60096	
+60097	
+60098	
+60099	
+60100	Claw
+60101	
+60102	Colossal Weapon
+60103	
+60104	Light Bow
+60105	Bow
+60106	
+60107	
+60108	
+60109	
+60110	Greatbow
+60111	
+60112	
+60113	
+60114	
+60115	Crossbow
+60116	
+60117	Ballista
+60118	
+60119	
+60120	Glintstone Staff
+60121	
+60122	
+60123	
+60124	
+60125	Tattoo
+60126	
+60127	
+60128	
+60129	
+60130	Sacred Seal
+60131	
+60132	
+60133	
+60134	
+60135	
+60136	
+60137	
+60138	
+60139	
+60140	Small Shield
+60141	
+60142	
+60143	
+60144	
+60145	Medium Shield
+60146	
+60147	
+60148	
+60149	
+60150	Greatshield
+60151	
+60152	
+60153	
+60154	
+60155	Whip
+60156	
+60157	
+60158	
+60159	
+60160	Arrow
+60161	
+60162	
+60163	
+60164	
+60165	Greatarrow
+60166	
+60167	
+60168	
+60169	
+60170	Bolt
+60171	Greatbolt
+60172	
+60173	
+60174	
+60175	Torch
+61000	Sorcery
+61001	
+61002	Incantation
+62000	Standard
+62001	Heavy
+62002	Keen
+62003	Quality
+62004	Fire
+62005	Flame Art
+62006	Lightning
+62007	Sacred
+62008	Magic
+62009	Occult
+62010	Cold
+62011	Poison
+62012	Blood
+63000	Usable on swords, axes, and\nhammers (small armaments and\nthrusting swords excepted)
+63001	Usable on medium and large armaments capable of thrusting
+63002	Usable on swords, axes, and polearms (colossal weapons excepted)
+63003	Usable on swords, axes, and\nhammers (small and medium\nswords excepted)
+63004	Usable on armaments capable of thrusting (colossal weapons excepted)
+63005	Usable on axes and hammers,\nas well as curved swords,\ngreatswords, and reapers\n(colossal weapons excepted)
+63006	Usable on swords and polearms capable of slashing (colossal weapons excepted)
+63007	Usable on large and colossal\naxes and hammers
+63008	Usable on katana
+63009	Usable on straight swords
+63010	Usable on large and colossal weapons capable of thrusting, spears, and twinblades
+63011	Usable on small and medium swords (twinblades excepted)
+63012	Usable on small and medium swords, axes, and hammers, as well as polearms and staves (great spears excepted)
+63013	Usable on polearms capable of thrusting, heavy thrusting swords, and twinblades
+63014	Usable on swords capable of slashing, axes, hammers, and polearms (small and colossal weapons excepted)
+63015	Usable on swords, axes, and polearms capable of slashing (colossal weapons and great spears excepted)
+63016	Usable on polearms capable of thrusting and twinblades
+63017	Usable on fists and claws
+63018	Usable on axes and hammers
+63019	Usable on melee armaments\n(small armaments and whips excepted)
+63020	Usable on swords (colossal weapons and twinblades excepted)
+63021	Usable on swords, axes, and hammers
+63022	Usable on swords\n(colossal weapons excepted)
+63023	Usable on swords and axes\n(small and colossal axes excepted)
+63024	Usable on polearms and twinblades
+63025	Usable on polearms\n(great spears excepted)
+63026	Usable on small and medium swords
+63027	Usable on polearms and twinblades\n(great spears excepted)
+63028	Usable on polearms\n(reapers excepted)
+63029	Usable on small melee armaments\nand curved swords
+63030	Usable on small and medium shields
+63031	Usable on shields and torches
+63032	Usable on greatbows
+63033	Usable on light bows and longbows
+63034	Usable on all bows
+63035	Usable on greataxes, great hammers,\nand colossal weapons
+63036	Usable on small and medium\nstraight swords and thrusting\nswords
+63037	Usable on swords as well as polearms capable of thrusting (colossal weapons excepted)
+63038	Usable on melee armaments\n(whips excepted)
+63039	Usable on large and colossal\nswords, axes, and hammers
+63040	Usable on melee armaments\n(daggers, thrusting swords,\nand whips excepted)
+63041	Usable on all shields
+63042	Usable on all melee armaments
+63043	Usable on axes and hammers as well as curved swords and greatswords\n(colossal weapons excepted)
+63044	Usable on melee armaments\n(whips, fists, and claws excepted)
+63045	Usable on melee armaments (colossal weapons and whips excepted)
+63046	Usable on swords as well as polearms capable of thrusting (small and colossal weapons excepted)
+63047	Usable on daggers, curved swords,\nthrusting swords, fists, claws,\nand small and medium shields
+63048	Usable on light bows
+63049	Usable on swords and axes (colossal axes excepted)
+63050	Usable on greataxes, great hammers, great spears, and colossal weapons
+63900	Usable on large thrusting weapons
+63901	Usable on all thrusting weapons
+63902	Usable on standard slashing weapons
+63903	Usable on all melee weapons
+63904	Usable on large melee weapons
+63905	Usable on all swords
+63906	Usable on all shields
+80000	Cracked Pot
+80001	Perfume Bottle
+80002	
+80003	
+80004	
+80005	
+80006	
+80007	
+80008	
+80009	
+80010	Ritual Pot
+90000	Morning
+90001	Early Day
+90002	Late Day
+90003	Evening
+90004	Night
+90005	Late Night
+101000	Equipment
+101001	Inventory
+101002	Status
+101003	System
+101004	Messages
+101005	Pouch
+101006	
+101007	Gestures
+101008	Multiplayer
+101009	Item Crafting
+103000	Right Hand Armament 1
+103001	Right Hand Armament 2
+103002	Right Hand Armament 3
+103003	
+103004	
+103005	
+103006	
+103007	
+103008	
+103009	
+103010	
+103011	Left Hand Armament 1
+103012	Left Hand Armament 2
+103013	Left Hand Armament 3
+103014	
+103015	
+103016	
+103017	
+103018	
+103019	
+103020	Arrows 1
+103021	Arrows 2
+103022	
+103023	
+103024	
+103025	
+103026	
+103027	
+103028	
+103029	
+103030	Bolts 1
+103031	Bolts 2
+103032	
+103033	
+103034	
+103035	
+103036	
+103037	
+103038	
+103039	
+103040	Quick Item 1
+103041	Quick Item 2
+103042	Quick Item 3
+103043	Quick Item 4
+103044	Quick Item 5
+103045	Quick Item 6
+103046	Quick Item 7
+103047	Quick Item 8
+103048	Quick Item 9
+103049	Quick Item 10
+103050	Talisman 1
+103051	Talisman 2
+103052	Talisman 3
+103053	Talisman 4
+103054	
+103055	
+103056	
+103057	
+103058	
+103059	
+103060	Pouch 1
+103061	Pouch 2
+103062	Pouch 3
+103063	Pouch 4
+103064	Pouch 5
+103065	Pouch 6
+103066	
+103067	
+103068	
+103069	
+103070	Gesture 1
+103071	Gesture 2
+103072	Gesture 3
+103073	Gesture 4
+103074	Gesture 5
+103075	Gesture 6
+110000	Game Options
+110001	Camera Options
+110002	
+110003	
+110004	
+110005	
+110006	
+110007	
+110008	
+110009	
+110010	Camera Y-Axis
+110011	Camera X-Axis
+110012	Reset Camera Y-Axis
+110013	Camera Speed
+110014	Toggle Auto Lock-On
+110015	Auto-Target
+110016	Camera Auto Wall Recovery
+110017	
+110018	Jump Controls
+110019	Manual Attack Aiming
+110020	Performance Settings
+110021	Ray Tracing
+110100	Sound and Display
+110101	
+110102	
+110103	
+110104	
+110105	
+110106	
+110107	
+110108	
+110109	
+110110	Display Blood
+110111	Subtitles
+110112	HUD
+110113	Cinematic Effects
+110114	Music
+110115	Sound Effects
+110116	Voice
+110117	Master Volume
+110118	Camera Auto Rotation
+110200	Brightness
+110201	Adjust brightness until the image on the right is barely visible
+110202	Adjust brightness to your liking
+110203	Adjust TV brightness to the highest setting
+110204	Adjust saturation to your liking
+110205	
+110206	
+110207	
+110208	
+110209	HDR
+110210	Adjust Brightness
+110211	Adjust Image Quality
+110212	Maximum Brightness
+110213	Adjust Saturation
+110214	Adjust Brightness
+110300	Network
+110301	
+110302	
+110303	
+110304	
+110305	
+110306	
+110307	
+110308	
+110309	
+110310	Voice Chat
+110311	Cross-Region Play
+110312	
+110313	Display Player Names
+110314	Launch Setting
+110315	Send Summon Sign
+110316	Data Usage Agreement
+110500	Quit Game
+110501	
+110502	Level
+110503	
+110504	
+110505	
+110506	
+110507	
+110508	
+110509	
+110510	Quit Game
+110511	Return to Desktop
+111001	Controls
+111002	
+111003	
+111004	
+111005	Keyboard/Mouse Settings
+111006	Controls
+111007	
+111008	
+111009	
+111010	Device for On-Screen Prompts
+111011	Show Tutorials
+111012	
+111013	
+111014	
+111015	
+111016	
+111017	
+111018	
+111019	
+111020	Mouse Sensitivity
+111021	
+111022	Mouse X-Axis
+111023	Mouse Y-Axis
+111024	
+111025	
+111026	
+111027	
+111028	
+111029	
+111030	
+111031	Key Bindings
+111100	Graphics
+111101	
+111102	
+111103	
+111104	
+111105	Changes applied from title screen
+111106	
+111107	
+111108	
+111109	
+111110	Screen Mode
+111111	Resolution
+111112	Auto-Detect Best Rendering Settings
+111113	Quality Settings
+111114	Advanced Settings
+111210	Texture Quality
+111211	Antialiasing Quality
+111212	SSAO
+111213	Depth of Field
+111214	Motion Blur
+111215	Shadow Quality
+111216	Lighting Quality
+111217	Effects Quality
+111218	Volumetric Quality
+111219	Reflection Quality
+111220	Water Surface Quality
+111221	Shader Quality
+111222	Ray Tracing Quality
+111223	Global Illumination Quality
+111224	Grass Quality
+121000	Multiplayer Password Setting
+121001	Group Password Setting
+121002	
+121003	
+121004	
+121005	
+121006	
+121007	
+121008	
+121009	
+121010	If you set a multiplayer password, you'll only be matched with other players using the same password for most multiplayer features.\n\nHowever, multiplayer passwords do not apply to invasion or support multiplayer.
+121011	If you set a group password, you'll be more likely to see messages, summon signs, bloodstains, phantoms, and so on from others using the same password.\n\nElements given this special priority will appear differently from others.
+121100	With a Furlcalling Finger Remedy, you can see summon signs, which can be used to summon players from other worlds.\n(Finger Remedies are consumed with use.)\n\nThere are various types of summon signs.\nGold signs summon Furled Finger cooperators.\nRed signs summon duelist adversaries.\n(For either type of multiplayer, the summoning player becomes Host of Fingers.)
+121101	With a Furlcalling Finger Remedy, you can see summon signs, which can be used to summon players from other worlds.\n(Finger Remedies are consumed with use.)\n\nThere are various types of summon signs.\nGold signs summon Furled Finger cooperators.\nRed signs summon duelist adversaries.\n(For either type of multiplayer, the summoning player becomes Host of Fingers.)
+121102	You can leave a gold summon sign to play cooperative multiplayer.\n\nThis sign will appear in other players' worlds and allow them to summon you as a Furled Finger for cooperative multiplayer.\nMultiplayer begins once you are summoned.\n(Your objective will be to defeat the area boss.)\n\nIf you leave a second summon sign, the older sign will vanish.
+121103	You can leave a gold summon sign to play cooperative multiplayer.\n\nThis sign will appear in other players' worlds and allow them to summon you as a Furled Finger for cooperative multiplayer.\nMultiplayer begins once you are summoned.\n(Your objective will be to defeat the area boss.)\n\nIf you leave a second summon sign, the older sign will vanish.
+121104	You can leave a red summon sign to play competitive multiplayer.\n\nThis sign will appear in other players' worlds and allow them to summon you as a duelist adversary for competitive multiplayer.\nMultiplayer begins once you are summoned.\n(Your objective will be to defeat the Host of Fingers.)\n\nIf you leave a second summon sign, the older sign will vanish.
+121105	You can leave a red summon sign to play competitive multiplayer.\n\nThis sign will appear in other players' worlds and allow them to summon you as a duelist adversary for competitive multiplayer.\nMultiplayer begins once you are summoned.\n(Your objective will be to defeat the Host of Fingers.)\n\nIf you leave a second summon sign, the older sign will vanish.
+121106	Attempt to invade another player's world as a Bloody Finger.\n\nIf you successfully invade, invasion multiplayer will begin. (Your objective will be to defeat the Host of Fingers.)\n\nYou can attempt another invasion of the same world by using a Phantom Finger item. (These items are consumed upon use.)
+121107	Cancel invasion of other world
+121108	Choose a summoned player to\nsend back to their own world.\n\nThis player will be removed\nfrom the multiplayer session.
+121109	Removed from multiplayer session.\nReturning to own world.
+121110	Lures in invaders.\n\nThis allows your world to be invaded without any Furled Finger cooperators present, and it also shortens the interval between windows of opportunity for invasion.\n\nAdditionally, enables the arrival of a second invader to join when a cooperator is present. (With two invaders, the maximum number of cooperators becomes one.)
+121111	Stop beckoning invaders to your world
+121112	Puts you into a ready state to answer, should\nsomeone in another world call for rescue.\nYou will be summoned to their world as a hunter.\n\nMultiplayer will begin once you are summoned.\n(Your objective will be to defeat invaders.)
+121113	Stop accepting summons requests
+121114	Allows you to automatically request for a hunter from another world to come to your rescue when your world is invaded.\n\nYou can also use this after being invaded to summon a hunter for help.\n(Summoning rescuers may not always be possible.)
+121115	Cancel summons request
+121116	Send a cooperative summon sign to several summoning pools (activated pools only).\n\nIf you are summoned, you will be transported to that summoning pool's location in the host player's world and multiplayer will begin.\n(Your objective will be to help the host player defeat the area boss.)
+121117	Remove co-op summon sign from summoning pool
+121118	Send a competitive summon sign to several summoning pools (activated pools only).\n\nIf you are summoned, you will be transported to that summoning pool's location in the host player's world and multiplayer will begin.\n(Your objective will be to defeat the Host of Fingers.)
+121119	Remove hostile summon sign from summoning pool
+121120	Attempt to invade another player's world as a Bloody Finger.\n\nIf you successfully invade, your Festering Bloody Finger will be spent and invasion multiplayer will begin. (Your objective will be to defeat the Host of Fingers.)\n\nYou can attempt another invasion of the same world by using a Phantom Finger item. (These items are consumed upon use.)
+121121	Stop invading another world
+121122	Attempt to invade another player's world as a recusant.\n\nIf you successfully invade, invasion multiplayer will begin. (Your objective will be to defeat the Host of Fingers.)\n\nYou can attempt another invasion of the same world by using a Phantom Finger item. (These items are consumed upon use.)
+121123	Stop invading another world
+122010	Furled Finger Rank
+122011	1.0
+122012	2.0
+122013	3.0
+122014	
+122015	
+122016	
+122017	
+122018	
+122019	
+122020	Duelist Rank
+122021	1.0
+122022	2.0
+122023	3.0
+122024	
+122025	
+122026	
+122027	
+122028	
+122029	
+122030	Bloody Finger Rank
+122031	1.0
+122032	2.0
+122033	3.0
+122034	
+122035	
+122036	
+122037	
+122038	
+122039	
+122040	Recusant Rank
+122041	1.0
+122042	2.0
+122043	3.0
+122044	
+122045	
+122046	
+122047	
+122048	
+122049	
+122050	Hunter Rank
+122051	1.0
+122052	2.0
+122053	3.0
+122110	Contribution
+123000	Multiplayer Password
+123001	Group Password
+123002	
+123003	
+123004	
+123005	
+123006	
+123007	
+123008	
+123009	
+123010	None set
+123011	None set
+123012	
+123013	
+123014	
+123015	
+123016	
+123017	
+123018	
+123019	
+123020	Please set multiplayer password
+123021	Please set group password
+123022	
+123023	
+123024	
+123025	
+123026	
+123027	
+123028	
+123029	
+123030	Password
+212000	Level Up
+212750	Rebirth
+213000	Blacksmith
+213001	Required Items
+213002	
+213003	
+213004	
+213005	
+213006	
+213007	
+213008	
+213009	
+213010	Smithing Table
+214000	Ashes of War
+214020	To be Enhanced
+214021	
+214022	
+214023	
+214024	
+214025	
+214026	
+214027	
+214028	
+214029	
+214030	Affinity Granted
+214110	Undo Enhancement
+215000	Great Runes
+216000	Spirit Tuning
+216001	Required Items
+225000	Dragon Communion
+225001	
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	Offerings
+225011	
+225012	
+225013	
+225014	
+225015	
+225016	
+225017	
+225018	
+225019	
+225020	No. Required (No. Held)
+226000	Puppet
+226001	
+226002	
+226003	
+226004	
+226005	
+226006	
+226007	
+226008	
+226009	
+226010	Exchange
+227000	Ash of War Duplication
+227001	
+227002	
+227003	
+227004	
+227005	
+227006	
+227007	
+227008	
+227009	
+227010	Consumable Material
+230000	Puppet
+230100	Remembrance Duplication
+231000	Purchase Item
+231001	Runes Required
+231002	
+231003	Limit
+231004	
+231005	
+231006	
+231007	
+231008	
+231009	
+231010	Sorcery Instruction
+231011	
+231012	
+231013	
+231014	
+231015	
+231016	
+231017	
+231018	
+231019	
+231020	Incantation Instruction
+231021	
+231022	
+231023	
+231024	
+231025	
+231026	
+231027	
+231028	
+231029	
+231030	Skill Instruction
+231500	Equipment of Champions
+232000	Sell Item
+232001	Runes Offered
+233000	Memorize Spells
+233101	Memory Slots
+233102	Empty Slots
+233103	FP
+234020	----
+235000	Please allocate your flask uses
+236000	Item Crafting
+236001	Required Items
+236002	No. Required (No. Held)
+236003	Created Items
+236200	Power of Remembrance
+236201	
+236202	
+236203	
+236204	
+236205	
+236206	
+236207	
+236208	
+236209	
+236210	Usable Remembrances
+236211	Received Power
+236400	Alter Garments
+236401	
+236402	
+236403	
+236404	
+236405	
+236406	
+236407	
+236408	
+236409	
+236410	Before Alterations
+236411	After Alterations
+238000	Wondrous Physick Mix
+241000	Map
+241100	Markers
+241101	
+241102	
+241103	
+241104	
+241105	
+241106	
+241107	
+241108	
+241109	
+241110	Remove All Markers
+241200	Sites of Grace
+241201	
+241202	
+241203	
+241204	
+241205	
+241206	
+241207	
+241208	
+241209	
+241210	Marked Sites of Grace
+241300	Stormveil Castle
+241301	Chapel of Anticipation
+241302	Leyndell, Royal Capital
+241303	Leyndell, Ashen Capital
+241304	Roundtable Hold
+241305	Ainsel River Main
+241306	Lake of Rot
+241307	Ainsel River
+241308	Nokron, Eternal City
+241309	Siofra River
+241310	Deeproot Depths
+241311	Mohgwyn Palace
+241312	Crumbling Farum Azula
+241313	Academy of Raya Lucaria
+241314	Miquella's Haligtree
+241315	Elphael, Brace of the Haligtree
+241316	Volcano Manor
+241317	Stranded Graveyard
+241318	Stone Platform
+241319	Subterranean Shunning-Grounds
+241320	Ruin-Strewn Precipice
+241321	Limgrave
+241322	Stormhill
+241323	Weeping Peninsula
+241324	Liurnia of the Lakes
+241325	Bellum Highway
+241326	Moonlight Altar
+241327	Altus Plateau
+241328	Mt. Gelmir
+241329	Capital Outskirts
+241330	Forbidden Lands
+241331	Caelid
+241332	Greyoll's Dragonbarrow
+241333	Mountaintops of the Giants
+241334	Flame Peak
+241335	Consecrated Snowfield
+241336	Swamp of Aeonia
+241400	Roundtable Hold
+241401	Stormveil Castle
+241402	Leyndell, Royal Capital
+241403	Crumbling Farum Azula
+241404	Academy of Raya Lucaria
+241405	Miquella's Haligtree
+241406	Volcano Manor
+241407	Ainsel River
+241408	Siofra River
+241409	Deeproot Depths
+241410	Limgrave
+241411	Liurnia of the Lakes
+241412	Altus Plateau
+241413	Caelid
+241414	Mountaintops of the Giants
+241415	Giants' Peak
+241416	Consecrated Snowfield
+251000	Sort Chest
+251001	Inventory
+251002	Chest
+280001	Key Bindings
+280002	
+280003	
+280004	
+280005	Keyboard
+280006	Mouse
+280007	
+280008	
+280009	
+280010	Move
+280011	
+280012	
+280013	
+280014	
+280015	
+280016	
+280017	
+280018	
+280019	
+280020	Camera Controls
+280021	
+280022	
+280023	
+280024	
+280025	
+280026	
+280027	
+280028	
+280029	
+280030	Switch Armament
+280031	
+280032	
+280033	
+280034	
+280035	
+280036	
+280037	
+280038	
+280039	
+280040	Attack
+280099	No Key Binding
+280100	Movement Control
+280101	Move Forwards
+280102	Move Backwards
+280103	Move Left
+280104	Move Right
+280105	Backstep, Dodge Roll, Dash
+280106	Jump
+280107	Crouch / Stand Up
+280108	
+280109	
+280110	Movement
+280199	Move Camera / Change Target
+280200	Move Camera / Change Target (Up)
+280201	Move Camera / Change Target (Down)
+280202	Move Camera / Change Target (Left)
+280203	Move Camera / Change Target (Right)
+280204	Reset Camera, Lock-On/Remove Target
+280300	Switch Item
+280301	Switch Right-Hand Armament
+280302	Switch Left-Hand Armament
+280303	Switch Sorcery/Incantation
+280400	Attack (RH & Two-Handed Armament)
+280401	Strong Attack (RH & 2H Armament)
+280402	Guard (LH Armament)
+280403	Skill
+280404	Event Action (Examine, Open, etc.)
+280405	Use Item
+280406	Two-Hand Current Armament
+280500	Main Menu
+280501	Map
+288000	Character Selection
+288001	Select Character Base
+288050	Knight
+288051	Enchanted Knight
+288052	Prophet
+288053	Champion
+288054	Bloody Wolf
+288055	
+288056	
+288057	
+288058	
+288059	
+288060	Knight
+288061	Enchanted Knight
+288062	Prophet
+288063	Champion
+288064	Bloody Wolf
+288100	Vagabond
+288101	Warrior
+288102	Hero
+288103	Bandit
+288104	Astrologer
+288105	Prophet
+288106	Confessor
+288107	Samurai
+288108	Prisoner
+288109	Wretch
+288500	Please choose a body type
+288501	Type A
+288502	Type B
+290000	Create Character
+290001	Cosmetics
+290002	Cosmetics
+290003	
+290004	
+290005	
+290006	
+290007	
+290008	
+290009	
+290010	 > 
+290900	_
+290990	Enter name
+290991	
+290992	
+290993	
+290994	
+290995	
+290996	
+290997	
+290998	
+290999	
+291000	Name
+291001	Body Type
+291002	Age
+291003	Voice
+291004	
+291005	
+291006	
+291007	
+291008	
+291009	
+291010	Origin
+291011	Keepsake
+291012	
+291013	
+291014	
+291015	
+291016	
+291017	
+291018	
+291019	
+291020	Choose Base Template
+291021	Alter Face & Hair
+291022	Alter Body
+291023	Alter Skin Color
+291024	
+291025	Detailed Appearance
+291026	
+291027	
+291028	
+291029	
+291030	Save to Favorites
+291031	Load Favorite
+291050	Finish
+291051	Finish Cosmetics
+291052	Finish Cosmetics
+292000	Adjust Face Template
+292001	Face Structure
+292002	
+292003	
+292004	
+292005	
+292006	
+292007	
+292008	
+292009	
+292010	Hair
+292011	Eyebrows
+292012	Facial Hair
+292013	Eyelashes
+292014	
+292015	
+292016	
+292017	
+292018	
+292019	
+292020	Eyes
+292021	
+292022	
+292023	
+292024	
+292025	Skin Features
+292026	
+292027	
+292028	
+292029	
+292030	Cosmetics
+292031	
+292032	
+292033	
+292034	
+292035	
+292036	
+292037	
+292038	
+292039	
+292040	Tattoo/Mark/Eyepatch
+292041	
+292042	
+292043	
+292044	
+292045	
+292046	
+292047	
+292048	
+292049	
+292050	Similar Face
+292051	
+292052	
+292053	
+292054	
+292055	
+292056	
+292057	
+292058	
+292059	
+292060	Head
+292061	Chest
+292062	Abdomen
+292063	Arms
+292064	Legs
+292065	
+292066	
+292067	
+292068	
+292069	
+292070	Body Hair
+292071	Body Hair Color
+292072	Musculature
+292073	
+292074	
+292075	
+292076	
+292077	
+292078	
+292079	
+292080	Burn Marks
+293000	Bone Structure
+293001	Form Emphasis
+293002	Apparent Age
+293003	Facial Aesthetic
+293004	
+293005	
+293006	
+293007	
+293008	
+293009	
+293010	Facial Balance
+293011	Forehead/Glabella
+293012	Brow Ridge
+293013	Eyes
+293014	Nose Ridge
+293015	Nostrils
+293016	Cheeks
+293017	Lips
+293018	Mouth
+293019	Chin
+293020	Jaw
+293100	Hair
+293101	Hair Color
+293102	Luster
+293103	Root Darkness
+293104	White Hairs
+293105	
+293106	
+293107	
+293108	
+293109	
+293110	Brow
+293111	Brow Color
+293112	Luster
+293113	Root Darkness
+293114	White Hairs
+293115	
+293116	
+293117	
+293118	
+293119	
+293120	Beard
+293121	Beard Color
+293122	Luster
+293123	Root Darkness
+293124	White Hairs
+293125	Stubble
+293126	
+293127	
+293128	
+293129	
+293130	Eyelashes
+293131	Eyelash Color
+293132	
+293133	
+293134	
+293135	
+293136	
+293137	
+293138	
+293139	
+293140	Right Iris Size
+293141	Right Iris Color
+293142	R Eye Clouding
+293143	R Clouding Color
+293144	R Eye White Color
+293145	R Eye Position
+293146	
+293147	
+293148	
+293149	
+293150	Left Iris Size
+293151	Left Iris Color
+293152	L Eye Clouding
+293153	L Clouding Color
+293154	L Eye White Color
+293155	L Eye Position
+293156	Eye Alteration
+293157	
+293158	
+293159	
+293160	Pores
+293161	Skin Luster
+293162	Dark Circles
+293163	Dark Circle Color
+293164	Cheeks
+293165	Cheek Color
+293166	Eyeliner
+293167	Eyeliner Color
+293168	Eyeshadow (Upper)
+293169	Eyeshadow Color (Upper)
+293170	Eyeshadow (Lower)
+293171	Eyeshadow Color (Lower)
+293172	Lipstick
+293173	Lipstick Color
+293174	
+293175	
+293176	
+293177	
+293178	
+293179	
+293180	Tattoo/Mark
+293181	Tattoo/Mark Color
+293182	Tweak Tattoo/Mark
+293183	
+293184	
+293185	
+293186	
+293187	
+293188	
+293189	
+293190	Eyepatch
+293191	Eyepatch Color
+294050	Nose Size
+294051	Nose/Forehead Ratio
+294052	Face Protrusion
+294053	Vert. Face Ratio
+294054	Facial Feature Slant
+294055	Horiz. Face Ratio
+294056	
+294057	
+294058	
+294059	
+294060	Forehead Depth
+294061	Forehead Protrusion
+294062	Nose Bridge Height
+294063	Bridge Protrusion 1
+294064	Bridge Protrusion 2
+294065	Nose Bridge Width
+294066	
+294067	
+294068	
+294069	
+294070	Brow Ridge Height
+294071	Inner Brow Ridge
+294072	Outer Brow Ridge
+294073	
+294074	
+294075	
+294076	
+294077	
+294078	
+294079	
+294080	Eye Position
+294081	Eye Size
+294082	Eye Slant
+294083	Eye Spacing
+294084	
+294085	
+294086	
+294087	
+294088	
+294089	
+294090	Nose Ridge Depth
+294091	Nose Ridge Length
+294092	Nose Position
+294093	Nose Tip Height
+294094	Nose Protrusion
+294095	Nose Height
+294096	Nose Slant
+294097	
+294098	
+294099	
+294100	Nostril Slant
+294101	Nostril Size
+294102	Nostril Width
+294103	
+294104	
+294105	
+294106	
+294107	
+294108	
+294109	
+294110	Cheekbone Height
+294111	Cheekbone Depth
+294112	Cheekbone Width
+294113	Cheekbone Protrusion
+294114	Cheeks
+294115	
+294116	
+294117	
+294118	
+294119	
+294120	Lip Shape
+294121	Mouth Expression
+294122	Lip Fullness
+294123	Lip Size
+294124	Lip Protrusion
+294125	Lip Thickness
+294126	
+294127	
+294128	
+294129	
+294130	Mouth Protrusion
+294131	Mouth Slant
+294132	Occlusion
+294133	Mouth Position
+294134	Mouth Width
+294135	Mouth-Chin Distance
+294136	
+294137	
+294138	
+294139	
+294140	Chin Tip Position
+294141	Chin Length
+294142	Chin Protrusion
+294143	Chin Depth
+294144	Chin Size
+294145	Chin Height
+294146	Chin Width
+294147	
+294148	
+294149	
+294150	Jaw Protrusion
+294151	Jaw Width
+294152	Lower Jaw
+294153	Jaw Contour
+294154	
+294155	
+294156	
+294157	
+294158	
+294159	
+294160	Position (Vert.)
+294161	Position (Horiz.)
+294162	Angle
+294163	Expansion
+294164	Flip
+296009	Change Value
+296010	Match Right Eye
+296011	Match Left Eye
+296100	Small
+296101	Large
+296102	Small
+296103	Large
+296104	Small
+296105	Large
+296106	Small
+296107	Large
+296108	Small
+296109	Large
+296110	Sparse
+296111	Abundant
+296112	Weak
+296113	Strong
+296114	Young
+296115	Aged
+296116	Masculine
+296117	Feminine
+296118	Gentle
+296119	Strong
+296120	Light
+296121	Dark
+296122	Sparse
+296123	Abundant
+296124	Gentle
+296125	Strong
+296126	Light
+296127	Dark
+296128	Sparse
+296129	Abundant
+296130	Gentle
+296131	Strong
+296132	Light
+296133	Dark
+296134	Sparse
+296135	Abundant
+296136	Thin
+296137	Thick
+296138	Small
+296139	Large
+296140	Clear
+296141	Opaque
+296142	Close
+296143	Far
+296144	Small
+296145	Large
+296146	Clear
+296147	Opaque
+296148	Close
+296149	Far
+296150	Closed
+296151	Open
+296152	Plain
+296153	Lustrous
+296154	Light
+296155	Dark
+296156	Light
+296157	Dark
+296158	Light
+296159	Dark
+296160	Light
+296161	Dark
+296162	Light
+296163	Dark
+296164	Subtle
+296165	Vibrant
+296166	Narrow
+296167	Wide
+296168	Nose
+296169	Forehead
+296170	Concave
+296171	Convex
+296172	Narrow
+296173	Wide
+296174	Down
+296175	Up
+296176	Narrow
+296177	Wide
+296178	Slight
+296179	Deep
+296180	Concave
+296181	Convex
+296182	Low
+296183	High
+296184	Concave
+296185	Convex
+296186	Concave
+296187	Convex
+296188	Narrow
+296189	Wide
+296190	Low
+296191	High
+296192	Low
+296193	High
+296194	Low
+296195	High
+296196	Down
+296197	Up
+296198	Small
+296199	Large
+296200	In
+296201	Out
+296202	Narrow
+296203	Wide
+296204	Slight
+296205	Deep
+296206	Short
+296207	Long
+296208	Down
+296209	Up
+296210	Low
+296211	High
+296212	Concave
+296213	Convex
+296214	Low
+296215	High
+296216	Down
+296217	Up
+296218	Down
+296219	Up
+296220	Small
+296221	Large
+296222	Narrow
+296223	Wide
+296224	Small
+296225	Large
+296226	Low
+296227	High
+296228	Slight
+296229	Deep
+296230	Narrow
+296231	Wide
+296232	Concave
+296233	Convex
+296234	Thin
+296235	Thick
+296236	Purse
+296237	Open
+296238	Sad
+296239	Happy
+296240	Small
+296241	Large
+296242	Small
+296243	Large
+296244	Concave
+296245	Convex
+296246	Thin
+296247	Thick
+296248	Concave
+296249	Convex
+296250	Down
+296251	Up
+296252	Down
+296253	Up
+296254	Down
+296255	Up
+296256	Narrow
+296257	Wide
+296258	Short
+296259	Long
+296260	Front
+296261	Back
+296262	Short
+296263	Long
+296264	Small
+296265	Large
+296266	Slight
+296267	Deep
+296268	Small
+296269	Large
+296270	Low
+296271	High
+296272	Narrow
+296273	Wide
+296274	Small
+296275	Large
+296276	Narrow
+296277	Wide
+296278	Low
+296279	High
+296280	Thin
+296281	Thick
+296282	Down
+296283	Up
+296284	Left
+296285	Right
+296286	Rotate Left
+296287	Rotate Right
+296288	Small
+296289	Large
+297100	Type A
+297101	Type B
+297102	
+297103	
+297104	
+297105	
+297106	
+297107	
+297108	
+297109	
+297110	Young
+297111	Mature
+297112	Aged
+297113	
+297114	
+297115	
+297116	
+297117	
+297118	
+297119	
+297120	Young Voice 1
+297121	Mature Voice 1
+297122	Aged Voice 1
+297123	
+297124	
+297125	Young Voice 2
+297126	Mature Voice 2
+297127	Aged Voice 2
+297128	
+297129	
+297130	Vagabond
+297131	Warrior
+297132	Hero
+297133	Bandit
+297134	Astrologer
+297135	Prophet
+297136	Samurai
+297137	Prisoner
+297138	Confessor
+297139	Wretch
+297140	
+297141	
+297142	
+297143	
+297144	
+297145	
+297146	
+297147	
+297148	
+297149	
+297150	None
+297151	Crimson Amber Medallion
+297152	Lands Between Rune
+297153	Golden Seed
+297154	Fanged Imp Ashes
+297155	
+297156	Cracked Pot
+297157	Stonesword Key
+297158	Bewitching Branch
+297159	Boiled Prawn
+297160	Shabriri's Woe
+297161	
+297162	
+297163	
+297164	
+297165	
+297166	
+297167	
+297168	
+297169	
+297170	Standard
+297171	Muscular
+297172	
+297173	
+297174	
+297175	
+297176	
+297177	
+297178	
+297179	
+297180	ON
+297181	OFF
+297182	
+297183	
+297184	
+297185	ON
+297186	OFF
+297187	ON
+297188	OFF
+297200	Warrior
+297201	Truth-Seeker
+297202	Aristocrat
+297203	Loner
+297204	Northerner
+297205	Seafarer
+297206	Reedlander
+297207	Draconian
+297208	Nightfolk
+297209	Numen
+297220	Warrior
+297221	Truth-Seeker
+297222	Aristocrat
+297223	Loner
+297224	Northerner
+297225	Seafarer
+297226	Reedlander
+297227	Draconian
+297228	Nightfolk
+297229	Numen
+299005	Temporary Colors
+299006	Preset Colors
+299007	
+299008	
+299009	Change Color
+299010	Match Right Eye
+299011	Match Left Eye
+299012	
+299013	
+299014	
+299015	
+299016	
+299017	
+299018	
+299019	
+299020	Match Hair
+299050	Color Adjustment
+299051	
+299052	
+299053	
+299054	
+299055	
+299056	
+299057	
+299058	
+299059	
+299060	R
+299061	G
+299062	B
+301000	Gestures
+303000	NEW
+303001	
+303002	
+303003	
+303004	
+303005	
+303006	
+303007	
+303008	
+303009	
+303010	
+303011	
+303012	
+303013	
+303014	
+303015	
+303016	
+303017	
+303018	
+303019	
+303020	
+303021	
+303022	
+303023	
+303024	
+303025	
+303026	
+303027	
+303028	
+303029	
+303030	
+303031	
+303032	
+303033	
+303034	
+303035	
+303036	
+303037	
+303038	
+303039	
+303040	
+303041	
+303042	
+303043	
+303044	
+303045	
+303046	
+303047	
+303048	
+303049	
+303050	
+303051	
+303052	
+303053	
+303054	
+303055	
+303056	
+303057	
+303058	
+303059	
+303060	
+310000	Write Message
+310001	Messages Written
+310002	Messages Discovered
+311000	Appraisals
+311001	Good
+311002	Poor
+311003	
+311004	
+311005	
+311006	
+311007	
+311008	
+311009	
+311010	
+311011	Rated Good
+311012	Rated Poor
+321000	Templates
+321001	Words
+321002	Conjunctions
+321003	Templates (2nd Line)
+321004	Words (2nd Line)
+321005	Gestures
+321006	Finish
+322001	Good
+322002	Poor
+324001	Appraisals
+331100	Host of Fingers
+331101	Furled Finger
+331102	Bloody Finger
+331103	Duelist
+331104	Recusant
+331105	
+331106	
+331107	
+331108	
+331109	
+331110	
+331111	Hunter
+331122	Furled Finger
+331123	Furled Finger
+331124	
+331125	
+331126	
+331127	
+331128	
+331129	
+331130	
+331131	
+331132	Duelist
+331133	Duelist
+331134	
+331135	
+331136	
+331137	
+331138	
+331139	
+331140	
+331141	
+331142	Bloody Finger
+331143	Bloody Finger
+331144	
+331145	
+331146	
+331147	
+331148	
+331149	
+331150	
+331151	
+331152	Recusant
+331153	Recusant
+331154	
+331155	
+331156	
+331157	
+331158	
+331159	
+331160	
+331161	
+331162	Hunter
+331163	Hunter
+331164	
+331165	
+331166	
+331167	
+331168	
+331169	
+331170	Combatant
+331171	Combatant
+331172	Combatant
+331173	Combatant
+331174	Golden Combatant
+331175	
+331176	
+331177	
+331178	
+331179	
+331180	Eliminations
+331200	FROSTBITE
+331201	BLOOD LOSS
+331202	POISON
+331203	SCARLET ROT
+331204	SLEEP
+331205	MADNESS
+331206	
+331207	DEATH BLIGHTED
+331208	! WEAPON BROKEN !
+331209	! ARMOR AT RISK !
+331210	! ARMOR BROKEN !
+331301	DEMIGOD FELLED
+331302	LEGEND FELLED
+331303	GREAT ENEMY FELLED
+331304	ENEMY FELLED
+331305	YOU DIED
+331306	Enemy Defeated 
+331307	HOST VANQUISHED
+331308	BLOODY FINGER VANQUISHED
+331309	DUTY FULFILLED
+331310	
+331311	LOST GRACE DISCOVERED
+331312	
+331313	COMMENCE
+331314	VICTORY
+331315	STALEMATE
+331316	DEFEAT
+331317	MAP FOUND
+331318	REDEEMER DIED
+331319	
+331320	
+331321	GREAT RUNE RESTORED
+331322	GOD SLAIN
+331323	DUELIST VANQUISHED
+331324	RECUSANT VANQUISHED
+331325	INVADER VANQUISHED
+331326	
+331327	
+331328	
+331329	
+331330	FURLED FINGER RANK ADVANCED
+331331	FURLED FINGER RANK ADVANCED
+331332	DUELIST RANK ADVANCED
+331333	DUELIST RANK ADVANCED
+331334	BLOODY FINGER RANK ADVANCED
+331335	BLOODY FINGER RANK ADVANCED
+331336	RECUSANT RANK ADVANCED
+331337	RECUSANT RANK ADVANCED
+331338	HUNTER RANK ADVANCED
+331339	HUNTER RANK ADVANCED
+400000	 
+401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401100	™
+401301	CONTINUE
+401302	LOAD GAME
+401303	NEW GAME
+401304	SYSTEM
+401305	INFORMATION
+401306	LOG IN
+401307	SWITCH PROFILE
+401308	
+401309	QUIT GAME
+401310	ONLINE
+401311	OFFLINE
+401312	PRE-ORDER
+401313	CONVERT SAVE DATA
+401314	
+401315	
+401316	
+401317	
+401318	
+401319	
+401320	App Ver.
+401321	Server Ver.
+401322	Calibrations Ver.
+401400	INFORMATION
+401401	There is no new information
+401500	TERMS OF SERVICE FOR ONLINE SERVICES FOR ELDEN RING
+401501	
+401502	
+401503	
+401504	
+401505	
+401506	
+401507	
+401508	
+401509	
+401510	Accept
+401511	Decline
+401900	Network Test
+401901	This game is still under development
+401902	
+401903	
+401904	An internet connection is required to play the Network Test
+406000	LOAD GAME
+406001	NEW GAME
+502000	Send selected player back home
+506000	Colosseum
+506100	Format
+506101	Combat Format
+506102	Number of Players
+506103	Spirit Ashes
+506104	Venue
+506105	Colosseum Password
+506106	Enter Combat
+506107	Cancel
+506108	Desired Team
+506109	Restrictions
+506120	\nDuel
+506121	United Combat /\nCombat Ordeal
+506122	Spirit Ashes\nAllowed
+506200	Duel
+506201	Combat Ordeal
+506202	United Combat
+506300	Any location
+506301	Royal Colosseum
+506302	Limgrave Colosseum
+506303	Caelid Colosseum
+506400	2 combatants
+506401	4 combatants
+506402	6 combatants
+506403	Any number of combatants
+506500	Prohibited
+506501	Allowed
+506600	No preference
+506601	Team A
+506602	Team B
+506800	All players
+506801	Allied team only
+506900	Colosseum Password will be used to matchmake members of both ally and enemy teams.
+506901	Colosseum Password will be used to matchmake members of allied team only. The enemy team will be matchmade using a different password.
+507000	Supreme Combatant: <?mvpName?>
+507100	Set Colosseum Password

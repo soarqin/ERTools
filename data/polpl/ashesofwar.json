@@ -1,0 +1,366 @@
+[
+  {
+    "id": 10600,
+    "name": "Popiół wojny: Tupnięcie (cięcie w górę)"
+  },
+  {
+    "id": 10700,
+    "name": "Popiół wojny: Tupnięcie (zamaszyste)"
+  },
+  {
+    "id": 11000,
+    "name": "Popiół wojny: Szał"
+  },
+  {
+    "id": 10000,
+    "name": "Popiół wojny: Lwi pazur"
+  },
+  {
+    "id": 60700,
+    "name": "Popiół wojny: Wyszczerbione ostrze"
+  },
+  {
+    "id": 50300,
+    "name": "Popiół wojny: Kopnięcie"
+  },
+  {
+    "id": 70000,
+    "name": "Popiół wojny: Wytrwałość"
+  },
+  {
+    "id": 50600,
+    "name": "Popiół wojny: Rzucenie na ziemię"
+  },
+  {
+    "id": 21200,
+    "name": "Popiół wojny: Trzęsienie ziemi"
+  },
+  {
+    "id": 50900,
+    "name": "Popiół wojny: Tąpnięcie Hoarah Louxa"
+  },
+  {
+    "id": 65100,
+    "name": "Popiół wojny: Okrzyk bojowy"
+  },
+  {
+    "id": 65000,
+    "name": "Popiół wojny: Barbarzyński ryk"
+  },
+  {
+    "id": 65400,
+    "name": "Popiół wojny: Ryk samochwały"
+  },
+  {
+    "id": 65300,
+    "name": "Popiół wojny: Ryk trolla"
+  },
+  {
+    "id": 10300,
+    "name": "Popiół wojny: Cięcie z obrotu"
+  },
+  {
+    "id": 10100,
+    "name": "Popiół wojny: Nadziewające pchnięcie"
+  },
+  {
+    "id": 10200,
+    "name": "Popiół wojny: Przebijający kieł"
+  },
+  {
+    "id": 10900,
+    "name": "Popiół wojny: Napierające pchnięcie"
+  },
+  {
+    "id": 11200,
+    "name": "Popiół wojny: Podwójne cięcie"
+  },
+  {
+    "id": 12400,
+    "name": "Popiół wojny: Taniec miecza"
+  },
+  {
+    "id": 11400,
+    "name": "Popiół wojny: Dobycie"
+  },
+  {
+    "id": 80000,
+    "name": "Popiół wojny: Szybki odskok"
+  },
+  {
+    "id": 80100,
+    "name": "Popiół wojny: Krok wasalnego rycerza"
+  },
+  {
+    "id": 80200,
+    "name": "Popiół wojny: Drapieżnik z mgieł"
+  },
+  {
+    "id": 65200,
+    "name": "Popiół wojny: Ryk bestii"
+  },
+  {
+    "id": 11500,
+    "name": "Popiół wojny: Konfrontacja"
+  },
+  {
+    "id": 10500,
+    "name": "Popiół wojny: Szarża naprzód"
+  },
+  {
+    "id": 11100,
+    "name": "Popiół wojny: Uderzenia z obrotu"
+  },
+  {
+    "id": 11600,
+    "name": "Popiół wojny: Polowanie na olbrzymy"
+  },
+  {
+    "id": 21000,
+    "name": "Popiół wojny: Burzowe ostrze"
+  },
+  {
+    "id": 12200,
+    "name": "Popiół wojny: Burzowe natarcie"
+  },
+  {
+    "id": 12300,
+    "name": "Popiół wojny: Władca Burz"
+  },
+  {
+    "id": 50200,
+    "name": "Popiół wojny: Burzowe stąpnięcie"
+  },
+  {
+    "id": 22000,
+    "name": "Popiół wojny: Cięcie próżni"
+  },
+  {
+    "id": 22500,
+    "name": "Popiół wojny: Widmowe cięcie"
+  },
+  {
+    "id": 60000,
+    "name": "Popiół wojny: Gorliwość"
+  },
+  {
+    "id": 60100,
+    "name": "Popiół wojny: Rycerski hart"
+  },
+  {
+    "id": 20300,
+    "name": "Popiół wojny: Błyskamienny pocisk"
+  },
+  {
+    "id": 20000,
+    "name": "Popiół wojny: Falanga błyskostrza"
+  },
+  {
+    "id": 21900,
+    "name": "Popiół wojny: Karyjski wielki miecz"
+  },
+  {
+    "id": 21800,
+    "name": "Popiół wojny: Karyjski majestat"
+  },
+  {
+    "id": 12000,
+    "name": "Popiół wojny: Wirujący oręż"
+  },
+  {
+    "id": 11800,
+    "name": "Popiół wojny: Cięcie Loretty"
+  },
+  {
+    "id": 20900,
+    "name": "Popiół wojny: Gravitas"
+  },
+  {
+    "id": 50800,
+    "name": "Popiół wojny: Fale ciemności"
+  },
+  {
+    "id": 21400,
+    "name": "Popiół wojny: Płonące uderzenie"
+  },
+  {
+    "id": 50500,
+    "name": "Popiół wojny: Płomień Lwiej Grzywy"
+  },
+  {
+    "id": 20700,
+    "name": "Popiół wojny: Erupcja"
+  },
+  {
+    "id": 11300,
+    "name": "Popiół wojny: Szarża prałata"
+  },
+  {
+    "id": 22100,
+    "name": "Popiół wojny: Tornado czarnego płomienia"
+  },
+  {
+    "id": 21600,
+    "name": "Popiół wojny: Grom"
+  },
+  {
+    "id": 21700,
+    "name": "Popiół wojny: Cięcie błyskawicy"
+  },
+  {
+    "id": 50400,
+    "name": "Popiół wojny: Taran błyskawicy"
+  },
+  {
+    "id": 20100,
+    "name": "Popiół wojny: Święte ostrze"
+  },
+  {
+    "id": 20800,
+    "name": "Popiół wojny: Modlitewne uderzenie"
+  },
+  {
+    "id": 22200,
+    "name": "Popiół wojny: Święty krąg światła"
+  },
+  {
+    "id": 60400,
+    "name": "Popiół wojny: Święty Porządek"
+  },
+  {
+    "id": 60500,
+    "name": "Popiół wojny: Wspólny Porządek"
+  },
+  {
+    "id": 21300,
+    "name": "Popiół wojny: Złota kraina"
+  },
+  {
+    "id": 50700,
+    "name": "Popiół wojny: Złoty rzut"
+  },
+  {
+    "id": 60300,
+    "name": "Popiół wojny: Złota przysięga"
+  },
+  {
+    "id": 70100,
+    "name": "Popiół wojny: Przysięga niezłomnych"
+  },
+  {
+    "id": 70200,
+    "name": "Popiół wojny: Uświęcona ziemia"
+  },
+  {
+    "id": 22800,
+    "name": "Popiół wojny: Trująca mgła"
+  },
+  {
+    "id": 11900,
+    "name": "Popiół wojny: Lot trującej ćmy"
+  },
+  {
+    "id": 22400,
+    "name": "Popiół wojny: Krwawe ostrze"
+  },
+  {
+    "id": 20400,
+    "name": "Popiół wojny: Krwawe cięcie"
+  },
+  {
+    "id": 10800,
+    "name": "Popiół wojny: Krwawy podatek"
+  },
+  {
+    "id": 60600,
+    "name": "Popiół wojny: Seppuku"
+  },
+  {
+    "id": 20200,
+    "name": "Popiół wojny: Lodowa włócznia"
+  },
+  {
+    "id": 22700,
+    "name": "Popiół wojny: Chłodna mgła"
+  },
+  {
+    "id": 50100,
+    "name": "Popiół wojny: Szronowe stąpnięcie"
+  },
+  {
+    "id": 22600,
+    "name": "Popiół wojny: Widmowa lanca"
+  },
+  {
+    "id": 20500,
+    "name": "Popiół wojny: Pięść kradzieży życia"
+  },
+  {
+    "id": 85000,
+    "name": "Popiół wojny: Przynęta białego cienia"
+  },
+  {
+    "id": 60200,
+    "name": "Popiół wojny: Gambit zabójcy"
+  },
+  {
+    "id": 40200,
+    "name": "Popiół wojny: Potężny strzał"
+  },
+  {
+    "id": 40000,
+    "name": "Popiół wojny: Na wylot"
+  },
+  {
+    "id": 40100,
+    "name": "Popiół wojny: Grad"
+  },
+  {
+    "id": 40500,
+    "name": "Popiół wojny: Strzał w niebo"
+  },
+  {
+    "id": 40400,
+    "name": "Popiół wojny: Zaklęty strzał"
+  },
+  {
+    "id": 40600,
+    "name": "Popiół wojny: Deszcz strzał"
+  },
+  {
+    "id": 30200,
+    "name": "Popiół wojny: Odbicie"
+  },
+  {
+    "id": 30700,
+    "name": "Popiół wojny: Złote parowanie"
+  },
+  {
+    "id": 30600,
+    "name": "Popiół wojny: Burzowa ściana"
+  },
+  {
+    "id": 30000,
+    "name": "Popiół wojny: Cios tarczą"
+  },
+  {
+    "id": 30800,
+    "name": "Popiół wojny: Szarża z tarczą"
+  },
+  {
+    "id": 30100,
+    "name": "Popiół wojny: Barykada z tarczy"
+  },
+  {
+    "id": 31000,
+    "name": "Popiół wojny: Bariera Thopsa"
+  },
+  {
+    "id": 30500,
+    "name": "Popiół wojny: Karyjski odwet"
+  },
+  {
+    "id": 30900,
+    "name": "Popiół wojny: Brak umiejętności"
+  }
+]

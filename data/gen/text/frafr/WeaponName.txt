@@ -1,0 +1,4204 @@
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1201	
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	[ERROR]
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	[ERROR]
+1221	
+1222	
+1223	
+1224	
+1225	
+1226	
+1227	
+1228	
+1229	
+1230	[ERROR]
+1231	
+1232	
+1233	
+1234	
+1235	
+1236	
+1237	
+1238	
+1239	
+1240	[ERROR]
+1241	
+1242	
+1243	
+1244	
+1245	
+1246	
+1247	
+1248	
+1249	
+1250	[ERROR]
+1251	
+1252	
+1253	
+1254	
+1255	
+1256	
+1257	
+1258	
+1259	
+1260	[ERROR]
+1400	[ERROR]
+1401	
+1402	
+1403	
+1404	
+1405	
+1406	
+1407	
+1408	
+1409	
+1410	[ERROR]
+1411	
+1412	
+1413	
+1414	
+1415	
+1416	
+1417	
+1418	
+1419	
+1420	[ERROR]
+1421	
+1422	
+1423	
+1424	
+1425	
+1426	
+1427	
+1428	
+1429	
+1430	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+11000	[ERROR]
+12000	[ERROR]
+13000	[ERROR]
+100000	[ERROR]
+100100	[ERROR]
+100200	[ERROR]
+100300	[ERROR]
+100400	[ERROR]
+100500	[ERROR]
+100600	[ERROR]
+100700	[ERROR]
+100800	[ERROR]
+100900	[ERROR]
+101000	[ERROR]
+110000	Sans arme
+1000000	Dague
+1000100	Dague lourde
+1000200	Dague acérée
+1000300	Dague de qualité
+1000400	Dague de feu
+1000500	Dague pyrotechnique
+1000600	Dague de foudre
+1000700	Dague sacrée
+1000800	Dague magique
+1000900	Dague de glace
+1001000	Dague empoisonnée
+1001100	Dague sanguine
+1001200	Dague occulte
+1010000	Couteau noir
+1020000	Dague de parade
+1020100	Dague de parade lourde
+1020200	Dague de parade acérée
+1020300	Dague de parade de qualité
+1020400	Dague de parade de feu
+1020500	Dague de parade pyrotechnique
+1020600	Dague de parade de foudre
+1020700	Dague de parade sacrée
+1020800	Dague de parade magique
+1020900	Dague de parade de glace
+1021000	Dague de parade empoisonnée
+1021100	Dague de parade sanguine
+1021200	Dague de parade occulte
+1030000	Miséricorde
+1030100	Miséricorde lourde
+1030200	Miséricorde acérée
+1030300	Miséricorde de qualité
+1030400	Miséricorde de feu
+1030500	Miséricorde pyrotechnique
+1030600	Miséricorde de foudre
+1030700	Miséricorde sacrée
+1030800	Miséricorde magique
+1030900	Miséricorde de glace
+1031000	Miséricorde empoisonnée
+1031100	Miséricorde sanguine
+1031200	Miséricorde occulte
+1040000	Reduvia
+1050000	Couteau de cristal
+1060000	Faucille de l'officiant
+1060100	Faucille de l'officiant lourde
+1060200	Faucille de l'officiant acérée
+1060300	Faucille de l'officiant de qualité
+1060400	Faucille de l'officiant de feu
+1060500	Faucille de l'officiant pyrotechnique
+1060600	Faucille de l'officiant de foudre
+1060700	Faucille de l'officiant sacrée
+1060800	Faucille de l'officiant magique
+1060900	Faucille de l'officiant de glace
+1061000	Faucille de l'officiant empoisonnée
+1061100	Faucille de l'officiant sanguine
+1061200	Faucille de l'officiant occulte
+1070000	Kriss de pierre d'éclat
+1080000	Aiguillon de scorpion
+1090000	Grand couteau
+1090100	Grand couteau lourd
+1090200	Grand couteau acéré
+1090300	Grand couteau de qualité
+1090400	Grand couteau de feu
+1090500	Grand couteau pyrotechnique
+1090600	Grand couteau de foudre
+1090700	Grand couteau sacré
+1090800	Grand couteau magique
+1090900	Grand couteau de glace
+1091000	Grand couteau empoisonné
+1091100	Grand couteau sanguin
+1091200	Grand couteau occulte
+1100000	Wakizashi
+1100100	Wakizashi lourd
+1100200	Wakizashi acéré
+1100300	Wakizashi de qualité
+1100400	Wakizashi de feu
+1100500	Wakizashi pyrotechnique
+1100600	Wakizashi de foudre
+1100700	Wakizashi sacré
+1100800	Wakizashi magique
+1100900	Wakizashi de glace
+1101000	Wakizashi empoisonné
+1101100	Wakizashi sanguin
+1101200	Wakizashi occulte
+1110000	Cinquedea
+1130000	Faucille en ivoire
+1140000	Dague maculée de sang
+1140100	Dague maculée de sang lourde
+1140200	Dague maculée de sang acérée
+1140300	Dague maculée de sang de qualité
+1140400	Dague maculée de sang de feu
+1140500	Dague maculée de sang pyrotechnique
+1140600	Dague maculée de sang de foudre
+1140700	Dague maculée de sang sacrée
+1140800	Dague maculée de sang magique
+1140900	Dague maculée de sang de glace
+1141000	Dague maculée de sang empoisonnée
+1141100	Dague maculée de sang sanguine
+1141200	Dague maculée de sang occulte
+1150000	Dague en acier-monde
+1150100	Dague en acier-monde lourde
+1150200	Dague en acier-monde acérée
+1150300	Dague en acier-monde de qualité
+1150400	Dague en acier-monde de feu
+1150500	Dague en acier-monde pyrotechnique
+1150600	Dague en acier-monde de foudre
+1150700	Dague en acier-monde sacrée
+1150800	Dague en acier-monde magique
+1150900	Dague en acier-monde de glace
+1151000	Dague en acier-monde empoisonnée
+1151100	Dague en acier-monde sanguine
+1151200	Dague en acier-monde occulte
+1160000	Lame du devoir
+1190000	[ERROR]
+1910000	[ERROR]
+2000000	Épée longue
+2000100	Épée longue lourde
+2000200	Épée longue acérée
+2000300	Épée longue de qualité
+2000400	Épée longue de feu
+2000500	Épée longue pyrotechnique
+2000600	Épée longue de foudre
+2000700	Épée longue sacrée
+2000800	Épée longue magique
+2000900	Épée longue de glace
+2001000	Épée longue empoisonnée
+2001100	Épée longue sanguine
+2001200	Épée longue occulte
+2010000	Épée courte
+2010100	Épée courte lourde
+2010200	Épée courte acérée
+2010300	Épée courte de qualité
+2010400	Épée courte de feu
+2010500	Épée courte pyrotechnique
+2010600	Épée courte de foudre
+2010700	Épée courte sacrée
+2010800	Épée courte magique
+2010900	Épée courte de glace
+2011000	Épée courte empoisonnée
+2011100	Épée courte sanguine
+2011200	Épée courte occulte
+2020000	Épée large
+2020100	Épée large lourde
+2020200	Épée large acérée
+2020300	Épée large de qualité
+2020400	Épée large de feu
+2020500	Épée large pyrotechnique
+2020600	Épée large de foudre
+2020700	Épée large sacrée
+2020800	Épée large magique
+2020900	Épée large de glace
+2021000	Épée large empoisonnée
+2021100	Épée large sanguine
+2021200	Épée large occulte
+2030000	Couteau d'os
+2040000	Épée droite seigneuriale
+2040100	Épée droite seigneuriale lourde
+2040200	Épée droite seigneuriale acérée
+2040300	Épée droite seigneuriale de qualité
+2040400	Épée droite seigneuriale de feu
+2040500	Épée droite seigneuriale pyrotechnique
+2040600	Épée droite seigneuriale de foudre
+2040700	Épée droite seigneuriale sacrée
+2040800	Épée droite seigneuriale magique
+2040900	Épée droite seigneuriale de glace
+2041000	Épée droite seigneuriale empoisonnée
+2041100	Épée droite seigneuriale sanguine
+2041200	Épée droite seigneuriale occulte
+2050000	Épée droite usée
+2050100	Épée droite usée lourde
+2050200	Épée droite usée acérée
+2050300	Épée droite usée de qualité
+2050400	Épée droite usée de feu
+2050500	Épée droite usée pyrotechnique
+2050600	Épée droite usée de foudre
+2050700	Épée droite usée sacrée
+2050800	Épée droite usée magique
+2050900	Épée droite usée de glace
+2051000	Épée droite usée empoisonnée
+2051100	Épée droite usée sanguine
+2051200	Épée droite usée occulte
+2060000	Épée droite ornementale
+2070000	Épitaphe dorée
+2080000	Épée nokrienne
+2090000	Épée en alliage
+2090100	Bracelet de Rennala, Sorcière de la Pleine lune.
+2090200	Améliore temporairement l'immunité.
+2090300	Améliore temporairement la robustesse.
+2090400	Améliore temporairement la focalisation.
+2090500	Améliore brièvement l'immunité, la robustesse et la focalisation.
+2090600	Bottes en peau de demi-dieu tannée.
+2090700	Graisse solidifiée obtenue à partir d'un mélange d'ingrédients incendiaires.\r\nObjet pouvant être fabriqué.\r\n\r\nEnduit l'arme et ajoute des dégâts de feu aux attaques.\r\nL'effet n'est que de courte durée.
+2090800	Graisse solidifiée fabriquée à partir d'un mélange d'ingrédients fulminants.\r\nObjet pouvant être fabriqué.\r\n\r\nEnduit l'arme et lui confère des dégâts de foudre.
+2090900	Graisse solidifiée fabriquée à partir d'un mélange d'ingrédients à résonance magique.\r\nObjet pouvant être fabriqué.\r\n\r\nEnduit l'arme et lui confère des dégâts magiques.
+2091000	Enduit l'arme et lui confère un effet de dégâts sacrés.
+2091100	Graisse solidifiée boursouflée, fabriquée à partir d'un mélange de sang et autres ingrédients.\r\nObjet pouvant être fabriqué.\r\n\r\nEnduit l'arme et lui confère un effet de saignement.\r\n\r\nLe sang caillé perce la peau et occasionne de graves lacérations. Cette mixture est un outil privilégié des conspirateurs et insurgés depuis bien des âges.
+2091200	Graisse solidifiée, fruit des arts jalousement gardés de sainte Trina.\r\nObjet pouvant être fabriqué.\r\n\r\nEnduit l'arme et lui confère un effet soporifique.\r\n\r\nLa sainte de Bercechant est devenue le symbole par excellence du repos perdu et les âmes sensibles se trouvaient démunies face à sa bonté, même au cœur de la bataille.
+2110000	Épée cryptée
+2140000	Épée de la nuit ardente
+2150000	Épée de cristal
+2180000	Épée de chevalier de Caria
+2190000	Épée de sainte Trina
+2200000	Épée de chevalier de Miquella
+2210000	Épée-canne
+2210100	Épée-canne lourde
+2210200	Épée-canne acérée
+2210300	Épée-canne de qualité
+2210400	Épée-canne de feu
+2210500	Épée-canne pyrotechnique
+2210600	Épée-canne de foudre
+2210700	Épée-canne sacrée
+2210800	Épée-canne magique
+2210900	Épée-canne de glace
+2211000	Épée-canne empoisonnée
+2211100	Épée-canne sanguine
+2211200	Épée-canne occulte
+2220000	Joyau d'Eochaid
+2230000	Épée fine de noble
+2230100	Épée fine de noble lourde
+2230200	Épée fine de noble acérée
+2230300	Épée fine de noble de qualité
+2230400	Épée fine de noble de feu
+2230500	Épée fine de noble pyrotechnique
+2230600	Épée fine de noble de foudre
+2230700	Épée fine de noble sacrée
+2230800	Épée fine de noble magique
+2230900	Épée fine de noble de glace
+2231000	Épée fine de noble empoisonnée
+2231100	Épée fine de noble sanguine
+2231200	Épée fine de noble occulte
+2240000	Serre de faucon de guerre
+2240100	Serre de faucon de guerre lourde
+2240200	Serre de faucon de guerre acérée
+2240300	Serre de faucon de guerre de qualité
+2240400	Serre de faucon de guerre de feu
+2240500	Serre de faucon de guerre pyrotechnique
+2240600	Serre de faucon de guerre de foudre
+2240700	Serre de faucon de guerre sacrée
+2240800	Serre de faucon de guerre magique
+2240900	Serre de faucon de guerre de glace
+2241000	Serre de faucon de guerre empoisonnée
+2241100	Serre de faucon de guerre sanguine
+2241200	Serre de faucon de guerre occulte
+2250000	Épée de pierre d'éclat de Lazuli
+2260000	Épée de cristal putréfiée
+3000000	Épée bâtarde
+3000100	Épée bâtarde lourde
+3000200	Épée bâtarde acérée
+3000300	Épée bâtarde de qualité
+3000400	Épée bâtarde de feu
+3000500	Épée bâtarde pyrotechnique
+3000600	Épée bâtarde de foudre
+3000700	Épée bâtarde sacrée
+3000800	Épée bâtarde magique
+3000900	Épée bâtarde de glace
+3001000	Épée bâtarde empoisonnée
+3001100	Épée bâtarde sanguine
+3001200	Épée bâtarde occulte
+3010000	Espadon fourchu
+3010100	Espadon fourchu lourd
+3010200	Espadon fourchu acéré
+3010300	Espadon fourchu de qualité
+3010400	Espadon fourchu de feu
+3010500	Espadon fourchu pyrotechnique
+3010600	Espadon fourchu de foudre
+3010700	Espadon fourchu sacré
+3010800	Espadon fourchu magique
+3010900	Espadon fourchu de glace
+3011000	Espadon fourchu empoisonné
+3011100	Espadon fourchu sanguin
+3011200	Espadon fourchu occulte
+3020000	Espadon en fer
+3020100	Espadon en fer lourd
+3020200	Espadon en fer acéré
+3020300	Espadon en fer de qualité
+3020400	Espadon en fer de feu
+3020500	Espadon en fer pyrotechnique
+3020600	Espadon en fer de foudre
+3020700	Espadon en fer sacré
+3020800	Espadon en fer magique
+3020900	Espadon en fer de glace
+3021000	Espadon en fer empoisonné
+3021100	Espadon en fer sanguin
+3021200	Espadon en fer occulte
+3030000	Espadon seigneurial
+3030100	Espadon seigneurial lourd
+3030200	Espadon seigneurial acéré
+3030300	Espadon seigneurial de qualité
+3030400	Espadon seigneurial de feu
+3030500	Espadon seigneurial pyrotechnique
+3030600	Espadon seigneurial de foudre
+3030700	Espadon seigneurial sacré
+3030800	Espadon seigneurial magique
+3030900	Espadon seigneurial de glace
+3031000	Espadon seigneurial empoisonné
+3031100	Espadon seigneurial sanguin
+3031200	Espadon seigneurial occulte
+3040000	Espadon de chevalier
+3040100	Espadon de chevalier lourd
+3040200	Espadon de chevalier acéré
+3040300	Espadon de chevalier de qualité
+3040400	Espadon de chevalier de feu
+3040500	Espadon de chevalier pyrotechnique
+3040600	Espadon de chevalier de foudre
+3040700	Espadon de chevalier sacré
+3040800	Espadon de chevalier magique
+3040900	Espadon de chevalier de glace
+3041000	Espadon de chevalier empoisonné
+3041100	Espadon de chevalier sanguin
+3041200	Espadon de chevalier occulte
+3050000	Flamberge
+3050100	Flamberge lourde
+3050200	Flamberge acérée
+3050300	Flamberge de qualité
+3050400	Flamberge de feu
+3050500	Flamberge pyrotechnique
+3050600	Flamberge de foudre
+3050700	Flamberge sacrée
+3050800	Flamberge magique
+3050900	Flamberge de glace
+3051000	Flamberge empoisonnée
+3051100	Flamberge sanguine
+3051200	Flamberge occulte
+3060000	Espadon d'Ordovis
+3070000	Espadon de seigneur d'albâtre
+3080000	Espadon de chevalier banni
+3080100	Espadon de chevalier banni lourd
+3080200	Espadon de chevalier banni acéré
+3080300	Espadon de chevalier banni de qualité
+3080400	Espadon de chevalier banni de feu
+3080500	Espadon de chevalier banni pyrotechnique
+3080600	Espadon de chevalier banni de foudre
+3080700	Espadon de chevalier banni sacré
+3080800	Espadon de chevalier banni magique
+3080900	Espadon de chevalier banni de glace
+3081000	Espadon de chevalier banni empoisonné
+3081100	Espadon de chevalier banni sanguin
+3081200	Espadon de chevalier banni occulte
+3090000	Espadon de la lune obscure
+3100000	Lame-relique sacrée
+3130000	Clocher d'Helfen
+3140000	Lame blasphématoire
+3150000	Épée d'exécution des Tourbier
+3160000	Épée de Milos
+3160100	Déploie une grande épée magique défensive qui flotte autour de vous.
+3160200	Vous vous transformez en lune et attaquez les ennemis.
+3160300	Vous vous transformez en lune glaciale et attaquez les ennemis.
+3160400	Vous tirez des fragments arrachés à un bloc de pierre d'éclat flottant.
+3160500	Vous tirez un projectile perçant à l'aide d'un arc de pierre d'éclat.
+3160600	Vous tirez de nombreux projectiles perçants à l'aide d'un arc de pierre d'éclat.
+3160700	Forme un bloc de pierre d'éclat qui tire des fragments à intervalles réguliers.
+3160800	Tire de gros fragments de pierre d'éclat imprégnée de givre.
+3160900	Génère une tornade de givre qui attaque les ennemis proches.
+3161000	Répand une brume qui inflige l'altération de congélation.
+3161100	Vous attaquez à l'aide d'un espadon magique de pierre d'éclat.
+3161200	Vous attaquez à l'aide d'une épée magique gelée de pierre d'éclat.
+3170000	Espadon de l'Ordre d'or
+3180000	Claymore
+3180100	Claymore lourde
+3180200	Claymore acérée
+3180300	Claymore de qualité
+3180400	Claymore de feu
+3180500	Claymore pyrotechnique
+3180600	Claymore de foudre
+3180700	Claymore sacrée
+3180800	Claymore magique
+3180900	Claymore de glace
+3181000	Claymore empoisonnée
+3181100	Claymore sanguine
+3181200	Claymore occulte
+3190000	Espadon de gargouille
+3190100	Espadon de gargouille lourd
+3190200	Espadon de gargouille acéré
+3190300	Espadon de gargouille de qualité
+3190400	Espadon de gargouille de feu
+3190500	Espadon de gargouille pyrotechnique
+3190600	Espadon de gargouille de foudre
+3190700	Espadon de gargouille sacré
+3190800	Espadon de gargouille magique
+3190900	Espadon de gargouille de glace
+3191000	Espadon de gargouille empoisonné
+3191100	Espadon de gargouille sanguin
+3191200	Espadon de gargouille occulte
+3200000	Aiguillon funeste
+3210000	Lame sombre de gargouille
+3210100	Invoque encore plus de spectres qui attaquent les ennemis.
+3210200	Trace des lignes de flammes, qui se transforment en piliers.
+3210300	Répand une brume qui inflige l'altération de malemort.
+3210400	Invoque des squelettes autour de la cible, qui se mettent à l'attaquer.
+3210500	Fait s'abattre des éclairs noirs autour de vous.
+3210600	Sorcellerie des pierres d'éclat antique et perdue, utilisée par les malheureux qui vivent dans des ruines souterraines.\r\n\r\nProduit plusieurs bulles magiques qui dérivent jusqu'à exploser naturellement.\r\nChargez ce sortilège pour augmenter la durée des bulles.
+3210700	Forme de grosses bulles qui explosent au contact.
+3210800	Veste de ceux qui tuent pour vivre.
+3210900	Incantation des Moines incendiaires, gardiens de la Flamme de la ruine des Géants.\r\n\r\nCrée temporairement une flamme vive dans la main de son lanceur.\r\nVous pouvez lancer cette incantation rapidement après avoir effectué un sprint, une roulade et d'autres manœuvres.
+3211000	Fait naître une grande flamme dans votre main.
+3211100	Incantation des Moines incendiaires, gardiens de la Flamme de la ruine des Géants.\r\n\r\nCrée et projette une boule de feu ardente.\r\nChargez cette incantation pour augmenter sa puissance et faire exploser la boule à l'impact.\r\n\r\nLe feu envoûte quiconque le contemple.\r\nCeux qui protégeaient la flamme finissaient inévitablement par la vénérer.
+3211200	Incantation sacrée conçue par Gurranq, le Clerc bestial.\r\n\r\nFait apparaître des griffes de bête qui éventrent la terre.\r\n\r\nIl y a fort longtemps, à l'époque où elles étaient douées d'intelligence, les bêtes dominèrent le monde le temps d'un âge.\r\nLe régent de Godfrey, premier Seigneur d'Elden, serait leur descendant.
+3220000	[ERROR]
+3900000	[ERROR]
+4000000	Grand espadon
+4000100	Grand espadon lourd
+4000200	Grand espadon acéré
+4000300	Grand espadon de qualité
+4000400	Grand espadon de feu
+4000500	Grand espadon pyrotechnique
+4000600	Grand espadon de foudre
+4000700	Grand espadon sacré
+4000800	Grand espadon magique
+4000900	Grand espadon de glace
+4001000	Grand espadon empoisonné
+4001100	Grand espadon sanguin
+4001200	Grand espadon occulte
+4010000	Espadon de veilleur
+4010100	Espadon de veilleur lourd
+4010200	Espadon de veilleur acéré
+4010300	Espadon de veilleur de qualité
+4010400	Espadon de veilleur de feu
+4010500	Espadon de veilleur pyrotechnique
+4010600	Espadon de veilleur de foudre
+4010700	Espadon de veilleur sacré
+4010800	Espadon de veilleur magique
+4010900	Espadon de veilleur de glace
+4011000	Espadon de veilleur empoisonné
+4011100	Espadon de veilleur sanguin
+4011200	Espadon de veilleur occulte
+4020000	Lame d'ébène de Maliketh
+4030000	Épée dorée de troll 
+4030100	Épée dorée de troll lourde
+4030200	Épée dorée de troll acérée
+4030300	Épée dorée de troll de qualité
+4030400	Épée dorée de troll de feu
+4030500	Épée dorée de troll pyrotechnique
+4030600	Épée dorée de troll de foudre
+4030700	Épée dorée de troll sacrée
+4030800	Épée dorée de troll magique
+4030900	Épée dorée de troll de glace
+4031000	Épée dorée de troll empoisonnée
+4031100	Épée dorée de troll sanguine
+4031200	Épée dorée de troll occulte
+4040000	Épée à deux mains
+4040100	Épée à deux mains lourde
+4040200	Épée à deux mains acérée
+4040300	Épée à deux mains de qualité
+4040400	Épée à deux mains de feu
+4040500	Épée à deux mains pyrotechnique
+4040600	Épée à deux mains de foudre
+4040700	Épée à deux mains sacrée
+4040800	Épée à deux mains magique
+4040900	Épée à deux mains de glace
+4041000	Épée à deux mains empoisonnée
+4041100	Épée à deux mains sanguine
+4041200	Épée à deux mains occulte
+4050000	Espadon du Fléau des astres
+4060000	Espadon royal
+4070000	Espadon du déicide
+4080000	Espadon des ruines
+4100000	Espadon fusionné
+4110000	Épée de chevalier troll
+4900000	[ERROR]
+4910000	[ERROR]
+5000000	Estoc
+5000100	Estoc lourd
+5000200	Estoc acéré
+5000300	Estoc de qualité
+5000400	Estoc de feu
+5000500	Estoc pyrotechnique
+5000600	Estoc de foudre
+5000700	Estoc sacré
+5000800	Estoc magique
+5000900	Estoc de glace
+5001000	Estoc empoisonné
+5001100	Estoc sanguin
+5001200	Estoc occulte
+5010000	Épée de la Noble putréfaction
+5010100	Épée de la Noble putréfaction lourde
+5010200	Épée de la Noble putréfaction acérée
+5010300	Épée de la Noble putréfaction de qualité
+5010400	Épée de la Noble putréfaction de feu
+5010500	Épée de la Noble putréfaction pyrotech.
+5010600	Épée de la Noble putréfaction de foudre
+5010700	Épée de la Noble putréfaction sacrée
+5010800	Épée de la Noble putréfaction magique
+5010900	Épée de la Noble putréfaction de glace
+5011000	Épée de la Noble putréfaction empoisonnée
+5011100	Épée de la Noble putréfaction sanguine
+5011200	Épée de la Noble putréfaction occulte
+5020000	Rapière
+5020100	Rapière lourde
+5020200	Rapière acérée
+5020300	Rapière de qualité
+5020400	Rapière de feu
+5020500	Rapière pyrotechnique
+5020600	Rapière de foudre
+5020700	Rapière sacrée
+5020800	Rapière magique
+5020900	Rapière de glace
+5021000	Rapière empoisonnée
+5021100	Rapière sanguine
+5021200	Rapière occulte
+5030000	Rapière de Rogier
+5030100	Rapière de Rogier lourde
+5030200	Rapière de Rogier acérée
+5030300	Rapière de Rogier de qualité
+5030400	Rapière de Rogier de feu
+5030500	Rapière de Rogier pyrotechnique
+5030600	Rapière de Rogier de foudre
+5030700	Rapière de Rogier sacrée
+5030800	Rapière de Rogier magique
+5030900	Rapière de Rogier de glace
+5031000	Rapière de Rogier empoisonnée
+5031100	Rapière de Rogier sanguine
+5031200	Rapière de Rogier occulte
+5040000	Rapière myrmicéenne
+5040100	Rapière myrmicéenne lourde
+5040200	Rapière myrmicéenne acérée
+5040300	Rapière myrmicéenne de qualité
+5040400	Rapière myrmicéenne de feu
+5040500	Rapière myrmicéenne pyrotechnique
+5040600	Rapière myrmicéenne de foudre
+5040700	Rapière myrmicéenne sacrée
+5040800	Rapière myrmicéenne magique
+5040900	Rapière myrmicéenne de glace
+5041000	Rapière myrmicéenne empoisonnée
+5041100	Rapière myrmicéenne sanguine
+5041200	Rapière myrmicéenne occulte
+5050000	Aiguille givrée
+5060000	Rapière de noble
+5060100	Rapière de noble lourde
+5060200	Rapière de noble acérée
+5060300	Rapière de noble de qualité
+5060400	Rapière de noble de feu
+5060500	Rapière de noble pyrotechnique
+5060600	Rapière de noble de foudre
+5060700	Rapière de noble sacrée
+5060800	Rapière de noble magique
+5060900	Rapière de noble de glace
+5061000	Rapière de noble empoisonnée
+5061100	Rapière de noble sanguine
+5061200	Rapière de noble occulte
+6000000	Spirale sanglante
+6010000	Aiguille sanctechair
+6010100	Aiguille sanctechair lourde
+6010200	Aiguille sanctechair acérée
+6010300	Aiguille sanctechair de qualité
+6010400	Aiguille sanctechair de feu
+6010500	Aiguille sanctechair pyrotechnique
+6010600	Aiguille sanctechair de foudre
+6010700	Aiguille sanctechair sacrée
+6010800	Aiguille sanctechair magique
+6010900	Aiguille sanctechair de glace
+6011000	Aiguille sanctechair empoisonnée
+6011100	Aiguille sanctechair sanguine
+6011200	Aiguille sanctechair occulte
+6020000	Grande rapière
+6020100	Grande rapière lourde
+6020200	Grande rapière acérée
+6020300	Grande rapière de qualité
+6020400	Grande rapière de feu
+6020500	Grande rapière pyrotechnique
+6020600	Grande rapière de foudre
+6020700	Grande rapière sacrée
+6020800	Grande rapière magique
+6020900	Grande rapière de glace
+6021000	Grande rapière empoisonnée
+6021100	Grande rapière sanguine
+6021200	Grande rapière occulte
+6040000	Lame rocheuse du Roi des dragons
+6900000	[ERROR]
+7000000	Fauchon
+7000100	Fauchon lourd
+7000200	Fauchon acéré
+7000300	Fauchon de qualité
+7000400	Fauchon de feu
+7000500	Fauchon pyrotechnique
+7000600	Fauchon de foudre
+7000700	Fauchon sacré
+7000800	Fauchon magique
+7000900	Fauchon de glace
+7001000	Fauchon empoisonné
+7001100	Fauchon sanguin
+7001200	Fauchon occulte
+7010000	Épée courbée d'homme-bête
+7010100	Épée courbée d'homme-bête lourde
+7010200	Épée courbée d'homme-bête acérée
+7010300	Épée courbée d'homme-bête de qualité
+7010400	Épée courbée d'homme-bête de feu
+7010500	Épée courbée d'homme-bête pyrotech.
+7010600	Épée courbée d'homme-bête de foudre
+7010700	Épée courbée d'homme-bête sacrée
+7010800	Épée courbée d'homme-bête magique
+7010900	Épée courbée d'homme-bête de glace
+7011000	Épée courbée d'homme-bête empoisonnée
+7011100	Épée courbée d'homme-bête sanguine
+7011200	Épée courbée d'homme-bête occulte
+7020000	Shotel
+7020100	Shotel lourd
+7020200	Shotel acéré
+7020300	Shotel de qualité
+7020400	Shotel de feu
+7020500	Shotel pyrotechnique
+7020600	Shotel de foudre
+7020700	Shotel sacré
+7020800	Shotel magique
+7020900	Shotel de glace
+7021000	Shotel empoisonné
+7021100	Shotel sanguin
+7021200	Shotel occulte
+7030000	Shamshir
+7030100	Shamshir lourd
+7030200	Shamshir acéré
+7030300	Shamshir de qualité
+7030400	Shamshir de feu
+7030500	Shamshir pyrotechnique
+7030600	Shamshir de foudre
+7030700	Shamshir sacré
+7030800	Shamshir magique
+7030900	Shamshir de glace
+7031000	Shamshir empoisonné
+7031100	Shamshir sanguin
+7031200	Shamshir occulte
+7040000	Épée courbée de bandit
+7040100	Épée courbée de bandit lourde
+7040200	Épée courbée de bandit acérée
+7040300	Épée courbée de bandit de qualité
+7040400	Épée courbée de bandit de feu
+7040500	Épée courbée de bandit pyrotechnique
+7040600	Épée courbée de bandit de foudre
+7040700	Épée courbée de bandit sacrée
+7040800	Épée courbée de bandit magique
+7040900	Épée courbée de bandit de glace
+7041000	Épée courbée de bandit empoisonnée
+7041100	Épée courbée de bandit sanguine
+7041200	Épée courbée de bandit occulte
+7050000	Lame de magma
+7060000	Épée courbée gracieuse
+7060100	Épée courbée gracieuse lourde
+7060200	Épée courbée gracieuse acérée
+7060300	Épée courbée gracieuse de qualité
+7060400	Épée courbée gracieuse de feu
+7060500	Épée courbée gracieuse pyrotechnique
+7060600	Épée courbée gracieuse de foudre
+7060700	Épée courbée gracieuse sacrée
+7060800	Épée courbée gracieuse magique
+7060900	Épée courbée gracieuse de glace
+7061000	Épée courbée gracieuse empoisonnée
+7061100	Épée courbée gracieuse sanguine
+7061200	Épée courbée gracieuse occulte
+7070000	Aile d'Astel
+7080000	Épée courbée du charognard
+7080100	Épée courbée du charognard lourde
+7080200	Épée courbée du charognard acérée
+7080300	Épée courbée du charognard de qualité
+7080400	Épée courbée du charognard de feu
+7080500	Épée courbée du charognard pyrotech.
+7080600	Épée courbée du charognard de foudre
+7080700	Épée courbée du charognard sacrée
+7080800	Épée courbée du charognard magique
+7080900	Épée courbée du charognard de glace
+7081000	Épée courbée du charognard empoisonnée
+7081100	Épée courbée du charognard sanguine
+7081200	Épée courbée du charognard occulte
+7090000	Confère rapidement des dégâts de poison à l'arme
+7090100	
+7090200	
+7090300	
+7090400	
+7090500	
+7090600	
+7090700	
+7090800	
+7090900	
+7091000	
+7091100	
+7091200	
+7100000	Shotel de l'éclipse
+7110000	Épée courbée du dieu-serpent
+7110100	Épée courbée du dieu-serpent lourde
+7110200	Épée courbée du dieu-serpent acérée
+7110300	Épée courbée du dieu-serpent de quali.
+7110400	Épée courbée du dieu-serpent de feu
+7110500	Épée courbée du dieu-serpent pyrotech.
+7110600	Épée courbée du dieu-serpent de foudre
+7110700	Épée courbée du dieu-serpent sacrée
+7110800	Épée courbée du dieu-serpent magique
+7110900	Épée courbée du dieu-serpent de glace
+7111000	Épée courbée du dieu-serpent empoison.
+7111100	Épée courbée du dieu-serpent sanguine
+7111200	Épée courbée du dieu-serpent occulte
+7120000	Lame de la mante
+7120100	Lame de la mante lourde
+7120200	Lame de la mante acérée
+7120300	Lame de la mante de qualité
+7120400	Lame de la mante de feu
+7120500	Lame de la mante pyrotechnique
+7120600	Lame de la mante de foudre
+7120700	Lame de la mante sacrée
+7120800	Lame de la mante magique
+7120900	Lame de la mante de glace
+7121000	Lame de la mante empoisonnée
+7121100	Lame de la mante sanguine
+7121200	Lame de la mante occulte
+7140000	Cimeterre
+7140100	Cimeterre lourd
+7140200	Cimeterre acéré
+7140300	Cimeterre de qualité
+7140400	Cimeterre de feu
+7140500	Cimeterre pyrotechnique
+7140600	Cimeterre de foudre
+7140700	Cimeterre sacré
+7140800	Cimeterre magique
+7140900	Cimeterre de glace
+7141000	Cimeterre empoisonné
+7141100	Cimeterre sanguin
+7141200	Cimeterre occulte
+7150000	Messer
+7150100	Messer lourd
+7150200	Messer acéré
+7150300	Messer de qualité
+7150400	Messer de feu
+7150500	Messer pyrotechnique
+7150600	Messer de foudre
+7150700	Messer sacré
+7150800	Messer magique
+7150900	Messer de glace
+7151000	Messer empoisonné
+7151100	Messer sanguin
+7151200	Messer occulte
+8010000	Espadon de seigneur d'onyx
+8020000	Désarçonneur
+8020100	Désarçonneur lourd
+8020200	Désarçonneur acéré
+8020300	Désarçonneur de qualité
+8020400	Désarçonneur de feu
+8020500	Désarçonneur pyrotechnique
+8020600	Désarçonneur de foudre
+8020700	Désarçonneur sacré
+8020800	Désarçonneur magique
+8020900	Désarçonneur de glace
+8021000	Désarçonneur empoisonné
+8021100	Désarçonneur sanguin
+8021200	Désarçonneur occulte
+8030000	Croc de limier
+8030100	Croc de limier lourd
+8030200	Croc de limier acéré
+8030300	Croc de limier de qualité
+8030400	Croc de limier de feu
+8030500	Croc de limier pyrotechnique
+8030600	Croc de limier de foudre
+8030700	Croc de limier sacré
+8030800	Croc de limier magique
+8030900	Croc de limier de glace
+8031000	Croc de limier empoisonné
+8031100	Croc de limier sanguin
+8031200	Croc de limier occulte
+8040000	Lame-écaille du Dragon du magma
+8050000	Épée courbée de Zamor
+8060000	Fendoir de Réprouvé
+8060100	Fendoir de Réprouvé lourd
+8060200	Fendoir de Réprouvé acéré
+8060300	Fendoir de Réprouvé de qualité
+8060400	Fendoir de Réprouvé de feu
+8060500	Fendoir de Réprouvé pyrotechnique
+8060600	Fendoir de Réprouvé de foudre
+8060700	Fendoir de Réprouvé sacré
+8060800	Fendoir de Réprouvé magique
+8060900	Fendoir de Réprouvé de glace
+8061000	Fendoir de Réprouvé empoisonné
+8061100	Fendoir de Réprouvé sanguin
+8061200	Fendoir de Réprouvé occulte
+8070000	Lame ardente de moine
+8070100	Lame ardente de moine lourde
+8070200	Lame ardente de moine acérée
+8070300	Lame ardente de moine de qualité
+8070400	Lame ardente de moine de feu
+8070500	Lame ardente de moine pyrotechnique
+8070600	Lame ardente de moine de foudre
+8070700	Lame ardente de moine sacrée
+8070800	Lame ardente de moine magique
+8070900	Lame ardente de moine de glace
+8071000	Lame ardente de moine empoisonnée
+8071100	Lame ardente de moine sanguine
+8071200	Lame ardente de moine occulte
+8080000	Fendoir d'homme-bête
+8080100	Fendoir d'homme-bête lourd
+8080200	Fendoir d'homme-bête acéré
+8080300	Fendoir d'homme-bête de qualité
+8080400	Fendoir d'homme-bête de feu
+8080500	Fendoir d'homme-bête pyrotechnique
+8080600	Fendoir d'homme-bête de foudre
+8080700	Fendoir d'homme-bête sacré
+8080800	Fendoir d'homme-bête magique
+8080900	Fendoir d'homme-bête de glace
+8081000	Fendoir d'homme-bête empoisonné
+8081100	Fendoir d'homme-bête sanguin
+8081200	Fendoir d'homme-bête occulte
+8100000	Épée maudite de Morgott
+8110000	Invoque un Sorcier noble
+8110100	
+8110200	
+8110300	
+8110400	
+8110500	Un geste méprisant.
+8110600	
+8110700	Prière désespérée
+8110800	
+8110900	
+8111000	
+8111100	
+8111200	
+8900000	[ERROR]
+9000000	Uchigatana
+9000100	Uchigatana lourd
+9000200	Uchigatana acéré
+9000300	Uchigatana de qualité
+9000400	Uchigatana de feu
+9000500	Uchigatana pyrotechnique
+9000600	Uchigatana de foudre
+9000700	Uchigatana sacré
+9000800	Uchigatana magique
+9000900	Uchigatana de glace
+9001000	Uchigatana empoisonné
+9001100	Uchigatana sanguin
+9001200	Uchigatana occulte
+9010000	Nagakiba
+9010100	Nagakiba lourd
+9010200	Nagakiba acéré
+9010300	Nagakiba de qualité
+9010400	Nagakiba de feu
+9010500	Nagakiba pyrotechnique
+9010600	Nagakiba de foudre
+9010700	Nagakiba sacré
+9010800	Nagakiba magique
+9010900	Nagakiba de glace
+9011000	Nagakiba empoisonné
+9011100	Nagakiba sanguin
+9011200	Nagakiba occulte
+9020000	Main de Malenia
+9030000	Lame météorique
+9030100	Lame météorique lourde
+9030200	Lame météorique acérée
+9030300	Lame météorique de qualité
+9030400	Lame météorique de feu
+9030500	Lame météorique pyrotechnique
+9030600	Lame météorique de foudre
+9030700	Lame météorique sacrée
+9030800	Lame météorique magique
+9030900	Lame météorique de glace
+9031000	Lame météorique empoisonnée
+9031100	Lame météorique sanguine
+9031200	Lame météorique occulte
+9040000	Rivière sanglante
+9060000	Éclipse lunaire
+9070000	Lame en écailles de dragon
+9080000	Katana vipérin
+9080100	[ERROR]Katana vipérin lourd
+9080200	[ERROR]Katana vipérin acéré
+9080300	[ERROR]Katana vipérin de qualité
+9080400	[ERROR]Katana vipérin de feu
+9080500	[ERROR]Katana vipérin pyrotechnique
+9080600	[ERROR]Katana vipérin de foudre
+9080700	[ERROR]Katana vipérin sacré
+9080800	[ERROR]Katana vipérin magique
+9080900	[ERROR]Katana vipérin de glace
+9081000	[ERROR]Katana vipérin empoisonné
+9081100	[ERROR]Katana vipérin sanguin
+9081200	[ERROR]Katana vipérin occulte
+9900000	[ERROR]
+9910000	[ERROR]
+9911000	[ERROR]
+9920000	[ERROR]
+9930000	[ERROR]
+10000000	Lame double
+10000100	Lame double lourde
+10000200	Lame double acérée
+10000300	Lame double de qualité
+10000400	Lame double de feu
+10000500	Lame double pyrotechnique
+10000600	Lame double de foudre
+10000700	Lame double sacrée
+10000800	Lame double magique
+10000900	Lame double de glace
+10001000	Lame double empoisonnée
+10001100	Lame double sanguine
+10001200	Lame double occulte
+10010000	Écorcheur sanctechair
+10010100	Écorcheur sanctechair lourd
+10010200	Écorcheur sanctechair acéré
+10010300	Écorcheur sanctechair de qualité
+10010400	Écorcheur sanctechair de feu
+10010500	Écorcheur sanctechair pyrotechnique
+10010600	Écorcheur sanctechair de foudre
+10010700	Écorcheur sanctechair sacré
+10010800	Écorcheur sanctechair magique
+10010900	Écorcheur sanctechair de glace
+10011000	Écorcheur sanctechair empoisonné
+10011100	Écorcheur sanctechair sanguin
+10011200	Écorcheur sanctechair occulte
+10030000	Épées géminées de chevalier
+10030100	Épées géminées de chevalier lourdes
+10030200	Épées géminées de chevalier acérées
+10030300	Épées géminées de chevalier de qualité
+10030400	Épées géminées de chevalier de feu
+10030500	Épées géminées de chevalier pyro.
+10030600	Épées géminées de chevalier de foudre
+10030700	Épées géminées de chevalier sacrées
+10030800	Épées géminées de chevalier magiques
+10030900	Épées géminées de chevalier de glace
+10031000	Épées géminées de chevalier empoisonnées
+10031100	Épées géminées de chevalier sanguines
+10031200	Épées géminées de chevalier occultes
+10050000	Lame double d'Eleonora
+10060000	Lame double symbolisant les jumeaux Miquella et Malenia.\r\nDès leur naissance, le destin de Miquella et de sa sœur fut enchevêtré.\r\n\r\nLes lames renferment les runes d'Abondance et de Décomposition.
+10070000	Invoque des esprits
+10080000	Lame double de gargouille
+10080100	Lame double de gargouille lourde
+10080200	Lame double de gargouille acérée
+10080300	Lame double de gargouille de qualité
+10080400	Lame double de gargouille de feu
+10080500	Lame double de gargouille pyrotechnique
+10080600	Lame double de gargouille de foudre
+10080700	Lame double de gargouille sacrée
+10080800	Lame double de gargouille magique
+10080900	Lame double de gargouille de glace
+10081000	Lame double de gargouille empoisonnée
+10081100	Lame double de gargouille sanguine
+10081200	Lame double de gargouille occulte
+10090000	Lame double noire de gargouille
+10090100	Lame double noire de gargouille lourde
+10090200	Lame double noire de gargouille acérée
+10090300	Lame double noire de garg. de qualité
+10090400	Lame double noire de gargouille de feu
+10090500	Lame double noire de garg. pyrotech.
+10090600	Lame double noire de garg. de foudre
+10090700	Lame double noire de gargouille sacrée
+10090800	Lame double noire de garg. magique
+10090900	Lame double noire de garg. de glace
+10091000	Lame double noire de garg. empoisonnée
+10091100	Lame double noire de garg. sanguine
+10091200	Lame double noire de garg. occulte
+11000000	Masse
+11000100	Masse lourde
+11000200	Masse acérée
+11000300	Masse de qualité
+11000400	Masse de feu
+11000500	Masse pyrotechnique
+11000600	Masse de foudre
+11000700	Masse sacrée
+11000800	Masse magique
+11000900	Masse de glace
+11001000	Masse empoisonnée
+11001100	Masse sanguine
+11001200	Masse occulte
+11010000	Gourdin
+11010100	Gourdin lourd
+11010200	Gourdin acéré
+11010300	Gourdin de qualité
+11010400	Gourdin de feu
+11010500	Gourdin pyrotechnique
+11010600	Gourdin de foudre
+11010700	Gourdin sacré
+11010800	Gourdin magique
+11010900	Gourdin de glace
+11011000	Gourdin empoisonné
+11011100	Gourdin sanguin
+11011200	Gourdin occulte
+11030000	Gourdin courbé
+11030100	Gourdin courbé lourd
+11030200	Gourdin courbé acéré
+11030300	Gourdin courbé de qualité
+11030400	Gourdin courbé de feu
+11030500	Gourdin courbé pyrotechnique
+11030600	Gourdin courbé de foudre
+11030700	Gourdin courbé sacré
+11030800	Gourdin courbé magique
+11030900	Gourdin courbé de glace
+11031000	Gourdin courbé empoisonné
+11031100	Gourdin courbé sanguin
+11031200	Gourdin courbé occulte
+11040000	Pic de guerre
+11040100	Pic de guerre lourd
+11040200	Pic de guerre acéré
+11040300	Pic de guerre de qualité
+11040400	Pic de guerre de feu
+11040500	Pic de guerre pyrotechnique
+11040600	Pic de guerre de foudre
+11040700	Pic de guerre sacré
+11040800	Pic de guerre magique
+11040900	Pic de guerre de glace
+11041000	Pic de guerre empoisonné
+11041100	Pic de guerre sanguin
+11041200	Pic de guerre occulte
+11050000	Morgenstern
+11050100	Morgenstern lourde
+11050200	Morgenstern acérée
+11050300	Morgenstern de qualité
+11050400	Morgenstern de feu
+11050500	Morgenstern pyrotechnique
+11050600	Morgenstern de foudre
+11050700	Morgenstern sacrée
+11050800	Morgenstern magique
+11050900	Morgenstern de glace
+11051000	Morgenstern empoisonnée
+11051100	Morgenstern sanguine
+11051200	Morgenstern occulte
+11060000	Bouquet de Varré
+11060100	Bouquet de Varré lourd
+11060200	
+11060300	
+11060400	
+11060500	
+11060600	Un vestige d'anciennes recherches sur la vie éternelle.\r\nÉtrangement, ce pot vide se répare tout seul une fois brisé.\r\n\r\nContenant servant à fabriquer des pots renfermant des matériaux à lancer.\r\n\r\nLes matériaux et le mysticisme que ce pot recèle dévoileront tout leur potentiel une fois ce dernier lancé.
+11060700	Contenant servant à fabriquer des pots à lancer.
+11060800	Flacon servant à mélanger des poudres pour réaliser des sorcelleries des parfums.
+11060900	
+11061000	Détritus sans valeur.
+11061100	Graine dorée, trouvée au pied d'un arbre illusoire.\r\n\r\nAugmente le nombre d'utilisations de la fiole sacrée.\r\n(Utilisable après un repos auprès d'un Site de grâce.)\r\n\r\nLorsque le Cercle d'Elden vola en éclats, ces graines se dispersèrent depuis l'Arbre-Monde jusque dans les diverses contrées de l'Entre-terre, comme si la vie savait alors que son heure avait sonné.
+11061200	Don de l'Arbre-Monde vénéré dans les temples à travers le monde. Cette relique n'est plus que l'ombre d'elle-même.\r\n\r\nAugmente la puissance curatrice d'une fiole sacrée.\r\n(Utilisable après un repos auprès d'un Site de grâce.)\r\n\r\nPendant l'ère de l'Arbre-Monde, ces larmes étaient utilisées pour répandre la foi, car elles étaient alors considérées comme une véritable bénédiction.
+11070000	Gourdin à pointes
+11070100	Gourdin à pointes lourd
+11070200	Gourdin à pointes acéré
+11070300	Gourdin à pointes de qualité
+11070400	Gourdin à pointes de feu
+11070500	Gourdin à pointes pyrotechnique
+11070600	Gourdin à pointes de foudre
+11070700	Gourdin à pointes sacré
+11070800	Gourdin à pointes magique
+11070900	Gourdin à pointes de glace
+11071000	Gourdin à pointes empoisonné
+11071100	Gourdin à pointes sanguin
+11071200	Gourdin à pointes occulte
+11080000	Marteau
+11080100	Marteau lourd
+11080200	Marteau acéré
+11080300	Marteau de qualité
+11080400	Marteau de feu
+11080500	Marteau pyrotechnique
+11080600	Marteau de foudre
+11080700	Marteau sacré
+11080800	Marteau magique
+11080900	Marteau de glace
+11081000	Marteau empoisonné
+11081100	Marteau sanguin
+11081200	Marteau occulte
+11090000	Heurtoir ardent de moine
+11090100	Heurtoir ardent de moine lourd
+11090200	Heurtoir ardent de moine acéré
+11090300	Heurtoir ardent de moine de qualité
+11090400	Heurtoir ardent de moine de feu
+11090500	Heurtoir ardent de moine pyrotechnique
+11090600	Heurtoir ardent de moine de foudre
+11090700	Heurtoir ardent de moine sacré
+11090800	Heurtoir ardent de moine magique
+11090900	Heurtoir ardent de moine de glace
+11091000	Heurtoir ardent de moine empoisonné
+11091100	Heurtoir ardent de moine sanguin
+11091200	Heurtoir ardent de moine occulte
+11100000	Corne de l'émissaire
+11110000	Sceptre de l'Omniscient
+11120000	Marteau nokrien
+11130000	Annulaire
+11140000	Gourdin en pierre
+11140100	Gourdin en pierre lourd
+11140200	Gourdin en pierre acéré
+11140300	Gourdin en pierre de qualité
+11140400	Gourdin en pierre de feu
+11140500	Gourdin en pierre pyrotechnique
+11140600	Gourdin en pierre de foudre
+11140700	Gourdin en pierre sacré
+11140800	Gourdin en pierre magique
+11140900	Gourdin en pierre de glace
+11141000	Gourdin en pierre empoisonné
+11141100	Gourdin en pierre sanguin
+11141200	Gourdin en pierre occulte
+11150000	Marteau de Marika
+11160000	Dans une fiole, augmente la puissance des attaques chargées.
+11160100	Dans une fiole, augmente l'efficacité des roulades.
+11160200	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle fait exploser la concoction.\r\n\r\nCette dangereuse forme de larme de cristal ne possède aucune propriété médicinale, ce que certains ont appris à leurs dépens, paraît-il. Après tout, la foi peut être un sujet explosif.
+11160300	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle fait exploser la concoction.\r\n\r\nCette dangereuse forme de larme de cristal ne possède aucune propriété médicinale, ce que certains ont appris à leurs dépens, paraît-il. Après tout, la foi peut être un sujet explosif.
+11160400	Type de larme de cristal à la surface solidifiée.\r\n\r\nAjoutée dans une fiole, elle renforce temporairement l'équilibre.
+11160500	Dans une fiole, empêche brièvement la perte de runes.
+11160600	Forme particulièrement rare de larme de cristal, comportant en son sein une volute pourpre foncée enveloppée d'une membrane extrêmement fine.\r\n\r\nAjoutée dans une fiole, elle convertit les dégâts subis en PV.\r\n\r\nNéanmoins, cet effet ne peut se produire qu'une seule fois et les dégâts physiques ne sont pas convertis.
+11160700	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle améliore temporairement la force.\r\n\r\nLes nœuds semblables à des rejets dénotent une croissance soudaine et violente.
+11160800	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle améliore temporairement la dextérité.\r\n\r\nLes nœuds semblables à des rejets dénotent une croissance soudaine et violente.
+11160900	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle améliore temporairement l'intelligence.\r\n\r\nLes nœuds semblables à des rejets dénotent une croissance soudaine et violente.
+11161000	Cristallisation spéciale se formant en de nombreuses lunes au sein d'une larme de vie.\r\n\r\nAjoutée dans une fiole, elle améliore temporairement la foi.\r\n\r\nLes nœuds semblables à des rejets dénotent une croissance soudaine et violente.
+11161100	Dans une fiole, permet de lancer un sort sans consommer de PC.
+11161200	Dans une fiole, facilite brièvement les ruptures de posture.
+11170000	[ERROR]
+12000000	Grand gourdin
+12000100	Grand gourdin lourd
+12000200	Grand gourdin acéré
+12000300	Grand gourdin de qualité
+12000400	Grand gourdin de feu
+12000500	Grand gourdin pyrotechnique
+12000600	Grand gourdin de foudre
+12000700	Grand gourdin sacré
+12000800	Grand gourdin magique
+12000900	Grand gourdin de glace
+12001000	Grand gourdin empoisonné
+12001100	Grand gourdin sanguin
+12001200	Grand gourdin occulte
+12010000	Marteau cornu
+12010100	Marteau cornu lourd
+12010200	Marteau cornu acéré
+12010300	Marteau cornu de qualité
+12010400	Marteau cornu de feu
+12010500	Marteau cornu pyrotechnique
+12010600	Marteau cornu de foudre
+12010700	Marteau cornu sacré
+12010800	Marteau cornu magique
+12010900	Marteau cornu de glace
+12011000	Marteau cornu empoisonné
+12011100	Marteau cornu sanguin
+12011200	Marteau cornu occulte
+12020000	Marteau de guerre
+12020100	Marteau de guerre lourd
+12020200	Marteau de guerre acéré
+12020300	Marteau de guerre de qualité
+12020400	Marteau de guerre de feu
+12020500	Marteau de guerre pyrotechnique
+12020600	Marteau de guerre de foudre
+12020700	Marteau de guerre sacré
+12020800	Marteau de guerre magique
+12020900	Marteau de guerre de glace
+12021000	Marteau de guerre empoisonné
+12021100	Marteau de guerre sanguin
+12021200	Marteau de guerre occulte
+12060000	Grande masse
+12060100	Grande masse lourde
+12060200	Grande masse acérée
+12060300	Grande masse de qualité
+12060400	Grande masse de feu
+12060500	Grande masse pyrotechnique
+12060600	Grande masse de foudre
+12060700	Grande masse sacrée
+12060800	Grande masse magique
+12060900	Grande masse de glace
+12061000	Grande masse empoisonnée
+12061100	Grande masse sanguine
+12061200	Grande masse occulte
+12080000	Grand gourdin courbé
+12080100	Grand gourdin courbé lourd
+12080200	Grand gourdin courbé acéré
+12080300	Grand gourdin courbé de qualité
+12080400	Grand gourdin courbé de feu
+12080500	Grand gourdin courbé pyrotechnique
+12080600	Grand gourdin courbé de foudre
+12080700	Grand gourdin courbé sacré
+12080800	Grand gourdin courbé magique
+12080900	Grand gourdin courbé de glace
+12081000	Grand gourdin courbé empoisonné
+12081100	Grand gourdin courbé sanguin
+12081200	Grand gourdin courbé occulte
+12130000	Crâne de l'officiant
+12130100	Crâne de l'officiant lourd
+12130200	Crâne de l'officiant acéré
+12130300	Crâne de l'officiant de qualité
+12130400	Crâne de l'officiant de feu
+12130500	Crâne de l'officiant pyrotechnique
+12130600	Crâne de l'officiant de foudre
+12130700	Crâne de l'officiant sacré
+12130800	Crâne de l'officiant magique
+12130900	Crâne de l'officiant de glace
+12131000	Crâne de l'officiant empoisonné
+12131100	Crâne de l'officiant sanguin
+12131200	Crâne de l'officiant occulte
+12140000	Pioche
+12140100	Pioche lourde
+12140200	Pioche acérée
+12140300	Pioche de qualité
+12140400	Pioche de feu
+12140500	Pioche pyrotechnique
+12140600	Pioche de foudre
+12140700	Pioche sacrée
+12140800	Pioche magique
+12140900	Pioche de glace
+12141000	Pioche empoisonnée
+12141100	Pioche sanguine
+12141200	Pioche occulte
+12150000	Grand marteau griffu
+12160000	Longue corne de l'émissaire
+12170000	Chandelier crânien
+12180000	Gourdin hérissé
+12180100	Gourdin hérissé lourd
+12180200	Gourdin hérissé acéré
+12180300	Gourdin hérissé de qualité
+12180400	Gourdin hérissé de feu
+12180500	Gourdin hérissé pyrotechnique
+12180600	Gourdin hérissé de foudre
+12180700	Gourdin hérissé sacré
+12180800	Gourdin hérissé magique
+12180900	Gourdin hérissé de glace
+12181000	Gourdin hérissé empoisonné
+12181100	Gourdin hérissé sanguin
+12181200	Gourdin hérissé occulte
+12190000	Marteau en pierre
+12190100	Marteau en pierre lourd
+12190200	Marteau en pierre acéré
+12190300	Marteau en pierre de qualité
+12190400	Marteau en pierre de feu
+12190500	Marteau en pierre pyrotechnique
+12190600	Marteau en pierre de foudre
+12190700	Marteau en pierre sacré
+12190800	Marteau en pierre magique
+12190900	Marteau en pierre de glace
+12191000	Marteau en pierre empoisonné
+12191100	Marteau en pierre sanguin
+12191200	Marteau en pierre occulte
+12200000	Spectre du dévoreur
+12210000	Marteau de guerre putréfié
+12210100	Marteau de guerre putréfié lourd
+12210200	Marteau de guerre putréfié acéré
+12210300	Marteau de guerre putréfié de qualité
+12210400	Marteau de guerre putréfié de feu
+12210500	Marteau de guerre putréfié pyrotechnique
+12210600	Marteau de guerre putréfié de foudre
+12210700	Marteau de guerre putréfié sacré
+12210800	Marteau de guerre putréfié magique
+12210900	Marteau de guerre putréfié de glace
+12211000	Marteau de guerre putréfié empoisonné
+12211100	Marteau de guerre putréfié sanguin
+12211200	Marteau de guerre putréfié occulte
+12900000	[ERROR]
+12910000	[ERROR]
+13000000	Fléau de cavalier crépusculaire
+13000100	Fléau de cavalier crépusculaire lourd
+13000200	Fléau de cavalier crépusculaire acéré
+13000300	Fléau de cavalier crépusculaire de qualité
+13000400	Fléau de cavalier crépusculaire de feu
+13000500	Fléau de cavalier crép. pyrotechnique
+13000600	Fléau de cavalier crépusculaire de foudre
+13000700	Fléau de cavalier crépusculaire sacré
+13000800	Fléau de cavalier crépusculaire magique
+13000900	Fléau de cavalier crépusculaire de glace
+13001000	Fléau de cavalier crépusculaire empoisonné
+13001100	Fléau de cavalier crépusculaire sanguin
+13001200	Fléau de cavalier crépusculaire occulte
+13010000	Fléau d'armes
+13010100	Fléau d'armes lourd
+13010200	Fléau d'armes acéré
+13010300	Fléau d'armes de qualité
+13010400	Fléau d'armes de feu
+13010500	Fléau d'armes pyrotechnique
+13010600	Fléau d'armes de foudre
+13010700	Fléau d'armes sacré
+13010800	Fléau d'armes magique
+13010900	Fléau d'armes de glace
+13011000	Fléau d'armes empoisonné
+13011100	Fléau d'armes sanguin
+13011200	Fléau d'armes occulte
+13020000	Têtes du clan
+13030000	Étoiles du bâtard
+13040000	Fléau d'armes articulé
+13040100	Fléau d'armes articulé lourd
+13040200	Fléau d'armes articulé acéré
+13040300	Fléau d'armes articulé de qualité
+13040400	Fléau d'armes articulé de feu
+13040500	Fléau d'armes articulé pyrotechnique
+13040600	Fléau d'armes articulé de foudre
+13040700	Fléau d'armes articulé sacré
+13040800	Fléau d'armes articulé magique
+13040900	Fléau d'armes articulé de glace
+13041000	Fléau d'armes articulé empoisonné
+13041100	Fléau d'armes articulé sanguin
+13041200	Fléau d'armes articulé occulte
+14000000	Hache de guerre
+14000100	Hache de guerre lourde
+14000200	Hache de guerre acérée
+14000300	Hache de guerre de qualité
+14000400	Hache de guerre de feu
+14000500	Hache de guerre pyrotechnique
+14000600	Hache de guerre de foudre
+14000700	Hache de guerre sacrée
+14000800	Hache de guerre magique
+14000900	Hache de guerre de glace
+14001000	Hache de guerre empoisonnée
+14001100	Hache de guerre sanguine
+14001200	Hache de guerre occulte
+14010000	Hachette fourchue
+14010100	Hachette fourchue lourde
+14010200	Hachette fourchue acérée
+14010300	Hachette fourchue de qualité
+14010400	Hachette fourchue de feu
+14010500	Hachette fourchue pyrotechnique
+14010600	Hachette fourchue de foudre
+14010700	Hachette fourchue sacrée
+14010800	Hachette fourchue magique
+14010900	Hachette fourchue de glace
+14011000	Hachette fourchue empoisonnée
+14011100	Hachette fourchue sanguine
+14011200	Hachette fourchue occulte
+14020000	Hache légère
+14020100	Hache légère lourde
+14020200	Hache légère acérée
+14020300	Hache légère de qualité
+14020400	Hache légère de feu
+14020500	Hache légère pyrotechnique
+14020600	Hache légère de foudre
+14020700	Hache légère sacrée
+14020800	Hache légère magique
+14020900	Hache légère de glace
+14021000	Hache légère empoisonnée
+14021100	Hache légère sanguine
+14021200	Hache légère occulte
+14030000	Hache dentelée
+14030100	Hache dentelée lourde
+14030200	Hache dentelée acérée
+14030300	Hache dentelée de qualité
+14030400	Hache dentelée de feu
+14030500	Hache dentelée pyrotechnique
+14030600	Hache dentelée de foudre
+14030700	Hache dentelée sacrée
+14030800	Hache dentelée magique
+14030900	Hache dentelée de glace
+14031000	Hache dentelée empoisonnée
+14031100	Hache dentelée sanguine
+14031200	Hache dentelée occulte
+14040000	Fendoir en fer
+14040100	Fendoir en fer lourd
+14040200	Fendoir en fer acéré
+14040300	Fendoir en fer de qualité
+14040400	Fendoir en fer de feu
+14040500	Fendoir en fer pyrotechnique
+14040600	Fendoir en fer de foudre
+14040700	Fendoir en fer sacré
+14040800	Fendoir en fer magique
+14040900	Fendoir en fer de glace
+14041000	Fendoir en fer empoisonné
+14041100	Fendoir en fer sanguin
+14041200	Fendoir en fer occulte
+14050000	Épée ondulée
+14050100	Épée ondulée lourde
+14050200	Épée ondulée acérée
+14050300	Épée ondulée de qualité
+14050400	Épée ondulée de feu
+14050500	Épée ondulée pyrotechnique
+14050600	Épée ondulée de foudre
+14050700	Épée ondulée sacrée
+14050800	Épée ondulée magique
+14050900	Épée ondulée de glace
+14051000	Épée ondulée empoisonnée
+14051100	Épée ondulée sanguine
+14051200	Épée ondulée occulte
+14060000	Fendoir de l'officiant
+14060100	Fendoir de l'officiant lourd
+14060200	Fendoir de l'officiant acéré
+14060300	Fendoir de l'officiant de qualité
+14060400	Fendoir de l'officiant de feu
+14060500	Fendoir de l'officiant pyrotechnique
+14060600	Fendoir de l'officiant de foudre
+14060700	Fendoir de l'officiant sacré
+14060800	Fendoir de l'officiant magique
+14060900	Fendoir de l'officiant de glace
+14061000	Fendoir de l'officiant empoisonné
+14061100	Fendoir de l'officiant sanguin
+14061200	Fendoir de l'officiant occulte
+14080000	Hachette auréolée de glace
+14100000	Hache des montagnes
+14100100	Hache des montagnes lourde
+14100200	Hache des montagnes acérée
+14100300	Hache des montagnes de qualité
+14100400	Hache des montagnes de feu
+14100500	Hache des montagnes pyrotechnique
+14100600	Hache des montagnes de foudre
+14100700	Hache des montagnes sacrée
+14100800	Hache des montagnes magique
+14100900	Hache des montagnes de glace
+14101000	Hache des montagnes empoisonnée
+14101100	Hache des montagnes sanguine
+14101200	Hache des montagnes occulte
+14110000	Hache sacrificielle
+14110100	Hache sacrificielle lourde
+14110200	Hache sacrificielle acérée
+14110300	Hache sacrificielle de qualité
+14110400	Hache sacrificielle de feu
+14110500	Hache sacrificielle pyrotechnique
+14110600	Hache sacrificielle de foudre
+14110700	Hache sacrificielle sacrée
+14110800	Hache sacrificielle magique
+14110900	Hache sacrificielle de glace
+14111000	Hache sacrificielle empoisonnée
+14111100	Hache sacrificielle sanguine
+14111200	Hache sacrificielle occulte
+14120000	Hache de Rosus
+14130000	Un instrument utilisé par les membres de la famille royale de Carian pour lire les astres.\nUn de ses composants a été retiré et volé.\n\nIl permet d'observer des choses lointaines.\n\nPendant l'âge d'or, tout était régi par l'Arbre-Monde, et l'astrologie des Carian finit par disparaître. À quoi bon se tourner vers les étoiles, alors que l'Arbre-Monde s'élevait au-dessus de tout ?
+14130100	
+14130200	
+14130300	
+14130400	
+14130500	
+14130600	
+14130700	
+14130800	
+14130900	
+14131000	
+14131100	
+14131200	
+14140000	Hache de faucon des tempêtes
+15000000	Grande hache
+15000100	Grande hache lourde
+15000200	Grande hache acérée
+15000300	Grande hache de qualité
+15000400	Grande hache de feu
+15000500	Grande hache pyrotechnique
+15000600	Grande hache de foudre
+15000700	Grande hache sacrée
+15000800	Grande hache magique
+15000900	Grande hache de glace
+15001000	Grande hache empoisonnée
+15001100	Grande hache sanguine
+15001200	Grande hache occulte
+15010000	Hache distordue
+15010100	Hache distordue lourde
+15010200	Hache distordue acérée
+15010300	Hache distordue de qualité
+15010400	Hache distordue de feu
+15010500	Hache distordue pyrotechnique
+15010600	Hache distordue de foudre
+15010700	Hache distordue sacrée
+15010800	Hache distordue magique
+15010900	Hache distordue de glace
+15011000	Hache distordue empoisonnée
+15011100	Hache distordue sanguine
+15011200	Hache distordue occulte
+15020000	Réprouvicide
+15020100	Réprouvicide lourde
+15020200	Réprouvicide acérée
+15020300	Réprouvicide de qualité
+15020400	Réprouvicide de feu
+15020500	Réprouvicide pyrotechnique
+15020600	Réprouvicide de foudre
+15020700	Réprouvicide sacrée
+15020800	Réprouvicide magique
+15020900	Réprouvicide de glace
+15021000	Réprouvicide empoisonnée
+15021100	Réprouvicide sanguine
+15021200	Réprouvicide occulte
+15030000	Hache lunaire
+15030100	Hache lunaire lourde
+15030200	Hache lunaire acérée
+15030300	Hache lunaire de qualité
+15030400	Hache lunaire de feu
+15030500	Hache lunaire pyrotechnique
+15030600	Hache lunaire de foudre
+15030700	Hache lunaire sacrée
+15030800	Hache lunaire magique
+15030900	Hache lunaire de glace
+15031000	Hache lunaire empoisonnée
+15031100	Hache lunaire sanguine
+15031200	Hache lunaire occulte
+15040000	Hache de Godrick
+15050000	Hache longue
+15050100	Hache longue lourde
+15050200	Hache longue acérée
+15050300	Hache longue de qualité
+15050400	Hache longue de feu
+15050500	Hache longue pyrotechnique
+15050600	Hache longue de foudre
+15050700	Hache longue sacrée
+15050800	Hache longue magique
+15050900	Hache longue de glace
+15051000	Hache longue empoisonnée
+15051100	Hache longue sanguine
+15051200	Hache longue occulte
+15060000	Ancre rouillée
+15060100	Ancre rouillée lourde
+15060200	Ancre rouillée acérée
+15060300	Ancre rouillée de qualité
+15060400	Ancre rouillée de feu
+15060500	Ancre rouillée pyrotechnique
+15060600	Ancre rouillée de foudre
+15060700	Ancre rouillée sacrée
+15060800	Ancre rouillée magique
+15060900	Ancre rouillée de glace
+15061000	Ancre rouillée empoisonnée
+15061100	Ancre rouillée sanguine
+15061200	Ancre rouillée occulte
+15080000	Hache du bourreau
+15080100	Hache du bourreau lourde
+15080200	Hache du bourreau acérée
+15080300	Hache du bourreau de qualité
+15080400	Hache du bourreau de feu
+15080500	Hache du bourreau pyrotechnique
+15080600	Hache du bourreau de foudre
+15080700	Hache du bourreau sacrée
+15080800	Hache du bourreau magique
+15080900	Hache du bourreau de glace
+15081000	Hache du bourreau empoisonnée
+15081100	Hache du bourreau sanguine
+15081200	Hache du bourreau occulte
+15110000	Grande corne ailée
+15120000	Couteau de boucher
+15120100	Couteau de boucher lourd
+15120200	Couteau de boucher acéré
+15120300	Couteau de boucher de qualité
+15120400	Couteau de boucher de feu
+15120500	Couteau de boucher pyrotechnique
+15120600	Couteau de boucher de foudre
+15120700	Couteau de boucher sacré
+15120800	Couteau de boucher magique
+15120900	Couteau de boucher de glace
+15121000	Couteau de boucher empoisonné
+15121100	Couteau de boucher sanguin
+15121200	Couteau de boucher occulte
+15130000	Grande hache de gargouille
+15130100	Grande hache de gargouille lourde
+15130200	Grande hache de gargouille acérée
+15130300	Grande hache de gargouille de qualité
+15130400	Grande hache de gargouille de feu
+15130500	Grande hache de gargouille pyrotechnique
+15130600	Grande hache de gargouille de foudre
+15130700	Grande hache de gargouille sacrée
+15130800	Grande hache de gargouille magique
+15130900	Grande hache de gargouille de glace
+15131000	Grande hache de gargouille empoisonnée
+15131100	Grande hache de gargouille sanguine
+15131200	Grande hache de gargouille occulte
+15140000	Hache noire de gargouille
+15140100	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140200	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140300	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140400	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140500	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140600	Cendres spirituelles. Invoque l'esprit d'un Mercenaire du nord.\r\n(L'invocation consomme des PC.)\r\n\r\nOn raconte que du sang de Géants parcourt les veines des Mercenaires du nord et que ces derniers manieraient des fendoirs courbés avec une facilité déconcertante. Les féroces cris qu'ils poussent ne font qu'accentuer leur force.
+15140700	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15140800	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15140900	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15141000	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15141100	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15141200	Cendres spirituelles. Invoque les esprits de trois Loups solitaires.\r\n(L'invocation consomme des PC.)\r\n\r\nCes loups furent rejetés par leur meute, avant d'être recueillis par un chasseur paria. Les esprits de loups submergent leurs ennemis avec une agilité déconcertante, ce qui s'avère d'une grande aide au combat.
+15900000	[ERROR]
+16000000	Lance courte
+16000100	Lance courte lourde
+16000200	Lance courte acérée
+16000300	Lance courte de qualité
+16000400	Lance courte de feu
+16000500	Lance courte pyrotechnique
+16000600	Lance courte de foudre
+16000700	Lance courte sacrée
+16000800	Lance courte magique
+16000900	Lance courte de glace
+16001000	Lance courte empoisonnée
+16001100	Lance courte sanguine
+16001200	Lance courte occulte
+16010000	Lance
+16010100	Lance lourde
+16010200	Lance acérée
+16010300	Lance de qualité
+16010400	Lance de feu
+16010500	Lance pyrotechnique
+16010600	Lance de foudre
+16010700	Lance sacrée
+16010800	Lance magique
+16010900	Lance de glace
+16011000	Lance empoisonnée
+16011100	Lance sanguine
+16011200	Lance occulte
+16020000	Lance de cristal
+16030000	Harpon de boueux
+16030100	Harpon de boueux lourd
+16030200	Harpon de boueux acéré
+16030300	Harpon de boueux de qualité
+16030400	Harpon de boueux de feu
+16030500	Harpon de boueux pyrotechnique
+16030600	Harpon de boueux de foudre
+16030700	Harpon de boueux sacré
+16030800	Harpon de boueux magique
+16030900	Harpon de boueux de glace
+16031000	Harpon de boueux empoisonné
+16031100	Harpon de boueux sanguin
+16031200	Harpon de boueux occulte
+16040000	Lance de la Noble putréfaction
+16040100	Cendres spirituelles. Invoque l'esprit d'une Méduse spirituelle.\r\n(L'invocation consomme des PC.)\r\n\r\nCe fantôme flottant illumine les environs.\r\nIl s'agirait de l'esprit d'une jeune fille en quête éternelle de sa sœur, avec laquelle elle s'était promis de contempler les étoiles.
+16040200	Cendres spirituelles. Invoque l'esprit d'une Méduse spirituelle.\r\n(L'invocation consomme des PC.)\r\n\r\nCe fantôme flottant illumine les environs.\r\nIl s'agirait de l'esprit d'une jeune fille en quête éternelle de sa sœur, avec laquelle elle s'était promis de contempler les étoiles.
+16040300	Cendres spirituelles. Invoque l'esprit d'une Méduse spirituelle.\r\n(L'invocation consomme des PC.)\r\n\r\nCe fantôme flottant illumine les environs.\r\nIl s'agirait de l'esprit d'une jeune fille en quête éternelle de sa sœur, avec laquelle elle s'était promis de contempler les étoiles.
+16040400	Cendres spirituelles. Invoque l'esprit d'une Méduse spirituelle.\r\n(L'invocation consomme des PC.)\r\n\r\nCe fantôme flottant illumine les environs.\r\nIl s'agirait de l'esprit d'une jeune fille en quête éternelle de sa sœur, avec laquelle elle s'était promis de contempler les étoiles.
+16040500	Cendres spirituelles. Invoque l'esprit d'une Méduse spirituelle.\r\n(L'invocation consomme des PC.)\r\n\r\nCe fantôme flottant illumine les environs.\r\nIl s'agirait de l'esprit d'une jeune fille en quête éternelle de sa sœur, avec laquelle elle s'était promis de contempler les étoiles.
+16040600	
+16040700	
+16040800	
+16040900	
+16041000	
+16041100	
+16041200	
+16050000	Pertuisane
+16050100	Pertuisane lourde
+16050200	Pertuisane acérée
+16050300	Pertuisane de qualité
+16050400	Pertuisane de feu
+16050500	Pertuisane pyrotechnique
+16050600	Pertuisane de foudre
+16050700	Pertuisane sacrée
+16050800	Pertuisane magique
+16050900	Pertuisane de glace
+16051000	Pertuisane empoisonnée
+16051100	Pertuisane sanguine
+16051200	Pertuisane occulte
+16060000	Râteau d'os de l'officiant
+16060100	Râteau d'os de l'officiant lourd
+16060200	Râteau d'os de l'officiant acéré
+16060300	Râteau d'os de l'officiant de qualité
+16060400	Râteau d'os de l'officiant de feu
+16060500	Râteau d'os de l'officiant pyrotechnique
+16060600	Râteau d'os de l'officiant de foudre
+16060700	Râteau d'os de l'officiant sacré
+16060800	Râteau d'os de l'officiant magique
+16060900	Râteau d'os de l'officiant de glace
+16061000	Râteau d'os de l'officiant empoisonné
+16061100	Râteau d'os de l'officiant sanguin
+16061200	Râteau d'os de l'officiant occulte
+16070000	Pique
+16070100	Pique lourde
+16070200	Pique acérée
+16070300	Pique de qualité
+16070400	Pique de feu
+16070500	Pique pyrotechnique
+16070600	Pique de foudre
+16070700	Pique sacrée
+16070800	Pique magique
+16070900	Pique de glace
+16071000	Pique empoisonnée
+16071100	Pique sanguine
+16071200	Pique occulte
+16080000	Flambeau
+16090000	Éclair de Gransax
+16110000	Yari
+16110100	Yari lourde
+16110200	Yari acérée
+16110300	Yari de qualité
+16110400	Yari de feu
+16110500	Yari pyrotechnique
+16110600	Yari de foudre
+16110700	Yari sacrée
+16110800	Yari magique
+16110900	Yari de glace
+16111000	Yari empoisonnée
+16111100	Yari sanguine
+16111200	Yari occulte
+16120000	Lance de rite funéraire
+16130000	Girandole du tortionnaire
+16140000	Lance à pointes
+16140100	Lance à pointes lourde
+16140200	Lance à pointes acérée
+16140300	Lance à pointes de qualité
+16140400	Lance à pointes de feu
+16140500	Lance à pointes pyrotechnique
+16140600	Lance à pointes de foudre
+16140700	Lance à pointes sacrée
+16140800	Lance à pointes magique
+16140900	Lance à pointes de glace
+16141000	Lance à pointes empoisonnée
+16141100	Lance à pointes sanguine
+16141200	Lance à pointes occulte
+16150000	Lance en fer
+16150100	Lance en fer lourde
+16150200	Lance en fer acérée
+16150300	Lance en fer de qualité
+16150400	Lance en fer de feu
+16150500	Lance en fer pyrotechnique
+16150600	Lance en fer de foudre
+16150700	Lance en fer sacrée
+16150800	Lance en fer magique
+16150900	Lance en fer de glace
+16151000	Lance en fer empoisonnée
+16151100	Lance en fer sanguine
+16151200	Lance en fer occulte
+16160000	Lance de cristal putréfiée
+17010000	Lance sacrée de Mohgwyn
+17020000	Arbre de Siluria
+17030000	Traque-vipère
+17050000	Lance de guerre de Vyke
+17060000	Lance de cavalerie
+17060100	Lance de cavalerie lourde
+17060200	Lance de cavalerie acérée
+17060300	Lance de cavalerie de qualité
+17060400	Lance de cavalerie de feu
+17060500	Lance de cavalerie pyrotechnique
+17060600	Lance de cavalerie de foudre
+17060700	Lance de cavalerie sacrée
+17060800	Lance de cavalerie magique
+17060900	Lance de cavalerie de glace
+17061000	Lance de cavalerie empoisonnée
+17061100	Lance de cavalerie sanguine
+17061200	Lance de cavalerie occulte
+17070000	Lance arborescente
+17070100	[ERROR]Lance arborescente lourde
+17070101	[ERROR]
+17070102	[ERROR]
+17070103	[ERROR]
+17070104	[ERROR]
+17070105	[ERROR]
+17070106	[ERROR]
+17070107	[ERROR]
+17070108	[ERROR]
+17070109	[ERROR]
+17070110	[ERROR]
+17070111	[ERROR]
+17070112	[ERROR]
+17070113	[ERROR]
+17070114	[ERROR]
+17070115	[ERROR]
+17070116	[ERROR]
+17070117	[ERROR]
+17070118	[ERROR]
+17070119	[ERROR]
+17070120	[ERROR]
+17070121	[ERROR]
+17070122	[ERROR]
+17070123	[ERROR]
+17070124	[ERROR]
+17070125	[ERROR]
+17070200	[ERROR]Lance arborescente acérée
+17070201	[ERROR]
+17070202	[ERROR]
+17070203	[ERROR]
+17070204	[ERROR]
+17070205	[ERROR]
+17070206	[ERROR]
+17070207	[ERROR]
+17070208	[ERROR]
+17070209	[ERROR]
+17070210	[ERROR]
+17070211	[ERROR]
+17070212	[ERROR]
+17070213	[ERROR]
+17070214	[ERROR]
+17070215	[ERROR]
+17070216	[ERROR]
+17070217	[ERROR]
+17070218	[ERROR]
+17070219	[ERROR]
+17070220	[ERROR]
+17070221	[ERROR]
+17070222	[ERROR]
+17070223	[ERROR]
+17070224	[ERROR]
+17070225	[ERROR]
+17070300	[ERROR]Lance arborescente de qualité
+17070301	[ERROR]
+17070302	[ERROR]
+17070303	[ERROR]
+17070304	[ERROR]
+17070305	[ERROR]
+17070306	[ERROR]
+17070307	[ERROR]
+17070308	[ERROR]
+17070309	[ERROR]
+17070310	[ERROR]
+17070311	[ERROR]
+17070312	[ERROR]
+17070313	[ERROR]
+17070314	[ERROR]
+17070315	[ERROR]
+17070316	[ERROR]
+17070317	[ERROR]
+17070318	[ERROR]
+17070319	[ERROR]
+17070320	[ERROR]
+17070321	[ERROR]
+17070322	[ERROR]
+17070323	[ERROR]
+17070324	[ERROR]
+17070325	[ERROR]
+17070400	[ERROR]Lance arborescente de feu
+17070401	[ERROR]
+17070402	[ERROR]
+17070403	[ERROR]
+17070404	[ERROR]
+17070405	[ERROR]
+17070406	[ERROR]
+17070407	[ERROR]
+17070408	[ERROR]
+17070409	[ERROR]
+17070410	[ERROR]
+17070411	[ERROR]
+17070412	[ERROR]
+17070413	[ERROR]
+17070414	[ERROR]
+17070415	[ERROR]
+17070416	[ERROR]
+17070417	[ERROR]
+17070418	[ERROR]
+17070419	[ERROR]
+17070420	[ERROR]
+17070421	[ERROR]
+17070422	[ERROR]
+17070423	[ERROR]
+17070424	[ERROR]
+17070425	[ERROR]
+17070500	[ERROR]Lance arborescente pyrotechnique
+17070501	[ERROR]
+17070502	[ERROR]
+17070503	[ERROR]
+17070504	[ERROR]
+17070505	[ERROR]
+17070506	[ERROR]
+17070507	[ERROR]
+17070508	[ERROR]
+17070509	[ERROR]
+17070510	[ERROR]
+17070511	[ERROR]
+17070512	[ERROR]
+17070513	[ERROR]
+17070514	[ERROR]
+17070515	[ERROR]
+17070516	[ERROR]
+17070517	[ERROR]
+17070518	[ERROR]
+17070519	[ERROR]
+17070520	[ERROR]
+17070521	[ERROR]
+17070522	[ERROR]
+17070523	[ERROR]
+17070524	[ERROR]
+17070525	[ERROR]
+17070600	[ERROR]Lance arborescente de foudre
+17070601	[ERROR]
+17070602	[ERROR]
+17070603	[ERROR]
+17070604	[ERROR]
+17070605	[ERROR]
+17070606	[ERROR]
+17070607	[ERROR]
+17070608	[ERROR]
+17070609	[ERROR]
+17070610	[ERROR]
+17070611	[ERROR]
+17070612	[ERROR]
+17070613	[ERROR]
+17070614	[ERROR]
+17070615	[ERROR]
+17070616	[ERROR]
+17070617	[ERROR]
+17070618	[ERROR]
+17070619	[ERROR]
+17070620	[ERROR]
+17070621	[ERROR]
+17070622	[ERROR]
+17070623	[ERROR]
+17070624	[ERROR]
+17070625	[ERROR]
+17070700	[ERROR]Lance arborescente sacrée
+17070701	[ERROR]
+17070702	[ERROR]
+17070703	[ERROR]
+17070704	[ERROR]
+17070705	[ERROR]
+17070706	[ERROR]
+17070707	[ERROR]
+17070708	[ERROR]
+17070709	[ERROR]
+17070710	[ERROR]
+17070711	[ERROR]
+17070712	[ERROR]
+17070713	[ERROR]
+17070714	[ERROR]
+17070715	[ERROR]
+17070716	[ERROR]
+17070717	[ERROR]
+17070718	[ERROR]
+17070719	[ERROR]
+17070720	[ERROR]
+17070721	[ERROR]
+17070722	[ERROR]
+17070723	[ERROR]
+17070724	[ERROR]
+17070725	[ERROR]
+17070800	[ERROR]Lance arborescente magique
+17070801	[ERROR]
+17070802	[ERROR]
+17070803	[ERROR]
+17070804	[ERROR]
+17070805	[ERROR]
+17070806	[ERROR]
+17070807	[ERROR]
+17070808	[ERROR]
+17070809	[ERROR]
+17070810	[ERROR]
+17070811	[ERROR]
+17070812	[ERROR]
+17070813	[ERROR]
+17070814	[ERROR]
+17070815	[ERROR]
+17070816	[ERROR]
+17070817	[ERROR]
+17070818	[ERROR]
+17070819	[ERROR]
+17070820	[ERROR]
+17070821	[ERROR]
+17070822	[ERROR]
+17070823	[ERROR]
+17070824	[ERROR]
+17070825	[ERROR]
+17070900	[ERROR]Lance arborescente de glace
+17070901	[ERROR]
+17070902	[ERROR]
+17070903	[ERROR]
+17070904	[ERROR]
+17070905	[ERROR]
+17070906	[ERROR]
+17070907	[ERROR]
+17070908	[ERROR]
+17070909	[ERROR]
+17070910	[ERROR]
+17070911	[ERROR]
+17070912	[ERROR]
+17070913	[ERROR]
+17070914	[ERROR]
+17070915	[ERROR]
+17070916	[ERROR]
+17070917	[ERROR]
+17070918	[ERROR]
+17070919	[ERROR]
+17070920	[ERROR]
+17070921	[ERROR]
+17070922	[ERROR]
+17070923	[ERROR]
+17070924	[ERROR]
+17070925	[ERROR]
+17071000	[ERROR]Lance arborescente empoisonnée
+17071001	[ERROR]
+17071002	[ERROR]
+17071003	[ERROR]
+17071004	[ERROR]
+17071005	[ERROR]
+17071006	[ERROR]
+17071007	[ERROR]
+17071008	[ERROR]
+17071009	[ERROR]
+17071010	[ERROR]
+17071011	[ERROR]
+17071012	[ERROR]
+17071013	[ERROR]
+17071014	[ERROR]
+17071015	[ERROR]
+17071016	[ERROR]
+17071017	[ERROR]
+17071018	[ERROR]
+17071019	[ERROR]
+17071020	[ERROR]
+17071021	[ERROR]
+17071022	[ERROR]
+17071023	[ERROR]
+17071024	[ERROR]
+17071025	[ERROR]
+17071100	[ERROR]Lance arborescente sanguine
+17071101	[ERROR]
+17071102	[ERROR]
+17071103	[ERROR]
+17071104	[ERROR]
+17071105	[ERROR]
+17071106	[ERROR]
+17071107	[ERROR]
+17071108	[ERROR]
+17071109	[ERROR]
+17071110	[ERROR]
+17071111	[ERROR]
+17071112	[ERROR]
+17071113	[ERROR]
+17071114	[ERROR]
+17071115	[ERROR]
+17071116	[ERROR]
+17071117	[ERROR]
+17071118	[ERROR]
+17071119	[ERROR]
+17071120	[ERROR]
+17071121	[ERROR]
+17071122	[ERROR]
+17071123	[ERROR]
+17071124	[ERROR]
+17071125	[ERROR]
+17071200	[ERROR]Lance arborescente occulte
+17071201	[ERROR]
+17071202	[ERROR]
+17071203	[ERROR]
+17071204	[ERROR]
+17071205	[ERROR]
+17071206	[ERROR]
+17071207	[ERROR]
+17071208	[ERROR]
+17071209	[ERROR]
+17071210	[ERROR]
+17071211	[ERROR]
+17071212	[ERROR]
+17071213	[ERROR]
+17071214	[ERROR]
+17071215	[ERROR]
+17071216	[ERROR]
+17071217	[ERROR]
+17071218	[ERROR]
+17071219	[ERROR]
+17071220	[ERROR]
+17071221	[ERROR]
+17071222	[ERROR]
+17071223	[ERROR]
+17071224	[ERROR]
+17071225	[ERROR]
+17900000	[ERROR]
+17910000	[ERROR]
+18000000	Hallebarde
+18000100	Hallebarde lourde
+18000200	Hallebarde acérée
+18000300	Hallebarde de qualité
+18000400	Hallebarde de feu
+18000500	Hallebarde pyrotechnique
+18000600	Hallebarde de foudre
+18000700	Hallebarde sacrée
+18000800	Hallebarde magique
+18000900	Hallebarde de glace
+18001000	Hallebarde empoisonnée
+18001100	Hallebarde sanguine
+18001200	Hallebarde occulte
+18010000	Insectolame
+18010100	Insectolame lourde
+18010200	Insectolame acérée
+18010300	Insectolame de qualité
+18010400	Insectolame de feu
+18010500	Insectolame pyrotechnique
+18010600	Insectolame de foudre
+18010700	Insectolame sacrée
+18010800	Insectolame magique
+18010900	Insectolame de glace
+18011000	Insectolame empoisonnée
+18011100	Insectolame sanguine
+18011200	Insectolame occulte
+18020000	Bec-de-corbin
+18020100	Bec-de-corbin lourd
+18020200	Bec-de-corbin acéré
+18020300	Bec-de-corbin de qualité
+18020400	Bec-de-corbin de feu
+18020500	Bec-de-corbin pyrotechnique
+18020600	Bec-de-corbin de foudre
+18020700	Bec-de-corbin sacré
+18020800	Bec-de-corbin magique
+18020900	Bec-de-corbin de glace
+18021000	Bec-de-corbin empoisonné
+18021100	Bec-de-corbin sanguin
+18021200	Bec-de-corbin occulte
+18030000	Hallebarde de chevalier banni
+18030100	Hallebarde de chevalier banni lourde
+18030200	Hallebarde de chevalier banni acérée
+18030300	Hallebarde de chevalier banni de qualité
+18030400	Hallebarde de chevalier banni de feu
+18030500	Hallebarde de chevalier banni pyrotech.
+18030600	Hallebarde de chevalier banni de foudre
+18030700	Hallebarde de chevalier banni sacrée
+18030800	Hallebarde de chevalier banni magique
+18030900	Hallebarde de chevalier banni de glace
+18031000	Hallebarde de chevalier banni empoisonnée
+18031100	Hallebarde de chevalier banni sanguine
+18031200	Hallebarde de chevalier banni occulte
+18040000	Étendard de commandant
+18050000	Vouge de cavalier crépusculaire
+18050100	Vouge de cavalier crépusculaire lourd
+18050200	Vouge de cavalier crépusculaire acéré
+18050300	Vouge de cavalier crépusculaire de qualité
+18050400	Vouge de cavalier crépusculaire de feu
+18050500	Vouge de cavalier crépusculaire pyrotech.
+18050600	Vouge de cavalier crépusculaire de foudre
+18050700	Vouge de cavalier crépusculaire sacré
+18050800	Vouge de cavalier crépusculaire magique
+18050900	Vouge de cavalier crépusculaire de glace
+18051000	Vouge de cavalier crépusculaire empoisonné
+18051100	Vouge de cavalier crépusculaire sanguin
+18051200	Vouge de cavalier crépusculaire occulte
+18060000	Hallebarde lunaire
+18060100	Hallebarde lunaire lourde
+18060200	Hallebarde lunaire acérée
+18060300	Hallebarde lunaire de qualité
+18060400	Hallebarde lunaire de feu
+18060500	Hallebarde lunaire pyrotechnique
+18060600	Hallebarde lunaire de foudre
+18060700	Hallebarde lunaire sacrée
+18060800	Hallebarde lunaire magique
+18060900	Hallebarde lunaire de glace
+18061000	Hallebarde lunaire empoisonnée
+18061100	Hallebarde lunaire sanguine
+18061200	Hallebarde lunaire occulte
+18070000	Scie de milicien vulgaire
+18070100	Scie de milicien vulgaire lourde
+18070200	Scie de milicien vulgaire acérée
+18070300	Scie de milicien vulgaire de qualité
+18070400	Scie de milicien vulgaire de feu
+18070500	Scie de milicien vulgaire pyrotechnique
+18070600	Scie de milicien vulgaire de foudre
+18070700	Scie de milicien vulgaire sacrée
+18070800	Scie de milicien vulgaire magique
+18070900	Scie de milicien vulgaire de glace
+18071000	Scie de milicien vulgaire empoisonnée
+18071100	Scie de milicien vulgaire sanguine
+18071200	Scie de milicien vulgaire occulte
+18080000	Hallebarde dorée
+18080100	Hallebarde dorée lourde
+18080200	Hallebarde dorée acérée
+18080300	Hallebarde dorée de qualité
+18080400	Hallebarde dorée de feu
+18080500	Hallebarde dorée pyrotechnique
+18080600	Hallebarde dorée de foudre
+18080700	Hallebarde dorée sacrée
+18080800	Hallebarde dorée magique
+18080900	Hallebarde dorée de glace
+18081000	Hallebarde dorée empoisonnée
+18081100	Hallebarde dorée sanguine
+18081200	Hallebarde dorée occulte
+18090000	Glaive
+18090100	Glaive lourd
+18090200	Glaive acéré
+18090300	Glaive de qualité
+18090400	Glaive de feu
+18090500	Glaive pyrotechnique
+18090600	Glaive de foudre
+18090700	Glaive sacré
+18090800	Glaive magique
+18090900	Glaive de glace
+18091000	Glaive empoisonné
+18091100	Glaive sanguin
+18091200	Glaive occulte
+18100000	Faucille de guerre de Loretta
+18110000	Épée-lance de gardien
+18110100	Épée-lance de gardien lourde
+18110200	Épée-lance de gardien acérée
+18110300	Épée-lance de gardien de qualité
+18110400	Épée-lance de gardien de feu
+18110500	Épée-lance de gardien pyrotechnique
+18110600	Épée-lance de gardien de foudre
+18110700	Épée-lance de gardien sacrée
+18110800	Épée-lance de gardien magique
+18110900	Épée-lance de gardien de glace
+18111000	Épée-lance de gardien empoisonnée
+18111100	Épée-lance de gardien sanguine
+18111200	Épée-lance de gardien occulte
+18130000	Shotel de milicien vulgaire
+18130100	Shotel de milicien vulgaire lourd
+18130200	Shotel de milicien vulgaire acéré
+18130300	Shotel de milicien vulgaire de qualité
+18130400	Shotel de milicien vulgaire de feu
+18130500	Shotel de milicien vulgaire pyrotechnique
+18130600	Shotel de milicien vulgaire de foudre
+18130700	Shotel de milicien vulgaire sacré
+18130800	Shotel de milicien vulgaire magique
+18130900	Shotel de milicien vulgaire de glace
+18131000	Shotel de milicien vulgaire empoisonné
+18131100	Shotel de milicien vulgaire sanguin
+18131200	Shotel de milicien vulgaire occulte
+18140000	Hallebarde draconique
+18140100	
+18140200	
+18140300	
+18140400	
+18140500	
+18140600	
+18140700	
+18140800	
+18140900	
+18141000	
+18141100	
+18141200	
+18150000	Hallebarde de gargouille
+18150100	Hallebarde de gargouille lourde
+18150200	Hallebarde de gargouille acérée
+18150300	Hallebarde de gargouille de qualité
+18150400	Hallebarde de gargouille de feu
+18150500	Hallebarde de gargouille pyrotechnique
+18150600	Hallebarde de gargouille de foudre
+18150700	Hallebarde de gargouille sacrée
+18150800	Hallebarde de gargouille magique
+18150900	Hallebarde de gargouille de glace
+18151000	Hallebarde de gargouille empoisonnée
+18151100	Hallebarde de gargouille sanguine
+18151200	Hallebarde de gargouille occulte
+18160000	Hallebarde noire de gargouille
+18160100	
+18160200	
+18160300	
+18160400	
+18160500	
+18160600	
+18160700	
+18160800	
+18160900	
+18161000	
+18161100	
+18161200	
+19000000	Faux
+19000100	Faux lourde
+19000200	Faux acérée
+19000300	Faux de qualité
+19000400	Faux de feu
+19000500	Faux pyrotechnique
+19000600	Faux de foudre
+19000700	Faux sacrée
+19000800	Faux magique
+19000900	Faux de glace
+19001000	Faux empoisonnée
+19001100	Faux sanguine
+19001200	Faux occulte
+19010000	Faux mortuaire
+19010100	Faux mortuaire lourde
+19010200	Faux mortuaire acérée
+19010300	Faux mortuaire de qualité
+19010400	Faux mortuaire de feu
+19010500	Faux mortuaire pyrotechnique
+19010600	Faux mortuaire de foudre
+19010700	Faux mortuaire sacrée
+19010800	Faux mortuaire magique
+19010900	Faux mortuaire de glace
+19011000	Faux mortuaire empoisonnée
+19011100	Faux mortuaire sanguine
+19011200	Faux mortuaire occulte
+19020000	Faux du halo
+19050000	
+19060000	Faux ailée
+20000000	Fouet
+20000100	Fouet lourd
+20000200	Fouet acéré
+20000300	Fouet de qualité
+20000400	Fouet de feu
+20000500	Fouet pyrotechnique
+20000600	Fouet de foudre
+20000700	Fouet sacré
+20000800	Fouet magique
+20000900	Fouet de glace
+20001000	Fouet empoisonné
+20001100	Fouet sanguin
+20001200	Fouet occulte
+20020000	Fouet épineux
+20020100	Fouet épineux lourd
+20020200	Fouet épineux acéré
+20020300	Fouet épineux de qualité
+20020400	Fouet épineux de feu
+20020500	Fouet épineux pyrotechnique
+20020600	Fouet épineux de foudre
+20020700	Fouet épineux sacré
+20020800	Fouet épineux magique
+20020900	Fouet épineux de glace
+20021000	Fouet épineux empoisonné
+20021100	Fouet épineux sanguin
+20021200	Fouet épineux occulte
+20030000	Chandelier-fouet volcanique
+20030100	
+20030200	
+20030300	
+20030400	
+20030500	
+20030600	
+20030700	
+20030800	
+20030900	
+20031000	
+20031100	
+20031200	
+20050000	Fouet floral des Hoslow
+20050100	Fouet floral des Hoslow lourd
+20050200	Fouet floral des Hoslow acéré
+20050300	Fouet floral des Hoslow de qualité
+20050400	Fouet floral des Hoslow de feu
+20050500	Fouet floral des Hoslow pyrotechnique
+20050600	Fouet floral des Hoslow de foudre
+20050700	Fouet floral des Hoslow sacré
+20050800	Fouet floral des Hoslow magique
+20050900	Fouet floral des Hoslow de glace
+20051000	Fouet floral des Hoslow empoisonné
+20051100	Fouet floral des Hoslow sanguin
+20051200	Fouet floral des Hoslow occulte
+20060000	Tresse rousse de Géant
+20070000	Urumi
+20070100	Urumi lourd
+20070200	Urumi acéré
+20070300	Urumi de qualité
+20070400	Urumi de feu
+20070500	Urumi pyrotechnique
+20070600	Urumi de foudre
+20070700	Urumi sacré
+20070800	Urumi magique
+20070900	Urumi de glace
+20071000	Urumi empoisonné
+20071100	Urumi sanguin
+20071200	Urumi occulte
+21000000	Ceste
+21000100	Ceste lourd
+21000200	Ceste acéré
+21000300	Ceste de qualité
+21000400	Ceste de feu
+21000500	Ceste pyrotechnique
+21000600	Ceste de foudre
+21000700	Ceste sacré
+21000800	Ceste magique
+21000900	Ceste de glace
+21001000	Ceste empoisonné
+21001100	Ceste sanguin
+21001200	Ceste occulte
+21010000	Ceste à pointes
+21010100	Ceste à pointes lourd
+21010200	Ceste à pointes acéré
+21010300	Ceste à pointes de qualité
+21010400	Ceste à pointes de feu
+21010500	Ceste à pointes pyrotechnique
+21010600	Ceste à pointes de foudre
+21010700	Ceste à pointes sacré
+21010800	Ceste à pointes magique
+21010900	Ceste à pointes de glace
+21011000	Ceste à pointes empoisonné
+21011100	Ceste à pointes sanguin
+21011200	Ceste à pointes occulte
+21060000	Dragon greffé
+21070000	Globe en fer
+21070100	Globe en fer lourd
+21070200	Globe en fer acéré
+21070300	Globe en fer de qualité
+21070400	Globe en fer de feu
+21070500	Globe en fer pyrotechnique
+21070600	Globe en fer de foudre
+21070700	Globe en fer sacré
+21070800	Globe en fer magique
+21070900	Globe en fer de glace
+21071000	Globe en fer empoisonné
+21071100	Globe en fer sanguin
+21071200	Globe en fer occulte
+21080000	Globe hérissé
+21080100	Globe hérissé lourd
+21080200	Globe hérissé acéré
+21080300	Globe hérissé de qualité
+21080400	Globe hérissé de feu
+21080500	Globe hérissé pyrotechnique
+21080600	Globe hérissé de foudre
+21080700	Globe hérissé sacré
+21080800	Globe hérissé magique
+21080900	Globe hérissé de glace
+21081000	Globe hérissé empoisonné
+21081100	Globe hérissé sanguin
+21081200	Globe hérissé occulte
+21100000	Katar
+21100100	Katar lourd
+21100200	Katar acéré
+21100300	Katar de qualité
+21100400	Katar de feu
+21100500	Katar pyrotechnique
+21100600	Katar de foudre
+21100700	Katar sacré
+21100800	Katar magique
+21100900	Katar de glace
+21101000	Katar empoisonné
+21101100	Katar sanguin
+21101200	Katar occulte
+21110000	Main agrippée
+21120000	Prothèse de vétéran
+21130000	Pata runique
+22000000	Griffes
+22000100	Griffes lourdes
+22000200	Griffes acérées
+22000300	Griffes de qualité
+22000400	Griffes de feu
+22000500	Griffes pyrotechniques
+22000600	Griffes de foudre
+22000700	Griffes sacrées
+22000800	Griffes magiques
+22000900	Griffes de glace
+22001000	Griffes empoisonnées
+22001100	Griffes sanguines
+22001200	Griffes occultes
+22010000	Croc venimeux
+22010100	Croc venimeux lourd
+22010200	Croc venimeux acéré
+22010300	Croc venimeux de qualité
+22010400	Croc venimeux de feu
+22010500	Croc venimeux pyrotechnique
+22010600	Croc venimeux de foudre
+22010700	Croc venimeux sacré
+22010800	Croc venimeux magique
+22010900	Croc venimeux de glace
+22011000	Croc venimeux empoisonné
+22011100	Croc venimeux sanguin
+22011200	Croc venimeux occulte
+22020000	Griffes de limier
+22020100	Griffes de limier lourdes
+22020200	Griffes de limier acérées
+22020300	Griffes de limier de qualité
+22020400	Griffes de limier de feu
+22020500	Griffes de limier pyrotechniques
+22020600	Griffes de limier de foudre
+22020700	Griffes de limier sacrées
+22020800	Griffes de limier magiques
+22020900	Griffes de limier de glace
+22021000	Griffes de limier empoisonnées
+22021100	Griffes de limier sanguines
+22021200	Griffes de limier occultes
+22030000	Serres de rapace
+22030100	Serres de rapace lourdes
+22030200	Serres de rapace acérées
+22030300	Serres de rapace de qualité
+22030400	Serres de rapace de feu
+22030500	Serres de rapace pyrotechniques
+22030600	Serres de rapace de foudre
+22030700	Serres de rapace sacrées
+22030800	Serres de rapace magiques
+22030900	Serres de rapace de glace
+22031000	Serres de rapace empoisonnées
+22031100	Serres de rapace sanguines
+22031200	Serres de rapace occultes
+23000000	Grand marteau de prélat
+23000100	Grand marteau de prélat lourd
+23000200	Grand marteau de prélat acéré
+23000300	Grand marteau de prélat de qualité
+23000400	Grand marteau de prélat de feu
+23000500	Grand marteau de prélat pyrotechnique
+23000600	Grand marteau de prélat de foudre
+23000700	Grand marteau de prélat sacré
+23000800	Grand marteau de prélat magique
+23000900	Grand marteau de prélat de glace
+23001000	Grand marteau de prélat empoisonné
+23001100	Grand marteau de prélat sanguin
+23001200	Grand marteau de prélat occulte
+23010000	Crosse de veilleur
+23010100	Crosse de veilleur lourde
+23010200	
+23010300	
+23010400	
+23010500	
+23010600	
+23010700	
+23010800	
+23010900	
+23011000	
+23011100	
+23011200	
+23020000	Grand gourdin
+23020100	[ERROR]Grand gourdin lourd
+23020101	[ERROR]
+23020102	[ERROR]
+23020103	[ERROR]
+23020104	[ERROR]
+23020105	[ERROR]
+23020106	[ERROR]
+23020107	[ERROR]
+23020108	[ERROR]
+23020109	[ERROR]
+23020110	[ERROR]
+23020111	[ERROR]
+23020112	[ERROR]
+23020113	[ERROR]
+23020114	[ERROR]
+23020115	[ERROR]
+23020116	[ERROR]
+23020117	[ERROR]
+23020118	[ERROR]
+23020119	[ERROR]
+23020120	[ERROR]
+23020121	[ERROR]
+23020122	[ERROR]
+23020123	[ERROR]
+23020124	[ERROR]
+23020125	[ERROR]
+23020200	[ERROR]Grand gourdin acéré
+23020201	[ERROR]
+23020202	[ERROR]
+23020203	[ERROR]
+23020204	[ERROR]
+23020205	[ERROR]
+23020206	[ERROR]
+23020207	[ERROR]
+23020208	[ERROR]
+23020209	[ERROR]
+23020210	[ERROR]
+23020211	[ERROR]
+23020212	[ERROR]
+23020213	[ERROR]
+23020214	[ERROR]
+23020215	[ERROR]
+23020216	[ERROR]
+23020217	[ERROR]
+23020218	[ERROR]
+23020219	[ERROR]
+23020220	[ERROR]
+23020221	[ERROR]
+23020222	[ERROR]
+23020223	[ERROR]
+23020224	[ERROR]
+23020225	[ERROR]
+23020300	[ERROR]Grand gourdin de qualité
+23020301	[ERROR]
+23020302	[ERROR]
+23020303	[ERROR]
+23020304	[ERROR]
+23020305	[ERROR]
+23020306	[ERROR]
+23020307	[ERROR]
+23020308	[ERROR]
+23020309	[ERROR]
+23020310	[ERROR]
+23020311	[ERROR]
+23020312	[ERROR]
+23020313	[ERROR]
+23020314	[ERROR]
+23020315	[ERROR]
+23020316	[ERROR]
+23020317	[ERROR]
+23020318	[ERROR]
+23020319	[ERROR]
+23020320	[ERROR]
+23020321	[ERROR]
+23020322	[ERROR]
+23020323	[ERROR]
+23020324	[ERROR]
+23020325	[ERROR]
+23020400	[ERROR]Grand gourdin de feu
+23020401	[ERROR]
+23020402	[ERROR]
+23020403	[ERROR]
+23020404	[ERROR]
+23020405	[ERROR]
+23020406	[ERROR]
+23020407	[ERROR]
+23020408	[ERROR]
+23020409	[ERROR]
+23020410	[ERROR]
+23020411	[ERROR]
+23020412	[ERROR]
+23020413	[ERROR]
+23020414	[ERROR]
+23020415	[ERROR]
+23020416	[ERROR]
+23020417	[ERROR]
+23020418	[ERROR]
+23020419	[ERROR]
+23020420	[ERROR]
+23020421	[ERROR]
+23020422	[ERROR]
+23020423	[ERROR]
+23020424	[ERROR]
+23020425	[ERROR]
+23020500	[ERROR]Grand gourdin pyrotechnique
+23020501	[ERROR]
+23020502	[ERROR]
+23020503	[ERROR]
+23020504	[ERROR]
+23020505	[ERROR]
+23020506	[ERROR]
+23020507	[ERROR]
+23020508	[ERROR]
+23020509	[ERROR]
+23020510	[ERROR]
+23020511	[ERROR]
+23020512	[ERROR]
+23020513	[ERROR]
+23020514	[ERROR]
+23020515	[ERROR]
+23020516	[ERROR]
+23020517	[ERROR]
+23020518	[ERROR]
+23020519	[ERROR]
+23020520	[ERROR]
+23020521	[ERROR]
+23020522	[ERROR]
+23020523	[ERROR]
+23020524	[ERROR]
+23020525	[ERROR]
+23020600	[ERROR]Grand gourdin de foudre
+23020601	[ERROR]
+23020602	[ERROR]
+23020603	[ERROR]
+23020604	[ERROR]
+23020605	[ERROR]
+23020606	[ERROR]
+23020607	[ERROR]
+23020608	[ERROR]
+23020609	[ERROR]
+23020610	[ERROR]
+23020611	[ERROR]
+23020612	[ERROR]
+23020613	[ERROR]
+23020614	[ERROR]
+23020615	[ERROR]
+23020616	[ERROR]
+23020617	[ERROR]
+23020618	[ERROR]
+23020619	[ERROR]
+23020620	[ERROR]
+23020621	[ERROR]
+23020622	[ERROR]
+23020623	[ERROR]
+23020624	[ERROR]
+23020625	[ERROR]
+23020700	[ERROR]Grand gourdin sacré
+23020701	[ERROR]
+23020702	[ERROR]
+23020703	[ERROR]
+23020704	[ERROR]
+23020705	[ERROR]
+23020706	[ERROR]
+23020707	[ERROR]
+23020708	[ERROR]
+23020709	[ERROR]
+23020710	[ERROR]
+23020711	[ERROR]
+23020712	[ERROR]
+23020713	[ERROR]
+23020714	[ERROR]
+23020715	[ERROR]
+23020716	[ERROR]
+23020717	[ERROR]
+23020718	[ERROR]
+23020719	[ERROR]
+23020720	[ERROR]
+23020721	[ERROR]
+23020722	[ERROR]
+23020723	[ERROR]
+23020724	[ERROR]
+23020725	[ERROR]
+23020800	[ERROR]Grand gourdin magique
+23020801	[ERROR]
+23020802	[ERROR]
+23020803	[ERROR]
+23020804	[ERROR]
+23020805	[ERROR]
+23020806	[ERROR]
+23020807	[ERROR]
+23020808	[ERROR]
+23020809	[ERROR]
+23020810	[ERROR]
+23020811	[ERROR]
+23020812	[ERROR]
+23020813	[ERROR]
+23020814	[ERROR]
+23020815	[ERROR]
+23020816	[ERROR]
+23020817	[ERROR]
+23020818	[ERROR]
+23020819	[ERROR]
+23020820	[ERROR]
+23020821	[ERROR]
+23020822	[ERROR]
+23020823	[ERROR]
+23020824	[ERROR]
+23020825	[ERROR]
+23020900	[ERROR]Grand gourdin de glace
+23020901	[ERROR]
+23020902	[ERROR]
+23020903	[ERROR]
+23020904	[ERROR]
+23020905	[ERROR]
+23020906	[ERROR]
+23020907	[ERROR]
+23020908	[ERROR]
+23020909	[ERROR]
+23020910	[ERROR]
+23020911	[ERROR]
+23020912	[ERROR]
+23020913	[ERROR]
+23020914	[ERROR]
+23020915	[ERROR]
+23020916	[ERROR]
+23020917	[ERROR]
+23020918	[ERROR]
+23020919	[ERROR]
+23020920	[ERROR]
+23020921	[ERROR]
+23020922	[ERROR]
+23020923	[ERROR]
+23020924	[ERROR]
+23020925	[ERROR]
+23021000	[ERROR]Grand gourdin empoisonné
+23021001	[ERROR]
+23021002	[ERROR]
+23021003	[ERROR]
+23021004	[ERROR]
+23021005	[ERROR]
+23021006	[ERROR]
+23021007	[ERROR]
+23021008	[ERROR]
+23021009	[ERROR]
+23021010	[ERROR]
+23021011	[ERROR]
+23021012	[ERROR]
+23021013	[ERROR]
+23021014	[ERROR]
+23021015	[ERROR]
+23021016	[ERROR]
+23021017	[ERROR]
+23021018	[ERROR]
+23021019	[ERROR]
+23021020	[ERROR]
+23021021	[ERROR]
+23021022	[ERROR]
+23021023	[ERROR]
+23021024	[ERROR]
+23021025	[ERROR]
+23021100	[ERROR]Grand gourdin sanguin
+23021101	[ERROR]
+23021102	[ERROR]
+23021103	[ERROR]
+23021104	[ERROR]
+23021105	[ERROR]
+23021106	[ERROR]
+23021107	[ERROR]
+23021108	[ERROR]
+23021109	[ERROR]
+23021110	[ERROR]
+23021111	[ERROR]
+23021112	[ERROR]
+23021113	[ERROR]
+23021114	[ERROR]
+23021115	[ERROR]
+23021116	[ERROR]
+23021117	[ERROR]
+23021118	[ERROR]
+23021119	[ERROR]
+23021120	[ERROR]
+23021121	[ERROR]
+23021122	[ERROR]
+23021123	[ERROR]
+23021124	[ERROR]
+23021125	[ERROR]
+23021200	[ERROR]Grand gourdin occulte
+23021201	[ERROR]
+23021202	[ERROR]
+23021203	[ERROR]
+23021204	[ERROR]
+23021205	[ERROR]
+23021206	[ERROR]
+23021207	[ERROR]
+23021208	[ERROR]
+23021209	[ERROR]
+23021210	[ERROR]
+23021211	[ERROR]
+23021212	[ERROR]
+23021213	[ERROR]
+23021214	[ERROR]
+23021215	[ERROR]
+23021216	[ERROR]
+23021217	[ERROR]
+23021218	[ERROR]
+23021219	[ERROR]
+23021220	[ERROR]
+23021221	[ERROR]
+23021222	[ERROR]
+23021223	[ERROR]
+23021224	[ERROR]
+23021225	[ERROR]
+23030000	Grande corne de l'émissaire
+23040000	Grande hache de gladiateur
+23040100	Grande hache de gladiateur lourde
+23040200	Grande hache de gladiateur acérée
+23040300	Grande hache de gladiateur de qualité
+23040400	Grande hache de gladiateur de feu
+23040500	Grande hache de gladiateur pyrotechnique
+23040600	Grande hache de gladiateur de foudre
+23040700	Grande hache de gladiateur sacrée
+23040800	Grande hache de gladiateur magique
+23040900	Grande hache de gladiateur de glace
+23041000	Grande hache de gladiateur empoisonnée
+23041100	Grande hache de gladiateur sanguine
+23041200	Grande hache de gladiateur occulte
+23050000	Hache de Godfrey
+23060000	Griffe draconique
+23070000	Bâton de l'avatar
+23080000	Mâchoire de créature stellaire
+23100000	Rouet de Ghiza
+23110000	Fléau des Géants
+23110100	Fléau des Géants lourd
+23110200	Fléau des Géants acéré
+23110300	Fléau des Géants de qualité
+23110400	Fléau des Géants de feu
+23110500	Fléau des Géants pyrotechnique
+23110600	Fléau des Géants de foudre
+23110700	Fléau des Géants sacré
+23110800	Fléau des Géants magique
+23110900	Fléau des Géants de glace
+23111000	Fléau des Géants empoisonné
+23111100	Fléau des Géants sanguin
+23111200	Fléau des Géants occulte
+23120000	Arme d'hast de golem
+23120100	Arme d'hast de golem lourde
+23120200	Arme d'hast de golem acérée
+23120300	Arme d'hast de golem de qualité
+23120400	Arme d'hast de golem de feu
+23120500	Arme d'hast de golem pyrotechnique
+23120600	Arme d'hast de golem de foudre
+23120700	Arme d'hast de golem sacrée
+23120800	Arme d'hast de golem magique
+23120900	Arme d'hast de golem de glace
+23121000	Arme d'hast de golem empoisonnée
+23121100	Arme d'hast de golem sanguine
+23121200	Arme d'hast de golem occulte
+23130000	Marteau de troll
+23130100	[ERROR]Marteau de troll lourd
+23130101	[ERROR]
+23130102	[ERROR]
+23130103	[ERROR]
+23130104	[ERROR]
+23130105	[ERROR]
+23130106	[ERROR]
+23130107	[ERROR]
+23130108	[ERROR]
+23130109	[ERROR]
+23130110	[ERROR]
+23130111	[ERROR]
+23130112	[ERROR]
+23130113	[ERROR]
+23130114	[ERROR]
+23130115	[ERROR]
+23130116	[ERROR]
+23130117	[ERROR]
+23130118	[ERROR]
+23130119	[ERROR]
+23130120	[ERROR]
+23130121	[ERROR]
+23130122	[ERROR]
+23130123	[ERROR]
+23130124	[ERROR]
+23130125	[ERROR]
+23130200	[ERROR]Marteau de troll acéré
+23130201	[ERROR]
+23130202	[ERROR]
+23130203	[ERROR]
+23130204	[ERROR]
+23130205	[ERROR]
+23130206	[ERROR]
+23130207	[ERROR]
+23130208	[ERROR]
+23130209	[ERROR]
+23130210	[ERROR]
+23130211	[ERROR]
+23130212	[ERROR]
+23130213	[ERROR]
+23130214	[ERROR]
+23130215	[ERROR]
+23130216	[ERROR]
+23130217	[ERROR]
+23130218	[ERROR]
+23130219	[ERROR]
+23130220	[ERROR]
+23130221	[ERROR]
+23130222	[ERROR]
+23130223	[ERROR]
+23130224	[ERROR]
+23130225	[ERROR]
+23130300	[ERROR]Marteau de troll de qualité
+23130301	[ERROR]
+23130302	[ERROR]
+23130303	[ERROR]
+23130304	[ERROR]
+23130305	[ERROR]
+23130306	[ERROR]
+23130307	[ERROR]
+23130308	[ERROR]
+23130309	[ERROR]
+23130310	[ERROR]
+23130311	[ERROR]
+23130312	[ERROR]
+23130313	[ERROR]
+23130314	[ERROR]
+23130315	[ERROR]
+23130316	[ERROR]
+23130317	[ERROR]
+23130318	[ERROR]
+23130319	[ERROR]
+23130320	[ERROR]
+23130321	[ERROR]
+23130322	[ERROR]
+23130323	[ERROR]
+23130324	[ERROR]
+23130325	[ERROR]
+23130400	[ERROR]Marteau de troll de feu
+23130401	[ERROR]
+23130402	[ERROR]
+23130403	[ERROR]
+23130404	[ERROR]
+23130405	[ERROR]
+23130406	[ERROR]
+23130407	[ERROR]
+23130408	[ERROR]
+23130409	[ERROR]
+23130410	[ERROR]
+23130411	[ERROR]
+23130412	[ERROR]
+23130413	[ERROR]
+23130414	[ERROR]
+23130415	[ERROR]
+23130416	[ERROR]
+23130417	[ERROR]
+23130418	[ERROR]
+23130419	[ERROR]
+23130420	[ERROR]
+23130421	[ERROR]
+23130422	[ERROR]
+23130423	[ERROR]
+23130424	[ERROR]
+23130425	[ERROR]
+23130500	[ERROR]Marteau de troll pyrotechnique
+23130501	[ERROR]
+23130502	[ERROR]
+23130503	[ERROR]
+23130504	[ERROR]
+23130505	[ERROR]
+23130506	[ERROR]
+23130507	[ERROR]
+23130508	[ERROR]
+23130509	[ERROR]
+23130510	[ERROR]
+23130511	[ERROR]
+23130512	[ERROR]
+23130513	[ERROR]
+23130514	[ERROR]
+23130515	[ERROR]
+23130516	[ERROR]
+23130517	[ERROR]
+23130518	[ERROR]
+23130519	[ERROR]
+23130520	[ERROR]
+23130521	[ERROR]
+23130522	[ERROR]
+23130523	[ERROR]
+23130524	[ERROR]
+23130525	[ERROR]
+23130600	[ERROR]Marteau de troll de foudre
+23130601	[ERROR]
+23130602	[ERROR]
+23130603	[ERROR]
+23130604	[ERROR]
+23130605	[ERROR]
+23130606	[ERROR]
+23130607	[ERROR]
+23130608	[ERROR]
+23130609	[ERROR]
+23130610	[ERROR]
+23130611	[ERROR]
+23130612	[ERROR]
+23130613	[ERROR]
+23130614	[ERROR]
+23130615	[ERROR]
+23130616	[ERROR]
+23130617	[ERROR]
+23130618	[ERROR]
+23130619	[ERROR]
+23130620	[ERROR]
+23130621	[ERROR]
+23130622	[ERROR]
+23130623	[ERROR]
+23130624	[ERROR]
+23130625	[ERROR]
+23130700	[ERROR]Marteau de troll sacré
+23130701	[ERROR]
+23130702	[ERROR]
+23130703	[ERROR]
+23130704	[ERROR]
+23130705	[ERROR]
+23130706	[ERROR]
+23130707	[ERROR]
+23130708	[ERROR]
+23130709	[ERROR]
+23130710	[ERROR]
+23130711	[ERROR]
+23130712	[ERROR]
+23130713	[ERROR]
+23130714	[ERROR]
+23130715	[ERROR]
+23130716	[ERROR]
+23130717	[ERROR]
+23130718	[ERROR]
+23130719	[ERROR]
+23130720	[ERROR]
+23130721	[ERROR]
+23130722	[ERROR]
+23130723	[ERROR]
+23130724	[ERROR]
+23130725	[ERROR]
+23130800	[ERROR]Marteau de troll magique
+23130801	[ERROR]
+23130802	[ERROR]
+23130803	[ERROR]
+23130804	[ERROR]
+23130805	[ERROR]
+23130806	[ERROR]
+23130807	[ERROR]
+23130808	[ERROR]
+23130809	[ERROR]
+23130810	[ERROR]
+23130811	[ERROR]
+23130812	[ERROR]
+23130813	[ERROR]
+23130814	[ERROR]
+23130815	[ERROR]
+23130816	[ERROR]
+23130817	[ERROR]
+23130818	[ERROR]
+23130819	[ERROR]
+23130820	[ERROR]
+23130821	[ERROR]
+23130822	[ERROR]
+23130823	[ERROR]
+23130824	[ERROR]
+23130825	[ERROR]
+23130900	[ERROR]Marteau de troll de glace
+23130901	[ERROR]
+23130902	[ERROR]
+23130903	[ERROR]
+23130904	[ERROR]
+23130905	[ERROR]
+23130906	[ERROR]
+23130907	[ERROR]
+23130908	[ERROR]
+23130909	[ERROR]
+23130910	[ERROR]
+23130911	[ERROR]
+23130912	[ERROR]
+23130913	[ERROR]
+23130914	[ERROR]
+23130915	[ERROR]
+23130916	[ERROR]
+23130917	[ERROR]
+23130918	[ERROR]
+23130919	[ERROR]
+23130920	[ERROR]
+23130921	[ERROR]
+23130922	[ERROR]
+23130923	[ERROR]
+23130924	[ERROR]
+23130925	[ERROR]
+23131000	[ERROR]Marteau de troll empoisonné
+23131001	[ERROR]
+23131002	[ERROR]
+23131003	[ERROR]
+23131004	[ERROR]
+23131005	[ERROR]
+23131006	[ERROR]
+23131007	[ERROR]
+23131008	[ERROR]
+23131009	[ERROR]
+23131010	[ERROR]
+23131011	[ERROR]
+23131012	[ERROR]
+23131013	[ERROR]
+23131014	[ERROR]
+23131015	[ERROR]
+23131016	[ERROR]
+23131017	[ERROR]
+23131018	[ERROR]
+23131019	[ERROR]
+23131020	[ERROR]
+23131021	[ERROR]
+23131022	[ERROR]
+23131023	[ERROR]
+23131024	[ERROR]
+23131025	[ERROR]
+23131100	[ERROR]Marteau de troll sanguin
+23131101	[ERROR]
+23131102	[ERROR]
+23131103	[ERROR]
+23131104	[ERROR]
+23131105	[ERROR]
+23131106	[ERROR]
+23131107	[ERROR]
+23131108	[ERROR]
+23131109	[ERROR]
+23131110	[ERROR]
+23131111	[ERROR]
+23131112	[ERROR]
+23131113	[ERROR]
+23131114	[ERROR]
+23131115	[ERROR]
+23131116	[ERROR]
+23131117	[ERROR]
+23131118	[ERROR]
+23131119	[ERROR]
+23131120	[ERROR]
+23131121	[ERROR]
+23131122	[ERROR]
+23131123	[ERROR]
+23131124	[ERROR]
+23131125	[ERROR]
+23131200	[ERROR]Marteau de troll occulte
+23131201	[ERROR]
+23131202	[ERROR]
+23131203	[ERROR]
+23131204	[ERROR]
+23131205	[ERROR]
+23131206	[ERROR]
+23131207	[ERROR]
+23131208	[ERROR]
+23131209	[ERROR]
+23131210	[ERROR]
+23131211	[ERROR]
+23131212	[ERROR]
+23131213	[ERROR]
+23131214	[ERROR]
+23131215	[ERROR]
+23131216	[ERROR]
+23131217	[ERROR]
+23131218	[ERROR]
+23131219	[ERROR]
+23131220	[ERROR]
+23131221	[ERROR]
+23131222	[ERROR]
+23131223	[ERROR]
+23131224	[ERROR]
+23131225	[ERROR]
+23140000	Bâton putréfié
+23150000	Grande hache putréfiée
+23150100	Grande hache putréfiée lourde
+23150200	Grande hache putréfiée acérée
+23150300	Grande hache putréfiée de qualité
+23150400	Grande hache putréfiée de feu
+23150500	Grande hache putréfiée pyrotechnique
+23150600	Grande hache putréfiée de foudre
+23150700	Grande hache putréfiée sacrée
+23150800	Grande hache putréfiée magique
+23150900	Grande hache putréfiée de glace
+23151000	Grande hache putréfiée empoisonnée
+23151100	Grande hache putréfiée sanguine
+23151200	Grande hache putréfiée occulte
+23900000	[ERROR]
+23910000	[ERROR]
+23920000	[ERROR]
+23930000	[ERROR]
+24000000	Torche
+24020000	Torche barbelée
+24040000	Torche de sainte Trina
+24050000	Torche de flamme spectrale
+24060000	Torche anti-bêtes
+24070000	Torche de Sentinelle
+30000000	Rondache
+30000100	Rondache lourde
+30000200	Rondache acérée
+30000300	Rondache de qualité
+30000400	Rondache de feu
+30000500	Rondache pyrotechnique
+30000600	Rondache de foudre
+30000700	Rondache sacrée
+30000800	Rondache magique
+30000900	Rondache de glace
+30001000	Rondache empoisonnée
+30001100	Rondache sanguine
+30001200	Rondache occulte
+30010000	Bouclier de Parfumeur
+30010100	Bouclier de Parfumeur lourd
+30010200	Bouclier de Parfumeur acéré
+30010300	Bouclier de Parfumeur de qualité
+30010400	Bouclier de Parfumeur de feu
+30010500	Bouclier de Parfumeur pyrotechnique
+30010600	Bouclier de Parfumeur de foudre
+30010700	Bouclier de Parfumeur sacré
+30010800	Bouclier de Parfumeur magique
+30010900	Bouclier de Parfumeur de glace
+30011000	Bouclier de Parfumeur empoisonné
+30011100	Bouclier de Parfumeur sanguin
+30011200	Bouclier de Parfumeur occulte
+30020000	Bouclier de reptilien
+30020100	Bouclier de reptilien lourd
+30020200	Bouclier de reptilien acéré
+30020300	Bouclier de reptilien de qualité
+30020400	Bouclier de reptilien de feu
+30020500	Bouclier de reptilien pyrotechnique
+30020600	Bouclier de reptilien de foudre
+30020700	Bouclier de reptilien sacré
+30020800	Bouclier de reptilien magique
+30020900	Bouclier de reptilien de glace
+30021000	Bouclier de reptilien empoisonné
+30021100	Bouclier de reptilien sanguin
+30021200	Bouclier de reptilien occulte
+30030000	Bouclier croulant
+30030100	Bouclier croulant lourd
+30030200	Bouclier croulant acéré
+30030300	Bouclier croulant de qualité
+30030400	Bouclier croulant de feu
+30030500	Bouclier croulant pyrotechnique
+30030600	Bouclier croulant de foudre
+30030700	Bouclier croulant sacré
+30030800	Bouclier croulant magique
+30030900	Bouclier croulant de glace
+30031000	Bouclier croulant empoisonné
+30031100	Bouclier croulant sanguin
+30031200	Bouclier croulant occulte
+30040000	Bouclier-pilori
+30040100	Bouclier-pilori lourd
+30040200	Bouclier-pilori acéré
+30040300	Bouclier-pilori de qualité
+30040400	Bouclier-pilori de feu
+30040500	Bouclier-pilori pyrotechnique
+30040600	Bouclier-pilori de foudre
+30040700	Bouclier-pilori sacré
+30040800	Bouclier-pilori magique
+30040900	Bouclier-pilori de glace
+30041000	Bouclier-pilori empoisonné
+30041100	Bouclier-pilori sanguin
+30041200	Bouclier-pilori occulte
+30060000	Bouclier-jarre d'homme-bête
+30060100	Bouclier-jarre d'homme-bête lourd
+30060200	Bouclier-jarre d'homme-bête acéré
+30060300	Bouclier-jarre d'homme-bête de qualité
+30060400	Bouclier-jarre d'homme-bête de feu
+30060500	Bouclier-jarre d'homme-bête pyrotechnique
+30060600	Bouclier-jarre d'homme-bête de foudre
+30060700	Bouclier-jarre d'homme-bête sacré
+30060800	Bouclier-jarre d'homme-bête magique
+30060900	Bouclier-jarre d'homme-bête de glace
+30061000	Bouclier-jarre d'homme-bête empoisonné
+30061100	Bouclier-jarre d'homme-bête sanguin
+30061200	Bouclier-jarre d'homme-bête occulte
+30070000	Bouclier rond aux épines rouges
+30070100	Bouclier rond aux épines rouges lourd
+30070200	Bouclier rond aux épines rouges acéré
+30070300	Bouclier rond aux épines rouges de qualité
+30070400	Bouclier rond aux épines rouges de feu
+30070500	Bouclier rond aux épines rouges pyro.
+30070600	Bouclier rond aux épines rouges de foudre
+30070700	Bouclier rond aux épines rouges sacré
+30070800	Bouclier rond aux épines rouges magique
+30070900	Bouclier rond aux épines rouges de glace
+30071000	Bouclier rond aux épines rouges empoisonné
+30071100	Bouclier rond aux épines rouges sanguin
+30071200	Bouclier rond aux épines rouges occulte
+30080000	Bouclier rond gravé
+30080100	Bouclier rond gravé lourd
+30080200	Bouclier rond gravé acéré
+30080300	Bouclier rond gravé de qualité
+30080400	Bouclier rond gravé de feu
+30080500	Bouclier rond gravé pyrotechnique
+30080600	Bouclier rond gravé de foudre
+30080700	Bouclier rond gravé sacré
+30080800	Bouclier rond gravé magique
+30080900	Bouclier rond gravé de glace
+30081000	Bouclier rond gravé empoisonné
+30081100	Bouclier rond gravé sanguin
+30081200	Bouclier rond gravé occulte
+30090000	Bouclier rond renforcé
+30090100	Bouclier rond renforcé lourd
+30090200	Bouclier rond renforcé acéré
+30090300	Bouclier rond renforcé de qualité
+30090400	Bouclier rond renforcé de feu
+30090500	Bouclier rond renforcé pyrotechnique
+30090600	Bouclier rond renforcé de foudre
+30090700	Bouclier rond renforcé sacré
+30090800	Bouclier rond renforcé magique
+30090900	Bouclier rond renforcé de glace
+30091000	Bouclier rond renforcé empoisonné
+30091100	Bouclier rond renforcé sanguin
+30091200	Bouclier rond renforcé occulte
+30100000	Bouclier rond bleuté
+30100100	Bouclier rond bleuté lourd
+30100200	Bouclier rond bleuté acéré
+30100300	Bouclier rond bleuté de qualité
+30100400	Bouclier rond bleuté de feu
+30100500	Bouclier rond bleuté pyrotechnique
+30100600	Bouclier rond bleuté de foudre
+30100700	Bouclier rond bleuté sacré
+30100800	Bouclier rond bleuté magique
+30100900	Bouclier rond bleuté de glace
+30101000	Bouclier rond bleuté empoisonné
+30101100	Bouclier rond bleuté sanguin
+30101200	Bouclier rond bleuté occulte
+30110000	Bouclier de la faille
+30110100	Bouclier de la faille lourd
+30110200	Bouclier de la faille acéré
+30110300	Bouclier de la faille de qualité
+30110400	Bouclier de la faille de feu
+30110500	Bouclier de la faille pyrotechnique
+30110600	Bouclier de la faille de foudre
+30110700	Bouclier de la faille sacré
+30110800	Bouclier de la faille magique
+30110900	Bouclier de la faille de glace
+30111000	Bouclier de la faille empoisonné
+30111100	Bouclier de la faille sanguin
+30111200	Bouclier de la faille occulte
+30120000	Bouclier rond en métal
+30120100	Bouclier rond en métal lourd
+30120200	Bouclier rond en métal acéré
+30120300	Bouclier rond en métal de qualité
+30120400	Bouclier rond en métal de feu
+30120500	Bouclier rond en métal pyrotechnique
+30120600	Bouclier rond en métal de foudre
+30120700	Bouclier rond en métal sacré
+30120800	Bouclier rond en métal magique
+30120900	Bouclier rond en métal de glace
+30121000	Bouclier rond en métal empoisonné
+30121100	Bouclier rond en métal sanguin
+30121200	Bouclier rond en métal occulte
+30130000	Bouclier en fer doré
+30130100	Bouclier en fer doré lourd
+30130200	Bouclier en fer doré acéré
+30130300	Bouclier en fer doré de qualité
+30130400	Bouclier en fer doré de feu
+30130500	Bouclier en fer doré pyrotechnique
+30130600	Bouclier en fer doré de foudre
+30130700	Bouclier en fer doré sacré
+30130800	Bouclier en fer doré magique
+30130900	Bouclier en fer doré de glace
+30131000	Bouclier en fer doré empoisonné
+30131100	Bouclier en fer doré sanguin
+30131200	Bouclier en fer doré occulte
+30140000	Bouclier du flocon
+30140100	Bouclier du flocon lourd
+30140200	Bouclier du flocon acéré
+30140300	Bouclier du flocon de qualité
+30140400	Bouclier du flocon de feu
+30140500	Bouclier du flocon pyrotechnique
+30140600	Bouclier du flocon de foudre
+30140700	Bouclier du flocon sacré
+30140800	Bouclier du flocon magique
+30140900	Bouclier du flocon de glace
+30141000	Bouclier du flocon empoisonné
+30141100	Bouclier du flocon sanguin
+30141200	Bouclier du flocon occulte
+30150000	Bouclier de lave
+30150100	Bouclier de lave lourd
+30150200	Bouclier de lave acéré
+30150300	Bouclier de lave de qualité
+30150400	Bouclier de lave de feu
+30150500	Bouclier de lave pyrotechnique
+30150600	Bouclier de lave de foudre
+30150700	Bouclier de lave sacré
+30150800	Bouclier de lave magique
+30150900	Bouclier de lave de glace
+30151000	Bouclier de lave empoisonné
+30151100	Bouclier de lave sanguin
+30151200	Bouclier de lave occulte
+30190000	Bouclier à ramures
+30190100	Bouclier à ramures lourd
+30190200	Bouclier à ramures acéré
+30190300	Bouclier à ramures de qualité
+30190400	Bouclier à ramures de feu
+30190500	Bouclier à ramures pyrotechnique
+30190600	Bouclier à ramures de foudre
+30190700	Bouclier à ramures sacré
+30190800	Bouclier à ramures magique
+30190900	Bouclier à ramures de glace
+30191000	Bouclier à ramures empoisonné
+30191100	Bouclier à ramures sanguin
+30191200	Bouclier à ramures occulte
+30200000	Bouclier serpentin
+31000000	Rempart
+31000100	Rempart lourd
+31000200	Rempart acéré
+31000300	Rempart de qualité
+31000400	Rempart de feu
+31000500	Rempart pyrotechnique
+31000600	Rempart de foudre
+31000700	Rempart sacré
+31000800	Rempart magique
+31000900	Rempart de glace
+31001000	Rempart empoisonné
+31001100	Rempart sanguin
+31001200	Rempart occulte
+31010000	Bouclier de cuir entaché
+31010100	Bouclier de cuir entaché lourd
+31010200	Bouclier de cuir entaché acéré
+31010300	Bouclier de cuir entaché de qualité
+31010400	Bouclier de cuir entaché de feu
+31010500	Bouclier de cuir entaché pyrotechnique
+31010600	Bouclier de cuir entaché de foudre
+31010700	Bouclier de cuir entaché sacré
+31010800	Bouclier de cuir entaché magique
+31010900	Bouclier de cuir entaché de glace
+31011000	Bouclier de cuir entaché empoisonné
+31011100	Bouclier de cuir entaché sanguin
+31011200	Bouclier de cuir entaché occulte
+31020000	Bouclier en bois entaché
+31020100	Bouclier en bois entaché lourd
+31020200	Bouclier en bois entaché acéré
+31020300	Bouclier en bois entaché de qualité
+31020400	Bouclier en bois entaché de feu
+31020500	Bouclier en bois entaché pyrotechnique
+31020600	Bouclier en bois entaché de foudre
+31020700	Bouclier en bois entaché sacré
+31020800	Bouclier en bois entaché magique
+31020900	Bouclier en bois entaché de glace
+31021000	Bouclier en bois entaché empoisonné
+31021100	Bouclier en bois entaché sanguin
+31021200	Bouclier en bois entaché occulte
+31030000	Bouclier de chevalier banni
+31030100	Bouclier de chevalier banni lourd
+31030200	Bouclier de chevalier banni acéré
+31030300	Bouclier de chevalier banni de qualité
+31030400	Bouclier de chevalier banni de feu
+31030500	Bouclier de chevalier banni pyrotechnique
+31030600	Bouclier de chevalier banni de foudre
+31030700	Bouclier de chevalier banni sacré
+31030800	Bouclier de chevalier banni magique
+31030900	Bouclier de chevalier banni de glace
+31031000	Bouclier de chevalier banni empoisonné
+31031100	Bouclier de chevalier banni sanguin
+31031200	Bouclier de chevalier banni occulte
+31040000	Bouclier d'Albinaurique
+31040100	Bouclier d'Albinaurique lourd
+31040200	Bouclier d'Albinaurique acéré
+31040300	Bouclier d'Albinaurique de qualité
+31040400	Bouclier d'Albinaurique de feu
+31040500	Bouclier d'Albinaurique pyrotechnique
+31040600	Bouclier d'Albinaurique de foudre
+31040700	Bouclier d'Albinaurique sacré
+31040800	Bouclier d'Albinaurique magique
+31040900	Bouclier d'Albinaurique de glace
+31041000	Bouclier d'Albinaurique empoisonné
+31041100	Bouclier d'Albinaurique sanguin
+31041200	Bouclier d'Albinaurique occulte
+31050000	Bouclier de la cité solaire
+31050100	Bouclier de la cité solaire lourd
+31050200	Bouclier de la cité solaire acéré
+31050300	Bouclier de la cité solaire de qualité
+31050400	Bouclier de la cité solaire de feu
+31050500	Bouclier de la cité solaire pyrotechnique
+31050600	Bouclier de la cité solaire de foudre
+31050700	Bouclier de la cité solaire sacré
+31050800	Bouclier de la cité solaire magique
+31050900	Bouclier de la cité solaire de glace
+31051000	Bouclier de la cité solaire empoisonné
+31051100	Bouclier de la cité solaire sanguin
+31051200	Bouclier de la cité solaire occulte
+31060000	Bouclier-miroir en argent
+31070000	Bouclier rond
+31070100	Bouclier rond lourd
+31070200	Bouclier rond acéré
+31070300	Bouclier rond de qualité
+31070400	Bouclier rond de feu
+31070500	Bouclier rond pyrotechnique
+31070600	Bouclier rond de foudre
+31070700	Bouclier rond sacré
+31070800	Bouclier rond magique
+31070900	Bouclier rond de glace
+31071000	Bouclier rond empoisonné
+31071100	Bouclier rond sanguin
+31071200	Bouclier rond occulte
+31080000	Rempart du scorpion
+31080100	Rempart du scorpion lourd
+31080200	Rempart du scorpion acéré
+31080300	Rempart du scorpion de qualité
+31080400	Rempart du scorpion de feu
+31080500	Rempart du scorpion pyrotechnique
+31080600	Rempart du scorpion de foudre
+31080700	Rempart du scorpion sacré
+31080800	Rempart du scorpion magique
+31080900	Rempart du scorpion de glace
+31081000	Rempart du scorpion empoisonné
+31081100	Rempart du scorpion sanguin
+31081200	Rempart du scorpion occulte
+31090000	Rempart de l'oiseau bicéphale
+31090100	Rempart de l'oiseau bicéphale lourd
+31090200	Rempart de l'oiseau bicéphale acéré
+31090300	Rempart de l'oiseau bicéphale de qualité
+31090400	Rempart de l'oiseau bicéphale de feu
+31090500	Rempart de l'oiseau bicéphale pyrotech.
+31090600	Rempart de l'oiseau bicéphale de foudre
+31090700	Rempart de l'oiseau bicéphale sacré
+31090800	Rempart de l'oiseau bicéphale magique
+31090900	Rempart de l'oiseau bicéphale de glace
+31091000	Rempart de l'oiseau bicéphale empoisonné
+31091100	Rempart de l'oiseau bicéphale sanguin
+31091200	Rempart de l'oiseau bicéphale occulte
+31100000	Rempart azur
+31100100	Rempart azur lourd
+31100200	Rempart azur acéré
+31100300	Rempart azur de qualité
+31100400	Rempart azur de feu
+31100500	Rempart azur pyrotechnique
+31100600	Rempart azur de foudre
+31100700	Rempart azur sacré
+31100800	Rempart azur magique
+31100900	Rempart azur de glace
+31101000	Rempart azur empoisonné
+31101100	Rempart azur sanguin
+31101200	Rempart azur occulte
+31130000	Bouclier en cuivre
+31130100	Bouclier en cuivre lourd
+31130200	Bouclier en cuivre acéré
+31130300	Bouclier en cuivre de qualité
+31130400	Bouclier en cuivre de feu
+31130500	Bouclier en cuivre pyrotechnique
+31130600	Bouclier en cuivre de foudre
+31130700	Bouclier en cuivre sacré
+31130800	Bouclier en cuivre magique
+31130900	Bouclier en cuivre de glace
+31131000	Bouclier en cuivre empoisonné
+31131100	Bouclier en cuivre sanguin
+31131200	Bouclier en cuivre occulte
+31140000	Grande carapace
+31140100	Grande carapace lourde
+31140200	Grande carapace acérée
+31140300	Grande carapace de qualité
+31140400	Grande carapace de feu
+31140500	Grande carapace pyrotechnique
+31140600	Grande carapace de foudre
+31140700	Grande carapace sacrée
+31140800	Grande carapace magique
+31140900	Grande carapace de glace
+31141000	Grande carapace empoisonnée
+31141100	Grande carapace sanguine
+31141200	Grande carapace occulte
+31170000	Bouclier de culpabilité
+31170100	Bouclier de culpabilité lourd
+31170200	Bouclier de culpabilité acéré
+31170300	Bouclier de culpabilité de qualité
+31170400	Bouclier de culpabilité de feu
+31170500	Bouclier de culpabilité pyrotechnique
+31170600	Bouclier de culpabilité de foudre
+31170700	Bouclier de culpabilité sacré
+31170800	Bouclier de culpabilité magique
+31170900	Bouclier de culpabilité de glace
+31171000	Bouclier de culpabilité empoisonné
+31171100	Bouclier de culpabilité sanguin
+31171200	Bouclier de culpabilité occulte
+31190000	Bouclier de chevalier de Caria
+31190100	Bouclier de chevalier de Caria lourd
+31190200	Bouclier de chevalier de Caria acéré
+31190300	Bouclier de chevalier de Caria de qualité
+31190400	Bouclier de chevalier de Caria de feu
+31190500	Bouclier de chevalier de Caria pyrotechnique
+31190600	Bouclier de chevalier de Caria de foudre
+31190700	Bouclier de chevalier de Caria sacré
+31190800	Bouclier de chevalier de Caria magique
+31190900	Bouclier de chev. de Caria de glace
+31191000	Bouclier de chevalier de Caria empoisonné
+31191100	Bouclier de chevalier de Caria sanguin
+31191200	Bouclier de chevalier de Caria occulte
+31230000	Grand bouclier de cuir
+31230100	Grand bouclier de cuir lourd
+31230200	Grand bouclier de cuir acéré
+31230300	Grand bouclier de cuir de qualité
+31230400	Grand bouclier de cuir de feu
+31230500	Grand bouclier de cuir pyrotechnique
+31230600	Grand bouclier de cuir de foudre
+31230700	Grand bouclier de cuir sacré
+31230800	Grand bouclier de cuir magique
+31230900	Grand bouclier de cuir de glace
+31231000	Grand bouclier de cuir empoisonné
+31231100	Grand bouclier de cuir sanguin
+31231200	Grand bouclier de cuir occulte
+31240000	Bouclier en bois chevalin
+31240100	Bouclier en bois chevalin lourd
+31240200	Bouclier en bois chevalin acéré
+31240300	Bouclier en bois chevalin de qualité
+31240400	Bouclier en bois chevalin de feu
+31240500	Bouclier en bois chevalin pyrotechnique
+31240600	Bouclier en bois chevalin de foudre
+31240700	Bouclier en bois chevalin sacré
+31240800	Bouclier en bois chevalin magique
+31240900	Bouclier en bois chevalin de glace
+31241000	Bouclier en bois chevalin empoisonné
+31241100	Bouclier en bois chevalin sanguin
+31241200	Bouclier en bois chevalin occulte
+31250000	Bouclier du candélarbre
+31250100	Bouclier du candélarbre lourd
+31250200	Bouclier du candélarbre acéré
+31250300	Bouclier du candélarbre de qualité
+31250400	Bouclier du candélarbre de feu
+31250500	Bouclier du candélarbre pyrotechnique
+31250600	Bouclier du candélarbre de foudre
+31250700	Bouclier du candélarbre sacré
+31250800	Bouclier du candélarbre magique
+31250900	Bouclier du candélarbre de glace
+31251000	Bouclier du candélarbre empoisonné
+31251100	Bouclier du candélarbre sanguin
+31251200	Bouclier du candélarbre occulte
+31260000	Bouclier en bois flamboyant
+31260100	Bouclier en bois flamboyant lourd
+31260200	Bouclier en bois flamboyant acéré
+31260300	Bouclier en bois flamboyant de qualité
+31260400	Bouclier en bois flamboyant de feu
+31260500	Bouclier en bois flamboyant pyrotechnique 
+31260600	Bouclier en bois flamboyant de foudre
+31260700	Bouclier en bois flamboyant sacré
+31260800	Bouclier en bois flamboyant magique
+31260900	Bouclier en bois flamboyant de glace
+31261000	Bouclier en bois flamboyant empoisonné
+31261100	Bouclier en bois flamboyant sanguin
+31261200	Bouclier en bois flamboyant occulte
+31270000	Bouclier en bois aquilin
+31270100	Bouclier en bois aquilin lourd
+31270200	Bouclier en bois aquilin acéré
+31270300	Bouclier en bois aquilin de qualité
+31270400	Bouclier en bois aquilin de feu
+31270500	Bouclier en bois aquilin pyrotechnique
+31270600	Bouclier en bois aquilin de foudre
+31270700	Bouclier en bois aquilin sacré
+31270800	Bouclier en bois aquilin magique
+31270900	Bouclier en bois aquilin de glace
+31271000	Bouclier en bois aquilin empoisonné
+31271100	Bouclier en bois aquilin sanguin
+31271200	Bouclier en bois aquilin occulte
+31280000	Écu bestial
+31280100	Écu bestial lourd
+31280200	Écu bestial acéré
+31280300	Écu bestial de qualité
+31280400	Écu bestial de feu
+31280500	Écu bestial pyrotechnique
+31280600	Écu bestial de foudre
+31280700	Écu bestial sacré
+31280800	Écu bestial magique
+31280900	Écu bestial de glace
+31281000	Écu bestial empoisonné
+31281100	Écu bestial sanguin
+31281200	Écu bestial occulte
+31290000	Écu à motif rouge
+31290100	Écu à motif rouge lourd
+31290200	Écu à motif rouge acéré
+31290300	Écu à motif rouge de qualité
+31290400	Écu à motif rouge de feu
+31290500	Écu à motif rouge pyrotechnique
+31290600	Écu à motif rouge de foudre
+31290700	Écu à motif rouge sacré
+31290800	Écu à motif rouge magique
+31290900	Écu à motif rouge de glace
+31291000	Écu à motif rouge empoisonné
+31291100	Écu à motif rouge sanguin
+31291200	Écu à motif rouge occulte
+31300000	Écu à motif bleu
+31300100	Écu à motif bleu lourd
+31300200	Écu à motif bleu acéré
+31300300	Écu à motif bleu de qualité
+31300400	Écu à motif bleu de feu
+31300500	Écu à motif bleu pyrotechnique
+31300600	Écu à motif bleu de foudre
+31300700	Écu à motif bleu sacré
+31300800	Écu à motif bleu magique
+31300900	Écu à motif bleu de glace
+31301000	Écu à motif bleu empoisonné
+31301100	Écu à motif bleu sanguin
+31301200	Écu à motif bleu occulte
+31310000	Écu de l'éclipse
+31310100	Écu de l'éclipse lourd
+31310200	Écu de l'éclipse acéré
+31310300	Écu de l'éclipse de qualité
+31310400	Écu de l'éclipse de feu
+31310500	Écu de l'éclipse pyrotechnique
+31310600	Écu de l'éclipse de foudre
+31310700	Écu de l'éclipse sacré
+31310800	Écu de l'éclipse magique
+31310900	Écu de l'éclipse de glace
+31311000	Écu de l'éclipse empoisonné
+31311100	Écu de l'éclipse sanguin
+31311200	Écu de l'éclipse occulte
+31320000	Écu aquilin inversé
+31320100	Écu aquilin inversé lourd
+31320200	Écu aquilin inversé acéré
+31320300	Écu aquilin inversé de qualité
+31320400	Écu aquilin inversé de feu
+31320500	Écu aquilin inversé pyrotechnique
+31320600	Écu aquilin inversé de foudre
+31320700	Écu aquilin inversé sacré
+31320800	Écu aquilin inversé magique
+31320900	Écu aquilin inversé de glace
+31321000	Écu aquilin inversé empoisonné
+31321100	Écu aquilin inversé sanguin
+31321200	Écu aquilin inversé occulte
+31330000	Écu
+31330100	Écu lourd
+31330200	Écu acéré
+31330300	Écu de qualité
+31330400	Écu de feu
+31330500	Écu pyrotechnique
+31330600	Écu de foudre
+31330700	Écu sacré
+31330800	Écu magique
+31330900	Écu de glace
+31331000	Écu empoisonné
+31331100	Écu sanguin
+31331200	Écu occulte
+31340000	Bouclier en cuir noir
+31340100	Bouclier en cuir noir lourd
+31340200	Bouclier en cuir noir acéré
+31340300	Bouclier en cuir noir de qualité
+31340400	Bouclier en cuir noir de feu
+31340500	Bouclier en cuir noir pyrotechnique
+31340600	Bouclier en cuir noir de foudre
+31340700	Bouclier en cuir noir sacré
+31340800	Bouclier en cuir noir magique
+31340900	Bouclier en cuir noir de glace
+31341000	Bouclier en cuir noir empoisonné
+31341100	Bouclier en cuir noir sanguin
+31341200	Bouclier en cuir noir occulte
+32000000	Égide draconique
+32000100	Égide draconique lourde
+32000200	Égide draconique acérée
+32000300	Égide draconique de qualité
+32000400	Égide draconique de feu
+32000500	Égide draconique pyrotechnique
+32000600	Égide draconique de foudre
+32000700	Égide draconique sacrée
+32000800	Égide draconique magique
+32000900	Égide draconique de glace
+32001000	Égide draconique empoisonnée
+32001100	Égide draconique sanguine
+32001200	Égide draconique occulte
+32020000	Pavois distingué
+32020100	Pavois distingué lourd
+32020200	Pavois distingué acéré
+32020300	Pavois distingué de qualité
+32020400	Pavois distingué de feu
+32020500	Pavois distingué pyrotechnique
+32020600	Pavois distingué de foudre
+32020700	Pavois distingué sacré
+32020800	Pavois distingué magique
+32020900	Pavois distingué de glace
+32021000	Pavois distingué empoisonné
+32021100	Pavois distingué sanguin
+32021200	Pavois distingué occulte
+32030000	Bouclier à corne du Creuset
+32030100	Bouclier à corne du Creuset lourd
+32030200	Bouclier à corne du Creuset acéré
+32030300	Bouclier à corne du Creuset de qualité
+32030400	Bouclier à corne du Creuset de feu
+32030500	Bouclier à corne du Creuset pyrotech.
+32030600	Bouclier à corne du Creuset de foudre
+32030700	Bouclier à corne du Creuset sacré
+32030800	Bouclier à corne du Creuset magique
+32030900	Bouclier à corne du Creuset de glace
+32031000	Bouclier à corne du Creuset empoisonné
+32031100	Bouclier à corne du Creuset sanguin
+32031200	Bouclier à corne du Creuset occulte
+32040000	Bouclier griffe de dragon
+32040100	Bouclier griffe de dragon lourd
+32040200	Bouclier griffe de dragon acéré
+32040300	Bouclier griffe de dragon de qualité
+32040400	Bouclier griffe de dragon de feu
+32040500	Bouclier griffe de dragon pyrotech.
+32040600	Bouclier griffe de dragon de foudre
+32040700	Bouclier griffe de dragon sacré
+32040800	Bouclier griffe de dragon magique
+32040900	Bouclier griffe de dragon de glace
+32041000	Bouclier griffe de dragon empoisonné
+32041100	Bouclier griffe de dragon sanguin
+32041200	Bouclier griffe de dragon occulte
+32050000	Pavois des ronces
+32050100	Pavois des ronces lourd
+32050200	Pavois des ronces acéré
+32050300	Pavois des ronces de qualité
+32050400	Pavois des ronces de feu
+32050500	Pavois des ronces pyrotechnique
+32050600	Pavois des ronces de foudre
+32050700	Pavois des ronces sacré
+32050800	Pavois des ronces magique
+32050900	Pavois des ronces de glace
+32051000	Pavois des ronces empoisonné
+32051100	Pavois des ronces sanguin
+32051200	Pavois des ronces occulte
+32080000	Pavois de l'Arbre-Monde
+32080100	Pavois lourd de l'Arbre-Monde
+32080200	
+32080300	
+32080400	
+32080500	
+32080600	
+32080700	
+32080800	
+32080900	
+32081000	
+32081100	
+32081200	
+32090000	Bouclier bestial doré
+32090100	Bouclier bestial doré lourd
+32090200	Bouclier bestial doré acéré
+32090300	Bouclier bestial doré de qualité
+32090400	Bouclier bestial doré de feu
+32090500	Bouclier bestial doré pyrotechnique
+32090600	Bouclier bestial doré de foudre
+32090700	Bouclier bestial doré sacré
+32090800	Bouclier bestial doré magique
+32090900	Bouclier bestial doré de glace
+32091000	Bouclier bestial doré empoisonné
+32091100	Bouclier bestial doré sanguin
+32091200	Bouclier bestial doré occulte
+32120000	Bouclier de la méduse
+32130000	Bouclier des empreintes
+32130100	Bouclier des empreintes lourd
+32130200	Bouclier des empreintes acéré
+32130300	Bouclier des empreintes de qualité
+32130400	Bouclier des empreintes de feu
+32130500	Bouclier des empreintes pyrotechnique
+32130600	Bouclier des empreintes de foudre
+32130700	Bouclier des empreintes sacré
+32130800	Bouclier des empreintes magique
+32130900	Bouclier des empreintes de glace
+32131000	Bouclier des empreintes empoisonné
+32131100	Bouclier des empreintes sanguin
+32131200	Bouclier des empreintes occulte
+32140000	Bouclier de l'icône
+32140100	Bouclier de l'icône lourd
+32140200	Bouclier de l'icône acéré
+32140300	Bouclier de l'icône de qualité
+32140400	Bouclier de l'icône de feu
+32140500	Bouclier de l'icône pyrotechnique
+32140600	Bouclier de l'icône de foudre
+32140700	Bouclier de l'icône sacré
+32140800	Bouclier de l'icône magique
+32140900	Bouclier de l'icône de glace
+32141000	Bouclier de l'icône empoisonné
+32141100	Bouclier de l'icône sanguin
+32141200	Bouclier de l'icône occulte
+32150000	Bouclier cyclope
+32160000	Bouclier-visage
+32170000	Bouclier-bastion hérissé
+32170100	Bouclier-bastion hérissé lourd
+32170200	Bouclier-bastion hérissé acéré
+32170300	Bouclier-bastion hérissé de qualité
+32170400	Bouclier-bastion hérissé de feu
+32170500	Bouclier-bastion hérissé pyrotechnique
+32170600	Bouclier-bastion hérissé de foudre
+32170700	Bouclier-bastion hérissé sacré
+32170800	Bouclier-bastion hérissé magique
+32170900	Bouclier-bastion hérissé de glace
+32171000	Bouclier-bastion hérissé empoisonné
+32171100	Bouclier-bastion hérissé sanguin
+32171200	Bouclier-bastion hérissé occulte
+32190000	Égide du Manoir
+32190100	Égide du Manoir lourde
+32190200	Égide du Manoir acérée
+32190300	Égide du Manoir de qualité
+32190400	Égide du Manoir de feu
+32190500	Égide du Manoir pyrotechnique
+32190600	Égide du Manoir de foudre
+32190700	Égide du Manoir sacrée
+32190800	Égide du Manoir magique
+32190900	Égide du Manoir de glace
+32191000	Égide du Manoir empoisonnée
+32191100	Égide du Manoir sanguine
+32191200	Égide du Manoir occulte
+32200000	Égide enchevêtrée
+32200100	Égide enchevêtrée lourde
+32200200	Égide enchevêtrée acérée
+32200300	Égide enchevêtrée de qualité
+32200400	Égide enchevêtrée de feu
+32200500	Égide enchevêtrée pyrotechnique
+32200600	Égide enchevêtrée de foudre
+32200700	Égide enchevêtrée sacrée
+32200800	Égide enchevêtrée magique
+32200900	Égide enchevêtrée de glace
+32201000	Égide enchevêtrée empoisonnée
+32201100	Égide enchevêtrée sanguine
+32201200	Égide enchevêtrée occulte
+32210000	Égide aquiline inversée
+32210100	Égide aquiline inversée lourde
+32210200	Égide aquiline inversée acérée
+32210300	Égide aquiline inversée de qualité
+32210400	Égide aquiline inversée de feu
+32210500	Égide aquiline inversée pyrotechnique
+32210600	Égide aquiline inversée de foudre
+32210700	Égide aquiline inversée sacrée
+32210800	Égide aquiline inversée magique
+32210900	Égide aquiline inversée de glace
+32211000	Égide aquiline inversée empoisonnée
+32211100	Égide aquiline inversée sanguine
+32211200	Égide aquiline inversée occulte
+32220000	Targe de la fourmi
+32230000	Pavois du Lion rouge
+32230100	Pavois du Lion rouge lourd
+32230200	Pavois du Lion rouge acéré
+32230300	Pavois du Lion rouge de qualité
+32230400	Pavois du Lion rouge de feu
+32230500	Pavois du Lion rouge pyrotechnique
+32230600	Pavois du Lion rouge de foudre
+32230700	Pavois du Lion rouge sacré
+32230800	Pavois du Lion rouge magique
+32230900	Pavois du Lion rouge de glace
+32231000	Pavois du Lion rouge empoisonné
+32231100	Pavois du Lion rouge sanguin
+32231200	Pavois du Lion rouge occulte
+32240000	Pavois de l'éclipse
+32240100	Pavois de l'éclipse lourd
+32240200	Pavois de l'éclipse acéré
+32240300	Pavois de l'éclipse de qualité
+32240400	Pavois de l'éclipse de feu
+32240500	Pavois de l'éclipse pyrotechnique
+32240600	Pavois de l'éclipse de foudre
+32240700	Pavois de l'éclipse sacré
+32240800	Pavois de l'éclipse magique
+32240900	Pavois de l'éclipse de glace
+32241000	Pavois de l'éclipse empoisonné
+32241100	Pavois de l'éclipse sanguin
+32241200	Pavois de l'éclipse occulte
+32250000	Pavois du Coucou
+32250100	Pavois du Coucou lourd
+32250200	Pavois du Coucou acéré
+32250300	Pavois du Coucou de qualité
+32250400	Pavois du Coucou de feu
+32250500	Pavois du Coucou pyrotechnique
+32250600	Pavois du Coucou de foudre
+32250700	Pavois du Coucou sacré
+32250800	Pavois du Coucou magique
+32250900	Pavois du Coucou de glace
+32251000	Pavois du Coucou empoisonné
+32251100	Pavois du Coucou sanguin
+32251200	Pavois du Coucou occulte
+32260000	Pavois doré
+32260100	Pavois doré lourd
+32260200	Pavois doré acéré
+32260300	Pavois doré de qualité
+32260400	Pavois doré de feu
+32260500	Pavois doré pyrotechnique
+32260600	Pavois doré de foudre
+32260700	Pavois doré sacré
+32260800	Pavois doré magique
+32260900	Pavois doré de glace
+32261000	Pavois doré empoisonné
+32261100	Pavois doré sanguin
+32261200	Pavois doré occulte
+32270000	Pavois à dorures
+32270100	Pavois à dorures lourd
+32270200	Pavois à dorures acéré
+32270300	Pavois à dorures de qualité
+32270400	Pavois à dorures de feu
+32270500	Pavois à dorures pyrotechnique
+32270600	Pavois à dorures de foudre
+32270700	Pavois à dorures sacré
+32270800	Pavois à dorures magique
+32270900	Pavois à dorures de glace
+32271000	Pavois à dorures empoisonné
+32271100	Pavois à dorures sanguin
+32271200	Pavois à dorures occulte
+32280000	Pavois de l'Arbre-Sacré
+32280100	Pavois de l'Arbre-Sacré lourd
+32280200	Pavois de l'Arbre-Sacré acéré
+32280300	Pavois de l'Arbre-Sacré de qualité
+32280400	Pavois de l'Arbre-Sacré de feu
+32280500	Pavois de l'Arbre-Sacré pyrotechnique
+32280600	Pavois de l'Arbre-Sacré de foudre
+32280700	Pavois de l'Arbre-Sacré sacré
+32280800	Pavois de l'Arbre-Sacré magique
+32280900	Pavois de l'Arbre-Sacré de glace
+32281000	Pavois de l'Arbre-Sacré empoisonné
+32281100	Pavois de l'Arbre-Sacré sanguin
+32281200	Pavois de l'Arbre-Sacré occulte
+32290000	Pavois en bois
+32290100	Pavois en bois lourd
+32290200	Pavois en bois acéré
+32290300	Pavois en bois de qualité
+32290400	Pavois en bois de feu
+32290500	Pavois en bois pyrotechnique
+32290600	Pavois en bois de foudre
+32290700	Pavois en bois sacré
+32290800	Pavois en bois magique
+32290900	Pavois en bois de glace
+32291000	Pavois en bois empoisonné
+32291100	Pavois en bois sanguin
+32291200	Pavois en bois occulte
+32300000	Bouclier seigneurial
+32300100	Bouclier seigneurial lourd
+32300200	Bouclier seigneurial acéré
+32300300	Bouclier seigneurial de qualité
+32300400	Bouclier seigneurial de feu
+32300500	Bouclier seigneurial pyrotechnique
+32300600	Bouclier seigneurial de foudre
+32300700	Bouclier seigneurial sacré
+32300800	Bouclier seigneurial magique
+32300900	Bouclier seigneurial de glace
+32301000	Bouclier seigneurial empoisonné
+32301100	Bouclier seigneurial sanguin
+32301200	Bouclier seigneurial occulte
+32900000	[ERROR]
+32910000	[ERROR]
+32920000	[ERROR]
+33000000	Bâton d'éclat
+33040000	Bâton de cristal
+33050000	Bâton d'éclat de Gelmir
+33060000	Bâton de la reine semi-humaine
+33090000	Sceptre royal de Caria
+33120000	Bâton d'excavateur
+33130000	Bâton d'astrologue
+33170000	Bâton-laméclat de Caria
+33180000	Bâton du Prince de la Mort
+33190000	Bâton d'Albinaurique
+33200000	Bâton d'éclat de l'Académie
+33210000	Bâton d'éclat de Caria
+33230000	Bâton d'éclat d'Azur
+33240000	Bâton d'éclat de Lusat
+33250000	Bâton météorique
+33260000	Bâton de culpabilité
+33270000	Bâton de cristal putréfié
+33280000	Bâton de revers
+33900000	[ERROR]
+33910000	[ERROR]
+33920000	[ERROR]
+33930000	[ERROR]
+33940000	[ERROR]
+33950000	[ERROR]
+33960000	[ERROR]
+33970000	[ERROR]
+33980000	[ERROR]
+34000000	Sceau des Doigts
+34010000	Sceau du déicide
+34020000	Sceau des Géants
+34030000	Sceau de granite
+34040000	Sceau de griffure
+34050000	Graisse empoisonnée
+34060000	Sceau de l'Ordre d'or
+34070000	Sceau de l'Arbre-Monde
+34080000	Sceau de communion draconique
+34090000	Étincelle exaltée
+34900000	[ERROR]
+34910000	[ERROR]
+34920000	[ERROR]
+34930000	[ERROR]
+34940000	[ERROR]
+34950000	[ERROR]
+34960000	[ERROR]
+34970000	[ERROR]
+34980000	[ERROR]
+34990000	[ERROR]
+40000000	Arc court
+40010000	Arc court de chimère
+40020000	Arc court en bois rouge
+40030000	Arc-lyre
+40050000	Arc composite
+41000000	Arc long
+41010000	Arc d'Albinaurique
+41020000	Arc en corne
+41030000	Arc de l'Arbre-Monde
+41040000	Arc serpentin
+41060000	Arc à poulies
+41070000	Arc noir
+42000000	Arc géant léonin
+42010000	Arc géant de golem
+42030000	Grand arc de l'Arbre-Monde
+42040000	Arc géant
+43000000	Arbalète de soldat
+43020000	Arbalète légère
+43030000	Arbalète lourde
+43050000	Arbalète à poulies
+43060000	Arbalète de la pleine lune
+43080000	Arbalète ordinaire
+43100000	
+43110000	Arbalète noire de Crepus
+43900000	[ERROR]
+44000000	Baliste portative
+44010000	Canon jarre
+50000000	Flèche
+50010000	Flèche de feu
+50020000	Flèche serpentine
+50030000	Flèche en os empennée
+50040000	Flèche de Trina
+50060000	Flèche fragmentée empennée
+50080000	Flèche arc-en-ciel empennée
+50090000	Flèche dorée
+50100000	Flèche hantée
+50110000	Flèche en os
+50130000	Flèche en os enflammée empennée
+50140000	Flèche en os enflammée
+50150000	Flèche en os empoisonnée empennée
+50160000	Flèche en os empoisonnée
+50170000	Flèche en os soporifique empennée
+50180000	Flèche en os soporifique
+50190000	Flèche en os des tempêtes
+50200000	Flèche en os foudroyante empennée
+50210000	Flèche en os foudroyante
+50220000	Flèche arc-en-ciel
+50230000	Flèche fragmentée
+50240000	Flèche de flamme spirituelle
+50250000	
+50260000	Flèche en os magique empennée
+50270000	Flèche en os magique
+50280000	Flèche en os sacrée empennée
+50290000	Flèche en os sacrée
+50300000	Flèche en os sanguine empennée
+50310000	Flèche en os sanguine
+50320000	Flèche en os glaciale empennée
+50330000	Flèche en os glaciale
+50340000	Flèche en os putréfiée empennée
+50350000	Flèche en os putréfiée
+51000000	Grande flèche
+51010000	Grande flèche du golem
+51020000	Grande flèche dorée
+51030000	Flèche magique du golem
+51040000	Lance de Radahn
+51050000	Grande flèche en os empennée
+51060000	Grande flèche en os
+52000000	Carreau
+52010000	Carreau de foudre
+52020000	Carreau de Parfumeur
+52030000	Carreau torsadé noir
+52040000	Carreau barbelé
+52050000	Carreau météorique
+52060000	Carreau explosif
+52070000	Carreau doré
+52080000	Carreau seigneurial
+52090000	Carreau en os
+52100000	Carreau en os enflammé
+52110000	Carreau en os foudroyant
+52120000	Carreau en os magique
+52130000	Carreau en os sacré
+52140000	Carreau en os empoisonné
+52150000	Carreau en os sanguin
+52160000	Carreau en os glacial
+52170000	Carreau en os putréfié
+52180000	Carreau en os soporifique
+52190000	Carreau enflammé
+52900000	[ERROR]
+52910000	[ERROR]
+53000000	Carreau de baliste
+53010000	Grand carreau de foudre
+53020000	Grand carreau explosif
+53030000	Carreau de baliste en os

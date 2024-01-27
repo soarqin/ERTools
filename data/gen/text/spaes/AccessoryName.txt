@@ -1,0 +1,764 @@
+1	
+2	
+100	Petición de ayuda
+101	Contrato para el acechador de Dedo Roto
+1000	Medallón de ámbar carmesí
+1001	Medallón de ámbar carmesí +1
+1002	Medallón de ámbar carmesí +2
+1003	
+1004	
+1005	
+1006	
+1007	
+1008	
+1009	
+1010	Medallón de ámbar cerúleo
+1011	Medallón de ámbar cerúleo +1
+1012	Medallón de ámbar cerúleo +2
+1013	
+1014	
+1015	
+1016	
+1017	
+1018	
+1019	
+1020	Medallón de ámbar viridián
+1021	Medallón de ámbar viridián +1
+1022	Medallón de ámbar viridián +2
+1023	
+1024	
+1025	
+1026	
+1027	
+1028	
+1029	
+1030	Amuleto de arsenal
+1031	Amuleto de arsenal +1
+1032	Arsenal del Gran Tarro
+1033	
+1034	
+1035	
+1036	
+1037	
+1038	
+1039	
+1040	Favor del Árbol Áureo
+1041	Favor del Árbol Áureo +1
+1042	Favor del Árbol Áureo +2
+1043	
+1044	
+1045	
+1046	
+1047	
+1048	
+1049	
+1050	Marca cicatrizada de Radagon
+1051	Marca ulcerada de Radagon
+1052	
+1053	
+1054	
+1055	
+1056	
+1057	
+1058	
+1059	
+1060	Reliquia del Azote de las Estrellas
+1061	
+1062	
+1063	
+1064	
+1065	
+1066	
+1067	
+1068	
+1069	
+1070	Reliquia de la guerrera protésica
+1071	
+1072	
+1073	
+1074	
+1075	
+1076	
+1077	
+1078	
+1079	
+1080	Reliquia de la astrónoma
+1081	
+1082	
+1083	
+1084	
+1085	
+1086	
+1087	
+1088	
+1089	
+1090	Reliquia de los Dos Dedos
+1091	
+1092	
+1093	
+1094	
+1095	
+1096	
+1097	
+1098	
+1099	
+1100	Escarabeo de plata
+1101	
+1102	
+1103	
+1104	
+1105	
+1106	
+1107	
+1108	
+1109	
+1110	Escarabeo de oro
+1140	Luna de Nokstella
+1141	
+1142	
+1143	
+1144	
+1145	
+1146	
+1147	
+1148	
+1149	
+1150	Talismán de tortuga verde
+1151	
+1152	
+1153	
+1154	
+1155	
+1156	
+1157	
+1158	
+1159	
+1160	Amuleto córneo de fiel
+1161	Amuleto córneo de fiel +1
+1162	
+1163	
+1164	
+1165	
+1166	
+1167	
+1168	
+1169	
+1170	Amuleto córneo inmunizante
+1171	Amuleto córneo inmunizante +1
+1172	
+1173	
+1174	
+1175	
+1176	
+1177	
+1178	
+1179	
+1180	Amuleto córneo clarificador
+1181	Amuleto córneo clarificador +1
+1182	
+1183	
+1184	
+1185	
+1186	
+1187	
+1188	
+1189	
+1190	Pústula del Príncipe de la Muerte
+1191	Quiste del Príncipe de la Muerte
+1192	
+1193	
+1194	
+1195	
+1196	
+1197	
+1198	
+1199	
+1200	Collar jaspeado
+1201	Collar jaspeado +1
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	Talismán de taurocabra
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	Marca cicatrizada de Márika
+1221	Marca ulcerada de Márika
+1222	
+1223	
+1224	
+1225	
+1226	
+1227	
+1228	
+1229	
+1230	Fragmento de guerrero tarro
+1231	Fragmento de Alexander
+1232	
+1233	
+1234	
+1235	
+1236	
+1237	
+1238	
+1239	
+1240	
+1241	
+1242	
+1243	
+1244	
+1245	
+1246	
+1247	
+1248	
+1249	
+1250	Prótesis de Millicent
+2000	Amuleto de escorpión mágico
+2001	
+2002	
+2003	
+2004	
+2005	
+2006	
+2007	
+2008	
+2009	
+2010	Amuleto de escorpión fulgurante
+2011	
+2012	
+2013	
+2014	
+2015	
+2016	
+2017	
+2018	
+2019	
+2020	Amuleto de escorpión ígneo
+2021	
+2022	
+2023	
+2024	
+2025	
+2026	
+2027	
+2028	
+2029	
+2030	Amuleto de escorpión sagrado
+2031	
+2032	
+2033	
+2034	
+2035	
+2036	
+2037	
+2038	
+2039	
+2040	Espada ramificada con plumas rojas
+2041	
+2042	
+2043	
+2044	
+2045	
+2046	
+2047	
+2048	
+2049	
+2050	Talismán de espada ritual
+2051	
+2052	
+2053	
+2054	
+2055	
+2056	
+2057	
+2058	
+2059	
+2060	Talismán de lancero
+2061	
+2062	
+2063	
+2064	
+2065	
+2066	
+2067	
+2068	
+2069	
+2070	Talismán con maza
+2071	
+2072	
+2073	
+2074	
+2075	
+2076	
+2077	
+2078	
+2079	
+2080	Insignia con espada alada
+2081	Insignia con espada alada podrida
+2082	
+2083	
+2084	
+2085	
+2086	
+2087	
+2088	
+2089	
+2090	Talismán con daga
+2091	
+2092	
+2093	
+2094	
+2095	
+2096	
+2097	
+2098	
+2099	
+2100	Talismán de alcance de flecha
+2101	
+2102	
+2103	
+2104	
+2105	
+2106	
+2107	
+2108	
+2109	
+2110	Amuleto de bailarina azul
+2111	
+2112	
+2113	
+2114	
+2115	
+2116	
+2117	
+2118	
+2119	
+2120	Talismán con hoja doble
+2121	
+2122	
+2123	
+2124	
+2125	
+2126	
+2127	
+2128	
+2129	
+2130	Talismán con hacha
+2131	
+2132	
+2133	
+2134	
+2135	
+2136	
+2137	
+2138	
+2139	
+2140	Talismán de caballería
+2141	
+2142	
+2143	
+2144	
+2145	
+2146	
+2147	
+2148	
+2149	
+2150	Talismán de punzada de flecha
+2151	
+2152	
+2153	
+2154	
+2155	
+2156	
+2157	
+2158	
+2159	
+2160	Exaltación del Señor de la Sangre
+2161	
+2162	
+2163	
+2164	
+2165	
+2166	
+2167	
+2168	
+2169	
+2170	Exaltación de ancestro de la putrefacción
+2171	
+2172	
+2173	
+2174	
+2175	
+2176	
+2177	
+2178	
+2179	
+2180	Talismán con garra
+2181	
+2182	
+2183	
+2184	
+2185	
+2186	
+2187	
+2188	
+2189	
+2190	Medallón de rugido
+2191	
+2192	
+2193	
+2194	
+2195	
+2196	
+2197	
+2198	
+2199	
+2200	Talismán con espada curva
+2201	
+2202	
+2203	
+2204	
+2205	
+2206	
+2207	
+2208	
+2209	
+2210	Tarrismán
+2211	
+2212	
+2213	
+2214	
+2215	
+2216	
+2217	
+2218	
+2219	
+2220	Talismán de perfumista
+3000	Talismán de amalgama de magos
+3001	Talismán de gran amalgama de magos
+3040	Talismán del lienzo de la fe
+3041	
+3042	
+3043	
+3044	
+3045	
+3046	
+3047	
+3048	
+3049	
+3050	Talismán del lienzo de la congregación
+3051	
+3052	
+3053	
+3054	
+3055	
+3056	
+3057	
+3058	
+3059	
+3060	Talismán del antiguo señor
+3061	
+3062	
+3063	
+3064	
+3065	
+3066	
+3067	
+3068	
+3069	
+3070	Icono de Radagon
+3071	
+3072	
+3073	
+3074	
+3075	
+3076	
+3077	
+3078	
+3079	
+3080	Hoja de piedra refulgente atávica
+3081	
+3082	
+3083	
+3084	
+3085	
+3086	
+3087	
+3088	
+3089	
+3090	Icono de Godfrey
+4000	Tal. de escudo con blasón de dragón
+4001	Tal. de escudo con blasón de dragón +1
+4002	Tal. de escudo con blasón de dragón +2
+4003	Tal. de escudo grande con blasón de drag.
+4004	
+4005	
+4006	
+4007	
+4008	
+4009	
+4010	Talismán con dragón hechicero
+4011	Talismán con dragón hechicero +1
+4012	Talismán con dragón hechicero +2
+4013	
+4014	
+4015	
+4016	
+4017	
+4018	
+4019	
+4020	Talismán con dragón ígneo
+4021	Talismán con dragón ígneo +1
+4022	Talismán con dragón ígneo +2
+4023	
+4024	
+4025	
+4026	
+4027	
+4028	
+4029	
+4030	Talismán con dragón fulgurante
+4031	Talismán con dragón fulgurante +1
+4032	Talismán con dragón fulgurante +2
+4033	
+4034	
+4035	
+4036	
+4037	
+4038	
+4039	
+4040	Talismán con dragón hierático
+4041	Talismán con dragón hierático +1
+4042	Talismán con dragón hierático +2
+4043	
+4044	
+4045	
+4046	
+4047	
+4048	
+4049	
+4050	Talismán con dragón perlado
+4051	Talismán con dragón perlado +1
+4052	Talismán con dragón perlado +2
+4053	
+4054	
+4055	
+4056	
+4057	
+4058	
+4059	
+4060	Talismán de escamas del crisol
+4061	
+4062	
+4063	
+4064	
+4065	
+4066	
+4067	
+4068	
+4069	
+4070	Talismán de plumas del crisol
+4071	
+4072	
+4073	
+4074	
+4075	
+4076	
+4077	
+4078	
+4079	
+4080	Espada ramificada con plumas azules
+4081	
+4082	
+4083	
+4084	
+4085	
+4086	
+4087	
+4088	
+4089	
+4090	Talismán de escudo ritual
+4091	
+4092	
+4093	
+4094	
+4095	
+4096	
+4097	
+4098	
+4099	
+4100	Talismán con escudo grande
+4101	
+4102	
+4103	
+4104	
+4105	
+4106	
+4107	
+4108	
+4109	
+4110	Talismán de nudo del crisol
+5000	Talismán de semilla carmesí
+5001	
+5002	
+5003	
+5004	
+5005	
+5006	
+5007	
+5008	
+5009	
+5010	Talismán de semilla cerúlea
+5011	
+5012	
+5013	
+5014	
+5015	
+5016	
+5017	
+5018	
+5019	
+5020	Talismán de rocío bendito
+5021	
+5022	
+5023	
+5024	
+5025	
+5026	
+5027	
+5028	
+5029	
+5030	Camafeo del megalómano
+5031	
+5032	
+5033	
+5034	
+5035	
+5036	
+5037	
+5038	
+5039	
+5040	Empañadura sacroderma
+5041	
+5042	
+5043	
+5044	
+5045	
+5046	
+5047	
+5048	
+5049	
+5050	Daga carmesí de asesino
+5051	
+5052	
+5053	
+5054	
+5055	
+5056	
+5057	
+5058	
+5059	
+5060	Daga cerúlea de asesino
+6000	Frasco de Crepus
+6001	
+6002	
+6003	
+6004	
+6005	
+6006	
+6007	
+6008	
+6009	
+6010	Velo de camuflaje
+6011	
+6012	
+6013	
+6014	
+6015	
+6016	
+6017	
+6018	
+6019	
+6020	Blasón cariano con filigrana
+6040	Talismán de gata de cola larga
+6041	
+6042	
+6043	
+6044	
+6045	
+6046	
+6047	
+6048	
+6049	
+6050	Pesar de Shabriri
+6051	
+6052	
+6053	
+6054	
+6055	
+6056	
+6057	
+6058	
+6059	
+6060	Pesar de Daedicar
+6061	
+6062	
+6063	
+6064	
+6065	
+6066	
+6067	
+6068	
+6069	
+6070	Vara sacrificial
+6071	
+6072	
+6073	
+6074	
+6075	
+6076	
+6077	
+6078	
+6079	
+6080	Espejo trucado del Dedo Doblado
+6081	
+6082	
+6083	
+6084	
+6085	
+6086	
+6087	
+6088	
+6089	
+6090	Espejo trucado del poseedor
+6091	
+6092	
+6093	
+6094	
+6095	
+6096	
+6097	
+6098	
+6099	
+6100	[ERROR]Cordón umbilical entrelazado
+6101	
+6102	
+6103	
+6104	
+6105	
+6106	
+6107	
+6108	
+6109	
+6110	Cuerno de espíritu ancestral

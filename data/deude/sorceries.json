@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Schimmersteinkiesel"
+  },
+  {
+    "id": 4010,
+    "name": "Schneller Schimmersteinsplitter"
+  },
+  {
+    "id": 4001,
+    "name": "Großer Schimmersteinsplitter"
+  },
+  {
+    "id": 4020,
+    "name": "Schimmersteinkometensplitter"
+  },
+  {
+    "id": 4021,
+    "name": "Komet"
+  },
+  {
+    "id": 4030,
+    "name": "Splitterspirale"
+  },
+  {
+    "id": 4040,
+    "name": "Schimmersteinsterne"
+  },
+  {
+    "id": 4050,
+    "name": "Sternschauer"
+  },
+  {
+    "id": 4070,
+    "name": "Schimmersteinbogen"
+  },
+  {
+    "id": 4060,
+    "name": "Kristallsperrfeuer"
+  },
+  {
+    "id": 4090,
+    "name": "Kristallnova"
+  },
+  {
+    "id": 4080,
+    "name": "Haimas Kanone"
+  },
+  {
+    "id": 4120,
+    "name": "Haimas Hammer"
+  },
+  {
+    "id": 4100,
+    "name": "Erde erschüttern"
+  },
+  {
+    "id": 4110,
+    "name": "Steinsprenger"
+  },
+  {
+    "id": 4460,
+    "name": "Waffe des Gelehrten"
+  },
+  {
+    "id": 4470,
+    "name": "Schild des Gelehrten"
+  },
+  {
+    "id": 4140,
+    "name": "Sternenlicht"
+  },
+  {
+    "id": 4130,
+    "name": "Terra Magica"
+  },
+  {
+    "id": 4630,
+    "name": "Thops' Barriere"
+  },
+  {
+    "id": 4200,
+    "name": "Azurs Komet"
+  },
+  {
+    "id": 4220,
+    "name": "Sterne des Ruins"
+  },
+  {
+    "id": 4210,
+    "name": "Ursternregen"
+  },
+  {
+    "id": 4390,
+    "name": "Magische Schimmerklinge"
+  },
+  {
+    "id": 4300,
+    "name": "Schimmerphalanx"
+  },
+  {
+    "id": 4301,
+    "name": "Carianische Phalanx"
+  },
+  {
+    "id": 4302,
+    "name": "Großschwertphalanx"
+  },
+  {
+    "id": 4370,
+    "name": "Magischer Platzregen"
+  },
+  {
+    "id": 4380,
+    "name": "Lorettas Großbogen"
+  },
+  {
+    "id": 4381,
+    "name": "Lorettas Geschick"
+  },
+  {
+    "id": 4360,
+    "name": "Rennalas Vollmond"
+  },
+  {
+    "id": 4361,
+    "name": "Rannis dunkler Mond"
+  },
+  {
+    "id": 4440,
+    "name": "Carianischer Schlitzer"
+  },
+  {
+    "id": 4430,
+    "name": "Cariagroßschwert"
+  },
+  {
+    "id": 4450,
+    "name": "Carianischer Aufspießer"
+  },
+  {
+    "id": 4431,
+    "name": "Adulas Mondklinge"
+  },
+  {
+    "id": 4480,
+    "name": "Klarheit"
+  },
+  {
+    "id": 4640,
+    "name": "Carianischer Gegenschlag"
+  },
+  {
+    "id": 4600,
+    "name": "Hinterhältiger Splitter"
+  },
+  {
+    "id": 4610,
+    "name": "Nachtsplitter"
+  },
+  {
+    "id": 4620,
+    "name": "Nachtkomet"
+  },
+  {
+    "id": 6500,
+    "name": "Nebel der Nachtjungfer"
+  },
+  {
+    "id": 4660,
+    "name": "Unsichtbare Klinge"
+  },
+  {
+    "id": 4670,
+    "name": "Unsichtbare Form"
+  },
+  {
+    "id": 4650,
+    "name": "Ewige Finsternis"
+  },
+  {
+    "id": 4800,
+    "name": "Magmaschuss"
+  },
+  {
+    "id": 4820,
+    "name": "Kochendes Magma"
+  },
+  {
+    "id": 4810,
+    "name": "Gelmirs Wut"
+  },
+  {
+    "id": 4830,
+    "name": "Rykards Groll"
+  },
+  {
+    "id": 4400,
+    "name": "Schimmerstein-Eisbrocken"
+  },
+  {
+    "id": 4420,
+    "name": "Eisiger Nebel"
+  },
+  {
+    "id": 4490,
+    "name": "Eisige Waffe"
+  },
+  {
+    "id": 4410,
+    "name": "Eissturm von Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Zertrümmerungskristall"
+  },
+  {
+    "id": 4520,
+    "name": "Kristallschwall"
+  },
+  {
+    "id": 4510,
+    "name": "Kristallexplosion"
+  },
+  {
+    "id": 4720,
+    "name": "Gravitationsfeld"
+  },
+  {
+    "id": 4721,
+    "name": "Kollabierende Sterne"
+  },
+  {
+    "id": 4710,
+    "name": "Steinschleuder"
+  },
+  {
+    "id": 4700,
+    "name": "Meteorit"
+  },
+  {
+    "id": 4701,
+    "name": "Meteorit von Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Orakelblasen"
+  },
+  {
+    "id": 5110,
+    "name": "Große Orakelblase"
+  },
+  {
+    "id": 4900,
+    "name": "Dornbusch der Sünde"
+  },
+  {
+    "id": 4910,
+    "name": "Dornbusch der Bestrafung"
+  },
+  {
+    "id": 5000,
+    "name": "Grollruf"
+  },
+  {
+    "id": 5001,
+    "name": "Uralter Todesgroll"
+  },
+  {
+    "id": 5010,
+    "name": "Sprenggeisterflamme"
+  },
+  {
+    "id": 5020,
+    "name": "Fias Nebel"
+  },
+  {
+    "id": 5030,
+    "name": "Tibias Ruf"
+  }
+]

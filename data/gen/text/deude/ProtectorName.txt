@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]Kahlrasiert
+1100	[ERROR]Geheimratsecken
+1200	[ERROR]Kurz
+1300	[ERROR]Zurückgekämmt
+1400	[ERROR]Pferdeschwanz
+1500	[ERROR]Wild
+1600	[ERROR]Mittelscheitel
+1700	[ERROR]Mittellang
+1800	[ERROR]Lockig
+1900	[ERROR]Pagenschnitt
+2000	[ERROR]Männlich 11
+2100	[ERROR]Männlich 12
+2200	[ERROR]Männlich 13
+2300	[ERROR]Männlich 14
+2400	[ERROR]Männlich 15
+2500	[ERROR]Männlich 16
+2600	[ERROR]Männlich 17
+2700	[ERROR]Männlich 18
+2800	[ERROR]Männlich 19
+2900	[ERROR]Männlich 20
+3000	[ERROR]Kahlrasiert
+3100	[ERROR]Sehr kurz
+3200	[ERROR]Wellig
+3300	[ERROR]Glatt I
+3400	[ERROR]Glatt II
+3500	[ERROR]Pferdeschwanz I
+3600	[ERROR]Pferdeschwanz II
+3700	[ERROR]Zöpfe
+3800	[ERROR]Haarknoten
+3900	[ERROR]Geflochten
+4000	[ERROR]Weiblich 11
+4100	[ERROR]Weiblich 12
+4200	[ERROR]Weiblich 13
+4300	[ERROR]Weiblich 14
+4400	[ERROR]Weiblich 15
+4500	[ERROR]Weiblich 16
+4600	[ERROR]Weiblich 17
+4700	[ERROR]Weiblich 18
+4800	[ERROR]Weiblich 19
+4900	[ERROR]Weiblich 20
+5000	[ERROR]Reise-Frisur
+10000	Kopf
+10100	Körper
+10200	Arme
+10300	Beine
+40000	Eisenhelm
+40100	Metallschuppenrüstung
+40200	Eisenstulpen
+40300	Lederhose
+50000	Kaiden-Helm
+50100	Kaiden-Rüstung
+50200	Kaiden-Stulpen
+50300	Kaiden-Hose
+60000	Drachenritter-Helm
+60100	Drachenritter-Rüstung
+60200	Drachenritter-Stulpen
+60300	Drachenritter-Beinschutz
+61000	Drachenritter-Helm (Geänd.)
+61100	Drachenritter-Rüstung (Geänd.)
+80000	Schuppenhelm
+80100	Schuppenrüstung
+80200	Schuppenstulpen
+80300	Schuppenbeinschutz
+81100	Schuppenrüstung (Geänd.)
+90000	Parfümeurkapuze
+90100	Parfümeurrobe
+90200	Parfümeurhandschuhe
+90300	Parfümeursarong
+91100	Parfümeurrobe (Geänd.)
+100000	Hut des Reisenden
+100100	Kleidung des Reisenden
+100200	Handschuhe des Reisenden
+100300	Hose des Reisenden
+101100	Kleidung des Reisenden (Geänd.)
+120000	Alberichs Spitzhut
+120100	Alberichs Robe
+120200	Alberichs Armschutz
+120300	Alberichs Hose
+121000	Alberichs Spitzhut (Geänd.)
+121100	Alberichs Robe (Geänd.)
+130000	Spitzhut der Zauberklinge
+130100	Reisekleidung der Zauberklinge
+130200	Handschuhe der Zauberklinge
+130300	Hose der Zauberklinge
+131100	Reisekleidung der Zauberklinge (Geänd.)
+140000	Ziegenbockhelm
+140100	Ziegenbockrüstung
+140200	Ziegenbockstulpen
+140300	Ziegenbockbeinschutz
+150000	Eisenkasa
+150100	Ronin-Rüstung
+150200	Ronin-Stulpen
+150300	Ronin-Beinschutz
+151100	Ronin-Rüstung (Geänd.)
+160000	Kapuze der Schuldigen
+160100	Stoffkleidung
+160200	
+160300	Stoffhose
+170000	Schwarze Wolfsmaske
+170100	Blaidds Rüstung
+170200	Blaidds Stulpen
+170300	Blaidds Beinschutz
+171100	Blaidds Rüstung (Geänd.)
+180000	Kapuze der Schwarzen Klingen
+180100	Rüstung der Schwarzen Klingen
+180200	Stulpen der Schwarzen Klingen
+180300	Beinschutz der Schwarzen Klingen
+181100	Rüstung der Schwarzen Klingen (Geänd.)
+190000	Kapuze der Verbannten
+190100	Rüstung der Verbannten
+190200	Stulpen der Verbannten
+190300	Beinschutz der Verbannten
+200000	Helm der verbannten Ritter
+200100	Rüstung der verbannten Ritter
+200200	Stulpen der verbannten Ritter
+200300	Beinschutz der verbannten Ritter
+201000	Helm der verbannten Ritter (Geänd.)
+201100	Rüstung der verbannten Ritter (Geänd.)
+202100	[ERROR]
+210000	Dornenhelm
+210100	Dornenrüstung
+210200	Dornenstulpen
+210300	Dornenbeinschutz
+211100	Dornenrüstung (Geänd.)
+220000	Pagen-Kapuze
+220100	Pagen-Kleidung
+220300	Pagen-Hose
+221100	Pagen-Kleidung (Geänd.)
+230000	Dunkelkavalleristen-Helm
+230100	Dunkelkavalleristen-Rüstung
+230200	Dunkelkavalleristen-Stulpen
+230300	Dunkelkavalleristen-Beinschutz
+231000	Dunkelkavalleristen-Helm (Geänd.)
+231100	Dunkelkavalleristen-Rüstung (Geänd.)
+240000	Blausilberne Kettenhaube
+240100	Blausilberne Kettenrüstung
+240200	Blausilberne Armreife
+240300	Blausilberner Kettenrock
+241100	Blausilberne Kettenrüstung (Geänd.)
+250000	Hut des nomadischen Händlers
+250100	Kleidung des nomadischen Händlers
+250300	Hose des nomadischen Händlers
+251100	Kleidung des nomadischen Händlers (Geänd.)
+260000	Deformierter Drachenhelm
+260100	Deformierte Drachenrüstung
+260200	Deformierte Drachenstulpen
+260300	Deformierte Drachenbeinschutz
+270000	Baumwächter-Helm
+270100	Baumwächter-Rüstung
+270200	Baumwächter-Stulpen
+270300	Baumwächter-Beinschutz
+271100	Baumwächter-Rüstung (Geänd.)
+280000	Königlicher Ritterhelm
+280100	Königliche Ritterrüstung
+280200	Königliche Ritterstulpen
+280300	Königlicher Ritterbeinschutz
+281100	Königliche Ritterrüstung (Geänd.)
+290000	Noxmönch-Kapuze
+290100	Noxmönch-Rüstung
+290200	Nox-Armreife
+290300	Nox-Beinschutz
+291000	Noxmönch-Kapuze (Geänd.)
+291100	Noxmönch-Rüstung (Geänd.)
+292000	Schwertmaidkrone der Nox
+292100	Schwertmaidrüstung der Nox
+293000	Zwillingskrone der Nachtjungfern
+293100	Nachtjungfernrüstung
+294000	Schwertmaidkrone der Nox (Geänd.)
+294100	Schwertmaidrüstung der Nox (Geänd.)
+300000	Großes gehörntes Stirnband
+300100	Pelzkleidung
+300300	Pelzgamaschen
+301000	Glänzendes gehörntes Stirnband
+301100	Felle des Schamanen
+301300	Gamaschen des Schamanen
+310000	Duellantenhelm
+310100	Umhang der Grabhüter
+310300	Duellantenbeinschutz
+311100	Umhang der Grabhüter (Geänd.)
+320000	Kapuze des Blutadligen
+320100	Robe des Blutadligen
+320300	Lendentuch des Blutadligen
+330000	Wächtermaske
+330100	Wächtergewand (Volle Blüte)
+330200	Wächterarmschutz
+330300	Wächterbeinschutz
+331100	Wächtergewand
+340000	Reinfäule-Helm
+340100	Reinfäule-Rüstung
+340200	Reinfäule-Stulpen
+340300	Reinfäule-Beinschutz
+341000	Reinfäule-Helm (Geänd.)
+341100	Reinfäule-Rüstung (Geänd.)
+350000	Feuermönch-Kapuze
+350100	Feuermönch-Rüstung
+350200	Feuermönch-Stulpen
+350300	Feuermönch-Beinschutz
+351000	Schwarzflammenmönch-Kapuze
+351100	Schwarzflammenmönch-Rüstung
+351200	Schwarzflammenmönch-Stulpen
+351300	Schwarzflammenmönch-Beinschutz
+360000	Feuerprälaten-Helm
+360100	Feuerprälaten-Rüstung
+360200	Feuerprälaten-Stulpen
+360300	Feuerprälaten-Beinschutz
+361100	Feuerprälaten-Rüstung (Geänd.)
+370000	Aristokraten-Stirnband
+370100	Aristokraten-Kleidung
+370300	Aristokraten-Stiefel
+371100	Aristokraten-Kleidung (Geänd.)
+380000	Aristokraten-Hut
+380100	Aristokraten-Mantel
+390000	Alte Aristokraten-Haube
+390100	Altes Aristokraten-Gewand
+390300	Alte Aristokraten-Schuhe
+420000	Helm der niederen Soldaten
+420100	Rüstung der niederen Soldaten
+420200	Handschuhe der niederen Soldaten
+420300	Beinschutz der niederen Soldaten
+430000	Weisenkapuze
+430100	Weisenrobe
+430300	Weisenhose
+440000	Kürbishelm
+460000	Krone des Eldenfürsten
+460100	Rüstung des Eldenfürsten
+460200	Armschutz des Eldenfürsten
+460300	Beinschutz des Eldenfürsten
+461100	Rüstung des Eldenfürsten (Geänd.)
+470000	Radahns Rotmähnenhelm
+470100	Radahns Löwenrüstung
+470200	Radahns Stulpen
+470300	Radahns Beinschutz
+471100	Radahns Löwenrüstung (Geänd.)
+480100	Robe des Fürsten des Blutes
+481100	Robe des Fürsten des Blutes (Geänd.)
+510000	Halbmondkrone der Königin
+510100	Robe der Königin
+510200	Armreife der Königin
+510300	Hose der Königin
+520000	Kapuze der Apostel der Götterskalpe
+520100	Robe der Apostel der Götterskalpe
+520200	Armschutz der Apostel der Götterskalpe
+520300	Hose der Apostel der Götterskalpe
+530000	Kapuze der Adligen der Götterskalpe
+530100	Robe der Adligen der Götterskalpe
+530200	Armreife der Adligen der Götterskalpe
+530300	Hose der Adligen der Götterskalpe
+540000	Kopftuch des wahnsinnigen Parfümeurs
+540100	Robe des wahnsinnigen Parfümeurs
+540200	Handschuhe des wahnsinnigen Parfümeurs
+540300	Hose des wahnsinnigen Parfümeurs
+541100	Robe des wahnsinnigen Parfümeurs (Geänd.)
+570000	Axthelm des Schmelztiegels
+570100	Axtrüstung des Schmelztiegels
+570200	Stulpen des Schmelztiegels
+570300	Beinschutz des Schmelztiegels
+571000	Baumhelm des Schmelztiegels
+571100	Baumrüstung des Schmelztiegels
+572100	Axtrüstung des Schmelztiegels (Geänd.)
+573100	Baumrüstung des Schmelztiegels (Geänd.)
+580000	Lusats Schimmersteinkrone
+580100	Lusats Robe
+580200	Lusats Manschetten
+580300	Beinwickel des alten Zauberers
+581000	Azurs Schimmersteinkrone
+581100	Azurs Schimmersteinrobe
+581200	Azurs Manschetten
+590000	Helm des Allwissenden
+590100	Rüstung des Allwissenden
+590200	Stulpen des Allwissenden
+590300	Beinschutz des Allwissenden
+591100	Rüstung des Allwissenden (Geänd.)
+600000	Zwillingshelm
+600100	Zwillingsrüstung
+600200	Zwillingsstulpen
+600300	Zwillingsbeinschutz
+601100	Zwillingsrüstung (Geänd.)
+601300	Zwillingsbeinschutz (Geänd.)
+610000	Zerlumpter Hut
+610100	Zerlumpte Rüstung
+610200	Zerlumpte Handschuhe
+610300	Zerlumpter Lendenschurz
+611000	Zerlumpter Hut (Geänd.)
+611100	Zerlumpte Rüstung (Geänd.)
+620000	Prophetenaugenbinde
+620100	Corhyns Robe
+620300	Prophetenhose
+621100	Prophetenrobe (Geänd.)
+622100	Prophetenrobe
+630000	Astrologenkapuze
+630100	Astrologenrobe
+630200	Astrologenhandschuhe
+630300	Astrologenhose
+631100	Astrologenrobe (Geänd.)
+640000	Lionels Helm
+640100	Lionels Rüstung
+640200	Lionels Stulpen
+640300	Lionels Beinschutz
+641100	Lionels Rüstung (Geänd.)
+650000	Hoslows Helm
+650100	Hoslows Rüstung
+650200	Hoslows Stulpen
+650300	Hoslows Beinschutz
+651000	Diallos' Maske
+652100	Hoslows Rüstung (Geänd.)
+660000	Vagabundenritter-Helm
+660100	Vagabundenritter-Rüstung
+660200	Vagabundenritter-Stulpen
+660300	Vagabundenritter-Beinschutz
+661100	Vagabundenritter-Rüstung (Geänd.)
+670000	Haube aus blauem Stoff
+670100	Weste aus blauem Stoff
+670200	Kriegerstulpen
+670300	Kriegerbeinschutz
+680000	Weiße Maske
+680100	Gewand der Feldchirurgen
+680200	Handschuhe der Feldchirurgen
+680300	Hose der Feldchirurgen
+681100	Gewand der Feldchirurgen (Geänd.)
+690000	Helm des toten Königs
+690100	Rüstung des toten Königs
+690200	Stulpen des toten Königs
+690300	Beinschutz des toten Königs
+700000	[ERROR]Kordelkranz des Tapferen
+700100	[ERROR]Kampftracht des Tapferen
+700200	[ERROR]Armschutz des Tapferen
+700300	[ERROR]Beinwickel des Tapferen
+701000	[ERROR]Lederhelm des Tapferen
+702000	[ERROR]Kampftracht des Tapferen (Geänd.)
+720000	Helm des Bestienhelden
+720100	Rüstung des Bestienhelden
+720200	Stulpen des Bestienhelden
+720300	Beinschutz des Bestienhelden
+721100	Rüstung des Bestienhelden (Geänd.)
+730000	Heldenstirnband
+730100	Heldenschulterplatte
+730200	Heldenarmschutz
+730300	Heldengamaschen
+740000	Blutrote Kapuze
+740100	Adligenreisekleidung
+740200	Adligenhandschuhe
+740300	Adligenhose
+741000	Dunkelblaue Kapuze
+742000	[ERROR]
+760000	Malikeths Helm
+760100	Malikeths Rüstung
+760200	Malikeths Stulpen
+760300	Malikeths Beinschutz
+761100	Malikeths Rüstung (Geänd.)
+770000	Malenias Flügelhelm
+770100	Malenias Rüstung
+770200	Malenias Stulpen
+770300	Malenias Beinschutz
+771100	Malenias Rüstung (Geänd.)
+780000	Veteranenhelm
+780100	Veteranenrüstung
+780200	Veteranenstulpen
+780300	Veteranenbeinschutz
+781100	Veteranenrüstung (Geänd.)
+790000	Bluthund-Ritterhelm
+790100	Bluthund-Ritterrüstung
+790200	Bluthund-Ritterstulpen
+790300	Bluthund-Ritterbeinschutz
+791100	Bluthund-Ritterrüstung (Geänd.)
+800000	Festliche Kapuze
+800100	Festliche Kleidung
+801000	Festliche Kapuze (Geänd.)
+801100	Festliche Kleidung (Geänd.)
+802000	Festliche blaue Kapuze
+802100	Festliche blaue Kleidung
+810000	Bürgerstirnband
+810100	Bürgerkleidung
+810300	Bürgerschuhe
+811000	Bürgerstirnband (Geänd.)
+811100	Bürgerkleidung (Geänd.)
+812000	Einfache Bürgerkleidung
+812100	Einfache Bürgerkleidung (Geänd.)
+820000	Gesandtenkrone
+830000	Schimmersteinkrone von Haus Zwillingsweis
+830100	Robe von Raya Lucaria
+830200	Zauberer-Manschetten
+830300	Zauberer-Beinwickel
+831000	Schimmersteinkrone von Haus Olivinus
+832000	Schimmersteinkrone von Haus Lazuli
+833000	Schimmersteinkrone von Haus Karolos
+834000	Schimmersteinkrone der Hexe
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Marionettensoldaten-Helm
+840100	Marionettensoldaten-Rüstung
+850000	Marionettensoldaten-Vogelhelm
+860000	Helm des blutigen Wolfs
+860100	Rüstung des blutigen Wolfs
+860200	Stulpen des blutigen Wolfs
+860300	Beinschutz des blutigen Wolfs
+861100	Rüstung des blutigen Wolfs (Geänd.)
+870000	Schilflandhelm
+870100	Schilflandrüstung
+870200	Schilflandstulpen
+870300	Schilflandbeinschutz
+871100	Schilflandrüstung (Geänd.)
+872000	Okina-Maske
+872100	Rüstung der Weißen Halme
+872200	Stulpen der Weißen Halme
+872300	Beinschutz der Weißen Halme
+873000	[ERROR]
+880000	Bekennerkapuze
+880100	Bekennerkleidung
+880200	Bekennerhandschuhe
+880300	Bekennerstiefel
+881000	Bekennerkapuze (Geänd.)
+881100	Bekennerkleidung (Geänd.)
+890000	Eiserne Gefangenenmaske
+890100	Gefangenenkleidung
+890300	Gefangenenhose
+891000	Eisenmaske der Schwarzwache
+892100	[ERROR]
+900000	Kapuze der Wanderjungfer
+900100	Robe der Wanderjungfer
+900200	Handschuhe der Wanderjungfer
+900300	Stiefel der Wanderjungfer
+901100	Robe der Wanderjungfer (Geänd.)
+901200	[ERROR]
+901600	[ERROR]
+902000	Haarband der Fingerjungfer
+902100	Robe der Fingerjungfer
+902300	Schuhe der Fingerjungfer
+903100	Robe der Fingerjungfer (Geänd.)
+904100	[ERROR]
+910000	Großer Präzeptorenhut
+910100	Langes Präzeptorengewand
+910200	Präzeptorenhandschuhe
+910300	Präzeptorenhose
+911000	Maske des Vertrauens
+911100	Langes Präzeptorengewand (Geänd.)
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Skelettmaske
+930100	Schwarze Raubvogelfedern
+930200	Banditenmanschetten
+930300	Banditenstiefel
+931100	Banditenkleidung
+940000	Kapuze des Exzentrikers
+940100	Rüstung des Exzentrikers
+940200	Manschetten des Exzentrikers
+940300	Kniehose des Exzentrikers
+941000	Kapuze des Exzentrikers (Geänd.)
+950000	Fingerabdruckhelm
+950100	Fingerabdruckrüstung
+950200	Fingerabdruckstulpen
+950300	Fingerabdruckbeinschutz
+951100	Fingerabdruckrüstung (Geänd.)
+960000	Maske der Gefährtin
+960100	Kleidung der Gefährtin
+960300	Hose der Gefährtin
+961000	Herrschermaske
+961100	Herrscherrobe
+962100	Robe der Oberschicht
+963000	Maske der Marais
+963100	Robe der Marais
+963200	Blutgetränkte Manschetten
+964000	Blutgetränkte Maske
+964100	Beamtenkleidung
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Helm des Mals
+970100	Rüstung des Mals
+970200	Stulpen des Mals
+970300	Beinschutz des Mals
+980000	Carianischer Ritterhelm
+980100	Carianische Ritterrüstung
+980200	Carianische Ritterstulpen
+980300	Carianischer Ritterbeinschutz
+981100	Carianische Ritterrüstung (Geänd.)
+990000	Schimmersteinkrone von Haus Hierodas
+990100	Robe des abtrünnigen Zauberers
+990200	Manschetten des abtrünnigen Zauberers
+990300	Stiefel des abtrünnigen Zauberers
+991100	Robe des abtrünnigen Zauberers (Geänd.)
+992000	[ERROR]
+1000000	Schimmersteinkrone von Haus Haima
+1000100	Kriegsmagier-Robe
+1000200	Kriegsmagier-Manschetten
+1000300	Kriegsmagier-Beinwickel
+1010000	Hut der Schneehexe
+1010100	Robe der Schneehexe
+1010300	Rock der Schneehexe
+1011100	Robe der Schneehexe (Geänd.)
+1020100	Kleidung der Reisenden
+1020200	Armschutz der Reisenden
+1020300	Stiefel der Reisenden
+1030000	Kappe der jungen Gelehrten
+1030100	Robe der jungen Gelehrten
+1040000	Strahlende Goldmaske
+1040100	Lumpen der Goldenen Maske
+1040200	Goldene Armreife
+1040300	Goldener Hüftwickel
+1050100	Umhang des Grausamen Mals
+1060000	Albinauric-Maske
+1060100	Schmutziger Kettenschutz
+1070000	Zamor-Maske
+1070100	Zamor-Rüstung
+1070200	Zamor-Armreife
+1070300	Zamor-Beinwickel
+1080000	Wichtkopf (Katze)
+1081000	Wichtkopf (Mit Reißzähnen)
+1082000	Wichtkopf (Langzüngig)
+1083000	Wichtkopf (Leiche)
+1084000	Wichtkopf (Wolf)
+1085000	Wichtkopf (Ältester)
+1090000	Silbertränenmaske
+1100000	Kettenhaube
+1100100	Kettenrüstung
+1100200	Stulpen
+1100300	Kettenbeinschutz
+1101000	Großhelm
+1101100	Augenwappenrock
+1102100	Baumwappenrock
+1110000	Oktopuskopf
+1120000	Gefäß
+1130000	Pilzkopf
+1130100	Pilzkörper
+1130200	Pilzarme
+1130300	Pilzbeine
+1300000	Noxspiegelhelm
+1301000	Ijis Spiegelhelm
+1400000	Schwarze Kapuze
+1400100	Lederrüstung
+1400200	Lederhandschuhe
+1400300	Lederstiefel
+1401000	Banditenmaske
+1500000	Ritterhelm
+1500100	Ritterrüstung
+1500200	Ritterstulpen
+1500300	Ritterbeinschutz
+1600000	Großkapuze
+1610000	[ERROR]
+1700000	Godrick-Soldatenhelm
+1700100	Godrick-Soldatenwappenrock
+1700200	Godrick-Soldatenstulpen
+1700300	Godrick-Soldatenbeinschutz
+1710000	Kuckucks-Soldatenhelm
+1710100	Kuckucks-Soldatenwappenrock
+1710200	Kuckucks-Soldatenstulpen
+1710300	Kuckucks-Soldatenbeinschutz
+1720000	Leyndell-Soldatenhelm
+1720100	Leyndell-Soldatenwappenrock
+1720200	Leyndell-Soldatenstulpen
+1720300	Leyndell-Soldatenbeinschutz
+1730000	Radahn-Soldatenhelm
+1730100	Radahn-Soldatenwappenrock
+1730200	Radahn-Soldatenstulpen
+1730300	Radahn-Soldatenbeinschutz
+1740100	Mausoleums-Soldatenwappenrock
+1740200	Mausoleums-Soldatenstulpen
+1740300	Mausoleums-Soldatenbeinschutz
+1750000	Haligbaum-Soldatenhelm
+1750100	Haligbaum-Soldatenwappenrock
+1750200	Haligbaum-Soldatenstulpen
+1750300	Haligbaum-Soldatenbeinschutz
+1760000	Gelmir-Ritterhelm
+1760100	Gelmir-Ritterrüstung
+1760200	Gelmir-Ritterstulpen
+1760300	Gelmir-Ritterbeinschutz
+1761100	Gelmir-Ritterrüstung (Geänd.)
+1770000	Godrick-Ritterhelm
+1770100	Godrick-Ritterrüstung
+1770200	Godrick-Ritterstulpen
+1770300	Godrick-Ritterbeinschutz
+1771100	Godrick-Ritterrüstung (Geänd.)
+1780000	Kuckucks-Ritterhelm
+1780100	Kuckucks-Ritterrüstung
+1780200	Kuckucks-Ritterstulpen
+1780300	Kuckucks-Ritterbeinschutz
+1781100	Kuckucks-Ritterrüstung (Geänd.)
+1790000	Leyndell-Ritterhelm
+1790100	Leyndell-Ritterrüstung
+1790200	Leyndell-Ritterstulpen
+1790300	Leyndell-Ritterbeinschutz
+1791100	Leyndell-Ritterrüstung (Geänd.)
+1800000	Radahn-Ritterhelm
+1800100	Radahn-Ritterrüstung
+1800200	Radahn-Ritterstulpen
+1800300	Radahn-Ritterbeinschutz
+1801100	Radahn-Ritterrüstung (Geänd.)
+1810100	Rüstung der Ritter des Mausoleums
+1810200	Stulpen der Ritter des Mausoleums
+1810300	Beinschutz der Ritter des Mausoleums
+1811100	Rüstung der Ritter des Mausoleums (Geänd.)
+1820000	Haligbaum-Ritterhelm
+1820100	Haligbaum-Ritterrüstung
+1820200	Haligbaum-Ritterstulpen
+1820300	Haligbaum-Ritterbeinschutz
+1821100	Haligbaum-Ritterrüstung (Geänd.)
+1830000	Fußsoldaten-Kappe
+1830100	Kettenbesetzter Tabard
+1830200	Fußsoldaten-Stulpen
+1830300	Fußsoldaten-Beinschutz
+1840000	Fußsoldaten-Helm
+1840100	Fußsoldaten-Tabard
+1850000	Vergoldete Fußsoldaten-Kappe
+1850100	Lederbesetzter Tabard
+1860000	Fußsoldaten-Eisenhelm
+1860100	Scharlachroter Tabard
+1870100	Blutgetränkter Tabard
+1880000	Helm der heiligen Krone
+1880100	Elfenbeinbesetzter Tabard
+1890000	Maske des grinsenden Mals
+1890100	Robe der Maltöter
+1890200	Lange Handschuhe der Maltöter
+1890300	Stiefel der Maltöter
+1900000	Kriegsaschenskarabäus
+1901000	Anrufungsskarabäus
+1902000	Schimmersteinskarabäus
+1910000	Purpurtränenskarabäus
+1920000	Himmelstränenskarabäus
+1930100	Sterbebettkleid
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Fias Kapuze
+1940100	Fias Robe
+1941100	Fias Robe (Geänd.)
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Wegelagerer-Kapuze
+1980100	Wegelagerer-Stoffrüstung
+1980200	Wegelagerer-Stulpen
+1990000	Edle Pagen-Kapuze
+1990100	Edle Pagen-Kleidung
+1991100	Edle Pagen-Kleidung (Geänd.)
+2000000	Helm des verrotteten Duellanten
+2000100	Verrotteter Grabhüterumhang
+2000300	Beinschutz des verrotteten Duellanten
+2001100	Verrotteter Grabhüterumhang (Geänd.)
+2010000	Pilzkrone
+2020000	Schwarze Knute
+2030000	Lazuli-Robe

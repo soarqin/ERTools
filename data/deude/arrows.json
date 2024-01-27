@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Pfeil"
+  },
+  {
+    "id": 50010000,
+    "name": "Brandpfeil"
+  },
+  {
+    "id": 50020000,
+    "name": "Schlangenpfeil"
+  },
+  {
+    "id": 50030000,
+    "name": "Knochenpfeil (Gefiedert)"
+  },
+  {
+    "id": 50040000,
+    "name": "St. Trinas Pfeil"
+  },
+  {
+    "id": 50060000,
+    "name": "Knochensplitterpfeil (Gefiedert)"
+  },
+  {
+    "id": 50080000,
+    "name": "Regenbogensteinpfeil (Gefiedert)"
+  },
+  {
+    "id": 50090000,
+    "name": "Goldener Pfeil"
+  },
+  {
+    "id": 50100000,
+    "name": "Verweilender Pfeil"
+  },
+  {
+    "id": 50110000,
+    "name": "Knochenpfeil"
+  },
+  {
+    "id": 50130000,
+    "name": "Knochen-Feuerpfeil (Gefiedert)"
+  },
+  {
+    "id": 50140000,
+    "name": "Knochen-Feuerpfeil"
+  },
+  {
+    "id": 50150000,
+    "name": "Knochen-Giftpfeil (Gefiedert)"
+  },
+  {
+    "id": 50160000,
+    "name": "Knochen-Giftpfeil"
+  },
+  {
+    "id": 50170000,
+    "name": "Knochen-Schlafpfeil (Gefiedert)"
+  },
+  {
+    "id": 50180000,
+    "name": "Knochen-Schlafpfeil"
+  },
+  {
+    "id": 50190000,
+    "name": "Sturmschwingen-Knochenpfeil"
+  },
+  {
+    "id": 50200000,
+    "name": "Knochen-Blitzpfeil (Gefiedert)"
+  },
+  {
+    "id": 50210000,
+    "name": "Knochen-Blitzpfeil"
+  },
+  {
+    "id": 50220000,
+    "name": "Regenbogensteinpfeil"
+  },
+  {
+    "id": 50230000,
+    "name": "Knochensplitterpfeil"
+  },
+  {
+    "id": 50240000,
+    "name": "Geisterflammenpfeil"
+  },
+  {
+    "id": 50260000,
+    "name": "Zauberknochenpfeil (Gefiedert)"
+  },
+  {
+    "id": 50270000,
+    "name": "Zauberknochenpfeil"
+  },
+  {
+    "id": 50280000,
+    "name": "Haligbaumpfeil (Gefiedert)"
+  },
+  {
+    "id": 50290000,
+    "name": "Haligbaumpfeil"
+  },
+  {
+    "id": 50300000,
+    "name": "Blutknochenpfeil (Gefiedert)"
+  },
+  {
+    "id": 50310000,
+    "name": "Blutknochenpfeil"
+  },
+  {
+    "id": 50320000,
+    "name": "Eisknochenpfeil (Gefiedert)"
+  },
+  {
+    "id": 50330000,
+    "name": "Eisknochenpfeil"
+  },
+  {
+    "id": 50340000,
+    "name": "Fäulnisknochenpfeil (Gefiedert)"
+  },
+  {
+    "id": 50350000,
+    "name": "Fäulnisknochenpfeil"
+  },
+  {
+    "id": 51000000,
+    "name": "Großpfeil"
+  },
+  {
+    "id": 51010000,
+    "name": "Golemgroßpfeil"
+  },
+  {
+    "id": 51020000,
+    "name": "Goldener Großpfeil"
+  },
+  {
+    "id": 51030000,
+    "name": "Magischer Golempfeil"
+  },
+  {
+    "id": 51040000,
+    "name": "Radahns Speer"
+  },
+  {
+    "id": 51050000,
+    "name": "Knochengroßpfeil (Gefiedert)"
+  },
+  {
+    "id": 51060000,
+    "name": "Knochengroßpfeil"
+  },
+  {
+    "id": 52000000,
+    "name": "Bolzen"
+  },
+  {
+    "id": 52010000,
+    "name": "Blitzbolzen"
+  },
+  {
+    "id": 52020000,
+    "name": "Parfümeursbolzen"
+  },
+  {
+    "id": 52030000,
+    "name": "Seuchenbolzen"
+  },
+  {
+    "id": 52040000,
+    "name": "Bohrbolzen"
+  },
+  {
+    "id": 52050000,
+    "name": "Meteorbolzen"
+  },
+  {
+    "id": 52060000,
+    "name": "Sprengbolzen"
+  },
+  {
+    "id": 52070000,
+    "name": "Goldbolzen"
+  },
+  {
+    "id": 52080000,
+    "name": "Bolzen der Getreuen"
+  },
+  {
+    "id": 52090000,
+    "name": "Knochenbolzen"
+  },
+  {
+    "id": 52100000,
+    "name": "Knochen-Feuerbolzen"
+  },
+  {
+    "id": 52110000,
+    "name": "Knochen-Blitzbolzen"
+  },
+  {
+    "id": 52120000,
+    "name": "Zauberknochenbolzen"
+  },
+  {
+    "id": 52130000,
+    "name": "Haligknochenbolzen"
+  },
+  {
+    "id": 52140000,
+    "name": "Knochen-Giftbolzen"
+  },
+  {
+    "id": 52150000,
+    "name": "Blutknochenbolzen"
+  },
+  {
+    "id": 52160000,
+    "name": "Eisknochenbolzen"
+  },
+  {
+    "id": 52170000,
+    "name": "Fäulnisknochenbolzen"
+  },
+  {
+    "id": 52180000,
+    "name": "Knochen-Schlafbolzen"
+  },
+  {
+    "id": 52190000,
+    "name": "Flammenbolzen"
+  },
+  {
+    "id": 53000000,
+    "name": "Ballistenbolzen"
+  },
+  {
+    "id": 53010000,
+    "name": "Blitzgroßbolzen"
+  },
+  {
+    "id": 53020000,
+    "name": "Sprenggroßbolzen"
+  },
+  {
+    "id": 53030000,
+    "name": "Knochenballistenbolzen"
+  }
+]

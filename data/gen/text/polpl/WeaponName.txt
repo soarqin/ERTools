@@ -1,0 +1,4204 @@
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1201	
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	[ERROR]
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	[ERROR]
+1221	
+1222	
+1223	
+1224	
+1225	
+1226	
+1227	
+1228	
+1229	
+1230	[ERROR]
+1231	
+1232	
+1233	
+1234	
+1235	
+1236	
+1237	
+1238	
+1239	
+1240	[ERROR]
+1241	
+1242	
+1243	
+1244	
+1245	
+1246	
+1247	
+1248	
+1249	
+1250	[ERROR]
+1251	
+1252	
+1253	
+1254	
+1255	
+1256	
+1257	
+1258	
+1259	
+1260	[ERROR]
+1400	[ERROR]
+1401	
+1402	
+1403	
+1404	
+1405	
+1406	
+1407	
+1408	
+1409	
+1410	[ERROR]
+1411	
+1412	
+1413	
+1414	
+1415	
+1416	
+1417	
+1418	
+1419	
+1420	[ERROR]
+1421	
+1422	
+1423	
+1424	
+1425	
+1426	
+1427	
+1428	
+1429	
+1430	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+11000	[ERROR]
+12000	[ERROR]
+13000	[ERROR]
+100000	[ERROR]
+100100	[ERROR]
+100200	[ERROR]
+100300	[ERROR]
+100400	[ERROR]
+100500	[ERROR]
+100600	[ERROR]
+100700	[ERROR]
+100800	[ERROR]
+100900	[ERROR]
+101000	[ERROR]
+110000	Bez broni
+1000000	Sztylet
+1000100	Ciężki sztylet
+1000200	Wymyślny sztylet
+1000300	Sztylet wysokiej jakości
+1000400	Ognisty sztylet
+1000500	Sztylet sztuki płomienia
+1000600	Sztylet błyskawic
+1000700	Święty sztylet
+1000800	Magiczny sztylet
+1000900	Sztylet zimna
+1001000	Zatruty sztylet
+1001100	Krwawy sztylet
+1001200	Okultystyczny sztylet
+1010000	Czarny nóż
+1020000	Sztylet do parowania
+1020100	Ciężki sztylet do parowania
+1020200	Wymyślny sztylet do parowania
+1020300	Wysokiej jakości sztylet do parowania
+1020400	Ognisty sztylet do parowania
+1020500	Sztylet do parowania sztuki płomienia
+1020600	Sztylet błyskawic do parowania
+1020700	Święty sztylet do parowania
+1020800	Magiczny sztylet do parowania
+1020900	Sztylet zimna do parowania
+1021000	Zatruty sztylet do parowania
+1021100	Krwawy sztylet do parowania
+1021200	Okultystyczny sztylet do parowania
+1030000	Mizerykordia
+1030100	Ciężka mizerykordia
+1030200	Wymyślna mizerykordia
+1030300	Mizerykordia wysokiej jakości
+1030400	Ognista mizerykordia
+1030500	Mizerykordia sztuki płomienia
+1030600	Mizerykordia błyskawic
+1030700	Święta mizerykordia
+1030800	Magiczna mizerykordia
+1030900	Mizerykordia zimna
+1031000	Zatruta mizerykordia
+1031100	Krwawa mizerykordia
+1031200	Okultystyczna mizerykordia
+1040000	Reduvia
+1050000	Kryształowy nóż
+1060000	Sierp celebranta
+1060100	Ciężki sierp celebranta
+1060200	Wymyślny sierp celebranta
+1060300	Wysokiej jakości sierp celebranta
+1060400	Ognisty sierp celebranta
+1060500	Sierp sztuki płomienia celebranta
+1060600	Sierp błyskawic celebranta
+1060700	Święty sierp celebranta
+1060800	Magiczny sierp celebranta
+1060900	Sierp zimna celebranta
+1061000	Zatruty sierp celebranta
+1061100	Krwawy sierp celebranta
+1061200	Okultystyczny sierp celebranta
+1070000	Błyskamienny kris
+1080000	Żądło skorpiona
+1090000	Wielki nóż
+1090100	Ciężki wielki nóż
+1090200	Wymyślny wielki nóż
+1090300	Wielki nóż wysokiej jakości
+1090400	Ognisty wielki nóż
+1090500	Wielki nóż sztuki płomienia
+1090600	Wielki nóż błyskawic
+1090700	Święty wielki nóż
+1090800	Magiczny wielki nóż
+1090900	Wielki nóż zimna
+1091000	Zatruty wielki nóż
+1091100	Krwawy wielki nóż
+1091200	Okultystyczny wielki nóż
+1100000	Wakizashi
+1100100	Ciężkie wakizashi
+1100200	Wymyślne wakizashi
+1100300	Wakizashi wysokiej jakości
+1100400	Ogniste wakizashi
+1100500	Wakizashi sztuki płomienia
+1100600	Wakizashi błyskawic
+1100700	Święte wakizashi
+1100800	Magiczne wakizashi
+1100900	Wakizashi zimna
+1101000	Zatrute wakizashi
+1101100	Krwawe wakizashi
+1101200	Okultystyczne wakizashi
+1110000	Cinquedea
+1130000	Sierp z kości słoniowej
+1140000	Zakrwawiony sztylet
+1140100	Ciężki zakrwawiony sztylet
+1140200	Wymyślny zakrwawiony sztylet
+1140300	Zakrwawiony sztylet wysokiej jakości
+1140400	Ognisty zakrwawiony sztylet
+1140500	Zakrwawiony sztylet sztuki płomienia
+1140600	Zakrwawiony sztylet błyskawic
+1140700	Święty zakrwawiony sztylet
+1140800	Magiczny zakrwawiony sztylet
+1140900	Zakrwawiony sztylet zimna
+1141000	Zatruty zakrwawiony sztylet
+1141100	Krwawy zakrwawiony sztylet
+1141200	Okultystyczny zakrwawiony sztylet
+1150000	Sztylet ze złotej stali
+1150100	Ciężki sztylet ze złotej stali
+1150200	Wymyślny sztylet ze złotej stali
+1150300	Wysokiej jakości sztylet ze złotej stali
+1150400	Ognisty sztylet ze złotej stali
+1150500	Sztylet ze złotej stali sztuki płomienia
+1150600	Sztylet błyskawic ze złotej stali
+1150700	Święty sztylet ze złotej stali
+1150800	Magiczny sztylet ze złotej stali
+1150900	Sztylet zimna ze złotej stali
+1151000	Zatruty sztylet ze złotej stali
+1151100	Krwawy sztylet ze złotej stali
+1151200	Okultystyczny sztylet ze złotej stali
+1160000	Klinga przywołania
+1190000	[ERROR]
+1910000	[ERROR]
+2000000	Długi miecz
+2000100	Ciężki długi miecz
+2000200	Wymyślny długi miecz
+2000300	Długi miecz wysokiej jakości
+2000400	Ognisty długi miecz
+2000500	Długi miecz sztuki płomienia
+2000600	Długi miecz błyskawic
+2000700	Święty długi miecz
+2000800	Magiczny długi miecz
+2000900	Długi miecz zimna
+2001000	Zatruty długi miecz
+2001100	Krwawy długi miecz
+2001200	Okultystyczny długi miecz
+2010000	Krótki miecz
+2010100	Ciężki krótki miecz
+2010200	Wymyślny krótki miecz
+2010300	Krótki miecz wysokiej jakości
+2010400	Ognisty krótki miecz
+2010500	Krótki miecz sztuki płomienia
+2010600	Krótki miecz błyskawic
+2010700	Święty krótki miecz
+2010800	Magiczny krótki miecz
+2010900	Krótki miecz zimna
+2011000	Zatruty krótki miecz
+2011100	Krwawy krótki miecz
+2011200	Okultystyczny krótki miecz
+2020000	Szeroki miecz
+2020100	Ciężki szeroki miecz
+2020200	Wymyślny szeroki miecz
+2020300	Szeroki miecz wysokiej jakości
+2020400	Ognisty szeroki miecz
+2020500	Szeroki miecz sztuki płomienia
+2020600	Szeroki miecz błyskawic
+2020700	Święty szeroki miecz
+2020800	Magiczny szeroki miecz
+2020900	Szeroki miecz zimna
+2021000	Zatruty szeroki miecz
+2021100	Krwawy szeroki miecz
+2021200	Okultystyczny szeroki miecz
+2030000	Kościany nóż
+2040000	Prosty miecz zaprzysiężonego
+2040100	Ciężki prosty miecz zaprzysiężonego
+2040200	Wymyślny prosty miecz zaprzysiężonego
+2040300	Wysokiej jakości prosty miecz zaprzysiężonego
+2040400	Ognisty prosty miecz zaprzysiężonego
+2040500	Prosty miecz sztuki płomienia zaprzysiężonego
+2040600	Prosty miecz błyskawic zaprzysiężonego
+2040700	Święty prosty miecz zaprzysiężonego
+2040800	Magiczny prosty miecz zaprzysiężonego
+2040900	Prosty miecz zimna zaprzysiężonego
+2041000	Zatruty prosty miecz zaprzysiężonego
+2041100	Krwawy prosty miecz zaprzysiężonego
+2041200	Okultystyczny prosty miecz zaprzysiężonego
+2050000	Podniszczony prosty miecz
+2050100	Ciężki podniszczony prosty miecz
+2050200	Wymyślny podniszczony prosty miecz
+2050300	Podniszczony prosty miecz wysokiej jakości
+2050400	Ognisty podniszczony prosty miecz
+2050500	Podniszczony prosty miecz sztuki płomienia
+2050600	Podniszczony prosty miecz błyskawic
+2050700	Święty podniszczony prosty miecz
+2050800	Magiczny podniszczony prosty miecz
+2050900	Podniszczony prosty miecz zimna
+2051000	Zatruty podniszczony prosty miecz
+2051100	Krwawy podniszczony prosty miecz
+2051200	Okultystyczny podniszczony prosty miecz
+2060000	Ozdobny prosty miecz
+2070000	Złote epitafium
+2080000	Dynamiczny miecz Noxów
+2090000	Nierozłączny miecz
+2090100	Bransoleta Rennali, Wiedźmy Pełni Księżyca
+2090200	Na krótki czas wzmacnia niewrażliwość
+2090300	Na krótki czas wzmacnia krzepę
+2090400	Na krótki czas wzmacnia skupienie
+2090500	Na krótko wzm. niewrażliwość, krzepę i skupienie
+2090600	Na krótki czas wzmacnia odporność na śmierć
+2090700	Stwardniały smar będący mieszanką łatwopalnych materiałów.\r\nPrzedmiot do stworzenia.\r\n\r\nPokrywa broń, by ataki zadawały obrażenia od ognia.\r\nTen efekt jest krótkotrwały.
+2090800	Stwardniały smar będący\r\nmieszanką iskrzących materiałów. Przedmiot do stworzenia.\r\n\r\nPokrywa broń, by ataki zadawały obrażenia elektryczne.\r\n
+2090900	Stwardniały smar będący\r\nmieszanką materiałów napełnionych magią. Przedmiot do stworzenia.\r\n\r\nPokrywa broń, by ataki zadawały obrażenia magiczne.\r\n
+2091000	Pokrywa broń, zadając święte obrażenia
+2091100	Pokryty pęcherzami zastygnięty smar, zrobiony z mieszanki\r\nkrwi i innych materiałów. Przedmiot do stworzenia.\r\n\r\nPokrywa broń, wywołując krwawienie.\r\n\r\nPokryta pęcherzami krew uszkadza skórę,\r\npowodując poszarpane rany.\r\nUlubiona broń intrygantów\r\ni malkontentów od dawien dawna.\r\n
+2091200	Stężały smar wykonany przy użyciu\r\npilnie strzeżonych technik św. Triny. Przedmiot do stworzenia.\r\n\r\nPokrywa broń, wywołując sen.\r\n\r\nŚwięta od Kołysanki stała się symbolem\r\nutraconego spoczynku, a słabi sercem\r\nnie potrafili oprzeć się jej dobroci\r\nnawet na polu bitwy.\r\n
+2110000	Zaszyfrowany miecz
+2140000	Miecz nocy i ognia
+2150000	Kryształowy miecz
+2180000	Miecz karyjskiego rycerza
+2190000	Miecz św. Triny
+2200000	Miecz rycerza Miquelli
+2210000	Mieczolaska
+2210100	Ciężka mieczolaska
+2210200	Wymyślna mieczolaska
+2210300	Mieczolaska wysokiej jakości
+2210400	Ognista mieczolaska
+2210500	Mieczolaska sztuki płomienia
+2210600	Mieczolaska błyskawic
+2210700	Święta mieczolaska
+2210800	Magiczna mieczolaska
+2210900	Mieczolaska zimna
+2211000	Zatruta mieczolaska
+2211100	Krwawa mieczolaska
+2211200	Okultystyczna mieczolaska
+2220000	Regalia z Eochaid
+2230000	Smukły miecz szlachecki
+2230100	Ciężki smukły miecz szlachecki
+2230200	Wymyślny smukły miecz szlachecki
+2230300	Smukły miecz szlachecki wysokiej jakości
+2230400	Ognisty smukły miecz szlachecki
+2230500	Smukły miecz szlachecki sztuki płomienia
+2230600	Smukły miecz szlachecki błyskawic
+2230700	Święty smukły miecz szlachecki
+2230800	Magiczny smukły miecz szlachecki
+2230900	Smukły miecz szlachecki zimna
+2231000	Zatruty smukły miecz szlachecki
+2231100	Krwawy smukły miecz szlachecki
+2231200	Okultystyczny smukły miecz szlachecki
+2240000	Szpon jastrzębia bojowego
+2240100	Ciężki szpon jastrzębia bojowego
+2240200	Wymyślny szpon jastrzębia bojowego
+2240300	Wysokiej jakości szpon jastrzębia bojowego
+2240400	Ognisty szpon jastrzębia bojowego
+2240500	Szpon sztuki płomienia jastrzębia bojowego
+2240600	Szpon błyskawic jastrzębia bojowego
+2240700	Święty szpon jastrzębia bojowego
+2240800	Magiczny szpon jastrzębia bojowego
+2240900	Szpon zimna jastrzębia bojowego
+2241000	Zatruty szpon jastrzębia bojowego
+2241100	Krwawy szpon jastrzębia bojowego
+2241200	Okultystyczny szpon jastrzębia bojowego
+2250000	Błyskamienny miecz Lazuli
+2260000	Zgniły kryształowy miecz
+3000000	Miecz półtoraręczny
+3000100	Ciężki miecz półtoraręczny
+3000200	Wymyślny miecz półtoraręczny
+3000300	Półtoraręczny miecz wysokiej jakości
+3000400	Ognisty miecz półtoraręczny
+3000500	Półtoraręczny miecz sztuki płomienia
+3000600	Półtoraręczny miecz błyskawic
+3000700	Święty miecz półtoraręczny
+3000800	Magiczny miecz półtoraręczny
+3000900	Półtoraręczny miecz zimna
+3001000	Zatruty miecz półtoraręczny
+3001100	Krwawy miecz półtoraręczny
+3001200	Okultystyczny miecz półtoraręczny
+3010000	Rozwidlony wielki miecz
+3010100	Ciężki rozwidlony wielki miecz
+3010200	Wymyślny rozwidlony wielki miecz
+3010300	Rozwidlony wielki miecz wysokiej jakości
+3010400	Ognisty rozwidlony wielki miecz
+3010500	Rozwidlony wielki miecz sztuki płomienia
+3010600	Rozwidlony wielki miecz błyskawic
+3010700	Święty rozwidlony wielki miecz
+3010800	Magiczny rozwidlony wielki miecz
+3010900	Rozwidlony wielki miecz zimna
+3011000	Zatruty rozwidlony wielki miecz
+3011100	Krwawy rozwidlony wielki miecz
+3011200	Okultystyczny rozwidlony wielki miecz
+3020000	Żelazny wielki miecz
+3020100	Ciężki żelazny wielki miecz
+3020200	Wymyślny żelazny wielki miecz
+3020300	Żelazny wielki miecz wysokiej jakości
+3020400	Ognisty żelazny wielki miecz
+3020500	Żelazny wielki miecz sztuki płomienia
+3020600	Żelazny wielki miecz błyskawic
+3020700	Święty żelazny wielki miecz
+3020800	Magiczny żelazny wielki miecz
+3020900	Żelazny wielki miecz zimna
+3021000	Zatruty żelazny wielki miecz
+3021100	Krwawy żelazny wielki miecz
+3021200	Okultystyczny żelazny wielki miecz
+3030000	Wielki miecz zaprzysiężonego
+3030100	Ciężki wielki miecz zaprzysiężonego
+3030200	Wymyślny wielki miecz zaprzysiężonego
+3030300	Wielki miecz zaprzysiężonego wysokiej jakości 
+3030400	Ognisty wielki miecz zaprzysiężonego
+3030500	Wielki miecz sztuki płomienia zaprzysiężonego
+3030600	Wielki miecz błyskawic zaprzysiężonego
+3030700	Święty wielki miecz zaprzysiężonego
+3030800	Magiczny wielki miecz zaprzysiężonego
+3030900	Wielki miecz zimna zaprzysiężonego
+3031000	Zatruty wielki miecz zaprzysiężonego
+3031100	Krwawy wielki miecz zaprzysiężonego
+3031200	Okultystyczny wielki miecz zaprzysiężonego
+3040000	Wielki miecz rycerski
+3040100	Ciężki wielki miecz rycerski
+3040200	Wymyślny wielki miecz rycerski
+3040300	Wysokiej jakości wielki miecz rycerski
+3040400	Ognisty wielki miecz rycerski
+3040500	Wielki miecz rycerski sztuki płomienia
+3040600	Wielki miecz rycerski błyskawic
+3040700	Święty wielki miecz rycerski
+3040800	Magiczny wielki miecz rycerski
+3040900	Wielki miecz rycerski zimna
+3041000	Zatruty wielki miecz rycerski
+3041100	Krwawy wielki miecz rycerski
+3041200	Okultystyczny wielki miecz rycerski
+3050000	Flamberg
+3050100	Ciężki flamberg
+3050200	Wymyślny flamberg
+3050300	Flamberg wysokiej jakości
+3050400	Ognisty flamberg
+3050500	Flamberg sztuki płomienia
+3050600	Flamberg błyskawic
+3050700	Święty flamberg
+3050800	Magiczny flamberg
+3050900	Flamberg zimna
+3051000	Zatruty flamberg
+3051100	Krwawy flamberg
+3051200	Okultystyczny flamberg
+3060000	Wielki miecz Ordovisa
+3070000	Miecz alabastrowego władcy
+3080000	Wielki miecz wypędzonego rycerza
+3080100	Ciężki wielki miecz wypędzonego rycerza
+3080200	Wymyślny wielki miecz wypędzonego rycerza
+3080300	Wysokiej jakości wielki miecz wypędzonego rycerza
+3080400	Ognisty wielki miecz wypędzonego rycerza
+3080500	Wielki miecz sztuki płomienia wypędzonego rycerza
+3080600	Wielki miecz błyskawic wypędzonego rycerza
+3080700	Święty wielki miecz wypędzonego rycerza
+3080800	Magiczny wielki miecz wypędzonego rycerza
+3080900	Wielki miecz zimna wypędzonego rycerza
+3081000	Zatruty wielki miecz wypędzonego rycerza
+3081100	Krwawy wielki miecz wypędzonego rycerza
+3081200	Okultystyczny wielki miecz wypędzonego rycerza
+3090000	Wielki miecz ciemnego księżyca
+3100000	Miecz świętego reliktu
+3130000	Iglica Helphena
+3140000	Bluźniercze ostrze
+3150000	Miecz kata Maraisa
+3160000	Miecz Milosa
+3160100	Tworzy wokół używającego wielki magiczny miecz
+3160200	Przemień się w księżyc i zaatakuj wrogów
+3160300	Przemień się w zimny księżyc i zaatakuj wrogów
+3160400	Wystrzeliwuje odłamki z lewitującego błyskamienia
+3160500	Wystrzeliwuje strzałę z błyskamiennego łuku
+3160600	Wystrzeliwuje wiele strzał z błyskamiennego łuku
+3160700	Tworzy błyskamień, który wystrzeliwuje odłamki
+3160800	Wystrzel większe lodowe odłamki z błyskamienia
+3160900	Tworzy mroźne tornado atakujące pobliskich wrogów
+3161000	Uwalnia mgłę, która powoduje wzrost odmrożeń
+3161100	Atakuje wielkim błyskamiennym mieczem
+3161200	Atakuje lodowatym błyskamiennym mieczem
+3170000	Wielki miecz Złotego Porządku
+3180000	Claymore
+3180100	Ciężki claymore
+3180200	Wymyślny claymore
+3180300	Claymore wysokiej jakości
+3180400	Ognisty claymore
+3180500	Claymore sztuki płomienia
+3180600	Claymore błyskawic
+3180700	Święty claymore
+3180800	Magiczny claymore
+3180900	Claymore zimna
+3181000	Zatruty claymore
+3181100	Claymore krwi
+3181200	Okultystyczny claymore
+3190000	Wielki miecz gargulca
+3190100	Ciężki wielki miecz gargulca
+3190200	Wymyślny wielki miecz gargulca
+3190300	Wysokiej jakości wielki miecz gargulca
+3190400	Ognisty wielki miecz gargulca
+3190500	Wielki miecz sztuki płomienia gargulca
+3190600	Wielki miecz błyskawic gargulca
+3190700	Święty wielki miecz gargulca
+3190800	Magiczny wielki miecz gargulca
+3190900	Wielki miecz zimna gargulca
+3191000	Zatruty wielki miecz gargulca
+3191100	Krwawy wielki miecz gargulca
+3191200	Okultystyczny wielki miecz gargulca
+3200000	Pogrzebacz śmierci
+3210000	Czarne ostrze gargulca
+3210100	Przyzywa jeszcze więcej upiorów atakujących wrogów
+3210200	Płomienie wydłużają się przed zmianą w kolumny
+3210300	Tworzy mgłę, która powoduje natychmiastową śmierć
+3210400	Przyzywa wokół celu atakujące szkielety
+3210500	Przyzywa błyskawicę uderzającą wokół rzucającego
+3210600	Zaginiona, pradawna magia błyskamieni używana przez łajdaków zamieszkujących podziemne ruiny.\r\n\r\nWytwarza kilka magicznych bąbli, które unoszą się w powietrzu, dopóki samoistnie nie pękną.\r\nNaładowanie magii sprawia, że bąble utrzymują się dłużej.
+3210700	Wystrzeliwuje bańki wybuchające przy dotknięciu
+3210800	Zniekształcona zbroja szalonego rycerza pogrążonego w rozpaczy.
+3210900	Inkantacja mnichów ognia, strażników płomienia upadku, który zauroczył olbrzymów.\r\n\r\nNatychmiast wznieca buzujący płomień z dłoni rzucającego zaklęcie.\r\nTę inkantację można stosować błyskawicznie po biegu, uniku i innych manewrach.
+3211000	Wznieca większy płomień w dłoni rzucającego
+3211100	Inkantacja mnichów ognia, strażników płomienia upadku, który zauroczył olbrzymów.\r\n\r\nWytwarza i ciska kulę szalejącego ognia.\r\nNaładowanie inkantacji wzmacnia moc kuli i powoduje jej wybuch.\r\n\r\nOgień oczarowuje tych, co na niego patrzą.\r\nCi, którzy strzegą płomienia, stają się też jego czcicielami.
+3211200	Święta inwokacja stworzona przez Gurranqa, bestialskiego duchownego.\r\n\r\nTworzy szpony bestii, które rozszarpują ziemię.\r\n\r\nW dawnych czasach bestie posiadały intelekt i same sprawowały władzę.\r\nRegent Godfreya, pierwszego Eldeńskiego Władcy, podobno jest ich potomkiem.\r\n
+3220000	[ERROR]
+3900000	[ERROR]
+4000000	Wielki miecz
+4000100	Ciężki wielki miecz
+4000200	Wymyślny wielki miecz
+4000300	Wielki miecz wysokiej jakości
+4000400	Ognisty wielki miecz
+4000500	Wielki miecz sztuki płomienia
+4000600	Wielki miecz błyskawic
+4000700	Święty wielki miecz
+4000800	Magiczny wielki miecz
+4000900	Wielki miecz zimna
+4001000	Zatruty wielki miecz
+4001100	Krwawy wielki miecz
+4001200	Okultystyczny wielki miecz
+4010000	Wielki miecz ogara
+4010100	Ciężki wielki miecz ogara
+4010200	Wymyślny wielki miecz ogara
+4010300	Wysokiej jakości wielki miecz ogara
+4010400	Ognisty wielki miecz ogara
+4010500	Wielki miecz sztuki płomienia ogara
+4010600	Wielki miecz błyskawic ogara
+4010700	Święty wielki miecz ogara
+4010800	Magiczny wielki miecz ogara
+4010900	Wielki miecz zimna ogara
+4011000	Zatruty wielki miecz ogara
+4011100	Krwawy wielki miecz ogara
+4011200	Okultystyczny wielki miecz ogara
+4020000	Czarne ostrze Maliketha
+4030000	Złoty miecz trolla
+4030100	Ciężki złoty miecz trolla
+4030200	Wymyślny złoty miecz trolla
+4030300	Wysokiej jakości złoty miecz trolla
+4030400	Ognisty złoty miecz trolla
+4030500	Złoty miecz sztuki płomienia trolla
+4030600	Złoty miecz błyskawic trolla
+4030700	Święty złoty miecz trolla
+4030800	Magiczny złoty miecz trolla
+4030900	Złoty miecz zimna trolla
+4031000	Zatruty złoty miecz trolla
+4031100	Krwawy złoty miecz trolla
+4031200	Okultystyczny złoty miecz trolla
+4040000	Miecz dwuręczny
+4040100	Ciężki miecz dwuręczny
+4040200	Wymyślny miecz dwuręczny
+4040300	Miecz dwuręczny wysokiej jakości
+4040400	Ognisty miecz dwuręczny
+4040500	Miecz dwuręczny sztuki płomienia
+4040600	Miecz dwuręczny błyskawic
+4040700	Święty miecz dwuręczny
+4040800	Magiczny miecz dwuręczny
+4040900	Miecz dwuręczny zimna
+4041000	Zatruty miecz dwuręczny
+4041100	Krwawy miecz dwuręczny
+4041200	Okultystyczny miecz dwuręczny
+4050000	Wielkie miecze Gwiezdnej Plagi
+4060000	Królewski wielki miecz
+4070000	Wielki miecz zabójczyni bogów
+4080000	Wielki miecz ruin
+4100000	Wielki miecz Pozszywanego
+4110000	Miecz rycerza trolli
+4900000	[ERROR]
+4910000	[ERROR]
+5000000	Estok
+5000100	Ciężki estok
+5000200	Wymyślny estok
+5000300	Estok wysokiej jakości
+5000400	Ognisty estok
+5000500	Estok sztuki płomienia
+5000600	Estok błyskawic
+5000700	Święty estok
+5000800	Magiczny estok
+5000900	Estok zimna
+5001000	Zatruty estok
+5001100	Krwawy estok
+5001200	Okultystyczny estok
+5010000	Miecz rycerza czystej zgnilizny
+5010100	Ciężki miecz rycerza czystej zgnilizny
+5010200	Wymyślny miecz rycerza czystej zgnilizny
+5010300	Wysokiej jakości miecz rycerza czystej zgnilizny
+5010400	Ognisty miecz rycerza czystej zgnilizny
+5010500	Miecz sztuki płomienia rycerza czystej zgnilizny
+5010600	Miecz błyskawic rycerza czystej zgnilizny
+5010700	Święty miecz rycerza czystej zgnilizny
+5010800	Magiczny miecz rycerza czystej zgnilizny
+5010900	Miecz zimna rycerza czystej zgnilizny
+5011000	Zatruty miecz rycerza czystej zgnilizny
+5011100	Krwawy miecz rycerza czystej zgnilizny
+5011200	Okultystyczny miecz rycerza czystej zgnilizny
+5020000	Rapier
+5020100	Ciężki rapier
+5020200	Wymyślny rapier
+5020300	Rapier wysokiej jakości
+5020400	Ognisty rapier
+5020500	Rapier sztuki płomienia
+5020600	Rapier błyskawic
+5020700	Święty rapier
+5020800	Magiczny rapier
+5020900	Rapier zimna
+5021000	Zatruty rapier
+5021100	Krwawy rapier
+5021200	Okultystyczny rapier
+5030000	Rapier Rogiera
+5030100	Ciężki rapier Rogiera
+5030200	Wymyślny rapier Rogiera
+5030300	Wysokiej jakości rapier Rogiera
+5030400	Ognisty rapier Rogiera
+5030500	Rapier sztuki płomienia Rogiera
+5030600	Rapier błyskawic Rogiera
+5030700	Święty rapier Rogiera
+5030800	Magiczny rapier Rogiera
+5030900	Rapier zimna Rogiera
+5031000	Zatruty rapier Rogiera
+5031100	Krwawy rapier Rogiera
+5031200	Okultystyczny rapier Rogiera
+5040000	Rapier z ostrogami mrówek
+5040100	Ciężki rapier z ostrogami mrówek
+5040200	Wymyślny rapier z ostrogami mrówek
+5040300	Wysokiej jakości rapier z ostrogami mrówek
+5040400	Ognisty rapier z ostrogami mrówek
+5040500	Rapier sztuki płomienia z ostrogami mrówek
+5040600	Rapier błyskawic z ostrogami mrówek
+5040700	Święty rapier z ostrogami mrówek
+5040800	Magiczny rapier z ostrogami mrówek
+5040900	Rapier zimna z ostrogami mrówek
+5041000	Zatruty rapier z ostrogami mrówek
+5041100	Krwawy rapier z ostrogami mrówek
+5041200	Okultystyczny rapier z ostrogami mrówek
+5050000	Zamarznięta igła
+5060000	Estok szlachcica
+5060100	Ciężki estok szlachcica
+5060200	Wymyślny estok szlachcica
+5060300	Wysokiej jakości estok szlachcica
+5060400	Ognisty estok szlachcica
+5060500	Estok sztuki płomienia szlachcica
+5060600	Estok błyskawic szlachcica
+5060700	Święty estok szlachcica
+5060800	Magiczny estok szlachcica
+5060900	Estok zimna szlachcica
+5061000	Zatruty estok szlachcica
+5061100	Krwawy estok szlachcica
+5061200	Okultystyczny estok szlachcica
+6000000	Krwawa helisa
+6010000	Zszywacz boskiej skóry
+6010100	Ciężki zszywacz boskiej skóry
+6010200	Wymyślny zszywacz boskiej skóry
+6010300	Wysokiej jakości zszywacz boskiej skóry
+6010400	Ognisty zszywacz boskiej skóry
+6010500	Zszywacz boskiej skóry sztuki płomienia
+6010600	Zszywacz boskiej skóry błyskawic
+6010700	Święty zszywacz boskiej skóry
+6010800	Magiczny zszywacz boskiej skóry
+6010900	Zszywacz boskiej skóry zimna
+6011000	Zatruty zszywacz boskiej skóry
+6011100	Krwawy zszywacz boskiej skóry
+6011200	Okultystyczny zszywacz boskiej skóry
+6020000	Wielka szpada
+6020100	Ciężka wielka szpada
+6020200	Wymyślna wielka szpada
+6020300	Wielka szpada wysokiej jakości
+6020400	Ognista wielka szpada
+6020500	Wielka szpada sztuki płomienia
+6020600	Wielka szpada błyskawic
+6020700	Święta wielka szpada
+6020800	Magiczna wielka szpada
+6020900	Wielka szpada zimna
+6021000	Zatruta wielka szpada
+6021100	Krwawa wielka szpada
+6021200	Okultystyczna wielka szpada
+6040000	Wyszczerbione ostrze smoczego króla
+6900000	[ERROR]
+7000000	Tasak
+7000100	Ciężki tasak
+7000200	Wymyślny tasak
+7000300	Tasak wysokiej jakości
+7000400	Ognisty tasak
+7000500	Tasak sztuki płomienia
+7000600	Tasak błyskawic
+7000700	Święty tasak
+7000800	Magiczny tasak
+7000900	Tasak zimna
+7001000	Zatruty tasak
+7001100	Krwawy tasak
+7001200	Okultystyczny tasak
+7010000	Miecz człowieka-bestii
+7010100	Ciężki miecz człowieka-bestii
+7010200	Wymyślny miecz człowieka-bestii
+7010300	Wysokiej jakości miecz człowieka-bestii
+7010400	Ognisty miecz człowieka-bestii
+7010500	Miecz sztuki płomienia człowieka-bestii
+7010600	Miecz błyskawic człowieka-bestii
+7010700	Święty miecz człowieka-bestii
+7010800	Magiczny miecz człowieka-bestii
+7010900	Miecz zimna człowieka-bestii
+7011000	Zatruty miecz człowieka-bestii
+7011100	Krwawy miecz człowieka-bestii
+7011200	Okultystyczny miecz człowieka-bestii
+7020000	Szotel
+7020100	Ciężki szotel
+7020200	Wymyślny szotel
+7020300	Szotel wysokiej jakości
+7020400	Ognisty szotel
+7020500	Szotel sztuki płomienia
+7020600	Szotel błyskawic
+7020700	Święty szotel
+7020800	Magiczny szotel
+7020900	Szotel zimna
+7021000	Zatruty szotel
+7021100	Krwawy szotel
+7021200	Okultystyczny szotel
+7030000	Szamszir
+7030100	Ciężki szamszir
+7030200	Wymyślny szamszir
+7030300	Szamszir wysokiej jakości
+7030400	Ognisty szamszir
+7030500	Szamszir sztuki płomienia
+7030600	Szamszir błyskawic
+7030700	Święty szamszir
+7030800	Magiczny szamszir
+7030900	Szamszir zimna
+7031000	Zatruty szamszir
+7031100	Krwawy szamszir
+7031200	Okultystyczny szamszir
+7040000	Zakrzywiony miecz bandyty
+7040100	Ciężki zakrzywiony miecz bandyty
+7040200	Wymyślny zakrzywiony miecz bandyty
+7040300	Wysokiej jakości zakrzywiony miecz bandyty
+7040400	Ognisty zakrzywiony miecz bandyty
+7040500	Zakrzywiony miecz sztuki płomienia bandyty
+7040600	Zakrzywiony miecz błyskawic bandyty
+7040700	Święty zakrzywiony miecz bandyty
+7040800	Magiczny zakrzywiony miecz bandyty
+7040900	Zakrzywiony miecz zimna bandyty
+7041000	Zatruty zakrzywiony miecz bandyty
+7041100	Krwawy zakrzywiony miecz bandyty
+7041200	Okultystyczny zakrzywiony miecz bandyty
+7050000	Magmowe ostrze
+7060000	Dynamiczny zakrzywiony miecz
+7060100	Ciężki dynamiczny zakrzywiony miecz
+7060200	Wymyślny dynamiczny zakrzywiony miecz
+7060300	Wysokiej jakości dynamiczny zakrzywiony miecz
+7060400	Ognisty dynamiczny zakrzywiony miecz
+7060500	Dynamiczny zakrzywiony miecz sztuki płomienia
+7060600	Dynamiczny zakrzywiony miecz błyskawic
+7060700	Święty dynamiczny zakrzywiony miecz
+7060800	Magiczny dynamiczny zakrzywiony miecz
+7060900	Dynamiczny zakrzywiony miecz zimna
+7061000	Zatruty dynamiczny zakrzywiony miecz
+7061100	Krwawy dynamiczny zakrzywiony miecz
+7061200	Okultystyczny dynamiczny zakrzywiony miecz
+7070000	Skrzydło Astela
+7080000	Zakrzywiony miecz grabieżcy
+7080100	Ciężki zakrzywiony miecz grabieżcy
+7080200	Wymyślny zakrzywiony miecz grabieżcy
+7080300	Wysokiej jakości zakrzywiony miecz grabieżcy
+7080400	Ognisty zakrzywiony miecz grabieżcy
+7080500	Zakrzywiony miecz sztuki płomienia grabieżcy
+7080600	Zakrzywiony miecz błyskawic grabieżcy
+7080700	Święty zakrzywiony miecz grabieżcy
+7080800	Magiczny zakrzywiony miecz grabieżcy
+7080900	Zakrzywiony miecz zimna grabieżcy
+7081000	Zatruty zakrzywiony miecz grabieżcy
+7081100	Krwawy zakrzywiony miecz grabieżcy
+7081200	Okultystyczny zakrzywiony miecz grabieżcy
+7090000	Szybko pokryj broń, by ataki zadawały obrażenia od trucizny
+7090100	
+7090200	
+7090300	
+7090400	
+7090500	
+7090600	
+7090700	
+7090800	
+7090900	
+7091000	
+7091100	
+7091200	
+7100000	Szotel zaćmienia
+7110000	Miecz wężowego boga
+7110100	Ciężki miecz wężowego boga
+7110200	Wymyślny miecz wężowego boga
+7110300	Wysokiej jakości miecz wężowego boga
+7110400	Ognisty miecz wężowego boga
+7110500	Miecz sztuki płomienia wężowego boga
+7110600	Miecz błyskawic wężowego boga
+7110700	Święty miecz wężowego boga
+7110800	Magiczny miecz wężowego boga
+7110900	Miecz zimna wężowego boga
+7111000	Zatruty miecz wężowego boga
+7111100	Krwawy miecz wężowego boga
+7111200	Okultystyczny miecz wężowego boga
+7120000	Ostrze modliszki
+7120100	Ciężkie ostrze modliszki
+7120200	Wymyślne ostrze modliszki
+7120300	Wysokiej jakości ostrze modliszki
+7120400	Ogniste ostrze modliszki
+7120500	Ostrze sztuki płomienia modliszki
+7120600	Ostrze błyskawic modliszki
+7120700	Święte ostrze modliszki
+7120800	Magiczne ostrze modliszki
+7120900	Ostrze zimna modliszki
+7121000	Zatrute ostrze modliszki
+7121100	Krwawe ostrze modliszki
+7121200	Okultystyczne ostrze modliszki
+7140000	Bułat
+7140100	Ciężki bułat
+7140200	Wymyślny bułat
+7140300	Bułat wysokiej jakości
+7140400	Ognisty bułat
+7140500	Bułat sztuki płomienia
+7140600	Bułat błyskawic
+7140700	Święty bułat
+7140800	Magiczny bułat
+7140900	Bułat zimna
+7141000	Zatruty bułat
+7141100	Krwawy bułat
+7141200	Okultystyczny bułat
+7150000	Grossmesser
+7150100	Ciężki grossmesser
+7150200	Wymyślny grossmesser
+7150300	Wysokiej jakości grossmesser
+7150400	Ognisty grossmesser
+7150500	Grossmesser sztuki płomienia
+7150600	Grossmesser błyskawic
+7150700	Święty grossmesser
+7150800	Magiczny grossmesser
+7150900	Grossmesser zimna
+7151000	Zatruty grossmesser
+7151100	Krwawy grossmesser
+7151200	Okultystyczny grossmesser
+8010000	Wielki miecz onyksowego władcy
+8020000	Zrzucacz
+8020100	Ciężki zrzucacz
+8020200	Wymyślny zrzucacz
+8020300	Wysokiej jakości zrzucacz
+8020400	Ognisty zrzucacz
+8020500	Zrzucacz sztuki płomienia
+8020600	Zrzucacz błyskawic
+8020700	Święty zrzucacz
+8020800	Magiczny zrzucacz
+8020900	Zrzucacz zimna
+8021000	Zatruty zrzucacz
+8021100	Krwawy zrzucacz
+8021200	Okultystyczny zrzucacz
+8030000	Kieł wasalnego rycerza
+8030100	Ciężki kieł wasalnego rycerza
+8030200	Wymyślny kieł wasalnego rycerza
+8030300	Wysokiej jakości kieł wasalnego rycerza
+8030400	Ognisty kieł wasalnego rycerza
+8030500	Kieł sztuki płomienia wasalnego rycerza
+8030600	Kieł błyskawic wasalnego rycerza
+8030700	Święty kieł wasalnego rycerza
+8030800	Magiczny kieł wasalnego rycerza
+8030900	Kieł zimna wasalnego rycerza
+8031000	Zatruty kieł wasalnego rycerza
+8031100	Krwawy kieł wasalnego rycerza
+8031200	Okultystyczny kieł wasalnego rycerza
+8040000	Łuskowy miecz magmowego żmija
+8050000	Zakrzywiony miecz z Zamor
+8060000	Tasak Omenów
+8060100	Ciężki tasak Omenów
+8060200	Wymyślny tasak Omenów
+8060300	Wysokiej jakości tasak Omenów
+8060400	Ognisty tasak Omenów
+8060500	Tasak sztuki płomienia Omenów
+8060600	Tasak błyskawic Omenów
+8060700	Święty tasak Omenów
+8060800	Magiczny tasak Omenów
+8060900	Tasak zimna Omenów
+8061000	Zatruty tasak Omenów
+8061100	Krwawy tasak Omenów
+8061200	Okultystyczny tasak Omenów
+8070000	Płomienne ostrze mnicha
+8070100	Ciężkie płomienne ostrze mnicha
+8070200	Wymyślne płomienne ostrze mnicha
+8070300	Wysokiej jakości płomienne ostrze mnicha
+8070400	Ogniste płomienne ostrze mnicha
+8070500	Płomienne ostrze mnicha sztuki płomienia
+8070600	Płomienne ostrze błyskawic mnicha
+8070700	Święte płomienne ostrze mnicha
+8070800	Magiczne płomienne ostrze mnicha
+8070900	Płomienne ostrze zimna mnicha
+8071000	Zatrute płomienne ostrze mnicha
+8071100	Krwawe płomienne ostrze mnicha
+8071200	Okultystyczne płomienne ostrze mnicha
+8080000	Tasak człowieka-bestii
+8080100	Ciężki tasak człowieka-bestii
+8080200	Wymyślny tasak człowieka-bestii
+8080300	Wysokiej jakości tasak człowieka-bestii
+8080400	Ognisty tasak człowieka-bestii
+8080500	Tasak sztuki płomienia człowieka-bestii
+8080600	Tasak błyskawic człowieka-bestii
+8080700	Święty tasak człowieka-bestii
+8080800	Magiczny tasak człowieka-bestii
+8080900	Tasak zimna człowieka-bestii
+8081000	Zatruty tasak człowieka-bestii
+8081100	Krwawy tasak człowieka-bestii
+8081200	Okultystyczny tasak człowieka-bestii
+8100000	Przeklęty miecz Morgotta
+8110000	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110100	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110200	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110300	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110400	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110500	Okaż lekceważenie
+8110600	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110700	Desperacka modlitwa
+8110800	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8110900	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8111000	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8111100	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8111200	Duża katana używana przez olbrzymich mnichów ognia.\r\nJej charakterystyczne ostrze\r\nnosi znak tańczących płomieni.
+8900000	[ERROR]
+9000000	Uchigatana
+9000100	Ciężka uchigatana
+9000200	Wymyślna uchigatana
+9000300	Uchigatana wysokiej jakości
+9000400	Ognista uchigatana
+9000500	Uchigatana sztuki płomienia
+9000600	Uchigatana błyskawic
+9000700	Święta uchigatana
+9000800	Magiczna uchigatana
+9000900	Uchigatana zimna
+9001000	Zatruta uchigatana
+9001100	Krwawa uchigatana
+9001200	Okultystyczna uchigatana
+9010000	Nagakiba
+9010100	Ciężka nagakiba
+9010200	Wymyślna nagakiba
+9010300	Wysokiej jakości nagakiba
+9010400	Ognista nagakiba
+9010500	Nagakiba sztuki płomienia
+9010600	Nagakiba błyskawic
+9010700	Święta nagakiba
+9010800	Magiczna nagakiba
+9010900	Nagakiba zimna
+9011000	Zatruta nagakiba
+9011100	Krwawa nagakiba
+9011200	Okultystyczna nagakiba
+9020000	Dłoń Malenii
+9030000	Ostrze z rudy meteorytu
+9030100	Ciężkie ostrze z rudy meteorytu
+9030200	Wymyślne ostrze z rudy meteorytu
+9030300	Wysokiej jakości ostrze z rudy meteorytu
+9030400	Ogniste ostrze z rudy meteorytu
+9030500	Ostrze sztuki płomienia z rudy meteorytu
+9030600	Ostrze błyskawic z rudy meteorytu
+9030700	Święte ostrze z rudy meteorytu
+9030800	Magiczne ostrze z rudy meteorytu
+9030900	Ostrze zimna z rudy meteorytu
+9031000	Zatrute ostrze z rudy meteorytu
+9031100	Krwawe ostrze z rudy meteorytu
+9031200	Okultystyczne ostrze z rudy meteorytu
+9040000	Rzeki Krwi
+9060000	Księżycowy woal
+9070000	Ostrze ze smoczych łusek
+9080000	Ostrze z wężowej kości
+9080100	[ERROR]Ciężkie ostrze z wężowej kości
+9080200	[ERROR]Wymyślne ostrze z wężowej kości
+9080300	[ERROR]Wysokiej jakości ostrze z wężowej kości
+9080400	[ERROR]Ogniste ostrze z wężowej kości
+9080500	[ERROR]Ostrze sztuki płomienia z wężowej kości
+9080600	[ERROR]Ostrze błyskawic z wężowej kości
+9080700	[ERROR]Święte ostrze z wężowej kości
+9080800	[ERROR]Magiczne ostrze z wężowej kości
+9080900	[ERROR]Ostrze zimna z wężowej kości
+9081000	[ERROR]Zatrute ostrze z wężowej kości
+9081100	[ERROR]Krwawe ostrze z wężowej kości
+9081200	[ERROR]Okultystyczne ostrze z wężowej kości
+9900000	[ERROR]
+9910000	[ERROR]
+9911000	[ERROR]
+9920000	[ERROR]
+9930000	[ERROR]
+10000000	Podwójne ostrze
+10000100	Ciężkie podwójne ostrze
+10000200	Wymyślne podwójne ostrze
+10000300	Podwójne ostrze wysokiej jakości
+10000400	Ogniste podwójne ostrze
+10000500	Podwójne ostrze sztuki płomienia
+10000600	Podwójne ostrze błyskawic
+10000700	Święte podwójne ostrze
+10000800	Magiczne podwójne ostrze
+10000900	Podwójne ostrze zimna
+10001000	Zatrute podwójne ostrze
+10001100	Krwawe podwójne ostrze
+10001200	Okultystyczne podwójne ostrze
+10010000	Obieracz boskiej skóry
+10010100	Ciężki obieracz boskiej skóry
+10010200	Wymyślny obieracz boskiej skóry
+10010300	Wysokiej jakości obieracz boskiej skóry
+10010400	Ognisty obieracz boskiej skóry
+10010500	Obieracz boskiej skóry sztuki płomienia
+10010600	Obieracz boskiej skóry błyskawic
+10010700	Święty obieracz boskiej skóry
+10010800	Magiczny obieracz boskiej skóry
+10010900	Obieracz boskiej skóry zimna
+10011000	Zatruty obieracz boskiej skóry
+10011100	Krwawy obieracz boskiej skóry
+10011200	Okultystyczny obieracz boskiej skóry
+10030000	Bliźniacze miecze rycerza
+10030100	Ciężkie bliźniacze miecze rycerza
+10030200	Wymyślne bliźniacze miecze rycerza
+10030300	Wysokiej jakości bliźniacze miecze rycerza
+10030400	Ogniste bliźniacze miecze rycerza
+10030500	Bliźniacze miecze sztuki płomienia rycerza
+10030600	Bliźniacze miecze błyskawic rycerza
+10030700	Święte bliźniacze miecze rycerza
+10030800	Magiczne bliźniacze miecze rycerza
+10030900	Bliźniacze miecze zimna rycerza
+10031000	Zatrute bliźniacze miecze rycerza
+10031100	Krwawe bliźniacze miecze rycerza
+10031200	Okultystyczne bliźniacze miecze rycerza
+10050000	Drzewcowe ostrze Eleonory
+10060000	Podwójne ostrze przedstawiające bliźnięta Miquellę i Malenię.\r\nMiquellę i jego siostrę połączyło\r\nnierozerwalne przeznaczenie.\r\n\r\nNa klingach wyryto runy zarówno\r\nObfitości, jak i Rozkładu.
+10070000	Przyzywanie duchów
+10080000	Podwójne ostrze gargulca
+10080100	Ciężkie podwójne ostrze gargulca
+10080200	Wymyślne podwójne ostrze gargulca
+10080300	Wysokiej jakości podwójne ostrze gargulca
+10080400	Ogniste podwójne ostrze gargulca
+10080500	Podwójne ostrze sztuki płomienia gargulca
+10080600	Podwójne ostrze błyskawic gargulca
+10080700	Święte podwójne ostrze gargulca
+10080800	Magiczne podwójne ostrze gargulca
+10080900	Podwójne ostrze zimna gargulca
+10081000	Zatrute podwójne ostrze gargulca
+10081100	Krwawe podwójne ostrze gargulca
+10081200	Okultystyczne podwójne ostrze gargulca
+10090000	Czarne ostrza gargulca
+10090100	Ciężkie czarne ostrza gargulca
+10090200	Wymyślne czarne ostrza gargulca
+10090300	Wysokiej jakości czarne ostrza gargulca
+10090400	Ogniste czarne ostrza gargulca
+10090500	Czarne ostrza sztuki płomienia gargulca
+10090600	Czarne ostrza błyskawic gargulca
+10090700	Święte czarne ostrza gargulca
+10090800	Magiczne czarne ostrza gargulca
+10090900	Czarne ostrza zimna gargulca
+10091000	Zatrute czarne ostrza gargulca
+10091100	Krwawe czarne ostrza gargulca
+10091200	Okultystyczne czarne ostrza gargulca
+11000000	Buława
+11000100	Ciężka buława
+11000200	Wymyślna buława
+11000300	Buława wysokiej jakości
+11000400	Ognista buława
+11000500	Buława sztuki płomienia
+11000600	Buława błyskawic
+11000700	Święta buława
+11000800	Magiczna buława
+11000900	Buława zimna
+11001000	Zatruta buława
+11001100	Krwawa buława
+11001200	Okultystyczna buława
+11010000	Pałka
+11010100	Ciężka pałka
+11010200	Wymyślna pałka
+11010300	Pałka wysokiej jakości
+11010400	Ognista pałka
+11010500	Pałka sztuki płomienia
+11010600	Pałka błyskawic
+11010700	Święta pałka
+11010800	Magiczna pałka
+11010900	Pałka zimna
+11011000	Zatruta pałka
+11011100	Krwawa pałka
+11011200	Okultystyczna pałka
+11030000	Zakrzywiona pałka
+11030100	Ciężka zakrzywiona pałka
+11030200	Wymyślna zakrzywiona pałka
+11030300	Zakrzywiona pałka wysokiej jakości
+11030400	Ognista zakrzywiona pałka
+11030500	Zakrzywiona pałka sztuki płomienia
+11030600	Zakrzywiona pałka błyskawic
+11030700	Święta zakrzywiona pałka
+11030800	Magiczna zakrzywiona pałka
+11030900	Zakrzywiona pałka zimna
+11031000	Zatruta zakrzywiona pałka
+11031100	Krwawa zakrzywiona pałka
+11031200	Okultystyczna zakrzywiona pałka
+11040000	Pika wojenna
+11040100	Ciężka pika wojenna
+11040200	Wymyślna pika wojenna
+11040300	Pika wojenna wysokiej jakości
+11040400	Ognista pika wojenna
+11040500	Pika wojenna sztuki płomienia
+11040600	Pika wojenna błyskawic
+11040700	Święta pika wojenna
+11040800	Magiczna pika wojenna
+11040900	Pika wojenna zimna
+11041000	Zatruta pika wojenna
+11041100	Krwawa pika wojenna
+11041200	Okultystyczna pika wojenna
+11050000	Gwiazda zaranna
+11050100	Ciężka gwiazda zaranna
+11050200	Wymyślna gwiazda zaranna
+11050300	Gwiazda zaranna wysokiej jakości
+11050400	Ognista gwiazda zaranna
+11050500	Gwiazda zaranna sztuki płomienia
+11050600	Gwiazda zaranna błyskawic
+11050700	Święta gwiazda zaranna
+11050800	Magiczna gwiazda zaranna
+11050900	Gwiazda zaranna zimna
+11051000	Zatruta gwiazda zaranna
+11051100	Krwawa gwiazda zaranna
+11051200	Okultystyczna gwiazda zaranna
+11060000	Bukiet Varrégo
+11060100	Ciężki bukiet Varrégo
+11060200	Stalowa buława przypominająca bukiet róż.\r\n\r\nBroń ta została misternie wykonana,\r\na jej kwiaty mają krwistoczerwoną barwę,\r\nstąd też jej miano – Buława Czerwonych Róż.
+11060300	Stalowa buława przypominająca bukiet róż.\r\n\r\nBroń ta została misternie wykonana,\r\na jej kwiaty mają krwistoczerwoną barwę,\r\nstąd też jej miano – Buława Czerwonych Róż.
+11060400	Stalowa buława przypominająca bukiet róż.\r\n\r\nBroń ta została misternie wykonana,\r\na jej kwiaty mają krwistoczerwoną barwę,\r\nstąd też jej miano – Buława Czerwonych Róż.
+11060500	Stalowa buława przypominająca bukiet róż.\r\n\r\nBroń ta została misternie wykonana,\r\na jej kwiaty mają krwistoczerwoną barwę,\r\nstąd też jej miano – Buława Czerwonych Róż.
+11060600	Pamiątka minionych badań nad życiem wiecznym.\r\nTen pusty garnek w jakiś sposób naprawia się, gdy zostanie rozbity.\r\n\r\nPojemnik wymagany do tworzenia przedmiotów do rzucania zapieczętowanych w garnkach.\r\n\r\nGdy garnek zostanie rzucony, zamknięte w nim materiały i mistycyzm ujawnią swoją moc.
+11060700	Pojemnik wymagany do tworzenia garnków do rzucania
+11060800	Butelka na mieszanki proszków do magii perfum
+11060900	Stalowa buława przypominająca bukiet róż.\r\n\r\nBroń ta została misternie wykonana,\r\na jej kwiaty mają krwistoczerwoną barwę,\r\nstąd też jej miano – Buława Czerwonych Róż.
+11061000	Bezwartościowy śmieć
+11061100	Złote nasiono, znalezione u podstawy iluzorycznego drzewa.\r\n\r\nZwiększa liczbę użyć świętej butelki.\r\n(Można użyć po odpoczynku w miejscu łaski).\r\n\r\nGdy roztrzaskano Eldeński Krąg, nasiona te spadły ze Złotego Drzewa i zostały rozsiane po różnych krainach, jakby życie wiedziało, że nadszedł jego koniec.
+11061200	Błogosławieństwo Złotego Drzewa, czczonego w kościołach wszystkich ziem, lecz jest to jedynie jego namiastka.\r\n\r\nZwiększa lecznicze efekty świętej butelki.\r\n(Można użyć po odpoczynku w miejscu łaski).\r\n\r\nW czasach Złotego Drzewa tych łez używano do szerzenia wiary, gdyż niegdyś były prawdziwym błogosławieństwem.
+11070000	Kolczasta pałka
+11070100	Ciężka kolczasta pałka
+11070200	Wymyślna kolczasta pałka
+11070300	Kolczasta pałka wysokiej jakości
+11070400	Ognista kolczasta pałka
+11070500	Kolczasta pałka sztuki płomienia
+11070600	Kolczasta pałka błyskawic
+11070700	Święta kolczasta pałka
+11070800	Magiczna kolczasta pałka
+11070900	Kolczasta pałka zimna
+11071000	Zatruta kolczasta pałka
+11071100	Krwawa kolczasta pałka
+11071200	Okultystyczna kolczasta pałka
+11080000	Młot
+11080100	Ciężki młot
+11080200	Wymyślny młot
+11080300	Młot wysokiej jakości
+11080400	Ognisty młot
+11080500	Młot sztuki ognia
+11080600	Młot błyskawic
+11080700	Święty młot
+11080800	Magiczny młot
+11080900	Młot zimna
+11081000	Zatruty młot
+11081100	Krwawy młot
+11081200	Okultystyczny młot
+11090000	Płomienna buława mnicha
+11090100	Ciężka płomienna buława mnicha
+11090200	Wymyślna płomienna buława mnicha
+11090300	Wysokiej jakości płomienna buława mnicha
+11090400	Ognista płomienna buława mnicha
+11090500	Płomienna buława sztuki płomienia mnicha
+11090600	Płomienna buława błyskawic mnicha
+11090700	Święta płomienna buława mnicha
+11090800	Magiczna płomienna buława mnicha
+11090900	Płomienna buława zimna mnicha
+11091000	Zatruta płomienna buława mnicha
+11091100	Krwawa płomienna buława mnicha
+11091200	Okultystyczna płomienna buława mnicha
+11100000	Róg wysłannika
+11110000	Berło Wszechwiedzącego
+11120000	Dynamiczna buława Noxów
+11130000	Palec z pierścieniami
+11140000	Kamienna pałka
+11140100	Ciężka kamienna pałka
+11140200	Wymyślna kamienna pałka
+11140300	Kamienna pałka wysokiej jakości
+11140400	Ognista kamienna pałka
+11140500	Kamienna pałka sztuki płomienia
+11140600	Kamienna pałka błyskawic
+11140700	Święta kamienna pałka
+11140800	Magiczna kamienna pałka
+11140900	Kamienna pałka zimna
+11141000	Zatruta kamienna pałka
+11141100	Krwawa kamienna pałka
+11141200	Okultystyczna kamienna pałka
+11150000	Młot Mariki
+11160000	Eliksir zwiększa siłę ataków ładowanych
+11160100	Eliksir zwiększa skuteczność przewrotów
+11160200	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru wywołuje wybuch.\r\n\r\nNiebezpieczna forma kryształowej łzy, która\r\nnie posiada żadnych właściwości leczniczych.\r\nNiektórzy mówią, że trzeba się o tym przekonać\r\nna własnej skórze – w końcu wiara czasem\r\nprowadzi do bolesnych przeżyć.
+11160300	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru\r\nwywołuje wybuch.\r\n\r\nNiebezpieczna forma kryształowej łzy,\r\nktóra nie posiada żadnych właściwości leczniczych.\r\nNiektórzy mówią, że trzeba się o tym przekonać\r\nna własnej skórze – w końcu wiara\r\nczasem prowadzi do bolesnych przeżyć.
+11160400	Kryształowa łza o\r\ntwardej powierzchni.\r\n\r\nPo wmieszaniu do eliksiru tymczasowo zmniejsza\r\nwytrącanie z równowagi przez otrzymywane ciosy.
+11160500	Eliksir zapobiega chwilowo utracie run po śmierci
+11160600	Wyjątkowo rzadka forma kryształowej łzy, w której\r\nciemnoszkarłatny wzór otacza\r\nkapsuła o niezwykle cienkiej powłoce.\r\n\r\nPo wmieszaniu do eliksiru\r\nzamienia otrzymywane obrażenia w PŻ.\r\n\r\nEfekt może jednak wystąpić tylko raz\r\ni niemożliwa jest zamiana na PŻ obrażeń fizycznych.
+11160700	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru tymczasowo\r\nzwiększa siłę.\r\n\r\nSęki o wyglądzie odgałęzień\r\nsą dowodem na nagły i gwałtowny wzrost.
+11160800	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru tymczasowo\r\nzwiększa zręczność.\r\n\r\nSęki o wyglądzie odgałęzień\r\nsą dowodem na nagły i gwałtowny wzrost.
+11160900	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru tymczasowo\r\nzwiększa inteligencję.\r\n\r\nSęki o wyglądzie odgałęzień\r\nsą dowodem na nagły i gwałtowny wzrost.
+11161000	Wyjątkowa krystalizacja uformowana wewnątrz\r\nłzy życia na przestrzeni wielu miesięcy.\r\n\r\nPo wmieszaniu do eliksiru tymczasowo\r\nzwiększa wiarę.\r\n\r\nSęki o wyglądzie odgałęzień\r\nsą dowodem na nagły i gwałtowny wzrost.
+11161100	Eliksir pozwala rzucić raz czar bez zużycia PS
+11161200	Eliksir ułatwia chwilowo wytrącenie z równowagi
+11170000	[ERROR]
+12000000	Duży kij
+12000100	Ciężki duży kij
+12000200	Wymyślny duży kij
+12000300	Duży kij wysokiej jakości
+12000400	Ognisty duży kij
+12000500	Duży kij sztuki płomienia
+12000600	Duży kij błyskawic
+12000700	Święty duży kij
+12000800	Magiczny duży kij
+12000900	Duży kij zimna
+12001000	Zatruty duży kij
+12001100	Krwawy duży kij
+12001200	Okultystyczny duży kij
+12010000	Młot wielkiego rogu
+12010100	Ciężki młot wielkiego rogu
+12010200	Wymyślny młot wielkiego rogu
+12010300	Młot wielkiego rogu wysokiej jakości
+12010400	Ognisty młot wielkiego rogu
+12010500	Młot sztuki płomienia wielkiego rogu
+12010600	Młot błyskawic wielkiego rogu
+12010700	Święty młot wielkiego rogu
+12010800	Magiczny młot wielkiego rogu
+12010900	Młot zimna wielkiego rogu
+12011000	Zatruty młot wielkiego rogu
+12011100	Krwawy młot wielkiego rogu
+12011200	Okultystyczny młot wielkiego rogu
+12020000	Młot wojenny
+12020100	Ciężki młot wojenny
+12020200	Wymyślny młot wojenny
+12020300	Młot wojenny wysokiej jakości
+12020400	Ognisty młot wojenny
+12020500	Młot wojenny sztuki płomienia
+12020600	Młot wojenny błyskawic
+12020700	Święty młot wojenny
+12020800	Magiczny młot wojenny
+12020900	Młot wojenny zimna
+12021000	Zatruty młot wojenny
+12021100	Krwawy młot wojenny
+12021200	Okultystyczny młot wojenny
+12060000	Wielka buława
+12060100	Ciężka wielka buława
+12060200	Wymyślna wielka buława
+12060300	Wielka buława wysokiej jakości
+12060400	Ognista wielka buława
+12060500	Wielka buława sztuki płomienia
+12060600	Wielka buława błyskawic
+12060700	Święta wielka buława
+12060800	Magiczna wielka buława
+12060900	Wielka buława zimna
+12061000	Zatruta wielka buława
+12061100	Krwawa wielka buława
+12061200	Okultystyczna wielka buława
+12080000	Zakrzywiony wielki kij
+12080100	Ciężki zakrzywiony wielki kij
+12080200	Wymyślny zakrzywiony wielki kij
+12080300	Zakrzywiony wielki kij wysokiej jakości
+12080400	Ognisty zakrzywiony wielki kij
+12080500	Zakrzywiony wielki kij sztuki płomienia
+12080600	Zakrzywiony wielki kij błyskawic
+12080700	Święty zakrzywiony wielki kij
+12080800	Magiczny zakrzywiony wielki kij
+12080900	Zakrzywiony wielki kij zimna
+12081000	Zatruty zakrzywiony wielki kij
+12081100	Krwawy zakrzywiony wielki kij
+12081200	Okultystyczny zakrzywiony wielki kij
+12130000	Czaszka celebranta
+12130100	Ciężka czaszka celebranta
+12130200	Wymyślna czaszka celebranta
+12130300	Wysokiej jakości czaszka celebranta
+12130400	Ognista czaszka celebranta
+12130500	Czaszka sztuki płomienia celebranta
+12130600	Czaszka błyskawic celebranta
+12130700	Święta czaszka celebranta
+12130800	Magiczna czaszka celebranta
+12130900	Czaszka zimna celebranta
+12131000	Zatruta czaszka celebranta
+12131100	Krwawa czaszka celebranta
+12131200	Okultystyczna czaszka celebranta
+12140000	Kilof
+12140100	Ciężki kilof
+12140200	Wymyślny kilof
+12140300	Kilof wysokiej jakości
+12140400	Ognisty kilof
+12140500	Kilof sztuki płomienia
+12140600	Kilof błyskawic
+12140700	Święty kilof
+12140800	Magiczny kilof
+12140900	Kilof zimna
+12141000	Zatruty kilof
+12141100	Krwawy kilof
+12141200	Okultystyczny kilof
+12150000	Wielki młot szponów bestii
+12160000	Długi róg wysłannika
+12170000	Czaszkowy świecznik
+12180000	Wielkie gwiazdy
+12180100	Ciężkie wielkie gwiazdy
+12180200	Wymyślne wielkie gwiazdy
+12180300	Wielkie gwiazdy wysokiej jakości
+12180400	Ogniste wielkie gwiazdy
+12180500	Wielkie gwiazdy sztuki płomienia
+12180600	Wielkie gwiazdy błyskawic
+12180700	Święte wielkie gwiazdy
+12180800	Magiczne wielkie gwiazdy
+12180900	Wielkie gwiazdy zimna
+12181000	Zatrute wielkie gwiazdy
+12181100	Krwawe wielkie gwiazdy
+12181200	Okultystyczne wielkie gwiazdy
+12190000	Młot murarski
+12190100	Ciężki młot murarski
+12190200	Wymyślny młot murarski
+12190300	Młot murarski wysokiej jakości
+12190400	Ognisty młot murarski
+12190500	Młot murarski sztuki płomienia
+12190600	Młot murarski błyskawic
+12190700	Święty młot murarski
+12190800	Magiczny młot murarski
+12190900	Młot murarski zimna
+12191000	Zatruty młot murarski
+12191100	Krwawy młot murarski
+12191200	Okultystyczny młot murarski
+12200000	Berło pożeracza
+12210000	Zgniły młot wojenny
+12210100	Ciężki zgniły młot wojenny
+12210200	Wymyślny zgniły młot wojenny
+12210300	Zgniły młot wojenny wysokiej jakości
+12210400	Ognisty zgniły młot wojenny
+12210500	Zgniły młot wojenny sztuki płomienia
+12210600	Zgniły młot wojenny błyskawic
+12210700	Święty zgniły młot wojenny
+12210800	Magiczny zgniły młot wojenny
+12210900	Zgniły młot wojenny zimna
+12211000	Zatruty zgniły młot wojenny
+12211100	Krwawy zgniły młot wojenny
+12211200	Okultystyczny zgniły młot wojenny
+12900000	[ERROR]
+12910000	[ERROR]
+13000000	Korbacz Nocnego Jeźdźca 
+13000100	Ciężki korbacz Nocnego Jeźdźca 
+13000200	Wymyślny korbacz Nocnego Jeźdźca 
+13000300	Wysokiej jakości korbacz Nocnego Jeźdźca
+13000400	Ognisty korbacz Nocnego Jeźdźca 
+13000500	Korbacz sztuki płomienia Nocnego Jeźdźca 
+13000600	Korbacz błyskawic Nocnego Jeźdźca 
+13000700	Święty korbacz Nocnego Jeźdźca 
+13000800	Magiczny korbacz Nocnego Jeźdźca 
+13000900	Korbacz zimna Nocnego Jeźdźca 
+13001000	Zatruty korbacz Nocnego Jeźdźca 
+13001100	Krwawy korbacz Nocnego Jeźdźca 
+13001200	Okultystyczny korbacz Nocnego Jeźdźca 
+13010000	Korbacz
+13010100	Ciężki korbacz
+13010200	Wymyślny korbacz
+13010300	Korbacz wysokiej jakości
+13010400	Ognisty korbacz
+13010500	Korbacz sztuki płomienia
+13010600	Korbacz błyskawic
+13010700	Święty korbacz
+13010800	Magiczny korbacz
+13010900	Korbacz zimna
+13011000	Zatruty korbacz
+13011100	Krwawy korbacz
+13011200	Okultystyczny korbacz
+13020000	Głowy klanu
+13030000	Gwiazdy bękarta
+13040000	Cep bojowy
+13040100	Ciężki cep bojowy
+13040200	Wymyślny cep bojowy
+13040300	Cep bojowy wysokiej jakości
+13040400	Ognisty cep bojowy
+13040500	Cep bojowy sztuki płomienia 
+13040600	Cep bojowy błyskawic
+13040700	Święty cep bojowy
+13040800	Magiczny cep bojowy
+13040900	Cep bojowy zimna
+13041000	Zatruty cep bojowy
+13041100	Krwawy cep bojowy
+13041200	Okultystyczny cep bojowy
+14000000	Topór wojenny
+14000100	Ciężki topór wojenny
+14000200	Wymyślny topór wojenny
+14000300	Topór wojenny wysokiej jakości
+14000400	Ognisty topór wojenny
+14000500	Topór wojenny sztuki płomienia
+14000600	Topór wojenny błyskawic
+14000700	Święty topór wojenny
+14000800	Magiczny topór wojenny
+14000900	Topór wojenny zimna
+14001000	Zatruty topór wojenny
+14001100	Krwawy topór wojenny
+14001200	Okultystyczny topór wojenny
+14010000	Rozwidlony topór
+14010100	Ciężki rozwidlony topór
+14010200	Wymyślny rozwidlony topór
+14010300	Rozwidlony topór wysokiej jakości
+14010400	Ognisty rozwidlony topór
+14010500	Rozwidlony topór sztuki płomienia
+14010600	Rozwidlony topór błyskawic
+14010700	Święty rozwidlony topór
+14010800	Magiczny rozwidlony topór
+14010900	Rozwidlony topór zimna
+14011000	Zatruty rozwidlony topór
+14011100	Krwawy rozwidlony topór
+14011200	Okultystyczny rozwidlony topór
+14020000	Topór ręczny
+14020100	Ciężki topór ręczny
+14020200	Wymyślny topór ręczny
+14020300	Topór ręczny wysokiej jakości
+14020400	Ognisty topór ręczny
+14020500	Topór ręczny sztuki płomienia
+14020600	Topór ręczny błyskawic
+14020700	Święty topór ręczny
+14020800	Magiczny topór ręczny
+14020900	Topór ręczny zimna
+14021000	Zatruty topór ręczny
+14021100	Krwawy topór ręczny
+14021200	Okultystyczny topór ręczny
+14030000	Topór z kości żuchwy
+14030100	Ciężki topór z kości żuchwy
+14030200	Wymyślny topór z kości żuchwy
+14030300	Wysokiej jakości topór z kości żuchwy
+14030400	Ognisty topór z kości żuchwy
+14030500	Topór sztuki płomienia z kości żuchwy
+14030600	Topór błyskawic z kości żuchwy
+14030700	Święty topór z kości żuchwy
+14030800	Magiczny topór z kości żuchwy
+14030900	Topór zimna z kości żuchwy
+14031000	Zatruty topór z kości żuchwy
+14031100	Krwawy topór z kości żuchwy
+14031200	Okultystyczny topór z kości żuchwy
+14040000	Żelazny tasak
+14040100	Ciężki żelazny tasak
+14040200	Wymyślny żelazny tasak
+14040300	Żelazny tasak wysokiej jakości
+14040400	Ognisty żelazny tasak
+14040500	Żelazny tasak sztuki płomienia
+14040600	Żelazny tasak błyskawic
+14040700	Święty żelazny tasak
+14040800	Magiczny żelazny tasak
+14040900	Żelazny tasak zimna
+14041000	Zatruty żelazny tasak
+14041100	Krwawy żelazny tasak
+14041200	Okultystyczny żelazny tasak
+14050000	Falowane ostrze
+14050100	Ciężkie falowane ostrze
+14050200	Wymyślne falowane ostrze
+14050300	Falowane ostrze wysokiej jakości
+14050400	Ogniste falowane ostrze
+14050500	Falowane ostrze sztuki płomienia
+14050600	Falowane ostrze błyskawic
+14050700	Święte falowane ostrze
+14050800	Magiczne falowane ostrze
+14050900	Falowane ostrze zimna
+14051000	Zatrute falowane ostrze
+14051100	Krwawe falowane ostrze
+14051200	Okultystyczne falowane ostrze
+14060000	Tasak celebranta
+14060100	Ciężki tasak celebranta
+14060200	Wymyślny tasak celebranta
+14060300	Wysokiej jakości tasak celebranta
+14060400	Ognisty tasak celebranta
+14060500	Tasak sztuki płomienia celebranta
+14060600	Tasak błyskawic celebranta
+14060700	Święty tasak celebranta
+14060800	Magiczny tasak celebranta
+14060900	Tasak zimna celebranta
+14061000	Zatruty tasak celebranta
+14061100	Krwawy tasak celebranta
+14061200	Okultystyczny tasak celebranta
+14080000	Mroźny topór
+14100000	Topór wyżynny
+14100100	Ciężki topór wyżynny
+14100200	Wymyślny topór wyżynny
+14100300	Topór wyżynny wysokiej jakości
+14100400	Ognisty topór wyżynny
+14100500	Topór wyżynny sztuki płomienia
+14100600	Topór wyżynny błyskawic
+14100700	Święty topór wyżynny
+14100800	Magiczny topór wyżynny
+14100900	Topór wyżynny zimna
+14101000	Zatruty topór wyżynny
+14101100	Krwawy topór wyżynny
+14101200	Okultystyczny topór wyżynny
+14110000	Topór ofiarny
+14110100	Ciężki topór ofiarny
+14110200	Wymyślny topór ofiarny
+14110300	Topór ofiarny wysokiej jakości
+14110400	Ognisty topór ofiarny
+14110500	Topór ofiarny sztuki płomienia
+14110600	Topór ofiarny błyskawic
+14110700	Święty topór ofiarny
+14110800	Magiczny topór ofiarny
+14110900	Topór ofiarny zimna
+14111000	Zatruty topór ofiarny
+14111100	Krwawy topór ofiarny
+14111200	Okultystyczny topór ofiarny
+14120000	Topór Rosusa
+14130000	Narzędzie wykorzystywane przez członków karyjskiej\nrodziny królewskiej do stawiania horoskopów.\nJeden element został usunięty i skradziony.\n\nPozwala widzieć odległe rzeczy.\n\nZa dawnych czasów wszystkiego dostarczało\nZłote Drzewo, przez co karyjska astrologia\npodupadła. Po co komu gwiazdy,\nkiedy Złote Drzewo przewyższa wszystko?
+14130100	
+14130200	
+14130300	
+14130400	
+14130500	
+14130600	
+14130700	
+14130800	
+14130900	
+14131000	
+14131100	
+14131200	
+14140000	Topór burzowego jastrzębia
+15000000	Wielki topór
+15000100	Ciężki wielki topór
+15000200	Wymyślny wielki topór
+15000300	Wielki topór wysokiej jakości
+15000400	Ognisty wielki topór
+15000500	Wielki topór sztuki płomienia
+15000600	Wielki topór błyskawic
+15000700	Święty wielki topór
+15000800	Magiczny wielki topór
+15000900	Wielki topór zimna
+15001000	Zatruty wielki topór
+15001100	Krwawy wielki topór
+15001200	Okultystyczny wielki topór
+15010000	Wypaczony topór
+15010100	Ciężki wypaczony topór
+15010200	Wymyślny wypaczony topór
+15010300	Wypaczony topór wysokiej jakości
+15010400	Ognisty wypaczony topór
+15010500	Wypaczony topór sztuki płomienia
+15010600	Wypaczony topór błyskawic
+15010700	Święty wypaczony topór
+15010800	Magiczny wypaczony topór
+15010900	Wypaczony topór zimna
+15011000	Zatruty wypaczony topór
+15011100	Krwawy wypaczony topór
+15011200	Okultystyczny wypaczony topór
+15020000	Wielki tasak Zabójcy Omenów
+15020100	Ciężki wielki tasak Zabójcy Omenów
+15020200	Wymyślny wielki tasak Zabójcy Omenów
+15020300	Wysokiej jakości wielki tasak Zabójcy Omenów
+15020400	Ognisty wielki tasak Zabójcy Omenów
+15020500	Wielki tasak sztuki płomienia Zabójcy Omenów
+15020600	Wielki tasak błyskawic Zabójcy Omenów
+15020700	Święty wielki tasak Zabójcy Omenów
+15020800	Magiczny wielki tasak Zabójcy Omenów
+15020900	Wielki tasak zimna Zabójcy Omenów
+15021000	Zatruty wielki tasak Zabójcy Omenów
+15021100	Krwawy wielki tasak Zabójcy Omenów
+15021200	Okultystyczny wielki tasak Zabójcy Omenów
+15030000	Topór w kształcie półksiężyca
+15030100	Ciężki topór w kształcie półksiężyca
+15030200	Wymyślny topór w kształcie półksiężyca
+15030300	Topór wysokiej jakości w kształcie półksiężyca
+15030400	Ognisty topór w kształcie półksiężyca
+15030500	Topór sztuki płomienia w kształcie półksiężyca
+15030600	Topór błyskawic w kształcie półksiężyca
+15030700	Święty topór w kształcie półksiężyca
+15030800	Magiczny topór w kształcie półksiężyca
+15030900	Topór zimna w kształcie półksiężyca
+15031000	Zatruty topór w kształcie półksiężyca
+15031100	Krwawy topór w kształcie półksiężyca
+15031200	Okultystyczny topór w kształcie półksiężyca
+15040000	Topór Godricka
+15050000	Topór z długą rękojeścią
+15050100	Ciężki topór z długą rękojeścią
+15050200	Wymyślny topór z długą rękojeścią
+15050300	Wysokiej jakości topór z długą rękojeścią
+15050400	Ognisty topór z długą rękojeścią
+15050500	Topór sztuki płomienia z długą rękojeścią
+15050600	Topór błyskawic z długą rękojeścią
+15050700	Święty topór z długą rękojeścią
+15050800	Magiczny topór z długą rękojeścią
+15050900	Topór zimna z długą rękojeścią
+15051000	Zatruty topór z długą rękojeścią
+15051100	Krwawy topór z długą rękojeścią
+15051200	Okultystyczny topór z długą rękojeścią
+15060000	Zardzewiała kotwica
+15060100	Ciężka zardzewiała kotwica
+15060200	Wymyślna zardzewiała kotwica
+15060300	Zardzewiała kotwica wysokiej jakości
+15060400	Ognista zardzewiała kotwica
+15060500	Zardzewiała kotwica sztuki płomienia
+15060600	Zardzewiała kotwica błyskawic
+15060700	Święta zardzewiała kotwica
+15060800	Magiczna zardzewiała kotwica
+15060900	Zardzewiała kotwica zimna
+15061000	Zatruta zardzewiała kotwica
+15061100	Krwawa zardzewiała kotwica
+15061200	Okultystyczna zardzewiała kotwica
+15080000	Wielki topór kata
+15080100	Ciężki wielki topór kata
+15080200	Wymyślny wielki topór kata
+15080300	Wysokiej jakości wielki topór kata
+15080400	Ognisty wielki topór kata
+15080500	Wielki topór sztuki płomienia kata
+15080600	Wielki topór błyskawic kata
+15080700	Święty wielki topór kata
+15080800	Magiczny wielki topór kata
+15080900	Wielki topór zimna kata
+15081000	Zatruty wielki topór kata
+15081100	Krwawy wielki topór kata
+15081200	Okultystyczny wielki topór kata
+15110000	Uskrzydlony wielki cierń
+15120000	Nóż rzeźnika
+15120100	Ciężki nóż rzeźnika
+15120200	Wymyślny nóż rzeźnika
+15120300	Wysokiej jakości nóż rzeźnika
+15120400	Ognisty nóż rzeźnika
+15120500	Nóż sztuki płomienia rzeźnika
+15120600	Nóż błyskawic rzeźnika
+15120700	Święty nóż rzeźnika
+15120800	Magiczny nóż rzeźnika
+15120900	Nóż zimna rzeźnika
+15121000	Zatruty nóż rzeźnika
+15121100	Krwawy nóż rzeźnika
+15121200	Okultystyczny nóż rzeźnika
+15130000	Wielki topór gargulca
+15130100	Ciężki wielki topór gargulca
+15130200	Wymyślny wielki topór gargulca
+15130300	Wysokiej jakości wielki topór gargulca
+15130400	Ognisty wielki topór gargulca
+15130500	Wielki topór sztuki płomienia gargulca
+15130600	Wielki topór błyskawic gargulca
+15130700	Święty wielki topór gargulca
+15130800	Magiczny wielki topór gargulca
+15130900	Wielki topór zimna gargulca
+15131000	Zatruty wielki topór gargulca
+15131100	Krwawy wielki topór gargulca
+15131200	Okultystyczny wielki topór gargulca
+15140000	Czarny topór gargulca
+15140100	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140200	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140300	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140400	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140500	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140600	Prochy ducha. Przyzywają ducha północnego najemnika.\r\n(Przyzwanie kosztuje PS).\r\n\r\nMówi się, że północny najemnicy noszą w sobie krew olbrzymów i z łatwością władają zakrzywionymi tasakami. Ich ryk dodatkowo wzmacnia ich siłę.
+15140700	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15140800	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15140900	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15141000	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15141100	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15141200	Prochy ducha. Przyzywają trzy duchy wilków.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTe oddzielone od stada wilki znalazły towarzystwo u boku pewnego wypędzonego tropiciela. Duchy wilków górują nad wrogami swoją zwinnością, wspierając przywołującego w walce.
+15900000	[ERROR]
+16000000	Krótka włócznia
+16000100	Ciężka krótka włócznia
+16000200	Wymyślna krótka włócznia
+16000300	Krótka włócznia wysokiej jakości
+16000400	Ognista krótka włócznia
+16000500	Krótka włócznia sztuki płomienia
+16000600	Krótka włócznia błyskawic
+16000700	Święta krótka włócznia
+16000800	Magiczna krótka włócznia
+16000900	Krótka włócznia zimna
+16001000	Zatruta krótka włócznia
+16001100	Krwawa krótka włócznia
+16001200	Okultystyczna krótka włócznia
+16010000	Włócznia
+16010100	Ciężka włócznia
+16010200	Wymyślna włócznia
+16010300	Włócznia wysokiej jakości
+16010400	Ognista włócznia
+16010500	Włócznia sztuki płomienia
+16010600	Włócznia błyskawic
+16010700	Święta włócznia
+16010800	Magiczna włócznia
+16010900	Włócznia zimna
+16011000	Zatruta włócznia
+16011100	Krwawa włócznia
+16011200	Okultystyczna włócznia
+16020000	Kryształowa włócznia
+16030000	Harpun glinianego człowieka
+16030100	Ciężki harpun glinianego człowieka
+16030200	Wymyślny harpun glinianego człowieka
+16030300	Wysokiej jakości harpun glinianego człowieka
+16030400	Ognisty harpun glinianego człowieka
+16030500	Harpun sztuki płomienia glinianego człowieka
+16030600	Harpun błyskawic glinianego człowieka
+16030700	Święty harpun glinianego człowieka
+16030800	Magiczny harpun glinianego człowieka
+16030900	Harpun zimna glinianego człowieka
+16031000	Zatruty harpun glinianego człowieka
+16031100	Krwawy harpun glinianego człowieka
+16031200	Okultystyczny harpun glinianego człowieka
+16040000	Włócznia czystej zgnilizny
+16040100	Prochy ducha. Przywołują duchową meduzę.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTa zjawa unosi się w powietrzu i oświetla otoczenie.\r\nZdaje się, że to duch młodej dziewczyny poszukującej siostry, której obiecała pokazać gwiazdy.
+16040200	Prochy ducha. Przywołują duchową meduzę.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTa zjawa unosi się w powietrzu i oświetla otoczenie.\r\nZdaje się, że to duch młodej dziewczyny poszukującej siostry, której obiecała pokazać gwiazdy.
+16040300	Prochy ducha. Przywołują duchową meduzę.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTa zjawa unosi się w powietrzu i oświetla otoczenie.\r\nZdaje się, że to duch młodej dziewczyny poszukującej siostry, której obiecała pokazać gwiazdy.
+16040400	Prochy ducha. Przywołują duchową meduzę.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTa zjawa unosi się w powietrzu i oświetla otoczenie.\r\nZdaje się, że to duch młodej dziewczyny poszukującej siostry, której obiecała pokazać gwiazdy.
+16040500	Prochy ducha. Przywołują duchową meduzę.\r\n(Przyzwanie kosztuje PS).\r\n\r\nTa zjawa unosi się w powietrzu i oświetla otoczenie.\r\nZdaje się, że to duch młodej dziewczyny poszukującej siostry, której obiecała pokazać gwiazdy.
+16040600	Przyzywa jastrzębia bojowego
+16040700	Przyzywa jastrzębia bojowego
+16040800	Przyzywa jastrzębia bojowego
+16040900	Przyzywa jastrzębia bojowego
+16041000	Przyzywa jastrzębia bojowego
+16041100	Przyzywa jastrzębia bojowego
+16041200	Przyzywa jastrzębia bojowego
+16050000	Partyzana
+16050100	Ciężka partyzana
+16050200	Wymyślna partyzana
+16050300	Partyzana wysokiej jakości
+16050400	Ognista partyzana
+16050500	Partyzana sztuki płomienia
+16050600	Partyzana błyskawic
+16050700	Święta partyzana
+16050800	Magiczna partyzana
+16050900	Partyzana zimna
+16051000	Zatruta partyzana
+16051100	Krwawa partyzana
+16051200	Okultystyczna partyzana
+16060000	Kościane grabie celebranta
+16060100	Ciężkie kościane grabie celebranta
+16060200	Wymyślne kościane grabie celebranta
+16060300	Wysokiej jakości kościane grabie celebranta
+16060400	Ogniste kościane grabie celebranta
+16060500	 Kościane grabie sztuki płomienia celebranta
+16060600	Kościane grabie błyskawic celebranta
+16060700	 Święte kościane grabie celebranta
+16060800	 Magiczne kościane grabie celebranta
+16060900	Kościane grabie zimna celebranta
+16061000	Zatrute kościane grabie celebranta
+16061100	Krwawe kościane grabie celebranta
+16061200	Okultystyczne kościane grabie celebranta
+16070000	Pika
+16070100	Ciężka pika
+16070200	Wymyślna pika
+16070300	Pika wysokiej jakości
+16070400	Ognista pika
+16070500	Pika sztuki płomienia
+16070600	Pika błyskawic
+16070700	Święta pika
+16070800	Magiczna pika
+16070900	Pika zimna
+16071000	Zatruta pika
+16071100	Krwawa pika
+16071200	Okultystyczna pika
+16080000	Stojąca pochodnia
+16090000	Bełt Gransaxa
+16110000	Krzyżowa naginata
+16110100	Ciężka krzyżowa naginata
+16110200	Wymyślna krzyżowa naginata
+16110300	Krzyżowa naginata wysokiej jakości
+16110400	Ognista krzyżowa naginata
+16110500	Krzyżowa naginata sztuki płomienia
+16110600	Krzyżowa naginata błyskawic
+16110700	Święta krzyżowa naginata
+16110800	Magiczna krzyżowa naginata
+16110900	Krzyżowa naginata zimna
+16111000	Zatruta krzyżowa naginata
+16111100	Krwawa krzyżowa naginata
+16111200	Okultystyczna krzyżowa naginata
+16120000	Włócznia rytuału śmierci
+16130000	Kandelabr inkwizytora
+16140000	Włócznia najeżona kolcami
+16140100	Ciężka włócznia najeżona kolcami
+16140200	Wymyślna włócznia najeżona kolcami
+16140300	Wysokiej jakości włócznia najeżona kolcami
+16140400	Ognista włócznia najeżona kolcami
+16140500	Włócznia sztuki płomienia najeżona kolcami
+16140600	Włócznia błyskawic najeżona kolcami
+16140700	Święta włócznia najeżona kolcami
+16140800	Magiczna włócznia najeżona kolcami
+16140900	Włócznia zimna najeżona kolcami
+16141000	Zatruta włócznia najeżona kolcami
+16141100	Krwawa włócznia najeżona kolcami
+16141200	Okultystyczna włócznia najeżona kolcami
+16150000	Żelazna włócznia
+16150100	Ciężka żelazna włócznia
+16150200	Wymyślna żelazna włócznia
+16150300	Żelazna włócznia wysokiej jakości
+16150400	Ognista żelazna włócznia
+16150500	Żelazna włócznia sztuki płomienia
+16150600	Żelazna włócznia błyskawic
+16150700	Święta żelazna włócznia
+16150800	Magiczna żelazna włócznia
+16150900	Żelazna włócznia zimna
+16151000	Zatruta żelazna włócznia
+16151100	Krwawa żelazna włócznia
+16151200	Okultystyczna żelazna włócznia
+16160000	Zgniła kryształowa włócznia
+17010000	Święta włócznia Mohgwynów
+17020000	Drzewo Silurii
+17030000	Łowca węży
+17050000	Wojenna włócznia Vykego
+17060000	Lanca
+17060100	Ciężka lanca
+17060200	Wymyślna lanca
+17060300	Lanca wysokiej jakości
+17060400	Ognista lanca
+17060500	Lanca sztuki płomienia
+17060600	Lanca błyskawic
+17060700	Święta lanca
+17060800	Magiczna lanca
+17060900	Lanca zimna
+17061000	Zatruta lanca
+17061100	Krwawa lanca
+17061200	Okultystyczna lanca
+17070000	Drzewna włócznia
+17070100	[ERROR]Ciężka drzewna włócznia
+17070101	[ERROR]
+17070102	[ERROR]
+17070103	[ERROR]
+17070104	[ERROR]
+17070105	[ERROR]
+17070106	[ERROR]
+17070107	[ERROR]
+17070108	[ERROR]
+17070109	[ERROR]
+17070110	[ERROR]
+17070111	[ERROR]
+17070112	[ERROR]
+17070113	[ERROR]
+17070114	[ERROR]
+17070115	[ERROR]
+17070116	[ERROR]
+17070117	[ERROR]
+17070118	[ERROR]
+17070119	[ERROR]
+17070120	[ERROR]
+17070121	[ERROR]
+17070122	[ERROR]
+17070123	[ERROR]
+17070124	[ERROR]
+17070125	[ERROR]
+17070200	[ERROR]Wymyślna drzewna włócznia
+17070201	[ERROR]
+17070202	[ERROR]
+17070203	[ERROR]
+17070204	[ERROR]
+17070205	[ERROR]
+17070206	[ERROR]
+17070207	[ERROR]
+17070208	[ERROR]
+17070209	[ERROR]
+17070210	[ERROR]
+17070211	[ERROR]
+17070212	[ERROR]
+17070213	[ERROR]
+17070214	[ERROR]
+17070215	[ERROR]
+17070216	[ERROR]
+17070217	[ERROR]
+17070218	[ERROR]
+17070219	[ERROR]
+17070220	[ERROR]
+17070221	[ERROR]
+17070222	[ERROR]
+17070223	[ERROR]
+17070224	[ERROR]
+17070225	[ERROR]
+17070300	[ERROR]Drzewna włócznia wysokiej jakości
+17070301	[ERROR]
+17070302	[ERROR]
+17070303	[ERROR]
+17070304	[ERROR]
+17070305	[ERROR]
+17070306	[ERROR]
+17070307	[ERROR]
+17070308	[ERROR]
+17070309	[ERROR]
+17070310	[ERROR]
+17070311	[ERROR]
+17070312	[ERROR]
+17070313	[ERROR]
+17070314	[ERROR]
+17070315	[ERROR]
+17070316	[ERROR]
+17070317	[ERROR]
+17070318	[ERROR]
+17070319	[ERROR]
+17070320	[ERROR]
+17070321	[ERROR]
+17070322	[ERROR]
+17070323	[ERROR]
+17070324	[ERROR]
+17070325	[ERROR]
+17070400	[ERROR]Ognista drzewna włócznia
+17070401	[ERROR]
+17070402	[ERROR]
+17070403	[ERROR]
+17070404	[ERROR]
+17070405	[ERROR]
+17070406	[ERROR]
+17070407	[ERROR]
+17070408	[ERROR]
+17070409	[ERROR]
+17070410	[ERROR]
+17070411	[ERROR]
+17070412	[ERROR]
+17070413	[ERROR]
+17070414	[ERROR]
+17070415	[ERROR]
+17070416	[ERROR]
+17070417	[ERROR]
+17070418	[ERROR]
+17070419	[ERROR]
+17070420	[ERROR]
+17070421	[ERROR]
+17070422	[ERROR]
+17070423	[ERROR]
+17070424	[ERROR]
+17070425	[ERROR]
+17070500	[ERROR]Drzewna włócznia sztuki płomienia
+17070501	[ERROR]
+17070502	[ERROR]
+17070503	[ERROR]
+17070504	[ERROR]
+17070505	[ERROR]
+17070506	[ERROR]
+17070507	[ERROR]
+17070508	[ERROR]
+17070509	[ERROR]
+17070510	[ERROR]
+17070511	[ERROR]
+17070512	[ERROR]
+17070513	[ERROR]
+17070514	[ERROR]
+17070515	[ERROR]
+17070516	[ERROR]
+17070517	[ERROR]
+17070518	[ERROR]
+17070519	[ERROR]
+17070520	[ERROR]
+17070521	[ERROR]
+17070522	[ERROR]
+17070523	[ERROR]
+17070524	[ERROR]
+17070525	[ERROR]
+17070600	[ERROR]Drzewna włócznia błyskawic
+17070601	[ERROR]
+17070602	[ERROR]
+17070603	[ERROR]
+17070604	[ERROR]
+17070605	[ERROR]
+17070606	[ERROR]
+17070607	[ERROR]
+17070608	[ERROR]
+17070609	[ERROR]
+17070610	[ERROR]
+17070611	[ERROR]
+17070612	[ERROR]
+17070613	[ERROR]
+17070614	[ERROR]
+17070615	[ERROR]
+17070616	[ERROR]
+17070617	[ERROR]
+17070618	[ERROR]
+17070619	[ERROR]
+17070620	[ERROR]
+17070621	[ERROR]
+17070622	[ERROR]
+17070623	[ERROR]
+17070624	[ERROR]
+17070625	[ERROR]
+17070700	[ERROR]Święta drzewna włócznia
+17070701	[ERROR]
+17070702	[ERROR]
+17070703	[ERROR]
+17070704	[ERROR]
+17070705	[ERROR]
+17070706	[ERROR]
+17070707	[ERROR]
+17070708	[ERROR]
+17070709	[ERROR]
+17070710	[ERROR]
+17070711	[ERROR]
+17070712	[ERROR]
+17070713	[ERROR]
+17070714	[ERROR]
+17070715	[ERROR]
+17070716	[ERROR]
+17070717	[ERROR]
+17070718	[ERROR]
+17070719	[ERROR]
+17070720	[ERROR]
+17070721	[ERROR]
+17070722	[ERROR]
+17070723	[ERROR]
+17070724	[ERROR]
+17070725	[ERROR]
+17070800	[ERROR]Magiczna drzewna włócznia
+17070801	[ERROR]
+17070802	[ERROR]
+17070803	[ERROR]
+17070804	[ERROR]
+17070805	[ERROR]
+17070806	[ERROR]
+17070807	[ERROR]
+17070808	[ERROR]
+17070809	[ERROR]
+17070810	[ERROR]
+17070811	[ERROR]
+17070812	[ERROR]
+17070813	[ERROR]
+17070814	[ERROR]
+17070815	[ERROR]
+17070816	[ERROR]
+17070817	[ERROR]
+17070818	[ERROR]
+17070819	[ERROR]
+17070820	[ERROR]
+17070821	[ERROR]
+17070822	[ERROR]
+17070823	[ERROR]
+17070824	[ERROR]
+17070825	[ERROR]
+17070900	[ERROR]Drzewna włócznia zimna
+17070901	[ERROR]
+17070902	[ERROR]
+17070903	[ERROR]
+17070904	[ERROR]
+17070905	[ERROR]
+17070906	[ERROR]
+17070907	[ERROR]
+17070908	[ERROR]
+17070909	[ERROR]
+17070910	[ERROR]
+17070911	[ERROR]
+17070912	[ERROR]
+17070913	[ERROR]
+17070914	[ERROR]
+17070915	[ERROR]
+17070916	[ERROR]
+17070917	[ERROR]
+17070918	[ERROR]
+17070919	[ERROR]
+17070920	[ERROR]
+17070921	[ERROR]
+17070922	[ERROR]
+17070923	[ERROR]
+17070924	[ERROR]
+17070925	[ERROR]
+17071000	[ERROR]Zatruta drzewna włócznia
+17071001	[ERROR]
+17071002	[ERROR]
+17071003	[ERROR]
+17071004	[ERROR]
+17071005	[ERROR]
+17071006	[ERROR]
+17071007	[ERROR]
+17071008	[ERROR]
+17071009	[ERROR]
+17071010	[ERROR]
+17071011	[ERROR]
+17071012	[ERROR]
+17071013	[ERROR]
+17071014	[ERROR]
+17071015	[ERROR]
+17071016	[ERROR]
+17071017	[ERROR]
+17071018	[ERROR]
+17071019	[ERROR]
+17071020	[ERROR]
+17071021	[ERROR]
+17071022	[ERROR]
+17071023	[ERROR]
+17071024	[ERROR]
+17071025	[ERROR]
+17071100	[ERROR]Krwawa drzewna włócznia
+17071101	[ERROR]
+17071102	[ERROR]
+17071103	[ERROR]
+17071104	[ERROR]
+17071105	[ERROR]
+17071106	[ERROR]
+17071107	[ERROR]
+17071108	[ERROR]
+17071109	[ERROR]
+17071110	[ERROR]
+17071111	[ERROR]
+17071112	[ERROR]
+17071113	[ERROR]
+17071114	[ERROR]
+17071115	[ERROR]
+17071116	[ERROR]
+17071117	[ERROR]
+17071118	[ERROR]
+17071119	[ERROR]
+17071120	[ERROR]
+17071121	[ERROR]
+17071122	[ERROR]
+17071123	[ERROR]
+17071124	[ERROR]
+17071125	[ERROR]
+17071200	[ERROR]Okultystyczna drzewna włócznia
+17071201	[ERROR]
+17071202	[ERROR]
+17071203	[ERROR]
+17071204	[ERROR]
+17071205	[ERROR]
+17071206	[ERROR]
+17071207	[ERROR]
+17071208	[ERROR]
+17071209	[ERROR]
+17071210	[ERROR]
+17071211	[ERROR]
+17071212	[ERROR]
+17071213	[ERROR]
+17071214	[ERROR]
+17071215	[ERROR]
+17071216	[ERROR]
+17071217	[ERROR]
+17071218	[ERROR]
+17071219	[ERROR]
+17071220	[ERROR]
+17071221	[ERROR]
+17071222	[ERROR]
+17071223	[ERROR]
+17071224	[ERROR]
+17071225	[ERROR]
+17900000	[ERROR]
+17910000	[ERROR]
+18000000	Halabarda
+18000100	Ciężka halabarda
+18000200	Wymyślna halabarda
+18000300	Halabarda wysokiej jakości
+18000400	Halabarda ognia
+18000500	Halabarda sztuki płomienia
+18000600	Halabarda błyskawic
+18000700	Święta halabarda
+18000800	Magiczna halabarda
+18000900	Halabarda zimna
+18001000	Zatruta halabarda
+18001100	Krwawa halabarda
+18001200	Okultystyczna halabarda
+18010000	Glewia szkodnika
+18010100	Ciężka glewia szkodnika
+18010200	Wymyślna glewia szkodnika
+18010300	Wysokiej jakości glewia szkodnika
+18010400	Ognista glewia szkodnika
+18010500	Glewia sztuki płomienia szkodnika
+18010600	Glewia błyskawic szkodnika
+18010700	Święta glewia szkodnika
+18010800	Magiczna glewia szkodnika
+18010900	Glewia zimna szkodnika
+18011000	Zatruta glewia szkodnika
+18011100	Krwawa glewia szkodnika
+18011200	Okultystyczna glewia szkodnika
+18020000	Młot lucereński
+18020100	Ciężki młot lucereński
+18020200	Wymyślny młot lucereński
+18020300	Młot lucereński wysokiej jakości
+18020400	Młot lucereński ognia
+18020500	Młot lucereński sztuki płomienia
+18020600	Młot lucereński błyskawic
+18020700	Święty młot lucereński
+18020800	Magiczny młot lucereński
+18020900	Młot lucereński zimna
+18021000	Zatruty młot lucereński
+18021100	Krwawy młot lucereński
+18021200	Okultystyczny młot lucereński
+18030000	Halabarda wypędzonego rycerza
+18030100	Ciężka halabarda wypędzonego rycerza
+18030200	Wymyślna halabarda wypędzonego rycerza
+18030300	Wysokiej jakości halabarda wypędzonego rycerza
+18030400	Ognista halabarda wypędzonego rycerza
+18030500	Halabarda sztuki płomienia wypędzonego rycerza
+18030600	Halabarda błyskawic wypędzonego rycerza
+18030700	Święta halabarda wypędzonego rycerza
+18030800	Magiczna halabarda wypędzonego rycerza
+18030900	Halabarda zimna wypędzonego rycerza
+18031000	Zatruta halabarda wypędzonego rycerza
+18031100	Krwawa halabarda wypędzonego rycerza
+18031200	Okultystyczna halabarda wypędzonego rycerza
+18040000	Sztandar dowódcy
+18050000	Glewia nocnego jeźdźca
+18050100	Ciężka glewia nocnego jeźdźca
+18050200	Wymyślna glewia nocnego jeźdźca
+18050300	Wysokiej jakości glewia nocnego jeźdźca
+18050400	Ognista glewia nocnego jeźdźca
+18050500	Glewia sztuki płomienia nocnego jeźdźca
+18050600	Glewia błyskawic nocnego jeźdźca
+18050700	Święta glewia nocnego jeźdźca
+18050800	Magiczna glewia nocnego jeźdźca
+18050900	Glewia zimna nocnego jeźdźca
+18051000	Zatruta glewia nocnego jeźdźca
+18051100	Krwawa glewia nocnego jeźdźca
+18051200	Okultystyczna glewia nocnego jeźdźca
+18060000	Halabarda półksiężyca
+18060100	Ciężka falująca halabarda półksiężyca
+18060200	Wymyślna falująca halabarda półksiężyca
+18060300	Wysokiej jakości falująca halabarda półksiężyca
+18060400	Ognista falująca halabarda półksiężyca
+18060500	Falująca halabarda sztuki płomienia półksiężyca
+18060600	Falująca halabarda błyskawic półksiężyca
+18060700	Święta falująca halabarda półksiężyca
+18060800	Magiczna falująca halabarda półksiężyca
+18060900	Falująca halabarda zimna półksiężyca
+18061000	Zatruta falująca halabarda półksiężyca
+18061100	Krwawa falująca halabarda półksiężyca
+18061200	Okultystyczna falująca halabarda półksiężyca
+18070000	Piła pospolitaka
+18070100	Ciężka piła pospolitaka
+18070200	Wymyślna piła pospolitaka
+18070300	Wysokiej jakości piła pospolitaka
+18070400	Ognista piła pospolitaka
+18070500	Piła sztuki płomienia pospolitaka
+18070600	Piła błyskawic pospolitaka
+18070700	Święta piła pospolitaka
+18070800	Magiczna piła pospolitaka
+18070900	Piła zimna pospolitaka
+18071000	Zatruta piła pospolitaka
+18071100	Krwawa piła pospolitaka
+18071200	Okultystyczna piła pospolitaka
+18080000	Złota halabarda
+18080100	Ciężka złota halabarda
+18080200	Wymyślna złota halabarda
+18080300	Złota halabarda wysokiej jakości
+18080400	Ognista złota halabarda
+18080500	Złota halabarda sztuki płomieni
+18080600	Złota halabarda błyskawic
+18080700	Święta złota halabarda
+18080800	Magiczna złota halabarda
+18080900	Złota halabarda zimna
+18081000	Zatruta złota halabarda
+18081100	Krwawa złota halabarda
+18081200	Okultystyczna złota halabarda
+18090000	Glewia
+18090100	Ciężka glewia
+18090200	Wymyślna glewia
+18090300	Glewia wysokiej jakości
+18090400	Ognista glewia
+18090500	Glewia sztuki płomienia
+18090600	Glewia błyskawic
+18090700	Święta glewia
+18090800	Magiczna glewia
+18090900	Glewia zimna
+18091000	Zatruta glewia
+18091100	Krwawa glewia
+18091200	Okultystyczna glewia
+18100000	Sierp bojowy Loretty
+18110000	Miecznia strażnika
+18110100	Ciężka miecznia strażnika
+18110200	Wymyślna miecznia strażnika
+18110300	Wysokiej jakości miecznia strażnika
+18110400	Ognista miecznia strażnika
+18110500	Miecznia sztuki płomienia strażnika
+18110600	Miecznia błyskawic strażnika
+18110700	Święta miecznia strażnika
+18110800	Magiczna miecznia strażnika
+18110900	Miecznia zimna strażnika
+18111000	Zatruta miecznia strażnika
+18111100	Krwawa miecznia strażnika
+18111200	Okultystyczna miecznia strażnika
+18130000	Szotel prostackiej gwardii
+18130100	Ciężki szotel prostackiej gwardii
+18130200	Wymyślny szotel prostackiej gwardii
+18130300	Wysokiej jakości szotel prostackiej gwardii
+18130400	Ognisty szotel prostackiej gwardii
+18130500	Szotel sztuki płomienia prostackiej gwardii
+18130600	Szotel błyskawic prostackiej gwardii
+18130700	Święty szotel prostackiej gwardii
+18130800	Magiczny szotel prostackiej gwardii
+18130900	Szotel zimna prostackiej gwardii
+18131000	Zatruty szotel prostackiej gwardii
+18131100	Krwawy szotel prostackiej gwardii
+18131200	Okultystyczny szotel prostackiej gwardii
+18140000	Smocza halabarda
+18140100	Przyzywa marionetkę bezimiennego świętego
+18140200	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140300	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140400	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140500	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140600	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140700	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140800	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18140900	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18141000	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18141100	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18141200	Przyzywa marionetkę bezimiennego wytwórcy łuków
+18150000	Halabarda gargulca
+18150100	Ciężka halabarda gargulca
+18150200	Wymyślna halabarda gargulca
+18150300	Wysokiej jakości halabarda gargulca
+18150400	Ognista halabarda gargulca
+18150500	Halabarda sztuki płomienia gargulca
+18150600	Halabarda błyskawic gargulca
+18150700	Święta halabarda gargulca
+18150800	Magiczna halabarda gargulca
+18150900	Halabarda zimna gargulca
+18151000	Zatruta halabarda gargulca
+18151100	Krwawa halabarda gargulca
+18151200	Okultystyczna halabarda gargulca
+18160000	Czarna halabarda gargulca
+18160100	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160200	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160300	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160400	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160500	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160600	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160700	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160800	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18160900	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18161000	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18161100	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+18161200	Halabarda dzierżona przez gargulce\r\nsłużące pod Malikethem.
+19000000	Kosa
+19000100	Ciężka kosa
+19000200	Wymyślna kosa
+19000300	Kosa wysokiej jakości
+19000400	Ognista kosa
+19000500	Kosa sztuki płomienia
+19000600	Kosa błyskawic
+19000700	Święta kosa
+19000800	Magiczna kosa
+19000900	Kosa zimna
+19001000	Zatruta kosa
+19001100	Krwawa kosa
+19001200	Okultystyczna kosa
+19010000	Grobowa kosa
+19010100	Ciężka grobowa kosa
+19010200	Wymyślna grobowa kosa
+19010300	Grobowa kosa wysokiej jakości
+19010400	Ognista grobowa kosa
+19010500	Grobowa kosa sztuki płomienia
+19010600	Grobowa kosa błyskawic
+19010700	Święta grobowa kosa
+19010800	Magiczna grobowa kosa
+19010900	Grobowa kosa zimna
+19011000	Zatruta grobowa kosa
+19011100	Krwawa grobowa kosa
+19011200	Okultystyczna grobowa kosa
+19020000	Kosa aureoli
+19050000	
+19060000	Skrzydlata kosa
+20000000	Bicz
+20000100	Ciężki bicz
+20000200	Wymyślny bicz
+20000300	Bicz wysokiej jakości
+20000400	Ognisty bicz
+20000500	Bicz sztuki płomienia
+20000600	Bicz błyskawic
+20000700	Święty bicz
+20000800	Magiczny bicz
+20000900	Bicz zimna
+20001000	Zatruty bicz
+20001100	Krwawy bicz
+20001200	Okultystyczny bicz
+20020000	Cierniowy bicz
+20020100	Ciężki cierniowy bicz
+20020200	Wymyślny cierniowy bicz
+20020300	Cierniowy bicz wysokiej jakości
+20020400	Ognisty cierniowy bicz
+20020500	Cierniowy bicz sztuki płomienia
+20020600	Cierniowy bicz błyskawic
+20020700	Święty cierniowy bicz
+20020800	Magiczny cierniowy bicz
+20020900	Cierniowy bicz zimna
+20021000	Zatruty cierniowy bicz
+20021100	Krwawy cierniowy bicz
+20021200	Okultystyczny cierniowy bicz
+20030000	Magmowy bicz w kształcie świecznika
+20030100	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030200	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030300	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030400	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030500	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030600	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030700	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030800	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20030900	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20031000	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20031100	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20031200	Bicz o wyjątkowym, trzygłowym kształcie.\r\n\r\nSkrywa w sobie moc płomienia, a kiedy\r\nnasyci się go magią, jego czubek tryska lawą.
+20050000	Bicz płatkowy rodu Hoslow
+20050100	Ciężki bicz płatkowy rodu Hoslow
+20050200	Wymyślny bicz płatkowy rodu Hoslow
+20050300	Wysokiej jakości bicz płatkowy rodu Hoslow
+20050400	Ognisty bicz płatkowy rodu Hoslow
+20050500	Bicz płatkowy sztuki płomienia rodu Hoslow
+20050600	Bicz płatkowy błyskawic rodu Hoslow
+20050700	Święty bicz płatkowy rodu Hoslow
+20050800	Magiczny bicz płatkowy rodu Hoslow
+20050900	Bicz płatkowy zimna rodu Hoslow
+20051000	Zatruty bicz płatkowy rodu Hoslow
+20051100	Krwawy bicz płatkowy rodu Hoslow
+20051200	Okultystyczny bicz płatkowy rodu Hoslow
+20060000	Rudy warkocz olbrzyma
+20070000	Urumi
+20070100	Ciężkie urumi
+20070200	Wymyślne urumi
+20070300	Urumi wysokiej jakości
+20070400	Ogniste urumi
+20070500	Urumi sztuki płomienia
+20070600	Urumi błyskawic
+20070700	Święte urumi
+20070800	Magiczne urumi
+20070900	Urumi zimna
+20071000	Zatrute urumi
+20071100	Krwawe urumi
+20071200	Okultystyczne urumi
+21000000	Cestus
+21000100	Ciężkie cestus
+21000200	Wymyślne cestus
+21000300	Cestus wysokiej jakości
+21000400	Ogniste cestus
+21000500	Cestus sztuki płomienia
+21000600	Cestus błyskawic
+21000700	Święte cestus
+21000800	Magiczne cestus
+21000900	Cestus zimna
+21001000	Zatrute cestus
+21001100	Krwawe cestus
+21001200	Okultystyczne cestus
+21010000	Kolczaste cestus
+21010100	Ciężkie kolczaste cestus
+21010200	Wymyślne kolczaste cestus
+21010300	Kolczaste cestus wysokiej jakości
+21010400	Ogniste kolczaste cestus
+21010500	Kolczaste cestus sztuki płomienia
+21010600	Kolczaste cestus błyskawic
+21010700	Święte kolczaste cestus
+21010800	Magiczne kolczaste cestus
+21010900	Kolczaste cestus zimna
+21011000	Zatrute kolczaste cestus
+21011100	Krwawe kolczaste cestus
+21011200	Okultystyczne kolczaste cestus
+21060000	Pozszywany smok
+21070000	Żelazna kula
+21070100	Ciężka żelazna kula
+21070200	Wymyślna żelazna kula
+21070300	Żelazna kula wysokiej jakości
+21070400	Ognista żelazna kula
+21070500	Żelazna kula sztuki płomienia
+21070600	Żelazna kula błyskawic
+21070700	Święta żelazna kula
+21070800	Magiczna żelazna kula
+21070900	Żelazna kula zimna
+21071000	Zatruta żelazna kula
+21071100	Krwawa żelazna kula
+21071200	Okultystyczna żelazna kula
+21080000	Gwiezdna pięść
+21080100	Ciężka gwiezdna pięść
+21080200	Wymyślna gwiezdna pięść
+21080300	Gwiezdna pięść wysokiej jakości
+21080400	Ognista gwiezdna pięść
+21080500	Gwiezdna pięść sztuki płomienia
+21080600	Gwiezdna pięść błyskawic
+21080700	Święta gwiezdna pięść
+21080800	Magiczna gwiezdna pięść
+21080900	Gwiezdna pięść zimna
+21081000	Zatruta gwiezdna pięść
+21081100	Krwawa gwiezdna pięść
+21081200	Okultystyczna gwiezdna pięść
+21100000	Katar
+21100100	Ciężki katar
+21100200	Wymyślny katar
+21100300	Katar wysokiej jakości
+21100400	Ognisty katar
+21100500	Katar sztuki płomienia
+21100600	Katar błyskawic
+21100700	Święty katar
+21100800	Magiczny katar
+21100900	Katar zimna
+21101000	Zatruty katar
+21101100	Krwawy katar
+21101200	Okultystyczny katar
+21110000	Przywierająca kość
+21120000	Proteza weterana
+21130000	Zaszyfrowana pata
+22000000	Hakoszpony
+22000100	Ciężkie hakoszpony
+22000200	Wymyślne hakoszpony
+22000300	Hakoszpony wysokiej jakości
+22000400	Ogniste hakoszpony
+22000500	Hakoszpony sztuki płomienia
+22000600	Hakoszpony błyskawic
+22000700	Święte hakoszpony
+22000800	Magiczne hakoszpony
+22000900	Hakoszpony zimna
+22001000	Zatrute hakoszpony
+22001100	Krwawe hakoszpony
+22001200	Okultystyczne hakoszpony
+22010000	Jadowity kieł
+22010100	Ciężki jadowity kieł
+22010200	Wymyślny jadowity kieł
+22010300	Jadowity kieł wysokiej jakości
+22010400	Ognisty jadowity kieł
+22010500	Jadowity kieł sztuki płomienia
+22010600	Jadowity kieł błyskawic
+22010700	Święty jadowity kieł
+22010800	Magiczny jadowity kieł
+22010900	Jadowity kieł zimna
+22011000	Zatruty jadowity kieł
+22011100	Krwawy jadowity kieł
+22011200	Okultystyczny jadowity kieł
+22020000	Pazury wasalnego rycerza
+22020100	Ciężkie pazury wasalnego rycerza
+22020200	Wymyślne pazury wasalnego rycerza
+22020300	Wysokiej jakości pazury wasalnego rycerza
+22020400	Ogniste pazury wasalnego rycerza
+22020500	Pazury sztuki płomienia wasalnego rycerza
+22020600	Pazury błyskawic wasalnego rycerza
+22020700	Święte pazury wasalnego rycerza
+22020800	Magiczne pazury wasalnego rycerza
+22020900	Pazury zimna wasalnego rycerza
+22021000	Zatrute pazury wasalnego rycerza
+22021100	Krwawe pazury wasalnego rycerza
+22021200	Okultystyczne pazury wasalnego rycerza
+22030000	Drapieżne szpony
+22030100	Ciężkie drapieżne szpony
+22030200	Wymyślne drapieżne szpony
+22030300	Drapieżne szpony wysokiej jakości
+22030400	Ogniste drapieżne szpony
+22030500	Drapieżne szpony sztuki płomienia
+22030600	Drapieżne szpony błyskawic
+22030700	Święte drapieżne szpony
+22030800	Magiczne drapieżne szpony
+22030900	Drapieżne szpony zimna
+22031000	Zatrute drapieżne szpony
+22031100	Krwawe drapieżne szpony
+22031200	Okultystyczne drapieżne szpony
+23000000	Piekielny pastorał prałata
+23000100	Ciężki piekielny pastorał prałata
+23000200	Wymyślny piekielny pastorał prałata
+23000300	Wysokiej jakości piekielny pastorał prałata
+23000400	Ognisty piekielny pastorał prałata
+23000500	Piekielny pastorał sztuki płomienia prałata
+23000600	Piekielny pastorał błyskawic prałata
+23000700	Święty piekielny pastorał prałata
+23000800	Magiczny piekielny pastorał prałata
+23000900	Piekielny pastorał zimna prałata
+23001000	Zatruty piekielny pastorał prałata
+23001100	Krwawy piekielny pastorał prałata
+23001200	Okultystyczny piekielny pastorał prałata
+23010000	Kostur ogara
+23010100	Ciężki pastorał ogara
+23010200	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010300	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010400	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010500	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010600	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010700	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010800	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23010900	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23011000	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23011100	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23011200	Wielki młot używany przez golemy broniące\r\nLabiryntu Podstolicy.\r\nAby nim władać, potrzeba wyjątkowej siły.
+23020000	Wielka pałka
+23020100	[ERROR]Ciężka wielka pałka
+23020101	[ERROR]
+23020102	[ERROR]
+23020103	[ERROR]
+23020104	[ERROR]
+23020105	[ERROR]
+23020106	[ERROR]
+23020107	[ERROR]
+23020108	[ERROR]
+23020109	[ERROR]
+23020110	[ERROR]
+23020111	[ERROR]
+23020112	[ERROR]
+23020113	[ERROR]
+23020114	[ERROR]
+23020115	[ERROR]
+23020116	[ERROR]
+23020117	[ERROR]
+23020118	[ERROR]
+23020119	[ERROR]
+23020120	[ERROR]
+23020121	[ERROR]
+23020122	[ERROR]
+23020123	[ERROR]
+23020124	[ERROR]
+23020125	[ERROR]
+23020200	[ERROR]Wymyślna wielka pałka
+23020201	[ERROR]
+23020202	[ERROR]
+23020203	[ERROR]
+23020204	[ERROR]
+23020205	[ERROR]
+23020206	[ERROR]
+23020207	[ERROR]
+23020208	[ERROR]
+23020209	[ERROR]
+23020210	[ERROR]
+23020211	[ERROR]
+23020212	[ERROR]
+23020213	[ERROR]
+23020214	[ERROR]
+23020215	[ERROR]
+23020216	[ERROR]
+23020217	[ERROR]
+23020218	[ERROR]
+23020219	[ERROR]
+23020220	[ERROR]
+23020221	[ERROR]
+23020222	[ERROR]
+23020223	[ERROR]
+23020224	[ERROR]
+23020225	[ERROR]
+23020300	[ERROR]Wielka pałka wysokiej jakości
+23020301	[ERROR]
+23020302	[ERROR]
+23020303	[ERROR]
+23020304	[ERROR]
+23020305	[ERROR]
+23020306	[ERROR]
+23020307	[ERROR]
+23020308	[ERROR]
+23020309	[ERROR]
+23020310	[ERROR]
+23020311	[ERROR]
+23020312	[ERROR]
+23020313	[ERROR]
+23020314	[ERROR]
+23020315	[ERROR]
+23020316	[ERROR]
+23020317	[ERROR]
+23020318	[ERROR]
+23020319	[ERROR]
+23020320	[ERROR]
+23020321	[ERROR]
+23020322	[ERROR]
+23020323	[ERROR]
+23020324	[ERROR]
+23020325	[ERROR]
+23020400	[ERROR]Ognista wielka pałka
+23020401	[ERROR]
+23020402	[ERROR]
+23020403	[ERROR]
+23020404	[ERROR]
+23020405	[ERROR]
+23020406	[ERROR]
+23020407	[ERROR]
+23020408	[ERROR]
+23020409	[ERROR]
+23020410	[ERROR]
+23020411	[ERROR]
+23020412	[ERROR]
+23020413	[ERROR]
+23020414	[ERROR]
+23020415	[ERROR]
+23020416	[ERROR]
+23020417	[ERROR]
+23020418	[ERROR]
+23020419	[ERROR]
+23020420	[ERROR]
+23020421	[ERROR]
+23020422	[ERROR]
+23020423	[ERROR]
+23020424	[ERROR]
+23020425	[ERROR]
+23020500	[ERROR]Wielka pałka sztuki płomienia
+23020501	[ERROR]
+23020502	[ERROR]
+23020503	[ERROR]
+23020504	[ERROR]
+23020505	[ERROR]
+23020506	[ERROR]
+23020507	[ERROR]
+23020508	[ERROR]
+23020509	[ERROR]
+23020510	[ERROR]
+23020511	[ERROR]
+23020512	[ERROR]
+23020513	[ERROR]
+23020514	[ERROR]
+23020515	[ERROR]
+23020516	[ERROR]
+23020517	[ERROR]
+23020518	[ERROR]
+23020519	[ERROR]
+23020520	[ERROR]
+23020521	[ERROR]
+23020522	[ERROR]
+23020523	[ERROR]
+23020524	[ERROR]
+23020525	[ERROR]
+23020600	[ERROR]Wielka pałka błyskawic
+23020601	[ERROR]
+23020602	[ERROR]
+23020603	[ERROR]
+23020604	[ERROR]
+23020605	[ERROR]
+23020606	[ERROR]
+23020607	[ERROR]
+23020608	[ERROR]
+23020609	[ERROR]
+23020610	[ERROR]
+23020611	[ERROR]
+23020612	[ERROR]
+23020613	[ERROR]
+23020614	[ERROR]
+23020615	[ERROR]
+23020616	[ERROR]
+23020617	[ERROR]
+23020618	[ERROR]
+23020619	[ERROR]
+23020620	[ERROR]
+23020621	[ERROR]
+23020622	[ERROR]
+23020623	[ERROR]
+23020624	[ERROR]
+23020625	[ERROR]
+23020700	[ERROR]Święta wielka pałka
+23020701	[ERROR]
+23020702	[ERROR]
+23020703	[ERROR]
+23020704	[ERROR]
+23020705	[ERROR]
+23020706	[ERROR]
+23020707	[ERROR]
+23020708	[ERROR]
+23020709	[ERROR]
+23020710	[ERROR]
+23020711	[ERROR]
+23020712	[ERROR]
+23020713	[ERROR]
+23020714	[ERROR]
+23020715	[ERROR]
+23020716	[ERROR]
+23020717	[ERROR]
+23020718	[ERROR]
+23020719	[ERROR]
+23020720	[ERROR]
+23020721	[ERROR]
+23020722	[ERROR]
+23020723	[ERROR]
+23020724	[ERROR]
+23020725	[ERROR]
+23020800	[ERROR]Magiczna wielka pałka
+23020801	[ERROR]
+23020802	[ERROR]
+23020803	[ERROR]
+23020804	[ERROR]
+23020805	[ERROR]
+23020806	[ERROR]
+23020807	[ERROR]
+23020808	[ERROR]
+23020809	[ERROR]
+23020810	[ERROR]
+23020811	[ERROR]
+23020812	[ERROR]
+23020813	[ERROR]
+23020814	[ERROR]
+23020815	[ERROR]
+23020816	[ERROR]
+23020817	[ERROR]
+23020818	[ERROR]
+23020819	[ERROR]
+23020820	[ERROR]
+23020821	[ERROR]
+23020822	[ERROR]
+23020823	[ERROR]
+23020824	[ERROR]
+23020825	[ERROR]
+23020900	[ERROR]Wielka pałka zimna
+23020901	[ERROR]
+23020902	[ERROR]
+23020903	[ERROR]
+23020904	[ERROR]
+23020905	[ERROR]
+23020906	[ERROR]
+23020907	[ERROR]
+23020908	[ERROR]
+23020909	[ERROR]
+23020910	[ERROR]
+23020911	[ERROR]
+23020912	[ERROR]
+23020913	[ERROR]
+23020914	[ERROR]
+23020915	[ERROR]
+23020916	[ERROR]
+23020917	[ERROR]
+23020918	[ERROR]
+23020919	[ERROR]
+23020920	[ERROR]
+23020921	[ERROR]
+23020922	[ERROR]
+23020923	[ERROR]
+23020924	[ERROR]
+23020925	[ERROR]
+23021000	[ERROR]Zatruta wielka pałka
+23021001	[ERROR]
+23021002	[ERROR]
+23021003	[ERROR]
+23021004	[ERROR]
+23021005	[ERROR]
+23021006	[ERROR]
+23021007	[ERROR]
+23021008	[ERROR]
+23021009	[ERROR]
+23021010	[ERROR]
+23021011	[ERROR]
+23021012	[ERROR]
+23021013	[ERROR]
+23021014	[ERROR]
+23021015	[ERROR]
+23021016	[ERROR]
+23021017	[ERROR]
+23021018	[ERROR]
+23021019	[ERROR]
+23021020	[ERROR]
+23021021	[ERROR]
+23021022	[ERROR]
+23021023	[ERROR]
+23021024	[ERROR]
+23021025	[ERROR]
+23021100	[ERROR]Krwawa wielka pałka
+23021101	[ERROR]
+23021102	[ERROR]
+23021103	[ERROR]
+23021104	[ERROR]
+23021105	[ERROR]
+23021106	[ERROR]
+23021107	[ERROR]
+23021108	[ERROR]
+23021109	[ERROR]
+23021110	[ERROR]
+23021111	[ERROR]
+23021112	[ERROR]
+23021113	[ERROR]
+23021114	[ERROR]
+23021115	[ERROR]
+23021116	[ERROR]
+23021117	[ERROR]
+23021118	[ERROR]
+23021119	[ERROR]
+23021120	[ERROR]
+23021121	[ERROR]
+23021122	[ERROR]
+23021123	[ERROR]
+23021124	[ERROR]
+23021125	[ERROR]
+23021200	[ERROR]Okultystyczna wielka pałka
+23021201	[ERROR]
+23021202	[ERROR]
+23021203	[ERROR]
+23021204	[ERROR]
+23021205	[ERROR]
+23021206	[ERROR]
+23021207	[ERROR]
+23021208	[ERROR]
+23021209	[ERROR]
+23021210	[ERROR]
+23021211	[ERROR]
+23021212	[ERROR]
+23021213	[ERROR]
+23021214	[ERROR]
+23021215	[ERROR]
+23021216	[ERROR]
+23021217	[ERROR]
+23021218	[ERROR]
+23021219	[ERROR]
+23021220	[ERROR]
+23021221	[ERROR]
+23021222	[ERROR]
+23021223	[ERROR]
+23021224	[ERROR]
+23021225	[ERROR]
+23030000	Wielki róg wysłannika
+23040000	Wielki topór pojedynkowicza
+23040100	Ciężki wielki topór pojedynkowicza
+23040200	Wymyślny wielki topór pojedynkowicza
+23040300	Wysokiej jakości wielki topór pojedynkowicza
+23040400	Ognisty wielki topór pojedynkowicza
+23040500	Wielki topór sztuki płomienia pojedynkowicza
+23040600	Wielki topór błyskawic pojedynkowicza
+23040700	Święty wielki topór pojedynkowicza
+23040800	Magiczny wielki topór pojedynkowicza
+23040900	Wielki topór zimna pojedynkowicza
+23041000	Zatruty wielki topór pojedynkowicza
+23041100	Krwawy wielki topór pojedynkowicza
+23041200	Okultystyczny wielki topór pojedynkowicza
+23050000	Topór Godfreya
+23060000	Wielki smoczy pazur
+23070000	Kostur awatara
+23080000	Szczęka bestii spadającej gwiazdy
+23100000	Koło Ghizy
+23110000	Niszczyciel olbrzymów
+23110100	Ciężki niszczyciel olbrzymów
+23110200	Wymyślny niszczyciel olbrzymów
+23110300	Wysokiej jakości niszczyciel olbrzymów
+23110400	Ognisty niszczyciel olbrzymów
+23110500	Niszczyciel olbrzymów sztuki płomienia
+23110600	Niszczyciel olbrzymów błyskawic
+23110700	Święty niszczyciel olbrzymów
+23110800	Magiczny niszczyciel olbrzymów
+23110900	Niszczyciel olbrzymów zimna
+23111000	Zatruty niszczyciel olbrzymów
+23111100	Krwawy niszczyciel olbrzymów
+23111200	Okultystyczny niszczyciel olbrzymów
+23120000	Halabarda golema
+23120100	Ciężka halabarda golema
+23120200	Wymyślna halabarda golema
+23120300	Wysokiej jakości halabarda golema
+23120400	Ognista halabarda golema
+23120500	Halabarda sztuki płomienia golema
+23120600	Halabarda błyskawic golema
+23120700	Święta halabarda golema
+23120800	Magiczna halabarda golema
+23120900	Halabarda zimna golema
+23121000	Zatruta halabarda golema
+23121100	Krwawa halabarda golema
+23121200	Okultystyczna halabarda golema
+23130000	Młot trolla
+23130100	[ERROR]Ciężki młot trolla
+23130101	[ERROR]
+23130102	[ERROR]
+23130103	[ERROR]
+23130104	[ERROR]
+23130105	[ERROR]
+23130106	[ERROR]
+23130107	[ERROR]
+23130108	[ERROR]
+23130109	[ERROR]
+23130110	[ERROR]
+23130111	[ERROR]
+23130112	[ERROR]
+23130113	[ERROR]
+23130114	[ERROR]
+23130115	[ERROR]
+23130116	[ERROR]
+23130117	[ERROR]
+23130118	[ERROR]
+23130119	[ERROR]
+23130120	[ERROR]
+23130121	[ERROR]
+23130122	[ERROR]
+23130123	[ERROR]
+23130124	[ERROR]
+23130125	[ERROR]
+23130200	[ERROR]Wymyślny młot trolla
+23130201	[ERROR]
+23130202	[ERROR]
+23130203	[ERROR]
+23130204	[ERROR]
+23130205	[ERROR]
+23130206	[ERROR]
+23130207	[ERROR]
+23130208	[ERROR]
+23130209	[ERROR]
+23130210	[ERROR]
+23130211	[ERROR]
+23130212	[ERROR]
+23130213	[ERROR]
+23130214	[ERROR]
+23130215	[ERROR]
+23130216	[ERROR]
+23130217	[ERROR]
+23130218	[ERROR]
+23130219	[ERROR]
+23130220	[ERROR]
+23130221	[ERROR]
+23130222	[ERROR]
+23130223	[ERROR]
+23130224	[ERROR]
+23130225	[ERROR]
+23130300	[ERROR]Wysokiej jakości młot trolla
+23130301	[ERROR]
+23130302	[ERROR]
+23130303	[ERROR]
+23130304	[ERROR]
+23130305	[ERROR]
+23130306	[ERROR]
+23130307	[ERROR]
+23130308	[ERROR]
+23130309	[ERROR]
+23130310	[ERROR]
+23130311	[ERROR]
+23130312	[ERROR]
+23130313	[ERROR]
+23130314	[ERROR]
+23130315	[ERROR]
+23130316	[ERROR]
+23130317	[ERROR]
+23130318	[ERROR]
+23130319	[ERROR]
+23130320	[ERROR]
+23130321	[ERROR]
+23130322	[ERROR]
+23130323	[ERROR]
+23130324	[ERROR]
+23130325	[ERROR]
+23130400	[ERROR]Ognisty młot trolla
+23130401	[ERROR]
+23130402	[ERROR]
+23130403	[ERROR]
+23130404	[ERROR]
+23130405	[ERROR]
+23130406	[ERROR]
+23130407	[ERROR]
+23130408	[ERROR]
+23130409	[ERROR]
+23130410	[ERROR]
+23130411	[ERROR]
+23130412	[ERROR]
+23130413	[ERROR]
+23130414	[ERROR]
+23130415	[ERROR]
+23130416	[ERROR]
+23130417	[ERROR]
+23130418	[ERROR]
+23130419	[ERROR]
+23130420	[ERROR]
+23130421	[ERROR]
+23130422	[ERROR]
+23130423	[ERROR]
+23130424	[ERROR]
+23130425	[ERROR]
+23130500	[ERROR]Młot sztuki płomienia trolla
+23130501	[ERROR]
+23130502	[ERROR]
+23130503	[ERROR]
+23130504	[ERROR]
+23130505	[ERROR]
+23130506	[ERROR]
+23130507	[ERROR]
+23130508	[ERROR]
+23130509	[ERROR]
+23130510	[ERROR]
+23130511	[ERROR]
+23130512	[ERROR]
+23130513	[ERROR]
+23130514	[ERROR]
+23130515	[ERROR]
+23130516	[ERROR]
+23130517	[ERROR]
+23130518	[ERROR]
+23130519	[ERROR]
+23130520	[ERROR]
+23130521	[ERROR]
+23130522	[ERROR]
+23130523	[ERROR]
+23130524	[ERROR]
+23130525	[ERROR]
+23130600	[ERROR]Młot błyskawic trolla
+23130601	[ERROR]
+23130602	[ERROR]
+23130603	[ERROR]
+23130604	[ERROR]
+23130605	[ERROR]
+23130606	[ERROR]
+23130607	[ERROR]
+23130608	[ERROR]
+23130609	[ERROR]
+23130610	[ERROR]
+23130611	[ERROR]
+23130612	[ERROR]
+23130613	[ERROR]
+23130614	[ERROR]
+23130615	[ERROR]
+23130616	[ERROR]
+23130617	[ERROR]
+23130618	[ERROR]
+23130619	[ERROR]
+23130620	[ERROR]
+23130621	[ERROR]
+23130622	[ERROR]
+23130623	[ERROR]
+23130624	[ERROR]
+23130625	[ERROR]
+23130700	[ERROR]Święty młot trolla
+23130701	[ERROR]
+23130702	[ERROR]
+23130703	[ERROR]
+23130704	[ERROR]
+23130705	[ERROR]
+23130706	[ERROR]
+23130707	[ERROR]
+23130708	[ERROR]
+23130709	[ERROR]
+23130710	[ERROR]
+23130711	[ERROR]
+23130712	[ERROR]
+23130713	[ERROR]
+23130714	[ERROR]
+23130715	[ERROR]
+23130716	[ERROR]
+23130717	[ERROR]
+23130718	[ERROR]
+23130719	[ERROR]
+23130720	[ERROR]
+23130721	[ERROR]
+23130722	[ERROR]
+23130723	[ERROR]
+23130724	[ERROR]
+23130725	[ERROR]
+23130800	[ERROR]Magiczny młot trolla
+23130801	[ERROR]
+23130802	[ERROR]
+23130803	[ERROR]
+23130804	[ERROR]
+23130805	[ERROR]
+23130806	[ERROR]
+23130807	[ERROR]
+23130808	[ERROR]
+23130809	[ERROR]
+23130810	[ERROR]
+23130811	[ERROR]
+23130812	[ERROR]
+23130813	[ERROR]
+23130814	[ERROR]
+23130815	[ERROR]
+23130816	[ERROR]
+23130817	[ERROR]
+23130818	[ERROR]
+23130819	[ERROR]
+23130820	[ERROR]
+23130821	[ERROR]
+23130822	[ERROR]
+23130823	[ERROR]
+23130824	[ERROR]
+23130825	[ERROR]
+23130900	[ERROR]Młot zimna trolla
+23130901	[ERROR]
+23130902	[ERROR]
+23130903	[ERROR]
+23130904	[ERROR]
+23130905	[ERROR]
+23130906	[ERROR]
+23130907	[ERROR]
+23130908	[ERROR]
+23130909	[ERROR]
+23130910	[ERROR]
+23130911	[ERROR]
+23130912	[ERROR]
+23130913	[ERROR]
+23130914	[ERROR]
+23130915	[ERROR]
+23130916	[ERROR]
+23130917	[ERROR]
+23130918	[ERROR]
+23130919	[ERROR]
+23130920	[ERROR]
+23130921	[ERROR]
+23130922	[ERROR]
+23130923	[ERROR]
+23130924	[ERROR]
+23130925	[ERROR]
+23131000	[ERROR]Zatruty młot trolla
+23131001	[ERROR]
+23131002	[ERROR]
+23131003	[ERROR]
+23131004	[ERROR]
+23131005	[ERROR]
+23131006	[ERROR]
+23131007	[ERROR]
+23131008	[ERROR]
+23131009	[ERROR]
+23131010	[ERROR]
+23131011	[ERROR]
+23131012	[ERROR]
+23131013	[ERROR]
+23131014	[ERROR]
+23131015	[ERROR]
+23131016	[ERROR]
+23131017	[ERROR]
+23131018	[ERROR]
+23131019	[ERROR]
+23131020	[ERROR]
+23131021	[ERROR]
+23131022	[ERROR]
+23131023	[ERROR]
+23131024	[ERROR]
+23131025	[ERROR]
+23131100	[ERROR]Krwawy młot trolla
+23131101	[ERROR]
+23131102	[ERROR]
+23131103	[ERROR]
+23131104	[ERROR]
+23131105	[ERROR]
+23131106	[ERROR]
+23131107	[ERROR]
+23131108	[ERROR]
+23131109	[ERROR]
+23131110	[ERROR]
+23131111	[ERROR]
+23131112	[ERROR]
+23131113	[ERROR]
+23131114	[ERROR]
+23131115	[ERROR]
+23131116	[ERROR]
+23131117	[ERROR]
+23131118	[ERROR]
+23131119	[ERROR]
+23131120	[ERROR]
+23131121	[ERROR]
+23131122	[ERROR]
+23131123	[ERROR]
+23131124	[ERROR]
+23131125	[ERROR]
+23131200	[ERROR]Okultystyczny młot trolla
+23131201	[ERROR]
+23131202	[ERROR]
+23131203	[ERROR]
+23131204	[ERROR]
+23131205	[ERROR]
+23131206	[ERROR]
+23131207	[ERROR]
+23131208	[ERROR]
+23131209	[ERROR]
+23131210	[ERROR]
+23131211	[ERROR]
+23131212	[ERROR]
+23131213	[ERROR]
+23131214	[ERROR]
+23131215	[ERROR]
+23131216	[ERROR]
+23131217	[ERROR]
+23131218	[ERROR]
+23131219	[ERROR]
+23131220	[ERROR]
+23131221	[ERROR]
+23131222	[ERROR]
+23131223	[ERROR]
+23131224	[ERROR]
+23131225	[ERROR]
+23140000	Spróchniały kostur
+23150000	Zgniły wielki topór
+23150100	Ciężki zgniły wielki topór
+23150200	Wymyślny zgniły wielki topór
+23150300	Zgniły wielki topór wysokiej jakości
+23150400	Ognisty zgniły wielki topór
+23150500	Zgniły wielki topór sztuki płomienia
+23150600	Zgniły wielki topór błyskawic
+23150700	Święty zgniły wielki topór
+23150800	Magiczny zgniły wielki topór
+23150900	Zgniły wielki topór zimna
+23151000	Zatruty zgniły wielki topór
+23151100	Krwawy zgniły wielki topór
+23151200	Okultystyczny zgniły wielki topór
+23900000	[ERROR]
+23910000	[ERROR]
+23920000	[ERROR]
+23930000	[ERROR]
+24000000	Pochodnia
+24020000	Pochodnia ze stalowym drutem
+24040000	Pochodnia św. Triny
+24050000	Pochodnia ognia duchów
+24060000	Pochodnia odganiająca bestie
+24070000	Pochodnia strażnika
+30000000	Puklerz
+30000100	Ciężki puklerz
+30000200	Wymyślny puklerz
+30000300	Puklerz wysokiej jakości
+30000400	Ognisty puklerz
+30000500	Puklerz sztuki płomienia
+30000600	Puklerz błyskawic
+30000700	Święty puklerz
+30000800	Magiczny puklerz
+30000900	Puklerz zimna
+30001000	Zatruty puklerz
+30001100	Krwawy puklerz
+30001200	Okultystyczny puklerz
+30010000	Tarcza perfumiarza
+30010100	Ciężka tarcza perfumiarza
+30010200	Wymyślna tarcza perfumiarza
+30010300	Wysokiej jakości tarcza perfumiarza
+30010400	Ognista tarcza perfumiarza
+30010500	Tarcza sztuki płomienia perfumiarza
+30010600	Tarcza błyskawic perfumiarza
+30010700	Święta tarcza perfumiarza
+30010800	Magiczna tarcza perfumiarza
+30010900	Tarcza zimna perfumiarza
+30011000	Zatruta tarcza perfumiarza
+30011100	Krwawa tarcza perfumiarza
+30011200	Okultystyczna tarcza perfumiarza
+30020000	Tarcza człowieka-węża
+30020100	Ciężka tarcza człowieka-węża
+30020200	Wymyślna tarcza człowieka-węża
+30020300	Wysokiej jakości tarcza człowieka-węża
+30020400	Ognista tarcza człowieka-węża
+30020500	Tarcza sztuki płomienia człowieka-węża
+30020600	Tarcza błyskawic człowieka-węża
+30020700	Święta tarcza człowieka-węża
+30020800	Magiczna tarcza człowieka-węża
+30020900	Tarcza zimna człowieka-węża
+30021000	Zatruta tarcza człowieka-węża
+30021100	Krwawa tarcza człowieka-węża
+30021200	Okultystyczna tarcza człowieka-węża
+30030000	Koślawa tarcza
+30030100	Ciężka koślawa tarcza
+30030200	Wymyślna koślawa tarcza
+30030300	Koślawa tarcza wysokiej jakości
+30030400	Ognista koślawa tarcza
+30030500	Koślawa tarcza sztuki płomienia
+30030600	Koślawa tarcza błyskawic
+30030700	Święta koślawa tarcza
+30030800	Magiczna koślawa tarcza
+30030900	Koślawa tarcza zimna
+30031000	Zatruta koślawa tarcza
+30031100	Krwawa koślawa tarcza
+30031200	Okultystyczna koślawa tarcza
+30040000	Tarcza pręgierza
+30040100	Ciężka tarcza pręgierza
+30040200	Wymyślna tarcza pręgierza
+30040300	Wysokiej jakości tarcza pręgierza
+30040400	Ognista tarcza pręgierza
+30040500	Tarcza pręgierza sztuki płomienia
+30040600	Tarcza pręgierza błyskawic
+30040700	Święta tarcza pręgierza
+30040800	Magiczna tarcza pręgierza
+30040900	Tarcza pręgierza zimna
+30041000	Zatruta tarcza pręgierza
+30041100	Krwawa tarcza pręgierza
+30041200	Okultystyczna tarcza pręgierza
+30060000	Słojowa tarcza człowieka-bestii
+30060100	Ciężka słojowa tarcza człowieka-bestii
+30060200	Wymyślna słojowa tarcza człowieka-bestii
+30060300	Wysokiej jakości słojowa tarcza człowieka-bestii
+30060400	Ognista słojowa tarcza człowieka-bestii
+30060500	Słojowa tarcza sztuki płomienia człowieka-bestii
+30060600	Słojowa tarcza błyskawic człowieka-bestii
+30060700	Święta słojowa tarcza człowieka-bestii
+30060800	Magiczna słojowa tarcza człowieka-bestii
+30060900	Słojowa tarcza zimna człowieka-bestii
+30061000	Zatruta słojowa tarcza człowieka-bestii
+30061100	Krwawa słojowa tarcza człowieka-bestii
+30061200	Okultystyczna słojowa tarcza człowieka-bestii
+30070000	Ciernista okrągła tarcza
+30070100	Ciężka ciernista okrągła tarcza
+30070200	Wymyślna ciernista okrągła tarcza
+30070300	Ciernista okrągła tarcza wysokiej jakości
+30070400	Ognista ciernista okrągła tarcza
+30070500	Ciernista okrągła tarcza sztuki płomienia
+30070600	Ciernista okrągła tarcza błyskawic
+30070700	Święta ciernista okrągła tarcza
+30070800	Magiczna ciernista okrągła tarcza
+30070900	Ciernista okrągła tarcza zimna
+30071000	Zatruta ciernista okrągła tarcza
+30071100	Krwawa ciernista okrągła tarcza
+30071200	Okultystyczna ciernista okrągła tarcza
+30080000	Zapisana drewniana tarcza
+30080100	Ciężka zapisana drewniana tarcza
+30080200	Wymyślna zapisana drewniana tarcza
+30080300	Zapisana drewniana tarcza wysokiej jakości
+30080400	Ognista zapisana drewniana tarcza
+30080500	Zapisana drewniana tarcza sztuki płomienia
+30080600	Zapisana drewniana tarcza błyskawic
+30080700	Święta zapisana drewniana tarcza
+30080800	Magiczna zapisana drewniana tarcza
+30080900	Zapisana drewniana tarcza zimna
+30081000	Zatruta zapisana drewniana tarcza
+30081100	Krwawa zapisana drewniana tarcza
+30081200	Okultystyczna zapisana drewniana tarcza
+30090000	Ćwiekowana drewniana tarcza
+30090100	Ciężka ćwiekowana drewniana tarcza
+30090200	Wymyślna ćwiekowana drewniana tarcza
+30090300	Ćwiekowana drewniana tarcza wysokiej jakości
+30090400	Ognista ćwiekowana drewniana tarcza
+30090500	Ćwiekowana drewniana tarcza sztuki płomienia
+30090600	Ćwiekowana drewniana tarcza błyskawic
+30090700	Święta ćwiekowana drewniana tarcza
+30090800	Magiczna ćwiekowana drewniana tarcza
+30090900	Ćwiekowana drewniana tarcza zimna
+30091000	Zatruta ćwiekowana drewniana tarcza
+30091100	Krwawa ćwiekowana drewniana tarcza
+30091200	Okultystyczna ćwiekowana drewniana tarcza
+30100000	Niebiesko-biała tarcza z drewna
+30100100	Ciężka niebiesko-biała tarcza z drewna
+30100200	Wymyślna niebiesko-biała tarcza z drewna
+30100300	Wysokiej jakości niebiesko-biała tarcza z drewna
+30100400	Ognista niebiesko-biała tarcza z drewna
+30100500	Niebiesko-biała tarcza z drewna sztuki płomienia
+30100600	Niebiesko-biała tarcza błyskawic z drewna
+30100700	Święta niebiesko-biała tarcza z drewna
+30100800	Magiczna niebiesko-biała tarcza z drewna
+30100900	Niebiesko-biała tarcza zimna z drewna
+30101000	Zatruta niebiesko-biała tarcza z drewna
+30101100	Krwawa niebiesko-biała tarcza z drewna
+30101200	Okultystyczna niebiesko-biała tarcza z drewna
+30110000	Tarcza szczelinowa
+30110100	Ciężka tarcza szczelinowa
+30110200	Wymyślna tarcza szczelinowa
+30110300	Tarcza szczelinowa wysokiej jakości
+30110400	Ognista tarcza szczelinowa
+30110500	Tarcza szczelinowa sztuki płomienia
+30110600	Tarcza szczelinowa błyskawic
+30110700	Święta tarcza szczelinowa
+30110800	Magiczna tarcza szczelinowa
+30110900	Tarcza szczelinowa zimna
+30111000	Zatruta tarcza szczelinowa
+30111100	Krwawa tarcza szczelinowa
+30111200	Okultystyczna tarcza szczelinowa
+30120000	Żelazna okrągła tarcza
+30120100	Ciężka żelazna okrągła tarcza
+30120200	Wymyślna żelazna okrągła tarcza
+30120300	Żelazna okrągła tarcza wysokiej jakości
+30120400	Ognista żelazna okrągła tarcza
+30120500	Żelazna okrągła tarcza sztuki płomienia
+30120600	Żelazna okrągła tarcza błyskawic
+30120700	Święta żelazna okrągła tarcza
+30120800	Magiczna żelazna okrągła tarcza
+30120900	Żelazna okrągła tarcza zimna
+30121000	Zatruta żelazna okrągła tarcza
+30121100	Krwawa żelazna okrągła tarcza
+30121200	Okultystyczna żelazna okrągła tarcza
+30130000	Pozłacana żelazna tarcza
+30130100	Ciężka pozłacana żelazna tarcza
+30130200	Wymyślna pozłacana żelazna tarcza
+30130300	Pozłacana żelazna tarcza wysokiej jakości
+30130400	Ognista pozłacana żelazna tarcza
+30130500	Pozłacana żelazna tarcza sztuki płomienia
+30130600	Pozłacana żelazna tarcza błyskawic
+30130700	Święta pozłacana żelazna tarcza
+30130800	Magiczna pozłacana żelazna tarcza
+30130900	Pozłacana żelazna tarcza zimna
+30131000	Zatruta pozłacana żelazna tarcza
+30131100	Krwawa pozłacana żelazna tarcza
+30131200	Okultystyczna pozłacana żelazna tarcza
+30140000	Tarcza lodowego herbu
+30140100	Ciężka tarcza lodowego herbu
+30140200	Wymyślna tarcza lodowego herbu
+30140300	Wysokiej jakości tarcza lodowego herbu
+30140400	Ognista tarcza lodowego herbu
+30140500	Tarcza sztuki płomienia lodowego herbu
+30140600	Tarcza błyskawic lodowego herbu
+30140700	Święta tarcza lodowego herbu
+30140800	Magiczna tarcza lodowego herbu
+30140900	Tarcza zimna lodowego herbu
+30141000	Zatruta tarcza lodowego herbu
+30141100	Krwawa tarcza lodowego herbu
+30141200	Okultystyczna tarcza lodowego herbu
+30150000	Tarcza dymu
+30150100	Ciężka tarcza dymu
+30150200	Wymyślna tarcza dymu
+30150300	Wysokiej jakości tarcza dymu
+30150400	Ognista tarcza dymu
+30150500	Tarcza dymu sztuki płomienia
+30150600	Tarcza dymu błyskawic
+30150700	Święta tarcza dymu
+30150800	Magiczna tarcza dymu
+30150900	Tarcza dymu zimna
+30151000	Zatruta tarcza dymu
+30151100	Krwawa tarcza dymu
+30151200	Okultystyczna tarcza dymu
+30190000	Tarcza kręconego rogu
+30190100	Ciężka tarcza kręconego rogu
+30190200	Wymyślna tarcza kręconego rogu
+30190300	Wysokiej jakości tarcza kręconego rogu
+30190400	Ognista tarcza kręconego rogu
+30190500	Tarcza sztuki płomienia kręconego rogu
+30190600	Tarcza błyskawic kręconego rogu
+30190700	Święta tarcza kręconego rogu
+30190800	Magiczna tarcza kręconego rogu
+30190900	Tarcza zimna kręconego rogu
+30191000	Zatruta tarcza kręconego rogu
+30191100	Krwawa tarcza kręconego rogu
+30191200	Okultystyczna tarcza kręconego rogu
+30200000	Wężowa tarcza
+31000000	Trójkątna tarcza
+31000100	Ciężka trójkątna tarcza
+31000200	Wymyślna trójkątna tarcza
+31000300	Trójkątna tarcza wysokiej jakości
+31000400	Ognista trójkątna tarcza
+31000500	Trójkątna tarcza sztuki płomienia
+31000600	Trójkątna tarcza błyskawic
+31000700	Święta trójkątna tarcza
+31000800	Magiczna trójkątna tarcza
+31000900	Trójkątna tarcza zimna
+31001000	Zatruta trójkątna tarcza
+31001100	Krwawa trójkątna tarcza
+31001200	Okultystyczna trójkątna tarcza
+31010000	Oszpecona skórzana tarcza
+31010100	Ciężka oszpecona skórzana tarcza
+31010200	Wymyślna oszpecona skórzana tarcza
+31010300	Oszpecona skórzana tarcza wysokiej jakości
+31010400	Święta oszpecona skórzana tarcza
+31010500	Oszpecona skórzana tarcza sztuki płomienia
+31010600	Oszpecona skórzana tarcza błyskawic
+31010700	Święta oszpecona skórzana tarcza
+31010800	Magiczna oszpecona skórzana tarcza
+31010900	Oszpecona skórzana tarcza zimna
+31011000	Zatruta oszpecona skórzana tarcza
+31011100	Krwawa oszpecona skórzana tarcza
+31011200	Okultystyczna oszpecona skórzana tarcza
+31020000	Oszpecona drewniana tarcza
+31020100	Ciężka oszpecona drewniana tarcza
+31020200	Wymyślna oszpecona drewniana tarcza
+31020300	Oszpecona drewniana tarcza wysokiej jakości
+31020400	Ognista oszpecona drewniana tarcza
+31020500	Oszpecona drewniana tarcza sztuki płomienia
+31020600	Oszpecona drewniana tarcza błyskawic
+31020700	Święta oszpecona drewniana tarcza
+31020800	Magiczna oszpecona blada drewniana tarcza
+31020900	Oszpecona drewniana tarcza zimna
+31021000	Zatruta oszpecona drewniana tarcza
+31021100	Krwawa oszpecona drewniana tarcza
+31021200	Okultystyczna oszpecona drewniana tarcza
+31030000	Tarcza wypędzonego rycerza
+31030100	Ciężka tarcza wypędzonego rycerza
+31030200	Wymyślna tarcza wypędzonego rycerza
+31030300	Wysokiej jakości tarcza wypędzonego rycerza
+31030400	Ognista tarcza wypędzonego rycerza
+31030500	Tarcza sztuki płomienia wypędzonego rycerza
+31030600	Tarcza błyskawic wypędzonego rycerza
+31030700	Święta tarcza wypędzonego rycerza
+31030800	Magiczna tarcza wypędzonego rycerza
+31030900	Tarcza zimna wypędzonego rycerza
+31031000	Zatruta tarcza wypędzonego rycerza
+31031100	Krwawa tarcza wypędzonego rycerza
+31031200	Okultystyczna tarcza wypędzonego rycerza
+31040000	Tarcza albinauryków
+31040100	Ciężka tarcza albinauryków
+31040200	Wymyślna tarcza albinauryków
+31040300	Wysokiej jakości tarcza albinauryków
+31040400	Ognista tarcza albinauryków
+31040500	Tarcza sztuki płomienia albinauryków
+31040600	Tarcza błyskawic albinauryków
+31040700	Święta tarcza albinauryków
+31040800	Magiczna tarcza albinauryków
+31040900	Tarcza zimna albinauryków
+31041000	Zatruta tarcza albinauryków
+31041100	Krwawa tarcza albinauryków
+31041200	Okultystyczna tarcza albinauryków
+31050000	Tarcza Krainy Słońca
+31050100	Ciężka tarcza Krainy Słońca
+31050200	Wymyślna tarcza Krainy Słońca
+31050300	Wysokiej jakości tarcza Krainy Słońca
+31050400	Ognista tarcza Krainy Słońca
+31050500	Tarcza sztuki płomienia Krainy Słońca
+31050600	Tarcza błyskawic Krainy Słońca
+31050700	Święta tarcza Krainy Słońca
+31050800	Magiczna tarcza Krainy Słońca
+31050900	Tarcza zimna Krainy Słońca
+31051000	Zatruta tarcza Krainy Słońca
+31051100	Krwawa tarcza Krainy Słońca
+31051200	Okultystyczna tarcza Krainy Słońca
+31060000	Srebrna lustrzana tarcza
+31070000	Okrągła tarcza
+31070100	Ciężka okrągła tarcza
+31070200	Wymyślna okrągła tarcza
+31070300	Okrągła tarcza wysokiej jakości
+31070400	Ognista okrągła tarcza
+31070500	Okrągła tarcza sztuki płomienia
+31070600	Okrągła tarcza błyskawic
+31070700	Święta okrągła tarcza
+31070800	Magiczna okrągła tarcza
+31070900	Okrągła tarcza zimna
+31071000	Zatruta okrągła tarcza
+31071100	Krwawa okrągła tarcza
+31071200	Okultystyczna okrągła tarcza
+31080000	Trójkątna tarcza skorpiona
+31080100	Ciężka trójkątna tarcza skorpiona
+31080200	Wymyślna trójkątna tarcza skorpiona
+31080300	Wysokiej jakości trójkątna tarcza skorpiona
+31080400	Ognista trójkątna tarcza skorpiona
+31080500	Trójkątna tarcza skorpiona sztuki płomienia
+31080600	Trójkątna tarcza skorpiona błyskawic
+31080700	Święta trójkątna tarcza skorpiona
+31080800	Magiczna trójkątna tarcza skorpiona
+31080900	Trójkątna tarcza skorpiona zimna
+31081000	Zatruta trójkątna tarcza skorpiona
+31081100	Krwawa trójkątna tarcza skorpiona
+31081200	Okultystyczna trójkątna tarcza skorpiona
+31090000	Tarcza z dwugłowym ptakiem
+31090100	Ciężka tarcza z dwugłowym ptakiem
+31090200	Wymyślna tarcza z dwugłowym ptakiem
+31090300	Wysokiej jakości tarcza z dwugłowym ptakiem
+31090400	Ognista tarcza z dwugłowym ptakiem
+31090500	Tarcza sztuki płomienia z dwugłowym ptakiem
+31090600	Tarcza błyskawic z dwugłowym ptakiem
+31090700	Święta tarcza z dwugłowym ptakiem
+31090800	Magiczna tarcza z dwugłowym ptakiem
+31090900	Tarcza zimna z dwugłowym ptakiem
+31091000	Zatruta tarcza z dwugłowym ptakiem
+31091100	Krwawa tarcza z dwugłowym ptakiem
+31091200	Okultystyczna tarcza z dwugłowym ptakiem
+31100000	Niebiesko-złota trójkątna tarcza
+31100100	Ciężka niebiesko-złota trójkątna tarcza
+31100200	Wymyślna niebiesko-złota trójkątna tarcza
+31100300	Niebiesko-złota trójkątna tarcza wysokiej jakości
+31100400	Ognista niebiesko-złota trójkątna tarcza
+31100500	Niebiesko-złota trójkątna tarcza sztuki płomienia
+31100600	Niebiesko-złota trójkątna tarcza błyskawic
+31100700	Święta niebiesko-złota trójkątna tarcza
+31100800	Magiczna niebiesko-złota trójkątna tarcza
+31100900	Niebiesko-złota trójkątna tarcza zimna
+31101000	Zatruta niebiesko-złota trójkątna tarcza
+31101100	Krwawa niebiesko-złota trójkątna tarcza
+31101200	Okultystyczna niebiesko-złota trójkątna tarcza
+31130000	Mosiężna tarcza
+31130100	Ciężka mosiężna tarcza
+31130200	Wymyślna mosiężna tarcza
+31130300	Mosiężna tarcza wysokiej jakości
+31130400	Ognista mosiężna tarcza
+31130500	Mosiężna tarcza sztuki płomienia
+31130600	Mosiężna tarcza błyskawic
+31130700	Święta mosiężna tarcza
+31130800	Magiczna mosiężna tarcza
+31130900	Mosiężna tarcza zimna
+31131000	Zatruta mosiężna tarcza
+31131100	Krwawa mosiężna tarcza
+31131200	Okultystyczna mosiężna tarcza
+31140000	Wielka skorupa żółwia
+31140100	Ciężka wielka skorupa żółwia
+31140200	Wymyślna wielka skorupa żółwia
+31140300	Wysokiej jakości wielka skorupa żółwia
+31140400	Ognista wielka skorupa żółwia
+31140500	Wielka skorupa żółwia sztuki płomienia
+31140600	Wielka skorupa żółwia błyskawic
+31140700	Święta wielka skorupa żółwia
+31140800	Magiczna wielka skorupa żółwia
+31140900	Wielka skorupa żółwia zimna
+31141000	Zatruta wielka skorupa żółwia
+31141100	Krwawa wielka skorupa żółwia
+31141200	Okultystyczna wielka skorupa żółwia
+31170000	Tarcza winowajców
+31170100	Ciężka tarcza winowajców
+31170200	Wymyślna tarcza winowajców
+31170300	Wysokiej jakości tarcza winowajców
+31170400	Ognista tarcza winowajców
+31170500	Tarcza sztuki płomienia winowajców
+31170600	Tarcza błyskawic winowajców
+31170700	Święta tarcza winowajców
+31170800	Magiczna tarcza winowajców
+31170900	Tarcza zimna winowajców
+31171000	Zatruta tarcza winowajców
+31171100	Krwawa tarcza winowajców
+31171200	Okultystyczna tarcza winowajców
+31190000	Tarcza karyjskiego rycerza
+31190100	Ciężka tarcza karyjskiego rycerza
+31190200	Wymyślna tarcza karyjskiego rycerza
+31190300	Wysokiej jakości tarcza karyjskiego rycerza
+31190400	Ognista tarcza karyjskiego rycerza
+31190500	Tarcza sztuki płomienia karyjskiego rycerza
+31190600	Tarcza błyskawic karyjskiego rycerza
+31190700	Święta tarcza karyjskiego rycerza
+31190800	Magiczna tarcza karyjskiego rycerza
+31190900	Tarcza zimna karyjskiego rycerza
+31191000	Zatruta tarcza karyjskiego rycerza
+31191100	Krwawa tarcza karyjskiego rycerza
+31191200	Okultystyczna tarcza karyjskiego rycerza
+31230000	Duża skórzana tarcza
+31230100	Ciężka duża skórzana tarcza
+31230200	Wymyślna duża skórzana tarcza
+31230300	Duża skórzana tarcza wysokiej jakości
+31230400	Ognista duża skórzana tarcza
+31230500	Duża skórzana tarcza sztuki płomienia
+31230600	Duża skórzana tarcza błyskawic
+31230700	Święta duża skórzana tarcza
+31230800	Magiczna duża skórzana tarcza
+31230900	Duża skórzana tarcza zimna
+31231000	Zatruta duża skórzana tarcza
+31231100	Krwawa duża skórzana tarcza
+31231200	Okultystyczna duża skórzana tarcza
+31240000	Drewniana tarcza z motywem konia
+31240100	Ciężka drewniana tarcza z motywem konia
+31240200	Wymyślna drewniana tarcza z motywem konia
+31240300	Drewniana tarcza wysokiej jakości z motywem konia
+31240400	Ognista drewniana tarcza z motywem konia
+31240500	Drew. tarcza sztuki płomienia z motywem konia
+31240600	Drewniana tarcza błyskawic z motywem konia
+31240700	Święta drewniana tarcza z motywem konia
+31240800	Magiczna drewniana tarcza z motywem konia
+31240900	Drewniana tarcza zimna z motywem konia
+31241000	Zatruta drewniana tarcza z motywem konia
+31241100	Krwawa drewniana tarcza z motywem konia
+31241200	Okultystyczna drewniana tarcza z motywem konia
+31250000	Drewniana tarcza z drzewa świecowego
+31250100	Ciężka drewniana tarcza z drzewa świecowego
+31250200	Wymyślna drewniana tarcza z drzewa świecowego
+31250300	Wysokiej jakości tarcza z drzewa świecowego
+31250400	Ognista drewniana tarcza z drzewa świecowego
+31250500	Tarcza sztuki płomienia z drzewa świecowego
+31250600	Drewniana tarcza błyskawic z drzewa świecowego
+31250700	Święta drewniana tarcza z drzewa świecowego
+31250800	Magiczna drewniana tarcza z drzewa świecowego
+31250900	Drewniana tarcza zimna z drzewa świecowego
+31251000	Zatruta drewniana tarcza z drzewa świecowego
+31251100	Krwawa drewniana tarcza z drzewa świecowego
+31251200	Okultystyczna drewniana tarcza z drzewa świecowego
+31260000	Drewniana tarcza ognistego herbu
+31260100	Ciężka drewniana tarcza ognistego herbu
+31260200	Wymyślna drewniana tarcza ognistego herbu
+31260300	Wysokiej jakości drewniana tarcza ognistego herbu
+31260400	Ognista drewniana tarcza ognistego herbu
+31260500	Drewniana tarcza sztuki płomienia ognistego herbu
+31260600	Drewniana tarcza błyskawic ognistego herbu
+31260700	Święta drewniana tarcza ognistego herbu
+31260800	Magiczna drewniana tarcza ognistego herbu
+31260900	Drewniana tarcza zimna ognistego herbu
+31261000	Zatruta drewniana tarcza ognistego herbu
+31261100	Krwawa drewniana tarcza ognistego herbu
+31261200	Okultystyczna drewniana tarcza ognistego herbu
+31270000	Drewniana tarcza z motywem jastrzębia
+31270100	Ciężka drewniana tarcza z motywem jastrzębia
+31270200	Wymyślna drewniana tarcza z motywem jastrzębia
+31270300	Drewniana tarcza wys. jakości z motywem jastrzębia
+31270400	Ognista drewniana tarcza z motywem jastrzębia
+31270500	Drew. tarcza sztuki płomienia z motywem jastrzębia
+31270600	Drewniana tarcza błyskawic z motywem jastrzębia
+31270700	Święta drewniana tarcza z motywem jastrzębia
+31270800	Magiczna drewniana tarcza z motywem jastrzębia
+31270900	Drewniana tarcza zimna z motywem jastrzębia
+31271000	Zatruta drewniana tarcza z motywem jastrzębia
+31271100	Krwawa drewniana tarcza z motywem jastrzębia
+31271200	Okultystyczna drewniana tarcza z motywem jastrzębia
+31280000	Tarcza żelazkowa z herbem bestii
+31280100	Ciężka tarcza żelazkowa z herbem bestii
+31280200	Wymyślna tarcza żelazkowa z herbem bestii
+31280300	Wysokiej jakości tarcza żelazkowa z herbem bestii
+31280400	Ognista tarcza żelazkowa z herbem bestii
+31280500	Żelazkowa tarcza sztuki płomienia z herbem bestii
+31280600	Żelazkowa tarcza błyskawic z herbem bestii
+31280700	Święta tarcza żelazkowa z herbem bestii
+31280800	Magiczna tarcza żelazkowa z herbem bestii
+31280900	Żelazkowa tarcza zimna z herbem bestii
+31281000	Zatruta tarcza żelazkowa z herbem bestii
+31281100	Krwawa żelazkowa tarcza z herbem bestii
+31281200	Okultystyczna tarcza żelazkowa z herbem bestii
+31290000	Tarcza żelazkowa z czerwonym herbem
+31290100	Ciężka tarcza żelazkowa z czerwonym herbem
+31290200	Wymyślna tarcza żelazkowa z czerwonym herbem
+31290300	Wysokiej jakości tarcza żelazkowa z czerw. herbem
+31290400	Ognista tarcza żelazkowa z czerwonym herbem
+31290500	Żelazkowa tarcza sztuki płomienia z czerw. herbem
+31290600	Żelazkowa tarcza błyskawic z czerwonym herbem
+31290700	Święta tarcza żelazkowa z czerwonym herbem
+31290800	Magiczna tarcza żelazkowa z czerwonym herbem
+31290900	Żelazkowa tarcza zimna z czerwonym herbem
+31291000	Zatruta tarcza żelazkowa z czerwonym herbem
+31291100	Krwawa żelazkowa tarcza z czerwonym herbem
+31291200	Okultystyczna tarcza żelazkowa z czerwonym herbem
+31300000	Tarcza żelazkowa z niebieskim herbem
+31300100	Ciężka tarcza żelazkowa z niebieskim herbem
+31300200	Wymyślna tarcza żelazkowa z niebieskim herbem
+31300300	Wysokiej jakości tarcza żelazkowa z nieb. herbem
+31300400	Ognista tarcza żelazkowa z niebieskim herbem
+31300500	Żelazkowa tarcza sztuki płomienia z nieb. herbem
+31300600	Żelazkowa tarcza błyskawic z niebieskim herbem
+31300700	Święta tarcza żelazkowa z niebieskim herbem
+31300800	Magiczna tarcza żelazkowa z niebieskim herbem
+31300900	Żelazkowa tarcza zimna z niebieskim herbem
+31301000	Zatruta tarcza żelazkowa z niebieskim herbem
+31301100	Żelazkowa tarcza krwi z niebieskim herbem
+31301200	Okultystyczna tarcza żelazkowa z niebieskim herbem
+31310000	Tarcza żelazkowa z herbem zaćmienia
+31310100	Ciężka tarcza żelazkowa z herbem zaćmienia
+31310200	Wymyślna tarcza żelazkowa z herbem zaćmienia
+31310300	Wysok. jakości tarcza żelazkowa z herbem zaćmienia
+31310400	Ognista tarcza żelazkowa z herbem zaćmienia
+31310500	Żelazkowa tarcza sztuki płom. z herbem zaćmienia
+31310600	Żelazkowa tarcza błyskawic z herbem zaćmienia
+31310700	Święta tarcza żelazkowa z herbem zaćmienia
+31310800	Magiczna tarcza żelazkowa z herbem zaćmienia
+31310900	Żelazkowa tarcza zimna z herbem zaćmienia
+31311000	Zatruta tarcza żelazkowa z herbem zaćmienia
+31311100	Żelazkowa tarcza krwi z herbem zaćmienia
+31311200	Okultystyczna tarcza żelazkowa z herbem zaćmienia
+31320000	Tarcza z odwróconym jastrzębiem
+31320100	Ciężka tarcza z odwróconym jastrzębiem
+31320200	Wymyślna tarcza z odwróconym jastrzębiem
+31320300	Wys. jakości tarcza z odwróconym jastrzębiem
+31320400	Ognista tarcza z odwróconym jastrzębiem
+31320500	Tarcza sztuki płom. z odwróconym jastrzębiem
+31320600	Tarcza błyskawic z odwróconym jastrzębiem
+31320700	Święta tarcza z odwróconym jastrzębiem
+31320800	Magiczna tarcza z odwróconym jastrzębiem
+31320900	Tarcza zimna z odwróconym jastrzębiem
+31321000	Zatruta tarcza z odwróconym jastrzębiem
+31321100	Tarcza krwi z odwróconym jastrzębiem
+31321200	Okultystyczna tarcza z odwróconym jastrzębiem
+31330000	Tarcza żelazkowa
+31330100	Ciężka tarcza żelazkowa
+31330200	Wymyślna tarcza żelazkowa
+31330300	Wysokiej jakości tarcza żelazkowa
+31330400	Ognista tarcza żelazkowa
+31330500	Żelazkowa tarcza sztuki płomienia
+31330600	Żelazkowa tarcza błyskawic
+31330700	Święta tarcza żelazkowa
+31330800	Magiczna tarcza żelazkowa
+31330900	Żelazkowa tarcza zimna
+31331000	Zatruta tarcza żelazkowa
+31331100	Żelazkowa tarcza krwi
+31331200	Okultystyczna tarcza żelazkowa
+31340000	Czarna skórzana tarcza
+31340100	Ciężka czarna skórzana tarcza
+31340200	Wymyślna czarna skórzana tarcza
+31340300	Czarna skórzana tarcza wysokiej jakości
+31340400	Ognista czarna skórzana tarcza
+31340500	Czarna skórzana tarcza sztuki płomienia
+31340600	Czarna skórzana tarcza błyskawic
+31340700	Święta czarna skórzana tarcza
+31340800	Magiczna czarna skórzana tarcza
+31340900	Czarna skórzana tarcza zimna
+31341000	Zatruta czarna skórzana tarcza
+31341100	Krwawa czarna skórzana tarcza
+31341200	Okultystyczna czarna skórzana tarcza
+32000000	Długa tarcza z motywem smoka
+32000100	Ciężka długa tarcza z motywem smoka
+32000200	Wymyślna długa tarcza z motywem smoka
+32000300	Wysokiej jakości długa tarcza z motywem smoka
+32000400	Ognista długa tarcza z motywem smoka
+32000500	Długa tarcza sztuki płomienia z motywem smoka
+32000600	Długa tarcza błyskawic z motywem smoka
+32000700	Święta długa tarcza z motywem smoka
+32000800	Magiczna długa tarcza z motywem smoka
+32000900	Długa tarcza zimna z motywem smoka
+32001000	Zatruta długa tarcza z motywem smoka
+32001100	Krwawa długa tarcza z motywem smoka
+32001200	Okultystyczna długa tarcza z motywem smoka
+32020000	Wielka dystyngowana tarcza
+32020100	Ciężka wielka dystyngowana tarcza
+32020200	Wymyślna wielka dystyngowana tarcza
+32020300	Wielka dystyngowana tarcza wysokiej jakości
+32020400	Ognista wielka dystyngowana tarcza
+32020500	Wielka dystyngowana tarcza sztuki płomienia
+32020600	Wielka dystyngowana tarcza błyskawic
+32020700	Święta wielka dystyngowana tarcza
+32020800	Magiczna wielka dystyngowana tarcza
+32020900	Wielka dystyngowana tarcza zimna
+32021000	Zatruta wielka dystyngowana tarcza
+32021100	Krwawa wielka dystyngowana tarcza
+32021200	Okultystyczna wielka dystyngowana tarcza
+32030000	Rogata tarcza Tygla
+32030100	Ciężka rogata tarcza Tygla
+32030200	Wymyślna rogata tarcza Tygla
+32030300	Wysokiej jakości rogata tarcza Tygla
+32030400	Ognista rogata tarcza Tygla
+32030500	Rogata tarcza sztuki płomienia Tygla
+32030600	Rogata tarcza błyskawic Tygla
+32030700	Święta rogata tarcza Tygla
+32030800	Magiczna rogata tarcza Tygla
+32030900	Rogata tarcza zimna Tygla
+32031000	Trująca rogata tarcza Tygla
+32031100	Krwawa rogata tarcza Tygla
+32031200	Okultystyczna rogata tarcza Tygla
+32040000	Tarcza smoczego szponu
+32040100	Ciężka tarcza smoczego szponu
+32040200	Wymyślna tarcza smoczego szponu
+32040300	Wysokiej jakości tarcza smoczego szponu
+32040400	Ognista tarcza smoczego szponu
+32040500	Tarcza sztuki płomienia smoczego szponu
+32040600	Tarcza błyskawic smoczego szponu
+32040700	Święta tarcza smoczego szponu
+32040800	Magiczna tarcza smoczego szponu
+32040900	Tarcza zimna smoczego szponu
+32041000	Zatruta tarcza smoczego szponu
+32041100	Tarcza krwi smoczego szponu
+32041200	Okultystyczna tarcza smoczego szponu
+32050000	Wielka tarcza głogu
+32050100	Ciężka wielka tarcza głogu
+32050200	Wymyślna wielka tarcza głogu
+32050300	Wysokiej jakości wielka tarcza głogu
+32050400	Ognista wielka tarcza głogu
+32050500	Wielka tarcza głogu sztuki płomienia
+32050600	Wielka tarcza błyskawic głogu
+32050700	Święta wielka tarcza głogu
+32050800	Magiczna wielka tarcza głogu
+32050900	Wielka tarcza zimna głogu
+32051000	Zatruta wielka tarcza głogu
+32051100	Krwawa wielka tarcza głogu
+32051200	Okultystyczna wielka tarcza głogu
+32080000	Wielka tarcza Złotego Drzewa
+32080100	Ciężka wielka tarcza Złotego Drzewa
+32080200	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080300	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080400	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080500	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080600	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080700	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080800	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32080900	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32081000	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32081100	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32081200	Tarcza używana przez strażników drzewa.\r\nWzbogacona złotem i ozdobiona subtelnym wzorem.
+32090000	Złota tarcza z herbem bestii
+32090100	Ciężka złota tarcza z herbem bestii
+32090200	Wymyślna złota tarcza z herbem bestii
+32090300	Wysokiej jakości złota tarcza z herbem bestii
+32090400	Ognista złota tarcza z herbem bestii
+32090500	Złota tarcza sztuki płomienia z herbem bestii
+32090600	Złota tarcza błyskawic z herbem bestii
+32090700	Święta złota tarcza z herbem bestii
+32090800	Magiczna złota tarcza z herbem bestii
+32090900	Złota tarcza zimna z herbem bestii
+32091000	Zatruta złota tarcza z herbem bestii
+32091100	Krwawa złota tarcza z herbem bestii
+32091200	Okultystyczna złota tarcza z herbem bestii
+32120000	Tarcza z meduzy
+32130000	Kamienna opuszkowa tarcza
+32130100	Ciężka kamienna opuszkowa tarcza
+32130200	Wymyślna kamienna opuszkowa tarcza
+32130300	Wysokiej jakości kamienna opuszkowa tarcza
+32130400	Ognista kamienna opuszkowa tarcza
+32130500	Kamienna opuszkowa tarcza sztuki płomienia
+32130600	Kamienna opuszkowa tarcza błyskawic
+32130700	Święta kamienna opuszkowa tarcza
+32130800	Magiczna kamienna opuszkowa tarcza
+32130900	Kamienna opuszkowa tarcza zimna
+32131000	Zatruta kamienna opuszkowa tarcza
+32131100	Krwawa kamienna opuszkowa tarcza
+32131200	Okultystyczna kamienna opuszkowa tarcza
+32140000	Tarcza z ikoną
+32140100	Ciężka tarcza z ikoną
+32140200	Wymyślna tarcza z ikoną
+32140300	Wysokiej jakości tarcza z ikoną
+32140400	Ognista tarcza z ikoną
+32140500	Tarcza z ikoną sztuki płomienia
+32140600	Tarcza błyskawic z ikoną
+32140700	Święta tarcza z ikoną
+32140800	Magiczna tarcza z ikoną
+32140900	Tarcza zimna z ikoną
+32141000	Zatruta tarcza z ikoną
+32141100	Krwawa tarcza z ikoną
+32141200	Okultystyczna tarcza z ikoną
+32150000	Jednooka tarcza
+32160000	Tarcza z obliczem
+32170000	Tarcza kolczastej palisady
+32170100	Ciężka tarcza kolczastej palisady
+32170200	Wymyślna tarcza kolczastej palisady
+32170300	Wysokiej jakości tarcza kolczastej palisady
+32170400	Ognista tarcza kolczastej palisady
+32170500	Tarcza kolczastej palisady sztuki płomienia
+32170600	Tarcza błyskawic kolczastej palisady
+32170700	Święta tarcza kolczastej palisady
+32170800	Magiczna tarcza kolczastej palisady
+32170900	Tarcza zimna kolczastej palisady
+32171000	Zatruta tarcza kolczastej palisady
+32171100	Krwawa tarcza kolczastej palisady
+32171200	Okultystyczna tarcza kolczastej palisady
+32190000	Długa tarcza z motywem dworu
+32190100	Ciężka długa tarcza z motywem dworu
+32190200	Wymyślna długa tarcza z motywem dworu
+32190300	Wysokiej jakości długa tarcza z motywem dworu
+32190400	Ognista długa tarcza z motywem dworu
+32190500	Długa tarcza sztuki płomienia z motywem dworu
+32190600	Długa tarcza błyskawic z motywem dworu
+32190700	Święta długa tarcza z motywem dworu
+32190800	Magiczna długa tarcza z motywem dworu
+32190900	Długa tarcza zimna z motywem dworu
+32191000	Zatruta długa tarcza z motywem dworu
+32191100	Krwawa długa tarcza z motywem dworu
+32191200	Okultystyczna długa tarcza z motywem dworu
+32200000	Tarcza z motywem krzyżodrzewa
+32200100	Ciężka tarcza z motywem krzyżodrzewa
+32200200	Wymyślna tarcza z motywem krzyżodrzewa
+32200300	Wysokiej jakości tarcza z motywem krzyżodrzewa
+32200400	Ognista tarcza z motywem krzyżodrzewa
+32200500	Tarcza sztuki płomienia z motywem krzyżodrzewa
+32200600	Tarcza błyskawic z motywem krzyżodrzewa
+32200700	Święta tarcza z motywem krzyżodrzewa
+32200800	Magiczna tarcza z motywem krzyżodrzewa
+32200900	Tarcza zimna z motywem krzyżodrzewa
+32201000	Zatruta tarcza z motywem krzyżodrzewa
+32201100	Krwawa tarcza z motywem krzyżodrzewa
+32201200	Okultystyczna tarcza z motywem krzyżodrzewa
+32210000	Tarcza z odwróconym jastrzębiem
+32210100	Ciężka tarcza z odwróconym jastrzębiem
+32210200	Wymyślna tarcza z odwróconym jastrzębiem
+32210300	Wys. jakości tarcza z odwróconym jastrzębiem
+32210400	Ognista tarcza z odwróconym jastrzębiem
+32210500	Tarcza sztuki płomienia z odwróconym jastrzębiem
+32210600	Tarcza błyskawic z odwróconym jastrzębiem
+32210700	Święta tarcza z odwróconym jastrzębiem
+32210800	Magiczna tarcza z odwróconym jastrzębiem
+32210900	Tarcza zimna z odwróconym jastrzębiem
+32211000	Trująca tarcza z odwróconym jastrzębiem
+32211100	Krwawa tarcza z odwróconym jastrzębiem
+32211200	Okultystyczna tarcza z odwóconym jastrzębiem
+32220000	Mrówcza tarczaszka
+32230000	Wielka tarcza Lwiej Grzywy
+32230100	Ciężka wielka tarcza Lwiej Grzywy
+32230200	Wymyślna wielka tarcza Lwiej Grzywy
+32230300	Wysokiej jakości wielka tarcza Lwiej Grzywy
+32230400	Ognista wielka tarcza Lwiej Grzywy
+32230500	Wielka tarcza sztuki płomienia Lwiej Grzywy
+32230600	Wielka tarcza błyskawic Lwiej Grzywy
+32230700	Święta wielka tarcza Lwiej Grzywy
+32230800	Magiczna wielka tarcza Lwiej Grzywy
+32230900	Wielka tarcza zimna Lwiej Grzywy
+32231000	Zatruta wielka tarcza Lwiej Grzywy
+32231100	Krwawa wielka tarcza Lwiej Grzywy
+32231200	Okultystyczna wielka tarcza Lwiej Grzywy
+32240000	Wielka tarcza z herbem zaćmienia
+32240100	Ciężka wielka tarcza z herbem zaćmienia
+32240200	Wymyślna wielka tarcza z herbem zaćmienia
+32240300	Wysokiej jakości wielka tarcza z herbem zaćmienia
+32240400	Ognista wielka tarcza z herbem zaćmienia
+32240500	Wielka tarcza sztuki płomienia z herbem zaćmienia
+32240600	Wielka tarcza błyskawic z herbem zaćmienia
+32240700	Święta wielka tarcza z herbem zaćmienia
+32240800	Magiczna wielka tarcza z herbem zaćmienia
+32240900	Wielka tarcza zimna z herbem zaćmienia
+32241000	Zatruta wielka tarcza z herbem zaćmienia
+32241100	Krwawa wielka tarcza z herbem zaćmienia
+32241200	Okultystyczna wielka tarcza z herbem zaćmienia
+32250000	Wielka kukułcza tarcza
+32250100	Ciężka wielka kukułcza tarcza
+32250200	Wymyślna wielka kukułcza tarcza
+32250300	Wielka kukułcza tarcza wysokiej jakości
+32250400	Ognista wielka kukułcza tarcza
+32250500	Wielka kukułcza tarcza sztuki płomienia
+32250600	Wielka kukułcza tarcza błyskawic
+32250700	Święta wielka kukułcza tarcza
+32250800	Magiczna wielka kukułcza tarcza
+32250900	Wielka kukułcza tarcza zimna
+32251000	Zatruta wielka kukułcza tarcza
+32251100	Krwawa wielka kukułcza tarcza
+32251200	Okultystyczna wielka kukułcza tarcza
+32260000	Wielka złota tarcza
+32260100	Ciężka wielka złota tarcza
+32260200	Wymyślna wielka złota tarcza
+32260300	Wielka złota tarcza wysokiej jakości
+32260400	Ognista wielka złota tarcza
+32260500	Wielka złota tarcza sztuki płomienia
+32260600	Wielka złota tarcza błyskawic
+32260700	Święta wielka złota tarcza
+32260800	Magiczna wielka złota tarcza
+32260900	Wielka złota tarcza zimna
+32261000	Zatruta wielka złota tarcza
+32261100	Krwawa wielka złota tarcza
+32261200	Okultystyczna wielka złota tarcza
+32270000	Pozłacana wielka tarcza
+32270100	Ciężka pozłacana wielka tarcza
+32270200	Wymyślna pozłacana wielka tarcza
+32270300	Pozłacana wielka tarcza wysokiej jakości
+32270400	Ognista pozłacana wielka tarcza
+32270500	Pozłacana wielka tarcza sztuki płomienia
+32270600	Pozłacana wielka tarcza błyskawic
+32270700	Święta pozłacana wielka tarcza
+32270800	Magiczna pozłacana wielka tarcza
+32270900	Pozłacana wielka tarcza zimna
+32271000	Zatruta pozłacana wielka tarcza
+32271100	Krwawa pozłacana wielka tarcza
+32271200	Okultystyczna pozłacana wielka tarcza
+32280000	Tarcza z herbem Świętego Drzewa
+32280100	Ciężka tarcza z herbem Świętego Drzewa
+32280200	Wymyślna tarcza z herbem Świętego Drzewa
+32280300	Wysokiej jakości tarcza z herbem Świętego Drzewa
+32280400	Ognista tarcza z herbem Świętego Drzewa
+32280500	Tarcza sztuki płomienia z herbem Świętego Drzewa
+32280600	Tarcza błyskawic z herbem Świętego Drzewa
+32280700	Święta tarcza z herbem Świętego Drzewa
+32280800	Magiczna tarcza z herbem Świętego Drzewa
+32280900	Tarcza zimna z herbem Świętego Drzewa
+32281000	Trująca tarcza z herbem Świętego Drzewa
+32281100	Tarcza krwi z herbem Świętego Drzewa
+32281200	Okultystyczna tarcza z herbem Świętego Drzewa
+32290000	Wielka tarcza z drewna
+32290100	Ciężka wielka tarcza z drewna
+32290200	Wymyślna wielka tarcza z drewna
+32290300	Wysokiej jakości wielka tarcza z drewna
+32290400	Ognista wielka tarcza z drewna
+32290500	Wielka tarcza sztuki płomienia z drewna
+32290600	Wielka tarcza błyskawic z drewna
+32290700	Święta wielka tarcza z drewna
+32290800	Magiczna wielka tarcza z drewna
+32290900	Wielka tarcza zimna z drewna
+32291000	Zatruta wielka tarcza z drewna
+32291100	Krwawa wielka tarcza z drewna
+32291200	Okultystyczna wielka tarcza z drewna
+32300000	Tarcza zaprzysiężonego
+32300100	Ciężka tarcza zaprzysiężonego
+32300200	Wymyślna tarcza zaprzysiężonego
+32300300	Wysokiej jakości tarcza zaprzysiężonego
+32300400	Ognista tarcza zaprzysiężonego
+32300500	Tarcza sztuki płomienia zaprzysiężonego
+32300600	Tarcza błyskawic zaprzysiężonego
+32300700	Święta tarcza zaprzysiężonego
+32300800	Magiczna tarcza zaprzysiężonego
+32300900	Tarcza zimna zaprzysiężonego
+32301000	Zatruta tarcza zaprzysiężonego
+32301100	Krwawa tarcza zaprzysiężonego
+32301200	Okultystyczna tarcza zaprzysiężonego
+32900000	[ERROR]
+32910000	[ERROR]
+32920000	[ERROR]
+33000000	Błyskamienny kostur
+33040000	Kryształowy kostur
+33050000	Błyskamienny kostur z Gelmir
+33060000	Kostur półludzkiej królowej
+33090000	Karyjskie berło królewskie
+33120000	Kostur górnika
+33130000	Kostur astrologa
+33170000	Karyjski kostur błyskostrza
+33180000	Kostur Księcia Śmierci
+33190000	Kostur albinauryków
+33200000	Błyskamienny kostur Akademii
+33210000	Karyjski błyskamienny kostur
+33230000	Błyskamienny kostur Azura
+33240000	Błyskamienny kostur Lusata
+33250000	Kostur z meteorytu
+33260000	Kostur winowajców
+33270000	Zgniły kryształowy kostur
+33280000	Kostur straty
+33900000	[ERROR]
+33910000	[ERROR]
+33920000	[ERROR]
+33930000	[ERROR]
+33940000	[ERROR]
+33950000	[ERROR]
+33960000	[ERROR]
+33970000	[ERROR]
+33980000	[ERROR]
+34000000	Pieczęć palców
+34010000	Pieczęć zabójcy bogów
+34020000	Pieczęć olbrzyma
+34030000	Żwirowa pieczęć
+34040000	Pieczęć Bestii
+34050000	Trujący smar
+34060000	Pieczęć Złotego Porządku
+34070000	Pieczęć Złotego Drzewa
+34080000	Pieczęć smoczej komunii
+34090000	Pieczęć Oszalałego Płomienia
+34900000	[ERROR]
+34910000	[ERROR]
+34920000	[ERROR]
+34930000	[ERROR]
+34940000	[ERROR]
+34950000	[ERROR]
+34960000	[ERROR]
+34970000	[ERROR]
+34980000	[ERROR]
+34990000	[ERROR]
+40000000	Krótki łuk
+40010000	Krótki łuk aberracji
+40020000	Krótki łuk z czerwonej gałęzi
+40030000	Łuk w kształcie harfy
+40050000	Łuk kompozytowy
+41000000	Długi łuk
+41010000	Łuk albinauryków
+41020000	Kolczasty łuk
+41030000	Łuk Złotego Drzewa
+41040000	Wężowy łuk
+41060000	Łuk rolkowy
+41070000	Czarny łuk
+42000000	Lwi wielki łuk
+42010000	Wielki łuk golema
+42030000	Wielki łuk Złotego Drzewa
+42040000	Wielki łuk
+43000000	Żołnierska kusza
+43020000	Lekka kusza
+43030000	Ciężka kusza
+43050000	Kusza rolkowa
+43060000	Kusza pełni księżyca
+43080000	Arbalest
+43100000	
+43110000	Kusza czarnego klucza Crepusa
+43900000	[ERROR]
+44000000	Ręczna balista
+44010000	Słojomiot
+50000000	Strzała
+50010000	Ognista strzała
+50020000	Wężowa strzała
+50030000	Kościana strzała (z piórami)
+50040000	Strzała św. Triny
+50060000	Strzała odłamków (z piórami)
+50080000	Strzała tęczowego kamienia (z piórami)
+50090000	Złota strzała
+50100000	Poszukująca strzała
+50110000	Kościana strzała
+50130000	Ognista strzała z kości (z piórami)
+50140000	Ognista strzała z kości
+50150000	Zatruta strzała z kości (z piórami)
+50160000	Zatruta strzała z kości
+50170000	Strzała z sennej kości (z piórami)
+50180000	Strzała z sennej kości
+50190000	Kościana strzała burzowego skrzydła
+50200000	Strzała z kości błyskawic (z piórami)
+50210000	Strzała z kości błyskawic
+50220000	Strzała tęczowego kamienia
+50230000	Strzała odłamków
+50240000	Strzała duchowego płomienia
+50250000	
+50260000	Strzała z magicznej kości (z piórami)
+50270000	Strzała z magicznej kości
+50280000	Strzała ze świętej Kości (z piórami)
+50290000	Strzała ze świętej Kości
+50300000	Strzała z krwawej kości (z piórami)
+50310000	Strzała z krwawej kości
+50320000	Strzała z zimnej kości (z piórami)
+50330000	Strzała z zimnej kości
+50340000	Strzała z przegniłej kości (z piórami)
+50350000	Strzała z przegniłej kości
+51000000	Wielka strzała
+51010000	Wielka strzała golema
+51020000	Wielka złota strzała
+51030000	Magiczna strzała golema
+51040000	Włócznia Radahna
+51050000	Kościana wielka strzała (z piórami)
+51060000	Kościana wielka strzała
+52000000	Bełt
+52010000	Bełt błyskawic
+52020000	Bełt perfumiarza
+52030000	Bełt czarnego klucza
+52040000	Gratowany bełt
+52050000	Bełt z meteoru
+52060000	Wybuchowy bełt
+52070000	Złoty bełt
+52080000	Bełt zaprzysiężonego
+52090000	Kościany bełt
+52100000	Ognisty bełt z kości
+52110000	Bełt z kości błyskawic
+52120000	Bełt z magicznej kości
+52130000	Bełt ze świętej Kości
+52140000	Zatruty bełt z kości
+52150000	Bełt z krwawej kości
+52160000	Bełt z zimnej kości
+52170000	Bełt z przegniłej kości
+52180000	Bełt z sennej kości
+52190000	Płonący bełt
+52900000	[ERROR]
+52910000	[ERROR]
+53000000	Bełt do balisty
+53010000	Wielki bełt błyskawic
+53020000	Wielki wybuchowy bełt
+53030000	Kościany bełt do balisty

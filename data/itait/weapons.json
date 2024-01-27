@@ -1,0 +1,1680 @@
+[
+  {
+    "category": "Pugnale",
+    "items": [
+      {
+        "id": 1000000,
+        "name": "Pugnale"
+      },
+      {
+        "id": 1020000,
+        "name": "Pugnale da parata"
+      },
+      {
+        "id": 1030000,
+        "name": "Misericordia"
+      },
+      {
+        "id": 1090000,
+        "name": "Coltello gigante"
+      },
+      {
+        "id": 1140000,
+        "name": "Pugnale insanguinato"
+      },
+      {
+        "id": 1150000,
+        "name": "Pugnale d'acciaio madre"
+      },
+      {
+        "id": 1100000,
+        "name": "Wakizashi"
+      },
+      {
+        "id": 1060000,
+        "name": "Falcetto del celebrante"
+      },
+      {
+        "id": 1130000,
+        "name": "Falcetto d'avorio"
+      },
+      {
+        "id": 1050000,
+        "name": "Coltello di cristallo"
+      },
+      {
+        "id": 1080000,
+        "name": "Aculeo dello scorpione"
+      },
+      {
+        "id": 1110000,
+        "name": "Cinquedea"
+      },
+      {
+        "id": 1070000,
+        "name": "Kriss di scintipietra"
+      },
+      {
+        "id": 1040000,
+        "name": "Reduvia"
+      },
+      {
+        "id": 1160000,
+        "name": "Lama dell'evocazione"
+      },
+      {
+        "id": 1010000,
+        "name": "Coltello nero"
+      }
+    ]
+  },
+  {
+    "category": "Spada dritta",
+    "items": [
+      {
+        "id": 2010000,
+        "name": "Spada corta"
+      },
+      {
+        "id": 2000000,
+        "name": "Spada lunga"
+      },
+      {
+        "id": 2020000,
+        "name": "Spada a lama larga"
+      },
+      {
+        "id": 2050000,
+        "name": "Spada dritta logora"
+      },
+      {
+        "id": 2040000,
+        "name": "Spada dritta del vassallo"
+      },
+      {
+        "id": 2230000,
+        "name": "Spada da lato nobiliare"
+      },
+      {
+        "id": 2210000,
+        "name": "Spada da passeggio"
+      },
+      {
+        "id": 2240000,
+        "name": "Grinfia di falco da guerra"
+      },
+      {
+        "id": 2250000,
+        "name": "Spada di scintipietra di Lazuli"
+      },
+      {
+        "id": 2180000,
+        "name": "Spada da cavaliere cariano"
+      },
+      {
+        "id": 2150000,
+        "name": "Spada di cristallo"
+      },
+      {
+        "id": 2260000,
+        "name": "Spada di cristallo putrida"
+      },
+      {
+        "id": 2200000,
+        "name": "Spada da cavaliere di Miquella"
+      },
+      {
+        "id": 2060000,
+        "name": "Spada dritta ornamentale"
+      },
+      {
+        "id": 2070000,
+        "name": "Epitaffio dorato"
+      },
+      {
+        "id": 2190000,
+        "name": "Spada di Santa Trina"
+      },
+      {
+        "id": 2220000,
+        "name": "Regalia di Eochaid"
+      },
+      {
+        "id": 2110000,
+        "name": "Spada cifrata"
+      },
+      {
+        "id": 2140000,
+        "name": "Spada della notte ardente"
+      }
+    ]
+  },
+  {
+    "category": "Spadone",
+    "items": [
+      {
+        "id": 3000000,
+        "name": "Spada bastarda"
+      },
+      {
+        "id": 3180000,
+        "name": "Claymore"
+      },
+      {
+        "id": 3020000,
+        "name": "Spadone di ferro"
+      },
+      {
+        "id": 3030000,
+        "name": "Spadone del vassallo"
+      },
+      {
+        "id": 3040000,
+        "name": "Spadone da cavaliere"
+      },
+      {
+        "id": 3080000,
+        "name": "Spadone del cavaliere esule"
+      },
+      {
+        "id": 3010000,
+        "name": "Spadone biforcuto"
+      },
+      {
+        "id": 3050000,
+        "name": "Flamberga"
+      },
+      {
+        "id": 3190000,
+        "name": "Spadone del gargoyle"
+      },
+      {
+        "id": 3210000,
+        "name": "Spadone nero del Gargoyle"
+      },
+      {
+        "id": 2090000,
+        "name": "Spada inscindibile"
+      },
+      {
+        "id": 3160000,
+        "name": "Spada di Milos"
+      },
+      {
+        "id": 3150000,
+        "name": "Spada da carnefice di Marais"
+      },
+      {
+        "id": 3060000,
+        "name": "Spadone di Ordovis"
+      },
+      {
+        "id": 3070000,
+        "name": "Spada del campione di alabastro"
+      },
+      {
+        "id": 3200000,
+        "name": "Attizzatoio della morte"
+      },
+      {
+        "id": 3130000,
+        "name": "Guglia di Helphen"
+      },
+      {
+        "id": 3140000,
+        "name": "Lama blasfema"
+      },
+      {
+        "id": 3170000,
+        "name": "Spadone dell'Ordine aureo"
+      },
+      {
+        "id": 3090000,
+        "name": "Spadone della luna nera"
+      },
+      {
+        "id": 3100000,
+        "name": "Spada della reliquia sacra"
+      }
+    ]
+  },
+  {
+    "category": "Spada colossale",
+    "items": [
+      {
+        "id": 4040000,
+        "name": "Zweihander"
+      },
+      {
+        "id": 4000000,
+        "name": "Spadone"
+      },
+      {
+        "id": 4010000,
+        "name": "Spadone del mastino"
+      },
+      {
+        "id": 4030000,
+        "name": "Spada aurea del troll"
+      },
+      {
+        "id": 4110000,
+        "name": "Spada da cavaliere troll"
+      },
+      {
+        "id": 4060000,
+        "name": "Spadone reale"
+      },
+      {
+        "id": 4100000,
+        "name": "Spadone della lama innestata"
+      },
+      {
+        "id": 4080000,
+        "name": "Spadone delle rovine"
+      },
+      {
+        "id": 4050000,
+        "name": "Spadone del Flagello celeste"
+      },
+      {
+        "id": 4070000,
+        "name": "Spadone deicida"
+      },
+      {
+        "id": 4020000,
+        "name": "Lama nera di Maliketh"
+      }
+    ]
+  },
+  {
+    "category": "Spada perforante",
+    "items": [
+      {
+        "id": 5020000,
+        "name": "Striscia"
+      },
+      {
+        "id": 5000000,
+        "name": "Stocco"
+      },
+      {
+        "id": 5060000,
+        "name": "Stocco nobiliare"
+      },
+      {
+        "id": 5010000,
+        "name": "Spada del marcescente"
+      },
+      {
+        "id": 5030000,
+        "name": "Striscia di Rogier"
+      },
+      {
+        "id": 5040000,
+        "name": "Striscia mirmecofila"
+      },
+      {
+        "id": 5050000,
+        "name": "Ago congelato"
+      }
+    ]
+  },
+  {
+    "category": "Spada perforante pesante",
+    "items": [
+      {
+        "id": 6020000,
+        "name": "Gran spada"
+      },
+      {
+        "id": 6010000,
+        "name": "Tessitore da Sacriderma"
+      },
+      {
+        "id": 6000000,
+        "name": "Elica sanguinaria"
+      },
+      {
+        "id": 6040000,
+        "name": "Lama rocciosa del re drago"
+      }
+    ]
+  },
+  {
+    "category": "Spada curva",
+    "items": [
+      {
+        "id": 7140000,
+        "name": "Scimitarra"
+      },
+      {
+        "id": 7000000,
+        "name": "Falchion"
+      },
+      {
+        "id": 7030000,
+        "name": "Shamshir"
+      },
+      {
+        "id": 7150000,
+        "name": "Coltella a due mani"
+      },
+      {
+        "id": 7040000,
+        "name": "Spada curva da bandito"
+      },
+      {
+        "id": 7020000,
+        "name": "Shotel"
+      },
+      {
+        "id": 7080000,
+        "name": "Spada curva da saccheggiatore"
+      },
+      {
+        "id": 7120000,
+        "name": "Lama della mantide"
+      },
+      {
+        "id": 7010000,
+        "name": "Spada curva della bestia umana"
+      },
+      {
+        "id": 7060000,
+        "name": "Spada curva del flusso"
+      },
+      {
+        "id": 7110000,
+        "name": "Spada curva del dio serpente"
+      },
+      {
+        "id": 7050000,
+        "name": "Lama di magma"
+      },
+      {
+        "id": 2080000,
+        "name": "Spada fluida da Nox"
+      },
+      {
+        "id": 7070000,
+        "name": "Ala di Astel"
+      },
+      {
+        "id": 7100000,
+        "name": "Shotel dell'eclissi"
+      }
+    ]
+  },
+  {
+    "category": "Spadone curvo",
+    "items": [
+      {
+        "id": 8020000,
+        "name": "Disarcionatore"
+      },
+      {
+        "id": 8060000,
+        "name": "Mannaia del presagio"
+      },
+      {
+        "id": 8070000,
+        "name": "Ignispada del monaco"
+      },
+      {
+        "id": 8080000,
+        "name": "Mannaia della bestia umana"
+      },
+      {
+        "id": 8030000,
+        "name": "Zanna del limiere"
+      },
+      {
+        "id": 8010000,
+        "name": "Spadone del campione di onice"
+      },
+      {
+        "id": 8050000,
+        "name": "Spada curva di Zamor"
+      },
+      {
+        "id": 8040000,
+        "name": "Scaglialama del drago di magma"
+      },
+      {
+        "id": 8100000,
+        "name": "Spada maledetta di Morgott"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9000000,
+        "name": "Uchigatana"
+      },
+      {
+        "id": 9010000,
+        "name": "Zanna lunga"
+      },
+      {
+        "id": 9080000,
+        "name": "Lama osso di serpe"
+      },
+      {
+        "id": 9030000,
+        "name": "Spada meteoritica"
+      },
+      {
+        "id": 9060000,
+        "name": "Lunavelata"
+      },
+      {
+        "id": 9040000,
+        "name": "Fiumi di sangue"
+      },
+      {
+        "id": 9070000,
+        "name": "Spada draconica"
+      },
+      {
+        "id": 9020000,
+        "name": "Mano di Malenia"
+      }
+    ]
+  },
+  {
+    "category": "Lama gemella",
+    "items": [
+      {
+        "id": 10000000,
+        "name": "Lama gemella"
+      },
+      {
+        "id": 10030000,
+        "name": "Spade gemelle da cavaliere"
+      },
+      {
+        "id": 10010000,
+        "name": "Scorticatore da Sacriderma"
+      },
+      {
+        "id": 10080000,
+        "name": "Lama gemella del gargoyle"
+      },
+      {
+        "id": 10090000,
+        "name": "Lama gemella nera del gargoyle"
+      },
+      {
+        "id": 10050000,
+        "name": "Lama gemella di Eleonora"
+      }
+    ]
+  },
+  {
+    "category": "Ascia",
+    "items": [
+      {
+        "id": 14010000,
+        "name": "Falcetto biforcuto"
+      },
+      {
+        "id": 14020000,
+        "name": "Ascia a una mano"
+      },
+      {
+        "id": 14000000,
+        "name": "Ascia da guerra"
+      },
+      {
+        "id": 15010000,
+        "name": "Ascia deformata"
+      },
+      {
+        "id": 14030000,
+        "name": "Ascia mandibolare"
+      },
+      {
+        "id": 14040000,
+        "name": "Mannaia di ferro"
+      },
+      {
+        "id": 14100000,
+        "name": "Ascia degli altopiani"
+      },
+      {
+        "id": 14060000,
+        "name": "Mannaia del celebrante"
+      },
+      {
+        "id": 14110000,
+        "name": "Ascia sacrificale"
+      },
+      {
+        "id": 14080000,
+        "name": "Accetta fendighiaccio"
+      },
+      {
+        "id": 14050000,
+        "name": "Lama dell'increspatura"
+      },
+      {
+        "id": 14140000,
+        "name": "Ascia di falco tempesta"
+      },
+      {
+        "id": 14120000,
+        "name": "Ascia di Rosus"
+      }
+    ]
+  },
+  {
+    "category": "Ascia pesante",
+    "items": [
+      {
+        "id": 15000000,
+        "name": "Grandascia"
+      },
+      {
+        "id": 15030000,
+        "name": "Ascia della luna crescente"
+      },
+      {
+        "id": 15050000,
+        "name": "Ascia ad asta lunga"
+      },
+      {
+        "id": 15080000,
+        "name": "Grandascia del boia"
+      },
+      {
+        "id": 15020000,
+        "name": "Mannaia dell'ammazzapresagi"
+      },
+      {
+        "id": 15060000,
+        "name": "Ancora arrugginita"
+      },
+      {
+        "id": 15120000,
+        "name": "Coltellaccio da macellaio"
+      },
+      {
+        "id": 15130000,
+        "name": "Grandascia del gargoyle"
+      },
+      {
+        "id": 15140000,
+        "name": "Ascia nera del gargoyle"
+      },
+      {
+        "id": 15110000,
+        "name": "Grancorna alate"
+      },
+      {
+        "id": 15040000,
+        "name": "Ascia di Godrick"
+      }
+    ]
+  },
+  {
+    "category": "Martello",
+    "items": [
+      {
+        "id": 11010000,
+        "name": "Randello"
+      },
+      {
+        "id": 11030000,
+        "name": "Randello curvo"
+      },
+      {
+        "id": 11070000,
+        "name": "Randello chiodato"
+      },
+      {
+        "id": 11140000,
+        "name": "Randello di pietra"
+      },
+      {
+        "id": 11000000,
+        "name": "Mazza"
+      },
+      {
+        "id": 11050000,
+        "name": "Stella del mattino"
+      },
+      {
+        "id": 11040000,
+        "name": "Martello d'arme"
+      },
+      {
+        "id": 11080000,
+        "name": "Martello"
+      },
+      {
+        "id": 11090000,
+        "name": "Ignimazza del monaco"
+      },
+      {
+        "id": 11060000,
+        "name": "Bouquet di Varré"
+      },
+      {
+        "id": 11100000,
+        "name": "Corno del messaggero"
+      },
+      {
+        "id": 11120000,
+        "name": "Mazza fluida da Nox"
+      },
+      {
+        "id": 11130000,
+        "name": "Dito dell'Anello"
+      },
+      {
+        "id": 11110000,
+        "name": "Scettro dell'Onnisciente"
+      },
+      {
+        "id": 11150000,
+        "name": "Martello di Marika"
+      }
+    ]
+  },
+  {
+    "category": "Martello da guerra",
+    "items": [
+      {
+        "id": 12000000,
+        "name": "Granrandello"
+      },
+      {
+        "id": 12080000,
+        "name": "Granrandello curvo"
+      },
+      {
+        "id": 12060000,
+        "name": "Granmazza"
+      },
+      {
+        "id": 12140000,
+        "name": "Piccone"
+      },
+      {
+        "id": 12190000,
+        "name": "Martello di pietra"
+      },
+      {
+        "id": 12020000,
+        "name": "Martello da guerra"
+      },
+      {
+        "id": 12210000,
+        "name": "Martello da guerra putrido"
+      },
+      {
+        "id": 12130000,
+        "name": "Teschio del celebrante"
+      },
+      {
+        "id": 12180000,
+        "name": "Stella del tramonto"
+      },
+      {
+        "id": 12010000,
+        "name": "Granmartello di corno"
+      },
+      {
+        "id": 12160000,
+        "name": "Corno lungo del messaggero"
+      },
+      {
+        "id": 12170000,
+        "name": "Portacero del venerato"
+      },
+      {
+        "id": 12150000,
+        "name": "Mazza dell'artiglio bestiale"
+      },
+      {
+        "id": 12200000,
+        "name": "Scettro del divoratore"
+      }
+    ]
+  },
+  {
+    "category": "Flagello",
+    "items": [
+      {
+        "id": 13010000,
+        "name": "Flagello"
+      },
+      {
+        "id": 13000000,
+        "name": "Flagello dei cavalieri notturni"
+      },
+      {
+        "id": 13040000,
+        "name": "Flagello di maglia"
+      },
+      {
+        "id": 13020000,
+        "name": "Capifamiglia"
+      },
+      {
+        "id": 13030000,
+        "name": "Stelle della progenie"
+      }
+    ]
+  },
+  {
+    "category": "Arma colossale",
+    "items": [
+      {
+        "id": 23040000,
+        "name": "Grandascia da duellante"
+      },
+      {
+        "id": 23150000,
+        "name": "Grandascia marcescente"
+      },
+      {
+        "id": 23120000,
+        "name": "Alabarda del golem"
+      },
+      {
+        "id": 23110000,
+        "name": "Devastatore di giganti"
+      },
+      {
+        "id": 23000000,
+        "name": "Pastorale dell'inferno"
+      },
+      {
+        "id": 23020000,
+        "name": "Randello colossale"
+      },
+      {
+        "id": 23130000,
+        "name": "Martello del troll"
+      },
+      {
+        "id": 23060000,
+        "name": "Grandartiglio di drago"
+      },
+      {
+        "id": 23010000,
+        "name": "Bastone del guardiano"
+      },
+      {
+        "id": 23070000,
+        "name": "Bastone dell'avatar"
+      },
+      {
+        "id": 23140000,
+        "name": "Bastone della marcescenza"
+      },
+      {
+        "id": 23030000,
+        "name": "Grancorno del messaggero"
+      },
+      {
+        "id": 23100000,
+        "name": "Ruota di Ghiza"
+      },
+      {
+        "id": 23080000,
+        "name": "Fauce di belva meteoritica"
+      },
+      {
+        "id": 23050000,
+        "name": "Ascia di Godfrey"
+      }
+    ]
+  },
+  {
+    "category": "Lancia",
+    "items": [
+      {
+        "id": 16000000,
+        "name": "Lancia corta"
+      },
+      {
+        "id": 16150000,
+        "name": "Lancia di ferro"
+      },
+      {
+        "id": 16010000,
+        "name": "Lancia"
+      },
+      {
+        "id": 16050000,
+        "name": "Partigiana"
+      },
+      {
+        "id": 16070000,
+        "name": "Picca"
+      },
+      {
+        "id": 16140000,
+        "name": "Lancia chiodata"
+      },
+      {
+        "id": 16110000,
+        "name": "Naginata incrociata"
+      },
+      {
+        "id": 16030000,
+        "name": "Arpione dell'uomo d'argilla"
+      },
+      {
+        "id": 16060000,
+        "name": "Rastro del celebrante"
+      },
+      {
+        "id": 16080000,
+        "name": "Torcia inastata"
+      },
+      {
+        "id": 16130000,
+        "name": "Candelabro dell'inquisitore"
+      },
+      {
+        "id": 16020000,
+        "name": "Lancia di cristallo"
+      },
+      {
+        "id": 16160000,
+        "name": "Lancia di cristallo marcescente"
+      },
+      {
+        "id": 16040000,
+        "name": "Lancia del marcescente"
+      },
+      {
+        "id": 16120000,
+        "name": "Lancia rituale della morte"
+      },
+      {
+        "id": 16090000,
+        "name": "Lancia di Gransax"
+      }
+    ]
+  },
+  {
+    "category": "Lancia pesante",
+    "items": [
+      {
+        "id": 17060000,
+        "name": "Lancia da giostra"
+      },
+      {
+        "id": 17070000,
+        "name": "Lanciarborea"
+      },
+      {
+        "id": 17030000,
+        "name": "Cacciatore di serpenti"
+      },
+      {
+        "id": 17020000,
+        "name": "Albero di Siluria"
+      },
+      {
+        "id": 17050000,
+        "name": "Lancia da guerra di Vyke"
+      },
+      {
+        "id": 17010000,
+        "name": "Tridente sacro di Mohgwyn"
+      }
+    ]
+  },
+  {
+    "category": "Alabarda",
+    "items": [
+      {
+        "id": 18000000,
+        "name": "Alabarda"
+      },
+      {
+        "id": 18030000,
+        "name": "Alabarda del cavaliere esule"
+      },
+      {
+        "id": 18020000,
+        "name": "Mazzapicchio"
+      },
+      {
+        "id": 18090000,
+        "name": "Falcione"
+      },
+      {
+        "id": 18130000,
+        "name": "Shotel da masnadiere"
+      },
+      {
+        "id": 18070000,
+        "name": "Sega da masnadiere"
+      },
+      {
+        "id": 18110000,
+        "name": "Spada-lancia del guardiano"
+      },
+      {
+        "id": 18150000,
+        "name": "Alabarda del gargoyle"
+      },
+      {
+        "id": 18160000,
+        "name": "Alabarda nera del gargoyle"
+      },
+      {
+        "id": 18050000,
+        "name": "Ascialunga dei cavalieri notturni"
+      },
+      {
+        "id": 18010000,
+        "name": "Falcione del parassita"
+      },
+      {
+        "id": 18060000,
+        "name": "Alabarda dell'increspatura"
+      },
+      {
+        "id": 18080000,
+        "name": "Alabarda dorata"
+      },
+      {
+        "id": 18140000,
+        "name": "Alabarda del drago"
+      },
+      {
+        "id": 18100000,
+        "name": "Falce da guerra di Loretta"
+      },
+      {
+        "id": 18040000,
+        "name": "Stendardo del comandante"
+      }
+    ]
+  },
+  {
+    "category": "Falce",
+    "items": [
+      {
+        "id": 19000000,
+        "name": "Falce"
+      },
+      {
+        "id": 19010000,
+        "name": "Falce sepolcrale"
+      },
+      {
+        "id": 19020000,
+        "name": "Falce luminosa"
+      },
+      {
+        "id": 19060000,
+        "name": "Falce alata"
+      }
+    ]
+  },
+  {
+    "category": "Frusta",
+    "items": [
+      {
+        "id": 20000000,
+        "name": "Frusta"
+      },
+      {
+        "id": 20020000,
+        "name": "Frusta spinata"
+      },
+      {
+        "id": 20070000,
+        "name": "Urumi"
+      },
+      {
+        "id": 20050000,
+        "name": "Frusta-petalo degli Hoslow"
+      },
+      {
+        "id": 20030000,
+        "name": "Candelabro frusta di magma"
+      },
+      {
+        "id": 20060000,
+        "name": "Treccia rossa del gigante"
+      }
+    ]
+  },
+  {
+    "category": "Pugno",
+    "items": [
+      {
+        "id": 21000000,
+        "name": "Caestus"
+      },
+      {
+        "id": 21010000,
+        "name": "Caestus chiodato"
+      },
+      {
+        "id": 21100000,
+        "name": "Katara"
+      },
+      {
+        "id": 21070000,
+        "name": "Sfera di ferro"
+      },
+      {
+        "id": 21080000,
+        "name": "Pugno stellare"
+      },
+      {
+        "id": 21110000,
+        "name": "Osso aggrappato"
+      },
+      {
+        "id": 21120000,
+        "name": "Protesi del veterano"
+      },
+      {
+        "id": 21130000,
+        "name": "Pata cifrato"
+      },
+      {
+        "id": 21060000,
+        "name": "Drago innestato"
+      }
+    ]
+  },
+  {
+    "category": "Artiglio",
+    "items": [
+      {
+        "id": 22000000,
+        "name": "Artigli acuminati"
+      },
+      {
+        "id": 22010000,
+        "name": "Zanna venefica"
+      },
+      {
+        "id": 22020000,
+        "name": "Artigli del limiere"
+      },
+      {
+        "id": 22030000,
+        "name": "Grinfie rapaci"
+      }
+    ]
+  },
+  {
+    "category": "Arco leggero",
+    "items": [
+      {
+        "id": 40000000,
+        "name": "Arco corto"
+      },
+      {
+        "id": 40050000,
+        "name": "Arco composito"
+      },
+      {
+        "id": 40020000,
+        "name": "Arco corto del ramo rosso"
+      },
+      {
+        "id": 40010000,
+        "name": "Arco corto della progenie"
+      },
+      {
+        "id": 40030000,
+        "name": "Arco arpa"
+      }
+    ]
+  },
+  {
+    "category": "Arco",
+    "items": [
+      {
+        "id": 41000000,
+        "name": "Arco lungo"
+      },
+      {
+        "id": 41010000,
+        "name": "Arco albinauro"
+      },
+      {
+        "id": 41070000,
+        "name": "Arco nero"
+      },
+      {
+        "id": 41060000,
+        "name": "Arco a puleggia"
+      },
+      {
+        "id": 41020000,
+        "name": "Arco di corno"
+      },
+      {
+        "id": 41040000,
+        "name": "Arco serpentino"
+      },
+      {
+        "id": 41030000,
+        "name": "Arco dell'Albero Madre"
+      }
+    ]
+  },
+  {
+    "category": "Arco pesante",
+    "items": [
+      {
+        "id": 42040000,
+        "name": "Arco pesante"
+      },
+      {
+        "id": 42010000,
+        "name": "Arco pesante del golem"
+      },
+      {
+        "id": 42030000,
+        "name": "Arco pesante dell'Albero Madre"
+      },
+      {
+        "id": 42000000,
+        "name": "Arco pesante del leone"
+      }
+    ]
+  },
+  {
+    "category": "Balestra",
+    "items": [
+      {
+        "id": 43000000,
+        "name": "Balestra del soldato"
+      },
+      {
+        "id": 43020000,
+        "name": "Balestra leggera"
+      },
+      {
+        "id": 43030000,
+        "name": "Balestra pesante"
+      },
+      {
+        "id": 43080000,
+        "name": "Arbalesta"
+      },
+      {
+        "id": 43110000,
+        "name": "Balestra nera di Crepus"
+      },
+      {
+        "id": 43050000,
+        "name": "Balestra a puleggia"
+      },
+      {
+        "id": 43060000,
+        "name": "Balestra del plenilunio"
+      }
+    ]
+  },
+  {
+    "category": "Balista",
+    "items": [
+      {
+        "id": 44000000,
+        "name": "Balista a mano"
+      },
+      {
+        "id": 44010000,
+        "name": "Vaso cannone"
+      }
+    ]
+  },
+  {
+    "category": "Bastone di scintipietra",
+    "items": [
+      {
+        "id": 33130000,
+        "name": "Bastone da astrologo"
+      },
+      {
+        "id": 33000000,
+        "name": "Bastone di scintipietra"
+      },
+      {
+        "id": 33200000,
+        "name": "Bastone di scintipietra dell'Accademia"
+      },
+      {
+        "id": 33120000,
+        "name": "Bastone del renaiolo"
+      },
+      {
+        "id": 33060000,
+        "name": "Bastone della regina semiumana"
+      },
+      {
+        "id": 33230000,
+        "name": "Bastone di scintipietra di Azur"
+      },
+      {
+        "id": 33240000,
+        "name": "Bastone di scintipietra di Lusat"
+      },
+      {
+        "id": 33210000,
+        "name": "Bastone di scintipietra cariana"
+      },
+      {
+        "id": 33170000,
+        "name": "Bastone della scintilama cariana"
+      },
+      {
+        "id": 33090000,
+        "name": "Scettro regale cariano"
+      },
+      {
+        "id": 33190000,
+        "name": "Bastone degli albinauri"
+      },
+      {
+        "id": 33280000,
+        "name": "Bastone dello smarrimento"
+      },
+      {
+        "id": 33050000,
+        "name": "Bastone di scintipietra del Gelmir"
+      },
+      {
+        "id": 33040000,
+        "name": "Bastone di cristallo"
+      },
+      {
+        "id": 33270000,
+        "name": "Bastone di cristallo putrido"
+      },
+      {
+        "id": 33250000,
+        "name": "Bastone meteoritico"
+      },
+      {
+        "id": 33260000,
+        "name": "Bastone del peccatore"
+      },
+      {
+        "id": 33180000,
+        "name": "Bastone del Principe della morte"
+      }
+    ]
+  },
+  {
+    "category": "Sacro sigillo",
+    "items": [
+      {
+        "id": 34000000,
+        "name": "Sigillo del Dito"
+      },
+      {
+        "id": 34070000,
+        "name": "Sigillo dell'Albero Madre"
+      },
+      {
+        "id": 34060000,
+        "name": "Sigillo dell'Ordine aureo"
+      },
+      {
+        "id": 34030000,
+        "name": "Sigillo di breccia"
+      },
+      {
+        "id": 34020000,
+        "name": "Sigillo del gigante"
+      },
+      {
+        "id": 34010000,
+        "name": "Sigillo deicida"
+      },
+      {
+        "id": 34040000,
+        "name": "Sigillo artigliato"
+      },
+      {
+        "id": 34090000,
+        "name": "Sigillo della Fiamma della frenesia"
+      },
+      {
+        "id": 34080000,
+        "name": "Sigillo della comunione draconica"
+      }
+    ]
+  },
+  {
+    "category": "Torcia",
+    "items": [
+      {
+        "id": 24000000,
+        "name": "Torcia"
+      },
+      {
+        "id": 24060000,
+        "name": "Torcia scacciabelve"
+      },
+      {
+        "id": 24020000,
+        "name": "Torcia fil d'acciaio"
+      },
+      {
+        "id": 24070000,
+        "name": "Torcia della sentinella"
+      },
+      {
+        "id": 24050000,
+        "name": "Torcia della fiamma spettrale"
+      },
+      {
+        "id": 24040000,
+        "name": "Torcia di Santa Trina"
+      }
+    ]
+  },
+  {
+    "category": "Scudo piccolo",
+    "items": [
+      {
+        "id": 30030000,
+        "name": "Scudo logoro"
+      },
+      {
+        "id": 30090000,
+        "name": "Scudo di legno rivettato"
+      },
+      {
+        "id": 30100000,
+        "name": "Scudo di legno bianco-azzurro"
+      },
+      {
+        "id": 30080000,
+        "name": "Scudo di legno inciso"
+      },
+      {
+        "id": 30070000,
+        "name": "Scudo tondo spinorosso"
+      },
+      {
+        "id": 30040000,
+        "name": "Scudo della gogna"
+      },
+      {
+        "id": 30000000,
+        "name": "Brocchiero"
+      },
+      {
+        "id": 30120000,
+        "name": "Scudo tondo di ferro"
+      },
+      {
+        "id": 30130000,
+        "name": "Scudo di ferro placcato"
+      },
+      {
+        "id": 30020000,
+        "name": "Scudo dell'uomo-serpente"
+      },
+      {
+        "id": 30140000,
+        "name": "Scudo del ghiaccio"
+      },
+      {
+        "id": 30110000,
+        "name": "Scudo crepato"
+      },
+      {
+        "id": 30010000,
+        "name": "Scudo del profumiere"
+      },
+      {
+        "id": 31170000,
+        "name": "Scudo del peccatore"
+      },
+      {
+        "id": 30190000,
+        "name": "Scudo di spiricorno"
+      },
+      {
+        "id": 30150000,
+        "name": "Scudo ardente"
+      },
+      {
+        "id": 30200000,
+        "name": "Scudo spira di serpente"
+      }
+    ]
+  },
+  {
+    "category": "Scudo medio",
+    "items": [
+      {
+        "id": 31270000,
+        "name": "Scudo a mandorla del falco"
+      },
+      {
+        "id": 31240000,
+        "name": "Scudo a mandorla del cavallo"
+      },
+      {
+        "id": 31250000,
+        "name": "Scudo a mandorla del lume"
+      },
+      {
+        "id": 31260000,
+        "name": "Scudo a mandorla del fuoco"
+      },
+      {
+        "id": 31020000,
+        "name": "Scudo a mandorla logoro"
+      },
+      {
+        "id": 31050000,
+        "name": "Scudo del regno del sole"
+      },
+      {
+        "id": 31070000,
+        "name": "Scudo tondo"
+      },
+      {
+        "id": 31230000,
+        "name": "Scudo di cuoio"
+      },
+      {
+        "id": 31340000,
+        "name": "Scudo di cuoio nero"
+      },
+      {
+        "id": 31010000,
+        "name": "Parmula logora"
+      },
+      {
+        "id": 31330000,
+        "name": "Scudo scapezzato"
+      },
+      {
+        "id": 31300000,
+        "name": "Scudo dallo stemma nero"
+      },
+      {
+        "id": 31290000,
+        "name": "Scudo dallo stemma rosso"
+      },
+      {
+        "id": 31280000,
+        "name": "Scudo scapezzato della bestia"
+      },
+      {
+        "id": 31320000,
+        "name": "Scudo scapezzato del falco"
+      },
+      {
+        "id": 31310000,
+        "name": "Scudo scapezzato dell'eclissi"
+      },
+      {
+        "id": 31000000,
+        "name": "Scudo a tre punte"
+      },
+      {
+        "id": 31100000,
+        "name": "Scudo di lazurite"
+      },
+      {
+        "id": 31030000,
+        "name": "Scudo del cavaliere esule"
+      },
+      {
+        "id": 31080000,
+        "name": "Scudo dello scorpione"
+      },
+      {
+        "id": 31090000,
+        "name": "Scudo dell'uccello bicefalo"
+      },
+      {
+        "id": 31130000,
+        "name": "Scudo di ottone"
+      },
+      {
+        "id": 31040000,
+        "name": "Scudo da albinauro"
+      },
+      {
+        "id": 30060000,
+        "name": "Ricettacolo della bestia umana"
+      },
+      {
+        "id": 31190000,
+        "name": "Scudo da cavaliere cariano"
+      },
+      {
+        "id": 31060000,
+        "name": "Scudospecchio d'argento"
+      },
+      {
+        "id": 31140000,
+        "name": "Grancarapace"
+      }
+    ]
+  },
+  {
+    "category": "Scudo pesante",
+    "items": [
+      {
+        "id": 32290000,
+        "name": "Granscudo di legno"
+      },
+      {
+        "id": 32300000,
+        "name": "Scudo del vassallo"
+      },
+      {
+        "id": 32050000,
+        "name": "Pavese del rovo"
+      },
+      {
+        "id": 32170000,
+        "name": "Scudo chiodato"
+      },
+      {
+        "id": 32140000,
+        "name": "Pavese con effigie"
+      },
+      {
+        "id": 32090000,
+        "name": "Scudo aureo della bestia"
+      },
+      {
+        "id": 32190000,
+        "name": "Scudo a torre della Rocca"
+      },
+      {
+        "id": 32200000,
+        "name": "Scudo a torre arboreo"
+      },
+      {
+        "id": 32210000,
+        "name": "Scudo a torre del falco"
+      },
+      {
+        "id": 32000000,
+        "name": "Scudo a torre del drago"
+      },
+      {
+        "id": 32020000,
+        "name": "Granscudo illustre"
+      },
+      {
+        "id": 32270000,
+        "name": "Granscudo dorato"
+      },
+      {
+        "id": 32250000,
+        "name": "Granscudo del Cuculo"
+      },
+      {
+        "id": 32230000,
+        "name": "Granscudo di Mantorosso"
+      },
+      {
+        "id": 32260000,
+        "name": "Granscudo aureo"
+      },
+      {
+        "id": 32280000,
+        "name": "Granscudo del Sacro Albero"
+      },
+      {
+        "id": 32030000,
+        "name": "Scudo del Crogiolo"
+      },
+      {
+        "id": 32040000,
+        "name": "Scudo d'artiglio di drago"
+      },
+      {
+        "id": 32130000,
+        "name": "Scudo dell'impronta"
+      },
+      {
+        "id": 32240000,
+        "name": "Granscudo dell'eclissi"
+      },
+      {
+        "id": 32220000,
+        "name": "Scudo mirmecofilo"
+      },
+      {
+        "id": 32080000,
+        "name": "Oplon dell'Albero Madre"
+      },
+      {
+        "id": 32120000,
+        "name": "Scudo medusa"
+      },
+      {
+        "id": 32160000,
+        "name": "Scudo sembiante"
+      },
+      {
+        "id": 32150000,
+        "name": "Scudo ciclopico"
+      }
+    ]
+  }
+]

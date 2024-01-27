@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Cura Urgente"
+  },
+  {
+    "id": 6421,
+    "name": "Cura"
+  },
+  {
+    "id": 6422,
+    "name": "Cura Grande"
+  },
+  {
+    "id": 6423,
+    "name": "Regeneração do Lorde"
+  },
+  {
+    "id": 6440,
+    "name": "Cura para Veneno"
+  },
+  {
+    "id": 6441,
+    "name": "Cura do Lorde"
+  },
+  {
+    "id": 6460,
+    "name": "Fortificação de Magia"
+  },
+  {
+    "id": 6450,
+    "name": "Fortificação de Fogo"
+  },
+  {
+    "id": 6470,
+    "name": "Fortificação de Eletricidade"
+  },
+  {
+    "id": 6480,
+    "name": "Fortificação Divina"
+  },
+  {
+    "id": 6490,
+    "name": "Fortificação Divina do Lorde"
+  },
+  {
+    "id": 6400,
+    "name": "Rejeição"
+  },
+  {
+    "id": 6520,
+    "name": "Isca da Sombra"
+  },
+  {
+    "id": 6530,
+    "name": "Escuridão"
+  },
+  {
+    "id": 6510,
+    "name": "Abordagem do Assassino"
+  },
+  {
+    "id": 6600,
+    "name": "Voto Dourado"
+  },
+  {
+    "id": 6330,
+    "name": "Barreira de Ouro"
+  },
+  {
+    "id": 7903,
+    "name": "Fortificação Dourada de Eletricidade"
+  },
+  {
+    "id": 6340,
+    "name": "Proteção da Térvore"
+  },
+  {
+    "id": 6410,
+    "name": "A Fúria do Ouro"
+  },
+  {
+    "id": 6424,
+    "name": "Cura da Térvore"
+  },
+  {
+    "id": 6430,
+    "name": "Pedido da Benção"
+  },
+  {
+    "id": 6431,
+    "name": "Bênção da Térvore"
+  },
+  {
+    "id": 7520,
+    "name": "Aspectos do Crisol: Sopro"
+  },
+  {
+    "id": 7500,
+    "name": "Aspectos do Crisol: Cauda"
+  },
+  {
+    "id": 7510,
+    "name": "Aspectos do Crisol: Chifres"
+  },
+  {
+    "id": 6720,
+    "name": "Estrelas Prístinas"
+  },
+  {
+    "id": 7530,
+    "name": "Lâmina Negra"
+  },
+  {
+    "id": 6700,
+    "name": "Disco de Luz"
+  },
+  {
+    "id": 6701,
+    "name": "Anéis de Luz Triplos"
+  },
+  {
+    "id": 6710,
+    "name": "Anéis de Luz de Radagon"
+  },
+  {
+    "id": 6750,
+    "name": "Litania da Morte Apropriada"
+  },
+  {
+    "id": 6780,
+    "name": "Cura da Ordem"
+  },
+  {
+    "id": 6770,
+    "name": "Lâmina da Ordem"
+  },
+  {
+    "id": 6740,
+    "name": "Escudo Imutável"
+  },
+  {
+    "id": 6760,
+    "name": "Lei da Causalidade"
+  },
+  {
+    "id": 6730,
+    "name": "Lei da Regressão"
+  },
+  {
+    "id": 6900,
+    "name": "Lança de Relâmpago"
+  },
+  {
+    "id": 6920,
+    "name": "Golpe de Relâmpago"
+  },
+  {
+    "id": 6930,
+    "name": "Seta Afiada"
+  },
+  {
+    "id": 6940,
+    "name": "Lança de Relâmpago do Dragão Ancião"
+  },
+  {
+    "id": 6910,
+    "name": "Golpe de Relâmpago do Dragão Ancião"
+  },
+  {
+    "id": 6950,
+    "name": "Gládio de Lansseax"
+  },
+  {
+    "id": 6941,
+    "name": "Lança de Relâmpago de Fortissax"
+  },
+  {
+    "id": 6921,
+    "name": "Lança de Relâmpago Congelada"
+  },
+  {
+    "id": 5040,
+    "name": "Relâmpago da Morte"
+  },
+  {
+    "id": 6960,
+    "name": "Eletrificar Arma"
+  },
+  {
+    "id": 6971,
+    "name": "Bênção de Seta de Dragão"
+  },
+  {
+    "id": 6970,
+    "name": "Seta de Dragão de Vyke"
+  },
+  {
+    "id": 6000,
+    "name": "Ah, Chamas!"
+  },
+  {
+    "id": 6001,
+    "name": "Ó, Grande Pira!"
+  },
+  {
+    "id": 6010,
+    "name": "Banquete de Chamas"
+  },
+  {
+    "id": 6100,
+    "name": "Que a Chama dos Gigantes Te Leve"
+  },
+  {
+    "id": 6020,
+    "name": "Chama, Caia Sobre Eles"
+  },
+  {
+    "id": 6110,
+    "name": "Chama do Deus Caído"
+  },
+  {
+    "id": 6220,
+    "name": "Erga-se, Ó, Chama!"
+  },
+  {
+    "id": 6030,
+    "name": "Dance, Ó, Chama!"
+  },
+  {
+    "id": 6120,
+    "name": "Queime, Ó, Chama!"
+  },
+  {
+    "id": 6040,
+    "name": "Chama, Limpe-me"
+  },
+  {
+    "id": 6060,
+    "name": "Chama, Proteja-me"
+  },
+  {
+    "id": 6050,
+    "name": "Chama, Conceda-me Força"
+  },
+  {
+    "id": 7900,
+    "name": "Pecado Mortal do Fogo"
+  },
+  {
+    "id": 6210,
+    "name": "Chama Negra"
+  },
+  {
+    "id": 6230,
+    "name": "Chama Negra da Purificação"
+  },
+  {
+    "id": 6240,
+    "name": "Ritual da Chama Negra"
+  },
+  {
+    "id": 6250,
+    "name": "Lâmina da Chama Negra"
+  },
+  {
+    "id": 6260,
+    "name": "Proteção da Chama Negra"
+  },
+  {
+    "id": 6270,
+    "name": "Presença Nobre"
+  },
+  {
+    "id": 6820,
+    "name": "Garra de Fera"
+  },
+  {
+    "id": 6830,
+    "name": "Garra de Fera de Gurranq"
+  },
+  {
+    "id": 6800,
+    "name": "Funda da Besta"
+  },
+  {
+    "id": 6810,
+    "name": "Pedra de Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Constituição Bestial"
+  },
+  {
+    "id": 6840,
+    "name": "Vitalidade Bestial"
+  },
+  {
+    "id": 7210,
+    "name": "Enxame de Moscas"
+  },
+  {
+    "id": 6300,
+    "name": "Garras da Chama do Sangue"
+  },
+  {
+    "id": 6310,
+    "name": "Dádiva de Sangue"
+  },
+  {
+    "id": 6320,
+    "name": "Lâmina da Chama do Sangue"
+  },
+  {
+    "id": 7220,
+    "name": "Névoa Venenosa"
+  },
+  {
+    "id": 7200,
+    "name": "Fios de Praga"
+  },
+  {
+    "id": 7230,
+    "name": "Arma Venenosa"
+  },
+  {
+    "id": 7240,
+    "name": "Aeonia Escarlate"
+  },
+  {
+    "id": 7310,
+    "name": "A Chama do Frenesi"
+  },
+  {
+    "id": 7311,
+    "name": "Frenesi Insuportável"
+  },
+  {
+    "id": 7320,
+    "name": "Estouro de Frenesi"
+  },
+  {
+    "id": 7330,
+    "name": "Uivo de Shabriri"
+  },
+  {
+    "id": 7300,
+    "name": "Frenesi Inescapável"
+  },
+  {
+    "id": 7000,
+    "name": "Fogo de Dragão"
+  },
+  {
+    "id": 7001,
+    "name": "Chama de Agheel"
+  },
+  {
+    "id": 7010,
+    "name": "Sopro de Magma"
+  },
+  {
+    "id": 7011,
+    "name": "Magma de Theodorix"
+  },
+  {
+    "id": 7040,
+    "name": "Sopro de Pedrilhante"
+  },
+  {
+    "id": 7041,
+    "name": "Sopro de Pedrilhante de Smarag"
+  },
+  {
+    "id": 7030,
+    "name": "Sopro Podre"
+  },
+  {
+    "id": 7031,
+    "name": "Decadência de Ekzykes"
+  },
+  {
+    "id": 7020,
+    "name": "Gelo de Dragão"
+  },
+  {
+    "id": 7021,
+    "name": "Névoa de Borealis"
+  },
+  {
+    "id": 7050,
+    "name": "Ruína de Placidusax"
+  },
+  {
+    "id": 7060,
+    "name": "Garra de Dragão"
+  },
+  {
+    "id": 7080,
+    "name": "Mandíbula de Dragão"
+  },
+  {
+    "id": 7090,
+    "name": "Rugido de Greyoll"
+  }
+]

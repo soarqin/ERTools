@@ -1,0 +1,4204 @@
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1201	
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	[ERROR]
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	[ERROR]
+1221	
+1222	
+1223	
+1224	
+1225	
+1226	
+1227	
+1228	
+1229	
+1230	[ERROR]
+1231	
+1232	
+1233	
+1234	
+1235	
+1236	
+1237	
+1238	
+1239	
+1240	[ERROR]
+1241	
+1242	
+1243	
+1244	
+1245	
+1246	
+1247	
+1248	
+1249	
+1250	[ERROR]
+1251	
+1252	
+1253	
+1254	
+1255	
+1256	
+1257	
+1258	
+1259	
+1260	[ERROR]
+1400	[ERROR]
+1401	
+1402	
+1403	
+1404	
+1405	
+1406	
+1407	
+1408	
+1409	
+1410	[ERROR]
+1411	
+1412	
+1413	
+1414	
+1415	
+1416	
+1417	
+1418	
+1419	
+1420	[ERROR]
+1421	
+1422	
+1423	
+1424	
+1425	
+1426	
+1427	
+1428	
+1429	
+1430	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+11000	[ERROR]
+12000	[ERROR]
+13000	[ERROR]
+100000	[ERROR]
+100100	[ERROR]
+100200	[ERROR]
+100300	[ERROR]
+100400	[ERROR]
+100500	[ERROR]
+100600	[ERROR]
+100700	[ERROR]
+100800	[ERROR]
+100900	[ERROR]
+101000	[ERROR]
+110000	Desarmado
+1000000	Adaga
+1000100	Adaga Pesada
+1000200	Adaga Aguçada
+1000300	Adaga de Qualidade
+1000400	Adaga de Fogo
+1000500	Adaga da Arte da Chama
+1000600	Adaga de Relâmpago
+1000700	Adaga Sagrada
+1000800	Adaga Mágica
+1000900	Adaga do Frio
+1001000	Adaga Venenosa
+1001100	Adaga do Sangue
+1001200	Adaga do Oculto
+1010000	Facas Negras
+1020000	Adaga de Aparagem
+1020100	Adaga de Aparagem Pesada
+1020200	Adaga de Aparagem Aguçada
+1020300	Adaga de Aparagem de Qualidade
+1020400	Adaga de Aparagem de Fogo
+1020500	Adaga de Aparagem da Arte da Chama
+1020600	Adaga de Aparagem de Relâmpago
+1020700	Adaga de Aparagem Sagrada
+1020800	Adaga de Aparagem Mágica
+1020900	Adaga de Aparagem do Frio
+1021000	Adaga de Aparagem Venenosa
+1021100	Adaga de Aparagem do Sangue
+1021200	Adaga de Aparagem do Oculto
+1030000	Miséricorde
+1030100	Miséricorde Pesada
+1030200	Miséricorde Aguçada
+1030300	Miséricorde de Qualidade
+1030400	Miséricorde de Fogo
+1030500	Miséricorde da Arte da Chama
+1030600	Miséricorde de Relâmpago
+1030700	Miséricorde Sagrada
+1030800	Miséricorde Mágica
+1030900	Miséricorde do Frio
+1031000	Miséricorde Venenosa
+1031100	Miséricorde do Sangue
+1031200	Miséricorde do Oculto
+1040000	Reduvia
+1050000	Faca de Cristal
+1060000	Foice do Festival
+1060100	Foice Pesada do Festival
+1060200	Foice Aguçada do Festival
+1060300	Foice de Qualidade do Festival
+1060400	Foice de Fogo do Festival
+1060500	Foice da Arte da Chama do Festival
+1060600	Foice de Relâmpago do Festival
+1060700	Foice Sagrada do Festival
+1060800	Foice Mágica do Festival
+1060900	Foice do Frio do Festival
+1061000	Foice Venenosa do Festival
+1061100	Foice do Sangue do Festival
+1061200	Foice do Oculto do Festival
+1070000	Kris Pedrilhante
+1080000	Ferrão de Escorpião
+1090000	Faca Grande
+1090100	Faca Grande Pesada
+1090200	Faca Grande Aguçada
+1090300	Faca Grande de Qualidade
+1090400	Faca Grande de Fogo
+1090500	Faca Grande da Arte da Chama
+1090600	Faca Grande de Relâmpago
+1090700	Faca Grande Sagrada
+1090800	Faca Grande Mágica
+1090900	Faca Grande do Frio
+1091000	Faca Grande Venenosa
+1091100	Faca Grande do Sangue
+1091200	Faca Grande do Oculto
+1100000	Wakizashi
+1100100	Wakizashi Pesado
+1100200	Wakizashi Aguçado
+1100300	Wakizashi de Qualidade
+1100400	Wakizashi de Fogo
+1100500	Wakizashi da Arte da Chama
+1100600	Wakizashi de Relâmpago
+1100700	Wakizashi Sagrada
+1100800	Wakizashi Mágica
+1100900	Wakizashi do Frio
+1101000	Wakizashi Venenosa
+1101100	Wakizashi do Sangue
+1101200	Wakizashi do Oculto
+1110000	Cinquedea
+1130000	Foice de Marfim
+1140000	Adaga Sangrenta
+1140100	Adaga Sangrenta Pesada
+1140200	Adaga Sangrenta Aguçada
+1140300	Adaga Sangrenta de Qualidade
+1140400	Adaga Sangrenta de Fogo
+1140500	Adaga Sangrenta da Arte da Chama
+1140600	Adaga Sangrenta de Relâmpago
+1140700	Adaga Sangrenta Sagrada
+1140800	Adaga Sangrenta Mágica
+1140900	Adaga Sangrenta do Frio
+1141000	Adaga Sangrenta Venenosa
+1141100	Adaga Sangrenta do Sangue
+1141200	Adaga Sangrenta do Oculto
+1150000	Adaga de Aço Dourado
+1150100	Adaga de Aço Dourado Pesada
+1150200	Adaga de Aço Dourado Aguçada
+1150300	Adaga de Aço Dourado de Qualidade
+1150400	Adaga de Aço Dourado de Fogo
+1150500	Adaga de Aço Dourado da Arte da Chama
+1150600	Adaga de Aço Dourado de Relâmpago
+1150700	Adaga de Aço Dourado Sagrada
+1150800	Adaga de Aço Dourado Mágica
+1150900	Adaga de Aço Dourado do Frio
+1151000	Adaga de Aço Dourado Venenosa
+1151100	Adaga de Aço Dourado do Sangue
+1151200	Adaga de Aço Dourado do Oculto
+1160000	Lâmina do Chamado
+1190000	[ERROR]
+1910000	[ERROR]
+2000000	Espada Longa
+2000100	Espada Longa Pesada
+2000200	Espada Longa Aguçada
+2000300	Espada Longa de Qualidade
+2000400	Espada Longa de Fogo
+2000500	Espada Longa da Arte da Chama
+2000600	Espada Longa de Relâmpago
+2000700	Espada Longa Sagrada
+2000800	Espada Longa Mágica
+2000900	Espada Longa do Frio
+2001000	Espada Longa Venenosa
+2001100	Espada Longa do Sangue
+2001200	Espada Longa do Oculto
+2010000	Espada Curta
+2010100	Espada Curta Pesada
+2010200	Espada Curta Aguçada
+2010300	Espada Curta de Qualidade
+2010400	Espada Curta de Fogo
+2010500	Espada Curta da Arte da Chama
+2010600	Espada Curta de Relâmpago
+2010700	Espada Curta Sagrada
+2010800	Espada Curta Mágica
+2010900	Espada Curta do Frio
+2011000	Espada Curta Venenosa
+2011100	Espada Curta do Sangue
+2011200	Espada Curta do Oculto
+2020000	Espada Larga
+2020100	Espada Larga Pesada
+2020200	Espada Larga Aguçada
+2020300	Espada Larga de Qualidade
+2020400	Espada Larga de Fogo
+2020500	Espada Larga da Arte da Chama
+2020600	Espada Larga de Relâmpago
+2020700	Espada Larga Sagrada
+2020800	Espada Larga Mágica
+2020900	Espada Larga do Frio
+2021000	Espada Larga Venenosa
+2021100	Espada Larga do Sangue
+2021200	Espada Larga do Oculto
+2030000	
+2040000	Espada Reta do Lorde
+2040100	Espada Reta do Lorde Pesada
+2040200	Espada Reta do Lorde Aguçada
+2040300	Espada Reta do Lorde de Qualidade
+2040400	Espada Reta do Lorde de Fogo
+2040500	Espada Reta do Lorde da Arte da Chama
+2040600	Espada Reta do Lorde de Relâmpago
+2040700	Espada Reta do Lorde Sagrada
+2040800	Espada Reta do Lorde Mágica
+2040900	Espada Reta do Lorde do Frio
+2041000	Espada Reta do Lorde Venenosa
+2041100	Espada Reta do Lorde do Sangue
+2041200	Espada Reta do Lorde do Oculto
+2050000	Espada Reta Desgastada
+2050100	Espada Reta Desgastada Pesada
+2050200	Espada Reta Desgastada Aguçada
+2050300	Espada Reta Desgastada de Qualidade
+2050400	Espada Reta Desgastada de Fogo
+2050500	Espada Reta Desgastada da Arte da Chama
+2050600	Espada Reta Desgastada de Relâmpago
+2050700	Espada Reta Desgastada Sagrada
+2050800	Espada Reta Desgastada Mágica
+2050900	Espada Reta Desgastada do Frio
+2051000	Espada Reta Desgastada Venenosa
+2051100	Espada Reta Desgastada do Sangue
+2051200	Espada Reta Desgastada do Oculto
+2060000	Espada Reta Ornamental
+2070000	Epitáfio Dourado
+2080000	Espada Fluida de Nox
+2090000	Espada Inseparável
+2090100	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2090200	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2090300	Elmo de Abóbora
+2090400	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2090500	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2090600	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2090700	Sebo solidificado feito com uma mistura de materiais incendiários.\r\nItem produzível.\r\n\r\nReveste a arma, adicionando dano de fogo aos ataques.\r\nO efeito dura por apenas um curto período.
+2090800	Sebo solidificado feito de uma mistura de\r\nmateriais fulminantes. Item produzível.\r\n\r\nReveste a arma, infligindo dano elétrico.
+2090900	Sebo solidificado feito de materiais\r\nmagicamente ressonantes. Item produzível.\r\n\r\nReveste a arma, infligindo dano mágico.\r\n
+2091000	Espada afiada usada por D, cavaleiro da Ordem Áurea.\r\nA lâmina foi forjada com uma mistura de prata e latão.
+2091100	Sebo sólido com bolhas feito de uma mistura\r\nde sangue e outros materiais. Item produzível.\r\n\r\nReveste a arma, infligindo hemorragias.\r\n\r\nO sangue com bolhas rompe a pele,\r\ncausando lacerações graves. Conhecida\r\npor ser a arma preferida de trapaceiros e\r\nmalfeitores há eras.
+2091200	Sebo solidificado feito com as artes protegidas\r\ncom zelo de Santa Trina. Item produzível.\r\n\r\nReveste a arma, infligindo sono.\r\n\r\nA Santa da Canção de Ninar se tornou o símbolo\r\ndo descanso perdido, e os fracos de coração eram\r\nincapazes de resistir à sua bondade, mesmo no\r\ncampo de batalha.
+2110000	Espada com Códigos
+2140000	Espada da Noite e da Chama
+2150000	Espada de Cristal
+2180000	Espada de Cavaleiro Cariano
+2190000	Espada de Sta. Trina
+2200000	Espada de Cavaleiro de Miquella
+2210000	Bastão com Lâmina
+2210100	Bastão com Lâmina Pesado
+2210200	Bastão com Lâmina Aguçado
+2210300	Bastão com Lâmina de Qualidade
+2210400	Bastão com Lâmina de Fogo
+2210500	Bastão com Lâmina da Arte da Chama
+2210600	Bastão com Lâmina de Relâmpago
+2210700	Bastão com Lâmina Sagrado
+2210800	Bastão com Lâmina Mágico
+2210900	Bastão com Lâmina do Frio
+2211000	Bastão com Lâmina Venenoso
+2211100	Bastão com Lâmina do Sangue
+2211200	Bastão com Lâmina do Oculto
+2220000	Regalia de Eochaid
+2230000	Espada Esguia do Nobre
+2230100	Espada Esguia Pesada do Nobre
+2230200	Espada Esguia Aguçada do Nobre
+2230300	Espada Esguia de Qualidade do Nobre
+2230400	Espada Esguia de Fogo do Nobre
+2230500	Espada Esguia da Arte da Chama do Nobre
+2230600	Espada Esguia de Relâmpago do Nobre
+2230700	Espada Esguia Sagrada do Nobre
+2230800	Espada Esguia Mágica do Nobre
+2230900	Espada Esguia do Frio do Nobre
+2231000	Espada Esguia Venenosa do Nobre
+2231100	Espada Esguia do Sangue do Nobre
+2231200	Espada Esguia do Oculto do Nobre
+2240000	Garra de Falcão de Guerra
+2240100	Garra de Falcão de Guerra Pesada
+2240200	Garra de Falcão de Guerra Aguçada
+2240300	Garra de Falcão de Guerra de Qualidade
+2240400	Garra de Falcão de Guerra de Fogo
+2240500	Garra de Falcão de Guerra da Arte da Chama
+2240600	Garra de Falcão de Guerra de Relâmpago
+2240700	Garra de Falcão de Guerra Sagrada
+2240800	Garra de Falcão de Guerra Mágica
+2240900	Garra de Falcão de Guerra do Frio
+2241000	Garra de Falcão de Guerra Venenosa
+2241100	Garra de Falcão de Guerra do Sangue
+2241200	Garra de Falcão de Guerra do Oculto
+2250000	Espada de Pedrilhante Lazuli
+2260000	Espada de Cristal Apodrecida
+3000000	Espada Bastarda
+3000100	Espada Bastarda Pesada
+3000200	Espada Bastarda Aguçada
+3000300	Espada Bastarda de Qualidade
+3000400	Espada Bastarda de Fogo
+3000500	Espada Bastarda da Arte da Chama
+3000600	Espada Bastarda de Relâmpago
+3000700	Espada Bastarda Sagrada
+3000800	Espada Bastarda Mágica
+3000900	Espada Bastarda do Frio
+3001000	Espada Bastarda Venenosa
+3001100	Espada Bastarda do Sangue
+3001200	Espada Bastarda do Oculto
+3010000	Espada Grande Bifurcada
+3010100	Espada Grande Bifurcada Pesada
+3010200	Espada Grande Bifurcada Aguçada
+3010300	Espada Grande Bifurcada de Qualidade
+3010400	Espada Grande Bifurcada de Fogo
+3010500	Espada Grande Bifurcada da Arte da Chama
+3010600	Espada Grande Bifurcada de Relâmpago
+3010700	Espada Grande Bifurcada Sagrada
+3010800	Espada Grande Bifurcada Mágica
+3010900	Espada Grande Bifurcada do Frio
+3011000	Espada Grande Bifurcada Venenosa
+3011100	Espada Grande Bifurcada do Sangue
+3011200	Espada Grande Bifurcada do Oculto
+3020000	Espada Grande de Ferro
+3020100	Espada Grande de Ferro Pesada
+3020200	Espada Grande de Ferro Aguçada
+3020300	Espada Grande de Ferro de Qualidade
+3020400	Espada Grande de Ferro de Fogo
+3020500	Espada Grande de Ferro da Arte da Chama
+3020600	Espada Grande de Ferro de Relâmpago
+3020700	Espada Grande de Ferro Sagrada
+3020800	Espada Grande de Ferro Mágica
+3020900	Espada Grande de Ferro do Frio
+3021000	Espada Grande de Ferro Venenosa
+3021100	Espada Grande de Ferro do Sangue
+3021200	Espada Grande de Ferro do Oculto
+3030000	Espada Grande do Lorde
+3030100	Espada Grande do Lorde Pesada
+3030200	Espada Grande do Lorde Aguçada
+3030300	Espada Grande do Lorde de Qualidade
+3030400	Espada Grande do Lorde de Fogo
+3030500	Espada Grande do Lorde da Arte da Chama
+3030600	Espada Grande do Lorde de Relâmpago
+3030700	Espada Grande do Lorde Sagrada
+3030800	Espada Grande do Lorde Mágica
+3030900	Espada Grande do Lorde do Frio
+3031000	Espada Grande do Lorde Venenosa
+3031100	Espada Grande do Lorde do Sangue
+3031200	Espada Grande do Lorde do Oculto
+3040000	Espada Grande de Cavaleiro
+3040100	Espada Grande do Cavaleiro Pesada
+3040200	Espada Grande do Cavaleiro Aguçada
+3040300	Espada Grande do Cavaleiro de Qualidade
+3040400	Espada Grande do Cavaleiro de Fogo
+3040500	Espada Grande do Cavaleiro da Arte da Chama
+3040600	Espada Grande do Cavaleiro de Relâmpago
+3040700	Espada Grande do Cavaleiro Sagrada
+3040800	Espada Grande do Cavaleiro Mágica
+3040900	Espada Grande do Cavaleiro do Frio
+3041000	Espada Grande do Cavaleiro Venenosa
+3041100	Espada Grande do Cavaleiro do Sangue
+3041200	Espada Grande do Cavaleiro do Oculto
+3050000	Flambérgia
+3050100	Flambérgia Pesada
+3050200	Flambérgia Aguçada
+3050300	Flambérgia de Qualidade
+3050400	Flambérgia de Fogo
+3050500	Flambérgia da Arte da Chama
+3050600	Flambérgia de Relâmpago
+3050700	Flambérgia Sagrada
+3050800	Flambérgia Mágica
+3050900	Flambérgia do Frio
+3051000	Flambérgia Venenosa
+3051100	Flambérgia do Sangue
+3051200	Flambérgia do Oculto
+3060000	Espada Grande de Ordovis
+3070000	Espada do Lorde de Alabastro
+3080000	Espada Grande de Cavaleiro Banido
+3080100	Espada Grande de Cavaleiro Banido Pesada
+3080200	Espada Grande de Cavaleiro Banido Aguçada
+3080300	Espada Grande de Cavaleiro Banido de Qualidade
+3080400	Espada Grande de Cavaleiro Banido de Fogo
+3080500	Espada Grande de Cavaleiro Banido da Arte da Chama
+3080600	Espada Grande de Cavaleiro Banido de Relâmpago
+3080700	Espada Grande de Cavaleiro Banido Sagrada
+3080800	Espada Grande de Cavaleiro Banido Mágica
+3080900	Espada Grande de Cavaleiro Banido do Frio
+3081000	Espada Grande de Cavaleiro Banido Venenosa
+3081100	Espada Grande de Cavaleiro Banido do Sangue
+3081200	Espada Grande de Cavaleiro Banido do Oculto
+3090000	Espada Grande da Lua Sombria
+3100000	Espada Sagrada da Relíquia
+3130000	Campanário de Helphen
+3140000	Lâmina Blasfema
+3150000	Espada de Carrasco de Marais
+3160000	Espada de Milos
+3160100	Grevas usadas por Vargram, o Lobo Sangrento, um dos primeiros Maculados a visitar a Mesa-Redonda.\r\n\r\nDe acordo com as antigas lendas, lobos são as sombras do Empíreo.\r\nO próprio Vargram aspirava a tal estado.
+3160200	A armadura usada por Vargram, o Lobo Sangrento, um dos primeiros Maculados a visitar a Mesa-Redonda.\r\n\r\nDe acordo com as antigas lendas, lobos são as sombras do Empíreo.\r\nO próprio Vargram aspirava a tal estado.
+3160300	Elmo feito de tiras de ferro unidas umas às outras.\r\nUsado por guerreiros das terras dos juncos.\r\n\r\nUma longa e trágica guerra civil cobriu por muito\r\ntempo a terra dos juncos, e a mesma ficou alienada\r\ndas culturas de seus vizinhos.\r\nNão é uma surpresa que toda a nação tenha sucumbido a uma\r\nloucura ensanguentada, ou ao menos é o que dizem.
+3160400	Armadura feita de tiras de ferro unidas umas às outras.\r\nUsada por guerreiros da terra dos juncos.\r\n\r\nO manto externo encardido é feito de\r\njunco seco vindo da cidade natal do guerreiro.\r\n"Eu me pergunto, ainda restam lembranças de casa?"
+3160500	Manoplas envoltas em couro rígido.\r\nUsadas por guerreiros da terra dos juncos.
+3160600	Grevas envoltas em couro rígido.\r\nUsadas por guerreiros da terra dos juncos.
+3160700	Traje cerimonial usado para um humilde festival
+3160800	Espada grande feita da coluna vertebral\r\nde um dragão. A lâmina serrada lacera\r\nsua presa, causando grave hemorragia.
+3160900	Espada grande feita da coluna vertebral\r\nde um dragão. A lâmina serrada lacera\r\nsua presa, causando grave hemorragia.
+3161000	Capuz Festivo
+3161100	Capa Festiva
+3161200	Coroa de Flores Silvestres
+3170000	Espada Grande da Ordem Áurea
+3180000	Claymore
+3180100	Claymore Pesada
+3180200	Claymore Aguçada
+3180300	Claymore de Qualidade
+3180400	Claymore de Fogo
+3180500	Claymore da Arte da Chama
+3180600	Claymore de Relâmpago
+3180700	Claymore Sagrada
+3180800	Claymore Mágica
+3180900	Claymore do Frio
+3181000	Claymore Venenosa
+3181100	Claymore de Sangue
+3181200	Claymore do Oculto
+3190000	Espada Grande da Gárgula
+3190100	Espada Grande Pesada da Gárgula
+3190200	Espada Grande Aguçada da Gárgula
+3190300	Espada Grande de Qualidade da Gárgula
+3190400	Espada Grande de Fogo da Gárgula
+3190500	Espada Grande da Arte da Chama da Gárgula
+3190600	Espada Grande de Relâmpago da Gárgula
+3190700	Espada Grande Sagrada da Gárgula
+3190800	Espada Grande Mágica da Gárgula
+3190900	Espada Grande do Frio da Gárgula
+3191000	Espada Grande Venenosa da Gárgula
+3191100	Espada Grande do Sangue da Gárgula
+3191200	Espada Grande do Oculto da Gárgula
+3200000	Atiçador da Morte
+3210000	Lâmina Negra da Gárgula
+3210100	Armadura da Terra dos Juncos
+3210200	Manoplas da Terra dos Juncos
+3210300	Grevas da Terra dos Juncos
+3210400	Espada grande empunhada pelas gárgulas\r\na serviço de Maliketh.
+3210500	Espada grande empunhada pelas gárgulas\r\na serviço de Maliketh.
+3210600	Uma feitiçaria pedrilhante antiga e perdida, usada por miseráveis que vivem em ruínas subterrâneas.\r\n\r\nProduz várias bolhas de magia que se espalham até estourarem naturalmente.\r\nCarregar esta feitiçaria faz com que as bolhas durem mais tempo.
+3210700	Espada grande empunhada pelas gárgulas\r\na serviço de Maliketh.
+3210800	Espada grande empunhada pelas gárgulas\r\na serviço de Maliketh.
+3210900	Um encantamento dos Monges do Fogo, guardiões da chama da ruína dos gigantes.\r\n\r\nLibera, momentaneamente, uma chama ardente das mãos do usuário.\r\nEste encantamento pode ser lançado rapidamente depois de arremetidas, rolamentos de esquiva e outras manobras.
+3211000	Roupas esfarrapadas
+3211100	Um encantamento dos Monges do Fogo, guardiões da chama da ruína dos gigantes.\r\n\r\nProduz e arremessa uma feroz bola de fogo.\r\nCarregar este encantamento o torna mais poderoso e faz com que a bola exploda.\r\n\r\nO fogo engana os inimigos que olham para ele.\r\nAqueles que guardariam a chama passariam, também, a adorá-la.
+3211200	Uma invocação sagrada concebida por Gurranq, o Clérigo Bestial.\r\n\r\nCria garras de fera que rasgam a terra.\r\n\r\nHá muito tempo, as bestas possuíam intelecto e reinavam sua própria era.\r\nDizem que o regente de Godfrey, o primeiro Lorde Pristino, era descendente delas.\r\n
+3220000	[ERROR]
+3900000	[ERROR]
+4000000	Espada Grande
+4000100	Espada Grande Pesada
+4000200	Espada Grande Aguçada
+4000300	Espada Grande de Qualidade
+4000400	Espada Grande de Fogo
+4000500	Espada Grande da Arte da Chama
+4000600	Espada Grande de Relâmpago
+4000700	Espada Grande Sagrada
+4000800	Espada Grande Mágica
+4000900	Espada Grande do Frio
+4001000	Espada Grande Venenosa
+4001100	Espada Grande de Sangue
+4001200	Espada Grande do Oculto
+4010000	Espada Grande de Cão de Guarda
+4010100	Espada Grande de Cão de Guarda Pesada
+4010200	Espada Grande de Cão de Guarda Aguçada
+4010300	Espada Grande de Cão de Guarda de Qualidade
+4010400	Espada Grande de Cão de Guarda de Fogo
+4010500	Espada Grande de Cão de Guarda da Arte da Chama
+4010600	Espada Grande de Cão de Guarda de Relâmpago
+4010700	Espada Grande de Cão de Guarda Sagrada
+4010800	Espada Grande de Cão de Guarda Mágica
+4010900	Espada Grande de Cão de Guarda do Frio
+4011000	Espada Grande de Cão de Guarda Venenosa
+4011100	Espada Grande de Cão de Guarda do Sangue
+4011200	Espada Grande de Cão de Guarda do Oculto
+4020000	Lâmina Negra de Maliketh
+4030000	Espada Dourada de Troll
+4030100	Espada Dourada de Troll Pesada
+4030200	Espada Dourada de Troll Aguçada
+4030300	Espada Dourada de Troll de Qualidade
+4030400	Espada Dourada de Troll de Fogo
+4030500	Espada Dourada de Troll da Arte da Chama
+4030600	Espada Dourada de Troll de Relâmpago
+4030700	Espada Dourada de Troll Sagrada
+4030800	Espada Dourada de Troll Mágica
+4030900	Espada Dourada de Troll do Frio
+4031000	Espada Dourada de Troll Venenosa
+4031100	Espada Dourada de Troll do Sangue
+4031200	Espada Dourada de Troll do Oculto
+4040000	Zweihänder
+4040100	Zweihänder Pesada
+4040200	Zweihänder Aguçada
+4040300	Zweihänder de Qualidade
+4040400	Zweihänder de Fogo
+4040500	Zweihänder da Arte da Chama
+4040600	Zweihänder de Relâmpago
+4040700	Zweihänder Sagrada
+4040800	Zweihänder Mágica
+4040900	Zweihänder do Frio
+4041000	Zweihänder Venenosa
+4041100	Zweihänder de Sangue
+4041200	Zweihänder do Oculto
+4050000	Espada Grande do Flagelo Estelar
+4060000	Espada Grande Real
+4070000	Espada Grande do Matador de Deuses
+4080000	Espada Grande das Ruínas
+4100000	Espada Grande com Lâmina Enxertada
+4110000	Espada de Cavaleiro Troll
+4900000	[ERROR]
+4910000	[ERROR]
+5000000	Estoque
+5000100	Estoque Pesado
+5000200	Estoque Aguçado
+5000300	Estoque de Qualidade
+5000400	Estoque de Fogo
+5000500	Estoque da Arte da Chama
+5000600	Estoque do Relâmpago
+5000700	Estoque Sagrado
+5000800	Estoque Mágico
+5000900	Estoque do Frio
+5001000	Estoque Venenoso
+5001100	Estoque de Sangue
+5001200	Estoque do Oculto
+5010000	Espada de Cavaleiro da Podridão Imaculada
+5010100	Espada Pesada de Cavaleiro da Podridão Imaculada
+5010200	Espada Aguçada de Cavaleiro da Podridão Imaculada
+5010300	Espada de Qualidade de Cavaleiro da Podridão Imaculada
+5010400	Espada de Fogo de Cavaleiro da Podridão Imaculada
+5010500	Espada da Arte da Chama de Cavaleiro da Podridão Imaculada
+5010600	Espada de Relâmpago de Cavaleiro da Podridão Imaculada
+5010700	Espada Sagrada de Cavaleiro da Podridão Imaculada
+5010800	Espada Mágica de Cavaleiro da Podridão Imaculada
+5010900	Espada do Frio de Cavaleiro da Podridão Imaculada
+5011000	Espada Venenosa de Cavaleiro da Podridão Imaculada
+5011100	Espada do Sangue de Cavaleiro da Podridão Imaculada
+5011200	Espada do Oculto de Cavaleiro da Podridão Imaculada
+5020000	Florete
+5020100	Florete Pesado
+5020200	Florete Aguçado
+5020300	Florete de Qualidade
+5020400	Florete de Fogo
+5020500	Florete da Arte da Chama
+5020600	Florete do Relâmpago
+5020700	Florete Sagrado
+5020800	Florete Mágico
+5020900	Florete do Frio
+5021000	Florete Venenoso
+5021100	Florete de Sangue
+5021200	Florete do Oculto
+5030000	Rapieira de Rogier
+5030100	Rapieira Pesada de Rogier
+5030200	Rapieira Aguçada de Rogier
+5030300	Rapieira de Qualidade de Rogier
+5030400	Rapieira de Fogo de Rogier
+5030500	Rapieira da Arte da Chama de Rogier
+5030600	Rapieira de Relâmpago de Rogier
+5030700	Rapieira Sagrada de Rogier
+5030800	Rapieira Mágica de Rogier
+5030900	Rapieira do Frio de Rogier
+5031000	Rapieira Venenosa de Rogier
+5031100	Rapieira do Sangue de Rogier
+5031200	Rapieira do Oculto de Rogier
+5040000	Rapieira de Espinha de Formiga
+5040100	Rapieira de Espinha de Formiga Pesada
+5040200	Rapieira de Espinha de Formiga Aguçada
+5040300	Rapieira de Espinha de Formiga de Qualidade
+5040400	Rapieira de Espinha de Formiga de Fogo
+5040500	Rapieira de Espinha de Formiga da Arte da Chama
+5040600	Rapieira de Espinha de Formiga de Relâmpago
+5040700	Rapieira de Espinha de Formiga Sagrada
+5040800	Rapieira de Espinha de Formiga Mágica
+5040900	Rapieira de Espinha de Formiga do Frio
+5041000	Rapieira de Espinha de Formiga Venenosa
+5041100	Rapieira de Espinha de Formiga do Sangue
+5041200	Rapieira de Espinha de Formiga do Oculto
+5050000	Agulha Congelada
+5060000	Estoque do Nobre
+5060100	Estoque Pesado do Nobre
+5060200	Estoque Aguçado do Nobre
+5060300	Estoque de Qualidade do Nobre
+5060400	Estoque de Fogo do Nobre
+5060500	Estoque da Arte da Chama do Nobre
+5060600	Estoque de Relâmpago do Nobre
+5060700	Estoque Sagrado do Nobre
+5060800	Estoque Mágico do Nobre
+5060900	Estoque do Frio do Nobre
+5061000	Estoque Venenoso do Nobre
+5061100	Estoque do Sangue do Nobre
+5061200	Estoque do Oculto do Nobre
+6000000	Helike do Sangue
+6010000	Sutura da Pele Divina
+6010100	Sutura da Pele Divina Pesada
+6010200	Sutura da Pele Divina Aguçada
+6010300	Sutura da Pele Divina de Qualidade
+6010400	Sutura da Pele Divina de Fogo
+6010500	Sutura da Pele Divina da Arte da Chama
+6010600	Sutura da Pele Divina de Relâmpago
+6010700	Sutura da Pele Divina Sagrada
+6010800	Sutura da Pele Divina Mágica
+6010900	Sutura da Pele Divina do Frio
+6011000	Sutura da Pele Divina Venenosa
+6011100	Sutura da Pele Divina do Sangue
+6011200	Sutura da Pele Divina do Oculto
+6020000	Grande Épée
+6020100	Grande Épée Pesada
+6020200	Grande Épée Aguçada
+6020300	Grande Épée de Qualidade
+6020400	Grande Épée de Fogo
+6020500	Grande Épée da Arte da Chama
+6020600	Grande Épée de Relâmpago
+6020700	Grande Épée Sagrada
+6020800	Grande Épée Mágica
+6020900	Grande Épée do Frio
+6021000	Grande Épée Venenosa
+6021100	Grande Épée de Sangue
+6021200	Grande Épée do Oculto
+6040000	Lâmina de Pedra do Rei Dragão
+6900000	[ERROR]
+7000000	Alfange
+7000100	Alfange Pesado
+7000200	Alfange Aguçado
+7000300	Alfange de Qualidade
+7000400	Alfange de Fogo
+7000500	Alfange da Arte da Chama
+7000600	Alfange de Relâmpago
+7000700	Alfange Sagrado
+7000800	Alfange Mágico
+7000900	Alfange do Frio
+7001000	Alfange Venenoso
+7001100	Alfange de Sangue
+7001200	Alfange do Oculto
+7010000	Espada Curva de Homem-Fera
+7010100	Espada Curva de Homem-Fera Pesada
+7010200	Espada Curva de Homem-Fera Aguçada
+7010300	Espada Curva de Homem-Fera de Qualidade
+7010400	Espada Curva de Homem-Fera de Fogo
+7010500	Espada Curva de Homem-Fera da Arte da Chama
+7010600	Espada Curva de Homem-Fera de Relâmpago
+7010700	Espada Curva de Homem-Fera Sagrada
+7010800	Espada Curva de Homem-Fera Mágica
+7010900	Espada Curva de Homem-Fera do Frio
+7011000	Espada Curva de Homem-Fera Venenosa
+7011100	Espada Curva de Homem-Fera do Sangue
+7011200	Espada Curva de Homem-Fera do Oculto
+7020000	Shotel
+7020100	Shotel Pesada
+7020200	Shotel Aguçada
+7020300	Shotel de Qualidade
+7020400	Shotel de Fogo
+7020500	Shotel da Arte da Chama
+7020600	Shotel de Relâmpago
+7020700	Shotel Sagrada
+7020800	Shotel Mágico
+7020900	Shotel do Frio
+7021000	Shotel Venenosa
+7021100	Shotel de Sangue
+7021200	Shotel do Oculto
+7030000	Shamshir
+7030100	Shamshir Pesada
+7030200	Shamshir Aguçada
+7030300	Shamshir de Qualidade
+7030400	Shamshir de Fogo
+7030500	Shamshir da Arte da Chama
+7030600	Shamshir de Relâmpago
+7030700	Shamshir Sagrada
+7030800	Shamshir Mágica
+7030900	Shamshir do Frio
+7031000	Shamshir Venenosa
+7031100	Shamshir de Sangue
+7031200	Shamshir do Oculto
+7040000	Espada Curva de Bandido
+7040100	Espada Curva de Bandido Pesada
+7040200	Espada Curva de Bandido Aguçada
+7040300	Espada Curva de Bandido de Qualidade
+7040400	Espada Curva de Bandido de Fogo
+7040500	Espada Curva de Bandido da Arte da Chama
+7040600	Espada Curva de Bandido de Relâmpago
+7040700	Espada Curva de Bandido Sagrada
+7040800	Espada Curva de Bandido Mágica
+7040900	Espada Curva de Bandido do Frio
+7041000	Espada Curva de Bandido Venenosa
+7041100	Espada Curva de Bandido do Sangue
+7041200	Espada Curva de Bandido do Oculto
+7050000	Lâmina de Magma
+7060000	Espada Curva do Riacho
+7060100	Espada Curva Pesada do Riacho
+7060200	Espada Curva Aguçada do Riacho
+7060300	Espada Curva de Qualidade do Riacho
+7060400	Espada Curva de Fogo do Riacho
+7060500	Espada Curva da Arte da Chama do Riacho
+7060600	Espada Curva de Relâmpago do Riacho
+7060700	Espada Curva Sagrada do Riacho
+7060800	Espada Curva Mágica do Riacho
+7060900	Espada Curva do Frio do Riacho
+7061000	Espada Curva Venenosa do Riacho
+7061100	Espada Curva do Sangue do Riacho
+7061200	Espada Curva do Oculto do Riacho
+7070000	Asa de Astel
+7080000	Espada Curva do Ladrão de Túmulos
+7080100	Espada Curva Pesada do Ladrão de Túmulos
+7080200	Espada Curva Aguçada do Ladrão de Túmulos
+7080300	Espada Curva de Qualidade do Ladrão de Túmulos
+7080400	Espada Curva de Fogo do Ladrão de Túmulos
+7080500	Espada Curva da Arte da Chama do Ladrão de Túmulos
+7080600	Espada Curva de Relâmpago do Ladrão de Túmulos
+7080700	Espada Curva Sagrada do Ladrão de Túmulos
+7080800	Espada Curva Mágica do Ladrão de Túmulos
+7080900	Espada Curva do Frio do Ladrão de Túmulos
+7081000	Espada Curva Venenosa do Ladrão de Túmulos
+7081100	Espada Curva do Sangue do Ladrão de Túmulos
+7081200	Espada Curva do Oculto do Ladrão de Túmulos
+7090000	
+7090100	
+7090200	
+7090300	
+7090400	
+7090500	
+7090600	
+7090700	
+7090800	
+7090900	
+7091000	
+7091100	
+7091200	
+7100000	Shotel do Eclipse
+7110000	Espada Curva do Deus-Serpente
+7110100	Espada Curva Pesada do Deus-Serpente
+7110200	Espada Curva Aguçada do Deus-Serpente
+7110300	Espada Curva de Qualidade do Deus-Serpente
+7110400	Espada Curva de Fogo do Deus-Serpente
+7110500	Espada Curva da Arte da Chama do Deus-Serpente
+7110600	Espada Curva de Relâmpago do Deus-Serpente
+7110700	Espada Curva Sagrada do Deus-Serpente
+7110800	Espada Curva Mágica do Deus-Serpente
+7110900	Espada Curva do Frio do Deus-Serpente
+7111000	Espada Curva Venenosa do Deus-Serpente
+7111100	Espada Curva do Sangue do Deus-Serpente
+7111200	Espada Curva do Oculto do Deus-Serpente
+7120000	Katana de Louva-a-Deus
+7120100	Lâmina de Louva-a-Deus Pesada
+7120200	Lâmina de Louva-a-Deus Aguçada
+7120300	Lâmina de Louva-a-Deus de Qualidade
+7120400	Lâmina de Louva-a-Deus de Fogo
+7120500	Lâmina de Louva-a-Deus da Arte da Chama
+7120600	Lâmina de Louva-a-Deus de Relâmpago
+7120700	Lâmina de Louva-a-Deus Sagrada
+7120800	Lâmina de Louva-a-Deus Mágica
+7120900	Lâmina de Louva-a-Deus do Frio
+7121000	Lâmina de Louva-a-Deus Venenosa
+7121100	Lâmina de Louva-a-Deus do Sangue
+7121200	Lâmina de Louva-a-Deus do Oculto
+7140000	Cimitarra
+7140100	Cimitarra Pesada
+7140200	Cimitarra Aguçada
+7140300	Cimitarra de Qualidade
+7140400	Cimitarra de Fogo
+7140500	Cimitarra da Arte da Chama
+7140600	Cimitarra de Relâmpago
+7140700	Cimitarra Sagrada
+7140800	Cimitarra Mágica
+7140900	Cimitarra do Frio
+7141000	Cimitarra Venenosa
+7141100	Cimitarra do Sangue
+7141200	Cimitarra do Oculto
+7150000	Grosse Messer
+7150100	Grosse Messer Pesada
+7150200	Grosse Messer Aguçada
+7150300	Grosse Messer de Qualidade
+7150400	Grosse Messer de Fogo
+7150500	Grosse Messer da Arte da Chama
+7150600	Grosse Messer de Relâmpago
+7150700	Grosse Messer Sagrada
+7150800	Grosse Messer Mágica
+7150900	Grosse Messer do Frio
+7151000	Grosse Messer Venenosa
+7151100	Grosse Messer do Sangue
+7151200	Grosse Messer do Oculto
+8010000	Espada Grande do Lorde de Ônix
+8020000	Cutelo Curvado
+8020100	Cutelo Curvado Pesado
+8020200	Cutelo Curvado Aguçado
+8020300	Cutelo Curvado de Qualidade
+8020400	Cutelo Curvado de Fogo
+8020500	Cutelo Curvado da Arte da Chama
+8020600	Cutelo Curvado de Relâmpago
+8020700	Cutelo Curvado Sagrado
+8020800	Cutelo Curvado Mágico
+8020900	Cutelo Curvado do Frio
+8021000	Cutelo Curvado Venenoso
+8021100	Cutelo Curvado do Sangue
+8021200	Cutelo Curvado do Oculto
+8030000	Presa do Cão de Caça
+8030100	Presa do Cão de Caça Pesada
+8030200	Presa do Cão de Caça Aguçada
+8030300	Presa do Cão de Caça de Qualidade
+8030400	Presa do Cão de Caça de Fogo
+8030500	Presa do Cão de Caça da Arte da Chama
+8030600	Presa do Cão de Caça de Relâmpago
+8030700	Presa do Cão de Caça Sagrada
+8030800	Presa do Cão de Caça Mágica
+8030900	Presa do Cão de Caça do Frio
+8031000	Presa do Cão de Caça Venenosa
+8031100	Presa do Cão de Caça do Sangue
+8031200	Presa do Cão de Caça do Oculto
+8040000	Espada de Escama do Wyrm de Magma
+8050000	Espada Curva de Zamor
+8060000	Cutelo de Agouro
+8060100	Zanbato Pesada
+8060200	Zanbato Aguçada
+8060300	Zanbato de Qualidade
+8060400	Zanbato de Fogo
+8060500	Zanbato da Arte da Chama
+8060600	Zanbato de Relâmpago
+8060700	Zanbato Sagrada
+8060800	Zanbato Mágica
+8060900	Zanbato do Frio
+8061000	Zanbato Venenosa
+8061100	Zanbato de Sangue
+8061200	Zanbato do Oculto
+8070000	Lâmina Cintilante do Monge
+8070100	Lâmina Cintilante Pesada do Monge
+8070200	Lâmina Cintilante Aguçada do Monge
+8070300	Lâmina Cintilante de Qualidade do Monge
+8070400	Lâmina Cintilante de Fogo do Monge
+8070500	Lâmina Cintilante da Arte da Chama do Monge
+8070600	Lâmina Cintilante de Relâmpago do Monge
+8070700	Lâmina Cintilante Sagrada do Monge
+8070800	Lâmina Cintilante Mágica do Monge
+8070900	Lâmina Cintilante do Frio do Monge
+8071000	Lâmina Cintilante Venenosa do Monge
+8071100	Lâmina Cintilante do Sangue do Monge
+8071200	Lâmina Cintilante do Oculto do Monge
+8080000	Espada Grande Curva de Homem-Fera
+8080100	Espada Grande Curva de Homem-Fera Pesada
+8080200	Espada Grande Curva de Homem-Fera Aguçada
+8080300	Espada Grande Curva de Homem-Fera de Qualidade
+8080400	Espada Grande Curva de Homem-Fera de Fogo
+8080500	Espada Grande Curva de Homem-Fera da Arte da Chama
+8080600	Espada Grande Curva de Homem-Fera de Relâmpago
+8080700	Espada Grande Curva de Homem-Fera Sagrada
+8080800	Espada Grande Curva de Homem-Fera Mágica
+8080900	Espada Grande Curva de Homem-Fera do Frio
+8081000	Espada Grande Curva de Homem-Fera Venenosa
+8081100	Espada Grande Curva de Homem-Fera do Sangue
+8081200	Espada Grande Curva de Homem-Fera do Oculto
+8100000	Espada Amaldiçoada de Morgott
+8110000	
+8110100	
+8110200	
+8110300	
+8110400	
+8110500	Um gesto desdenhoso
+8110600	
+8110700	Oração Desesperada
+8110800	
+8110900	
+8111000	
+8111100	
+8111200	
+8900000	[ERROR]
+9000000	Uchigatana
+9000100	Uchigatana Pesada
+9000200	Uchigatana Aguçada
+9000300	Uchigatana de Qualidade
+9000400	Uchigatana de Fogo
+9000500	Uchigatana da Arte da Chama
+9000600	Uchigatana de Relâmpago
+9000700	Uchigatana Sagrada
+9000800	Uchigatana Mágica
+9000900	Uchigatana do Frio
+9001000	Uchigatana Venenosa
+9001100	Uchigatana de Sangue
+9001200	Uchigatana do Oculto
+9010000	Nagakiba
+9010100	Nagakiba Pesada
+9010200	Nagakiba Aguçada
+9010300	Nagakiba de Qualidade
+9010400	Nagakiba de Fogo
+9010500	Nagakiba da Arte da Chama
+9010600	Nagakiba de Relâmpago
+9010700	Nagakiba Sagrada
+9010800	Nagakiba Mágica
+9010900	Nagakiba do Frio
+9011000	Nagakiba Venenosa
+9011100	Nagakiba do Sangue
+9011200	Nagakiba do Oculto
+9020000	A Mão de Malenia
+9030000	Lâmina da Estrela Cadente
+9030100	Lâmina da Estrela Cadente Pesada
+9030200	Lâmina da Estrela Cadente Aguçada
+9030300	Lâmina da Estrela Cadente de Qualidade
+9030400	Lâmina da Estrela Cadente de Fogo
+9030500	Lâmina da Estrela Cadente da Arte da Chama
+9030600	Lâmina da Estrela Cadente de Relâmpago
+9030700	Lâmina da Estrela Cadente Sagrada
+9030800	Lâmina da Estrela Cadente Mágica
+9030900	Lâmina da Estrela Cadente do Frio
+9031000	Lâmina da Estrela Cadente Venenosa
+9031100	Lâmina da Estrela Cadente do Sangue
+9031200	Lâmina da Estrela Cadente do Oculto
+9040000	Rios de Sangue
+9060000	Véu da Lua
+9070000	Lâmina de Escama de Dragão
+9080000	Lâmina de Osso de Serpente
+9080100	[ERROR]Lâmina de Osso de Serpente Pesada
+9080200	[ERROR]Lâmina de Osso de Serpente Aguçada
+9080300	[ERROR]Lâmina de Osso de Serpente de Qualidade
+9080400	[ERROR]Lâmina de Osso de Serpente de Fogo
+9080500	[ERROR]Lâmina de Osso de Serpente da Arte da Chama
+9080600	[ERROR]Lâmina de Osso de Serpente de Relâmpago
+9080700	[ERROR]Lâmina de Osso de Serpente Sagrada
+9080800	[ERROR]Lâmina de Osso de Serpente Mágica
+9080900	[ERROR]Lâmina de Osso de Serpente do Frio
+9081000	[ERROR]Lâmina de Osso de Serpente Venenosa
+9081100	[ERROR]Lâmina de Osso de Serpente do Sangue
+9081200	[ERROR]Lâmina de Osso de Serpente do Oculto
+9900000	[ERROR]
+9910000	[ERROR]
+9911000	[ERROR]
+9920000	[ERROR]
+9930000	[ERROR]
+10000000	Lâminas-Gêmeas
+10000100	Lâminas-Gêmeas Pesadas
+10000200	Lâminas-Gêmeas Aguçadas
+10000300	Lâminas-Gêmeas de Qualidade
+10000400	Lâminas-Gêmeas de Fogo
+10000500	Lâminas-Gêmeas da Arte da Chama
+10000600	Lâminas-Gêmeas de Relâmpago
+10000700	Lâminas-Gêmeas Sagradas
+10000800	Lâminas-Gêmeas Mágicas
+10000900	Lâminas-Gêmeas do Frio
+10001000	Lâminas-Gêmeas Venenosas
+10001100	Lâminas-Gêmeas do Sangue
+10001200	Lâminas-Gêmeas do Oculto
+10010000	Esfolador de Pele Divina
+10010100	Esfolador de Pele Divina Pesado
+10010200	Esfolador de Pele Divina Aguçado
+10010300	Esfolador de Pele Divina de Qualidade
+10010400	Esfolador de Pele Divina de Fogo
+10010500	Esfolador de Pele Divina da Arte da Chama
+10010600	Esfolador de Pele Divina de Relâmpago
+10010700	Esfolador de Pele Divina Sagrado
+10010800	Esfolador de Pele Divina Mágico
+10010900	Esfolador de Pele Divina do Frio
+10011000	Esfolador de Pele Divina Venenoso
+10011100	Esfolador de Pele Divina do Sangue
+10011200	Esfolador de Pele Divina do Oculto
+10030000	Espadas-Gêmeas do Cavaleiro
+10030100	Espadas-Gêmeas do Cavaleiro Pesadas
+10030200	Espadas-Gêmeas do Cavaleiro Aguçadas
+10030300	Espadas-Gêmeas do Cavaleiro de Qualidade
+10030400	Espadas-Gêmeas do Cavaleiro de Fogo
+10030500	Espadas-Gêmeas do Cavaleiro da Arte da Chama
+10030600	Espadas-Gêmeas do Cavaleiro de Relâmpago
+10030700	Espadas-Gêmeas do Cavaleiro Sagradas
+10030800	Espadas-Gêmeas do Cavaleiro Mágicas
+10030900	Espadas-Gêmeas do Cavaleiro do Frio
+10031000	Espadas-Gêmeas do Cavaleiro Venenosas
+10031100	Espadas-Gêmeas do Cavaleiro do Sangue
+10031200	Espadas-Gêmeas do Cavaleiro do Oculto
+10050000	Lança Cortante de Eleonora
+10060000	
+10070000	
+10080000	Lâminas-Gêmeas da Gárgula
+10080100	Lâminas-Gêmeas da Gárgula Pesadas
+10080200	Lâminas-Gêmeas da Gárgula Aguçadas
+10080300	Lâminas-Gêmeas da Gárgula de Qualidade
+10080400	Lâminas-Gêmeas da Gárgula de Fogo
+10080500	Lâminas-Gêmeas da Gárgula da Arte da Chama
+10080600	Lâminas-Gêmeas da Gárgula de Relâmpago
+10080700	Lâminas-Gêmeas da Gárgula Sagradas
+10080800	Lâminas-Gêmeas da Gárgula Mágicas
+10080900	Lâminas-Gêmeas da Gárgula do Frio
+10081000	Lâminas-Gêmeas da Gárgula Venenosas
+10081100	Lâminas-Gêmeas da Gárgula do Sangue
+10081200	Lâminas-Gêmeas da Gárgula do Oculto
+10090000	Lâminas-Gêmeas Negras da Gárgula
+10090100	Lâminas Negras da Gárgula Pesadas
+10090200	Lâminas Negras da Gárgula Aguçadas
+10090300	Lâminas Negras da Gárgula de Qualidade
+10090400	Lâminas Negras da Gárgula de Fogo
+10090500	Lâminas Negras da Gárgula da Arte da Chama
+10090600	Lâminas Negras da Gárgula de Relâmpago
+10090700	Lâminas Negras da Gárgula Sagradas
+10090800	Lâminas Negras da Gárgula Mágicas
+10090900	Lâminas Negras da Gárgula do Frio
+10091000	Lâminas Negras da Gárgula Venenosas
+10091100	Lâminas Negras da Gárgula do Sangue
+10091200	Lâminas Negras da Gárgula do Oculto
+11000000	Maça
+11000100	Maça Pesada
+11000200	Maça Aguçada
+11000300	Maça de Qualidade
+11000400	Maça de Fogo
+11000500	Maça da Arte da Chama
+11000600	Maça de Relâmpago
+11000700	Maça Sagrada
+11000800	Maça Mágica
+11000900	Maça do Frio
+11001000	Maça Venenosa
+11001100	Maça do Sangue
+11001200	Maça do Oculto
+11010000	Clava
+11010100	Clava Pesada
+11010200	Clava Aguçada
+11010300	Clava de Qualidade
+11010400	Clava de Fogo
+11010500	Clava da Arte da Chama
+11010600	Clava de Relâmpago
+11010700	Clava Sagrada
+11010800	Clava Mágica
+11010900	Clava do Frio
+11011000	Clava Venenosa
+11011100	Clava do Sangue
+11011200	Clava do Oculto
+11030000	Clava Curva
+11030100	Clava Curva Pesada
+11030200	Clava Curva Aguçada
+11030300	Clava Curva de Qualidade
+11030400	Clava Curva de Fogo
+11030500	Clava Curva da Arte da Chama
+11030600	Clava Curva de Relâmpago
+11030700	Clava Curva Sagrada
+11030800	Clava Curva Mágica
+11030900	Clava Curva do Frio
+11031000	Clava Curva Venenosa
+11031100	Clava Curva do Sangue
+11031200	Clava Curva do Oculto
+11040000	Marreta de Guerra
+11040100	Marreta de Guerra Pesada
+11040200	Marreta de Guerra Aguçada
+11040300	Marreta de Guerra de Qualidade
+11040400	Marreta de Guerra de Fogo
+11040500	Marreta de Guerra da Arte da Chama
+11040600	Marreta de Guerra de Relâmpago
+11040700	Marreta de Guerra Sagrada
+11040800	Marreta de Guerra Mágica
+11040900	Marreta de Guerra do Frio
+11041000	Marreta de Guerra Venenosa
+11041100	Marreta de Guerra do Sangue
+11041200	Marreta de Guerra do Oculto
+11050000	Estrela da Manhã
+11050100	Estrela da Manhã Pesada
+11050200	Estrela da Manhã Aguçada
+11050300	Estrela da Manhã de Qualidade
+11050400	Estrela da Manhã de Fogo
+11050500	Estrela da Manhã da Arte da Chama
+11050600	Estrela da Manhã de Relâmpago
+11050700	Estrela da Manhã Sagrada
+11050800	Estrela da Manhã Mágica
+11050900	Estrela da Manhã do Frio
+11051000	Estrela da Manhã Venenosa
+11051100	Estrela da Manhã do Sangue
+11051200	Estrela da Manhã do Oculto
+11060000	Buquê de Varré
+11060100	Buquê de Varré Pesado
+11060200	
+11060300	
+11060400	
+11060500	
+11060600	Um resquício de antigas pesquisas sobre a vida eterna.\r\nDe alguma forma, este pote vazio se conserta sozinho quando quebrado.\r\n\r\nRecipiente necessário para a produção de itens arremessáveis selados em potes.\r\n\r\nSelados em seu interior, os materiais e o misticismo demonstrarão seus efeitos quando o pote for arremessado.
+11060700	
+11060800	
+11060900	
+11061000	
+11061100	Uma semente dourada, encontrada na base de uma árvore ilusória.\r\n\r\nAumenta o número de usos de um Frasco Sagrado.\r\n(Pode ser usada após descansar em um local de graça.)\r\n\r\nQuando o Anel Prístino foi esmagado, estas sementes voaram da Térvore, espalhando-se pelas várias terras como se a própria vida soubesse que seu fim chegara.
+11061200	Benção da Térvore, venerada nas igrejas de todas as terras, isto é apenas um fraco vestígio.\r\n\r\nAumenta a potência dos efeitos de restauração dos Frascos Sagrados.\r\n(Podem ser usadas após descansar em um local de graça.)\r\n\r\nDurante a era da Térvore, estas lágrimas eram usadas para espalhar a paz, pois sua benção já foi certa.
+11070000	Clava com Espinhos
+11070100	Clava com Espinhos Pesada
+11070200	Clava com Espinhos Aguçada
+11070300	Clava com Espinhos de Qualidade
+11070400	Clava com Espinhos de Fogo
+11070500	Clava com Espinhos da Arte da Chama
+11070600	Clava com Espinhos de Relâmpago
+11070700	Clava com Espinhos Sagrada
+11070800	Clava com Espinhos Mágica
+11070900	Clava com Espinhos do Frio
+11071000	Clava com Espinhos Venenosa
+11071100	Clava com Espinhos do Sangue
+11071200	Clava com Espinhos do Oculto
+11080000	Martelo
+11080100	Martelo Pesado
+11080200	Martelo Aguçado
+11080300	Martelo de Qualidade
+11080400	Martelo de Fogo
+11080500	Martelo da Arte da Chama
+11080600	Martelo de Relâmpago
+11080700	Martelo Sagrado
+11080800	Martelo Mágico
+11080900	Martelo do Frio
+11081000	Martelo Venenoso
+11081100	Martelo do Sangue
+11081200	Martelo do Oculto
+11090000	Maça Cintilante do Monge
+11090100	Maça Cintilante Pesada do Monge
+11090200	Maça Cintilante Aguçada do Monge
+11090300	Maça Cintilante de Qualidade do Monge
+11090400	Maça Cintilante de Fogo do Monge
+11090500	Maça Cintilante da Arte da Chama do Monge
+11090600	Maça Cintilante de Relâmpago do Monge
+11090700	Maça Cintilante Sagrada do Monge
+11090800	Maça Cintilante Mágica do Monge
+11090900	Maça Cintilante do Frio do Monge
+11091000	Maça Cintilante Venenosa do Monge
+11091100	Maça Cintilante do Sangue do Monge
+11091200	Maça Cintilante do Oculto do Monge
+11100000	Chifre do Enviado
+11110000	Cetro do Sabe-Tudo
+11120000	Martelo do Fluxo de Nox
+11130000	Dedo com Anel
+11140000	Clava de Pedra
+11140100	Clava de Pedra Pesada
+11140200	Clava de Pedra Aguçada
+11140300	Clava de Pedra de Qualidade
+11140400	Clava de Pedra de Fogo
+11140500	Clava de Pedra da Arte da Chama
+11140600	Clava de Pedra de Relâmpago
+11140700	Clava de Pedra Sagrada
+11140800	Clava de Pedra Mágica
+11140900	Clava de Pedra do Frio
+11141000	Clava de Pedra Venenosa
+11141100	Clava de Pedra do Sangue
+11141200	Clava de Pedra do Oculto
+11150000	Martelo de Marika
+11160000	
+11160100	
+11160200	Uma forma cristalizada rara da lágrima da vida, descoberta\r\npor alquimistas devotos ao estudo da Térvore.\r\n\r\nQuando misturada em elixir, esta lágrima cristalizada\r\nfaz a mistura explodir.\r\n\r\nAinda que seja claramente uma experiência fracassada, a perigosa nova escola\r\nde pensamento dali originada era completamente\r\nencantadora para a Jovem Estelle.
+11160300	Uma cristalização especial formada dentro de\r\numa lágrima de vida após o passar de muitas luas.\r\n\r\nTorna a poção explosiva quando misturada com\r\nelixir.\r\n\r\nUma forma perigosa de lágrima de cristal,\r\nnão possuindo absolutamente qualquer qualidade\r\nmedicinal. Dita como uma lição aprendida da maneira\r\nmais difícil para alguns; a fé pode ser uma matéria\r\nvolátil, no fim das contas.
+11160400	Uma forma cristalizada rara da lágrima da vida, descoberta\r\npor alquimistas devotos ao estudo da Térvore.\r\n\r\nQuando misturada em elixir, esta lágrima cristalizada\r\nreduz o cambalear causado por ataques por um curto período.\r\n\r\nEsta lágrima possui qualidades tão discordantes\r\nàquelas associadas à Térvore, que é considerada\r\ncomo uma forma de involução.\r\nA origem da Térvore permanece envolta\r\nem mistério.
+11160500	
+11160600	Uma forma especialmente rara de lágrima de cristal,\r\nna qual uma espiral de tom carmesim escuro fora\r\nenvolvida em uma cápsula de filme extremamente fina.\r\n\r\nConverte o dano recebido em PV quando\r\nmisturada com elixir.\r\n\r\nNo entanto, este efeito ocorrerá apenas uma vez,\r\ne o dano físico não pode ser convertido.
+11160700	Uma forma cristalizada rara da lágrima da vida, descoberta\r\npor alquimistas devotos ao estudo da Térvore.\r\n\r\nQuando misturada em elixir, esta lágrima cristalizada\r\nirá temporariamente aumentar a força.\r\n\r\nRamos são o verdadeiro símbolo do crescimento; \r\ncomo qualquer alquimista novato poderia informar.
+11160800	Uma cristalização especial formada dentro de\r\numa lágrima de vida após o passar de muitas luas.\r\n\r\nAumenta temporariamente a destreza quando\r\nmisturado com elixir.\r\n\r\nNós com a aparência de ramos são evidências de\r\num crescimento repentino e violento.
+11160900	Uma cristalização especial formada dentro de\r\numa lágrima de vida após o passar de muitas luas.\r\n\r\nAumenta temporariamente a inteligência quando\r\nmisturado com elixir.\r\n\r\nNós com a aparência de ramos são evidências de\r\num crescimento repentino e violento.
+11161000	Uma cristalização especial formada dentro de\r\numa lágrima de vida após o passar de muitas luas.\r\n\r\nAumenta temporariamente a fé quando misturada\r\ncom elixir.\r\n\r\nNós com a aparência de ramos são evidências de\r\num crescimento repentino e violento.
+11161100	
+11161200	
+11170000	[ERROR]
+12000000	Clava Grande
+12000100	Clava Grande Pesada
+12000200	Clava Grande Aguçada
+12000300	Clava Grande de Qualidade
+12000400	Clava Grande de Fogo
+12000500	Clava Grande da Arte da Chama
+12000600	Clava Grande de Relâmpago
+12000700	Clava Grande Sagrada
+12000800	Clava Grande Mágica
+12000900	Clava Grande do Frio
+12001000	Clava Grande Venenosa
+12001100	Clava Grande do Sangue
+12001200	Clava Grande do Oculto
+12010000	Martelo com Grande Chifre
+12010100	Martelo Pesado com Grande Chifre
+12010200	Martelo Aguçado com Grande Chifre
+12010300	Martelo de Qualidade com Grande Chifre
+12010400	Martelo de Fogo com Grande Chifre
+12010500	Martelo da Arte da Chama com Grande Chifre
+12010600	Martelo de Relâmpago com Grande Chifre
+12010700	Martelo Sagrado com Grande Chifre
+12010800	Martelo Mágico com Grande Chifre
+12010900	Martelo do Frio com Grande Chifre
+12011000	Martelo Venenoso com Grande Chifre
+12011100	Martelo do Sangue com Grande Chifre
+12011200	Martelo do Oculto com Grande Chifre
+12020000	Martelo de Batalha
+12020100	Martelo de Batalha Pesado
+12020200	Martelo de Batalha Aguçado
+12020300	Martelo de Batalha de Qualidade
+12020400	Martelo de Batalha de Fogo
+12020500	Martelo de Batalha da Arte da Chama
+12020600	Martelo de Batalha de Relâmpago
+12020700	Martelo de Batalha Sagrado
+12020800	Martelo de Batalha Mágico
+12020900	Martelo de Batalha do Frio
+12021000	Martelo de Batalha Venenoso
+12021100	Martelo de Batalha do Sangue
+12021200	Martelo de Batalha do Oculto
+12060000	Maça Grande
+12060100	Maça Grande Pesada
+12060200	Maça Grande Aguçada
+12060300	Maça Grande de Qualidade
+12060400	Maça Grande de Fogo
+12060500	Maça Grande da Arte da Chama
+12060600	Maça Grande de Relâmpago
+12060700	Maça Grande Sagrada
+12060800	Maça Grande Mágica
+12060900	Maça Grande do Frio
+12061000	Maça Grande Venenosa
+12061100	Maça Grande do Sangue
+12061200	Maça Grande do Oculto
+12080000	Clava Grande Curva
+12080100	Clava Grande Curva Pesada
+12080200	Clava Grande Curva Aguçada
+12080300	Clava Grande Curva de Qualidade
+12080400	Clava Grande Curva de Fogo
+12080500	Clava Grande Curva da Arte da Chama
+12080600	Clava Grande Curva de Relâmpago
+12080700	Clava Grande Curva Sagrada
+12080800	Clava Grande Curva Mágica
+12080900	Clava Grande Curva do Frio
+12081000	Clava Grande Curva Venenosa
+12081100	Clava Grande Curva do Sangue
+12081200	Clava Grande Curva do Oculto
+12130000	Grande Crânio de Festival
+12130100	Grande Crânio Pesado de Festival
+12130200	Grande Crânio Aguçado de Festival
+12130300	Grande Crânio de Qualidade de Festival
+12130400	Grande Crânio de Fogo de Festival
+12130500	Grande Crânio da Arte da Chama de Festival
+12130600	Grande Crânio de Relâmpago de Festival
+12130700	Grande Crânio Sagrado de Festival
+12130800	Grande Crânio Mágico de Festival
+12130900	Grande Crânio do Frio de Festival
+12131000	Grande Crânio Venenoso de Festival
+12131100	Grande Crânio do Sangue de Festival
+12131200	Grande Crânio do Oculto de Festival
+12140000	Picareta
+12140100	Picareta Pesada
+12140200	Picareta Aguçada
+12140300	Picareta de Qualidade
+12140400	Picareta de Fogo
+12140500	Picareta da Arte da Chama
+12140600	Picareta de Relâmpago
+12140700	Picareta Sagrada
+12140800	Picareta Mágica
+12140900	Picareta do Frio
+12141000	Picareta Venenosa
+12141100	Picareta do Sangue
+12141200	Picareta do Oculto
+12150000	Grande Martelo da Garra de Leão
+12160000	Chifre Comprido do Enviado
+12170000	Castiçal Craniano
+12180000	Estrelas Grandes
+12180100	Estrelas Grandes Pesadas
+12180200	Estrelas Grandes Aguçadas
+12180300	Estrelas Grandes de Qualidade
+12180400	Estrelas Grandes de Fogo
+12180500	Estrelas Grandes da Arte da Chama
+12180600	Estrelas Grandes de Relâmpago
+12180700	Estrelas Grandes Sagradas
+12180800	Estrelas Grandes Mágicas
+12180900	Estrelas Grandes do Frio
+12181000	Estrelas Grandes Venenosas
+12181100	Estrelas Grandes do Sangue
+12181200	Estrelas Grandes do Oculto
+12190000	Martelo de Pedra
+12190100	Martelo de Pedra Pesado
+12190200	Martelo de Pedra Aguçado
+12190300	Martelo de Pedra de Qualidade
+12190400	Martelo de Pedra de Fogo
+12190500	Martelo de Pedra da Arte da Chama
+12190600	Martelo de Pedra de Relâmpago
+12190700	Martelo de Pedra Sagrado
+12190800	Martelo de Pedra Mágico
+12190900	Martelo de Pedra do Frio
+12191000	Martelo de Pedra Venenoso
+12191100	Martelo de Pedra do Sangue
+12191200	Martelo de Pedra do Oculto
+12200000	Cetro do Devorador
+12210000	Martelo de Batalha Apodrecido
+12210100	Martelo de Batalha Apodrecido Pesado
+12210200	Martelo de Batalha Apodrecido Aguçado
+12210300	Martelo de Batalha Apodrecido de Qualidade
+12210400	Martelo de Batalha Apodrecido de Fogo
+12210500	Martelo de Batalha Apodrecido da Arte da Chama
+12210600	Martelo de Batalha Apodrecido de Relâmpago
+12210700	Martelo de Batalha Apodrecido Sagrado
+12210800	Martelo de Batalha Apodrecido Mágico
+12210900	Martelo de Batalha Apodrecido do Frio
+12211000	Martelo de Batalha Apodrecido Venenoso
+12211100	Martelo de Batalha Apodrecido do Sangue
+12211200	Martelo de Batalha Apodrecido do Oculto
+12900000	[ERROR]
+12910000	[ERROR]
+13000000	Mangual do Cavaleiro Noturno
+13000100	Mangual Pesado do Cavaleiro Noturno
+13000200	Mangual Aguçado do Cavaleiro Noturno
+13000300	Mangual de Qualidade do Cavaleiro Noturno
+13000400	Mangual de Fogo do Cavaleiro Noturno
+13000500	Mangual da Arte da Chama do Cavaleiro Noturno
+13000600	Mangual de Relâmpago do Cavaleiro Noturno
+13000700	Mangual Sagrado do Cavaleiro Noturno
+13000800	Mangual Mágico do Cavaleiro Noturno
+13000900	Mangual do Frio do Cavaleiro Noturno
+13001000	Mangual Venenoso do Cavaleiro Noturno
+13001100	Mangual do Sangue do Cavaleiro Noturno
+13001200	Mangual do Oculto do Cavaleiro Noturno
+13010000	Mangual
+13010100	Mangual Pesado
+13010200	Mangual Aguçado
+13010300	Mangual de Qualidade
+13010400	Mangual de Fogo
+13010500	Mangual da Arte da Chama
+13010600	Mangual de Relâmpago
+13010700	Mangual Sagrado
+13010800	Mangual Mágico
+13010900	Mangual do Frio
+13011000	Mangual Venenoso
+13011100	Mangual do Sangue
+13011200	Mangual do Oculto
+13020000	Cabeças de Família
+13030000	Estrelas do Bastardo
+13040000	Bastão Articulado
+13040100	Bastão Articulado Pesado
+13040200	Bastão Articulado Aguçado
+13040300	Bastão Articulado de Qualidade
+13040400	Bastão Articulado de Fogo
+13040500	Bastão Articulado da Arte da Chama
+13040600	Bastão Articulado de Relâmpago
+13040700	Bastão Articulado Sagrado
+13040800	Bastão Articulado Mágico
+13040900	Bastão Articulado do Frio
+13041000	Bastão Articulado Venenoso
+13041100	Bastão Articulado do Sangue
+13041200	Bastão Articulado do Oculto
+14000000	Machado de Batalha
+14000100	Machado de Batalha Pesado
+14000200	Machado de Batalha Aguçado
+14000300	Machado de Batalha de Qualidade
+14000400	Machado de Batalha de Fogo
+14000500	Machado de Batalha da Arte da Chama
+14000600	Machado de Batalha de Relâmpago
+14000700	Machado de Batalha Sagrado
+14000800	Machado de Batalha Mágico
+14000900	Machado de Batalha do Frio
+14001000	Machado de Batalha Venenoso
+14001100	Machado de Batalha do Sangue
+14001200	Machado de Batalha do Oculto
+14010000	Foice Bifurcada
+14010100	Foice Bifurcada Pesada
+14010200	Foice Bifurcada Aguçada
+14010300	Foice Bifurcada de Qualidade
+14010400	Foice Bifurcada de Fogo
+14010500	Foice Bifurcada da Arte da Chama
+14010600	Foice Bifurcada de Relâmpago
+14010700	Foice Bifurcada Sagrada
+14010800	Foice Bifurcada Mágica
+14010900	Foice Bifurcada do Frio
+14011000	Foice Bifurcada Venenosa
+14011100	Foice Bifurcada do Sangue
+14011200	Foice Bifurcada do Oculto
+14020000	Machado de Mão
+14020100	Machado de Mão Pesado
+14020200	Machado de Mão Aguçado
+14020300	Machado de Mão de Qualidade
+14020400	Machado de Mão de Fogo
+14020500	Machado de Mão da Arte da Chama
+14020600	Machado de Mão de Relâmpago
+14020700	Machado de Mão Sagrado
+14020800	Machado de Mão Mágico
+14020900	Machado de Mão do Frio
+14021000	Machado de Mão Venenoso
+14021100	Machado de Mão do Sangue
+14021200	Machado de Mão do Oculto
+14030000	Machado de Maxilar
+14030100	Machado de Maxilar Pesado
+14030200	Machado de Maxilar Aguçado
+14030300	Machado de Maxilar de Qualidade
+14030400	Machado de Maxilar de Fogo
+14030500	Machado de Maxilar da Arte da Chama
+14030600	Machado de Maxilar de Relâmpago
+14030700	Machado de Maxilar Sagrado
+14030800	Machado de Maxilar Mágico
+14030900	Machado de Maxilar do Frio
+14031000	Machado de Maxilar Venenoso
+14031100	Machado de Maxilar do Sangue
+14031200	Machado de Maxilar do Oculto
+14040000	Cutelo de Ferro
+14040100	Cutelo de Ferro Pesado
+14040200	Cutelo de Ferro Aguçado
+14040300	Cutelo de Ferro de Qualidade
+14040400	Cutelo de Ferro de Fogo
+14040500	Cutelo de Ferro da Arte da Chama
+14040600	Cutelo de Ferro de Relâmpago
+14040700	Cutelo de Ferro Sagrado
+14040800	Cutelo de Ferro Mágico
+14040900	Cutelo de Ferro do Frio
+14041000	Cutelo de Ferro Venenoso
+14041100	Cutelo de Ferro do Sangue
+14041200	Cutelo de Ferro do Oculto
+14050000	Lâmina Ondulada
+14050100	Lâmina Ondulada Pesada
+14050200	Lâmina Ondulada Aguçada
+14050300	Lâmina Ondulada de Qualidade
+14050400	Lâmina Ondulada de Fogo
+14050500	Lâmina Ondulada da Arte da Chama
+14050600	Lâmina Ondulada de Relâmpago
+14050700	Lâmina Ondulada Sagrada
+14050800	Lâmina Ondulada Mágica
+14050900	Lâmina Ondulada do Frio
+14051000	Lâmina Ondulada Venenosa
+14051100	Lâmina Ondulada do Sangue
+14051200	Lâmina Ondulada do Oculto
+14060000	Cutelo de Festival
+14060100	Grande Cutelo Pesado de Festival
+14060200	Grande Cutelo Aguçado de Festival
+14060300	Grande Cutelo de Qualidade de Festival
+14060400	Grande Cutelo de Fogo de Festival
+14060500	Machado Cerimonial da Arte da Chama
+14060600	Grande Cutelo de Relâmpago de Festival
+14060700	Grande Cutelo Sagrado de Festival
+14060800	Grande Cutelo Mágico de Festival
+14060900	Grande Cutelo do Frio de Festival
+14061000	Grande Cutelo Venenoso de Festival
+14061100	Grande Cutelo do Sangue de Festival
+14061200	Grande Cutelo do Oculto de Festival
+14080000	Machadinha Glacial
+14100000	Machado do Planalto
+14100100	Machado Pesado do Planalto
+14100200	Machado Aguçado do Planalto
+14100300	Machado de Qualidade do Planalto
+14100400	Machado de Fogo do Planalto
+14100500	Machado da Arte da Chama do Planalto
+14100600	Machado de Relâmpago do Planalto
+14100700	Machado Sagrado do Planalto
+14100800	Machado Mágico do Planalto
+14100900	Machado do Frio do Planalto
+14101000	Machado Venenoso do Planalto
+14101100	Machado do Sangue do Planalto
+14101200	Machado do Oculto do Planalto
+14110000	Machado de Sacrifício
+14110100	Machado de Sacrifício Pesado
+14110200	Machado de Sacrifício Aguçado
+14110300	Machado de Sacrifício de Qualidade
+14110400	Machado de Sacrifício de Fogo
+14110500	Machado de Sacrifício da Arte da Chama
+14110600	Machado de Sacrifício de Relâmpago
+14110700	Machado de Sacrifício Sagrado
+14110800	Machado de Sacrifício Mágico
+14110900	Machado de Sacrifício do Frio
+14111000	Machado de Sacrifício Venenoso
+14111100	Machado de Sacrifício do Sangue
+14111200	Machado de Sacrifício do Oculto
+14120000	Machado de Rosus
+14130000	
+14130100	
+14130200	
+14130300	
+14130400	
+14130500	
+14130600	
+14130700	
+14130800	
+14130900	
+14131000	
+14131100	
+14131200	
+14140000	Machado de Falcão da Tempestade
+15000000	Machado Grande
+15000100	Machado Grande Pesado
+15000200	Machado Grande Aguçado
+15000300	Machado Grande de Qualidade
+15000400	Machado Grande de Fogo
+15000500	Machado Grande da Arte da Chama
+15000600	Machado Grande de Relâmpago
+15000700	Machado Grande Sagrado
+15000800	Machado Grande Mágico
+15000900	Machado Grande do Frio
+15001000	Machado Grande Venenoso
+15001100	Machado Grande do Sangue
+15001200	Machado Grande do Oculto
+15010000	Machado Distorcido
+15010100	Machado Distorcido Pesado
+15010200	Machado Distorcido Aguçado
+15010300	Machado Distorcido de Qualidade
+15010400	Machado Distorcido de Fogo
+15010500	Machado Distorcido da Arte da Chama
+15010600	Machado Distorcido de Relâmpago
+15010700	Machado Distorcido Sagrado
+15010800	Machado Distorcido Mágico
+15010900	Machado Distorcido do Frio
+15011000	Machado Distorcido Venenoso
+15011100	Machado Distorcido do Sangue
+15011200	Machado Distorcido do Oculto
+15020000	Grande Cutelo de Assassino de Agouros
+15020100	Grande Cutelo de Assassino de Agouros Pesado
+15020200	Grande Cutelo de Assassino de Agouros Aguçado
+15020300	Grande Cutelo de Assassino de Agouros de Qualidade
+15020400	Grande Cutelo de Assassino de Agouros de Fogo
+15020500	Grande Cutelo de Assassino de Agouros da Arte da Chama
+15020600	Grande Cutelo de Assassino de Agouros de Relâmpago
+15020700	Grande Cutelo de Assassino de Agouros Sagrado
+15020800	Grande Cutelo de Assassino de Agouros Mágico
+15020900	Grande Cutelo de Assassino de Agouros do Frio
+15021000	Grande Cutelo de Assassino de Agouros Venenoso
+15021100	Grande Cutelo de Assassino de Agouros do Sangue
+15021200	Grande Cutelo de Assassino de Agouros do Oculto
+15030000	Machado da Lua Crescente
+15030100	Machado da Lua Crescente Pesado
+15030200	Machado da Lua Crescente Aguçado
+15030300	Machado da Lua Crescente de Qualidade
+15030400	Machado da Lua Crescente de Fogo
+15030500	Machado da Lua Crescente da Arte da Chama
+15030600	Machado da Lua Crescente de Relâmpago
+15030700	Machado da Lua Crescente Sagrado
+15030800	Machado da Lua Crescente Mágico
+15030900	Machado da Lua Crescente do Frio
+15031000	Machado da Lua Crescente Venenoso
+15031100	Machado da Lua Crescente do Sangue
+15031200	Machado da Lua Crescente do Oculto
+15040000	Machado de Godrick
+15050000	Machadinha de Haste Longa
+15050100	Machadinha de Haste Longa Pesada
+15050200	Machadinha de Haste Longa Aguçada
+15050300	Machadinha de Haste Longa de Qualidade
+15050400	Machadinha de Haste Longa de Fogo
+15050500	Machadinha de Haste Longa da Arte da Chama
+15050600	Machadinha de Haste Longa de Relâmpago
+15050700	Machadinha de Haste Longa Sagrada
+15050800	Machadinha de Haste Longa Mágica
+15050900	Machadinha de Haste Longa do Frio
+15051000	Machadinha de Haste Longa Venenosa
+15051100	Machadinha de Haste Longa do Sangue
+15051200	Machadinha de Haste Longa do Oculto
+15060000	Âncora Enferrujada
+15060100	Âncora Enferrujada Pesada
+15060200	Âncora Enferrujada Aguçada
+15060300	Âncora Enferrujada de Qualidade
+15060400	Âncora Enferrujada de Fogo
+15060500	Âncora Enferrujada da Arte da Chama
+15060600	Âncora Enferrujada de Relâmpago
+15060700	Âncora Enferrujada Sagrada
+15060800	Âncora Enferrujada Mágica
+15060900	Âncora Enferrujada do Frio
+15061000	Âncora Enferrujada Venenosa
+15061100	Âncora Enferrujada do Sangue
+15061200	Âncora Enferrujada do Oculto
+15080000	Machado Grande do Carrasco
+15080100	Machado Grande Pesado do Carrasco
+15080200	Machado Grande Aguçado do Carrasco
+15080300	Machado Grande de Qualidade do Carrasco
+15080400	Machado Grande de Fogo do Carrasco
+15080500	Machado Grande da Arte da Chama do Carrasco
+15080600	Machado Grande de Relâmpago do Carrasco
+15080700	Machado Grande Sagrado do Carrasco
+15080800	Machado Grande Mágico do Carrasco
+15080900	Machado Grande do Frio do Carrasco
+15081000	Machado Grande Venenoso do Carrasco
+15081100	Machado Grande do Sangue do Carrasco
+15081200	Machado Grande do Oculto do Carrasco
+15110000	Grande Chifre Alado
+15120000	Faca de Dissecação
+15120100	Faca de Dissecação Pesada
+15120200	Faca de Dissecação Aguçada
+15120300	Faca de Dissecação de Qualidade
+15120400	Faca de Dissecação de Fogo
+15120500	Faca de Dissecação da Arte da Chama
+15120600	Faca de Dissecação de Relâmpago
+15120700	Faca de Dissecação Sagrada
+15120800	Faca de Dissecação Mágica
+15120900	Faca de Dissecação do Frio
+15121000	Faca de Dissecação Venenosa
+15121100	Faca de Dissecação do Sangue
+15121200	Faca de Dissecação do Oculto
+15130000	Machado Grande da Gárgula
+15130100	Machado Grande Pesado da Gárgula
+15130200	Machado Grande Aguçado da Gárgula
+15130300	Machado Grande de Qualidade da Gárgula
+15130400	Machado Grande de Fogo da Gárgula
+15130500	Machado Grande da Arte da Chama da Gárgula
+15130600	Machado Grande de Relâmpago da Gárgula
+15130700	Machado Grande Sagrado da Gárgula
+15130800	Machado Grande Mágico da Gárgula
+15130900	Machado Grande do Frio da Gárgula
+15131000	Machado Grande Venenoso da Gárgula
+15131100	Machado Grande do Sangue da Gárgula
+15131200	Machado Grande do Oculto da Gárgula
+15140000	Machado Negro da Gárgula
+15140100	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140200	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140300	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140400	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140500	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140600	Cinzas de espíritos. Invoca o espírito de um mercenário do norte.\r\n(Invocar consome PF.)\r\n\r\nDizem que os mercenários do norte carregam o sangue dos gigantes em suas veias e empunham cutelos curvados com facilidade. Seus rugidos aumentam ainda mais sua força.
+15140700	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15140800	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15140900	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15141000	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15141100	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15141200	Cinzas de espíritos. Invoca os espíritos de três lobos solitários.\r\n(Invocar consome PF.)\r\n\r\nEstes lobos foram expulsos de sua alcateia. Depois, encontraram a companhia de um humano exilado, um caçador. Os espíritos de lobos dominam os inimigos com sua agilidade, ajudando o invocador em combate.
+15900000	[ERROR]
+16000000	Lança Curta
+16000100	Lança Curta Pesada
+16000200	Lança Curta Aguçada
+16000300	Lança Curta de Qualidade
+16000400	Lança Curta de Fogo
+16000500	Lança Curta da Arte da Chama
+16000600	Lança Curta de Relâmpago
+16000700	Lança Curta Sagrada
+16000800	Lança Curta Mágica
+16000900	Lança Curta do Frio
+16001000	Lança Curta Venenosa
+16001100	Lança Curta do Sangue
+16001200	Lança Curta do Oculto
+16010000	Lança
+16010100	Lança Pesada
+16010200	Lança Aguçada
+16010300	Lança de Qualidade
+16010400	Lança de Fogo
+16010500	Lança da Arte da Chama
+16010600	Lança de Relâmpago
+16010700	Lança Sagrada
+16010800	Lança Mágica
+16010900	Lança do Frio
+16011000	Lança Venenosa
+16011100	Lança do Sangue
+16011200	Lança do Oculto
+16020000	Lança de Cristal
+16030000	Arpão do Homem de Barro
+16030100	Arpão Pesado do Homem de Barro
+16030200	Arpão Aguçado do Homem de Barro
+16030300	Arpão de Qualidade do Homem de Barro
+16030400	Arpão de Fogo do Homem de Barro
+16030500	Arpão da Arte da Chama do Homem de Barro
+16030600	Arpão de Relâmpago do Homem de Barro
+16030700	Arpão Sagrado do Homem de Barro
+16030800	Arpão Mágico do Homem de Barro
+16030900	Arpão do Frio do Homem de Barro
+16031000	Arpão Venenoso do Homem de Barro
+16031100	Arpão do Sangue do Homem de Barro
+16031200	Arpão do Oculto do Homem de Barro
+16040000	Lança de Cavaleiro da Podridão Imaculada
+16040100	Cinzas de espíritos. Invoca um espírito de água-viva.\r\n(Invocar consome PF.)\r\n\r\nFantasma flutuante que ilumina os arredores.\r\nParece ser o espírito persistente de uma jovem garota em uma busca eterna por sua irmã, com a qual ela prometeu ver as estrelas.
+16040200	Cinzas de espíritos. Invoca um espírito de água-viva.\r\n(Invocar consome PF.)\r\n\r\nFantasma flutuante que ilumina os arredores.\r\nParece ser o espírito persistente de uma jovem garota em uma busca eterna por sua irmã, com a qual ela prometeu ver as estrelas.
+16040300	Cinzas de espíritos. Invoca um espírito de água-viva.\r\n(Invocar consome PF.)\r\n\r\nFantasma flutuante que ilumina os arredores.\r\nParece ser o espírito persistente de uma jovem garota em uma busca eterna por sua irmã, com a qual ela prometeu ver as estrelas.
+16040400	Cinzas de espíritos. Invoca um espírito de água-viva.\r\n(Invocar consome PF.)\r\n\r\nFantasma flutuante que ilumina os arredores.\r\nParece ser o espírito persistente de uma jovem garota em uma busca eterna por sua irmã, com a qual ela prometeu ver as estrelas.
+16040500	Cinzas de espíritos. Invoca um espírito de água-viva.\r\n(Invocar consome PF.)\r\n\r\nFantasma flutuante que ilumina os arredores.\r\nParece ser o espírito persistente de uma jovem garota em uma busca eterna por sua irmã, com a qual ela prometeu ver as estrelas.
+16040600	
+16040700	
+16040800	
+16040900	
+16041000	
+16041100	
+16041200	
+16050000	Partasana
+16050100	Partasana Pesada
+16050200	Partasana Aguçada
+16050300	Partasana de Qualidade
+16050400	Partasana de Fogo
+16050500	Partasana da Arte da Chama
+16050600	Partasana de Relâmpago
+16050700	Partasana Sagrada
+16050800	Partasana Mágica
+16050900	Partasana do Frio
+16051000	Partasana Venenosa
+16051100	Partasana do Sangue
+16051200	Partasana do Oculto
+16060000	Arado de Festival
+16060100	Arado Pesado de Festival
+16060200	Arado Aguçado de Festival
+16060300	Arado de Qualidade de Festival
+16060400	Arado de Fogo de Festival
+16060500	Arado da Arte da Chama de Festival
+16060600	Arado de Relâmpago de Festival
+16060700	Arado Sagrado de Festival
+16060800	Arado Mágico de Festival
+16060900	Arado do Frio de Festival
+16061000	Arado Venenoso de Festival
+16061100	Arado do Sangue de Festival
+16061200	Arado do Oculto de Festival
+16070000	Pique
+16070100	Pique Pesado
+16070200	Pique Aguçado
+16070300	Pique de Qualidade
+16070400	Pique de Fogo
+16070500	Pique da Arte da Chama
+16070600	Pique de Relâmpago
+16070700	Pique Sagrado
+16070800	Pique Mágico
+16070900	Pique do Frio
+16071000	Pique Venenoso
+16071100	Pique do Sangue
+16071200	Pique do Oculto
+16080000	Tocha com Cabo
+16090000	Seta de Gransax
+16110000	Naginata em Cruz
+16110100	Naginata em Cruz Pesada
+16110200	Naginata em Cruz Aguçada
+16110300	Naginata em Cruz de Qualidade
+16110400	Naginata em Cruz de Fogo
+16110500	Naginata em Cruz da Arte da Chama
+16110600	Naginata em Cruz de Relâmpago
+16110700	Naginata em Cruz Sagrada
+16110800	Naginata em Cruz Mágica
+16110900	Naginata em Cruz do Frio
+16111000	Naginata em Cruz Venenosa
+16111100	Naginata em Cruz do Sangue
+16111200	Naginata em Cruz do Oculto
+16120000	Lança do Ritual da Morte
+16130000	Castiçal do Inquisidor
+16140000	Lança com Espinhos
+16140100	Lança com Espinhos Pesada
+16140200	Lança com Espinhos Aguçada
+16140300	Lança com Espinhos de Qualidade
+16140400	Lança com Espinhos de Fogo
+16140500	Lança com Espinhos da Arte da Chama
+16140600	Lança com Espinhos de Relâmpago
+16140700	Lança com Espinhos Sagrada
+16140800	Lança com Espinhos Mágica
+16140900	Lança com Espinhos do Frio
+16141000	Lança com Espinhos Venenosa
+16141100	Lança com Espinhos do Sangue
+16141200	Lança com Espinhos do Oculto
+16150000	Lança de Ferro
+16150100	Lança de Ferro Pesada
+16150200	Lança de Ferro Aguçada
+16150300	Lança de Ferro de Qualidade
+16150400	Lança de Ferro de Fogo
+16150500	Lança de Ferro da Arte da Chama
+16150600	Lança de Ferro de Relâmpago
+16150700	Lança de Ferro Sagrada
+16150800	Lança de Ferro Mágica
+16150900	Lança de Ferro do Frio
+16151000	Lança de Ferro Venenosa
+16151100	Lança de Ferro do Sangue
+16151200	Lança de Ferro do Oculto
+16160000	Lança de Cristal Apodrecida
+17010000	Lança Sagrada de Mohgwyn
+17020000	Árvore de Siluria
+17030000	Caçador de Serpentes
+17050000	Lança de Guerra de Vyke
+17060000	Lança de Cavalaria
+17060100	Lança de Cavalaria Pesada
+17060200	Lança de Cavalaria Aguçada
+17060300	Lança de Cavalaria de Qualidade
+17060400	Lança de Cavalaria de Fogo
+17060500	Lança de Cavalaria da Arte da Chama
+17060600	Lança de Cavalaria de Relâmpago
+17060700	Lança de Cavalaria Sagrada
+17060800	Lança de Cavalaria Mágica
+17060900	Lança de Cavalaria do Frio
+17061000	Lança de Cavalaria Venenosa
+17061100	Lança de Cavalaria do Sangue
+17061200	Lança de Cavalaria do Oculto
+17070000	Lança da Árvore
+17070100	[ERROR]Lança da Árvore Pesada
+17070101	[ERROR]
+17070102	[ERROR]
+17070103	[ERROR]
+17070104	[ERROR]
+17070105	[ERROR]
+17070106	[ERROR]
+17070107	[ERROR]
+17070108	[ERROR]
+17070109	[ERROR]
+17070110	[ERROR]
+17070111	[ERROR]
+17070112	[ERROR]
+17070113	[ERROR]
+17070114	[ERROR]
+17070115	[ERROR]
+17070116	[ERROR]
+17070117	[ERROR]
+17070118	[ERROR]
+17070119	[ERROR]
+17070120	[ERROR]
+17070121	[ERROR]
+17070122	[ERROR]
+17070123	[ERROR]
+17070124	[ERROR]
+17070125	[ERROR]
+17070200	[ERROR]Lança da Árvore Aguçada
+17070201	[ERROR]
+17070202	[ERROR]
+17070203	[ERROR]
+17070204	[ERROR]
+17070205	[ERROR]
+17070206	[ERROR]
+17070207	[ERROR]
+17070208	[ERROR]
+17070209	[ERROR]
+17070210	[ERROR]
+17070211	[ERROR]
+17070212	[ERROR]
+17070213	[ERROR]
+17070214	[ERROR]
+17070215	[ERROR]
+17070216	[ERROR]
+17070217	[ERROR]
+17070218	[ERROR]
+17070219	[ERROR]
+17070220	[ERROR]
+17070221	[ERROR]
+17070222	[ERROR]
+17070223	[ERROR]
+17070224	[ERROR]
+17070225	[ERROR]
+17070300	[ERROR]Lança da Árvore de Qualidade
+17070301	[ERROR]
+17070302	[ERROR]
+17070303	[ERROR]
+17070304	[ERROR]
+17070305	[ERROR]
+17070306	[ERROR]
+17070307	[ERROR]
+17070308	[ERROR]
+17070309	[ERROR]
+17070310	[ERROR]
+17070311	[ERROR]
+17070312	[ERROR]
+17070313	[ERROR]
+17070314	[ERROR]
+17070315	[ERROR]
+17070316	[ERROR]
+17070317	[ERROR]
+17070318	[ERROR]
+17070319	[ERROR]
+17070320	[ERROR]
+17070321	[ERROR]
+17070322	[ERROR]
+17070323	[ERROR]
+17070324	[ERROR]
+17070325	[ERROR]
+17070400	[ERROR]Lança da Árvore de Fogo
+17070401	[ERROR]
+17070402	[ERROR]
+17070403	[ERROR]
+17070404	[ERROR]
+17070405	[ERROR]
+17070406	[ERROR]
+17070407	[ERROR]
+17070408	[ERROR]
+17070409	[ERROR]
+17070410	[ERROR]
+17070411	[ERROR]
+17070412	[ERROR]
+17070413	[ERROR]
+17070414	[ERROR]
+17070415	[ERROR]
+17070416	[ERROR]
+17070417	[ERROR]
+17070418	[ERROR]
+17070419	[ERROR]
+17070420	[ERROR]
+17070421	[ERROR]
+17070422	[ERROR]
+17070423	[ERROR]
+17070424	[ERROR]
+17070425	[ERROR]
+17070500	[ERROR]Lança da Árvore da Arte da Chama
+17070501	[ERROR]
+17070502	[ERROR]
+17070503	[ERROR]
+17070504	[ERROR]
+17070505	[ERROR]
+17070506	[ERROR]
+17070507	[ERROR]
+17070508	[ERROR]
+17070509	[ERROR]
+17070510	[ERROR]
+17070511	[ERROR]
+17070512	[ERROR]
+17070513	[ERROR]
+17070514	[ERROR]
+17070515	[ERROR]
+17070516	[ERROR]
+17070517	[ERROR]
+17070518	[ERROR]
+17070519	[ERROR]
+17070520	[ERROR]
+17070521	[ERROR]
+17070522	[ERROR]
+17070523	[ERROR]
+17070524	[ERROR]
+17070525	[ERROR]
+17070600	[ERROR]Lança da Árvore de Relâmpago
+17070601	[ERROR]
+17070602	[ERROR]
+17070603	[ERROR]
+17070604	[ERROR]
+17070605	[ERROR]
+17070606	[ERROR]
+17070607	[ERROR]
+17070608	[ERROR]
+17070609	[ERROR]
+17070610	[ERROR]
+17070611	[ERROR]
+17070612	[ERROR]
+17070613	[ERROR]
+17070614	[ERROR]
+17070615	[ERROR]
+17070616	[ERROR]
+17070617	[ERROR]
+17070618	[ERROR]
+17070619	[ERROR]
+17070620	[ERROR]
+17070621	[ERROR]
+17070622	[ERROR]
+17070623	[ERROR]
+17070624	[ERROR]
+17070625	[ERROR]
+17070700	[ERROR]Lança da Árvore Sagrada
+17070701	[ERROR]
+17070702	[ERROR]
+17070703	[ERROR]
+17070704	[ERROR]
+17070705	[ERROR]
+17070706	[ERROR]
+17070707	[ERROR]
+17070708	[ERROR]
+17070709	[ERROR]
+17070710	[ERROR]
+17070711	[ERROR]
+17070712	[ERROR]
+17070713	[ERROR]
+17070714	[ERROR]
+17070715	[ERROR]
+17070716	[ERROR]
+17070717	[ERROR]
+17070718	[ERROR]
+17070719	[ERROR]
+17070720	[ERROR]
+17070721	[ERROR]
+17070722	[ERROR]
+17070723	[ERROR]
+17070724	[ERROR]
+17070725	[ERROR]
+17070800	[ERROR]Lança da Árvore Mágica
+17070801	[ERROR]
+17070802	[ERROR]
+17070803	[ERROR]
+17070804	[ERROR]
+17070805	[ERROR]
+17070806	[ERROR]
+17070807	[ERROR]
+17070808	[ERROR]
+17070809	[ERROR]
+17070810	[ERROR]
+17070811	[ERROR]
+17070812	[ERROR]
+17070813	[ERROR]
+17070814	[ERROR]
+17070815	[ERROR]
+17070816	[ERROR]
+17070817	[ERROR]
+17070818	[ERROR]
+17070819	[ERROR]
+17070820	[ERROR]
+17070821	[ERROR]
+17070822	[ERROR]
+17070823	[ERROR]
+17070824	[ERROR]
+17070825	[ERROR]
+17070900	[ERROR]Lança da Árvore do Frio
+17070901	[ERROR]
+17070902	[ERROR]
+17070903	[ERROR]
+17070904	[ERROR]
+17070905	[ERROR]
+17070906	[ERROR]
+17070907	[ERROR]
+17070908	[ERROR]
+17070909	[ERROR]
+17070910	[ERROR]
+17070911	[ERROR]
+17070912	[ERROR]
+17070913	[ERROR]
+17070914	[ERROR]
+17070915	[ERROR]
+17070916	[ERROR]
+17070917	[ERROR]
+17070918	[ERROR]
+17070919	[ERROR]
+17070920	[ERROR]
+17070921	[ERROR]
+17070922	[ERROR]
+17070923	[ERROR]
+17070924	[ERROR]
+17070925	[ERROR]
+17071000	[ERROR]Lança da Árvore Venenosa
+17071001	[ERROR]
+17071002	[ERROR]
+17071003	[ERROR]
+17071004	[ERROR]
+17071005	[ERROR]
+17071006	[ERROR]
+17071007	[ERROR]
+17071008	[ERROR]
+17071009	[ERROR]
+17071010	[ERROR]
+17071011	[ERROR]
+17071012	[ERROR]
+17071013	[ERROR]
+17071014	[ERROR]
+17071015	[ERROR]
+17071016	[ERROR]
+17071017	[ERROR]
+17071018	[ERROR]
+17071019	[ERROR]
+17071020	[ERROR]
+17071021	[ERROR]
+17071022	[ERROR]
+17071023	[ERROR]
+17071024	[ERROR]
+17071025	[ERROR]
+17071100	[ERROR]Lança da Árvore do Sangue
+17071101	[ERROR]
+17071102	[ERROR]
+17071103	[ERROR]
+17071104	[ERROR]
+17071105	[ERROR]
+17071106	[ERROR]
+17071107	[ERROR]
+17071108	[ERROR]
+17071109	[ERROR]
+17071110	[ERROR]
+17071111	[ERROR]
+17071112	[ERROR]
+17071113	[ERROR]
+17071114	[ERROR]
+17071115	[ERROR]
+17071116	[ERROR]
+17071117	[ERROR]
+17071118	[ERROR]
+17071119	[ERROR]
+17071120	[ERROR]
+17071121	[ERROR]
+17071122	[ERROR]
+17071123	[ERROR]
+17071124	[ERROR]
+17071125	[ERROR]
+17071200	[ERROR]Lança da Árvore do Oculto
+17071201	[ERROR]
+17071202	[ERROR]
+17071203	[ERROR]
+17071204	[ERROR]
+17071205	[ERROR]
+17071206	[ERROR]
+17071207	[ERROR]
+17071208	[ERROR]
+17071209	[ERROR]
+17071210	[ERROR]
+17071211	[ERROR]
+17071212	[ERROR]
+17071213	[ERROR]
+17071214	[ERROR]
+17071215	[ERROR]
+17071216	[ERROR]
+17071217	[ERROR]
+17071218	[ERROR]
+17071219	[ERROR]
+17071220	[ERROR]
+17071221	[ERROR]
+17071222	[ERROR]
+17071223	[ERROR]
+17071224	[ERROR]
+17071225	[ERROR]
+17900000	[ERROR]
+17910000	[ERROR]
+18000000	Alabarda
+18000100	Alabarda Pesada
+18000200	Alabarda Aguçada
+18000300	Alabarda de Qualidade
+18000400	Alabarda de Fogo
+18000500	Alabarda da Arte da Chama
+18000600	Alabarda de Relâmpago
+18000700	Alabarda Sagrada
+18000800	Alabarda Mágica
+18000900	Alabarda do Frio
+18001000	Alabarda Venenosa
+18001100	Alabarda do Sangue
+18001200	Alabarda do Oculto
+18010000	Glaive da Praga
+18010100	Glaive Pesada da Praga
+18010200	Glaive Aguçada da Praga
+18010300	Glaive de Qualidade da Praga
+18010400	Glaive de Fogo da Praga
+18010500	Glaive da Arte da Chama da Praga
+18010600	Glaive de Relâmpago da Praga
+18010700	Glaive Sagrada da Praga
+18010800	Glaive Mágica da Praga
+18010900	Glaive do Frio da Praga
+18011000	Glaive Venenosa da Praga
+18011100	Glaive do Sangue da Praga
+18011200	Glaive do Oculto da Praga
+18020000	Lucerne
+18020100	Lucerne Pesado
+18020200	Lucerne Aguçado
+18020300	Lucerne de Qualidade
+18020400	Lucerne de Fogo
+18020500	Lucerne da Arte da Chama
+18020600	Lucerne de Relâmpago
+18020700	Lucerne Sagrado
+18020800	Lucerne Mágico
+18020900	Lucerne do Frio
+18021000	Lucerne Venenoso
+18021100	Lucerne do Sangue
+18021200	Lucerne do Oculto
+18030000	Alabarda de Cavaleiro Banido
+18030100	Alabarda Pesada de Cavaleiro Banido
+18030200	Alabarda Aguçada de Cavaleiro Banido
+18030300	Alabarda de Qualidade de Cavaleiro Banido
+18030400	Alabarda de Fogo de Cavaleiro Banido
+18030500	Alabarda da Arte da Chama de Cavaleiro Banido
+18030600	Alabarda de Relâmpago de Cavaleiro Banido
+18030700	Alabarda Sagrada de Cavaleiro Banido
+18030800	Alabarda Mágica de Cavaleiro Banido
+18030900	Alabarda do Frio de Cavaleiro Banido
+18031000	Alabarda Venenosa de Cavaleiro Banido
+18031100	Alabarda do Sangue de Cavaleiro Banido
+18031200	Alabarda do Oculto de Cavaleiro Banido
+18040000	Estandarte do Comandante
+18050000	Glaive do Cavaleiro Noturno
+18050100	Glaive Pesada do Cavaleiro Noturno
+18050200	Glaive Aguçada do Cavaleiro Noturno
+18050300	Glaive de Qualidade do Cavaleiro Noturno
+18050400	Glaive de Fogo do Cavaleiro Noturno
+18050500	Glaive da Arte da Chama do Cavaleiro Noturno
+18050600	Glaive de Relâmpago do Cavaleiro Noturno
+18050700	Glaive Sagrada do Cavaleiro Noturno
+18050800	Glaive Mágica do Cavaleiro Noturno
+18050900	Glaive do Frio do Cavaleiro Noturno
+18051000	Glaive Venenosa do Cavaleiro Noturno
+18051100	Glaive do Sangue do Cavaleiro Noturno
+18051200	Glaive do Oculto do Cavaleiro Noturno
+18060000	Alabarda Ondulada da Lua Crescente
+18060100	Alabarda Ondulada da Lua Crescente Pesada
+18060200	Alabarda Ondulada da Lua Crescente Aguçada
+18060300	Alabarda Ondulada da Lua Crescente de Qualidade
+18060400	Alabarda Ondulada da Lua Crescente de Fogo
+18060500	Alabarda Ondulada da Lua Crescente da Arte da Chama
+18060600	Alabarda Ondulada da Lua Crescente de Relâmpago
+18060700	Alabarda Ondulada da Lua Crescente Sagrada
+18060800	Alabarda Ondulada da Lua Crescente Mágica
+18060900	Alabarda Ondulada da Lua Crescente do Frio
+18061000	Alabarda Ondulada da Lua Crescente Venenosa
+18061100	Alabarda Ondulada da Lua Crescente do Sangue
+18061200	Alabarda Ondulada da Lua Crescente do Oculto
+18070000	Serra da Milícia Vulgar
+18070100	Serra Pesada da Milícia Vulgar
+18070200	Serra Aguçada da Milícia Vulgar
+18070300	Serra de Qualidade da Milícia Vulgar
+18070400	Serra de Fogo da Milícia Vulgar
+18070500	Serra da Arte da Chama da Milícia Vulgar
+18070600	Serra de Relâmpago da Milícia Vulgar
+18070700	Serra Sagrada da Milícia Vulgar
+18070800	Serra Mágica da Milícia Vulgar
+18070900	Serra do Frio da Milícia Vulgar
+18071000	Serra Venenosa da Milícia Vulgar
+18071100	Serra do Sangue da Milícia Vulgar
+18071200	Serra do Oculto da Milícia Vulgar
+18080000	Alabarda Dourada
+18080100	Alabarda Dourada Pesada
+18080200	Alabarda Dourada Aguçada
+18080300	Alabarda Dourada de Qualidade
+18080400	Alabarda Dourada de Fogo
+18080500	Alabarda Dourada da Arte da Chama
+18080600	Alabarda Dourada de Relâmpago
+18080700	Alabarda Dourada Sagrada
+18080800	Alabarda Dourada Mágica
+18080900	Alabarda Dourada do Frio
+18081000	Alabarda Dourada Venenosa
+18081100	Alabarda Dourada do Sangue
+18081200	Alabarda Dourada do Oculto
+18090000	Glaive
+18090100	Glaive Pesada
+18090200	Glaive Aguçada
+18090300	Glaive de Qualidade
+18090400	Glaive de Fogo
+18090500	Glaive da Arte da Chama
+18090600	Glaive de Relâmpago
+18090700	Glaive Sagrada
+18090800	Glaive Mágica
+18090900	Glaive do Frio
+18091000	Glaive Venenosa
+18091100	Glaive do Sangue
+18091200	Glaive do Oculto
+18100000	Foice de Guerra de Loretta
+18110000	Espada-Lança do Guardião
+18110100	Espada-Lança Pesada do Guardião
+18110200	Espada-Lança Aguçada do Guardião
+18110300	Espada-Lança de Qualidade do Guardião
+18110400	Espada-Lança de Fogo do Guardião
+18110500	Espada-Lança da Arte da Chama do Guardião
+18110600	Espada-Lança de Relâmpago do Guardião
+18110700	Espada-Lança Sagrada do Guardião
+18110800	Espada-Lança Mágica do Guardião
+18110900	Espada-Lança do Frio do Guardião
+18111000	Espada-Lança Venenosa do Guardião
+18111100	Espada-Lança do Sangue do Guardião
+18111200	Espada-Lança do Oculto do Guardião
+18130000	Shotel da Milícia Vulgar
+18130100	Shotel Pesado da Milícia Vulgar
+18130200	Shotel Aguçado da Milícia Vulgar
+18130300	Shotel de Qualidade da Milícia Vulgar
+18130400	Shotel de Fogo da Milícia Vulgar
+18130500	Shotel da Arte da Chama da Milícia Vulgar
+18130600	Shotel de Relâmpago da Milícia Vulgar
+18130700	Shotel Sagrado da Milícia Vulgar
+18130800	Shotel Mágico da Milícia Vulgar
+18130900	Shotel do Frio da Milícia Vulgar
+18131000	Shotel Venenoso da Milícia Vulgar
+18131100	Shotel do Sangue da Milícia Vulgar
+18131200	Shotel do Oculto da Milícia Vulgar
+18140000	Alabarda de Dragão
+18140100	
+18140200	
+18140300	
+18140400	
+18140500	
+18140600	
+18140700	
+18140800	
+18140900	
+18141000	
+18141100	
+18141200	
+18150000	Alabarda da Gárgula
+18150100	Alabarda Pesada da Gárgula
+18150200	Alabarda Aguçada da Gárgula
+18150300	Alabarda de Qualidade da Gárgula
+18150400	Alabarda de Fogo da Gárgula
+18150500	Alabarda da Arte da Chama da Gárgula
+18150600	Alabarda de Relâmpago da Gárgula
+18150700	Alabarda Sagrada da Gárgula
+18150800	Alabarda Mágica da Gárgula
+18150900	Alabarda do Frio da Gárgula
+18151000	Alabarda Venenosa da Gárgula
+18151100	Alabarda do Sangue da Gárgula
+18151200	Alabarda do Oculto da Gárgula
+18160000	Alabarda Negra da Gárgula
+18160100	
+18160200	
+18160300	
+18160400	
+18160500	
+18160600	
+18160700	
+18160800	
+18160900	
+18161000	
+18161100	
+18161200	
+19000000	Foice
+19000100	Foice Pesada
+19000200	Foice Aguçada
+19000300	Foice de Qualidade
+19000400	Foice de Fogo
+19000500	Foice da Arte da Chama
+19000600	Foice de Relâmpago
+19000700	Foice Sagrada
+19000800	Foice Mágica
+19000900	Foice do Frio
+19001000	Foice Venenosa
+19001100	Foice do Sangue
+19001200	Foice do Oculto
+19010000	Foice do Túmulo
+19010100	Foice Pesada do Túmulo
+19010200	Foice Aguçada do Túmulo
+19010300	Foice de Qualidade do Túmulo
+19010400	Foice de Fogo do Túmulo
+19010500	Foice da Arte da Chama do Túmulo
+19010600	Foice de Relâmpago do Túmulo
+19010700	Foice Sagrada do Túmulo
+19010800	Foice Mágica do Túmulo
+19010900	Foice do Frio do Túmulo
+19011000	Foice Venenosa do Túmulo
+19011100	Foice do Sangue do Túmulo
+19011200	Foice do Oculto do Túmulo
+19020000	Foice da Auréola
+19050000	
+19060000	Foice Alada
+20000000	Chicote
+20000100	Chicote Pesado
+20000200	Chicote Aguçado
+20000300	Chicote de Qualidade
+20000400	Chicote de Fogo
+20000500	Chicote da Arte da Chama
+20000600	Chicote de Relâmpago
+20000700	Chicote Sagrado
+20000800	Chicote Mágico
+20000900	Chicote do Frio
+20001000	Chicote Venenoso
+20001100	Chicote do Sangue
+20001200	Chicote do Oculto
+20020000	Chicote Espinhento
+20020100	Chicote Espinhento Pesado
+20020200	Chicote Espinhento Aguçado
+20020300	Chicote Espinhento de Qualidade
+20020400	Chicote Espinhento de Fogo
+20020500	Chicote Espinhento da Arte da Chama
+20020600	Chicote Espinhento de Relâmpago
+20020700	Chicote Espinhento Sagrado
+20020800	Chicote Espinhento Mágico
+20020900	Chicote Espinhento do Frio
+20021000	Chicote Espinhento Venenoso
+20021100	Chicote Espinhento do Sangue
+20021200	Chicote Espinhento do Oculto
+20030000	Castiçal do Chicote de Magma
+20030100	
+20030200	
+20030300	
+20030400	
+20030500	
+20030600	
+20030700	
+20030800	
+20030900	
+20031000	
+20031100	
+20031200	
+20050000	Chicote de Pétalas de Hoslow
+20050100	Chicote de Pétalas Pesado de Hoslow
+20050200	Chicote de Pétalas Aguçado de Hoslow
+20050300	Chicote de Pétalas de Qualidade de Hoslow
+20050400	Chicote de Pétalas de Fogo de Hoslow
+20050500	Chicote de Pétalas da Arte da Chama de Hoslow
+20050600	Chicote de Pétalas de Relâmpago de Hoslow
+20050700	Chicote de Pétalas Sagrado de Hoslow
+20050800	Chicote de Pétalas Mágico de Hoslow
+20050900	Chicote de Pétalas do Frio de Hoslow
+20051000	Chicote de Pétalas Venenoso de Hoslow
+20051100	Chicote de Pétalas do Sangue de Hoslow
+20051200	Chicote de Pétalas do Oculto de Hoslow
+20060000	Trança Ruiva do Gigante
+20070000	Urumi
+20070100	Urumi Pesada
+20070200	Urumi Aguçada
+20070300	Urumi de Qualidade
+20070400	Urumi de Fogo
+20070500	Urumi da Arte da Chama
+20070600	Urumi de Relâmpago
+20070700	Urumi Sagrada
+20070800	Urumi Mágica
+20070900	Urumi do Frio
+20071000	Urumi Venenosa
+20071100	Urumi do Sangue
+20071200	Urumi do Oculto
+21000000	Cestus
+21000100	Cestus Pesada
+21000200	Cestus Aguçada
+21000300	Cestus de Qualidade
+21000400	Cestus de Fogo
+21000500	Cestus da Arte da Chama
+21000600	Cestus de Relâmpago
+21000700	Cestus Sagrada
+21000800	Cestus Mágica
+21000900	Cestus do Frio
+21001000	Cestus Venenosa
+21001100	Cestus do Sangue
+21001200	Cestus do Oculto
+21010000	Cestus Espinhenta
+21010100	Cestus Espinhenta Pesada
+21010200	Cestus Espinhenta Aguçada
+21010300	Cestus Espinhenta de Qualidade
+21010400	Cestus Espinhenta de Fogo
+21010500	Cestus Espinhenta da Arte da Chama
+21010600	Cestus Espinhenta de Relâmpago
+21010700	Cestus Espinhenta Sagrada
+21010800	Cestus Espinhenta Mágica
+21010900	Cestus Espinhenta do Frio
+21011000	Cestus Espinhenta Venenosa
+21011100	Cestus Espinhenta do Sangue
+21011200	Cestus Espinhenta do Oculto
+21060000	Dragão Enxertado
+21070000	Esfera de Ferro
+21070100	Esfera de Ferro Pesada
+21070200	Esfera de Ferro Aguçada
+21070300	Esfera de Ferro de Qualidade
+21070400	Esfera de Ferro de Fogo
+21070500	Esfera de Ferro da Arte da Chama
+21070600	Esfera de Ferro de Relâmpago
+21070700	Esfera de Ferro Sagrada
+21070800	Esfera de Ferro Mágica
+21070900	Esfera de Ferro do Frio
+21071000	Esfera de Ferro Venenosa
+21071100	Esfera de Ferro do Sangue
+21071200	Esfera de Ferro do Oculto
+21080000	Esfera Estelar
+21080100	Punho Estelar Pesado
+21080200	Punho Estelar Aguçado
+21080300	Punho Estelar de Qualidade
+21080400	Punho Estelar de Fogo
+21080500	Punho Estelar da Arte da Chama
+21080600	Punho Estelar de Relâmpago
+21080700	Punho Estelar Sagrado
+21080800	Punho Estelar Mágico
+21080900	Punho Estelar do Frio
+21081000	Punho Estelar Venenoso
+21081100	Punho Estelar do Sangue
+21081200	Punho Estelar do Oculto
+21100000	Katar
+21100100	Katar Pesada
+21100200	Katar Aguçada
+21100300	Katar de Qualidade
+21100400	Katar de Fogo
+21100500	Katar da Arte da Chama
+21100600	Katar de Relâmpago
+21100700	Katar Sagrada
+21100800	Katar Mágica
+21100900	Katar do Frio
+21101000	Katar Venenosa
+21101100	Katar do Sangue
+21101200	Katar do Oculto
+21110000	Osso Pegajoso
+21120000	Prótese de Veterano
+21130000	Pata com Cifras
+22000000	Garras
+22000100	Garras Pesadas
+22000200	Garras Aguçadas
+22000300	Garras de Qualidade
+22000400	Garras de Fogo
+22000500	Garras da Arte da Chama
+22000600	Garras de Relâmpago
+22000700	Garras Sagradas
+22000800	Garras Mágicas
+22000900	Garras do Frio
+22001000	Garras Venenosas
+22001100	Garras do Sangue
+22001200	Garras do Oculto
+22010000	Presa de Víbora
+22010100	Presa de Víbora Pesada
+22010200	Presa de Víbora Aguçada
+22010300	Presa de Víbora de Qualidade
+22010400	Presa de Víbora de Fogo
+22010500	Presa de Víbora da Arte da Chama
+22010600	Presa de Víbora de Relâmpago
+22010700	Presa de Víbora Sagrada
+22010800	Presa de Víbora Mágica
+22010900	Presa de Víbora do Frio
+22011000	Presa de Víbora Venenosa
+22011100	Presa de Víbora do Sangue
+22011200	Presa de Víbora do Oculto
+22020000	Garras de Cão de Caça
+22020100	Garras Pesadas de Cão de Caça
+22020200	Garras Aguçadas de Cão de Caça
+22020300	Garras de Qualidade de Cão de Caça
+22020400	Garras de Fogo de Cão de Caça
+22020500	Garras da Arte da Chama de Cão de Caça
+22020600	Garras de Relâmpago de Cão de Caça
+22020700	Garras Sagradas de Cão de Caça
+22020800	Garras Mágicas de Cão de Caça
+22020900	Garras do Frio de Cão de Caça
+22021000	Garras Venenosas de Cão de Caça
+22021100	Garras do Sangue de Cão de Caça
+22021200	Garras do Oculto de Cão de Caça
+22030000	Garras de Rapina
+22030100	Garras de Rapina Pesadas
+22030200	Garras de Rapina Aguçadas
+22030300	Garras de Rapina de Qualidade
+22030400	Garras de Rapina de Fogo
+22030500	Garras de Rapina da Arte da Chama
+22030600	Garras de Rapina de Relâmpago
+22030700	Garras de Rapina Sagradas
+22030800	Garras de Rapina Mágicas
+22030900	Garras de Rapina do Frio
+22031000	Garras de Rapina Venenosas
+22031100	Garras de Rapina do Sangue
+22031200	Garras de Rapina do Oculto
+23000000	Martelo de Incêndio do Prelado
+23000100	Martelo de Incêndio Pesado do Prelado
+23000200	Martelo de Incêndio Aguçado do Prelado
+23000300	Martelo de Incêndio de Qualidade do Prelado
+23000400	Martelo de Incêndio de Fogo do Prelado
+23000500	Martelo de Incêndio da Arte da Chama do Prelado
+23000600	Martelo de Incêndio de Relâmpago do Prelado
+23000700	Martelo de Incêndio Sagrado do Prelado
+23000800	Martelo de Incêndio Mágico do Prelado
+23000900	Martelo de Incêndio do Frio do Prelado
+23001000	Martelo de Incêndio Venenoso do Prelado
+23001100	Martelo de Incêndio do Sangue do Prelado
+23001200	Martelo de Incêndio do Oculto do Prelado
+23010000	Báculo de Cão de Guarda
+23010100	Báculo Pesado de Cão de Guarda
+23010200	
+23010300	
+23010400	
+23010500	
+23010600	
+23010700	
+23010800	
+23010900	
+23011000	
+23011100	
+23011200	
+23020000	Clava Imensa
+23020100	[ERROR]Clava Imensa Pesada
+23020101	[ERROR]
+23020102	[ERROR]
+23020103	[ERROR]
+23020104	[ERROR]
+23020105	[ERROR]
+23020106	[ERROR]
+23020107	[ERROR]
+23020108	[ERROR]
+23020109	[ERROR]
+23020110	[ERROR]
+23020111	[ERROR]
+23020112	[ERROR]
+23020113	[ERROR]
+23020114	[ERROR]
+23020115	[ERROR]
+23020116	[ERROR]
+23020117	[ERROR]
+23020118	[ERROR]
+23020119	[ERROR]
+23020120	[ERROR]
+23020121	[ERROR]
+23020122	[ERROR]
+23020123	[ERROR]
+23020124	[ERROR]
+23020125	[ERROR]
+23020200	[ERROR]Clava Imensa Aguçada
+23020201	[ERROR]
+23020202	[ERROR]
+23020203	[ERROR]
+23020204	[ERROR]
+23020205	[ERROR]
+23020206	[ERROR]
+23020207	[ERROR]
+23020208	[ERROR]
+23020209	[ERROR]
+23020210	[ERROR]
+23020211	[ERROR]
+23020212	[ERROR]
+23020213	[ERROR]
+23020214	[ERROR]
+23020215	[ERROR]
+23020216	[ERROR]
+23020217	[ERROR]
+23020218	[ERROR]
+23020219	[ERROR]
+23020220	[ERROR]
+23020221	[ERROR]
+23020222	[ERROR]
+23020223	[ERROR]
+23020224	[ERROR]
+23020225	[ERROR]
+23020300	[ERROR]Clava Imensa de Qualidade
+23020301	[ERROR]
+23020302	[ERROR]
+23020303	[ERROR]
+23020304	[ERROR]
+23020305	[ERROR]
+23020306	[ERROR]
+23020307	[ERROR]
+23020308	[ERROR]
+23020309	[ERROR]
+23020310	[ERROR]
+23020311	[ERROR]
+23020312	[ERROR]
+23020313	[ERROR]
+23020314	[ERROR]
+23020315	[ERROR]
+23020316	[ERROR]
+23020317	[ERROR]
+23020318	[ERROR]
+23020319	[ERROR]
+23020320	[ERROR]
+23020321	[ERROR]
+23020322	[ERROR]
+23020323	[ERROR]
+23020324	[ERROR]
+23020325	[ERROR]
+23020400	[ERROR]Clava Imensa de Fogo
+23020401	[ERROR]
+23020402	[ERROR]
+23020403	[ERROR]
+23020404	[ERROR]
+23020405	[ERROR]
+23020406	[ERROR]
+23020407	[ERROR]
+23020408	[ERROR]
+23020409	[ERROR]
+23020410	[ERROR]
+23020411	[ERROR]
+23020412	[ERROR]
+23020413	[ERROR]
+23020414	[ERROR]
+23020415	[ERROR]
+23020416	[ERROR]
+23020417	[ERROR]
+23020418	[ERROR]
+23020419	[ERROR]
+23020420	[ERROR]
+23020421	[ERROR]
+23020422	[ERROR]
+23020423	[ERROR]
+23020424	[ERROR]
+23020425	[ERROR]
+23020500	[ERROR]Clava Imensa da Arte da Chama
+23020501	[ERROR]
+23020502	[ERROR]
+23020503	[ERROR]
+23020504	[ERROR]
+23020505	[ERROR]
+23020506	[ERROR]
+23020507	[ERROR]
+23020508	[ERROR]
+23020509	[ERROR]
+23020510	[ERROR]
+23020511	[ERROR]
+23020512	[ERROR]
+23020513	[ERROR]
+23020514	[ERROR]
+23020515	[ERROR]
+23020516	[ERROR]
+23020517	[ERROR]
+23020518	[ERROR]
+23020519	[ERROR]
+23020520	[ERROR]
+23020521	[ERROR]
+23020522	[ERROR]
+23020523	[ERROR]
+23020524	[ERROR]
+23020525	[ERROR]
+23020600	[ERROR]Clava Imensa de Relâmpago
+23020601	[ERROR]
+23020602	[ERROR]
+23020603	[ERROR]
+23020604	[ERROR]
+23020605	[ERROR]
+23020606	[ERROR]
+23020607	[ERROR]
+23020608	[ERROR]
+23020609	[ERROR]
+23020610	[ERROR]
+23020611	[ERROR]
+23020612	[ERROR]
+23020613	[ERROR]
+23020614	[ERROR]
+23020615	[ERROR]
+23020616	[ERROR]
+23020617	[ERROR]
+23020618	[ERROR]
+23020619	[ERROR]
+23020620	[ERROR]
+23020621	[ERROR]
+23020622	[ERROR]
+23020623	[ERROR]
+23020624	[ERROR]
+23020625	[ERROR]
+23020700	[ERROR]Clava Imensa Sagrada
+23020701	[ERROR]
+23020702	[ERROR]
+23020703	[ERROR]
+23020704	[ERROR]
+23020705	[ERROR]
+23020706	[ERROR]
+23020707	[ERROR]
+23020708	[ERROR]
+23020709	[ERROR]
+23020710	[ERROR]
+23020711	[ERROR]
+23020712	[ERROR]
+23020713	[ERROR]
+23020714	[ERROR]
+23020715	[ERROR]
+23020716	[ERROR]
+23020717	[ERROR]
+23020718	[ERROR]
+23020719	[ERROR]
+23020720	[ERROR]
+23020721	[ERROR]
+23020722	[ERROR]
+23020723	[ERROR]
+23020724	[ERROR]
+23020725	[ERROR]
+23020800	[ERROR]Clava Imensa Mágica
+23020801	[ERROR]
+23020802	[ERROR]
+23020803	[ERROR]
+23020804	[ERROR]
+23020805	[ERROR]
+23020806	[ERROR]
+23020807	[ERROR]
+23020808	[ERROR]
+23020809	[ERROR]
+23020810	[ERROR]
+23020811	[ERROR]
+23020812	[ERROR]
+23020813	[ERROR]
+23020814	[ERROR]
+23020815	[ERROR]
+23020816	[ERROR]
+23020817	[ERROR]
+23020818	[ERROR]
+23020819	[ERROR]
+23020820	[ERROR]
+23020821	[ERROR]
+23020822	[ERROR]
+23020823	[ERROR]
+23020824	[ERROR]
+23020825	[ERROR]
+23020900	[ERROR]Clava Imensa do Frio
+23020901	[ERROR]
+23020902	[ERROR]
+23020903	[ERROR]
+23020904	[ERROR]
+23020905	[ERROR]
+23020906	[ERROR]
+23020907	[ERROR]
+23020908	[ERROR]
+23020909	[ERROR]
+23020910	[ERROR]
+23020911	[ERROR]
+23020912	[ERROR]
+23020913	[ERROR]
+23020914	[ERROR]
+23020915	[ERROR]
+23020916	[ERROR]
+23020917	[ERROR]
+23020918	[ERROR]
+23020919	[ERROR]
+23020920	[ERROR]
+23020921	[ERROR]
+23020922	[ERROR]
+23020923	[ERROR]
+23020924	[ERROR]
+23020925	[ERROR]
+23021000	[ERROR]Clava Imensa Venenosa
+23021001	[ERROR]
+23021002	[ERROR]
+23021003	[ERROR]
+23021004	[ERROR]
+23021005	[ERROR]
+23021006	[ERROR]
+23021007	[ERROR]
+23021008	[ERROR]
+23021009	[ERROR]
+23021010	[ERROR]
+23021011	[ERROR]
+23021012	[ERROR]
+23021013	[ERROR]
+23021014	[ERROR]
+23021015	[ERROR]
+23021016	[ERROR]
+23021017	[ERROR]
+23021018	[ERROR]
+23021019	[ERROR]
+23021020	[ERROR]
+23021021	[ERROR]
+23021022	[ERROR]
+23021023	[ERROR]
+23021024	[ERROR]
+23021025	[ERROR]
+23021100	[ERROR]Clava Imensa do Sangue
+23021101	[ERROR]
+23021102	[ERROR]
+23021103	[ERROR]
+23021104	[ERROR]
+23021105	[ERROR]
+23021106	[ERROR]
+23021107	[ERROR]
+23021108	[ERROR]
+23021109	[ERROR]
+23021110	[ERROR]
+23021111	[ERROR]
+23021112	[ERROR]
+23021113	[ERROR]
+23021114	[ERROR]
+23021115	[ERROR]
+23021116	[ERROR]
+23021117	[ERROR]
+23021118	[ERROR]
+23021119	[ERROR]
+23021120	[ERROR]
+23021121	[ERROR]
+23021122	[ERROR]
+23021123	[ERROR]
+23021124	[ERROR]
+23021125	[ERROR]
+23021200	[ERROR]Clava Imensa do Oculto
+23021201	[ERROR]
+23021202	[ERROR]
+23021203	[ERROR]
+23021204	[ERROR]
+23021205	[ERROR]
+23021206	[ERROR]
+23021207	[ERROR]
+23021208	[ERROR]
+23021209	[ERROR]
+23021210	[ERROR]
+23021211	[ERROR]
+23021212	[ERROR]
+23021213	[ERROR]
+23021214	[ERROR]
+23021215	[ERROR]
+23021216	[ERROR]
+23021217	[ERROR]
+23021218	[ERROR]
+23021219	[ERROR]
+23021220	[ERROR]
+23021221	[ERROR]
+23021222	[ERROR]
+23021223	[ERROR]
+23021224	[ERROR]
+23021225	[ERROR]
+23030000	Grande Chifre do Enviado
+23040000	Machado Grande do Gladiador
+23040100	Machado Grande Pesado do Gladiador
+23040200	Machado Grande Aguçado do Gladiador
+23040300	Machado Grande de Qualidade do Gladiador
+23040400	Machado Grande de Fogo do Gladiador
+23040500	Machado Grande da Arte da Chama do Gladiador
+23040600	Machado Grande de Relâmpago do Gladiador
+23040700	Machado Grande Sagrado do Gladiador
+23040800	Machado Grande Mágico do Gladiador
+23040900	Machado Grande do Frio do Gladiador
+23041000	Machado Grande Venenoso do Gladiador
+23041100	Machado Grande do Sangue do Gladiador
+23041200	Machado Grande do Oculto do Gladiador
+23050000	Machado de Godfrey
+23060000	Garra Grande de Dragão
+23070000	Cajado do Avatar
+23080000	Mandíbula de Fera da Estrela Cadente
+23100000	Roda de Ghiza
+23110000	Esmagador de Gigante
+23110100	Esmagador de Gigante Pesado
+23110200	Esmagador de Gigante Aguçado
+23110300	Esmagador de Gigante de Qualidade
+23110400	Esmagador de Gigante de Fogo
+23110500	Esmagador de Gigante da Arte da Chama
+23110600	Esmagador de Gigante de Relâmpago
+23110700	Esmagador de Gigante Sagrado
+23110800	Esmagador de Gigante Mágico
+23110900	Esmagador de Gigante do Frio
+23111000	Esmagador de Gigante Venenoso
+23111100	Esmagador de Gigante do Sangue
+23111200	Esmagador de Gigante do Oculto
+23120000	Alabarda de Golem
+23120100	Alabarda Pesada de Golem
+23120200	Alabarda Aguçada de Golem
+23120300	Alabarda de Qualidade de Golem
+23120400	Alabarda de Fogo de Golem
+23120500	Alabarda da Arte da Chama de Golem
+23120600	Alabarda de Relâmpago de Golem
+23120700	Alabarda Sagrada de Golem
+23120800	Alabarda Mágica de Golem
+23120900	Alabarda do Frio de Golem
+23121000	Alabarda Venenosa de Golem
+23121100	Alabarda do Sangue de Golem
+23121200	Alabarda do Oculto de Golem
+23130000	Martelo de Troll
+23130100	[ERROR]Martelo Pesado de Troll
+23130101	[ERROR]
+23130102	[ERROR]
+23130103	[ERROR]
+23130104	[ERROR]
+23130105	[ERROR]
+23130106	[ERROR]
+23130107	[ERROR]
+23130108	[ERROR]
+23130109	[ERROR]
+23130110	[ERROR]
+23130111	[ERROR]
+23130112	[ERROR]
+23130113	[ERROR]
+23130114	[ERROR]
+23130115	[ERROR]
+23130116	[ERROR]
+23130117	[ERROR]
+23130118	[ERROR]
+23130119	[ERROR]
+23130120	[ERROR]
+23130121	[ERROR]
+23130122	[ERROR]
+23130123	[ERROR]
+23130124	[ERROR]
+23130125	[ERROR]
+23130200	[ERROR]Martelo Aguçado de Troll
+23130201	[ERROR]
+23130202	[ERROR]
+23130203	[ERROR]
+23130204	[ERROR]
+23130205	[ERROR]
+23130206	[ERROR]
+23130207	[ERROR]
+23130208	[ERROR]
+23130209	[ERROR]
+23130210	[ERROR]
+23130211	[ERROR]
+23130212	[ERROR]
+23130213	[ERROR]
+23130214	[ERROR]
+23130215	[ERROR]
+23130216	[ERROR]
+23130217	[ERROR]
+23130218	[ERROR]
+23130219	[ERROR]
+23130220	[ERROR]
+23130221	[ERROR]
+23130222	[ERROR]
+23130223	[ERROR]
+23130224	[ERROR]
+23130225	[ERROR]
+23130300	[ERROR]Martelo de Qualidade de Troll
+23130301	[ERROR]
+23130302	[ERROR]
+23130303	[ERROR]
+23130304	[ERROR]
+23130305	[ERROR]
+23130306	[ERROR]
+23130307	[ERROR]
+23130308	[ERROR]
+23130309	[ERROR]
+23130310	[ERROR]
+23130311	[ERROR]
+23130312	[ERROR]
+23130313	[ERROR]
+23130314	[ERROR]
+23130315	[ERROR]
+23130316	[ERROR]
+23130317	[ERROR]
+23130318	[ERROR]
+23130319	[ERROR]
+23130320	[ERROR]
+23130321	[ERROR]
+23130322	[ERROR]
+23130323	[ERROR]
+23130324	[ERROR]
+23130325	[ERROR]
+23130400	[ERROR]Martelo de Fogo de Troll
+23130401	[ERROR]
+23130402	[ERROR]
+23130403	[ERROR]
+23130404	[ERROR]
+23130405	[ERROR]
+23130406	[ERROR]
+23130407	[ERROR]
+23130408	[ERROR]
+23130409	[ERROR]
+23130410	[ERROR]
+23130411	[ERROR]
+23130412	[ERROR]
+23130413	[ERROR]
+23130414	[ERROR]
+23130415	[ERROR]
+23130416	[ERROR]
+23130417	[ERROR]
+23130418	[ERROR]
+23130419	[ERROR]
+23130420	[ERROR]
+23130421	[ERROR]
+23130422	[ERROR]
+23130423	[ERROR]
+23130424	[ERROR]
+23130425	[ERROR]
+23130500	[ERROR]Martelo da Arte da Chama de Troll
+23130501	[ERROR]
+23130502	[ERROR]
+23130503	[ERROR]
+23130504	[ERROR]
+23130505	[ERROR]
+23130506	[ERROR]
+23130507	[ERROR]
+23130508	[ERROR]
+23130509	[ERROR]
+23130510	[ERROR]
+23130511	[ERROR]
+23130512	[ERROR]
+23130513	[ERROR]
+23130514	[ERROR]
+23130515	[ERROR]
+23130516	[ERROR]
+23130517	[ERROR]
+23130518	[ERROR]
+23130519	[ERROR]
+23130520	[ERROR]
+23130521	[ERROR]
+23130522	[ERROR]
+23130523	[ERROR]
+23130524	[ERROR]
+23130525	[ERROR]
+23130600	[ERROR]Martelo de Relâmpago de Troll
+23130601	[ERROR]
+23130602	[ERROR]
+23130603	[ERROR]
+23130604	[ERROR]
+23130605	[ERROR]
+23130606	[ERROR]
+23130607	[ERROR]
+23130608	[ERROR]
+23130609	[ERROR]
+23130610	[ERROR]
+23130611	[ERROR]
+23130612	[ERROR]
+23130613	[ERROR]
+23130614	[ERROR]
+23130615	[ERROR]
+23130616	[ERROR]
+23130617	[ERROR]
+23130618	[ERROR]
+23130619	[ERROR]
+23130620	[ERROR]
+23130621	[ERROR]
+23130622	[ERROR]
+23130623	[ERROR]
+23130624	[ERROR]
+23130625	[ERROR]
+23130700	[ERROR]Martelo Sagrado de Troll
+23130701	[ERROR]
+23130702	[ERROR]
+23130703	[ERROR]
+23130704	[ERROR]
+23130705	[ERROR]
+23130706	[ERROR]
+23130707	[ERROR]
+23130708	[ERROR]
+23130709	[ERROR]
+23130710	[ERROR]
+23130711	[ERROR]
+23130712	[ERROR]
+23130713	[ERROR]
+23130714	[ERROR]
+23130715	[ERROR]
+23130716	[ERROR]
+23130717	[ERROR]
+23130718	[ERROR]
+23130719	[ERROR]
+23130720	[ERROR]
+23130721	[ERROR]
+23130722	[ERROR]
+23130723	[ERROR]
+23130724	[ERROR]
+23130725	[ERROR]
+23130800	[ERROR]Martelo Mágico de Troll
+23130801	[ERROR]
+23130802	[ERROR]
+23130803	[ERROR]
+23130804	[ERROR]
+23130805	[ERROR]
+23130806	[ERROR]
+23130807	[ERROR]
+23130808	[ERROR]
+23130809	[ERROR]
+23130810	[ERROR]
+23130811	[ERROR]
+23130812	[ERROR]
+23130813	[ERROR]
+23130814	[ERROR]
+23130815	[ERROR]
+23130816	[ERROR]
+23130817	[ERROR]
+23130818	[ERROR]
+23130819	[ERROR]
+23130820	[ERROR]
+23130821	[ERROR]
+23130822	[ERROR]
+23130823	[ERROR]
+23130824	[ERROR]
+23130825	[ERROR]
+23130900	[ERROR]Martelo do Frio de Troll
+23130901	[ERROR]
+23130902	[ERROR]
+23130903	[ERROR]
+23130904	[ERROR]
+23130905	[ERROR]
+23130906	[ERROR]
+23130907	[ERROR]
+23130908	[ERROR]
+23130909	[ERROR]
+23130910	[ERROR]
+23130911	[ERROR]
+23130912	[ERROR]
+23130913	[ERROR]
+23130914	[ERROR]
+23130915	[ERROR]
+23130916	[ERROR]
+23130917	[ERROR]
+23130918	[ERROR]
+23130919	[ERROR]
+23130920	[ERROR]
+23130921	[ERROR]
+23130922	[ERROR]
+23130923	[ERROR]
+23130924	[ERROR]
+23130925	[ERROR]
+23131000	[ERROR]Martelo Venenoso de Troll
+23131001	[ERROR]
+23131002	[ERROR]
+23131003	[ERROR]
+23131004	[ERROR]
+23131005	[ERROR]
+23131006	[ERROR]
+23131007	[ERROR]
+23131008	[ERROR]
+23131009	[ERROR]
+23131010	[ERROR]
+23131011	[ERROR]
+23131012	[ERROR]
+23131013	[ERROR]
+23131014	[ERROR]
+23131015	[ERROR]
+23131016	[ERROR]
+23131017	[ERROR]
+23131018	[ERROR]
+23131019	[ERROR]
+23131020	[ERROR]
+23131021	[ERROR]
+23131022	[ERROR]
+23131023	[ERROR]
+23131024	[ERROR]
+23131025	[ERROR]
+23131100	[ERROR]Martelo do Sangue de Troll
+23131101	[ERROR]
+23131102	[ERROR]
+23131103	[ERROR]
+23131104	[ERROR]
+23131105	[ERROR]
+23131106	[ERROR]
+23131107	[ERROR]
+23131108	[ERROR]
+23131109	[ERROR]
+23131110	[ERROR]
+23131111	[ERROR]
+23131112	[ERROR]
+23131113	[ERROR]
+23131114	[ERROR]
+23131115	[ERROR]
+23131116	[ERROR]
+23131117	[ERROR]
+23131118	[ERROR]
+23131119	[ERROR]
+23131120	[ERROR]
+23131121	[ERROR]
+23131122	[ERROR]
+23131123	[ERROR]
+23131124	[ERROR]
+23131125	[ERROR]
+23131200	[ERROR]Martelo do Oculto de Troll
+23131201	[ERROR]
+23131202	[ERROR]
+23131203	[ERROR]
+23131204	[ERROR]
+23131205	[ERROR]
+23131206	[ERROR]
+23131207	[ERROR]
+23131208	[ERROR]
+23131209	[ERROR]
+23131210	[ERROR]
+23131211	[ERROR]
+23131212	[ERROR]
+23131213	[ERROR]
+23131214	[ERROR]
+23131215	[ERROR]
+23131216	[ERROR]
+23131217	[ERROR]
+23131218	[ERROR]
+23131219	[ERROR]
+23131220	[ERROR]
+23131221	[ERROR]
+23131222	[ERROR]
+23131223	[ERROR]
+23131224	[ERROR]
+23131225	[ERROR]
+23140000	Cajado Apodrecido
+23150000	Machado Grande da Podridão
+23150100	Machado Grande da Podridão Pesado
+23150200	Machado Grande da Podridão Aguçado
+23150300	Machado Grande da Podridão de Qualidade
+23150400	Machado Grande da Podridão de Fogo
+23150500	Machado Grande da Podridão da Arte da Chama
+23150600	Machado Grande da Podridão de Relâmpago
+23150700	Machado Grande da Podridão Sagrado
+23150800	Machado Grande da Podridão Mágico
+23150900	Machado Grande da Podridão do Frio
+23151000	Machado Grande da Podridão Venenoso
+23151100	Machado Grande da Podridão do Sangue
+23151200	Machado Grande da Podridão do Oculto
+23900000	[ERROR]
+23910000	[ERROR]
+23920000	[ERROR]
+23930000	[ERROR]
+24000000	Tocha
+24020000	Tocha de Fio de Aço
+24040000	Tocha de Sta. Trina
+24050000	Tocha de Chama Espectral
+24060000	Tocha Repelente de Feras
+24070000	Tocha da Sentinela
+30000000	Broquel
+30000100	Broquel Pesado
+30000200	Broquel Aguçado
+30000300	Broquel de Qualidade
+30000400	Broquel de Fogo
+30000500	Broquel da Arte da Chama
+30000600	Broquel de Relâmpago
+30000700	Broquel Sagrado
+30000800	Broquel Mágico
+30000900	Broquel do Frio
+30001000	Broquel Venenoso
+30001100	Broquel do Sangue
+30001200	Broquel do Oculto
+30010000	Escudo de Perfumista
+30010100	Escudo Pesado de Perfumista
+30010200	Escudo Aguçado de Perfumista
+30010300	Escudo de Qualidade de Perfumista
+30010400	Escudo de Fogo de Perfumista
+30010500	Escudo da Arte da Chama de Perfumista
+30010600	Escudo de Relâmpago de Perfumista
+30010700	Escudo Sagrado de Perfumista
+30010800	Escudo Mágico de Perfumista
+30010900	Escudo do Frio de Perfumista
+30011000	Escudo Venenoso de Perfumista
+30011100	Escudo do Sangue de Perfumista
+30011200	Escudo do Oculto de Perfumista
+30020000	Escudo de Homem-Serpente
+30020100	Escudo Pesado de Homem-Serpente
+30020200	Escudo Aguçado de Homem-Serpente
+30020300	Escudo de Qualidade de Homem-Serpente
+30020400	Escudo de Fogo de Homem-Serpente
+30020500	Escudo da Arte da Chama de Homem-Serpente
+30020600	Escudo de Relâmpago de Homem-Serpente
+30020700	Escudo Sagrado de Homem-Serpente
+30020800	Escudo Mágico de Homem-Serpente
+30020900	Escudo Frio de Homem-Serpente
+30021000	Escudo Venenoso de Homem-Serpente
+30021100	Escudo de Sangue de Homem-Serpente
+30021200	Escudo Oculto de Homem-Serpente
+30030000	Escudo Precário
+30030100	Escudo Precário Pesado
+30030200	Escudo Precário Aguçado
+30030300	Escudo Precário de Qualidade
+30030400	Escudo Precário de Fogo
+30030500	Escudo Precário da Arte da Chama
+30030600	Escudo Precário de Relâmpago
+30030700	Escudo Precário Sagrado
+30030800	Escudo Precário Mágico
+30030900	Escudo Precário do Frio
+30031000	Escudo Precário Venenoso
+30031100	Escudo Precário do Sangue
+30031200	Escudo Precário do Oculto
+30040000	Escudo de Pelourinho
+30040100	Escudo Pesado de Pelourinho
+30040200	Escudo Aguçado de Pelourinho
+30040300	Escudo de Qualidade de Pelourinho
+30040400	Escudo de Fogo de Pelourinho
+30040500	Escudo da Arte da Chama de Pelourinho
+30040600	Escudo de Relâmpago de Pelourinho
+30040700	Escudo Sagrado de Pelourinho
+30040800	Escudo Mágico de Pelourinho
+30040900	Escudo do Frio de Pelourinho
+30041000	Escudo Venenoso de Pelourinho
+30041100	Escudo do Sangue de Pelourinho
+30041200	Escudo do Oculto de Pelourinho
+30060000	Escudo de Jarro de Homem-Fera
+30060100	Escudo de Jarro Pesado de Homem-Fera
+30060200	Escudo de Jarro Aguçado de Homem-Fera
+30060300	Escudo de Jarro de Qualidade de Homem-Fera
+30060400	Escudo de Jarro de Fogo de Homem-Fera
+30060500	Escudo de Jarro da Arte da Chama de Homem-Fera
+30060600	Escudo de Jarro de Relâmpago de Homem-Fera
+30060700	Escudo de Jarro Sagrado de Homem-Fera
+30060800	Escudo de Jarro Mágico de Homem-Fera
+30060900	Escudo de Jarro do Frio de Homem-Fera
+30061000	Escudo de Jarro Venenoso de Homem-Fera
+30061100	Escudo de Jarro do Sangue de Homem-Fera
+30061200	Escudo de Jarro do Oculto de Homem-Fera
+30070000	Escudo Redondo do Espinho Vermelho
+30070100	Escudo Redondo do Espinho Vermelho Pesado
+30070200	Escudo Redondo do Espinho Vermelho Aguçado
+30070300	Escudo Redondo do Espinho Vermelho de Qualidade
+30070400	Escudo Redondo do Espinho Vermelho de Fogo
+30070500	Escudo Redondo do Espinho Vermelho da Arte da Chama
+30070600	Escudo Redondo do Espinho Vermelho de Relâmpago
+30070700	Escudo Redondo do Espinho Vermelho Sagrado
+30070800	Escudo Redondo do Espinho Vermelho Mágico
+30070900	Escudo Redondo do Espinho Vermelho do Frio
+30071000	Escudo Redondo do Espinho Vermelho Venenoso
+30071100	Escudo Redondo do Espinho Vermelho do Sangue
+30071200	Escudo Redondo do Espinho Vermelho do Oculto
+30080000	Escudo de Madeira com Inscrições
+30080100	Escudo de Madeira Pesado com Inscrições
+30080200	Escudo de Madeira Aguçado com Inscrições
+30080300	Escudo de Madeira de Qualidade com Inscrições
+30080400	Escudo de Madeira de Fogo com Inscrições
+30080500	Escudo de Madeira da Arte da Chama com Inscrições
+30080600	Escudo de Madeira de Relâmpago com Inscrições
+30080700	Escudo de Madeira Sagrado com Inscrições
+30080800	Escudo de Madeira Mágico com Inscrições
+30080900	Escudo de Madeira do Frio com Inscrições
+30081000	Escudo de Madeira Venenoso com Inscrições
+30081100	Escudo de Madeira do Sangue com Inscrições
+30081200	Escudo de Madeira do Oculto com Inscrições
+30090000	Escudo de Madeira Reforçado
+30090100	Escudo de Madeira com Reforço de Ferro Pesado
+30090200	Escudo de Madeira com Reforço de Ferro Aguçado
+30090300	Escudo de Madeira com Reforço de Ferro de Qualidade
+30090400	Escudo de Madeira com Reforço de Ferro de Fogo
+30090500	Escudo de Madeira com Reforço de Ferro da Arte da Chama
+30090600	Escudo de Madeira com Reforço de Ferro de Relâmpago
+30090700	Escudo de Madeira com Reforço de Ferro Sagrado
+30090800	Escudo de Madeira com Reforço de Ferro Mágico
+30090900	Escudo de Madeira com Reforço de Ferro do Frio
+30091000	Escudo de Madeira com Reforço de Ferro Venenoso
+30091100	Escudo de Madeira com Reforço de Ferro do Sangue
+30091200	Escudo de Madeira com Reforço de Ferro do Oculto
+30100000	Escudo de Madeira Branco e Azul
+30100100	Escudo de Madeira Branco e Azul Pesado
+30100200	Escudo de Madeira Branco e Azul Aguçado
+30100300	Escudo de Madeira Branco e Azul de Qualidade
+30100400	Escudo de Madeira Branco e Azul de Fogo
+30100500	Escudo de Madeira Branco e Azul da Arte da Chama
+30100600	Escudo de Madeira Branco e Azul de Relâmpago
+30100700	Escudo de Madeira Branco e Azul Sagrado
+30100800	Escudo de Madeira Branco e Azul Mágico
+30100900	Escudo de Madeira Branco e Azul do Frio
+30101000	Escudo de Madeira Branco e Azul Venenoso
+30101100	Escudo de Madeira Branco e Azul do Sangue
+30101200	Escudo de Madeira Branco e Azul do Oculto
+30110000	Escudo da Fenda
+30110100	Escudo Pesado da Fenda
+30110200	Escudo Aguçado da Fenda
+30110300	Escudo de Qualidade da Fenda
+30110400	Escudo de Fogo da Fenda
+30110500	Escudo da Arte da Chama da Fenda
+30110600	Escudo de Relâmpago da Fenda
+30110700	Escudo Sagrado da Fenda
+30110800	Escudo Mágico da Fenda
+30110900	Escudo do Frio da Fenda
+30111000	Escudo Venenoso da Fenda
+30111100	Escudo do Sangue da Fenda
+30111200	Escudo do Oculto da Fenda
+30120000	Escudo Redondo de Ferro
+30120100	Escudo Redondo de Ferro Pesado
+30120200	Escudo Redondo de Ferro Aguçado
+30120300	Escudo Redondo de Ferro de Qualidade
+30120400	Escudo Redondo de Ferro de Fogo
+30120500	Escudo Redondo de Ferro da Arte da Chama
+30120600	Escudo Redondo de Ferro de Relâmpago
+30120700	Escudo Redondo de Ferro Sagrado
+30120800	Escudo Redondo de Ferro Mágico
+30120900	Escudo Redondo de Ferro do Frio
+30121000	Escudo Redondo de Ferro Venenoso
+30121100	Escudo Redondo de Ferro do Sangue
+30121200	Escudo Redondo de Ferro do Oculto
+30130000	Escudo de Ferro Dourado
+30130100	Escudo de Ferro Dourado Pesado
+30130200	Escudo de Ferro Dourado Aguçado
+30130300	Escudo de Ferro Dourado de Qualidade
+30130400	Escudo de Ferro Dourado de Fogo
+30130500	Escudo de Ferro Dourado da Arte da Chama
+30130600	Escudo de Ferro Dourado de Relâmpago
+30130700	Escudo de Ferro Dourado Sagrado
+30130800	Escudo de Ferro Dourado Mágico
+30130900	Escudo de Ferro Dourado do Frio
+30131000	Escudo de Ferro Dourado Venenoso
+30131100	Escudo de Ferro Dourado do Sangue
+30131200	Escudo de Ferro Dourado do Oculto
+30140000	Escudo do Brasão de Gelo
+30140100	Escudo do Brasão de Gelo Pesado
+30140200	Escudo do Brasão de Gelo Aguçado
+30140300	Escudo do Brasão de Gelo de Qualidade
+30140400	Escudo do Brasão de Gelo de Fogo
+30140500	Escudo do Brasão de Gelo da Arte da Chama
+30140600	Escudo do Brasão de Gelo de Relâmpago
+30140700	Escudo do Brasão de Gelo Sagrado
+30140800	Escudo do Brasão de Gelo Mágico
+30140900	Escudo do Brasão de Gelo do Frio
+30141000	Escudo do Brasão de Gelo Venenoso
+30141100	Escudo do Brasão de Gelo do Sangue
+30141200	Escudo do Brasão de Gelo do Oculto
+30150000	Escudo Fumegante
+30150100	Escudo Fumegante Pesado
+30150200	Escudo Fumegante Aguçado
+30150300	Escudo Fumegante de Qualidade
+30150400	Escudo Fumegante de Fogo
+30150500	Escudo Fumegante da Arte da Chama
+30150600	Escudo Fumegante de Relâmpago
+30150700	Escudo Fumegante Sagrado
+30150800	Escudo Fumegante Mágico
+30150900	Escudo Fumegante do Frio
+30151000	Escudo Fumegante Venenoso
+30151100	Escudo Fumegante do Sangue
+30151200	Escudo Fumegante do Oculto
+30190000	Escudo de Chifre Espiral
+30190100	Escudo de Chifre Espiral Pesado
+30190200	Escudo de Chifre Espiral Aguçado
+30190300	Escudo de Chifre Espiral de Qualidade
+30190400	Escudo de Chifre Espiral de Fogo
+30190500	Escudo de Chifre Espiral da Arte da Chama
+30190600	Escudo de Chifre Espiral de Relâmpago
+30190700	Escudo de Chifre Espiral Sagrado
+30190800	Escudo de Chifre Espiral Mágico
+30190900	Escudo de Chifre Espiral do Frio
+30191000	Escudo de Chifre Espiral Venenoso
+30191100	Escudo de Chifre Espiral do Sangue
+30191200	Escudo de Chifre Espiral do Oculto
+30200000	Escudo da Cobra
+31000000	Escudo Gota
+31000100	Escudo Gota Pesado
+31000200	Escudo Gota Aguçado
+31000300	Escudo Gota de Qualidade
+31000400	Escudo Gota de Fogo
+31000500	Escudo Gota da Arte da Chama
+31000600	Escudo Gota de Relâmpago
+31000700	Escudo Gota Sagrado
+31000800	Escudo Gota Mágico
+31000900	Escudo Gota do Frio
+31001000	Escudo Gota Venenoso
+31001100	Escudo Gota do Sangue
+31001200	Escudo Gota do Oculto
+31010000	Escudo de Couro Gasto
+31010100	Escudo de Couro Gasto Pesado
+31010200	Escudo de Couro Gasto Aguçado
+31010300	Escudo de Couro Gasto de Qualidade
+31010400	Escudo de Couro Gasto de Fogo
+31010500	Escudo de Couro Gasto da Arte da Chama
+31010600	Escudo de Couro Gasto de Relâmpago
+31010700	Escudo de Couro Gasto Sagrado
+31010800	Escudo de Couro Gasto Mágico
+31010900	Escudo de Couro Gasto do Frio
+31011000	Escudo de Couro Gasto Venenoso
+31011100	Escudo de Couro Gasto do Sangue
+31011200	Escudo de Couro Gasto do Oculto
+31020000	Escudo de Madeira Gasto
+31020100	Escudo de Madeira Gasto Pesado
+31020200	Escudo de Madeira Gasto Aguçado
+31020300	Escudo de Madeira Gasto de Qualidade
+31020400	Escudo de Madeira Gasto de Fogo
+31020500	Escudo de Madeira Gasto da Arte da Chama
+31020600	Escudo de Madeira Gasto de Relâmpago
+31020700	Escudo de Madeira Gasto Sagrado
+31020800	Escudo de Madeira Gasto Mágico
+31020900	Escudo de Madeira Gasto do Frio
+31021000	Escudo de Madeira Gasto Venenoso
+31021100	Escudo de Madeira Gasto do Sangue
+31021200	Escudo de Madeira Gasto do Oculto
+31030000	Escudo do Cavaleiro Banido
+31030100	Escudo Pesado de Cavaleiro Banido
+31030200	Escudo Aguçado de Cavaleiro Banido
+31030300	Escudo de Qualidade de Cavaleiro Banido
+31030400	Escudo de Fogo de Cavaleiro Banido
+31030500	Escudo da Arte da Chama de Cavaleiro Banido
+31030600	Escudo de Relâmpago de Cavaleiro Banido
+31030700	Escudo Sagrado de Cavaleiro Banido
+31030800	Escudo Mágico de Cavaleiro Banido
+31030900	Escudo do Frio de Cavaleiro Banido
+31031000	Escudo Venenoso de Cavaleiro Banido
+31031100	Escudo do Sangue de Cavaleiro Banido
+31031200	Escudo do Oculto de Cavaleiro Banido
+31040000	Escudo Albináurico
+31040100	Escudo Pesado de Albináurico
+31040200	Escudo Aguçado de Albináurico
+31040300	Escudo de Qualidade de Albináurico
+31040400	Escudo de Fogo de Albináurico
+31040500	Escudo da Arte da Chama de Albináurico
+31040600	Escudo de Relâmpago de Albináurico
+31040700	Escudo Sagrado de Albináurico
+31040800	Escudo Mágico de Albináurico
+31040900	Escudo do Frio de Albináurico
+31041000	Escudo Venenoso de Albináurico
+31041100	Escudo do Sangue de Albináurico
+31041200	Escudo do Oculto de Albináurico
+31050000	Escudo do Reino do Sol
+31050100	Escudo do Reino do Sol Pesado
+31050200	Escudo do Reino do Sol Aguçado
+31050300	Escudo do Reino do Sol de Qualidade
+31050400	Escudo do Reino do Sol de Fogo
+31050500	Escudo do Reino do Sol da Arte da Chama
+31050600	Escudo do Reino do Sol de Relâmpago
+31050700	Escudo do Reino do Sol Sagrado
+31050800	Escudo do Reino do Sol Mágico
+31050900	Escudo do Reino do Sol do Frio
+31051000	Escudo do Reino do Sol Venenoso
+31051100	Escudo do Reino do Sol do Sangue
+31051200	Escudo do Reino do Sol do Oculto
+31060000	Escudo-Espelho de Prata
+31070000	Escudo Redondo
+31070100	Escudo Redondo Pesado
+31070200	Escudo Redondo Aguçado
+31070300	Escudo Redondo de Qualidade
+31070400	Escudo Redondo de Fogo
+31070500	Escudo Redondo da Arte da Chama
+31070600	Escudo Redondo de Relâmpago
+31070700	Escudo Redondo Sagrado
+31070800	Escudo Redondo Mágico
+31070900	Escudo Redondo do Frio
+31071000	Escudo Redondo Venenoso
+31071100	Escudo Redondo do Sangue
+31071200	Escudo Redondo do Oculto
+31080000	Escudo Gota de Escorpião
+31080100	Escudo Gota Pesado de Escorpião
+31080200	Escudo Gota Aguçado de Escorpião
+31080300	Escudo Gota de Qualidade de Escorpião
+31080400	Escudo Gota de Fogo Pesado
+31080500	Escudo Gota da Arte da Chama de Escorpião
+31080600	Escudo Gota de Relâmpago de Escorpião
+31080700	Escudo Gota Sagrado de Escorpião
+31080800	Escudo Gota Mágico de Escorpião
+31080900	Escudo Gota do Frio de Escorpião
+31081000	Escudo Gota Venenoso de Escorpião
+31081100	Escudo Gota do Sangue de Escorpião
+31081200	Escudo Gota do Oculto de Escorpião
+31090000	Escudo Gota de Pássaros Gêmeos
+31090100	Escudo Gota Pesado de Pássaros Gêmeos
+31090200	Escudo Gota Aguçado de Pássaros Gêmeos
+31090300	Escudo Gota de Qualidade de Pássaros Gêmeos
+31090400	Escudo Gota de Fogo de Pássaros Gêmeos
+31090500	Escudo Gota da Arte da Chama de Pássaros Gêmeos
+31090600	Escudo Gota de Relâmpago de Pássaros Gêmeos
+31090700	Escudo Gota Sagrado de Pássaros Gêmeos
+31090800	Escudo Gota Mágico de Pássaros Gêmeos
+31090900	Escudo Gota do Frio de Pássaros Gêmeos
+31091000	Escudo Gota Venenoso de Pássaros Gêmeos
+31091100	Escudo Gota do Sangue de Pássaros Gêmeos
+31091200	Escudo Gota do Oculto de Pássaros Gêmeos
+31100000	Escudo Gota Dourado-Azulado
+31100100	Escudo Gota Dourado-Azulado Pesado
+31100200	Escudo Gota Dourado-Azulado Aguçado
+31100300	Escudo Gota Dourado-Azulado de Qualidade
+31100400	Escudo Gota Dourado-Azulado de Fogo
+31100500	Escudo Gota Dourado-Azulado da Arte da Chama
+31100600	Escudo Gota Dourado-Azulado de Relâmpago
+31100700	Escudo Gota Dourado-Azulado Sagrado
+31100800	Escudo Gota Dourado-Azulado Mágico
+31100900	Escudo Gota Dourado-Azulado do Frio
+31101000	Escudo Gota Dourado-Azulado Venenoso
+31101100	Escudo Gota Dourado-Azulado do Sangue
+31101200	Escudo Gota Dourado-Azulado do Oculto
+31130000	Escudo de Latão
+31130100	Escudo Pesado de Latão
+31130200	Escudo Aguçado de Latão
+31130300	Escudo de Qualidade de Latão
+31130400	Escudo de Fogo de Latão
+31130500	Escudo da Arte da Chama de Latão
+31130600	Escudo de Relâmpago de Latão
+31130700	Escudo Sagrado de Latão
+31130800	Escudo Mágico de Latão
+31130900	Escudo do Frio de Latão
+31131000	Escudo Venenoso de Latão
+31131100	Escudo do Sangue de Latão
+31131200	Escudo do Oculto de Latão
+31140000	Carapaça Grande
+31140100	Casco de Tartaruga Grande Pesado
+31140200	Casco de Tartaruga Grande Aguçado
+31140300	Casco de Tartaruga Grande de Qualidade
+31140400	Casco de Tartaruga Grande de Fogo
+31140500	Casco de Tartaruga Grande da Arte da Chama
+31140600	Casco de Tartaruga Grande de Relâmpago
+31140700	Casco de Tartaruga Grande Sagrado
+31140800	Casco de Tartaruga Grande Mágico
+31140900	Casco de Tartaruga Grande do Frio
+31141000	Casco de Tartaruga Grande Venenoso
+31141100	Casco de Tartaruga Grande do Sangue
+31141200	Casco de Tartaruga Grande do Oculto
+31170000	Escudo do Culpado
+31170100	Escudo Pesado do Culpado
+31170200	Escudo Aguçado do Culpado
+31170300	Escudo de Qualidade do Culpado
+31170400	Escudo de Fogo do Culpado
+31170500	Escudo da Arte da Chama do Culpado
+31170600	Escudo de Relâmpago do Culpado
+31170700	Escudo Sagrado do Culpado
+31170800	Escudo Mágico do Culpado
+31170900	Escudo do Frio do Culpado
+31171000	Escudo Venenoso do Culpado
+31171100	Escudo do Sangue do Culpado
+31171200	Escudo do Oculto do Culpado
+31190000	Escudo de Cavaleiro Cariano
+31190100	Escudo Pesado de Cavaleiro Cariano
+31190200	Escudo Aguçado de Cavaleiro Cariano
+31190300	Escudo de Qualidade de Cavaleiro Cariano
+31190400	Escudo de Fogo de Cavaleiro Cariano
+31190500	Escudo da Arte da Chama de Cavaleiro Cariano
+31190600	Escudo de Relâmpago de Cavaleiro Cariano
+31190700	Escudo Sagrado de Cavaleiro Cariano
+31190800	Escudo Mágico de Cavaleiro Cariano
+31190900	Escudo do Frio de Cavaleiro Cariano
+31191000	Escudo Venenoso de Cavaleiro Cariano
+31191100	Escudo do Sangue de Cavaleiro Cariano
+31191200	Escudo do Oculto de Cavaleiro Cariano
+31230000	Escudo de Couro Grande
+31230100	Escudo Grande Pesado de Couro
+31230200	Escudo Grande Aguçado de Couro
+31230300	Escudo Grande de Qualidade de Couro
+31230400	Escudo Grande de Fogo de Couro
+31230500	Escudo Grande da Arte da Chama de Couro
+31230600	Escudo Grande de Relâmpago de Couro
+31230700	Escudo Grande Sagrado de Couro
+31230800	Escudo Grande Mágico de Couro
+31230900	Escudo Grande do Frio de Couro
+31231000	Escudo Grande Venenoso de Couro
+31231100	Escudo de Couro do Sangue
+31231200	Escudo Grande do Oculto de Couro
+31240000	Escudo de Madeira com Brasão de Cavalo
+31240100	Escudo de Madeira Pesado com Brasão de Cavalo
+31240200	Escudo de Madeira Aguçado com Brasão de Cavalo
+31240300	Escudo de Madeira de Qualidade com Brasão de Cavalo
+31240400	Escudo de Madeira de Fogo com Brasão de Cavalo
+31240500	Escudo de Madeira da Arte da Chama com Brasão de Cavalo
+31240600	Escudo de Madeira de Relâmpago com Brasão de Cavalo
+31240700	Escudo de Madeira Sagrado com Brasão de Cavalo
+31240800	Escudo de Madeira Mágico com Brasão de Cavalo
+31240900	Escudo de Madeira do Frio com Brasão de Cavalo
+31241000	Escudo de Madeira Venenoso com Brasão de Cavalo
+31241100	Escudo de Madeira do Sangue com Brasão de Cavalo
+31241200	Escudo de Madeira do Oculto com Brasão de Cavalo
+31250000	Escudo de Madeira da Árvore de Velas
+31250100	Escudo de Madeira Pesado da Árvore de Velas
+31250200	Escudo de Madeira Aguçado da Árvore de Velas
+31250300	Escudo de Madeira de Qualidade da Árvore de Velas
+31250400	Escudo de Madeira de Fogo da Árvore de Velas
+31250500	Escudo de Madeira da Arte da Chama da Árvore de Velas
+31250600	Escudo de Madeira de Relâmpago da Árvore de Velas
+31250700	Escudo de Madeira Sagrado da Árvore de Velas
+31250800	Escudo de Madeira Mágico da Árvore de Velas
+31250900	Escudo de Madeira do Frio da Árvore de Velas
+31251000	Escudo de Madeira Venenoso da Árvore de Velas
+31251100	Escudo de Madeira do Sangue da Árvore de Velas
+31251200	Escudo de Madeira do Oculto da Árvore de Velas
+31260000	Escudo de Madeira com Brasão de Chama
+31260100	Escudo de Madeira Pesado com Brasão de Chama
+31260200	Escudo de Madeira Aguçado com Brasão de Chama
+31260300	Escudo de Madeira de Qualidade com Brasão de Chama
+31260400	Escudo de Madeira de Fogo com Brasão de Chama
+31260500	Escudo de Madeira da Arte da Chama com Brasão de Chama
+31260600	Escudo de Madeira de Relâmpago com Brasão de Chama
+31260700	Escudo de Madeira Sagrado com Brasão de Chama
+31260800	Escudo de Madeira Mágico com Brasão de Chama
+31260900	Escudo de Madeira do Frio com Brasão de Chama
+31261000	Escudo de Madeira Venenoso com Brasão de Chama
+31261100	Escudo de Madeira do Sangue com Brasão de Chama
+31261200	Escudo de Madeira do Oculto com Brasão de Chama
+31270000	Escudo de Madeira com Brasão de Falcão
+31270100	Escudo de Madeira Pesado com Brasão de Falcão
+31270200	Escudo de Madeira Aguçado com Brasão de Falcão
+31270300	Escudo de Madeira de Qualidade com Brasão de Falcão
+31270400	Escudo de Madeira de Fogo com Brasão de Falcão
+31270500	Escudo de Madeira da Arte da Chama com Brasão de Falcão
+31270600	Escudo de Madeira de Relâmpago com Brasão de Falcão
+31270700	Escudo de Madeira Sagrado com Brasão de Falcão
+31270800	Escudo de Madeira Mágico com Brasão de Falcão
+31270900	Escudo de Madeira do Frio com Brasão de Falcão
+31271000	Escudo de Madeira Venenoso com Brasão de Falcão
+31271100	Escudo de Madeira do Sangue com Brasão de Falcão
+31271200	Escudo de Madeira do Oculto com Brasão de Falcão
+31280000	Escudo Radiador com Brasão de Fera
+31280100	Escudo Radiador Pesado com Brasão de Fera
+31280200	Escudo Radiador Aguçado com Brasão de Fera
+31280300	Escudo Radiador de Qualidade com Brasão de Fera
+31280400	Escudo Radiador de Fogo com Brasão de Fera
+31280500	Escudo Radiador da Arte da Chama com Brasão de Fera
+31280600	Escudo Radiador de Relâmpago com Brasão de Fera
+31280700	Escudo Radiador Sagrado com Brasão de Fera
+31280800	Escudo Radiador Mágico com Brasão de Fera
+31280900	Escudo Radiador do Frio com Brasão de Fera
+31281000	Escudo Radiador Venenoso com Brasão de Fera
+31281100	Escudo Radiador do Sangue com Brasão de Fera
+31281200	Escudo Radiador do Oculto com Brasão de Fera
+31290000	Escudo Radiador com Brasão Vermelho
+31290100	Escudo Radiador Pesado com Brasão Vermelho
+31290200	Escudo Radiador Aguçado com Brasão Vermelho
+31290300	Escudo Radiador de Qualidade com Brasão Vermelho
+31290400	Escudo Radiador de Fogo com Brasão Vermelho
+31290500	Escudo Radiador da Arte da Chama com Brasão Vermelho
+31290600	Escudo Radiador de Relâmpago com Brasão Vermelho
+31290700	Escudo Radiador Sagrado com Brasão Vermelho
+31290800	Escudo Radiador Mágico com Brasão Vermelho
+31290900	Escudo Radiador do Frio com Brasão Vermelho
+31291000	Escudo Radiador Venenoso com Brasão Vermelho
+31291100	Escudo Radiador do Sangue com Brasão Vermelho
+31291200	Escudo Radiador do Oculto com Brasão Vermelho
+31300000	Escudo Radiador com Brasão Azul
+31300100	Escudo Radiador Pesado com Brasão Azul
+31300200	Escudo Radiador Aguçado com Brasão Azul
+31300300	Escudo Radiador de Qualidade com Brasão Azul
+31300400	Escudo Radiador de Fogo com Brasão Azul
+31300500	Escudo Radiador da Arte da Chama com Brasão Azul
+31300600	Escudo Radiador de Relâmpago com Brasão Azul
+31300700	Escudo Radiador Sagrado com Brasão Azul
+31300800	Escudo Radiador Mágico com Brasão Azul
+31300900	Escudo Radiador do Frio com Brasão Azul
+31301000	Escudo Radiador Venenoso com Brasão Azul
+31301100	Escudo Radiador do Sangue com Brasão Azul
+31301200	Escudo Radiador do Oculto com Brasão Azul
+31310000	Escudo Radiador do Brasão de Eclipse
+31310100	Escudo Radiador Pesado do Brasão de Eclipse
+31310200	Escudo Radiador Aguçado do Brasão de Eclipse
+31310300	Escudo Radiador de Qualidade do Brasão de Eclipse
+31310400	Escudo Radiador de Fogo do Brasão de Eclipse
+31310500	Escudo da Arte da Chama de Brasão do Eclipse
+31310600	Escudo Radiador de Relâmpago do Brasão de Eclipse
+31310700	Escudo Radiador Sagrado do Brasão de Eclipse
+31310800	Escudo Radiador Mágico do Brasão do Eclipse
+31310900	Escudo Radiador do Frio do Brasão do Eclipse
+31311000	Escudo Radiador Venenoso do Brasão do Eclipse
+31311100	Escudo Radiador do Sangue do Brasão do Eclipse
+31311200	Escudo Radiador do Oculto do Brasão do Eclipse
+31320000	Escudo Radiador do Falcão Invertido
+31320100	Escudo Radiador do Falcão Invertido Pesado
+31320200	Escudo Radiador do Falcão Invertido Aguçado
+31320300	Escudo Radiador do Falcão Invertido de Qualidade
+31320400	Escudo Radiador do Falcão Invertido de Fogo
+31320500	Escudo Radiador do Falcão Invertido da Arte da Chama
+31320600	Escudo Radiador do Falcão Invertido de Relâmpago
+31320700	Escudo Radiador do Falcão Invertido Sagrado
+31320800	Escudo Radiador do Falcão Invertido Mágico
+31320900	Escudo Radiador do Falcão Invertido do Frio
+31321000	Escudo Radiador do Falcão Invertido Venenoso
+31321100	Escudo Radiador do Falcão Invertido de Sangue
+31321200	Escudo Radiador do Falcão Invertido do Oculto
+31330000	Escudo Radiador
+31330100	Escudo Radiador Pesado
+31330200	Escudo Radiador Aguçado
+31330300	Escudo Radiador de Qualidade
+31330400	Escudo Radiador de Fogo
+31330500	Escudo Radiador da Arte da Chama
+31330600	Escudo Radiador de Relâmpago
+31330700	Escudo Radiador Sagrado
+31330800	Escudo Radiador Mágico
+31330900	Escudo Radiador do Frio
+31331000	Escudo Radiador Venenoso
+31331100	Escudo Radiador de Sangue
+31331200	Escudo Radiador do Oculto
+31340000	Escudo de Couro Negro
+31340100	Escudo de Couro Negro Pesado
+31340200	Escudo de Couro Negro Aguçado
+31340300	Escudo de Couro Negro de Qualidade
+31340400	Escudo de Couro Negro de Fogo
+31340500	Escudo de Couro Negro da Arte da Chama
+31340600	Escudo de Couro Negro de Relâmpago
+31340700	Escudo de Couro Negro Sagrado
+31340800	Escudo de Couro Negro Mágico
+31340900	Escudo de Couro Negro do Frio
+31341000	Escudo de Couro Negro Venenoso
+31341100	Escudo de Couro Negro do Sangue
+31341200	Escudo de Couro Negro do Oculto
+32000000	Escudo Torre de Dragão
+32000100	Escudo Torre Pesado de Dragão
+32000200	Escudo Torre Aguçado de Dragão
+32000300	Escudo Torre de Qualidade de Dragão
+32000400	Escudo Torre de Fogo de Dragão
+32000500	Escudo Torre da Arte da Chama de Dragão
+32000600	Escudo Torre de Relâmpago de Dragão
+32000700	Escudo Torre Sagrado de Dragão
+32000800	Escudo Torre Mágico de Dragão
+32000900	Escudo Torre do Frio de Dragão
+32001000	Escudo Torre Venenoso de Dragão
+32001100	Escudo Torre do Sangue de Dragão
+32001200	Escudo Torre do Oculto de Dragão
+32020000	Escudo Grande de Cavaleiro
+32020100	Escudo Grande Pesado de Cavaleiro
+32020200	Escudo Grande Aguçado de Cavaleiro
+32020300	Escudo Grande de Qualidade de Cavaleiro
+32020400	Escudo Grande de Fogo de Cavaleiro
+32020500	Escudo Grande da Arte da Chama de Cavaleiro
+32020600	Escudo Grande de Relâmpago de Cavaleiro
+32020700	Escudo Grande Sagrado de Cavaleiro
+32020800	Escudo Grande Mágico de Cavaleiro
+32020900	Escudo Grande do Frio de Cavaleiro
+32021000	Escudo Grande Venenoso de Cavaleiro
+32021100	Escudo Grande de Sangue de Cavaleiro
+32021200	Escudo Grande do Oculto de Cavaleiro
+32030000	Escudo de Chifre do Crisol
+32030100	Escudo de Chifre do Crisol Pesado
+32030200	Escudo de Chifre do Crisol Aguçado
+32030300	Escudo de Chifre do Crisol de Qualidade
+32030400	Escudo de Chifre do Crisol de Fogo
+32030500	Escudo de Chifre do Crisol da Arte da Chama
+32030600	Escudo de Chifre do Crisol de Relâmpago
+32030700	Escudo de Chifre do Crisol Sagrado
+32030800	Escudo de Chifre do Crisol Mágico
+32030900	Escudo de Chifre do Crisol do Frio
+32031000	Escudo de Chifre do Crisol Venenoso
+32031100	Escudo de Chifre do Crisol do Sangue
+32031200	Escudo de Chifre do Crisol do Oculto
+32040000	Escudo de Garra de Dragão
+32040100	Escudo Pesado da Garra de Dragão
+32040200	Escudo Aguçado da Garra de Dragão
+32040300	Escudo de Qualidade da Garra de Dragão
+32040400	Escudo de Fogo da Garra de Dragão
+32040500	Escudo da Arte da Chama da Garra de Dragão
+32040600	Escudo de Relâmpago da Garra de Dragão
+32040700	Escudo Sagrado da Garra de Dragão
+32040800	Escudo Mágico da Garra de Dragão
+32040900	Escudo do Frio da Garra de Dragão
+32041000	Escudo Venenoso da Garra de Dragão
+32041100	Escudo de Sangue da Garra de Dragão
+32041200	Escudo do Oculto da Garra de Dragão
+32050000	Escudo Grande de Espinhos
+32050100	Escudo de Espinhos de Ferro Pesado
+32050200	Escudo de Espinhos de Ferro Aguçado
+32050300	Escudo de Espinhos de Ferro de Qualidade
+32050400	Escudo de Espinhos de Ferro de Fogo
+32050500	Escudo de Espinhos de Ferro da Arte da Chama
+32050600	Escudo de Espinhos de Ferro de Relâmpago
+32050700	Escudo de Espinhos de Ferro Sagrado
+32050800	Escudo de Espinhos de Ferro Mágico
+32050900	Escudo de Espinhos de Ferro do Frio
+32051000	Escudo de Espinhos de Ferro Venenoso
+32051100	Escudo de Espinhos de Ferro de Sangue
+32051200	Escudo de Espinhos de Ferro do Oculto
+32080000	Escudo Grande da Térvore
+32080100	Escudo Grande da Térvore Pesado
+32080200	
+32080300	
+32080400	
+32080500	
+32080600	
+32080700	
+32080800	
+32080900	
+32081000	
+32081100	
+32081200	
+32090000	Escudo Dourado com Brasão de Fera
+32090100	Escudo Dourado com Brasão de Fera Pesado
+32090200	Escudo Dourado com Brasão de Fera Aguçado
+32090300	Escudo Dourado com Brasão de Fera de Qualidade
+32090400	Escudo Dourado com Brasão de Fera de Fogo
+32090500	Escudo Dourado com Brasão de Fera da Arte da Chama
+32090600	Escudo Dourado com Brasão de Fera de Relâmpago
+32090700	Escudo Dourado com Brasão de Fera Sagrado
+32090800	Escudo Dourado com Brasão de Fera Mágico
+32090900	Escudo Dourado com Brasão de Fera do Frio
+32091000	Escudo Dourado com Brasão de Fera Venenoso
+32091100	Escudo Dourado com Brasão de Fera do Sangue
+32091200	Escudo Dourado com Brasão de Fera do Oculto
+32120000	Escudo de Água-Viva
+32130000	Escudo de Pedra com Brasão de Dedo
+32130100	Escudo de Pedra com Brasão de Dedo Pesado
+32130200	Escudo de Pedra com Brasão de Dedo Aguçado
+32130300	Escudo de Pedra com Brasão de Dedo de Qualidade
+32130400	Escudo de Pedra com Brasão de Dedo de Fogo
+32130500	Escudo de Pedra com Brasão de Dedo da Arte da Chama
+32130600	Escudo de Pedra com Brasão de Dedo de Relâmpago
+32130700	Escudo de Pedra com Brasão de Dedo Sagrado
+32130800	Escudo de Pedra com Brasão de Dedo Mágico
+32130900	Escudo de Pedra com Brasão de Dedo do Frio
+32131000	Escudo de Pedra com Brasão de Dedo Venenoso
+32131100	Escudo de Pedra com Brasão de Dedo do Sangue
+32131200	Escudo de Pedra com Brasão de Dedo do Oculto
+32140000	Escudo de Ícone
+32140100	Escudo Pesado de Ícone
+32140200	Escudo Aguçado de Ícone
+32140300	Escudo de Qualidade de Ícone
+32140400	Escudo de Fogo de Ícone
+32140500	Escudo da Arte da Chama de Ícone
+32140600	Escudo de Relâmpago de Ícone
+32140700	Escudo Sagrado de Ícone
+32140800	Escudo Mágico de Ícone
+32140900	Escudo do Frio de Ícone
+32141000	Escudo Venenoso de Ícone
+32141100	Escudo do Sangue de Ícone
+32141200	Escudo do Oculto de Ícone
+32150000	Escudo de Um Olho
+32160000	Escudo da Face
+32170000	Escudo de Paliçada com Espinhos
+32170100	Escudo de Paliçada com Espinhos Pesado
+32170200	Escudo de Paliçada com Espinhos Aguçado
+32170300	Escudo de Paliçada com Espinhos de Qualidade
+32170400	Escudo de Paliçada com Espinhos de Fogo
+32170500	Escudo de Paliçada com Espinhos da Arte da Chama
+32170600	Escudo de Paliçada com Espinhos de Relâmpago
+32170700	Escudo de Paliçada com Espinhos Sagrado
+32170800	Escudo de Paliçada com Espinhos Mágico
+32170900	Escudo de Paliçada com Espinhos do Frio
+32171000	Escudo de Paliçada com Espinhos Venenoso
+32171100	Escudo de Paliçada com Espinhos do Sangue
+32171200	Escudo de Paliçada com Espinhos do Oculto
+32190000	Escudo Torre de Mansão
+32190100	Escudo Torre de Mansão Pesado
+32190200	Escudo Torre de Mansão Aguçado
+32190300	Escudo Torre de Mansão de Qualidade
+32190400	Escudo Torre de Mansão de Fogo
+32190500	Escudo Torre de Mansão da Arte da Chama
+32190600	Escudo Torre de Mansão de Relâmpago
+32190700	Escudo Torre de Mansão Sagrado
+32190800	Escudo Torre de Mansão Mágico
+32190900	Escudo Torre de Mansão do Frio
+32191000	Escudo Torre de Mansão Venenoso
+32191100	Escudo Torre de Mansão do Sangue
+32191200	Escudo Torre de Mansão do Oculto
+32200000	Escudo Torre da Árvore Cruzada
+32200100	Escudo Torre da Árvore Cruzada Pesado
+32200200	Escudo Torre da Árvore Cruzada Aguçado
+32200300	Escudo Torre da Árvore Cruzada de Qualidade
+32200400	Escudo Torre da Árvore Cruzada de Fogo
+32200500	Escudo Torre da Árvore Cruzada da Arte da Chama
+32200600	Escudo Torre da Árvore Cruzada de Relâmpago
+32200700	Escudo Torre da Árvore Cruzada Sagrado
+32200800	Escudo Torre da Árvore Cruzada Mágico
+32200900	Escudo Torre da Árvore Cruzada do Frio
+32201000	Escudo Torre da Árvore Cruzada Venenoso
+32201100	Escudo Torre da Árvore Cruzada do Sangue
+32201200	Escudo Torre da Árvore Cruzada do Oculto
+32210000	Escudo Torre do Falcão Invertido
+32210100	Escudo Torre do Falcão Invertido Pesado
+32210200	Escudo Torre do Falcão Invertido Aguçado
+32210300	Escudo Torre do Falcão Invertido de Qualidade
+32210400	Escudo Torre do Falcão Invertido de Fogo
+32210500	Escudo Torre do Falcão Invertido da Arte da Chama
+32210600	Escudo Torre do Falcão Invertido de Relâmpago
+32210700	Escudo Torre do Falcão Invertido Sagrado
+32210800	Escudo Torre do Falcão Invertido Mágico
+32210900	Escudo Torre do Falcão Invertido do Frio
+32211000	Escudo Torre do Falcão Invertido Venenoso
+32211100	Escudo Torre do Falcão Invertido do Sangue
+32211200	Escudo Torre do Falcão Invertido do Oculto
+32220000	Chapa de Crânio de Formiga
+32230000	Escudo Grande da Juba Vermelha
+32230100	Escudo Grande da Juba Vermelha Pesado
+32230200	Escudo Grande da Juba Vermelha Aguçado
+32230300	Escudo Grande da Juba Vermelha de Qualidade
+32230400	Escudo Grande da Juba Vermelha de Fogo
+32230500	Escudo Grande da Juba Vermelha da Arte da Chama
+32230600	Escudo Grande da Juba Vermelha de Relâmpago
+32230700	Escudo Grande da Juba Vermelha Sagrado
+32230800	Escudo Grande da Juba Vermelha Mágico
+32230900	Escudo Grande da Juba Vermelha do Frio
+32231000	Escudo Grande da Juba Vermelha Venenoso
+32231100	Escudo Grande da Juba Vermelha de Sangue
+32231200	Escudo Grande da Juba Vermelha do Oculto
+32240000	Escudo Grande do Brasão de Eclipse
+32240100	Escudo Grande do Símbolo do Eclipse Pesado
+32240200	Escudo Grande do Símbolo do Eclipse Aguçado
+32240300	Escudo Grande do Símbolo do Eclipse de Qualidade
+32240400	Escudo Grande do Símbolo do Eclipse de Fogo
+32240500	Escudo Grande do Símbolo do Eclipse da Arte da Chama
+32240600	Escudo Grande do Símbolo do Eclipse de Relâmpago
+32240700	Escudo Grande do Símbolo do Eclipse Sagrado
+32240800	Escudo Grande do Símbolo do Eclipse Mágico
+32240900	Escudo Grande do Símbolo do Eclipse do Frio
+32241000	Escudo Grande do Símbolo do Eclipse Venenoso
+32241100	Escudo Grande do Símbolo do Eclipse de Sangue
+32241200	Escudo Grande do Símbolo do Eclipse do Oculto
+32250000	Escudo Grande de Cuco
+32250100	Escudo Grande de Cuco Pesado
+32250200	Escudo Grande de Cuco Aguçado
+32250300	Escudo Grande de Cuco de Qualidade
+32250400	Escudo Grande de Cuco de Fogo
+32250500	Escudo Grande de Cuco da Arte da Chama
+32250600	Escudo Grande de Cuco de Relâmpago
+32250700	Escudo Grande de Cuco Sagrado
+32250800	Escudo Grande de Cuco Mágico
+32250900	Escudo Grande de Cuco do Frio
+32251000	Escudo Grande de Cuco Venenoso
+32251100	Escudo Grande de Cuco de Sangue
+32251200	Escudo Grande de Cuco do Oculto
+32260000	Escudo Grande de Ouro
+32260100	Escudo Grande de Ouro Pesado
+32260200	Escudo Grande de Ouro Aguçado
+32260300	Escudo Grande de Ouro de Qualidade
+32260400	Escudo Grande de Ouro de Fogo
+32260500	Escudo Grande de Ouro da Arte da Chama
+32260600	Escudo Grande de Ouro de Relâmpago
+32260700	Escudo Grande de Ouro Sagrado
+32260800	Escudo Grande de Ouro Mágico
+32260900	Escudo Grande de Ouro do Frio
+32261000	Escudo Grande de Ouro Venenoso
+32261100	Escudo Grande de Ouro de Sangue
+32261200	Escudo Grande de Ouro do Oculto
+32270000	Escudo Grande Dourado
+32270100	Escudo Grande Dourado Pesado
+32270200	Escudo Grande Dourado Aguçado
+32270300	Escudo Grande Dourado de Qualidade
+32270400	Escudo Grande Dourado de Fogo
+32270500	Escudo Grande Dourado da Arte da Chama
+32270600	Escudo Grande Dourado de Relâmpago
+32270700	Escudo Grande Dourado Sagrado
+32270800	Escudo Grande Dourado Mágico
+32270900	Escudo Grande Dourado do Frio
+32271000	Escudo Grande Dourado Venenoso
+32271100	Escudo Grande Dourado de Sangue
+32271200	Escudo Grande Dourado do Oculto
+32280000	Escudo Grande do Brasão da Árvore Sacra
+32280100	Escudo Grande do Brasão da Árvore Sacra Pesado
+32280200	Escudo Grande do Brasão da Árvore Sacra Aguçado
+32280300	Escudo Grande do Brasão da Árvore Sacra de Qualidade
+32280400	Escudo Grande do Brasão da Árvore Sacra de Fogo
+32280500	Escudo Grande do Brasão da Árvore Sacra da Arte da Chama
+32280600	Escudo Grande do Brasão da Árvore Sacra de Relâmpago
+32280700	Escudo Grande do Brasão da Árvore Sacra Sagrado
+32280800	Escudo Grande do Brasão da Árvore Sacra Mágico
+32280900	Escudo Grande do Brasão da Árvore Sacra do Frio
+32281000	Escudo Grande do Brasão da Árvore Sacra Venenoso
+32281100	Escudo Grande do Brasão da Árvore Sacra do Sangue
+32281200	Escudo Grande do Brasão da Árvore Sacra do Oculto
+32290000	Escudo do Lorde
+32290100	Escudo Pesado do Lorde
+32290200	Escudo Aguçado do Lorde
+32290300	Escudo de Qualidade do Lorde
+32290400	Escudo de Fogo do Lorde
+32290500	Escudo da Arte da Chama do Lorde
+32290600	Escudo de Relâmpago do Lorde
+32290700	Escudo Sagrado do Lorde
+32290800	Escudo Mágico do Lorde
+32290900	Escudo do Frio do Lorde
+32291000	Escudo Venenoso do Lorde
+32291100	Escudo de Sangue do Lorde
+32291200	Escudo do Oculto do Lorde
+32300000	Escudo Grande de Madeira
+32300100	Escudo Grande de Madeira Pesado
+32300200	Escudo Grande de Madeira Aguçado
+32300300	Escudo Grande de Madeira de Qualidade
+32300400	Escudo Grande de Madeira de Fogo
+32300500	Escudo Grande de Madeira da Arte da Chama
+32300600	Escudo Grande de Madeira de Relâmpago
+32300700	Escudo Grande de Madeira Sagrado
+32300800	Escudo Grande de Madeira Mágico
+32300900	Escudo Grande de Madeira do Frio
+32301000	Escudo Grande de Madeira Venenoso
+32301100	Escudo Grande de Madeira de Sangue
+32301200	Escudo Grande de Madeira do Oculto
+32900000	[ERROR]
+32910000	[ERROR]
+32920000	[ERROR]
+33000000	Cajado Pedrilhante
+33040000	Cajado de Cristal
+33050000	Cajado Pedrilhante de Gelmir
+33060000	Cajado da Rainha Semi-Humana
+33090000	Cetro Real Cariano
+33120000	Cajado do Escavador
+33130000	Cajado do Astrólogo
+33170000	Cajado de Espadrilhante Cariano
+33180000	Cajado do Príncipe da Morte
+33190000	Cajado Albináurico
+33200000	Cajado de Pedrilhante da Academia
+33210000	Cajado Cariano de Pedrilhante
+33230000	Cajado de Pedrilhante de Azur
+33240000	Cajado de Pedrilhante de Lusat
+33250000	Cajado de Meteorito
+33260000	Cajado do Culpado
+33270000	Cajado de Cristal Apodrecido
+33280000	Cajado da Perda
+33900000	[ERROR]
+33910000	[ERROR]
+33920000	[ERROR]
+33930000	[ERROR]
+33940000	[ERROR]
+33950000	[ERROR]
+33960000	[ERROR]
+33970000	[ERROR]
+33980000	[ERROR]
+34000000	Selo de Dedo
+34010000	Selo do Matador de Deuses
+34020000	Selo do Gigante
+34030000	Selo de Pedra de Cascalho
+34040000	Selo da Marca de Garra
+34050000	
+34060000	Selo da Ordem Áurea
+34070000	Selo da Térvore
+34080000	Selo da Comunhão do Dragão
+34090000	Selo da Chama Frenética
+34900000	[ERROR]
+34910000	[ERROR]
+34920000	[ERROR]
+34930000	[ERROR]
+34940000	[ERROR]
+34950000	[ERROR]
+34960000	[ERROR]
+34970000	[ERROR]
+34980000	[ERROR]
+34990000	[ERROR]
+40000000	Arco Curto
+40010000	Arco Curto do Bastardo
+40020000	Arco Curto do Ramo Vermelho
+40030000	Arco de Harpa
+40050000	Arco Composto
+41000000	Arco Longo
+41010000	Arco Prateado
+41020000	Arco de Chifre
+41030000	Arco da Térvore
+41040000	Arco de Serpente
+41060000	Arco com Polia
+41070000	Arco Negro
+42000000	Arco Grande de Leão
+42010000	Arco Grande de Golem
+42030000	Arco Grande da Térvore
+42040000	Arco Grande
+43000000	Besta do Soldado
+43020000	Besta Leve
+43030000	Besta Pesada
+43050000	Besta com Polia
+43060000	Besta da Lua Cheia
+43080000	Balestra
+43100000	
+43110000	Besta da Tecla Negra de Crepus
+43900000	[ERROR]
+44000000	Balista de Mão
+44010000	Canhão de Jarro
+50000000	Flecha
+50010000	Flecha de Fogo
+50020000	Flecha Serpente
+50030000	Flecha Óssea (Com Penas)
+50040000	Flecha de Santa Trina
+50060000	Flecha Estilhaçante (Com Penas)
+50080000	Flecha de Pedra Arco-Íris (Com Penas)
+50090000	Flecha de Ouro
+50100000	Flecha Habitada
+50110000	Flecha Óssea
+50130000	Flecha Óssea de Fogo (Com Penas)
+50140000	Flecha Óssea de Fogo
+50150000	Flecha Óssea Venenosa (Com Penas)
+50160000	Flecha Óssea Venenosa
+50170000	Flecha Óssea de Sono (Com Penas)
+50180000	Flecha Óssea de Sono
+50190000	Flecha de Osso da Asa da Tempestade
+50200000	Flecha Óssea Elétrica (Com Penas)
+50210000	Flecha Óssea Elétrica
+50220000	Flecha de Pedra Arco-Íris
+50230000	Flecha Estilhaçante
+50240000	Flecha de Chama Espiritual
+50250000	
+50260000	Flecha Óssea Mágica (Com Penas)
+50270000	Flecha Óssea Mágica
+50280000	Flecha Óssea Sagrada (Com Penas)
+50290000	Flecha Óssea Sagrada
+50300000	Flecha Óssea de Sangue (Com Penas)
+50310000	Flecha Óssea de Sangue
+50320000	Flecha Óssea do Frio (Com Penas)
+50330000	Flecha Óssea do Frio
+50340000	Flecha Óssea Podre (Com Penas)
+50350000	Flecha Óssea Podre
+51000000	Flecha Grande
+51010000	Flecha Grande de Golem
+51020000	Flecha Grande de Ouro
+51030000	Flecha Grande de Golem Mágica
+51040000	Lança de Radahn
+51050000	Flecha Grande Óssea (Com Penas)
+51060000	Flecha Grande Óssea
+52000000	Seta
+52010000	Seta de Relâmpago
+52020000	Seta de Perfumista
+52030000	Seta da Chave Negra
+52040000	Seta de Rebarba
+52050000	Seta de Meteoro
+52060000	Seta Explosiva
+52070000	Seta de Ouro
+52080000	Seta do Lorde
+52090000	Seta Óssea
+52100000	Seta Óssea de Fogo
+52110000	Seta Óssea Elétrica
+52120000	Seta Óssea Mágica
+52130000	Seta Óssea Sagrada
+52140000	Seta Óssea Venenosa
+52150000	Seta Óssea de Sangue
+52160000	Seta Óssea do Frio
+52170000	Seta Óssea Podre
+52180000	Seta Óssea de Sono
+52190000	Seta Flamejante
+52900000	[ERROR]
+52910000	[ERROR]
+53000000	Seta de Balista
+53010000	Seta Grande de Relâmpago
+53020000	Seta Grande Explosiva
+53030000	Seta Óssea de Balista

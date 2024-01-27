@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Ceniza de guerra: Garra de león
+10100	Ceniza de guerra: Carga atravesadora
+10200	Ceniza de guerra: Colmillo perforante
+10300	Ceniza de guerra: Corte giratorio
+10500	Ceniza de guerra: Carga frontal
+10600	Ceniza de guerra: Pisada (corte hacia arriba)
+10700	Ceniza de guerra: Pisada (movimiento amplio)
+10800	Ceniza de guerra: Tributo en sangre
+10900	Ceniza de guerra: Aluvión de embestidas
+11000	Ceniza de guerra: Golpes salvajes
+11100	Ceniza de guerra: Golpes giratorios
+11200	Ceniza de guerra: Corte doble
+11300	Ceniza de guerra: Carga del abad
+11400	Ceniza de guerra: Desenvaine
+11500	Ceniza de guerra: Posición de guardia
+11600	Ceniza de guerra: Caza de gigantes
+11700	Ceniza de guerra: Ataque de antorcha
+11800	Ceniza de guerra: Corte de Loretta
+11900	Ceniza de guerra: Vuelo de polilla venenosa
+12000	Ceniza de guerra: Arma giratoria
+12100	
+12200	Ceniza de guerra: Ataque de tormenta
+12300	Ceniza de guerra: Invocatormentas
+12400	Ceniza de guerra: Danza de la espada
+12500	Ceniza de guerra: Cadena giratoria
+20000	Ceniza de guerra: Falange de destelloja
+20100	Ceniza de guerra: Hoja sagradas
+20200	Ceniza de guerra: Lanza de hielo
+20300	Ceniza de guerra: Guijarro de destellita
+20400	Ceniza de guerra: Corte sangriento
+20500	Ceniza de guerra: Puño robavida
+20700	Ceniza de guerra: Erupción
+20800	Ceniza de guerra: Golpe devoto
+20900	Ceniza de guerra: Gravedad
+21000	Ceniza de guerra: Hoja de la tormenta
+21200	Ceniza de guerra: Sacudidor de tierra
+21300	Ceniza de guerra: Tierra Dorada
+21400	Ceniza de guerra: Golpe llameante
+21600	Ceniza de guerra: Rayo fulminante
+21700	Ceniza de guerra: Corte de rayo
+21800	Ceniza de guerra: Grandeza de Caria
+21900	Ceniza de guerra: Espadón de Caria
+22000	Ceniza de guerra: Corte al vacío
+22100	Ceniza de guerra: Tornado de llama negra
+22200	Ceniza de guerra: Anillo de luz sagradas
+22300	Ceniza de guerra: Respirafuego
+22400	Ceniza de guerra: Hoja de sangre
+22500	Ceniza de guerra: Corte fantasma
+22600	Ceniza de guerra: Lanza pesada espectral
+22700	Ceniza de guerra: Niebla gélida
+22800	Ceniza de guerra: Niebla venenosa
+30000	Ceniza de guerra: Golpe de escudo
+30100	Ceniza de guerra: Escudo de barricada
+30200	Ceniza de guerra: Rechazo
+30300	Ceniza de guerra: Rechazo de rodela
+30400	Ceniza de guerra: Rechazo
+30500	Ceniza de guerra: Contraataque de Caria
+30600	Ceniza de guerra: Muro de tormenta
+30700	Ceniza de guerra: Rechazo dorado
+30800	Ceniza de guerra: Choque de escudo
+30900	Ceniza de guerra: Sin habilidades
+31000	Ceniza de guerra: Barrera de Thops
+40000	Ceniza de guerra: De pies a cabeza
+40100	Ceniza de guerra: Bombardeo
+40200	Ceniza de guerra: Disparo poderoso
+40400	Ceniza de guerra: Disparo encantado
+40500	Ceniza de guerra: Disparo al cielo
+40600	Ceniza de guerra: Lluvia de flechas
+40700	
+50100	Ceniza de guerra: Pisotón de escarcha
+50200	Ceniza de guerra: Estampida de tormenta
+50300	Ceniza de guerra: Patada
+50400	Ceniza de guerra: Embestida de rayo
+50500	Ceniza de guerra: Llama de los melenarroja
+50600	Ceniza de guerra: Golpe de tierra
+50700	Ceniza de guerra: Golpe dorado
+50800	Ceniza de guerra: Olas de oscuridad
+50900	Ceniza de guerra: Sacudidor de tierra de Hoarah Loux
+60000	Ceniza de guerra: Determinación
+60100	Ceniza de guerra: Determinación de caballero real
+60200	Ceniza de guerra: Gambito de asesino
+60300	Ceniza de guerra: Voto dorado
+60400	Ceniza de guerra: Orden sagrada
+60500	Ceniza de guerra: Orden compartida
+60600	Ceniza de guerra: Seppuku
+60700	Ceniza de guerra: Hoja de peñasco
+65000	Ceniza de guerra: Rugido de bárbaro
+65100	Ceniza de guerra: Grito de guerra
+65200	Ceniza de guerra: Rugido de bestia
+65300	Ceniza de guerra: Rugido de trol
+65400	Ceniza de guerra: Rugido de fanfarrón
+70000	Ceniza de guerra: Resistencia
+70100	Ceniza de guerra: Juramento de los indomables
+70200	Ceniza de guerra: Suelo santo
+80000	Ceniza de guerra: Paso ligero
+80100	Ceniza de guerra: Paso del sabueso
+80200	Ceniza de guerra: Ave rapaz de las nieblas
+85000	Ceniza de guerra: Señuelo de sombra blanca

@@ -13,13 +13,13 @@ local rememberance_boss_count = 0
 local region_name = {}
 local boss_count = 0
 
-for k, v in pairs(cjson.decode(util.read_file('data/bosses.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/bosses.json'))) do
   local index = #bosses + 1
   for _, v2 in pairs(v.regions) do
     regions[v2] = index
   end
   bosses[index] = v.bosses
-  region_name[index] = k
+  region_name[index] = v['name']
 end
 for _, v in pairs(bosses) do
   for _, v2 in pairs(v) do

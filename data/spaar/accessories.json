@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Medallón de ámbar carmesí"
+  },
+  {
+    "id": 1001,
+    "name": "Medallón de ámbar carmesí +1"
+  },
+  {
+    "id": 1002,
+    "name": "Medallón de ámbar carmesí +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talismán de semilla carmesí"
+  },
+  {
+    "id": 5020,
+    "name": "Talismán de rocío bendito"
+  },
+  {
+    "id": 1010,
+    "name": "Medallón de ámbar cerúleo"
+  },
+  {
+    "id": 1011,
+    "name": "Medallón de ámbar cerúleo +1"
+  },
+  {
+    "id": 1012,
+    "name": "Medallón de ámbar cerúleo +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talismán de semilla cerúlea"
+  },
+  {
+    "id": 1020,
+    "name": "Medallón de ámbar viridián"
+  },
+  {
+    "id": 1021,
+    "name": "Medallón de ámbar viridián +1"
+  },
+  {
+    "id": 1022,
+    "name": "Medallón de ámbar viridián +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talismán de tortuga verde"
+  },
+  {
+    "id": 1030,
+    "name": "Colgante de arsenal"
+  },
+  {
+    "id": 1031,
+    "name": "Colgante de arsenal +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenal del gran recipiente"
+  },
+  {
+    "id": 1040,
+    "name": "Favor de Terrárbol"
+  },
+  {
+    "id": 1041,
+    "name": "Favor de Terrárbol +1"
+  },
+  {
+    "id": 1042,
+    "name": "Favor de Terrárbol +2"
+  },
+  {
+    "id": 1050,
+    "name": "Sellocicatriz de Rádagon"
+  },
+  {
+    "id": 1051,
+    "name": "Sellollaga de Rádagon"
+  },
+  {
+    "id": 1220,
+    "name": "Sellocicatriz de Márida"
+  },
+  {
+    "id": 1221,
+    "name": "Sellollaga de Márida"
+  },
+  {
+    "id": 1060,
+    "name": "Reliquia familiar de Azotestelar"
+  },
+  {
+    "id": 1070,
+    "name": "Reliquia familiar de portador de prótesis"
+  },
+  {
+    "id": 1080,
+    "name": "Reliquia familiar de astrónomo"
+  },
+  {
+    "id": 1090,
+    "name": "Reliquia familiar de Dos Dedos"
+  },
+  {
+    "id": 4000,
+    "name": "Talismán de escudo de emblema de dragón"
+  },
+  {
+    "id": 4001,
+    "name": "Talismán de escudo de emblema de dragón + 1"
+  },
+  {
+    "id": 4002,
+    "name": "Talismán de escudo de emblema de dragón + 2"
+  },
+  {
+    "id": 4003,
+    "name": "Talismán de gran escudo de emblema de dragón"
+  },
+  {
+    "id": 4010,
+    "name": "Talismán de draco mágico"
+  },
+  {
+    "id": 4011,
+    "name": "Talismán de draco mágico + 1"
+  },
+  {
+    "id": 4012,
+    "name": "Talismán de draco mágico + 2"
+  },
+  {
+    "id": 4020,
+    "name": "Talismán de draco de fuego"
+  },
+  {
+    "id": 4021,
+    "name": "Talismán de draco de fuego + 1"
+  },
+  {
+    "id": 4022,
+    "name": "Talismán de draco de fuego + 2"
+  },
+  {
+    "id": 4030,
+    "name": "Talismán de draco de rayo"
+  },
+  {
+    "id": 4031,
+    "name": "Talismán de draco de rayo + 1"
+  },
+  {
+    "id": 4032,
+    "name": "Talismán de draco de rayo + 2"
+  },
+  {
+    "id": 4040,
+    "name": "Talismán de draco santo"
+  },
+  {
+    "id": 4041,
+    "name": "Talismán de draco santo + 1"
+  },
+  {
+    "id": 4042,
+    "name": "Talismán de draco santo + 2"
+  },
+  {
+    "id": 4050,
+    "name": "Talismán de draco de perlas"
+  },
+  {
+    "id": 4051,
+    "name": "Talismán de draco de perlas + 1"
+  },
+  {
+    "id": 4052,
+    "name": "Talismán de draco de perlas + 2"
+  },
+  {
+    "id": 1170,
+    "name": "Colgante de cuerno inmunizante"
+  },
+  {
+    "id": 1171,
+    "name": "Colgante de cuerno inmunizante +1"
+  },
+  {
+    "id": 1160,
+    "name": "Colgante de cuerno leal"
+  },
+  {
+    "id": 1161,
+    "name": "Colgante de cuerno leal +1"
+  },
+  {
+    "id": 1180,
+    "name": "Colgante de cuerno esclarecedor"
+  },
+  {
+    "id": 1181,
+    "name": "Colgante de cuerno esclarecedor +1"
+  },
+  {
+    "id": 1200,
+    "name": "Collar jaspeado"
+  },
+  {
+    "id": 1201,
+    "name": "Collar jaspeado +1"
+  },
+  {
+    "id": 1190,
+    "name": "Pústula del Príncipe de la Muerte"
+  },
+  {
+    "id": 1191,
+    "name": "Quiste del Príncipe de la Muerte"
+  },
+  {
+    "id": 2090,
+    "name": "Talismán de daga"
+  },
+  {
+    "id": 2200,
+    "name": "Talismán de espada curva"
+  },
+  {
+    "id": 2120,
+    "name": "Talismán de hojas gemelas"
+  },
+  {
+    "id": 2130,
+    "name": "Talismán de hacha"
+  },
+  {
+    "id": 2070,
+    "name": "Talismán de martillo"
+  },
+  {
+    "id": 2060,
+    "name": "Talismán de lanza"
+  },
+  {
+    "id": 2140,
+    "name": "Talismán de lanza pesada"
+  },
+  {
+    "id": 2180,
+    "name": "Talismán de garra"
+  },
+  {
+    "id": 4100,
+    "name": "Talismán de gran escudo"
+  },
+  {
+    "id": 2150,
+    "name": "Talismán de pinchazo de flecha"
+  },
+  {
+    "id": 2100,
+    "name": "Talismán de alcance de flecha"
+  },
+  {
+    "id": 3000,
+    "name": "Talismán de la escuela de escultores"
+  },
+  {
+    "id": 3001,
+    "name": "Talismán de la masa de los escultores"
+  },
+  {
+    "id": 3040,
+    "name": "Talismán de lienzo de fiel"
+  },
+  {
+    "id": 3050,
+    "name": "Talismán de lienzo de congregación"
+  },
+  {
+    "id": 3080,
+    "name": "Hoja de destellita primordial"
+  },
+  {
+    "id": 1140,
+    "name": "Luna de Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talismán del Señor Antiguo"
+  },
+  {
+    "id": 3070,
+    "name": "Ícono de Rádagon"
+  },
+  {
+    "id": 2190,
+    "name": "Medallón de rugido"
+  },
+  {
+    "id": 2210,
+    "name": "Recipiente de compañía"
+  },
+  {
+    "id": 2220,
+    "name": "Talismán del perfumista"
+  },
+  {
+    "id": 6020,
+    "name": "Emblema de filigrana de Caria"
+  },
+  {
+    "id": 1230,
+    "name": "Fragmento de recipiente guerrero"
+  },
+  {
+    "id": 1231,
+    "name": "Fragmento de Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Ícono de Godfrey"
+  },
+  {
+    "id": 1210,
+    "name": "Talismán del toro-cabra"
+  },
+  {
+    "id": 2110,
+    "name": "Colgante de bailarín azul"
+  },
+  {
+    "id": 2000,
+    "name": "Colgante de escorpión mágico"
+  },
+  {
+    "id": 2020,
+    "name": "Colgante de escorpión de fuego"
+  },
+  {
+    "id": 2010,
+    "name": "Colgante de escorpión de rayo"
+  },
+  {
+    "id": 2030,
+    "name": "Colgante de escorpión sagrado"
+  },
+  {
+    "id": 4060,
+    "name": "Talismán de escama del Crisol"
+  },
+  {
+    "id": 4070,
+    "name": "Talismán de pluma del Crisol"
+  },
+  {
+    "id": 4110,
+    "name": "Talismán de nudo del Crisol"
+  },
+  {
+    "id": 2040,
+    "name": "Ramaespada de plumas rojas"
+  },
+  {
+    "id": 4080,
+    "name": "Ramaespada de plumas azules"
+  },
+  {
+    "id": 2050,
+    "name": "Talismán de espada de ritual"
+  },
+  {
+    "id": 4090,
+    "name": "Talismán de escudo de ritual"
+  },
+  {
+    "id": 5050,
+    "name": "Daga carmesí de asesino"
+  },
+  {
+    "id": 5060,
+    "name": "Daga cerúlea de asesino"
+  },
+  {
+    "id": 2080,
+    "name": "Insignia de espada alada"
+  },
+  {
+    "id": 2081,
+    "name": "Insignia podrida de espada alada"
+  },
+  {
+    "id": 1250,
+    "name": "Prótesis de Millicent"
+  },
+  {
+    "id": 5040,
+    "name": "Envoltura de piel de dios"
+  },
+  {
+    "id": 2170,
+    "name": "Júbilo de la Parentela de la Podredumbre"
+  },
+  {
+    "id": 2160,
+    "name": "Júbilo del Señor de la Sangre"
+  },
+  {
+    "id": 5030,
+    "name": "Camafeo de saqueo"
+  },
+  {
+    "id": 6110,
+    "name": "Cuerno de espíritu ancestral"
+  },
+  {
+    "id": 1110,
+    "name": "Escarabajo de oro"
+  },
+  {
+    "id": 1100,
+    "name": "Escarabajo de plata"
+  },
+  {
+    "id": 6000,
+    "name": "Vial de Crepus"
+  },
+  {
+    "id": 6010,
+    "name": "Velo de ocultamiento"
+  },
+  {
+    "id": 6040,
+    "name": "Talismán de gato de cola larga"
+  },
+  {
+    "id": 6080,
+    "name": "Espejo tramposo de dedo doblado"
+  },
+  {
+    "id": 6090,
+    "name": "Espejo tramposo del Anfitrión"
+  },
+  {
+    "id": 6050,
+    "name": "Aflicción de Shabriri"
+  },
+  {
+    "id": 6060,
+    "name": "Aflicción de Dáedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Ramita de sacrificio"
+  }
+]

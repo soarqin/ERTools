@@ -1,0 +1,4204 @@
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1201	
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	[ERROR]
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	[ERROR]
+1221	
+1222	
+1223	
+1224	
+1225	
+1226	
+1227	
+1228	
+1229	
+1230	[ERROR]
+1231	
+1232	
+1233	
+1234	
+1235	
+1236	
+1237	
+1238	
+1239	
+1240	[ERROR]
+1241	
+1242	
+1243	
+1244	
+1245	
+1246	
+1247	
+1248	
+1249	
+1250	[ERROR]
+1251	
+1252	
+1253	
+1254	
+1255	
+1256	
+1257	
+1258	
+1259	
+1260	[ERROR]
+1400	[ERROR]
+1401	
+1402	
+1403	
+1404	
+1405	
+1406	
+1407	
+1408	
+1409	
+1410	[ERROR]
+1411	
+1412	
+1413	
+1414	
+1415	
+1416	
+1417	
+1418	
+1419	
+1420	[ERROR]
+1421	
+1422	
+1423	
+1424	
+1425	
+1426	
+1427	
+1428	
+1429	
+1430	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+11000	[ERROR]
+12000	[ERROR]
+13000	[ERROR]
+100000	[ERROR]
+100100	[ERROR]
+100200	[ERROR]
+100300	[ERROR]
+100400	[ERROR]
+100500	[ERROR]
+100600	[ERROR]
+100700	[ERROR]
+100800	[ERROR]
+100900	[ERROR]
+101000	[ERROR]
+110000	Unbewaffnet
+1000000	Dolch
+1000100	Schwerer Dolch
+1000200	Solider Dolch
+1000300	Wertiger Dolch
+1000400	Feuriger Dolch
+1000500	Flammender Dolch
+1000600	Blitzender Dolch
+1000700	Heiliger Dolch
+1000800	Magischer Dolch
+1000900	Eisiger Dolch
+1001000	Giftiger Dolch
+1001100	Blutiger Dolch
+1001200	Okkulter Dolch
+1010000	Schwarzes Messer
+1020000	Parierdolch
+1020100	Schwerer Parierdolch
+1020200	Solider Parierdolch
+1020300	Wertiger Parierdolch
+1020400	Feuriger Parierdolch
+1020500	Flammender Parierdolch
+1020600	Blitzender Parierdolch
+1020700	Heiliger Parierdolch
+1020800	Magischer Parierdolch
+1020900	Eisiger Parierdolch
+1021000	Giftiger Parierdolch
+1021100	Blutiger Parierdolch
+1021200	Okkulter Parierdolch
+1030000	Misericordia
+1030100	Schwere Misericordia
+1030200	Solide Misericordia
+1030300	Wertige Misericordia
+1030400	Feurige Misericordia
+1030500	Flammende Misericordia
+1030600	Blitzende Misericordia
+1030700	Heilige Misericordia
+1030800	Magische Misericordia
+1030900	Eisige Misericordia
+1031000	Giftige Misericordia
+1031100	Blutige Misericordia
+1031200	Okkulte Misericordia
+1040000	Reduvia
+1050000	Kristallmesser
+1060000	Zelebrantensichel
+1060100	Schwere Zelebrantensichel
+1060200	Solide Zelebrantensichel
+1060300	Wertige Zelebrantensichel
+1060400	Feurige Zelebrantensichel
+1060500	Flammende Zelebrantensichel
+1060600	Blitzende Zelebrantensichel
+1060700	Heilige Zelebrantensichel
+1060800	Magische Zelebrantensichel
+1060900	Eisige Zelebrantensichel
+1061000	Giftige Zelebrantensichel
+1061100	Blutige Zelebrantensichel
+1061200	Okkulte Zelebrantensichel
+1070000	Schimmersteinkris
+1080000	Skorpionstachel
+1090000	Großes Messer
+1090100	Schweres großes Messer
+1090200	Solides großes Messer
+1090300	Wertiges großes Messer
+1090400	Feuriges großes Messer
+1090500	Flammendes großes Messer
+1090600	Blitzendes großes Messer
+1090700	Heiliges großes Messer
+1090800	Magisches großes Messer
+1090900	Eisiges großes Messer
+1091000	Giftiges großes Messer
+1091100	Blutiges großes Messer
+1091200	Okkultes großes Messer
+1100000	Wakizashi
+1100100	Schweres Wakizashi
+1100200	Solides Wakizashi
+1100300	Wertiges Wakizashi
+1100400	Feuriges Wakizashi
+1100500	Flammendes Wakizashi
+1100600	Blitzendes Wakizashi
+1100700	Heiliges Wakizashi
+1100800	Magisches Wakizashi
+1100900	Eisiges Wakizashi
+1101000	Giftiges Wakizashi
+1101100	Blutiges Wakizashi
+1101200	Okkultes Wakizashi
+1110000	Cinquedea
+1130000	Elfenbeinsichel
+1140000	Blutbefleckter Dolch
+1140100	Schwerer blutbefleckter Dolch
+1140200	Solider blutbefleckter Dolch
+1140300	Wertiger blutbefleckter Dolch
+1140400	Feuriger blutbefleckter Dolch
+1140500	Flammender blutbefleckter Dolch
+1140600	Blitzender blutbefleckter Dolch
+1140700	Heiliger blutbefleckter Dolch
+1140800	Magischer blutbefleckter Dolch
+1140900	Eisiger blutbefleckter Dolch
+1141000	Giftiger blutbefleckter Dolch
+1141100	Blutiger blutbefleckter Dolch
+1141200	Okkulter blutbefleckter Dolch
+1150000	Erdenstahldolch
+1150100	Schwerer Erdenstahldolch
+1150200	Solider Erdenstahldolch
+1150300	Wertiger Erdenstahldolch
+1150400	Feuriger Erdenstahldolch
+1150500	Flammender Erdenstahldolch
+1150600	Blitzender Erdenstahldolch
+1150700	Heiliger Erdenstahldolch
+1150800	Magischer Erdenstahldolch
+1150900	Eisiger Erdenstahldolch
+1151000	Giftiger Erdenstahldolch
+1151100	Blutiger Erdenstahldolch
+1151200	Okkulter Erdenstahldolch
+1160000	Klinge des Rufs
+1190000	[ERROR]
+1910000	[ERROR]
+2000000	Langschwert
+2000100	Schweres Langschwert
+2000200	Solides Langschwert
+2000300	Wertiges Langschwert
+2000400	Feuriges Langschwert
+2000500	Flammendes Langschwert
+2000600	Blitzendes Langschwert
+2000700	Heiliges Langschwert
+2000800	Magisches Langschwert
+2000900	Eisiges Langschwert
+2001000	Giftiges Langschwert
+2001100	Blutiges Langschwert
+2001200	Okkultes Langschwert
+2010000	Kurzschwert
+2010100	Schweres Kurzschwert
+2010200	Solides Kurzschwert
+2010300	Wertiges Kurzschwert
+2010400	Feuriges Kurzschwert
+2010500	Flammendes Kurzschwert
+2010600	Blitzendes Kurzschwert
+2010700	Heiliges Kurzschwert
+2010800	Magisches Kurzschwert
+2010900	Eisiges Kurzschwert
+2011000	Giftiges Kurzschwert
+2011100	Blutiges Kurzschwert
+2011200	Okkultes Kurzschwert
+2020000	Breitschwert
+2020100	Schweres Breitschwert
+2020200	Solides Breitschwert
+2020300	Wertiges Breitschwert
+2020400	Feuriges Breitschwert
+2020500	Flammendes Breitschwert
+2020600	Blitzendes Breitschwert
+2020700	Heiliges Breitschwert
+2020800	Magisches Breitschwert
+2020900	Eisiges Breitschwert
+2021000	Giftiges Breitschwert
+2021100	Blutiges Breitschwert
+2021200	Okkultes Breitschwert
+2030000	Knochenmesser
+2040000	Schwert der Getreuen
+2040100	Schweres Schwert der Getreuen
+2040200	Solides Schwert der Getreuen
+2040300	Wertiges Schwert der Getreuen
+2040400	Feuriges Schwert der Getreuen
+2040500	Flammendes Schwert der Getreuen
+2040600	Blitzendes Schwert der Getreuen
+2040700	Heiliges Schwert der Getreuen
+2040800	Magisches Schwert der Getreuen
+2040900	Eisiges Schwert der Getreuen
+2041000	Giftiges Schwert der Getreuen
+2041100	Blutiges Schwert der Getreuen
+2041200	Okkultes Schwert der Getreuen
+2050000	Altes Schwert
+2050100	Schweres altes Schwert
+2050200	Solides altes Schwert
+2050300	Wertiges altes Schwert
+2050400	Feuriges altes Schwert
+2050500	Flammendes altes Schwert
+2050600	Blitzendes altes Schwert
+2050700	Heiliges altes Schwert
+2050800	Magisches altes Schwert
+2050900	Eisiges altes Schwert
+2051000	Giftiges altes Schwert
+2051100	Blutiges altes Schwert
+2051200	Okkultes altes Schwert
+2060000	Ornamentales Schwert
+2070000	Goldenes Epitaphium
+2080000	Fließendes Noxschwert
+2090000	Unzertrennliches Schwert
+2090100	Armreif der Vollmondhexe Rennala.
+2090200	Erhöhte Giftresistenz für begrenzte Zeit.
+2090300	Erhöht kurzzeitig die Robustheit.
+2090400	Erhöht kurzzeitig den Fokus.
+2090500	Erhöht kurz Immunität, Robustheit und Fokus.
+2090600	Erhöht kurz die Resistenz gegen sofortigen Tod.
+2090700	Verfestigtes Fett aus verschiedenen entflammbaren Materialien.\r\nHerstellbares Objekt.\r\n\r\nEin Waffenüberzug, der Angriffen Feuerschaden hinzufügt.\r\nDer Effekt wirkt nur kurzzeitig.
+2090800	Verfestigtes Fett aus verschiedenen\r\nBlitze erzeugenden Materialien. Herstellbares Objekt.\r\n\r\nWaffenüberzug: verursacht Blitzschaden.\r\n
+2090900	Verfestigtes Fett aus verschiedenen,\r\nmagisch resonanten Materialien. Herstellbares Objekt.\r\n\r\nWaffenüberzug: verursacht Magieschaden.\r\n
+2091000	Waffenüberzug, verursacht Heiligschaden.
+2091100	Mit Blasen übersätes, verfestigtes Fett.\r\nGemisch aus Blut und verschiedenen Materialien. Herstellbares Objekt.\r\n\r\nWaffenüberzug: verursacht Blutungen.\r\n\r\nDie Blasen lassen die Haut aufbrechen\r\nund verursachen schlimme offene Wunden.\r\nDas Gemisch ist seit jeher die bevorzugte Waffe\r\nder Verschwörer und der Unzufriedenen.\r\n
+2091200	Verfestigtes Fett, das mit St. Trinas\r\ngeheimen Künsten hergestellt wurde. Herstellbares Objekt.\r\n\r\nWaffenüberzug: verursacht Schlaf.\r\n\r\nDie Heilige des Wiegenlieds ist zum\r\nSymbol der verlorenen Ruhe geworden.\r\nDie Schwachen vermochten ihrer Güte selbst\r\nauf dem Schlachtfeld nicht zu widerstehen.\r\n
+2110000	Schwert der geheimen Worte
+2140000	Schwert der Nacht und der Flamme
+2150000	Kristallschwert
+2180000	Carianisches Ritterschwert
+2190000	Schwert von St. Trina
+2200000	Miquella-Ritterschwert
+2210000	Stockschwert
+2210100	Schweres Stockschwert
+2210200	Solides Stockschwert
+2210300	Wertiges Stockschwert
+2210400	Feuriges Stockschwert
+2210500	Flammendes Stockschwert
+2210600	Blitzendes Stockschwert
+2210700	Heiliges Stockschwert
+2210800	Magisches Stockschwert
+2210900	Eisiges Stockschwert
+2211000	Giftiges Stockschwert
+2211100	Blutiges Stockschwert
+2211200	Okkultes Stockschwert
+2220000	Eochaids Zierde
+2230000	Feines Adligenschwert
+2230100	Schweres feines Adligenschwert
+2230200	Solides feines Adligenschwert
+2230300	Wertiges feines Adligenschwert
+2230400	Feuriges feines Adligenschwert
+2230500	Flammendes feines Adligenschwert
+2230600	Blitzendes feines Adligenschwert
+2230700	Heiliges feines Adligenschwert
+2230800	Magisches feines Adligenschwert
+2230900	Eisiges feines Adligenschwert
+2231000	Giftiges feines Adligenschwert
+2231100	Blutiges feines Adligenschwert
+2231200	Okkultes feines Adligenschwert
+2240000	Kriegsfalkenkralle
+2240100	Schwere Kriegsfalkenkralle
+2240200	Solide Kriegsfalkenkralle
+2240300	Wertige Kriegsfalkenkralle
+2240400	Feurige Kriegsfalkenkralle
+2240500	Flammende Kriegsfalkenkralle
+2240600	Blitzende Kriegsfalkenkralle
+2240700	Heilige Kriegsfalkenkralle
+2240800	Magische Kriegsfalkenkralle
+2240900	Eisige Kriegsfalkenkralle
+2241000	Giftige Kriegsfalkenkralle
+2241100	Blutige Kriegsfalkenkralle
+2241200	Okkulte Kriegsfalkenkralle
+2250000	Lazuli-Schimmersteinschwert
+2260000	Fäulniskristallschwert
+3000000	Bastardschwert
+3000100	Schweres Bastardschwert
+3000200	Solides Bastardschwert
+3000300	Wertiges Bastardschwert
+3000400	Feuriges Bastardschwert
+3000500	Flammendes Bastardschwert
+3000600	Blitzendes Bastardschwert
+3000700	Heiliges Bastardschwert
+3000800	Magisches Bastardschwert
+3000900	Eisiges Bastardschwert
+3001000	Giftiges Bastardschwert
+3001100	Blutiges Bastardschwert
+3001200	Okkultes Bastardschwert
+3010000	Gegabeltes Großschwert
+3010100	Schweres gegabeltes Großschwert
+3010200	Solides gegabeltes Großschwert
+3010300	Wertiges gegabeltes Großschwert
+3010400	Feuriges gegabeltes Großschwert
+3010500	Flammendes gegabeltes Großschwert
+3010600	Blitzendes gegabeltes Großschwert
+3010700	Heiliges gegabeltes Großschwert
+3010800	Magisches gegabeltes Großschwert
+3010900	Eisiges gegabeltes Großschwert
+3011000	Giftiges gegabeltes Großschwert
+3011100	Blutiges gegabeltes Großschwert
+3011200	Okkultes gegabeltes Großschwert
+3020000	Eisengroßschwert
+3020100	Schweres Eisengroßschwert
+3020200	Solides Eisengroßschwert
+3020300	Wertiges Eisengroßschwert
+3020400	Feuriges Eisengroßschwert
+3020500	Flammendes Eisengroßschwert
+3020600	Blitzendes Eisengroßschwert
+3020700	Heiliges Eisengroßschwert
+3020800	Magisches Eisengroßschwert
+3020900	Eisiges Eisengroßschwert
+3021000	Giftiges Eisengroßschwert
+3021100	Blutiges Eisengroßschwert
+3021200	Okkultes Eisengroßschwert
+3030000	Großschwert der Getreuen
+3030100	Schweres Großschwert der Getreuen
+3030200	Solides Großschwert der Getreuen
+3030300	Wertiges Großschwert der Getreuen
+3030400	Feuriges Großschwert der Getreuen
+3030500	Flammendes Großschwert der Getreuen
+3030600	Blitzendes Großschwert der Getreuen
+3030700	Heiliges Großschwert der Getreuen
+3030800	Magisches Großschwert der Getreuen
+3030900	Eisiges Großschwert der Getreuen
+3031000	Giftiges Großschwert der Getreuen
+3031100	Blutiges Großschwert der Getreuen
+3031200	Okkultes Großschwert der Getreuen
+3040000	Rittergroßschwert
+3040100	Schweres Rittergroßschwert
+3040200	Solides Rittergroßschwert
+3040300	Wertiges Rittergroßschwert
+3040400	Feuriges Rittergroßschwert
+3040500	Flammendes Rittergroßschwert
+3040600	Blitzendes Rittergroßschwert
+3040700	Heiliges Rittergroßschwert
+3040800	Magisches Rittergroßschwert
+3040900	Eisiges Rittergroßschwert
+3041000	Giftiges Rittergroßschwert
+3041100	Blutiges Rittergroßschwert
+3041200	Okkultes Rittergroßschwert
+3050000	Flamberge
+3050100	Schwere Flamberge
+3050200	Solide Flamberge
+3050300	Wertige Flamberge
+3050400	Feurige Flamberge
+3050500	Flammende Flamberge
+3050600	Blitzende Flamberge
+3050700	Heilige Flamberge
+3050800	Magische Flamberge
+3050900	Eisige Flamberge
+3051000	Giftige Flamberge
+3051100	Blutige Flamberge
+3051200	Okkulte Flamberge
+3060000	Ordovis' Großschwert
+3070000	Alabasterfürstenschwert
+3080000	Großschwert der Exilritter
+3080100	Schweres Großschwert der Exilritter
+3080200	Solides Großschwert der Exilritter
+3080300	Wertiges Großschwert der Exilritter
+3080400	Feuriges Großschwert der Exilritter
+3080500	Flammendes Großschwert der Exilritter
+3080600	Blitzendes Großschwert der Exilritter
+3080700	Heiliges Großschwert der Exilritter
+3080800	Magisches Großschwert der Exilritter
+3080900	Eisiges Großschwert der Exilritter
+3081000	Giftiges Großschwert der Exilritter
+3081100	Blutiges Großschwert der Exilritter
+3081200	Okkultes Großschwert der Exilritter
+3090000	Dunkelmondgroßschwert
+3100000	Heiliges Reliktschwert
+3130000	Helphens Spitzturm
+3140000	Blasphemische Klinge
+3150000	Henkerschwert der Marais
+3160000	Milos-Schwert
+3160100	Schützt Euch mit einem großen magischen Schwert.
+3160200	Verwandelt sich in einen Mond und greift Gegner an.
+3160300	Verwandelt sich in einen Eismond und greift Gegner an.
+3160400	Feuert Splitter von einem schwebenden Schimmerstein ab.
+3160500	Feuert einen durchbohrenden Schuss mit einem Schimmersteinbogen ab.
+3160600	Feuert viele durchbohrende Schüsse mit einem Schimmersteinbogen ab.
+3160700	Erzeugt einen Schimmersteinbrocken, der mit Verzögerung Splitter abfeuert.
+3160800	Feuert große Frostsplitter aus Schimmerstein ab.
+3160900	Erzeugt einen Frosttornado, der Umstehende angreift.
+3161000	Erzeugt einen Nebel, der Frost verursacht.
+3161100	Greift mit einem magischen Großschwert aus Schimmerstein an.
+3161200	Greift mit einem magischen Eisschwert aus Schimmerstein an.
+3170000	Großschwert der Goldenen Ordnung
+3180000	Claymore
+3180100	Schweres Claymore
+3180200	Solides Claymore
+3180300	Wertiges Claymore
+3180400	Feuriges Claymore
+3180500	Flammendes Claymore
+3180600	Blitzendes Claymore
+3180700	Heiliges Claymore
+3180800	Magisches Claymore
+3180900	Eisiges Claymore
+3181000	Giftiges Claymore
+3181100	Blutiges Claymore
+3181200	Okkultes Claymore
+3190000	Gargoyle-Großschwert
+3190100	Schweres Gargoyle-Großschwert
+3190200	Solides Gargoyle-Großschwert
+3190300	Wertiges Gargoyle-Großschwert
+3190400	Feuriges Gargoyle-Großschwert
+3190500	Flammendes Gargoyle-Großschwert
+3190600	Blitzendes Gargoyle-Großschwert
+3190700	Heiliges Gargoyle-Großschwert
+3190800	Magisches Gargoyle-Großschwert
+3190900	Eisiges Gargoyle-Großschwert
+3191000	Giftiges Gargoyle-Großschwert
+3191100	Blutiges Gargoyle-Großschwert
+3191200	Okkultes Gargoyle-Großschwert
+3200000	Schüreisen des Todes
+3210000	Gargoyle-Schwarzschwert
+3210100	Ruft noch mehr Schemen, die Gegner angreifen.
+3210200	Feuerfäden breiten sich aus und werden zu Feuersäulen.
+3210300	Erzeugt einen Nebel, der sofortigen Tod verursacht.
+3210400	Ruft Skelette am Ziel herbei, die es angreifen.
+3210500	Lässt schwarze Blitze um Euch herum einschlagen.
+3210600	Diese verlorene, uralte Schimmersteinzauberei wurde von Kreaturen in unterirdischen Ruinen verwendet.\r\n\r\nBildet magische Blasen, die schweben, bis sie zerplatzen.\r\nWird diese Zauberei aufgeladen, schweben die Blasen länger.
+3210700	Feuert große Blasen ab, die bei Berührung explodieren.
+3210800	Deformierte Rüstung eines wahnsinnigen Ritters.
+3210900	Eine Anrufung der Feuermönche, Hüter der Flamme des Ruins.\r\n\r\nLässt eine lodernde Flamme aus den Händen des Zaubernden hervorschießen.\r\nDiese Anrufung kann schnell nach Sprint, Ausweichrollen und anderen Manövern gewirkt werden.
+3211000	Erzeugt eine große Flamme in Eurer Hand.
+3211100	Eine Anrufung der Feuermönche, Hüter der Flamme des Ruins.\r\n\r\nSchleudert einen tosenden Feuerball.\r\nWird diese Anrufung aufgeladen, wird sie mächtiger und lässt den Ball explodieren.\r\n\r\nFeuer verführt den Betrachter.\r\nWer die Flamme hütet, wird sie irgendwann auch anbeten.
+3211200	Eine heilige Anrufung von Gurranq, dem Bestienkleriker.\r\n\r\nErzeugt Bestienklauen, die die Erde aufreißen.\r\n\r\nVor langer Zeit waren Bestien intelligent und die Herrscher ihrer Zeit.\r\nEs heißt, der erste Eldenfürst und Regent Godfrey sei ihr Nachfahr.\r\n
+3220000	[ERROR]
+3900000	[ERROR]
+4000000	Großschwert
+4000100	Schweres Großschwert
+4000200	Solides Großschwert
+4000300	Wertiges Großschwert
+4000400	Feuriges Großschwert
+4000500	Flammendes Großschwert
+4000600	Blitzendes Großschwert
+4000700	Heiliges Großschwert
+4000800	Magisches Großschwert
+4000900	Eisiges Großschwert
+4001000	Giftiges Großschwert
+4001100	Blutiges Großschwert
+4001200	Okkultes Großschwert
+4010000	Großschwert des Bewachers
+4010100	Schweres Großschwert des Bewachers
+4010200	Solides Großschwert des Bewachers
+4010300	Wertiges Großschwert des Bewachers
+4010400	Feuriges Großschwert des Bewachers
+4010500	Flammendes Großschwert des Bewachers
+4010600	Blitzendes Großschwert des Bewachers
+4010700	Heiliges Großschwert des Bewachers
+4010800	Magisches Großschwert des Bewachers
+4010900	Eisiges Großschwert des Bewachers
+4011000	Giftiges Großschwert des Bewachers
+4011100	Blutiges Großschwert des Bewachers
+4011200	Okkultes Großschwert des Bewachers
+4020000	Malikeths schwarze Klinge
+4030000	Goldenes Trollschwert
+4030100	Schweres goldenes Trollschwert
+4030200	Solides goldenes Trollschwert
+4030300	Wertiges goldenes Trollschwert
+4030400	Feuriges goldenes Trollschwert
+4030500	Flammendes goldenes Trollschwert
+4030600	Blitzendes goldenes Trollschwert
+4030700	Heiliges goldenes Trollschwert
+4030800	Magisches goldenes Trollschwert
+4030900	Eisiges goldenes Trollschwert
+4031000	Giftiges goldenes Trollschwert
+4031100	Blutiges goldenes Trollschwert
+4031200	Okkultes goldenes Trollschwert
+4040000	Zweihänder
+4040100	Schwerer Zweihänder
+4040200	Solider Zweihänder
+4040300	Wertiger Zweihänder
+4040400	Feuriger Zweihänder
+4040500	Flammender Zweihänder
+4040600	Blitzender Zweihänder
+4040700	Heiliger Zweihänder
+4040800	Magischer Zweihänder
+4040900	Eisiger Zweihänder
+4041000	Giftiger Zweihänder
+4041100	Blutiger Zweihänder
+4041200	Okkulter Zweihänder
+4050000	Großschwerter der Sternengeißel
+4060000	Königliches Großschwert
+4070000	Großschwert der Gottestöterin
+4080000	Trümmergroßschwert
+4100000	Großschwert der Verpflanzung
+4110000	Trollritterschwert
+4900000	[ERROR]
+4910000	[ERROR]
+5000000	Panzerbrecher
+5000100	Schwerer Panzerbrecher
+5000200	Solider Panzerbrecher
+5000300	Wertiger Panzerbrecher
+5000400	Feuriger Panzerbrecher
+5000500	Flammender Panzerbrecher
+5000600	Blitzender Panzerbrecher
+5000700	Heiliger Panzerbrecher
+5000800	Magischer Panzerbrecher
+5000900	Eisiger Panzerbrecher
+5001000	Giftiger Panzerbrecher
+5001100	Blutiger Panzerbrecher
+5001200	Okkulter Panzerbrecher
+5010000	Schwert des Reinfäule-Ritters
+5010100	Schweres Schwert des Reinfäule-Ritters
+5010200	Solides Schwert des Reinfäule-Ritters
+5010300	Wertiges Schwert des Reinfäule-Ritters
+5010400	Feuriges Schwert des Reinfäule-Ritters
+5010500	Flammendes Schwert des Reinfäule-Ritters
+5010600	Blitzendes Schwert des Reinfäule-Ritters
+5010700	Heiliges Schwert des Reinfäule-Ritters
+5010800	Magisches Schwert des Reinfäule-Ritters
+5010900	Eisiges Schwert des Reinfäule-Ritters
+5011000	Giftiges Schwert des Reinfäule-Ritters
+5011100	Blutiges Schwert des Reinfäule-Ritters
+5011200	Okkultes Schwert des Reinfäule-Ritters
+5020000	Rapier
+5020100	Schweres Rapier
+5020200	Solides Rapier
+5020300	Wertiges Rapier
+5020400	Feuriges Rapier
+5020500	Flammendes Rapier
+5020600	Blitzendes Rapier
+5020700	Heiliges Rapier
+5020800	Magisches Rapier
+5020900	Eisiges Rapier
+5021000	Giftiges Rapier
+5021100	Blutiges Rapier
+5021200	Okkultes Rapier
+5030000	Rogiers Rapier
+5030100	Rogiers schweres Rapier
+5030200	Rogiers solides Rapier
+5030300	Rogiers wertiges Rapier
+5030400	Rogiers feuriges Rapier
+5030500	Rogiers flammendes Rapier
+5030600	Rogiers blitzendes Rapier
+5030700	Rogiers heiliges Rapier
+5030800	Rogiers magisches Rapier
+5030900	Rogiers eisiges Rapier
+5031000	Rogiers giftiges Rapier
+5031100	Rogiers blutiges Rapier
+5031200	Rogiers okkultes Rapier
+5040000	Ameisenstachel-Rapier
+5040100	Schweres Ameisenstachel-Rapier
+5040200	Solides Ameisenstachel-Rapier
+5040300	Wertiges Ameisenstachel-Rapier
+5040400	Feuriges Ameisenstachel-Rapier
+5040500	Flammendes Ameisenstachel-Rapier
+5040600	Blitzendes Ameisenstachel-Rapier
+5040700	Heiliges Ameisenstachel-Rapier
+5040800	Magisches Ameisenstachel-Rapier
+5040900	Eisiges Ameisenstachel-Rapier
+5041000	Giftiges Ameisenstachel-Rapier
+5041100	Blutiges Ameisenstachel-Rapier
+5041200	Okkultes Ameisenstachel-Rapier
+5050000	Eisnadel
+5060000	Adeligenpanzerbrecher
+5060100	Schwerer Adligenpanzerbrecher
+5060200	Solider Adligenpanzerbrecher
+5060300	Wertiger Adligenpanzerbrecher
+5060400	Feuriger Adligenpanzerbrecher
+5060500	Flammender Adligenpanzerbrecher
+5060600	Blitzender Adligenpanzerbrecher
+5060700	Heiliger Adligenpanzerbrecher
+5060800	Magischer Adligenpanzerbrecher
+5060900	Eisiger Adligenpanzerbrecher
+5061000	Giftiger Adligenpanzerbrecher
+5061100	Blutiger Adligenpanzerbrecher
+5061200	Okkulter Adligenpanzerbrecher
+6000000	Blutige Helix
+6010000	Götterskalpnadel
+6010100	Schwere Götterskalpnadel
+6010200	Solide Götterskalpnadel
+6010300	Wertige Götterskalpnadel
+6010400	Feurige Götterskalpnadel
+6010500	Flammende Götterskalpnadel
+6010600	Blitzende Götterskalpnadel
+6010700	Heilige Götterskalpnadel
+6010800	Magische Götterskalpnadel
+6010900	Eisige Götterskalpnadel
+6011000	Giftige Götterskalpnadel
+6011100	Blutige Götterskalpnadel
+6011200	Okkulte Götterskalpnadel
+6020000	Großer Degen
+6020100	Schwerer Großdegen
+6020200	Solider Großdegen
+6020300	Wertiger Großdegen
+6020400	Feuriger Großdegen
+6020500	Flammender Großdegen
+6020600	Blitzender Großdegen
+6020700	Heiliger Großdegen
+6020800	Magischer Großdegen
+6020900	Eisiger Großdegen
+6021000	Giftiger Großdegen
+6021100	Blutiger Großdegen
+6021200	Okkulter Großdegen
+6040000	Felsklinge des Drachenkönigs
+6900000	[ERROR]
+7000000	Falchion
+7000100	Schweres Falchion
+7000200	Solides Falchion
+7000300	Wertiges Falchion
+7000400	Feuriges Falchion
+7000500	Flammendes Falchion
+7000600	Blitzendes Falchion
+7000700	Heiliges Falchion
+7000800	Magisches Falchion
+7000900	Eisiges Falchion
+7001000	Giftiges Falchion
+7001100	Blutiges Falchion
+7001200	Okkultes Falchion
+7010000	Bestienkrummschwert
+7010100	Schweres Bestienkrummschwert
+7010200	Solides Bestienkrummschwert
+7010300	Wertiges Bestienkrummschwert
+7010400	Feuriges Bestienkrummschwert
+7010500	Flammendes Bestienkrummschwert
+7010600	Blitzendes Bestienkrummschwert
+7010700	Heiliges Bestienkrummschwert
+7010800	Magisches Bestienkrummschwert
+7010900	Eisiges Bestienkrummschwert
+7011000	Giftiges Bestienkrummschwert
+7011100	Blutiges Bestienkrummschwert
+7011200	Okkultes Bestienkrummschwert
+7020000	Shotel
+7020100	Schwerer Shotel
+7020200	Solider Shotel
+7020300	Wertiger Shotel
+7020400	Feuriger Shotel
+7020500	Flammender Shotel
+7020600	Blitzender Shotel
+7020700	Heiliger Shotel
+7020800	Magischer Shotel
+7020900	Eisiger Shotel
+7021000	Giftiger Shotel
+7021100	Blutiger Shotel
+7021200	Okkulter Shotel
+7030000	Shamshir
+7030100	Schwerer Shamshir
+7030200	Solider Shamshir
+7030300	Wertiger Shamshir
+7030400	Feuriger Shamshir
+7030500	Flammender Shamshir
+7030600	Blitzender Shamshir
+7030700	Heiliger Shamshir
+7030800	Magischer Shamshir
+7030900	Eisiger Shamshir
+7031000	Giftiger Shamshir
+7031100	Blutiger Shamshir
+7031200	Okkulter Shamshir
+7040000	Banditenkrummschwert
+7040100	Schweres Banditenkrummschwert
+7040200	Solides Banditenkrummschwert
+7040300	Wertiges Banditenkrummschwert
+7040400	Feuriges Banditenkrummschwert
+7040500	Flammendes Banditenkrummschwert
+7040600	Blitzendes Banditenkrummschwert
+7040700	Heiliges Banditenkrummschwert
+7040800	Magisches Banditenkrummschwert
+7040900	Eisiges Banditenkrummschwert
+7041000	Giftiges Banditenkrummschwert
+7041100	Blutiges Banditenkrummschwert
+7041200	Okkultes Banditenkrummschwert
+7050000	Magmaklinge
+7060000	Fließendes Krummschwert
+7060100	Schweres fließendes Krummschwert
+7060200	Solides fließendes Krummschwert
+7060300	Wertiges fließendes Krummschwert
+7060400	Feuriges fließendes Krummschwert
+7060500	Flammendes fließendes Krummschwert
+7060600	Blitzendes fließendes Krummschwert
+7060700	Heiliges fließendes Krummschwert
+7060800	Magisches fließendes Krummschwert
+7060900	Eisiges fließendes Krummschwert
+7061000	Giftiges fließendes Krummschwert
+7061100	Blutiges fließendes Krummschwert
+7061200	Okkultes fließendes Krummschwert
+7070000	Schwinge von Astel
+7080000	Plündererkrummschwert
+7080100	Schweres Plündererkrummschwert
+7080200	Solides Plündererkrummschwert
+7080300	Wertiges Plündererkrummschwert
+7080400	Feuriges Plündererkrummschwert
+7080500	Flammendes Plündererkrummschwert
+7080600	Blitzendes Plündererkrummschwert
+7080700	Heiliges Plündererkrummschwert
+7080800	Magisches Plündererkrummschwert
+7080900	Eisiges Plündererkrummschwert
+7081000	Giftiges Plündererkrummschwert
+7081100	Blutiges Plündererkrummschwert
+7081200	Okkultes Plündererkrummschwert
+7090000	Verbessert Waffe schnell mit zus. Giftangriffseffekt
+7090100	
+7090200	
+7090300	
+7090400	
+7090500	
+7090600	
+7090700	
+7090800	
+7090900	
+7091000	
+7091100	
+7091200	
+7100000	Shotel der Eklipse
+7110000	Schlangengottkrummschwert
+7110100	Schweres Schlangengottkrummschwert
+7110200	Solides Schlangengottkrummschwert
+7110300	Wertiges Schlangengottkrummschwert
+7110400	Feuriges Schlangengottkrummschwert
+7110500	Flammendes Schlangengottkrummschwert
+7110600	Blitzendes Schlangengottkrummschwert
+7110700	Heiliges Schlangengottkrummschwert
+7110800	Magisches Schlangengottkrummschwert
+7110900	Eisiges Schlangengottkrummschwert
+7111000	Giftiges Schlangengottkrummschwert
+7111100	Blutiges Schlangengottkrummschwert
+7111200	Okkultes Schlangengottkrummschwert
+7120000	Mantisklinge
+7120100	Schwere Mantisklinge
+7120200	Solide Mantisklinge
+7120300	Wertige Mantisklinge
+7120400	Feurige Mantisklinge
+7120500	Flammende Mantisklinge
+7120600	Blitzende Mantisklinge
+7120700	Heilige Mantisklinge
+7120800	Magische Mantisklinge
+7120900	Eisige Mantisklinge
+7121000	Giftige Mantisklinge
+7121100	Blutige Mantisklinge
+7121200	Okkulte Mantisklinge
+7140000	Krummsäbel
+7140100	Schwerer Krummsäbel
+7140200	Solider Krummsäbel
+7140300	Wertiger Krummsäbel
+7140400	Feuriger Krummsäbel
+7140500	Flammender Krummsäbel
+7140600	Blitzender Krummsäbel
+7140700	Heiliger Krummsäbel
+7140800	Magischer Krummsäbel
+7140900	Eisiger Krummsäbel
+7141000	Giftiger Krummsäbel
+7141100	Blutiger Krummsäbel
+7141200	Okkulter Krummsäbel
+7150000	Großmesser
+7150100	Schweres Großmesser
+7150200	Solides Großmesser
+7150300	Wertiges Großmesser
+7150400	Feuriges Großmesser
+7150500	Flammendes Großmesser
+7150600	Blitzendes Großmesser
+7150700	Heiliges Großmesser
+7150800	Magisches Großmesser
+7150900	Eisiges Großmesser
+7151000	Giftiges Großmesser
+7151100	Blutiges Großmesser
+7151200	Okkultes Großmesser
+8010000	Onyxfürstengroßschwert
+8020000	Reitergeißel
+8020100	Schwere Reitergeißel
+8020200	Solide Reitergeißel
+8020300	Wertige Reitergeißel
+8020400	Feurige Reitergeißel
+8020500	Flammende Reitergeißel
+8020600	Blitzende Reitergeißel
+8020700	Heilige Reitergeißel
+8020800	Magische Reitergeißel
+8020900	Eisige Reitergeißel
+8021000	Giftige Reitergeißel
+8021100	Blutige Reitergeißel
+8021200	Okkulte Reitergeißel
+8030000	Bluthundreißzahn
+8030100	Schwerer Bluthundreißzahn
+8030200	Solider Bluthundreißzahn
+8030300	Wertiger Bluthundreißzahn
+8030400	Feuriger Bluthundreißzahn
+8030500	Flammender Bluthundreißzahn
+8030600	Blitzender Bluthundreißzahn
+8030700	Heiliger Bluthundreißzahn
+8030800	Magischer Bluthundreißzahn
+8030900	Eisiger Bluthundreißzahn
+8031000	Giftiger Bluthundreißzahn
+8031100	Blutiger Bluthundreißzahn
+8031200	Okkulter Bluthundreißzahn
+8040000	Magmalindwurm-Schuppenschwert
+8050000	Zamorkrummschwert
+8060000	Malbeil
+8060100	Schweres Malbeil
+8060200	Solides Malbeil
+8060300	Wertiges Malbeil
+8060400	Feuriges Malbeil
+8060500	Flammendes Malbeil
+8060600	Blitzendes Malbeil
+8060700	Heiliges Malbeil
+8060800	Magisches Malbeil
+8060900	Eisiges Malbeil
+8061000	Giftiges Malbeil
+8061100	Blutiges Malbeil
+8061200	Okkultes Malbeil
+8070000	Mönchsflammenschwert
+8070100	Schweres Mönchsflammenschwert
+8070200	Solides Mönchsflammenschwert
+8070300	Wertiges Mönchsflammenschwert
+8070400	Feuriges Mönchsflammenschwert
+8070500	Flammendes Mönchsflammenschwert
+8070600	Blitzendes Mönchsflammenschwert
+8070700	Heiliges Mönchsflammenschwert
+8070800	Magisches Mönchsflammenschwert
+8070900	Eisiges Mönchsflammenschwert
+8071000	Giftiges Mönchsflammenschwert
+8071100	Blutiges Mönchsflammenschwert
+8071200	Okkultes Mönchsflammenschwert
+8080000	Beil des Bestienmenschen
+8080100	Schweres Beil des Bestienmenschen
+8080200	Solides Beil des Bestienmenschen
+8080300	Wertiges Beil des Bestienmenschen
+8080400	Feuriges Beil des Bestienmenschen
+8080500	Flammendes Beil des Bestienmenschen
+8080600	Blitzendes Beil des Bestienmenschen
+8080700	Heiliges Beil des Bestienmenschen
+8080800	Magisches Beil des Bestienmenschen
+8080900	Eisiges Beil des Bestienmenschen
+8081000	Giftiges Beil des Bestienmenschen
+8081100	Blutiges Beil des Bestienmenschen
+8081200	Okkultes Beil des Bestienmenschen
+8100000	Morgotts verfluchtes Schwert
+8110000	Ruft 1 Zaubereradligen herbei
+8110100	
+8110200	
+8110300	
+8110400	
+8110500	Eine abfällige Geste.
+8110600	
+8110700	Stoßgebet
+8110800	
+8110900	
+8111000	
+8111100	
+8111200	
+8900000	[ERROR]
+9000000	Uchigatana
+9000100	Schweres Uchigatana
+9000200	Solides Uchigatana
+9000300	Wertiges Uchigatana
+9000400	Feuriges Uchigatana
+9000500	Flammendes Uchigatana
+9000600	Blitzendes Uchigatana
+9000700	Heiliges Uchigatana
+9000800	Magisches Uchigatana
+9000900	Eisiges Uchigatana
+9001000	Giftiges Uchigatana
+9001100	Blutiges Uchigatana
+9001200	Okkultes Uchigatana
+9010000	Nagakiba
+9010100	Schweres Nagakiba
+9010200	Solides Nagakiba
+9010300	Wertiges Nagakiba
+9010400	Feuriges Nagakiba
+9010500	Flammendes Nagakiba
+9010600	Blitzendes Nagakiba
+9010700	Heiliges Nagakiba
+9010800	Magisches Nagakiba
+9010900	Eisiges Nagakiba
+9011000	Giftiges Nagakiba
+9011100	Blutiges Nagakiba
+9011200	Okkultes Nagakiba
+9020000	Malenias Hand
+9030000	Meteorklinge
+9030100	Schwere Meteorklinge
+9030200	Solide Meteorklinge
+9030300	Wertige Meteorklinge
+9030400	Feurige Meteorklinge
+9030500	Flammende Meteorklinge
+9030600	Blitzende Meteorklinge
+9030700	Heilige Meteorklinge
+9030800	Magische Meteorklinge
+9030900	Eisige Meteorklinge
+9031000	Giftige Meteorklinge
+9031100	Blutige Meteorklinge
+9031200	Okkulte Meteorklinge
+9040000	Blutige Ströme
+9060000	Mondschleier
+9070000	Drachenschuppenklinge
+9080000	Schlangenknochenklinge
+9080100	[ERROR]Schwere Schlangenknochenklinge
+9080200	[ERROR]Solide Schlangenknochenklinge
+9080300	[ERROR]Wertige Schlangenknochenklinge
+9080400	[ERROR]Feurige Schlangenknochenklinge
+9080500	[ERROR]Flammende Schlangenknochenklinge
+9080600	[ERROR]Blitzende Schlangenknochenklinge
+9080700	[ERROR]Heilige Schlangenknochenklinge
+9080800	[ERROR]Magische Schlangenknochenklinge
+9080900	[ERROR]Eisige Schlangenknochenklinge
+9081000	[ERROR]Giftige Schlangenknochenklinge
+9081100	[ERROR]Blutige Schlangenknochenklinge
+9081200	[ERROR]Okkulte Schlangenknochenklinge
+9900000	[ERROR]
+9910000	[ERROR]
+9911000	[ERROR]
+9920000	[ERROR]
+9930000	[ERROR]
+10000000	Doppelklinge
+10000100	Schwere Doppelklinge
+10000200	Solide Doppelklinge
+10000300	Wertige Doppelklinge
+10000400	Feurige Doppelklinge
+10000500	Flammende Doppelklinge
+10000600	Blitzende Doppelklinge
+10000700	Heilige Doppelklinge
+10000800	Magische Doppelklinge
+10000900	Eisige Doppelklinge
+10001000	Giftige Doppelklinge
+10001100	Blutige Doppelklinge
+10001200	Okkulte Doppelklinge
+10010000	Götterskalphäuter
+10010100	Schwerer Götterskalphäuter
+10010200	Solider Götterskalphäuter
+10010300	Wertiger Götterskalphäuter
+10010400	Feuriger Götterskalphäuter
+10010500	Flammender Götterskalphäuter
+10010600	Blitzender Götterskalphäuter
+10010700	Heiliger Götterskalphäuter
+10010800	Magischer Götterskalphäuter
+10010900	Eisiger Götterskalphäuter
+10011000	Giftiger Götterskalphäuter
+10011100	Blutiger Götterskalphäuter
+10011200	Okkulter Götterskalphäuter
+10030000	Ritter-Zwillingsschwerter
+10030100	Schwere Ritter-Zwillingsschwerter
+10030200	Solide Ritter-Zwillingsschwerter
+10030300	Wertige Ritter-Zwillingsschwerter
+10030400	Feurige Ritter-Zwillingsschwerter
+10030500	Flammende Ritter-Zwillingsschwerter
+10030600	Blitzende Ritter-Zwillingsschwerter
+10030700	Heilige Ritter-Zwillingsschwerter
+10030800	Magische Ritter-Zwillingsschwerter
+10030900	Eisige Ritter-Zwillingsschwerter
+10031000	Giftige Ritter-Zwillingsschwerter
+10031100	Blutige Ritter-Zwillingsschwerter
+10031200	Okkulte Ritter-Zwillingsschwerter
+10050000	Eleonoras Stangenwaffe
+10060000	Diese Zwillingsklinge ist ein Symbol der Zwillinge Miquella und Malenia.\r\nMiquella und seine Schwester wurden mit einem untrennbaren Schicksal geboren. Die Klingen enthalten die Runen der Opulenz und des Verfalls.
+10070000	Geister herbeirufen
+10080000	Gargoyle-Doppelklinge
+10080100	Schwere Gargoyle-Doppelklinge
+10080200	Solide Gargoyle-Doppelklinge
+10080300	Wertige Gargoyle-Doppelklinge
+10080400	Feurige Gargoyle-Doppelklinge
+10080500	Flammende Gargoyle-Doppelklinge
+10080600	Blitzende Gargoyle-Doppelklinge
+10080700	Heilige Gargoyle-Doppelklinge
+10080800	Magische Gargoyle-Doppelklinge
+10080900	Eisige Gargoyle-Doppelklinge
+10081000	Giftige Gargoyle-Doppelklinge
+10081100	Blutige Gargoyle-Doppelklinge
+10081200	Okkulte Gargoyle-Doppelklinge
+10090000	Gargoyle-Doppelschwarzklinge
+10090100	Schwere Gargoyle-Doppelschwarzklinge
+10090200	Solide Gargoyle-Doppelschwarzklinge
+10090300	Wertige Gargoyle-Doppelschwarzklinge
+10090400	Feurige Gargoyle-Doppelschwarzklinge
+10090500	Flammende Gargoyle-Doppelschwarzklinge
+10090600	Blitzende Gargoyle-Doppelschwarzklinge
+10090700	Heilige Gargoyle-Doppelschwarzklinge
+10090800	Magische Gargoyle-Doppelschwarzklinge
+10090900	Eisige Gargoyle-Doppelschwarzklinge
+10091000	Giftige Gargoyle-Doppelschwarzklinge
+10091100	Blutige Gargoyle-Doppelschwarzklinge
+10091200	Okkulte Gargoyle-Doppelschwarzklinge
+11000000	Streitkolben
+11000100	Schwerer Streitkolben
+11000200	Solider Streitkolben
+11000300	Wertiger Streitkolben
+11000400	Feuriger Streitkolben
+11000500	Flammender Streitkolben
+11000600	Blitzender Streitkolben
+11000700	Heiliger Streitkolben
+11000800	Magischer Streitkolben
+11000900	Eisiger Streitkolben
+11001000	Giftiger Streitkolben
+11001100	Blutiger Streitkolben
+11001200	Okkulter Streitkolben
+11010000	Keule
+11010100	Schwere Keule
+11010200	Solide Keule
+11010300	Wertige Keule
+11010400	Feurige Keule
+11010500	Flammende Keule
+11010600	Blitzende Keule
+11010700	Heilige Keule
+11010800	Magische Keule
+11010900	Eisige Keule
+11011000	Giftige Keule
+11011100	Blutige Keule
+11011200	Okkulte Keule
+11030000	Geschwungene Keule
+11030100	Schwere geschwungene Keule
+11030200	Solide geschwungene Keule
+11030300	Wertige geschwungene Keule
+11030400	Feurige geschwungene Keule
+11030500	Flammende geschwungene Keule
+11030600	Blitzende geschwungene Keule
+11030700	Heilige geschwungene Keule
+11030800	Magische geschwungene Keule
+11030900	Eisige geschwungene Keule
+11031000	Giftige geschwungene Keule
+11031100	Blutige geschwungene Keule
+11031200	Okkulte geschwungene Keule
+11040000	Spaltaxt
+11040100	Schwere Spaltaxt
+11040200	Solide Spaltaxt
+11040300	Wertige Spaltaxt
+11040400	Feurige Spaltaxt
+11040500	Flammende Spaltaxt
+11040600	Blitzende Spaltaxt
+11040700	Heilige Spaltaxt
+11040800	Magische Spaltaxt
+11040900	Eisige Spaltaxt
+11041000	Giftige Spaltaxt
+11041100	Blutige Spaltaxt
+11041200	Okkulte Spaltaxt
+11050000	Morgenstern
+11050100	Schwerer Morgenstern
+11050200	Solider Morgenstern
+11050300	Wertiger Morgenstern
+11050400	Feuriger Morgenstern
+11050500	Flammender Morgenstern
+11050600	Blitzender Morgenstern
+11050700	Heiliger Morgenstern
+11050800	Magischer Morgenstern
+11050900	Eisiger Morgenstern
+11051000	Giftiger Morgenstern
+11051100	Blutiger Morgenstern
+11051200	Okkulter Morgenstern
+11060000	Varrés Blumenstrauß
+11060100	Varrés schwerer Blumenstrauß
+11060200	Ein stählerner Streitkolben, der an einen Rosenstrauß erinnert.\r\n\r\nPassend zu dem Design sind die Blumen blutrot. Daher auch sein Name – "Blutrosenkolben".
+11060300	Ein stählerner Streitkolben, der an einen Rosenstrauß erinnert.\r\n\r\nPassend zu dem Design sind die Blumen blutrot. Daher auch sein Name – "Blutrosenkolben".
+11060400	Ein stählerner Streitkolben, der an einen Rosenstrauß erinnert.\r\n\r\nPassend zu dem Design sind die Blumen blutrot. Daher auch sein Name – "Blutrosenkolben".
+11060500	Ein stählerner Streitkolben, der an einen Rosenstrauß erinnert.\r\n\r\nPassend zu dem Design sind die Blumen blutrot. Daher auch sein Name – "Blutrosenkolben".
+11060600	Ein Überbleibsel der Erkundung des ewigen Lebens.\r\nDieser leere Topf repariert sich seltsamerweise selbst, wenn er kaputt geht.\r\n\r\nBehälter zur Herstellung von in Töpfen versiegelten Wurfgegenständen benötigt.\r\n\r\nDie darin versiegelten Materialien und Mystik zeigen ihre Effekte, wenn der Topf geworfen wird.
+11060700	Zur Herstellung von Wurftöpfen nötiger Behälter.
+11060800	Mischflasche für Pulver der Parfümzauberei.
+11060900	Ein stählerner Streitkolben, der an einen Rosenstrauß erinnert.\r\n\r\nPassend zu dem Design sind die Blumen blutrot. Daher auch sein Name – "Blutrosenkolben".
+11061000	Wertloser Plunder
+11061100	Ein goldener Samen, gefunden am Fuß einer Baumillusion.\r\n\r\nErhöht die Zahl der Nutzungen einer Heiligflasche.\r\n(Kann nach Erholung an einem Ort der Gnade verwendet werden.)\r\n\r\nNach der Zertrümmerung des Eldenrings wurden diese Samen vom Erdenbaum aus in die verschiedenen Länder verstreut. Es war, als hätte das Leben gewusst, dass es zu Ende geht.
+11061200	Dies ist nur noch ein schwaches Überbleibsel vom Segen des Erdenbaums, der in den Kirchen aller Länder verehrt wird.\r\n\r\nErhöht die wiederherstellende Wirkung einer Heiligflasche.\r\n(Kann nach Erholung an einem Ort der Gnade verwendet werden.)\r\n\r\nIm Zeitalter des Erdenbaums wurden diese Tränen zur Verbreitung des Glaubens eingesetzt, denn sie gewährten einst einen gewissen Segen.
+11070000	Stachelkeule
+11070100	Schwere Stachelkeule
+11070200	Solide Stachelkeule
+11070300	Wertige Stachelkeule
+11070400	Feurige Stachelkeule
+11070500	Flammende Stachelkeule
+11070600	Blitzende Stachelkeule
+11070700	Heilige Stachelkeule
+11070800	Magische Stachelkeule
+11070900	Eisige Stachelkeule
+11071000	Giftige Stachelkeule
+11071100	Blutige Stachelkeule
+11071200	Okkulte Stachelkeule
+11080000	Hammer
+11080100	Schwerer Hammer
+11080200	Solider Hammer
+11080300	Wertiger Hammer
+11080400	Feuriger Hammer
+11080500	Flammender Hammer
+11080600	Blitzender Hammer
+11080700	Heiliger Hammer
+11080800	Magischer Hammer
+11080900	Eisiger Hammer
+11081000	Giftiger Hammer
+11081100	Blutiger Hammer
+11081200	Okkulter Hammer
+11090000	Mönchsflammenstreitkolben
+11090100	Schwerer Mönchsflammenstreitkolben
+11090200	Solider Mönchsflammenstreitkolben
+11090300	Wertiger Mönchsflammenstreitkolben
+11090400	Feuriger Mönchsflammenstreitkolben
+11090500	Flammender Mönchsflammenstreitkolben
+11090600	Blitzender Mönchsflammenstreitkolben
+11090700	Heiliger Mönchsflammenstreitkolben
+11090800	Magischer Mönchsflammenstreitkolben
+11090900	Eisiger Mönchsflammenstreitkolben
+11091000	Giftiger Mönchsflammenstreitkolben
+11091100	Blutiger Mönchsflammenstreitkolben
+11091200	Okkulter Mönchsflammenstreitkolben
+11100000	Horn des Gesandten
+11110000	Zepter des Allwissenden
+11120000	Fließender Noxhammer
+11130000	Beringter Finger
+11140000	Steinkeule
+11140100	Schwere Steinkeule
+11140200	Solide Steinkeule
+11140300	Wertige Steinkeule
+11140400	Feurige Steinkeule
+11140500	Flammende Steinkeule
+11140600	Blitzende Steinkeule
+11140700	Heilige Steinkeule
+11140800	Magische Steinkeule
+11140900	Eisige Steinkeule
+11141000	Giftige Steinkeule
+11141100	Blutige Steinkeule
+11141200	Okkulte Steinkeule
+11150000	Marikas Hammer
+11160000	Erhöht in Mischarzneien die Kraft aufgeladener Angriffe.
+11160100	Erhöht in Mischarzneien die Effizienz von Ausweichrollen.
+11160200	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErzeugt in Arznei gemischt eine Explosion.\r\n\r\nEine gefährliche Kristallträne ohne medizinische Eigenschaften.\r\nDiese Erkenntnis kann genauso schmerzhaft sein wie die Offenbarung, dass selbst das Göttliche seine Grenzen hat.
+11160300	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErzeugt in Arznei gemischt eine Explosion.\r\n\r\nEine gefährliche Kristallträne ohne medizinische Eigenschaften.\r\nDiese Erkenntnis kann genauso schmerzhaft sein wie die Offenbarung, dass selbst das Göttliche seine Grenzen hat.
+11160400	Eine Kristallträne mit verhärteter\r\nOberfläche.\r\n\r\nReduziert in Arznei gemischt kurzzeitig\r\ndas Taumeln nach einem erlittenen Treffer.
+11160500	Verhindert in Mischarzneien kurz den Runenverlust beim Tod.
+11160600	Eine besonders seltene, mit einer dünnen\r\nSchicht überzogene Kristallträne, in der\r\nsich ein purpurroter Wirbel gebildet hat.\r\n\r\nWandelt in Arznei gemischt den erlittenen\r\nSchaden in LP um.\r\n\r\nKann seine Wirkung nur ein einziges Mal entfalten.\r\nKörperl. Schaden kann nicht umgewandelt werden.
+11160700	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErhöht in Arznei gemischt kurzzeitig\r\ndie Stärke.\r\n\r\nDie wie Sprösslinge wirkenden Knoten zeugen\r\nvon seinem plötzlichen und heftigen Wachstum.
+11160800	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErhöht in Arznei gemischt kurzzeitig\r\ndas Geschick.\r\n\r\nDie wie Sprösslinge wirkenden Knoten zeugen\r\nvon seinem plötzlichen und heftigen Wachstum.
+11160900	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErhöht in Arznei gemischt kurzzeitig\r\ndie Weisheit.\r\n\r\nDie wie Sprösslinge wirkenden Knoten zeugen\r\nvon seinem plötzlichen und heftigen Wachstum.
+11161000	Ein besonderer, über viele Monde hinweg in\r\neiner Träne des Lebens geformter Kristall.\r\n\r\nErhöht in Arznei gemischt kurzzeitig\r\nden Glauben.\r\n\r\nDie wie Sprösslinge wirkenden Knoten zeugen\r\nvon seinem plötzlichen und heftigen Wachstum.
+11161100	Ermöglicht in Mischarzneien den einmaligen Einsatz eines Zaubers ohne FP-Kosten.
+11161200	Erleichtert in Mischarzneien den Bruch von Haltungen.
+11170000	[ERROR]
+12000000	Große Keule
+12000100	Schwere große Keule
+12000200	Solide große Keule
+12000300	Wertige große Keule
+12000400	Feurige große Keule
+12000500	Flammende große Keule
+12000600	Blitzende große Keule
+12000700	Heilige große Keule
+12000800	Magische große Keule
+12000900	Eisige große Keule
+12001000	Giftige große Keule
+12001100	Blutige große Keule
+12001200	Okkulte große Keule
+12010000	Großhornhammer
+12010100	Schwerer Großhornhammer
+12010200	Solider Großhornhammer
+12010300	Wertiger Großhornhammer
+12010400	Feuriger Großhornhammer
+12010500	Flammender Großhornhammer
+12010600	Blitzender Großhornhammer
+12010700	Heiliger Großhornhammer
+12010800	Magischer Großhornhammer
+12010900	Eisiger Großhornhammer
+12011000	Giftiger Großhornhammer
+12011100	Blutiger Großhornhammer
+12011200	Okkulter Großhornhammer
+12020000	Streithammer
+12020100	Schwerer Streithammer
+12020200	Solider Streithammer
+12020300	Wertiger Streithammer
+12020400	Feuriger Streithammer
+12020500	Flammender Streithammer
+12020600	Blitzender Streithammer
+12020700	Heiliger Streithammer
+12020800	Magischer Streithammer
+12020900	Eisiger Streithammer
+12021000	Giftiger Streithammer
+12021100	Blutiger Streithammer
+12021200	Okkulter Streithammer
+12060000	Großstreitkolben
+12060100	Schwerer Großstreitkolben
+12060200	Solider Großstreitkolben
+12060300	Wertiger Großstreitkolben
+12060400	Feuriger Großstreitkolben
+12060500	Flammender Großstreitkolben
+12060600	Blitzender Großstreitkolben
+12060700	Heiliger Großstreitkolben
+12060800	Magischer Großstreitkolben
+12060900	Eisiger Großstreitkolben
+12061000	Giftiger Großstreitkolben
+12061100	Blutiger Großstreitkolben
+12061200	Okkulter Großstreitkolben
+12080000	Geschwungene Großkeule
+12080100	Schwere geschwungene Großkeule
+12080200	Solide geschwungene Großkeule
+12080300	Wertige geschwungene Großkeule
+12080400	Feurige geschwungene Großkeule
+12080500	Flammende geschwungene Großkeule
+12080600	Blitzende geschwungene Großkeule
+12080700	Heilige geschwungene Großkeule
+12080800	Magische geschwungene Großkeule
+12080900	Eisige geschwungene Großkeule
+12081000	Giftige geschwungene Großkeule
+12081100	Blutige geschwungene Großkeule
+12081200	Okkulte geschwungene Großkeule
+12130000	Zelebrantenschädel
+12130100	Schwerer Zelebrantenschädel
+12130200	Solider Zelebrantenschädel
+12130300	Wertiger Zelebrantenschädel
+12130400	Feuriger Zelebrantenschädel
+12130500	Flammender Zelebrantenschädel
+12130600	Blitzender Zelebrantenschädel
+12130700	Heiliger Zelebrantenschädel
+12130800	Magischer Zelebrantenschädel
+12130900	Eisiger Zelebrantenschädel
+12131000	Giftiger Zelebrantenschädel
+12131100	Blutiger Zelebrantenschädel
+12131200	Okkulter Zelebrantenschädel
+12140000	Spitzhacke
+12140100	Schwere Spitzhacke
+12140200	Solide Spitzhacke
+12140300	Wertige Spitzhacke
+12140400	Feurige Spitzhacke
+12140500	Flammende Spitzhacke
+12140600	Blitzende Spitzhacke
+12140700	Heilige Spitzhacke
+12140800	Magische Spitzhacke
+12140900	Eisige Spitzhacke
+12141000	Giftige Spitzhacke
+12141100	Blutige Spitzhacke
+12141200	Okkulte Spitzhacke
+12150000	Bestienklauengroßhammer
+12160000	Langhorn des Gesandten
+12170000	Schädelkerzenständer
+12180000	Großsterne
+12180100	Schwere Großsterne
+12180200	Solide Großsterne
+12180300	Wertige Großsterne
+12180400	Feurige Großsterne
+12180500	Flammende Großsterne
+12180600	Blitzende Großsterne
+12180700	Heilige Großsterne
+12180800	Magische Großsterne
+12180900	Eisige Großsterne
+12181000	Giftige Großsterne
+12181100	Blutige Großsterne
+12181200	Okkulte Großsterne
+12190000	Ziegelhammer
+12190100	Schwerer Ziegelhammer
+12190200	Solider Ziegelhammer
+12190300	Wertiger Ziegelhammer
+12190400	Feuriger Ziegelhammer
+12190500	Flammender Ziegelhammer
+12190600	Blitzender Ziegelhammer
+12190700	Heiliger Ziegelhammer
+12190800	Magischer Ziegelhammer
+12190900	Eisiger Ziegelhammer
+12191000	Giftiger Ziegelhammer
+12191100	Blutiger Ziegelhammer
+12191200	Okkulter Ziegelhammer
+12200000	Verschlingerzepter
+12210000	Fäulnisstreithammer
+12210100	Schwerer Fäulnisstreithammer
+12210200	Solider Fäulnisstreithammer
+12210300	Wertiger Fäulnisstreithammer
+12210400	Feuriger Fäulnisstreithammer
+12210500	Flammender Fäulnisstreithammer
+12210600	Blitzender Fäulnisstreithammer
+12210700	Heiliger Fäulnisstreithammer
+12210800	Magischer Fäulnisstreithammer
+12210900	Eisiger Fäulnisstreithammer
+12211000	Giftiger Fäulnisstreithammer
+12211100	Blutiger Fäulnisstreithammer
+12211200	Okkulter Fäulnisstreithammer
+12900000	[ERROR]
+12910000	[ERROR]
+13000000	Flegel der Dunkelkavallerie
+13000100	Schwerer Flegel der Dunkelkavallerie
+13000200	Solider Flegel der Dunkelkavallerie
+13000300	Wertiger Flegel der Dunkelkavallerie
+13000400	Feuriger Flegel der Dunkelkavallerie
+13000500	Flammender Flegel der Dunkelkavallerie
+13000600	Blitzender Flegel der Dunkelkavallerie
+13000700	Heiliger Flegel der Dunkelkavallerie
+13000800	Magischer Flegel der Dunkelkavallerie
+13000900	Eisiger Flegel der Dunkelkavallerie
+13001000	Giftiger Flegel der Dunkelkavallerie
+13001100	Blutiger Flegel der Dunkelkavallerie
+13001200	Okkulter Flegel der Dunkelkavallerie
+13010000	Flegel
+13010100	Schwerer Flegel
+13010200	Solider Flegel
+13010300	Wertiger Flegel
+13010400	Feuriger Flegel
+13010500	Flammender Flegel
+13010600	Blitzender Flegel
+13010700	Heiliger Flegel
+13010800	Magischer Flegel
+13010900	Eisiger Flegel
+13011000	Giftiger Flegel
+13011100	Blutiger Flegel
+13011200	Okkulter Flegel
+13020000	Köpfe der Familie
+13030000	Bastardsterne
+13040000	Kettenflegel
+13040100	Schwerer Kettenflegel
+13040200	Solider Kettenflegel
+13040300	Wertiger Kettenflegel
+13040400	Feuriger Kettenflegel
+13040500	Flammender Kettenflegel
+13040600	Blitzender Kettenflegel
+13040700	Heiliger Kettenflegel
+13040800	Magischer Kettenflegel
+13040900	Eisiger Kettenflegel
+13041000	Giftiger Kettenflegel
+13041100	Blutiger Kettenflegel
+13041200	Okkulter Kettenflegel
+14000000	Streitaxt
+14000100	Schwere Streitaxt
+14000200	Solide Streitaxt
+14000300	Wertige Streitaxt
+14000400	Feurige Streitaxt
+14000500	Flammende Streitaxt
+14000600	Blitzende Streitaxt
+14000700	Heilige Streitaxt
+14000800	Magische Streitaxt
+14000900	Eisige Streitaxt
+14001000	Giftige Streitaxt
+14001100	Blutige Streitaxt
+14001200	Okkulte Streitaxt
+14010000	Gespaltene Sichel
+14010100	Schwere gespaltene Sichel
+14010200	Solide gespaltene Sichel
+14010300	Wertige gespaltene Sichel
+14010400	Feurige gespaltene Sichel
+14010500	Flammende gespaltene Sichel
+14010600	Blitzende gespaltene Sichel
+14010700	Heilige gespaltene Sichel
+14010800	Magische gespaltene Sichel
+14010900	Eisige gespaltene Sichel
+14011000	Giftige gespaltene Sichel
+14011100	Blutige gespaltene Sichel
+14011200	Okkulte gespaltene Sichel
+14020000	Handaxt
+14020100	Schwere Handaxt
+14020200	Solide Handaxt
+14020300	Wertige Handaxt
+14020400	Feurige Handaxt
+14020500	Flammende Handaxt
+14020600	Blitzende Handaxt
+14020700	Heilige Handaxt
+14020800	Magische Handaxt
+14020900	Eisige Handaxt
+14021000	Giftige Handaxt
+14021100	Blutige Handaxt
+14021200	Okkulte Handaxt
+14030000	Kieferknochen-Axt
+14030100	Schwere Kieferknochen-Axt
+14030200	Solide Kieferknochen-Axt
+14030300	Wertige Kieferknochen-Axt
+14030400	Feurige Kieferknochen-Axt
+14030500	Flammende Kieferknochen-Axt
+14030600	Blitzende Kieferknochen-Axt
+14030700	Heilige Kieferknochen-Axt
+14030800	Magische Kieferknochen-Axt
+14030900	Eisige Kieferknochen-Axt
+14031000	Giftige Kieferknochen-Axt
+14031100	Blutige Kieferknochen-Axt
+14031200	Okkulte Kieferknochen-Axt
+14040000	Eisenbeil
+14040100	Schweres Eisenbeil
+14040200	Solides Eisenbeil
+14040300	Wertiges Eisenbeil
+14040400	Feuriges Eisenbeil
+14040500	Flammendes Eisenbeil
+14040600	Blitzendes Eisenbeil
+14040700	Heiliges Eisenbeil
+14040800	Magisches Eisenbeil
+14040900	Eisiges Eisenbeil
+14041000	Giftiges Eisenbeil
+14041100	Blutiges Eisenbeil
+14041200	Okkultes Eisenbeil
+14050000	Wellenklinge
+14050100	Schwere Wellenklinge
+14050200	Solide Wellenklinge
+14050300	Wertige Wellenklinge
+14050400	Feurige Wellenklinge
+14050500	Flammende Wellenklinge
+14050600	Blitzende Wellenklinge
+14050700	Heilige Wellenklinge
+14050800	Magische Wellenklinge
+14050900	Eisige Wellenklinge
+14051000	Giftige Wellenklinge
+14051100	Blutige Wellenklinge
+14051200	Okkulte Wellenklinge
+14060000	Zelebrantenbeil
+14060100	Schweres Zelebrantenbeil
+14060200	Solides Zelebrantenbeil
+14060300	Wertiges Zelebrantenbeil
+14060400	Feuriges Zelebrantenbeil
+14060500	Flammendes Zelebrantenbeil
+14060600	Blitzendes Zelebrantenbeil
+14060700	Heiliges Zelebrantenbeil
+14060800	Magisches Zelebrantenbeil
+14060900	Eisiges Zelebrantenbeil
+14061000	Giftiges Zelebrantenbeil
+14061100	Blutiges Zelebrantenbeil
+14061200	Okkultes Zelebrantenbeil
+14080000	Eisiges Beil
+14100000	Hochlandaxt
+14100100	Schwere Hochlandaxt
+14100200	Solide Hochlandaxt
+14100300	Wertige Hochlandaxt
+14100400	Feurige Hochlandaxt
+14100500	Flammende Hochlandaxt
+14100600	Blitzende Hochlandaxt
+14100700	Heilige Hochlandaxt
+14100800	Magische Hochlandaxt
+14100900	Eisige Hochlandaxt
+14101000	Giftige Hochlandaxt
+14101100	Blutige Hochlandaxt
+14101200	Okkulte Hochlandaxt
+14110000	Opferpriesteraxt
+14110100	Schwere Opferpriesteraxt
+14110200	Solide Opferpriesteraxt
+14110300	Wertige Opferpriesteraxt
+14110400	Feurige Opferpriesteraxt
+14110500	Flammende Opferpriesteraxt
+14110600	Blitzende Opferpriesteraxt
+14110700	Heilige Opferpriesteraxt
+14110800	Magische Opferpriesteraxt
+14110900	Eisige Opferpriesteraxt
+14111000	Giftige Opferpriesteraxt
+14111100	Blutige Opferpriesteraxt
+14111200	Okkulte Opferpriesteraxt
+14120000	Rosus' Axt
+14130000	Ein Gerät, mit dem die Mitglieder der könig-\nlichen Familie von Karia Horoskope erstellten.\n\nErmöglicht Sicht über höhere Distanz.\n\nWährend des goldenen Zeitalters regierte der\nErdenbaum über alles und die karianische\nAstrologie geriet allmählich in Vergessenheit.\nWer braucht schon die Sterne, wenn der Erdenbaum\nsich über allem erhebt?
+14130100	
+14130200	
+14130300	
+14130400	
+14130500	
+14130600	
+14130700	
+14130800	
+14130900	
+14131000	
+14131100	
+14131200	
+14140000	Sturmfalkenaxt
+15000000	Großaxt
+15000100	Schwere Großaxt
+15000200	Solide Großaxt
+15000300	Wertige Großaxt
+15000400	Feurige Großaxt
+15000500	Flammende Großaxt
+15000600	Blitzende Großaxt
+15000700	Heilige Großaxt
+15000800	Magische Großaxt
+15000900	Eisige Großaxt
+15001000	Giftige Großaxt
+15001100	Blutige Großaxt
+15001200	Okkulte Großaxt
+15010000	Verformte Axt
+15010100	Schwere verformte Axt
+15010200	Solide verformte Axt
+15010300	Wertige verformte Axt
+15010400	Feurige verformte Axt
+15010500	Flammende verformte Axt
+15010600	Blitzende verformte Axt
+15010700	Heilige verformte Axt
+15010800	Magische verformte Axt
+15010900	Eisige verformte Axt
+15011000	Giftige verformte Axt
+15011100	Blutige verformte Axt
+15011200	Okkulte verformte Axt
+15020000	Maltöter-Großbeil
+15020100	Schweres Maltöter-Großbeil
+15020200	Solides Maltöter-Großbeil
+15020300	Wertiges Maltöter-Großbeil
+15020400	Feuriges Maltöter-Großbeil
+15020500	Flammendes Maltöter-Großbeil
+15020600	Blitzendes Maltöter-Großbeil
+15020700	Heiliges Maltöter-Großbeil
+15020800	Magisches Maltöter-Großbeil
+15020900	Eisiges Maltöter-Großbeil
+15021000	Giftiges Maltöter-Großbeil
+15021100	Blutiges Maltöter-Großbeil
+15021200	Okkultes Maltöter-Großbeil
+15030000	Halbmondaxt
+15030100	Schwere Halbmondaxt
+15030200	Solide Halbmondaxt
+15030300	Wertige Halbmondaxt
+15030400	Feurige Halbmondaxt
+15030500	Flammende Halbmondaxt
+15030600	Blitzende Halbmondaxt
+15030700	Heilige Halbmondaxt
+15030800	Magische Halbmondaxt
+15030900	Eisige Halbmondaxt
+15031000	Giftige Halbmondaxt
+15031100	Blutige Halbmondaxt
+15031200	Okkulte Halbmondaxt
+15040000	Godricks Axt
+15050000	Langstielbeil
+15050100	Schweres Langstielbeil
+15050200	Solides Langstielbeil
+15050300	Wertiges Langstielbeil
+15050400	Feuriges Langstielbeil
+15050500	Flammendes Langstielbeil
+15050600	Blitzendes Langstielbeil
+15050700	Heiliges Langstielbeil
+15050800	Magisches Langstielbeil
+15050900	Eisiges Langstielbeil
+15051000	Giftiges Langstielbeil
+15051100	Blutiges Langstielbeil
+15051200	Okkultes Langstielbeil
+15060000	Rostiger Anker
+15060100	Schwerer rostiger Anker
+15060200	Solider rostiger Anker
+15060300	Wertiger rostiger Anker
+15060400	Feuriger rostiger Anker
+15060500	Flammender rostiger Anker
+15060600	Blitzender rostiger Anker
+15060700	Heiliger rostiger Anker
+15060800	Magischer rostiger Anker
+15060900	Eisiger rostiger Anker
+15061000	Giftiger rostiger Anker
+15061100	Blutiger rostiger Anker
+15061200	Okkulter rostiger Anker
+15080000	Henkergroßaxt
+15080100	Schwere Henkergroßaxt
+15080200	Solide Henkergroßaxt
+15080300	Wertige Henkergroßaxt
+15080400	Feurige Henkergroßaxt
+15080500	Flammende Henkergroßaxt
+15080600	Blitzende Henkergroßaxt
+15080700	Heilige Henkergroßaxt
+15080800	Magische Henkergroßaxt
+15080900	Eisige Henkergroßaxt
+15081000	Giftige Henkergroßaxt
+15081100	Blutige Henkergroßaxt
+15081200	Okkulte Henkergroßaxt
+15110000	Schwingengroßhorn
+15120000	Fleischermesser
+15120100	Schweres Fleischermesser
+15120200	Solides Fleischermesser
+15120300	Wertiges Fleischermesser
+15120400	Feuriges Fleischermesser
+15120500	Flammendes Fleischermesser
+15120600	Blitzendes Fleischermesser
+15120700	Heiliges Fleischermesser
+15120800	Magisches Fleischermesser
+15120900	Eisiges Fleischermesser
+15121000	Giftiges Fleischermesser
+15121100	Blutiges Fleischermesser
+15121200	Okkultes Fleischermesser
+15130000	Gargoyle-Großaxt
+15130100	Schwere Gargoyle-Großaxt
+15130200	Solide Gargoyle-Großaxt
+15130300	Wertige Gargoyle-Großaxt
+15130400	Feurige Gargoyle-Großaxt
+15130500	Flammende Gargoyle-Großaxt
+15130600	Blitzende Gargoyle-Großaxt
+15130700	Heilige Gargoyle-Großaxt
+15130800	Magische Gargoyle-Großaxt
+15130900	Eisige Gargoyle-Großaxt
+15131000	Giftige Gargoyle-Großaxt
+15131100	Blutige Gargoyle-Großaxt
+15131200	Okkulte Gargoyle-Großaxt
+15140000	Gargoyle-Schwarzaxt
+15140100	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140200	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140300	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140400	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140500	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140600	Geisterasche. Ruft einen Nordsöldnergeist herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDen Nordsöldnern wird nachgesagt, dass das Blut von Riesen durch ihre Adern strömt und sie ihre geschwungenen Spaltbeile deshalb mit Leichtigkeit schwingen können. Ihr lautes Gebrüll macht sie nur noch stärker.
+15140700	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15140800	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15140900	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15141000	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15141100	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15141200	Geisterasche. Ruft drei einsame Wolfsgeister herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nDiese Wölfe wurden aus ihrem Rudel vertrieben. Später fanden sie in einem abtrünnigen Jäger einen menschlichen Gefährten. Wolfsgeister unterstützen den Beschwörer, indem sie Gegner durch ihre Beweglichkeit überwältigen.
+15900000	[ERROR]
+16000000	Kurzspeer
+16000100	Schwerer Kurzspeer
+16000200	Solider Kurzspeer
+16000300	Wertiger Kurzspeer
+16000400	Feuriger Kurzspeer
+16000500	Flammender Kurzspeer
+16000600	Blitzender Kurzspeer
+16000700	Heiliger Kurzspeer
+16000800	Magischer Kurzspeer
+16000900	Eisiger Kurzspeer
+16001000	Giftiger Kurzspeer
+16001100	Blutiger Kurzspeer
+16001200	Okkulter Kurzspeer
+16010000	Speer
+16010100	Schwerer Speer
+16010200	Solider Speer
+16010300	Wertiger Speer
+16010400	Feuriger Speer
+16010500	Flammender Speer
+16010600	Blitzender Speer
+16010700	Heiliger Speer
+16010800	Magischer Speer
+16010900	Eisiger Speer
+16011000	Giftiger Speer
+16011100	Blutiger Speer
+16011200	Okkulter Speer
+16020000	Kristallspeer
+16030000	Tonmenschenharpune
+16030100	Schwere Tonmenschenharpune
+16030200	Solide Tonmenschenharpune
+16030300	Wertige Tonmenschenharpune
+16030400	Feurige Tonmenschenharpune
+16030500	Flammende Tonmenschenharpune
+16030600	Blitzende Tonmenschenharpune
+16030700	Heilige Tonmenschenharpune
+16030800	Magische Tonmenschenharpune
+16030900	Eisige Tonmenschenharpune
+16031000	Giftige Tonmenschenharpune
+16031100	Blutige Tonmenschenharpune
+16031200	Okkulte Tonmenschenharpune
+16040000	Reinfäule-Speer
+16040100	Geisterasche. Ruft eine Geisterqualle herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nSchwebendes Phantom, das die Umgebung erhellt.\r\nScheinbar der verweilende Geist eines jungen Mädchens auf der ewigen Suche nach ihrer Schwester, mit der sie die Sterne beobachten wollte.
+16040200	Geisterasche. Ruft eine Geisterqualle herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nSchwebendes Phantom, das die Umgebung erhellt.\r\nScheinbar der verweilende Geist eines jungen Mädchens auf der ewigen Suche nach ihrer Schwester, mit der sie die Sterne beobachten wollte.
+16040300	Geisterasche. Ruft eine Geisterqualle herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nSchwebendes Phantom, das die Umgebung erhellt.\r\nScheinbar der verweilende Geist eines jungen Mädchens auf der ewigen Suche nach ihrer Schwester, mit der sie die Sterne beobachten wollte.
+16040400	Geisterasche. Ruft eine Geisterqualle herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nSchwebendes Phantom, das die Umgebung erhellt.\r\nScheinbar der verweilende Geist eines jungen Mädchens auf der ewigen Suche nach ihrer Schwester, mit der sie die Sterne beobachten wollte.
+16040500	Geisterasche. Ruft eine Geisterqualle herbei.\r\n(Herbeirufen verbraucht FP.)\r\n\r\nSchwebendes Phantom, das die Umgebung erhellt.\r\nScheinbar der verweilende Geist eines jungen Mädchens auf der ewigen Suche nach ihrer Schwester, mit der sie die Sterne beobachten wollte.
+16040600	Ruft einen Kriegsfalken.
+16040700	Ruft einen Kriegsfalken.
+16040800	Ruft einen Kriegsfalken.
+16040900	Ruft einen Kriegsfalken.
+16041000	Ruft einen Kriegsfalken.
+16041100	Ruft einen Kriegsfalken.
+16041200	Ruft einen Kriegsfalken.
+16050000	Partisane
+16050100	Schwere Partisane
+16050200	Solide Partisane
+16050300	Wertige Partisane
+16050400	Feurige Partisane
+16050500	Flammende Partisane
+16050600	Blitzende Partisane
+16050700	Heilige Partisane
+16050800	Magische Partisane
+16050900	Eisige Partisane
+16051000	Giftige Partisane
+16051100	Blutige Partisane
+16051200	Okkulte Partisane
+16060000	Zelebrantenrippenharke
+16060100	Schwere Zelebrantenrippenharke
+16060200	Solide Zelebrantenrippenharke
+16060300	Wertige Zelebrantenrippenharke
+16060400	Feurige Zelebrantenrippenharke
+16060500	Flammende Zelebrantenrippenharke
+16060600	Blitzende Zelebrantenrippenharke
+16060700	Heilige Zelebrantenrippenharke
+16060800	Magische Zelebrantenrippenharke
+16060900	Eisige Zelebrantenrippenharke
+16061000	Giftige Zelebrantenrippenharke
+16061100	Blutige Zelebrantenrippenharke
+16061200	Okkulte Zelebrantenrippenharke
+16070000	Pike
+16070100	Schwere Pike
+16070200	Solide Pike
+16070300	Wertige Pike
+16070400	Feurige Pike
+16070500	Flammende Pike
+16070600	Blitzende Pike
+16070700	Heilige Pike
+16070800	Magische Pike
+16070900	Eisige Pike
+16071000	Giftige Pike
+16071100	Blutige Pike
+16071200	Okkulte Pike
+16080000	Stabfackel
+16090000	Blitz von Gransax
+16110000	Kreuz-Naginata
+16110100	Schwere Kreuz-Naginata
+16110200	Solide Kreuz-Naginata
+16110300	Wertige Kreuz-Naginata
+16110400	Feurige Kreuz-Naginata
+16110500	Flammende Kreuz-Naginata
+16110600	Blitzende Kreuz-Naginata
+16110700	Heilige Kreuz-Naginata
+16110800	Magische Kreuz-Naginata
+16110900	Eisige Kreuz-Naginata
+16111000	Giftige Kreuz-Naginata
+16111100	Blutige Kreuz-Naginata
+16111200	Okkulte Kreuz-Naginata
+16120000	Todesritualspeer
+16130000	Girandole des Inquisitors
+16140000	Stachelspeer
+16140100	Schwerer Stachelspeer
+16140200	Solider Stachelspeer
+16140300	Wertiger Stachelspeer
+16140400	Feuriger Stachelspeer
+16140500	Flammender Stachelspeer
+16140600	Blitzender Stachelspeer
+16140700	Heiliger Stachelspeer
+16140800	Magischer Stachelspeer
+16140900	Eisiger Stachelspeer
+16141000	Giftiger Stachelspeer
+16141100	Blutiger Stachelspeer
+16141200	Okkulter Stachelspeer
+16150000	Eisenspeer
+16150100	Schwerer Eisenspeer
+16150200	Solider Eisenspeer
+16150300	Wertiger Eisenspeer
+16150400	Feuriger Eisenspeer
+16150500	Flammender Eisenspeer
+16150600	Blitzender Eisenspeer
+16150700	Heiliger Eisenspeer
+16150800	Magischer Eisenspeer
+16150900	Eisiger Eisenspeer
+16151000	Giftiger Eisenspeer
+16151100	Blutiger Eisenspeer
+16151200	Okkulter Eisenspeer
+16160000	Fäulniskristallspeer
+17010000	Mohgwyns heiliger Speer
+17020000	Silurias Baum
+17030000	Schlangenjäger
+17050000	Vykes Kriegsspeer
+17060000	Lanze
+17060100	Schwere Lanze
+17060200	Solide Lanze
+17060300	Wertige Lanze
+17060400	Feurige Lanze
+17060500	Flammende Lanze
+17060600	Blitzende Lanze
+17060700	Heilige Lanze
+17060800	Magische Lanze
+17060900	Eisige Lanze
+17061000	Giftige Lanze
+17061100	Blutige Lanze
+17061200	Okkulte Lanze
+17070000	Baumspeer
+17070100	[ERROR]Schwerer Baumspeer
+17070101	[ERROR]
+17070102	[ERROR]
+17070103	[ERROR]
+17070104	[ERROR]
+17070105	[ERROR]
+17070106	[ERROR]
+17070107	[ERROR]
+17070108	[ERROR]
+17070109	[ERROR]
+17070110	[ERROR]
+17070111	[ERROR]
+17070112	[ERROR]
+17070113	[ERROR]
+17070114	[ERROR]
+17070115	[ERROR]
+17070116	[ERROR]
+17070117	[ERROR]
+17070118	[ERROR]
+17070119	[ERROR]
+17070120	[ERROR]
+17070121	[ERROR]
+17070122	[ERROR]
+17070123	[ERROR]
+17070124	[ERROR]
+17070125	[ERROR]
+17070200	[ERROR]Solider Baumspeer
+17070201	[ERROR]
+17070202	[ERROR]
+17070203	[ERROR]
+17070204	[ERROR]
+17070205	[ERROR]
+17070206	[ERROR]
+17070207	[ERROR]
+17070208	[ERROR]
+17070209	[ERROR]
+17070210	[ERROR]
+17070211	[ERROR]
+17070212	[ERROR]
+17070213	[ERROR]
+17070214	[ERROR]
+17070215	[ERROR]
+17070216	[ERROR]
+17070217	[ERROR]
+17070218	[ERROR]
+17070219	[ERROR]
+17070220	[ERROR]
+17070221	[ERROR]
+17070222	[ERROR]
+17070223	[ERROR]
+17070224	[ERROR]
+17070225	[ERROR]
+17070300	[ERROR]Wertiger Baumspeer
+17070301	[ERROR]
+17070302	[ERROR]
+17070303	[ERROR]
+17070304	[ERROR]
+17070305	[ERROR]
+17070306	[ERROR]
+17070307	[ERROR]
+17070308	[ERROR]
+17070309	[ERROR]
+17070310	[ERROR]
+17070311	[ERROR]
+17070312	[ERROR]
+17070313	[ERROR]
+17070314	[ERROR]
+17070315	[ERROR]
+17070316	[ERROR]
+17070317	[ERROR]
+17070318	[ERROR]
+17070319	[ERROR]
+17070320	[ERROR]
+17070321	[ERROR]
+17070322	[ERROR]
+17070323	[ERROR]
+17070324	[ERROR]
+17070325	[ERROR]
+17070400	[ERROR]Feuriger Baumspeer
+17070401	[ERROR]
+17070402	[ERROR]
+17070403	[ERROR]
+17070404	[ERROR]
+17070405	[ERROR]
+17070406	[ERROR]
+17070407	[ERROR]
+17070408	[ERROR]
+17070409	[ERROR]
+17070410	[ERROR]
+17070411	[ERROR]
+17070412	[ERROR]
+17070413	[ERROR]
+17070414	[ERROR]
+17070415	[ERROR]
+17070416	[ERROR]
+17070417	[ERROR]
+17070418	[ERROR]
+17070419	[ERROR]
+17070420	[ERROR]
+17070421	[ERROR]
+17070422	[ERROR]
+17070423	[ERROR]
+17070424	[ERROR]
+17070425	[ERROR]
+17070500	[ERROR]Flammender Baumspeer
+17070501	[ERROR]
+17070502	[ERROR]
+17070503	[ERROR]
+17070504	[ERROR]
+17070505	[ERROR]
+17070506	[ERROR]
+17070507	[ERROR]
+17070508	[ERROR]
+17070509	[ERROR]
+17070510	[ERROR]
+17070511	[ERROR]
+17070512	[ERROR]
+17070513	[ERROR]
+17070514	[ERROR]
+17070515	[ERROR]
+17070516	[ERROR]
+17070517	[ERROR]
+17070518	[ERROR]
+17070519	[ERROR]
+17070520	[ERROR]
+17070521	[ERROR]
+17070522	[ERROR]
+17070523	[ERROR]
+17070524	[ERROR]
+17070525	[ERROR]
+17070600	[ERROR]Blitzender Baumspeer
+17070601	[ERROR]
+17070602	[ERROR]
+17070603	[ERROR]
+17070604	[ERROR]
+17070605	[ERROR]
+17070606	[ERROR]
+17070607	[ERROR]
+17070608	[ERROR]
+17070609	[ERROR]
+17070610	[ERROR]
+17070611	[ERROR]
+17070612	[ERROR]
+17070613	[ERROR]
+17070614	[ERROR]
+17070615	[ERROR]
+17070616	[ERROR]
+17070617	[ERROR]
+17070618	[ERROR]
+17070619	[ERROR]
+17070620	[ERROR]
+17070621	[ERROR]
+17070622	[ERROR]
+17070623	[ERROR]
+17070624	[ERROR]
+17070625	[ERROR]
+17070700	[ERROR]Heiliger Baumspeer
+17070701	[ERROR]
+17070702	[ERROR]
+17070703	[ERROR]
+17070704	[ERROR]
+17070705	[ERROR]
+17070706	[ERROR]
+17070707	[ERROR]
+17070708	[ERROR]
+17070709	[ERROR]
+17070710	[ERROR]
+17070711	[ERROR]
+17070712	[ERROR]
+17070713	[ERROR]
+17070714	[ERROR]
+17070715	[ERROR]
+17070716	[ERROR]
+17070717	[ERROR]
+17070718	[ERROR]
+17070719	[ERROR]
+17070720	[ERROR]
+17070721	[ERROR]
+17070722	[ERROR]
+17070723	[ERROR]
+17070724	[ERROR]
+17070725	[ERROR]
+17070800	[ERROR]Magischer Baumspeer
+17070801	[ERROR]
+17070802	[ERROR]
+17070803	[ERROR]
+17070804	[ERROR]
+17070805	[ERROR]
+17070806	[ERROR]
+17070807	[ERROR]
+17070808	[ERROR]
+17070809	[ERROR]
+17070810	[ERROR]
+17070811	[ERROR]
+17070812	[ERROR]
+17070813	[ERROR]
+17070814	[ERROR]
+17070815	[ERROR]
+17070816	[ERROR]
+17070817	[ERROR]
+17070818	[ERROR]
+17070819	[ERROR]
+17070820	[ERROR]
+17070821	[ERROR]
+17070822	[ERROR]
+17070823	[ERROR]
+17070824	[ERROR]
+17070825	[ERROR]
+17070900	[ERROR]Eisiger Baumspeer
+17070901	[ERROR]
+17070902	[ERROR]
+17070903	[ERROR]
+17070904	[ERROR]
+17070905	[ERROR]
+17070906	[ERROR]
+17070907	[ERROR]
+17070908	[ERROR]
+17070909	[ERROR]
+17070910	[ERROR]
+17070911	[ERROR]
+17070912	[ERROR]
+17070913	[ERROR]
+17070914	[ERROR]
+17070915	[ERROR]
+17070916	[ERROR]
+17070917	[ERROR]
+17070918	[ERROR]
+17070919	[ERROR]
+17070920	[ERROR]
+17070921	[ERROR]
+17070922	[ERROR]
+17070923	[ERROR]
+17070924	[ERROR]
+17070925	[ERROR]
+17071000	[ERROR]Giftiger Baumspeer
+17071001	[ERROR]
+17071002	[ERROR]
+17071003	[ERROR]
+17071004	[ERROR]
+17071005	[ERROR]
+17071006	[ERROR]
+17071007	[ERROR]
+17071008	[ERROR]
+17071009	[ERROR]
+17071010	[ERROR]
+17071011	[ERROR]
+17071012	[ERROR]
+17071013	[ERROR]
+17071014	[ERROR]
+17071015	[ERROR]
+17071016	[ERROR]
+17071017	[ERROR]
+17071018	[ERROR]
+17071019	[ERROR]
+17071020	[ERROR]
+17071021	[ERROR]
+17071022	[ERROR]
+17071023	[ERROR]
+17071024	[ERROR]
+17071025	[ERROR]
+17071100	[ERROR]Blutiger Baumspeer
+17071101	[ERROR]
+17071102	[ERROR]
+17071103	[ERROR]
+17071104	[ERROR]
+17071105	[ERROR]
+17071106	[ERROR]
+17071107	[ERROR]
+17071108	[ERROR]
+17071109	[ERROR]
+17071110	[ERROR]
+17071111	[ERROR]
+17071112	[ERROR]
+17071113	[ERROR]
+17071114	[ERROR]
+17071115	[ERROR]
+17071116	[ERROR]
+17071117	[ERROR]
+17071118	[ERROR]
+17071119	[ERROR]
+17071120	[ERROR]
+17071121	[ERROR]
+17071122	[ERROR]
+17071123	[ERROR]
+17071124	[ERROR]
+17071125	[ERROR]
+17071200	[ERROR]Okkulter Baumspeer
+17071201	[ERROR]
+17071202	[ERROR]
+17071203	[ERROR]
+17071204	[ERROR]
+17071205	[ERROR]
+17071206	[ERROR]
+17071207	[ERROR]
+17071208	[ERROR]
+17071209	[ERROR]
+17071210	[ERROR]
+17071211	[ERROR]
+17071212	[ERROR]
+17071213	[ERROR]
+17071214	[ERROR]
+17071215	[ERROR]
+17071216	[ERROR]
+17071217	[ERROR]
+17071218	[ERROR]
+17071219	[ERROR]
+17071220	[ERROR]
+17071221	[ERROR]
+17071222	[ERROR]
+17071223	[ERROR]
+17071224	[ERROR]
+17071225	[ERROR]
+17900000	[ERROR]
+17910000	[ERROR]
+18000000	Hellebarde
+18000100	Schwere Hellebarde
+18000200	Solide Hellebarde
+18000300	Wertige Hellebarde
+18000400	Feurige Hellebarde
+18000500	Flammende Hellebarde
+18000600	Blitzende Hellebarde
+18000700	Heilige Hellebarde
+18000800	Magische Hellebarde
+18000900	Eisige Hellebarde
+18001000	Giftige Hellebarde
+18001100	Blutige Hellebarde
+18001200	Okkulte Hellebarde
+18010000	Seuchengleve
+18010100	Schwere Seuchengleve
+18010200	Solide Seuchengleve
+18010300	Wertige Seuchengleve
+18010400	Feurige Seuchengleve
+18010500	Flammende Seuchengleve
+18010600	Blitzende Seuchengleve
+18010700	Heilige Seuchengleve
+18010800	Magische Seuchengleve
+18010900	Eisige Seuchengleve
+18011000	Giftige Seuchengleve
+18011100	Blutige Seuchengleve
+18011200	Okkulte Seuchengleve
+18020000	Falkenschnabel
+18020100	Schwerer Falkenschnabel
+18020200	Solider Falkenschnabel
+18020300	Wertiger Falkenschnabel
+18020400	Feuriger Falkenschnabel
+18020500	Flammender Falkenschnabel
+18020600	Blitzender Falkenschnabel
+18020700	Heiliger Falkenschnabel
+18020800	Magischer Falkenschnabel
+18020900	Eisiger Falkenschnabel
+18021000	Giftiger Falkenschnabel
+18021100	Blutiger Falkenschnabel
+18021200	Okkulter Falkenschnabel
+18030000	Hellebarde der Exilritter
+18030100	Schwere Hellebarde der Exilritter
+18030200	Solide Hellebarde der Exilritter
+18030300	Wertige Hellebarde der Exilritter
+18030400	Feurige Hellebarde der Exilritter
+18030500	Flammende Hellebarde der Exilritter
+18030600	Blitzende Hellebarde der Exilritter
+18030700	Heilige Hellebarde der Exilritter
+18030800	Magische Hellebarde der Exilritter
+18030900	Eisige Hellebarde der Exilritter
+18031000	Giftige Hellebarde der Exilritter
+18031100	Blutige Hellebarde der Exilritter
+18031200	Okkulte Hellebarde der Exilritter
+18040000	Kommandantenstandarte
+18050000	Gleve der Dunkelkavallerie
+18050100	Schwere Gleve der Dunkelkavallerie
+18050200	Solide Gleve der Dunkelkavallerie
+18050300	Wertige Gleve der Dunkelkavallerie
+18050400	Feurige Gleve der Dunkelkavallerie
+18050500	Flammende Gleve der Dunkelkavallerie
+18050600	Blitzende Gleve der Dunkelkavallerie
+18050700	Heilige Gleve der Dunkelkavallerie
+18050800	Magische Gleve der Dunkelkavallerie
+18050900	Eisige Gleve der Dunkelkavallerie
+18051000	Giftige Gleve der Dunkelkavallerie
+18051100	Blutige Gleve der Dunkelkavallerie
+18051200	Okkulte Gleve der Dunkelkavallerie
+18060000	Wellenhellebarde
+18060100	Schwere Wellenhellebarde
+18060200	Solide Wellenhellebarde
+18060300	Wertige Wellenhellebarde
+18060400	Feurige Wellenhellebarde
+18060500	Flammende Wellenhellebarde
+18060600	Blitzende Wellenhellebarde
+18060700	Heilige Wellenhellebarde
+18060800	Magische Wellenhellebarde
+18060900	Eisige Wellenhellebarde
+18061000	Giftige Wellenhellebarde
+18061100	Blutige Wellenhellebarde
+18061200	Okkulte Wellenhellebarde
+18070000	Säge der niederen Soldaten
+18070100	Schwere Säge der niederen Soldaten
+18070200	Solide Säge der niederen Soldaten
+18070300	Wertige Säge der niederen Soldaten
+18070400	Feurige Säge der niederen Soldaten
+18070500	Flammende Säge der niederen Soldaten
+18070600	Blitzende Säge der niederen Soldaten
+18070700	Heilige Säge der niederen Soldaten
+18070800	Magische Säge der niederen Soldaten
+18070900	Eisige Säge der niederen Soldaten
+18071000	Giftige Säge der niederen Soldaten
+18071100	Blutige Säge der niederen Soldaten
+18071200	Okkulte Säge der niederen Soldaten
+18080000	Goldene Hellebarde
+18080100	Schwere goldene Hellebarde
+18080200	Solide goldene Hellebarde
+18080300	Wertige goldene Hellebarde
+18080400	Feurige goldene Hellebarde
+18080500	Flammende goldene Hellebarde
+18080600	Blitzende goldene Hellebarde
+18080700	Heilige goldene Hellebarde
+18080800	Magische goldene Hellebarde
+18080900	Eisige goldene Hellebarde
+18081000	Giftige goldene Hellebarde
+18081100	Blutige goldene Hellebarde
+18081200	Okkulte goldene Hellebarde
+18090000	Gleve
+18090100	Schwere Gleve
+18090200	Solide Gleve
+18090300	Wertige Gleve
+18090400	Feurige Gleve
+18090500	Flammende Gleve
+18090600	Blitzende Gleve
+18090700	Heilige Gleve
+18090800	Magische Gleve
+18090900	Eisige Gleve
+18091000	Giftige Gleve
+18091100	Blutige Gleve
+18091200	Okkulte Gleve
+18100000	Lorettas Kriegssichel
+18110000	Wächter-Schwertspeer
+18110100	Schwerer Wächter-Schwertspeer
+18110200	Solider Wächter-Schwertspeer
+18110300	Wertiger Wächter-Schwertspeer
+18110400	Feuriger Wächter-Schwertspeer
+18110500	Flammender Wächter-Schwertspeer
+18110600	Blitzender Wächter-Schwertspeer
+18110700	Heiliger Wächter-Schwertspeer
+18110800	Magischer Wächter-Schwertspeer
+18110900	Eisiger Wächter-Schwertspeer
+18111000	Giftiger Wächter-Schwertspeer
+18111100	Blutiger Wächter-Schwertspeer
+18111200	Okkulter Wächter-Schwertspeer
+18130000	Shotel der niederen Soldaten
+18130100	Schwerer Shotel der niederen Soldaten
+18130200	Solider Shotel der niederen Soldaten
+18130300	Wertiger Shotel der niederen Soldaten
+18130400	Feuriger Shotel der niederen Soldaten
+18130500	Flammender Shotel der niederen Soldaten
+18130600	Blitzender Shotel der niederen Soldaten
+18130700	Heiliger Shotel der niederen Soldaten
+18130800	Magischer Shotel der niederen Soldaten
+18130900	Eisiger Shotel der niederen Soldaten
+18131000	Giftiger Shotel der niederen Soldaten
+18131100	Blutiger Shotel der niederen Soldaten
+18131200	Okkulter Shotel der niederen Soldaten
+18140000	Drachenhellebarde
+18140100	Ruft einen namenlosen Puppen-Heiligen.
+18140200	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140300	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140400	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140500	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140600	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140700	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140800	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18140900	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18141000	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18141100	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18141200	Ruft einen namenlosen Puppen-Schlafbogenbauer.
+18150000	Gargoyle-Hellebarde
+18150100	Schwere Gargoyle-Hellebarde
+18150200	Solide Gargoyle-Hellebarde
+18150300	Wertige Gargoyle-Hellebarde
+18150400	Feurige Gargoyle-Hellebarde
+18150500	Flammende Gargoyle-Hellebarde
+18150600	Blitzende Gargoyle-Hellebarde
+18150700	Heilige Gargoyle-Hellebarde
+18150800	Magische Gargoyle-Hellebarde
+18150900	Eisige Gargoyle-Hellebarde
+18151000	Giftige Gargoyle-Hellebarde
+18151100	Blutige Gargoyle-Hellebarde
+18151200	Okkulte Gargoyle-Hellebarde
+18160000	Gargoyle-Schwarzhellebarde
+18160100	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160200	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160300	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160400	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160500	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160600	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160700	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160800	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18160900	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18161000	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18161100	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+18161200	Eine Hellebarde, wie sie die Gargoyles im Dienste von Maliketh führen.
+19000000	Sense
+19000100	Schwere Sense
+19000200	Solide Sense
+19000300	Wertige Sense
+19000400	Feurige Sense
+19000500	Flammende Sense
+19000600	Blitzende Sense
+19000700	Heilige Sense
+19000800	Magische Sense
+19000900	Eisige Sense
+19001000	Giftige Sense
+19001100	Blutige Sense
+19001200	Okkulte Sense
+19010000	Grabsense
+19010100	Schwere Grabsense
+19010200	Solide Grabsense
+19010300	Wertige Grabsense
+19010400	Feurige Grabsense
+19010500	Flammende Grabsense
+19010600	Blitzende Grabsense
+19010700	Heilige Grabsense
+19010800	Magische Grabsense
+19010900	Eisige Grabsense
+19011000	Giftige Grabsense
+19011100	Blutige Grabsense
+19011200	Okkulte Grabsense
+19020000	Aureolensense
+19050000	
+19060000	Schwingensense
+20000000	Peitsche
+20000100	Schwere Peitsche
+20000200	Solide Peitsche
+20000300	Wertige Peitsche
+20000400	Feurige Peitsche
+20000500	Flammende Peitsche
+20000600	Blitzende Peitsche
+20000700	Heilige Peitsche
+20000800	Magische Peitsche
+20000900	Eisige Peitsche
+20001000	Giftige Peitsche
+20001100	Blutige Peitsche
+20001200	Okkulte Peitsche
+20020000	Dornenpeitsche
+20020100	Schwere Dornenpeitsche
+20020200	Solide Dornenpeitsche
+20020300	Wertige Dornenpeitsche
+20020400	Feurige Dornenpeitsche
+20020500	Flammende Dornenpeitsche
+20020600	Blitzende Dornenpeitsche
+20020700	Heilige Dornenpeitsche
+20020800	Magische Dornenpeitsche
+20020900	Eisige Dornenpeitsche
+20021000	Giftige Dornenpeitsche
+20021100	Blutige Dornenpeitsche
+20021200	Okkulte Dornenpeitsche
+20030000	Magmapeitschenleuchter
+20030100	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030200	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030300	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030400	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030500	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030600	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030700	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030800	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20030900	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20031000	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20031100	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20031200	Eine einzigartige dreiköpfige Peitsche.\r\n\r\nDie Macht des Feuers ruht in dieser Waffe. Wenn Ihr sie mit Magie erfüllt, schießt Lava aus ihren Köpfen hervor.
+20050000	Hoslows Blütenpeitsche
+20050100	Hoslows schwere Blütenpeitsche
+20050200	Hoslows solide Blütenpeitsche
+20050300	Hoslows wertige Blütenpeitsche
+20050400	Hoslows feurige Blütenpeitsche
+20050500	Hoslows flammende Blütenpeitsche
+20050600	Hoslows blitzende Blütenpeitsche
+20050700	Hoslows heilige Blütenpeitsche
+20050800	Hoslows magische Blütenpeitsche
+20050900	Hoslows eisige Blütenpeitsche
+20051000	Hoslows giftige Blütenpeitsche
+20051100	Hoslows blutige Blütenpeitsche
+20051200	Hoslows okkulte Blütenpeitsche
+20060000	Roter Riesenhaarzopf
+20070000	Urumi
+20070100	Schweres Urumi
+20070200	Solides Urumi
+20070300	Wertiges Urumi
+20070400	Feuriges Urumi
+20070500	Flammendes Urumi
+20070600	Blitzendes Urumi
+20070700	Heiliges Urumi
+20070800	Magisches Urumi
+20070900	Eisiges Urumi
+20071000	Giftiges Urumi
+20071100	Blutiges Urumi
+20071200	Okkultes Urumi
+21000000	Caestus
+21000100	Schwerer Caestus
+21000200	Solider Caestus
+21000300	Wertiger Caestus
+21000400	Feuriger Caestus
+21000500	Flammender Caestus
+21000600	Blitzender Caestus
+21000700	Heiliger Caestus
+21000800	Magischer Caestus
+21000900	Eisiger Caestus
+21001000	Giftiger Caestus
+21001100	Blutiger Caestus
+21001200	Okkulter Caestus
+21010000	Stachelcaestus
+21010100	Schwerer Stachelcaestus
+21010200	Solider Stachelcaestus
+21010300	Wertiger Stachelcaestus
+21010400	Feuriger Stachelcaestus
+21010500	Flammender Stachelcaestus
+21010600	Blitzender Stachelcaestus
+21010700	Heiliger Stachelcaestus
+21010800	Magischer Stachelcaestus
+21010900	Eisiger Stachelcaestus
+21011000	Giftiger Stachelcaestus
+21011100	Blutiger Stachelcaestus
+21011200	Okkulter Stachelcaestus
+21060000	Verpflanzter Drache
+21070000	Eisenkugel
+21070100	Schwere Eisenkugel
+21070200	Solide Eisenkugel
+21070300	Wertige Eisenkugel
+21070400	Feurige Eisenkugel
+21070500	Flammende Eisenkugel
+21070600	Blitzende Eisenkugel
+21070700	Heilige Eisenkugel
+21070800	Magische Eisenkugel
+21070900	Eisige Eisenkugel
+21071000	Giftige Eisenkugel
+21071100	Blutige Eisenkugel
+21071200	Okkulte Eisenkugel
+21080000	Sternfaust
+21080100	Schwere Sternfaust
+21080200	Solide Sternfaust
+21080300	Wertige Sternfaust
+21080400	Feurige Sternfaust
+21080500	Flammende Sternfaust
+21080600	Blitzende Sternfaust
+21080700	Heilige Sternfaust
+21080800	Magische Sternfaust
+21080900	Eisige Sternfaust
+21081000	Giftige Sternfaust
+21081100	Blutige Sternfaust
+21081200	Okkulte Sternfaust
+21100000	Katar
+21100100	Schwerer Katar
+21100200	Solider Katar
+21100300	Wertiger Katar
+21100400	Feuriger Katar
+21100500	Flammender Katar
+21100600	Blitzender Katar
+21100700	Heiliger Katar
+21100800	Magischer Katar
+21100900	Eisiger Katar
+21101000	Giftiger Katar
+21101100	Blutiger Katar
+21101200	Okkulter Katar
+21110000	Greifende Knochenhand
+21120000	Veteranenprothese
+21130000	Verschlüsseltes Pata
+22000000	Hakenkrallen
+22000100	Schwere Hakenkrallen
+22000200	Solide Hakenkrallen
+22000300	Wertige Hakenkrallen
+22000400	Feurige Hakenkrallen
+22000500	Flammende Hakenkrallen
+22000600	Blitzende Hakenkrallen
+22000700	Heilige Hakenkrallen
+22000800	Magische Hakenkrallen
+22000900	Eisige Hakenkrallen
+22001000	Giftige Hakenkrallen
+22001100	Blutige Hakenkrallen
+22001200	Okkulte Hakenkrallen
+22010000	Schlangenzahn
+22010100	Schwerer Schlangenzahn
+22010200	Solider Schlangenzahn
+22010300	Wertiger Schlangenzahn
+22010400	Feuriger Schlangenzahn
+22010500	Flammender Schlangenzahn
+22010600	Blitzender Schlangenzahn
+22010700	Heiliger Schlangenzahn
+22010800	Magischer Schlangenzahn
+22010900	Eisiger Schlangenzahn
+22011000	Giftiger Schlangenzahn
+22011100	Blutiger Schlangenzahn
+22011200	Okkulter Schlangenzahn
+22020000	Bluthundkrallen
+22020100	Schwere Bluthundkrallen
+22020200	Solide Bluthundkrallen
+22020300	Wertige Bluthundkrallen
+22020400	Feurige Bluthundkrallen
+22020500	Flammende Bluthundkrallen
+22020600	Blitzende Bluthundkrallen
+22020700	Heilige Bluthundkrallen
+22020800	Magische Bluthundkrallen
+22020900	Eisige Bluthundkrallen
+22021000	Giftige Bluthundkrallen
+22021100	Blutige Bluthundkrallen
+22021200	Okkulte Bluthundkrallen
+22030000	Raptorkrallen
+22030100	Schwere Raptorkrallen
+22030200	Solide Raptorkrallen
+22030300	Wertige Raptorkrallen
+22030400	Feurige Raptorkrallen
+22030500	Flammende Raptorkrallen
+22030600	Blitzende Raptorkrallen
+22030700	Heilige Raptorkrallen
+22030800	Magische Raptorkrallen
+22030900	Eisige Raptorkrallen
+22031000	Giftige Raptorkrallen
+22031100	Blutige Raptorkrallen
+22031200	Okkulte Raptorkrallen
+23000000	Infernalischer Prälatenstab
+23000100	Schwerer infernalischer Prälatenstab
+23000200	Solider infernalischer Prälatenstab
+23000300	Wertiger infernalischer Prälatenstab
+23000400	Feuriger infernalischer Prälatenstab
+23000500	Flammender infernalischer Prälatenstab
+23000600	Blitzender infernalischer Prälatenstab
+23000700	Heiliger infernalischer Prälatenstab
+23000800	Magischer infernalischer Prälatenstab
+23000900	Eisiger infernalischer Prälatenstab
+23001000	Giftiger infernalischer Prälatenstab
+23001100	Blutiger infernalischer Prälatenstab
+23001200	Okkulter infernalischer Prälatenstab
+23010000	Stab des Bewachers
+23010100	Schwerer Stab des Bewachers
+23010200	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010300	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010400	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010500	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010600	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010700	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010800	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23010900	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23011000	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23011100	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23011200	Ein Großhammer der Golems, die das Labyrinth der Unterstadt beschützen.\r\nUm eine so schwere Waffe zu führen, muss man außergewöhnlich stark sein.
+23020000	Großkeule
+23020100	[ERROR]Schwere Großkeule
+23020101	[ERROR]
+23020102	[ERROR]
+23020103	[ERROR]
+23020104	[ERROR]
+23020105	[ERROR]
+23020106	[ERROR]
+23020107	[ERROR]
+23020108	[ERROR]
+23020109	[ERROR]
+23020110	[ERROR]
+23020111	[ERROR]
+23020112	[ERROR]
+23020113	[ERROR]
+23020114	[ERROR]
+23020115	[ERROR]
+23020116	[ERROR]
+23020117	[ERROR]
+23020118	[ERROR]
+23020119	[ERROR]
+23020120	[ERROR]
+23020121	[ERROR]
+23020122	[ERROR]
+23020123	[ERROR]
+23020124	[ERROR]
+23020125	[ERROR]
+23020200	[ERROR]Solide Großkeule
+23020201	[ERROR]
+23020202	[ERROR]
+23020203	[ERROR]
+23020204	[ERROR]
+23020205	[ERROR]
+23020206	[ERROR]
+23020207	[ERROR]
+23020208	[ERROR]
+23020209	[ERROR]
+23020210	[ERROR]
+23020211	[ERROR]
+23020212	[ERROR]
+23020213	[ERROR]
+23020214	[ERROR]
+23020215	[ERROR]
+23020216	[ERROR]
+23020217	[ERROR]
+23020218	[ERROR]
+23020219	[ERROR]
+23020220	[ERROR]
+23020221	[ERROR]
+23020222	[ERROR]
+23020223	[ERROR]
+23020224	[ERROR]
+23020225	[ERROR]
+23020300	[ERROR]Wertige Großkeule
+23020301	[ERROR]
+23020302	[ERROR]
+23020303	[ERROR]
+23020304	[ERROR]
+23020305	[ERROR]
+23020306	[ERROR]
+23020307	[ERROR]
+23020308	[ERROR]
+23020309	[ERROR]
+23020310	[ERROR]
+23020311	[ERROR]
+23020312	[ERROR]
+23020313	[ERROR]
+23020314	[ERROR]
+23020315	[ERROR]
+23020316	[ERROR]
+23020317	[ERROR]
+23020318	[ERROR]
+23020319	[ERROR]
+23020320	[ERROR]
+23020321	[ERROR]
+23020322	[ERROR]
+23020323	[ERROR]
+23020324	[ERROR]
+23020325	[ERROR]
+23020400	[ERROR]Feurige Großkeule
+23020401	[ERROR]
+23020402	[ERROR]
+23020403	[ERROR]
+23020404	[ERROR]
+23020405	[ERROR]
+23020406	[ERROR]
+23020407	[ERROR]
+23020408	[ERROR]
+23020409	[ERROR]
+23020410	[ERROR]
+23020411	[ERROR]
+23020412	[ERROR]
+23020413	[ERROR]
+23020414	[ERROR]
+23020415	[ERROR]
+23020416	[ERROR]
+23020417	[ERROR]
+23020418	[ERROR]
+23020419	[ERROR]
+23020420	[ERROR]
+23020421	[ERROR]
+23020422	[ERROR]
+23020423	[ERROR]
+23020424	[ERROR]
+23020425	[ERROR]
+23020500	[ERROR]Flammende Großkeule
+23020501	[ERROR]
+23020502	[ERROR]
+23020503	[ERROR]
+23020504	[ERROR]
+23020505	[ERROR]
+23020506	[ERROR]
+23020507	[ERROR]
+23020508	[ERROR]
+23020509	[ERROR]
+23020510	[ERROR]
+23020511	[ERROR]
+23020512	[ERROR]
+23020513	[ERROR]
+23020514	[ERROR]
+23020515	[ERROR]
+23020516	[ERROR]
+23020517	[ERROR]
+23020518	[ERROR]
+23020519	[ERROR]
+23020520	[ERROR]
+23020521	[ERROR]
+23020522	[ERROR]
+23020523	[ERROR]
+23020524	[ERROR]
+23020525	[ERROR]
+23020600	[ERROR]Blitzende Großkeule
+23020601	[ERROR]
+23020602	[ERROR]
+23020603	[ERROR]
+23020604	[ERROR]
+23020605	[ERROR]
+23020606	[ERROR]
+23020607	[ERROR]
+23020608	[ERROR]
+23020609	[ERROR]
+23020610	[ERROR]
+23020611	[ERROR]
+23020612	[ERROR]
+23020613	[ERROR]
+23020614	[ERROR]
+23020615	[ERROR]
+23020616	[ERROR]
+23020617	[ERROR]
+23020618	[ERROR]
+23020619	[ERROR]
+23020620	[ERROR]
+23020621	[ERROR]
+23020622	[ERROR]
+23020623	[ERROR]
+23020624	[ERROR]
+23020625	[ERROR]
+23020700	[ERROR]Heilige Großkeule
+23020701	[ERROR]
+23020702	[ERROR]
+23020703	[ERROR]
+23020704	[ERROR]
+23020705	[ERROR]
+23020706	[ERROR]
+23020707	[ERROR]
+23020708	[ERROR]
+23020709	[ERROR]
+23020710	[ERROR]
+23020711	[ERROR]
+23020712	[ERROR]
+23020713	[ERROR]
+23020714	[ERROR]
+23020715	[ERROR]
+23020716	[ERROR]
+23020717	[ERROR]
+23020718	[ERROR]
+23020719	[ERROR]
+23020720	[ERROR]
+23020721	[ERROR]
+23020722	[ERROR]
+23020723	[ERROR]
+23020724	[ERROR]
+23020725	[ERROR]
+23020800	[ERROR]Magische Großkeule
+23020801	[ERROR]
+23020802	[ERROR]
+23020803	[ERROR]
+23020804	[ERROR]
+23020805	[ERROR]
+23020806	[ERROR]
+23020807	[ERROR]
+23020808	[ERROR]
+23020809	[ERROR]
+23020810	[ERROR]
+23020811	[ERROR]
+23020812	[ERROR]
+23020813	[ERROR]
+23020814	[ERROR]
+23020815	[ERROR]
+23020816	[ERROR]
+23020817	[ERROR]
+23020818	[ERROR]
+23020819	[ERROR]
+23020820	[ERROR]
+23020821	[ERROR]
+23020822	[ERROR]
+23020823	[ERROR]
+23020824	[ERROR]
+23020825	[ERROR]
+23020900	[ERROR]Eisige Großkeule
+23020901	[ERROR]
+23020902	[ERROR]
+23020903	[ERROR]
+23020904	[ERROR]
+23020905	[ERROR]
+23020906	[ERROR]
+23020907	[ERROR]
+23020908	[ERROR]
+23020909	[ERROR]
+23020910	[ERROR]
+23020911	[ERROR]
+23020912	[ERROR]
+23020913	[ERROR]
+23020914	[ERROR]
+23020915	[ERROR]
+23020916	[ERROR]
+23020917	[ERROR]
+23020918	[ERROR]
+23020919	[ERROR]
+23020920	[ERROR]
+23020921	[ERROR]
+23020922	[ERROR]
+23020923	[ERROR]
+23020924	[ERROR]
+23020925	[ERROR]
+23021000	[ERROR]Giftige Großkeule
+23021001	[ERROR]
+23021002	[ERROR]
+23021003	[ERROR]
+23021004	[ERROR]
+23021005	[ERROR]
+23021006	[ERROR]
+23021007	[ERROR]
+23021008	[ERROR]
+23021009	[ERROR]
+23021010	[ERROR]
+23021011	[ERROR]
+23021012	[ERROR]
+23021013	[ERROR]
+23021014	[ERROR]
+23021015	[ERROR]
+23021016	[ERROR]
+23021017	[ERROR]
+23021018	[ERROR]
+23021019	[ERROR]
+23021020	[ERROR]
+23021021	[ERROR]
+23021022	[ERROR]
+23021023	[ERROR]
+23021024	[ERROR]
+23021025	[ERROR]
+23021100	[ERROR]Blutige Großkeule
+23021101	[ERROR]
+23021102	[ERROR]
+23021103	[ERROR]
+23021104	[ERROR]
+23021105	[ERROR]
+23021106	[ERROR]
+23021107	[ERROR]
+23021108	[ERROR]
+23021109	[ERROR]
+23021110	[ERROR]
+23021111	[ERROR]
+23021112	[ERROR]
+23021113	[ERROR]
+23021114	[ERROR]
+23021115	[ERROR]
+23021116	[ERROR]
+23021117	[ERROR]
+23021118	[ERROR]
+23021119	[ERROR]
+23021120	[ERROR]
+23021121	[ERROR]
+23021122	[ERROR]
+23021123	[ERROR]
+23021124	[ERROR]
+23021125	[ERROR]
+23021200	[ERROR]Okkulte Großkeule
+23021201	[ERROR]
+23021202	[ERROR]
+23021203	[ERROR]
+23021204	[ERROR]
+23021205	[ERROR]
+23021206	[ERROR]
+23021207	[ERROR]
+23021208	[ERROR]
+23021209	[ERROR]
+23021210	[ERROR]
+23021211	[ERROR]
+23021212	[ERROR]
+23021213	[ERROR]
+23021214	[ERROR]
+23021215	[ERROR]
+23021216	[ERROR]
+23021217	[ERROR]
+23021218	[ERROR]
+23021219	[ERROR]
+23021220	[ERROR]
+23021221	[ERROR]
+23021222	[ERROR]
+23021223	[ERROR]
+23021224	[ERROR]
+23021225	[ERROR]
+23030000	Großhorn des Gesandten
+23040000	Duellantengroßaxt
+23040100	Schwere Duellantengroßaxt
+23040200	Solide Duellantengroßaxt
+23040300	Wertige Duellantengroßaxt
+23040400	Feurige Duellantengroßaxt
+23040500	Flammende Duellantengroßaxt
+23040600	Blitzende Duellantengroßaxt
+23040700	Heilige Duellantengroßaxt
+23040800	Magische Duellantengroßaxt
+23040900	Eisige Duellantengroßaxt
+23041000	Giftige Duellantengroßaxt
+23041100	Blutige Duellantengroßaxt
+23041200	Okkulte Duellantengroßaxt
+23050000	Godfreys Axt
+23060000	Große Drachenkralle
+23070000	Stab des Avatars
+23080000	Sternenfallbestienkiefer
+23100000	Ghizas Rad
+23110000	Riesenbrecher
+23110100	Schwerer Riesenbrecher
+23110200	Solider Riesenbrecher
+23110300	Wertiger Riesenbrecher
+23110400	Feuriger Riesenbrecher
+23110500	Flammender Riesenbrecher
+23110600	Blitzender Riesenbrecher
+23110700	Heiliger Riesenbrecher
+23110800	Magischer Riesenbrecher
+23110900	Eisiger Riesenbrecher
+23111000	Giftiger Riesenbrecher
+23111100	Blutiger Riesenbrecher
+23111200	Okkulter Riesenbrecher
+23120000	Golemhellebarde
+23120100	Schwere Golemhellebarde
+23120200	Solide Golemhellebarde
+23120300	Wertige Golemhellebarde
+23120400	Feurige Golemhellebarde
+23120500	Flammende Golemhellebarde
+23120600	Blitzende Golemhellebarde
+23120700	Heilige Golemhellebarde
+23120800	Magische Golemhellebarde
+23120900	Eisige Golemhellebarde
+23121000	Giftige Golemhellebarde
+23121100	Blutige Golemhellebarde
+23121200	Okkulte Golemhellebarde
+23130000	Trollhammer
+23130100	[ERROR]Schwerer Trollhammer
+23130101	[ERROR]
+23130102	[ERROR]
+23130103	[ERROR]
+23130104	[ERROR]
+23130105	[ERROR]
+23130106	[ERROR]
+23130107	[ERROR]
+23130108	[ERROR]
+23130109	[ERROR]
+23130110	[ERROR]
+23130111	[ERROR]
+23130112	[ERROR]
+23130113	[ERROR]
+23130114	[ERROR]
+23130115	[ERROR]
+23130116	[ERROR]
+23130117	[ERROR]
+23130118	[ERROR]
+23130119	[ERROR]
+23130120	[ERROR]
+23130121	[ERROR]
+23130122	[ERROR]
+23130123	[ERROR]
+23130124	[ERROR]
+23130125	[ERROR]
+23130200	[ERROR]Solider Trollhammer
+23130201	[ERROR]
+23130202	[ERROR]
+23130203	[ERROR]
+23130204	[ERROR]
+23130205	[ERROR]
+23130206	[ERROR]
+23130207	[ERROR]
+23130208	[ERROR]
+23130209	[ERROR]
+23130210	[ERROR]
+23130211	[ERROR]
+23130212	[ERROR]
+23130213	[ERROR]
+23130214	[ERROR]
+23130215	[ERROR]
+23130216	[ERROR]
+23130217	[ERROR]
+23130218	[ERROR]
+23130219	[ERROR]
+23130220	[ERROR]
+23130221	[ERROR]
+23130222	[ERROR]
+23130223	[ERROR]
+23130224	[ERROR]
+23130225	[ERROR]
+23130300	[ERROR]Wertiger Trollhammer
+23130301	[ERROR]
+23130302	[ERROR]
+23130303	[ERROR]
+23130304	[ERROR]
+23130305	[ERROR]
+23130306	[ERROR]
+23130307	[ERROR]
+23130308	[ERROR]
+23130309	[ERROR]
+23130310	[ERROR]
+23130311	[ERROR]
+23130312	[ERROR]
+23130313	[ERROR]
+23130314	[ERROR]
+23130315	[ERROR]
+23130316	[ERROR]
+23130317	[ERROR]
+23130318	[ERROR]
+23130319	[ERROR]
+23130320	[ERROR]
+23130321	[ERROR]
+23130322	[ERROR]
+23130323	[ERROR]
+23130324	[ERROR]
+23130325	[ERROR]
+23130400	[ERROR]Feuriger Trollhammer
+23130401	[ERROR]
+23130402	[ERROR]
+23130403	[ERROR]
+23130404	[ERROR]
+23130405	[ERROR]
+23130406	[ERROR]
+23130407	[ERROR]
+23130408	[ERROR]
+23130409	[ERROR]
+23130410	[ERROR]
+23130411	[ERROR]
+23130412	[ERROR]
+23130413	[ERROR]
+23130414	[ERROR]
+23130415	[ERROR]
+23130416	[ERROR]
+23130417	[ERROR]
+23130418	[ERROR]
+23130419	[ERROR]
+23130420	[ERROR]
+23130421	[ERROR]
+23130422	[ERROR]
+23130423	[ERROR]
+23130424	[ERROR]
+23130425	[ERROR]
+23130500	[ERROR]Flammender Trollhammer
+23130501	[ERROR]
+23130502	[ERROR]
+23130503	[ERROR]
+23130504	[ERROR]
+23130505	[ERROR]
+23130506	[ERROR]
+23130507	[ERROR]
+23130508	[ERROR]
+23130509	[ERROR]
+23130510	[ERROR]
+23130511	[ERROR]
+23130512	[ERROR]
+23130513	[ERROR]
+23130514	[ERROR]
+23130515	[ERROR]
+23130516	[ERROR]
+23130517	[ERROR]
+23130518	[ERROR]
+23130519	[ERROR]
+23130520	[ERROR]
+23130521	[ERROR]
+23130522	[ERROR]
+23130523	[ERROR]
+23130524	[ERROR]
+23130525	[ERROR]
+23130600	[ERROR]Blitzender Trollhammer
+23130601	[ERROR]
+23130602	[ERROR]
+23130603	[ERROR]
+23130604	[ERROR]
+23130605	[ERROR]
+23130606	[ERROR]
+23130607	[ERROR]
+23130608	[ERROR]
+23130609	[ERROR]
+23130610	[ERROR]
+23130611	[ERROR]
+23130612	[ERROR]
+23130613	[ERROR]
+23130614	[ERROR]
+23130615	[ERROR]
+23130616	[ERROR]
+23130617	[ERROR]
+23130618	[ERROR]
+23130619	[ERROR]
+23130620	[ERROR]
+23130621	[ERROR]
+23130622	[ERROR]
+23130623	[ERROR]
+23130624	[ERROR]
+23130625	[ERROR]
+23130700	[ERROR]Heiliger Trollhammer
+23130701	[ERROR]
+23130702	[ERROR]
+23130703	[ERROR]
+23130704	[ERROR]
+23130705	[ERROR]
+23130706	[ERROR]
+23130707	[ERROR]
+23130708	[ERROR]
+23130709	[ERROR]
+23130710	[ERROR]
+23130711	[ERROR]
+23130712	[ERROR]
+23130713	[ERROR]
+23130714	[ERROR]
+23130715	[ERROR]
+23130716	[ERROR]
+23130717	[ERROR]
+23130718	[ERROR]
+23130719	[ERROR]
+23130720	[ERROR]
+23130721	[ERROR]
+23130722	[ERROR]
+23130723	[ERROR]
+23130724	[ERROR]
+23130725	[ERROR]
+23130800	[ERROR]Magischer Trollhammer
+23130801	[ERROR]
+23130802	[ERROR]
+23130803	[ERROR]
+23130804	[ERROR]
+23130805	[ERROR]
+23130806	[ERROR]
+23130807	[ERROR]
+23130808	[ERROR]
+23130809	[ERROR]
+23130810	[ERROR]
+23130811	[ERROR]
+23130812	[ERROR]
+23130813	[ERROR]
+23130814	[ERROR]
+23130815	[ERROR]
+23130816	[ERROR]
+23130817	[ERROR]
+23130818	[ERROR]
+23130819	[ERROR]
+23130820	[ERROR]
+23130821	[ERROR]
+23130822	[ERROR]
+23130823	[ERROR]
+23130824	[ERROR]
+23130825	[ERROR]
+23130900	[ERROR]Eisiger Trollhammer
+23130901	[ERROR]
+23130902	[ERROR]
+23130903	[ERROR]
+23130904	[ERROR]
+23130905	[ERROR]
+23130906	[ERROR]
+23130907	[ERROR]
+23130908	[ERROR]
+23130909	[ERROR]
+23130910	[ERROR]
+23130911	[ERROR]
+23130912	[ERROR]
+23130913	[ERROR]
+23130914	[ERROR]
+23130915	[ERROR]
+23130916	[ERROR]
+23130917	[ERROR]
+23130918	[ERROR]
+23130919	[ERROR]
+23130920	[ERROR]
+23130921	[ERROR]
+23130922	[ERROR]
+23130923	[ERROR]
+23130924	[ERROR]
+23130925	[ERROR]
+23131000	[ERROR]Giftiger Trollhammer
+23131001	[ERROR]
+23131002	[ERROR]
+23131003	[ERROR]
+23131004	[ERROR]
+23131005	[ERROR]
+23131006	[ERROR]
+23131007	[ERROR]
+23131008	[ERROR]
+23131009	[ERROR]
+23131010	[ERROR]
+23131011	[ERROR]
+23131012	[ERROR]
+23131013	[ERROR]
+23131014	[ERROR]
+23131015	[ERROR]
+23131016	[ERROR]
+23131017	[ERROR]
+23131018	[ERROR]
+23131019	[ERROR]
+23131020	[ERROR]
+23131021	[ERROR]
+23131022	[ERROR]
+23131023	[ERROR]
+23131024	[ERROR]
+23131025	[ERROR]
+23131100	[ERROR]Blutiger Trollhammer
+23131101	[ERROR]
+23131102	[ERROR]
+23131103	[ERROR]
+23131104	[ERROR]
+23131105	[ERROR]
+23131106	[ERROR]
+23131107	[ERROR]
+23131108	[ERROR]
+23131109	[ERROR]
+23131110	[ERROR]
+23131111	[ERROR]
+23131112	[ERROR]
+23131113	[ERROR]
+23131114	[ERROR]
+23131115	[ERROR]
+23131116	[ERROR]
+23131117	[ERROR]
+23131118	[ERROR]
+23131119	[ERROR]
+23131120	[ERROR]
+23131121	[ERROR]
+23131122	[ERROR]
+23131123	[ERROR]
+23131124	[ERROR]
+23131125	[ERROR]
+23131200	[ERROR]Okkulter Trollhammer
+23131201	[ERROR]
+23131202	[ERROR]
+23131203	[ERROR]
+23131204	[ERROR]
+23131205	[ERROR]
+23131206	[ERROR]
+23131207	[ERROR]
+23131208	[ERROR]
+23131209	[ERROR]
+23131210	[ERROR]
+23131211	[ERROR]
+23131212	[ERROR]
+23131213	[ERROR]
+23131214	[ERROR]
+23131215	[ERROR]
+23131216	[ERROR]
+23131217	[ERROR]
+23131218	[ERROR]
+23131219	[ERROR]
+23131220	[ERROR]
+23131221	[ERROR]
+23131222	[ERROR]
+23131223	[ERROR]
+23131224	[ERROR]
+23131225	[ERROR]
+23140000	Fäulnisstab
+23150000	Fäulnisgroßaxt
+23150100	Schwere Fäulnisgroßaxt
+23150200	Solide Fäulnisgroßaxt
+23150300	Wertige Fäulnisgroßaxt
+23150400	Feurige Fäulnisgroßaxt
+23150500	Flammende Fäulnisgroßaxt
+23150600	Blitzende Fäulnisgroßaxt
+23150700	Heilige Fäulnisgroßaxt
+23150800	Magische Fäulnisgroßaxt
+23150900	Eisige Fäulnisgroßaxt
+23151000	Giftige Fäulnisgroßaxt
+23151100	Blutige Fäulnisgroßaxt
+23151200	Okkulte Fäulnisgroßaxt
+23900000	[ERROR]
+23910000	[ERROR]
+23920000	[ERROR]
+23930000	[ERROR]
+24000000	Fackel
+24020000	Stahldrahtfackel
+24040000	Fackel von St. Trina
+24050000	Geisterflammenfackel
+24060000	Bestien vertreibende Fackel
+24070000	Fackel der Wache
+30000000	Faustschild
+30000100	Schwerer Faustschild
+30000200	Solider Faustschild
+30000300	Wertiger Faustschild
+30000400	Feuriger Faustschild
+30000500	Flammender Faustschild
+30000600	Blitzender Faustschild
+30000700	Heiliger Faustschild
+30000800	Magischer Faustschild
+30000900	Eisiger Faustschild
+30001000	Giftiger Faustschild
+30001100	Blutiger Faustschild
+30001200	Okkulter Faustschild
+30010000	Parfümeurschild
+30010100	Schwerer Parfümeurschild
+30010200	Solider Parfümeurschild
+30010300	Wertiger Parfümeurschild
+30010400	Feuriger Parfümeurschild
+30010500	Flammender Parfümeurschild
+30010600	Blitzender Parfümeurschild
+30010700	Heiliger Parfümeurschild
+30010800	Magischer Parfümeurschild
+30010900	Eisiger Parfümeurschild
+30011000	Giftiger Parfümeurschild
+30011100	Blutiger Parfümeurschild
+30011200	Okkulter Parfümeurschild
+30020000	Schlangenmenschenschild
+30020100	Schwerer Schlangenmenschenschild
+30020200	Solider Schlangenmenschenschild
+30020300	Wertiger Schlangenmenschenschild
+30020400	Feuriger Schlangenmenschenschild
+30020500	Flammender Schlangenmenschenschild
+30020600	Blitzender Schlangenmenschenschild
+30020700	Heiliger Schlangenmenschenschild
+30020800	Magischer Schlangenmenschenschild
+30020900	Eisiger Schlangenmenschenschild
+30021000	Giftiger Schlangenmenschenschild
+30021100	Blutiger Schlangenmenschenschild
+30021200	Okkulter Schlangenmenschenschild
+30030000	Schrottschild
+30030100	Schwerer Schrottschild
+30030200	Solider Schrottschild
+30030300	Wertiger Schrottschild
+30030400	Feuriger Schrottschild
+30030500	Flammender Schrottschild
+30030600	Blitzender Schrottschild
+30030700	Heiliger Schrottschild
+30030800	Magischer Schrottschild
+30030900	Eisiger Schrottschild
+30031000	Giftiger Schrottschild
+30031100	Blutiger Schrottschild
+30031200	Okkulter Schrottschild
+30040000	Prangerschild
+30040100	Schwerer Prangerschild
+30040200	Solider Prangerschild
+30040300	Wertiger Prangerschild
+30040400	Feuriger Prangerschild
+30040500	Flammender Prangerschild
+30040600	Blitzender Prangerschild
+30040700	Heiliger Prangerschild
+30040800	Magischer Prangerschild
+30040900	Eisiger Prangerschild
+30041000	Giftiger Prangerschild
+30041100	Blutiger Prangerschild
+30041200	Okkulter Prangerschild
+30060000	Bestiengefäßschild
+30060100	Schwerer Bestiengefäßschild
+30060200	Solider Bestiengefäßschild
+30060300	Wertiger Bestiengefäßschild
+30060400	Feuriger Bestiengefäßschild
+30060500	Flammender Bestiengefäßschild
+30060600	Blitzender Bestiengefäßschild
+30060700	Heiliger Bestiengefäßschild
+30060800	Magischer Bestiengefäßschild
+30060900	Eisiger Bestiengefäßschild
+30061000	Giftiger Bestiengefäßschild
+30061100	Blutiger Bestiengefäßschild
+30061200	Okkulter Bestiengefäßschild
+30070000	Rotdornrundschild
+30070100	Schwerer Rotdornrundschild
+30070200	Solider Rotdornrundschild
+30070300	Wertiger Rotdornrundschild
+30070400	Feuriger Rotdornrundschild
+30070500	Flammender Rotdornrundschild
+30070600	Blitzender Rotdornrundschild
+30070700	Heiliger Rotdornrundschild
+30070800	Magischer Rotdornrundschild
+30070900	Eisiger Rotdornrundschild
+30071000	Giftiger Rotdornrundschild
+30071100	Blutiger Rotdornrundschild
+30071200	Okkulter Rotdornrundschild
+30080000	Runenverzierter Rundschild
+30080100	Schwerer runenverzierter Rundschild
+30080200	Solider runenverzierter Rundschild
+30080300	Wertiger runenverzierter Rundschild
+30080400	Feuriger runenverzierter Rundschild
+30080500	Flammender runenverzierter Rundschild
+30080600	Blitzender runenverzierter Rundschild
+30080700	Heiliger runenverzierter Rundschild
+30080800	Magischer runenverzierter Rundschild
+30080900	Eisiger runenverzierter Rundschild
+30081000	Giftiger runenverzierter Rundschild
+30081100	Blutiger runenverzierter Rundschild
+30081200	Okkulter runenverzierter Rundschild
+30090000	Vernieteter Rundschild
+30090100	Schwerer vernieteter Rundschild
+30090200	Solider vernieteter Rundschild
+30090300	Wertiger vernieteter Rundschild
+30090400	Feuriger vernieteter Rundschild
+30090500	Flammender vernieteter Rundschild
+30090600	Blitzender vernieteter Rundschild
+30090700	Heiliger vernieteter Rundschild
+30090800	Magischer vernieteter Rundschild
+30090900	Eisiger vernieteter Rundschild
+30091000	Giftiger vernieteter Rundschild
+30091100	Blutiger vernieteter Rundschild
+30091200	Okkulter vernieteter Rundschild
+30100000	Blau-weißer Holzschild
+30100100	Schwerer blau-weißer Holzschild
+30100200	Solider blau-weißer Holzschild
+30100300	Wertiger blau-weißer Holzschild
+30100400	Feuriger blau-weißer Holzschild
+30100500	Flammender blau-weißer Holzschild
+30100600	Blitzender blau-weißer Holzschild
+30100700	Heiliger blau-weißer Holzschild
+30100800	Magischer blau-weißer Holzschild
+30100900	Eisiger blau-weißer Holzschild
+30101000	Giftiger blau-weißer Holzschild
+30101100	Blutiger blau-weißer Holzschild
+30101200	Okkulter blau-weißer Holzschild
+30110000	Rissschild
+30110100	Schwerer Rissschild
+30110200	Solider Rissschild
+30110300	Wertiger Rissschild
+30110400	Feuriger Rissschild
+30110500	Flammender Rissschild
+30110600	Blitzender Rissschild
+30110700	Heiliger Rissschild
+30110800	Magischer Rissschild
+30110900	Eisiger Rissschild
+30111000	Giftiger Rissschild
+30111100	Blutiger Rissschild
+30111200	Okkulter Rissschild
+30120000	Eisenrundschild
+30120100	Schwerer Eisenrundschild
+30120200	Solider Eisenrundschild
+30120300	Wertiger Eisenrundschild
+30120400	Feuriger Eisenrundschild
+30120500	Flammender Eisenrundschild
+30120600	Blitzender Eisenrundschild
+30120700	Heiliger Eisenrundschild
+30120800	Magischer Eisenrundschild
+30120900	Eisiger Eisenrundschild
+30121000	Giftiger Eisenrundschild
+30121100	Blutiger Eisenrundschild
+30121200	Okkulter Eisenrundschild
+30130000	Vergoldeter Eisenschild
+30130100	Schwerer vergoldeter Eisenschild
+30130200	Solider vergoldeter Eisenschild
+30130300	Wertiger vergoldeter Eisenschild
+30130400	Feuriger vergoldeter Eisenschild
+30130500	Flammender vergoldeter Eisenschild
+30130600	Blitzender vergoldeter Eisenschild
+30130700	Heiliger vergoldeter Eisenschild
+30130800	Magischer vergoldeter Eisenschild
+30130900	Eisiger vergoldeter Eisenschild
+30131000	Giftiger vergoldeter Eisenschild
+30131100	Blutiger vergoldeter Eisenschild
+30131200	Okkulter vergoldeter Eisenschild
+30140000	Eiswappenschild
+30140100	Schwerer Eiswappenschild
+30140200	Solider Eiswappenschild
+30140300	Wertiger Eiswappenschild
+30140400	Feuriger Eiswappenschild
+30140500	Flammender Eiswappenschild
+30140600	Blitzender Eiswappenschild
+30140700	Heiliger Eiswappenschild
+30140800	Magischer Eiswappenschild
+30140900	Eisiger Eiswappenschild
+30141000	Giftiger Eiswappenschild
+30141100	Blutiger Eiswappenschild
+30141200	Okkulter Eiswappenschild
+30150000	Schwelender Schild
+30150100	Schwerer schwelender Schild
+30150200	Solider schwelender Schild
+30150300	Wertiger schwelender Schild
+30150400	Feuriger schwelender Schild
+30150500	Flammender schwelender Schild
+30150600	Blitzender schwelender Schild
+30150700	Heiliger schwelender Schild
+30150800	Magischer schwelender Schild
+30150900	Eisiger schwelender Schild
+30151000	Giftiger schwelender Schild
+30151100	Blutiger schwelender Schild
+30151200	Okkulter schwelender Schild
+30190000	Hornbewehrter Schild
+30190100	Schwerer hornbewehrter Schild
+30190200	Solider hornbewehrter Schild
+30190300	Wertiger hornbewehrter Schild
+30190400	Feuriger hornbewehrter Schild
+30190500	Flammender hornbewehrter Schild
+30190600	Blitzender hornbewehrter Schild
+30190700	Heiliger hornbewehrter Schild
+30190800	Magischer hornbewehrter Schild
+30190900	Eisiger hornbewehrter Schild
+30191000	Giftiger hornbewehrter Schild
+30191100	Blutiger hornbewehrter Schild
+30191200	Okkulter hornbewehrter Schild
+30200000	Spiralschild
+31000000	Drachenschild
+31000100	Schwerer Drachenschild
+31000200	Solider Drachenschild
+31000300	Wertiger Drachenschild
+31000400	Feuriger Drachenschild
+31000500	Flammender Drachenschild
+31000600	Blitzender Drachenschild
+31000700	Heiliger Drachenschild
+31000800	Magischer Drachenschild
+31000900	Eisiger Drachenschild
+31001000	Giftiger Drachenschild
+31001100	Blutiger Drachenschild
+31001200	Okkulter Drachenschild
+31010000	Ramponierter Lederschild
+31010100	Schwerer ramponierter Lederschild
+31010200	Solider ramponierter Lederschild
+31010300	Wertiger ramponierter Lederschild
+31010400	Feuriger ramponierter Lederschild
+31010500	Flammender ramponierter Lederschild
+31010600	Blitzender ramponierter Lederschild
+31010700	Heiliger ramponierter Lederschild
+31010800	Magischer ramponierter Lederschild
+31010900	Eisiger ramponierter Lederschild
+31011000	Giftiger ramponierter Lederschild
+31011100	Blutiger ramponierter Lederschild
+31011200	Okkulter ramponierter Lederschild
+31020000	Ramponierter Holzschild
+31020100	Schwerer ramponierter Holzschild
+31020200	Solider ramponierter Holzschild
+31020300	Wertiger ramponierter Holzschild
+31020400	Feuriger ramponierter Holzschild
+31020500	Flammender ramponierter Holzschild
+31020600	Blitzender ramponierter Holzschild
+31020700	Heiliger ramponierter Holzschild
+31020800	Magischer ramponierter Holzschild
+31020900	Eisiger ramponierter Holzschild
+31021000	Giftiger ramponierter Holzschild
+31021100	Blutiger ramponierter Holzschild
+31021200	Okkulter ramponierter Holzschild
+31030000	Schild der Exilritter
+31030100	Schwerer Schild der Exilritter
+31030200	Solider Schild der Exilritter
+31030300	Wertiger Schild der Exilritter
+31030400	Feuriger Schild der Exilritter
+31030500	Flammender Schild der Exilritter
+31030600	Blitzender Schild der Exilritter
+31030700	Heiliger Schild der Exilritter
+31030800	Magischer Schild der Exilritter
+31030900	Eisiger Schild der Exilritter
+31031000	Giftiger Schild der Exilritter
+31031100	Blutiger Schild der Exilritter
+31031200	Okkulter Schild der Exilritter
+31040000	Schild der Albinaurics
+31040100	Schwerer Schild der Albinaurics
+31040200	Solider Schild der Albinaurics
+31040300	Wertiger Schild der Albinaurics
+31040400	Feuriger Schild der Albinaurics
+31040500	Flammender Schild der Albinaurics
+31040600	Blitzender Schild der Albinaurics
+31040700	Heiliger Schild der Albinaurics
+31040800	Magischer Schild der Albinaurics
+31040900	Eisiger Schild der Albinaurics
+31041000	Giftiger Schild der Albinaurics
+31041100	Blutiger Schild der Albinaurics
+31041200	Okkulter Schild der Albinaurics
+31050000	Schild des Sonnenreichs
+31050100	Schwerer Schild des Sonnenreichs
+31050200	Solider Schild des Sonnenreichs
+31050300	Wertiger Schild des Sonnenreichs
+31050400	Feuriger Schild des Sonnenreichs
+31050500	Flammender Schild des Sonnenreichs
+31050600	Blitzender Schild des Sonnenreichs
+31050700	Heiliger Schild des Sonnenreichs
+31050800	Magischer Schild des Sonnenreichs
+31050900	Eisiger Schild des Sonnenreichs
+31051000	Giftiger Schild des Sonnenreichs
+31051100	Blutiger Schild des Sonnenreichs
+31051200	Okkulter Schild des Sonnenreichs
+31060000	Silberner Spiegelschirm
+31070000	Rundschild
+31070100	Schwerer Rundschild
+31070200	Solider Rundschild
+31070300	Wertiger Rundschild
+31070400	Feuriger Rundschild
+31070500	Flammender Rundschild
+31070600	Blitzender Rundschild
+31070700	Heiliger Rundschild
+31070800	Magischer Rundschild
+31070900	Eisiger Rundschild
+31071000	Giftiger Rundschild
+31071100	Blutiger Rundschild
+31071200	Okkulter Rundschild
+31080000	Skorpionsdrachenschild
+31080100	Schwerer Skorpionsdrachenschild
+31080200	Solider Skorpionsdrachenschild
+31080300	Wertiger Skorpionsdrachenschild
+31080400	Feuriger Skorpionsdrachenschild
+31080500	Flammender Skorpionsdrachenschild
+31080600	Blitzender Skorpionsdrachenschild
+31080700	Heiliger Skorpionsdrachenschild
+31080800	Magischer Skorpionsdrachenschild
+31080900	Eisiger Skorpionsdrachenschild
+31081000	Giftiger Skorpionsdrachenschild
+31081100	Blutiger Skorpionsdrachenschild
+31081200	Okkulter Skorpionsdrachenschild
+31090000	Zwillingsvogel-Drachenschild
+31090100	Schwerer Zwillingsvogel-Drachenschild
+31090200	Solider Zwillingsvogel-Drachenschild
+31090300	Wertiger Zwillingsvogel-Drachenschild
+31090400	Feuriger Zwillingsvogel-Drachenschild
+31090500	Flammender Zwillingsvogel-Drachenschild
+31090600	Blitzender Zwillingsvogel-Drachenschild
+31090700	Heiliger Zwillingsvogel-Drachenschild
+31090800	Magischer Zwillingsvogel-Drachenschild
+31090900	Eisiger Zwillingsvogel-Drachenschild
+31091000	Giftiger Zwillingsvogel-Drachenschild
+31091100	Blutiger Zwillingsvogel-Drachenschild
+31091200	Okkulter Zwillingsvogel-Drachenschild
+31100000	Blau-goldener Drachenschild
+31100100	Schwerer blau-goldener Drachenschild
+31100200	Solider blau-goldener Drachenschild
+31100300	Wertiger blau-goldener Drachenschild
+31100400	Feuriger blau-goldener Drachenschild
+31100500	Flammender blau-goldener Drachenschild
+31100600	Blitzender blau-goldener Drachenschild
+31100700	Heiliger blau-goldener Drachenschild
+31100800	Magischer blau-goldener Drachenschild
+31100900	Eisiger blau-goldener Drachenschild
+31101000	Giftiger blau-goldener Drachenschild
+31101100	Blutiger blau-goldener Drachenschild
+31101200	Okkulter blau-goldener Drachenschild
+31130000	Messingschild
+31130100	Schwerer Messingschild
+31130200	Solider Messingschild
+31130300	Wertiger Messingschild
+31130400	Feuriger Messingschild
+31130500	Flammender Messingschild
+31130600	Blitzender Messingschild
+31130700	Heiliger Messingschild
+31130800	Magischer Messingschild
+31130900	Eisiger Messingschild
+31131000	Giftiger Messingschild
+31131100	Blutiger Messingschild
+31131200	Okkulter Messingschild
+31140000	Riesenschildkrötenpanzer
+31140100	Schwerer Riesenschildkrötenpanzer
+31140200	Solider Riesenschildkrötenpanzer
+31140300	Wertiger Riesenschildkrötenpanzer
+31140400	Feuriger Riesenschildkrötenpanzer
+31140500	Flammender Riesenschildkrötenpanzer
+31140600	Blitzender Riesenschildkrötenpanzer
+31140700	Heiliger Riesenschildkrötenpanzer
+31140800	Magischer Riesenschildkrötenpanzer
+31140900	Eisiger Riesenschildkrötenpanzer
+31141000	Giftiger Riesenschildkrötenpanzer
+31141100	Blutiger Riesenschildkrötenpanzer
+31141200	Okkulter Riesenschildkrötenpanzer
+31170000	Schild der Schuldigen
+31170100	Schwerer Schild der Schuldigen
+31170200	Solider Schild der Schuldigen
+31170300	Wertiger Schild der Schuldigen
+31170400	Feuriger Schild der Schuldigen
+31170500	Flammender Schild der Schuldigen
+31170600	Blitzender Schild der Schuldigen
+31170700	Heiliger Schild der Schuldigen
+31170800	Magischer Schild der Schuldigen
+31170900	Eisiger Schild der Schuldigen
+31171000	Giftiger Schild der Schuldigen
+31171100	Blutiger Schild der Schuldigen
+31171200	Okkulter Schild der Schuldigen
+31190000	Carianischer Ritterschild
+31190100	Schwerer carianischer Ritterschild
+31190200	Solider carianischer Ritterschild
+31190300	Wertiger carianischer Ritterschild
+31190400	Feuriger carianischer Ritterschild
+31190500	Flammender carianischer Ritterschild
+31190600	Blitzender carianischer Ritterschild
+31190700	Heiliger carianischer Ritterschild
+31190800	Magischer carianischer Ritterschild
+31190900	Eisiger carianischer Ritterschild
+31191000	Giftiger carianischer Ritterschild
+31191100	Blutiger carianischer Ritterschild
+31191200	Okkulter carianischer Ritterschild
+31230000	Großer Lederschild
+31230100	Schwerer großer Lederschild
+31230200	Solider großer Lederschild
+31230300	Wertiger großer Lederschild
+31230400	Feuriger großer Lederschild
+31230500	Flammender großer Lederschild
+31230600	Blitzender großer Lederschild
+31230700	Heiliger großer Lederschild
+31230800	Magischer großer Lederschild
+31230900	Eisiger großer Lederschild
+31231000	Giftiger großer Lederschild
+31231100	Blutiger großer Lederschild
+31231200	Okkulter großer Lederschild
+31240000	Holzschild mit Pferdewappen
+31240100	Schwerer Holzschild mit Pferdewappen
+31240200	Solider Holzschild mit Pferdewappen
+31240300	Wertiger Holzschild mit Pferdewappen
+31240400	Feuriger Holzschild mit Pferdewappen
+31240500	Flammender Holzschild mit Pferdewappen
+31240600	Blitzender Holzschild mit Pferdewappen
+31240700	Heiliger Holzschild mit Pferdewappen
+31240800	Magischer Holzschild mit Pferdewappen
+31240900	Eisiger Holzschild mit Pferdewappen
+31241000	Giftiger Holzschild mit Pferdewappen
+31241100	Blutiger Holzschild mit Pferdewappen
+31241200	Okkulter Holzschild mit Pferdewappen
+31250000	Kerzenbaum-Holzschild
+31250100	Schwerer Kerzenbaum-Holzschild
+31250200	Solider Kerzenbaum-Holzschild
+31250300	Wertiger Kerzenbaum-Holzschild
+31250400	Feuriger Kerzenbaum-Holzschild
+31250500	Flammender Kerzenbaum-Holzschild
+31250600	Blitzender Kerzenbaum-Holzschild
+31250700	Heiliger Kerzenbaum-Holzschild
+31250800	Magischer Kerzenbaum-Holzschild
+31250900	Eisiger Kerzenbaum-Holzschild
+31251000	Giftiger Kerzenbaum-Holzschild
+31251100	Blutiger Kerzenbaum-Holzschild
+31251200	Okkulter Kerzenbaum-Holzschild
+31260000	Holzschild mit Flammenwappen
+31260100	Schwerer Holzschild mit Flammenwappen
+31260200	Solider Holzschild mit Flammenwappen
+31260300	Wertiger Holzschild mit Flammenwappen
+31260400	Feuriger Holzschild mit Flammenwappen
+31260500	Flammender Holzschild m. Flammenwappen
+31260600	Blitzender Holzschild m. Flammenwappen
+31260700	Feuriger Holzschild mit Flammenwappen
+31260800	Magischer Holzschild mit Flammenwappen
+31260900	Eisiger Holzschild mit Flammenwappen
+31261000	Giftiger Holzschild mit Flammenwappen
+31261100	Blutiger Holzschild mit Flammenwappen
+31261200	Okkulter Holzschild mit Flammenwappen
+31270000	Holzschild mit Falkenwappen
+31270100	Schwerer Holzschild mit Falkenwappen
+31270200	Solider Holzschild mit Falkenwappen
+31270300	Wertiger Holzschild mit Falkenwappen
+31270400	Feuriger Holzschild mit Falkenwappen
+31270500	Flammender Holzschild mit Falkenwappen
+31270600	Blitzender Holzschild mit Falkenwappen
+31270700	Heiliger Holzschild mit Falkenwappen
+31270800	Magischer Holzschild mit Falkenwappen
+31270900	Eisiger Holzschild mit Falkenwappen
+31271000	Giftiger Holzschild mit Falkenwappen
+31271100	Blutiger Holzschild mit Falkenwappen
+31271200	Okkulter Holzschild mit Falkenwappen
+31280000	Bestien-Dreieckschild
+31280100	Schwerer Bestien-Dreieckschild
+31280200	Solider Bestien-Dreieckschild
+31280300	Wertiger Bestien-Dreieckschild
+31280400	Feuriger Bestien-Dreieckschild
+31280500	Flammender Bestien-Dreieckschild
+31280600	Blitzender Bestien-Dreieckschild
+31280700	Heiliger Bestien-Dreieckschild
+31280800	Magischer Bestien-Dreieckschild
+31280900	Eisiger Bestien-Dreieckschild
+31281000	Giftiger Bestien-Dreieckschild
+31281100	Blutiger Bestien-Dreieckschild
+31281200	Okkulter Bestien-Dreieckschild
+31290000	Rotwappen-Dreieckschild
+31290100	Schwerer Rotwappen-Dreieckschild
+31290200	Solider Rotwappen-Dreieckschild
+31290300	Wertiger Rotwappen-Dreieckschild
+31290400	Feuriger Rotwappen-Dreieckschild
+31290500	Flammender Rotwappen-Dreieckschild
+31290600	Blitzender Rotwappen-Dreieckschild
+31290700	Heiliger Rotwappen-Dreieckschild
+31290800	Magischer Rotwappen-Dreieckschild
+31290900	Eisiger Rotwappen-Dreieckschild
+31291000	Giftiger Rotwappen-Dreieckschild
+31291100	Blutiger Rotwappen-Dreieckschild
+31291200	Okkulter Rotwappen-Dreieckschild
+31300000	Schwarzwappen-Dreieckschild
+31300100	Schwerer Schwarzwappen-Dreieckschild
+31300200	Solider Schwarzwappen-Dreieckschild
+31300300	Wertiger Schwarzwappen-Dreieckschild
+31300400	Feuriger Schwarzwappen-Dreieckschild
+31300500	Flammender Schwarzwappen-Dreieckschild
+31300600	Blitzender Schwarzwappen-Dreieckschild
+31300700	Heiliger Schwarzwappen-Dreieckschild
+31300800	Magischer Schwarzwappen-Dreieckschild
+31300900	Eisiger Schwarzwappen-Dreieckschild
+31301000	Giftiger Schwarzwappen-Dreieckschild
+31301100	Blutiger Schwarzwappen-Dreieckschild
+31301200	Okkulter Schwarzwappen-Dreieckschild
+31310000	Eklipse-Dreieckschild
+31310100	Schwerer Eklipse-Dreieckschild
+31310200	Solider Eklipse-Dreieckschild
+31310300	Wertiger Eklipse-Dreieckschild
+31310400	Feuriger Eklipse-Dreieckschild
+31310500	Flammender Eklipse-Dreieckschild
+31310600	Blitzender Eklipse-Dreieckschild
+31310700	Heiliger Eklipse-Dreieckschild
+31310800	Magischer Eklipse-Dreieckschild
+31310900	Eisiger Eklipse-Dreieckschild
+31311000	Giftiger Eklipse-Dreieckschild
+31311100	Blutiger Eklipse-Dreieckschild
+31311200	Okkulter Eklipse-Dreieckschild
+31320000	Falkensturz-Dreieckschild
+31320100	Schwerer Falkensturz-Dreieckschild
+31320200	Solider Falkensturz-Dreieckschild
+31320300	Wertiger Falkensturz-Dreieckschild
+31320400	Feuriger Falkensturz-Dreieckschild
+31320500	Flammender Falkensturz-Dreieckschild
+31320600	Blitzender Falkensturz-Dreieckschild
+31320700	Heiliger Falkensturz-Dreieckschild
+31320800	Magischer Falkensturz-Dreieckschild
+31320900	Eisiger Falkensturz-Dreieckschild
+31321000	Giftiger Falkensturz-Dreieckschild
+31321100	Blutiger Falkensturz-Dreieckschild
+31321200	Okkulter Falkensturz-Dreieckschild
+31330000	Dreieckschild
+31330100	Schwerer Dreieckschild
+31330200	Solider Dreieckschild
+31330300	Wertiger Dreieckschild
+31330400	Feuriger Dreieckschild
+31330500	Flammender Dreieckschild
+31330600	Blitzender Dreieckschild
+31330700	Heiliger Dreieckschild
+31330800	Magischer Dreieckschild
+31330900	Eisiger Dreieckschild
+31331000	Giftiger Dreieckschild
+31331100	Blutiger Dreieckschild
+31331200	Okkulter Dreieckschild
+31340000	Schwarzer Lederschild
+31340100	Schwerer schwarzer Lederschild
+31340200	Solider schwarzer Lederschild
+31340300	Wertiger schwarzer Lederschild
+31340400	Feuriger schwarzer Lederschild
+31340500	Flammender schwarzer Lederschild
+31340600	Blitzender schwarzer Lederschild
+31340700	Heiliger schwarzer Lederschild
+31340800	Magischer schwarzer Lederschild
+31340900	Eisiger schwarzer Lederschild
+31341000	Giftiger schwarzer Lederschild
+31341100	Blutiger schwarzer Lederschild
+31341200	Okkulter schwarzer Lederschild
+32000000	Drachenturmschild
+32000100	Schwerer Drachenturmschild
+32000200	Solider Drachenturmschild
+32000300	Wertiger Drachenturmschild
+32000400	Feuriger Drachenturmschild
+32000500	Flammender Drachenturmschild
+32000600	Blitzender Drachenturmschild
+32000700	Heiliger Drachenturmschild
+32000800	Magischer Drachenturmschild
+32000900	Eisiger Drachenturmschild
+32001000	Giftiger Drachenturmschild
+32001100	Blutiger Drachenturmschild
+32001200	Okkulter Drachenturmschild
+32020000	Edler Großschild
+32020100	Schwerer edler Großschild
+32020200	Solider edler Großschild
+32020300	Wertiger edler Großschild
+32020400	Feuriger edler Großschild
+32020500	Flammender edler Großschild
+32020600	Blitzender edler Großschild
+32020700	Heiliger edler Großschild
+32020800	Magischer edler Großschild
+32020900	Eisiger edler Großschild
+32021000	Giftiger edler Großschild
+32021100	Blutiger edler Großschild
+32021200	Okkulter edler Großschild
+32030000	Hornschild des Schmelztiegels
+32030100	Schwerer Hornschild des Schmelztiegels
+32030200	Solider Hornschild des Schmelztiegels
+32030300	Wertiger Hornschild des Schmelztiegels
+32030400	Feuriger Hornschild des Schmelztiegels
+32030500	Flammender Hornschild des Schmelztiegels
+32030600	Blitzender Hornschild des Schmelztiegels
+32030700	Heiliger Hornschild des Schmelztiegels
+32030800	Magischer Hornschild des Schmelztiegels
+32030900	Eisiger Hornschild des Schmelztiegels
+32031000	Giftiger Hornschild des Schmelztiegels
+32031100	Blutiger Hornschild des Schmelztiegels
+32031200	Okkulter Hornschild des Schmelztiegels
+32040000	Drachenklauenschild
+32040100	Schwerer Drachenklauenschild
+32040200	Solider Drachenklauenschild
+32040300	Wertiger Drachenklauenschild
+32040400	Feuriger Drachenklauenschild
+32040500	Flammender Drachenklauenschild
+32040600	Blitzender Drachenklauenschild
+32040700	Heiliger Drachenklauenschild
+32040800	Magischer Drachenklauenschild
+32040900	Eisiger Drachenklauenschild
+32041000	Giftiger Drachenklauenschild
+32041100	Blutiger Drachenklauenschild
+32041200	Okkulter Drachenklauenschild
+32050000	Dornengroßschild
+32050100	Schwerer Dornengroßschild
+32050200	Solider Dornengroßschild
+32050300	Wertiger Dornengroßschild
+32050400	Feuriger Dornengroßschild
+32050500	Flammender Dornengroßschild
+32050600	Blitzender Dornengroßschild
+32050700	Heiliger Dornengroßschild
+32050800	Magischer Dornengroßschild
+32050900	Eisiger Dornengroßschild
+32051000	Giftiger Dornengroßschild
+32051100	Blutiger Dornengroßschild
+32051200	Okkulter Dornengroßschild
+32080000	Erdenbaum-Großschild
+32080100	Schwerer Erdenbaum-Großschild
+32080200	
+32080300	
+32080400	
+32080500	
+32080600	
+32080700	
+32080800	
+32080900	
+32081000	
+32081100	
+32081200	
+32090000	Goldener Bestienschild
+32090100	Schwerer goldener Bestienschild
+32090200	Solider goldener Bestienschild
+32090300	Wertiger goldener Bestienschild
+32090400	Feuriger goldener Bestienschild
+32090500	Flammender goldener Bestienschild
+32090600	Blitzender goldener Bestienschild
+32090700	Heiliger goldener Bestienschild
+32090800	Magischer goldener Bestienschild
+32090900	Eisiger goldener Bestienschild
+32091000	Giftiger goldener Bestienschild
+32091100	Blutiger goldener Bestienschild
+32091200	Okkulter goldener Bestienschild
+32120000	Quallenschild
+32130000	Fingerabdruck-Steinschild
+32130100	Schwerer Fingerabdruck-Steinschild
+32130200	Solider Fingerabdruck-Steinschild
+32130300	Wertiger Fingerabdruck-Steinschild
+32130400	Feuriger Fingerabdruck-Steinschild
+32130500	Flammender Fingerabdruck-Steinschild
+32130600	Blitzender Fingerabdruck-Steinschild
+32130700	Heiliger Fingerabdruck-Steinschild
+32130800	Magischer Fingerabdruck-Steinschild
+32130900	Eisiger Fingerabdruck-Steinschild
+32131000	Giftiger Fingerabdruck-Steinschild
+32131100	Blutiger Fingerabdruck-Steinschild
+32131200	Okkulter Fingerabdruck-Steinschild
+32140000	Ikonenschild
+32140100	Schwerer Ikonenschild
+32140200	Solider Ikonenschild
+32140300	Wertiger Ikonenschild
+32140400	Feuriger Ikonenschild
+32140500	Flammender Ikonenschild
+32140600	Blitzender Ikonenschild
+32140700	Heiliger Ikonenschild
+32140800	Magischer Ikonenschild
+32140900	Eisiger Ikonenschild
+32141000	Giftiger Ikonenschild
+32141100	Blutiger Ikonenschild
+32141200	Okkulter Ikonenschild
+32150000	Einäugiger Schild
+32160000	Feuerspuckerschild
+32170000	Stachelpalisadenschild
+32170100	Schwerer Stachelpalisadenschild
+32170200	Solider Stachelpalisadenschild
+32170300	Wertiger Stachelpalisadenschild
+32170400	Feuriger Stachelpalisadenschild
+32170500	Flammender Stachelpalisadenschild
+32170600	Blitzender Stachelpalisadenschild
+32170700	Heiliger Stachelpalisadenschild
+32170800	Magischer Stachelpalisadenschild
+32170900	Eisiger Stachelpalisadenschild
+32171000	Giftiger Stachelpalisadenschild
+32171100	Blutiger Stachelpalisadenschild
+32171200	Okkulter Stachelpalisadenschild
+32190000	Bollwerksturmschild
+32190100	Schwerer Bollwerksturmschild
+32190200	Solider Bollwerksturmschild
+32190300	Wertiger Bollwerksturmschild
+32190400	Feuriger Bollwerksturmschild
+32190500	Flammender Bollwerksturmschild
+32190600	Blitzender Bollwerksturmschild
+32190700	Heiliger Bollwerksturmschild
+32190800	Magischer Bollwerksturmschild
+32190900	Eisiger Bollwerksturmschild
+32191000	Giftiger Bollwerksturmschild
+32191100	Blutiger Bollwerksturmschild
+32191200	Okkulter Bollwerksturmschild
+32200000	Turmschild der Verflechtung
+32200100	Schwerer Turmschild der Verflechtung
+32200200	Solider Turmschild der Verflechtung
+32200300	Wertiger Turmschild der Verflechtung
+32200400	Feuriger Turmschild der Verflechtung
+32200500	Flammender Turmschild der Verflechtung
+32200600	Blitzender Turmschild der Verflechtung
+32200700	Heiliger Turmschild der Verflechtung
+32200800	Magischer Turmschild der Verflechtung
+32200900	Eisiger Turmschild der Verflechtung
+32201000	Giftiger Turmschild der Verflechtung
+32201100	Blutiger Turmschild der Verflechtung
+32201200	Okkulter Turmschild der Verflechtung
+32210000	Falkensturz-Turmschild
+32210100	Schwerer Falkensturz-Turmschild
+32210200	Solider Falkensturz-Turmschild
+32210300	Wertiger Falkensturz-Turmschild
+32210400	Feuriger Falkensturz-Turmschild
+32210500	Flammender Falkensturz-Turmschild
+32210600	Blitzender Falkensturz-Turmschild
+32210700	Heiliger Falkensturz-Turmschild
+32210800	Magischer Falkensturz-Turmschild
+32210900	Eisiger Falkensturz-Turmschild
+32211000	Giftiger Falkensturz-Turmschild
+32211100	Blutiger Falkensturz-Turmschild
+32211200	Okkulter Falkensturz-Turmschild
+32220000	Ameisenschädelplatte
+32230000	Rotmähnen-Großschild
+32230100	Schwerer Rotmähnen-Großschild
+32230200	Solider Rotmähnen-Großschild
+32230300	Wertiger Rotmähnen-Großschild
+32230400	Feuriger Rotmähnen-Großschild
+32230500	Flammender Rotmähnen-Großschild
+32230600	Blitzender Rotmähnen-Großschild
+32230700	Heiliger Rotmähnen-Großschild
+32230800	Magischer Rotmähnen-Großschild
+32230900	Eisiger Rotmähnen-Großschild
+32231000	Giftiger Rotmähnen-Großschild
+32231100	Blutiger Rotmähnen-Großschild
+32231200	Okkulter Rotmähnen-Großschild
+32240000	Eklipse-Großschild
+32240100	Schwerer Eklipse-Großschild
+32240200	Solider Eklipse-Großschild
+32240300	Wertiger Eklipse-Großschild
+32240400	Feuriger Eklipse-Großschild
+32240500	Flammender Eklipse-Großschild
+32240600	Blitzender Eklipse-Großschild
+32240700	Heiliger Eklipse-Großschild
+32240800	Magischer Eklipse-Großschild
+32240900	Eisiger Eklipse-Großschild
+32241000	Giftiger Eklipse-Großschild
+32241100	Blutiger Eklipse-Großschild
+32241200	Okkulter Eklipse-Großschild
+32250000	Kuckucksgroßschild
+32250100	Schwerer Kuckucksgroßschild
+32250200	Solider Kuckucksgroßschild
+32250300	Wertiger Kuckucksgroßschild
+32250400	Feuriger Kuckucksgroßschild
+32250500	Flammender Kuckucksgroßschild
+32250600	Blitzender Kuckucksgroßschild
+32250700	Heiliger Kuckucksgroßschild
+32250800	Magischer Kuckucksgroßschild
+32250900	Eisiger Kuckucksgroßschild
+32251000	Giftiger Kuckucksgroßschild
+32251100	Blutiger Kuckucksgroßschild
+32251200	Okkulter Kuckucksgroßschild
+32260000	Goldener Großschild
+32260100	Schwerer goldener Großschild
+32260200	Solider goldener Großschild
+32260300	Wertiger goldener Großschild
+32260400	Feuriger goldener Großschild
+32260500	Flammender goldener Großschild
+32260600	Blitzender goldener Großschild
+32260700	Heiliger goldener Großschild
+32260800	Magischer goldener Großschild
+32260900	Eisiger goldener Großschild
+32261000	Giftiger goldener Großschild
+32261100	Blutiger goldener Großschild
+32261200	Okkulter goldener Großschild
+32270000	Vergoldeter Großschild
+32270100	Schwerer vergoldeter Großschild
+32270200	Solider vergoldeter Großschild
+32270300	Wertiger vergoldeter Großschild
+32270400	Feuriger vergoldeter Großschild
+32270500	Flammender vergoldeter Großschild
+32270600	Blitzender vergoldeter Großschild
+32270700	Heiliger vergoldeter Großschild
+32270800	Magischer vergoldeter Großschild
+32270900	Eisiger vergoldeter Großschild
+32271000	Giftiger vergoldeter Großschild
+32271100	Blutiger vergoldeter Großschild
+32271200	Okkulter vergoldeter Großschild
+32280000	Haligbaumwappen-Großschild
+32280100	Schwerer Haligbaumwappen-Großschild
+32280200	Solider Haligbaumwappen-Großschild
+32280300	Wertiger Haligbaumwappen-Großschild
+32280400	Feuriger Haligbaumwappen-Großschild
+32280500	Flammender Haligbaumwappen-Großschild
+32280600	Blitzender Haligbaumwappen-Großschild
+32280700	Heiliger Haligbaumwappen-Großschild
+32280800	Magischer Haligbaumwappen-Großschild
+32280900	Eisiger Haligbaumwappen-Großschild
+32281000	Giftiger Haligbaumwappen-Großschild
+32281100	Blutiger Haligbaumwappen-Großschild
+32281200	Okkulter Haligbaumwappen-Großschild
+32290000	Holzgroßschild
+32290100	Schwerer Holzgroßschild
+32290200	Solider Holzgroßschild
+32290300	Wertiger Holzgroßschild
+32290400	Feuriger Holzgroßschild
+32290500	Flammender Holzgroßschild
+32290600	Blitzender Holzgroßschild
+32290700	Heiliger Holzgroßschild
+32290800	Magischer Holzgroßschild
+32290900	Eisiger Holzgroßschild
+32291000	Giftiger Holzgroßschild
+32291100	Blutiger Holzgroßschild
+32291200	Okkulter Holzgroßschild
+32300000	Schild der Getreuen
+32300100	Schwerer Schild der Getreuen
+32300200	Solider Schild der Getreuen
+32300300	Wertiger Schild der Getreuen
+32300400	Feuriger Schild der Getreuen
+32300500	Flammender Schild der Getreuen
+32300600	Blitzender Schild der Getreuen
+32300700	Heiliger Schild der Getreuen
+32300800	Magischer Schild der Getreuen
+32300900	Eisiger Schild der Getreuen
+32301000	Giftiger Schild der Getreuen
+32301100	Blutiger Schild der Getreuen
+32301200	Okkulter Schild der Getreuen
+32900000	[ERROR]
+32910000	[ERROR]
+32920000	[ERROR]
+33000000	Schimmersteinstab
+33040000	Kristallstab
+33050000	Schimmersteinstab vom Gelmir
+33060000	Stab der Halbmenschenkönigin
+33090000	Carianisches königliches Zepter
+33120000	Gräberstab
+33130000	Astrologenstab
+33170000	Carianischer Schimmerklingenstab
+33180000	Stab des Todesprinzen
+33190000	Albinauric-Stab
+33200000	Akademie-Schimmersteinstab
+33210000	Carianischer Schimmersteinstab
+33230000	Azurner Schimmersteinstab
+33240000	Lusats Schimmersteinstab
+33250000	Meteoritenstab
+33260000	Stab der Schuldigen
+33270000	Fäulniskristallstab
+33280000	Stab des Verlusts
+33900000	[ERROR]
+33910000	[ERROR]
+33920000	[ERROR]
+33930000	[ERROR]
+33940000	[ERROR]
+33950000	[ERROR]
+33960000	[ERROR]
+33970000	[ERROR]
+33980000	[ERROR]
+34000000	Finger-Siegel
+34010000	Siegel des Gottestöters
+34020000	Siegel des Riesen
+34030000	Schottersteinsiegel
+34040000	Klauenzeichen-Siegel
+34050000	Giftfett
+34060000	Siegel der Goldenen Ordnung
+34070000	Siegel des Erdenbaums
+34080000	Siegel der Drachenkommunion
+34090000	Siegel der Rasenden Flamme
+34900000	[ERROR]
+34910000	[ERROR]
+34920000	[ERROR]
+34930000	[ERROR]
+34940000	[ERROR]
+34950000	[ERROR]
+34960000	[ERROR]
+34970000	[ERROR]
+34980000	[ERROR]
+34990000	[ERROR]
+40000000	Kurzbogen
+40010000	Scheusalkurzbogen
+40020000	Rotholzkurzbogen
+40030000	Harfenbogen
+40050000	Kompositbogen
+41000000	Langbogen
+41010000	Bogen der Albinaurics
+41020000	Hornbogen
+41030000	Erdenbaum-Bogen
+41040000	Schlangenbogen
+41060000	Flaschenzugbogen
+41070000	Schwarzer Bogen
+42000000	Löwengroßbogen
+42010000	Golemgroßbogen
+42030000	Erdenbaum-Großbogen
+42040000	Großbogen
+43000000	Soldatenarmbrust
+43020000	Leichte Armbrust
+43030000	Schwere Armbrust
+43050000	Flaschenzugarmbrust
+43060000	Vollmondarmbrust
+43080000	Arbalest
+43100000	
+43110000	Crepus' Schwarzschlüsselarmbrust
+43900000	[ERROR]
+44000000	Handballiste
+44010000	Gefäßkanone
+50000000	Pfeil
+50010000	Brandpfeil
+50020000	Schlangenpfeil
+50030000	Knochenpfeil (Gefiedert)
+50040000	St. Trinas Pfeil
+50060000	Knochensplitterpfeil (Gefiedert)
+50080000	Regenbogensteinpfeil (Gefiedert)
+50090000	Goldener Pfeil
+50100000	Verweilender Pfeil
+50110000	Knochenpfeil
+50130000	Knochen-Feuerpfeil (Gefiedert)
+50140000	Knochen-Feuerpfeil
+50150000	Knochen-Giftpfeil (Gefiedert)
+50160000	Knochen-Giftpfeil
+50170000	Knochen-Schlafpfeil (Gefiedert)
+50180000	Knochen-Schlafpfeil
+50190000	Sturmschwingen-Knochenpfeil
+50200000	Knochen-Blitzpfeil (Gefiedert)
+50210000	Knochen-Blitzpfeil
+50220000	Regenbogensteinpfeil
+50230000	Knochensplitterpfeil
+50240000	Geisterflammenpfeil
+50250000	
+50260000	Zauberknochenpfeil (Gefiedert)
+50270000	Zauberknochenpfeil
+50280000	Haligbaumpfeil (Gefiedert)
+50290000	Haligbaumpfeil
+50300000	Blutknochenpfeil (Gefiedert)
+50310000	Blutknochenpfeil
+50320000	Eisknochenpfeil (Gefiedert)
+50330000	Eisknochenpfeil
+50340000	Fäulnisknochenpfeil (Gefiedert)
+50350000	Fäulnisknochenpfeil
+51000000	Großpfeil
+51010000	Golemgroßpfeil
+51020000	Goldener Großpfeil
+51030000	Magischer Golempfeil
+51040000	Radahns Speer
+51050000	Knochengroßpfeil (Gefiedert)
+51060000	Knochengroßpfeil
+52000000	Bolzen
+52010000	Blitzbolzen
+52020000	Parfümeursbolzen
+52030000	Seuchenbolzen
+52040000	Bohrbolzen
+52050000	Meteorbolzen
+52060000	Sprengbolzen
+52070000	Goldbolzen
+52080000	Bolzen der Getreuen
+52090000	Knochenbolzen
+52100000	Knochen-Feuerbolzen
+52110000	Knochen-Blitzbolzen
+52120000	Zauberknochenbolzen
+52130000	Haligknochenbolzen
+52140000	Knochen-Giftbolzen
+52150000	Blutknochenbolzen
+52160000	Eisknochenbolzen
+52170000	Fäulnisknochenbolzen
+52180000	Knochen-Schlafbolzen
+52190000	Flammenbolzen
+52900000	[ERROR]
+52910000	[ERROR]
+53000000	Ballistenbolzen
+53010000	Blitzgroßbolzen
+53020000	Sprenggroßbolzen
+53030000	Knochenballistenbolzen

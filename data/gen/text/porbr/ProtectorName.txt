@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]
+1100	[ERROR]
+1200	[ERROR]
+1300	[ERROR]
+1400	[ERROR]
+1500	[ERROR]
+1600	[ERROR]
+1700	[ERROR]
+1800	[ERROR]
+1900	[ERROR]
+2000	[ERROR]
+2100	[ERROR]
+2200	[ERROR]
+2300	[ERROR]
+2400	[ERROR]
+2500	[ERROR]
+2600	[ERROR]
+2700	[ERROR]
+2800	[ERROR]
+2900	[ERROR]
+3000	[ERROR]
+3100	[ERROR]
+3200	[ERROR]
+3300	[ERROR]
+3400	[ERROR]
+3500	[ERROR]
+3600	[ERROR]
+3700	[ERROR]
+3800	[ERROR]
+3900	[ERROR]
+4000	[ERROR]
+4100	[ERROR]
+4200	[ERROR]
+4300	[ERROR]
+4400	[ERROR]
+4500	[ERROR]
+4600	[ERROR]
+4700	[ERROR]
+4800	[ERROR]
+4900	[ERROR]
+5000	[ERROR]
+10000	Cabeça
+10100	Corpo
+10200	Braços
+10300	Pernas
+40000	Capacete de Ferro
+40100	Armadura de Escamas
+40200	Manoplas de Ferro
+40300	Calças de Couro
+50000	Elmo Kaideniano
+50100	Armadura Kaideniana
+50200	Manoplas Kaidenianas
+50300	Calças Kaidenianas
+60000	Elmo de Cavaleiro Draco
+60100	Armadura de Cavaleiro Draco
+60200	Manoplas de Cavaleiro Draco
+60300	Grevas de Cavaleiro Draco
+61000	Elmo de Cavaleiro Draco (Leve)
+61100	Armadura de Cavaleiro Draco (Leve)
+80000	Elmo de Escamas
+80100	Armadura de Escamas
+80200	Manoplas de Escamas
+80300	Grevas de Escamas
+81100	Armadura de Escamas (Leve)
+90000	Capuz de Perfumista
+90100	Robe de Perfumista
+90200	Luvas de Perfumista
+90300	Sarongue de Perfumista
+91100	Robe de Perfumista (Leve)
+100000	Chapéu do Viajante
+100100	Traje de Viagem do Perfumista
+100200	Luvas do Viajante
+100300	Calção do Viajante
+101100	Traje de Viagem do Perfumista (Leve)
+120000	Chapéu Pontudo de Alberich
+120100	Robe de Alberich
+120200	Mangas de Alberich
+120300	Calças de Alberich
+121000	Chapéu Pontudo de Alberich (Leve)
+121100	Robe de Alberich (Leve)
+130000	Chapéu Pontudo de Espadamago
+130100	Traje de Viagem de Espadamago
+130200	Luvas de Espadamago
+130300	Calças de Espadamago
+131100	Traje de Viagem de Espadamago (Leve)
+140000	Elmo do Touro-Cabra
+140100	Armadura do Touro-Cabra
+140200	Manoplas do Touro-Cabra
+140300	Grevas do Touro-Cabra
+150000	Kasa de Ferro
+150100	Armadura de Ronin
+150200	Manoplas de Ronin
+150300	Grevas de Ronin
+151100	Armadura de Ronin (Leve)
+160000	Capuz do Culpado
+160100	Traje de Tecido
+160200	
+160300	Calças de Tecido
+170000	Máscara de Lobo Preto
+170100	Armadura de Blaidd
+170200	Manoplas de Blaidd
+170300	Grevas de Blaidd
+171100	Armadura de Blaidd (Leve)
+180000	Capuz de Faca Negra
+180100	Armadura de Faca Negra
+180200	Manoplas de Faca Negra
+180300	Grevas de Faca Negra
+181100	Armadura de Faca Negra (Leve)
+190000	Capuz do Exilado
+190100	Armadura do Exilado
+190200	Manoplas do Exilado
+190300	Grevas do Exilado
+200000	Elmo de Cavaleiro Banido
+200100	Armadura de Cavaleiro Banido
+200200	Manoplas de Cavaleiro Banido
+200300	Grevas de Cavaleiro Banido
+201000	Elmo de Cavaleiro Banido (Leve)
+201100	Armadura de Cavaleiro Banido (Leve)
+202100	[ERROR]
+210000	Elmo de Espinhos
+210100	Armadura de Espinhos
+210200	Manoplas de Espinhos
+210300	Grevas de Espinhos
+211100	Armadura de Espinhos (Leve)
+220000	Capuz de Pajem
+220100	Traje de Pajem
+220300	Calças de Pajem
+221100	Traje de Pajem (Leve)
+230000	Elmo da Cavalaria da Noite
+230100	Armadura da Cavalaria da Noite
+230200	Manoplas da Cavalaria da Noite
+230300	Grevas da Cavalaria da Noite
+231000	Elmo da Cavalaria da Noite (Leve)
+231100	Armadura da Cavalaria da Noite (Leve)
+240000	Capuz de Malha de Prata Azul
+240100	Armadura de Malha de Prata Azul
+240200	Braceletes de Prata Azul
+240300	Saia de Malha de Prata Azul
+241100	Armadura de Malha de Prata (Leve)
+250000	Chapéu de Mercador Nômade
+250100	Adorno de Mercador Nômade
+250300	Calças de Mercador Nômade
+251100	Adorno de Mercador Nômade (Leve)
+260000	Elmo de Dragão Malformado
+260100	Armadura de Dragão Malformado
+260200	Manoplas de Dragão Malformado
+260300	Grevas de Dragão Malformado
+270000	Elmo da Sentinela da Árvore
+270100	Armadura da Sentinela da Árvore
+270200	Manoplas da Sentinela da Árvore
+270300	Grevas da Sentinela da Árvore
+271100	Armadura da Sentinela da Árvore (Leve)
+280000	Elmo de Cavaleiro Real
+280100	Armadura de Cavaleiro Real
+280200	Manoplas de Cavaleiro Real
+280300	Grevas de Cavaleiro Real
+281100	Armadura de Cavaleiro Real (Leve)
+290000	Capuz de Monge Nox
+290100	Armadura de Monge Nox
+290200	Braceletes de Nox
+290300	Grevas de Nox
+291000	Capuz de Monge Nox (Leve)
+291100	Armadura de Monge Nox (Leve)
+292000	Coroa de Cavaleira Nox
+292100	Armadura de Cavaleira Nox
+293000	Tiara de Gêmea Donzela da Noite
+293100	Armadura de Donzela da Noite
+294000	Coroa de Cavaleiro Nox (Leve)
+294100	Armadura de Cavaleiro Nox (Leve)
+300000	Grande Testeira com Chifre
+300100	Vestimenta de Pele
+300300	Perneiras de Pele
+301000	Testeira com Chifre Brilhante
+301100	Peles de Xamã
+301300	Perneiras de Xamã
+310000	Elmo de Duelista
+310100	Capa de Guardião de Tumba
+310300	Grevas de Duelista
+311100	Capa de Guardião de Tumba (Alterada)
+320000	Capuz de Nobre Sanguíneo
+320100	Robe de Nobre Sanguíneo
+320300	Pano de Cintura de Nobre Sanguíneo
+330000	Máscara de Guardião
+330100	Traje de Guardião (Florescer Completo)
+330200	Braçadeiras de Guardião
+330300	Grevas de Guardião
+331100	Traje de Guardião
+340000	Elmo da Podridão Imaculada
+340100	Armadura da Podridão Imaculada
+340200	Manoplas da Podridão Imaculada
+340300	Grevas da Podridão Imaculada
+341000	Elmo da Podridão Imaculada (Leve)
+341100	Armadura da Podridão Imaculada (Leve)
+350000	Capuz do Monge do Fogo
+350100	Armadura de Monge do Fogo
+350200	Manoplas de Monge do Fogo
+350300	Grevas de Monge do Fogo
+351000	Capuz de Monge da Chama Negra
+351100	Armadura de Monge da Chama Negra
+351200	Manoplas de Monge da Chama Negra
+351300	Grevas de Monge da Chama Negra
+360000	Elmo de Prelado do Fogo
+360100	Armadura de Prelado do Fogo
+360200	Manoplas de Prelado do Fogo
+360300	Grevas de Prelado do Fogo
+361100	Armadura de Prelado do Fogo (Leve)
+370000	Testeira Aristocrática
+370100	Traje Aristocrático
+370300	Botas Aristocráticas
+371100	Traje Aristocrático (leve)
+380000	Chapéu Aristocrático
+380100	Casaco Aristocrático
+390000	Capuz Aristocrático Velho
+390100	Vestes Aristocráticas Velhas
+390300	Sapatos Aristocráticos Velhos
+420000	Elmo de Milícia Vulgar
+420100	Armadura de Milícia Vulgar
+420200	Manoplas de Milícia Vulgar
+420300	Grevas de Milícia Vulgar
+430000	Capuz de Sábio
+430100	Robe de Sábio
+430300	Calças de Sábio
+440000	Elmo de Abóbora
+460000	Coroa do Lorde Prístino
+460100	Armadura do Lorde Prístino
+460200	Braçadeiras do Lorde Prístino
+460300	Grevas do Lorde Prístino
+461100	Armadura do Lorde Prístino (Leve)
+470000	Elmo de Juba Vermelha de Radahn
+470100	Armadura de Leão de Radahn
+470200	Manoplas de Radahn
+470300	Grevas de Radahn
+471100	Armadura de Leão de Radahn (Leve)
+480100	Robe do Lorde do Sangue
+481100	Casula do Lorde do Sangue (Leve)
+510000	Coroa Crescente da Rainha
+510100	Robe da Rainha
+510200	Braceletes da Rainha
+510300	Perneiras da Rainha
+520000	Capuz de Apóstolo da Pele Divina
+520100	Robe de Apóstolo da Pele Divina
+520200	Braceletes de Apóstolo da Pele Divina
+520300	Calças de Apóstolo da Pele Divina
+530000	Capuz de Nobre da Pele Divina
+530100	Robe de Nobre da Pele Divina
+530200	Braceletes de Nobre da Pele Divina
+530300	Calças de Nobre da Pele Divina
+540000	Lenço de Perfumista Depravado
+540100	Robe de Perfumista Depravado
+540200	Luvas de Perfumista Depravado
+540300	Calças de Perfumista Depravado
+541100	Robe de Perfumista Depravado (Leve)
+570000	Elmo de Machado do Crisol
+570100	Armadura de Machado do Crisol
+570200	Manoplas do Crisol
+570300	Grevas do Crisol
+571000	Elmo de Árvore do Crisol
+571100	Armadura de Árvore do Crisol
+572100	Armadura de Machado do Crisol (Leve)
+573100	Armadura de Árvore do Crisol (Leve)
+580000	Coroa Pedrilhante de Lusat
+580100	Robe de Lusat
+580200	Mangas de Lusat
+580300	Faixas de Perna do Velho Feiticeiro
+581000	Coroa Pedrilhante de Azur
+581100	Robe Pedrilhante de Azur
+581200	Mangas de Azur
+590000	Elmo do Sabe-Tudo
+590100	Armadura do Sabe-Tudo
+590200	Manoplas do Sabe-Tudo
+590300	Grevas do Sabe-Tudo
+591100	Armadura do Sabe-Tudo (Leve)
+600000	Elmo Gêmeo
+600100	Armadura Gêmea
+600200	Manoplas Gêmeas
+600300	Grevas Gêmeas
+601100	Armadura Gêmea (Leve)
+601300	Grevas Gêmeas (Leves)
+610000	Chapéu Esfarrapado
+610100	Armadura Esfarrapada
+610200	Luvas Esfarrapadas
+610300	Tanga Esfarrapada
+611000	Chapéu Esfarrapado (Leve)
+611100	Armadura Esfarrapada (Leve)
+620000	Venda de Profeta
+620100	Robe de Corhyn
+620300	Calças de Profeta
+621100	Robe de Profeta (Leve)
+622100	Robe de Profeta
+630000	Capuz de Astrólogo
+630100	Robe de Astrólogo
+630200	Luvas de Astrólogo
+630300	Calças de Astrólogo
+631100	Robe de Astrólogo (Leve)
+640000	Elmo de Lionel
+640100	Armadura de Lionel
+640200	Manoplas de Lionel
+640300	Grevas de Lionel
+641100	Armadura de Lionel (Leve)
+650000	Elmo de Hoslow
+650100	Armadura de Hoslow
+650200	Manoplas de Hoslow
+650300	Grevas de Hoslow
+651000	Máscara de Diallos
+652100	Armadura de Hoslow (Leve)
+660000	Elmo de Cavaleiro Errante
+660100	Armadura de Cavaleiro Errante
+660200	Manoplas de Cavaleiro Errante
+660300	Grevas de Cavaleiro Errante
+661100	Armadura de Cavaleiro Errante (Leve)
+670000	Capuz de Tecido Azul
+670100	Colete de Tecido Azul
+670200	Manoplas de Guerreiro
+670300	Grevas de Guerreiro
+680000	Máscara Branca
+680100	Vestes de Cirurgião de Guerra
+680200	Luvas de Cirurgião de Guerra
+680300	Calças de Cirurgião de Guerra
+681100	Vestes de Médico de Guerra (Leves)
+690000	Elmo de Restos Reais
+690100	Armadura de Restos Reais
+690200	Manoplas de Restos Reais
+690300	Grevas de Restos Reais
+700000	[ERROR]Coroa de Corda do Corajoso
+700100	[ERROR]Traje de Batalha do Corajoso
+700200	[ERROR]Braçadeiras do Corajoso
+700300	[ERROR]Faixas de Perna do Corajoso
+701000	[ERROR]Elmo de Couro do Corajoso
+702000	[ERROR]Traje de Batalha do Corajoso (Leve)
+720000	Elmo do Campeão Bestial
+720100	Armadura do Campeão Bestial
+720200	Manoplas do Campeão Bestial
+720300	Grevas do Campeão Bestial
+721100	Armadura do Campeão Bestial (Leve)
+730000	Testeira de Campeão
+730100	Ombreiras de Campeão
+730200	Braçadeiras de Campeão
+730300	Polainas de Campeão
+740000	Capuz Carmesin
+740100	Traje de Viagem do Nobre
+740200	Luvas do Nobre
+740300	Calças do Nobre
+741000	Capuz Azul-Marinho
+742000	[ERROR]
+760000	Elmo de Maliketh
+760100	Armadura de Maliketh
+760200	Manoplas de Maliketh
+760300	Grevas de Maliketh
+761100	Armadura de Maliketh (Leve)
+770000	Elmo com Asas de Malenia
+770100	Armadura de Malenia
+770200	Manoplas de Malenia
+770300	Grevas de Malenia
+771100	Armadura de Malenia (Leve)
+780000	Elmo de Veterano
+780100	Armadura de Veterano
+780200	Manoplas de Veterano
+780300	Grevas de Veterano
+781100	Armadura de Veterano (Leve)
+790000	Elmo de Cavaleiro Cão de Caça
+790100	Armadura de Cavaleiro Cão de Caça
+790200	Manoplas de Cavaleiro Cão de Caça
+790300	Grevas de Cavaleiro Cão de Caça
+791100	Armadura de Cavaleiro Cão de Caça (Leve)
+800000	Capuz Festivo
+800100	Traje Festivo
+801000	Capuz Festivo (Leve)
+801100	Traje Festivo (Leve)
+802000	Capuz Festivo Azul
+802100	Traje Festivo Azul
+810000	Testeira de Plebeu
+810100	Traje de Plebeu
+810300	Sapatos de Plebeu
+811000	Testeira de Plebeu (Leve)
+811100	Traje de Plebeu (Leve)
+812000	Traje Simples de Plebeu
+812100	Traje Simples de Plebeu (Leve)
+820000	Coroa de Enviado
+830000	Coroa Pedrilhante de Sábio Gêmeo
+830100	Robe de Raya Lucaria
+830200	Mangas de Feiticeiro
+830300	Perneiras de Feiticeiro
+831000	Coroa Pedrilhante de Olivinus
+832000	Coroa Pedrilhante de Lazuli
+833000	Coroa Pedrilhante de Karolos
+834000	Coroa Pedrilhante da Bruxa
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Elmo de Soldado Marionete
+840100	Armadura de Soldado Marionete
+850000	Elmo de Pássaro de Soldado Marionete
+860000	Elmo de Lobo Feroz
+860100	Armadura de Lobo Feroz
+860200	Manoplas de Lobo Feroz
+860300	Grevas de Lobo Feroz
+861100	Armadura de Lobo Sangrento (Leve)
+870000	Elmo da Terra dos Juncos
+870100	Armadura da Terra dos Juncos
+870200	Manoplas da Terra dos Juncos
+870300	Grevas da Terra dos Juncos
+871100	Armadura da Terra dos Juncos (Leve)
+872000	Máscara de Okina
+872100	Armadura de Junco Branco
+872200	Manoplas de Junco Branco
+872300	Grevas de Junco Branco
+873000	[ERROR]
+880000	Capuz de Confessor
+880100	Traje de Confessor
+880200	Luvas de Confessor
+880300	Botas de Confessor
+881000	Capuz de Confessor (Leve)
+881100	Traje de Confessor (Leve)
+890000	Máscara de Ferro de Prisioneiro
+890100	Traje de Prisioneiro
+890300	Calças de Prisioneiro
+891000	Máscara de Ferro de Arruaceiro
+892100	[ERROR]
+900000	Capuz de Donzela Viajante
+900100	Robe de Donzela Viajante
+900200	Luvas de Donzela Viajante
+900300	Botas de Donzela Viajante
+901100	Robe de Donzela Viajante (Leve)
+901200	[ERROR]
+901600	[ERROR]
+902000	Faixa de Donzela dos Dedos
+902100	Robe de Donzela dos Dedos
+902300	Sapatos de Donzela dos Dedos
+903100	Robe de Donzela dos Dedos (Leve)
+904100	[ERROR]
+910000	Chapéu Grande de Preceptor
+910100	Traje Longo de Preceptor
+910200	Luvas de Preceptor
+910300	Calças de Preceptor
+911000	Máscara da Confiança
+911100	Robe Longo de Professor (Leve)
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Máscara Esquelética
+930100	Penas Negras de Ave de Rapina
+930200	Mangas de Bandido
+930300	Botas de Bandido
+931100	Traje de Bandido
+940000	Capuz de Excêntrico
+940100	Armadura de Excêntrico
+940200	Mangas de Excêntrico
+940300	Calções de Excêntrico
+941000	Capuz de Excêntrico (Alterada)
+950000	Elmo de Brasão de Dedo
+950100	Armadura de Brasão de Dedo
+950200	Manoplas de Brasão de Dedo
+950300	Grevas de Brasão de Dedo
+951100	Armadura de Brasão de Dedo (Leve)
+960000	Máscara de Consorte
+960100	Traje de Consorte
+960300	Calças de Consorte
+961000	Máscara de Governante
+961100	Robe de Governante
+962100	Robe Superior
+963000	Máscara de Marais
+963100	Robe de Marais
+963200	Mangas Ensanguentadas
+964000	Máscara Ensanguentada
+964100	Traje de Oficial
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Elmo de Agouro
+970100	Armadura de Agouro
+970200	Manoplas de Agouro
+970300	Grevas de Agouro
+980000	Elmo de Cavaleiro Cariano
+980100	Armadura de Cavaleiro Cariano
+980200	Manoplas de Cavaleiro Cariano
+980300	Grevas de Cavaleiro Cariano
+981100	Armadura de Cavaleiro Cariano (Leve)
+990000	Coroa Pedrilhante de Hierodas
+990100	Robe de Feiticeiro Errante
+990200	Mangas de Feiticeiro Errante
+990300	Botas de Feiticeiro Errante
+991100	Robe de Feiticeiro Errante (Leve)
+992000	[ERROR]
+1000000	Coroa Pedrilhante de Haima
+1000100	Robe de Mago de Batalha
+1000200	Mangas de Mago de Batalha
+1000300	Faixas de Perna de Mago de Batalha
+1010000	Chapéu de Bruxa da Neve
+1010100	Robe de Bruxa da Neve
+1010300	Saia de Bruxa da Neve
+1011100	Traje de Bruxa da Neve (Leve)
+1020100	Roupas do Viajante
+1020200	Mangas do Viajante
+1020300	Botas do Viajante
+1030000	Barrete de Neófito
+1030100	Robe de Neófito
+1040000	Máscara de Ouro Radiante
+1040100	Trapos da Máscara de Ouro
+1040200	Braceletes de Ouro
+1040300	Faixa de Cintura de Ouro
+1050100	Capa do Agouro Caído
+1060000	Máscara Albináurica
+1060100	Cota de Malha Suja
+1070000	Máscara de Zamor
+1070100	Armadura de Zamor
+1070200	Braceletes de Zamor
+1070300	Faixas de Perna de Zamor
+1080000	Cabeça de Demônio (Gato)
+1081000	Cabeça de Demônio (Com Presas)
+1082000	Cabeça de Demônio (Língua)
+1083000	Cabeça de Demônio (Corpo)
+1084000	Cabeça de Demônio (Lobo)
+1085000	Cabeça de Demônio (Ancião)
+1090000	Máscara de Lágrima Prateada
+1100000	Elmo de Cota de Malha
+1100100	Armadura de Cota de Malha
+1100200	Manoplas
+1100300	Perneiras de Cota de Malha
+1101000	Elmo Grande
+1101100	Túnica de Olho
+1102100	Túnica de Árvore
+1110000	Cabeça de Polvo
+1120000	Jarro
+1130000	Cabeça de Cogumelo
+1130100	Corpo de Cogumelo
+1130200	Braços de Cogumelo
+1130300	Pernas de Cogumelo
+1300000	Elmo de Espelho de Nox
+1301000	Elmo de Espelho de Iji
+1400000	Capuz Preto
+1400100	Armadura de Couro
+1400200	Luvas de Couro
+1400300	Botas de Couro
+1401000	Máscara de Bandido
+1500000	Elmo de Cavaleiro
+1500100	Armadura de Cavaleiro
+1500200	Manoplas de Cavaleiro
+1500300	Grevas de Cavaleiro
+1600000	Capuz Grande
+1610000	[ERROR]
+1700000	Elmo de Soldado de Godrick
+1700100	Túnica de Árvore e Fera
+1700200	Manoplas de Soldado de Godrick
+1700300	Grevas de Soldado de Godrick
+1710000	Elmo de Raya Lucaria
+1710100	Túnica de Cuco
+1710200	Manoplas de Raya Lucaria
+1710300	Grevas de Raya Lucaria
+1720000	Elmo de Soldado de Leyndell
+1720100	Túnica da Térvore
+1720200	Manoplas de Soldado de Leyndell
+1720300	Grevas de Soldado de Leyndell
+1730000	Elmo de Soldado de Radahn
+1730100	Túnica de Juba Vermelha
+1730200	Manoplas de Soldado de Radahn
+1730300	Grevas de Soldado de Radahn
+1740100	Túnica de Mausoléu
+1740200	Manoplas de Mausoléu
+1740300	Grevas de Mausoléu
+1750000	Elmo da Árvore Sacra
+1750100	Túnica com Brasão da Árvore Sacra
+1750200	Manoplas da Árvore Sacra
+1750300	Grevas da Árvore Sacra
+1760000	Elmo de Cavaleiro de Gelmir
+1760100	Armadura de Cavaleiro de Gelmir
+1760200	Manoplas de Cavaleiro de Gelmir
+1760300	Grevas de Cavaleiro de Gelmir
+1761100	Armadura de Cavaleiro de Gelmir (Leve)
+1770000	Elmo de Cavaleiro de Godrick
+1770100	Armadura de Cavaleiro de Godrick
+1770200	Manoplas de Cavaleiro de Godrick
+1770300	Grevas de Cavaleiro de Godrick
+1771100	Armadura de Cavaleiro de Godrick (Leve)
+1780000	Elmo de Cavaleiro Cuco
+1780100	Armadura de Cavaleiro Cuco
+1780200	Manoplas de Cavaleiro Cuco
+1780300	Grevas de Cavaleiro Cuco
+1781100	Armadura de Cavaleiro Cuco (Leve)
+1790000	Elmo de Cavaleiro de Leyndell
+1790100	Armadura de Cavaleiro de Leyndell
+1790200	Manoplas de Cavaleiro de Leyndell
+1790300	Grevas de Cavaleiro de Leyndell
+1791100	Armadura de Cavaleiro de Leyndell (Leve)
+1800000	Elmo de Cavaleiro da Juba Vermelha
+1800100	Armadura de Cavaleiro da Juba Vermelha
+1800200	Manoplas de Cavaleiro da Juba Vermelha
+1800300	Grevas de Cavaleiro da Juba Vermelha
+1801100	Armadura de Cavaleiro da Juba Vermelha (Leve)
+1810100	Armadura de Cavaleiro do Mausoléu
+1810200	Manoplas de Cavaleiro do Mausoléu
+1810300	Grevas de Cavaleiro do Mausoléu
+1811100	Armadura de Cavaleiro do Mausoléu (Leve)
+1820000	Elmo de Cavaleiro da Árvore Sacra
+1820100	Armadura de Cavaleiro da Árvore Sacra
+1820200	Manoplas de Cavaleiro da Árvore Sacra
+1820300	Grevas de Cavaleiro da Árvore Sacra
+1821100	Armadura de Cavaleiro da Árvore Sacra (Leve)
+1830000	Barrete de Soldado de Infantaria
+1830100	Tabardo Drapeado de Cota de Malha
+1830200	Manoplas de Soldado de Infantaria
+1830300	Grevas de Soldado de Infantaria
+1840000	Testeira de Soldado de Infantaria
+1840100	Tabardo de Soldado de Infantaria
+1850000	Elmo Dourado de Soldado de Infantaria
+1850100	Tabardo Drapeado de Couro
+1860000	Elmo de Soldado de Infantaria
+1860100	Tabardo Escarlate
+1870100	Tabardo Ensanguentado
+1880000	Elmo da Coroa Sagrada
+1880100	Tabardo Drapeado de Marfim
+1890000	Máscara de Sorriso do Agouro
+1890100	Robe de Assassino de Agouros
+1890200	Luvas Longas de Assassino de Agouros
+1890300	Botas de Assassino de Agouros
+1900000	Escaravelho de Cinzas da Guerra
+1901000	Escaravelho da Oração
+1902000	Escaravelho Pedrilhante
+1910000	Escaravelho da Lágrima Carmesim
+1920000	Escaravelho da Lágrima Cerúlea
+1930100	Vestido do Leito de Morte
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Capuz de Fia
+1940100	Robe de Fia
+1941100	Robe de Fia (Leve)
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Capuz de Salteador
+1980100	Armadura de Tecido de Salteador
+1980200	Manoplas de Salteador
+1990000	Capuz de Pajem Maior
+1990100	Roupas de Pajem Maior
+1991100	Roupas de Pajem Maior (Leves)
+2000000	Elmo de Duelista Apodrecido
+2000100	Manto de Duelista Apodrecido
+2000300	Grevas de Duelista Apodrecido
+2001100	Capa Podre de Guardião de Tumba (Leve)
+2010000	Coroa de Cogumelo
+2020000	Saco Preto
+2030000	Robe Lazuli

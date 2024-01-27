@@ -1,0 +1,4302 @@
+10	[ERROR]
+11	[ERROR]
+12	[ERROR]
+13	[ERROR]
+14	[ERROR]
+15	[ERROR]
+16	[ERROR]
+17	
+18	
+19	
+20	[ERROR]
+21	[ERROR]
+22	[ERROR]
+23	[ERROR]
+24	[ERROR]
+25	[ERROR]
+26	[ERROR]
+27	[ERROR]
+28	[ERROR]
+29	[ERROR]
+30	[ERROR]
+31	[ERROR]
+32	
+33	
+34	
+35	[ERROR]
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+42	[ERROR]
+43	[ERROR]
+44	[ERROR]
+60	[ERROR]
+61	[ERROR]
+62	[ERROR]
+63	[ERROR]
+64	[ERROR]
+65	[ERROR]
+66	[ERROR]
+67	[ERROR]
+68	[ERROR]
+69	[ERROR]
+70	[ERROR]
+71	[ERROR]
+72	[ERROR]
+73	[ERROR]
+74	[ERROR]
+75	[ERROR]
+76	[ERROR]
+77	[ERROR]
+78	[ERROR]
+79	[ERROR]
+90	[ERROR]
+91	[ERROR]
+92	[ERROR]
+93	[ERROR]
+94	[ERROR]
+95	
+96	
+97	
+98	[ERROR]
+99	[ERROR]
+100	Dedo Enrolado do Maculado
+101	Dedo Enrolado do Duelista
+102	Dedo Sangrento
+103	Decepadora de Dedos
+104	Anel de Cifra Branco
+105	Anel de Cifra Azul
+106	Dedo Enrugado do Maculado
+107	Dedo Sangrento do Fantasma
+108	Língua do Provocador
+109	Efígie Dourada Pequena
+110	Efígie Vermelha Pequena
+111	Dedo Sangrento Fétido
+112	Dedo Não Conformista
+113	Dedo Sangrento do Fantasma
+114	Dedo Não Conformista Fantasma
+115	Memória da Graça
+130	Apito de Corcel Espectral
+131	
+132	
+133	
+134	
+135	Grande Runa Fantasma
+150	Remédio de Dedo Invocador Enrolado
+170	Dedo Enrolado do Maculado
+171	Dedo Enrolado do Duelista
+172	Dedo Sangrento
+173	
+174	Anel de Cifra Branco
+175	Anel de Cifra Azul
+176	
+177	
+178	Língua do Provocador
+179	Efígie Dourada Pequena
+180	Efígie Vermelha Pequena
+181	Apito de Corcel Espectral
+182	Remédio de Dedo Invocador Enrolado
+183	Dedo Sangrento Fétido
+184	Dedo Não Conformista
+185	
+186	
+187	
+188	
+189	
+190	Arco de Runa
+191	Grande Runa de Godrick
+192	Grande Runa de Radahn
+193	Grande Runa de Morgott
+194	Grande Runa de Rykard
+195	Grande Runa de Mohg
+196	Grande Runa de Malenia
+197	
+198	
+199	
+200	Frasco de Lágrimas Carmesins
+201	Frasco de Lágrimas Carmesins
+202	Frasco de Lágrimas Carmesins +1
+203	Frasco de Lágrimas Carmesins +1
+204	Frasco de Lágrimas Carmesins +2
+205	Frasco de Lágrimas Carmesins +2
+206	Frasco de Lágrimas Carmesins +3
+207	Frasco de Lágrimas Carmesins +3
+208	Frasco de Lágrimas Carmesins +4
+209	Frasco de Lágrimas Carmesins +4
+210	Frasco de Lágrimas Carmesins +5
+211	Frasco de Lágrimas Carmesins +5
+212	Frasco de Lágrimas Carmesins +6
+213	Frasco de Lágrimas Carmesins +6
+214	Frasco de Lágrimas Carmesins +7
+215	Frasco de Lágrimas Carmesins +7
+216	
+217	
+218	
+219	
+220	Frasco de Lágrimas Cerúleas
+221	Frasco de Lágrimas Cerúleas
+222	Frasco de Lágrimas Cerúleas +1
+223	Frasco de Lágrimas Cerúleas +1
+224	Frasco de Lágrimas Cerúleas +2
+225	Frasco de Lágrimas Cerúleas +2
+226	Frasco de Lágrimas Cerúleas +3
+227	Frasco de Lágrimas Cerúleas +3
+228	Frasco de Lágrimas Cerúleas +4
+229	Frasco de Lágrimas Cerúleas +4
+230	Frasco de Lágrimas Cerúleas +5
+231	Frasco de Lágrimas Cerúleas +5
+232	Frasco de Lágrimas Cerúleas +6
+233	Frasco de Lágrimas Cerúleas +6
+234	Frasco de Lágrimas Cerúleas +7
+235	Frasco de Lágrimas Cerúleas +7
+250	Elixir Magnífico
+251	Elixir Magnífico
+300	Pote de Fogo
+301	Pote de Fogo da Juba Vermelha
+302	Pote de Fogo da Chama dos Gigantes
+320	Pote de Relâmpago
+321	Pote de Seta de Dragão Ancião
+322	
+323	
+324	
+325	
+326	
+327	
+328	
+329	
+330	Pote Fétido
+331	
+332	
+333	
+334	
+335	
+336	
+337	
+338	
+339	
+340	Pote de Enxame
+341	
+342	
+343	
+344	
+345	
+346	
+347	
+348	
+349	
+350	Pote de Água Benta
+351	Pote da Ordem Sagrada
+352	
+353	
+354	
+355	
+356	
+357	
+358	
+359	
+360	Pote Congelante
+361	
+362	
+363	
+364	
+365	
+366	
+367	
+368	
+369	
+370	Pote de Veneno
+371	
+372	
+373	
+374	
+375	
+376	
+377	
+378	
+379	
+380	Pote de Óleo
+381	
+382	
+383	
+384	
+385	
+386	
+387	
+388	
+389	
+390	Pote Encantador
+391	Pote de Iscas de Feras
+392	
+393	
+394	
+395	
+396	
+397	
+398	
+399	
+400	Pote de Fogo com Corda
+420	Pote de Relâmpago com Corda
+421	
+422	
+423	
+424	
+425	
+426	
+427	
+428	
+429	
+430	Pote Fétido com Corda
+431	
+432	
+433	
+434	
+435	
+436	
+437	
+438	
+439	
+440	Pote de Veneno com Cordão
+441	
+442	
+443	
+444	
+445	
+446	
+447	
+448	
+449	
+450	Pote de Óleo com Cordão
+451	
+452	
+453	
+454	
+455	
+456	
+457	
+458	
+459	
+460	Pote Mágico com Cordão
+461	
+462	
+463	
+464	
+465	
+466	
+467	
+468	
+469	
+470	Pote Voador com Cordão
+471	
+472	
+473	
+474	
+475	
+476	
+477	
+478	
+479	
+480	[ERROR]
+481	
+482	
+483	
+484	
+485	
+486	
+487	
+488	
+489	
+490	Pote Vulcânico com Cordão
+491	
+492	
+493	
+494	
+495	
+496	
+497	
+498	
+499	
+500	
+501	
+502	
+503	
+504	
+505	
+506	
+507	
+508	
+509	
+510	Pote de Água Benta com Cordão
+600	Pote Vulcânico
+601	
+602	
+603	
+604	
+605	
+606	
+607	
+608	
+609	
+610	Pote Albináurico
+630	Pote de Sangue Amaldiçoado
+631	
+632	
+633	
+634	
+635	
+636	
+637	
+638	
+639	
+640	Pote de Sono
+641	
+642	
+643	
+644	
+645	
+646	
+647	
+648	
+649	
+650	Pote de Rancor
+651	
+652	
+653	
+654	
+655	
+656	
+657	
+658	
+659	
+660	Pote Mágico
+661	Pote Mágico da Academia
+662	
+663	
+664	
+665	
+666	
+667	
+668	
+669	
+670	Pote de Podridão
+810	Passas de Rowa
+811	Passas Doces
+812	Passas Congeladas
+813	
+814	
+815	
+816	
+817	
+818	
+819	
+820	Caranguejo Cozido
+821	
+822	
+823	
+824	
+825	
+826	
+827	
+828	
+829	
+830	Camarão Cozido
+900	Bolus Neutralizante
+901	
+902	
+903	
+904	
+905	
+906	
+907	
+908	
+909	
+910	Bolus Hemostático
+911	
+912	
+913	
+914	
+915	
+916	
+917	
+918	
+919	
+920	Bolus de Descongelamento
+921	
+922	
+923	
+924	
+925	
+926	
+927	
+928	
+929	
+930	Bolus Estimulantes
+931	
+932	
+933	
+934	
+935	
+936	
+937	
+938	
+939	
+940	Bolus da Preservação
+941	
+942	
+943	
+944	
+945	
+946	
+947	
+948	
+949	
+950	Bolus Rejuvenescedores
+951	
+952	
+953	
+954	
+955	
+956	
+957	
+958	
+959	
+960	Bolus de Clarificação
+1000	Frasco de Lágrimas Carmesins
+1001	Frasco de Lágrimas Carmesins
+1002	Frasco de Lágrimas Carmesins +1
+1003	Frasco de Lágrimas Carmesins +1
+1004	Frasco de Lágrimas Carmesins +2
+1005	Frasco de Lágrimas Carmesins +2
+1006	Frasco de Lágrimas Carmesins +3
+1007	Frasco de Lágrimas Carmesins +3
+1008	Frasco de Lágrimas Carmesins +4
+1009	Frasco de Lágrimas Carmesins +4
+1010	Frasco de Lágrimas Carmesins +5
+1011	Frasco de Lágrimas Carmesins +5
+1012	Frasco de Lágrimas Carmesins +6
+1013	Frasco de Lágrimas Carmesins +6
+1014	Frasco de Lágrimas Carmesins +7
+1015	Frasco de Lágrimas Carmesins +7
+1016	Frasco de Lágrimas Carmesins +8
+1017	Frasco de Lágrimas Carmesins +8
+1018	Frasco de Lágrimas Carmesins +9
+1019	Frasco de Lágrimas Carmesins +9
+1020	Frasco de Lágrimas Carmesins +10
+1021	Frasco de Lágrimas Carmesins +10
+1022	Frasco de Lágrimas Carmesins +11
+1023	Frasco de Lágrimas Carmesins +11
+1024	Frasco de Lágrimas Carmesins +12
+1025	Frasco de Lágrimas Carmesins +12
+1050	Frasco de Lágrimas Cerúleas
+1051	Frasco de Lágrimas Cerúleas
+1052	Frasco de Lágrimas Cerúleas +1
+1053	Frasco de Lágrimas Cerúleas +1
+1054	Frasco de Lágrimas Cerúleas +2
+1055	Frasco de Lágrimas Cerúleas +2
+1056	Frasco de Lágrimas Cerúleas +3
+1057	Frasco de Lágrimas Cerúleas +3
+1058	Frasco de Lágrimas Cerúleas +4
+1059	Frasco de Lágrimas Cerúleas +4
+1060	Frasco de Lágrimas Cerúleas +5
+1061	Frasco de Lágrimas Cerúleas +5
+1062	Frasco de Lágrimas Cerúleas +6
+1063	Frasco de Lágrimas Cerúleas +6
+1064	Frasco de Lágrimas Cerúleas +7
+1065	Frasco de Lágrimas Cerúleas +7
+1066	Frasco de Lágrimas Cerúleas +8
+1067	Frasco de Lágrimas Cerúleas +8
+1068	Frasco de Lágrimas Cerúleas +9
+1069	Frasco de Lágrimas Cerúleas +9
+1070	Frasco de Lágrimas Cerúleas +10
+1071	Frasco de Lágrimas Cerúleas +10
+1072	Frasco de Lágrimas Cerúleas +11
+1073	Frasco de Lágrimas Cerúleas +11
+1074	Frasco de Lágrimas Cerúleas +12
+1075	Frasco de Lágrimas Cerúleas +12
+1100	Pescoço de Tartaruga em Conserva
+1101	
+1102	
+1103	
+1104	
+1105	
+1106	
+1107	
+1108	
+1109	
+1110	Carne-Seca Imunizante
+1111	
+1112	
+1113	
+1114	
+1115	
+1116	
+1117	
+1118	
+1119	
+1120	Carne-Seca Revigorante
+1121	
+1122	
+1123	
+1124	
+1125	
+1126	
+1127	
+1128	
+1129	
+1130	Carne-Seca de Clarificação
+1131	
+1132	
+1133	
+1134	
+1135	
+1136	
+1137	
+1138	
+1139	
+1140	Carne-Seca Manchada
+1141	
+1142	
+1143	
+1144	
+1145	
+1146	
+1147	
+1148	
+1149	
+1150	Fígado Desidratado à Prova de Feitiços
+1151	
+1152	
+1153	
+1154	
+1155	
+1156	
+1157	
+1158	
+1159	
+1160	Fígado Desidratado à Prova de Fogo
+1161	
+1162	
+1163	
+1164	
+1165	
+1166	
+1167	
+1168	
+1169	
+1170	Fígado Desidratado à Prova de Eletricidade
+1171	
+1172	
+1173	
+1174	
+1175	
+1176	
+1177	
+1178	
+1179	
+1180	Fígado Desidratado à Prova de Santidade
+1181	
+1182	
+1183	
+1184	
+1185	
+1186	
+1187	
+1188	
+1189	
+1190	Pé de Ave em Conserva Prateada
+1191	
+1192	
+1193	
+1194	
+1195	
+1196	
+1197	
+1198	
+1199	
+1200	Pé de Ave em Conserva Dourada
+1201	
+1202	
+1203	
+1204	
+1205	
+1206	
+1207	
+1208	
+1209	
+1210	Carne Exaltada
+1211	
+1212	
+1213	
+1214	
+1215	
+1216	
+1217	
+1218	
+1219	
+1220	[ERROR]Carne Exaltada
+1235	Bolinho de Carne Crua
+1236	
+1237	
+1238	
+1239	
+1240	Uva Shabriri
+1290	Fragmentos de Luz Estelar
+1310	Carne-Seca Branca Imunizante
+1311	
+1312	
+1313	
+1314	
+1315	
+1316	
+1317	
+1318	
+1319	
+1320	Carne-Seca Branca Revigorante
+1321	
+1322	
+1323	
+1324	
+1325	
+1326	
+1327	
+1328	
+1329	
+1330	Carne-Seca Branca de Clarificação
+1331	
+1332	
+1333	
+1334	
+1335	
+1336	
+1337	
+1338	
+1339	
+1340	Carne-Seca Branca Manchada
+1341	
+1342	
+1343	
+1344	
+1345	
+1346	
+1347	
+1348	
+1349	
+1350	[ERROR]
+1400	Sebo Inflamável
+1401	
+1402	
+1403	
+1404	
+1405	
+1406	
+1407	
+1408	
+1409	
+1410	Sebo Elétrico
+1411	
+1412	
+1413	
+1414	
+1415	
+1416	
+1417	
+1418	
+1419	
+1420	Sebo Mágico
+1421	
+1422	
+1423	
+1424	
+1425	
+1426	
+1427	
+1428	
+1429	
+1430	Sebo Sagrado
+1431	
+1432	
+1433	
+1434	
+1435	
+1436	
+1437	
+1438	
+1439	
+1440	Sebo de Sangue
+1441	
+1442	
+1443	
+1444	
+1445	
+1446	
+1447	
+1448	
+1449	
+1450	Sebo Soporífero
+1451	
+1452	
+1453	
+1454	
+1455	
+1456	
+1457	
+1458	
+1459	
+1460	Sebo Venenoso
+1461	
+1462	
+1463	
+1464	
+1465	
+1466	
+1467	
+1468	
+1469	
+1470	Sebo Congelante
+1471	
+1472	
+1473	
+1474	
+1475	
+1476	
+1477	
+1478	
+1479	
+1480	Sebo de Ferida de Dragão
+1481	
+1482	
+1483	
+1484	
+1485	
+1486	
+1487	
+1488	
+1489	
+1490	Sebo de Podridão
+1491	
+1492	
+1493	
+1494	
+1495	
+1496	
+1497	
+1498	
+1499	
+1500	Sebo Inflamável com Cordão
+1501	
+1502	
+1503	
+1504	
+1505	
+1506	
+1507	
+1508	
+1509	
+1510	Sebo Elétrico com Cordão
+1511	
+1512	
+1513	
+1514	
+1515	
+1516	
+1517	
+1518	
+1519	
+1520	Sebo Mágico com Cordão
+1521	
+1522	
+1523	
+1524	
+1525	
+1526	
+1527	
+1528	
+1529	
+1530	Sebo Sagrado com Cordão
+1531	
+1532	
+1533	
+1534	
+1535	
+1536	
+1537	
+1538	
+1539	
+1540	Sebo de Sangue com Cordão
+1541	
+1542	
+1543	
+1544	
+1545	
+1546	
+1547	
+1548	
+1549	
+1550	Sebo Soporífero com Cordão
+1551	
+1552	
+1553	
+1554	
+1555	
+1556	
+1557	
+1558	
+1559	
+1560	Sebo Venenoso com Cordão
+1561	
+1562	
+1563	
+1564	
+1565	
+1566	
+1567	
+1568	
+1569	
+1570	[ERROR]Sebo Congelante com Cordão
+1590	Sebo de Podridão com Cordão
+1690	Sebo de Escudo
+1691	
+1692	
+1693	
+1694	
+1695	
+1696	
+1697	
+1698	
+1699	
+1700	Adaga de Arremesso
+1701	
+1702	
+1703	
+1704	
+1705	
+1706	
+1707	
+1708	
+1709	
+1710	Dardo Ósseo
+1711	
+1712	
+1713	
+1714	
+1715	
+1716	
+1717	
+1718	
+1719	
+1720	Dardo Ósseo Venenoso
+1721	
+1722	
+1723	
+1724	
+1725	
+1726	
+1727	
+1728	
+1729	
+1730	Kukri
+1731	
+1732	
+1733	
+1734	
+1735	
+1736	
+1737	
+1738	
+1739	
+1740	Dardo de Cristal
+1741	
+1742	
+1743	
+1744	
+1745	
+1746	
+1747	
+1748	
+1749	
+1750	Adagas em Leque
+1751	
+1752	
+1753	
+1754	
+1755	
+1756	
+1757	
+1758	
+1759	
+1760	Fragmento de Ruína
+1810	Carne Fétida
+1830	Pedra Explosiva
+1831	Amontoado de Pedras Explosivas
+1832	
+1833	
+1834	
+1835	
+1836	
+1837	
+1838	
+1839	
+1840	Pedra Venenosa
+1841	Amontoado de Pedras Venenosas
+2020	Pedra Arco-Íris
+2021	
+2022	
+2023	
+2024	
+2025	
+2026	
+2027	
+2028	
+2029	
+2030	Pedra Luminescente
+2031	
+2032	
+2033	
+2034	
+2035	
+2036	
+2037	
+2038	
+2039	
+2040	Telescópio
+2041	
+2042	
+2043	
+2044	
+2045	
+2046	
+2047	
+2048	
+2049	
+2050	Imitação da Graça
+2070	Lampião
+2071	
+2072	
+2073	
+2074	
+2075	
+2076	
+2077	
+2078	
+2079	
+2080	Garra Blasfema
+2081	
+2082	
+2083	
+2084	
+2085	
+2086	
+2087	
+2088	
+2089	
+2090	Raízes da Morte
+2091	
+2092	
+2093	
+2094	
+2095	
+2096	
+2097	
+2098	
+2099	
+2100	Algodão Macio
+2120	Sabão
+2121	
+2122	
+2123	
+2124	
+2125	
+2126	
+2127	
+2128	
+2129	
+2130	Orvalho Celestial
+2131	
+2132	
+2133	
+2134	
+2135	
+2136	
+2137	
+2138	
+2139	
+2140	Algema de Margit
+2141	
+2142	
+2143	
+2144	
+2145	
+2146	
+2147	
+2148	
+2149	
+2150	Algema de Mohg
+2151	
+2152	
+2153	
+2154	
+2155	
+2156	
+2157	
+2158	
+2159	
+2160	Medalha de Cavaleiro Sangue Puro
+2190	Agulha de Miquella
+2191	
+2192	
+2193	
+2194	
+2195	
+2196	
+2197	
+2198	
+2199	
+2200	Cachola Tagarela "Olá"
+2201	Cachola Tagarela "Obrigado"
+2202	Cachola Tagarela "Perdão"
+2203	Cachola Tagarela "Maravilhoso"
+2204	Cachola Tagarela "Por favor, ajude"
+2205	Cachola Tagarela "Meu amor"
+2206	Cachola Tagarela "Vamos ao trabalho"
+2207	Cachola Tagarela "Você é uma lindeza"
+2290	
+2900	Runa Dourada [1]
+2901	Runa Dourada [2]
+2902	Runa Dourada [3]
+2903	Runa Dourada [4]
+2904	Runa Dourada [5]
+2905	Runa Dourada [6]
+2906	Runa Dourada [7]
+2907	Runa Dourada [8]
+2908	Runa Dourada [9]
+2909	Runa Dourada [10]
+2910	Runa Dourada [11]
+2911	Runa Dourada [12]
+2912	Runa Dourada [13]
+2913	Runa de Numen
+2914	Runa do Herói [1]
+2915	Runa do Herói [2]
+2916	Runa do Herói [3]
+2917	Runa do Herói [4]
+2918	Runa do Herói [5]
+2919	Runa do Lorde
+2950	Lembrança do Enxertado
+2951	Lembrança do Flagelo Estelar
+2952	Lembrança do Príncipe do Agouro
+2953	Lembrança do Não Conformista
+2954	Lembrança da Deusa da Podridão
+2955	Lembrança do Lorde do Sangue
+2956	Lembrança da Lâmina Negra
+2957	Lembrança de Hoarah Loux
+2958	Lembrança do Lorde Dragão
+2959	Lembrança da Rainha da Lua Cheia
+2960	Lembrança do Dragão Lich
+2961	Lembrança do Gigante de Fogo
+2962	Lembrança do Ancestral Real
+2963	Lembrança do Prístino
+2964	Lembrança do Bastardo
+2990	Runa das Terras Intermédias
+2991	
+2992	
+2993	
+2994	
+2995	
+2996	
+2997	
+2998	
+2999	
+3000	Antiga Cabeça de Infante
+3001	
+3002	
+3003	
+3004	
+3005	
+3006	
+3007	
+3008	
+3009	
+3010	Criança Agouro
+3011	Criança Agouro Real
+3012	
+3013	
+3014	
+3015	
+3016	
+3017	
+3018	
+3019	
+3020	[ERROR]Oração de Miranda
+3021	
+3022	
+3023	
+3024	
+3025	
+3026	
+3027	
+3028	
+3029	
+3030	Pedrilhante de Cuco
+3031	
+3032	
+3033	
+3034	
+3035	
+3036	
+3037	
+3038	
+3039	
+3040	Véu de Mímico
+3041	
+3042	
+3043	
+3044	
+3045	
+3046	
+3047	
+3048	
+3049	
+3050	Pedaço de Pedrilhante
+3051	Grande Pedaço de Pedrilhante
+3052	
+3053	
+3054	
+3055	
+3056	
+3057	
+3058	
+3059	
+3060	Leque de Pedra da Gravidade
+3061	
+3062	
+3063	
+3064	
+3065	
+3066	
+3067	
+3068	
+3069	
+3070	Pedaço de Pedra da Gravidade
+3071	
+3072	
+3073	
+3074	
+3075	
+3076	
+3077	
+3078	
+3079	
+3080	Sino Chamador de Aparição
+3300	[ERROR]Sebo de Água Benta
+3301	
+3302	
+3303	
+3304	
+3305	
+3306	
+3307	
+3308	
+3309	
+3310	Pedra de Aquecimento
+3311	Pedra da Chama de Frenesi
+3312	
+3313	
+3314	
+3315	
+3316	
+3317	
+3318	
+3319	
+3320	Pedra da Palavra
+3350	Ramo Encantador
+3351	
+3352	
+3353	
+3354	
+3355	
+3356	
+3357	
+3358	
+3359	
+3360	Bênção do Baldaquino
+3361	Bênção Radiante do Baldaquino
+3500	Aromático Inspirador
+3501	
+3502	
+3503	
+3504	
+3505	
+3506	
+3507	
+3508	
+3509	
+3510	Faísca Aromática
+3511	
+3512	
+3513	
+3514	
+3515	
+3516	
+3517	
+3518	
+3519	
+3520	Aromático de Jarro de Ferro
+3550	Aromático de Fervura de Sangue
+3580	Névoa Dispersa Venenosa
+3610	Névoa de Ácido
+4000	Calhau Pedrilhante
+4001	Grande Fragmento Pedrilhante
+4002	
+4003	
+4004	
+4005	
+4006	
+4007	
+4008	
+4009	
+4010	Fragmento Pedrilhante Veloz
+4011	
+4012	
+4013	
+4014	
+4015	
+4016	
+4017	
+4018	
+4019	
+4020	Fragmento de Cometa Pedrilhante
+4021	Cometa
+4022	
+4023	
+4024	
+4025	
+4026	
+4027	
+4028	
+4029	
+4030	Espiral de Fragmento
+4031	
+4032	
+4033	
+4034	
+4035	
+4036	
+4037	
+4038	
+4039	
+4040	Estrelas Pedrilhantes
+4041	
+4042	
+4043	
+4044	
+4045	
+4046	
+4047	
+4048	
+4049	
+4050	Chuva de Estrelas
+4051	
+4052	
+4053	
+4054	
+4055	
+4056	
+4057	
+4058	
+4059	
+4060	Barragem de Cristal
+4061	
+4062	
+4063	
+4064	
+4065	
+4066	
+4067	
+4068	
+4069	
+4070	Arco Pedrilhante
+4071	
+4072	
+4073	
+4074	
+4075	
+4076	
+4077	
+4078	
+4079	
+4080	Canhão de Haima
+4081	
+4082	
+4083	
+4084	
+4085	
+4086	
+4087	
+4088	
+4089	
+4090	Estouro de Cristal
+4091	
+4092	
+4093	
+4094	
+4095	
+4096	
+4097	
+4098	
+4099	
+4100	Terra Partida
+4101	
+4102	
+4103	
+4104	
+4105	
+4106	
+4107	
+4108	
+4109	
+4110	Explosão de Rocha
+4111	
+4112	
+4113	
+4114	
+4115	
+4116	
+4117	
+4118	
+4119	
+4120	Malho de Haima
+4121	
+4122	
+4123	
+4124	
+4125	
+4126	
+4127	
+4128	
+4129	
+4130	Terra Mágica
+4131	
+4132	
+4133	
+4134	
+4135	
+4136	
+4137	
+4138	
+4139	
+4140	Luz Estelar
+4200	Bólido Escuro
+4201	
+4202	
+4203	
+4204	
+4205	
+4206	
+4207	
+4208	
+4209	
+4210	Chuva de Estrelas Fundadora
+4211	
+4212	
+4213	
+4214	
+4215	
+4216	
+4217	
+4218	
+4219	
+4220	Plêiades
+4300	Falange de Laminante
+4301	Falange Cariana
+4302	Falange de Lâmina Grande
+4360	Lua Cheia de Rennala
+4361	Lua Sombria de Ranni
+4362	
+4363	
+4364	
+4365	
+4366	
+4367	
+4368	
+4369	
+4370	Tormenta de Magia
+4371	
+4372	
+4373	
+4374	
+4375	
+4376	
+4377	
+4378	
+4379	
+4380	Arco Grande de Loretta
+4381	Maestria de Loretta
+4382	
+4383	
+4384	
+4385	
+4386	
+4387	
+4388	
+4389	
+4390	Laminante Mágica
+4391	
+4392	
+4393	
+4394	
+4395	
+4396	
+4397	
+4398	
+4399	
+4400	Penhasco de Gelo de Pedrilhante
+4401	
+4402	
+4403	
+4404	
+4405	
+4406	
+4407	
+4408	
+4409	
+4410	Tempestade de Gelo de Zamor
+4411	
+4412	
+4413	
+4414	
+4415	
+4416	
+4417	
+4418	
+4419	
+4420	Névoa Congelante
+4421	
+4422	
+4423	
+4424	
+4425	
+4426	
+4427	
+4428	
+4429	
+4430	Espada Grande Cariana
+4431	Lâmina Lunar de Adula
+4432	
+4433	
+4434	
+4435	
+4436	
+4437	
+4438	
+4439	
+4440	Fatiadora Cariana
+4441	
+4442	
+4443	
+4444	
+4445	
+4446	
+4447	
+4448	
+4449	
+4450	Perfurador Cariano
+4451	
+4452	
+4453	
+4454	
+4455	
+4456	
+4457	
+4458	
+4459	
+4460	Arma do Estudioso
+4461	
+4462	
+4463	
+4464	
+4465	
+4466	
+4467	
+4468	
+4469	
+4470	Escudo do Estudioso
+4471	
+4472	
+4473	
+4474	
+4475	
+4476	
+4477	
+4478	
+4479	
+4480	Lucidez
+4481	
+4482	
+4483	
+4484	
+4485	
+4486	
+4487	
+4488	
+4489	
+4490	Arma Congelada
+4491	
+4492	
+4493	
+4494	
+4495	
+4496	
+4497	
+4498	
+4499	
+4500	Cristal Estilhaçado
+4501	
+4502	
+4503	
+4504	
+4505	
+4506	
+4507	
+4508	
+4509	
+4510	Liberação de Cristal
+4511	
+4512	
+4513	
+4514	
+4515	
+4516	
+4517	
+4518	
+4519	
+4520	Torrente de Cristal
+4600	Fragmento de Emboscada
+4601	
+4602	
+4603	
+4604	
+4605	
+4606	
+4607	
+4608	
+4609	
+4610	Fragmento da Noite
+4611	
+4612	
+4613	
+4614	
+4615	
+4616	
+4617	
+4618	
+4619	
+4620	Cometa Noturno
+4621	
+4622	
+4623	
+4624	
+4625	
+4626	
+4627	
+4628	
+4629	
+4630	Barreira de Thops
+4631	
+4632	
+4633	
+4634	
+4635	
+4636	
+4637	
+4638	
+4639	
+4640	Retaliação Cariana
+4641	
+4642	
+4643	
+4644	
+4645	
+4646	
+4647	
+4648	
+4649	
+4650	Escuridão Eterna
+4651	
+4652	
+4653	
+4654	
+4655	
+4656	
+4657	
+4658	
+4659	
+4660	Lâmina Oculta
+4661	
+4662	
+4663	
+4664	
+4665	
+4666	
+4667	
+4668	
+4669	
+4670	Forma Oculta
+4700	Meteorito
+4701	Meteorito de Astel
+4702	
+4703	
+4704	
+4705	
+4706	
+4707	
+4708	
+4709	
+4710	Funda de Pedra
+4711	
+4712	
+4713	
+4714	
+4715	
+4716	
+4717	
+4718	
+4719	
+4720	Poço da Gravidade
+4721	Estrelas em Colapso
+4800	Disparo de Magma
+4801	
+4802	
+4803	
+4804	
+4805	
+4806	
+4807	
+4808	
+4809	
+4810	Fúria de Gelmir
+4811	
+4812	
+4813	
+4814	
+4815	
+4816	
+4817	
+4818	
+4819	
+4820	Magma Turvo
+4821	
+4822	
+4823	
+4824	
+4825	
+4826	
+4827	
+4828	
+4829	
+4830	Rancor de Rykard
+4900	Sarça Pecadora
+4901	
+4902	
+4903	
+4904	
+4905	
+4906	
+4907	
+4908	
+4909	
+4910	Sarças da Punição
+5000	Chamada de Rancor
+5001	Rancor da Morte Anciã
+5002	
+5003	
+5004	
+5005	
+5006	
+5007	
+5008	
+5009	
+5010	Chama Espectral Explosiva
+5011	
+5012	
+5013	
+5014	
+5015	
+5016	
+5017	
+5018	
+5019	
+5020	Neblina da Fia
+5021	
+5022	
+5023	
+5024	
+5025	
+5026	
+5027	
+5028	
+5029	
+5030	Chamado de Tibia
+5031	
+5032	
+5033	
+5034	
+5035	
+5036	
+5037	
+5038	
+5039	
+5040	Relâmpago da Morte
+5100	Bolhas de Oráculo
+5101	
+5102	
+5103	
+5104	
+5105	
+5106	
+5107	
+5108	
+5109	
+5110	Grande Bolha Oracular
+6000	Ah, Chamas!
+6001	Ó, Grande Pira!
+6002	
+6003	
+6004	
+6005	
+6006	
+6007	
+6008	
+6009	
+6010	Banquete de Chamas
+6011	
+6012	
+6013	
+6014	
+6015	
+6016	
+6017	
+6018	
+6019	
+6020	Chama, Caia Sobre Eles
+6021	
+6022	
+6023	
+6024	
+6025	
+6026	
+6027	
+6028	
+6029	
+6030	Dance, Ó, Chama!
+6031	
+6032	
+6033	
+6034	
+6035	
+6036	
+6037	
+6038	
+6039	
+6040	Chama, Limpe-me
+6041	
+6042	
+6043	
+6044	
+6045	
+6046	
+6047	
+6048	
+6049	
+6050	Chama, Conceda-me Força
+6051	
+6052	
+6053	
+6054	
+6055	
+6056	
+6057	
+6058	
+6059	
+6060	Chama, Proteja-me
+6100	Que a Chama dos Gigantes Te Leve
+6101	
+6102	
+6103	
+6104	
+6105	
+6106	
+6107	
+6108	
+6109	
+6110	Chama do Deus Caído
+6111	
+6112	
+6113	
+6114	
+6115	
+6116	
+6117	
+6118	
+6119	
+6120	Queime, Ó, Chama!
+6210	Chama Negra
+6211	
+6212	
+6213	
+6214	
+6215	
+6216	
+6217	
+6218	
+6219	
+6220	Erga-se, Ó, Chama!
+6221	
+6222	
+6223	
+6224	
+6225	
+6226	
+6227	
+6228	
+6229	
+6230	Chama Negra da Purificação
+6231	
+6232	
+6233	
+6234	
+6235	
+6236	
+6237	
+6238	
+6239	
+6240	Ritual da Chama Negra
+6241	
+6242	
+6243	
+6244	
+6245	
+6246	
+6247	
+6248	
+6249	
+6250	Lâmina da Chama Negra
+6251	
+6252	
+6253	
+6254	
+6255	
+6256	
+6257	
+6258	
+6259	
+6260	Proteção da Chama Negra
+6261	
+6262	
+6263	
+6264	
+6265	
+6266	
+6267	
+6268	
+6269	
+6270	Presença Nobre
+6300	Garras da Chama do Sangue
+6301	
+6302	
+6303	
+6304	
+6305	
+6306	
+6307	
+6308	
+6309	
+6310	Dádiva de Sangue
+6311	
+6312	
+6313	
+6314	
+6315	
+6316	
+6317	
+6318	
+6319	
+6320	Lâmina da Chama do Sangue
+6321	
+6322	
+6323	
+6324	
+6325	
+6326	
+6327	
+6328	
+6329	
+6330	Barreira de Ouro
+6331	
+6332	
+6333	
+6334	
+6335	
+6336	
+6337	
+6338	
+6339	
+6340	Proteção da Térvore
+6400	Rejeição
+6401	
+6402	
+6403	
+6404	
+6405	
+6406	
+6407	
+6408	
+6409	
+6410	A Fúria do Ouro
+6411	
+6412	
+6413	
+6414	
+6415	
+6416	
+6417	
+6418	
+6419	
+6420	Cura Urgente
+6421	Cura
+6422	Cura Grande
+6423	Regeneração do Lorde
+6424	Cura da Térvore
+6425	
+6426	
+6427	
+6428	
+6429	
+6430	Pedido da Benção
+6431	Bênção da Térvore
+6432	
+6433	
+6434	
+6435	
+6436	
+6437	
+6438	
+6439	
+6440	Cura para Veneno
+6441	Cura do Lorde
+6442	
+6443	
+6444	
+6445	
+6446	
+6447	
+6448	
+6449	
+6450	Fortificação de Fogo
+6451	
+6452	
+6453	
+6454	
+6455	
+6456	
+6457	
+6458	
+6459	
+6460	Fortificação de Magia
+6461	
+6462	
+6463	
+6464	
+6465	
+6466	
+6467	
+6468	
+6469	
+6470	Fortificação de Eletricidade
+6471	
+6472	
+6473	
+6474	
+6475	
+6476	
+6477	
+6478	
+6479	
+6480	Fortificação Divina
+6481	
+6482	
+6483	
+6484	
+6485	
+6486	
+6487	
+6488	
+6489	
+6490	Fortificação Divina do Lorde
+6491	
+6492	
+6493	
+6494	
+6495	
+6496	
+6497	
+6498	
+6499	
+6500	Névoa da Donzela da Noite
+6501	
+6502	
+6503	
+6504	
+6505	
+6506	
+6507	
+6508	
+6509	
+6510	Abordagem do Assassino
+6511	
+6512	
+6513	
+6514	
+6515	
+6516	
+6517	
+6518	
+6519	
+6520	Isca da Sombra
+6521	
+6522	
+6523	
+6524	
+6525	
+6526	
+6527	
+6528	
+6529	
+6530	Escuridão
+6600	Voto Dourado
+6700	Disco de Luz
+6701	Anéis de Luz Triplos
+6702	
+6703	
+6704	
+6705	
+6706	
+6707	
+6708	
+6709	
+6710	Anéis de Luz de Radagon
+6711	
+6712	
+6713	
+6714	
+6715	
+6716	
+6717	
+6718	
+6719	
+6720	Estrelas Prístinas
+6721	
+6722	
+6723	
+6724	
+6725	
+6726	
+6727	
+6728	
+6729	
+6730	Lei da Regressão
+6731	
+6732	
+6733	
+6734	
+6735	
+6736	
+6737	
+6738	
+6739	
+6740	Escudo Imutável
+6741	
+6742	
+6743	
+6744	
+6745	
+6746	
+6747	
+6748	
+6749	
+6750	Litania da Morte Apropriada
+6751	
+6752	
+6753	
+6754	
+6755	
+6756	
+6757	
+6758	
+6759	
+6760	Lei da Causalidade
+6761	
+6762	
+6763	
+6764	
+6765	
+6766	
+6767	
+6768	
+6769	
+6770	Lâmina da Ordem
+6771	
+6772	
+6773	
+6774	
+6775	
+6776	
+6777	
+6778	
+6779	
+6780	Cura da Ordem
+6800	Funda da Besta
+6801	
+6802	
+6803	
+6804	
+6805	
+6806	
+6807	
+6808	
+6809	
+6810	Pedra de Gurranq
+6811	
+6812	
+6813	
+6814	
+6815	
+6816	
+6817	
+6818	
+6819	
+6820	Garra de Fera
+6821	
+6822	
+6823	
+6824	
+6825	
+6826	
+6827	
+6828	
+6829	
+6830	Garra de Fera de Gurranq
+6831	
+6832	
+6833	
+6834	
+6835	
+6836	
+6837	
+6838	
+6839	
+6840	Vitalidade Bestial
+6841	
+6842	
+6843	
+6844	
+6845	
+6846	
+6847	
+6848	
+6849	
+6850	Constituição Bestial
+6900	Lança de Relâmpago
+6901	
+6902	
+6903	
+6904	
+6905	
+6906	
+6907	
+6908	
+6909	
+6910	Golpe de Relâmpago do Dragão Ancião
+6911	
+6912	
+6913	
+6914	
+6915	
+6916	
+6917	
+6918	
+6919	
+6920	Golpe de Relâmpago
+6921	Lança de Relâmpago Congelada
+6922	
+6923	
+6924	
+6925	
+6926	
+6927	
+6928	
+6929	
+6930	Seta Afiada
+6931	
+6932	
+6933	
+6934	
+6935	
+6936	
+6937	
+6938	
+6939	
+6940	Lança de Relâmpago do Dragão Ancião
+6941	Lança de Relâmpago de Fortissax
+6942	
+6943	
+6944	
+6945	
+6946	
+6947	
+6948	
+6949	
+6950	Gládio de Lansseax
+6951	
+6952	
+6953	
+6954	
+6955	
+6956	
+6957	
+6958	
+6959	
+6960	Eletrificar Arma
+6961	
+6962	
+6963	
+6964	
+6965	
+6966	
+6967	
+6968	
+6969	
+6970	Seta de Dragão de Vyke
+6971	Bênção de Seta de Dragão
+7000	Fogo de Dragão
+7001	Chama de Agheel
+7002	
+7003	
+7004	
+7005	
+7006	
+7007	
+7008	
+7009	
+7010	Sopro de Magma
+7011	Magma de Theodorix
+7012	
+7013	
+7014	
+7015	
+7016	
+7017	
+7018	
+7019	
+7020	Gelo de Dragão
+7021	Névoa de Borealis
+7022	
+7023	
+7024	
+7025	
+7026	
+7027	
+7028	
+7029	
+7030	Sopro Podre
+7031	Decadência de Ekzykes
+7032	
+7033	
+7034	
+7035	
+7036	
+7037	
+7038	
+7039	
+7040	Sopro de Pedrilhante
+7041	Sopro de Pedrilhante de Smarag
+7042	
+7043	
+7044	
+7045	
+7046	
+7047	
+7048	
+7049	
+7050	Ruína de Placidusax
+7051	
+7052	
+7053	
+7054	
+7055	
+7056	
+7057	
+7058	
+7059	
+7060	Garra de Dragão
+7080	Mandíbula de Dragão
+7081	
+7082	
+7083	
+7084	
+7085	
+7086	
+7087	
+7088	
+7089	
+7090	Rugido de Greyoll
+7110	
+7111	
+7200	Fios de Praga
+7201	
+7202	
+7203	
+7204	
+7205	
+7206	
+7207	
+7208	
+7209	
+7210	Enxame de Moscas
+7211	
+7212	
+7213	
+7214	
+7215	
+7216	
+7217	
+7218	
+7219	
+7220	Névoa Venenosa
+7221	
+7222	
+7223	
+7224	
+7225	
+7226	
+7227	
+7228	
+7229	
+7230	Arma Venenosa
+7231	
+7232	
+7233	
+7234	
+7235	
+7236	
+7237	
+7238	
+7239	
+7240	Aeonia Escarlate
+7300	Frenesi Inescapável
+7301	
+7302	
+7303	
+7304	
+7305	
+7306	
+7307	
+7308	
+7309	
+7310	A Chama do Frenesi
+7311	Frenesi Insuportável
+7312	
+7313	
+7314	
+7315	
+7316	
+7317	
+7318	
+7319	
+7320	Estouro de Frenesi
+7321	
+7322	
+7323	
+7324	
+7325	
+7326	
+7327	
+7328	
+7329	
+7330	Uivo de Shabriri
+7500	Aspectos do Crisol: Cauda
+7501	
+7502	
+7503	
+7504	
+7505	
+7506	
+7507	
+7508	
+7509	
+7510	Aspectos do Crisol: Chifres
+7511	
+7512	
+7513	
+7514	
+7515	
+7516	
+7517	
+7518	
+7519	
+7520	Aspectos do Crisol: Sopro
+7521	
+7522	
+7523	
+7524	
+7525	
+7526	
+7527	
+7528	
+7529	
+7530	Lâmina Negra
+7900	Pecado Mortal do Fogo
+7901	
+7902	
+7903	Fortificação Dourada de Eletricidade
+8000	Chave de Espada de Pedra
+8001	
+8002	
+8003	
+8004	
+8005	
+8006	
+8007	
+8008	
+8009	
+8010	Chave Enferrujada
+8102	[ERROR]Selo do Vaga-lume do Santuário
+8103	
+8104	
+8105	Medalhão de Dectus (Esquerda)
+8106	Medalhão de Dectus (Direita)
+8107	Medalhão dos Rolds
+8108	
+8109	Chave Pedrilhante da Academia
+8110	
+8111	Estátua Cariana Invertida
+8112	
+8113	
+8114	
+8115	
+8116	
+8117	
+8118	
+8119	
+8120	
+8121	Anel da Lua Sombria
+8122	
+8123	
+8124	
+8125	
+8126	Uva Dactilar
+8127	Carta da Mansão Vulcânica
+8128	Tônico do Esquecimento
+8129	Âmnio da Serpente
+8130	[ERROR]
+8131	Carta de Irina
+8132	Carta da Mansão Vulcânica
+8133	Carta Vermelha
+8134	Chave do Quarto de Hóspedes
+8135	
+8136	Colar de Rya
+8137	Convite da Mansão Vulcânica
+8138	
+8139	
+8140	
+8141	
+8142	Luz Estelar Âmbar
+8143	Introdução de Seluvis
+8144	Pedrilhante Primordial de Sellen
+8145	
+8146	Ranni Miniatura
+8147	[ERROR]
+8148	Grande Runa de Godrick
+8149	Grande Runa de Radahn
+8150	Grande Runa de Morgott
+8151	Grande Runa de Rykard
+8152	Grande Runa de Mohg
+8153	Grande Runa de Malenia
+8154	Favor do Lorde do Sangue
+8155	Favor do Lorde do Sangue
+8156	[ERROR]
+8157	
+8158	Sino Chamador de Espíritos
+8159	Lâmina de Matador de Dedos
+8160	
+8161	Agulha de Costura
+8162	Agulha de Costura de Ouro
+8163	Ferramentas de Alfaiataria
+8164	Poção de Seluvis
+8165	[ERROR]
+8166	Bebida de Âmbar
+8167	Carta para Patches
+8168	Castanholas de Dançarina
+8169	Quebra-Selo Selliano
+8170	
+8171	Lembrança de Crisálidas
+8172	Entalhe de Faca Negra
+8173	Carta para Bernahl
+8174	Chave Pedrilhante da Academia
+8175	Medalhão Secreto da Árvore Sacra (Esquerda)
+8176	Medalhão Secreto da Árvore Sacra (Direita)
+8177	
+8178	
+8179	
+8180	
+8181	[ERROR]Garra Destruidora
+8182	Runa de Reparo da Ordem Perfeita
+8183	Runa de Reparo do Príncipe da Morte
+8184	Runa de Reparo da Maldição Derrotada
+8185	Lágrima Larval
+8186	Chave de Espada Imbuída
+8187	Ranni Miniatura
+8188	Ferramentas de Alfaiataria de Ouro
+8189	[ERROR]Confissão de Iji
+8190	Pista do Entalhe de Faca
+8191	Marca Amaldiçoada da Morte
+8192	[ERROR]
+8193	Maldição do Alfobre
+8194	O Rei Falcão da Tempestade
+8195	[ERROR]
+8196	Agulha de Ouro Puro
+8197	Chave do Esgoto
+8198	Mapa do Local de Encontro
+8199	Chave do Palácio Descartada
+8200	Pintura "Instinto de Regresso ao Lar"
+8201	Pintura "Ressurreição"
+8202	Pintura "Música do Campeão"
+8203	Pintura "Feiticeiro"
+8204	Pintura "Profecia"
+8205	Pintura "Pássaro Sem Voo"
+8206	Pintura "Juba Vermelha"
+8221	Carta de Zorayas
+8222	Entranhas de Alexander
+8223	Carta de Rogier
+8224	Bilhete: O Segredo do Preceptor
+8225	Mapa Desgastado
+8226	Bilhete: O Segredo do Preceptor
+8227	Mapa Desgastado
+8500	Kit de Produção
+8590	Faca de Amolação
+8591	
+8592	
+8593	
+8594	
+8595	
+8596	
+8597	
+8598	
+8599	
+8600	Mapa: Limgrave, Oeste
+8601	Mapa: Península das Lágrimas
+8602	Mapa: Limgrave, Leste
+8603	Mapa: Liurnia, Leste
+8604	Mapa: Liurnia, Norte
+8605	Mapa: Liurnia, Oeste
+8606	Mapa: Platô Altus
+8607	Mapa: Leyndell, Capital Real
+8608	Mapa: Monte Gelmir
+8609	Mapa: Caelid
+8610	Mapa: Fenda do Dragão
+8611	Mapa: Montanha dos Gigantes, Oeste
+8612	Mapa: Montanha dos Gigantes, Leste
+8613	Mapa: Rio Ainsel
+8614	Mapa: Lago da Podridão
+8615	Mapa: Rio Siofra
+8616	Mapa: Palácio de Mohgwyn
+8617	Mapa: Abismos da Raiz Profunda
+8618	Mapa: Campo de Neve Consagrado
+8660	Enigma da Miragem
+8700	Bilhete: Caverna Oculta
+8701	Bilhete: Sombras Demoníacas
+8702	Bilhete: Frasco do Elixir Magnífico
+8703	Bilhete: Troll Escavador de Pedras
+8704	Bilhete: Mausoléu Errante
+8705	Bilhete: Assassinos Invisíveis
+8706	[ERROR]Bilhete: Caixões Grandes
+8707	Bilhete: Carruagens de Chamas
+8708	Bilhete: Multidões de Semi-Humanos
+8709	Bilhete: Ascídia Terrestre
+8710	Bilhete: Vantagem Gravitacional
+8711	Bilhete: Fantasmas
+8712	Bilhete: Ruínas do Ponto de Paragem
+8713	Bilhete: Acesso
+8714	Bilhete: Agulha de Miquella
+8715	Bilhete: Vilarejo da Chama Frenética
+8716	Bilhete: O Lorde da Chama Frenética
+8717	Bilhete: Abaixo da Capital
+8750	Bilhete: Caverna Oculta
+8751	Bilhete: Sombras Demoníacas
+8752	Bilhete: Frasco do Elixir Magnífico
+8753	Bilhete: Troll Escavador de Pedras
+8754	Bilhete: Mausoléu Errante
+8755	Bilhete: Assassinos Invisíveis
+8756	[ERROR]Bilhete: Caixões Grandes
+8757	Bilhete: Carruagens de Chamas
+8758	Bilhete: Multidões de Semi-Humanos
+8759	Bilhete: Ascídia Terrestre
+8760	Bilhete: Vantagem Gravitacional
+8761	Bilhete: Fantasmas
+8762	Bilhete: Ruínas do Ponto de Paragem
+8763	Bilhete: Acesso
+8764	
+8765	Bilhete: Vilarejo da Chama Frenética
+8766	
+8767	Bilhete: Abaixo da Capital
+8850	Pergaminho de Conspecto
+8851	Pergaminho da Casa Real
+8852	[ERROR]
+8853	[ERROR]
+8854	[ERROR]
+8855	Livro de Orações de Monge do Fogo
+8856	Livro de Orações do Gigante
+8857	Livro de Orações da Pele Divina
+8858	Livro de Orações dos Dois Dedos
+8859	Livro de Orações do Assassino
+8860	Livro de Orações da Térvore
+8861	Códice da Térvore
+8862	Princípios da Ordem Áurea
+8863	[ERROR]Princípios da Ordem Áurea
+8864	Livro de Orações do Culto do Dragão
+8865	Livro de Orações do Dragão Ancião
+8866	Pergaminho da Academia
+8910	Sino de Pidia
+8911	Sino de Seluvis
+8912	Sino de Patches
+8913	Sino de Sellen
+8914	[ERROR]
+8915	Sino de D
+8916	Sino de Bernahl
+8917	Sino de Miriel
+8918	Sino de Gostoc
+8919	Sino de Thops
+8920	Sino de Kalé
+8921	Sino de Mercador Nômade [1]
+8922	Sino de Mercador Nômade [2]
+8923	Sino de Mercador Nômade [3]
+8924	Sino de Mercador Nômade [4]
+8925	Sino de Mercador Nômade [5]
+8926	Sino de Mercador Isolado [1]
+8927	Sino de Mercador Isolado [2]
+8928	Sino de Mercador Nômade [6]
+8929	Sino de Mercador Eremita [1]
+8930	Sino de Mercador Nômade [7]
+8931	Sino de Mercador Nômade [8]
+8932	Sino de Mercador Nômade [9]
+8933	Sino de Mercador Nômade [10]
+8934	[ERROR]Sino de Mercador Nômade [11]
+8935	Sino de Mercador Isolado [3]
+8936	Sino de Mercador Eremita [2]
+8937	Sino de Mercador Abandonado
+8938	Sino de Mercador Eremita [3]
+8939	Sino de Mercador Aprisionado
+8940	Sino de Iji
+8941	Sino de Rogier
+8942	Sino de Arruaceiro
+8943	Sino de Corhyn
+8944	Sino de Gowry
+8945	Sino do Mascate de Ossos
+8946	Sino do Mascate de Carne
+8947	Sino do Mascate de Remédio
+8948	Sino do Mascate de Pedras da Gravidade
+8949	[ERROR]
+8950	[ERROR]
+8951	Sino do Minerador de Pedra de Forja [1]
+8952	Sino do Minerador de Pedra de Forja [2]
+8953	Sino do Minerador de Pedra de Forja [3]
+8954	Sino do Minerador de Pedra de Forja [4]
+8955	Sino do Minerador de Pedra Sombria [1]
+8956	Sino do Minerador de Pedra Sombria [2]
+8957	Sino do Minerador de Pedra Sombria [3]
+8958	Sino do Minerador de Pedra Sombria [4]
+8959	Sino do Minerador de Pedra Sombria [5]
+8960	Sino do Catador de Lírio-do-Vale [1]
+8961	Sino do Catador de Lírio-do-Vale [2]
+8962	Sino do Catador de Lírio-do-Vale [3]
+8963	Sino do Catador de Lírio-do-Vale Fantasma [1]
+8964	Sino do Catador de Lírio-do-Vale Fantasma [2]
+8965	Sino do Catador de Lírio-do-Vale Fantasma [3]
+8966	
+8967	
+8968	
+8969	
+8970	Lâmina de Amolar de Ferro
+8971	Lâmina de Amolar Vermelha
+8972	Lâmina de Amolar Santificada
+8973	Lâmina de Amolar Pedrilhante
+8974	Lâmina de Amolar Preta
+8975	Agulha de Ouro Puro
+8976	Agulha de Ouro Puro
+8977	Prótese de Valquíria
+8978	Segredo de Sellia
+8979	Olho de Fera
+8980	Adaga Desgastada
+9000	Curvar-se
+9001	Curvar-se educadamente
+9002	Meus agradecimentos
+9003	Mesura
+9004	Reverência Cortês
+9005	Meu Lorde
+9006	Boas-vindas calorosas
+9007	Acenar
+9008	Saudação casual
+9009	Força!
+9010	Como desejar
+9011	Aponta para a frente
+9012	Aponta para cima
+9013	Aponta para baixo
+9014	Aceno
+9015	Espere!
+9016	Acalme-se!
+9017	Aceno com a cabeça
+9018	Arrependimento extremo
+9019	Implorar por misericórdia
+9020	Grito de guerra
+9021	Grito encorajador
+9022	Pela Minha Espada
+9023	Juramento de Hoslow
+9024	O fogo me estimula
+9025	O Juramento Cariano
+9026	Bravo!
+9027	Pular de alegria
+9028	Deleite triunfante
+9029	Giro elegante
+9030	Estalo de dedo
+9031	Desânimo
+9032	Agachamento de Patches
+9033	Pernas cruzadas
+9034	Descansar
+9035	Sentando de lado
+9036	Cochilar de pernas cruzadas
+9037	Relaxar
+9038	Posição fetal
+9039	Enrolar-se
+9040	O Que Você Quer?
+9041	Reza
+9042	Oração desesperada
+9043	Êxtase
+9044	
+9045	Erudição
+9046	Ordem externa
+9047	Ordem interna
+9048	Totalidade da Ordem Áurea
+9049	O Anel
+9050	O Anel
+9100	Sobre locais da graça
+9101	Sobre feitiços e encantamentos
+9102	Sobre arcos
+9103	Sobre agachar
+9104	Sobre a quebra de postura
+9105	Sobre as Estacas de Marika
+9106	Sobre contra-ataques defensivos
+9107	Sobre o mapa
+9108	Sobre a orientação da graça
+9109	Sobre andar a cavalo
+9110	Sobre a morte
+9111	Sobre invocar espíritos
+9112	Sobre defender
+9113	Sobre a produção de itens
+9114	
+9115	Sobre os Frascos Medicinais Sagrados
+9116	Sobre adicionar habilidades
+9117	Sobre os Telescópios Olho de Pássaro
+9118	Sobre saltar com fontes espirituais
+9119	Sobre derrotar grupos
+9120	Sobre escaravelhos de lágrimas
+9121	Sobre invocar outros jogadores
+9122	Sobre o multijogador cooperativo
+9123	Sobre o multijogador competitivo
+9124	Sobre o multijogador de invasão
+9125	Sobre o multijogador de resgate
+9126	Sobre pedras de invocação
+9127	Sobre ícones de monumentos
+9128	Sobre solicitar a ajuda de caçadores
+9129	Sobre as habilidades
+9130	Sobre a viagem rápida para locais da graça
+9131	Sobre fortalecer as armas
+9132	Sobre a Mesa-Redonda
+9133	Nota: Redentores
+9134	Sobre os materiais
+9135	Sobre recipientes
+9136	Sobre adicionar afinidades
+9137	Sobre bolsas
+9138	Sobre esquivar
+9139	
+9140	Sobre o uso de armas
+9141	Sobre as Grandes Runas
+9142	Sobre a Gruta da Sabedoria
+9143	
+9144	
+9145	
+9146	
+9147	
+9148	
+9149	
+9150	Sobre Duelos
+9151	Sobre Combate Unido e Combate Épico
+9152	Sobre combate com cinzas de espíritos
+9153	Sobre a efígie de Marika na Mesa-Redonda
+9195	[ERROR]Sobre o multijogador
+9196	
+9197	
+9198	
+9199	
+9200	Carta de Pombo-correio [1]
+9201	Carta de Pombo-correio [2]
+9202	
+9203	
+9204	
+9205	
+9206	
+9207	
+9208	
+9209	
+9300	Livro de Receitas do Guerreiro Nômade [1]
+9301	Livro de Receitas do Guerreiro Nômade [3]
+9302	Livro de Receitas do Guerreiro Nômade [6]
+9303	Livro de Receitas do Guerreiro Nômade [10]
+9304	[ERROR]
+9305	Livro de Receitas do Guerreiro Nômade [7]
+9306	Livro de Receitas do Guerreiro Nômade [12]
+9307	Livro de Receitas do Guerreiro Nômade [19]
+9308	Livro de Receitas do Guerreiro Nômade [13]
+9309	Livro de Receitas do Guerreiro Nômade [23]
+9310	Livro de Receitas do Guerreiro Nômade [17]
+9311	Livro de Receitas do Guerreiro Nômade [2]
+9312	Livro de Receitas do Guerreiro Nômade [21]
+9313	Livro de Receitas do Missionário [6]
+9314	[ERROR]
+9315	[ERROR]
+9316	[ERROR]
+9317	[ERROR]
+9318	[ERROR]
+9319	[ERROR]
+9320	Livro de Receitas do Armeiro [1]
+9321	Livro de Receitas do Armeiro [2]
+9322	Livro de Receitas do Guerreiro Nômade [11]
+9323	Livro de Receitas do Guerreiro Nômade [20]
+9324	[ERROR]Livro de Receitas do Armeiro (5)
+9325	Livro de Receitas do Armeiro [7]
+9326	Livro de Receitas do Armeiro [4]
+9327	Livro de Receitas do Guerreiro Nômade [18]
+9328	Livro de Receitas do Armeiro [3]
+9329	Livro de Receitas do Guerreiro Nômade [16]
+9330	Livro de Receitas do Armeiro [6]
+9331	Livro de Receitas do Armeiro [5]
+9332	[ERROR]
+9333	[ERROR]
+9334	[ERROR]
+9335	[ERROR]
+9336	[ERROR]
+9337	[ERROR]
+9338	[ERROR]
+9339	[ERROR]
+9340	Livro de Receitas do Artesão de Pedrilhante [4]
+9341	Livro de Receitas do Artesão de Pedrilhante [1]
+9342	Livro de Receitas do Artesão de Pedrilhante [5]
+9343	Livro de Receitas do Guerreiro Nômade [9]
+9344	Livro de Receitas do Artesão de Pedrilhante [8]
+9345	Livro de Receitas do Artesão de Pedrilhante [2]
+9346	Livro de Receitas do Artesão de Pedrilhante [6]
+9347	Livro de Receitas do Artesão de Pedrilhante [7]
+9348	Livro de Receitas do Artesão de Pedrilhante [3]
+9349	[ERROR]
+9350	[ERROR]
+9351	[ERROR]
+9352	[ERROR]
+9353	[ERROR]
+9354	[ERROR]
+9355	[ERROR]
+9356	[ERROR]
+9357	[ERROR]
+9358	[ERROR]
+9359	[ERROR]
+9360	Livro de Receitas do Missionário [2]
+9361	Livro de Receitas do Missionário [1]
+9362	[ERROR]
+9363	Livro de Receitas do Missionário [5]
+9364	Livro de Receitas do Missionário [4]
+9365	Livro de Receitas do Missionário [3]
+9366	[ERROR]
+9367	[ERROR]
+9368	[ERROR]
+9369	[ERROR]
+9370	[ERROR]
+9371	
+9372	
+9373	
+9374	
+9375	
+9376	
+9377	
+9378	
+9379	
+9380	Livro de Receitas do Guerreiro Nômade [4]
+9381	[ERROR]
+9382	[ERROR]
+9383	Livro de Receitas do Guerreiro Nômade [5]
+9384	Livro de Receitas do Perfumista [1]
+9385	Livro de Receitas do Perfumista [2]
+9386	Livro de Receitas do Perfumista [3]
+9387	Livro de Receitas do Guerreiro Nômade [14]
+9388	Livro de Receitas do Guerreiro Nômade [8]
+9389	Livro de Receitas do Guerreiro Nômade [22]
+9390	Livro de Receitas do Guerreiro Nômade [15]
+9391	Livro de Receitas do Guerreiro Nômade [24]
+9392	Livro de Receitas do Perfumista [4]
+9393	[ERROR]
+9394	[ERROR]
+9395	[ERROR]
+9396	[ERROR]
+9397	[ERROR]
+9398	[ERROR]
+9399	[ERROR]
+9400	Livro de Receitas do Apóstolo do Dragão Ancião [1]
+9401	Livro de Receitas do Apóstolo do Dragão Ancião [2]
+9402	Livro de Receitas do Apóstolo do Dragão Ancião [4]
+9403	Livro de Receitas do Apóstolo do Dragão Ancião [3]
+9404	[ERROR]
+9405	[ERROR]
+9406	[ERROR]
+9407	[ERROR]
+9408	[ERROR]
+9409	[ERROR]
+9410	[ERROR]
+9411	
+9412	
+9413	
+9414	
+9415	
+9416	
+9417	
+9418	
+9419	
+9420	Livro de Receitas do Fevor [1]
+9421	Livro de Receitas de Fevor [3]
+9422	Livro de Receitas de Fevor [2]
+9423	Livro de Receitas do Missionário [7]
+9424	[ERROR]
+9425	[ERROR]
+9426	[ERROR]
+9427	[ERROR]
+9428	[ERROR]
+9429	[ERROR]
+9430	[ERROR]
+9431	
+9432	
+9433	
+9434	
+9435	
+9436	
+9437	
+9438	
+9439	
+9440	Livro de Receitas do Frenético [1]
+9441	Livro de Receitas do Frenético [2]
+9442	[ERROR]
+9443	[ERROR]
+9444	[ERROR]
+9445	[ERROR]
+9446	[ERROR]
+9447	[ERROR]
+9448	[ERROR]
+9449	[ERROR]
+9450	[ERROR]
+9500	Pote Rachado
+9501	Pote Cerimonial
+9502	
+9503	
+9504	
+9505	
+9506	
+9507	
+9508	
+9509	
+9510	Frasco de Perfume
+10000	Fragmento de Vidro
+10001	
+10002	
+10003	
+10004	
+10005	
+10006	
+10007	
+10008	
+10009	
+10010	Semente Dourada
+10011	
+10012	
+10013	
+10014	
+10015	
+10016	
+10017	
+10018	
+10019	
+10020	Lágrima Sagrada
+10021	
+10022	
+10023	
+10024	
+10025	
+10026	
+10027	
+10028	
+10029	
+10030	Pedra de Memória
+10031	
+10032	
+10033	
+10034	
+10035	
+10036	
+10037	
+10038	
+10039	
+10040	Bolsa de Talismã
+10060	Coração de Dragão
+10061	
+10062	
+10063	
+10064	
+10065	
+10066	
+10067	
+10068	
+10069	
+10070	Cinzas da Guerra Perdidas
+10071	
+10072	
+10073	
+10074	
+10075	
+10076	
+10077	
+10078	
+10079	
+10080	Grande Runa do Vindouro
+10100	Pedra de Forja [1]
+10101	Pedra de Forja [2]
+10102	Pedra de Forja [3]
+10103	Pedra de Forja [4]
+10104	Pedra de Forja [5]
+10105	Pedra de Forja [6]
+10106	Pedra de Forja [7]
+10107	Pedra de Forja [8]
+10140	Pedra de Forja de Dragão Ancião
+10160	Pedra de Forja Sombria [1]
+10161	Pedra de Forja Sombria [2]
+10162	Pedra de Forja Sombria [3]
+10163	Pedra de Forja Sombria [4]
+10164	Pedra de Forja Sombria [5]
+10165	Pedra de Forja Sombria [6]
+10166	Pedra de Forja Sombria [7]
+10167	Pedra de Forja Sombria [8]
+10168	Pedra de Forja Dracônica Sombria
+10200	Pedra de Forja Sombria [9]
+10900	Lírio-do-Vale de Túmulo [1]
+10901	Lírio-do-Vale de Túmulo [2]
+10902	Lírio-do-Vale de Túmulo [3]
+10903	Lírio-do-Vale de Túmulo [4]
+10904	Lírio-do-Vale de Túmulo [5]
+10905	Lírio-do-Vale de Túmulo [6]
+10906	Lírio-do-Vale de Túmulo [7]
+10907	Lírio-do-Vale de Túmulo [8]
+10908	Lírio-do-Vale de Túmulo [9]
+10909	Grande Lírio-do-Vale de Túmulo
+10910	Lírio-do-Vale Fantasma [1]
+10911	Lírio-do-Vale Fantasma [2]
+10912	Lírio-do-Vale Fantasma [3]
+10913	Lírio-do-Vale Fantasma [4]
+10914	Lírio-do-Vale Fantasma [5]
+10915	Lírio-do-Vale Fantasma [6]
+10916	Lírio-do-Vale Fantasma [7]
+10917	Lírio-do-Vale Fantasma [8]
+10918	Lírio-do-Vale Fantasma [9]
+10919	Lírio-do-Vale Fantasma Grande
+11000	Lágrima de Cristal Transbordando Carmesim
+11001	Lágrima de Cristal Transbordando Verde
+11002	Lágrima de Cristal Carmesim
+11003	Lágrima de Cristal Carmesim
+11004	Lágrima de Cristal Cerúlea
+11005	Lágrima de Cristal Cerúlea
+11006	Lágrima Maciça Salpicada
+11007	Bolha de Lágrima Carmesim
+11008	Bolha de Lágrima Opala
+11009	Lágrima de Cristal Rajada de Carmesim
+11010	Lágrima de Cristal Rajada de Verde
+11011	Lágrima Maciça Opala
+11012	Lágrima de Cristal Alada
+11013	Lágrima Rachada Espinhosa
+11014	Lágrima Rachada com Espinhos
+11015	Lágrima de Cristal Ventosa
+11016	Lágrima de Cristal Rompida
+11017	Lágrima de Cristal Rompida
+11018	Lágrima Maciça de Chumbo
+11019	Lágrima Rachada Ramosa
+11020	Bolha de Lágrima Espiral Carmesim
+11021	Lágrima de Cristal Nó-de-Força
+11022	Lágrima de Cristal Nó-de-Destreza
+11023	Lágrima de Cristal Nó-de-Inteligência
+11024	Lágrima de Cristal Nó-de-Fé
+11025	Lágrima Oculta Cerúlea
+11026	Lágrima Rachada com Espinhos de Pedra
+11027	Lágrima de Cristal Purificadora
+11028	Lágrima Rachada Envolvida por Chamas
+11029	Lágrima Rachada Envolvida por Magia
+11030	Lágrima Rachada Envolvida por Eletricidade
+11031	Lágrima Rachada Envolvida por Santidade
+15000	Filete de Carne
+15001	
+15002	
+15003	
+15004	
+15005	
+15006	
+15007	
+15008	
+15009	
+15010	Fígado de Fera
+15011	
+15012	
+15013	
+15014	
+15015	
+15016	
+15017	
+15018	
+15019	
+15020	Pedaço de Carne
+15021	
+15022	
+15023	
+15024	
+15025	
+15026	
+15027	
+15028	
+15029	
+15030	Sangue de Fera
+15031	
+15032	
+15033	
+15034	
+15035	
+15036	
+15037	
+15038	
+15039	
+15040	Presa Antiga
+15041	
+15042	
+15043	
+15044	
+15045	
+15046	
+15047	
+15048	
+15049	
+15050	Chifre Nascente
+15051	
+15052	
+15053	
+15054	
+15055	
+15056	
+15057	
+15058	
+15059	
+15060	Pluma de Voo
+15061	
+15062	
+15063	
+15064	
+15065	
+15066	
+15067	
+15068	
+15069	
+15070	Plumagem Escondida
+15071	
+15072	
+15073	
+15074	
+15075	
+15076	
+15077	
+15078	
+15079	
+15080	Pé de Ave com Quatro Dedos
+15081	
+15082	
+15083	
+15084	
+15085	
+15086	
+15087	
+15088	
+15089	
+15090	Carne de Pescoço de Tartaruga
+15091	
+15092	
+15093	
+15094	
+15095	
+15096	
+15097	
+15098	
+15099	
+15100	Fragmento de Osso Humano
+15101	
+15102	
+15103	
+15104	
+15105	
+15106	
+15107	
+15108	
+15109	
+15110	Cabeça de Libélula Gigante
+15111	
+15112	
+15113	
+15114	
+15115	
+15116	
+15117	
+15118	
+15119	
+15120	Ovo Lunar
+15121	
+15122	
+15123	
+15124	
+15125	
+15126	
+15127	
+15128	
+15129	
+15130	Ovos de Caranguejo
+15131	
+15132	
+15133	
+15134	
+15135	
+15136	
+15137	
+15138	
+15139	
+15140	Ovário de Polvo Terrestre
+15141	
+15142	
+15143	
+15144	
+15145	
+15146	
+15147	
+15148	
+15149	
+15150	Pó de Miranda
+15151	
+15152	
+15153	
+15154	
+15155	
+15156	
+15157	
+15158	
+15159	
+15160	Tira de Carne Branca
+15310	Excremento Maculado
+15340	Ossos Finos de Animal
+15341	Osso de Fera Robusta
+15390	Pedaço de Pedrilhante
+15391	
+15392	
+15393	
+15394	
+15395	
+15396	
+15397	
+15398	
+15399	
+15400	Corda
+15401	
+15402	
+15403	
+15404	
+15405	
+15406	
+15407	
+15408	
+15409	
+15410	Fragmento de Jarro Vivo
+15411	
+15412	
+15413	
+15414	
+15415	
+15416	
+15417	
+15418	
+15419	
+15420	Coágulo Sanguíneo Albináurico
+15421	
+15422	
+15423	
+15424	
+15425	
+15426	
+15427	
+15428	
+15429	
+15430	Pena de Falcão da Tempestade
+20650	Flor Venenosa
+20651	Lírio de Trina
+20652	Flor Brilhante
+20653	Lírio de Miquella
+20654	Violeta do Túmulo
+20655	
+20656	
+20657	
+20658	
+20659	
+20660	Flor de Folha Caída Desbotada
+20680	Flor de Folha Caída
+20681	Flor de Altus
+20682	Flor de Fogo
+20683	Girassol Dourado
+20684	
+20685	Girassol Dourado Maculado
+20686	
+20687	
+20688	
+20689	
+20690	Erva
+20691	Folha de Artéria
+20710	Erva do Orvalho Noturno
+20711	
+20712	
+20713	
+20714	
+20715	
+20716	
+20717	
+20718	
+20719	
+20720	Fruta de Rowa
+20721	Rowa Dourada
+20722	Rowa com Orvalho
+20723	Rosa de Sangue
+20740	Olho de Yelough
+20741	
+20742	
+20743	
+20744	
+20745	
+20746	
+20747	
+20748	
+20749	
+20750	Broto de Cristal
+20751	Broto de Cristal com Orvalho
+20752	
+20753	Broto Sacramental
+20754	
+20755	
+20756	
+20757	
+20758	
+20759	
+20760	Cogumelo
+20761	Cogumelo Derretido
+20762	
+20763	
+20764	
+20765	
+20766	
+20767	
+20768	
+20769	
+20770	Cogumelo Tóxico
+20771	
+20772	
+20773	
+20774	
+20775	Resina de Raiz
+20776	
+20777	
+20778	
+20779	
+20780	Cristal Rachado
+20795	Pedra de Santuário
+20796	
+20797	
+20798	
+20799	
+20800	Borboleta Nascente
+20801	Borboleta Ancestral
+20802	Borboleta Latente
+20803	
+20804	
+20805	
+20806	
+20807	
+20808	
+20809	
+20810	Vaga-Lume de Prata
+20811	Vaga-Lume de Ouro
+20812	Vagalume Pedrilhante
+20813	
+20814	
+20815	
+20816	
+20817	
+20818	
+20819	
+20820	Centopeia Dourada
+20821	
+20822	
+20823	
+20824	
+20825	Casca de Lágrima Prateada
+20826	
+20827	
+20828	
+20829	
+20830	Excremento Dourado
+20831	Excremento com Sangue
+20832	
+20833	
+20834	
+20835	
+20836	
+20837	
+20838	
+20839	
+20840	Musgo de Caverna
+20841	Musgo de Caverna em Crescimento
+20842	Musgo de Caverna de Cristal
+20843	
+20844	
+20845	Braseiro Amarelado
+20846	
+20847	
+20848	
+20849	
+20850	Pedra Vulcânica
+20851	
+20852	Pedra Vulcânica Oxidada
+20853	
+20854	
+20855	Pedra Composta
+51760	[ERROR]
+200000	Pequena Faca Negra
+200001	Pequena Faca Negra + 1
+200002	Pequena Faca Negra + 2
+200003	Pequena Faca Negra + 3
+200004	Pequena Faca Negra + 4
+200005	Pequena Faca Negra + 5
+200006	Pequena Faca Negra + 6
+200007	Pequena Faca Negra + 7
+200008	Pequena Faca Negra + 8
+200009	Pequena Faca Negra + 9
+200010	Pequena Faca Negra + 10
+201000	Oleg, Cavaleiro Banido
+201001	Oleg, Cavaleiro Banido +1
+201002	Oleg, Cavaleiro Banido +2
+201003	Oleg, Cavaleiro Banido +3
+201004	Oleg, Cavaleiro Banido +4
+201005	Oleg, Cavaleiro Banido +5
+201006	Oleg, Cavaleiro Banido +6
+201007	Oleg, Cavaleiro Banido +7
+201008	Oleg, Cavaleiro Banido +8
+201009	Oleg, Cavaleiro Banido +9
+201010	Oleg, Cavaleiro Banido +10
+202000	Cavaleiro Banido, Engvall
+202001	Engvall, Cavaleiro Banido +1
+202002	Engvall, Cavaleiro Banido +2
+202003	Engvall, Cavaleiro Banido +3
+202004	Engvall, Cavaleiro Banido +4
+202005	Engvall, Cavaleiro Banido +5
+202006	Engvall, Cavaleiro Banido +6
+202007	Engvall, Cavaleiro Banido +7
+202008	Engvall, Cavaleiro Banido +8
+202009	Engvall, Cavaleiro Banido +9
+202010	Engvall, Cavaleiro Banido +10
+203000	Cinzas de Demônio com Presas
+203001	Cinzas de Demônio com Presas +1
+203002	Cinzas de Demônio com Presas +2
+203003	Cinzas de Demônio com Presas +3
+203004	Cinzas de Demônio com Presas +4
+203005	Cinzas de Demônio com Presas +5
+203006	Cinzas de Demônio com Presas +6
+203007	Cinzas de Demônio com Presas +7
+203008	Cinzas de Demônio com Presas +8
+203009	Cinzas de Demônio com Presas +9
+203010	Cinzas de Demônio com Presas +10
+204000	Latenna, a Albináurica
+204001	Latenna, a Albináurica +1
+204002	Latenna, a Albináurica +2
+204003	Latenna, a Albináurica +3
+204004	Latenna, a Albináurica +4
+204005	Latenna, a Albináurica +5
+204006	Latenna, a Albináurica +6
+204007	Latenna, a Albináurica +7
+204008	Latenna, a Albináurica +8
+204009	Latenna, a Albináurica +9
+204010	Latenna, a Albináurica +10
+205000	Cinzas de Nômade
+205001	Cinzas de Nômade +1
+205002	Cinzas de Nômade +2
+205003	Cinzas de Nômade +3
+205004	Cinzas de Nômade +4
+205005	Cinzas de Nômade +5
+205006	Cinzas de Nômade +6
+205007	Cinzas de Nômade +7
+205008	Cinzas de Nômade +8
+205009	Cinzas de Nômade +9
+205010	Cinzas de Nômade +10
+206000	Marionetes de Donzelas da Noite e Espadachim
+206001	Marionetes da Donzela da Noite e da Espadachim +1
+206002	Marionetes da Donzela da Noite e da Espadachim +2
+206003	Marionetes da Donzela da Noite e da Espadachim +3
+206004	Marionetes da Donzela da Noite e da Espadachim +4
+206005	Marionetes da Donzela da Noite e da Espadachim +5
+206006	Marionetes da Donzela da Noite e da Espadachim +6
+206007	Marionetes da Donzela da Noite e da Espadachim +7
+206008	Marionetes da Donzela da Noite e da Espadachim +8
+206009	Marionetes da Donzela da Noite e da Espadachim +9
+206010	Marionetes da Donzela da Noite e da Espadachim +10
+207000	Cinzas de Lágrima Imitadora
+207001	Cinzas de Lágrima Imitadora +1
+207002	Cinzas de Lágrima Imitadora +2
+207003	Cinzas de Lágrima Imitadora +3
+207004	Cinzas de Lágrima Imitadora +4
+207005	Cinzas de Lágrima Imitadora +5
+207006	Cinzas de Lágrima Imitadora +6
+207007	Cinzas de Lágrima Imitadora +7
+207008	Cinzas de Lágrima Imitadora +8
+207009	Cinzas de Lágrima Imitadora +9
+207010	Cinzas de Lágrima Imitadora +10
+208000	Cinzas de Cristaliano
+208001	Cinzas de Cristaliano +1
+208002	Cinzas de Cristaliano +2
+208003	Cinzas de Cristaliano +3
+208004	Cinzas de Cristaliano +4
+208005	Cinzas de Cristaliano +5
+208006	Cinzas de Cristaliano +6
+208007	Cinzas de Cristaliano +7
+208008	Cinzas de Cristaliano +8
+208009	Cinzas de Cristaliano +9
+208010	Cinzas de Cristaliano +10
+209000	Cinzas de Seguidor Ancestral
+209001	Cinzas de Seguidor Ancestral +1
+209002	Cinzas de Seguidor Ancestral +2
+209003	Cinzas de Seguidor Ancestral +3
+209004	Cinzas de Seguidor Ancestral +4
+209005	Cinzas de Seguidor Ancestral +5
+209006	Cinzas de Seguidor Ancestral +6
+209007	Cinzas de Seguidor Ancestral +7
+209008	Cinzas de Seguidor Ancestral +8
+209009	Cinzas de Seguidor Ancestral +9
+209010	Cinzas de Seguidor Ancestral +10
+210000	Cinzas do Bastardo Alado
+210001	Cinzas do Bastardo Alado +1
+210002	Cinzas do Bastardo Alado +2
+210003	Cinzas do Bastardo Alado +3
+210004	Cinzas do Bastardo Alado +4
+210005	Cinzas do Bastardo Alado +5
+210006	Cinzas do Bastardo Alado +6
+210007	Cinzas do Bastardo Alado +7
+210008	Cinzas do Bastardo Alado +8
+210009	Cinzas do Bastardo Alado +9
+210010	Cinzas do Bastardo Alado +10
+211000	Cinzas Albináuricas
+211001	Cinzas Albináuricas +1
+211002	Cinzas Albináuricas +2
+211003	Cinzas Albináuricas +3
+211004	Cinzas Albináuricas +4
+211005	Cinzas Albináuricas +5
+211006	Cinzas Albináuricas +6
+211007	Cinzas Albináuricas +7
+211008	Cinzas Albináuricas +8
+211009	Cinzas Albináuricas +9
+211010	Cinzas Albináuricas +10
+212000	Cinzas de Esqueleto Miliciano
+212001	Cinzas de Esqueleto Miliciano +1
+212002	Cinzas de Esqueleto Miliciano +2
+212003	Cinzas de Esqueleto Miliciano +3
+212004	Cinzas de Esqueleto Miliciano +4
+212005	Cinzas de Esqueleto Miliciano +5
+212006	Cinzas de Esqueleto Miliciano +6
+212007	Cinzas de Esqueleto Miliciano +7
+212008	Cinzas de Esqueleto Miliciano +8
+212009	Cinzas de Esqueleto Miliciano +9
+212010	Cinzas de Esqueleto Miliciano +10
+213000	Cinzas de Salteador Esquelético
+213001	Cinzas de Salteador Esquelético +1
+213002	Cinzas de Salteador Esquelético +2
+213003	Cinzas de Salteador Esquelético +3
+213004	Cinzas de Salteador Esquelético +4
+213005	Cinzas de Salteador Esquelético +5
+213006	Cinzas de Salteador Esquelético +6
+213007	Cinzas de Salteador Esquelético +7
+213008	Cinzas de Salteador Esquelético +8
+213009	Cinzas de Salteador Esquelético +9
+213010	Cinzas de Salteador Esquelético +10
+214000	Cinzas do Enviado do Oráculo
+214001	Cinzas do Enviado do Oráculo +1
+214002	Cinzas do Enviado do Oráculo +2
+214003	Cinzas do Enviado do Oráculo +3
+214004	Cinzas do Enviado do Oráculo +4
+214005	Cinzas do Enviado do Oráculo +5
+214006	Cinzas do Enviado do Oráculo +6
+214007	Cinzas do Enviado do Oráculo +7
+214008	Cinzas do Enviado do Oráculo +8
+214009	Cinzas do Enviado do Oráculo +9
+214010	Cinzas do Enviado do Oráculo +10
+215000	Cinzas de Cadáveres Pútridos
+215001	Cinzas de Cadáveres Pútridos +1
+215002	Cinzas de Cadáveres Pútridos +2
+215003	Cinzas de Cadáveres Pútridos +3
+215004	Cinzas de Cadáveres Pútridos +4
+215005	Cinzas de Cadáveres Pútridos +5
+215006	Cinzas de Cadáveres Pútridos +6
+215007	Cinzas de Cadáveres Pútridos +7
+215008	Cinzas de Cadáveres Pútridos +8
+215009	Cinzas de Cadáveres Pútridos +9
+215010	Cinzas de Cadáveres Pútridos +10
+216000	Cinzas de Carmaan, Perfumista Caído
+216001	Cinzas de Carmaan, Perfumista Caído + 1
+216002	Cinzas de Carmaan, Perfumista Caído + 2
+216003	Cinzas de Carmaan, Perfumista Caído + 3
+216004	Cinzas de Carmaan, Perfumista Caído + 4
+216005	Cinzas de Carmaan, Perfumista Caído + 5
+216006	Cinzas de Carmaan, Perfumista Caído + 6
+216007	Cinzas de Carmaan, Perfumista Caído + 7
+216008	Cinzas de Carmaan, Perfumista Caído + 8
+216009	Cinzas de Carmaan, Perfumista Caído + 9
+216010	Cinzas de Carmaan, Perfumista Caído + 10
+217000	Cinzas da Perfumista Tricia
+217001	Cinzas da Perfumista Tricia +1
+217002	Cinzas da Perfumista Tricia +2
+217003	Cinzas da Perfumista Tricia +3
+217004	Cinzas da Perfumista Tricia +4
+217005	Cinzas da Perfumista Tricia +5
+217006	Cinzas da Perfumista Tricia +6
+217007	Cinzas da Perfumista Tricia +7
+217008	Cinzas da Perfumista Tricia +8
+217009	Cinzas da Perfumista Tricia +9
+217010	Cinzas da Perfumista Tricia +10
+218000	Cinzas de Feiticeiro Pedrilhante
+218001	Cinzas de Feiticeiro Pedrilhante +1
+218002	Cinzas de Feiticeiro Pedrilhante +2
+218003	Cinzas de Feiticeiro Pedrilhante +3
+218004	Cinzas de Feiticeiro Pedrilhante +4
+218005	Cinzas de Feiticeiro Pedrilhante +5
+218006	Cinzas de Feiticeiro Pedrilhante +6
+218007	Cinzas de Feiticeiro Pedrilhante +7
+218008	Cinzas de Feiticeiro Pedrilhante +8
+218009	Cinzas de Feiticeiro Pedrilhante +9
+218010	Cinzas de Feiticeiro Pedrilhante +10
+219000	Cinzas de Feiticeiro Sábio Gêmeo
+219001	Cinzas de Feiticeiro Sábio Gêmeo +1
+219002	Cinzas de Feiticeiro Sábio Gêmeo +2
+219003	Cinzas de Feiticeiro Sábio Gêmeo +3
+219004	Cinzas de Feiticeiro Sábio Gêmeo +4
+219005	Cinzas de Feiticeiro Sábio Gêmeo +5
+219006	Cinzas de Feiticeiro Sábio Gêmeo +6
+219007	Cinzas de Feiticeiro Sábio Gêmeo +7
+219008	Cinzas de Feiticeiro Sábio Gêmeo +8
+219009	Cinzas de Feiticeiro Sábio Gêmeo +9
+219010	Cinzas de Feiticeiro Sábio Gêmeo +10
+220000	Cinzas de Pajem
+220001	Cinzas de Pajem +1
+220002	Cinzas de Pajem +2
+220003	Cinzas de Pajem +3
+220004	Cinzas de Pajem +4
+220005	Cinzas de Pajem +5
+220006	Cinzas de Pajem +6
+220007	Cinzas de Pajem +7
+220008	Cinzas de Pajem +8
+220009	Cinzas de Pajem +9
+220010	Cinzas de Pajem +10
+221000	Hugues, Mago de Batalha
+221001	Hugues, Mago de Batalha +1
+221002	Hugues, Mago de Batalha +2
+221003	Hugues, Mago de Batalha +3
+221004	Hugues, Mago de Batalha +4
+221005	Hugues, Mago de Batalha +5
+221006	Hugues, Mago de Batalha +6
+221007	Hugues, Mago de Batalha +7
+221008	Hugues, Mago de Batalha +8
+221009	Hugues, Mago de Batalha +9
+221010	Hugues, Mago de Batalha +10
+222000	Cinzas de Homem de Barro
+222001	Cinzas de Homem de Barro +1
+222002	Cinzas de Homem de Barro +2
+222003	Cinzas de Homem de Barro +3
+222004	Cinzas de Homem de Barro +4
+222005	Cinzas de Homem de Barro +5
+222006	Cinzas de Homem de Barro +6
+222007	Cinzas de Homem de Barro +7
+222008	Cinzas de Homem de Barro +8
+222009	Cinzas de Homem de Barro +9
+222010	Cinzas de Homem de Barro +10
+223000	Cinzas de Finlay, Cavaleira da Podridão Imaculada
+223001	Cinzas de Finlay, Cavaleira da Podridão Imaculada +1
+223002	Cinzas de Finlay, Cavaleira da Podridão Imaculada +2
+223003	Cinzas de Finlay, Cavaleira da Podridão Imaculada +3
+223004	Cinzas de Finlay, Cavaleira da Podridão Imaculada +4
+223005	Cinzas de Finlay, Cavaleira da Podridão Imaculada +5
+223006	Cinzas de Finlay, Cavaleira da Podridão Imaculada +6
+223007	Cinzas de Finlay, Cavaleira da Podridão Imaculada +7
+223008	Cinzas de Finlay, Cavaleira da Podridão Imaculada +8
+223009	Cinzas de Finlay, Cavaleira da Podridão Imaculada +9
+223010	Cinzas de Finlay, Cavaleira da Podridão Imaculada +10
+224000	Cinzas do Companheiro da Podridão
+224001	Cinzas do Companheiro da Podridão + 1
+224002	Cinzas do Companheiro da Podridão + 2
+224003	Cinzas do Companheiro da Podridão + 3
+224004	Cinzas do Companheiro da Podridão + 4
+224005	Cinzas do Companheiro da Podridão + 5
+224006	Cinzas do Companheiro da Podridão + 6
+224007	Cinzas do Companheiro da Podridão + 7
+224008	Cinzas do Companheiro da Podridão + 8
+224009	Cinzas do Companheiro da Podridão + 9
+224010	Cinzas do Companheiro da Podridão + 10
+225000	Cinzas de Soldados Marionetes
+225001	Cinzas de Soldados Marionetes +1
+225002	Cinzas de Soldados Marionetes +2
+225003	Cinzas de Soldados Marionetes +3
+225004	Cinzas de Soldados Marionetes +4
+225005	Cinzas de Soldados Marionetes +5
+225006	Cinzas de Soldados Marionetes +6
+225007	Cinzas de Soldados Marionetes +7
+225008	Cinzas de Soldados Marionetes +8
+225009	Cinzas de Soldados Marionetes +9
+225010	Cinzas de Soldados Marionetes +10
+226000	Cinzas de Soldados Avionetes
+226001	Cinzas de Soldados Avionetes +1
+226002	Cinzas de Soldados Avionetes +2
+226003	Cinzas de Soldados Avionetes +3
+226004	Cinzas de Soldados Avionetes +4
+226005	Cinzas de Soldados Avionetes +5
+226006	Cinzas de Soldados Avionetes +6
+226007	Cinzas de Soldados Avionetes +7
+226008	Cinzas de Soldados Avionetes +8
+226009	Cinzas de Soldados Avionetes +9
+226010	Cinzas de Soldados Avionetes +10
+227000	Cinzas de Monge do Fogo
+227001	Cinzas de Monge do Fogo +1
+227002	Cinzas de Monge do Fogo +2
+227003	Cinzas de Monge do Fogo +3
+227004	Cinzas de Monge do Fogo +4
+227005	Cinzas de Monge do Fogo +5
+227006	Cinzas de Monge do Fogo +6
+227007	Cinzas de Monge do Fogo +7
+227008	Cinzas de Monge do Fogo +8
+227009	Cinzas de Monge do Fogo +9
+227010	Cinzas de Monge do Fogo +10
+228000	Cinzas de Amon, Monge da Chama Negra
+228001	Cinzas de Amon, Monge da Chama Negra +1
+228002	Cinzas de Amon, Monge da Chama Negra +2
+228003	Cinzas de Amon, Monge da Chama Negra +3
+228004	Cinzas de Amon, Monge da Chama Negra +4
+228005	Cinzas de Amon, Monge da Chama Negra +5
+228006	Cinzas de Amon, Monge da Chama Negra +6
+228007	Cinzas de Amon, Monge da Chama Negra +7
+228008	Cinzas de Amon, Monge da Chama Negra +8
+228009	Cinzas de Amon, Monge da Chama Negra +9
+228010	Cinzas de Amon, Monge da Chama Negra +10
+229000	Cinzas de Homem-Serpente
+229001	Cinzas de Homem-Serpente +1
+229002	Cinzas de Homem-Serpente +2
+229003	Cinzas de Homem-Serpente +3
+229004	Cinzas de Homem-Serpente +4
+229005	Cinzas de Homem-Serpente +5
+229006	Cinzas de Homem-Serpente +6
+229007	Cinzas de Homem-Serpente +7
+229008	Cinzas de Homem-Serpente +8
+229009	Cinzas de Homem-Serpente +9
+229010	Cinzas de Homem-Serpente +10
+230000	Cinzas de Homem-Fera de Azula
+230001	Cinzas de Homem-Fera de Azula +1
+230002	Cinzas de Homem-Fera de Azula +2
+230003	Cinzas de Homem-Fera de Azula +3
+230004	Cinzas de Homem-Fera de Azula +4
+230005	Cinzas de Homem-Fera de Azula +5
+230006	Cinzas de Homem-Fera de Azula +6
+230007	Cinzas de Homem-Fera de Azula +7
+230008	Cinzas de Homem-Fera de Azula +8
+230009	Cinzas de Homem-Fera de Azula +9
+230010	Cinzas de Homem-Fera de Azula +10
+231000	Cinzas de Mercenário Kaiden
+231001	Cinzas de Mercenário Kaiden + 1
+231002	Cinzas de Mercenário Kaiden + 2
+231003	Cinzas de Mercenário Kaiden + 3
+231004	Cinzas de Mercenário Kaiden + 4
+231005	Cinzas de Mercenário Kaiden + 5
+231006	Cinzas de Mercenário Kaiden + 6
+231007	Cinzas de Mercenário Kaiden + 7
+231008	Cinzas de Mercenário Kaiden + 8
+231009	Cinzas de Mercenário Kaiden + 9
+231010	Cinzas de Mercenário Kaiden + 10
+232000	Cinzas de Lobo Solitário
+232001	Cinzas de Lobo Solitário +1
+232002	Cinzas de Lobo Solitário +2
+232003	Cinzas de Lobo Solitário +3
+232004	Cinzas de Lobo Solitário +4
+232005	Cinzas de Lobo Solitário +5
+232006	Cinzas de Lobo Solitário +6
+232007	Cinzas de Lobo Solitário +7
+232008	Cinzas de Lobo Solitário +8
+232009	Cinzas de Lobo Solitário +9
+232010	Cinzas de Lobo Solitário +10
+233000	Cinzas de Rato Gigante
+233001	Cinzas de Rato Gigante +1
+233002	Cinzas de Rato Gigante +2
+233003	Cinzas de Rato Gigante +3
+233004	Cinzas de Rato Gigante +4
+233005	Cinzas de Rato Gigante +5
+233006	Cinzas de Rato Gigante +6
+233007	Cinzas de Rato Gigante +7
+233008	Cinzas de Rato Gigante +8
+233009	Cinzas de Rato Gigante +9
+233010	Cinzas de Rato Gigante +10
+234000	Cinzas de Semi-Humano
+234001	Cinzas de Semi-Humano +1
+234002	Cinzas de Semi-Humano +2
+234003	Cinzas de Semi-Humano +3
+234004	Cinzas de Semi-Humano +4
+234005	Cinzas de Semi-Humano +5
+234006	Cinzas de Semi-Humano +6
+234007	Cinzas de Semi-Humano +7
+234008	Cinzas de Semi-Humano +8
+234009	Cinzas de Semi-Humano +9
+234010	Cinzas de Semi-Humano +10
+235000	Cinzas de Errante Apodrecido
+235001	Cinzas de Errante Apodrecido +1
+235002	Cinzas de Errante Apodrecido +2
+235003	Cinzas de Errante Apodrecido +3
+235004	Cinzas de Errante Apodrecido +4
+235005	Cinzas de Errante Apodrecido +5
+235006	Cinzas de Errante Apodrecido +6
+235007	Cinzas de Errante Apodrecido +7
+235008	Cinzas de Errante Apodrecido +8
+235009	Cinzas de Errante Apodrecido +9
+235010	Cinzas de Errante Apodrecido +10
+236000	Cinzas de Espírito de Água-Viva
+236001	Cinzas de Espírito de Água-Viva +1
+236002	Cinzas de Espírito de Água-Viva +2
+236003	Cinzas de Espírito de Água-Viva +3
+236004	Cinzas de Espírito de Água-Viva +4
+236005	Cinzas de Espírito de Água-Viva +5
+236006	Cinzas de Espírito de Água-Viva +6
+236007	Cinzas de Espírito de Água-Viva +7
+236008	Cinzas de Espírito de Água-Viva +8
+236009	Cinzas de Espírito de Água-Viva +9
+236010	Cinzas de Espírito de Água-Viva +10
+237000	Cinzas de Falcão de Guerra
+237001	Cinzas de Falcão de Guerra + 1
+237002	Cinzas de Falcão de Guerra + 2
+237003	Cinzas de Falcão de Guerra + 3
+237004	Cinzas de Falcão de Guerra + 4
+237005	Cinzas de Falcão de Guerra + 5
+237006	Cinzas de Falcão de Guerra + 6
+237007	Cinzas de Falcão de Guerra + 7
+237008	Cinzas de Falcão de Guerra + 8
+237009	Cinzas de Falcão de Guerra + 9
+237010	Cinzas de Falcão de Guerra + 10
+238000	Falcão da Tempestade Deenh
+238001	Falcão da Tempestade Deenh +1
+238002	Falcão da Tempestade Deenh +2
+238003	Falcão da Tempestade Deenh +3
+238004	Falcão da Tempestade Deenh +4
+238005	Falcão da Tempestade Deenh +5
+238006	Falcão da Tempestade Deenh +6
+238007	Falcão da Tempestade Deenh +7
+238008	Falcão da Tempestade Deenh +8
+238009	Falcão da Tempestade Deenh +9
+238010	Falcão da Tempestade Deenh +10
+239000	Cinzas de Floh, Cavaleiro Cão de Caça
+239001	Cinzas de Floh, Cavaleiro Cão de Caça +1
+239002	Cinzas de Floh, Cavaleiro Cão de Caça +2
+239003	Cinzas de Floh, Cavaleiro Cão de Caça +3
+239004	Cinzas de Floh, Cavaleiro Cão de Caça +4
+239005	Cinzas de Floh, Cavaleiro Cão de Caça +5
+239006	Cinzas de Floh, Cavaleiro Cão de Caça +6
+239007	Cinzas de Floh, Cavaleiro Cão de Caça +7
+239008	Cinzas de Floh, Cavaleiro Cão de Caça +8
+239009	Cinzas de Floh, Cavaleiro Cão de Caça +9
+239010	Cinzas de Floh, Cavaleiro Cão de Caça +10
+240000	Cinzas de Nobre Errante
+240001	Cinzas de Nobre Errante +1
+240002	Cinzas de Nobre Errante +2
+240003	Cinzas de Nobre Errante +3
+240004	Cinzas de Nobre Errante +4
+240005	Cinzas de Nobre Errante +5
+240006	Cinzas de Nobre Errante +6
+240007	Cinzas de Nobre Errante +7
+240008	Cinzas de Nobre Errante +8
+240009	Cinzas de Nobre Errante +9
+240010	Cinzas de Nobre Errante +10
+241000	Cinzas de Nobre Feiticeiro
+241001	Cinzas de Nobre Feiticeiro +1
+241002	Cinzas de Nobre Feiticeiro +2
+241003	Cinzas de Nobre Feiticeiro +3
+241004	Cinzas de Nobre Feiticeiro +4
+241005	Cinzas de Nobre Feiticeiro +5
+241006	Cinzas de Nobre Feiticeiro +6
+241007	Cinzas de Nobre Feiticeiro +7
+241008	Cinzas de Nobre Feiticeiro +8
+241009	Cinzas de Nobre Feiticeiro +9
+241010	Cinzas de Nobre Feiticeiro +10
+242000	Cinzas de Milícia Vulgar
+242001	Cinzas de Milícia Vulgar +1
+242002	Cinzas de Milícia Vulgar +2
+242003	Cinzas de Milícia Vulgar +3
+242004	Cinzas de Milícia Vulgar +4
+242005	Cinzas de Milícia Vulgar +5
+242006	Cinzas de Milícia Vulgar +6
+242007	Cinzas de Milícia Vulgar +7
+242008	Cinzas de Milícia Vulgar +8
+242009	Cinzas de Milícia Vulgar +9
+242010	Cinzas de Milícia Vulgar +10
+243000	Cinzas de Cabeça de Abóbora Louco
+243001	Cinzas de Cabeça de Abóbora Louco +1
+243002	Cinzas de Cabeça de Abóbora Louco +2
+243003	Cinzas de Cabeça de Abóbora Louco +3
+243004	Cinzas de Cabeça de Abóbora Louco +4
+243005	Cinzas de Cabeça de Abóbora Louco +5
+243006	Cinzas de Cabeça de Abóbora Louco +6
+243007	Cinzas de Cabeça de Abóbora Louco +7
+243008	Cinzas de Cabeça de Abóbora Louco +8
+243009	Cinzas de Cabeça de Abóbora Louco +9
+243010	Cinzas de Cabeça de Abóbora Louco +10
+244000	Cinzas de Ascídia Terrestre
+244001	Cinzas de Ascídia Terrestre +1
+244002	Cinzas de Ascídia Terrestre +2
+244003	Cinzas de Ascídia Terrestre +3
+244004	Cinzas de Ascídia Terrestre +4
+244005	Cinzas de Ascídia Terrestre +5
+244006	Cinzas de Ascídia Terrestre +6
+244007	Cinzas de Ascídia Terrestre +7
+244008	Cinzas de Ascídia Terrestre +8
+244009	Cinzas de Ascídia Terrestre +9
+244010	Cinzas de Ascídia Terrestre +10
+245000	Cinzas de Broto de Miranda
+245001	Cinzas de Broto de Miranda +1
+245002	Cinzas de Broto de Miranda +2
+245003	Cinzas de Broto de Miranda +3
+245004	Cinzas de Broto de Miranda +4
+245005	Cinzas de Broto de Miranda +5
+245006	Cinzas de Broto de Miranda +6
+245007	Cinzas de Broto de Miranda +7
+245008	Cinzas de Broto de Miranda +8
+245009	Cinzas de Broto de Miranda +9
+245010	Cinzas de Broto de Miranda +10
+246000	Cinzas de Soldjar do Destino
+246001	Cinzas de Soldjar do Destino + 1
+246002	Cinzas de Soldjar do Destino + 2
+246003	Cinzas de Soldjar do Destino + 3
+246004	Cinzas de Soldjar do Destino + 4
+246005	Cinzas de Soldjar do Destino + 5
+246006	Cinzas de Soldjar do Destino + 6
+246007	Cinzas de Soldjar do Destino + 7
+246008	Cinzas de Soldjar do Destino + 8
+246009	Cinzas de Soldjar do Destino + 9
+246010	Cinzas de Soldjar do Destino + 10
+247000	Rollo, Assassino de Agouros
+247001	Rollo, Assassino de Agouros +1
+247002	Rollo, Assassino de Agouros +2
+247003	Rollo, Assassino de Agouros +3
+247004	Rollo, Assassino de Agouros +4
+247005	Rollo, Assassino de Agouros +5
+247006	Rollo, Assassino de Agouros +6
+247007	Rollo, Assassino de Agouros +7
+247008	Rollo, Assassino de Agouros +8
+247009	Rollo, Assassino de Agouros +9
+247010	Rollo, Assassino de Agouros +10
+248000	Cinzas de Soldado de Escudo Grande
+248001	Cinzas de Soldado de Escudo Grande +1
+248002	Cinzas de Soldado de Escudo Grande +2
+248003	Cinzas de Soldado de Escudo Grande +3
+248004	Cinzas de Soldado de Escudo Grande +4
+248005	Cinzas de Soldado de Escudo Grande +5
+248006	Cinzas de Soldado de Escudo Grande +6
+248007	Cinzas de Soldado de Escudo Grande +7
+248008	Cinzas de Soldado de Escudo Grande +8
+248009	Cinzas de Soldado de Escudo Grande +9
+248010	Cinzas de Soldado de Escudo Grande +10
+249000	Cinzas de Arqueiro
+249001	Cinzas de Arqueiro +1
+249002	Cinzas de Arqueiro +2
+249003	Cinzas de Arqueiro +3
+249004	Cinzas de Arqueiro +4
+249005	Cinzas de Arqueiro +5
+249006	Cinzas de Arqueiro +6
+249007	Cinzas de Arqueiro +7
+249008	Cinzas de Arqueiro +8
+249009	Cinzas de Arqueiro +9
+249010	Cinzas de Arqueiro +10
+250000	Cinzas de Soldado de Godrick
+250001	Cinzas de Soldado de Godrick +1
+250002	Cinzas de Soldado de Godrick +2
+250003	Cinzas de Soldado de Godrick +3
+250004	Cinzas de Soldado de Godrick +4
+250005	Cinzas de Soldado de Godrick +5
+250006	Cinzas de Soldado de Godrick +6
+250007	Cinzas de Soldado de Godrick +7
+250008	Cinzas de Soldado de Godrick +8
+250009	Cinzas de Soldado de Godrick +9
+250010	Cinzas de Soldado de Godrick +10
+251000	Cinzas de Soldado de Raya Lucaria
+251001	Cinzas de Soldado de Raya Lucaria +1
+251002	Cinzas de Soldado de Raya Lucaria +2
+251003	Cinzas de Soldado de Raya Lucaria +3
+251004	Cinzas de Soldado de Raya Lucaria +4
+251005	Cinzas de Soldado de Raya Lucaria +5
+251006	Cinzas de Soldado de Raya Lucaria +6
+251007	Cinzas de Soldado de Raya Lucaria +7
+251008	Cinzas de Soldado de Raya Lucaria +8
+251009	Cinzas de Soldado de Raya Lucaria +9
+251010	Cinzas de Soldado de Raya Lucaria +10
+252000	Cinzas de Soldado de Leyndell
+252001	Cinzas de Soldado de Leyndell +1
+252002	Cinzas de Soldado de Leyndell +2
+252003	Cinzas de Soldado de Leyndell +3
+252004	Cinzas de Soldado de Leyndell +4
+252005	Cinzas de Soldado de Leyndell +5
+252006	Cinzas de Soldado de Leyndell +6
+252007	Cinzas de Soldado de Leyndell +7
+252008	Cinzas de Soldado de Leyndell +8
+252009	Cinzas de Soldado de Leyndell +9
+252010	Cinzas de Soldado de Leyndell +10
+253000	Cinzas de Soldado de Radahn
+253001	Cinzas de Soldado de Radahn +1
+253002	Cinzas de Soldado de Radahn +2
+253003	Cinzas de Soldado de Radahn +3
+253004	Cinzas de Soldado de Radahn +4
+253005	Cinzas de Soldado de Radahn +5
+253006	Cinzas de Soldado de Radahn +6
+253007	Cinzas de Soldado de Radahn +7
+253008	Cinzas de Soldado de Radahn +8
+253009	Cinzas de Soldado de Radahn +9
+253010	Cinzas de Soldado de Radahn +10
+254000	Cinzas de Soldado do Mausoléu
+254001	Cinzas de Soldado do Mausoléu +1
+254002	Cinzas de Soldado do Mausoléu +2
+254003	Cinzas de Soldado do Mausoléu +3
+254004	Cinzas de Soldado do Mausoléu +4
+254005	Cinzas de Soldado do Mausoléu +5
+254006	Cinzas de Soldado do Mausoléu +6
+254007	Cinzas de Soldado do Mausoléu +7
+254008	Cinzas de Soldado do Mausoléu +8
+254009	Cinzas de Soldado do Mausoléu +9
+254010	Cinzas de Soldado do Mausoléu +10
+255000	Cinzas de Soldado da Árvore Sacra
+255001	Cinzas de Soldado da Árvore Sacra +1
+255002	Cinzas de Soldado da Árvore Sacra +2
+255003	Cinzas de Soldado da Árvore Sacra +3
+255004	Cinzas de Soldado da Árvore Sacra +4
+255005	Cinzas de Soldado da Árvore Sacra +5
+255006	Cinzas de Soldado da Árvore Sacra +6
+255007	Cinzas de Soldado da Árvore Sacra +7
+255008	Cinzas de Soldado da Árvore Sacra +8
+255009	Cinzas de Soldado da Árvore Sacra +9
+255010	Cinzas de Soldado da Árvore Sacra +10
+256000	Cinzas de Kristoff, Cavaleiro do Dragão Ancião
+256001	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +1
+256002	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +2
+256003	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +3
+256004	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +4
+256005	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +5
+256006	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +6
+256007	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +7
+256008	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +8
+256009	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +9
+256010	Cinzas de Kristoff, Cavaleiro do Dragão Ancião +10
+257000	Cinzas de Ogha, Cavaleiro da Juba Vermelha
+257001	Cinzas de Ogha, Cavaleiro da Juba Vermelha +1
+257002	Cinzas de Ogha, Cavaleiro da Juba Vermelha +2
+257003	Cinzas de Ogha, Cavaleiro da Juba Vermelha +3
+257004	Cinzas de Ogha, Cavaleiro da Juba Vermelha +4
+257005	Cinzas de Ogha, Cavaleiro da Juba Vermelha +5
+257006	Cinzas de Ogha, Cavaleiro da Juba Vermelha +6
+257007	Cinzas de Ogha, Cavaleiro da Juba Vermelha +7
+257008	Cinzas de Ogha, Cavaleiro da Juba Vermelha +8
+257009	Cinzas de Ogha, Cavaleiro da Juba Vermelha +9
+257010	Cinzas de Ogha, Cavaleiro da Juba Vermelha +10
+258000	Cinzas de Lhutel, a Sem-Cabeça
+258001	Cinzas de Lhutel, a Sem-Cabeça +1
+258002	Cinzas de Lhutel, a Sem-Cabeça +2
+258003	Cinzas de Lhutel, a Sem-Cabeça +3
+258004	Cinzas de Lhutel, a Sem-Cabeça +4
+258005	Cinzas de Lhutel, a Sem-Cabeça +5
+258006	Cinzas de Lhutel, a Sem-Cabeça +6
+258007	Cinzas de Lhutel, a Sem-Cabeça +7
+258008	Cinzas de Lhutel, a Sem-Cabeça +8
+258009	Cinzas de Lhutel, a Sem-Cabeça +9
+258010	Cinzas de Lhutel, a Sem-Cabeça +10
+259000	Marionete de Nepheli Loux
+259001	Marionete de Nepheli Loux +1
+259002	Marionete de Nepheli Loux +2
+259003	Marionete de Nepheli Loux +3
+259004	Marionete de Nepheli Loux +4
+259005	Marionete de Nepheli Loux +5
+259006	Marionete de Nepheli Loux +6
+259007	Marionete de Nepheli Loux +7
+259008	Marionete de Nepheli Loux +8
+259009	Marionete de Nepheli Loux +9
+259010	Marionete de Nepheli Loux +10
+260000	Marionete do Comedor de Estrume
+260001	Marionete do Comedor de Estrume +1
+260002	Marionete do Comedor de Estrume +2
+260003	Marionete do Comedor de Estrume +3
+260004	Marionete do Comedor de Estrume +4
+260005	Marionete do Comedor de Estrume +5
+260006	Marionete do Comedor de Estrume +6
+260007	Marionete do Comedor de Estrume +7
+260008	Marionete do Comedor de Estrume +8
+260009	Marionete do Comedor de Estrume +9
+260010	Marionete do Comedor de Estrume +10
+261000	Marionete de Therolina, Donzela dos Dedos
+261001	Marionete de Therolina, Donzela dos Dedos +1
+261002	Marionete de Therolina, Donzela dos Dedos +2
+261003	Marionete de Therolina, Donzela dos Dedos +3
+261004	Marionete de Therolina, Donzela dos Dedos +4
+261005	Marionete de Therolina, Donzela dos Dedos +5
+261006	Marionete de Therolina, Donzela dos Dedos +6
+261007	Marionete de Therolina, Donzela dos Dedos +7
+261008	Marionete de Therolina, Donzela dos Dedos +8
+261009	Marionete de Therolina, Donzela dos Dedos +9
+261010	Marionete de Therolina, Donzela dos Dedos +10
+262000	Marionete de Dolores, a Flecha Adormecida
+262001	Marionete de Dolores, a Flecha Adormecida +1
+262002	Marionete de Dolores, a Flecha Adormecida +2
+262003	Marionete de Dolores, a Flecha Adormecida +3
+262004	Marionete de Dolores, a Flecha Adormecida +4
+262005	Marionete de Dolores, a Flecha Adormecida +5
+262006	Marionete de Dolores, a Flecha Adormecida +6
+262007	Marionete de Dolores, a Flecha Adormecida +7
+262008	Marionete de Dolores, a Flecha Adormecida +8
+262009	Marionete de Dolores, a Flecha Adormecida +9
+262010	Marionete de Dolores, a Flecha Adormecida +10
+263000	Marionete de Jarro
+263001	Marionete de Homem-Jarro +1
+263002	Marionete de Homem-Jarro +2
+263003	Marionete de Homem-Jarro +3
+263004	Marionete de Homem-Jarro +4
+263005	Marionete de Homem-Jarro +5
+263006	Marionete de Homem-Jarro +6
+263007	Marionete de Homem-Jarro +7
+263008	Marionete de Homem-Jarro +8
+263009	Marionete de Homem-Jarro +9
+263010	Marionete de Homem-Jarro +10
+9999001	
+9999002	
+9999003	
+9999004	
+9999005	
+9999006	
+9999007	
+9999008	
+9999009	
+9999010	
+9999011	
+9999012	
+9999013	
+9999014	
+9999015	
+9999016	
+9999017	
+9999018	
+9999019	
+9999020	
+9999021	
+9999022	
+9999023	
+9999024	
+9999025	
+9999026	
+9999027	
+9999028	
+9999029	
+9999030	
+9999031	
+9999032	
+9999033	
+9999034	
+9999035	
+9999036	
+9999037	
+9999038	
+9999039	
+9999040	
+9999041	
+9999042	
+9999043	
+9999044	
+9999045	
+9999046	
+9999047	
+9999048	
+9999049	
+9999050	
+9999051	
+9999052	
+9999053	
+9999054	
+9999055	
+9999056	
+9999057	
+9999058	
+9999059	
+9999060	
+9999061	
+9999062	
+9999063	
+9999064	
+9999065	
+9999066	
+9999067	
+9999068	
+9999069	
+9999070	
+9999071	
+9999072	
+9999073	
+9999074	
+9999075	
+9999076	
+9999077	
+9999078	
+9999079	
+9999080	
+9999081	
+9999082	
+9999083	
+9999084	
+9999085	
+9999086	
+9999087	
+9999088	
+9999089	
+9999090	
+9999091	
+9999092	
+9999093	
+9999094	
+9999095	
+9999096	
+9999097	
+9999098	
+9999099	

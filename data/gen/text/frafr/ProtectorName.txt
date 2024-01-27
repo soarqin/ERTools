@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]Rasés
+1100	[ERROR]Dégarni
+1200	[ERROR]Courts
+1300	[ERROR]Vers l'arrière
+1400	[ERROR]Queue de cheval
+1500	[ERROR]Libres
+1600	[ERROR]Raie au milieu
+1700	[ERROR]Mi-Longs
+1800	[ERROR]Bouclés
+1900	[ERROR]Au carré
+2000	[ERROR]Homme 11
+2100	[ERROR]Homme 12
+2200	[ERROR]Homme 13
+2300	[ERROR]Homme 14
+2400	[ERROR]Homme 15
+2500	[ERROR]Homme 16
+2600	[ERROR]Homme 17
+2700	[ERROR]Homme 18
+2800	[ERROR]Homme 19
+2900	[ERROR]Homme 20
+3000	[ERROR]Rasés
+3100	[ERROR]Ras
+3200	[ERROR]Ondulés
+3300	[ERROR]Raides A
+3400	[ERROR]Raides B
+3500	[ERROR]Queue de cheval A
+3600	[ERROR]Queue de cheval B
+3700	[ERROR]Couettes
+3800	[ERROR]Chignon
+3900	[ERROR]Tressés
+4000	[ERROR]Femme 11
+4100	[ERROR]Femme 12
+4200	[ERROR]Femme 13
+4300	[ERROR]Femme 14
+4400	[ERROR]Femme 15
+4500	[ERROR]Femme 16
+4600	[ERROR]Femme 17
+4700	[ERROR]Femme 18
+4800	[ERROR]Femme 19
+4900	[ERROR]Femme 20
+5000	[ERROR]Coiffé-décoiffé
+10000	Tête
+10100	Corps
+10200	Bras
+10300	Jambes
+40000	Casque en fer
+40100	Armure d'écailles
+40200	Gantelets en fer
+40300	Pantalon en cuir
+50000	Casque de Kaiden
+50100	Armure de Kaiden
+50200	Gantelets de Kaiden
+50300	Pantalon de Kaiden
+60000	Casque de chevalier draconique
+60100	Armure de chevalier draconique
+60200	Gantelets de chevalier draconique
+60300	Jambières de chevalier draconique
+61000	Casque de chevalier draconique (altéré)
+61100	Armure de chevalier draconique (altérée)
+80000	Heaume en écailles
+80100	Armure en écailles
+80200	Gantelets en écailles
+80300	Jambières en écailles
+81100	Armure en écailles (altérée)
+90000	Capuche de Parfumeur
+90100	Toge de Parfumeur
+90200	Gants de Parfumeur
+90300	Sarong de Parfumeur
+91100	Toge de Parfumeur (altérée)
+100000	Chapeau de voyageur
+100100	Tenue de voyage de Parfumeur
+100200	Gants de voyageur
+100300	Pantalon de voyageur
+101100	Tenue de voyage de Parfumeur (altérée)
+120000	Chapeau pointu d'Alberich
+120100	Robe d'Alberich
+120200	Brassards d'Alberich
+120300	Pantalon d'Alberich
+121000	Chapeau pointu d'Alberich (altéré)
+121100	Robe d'Alberich (altérée)
+130000	Chapeau pointu de lamesort
+130100	Tenue de voyage de lamesort
+130200	Gants de lamesort
+130300	Pantalon de lamesort
+131100	Tenue de voyage de lamesort (altérée)
+140000	Casque du mouflon
+140100	Armure du mouflon
+140200	Gantelets du mouflon
+140300	Jambières du mouflon
+150000	Kasa en fer
+150100	Armure de ronin
+150200	Gantelets de ronin
+150300	Jambières de ronin
+151100	Armure de ronin (altérée)
+160000	Capuche de coupable
+160100	Costume en tissu
+160200	
+160300	Pantalon en tissu
+170000	Masque lupin noir
+170100	Armure de Blaidd
+170200	Gantelets de Blaidd
+170300	Jambières de Blaidd
+171100	Armure de Blaidd (altérée)
+180000	Capuche des Couteaux noirs
+180100	Armure des Couteaux noirs
+180200	Gantelets des Couteaux noirs
+180300	Jambières des Couteaux noirs
+181100	Armure des Couteaux noirs (altérée)
+190000	Capuche d'exilé
+190100	Armure d'exilé
+190200	Gantelets d'exilé
+190300	Jambières d'exilé
+200000	Casque de chevalier banni
+200100	Armure de chevalier banni
+200200	Gantelets de chevalier banni
+200300	Jambières de chevalier banni
+201000	Casque de chevalier banni (altéré)
+201100	Armure de chevalier banni (altérée)
+202100	[ERROR]
+210000	Heaume du Roncier
+210100	Armure du Roncier
+210200	Gantelets du Roncier
+210300	Jambières du Roncier
+211100	Armure du Roncier (altérée)
+220000	Capuchon de page
+220100	Costume de page
+220300	Pantalon de page
+221100	Costume de page (altéré)
+230000	Heaume de cavalier crépusculaire
+230100	Armure de cavalier crépusculaire
+230200	Gantelets de cavalier crépusculaire
+230300	Jambières de cavalier crépusculaire
+231000	Heaume de cavalier crépusculaire (altéré)
+231100	Armure de cavalier crépusculaire (altérée)
+240000	Capuchon de mailles en argent bleuté
+240100	Armure de mailles en argent bleuté
+240200	Bracelets en argent bleuté
+240300	Jupe de mailles en argent bleuté
+241100	Armure de mailles en argent bleuté (altérée)
+250000	Chapeau de marchand nomade
+250100	Atours de marchand nomade
+250300	Pantalon de marchand nomade
+251100	Atours de marchand nomade (altérés)
+260000	Heaume draconique difforme
+260100	Armure draconique difforme
+260200	Gantelets draconiques difformes
+260300	Jambières draconiques difformes
+270000	Heaume de Sentinelle de l'Arbre
+270100	Armure de Sentinelle de l'Arbre
+270200	Gantelets de Sentinelle de l'Arbre
+270300	Jambières de Sentinelle de l'Arbre
+271100	Armure de Sentinelle de l'Arbre (altérée)
+280000	Heaume de chevalier royal
+280100	Armure de chevalier royal
+280200	Gantelets de chevalier royal
+280300	Jambières de chevalier royal
+281100	Armure de chevalier royal (altérée)
+290000	Capuche de moine nokrien
+290100	Armure de moine nokrien
+290200	Bracelets nokriens
+290300	Jambières nokriennes
+291000	Capuche de moine nokrien (altérée)
+291100	Armure de moine nokrien (altérée)
+292000	Hennin d'épéiste nokrienne
+292100	Armure d'épéiste nokrienne
+293000	Double hennin de noctedame
+293100	Armure de noctedame
+294000	Hennin de épéiste nokrienne (altéré)
+294100	Armure d'épéiste nokrienne (altérée)
+300000	Grand bandeau à cornes
+300100	Tunique en fourrure
+300300	Pantalon en fourrure
+301000	Bandeau à cornes lumineux
+301100	Peaux de chaman
+301300	Bottes de chaman
+310000	Casque de Duelliste
+310100	Cape de gardien des tombes
+310300	Jambières de Duelliste
+311100	Atour de gardien des tombes (altérée)
+320000	Capuchon de noble sanglant
+320100	Toge de noble sanglant
+320300	Couvre-jambes de noble sanglant
+330000	Masque de gardien
+330100	Costume de gardien (en fleur)
+330200	Brassards de gardien
+330300	Jambières de gardien
+331100	Costume de gardien
+340000	Heaume de la Noble putréfaction
+340100	Armure de la Noble putréfaction
+340200	Gantelets de la Noble putréfaction
+340300	Jambières de la Noble putréfaction
+341000	Heaume de la Noble putréfaction (altéré)
+341100	Armure de la Noble putréfaction (altérée)
+350000	Capuchon de moine-gardien du feu
+350100	Armure de moine-gardien du feu
+350200	Gantelets de moine-gardien du feu
+350300	Jambières de moine-gardien du feu
+351000	Capuchon de moine de la Flamme noire
+351100	Armure de moine de la Flamme noire
+351200	Gantelets de moine de Flamme noire
+351300	Jambières de moine de la Flamme noire
+360000	Heaume de prélat de feu
+360100	Armure de prélat de feu
+360200	Gantelets de prélat de feu
+360300	Jambières de prélat de feu
+361100	Armure de prélat de feu (altérée)
+370000	Bandeau d'aristocrate
+370100	Costume d'aristocrate
+370300	Bottes d'aristocrate
+371100	Costume d'aristocrate (altéré)
+380000	Chapeau d'aristocrate
+380100	Manteau d'aristocrate
+390000	Vieux chapeau d'aristocrate
+390100	Vieille tenue d'aristocrate
+390300	Vieilles chaussures d'aristocrate
+420000	Casque de milicien vulgaire
+420100	Armure de milicien vulgaire
+420200	Gantelets de milicien vulgaire
+420300	Jambières de milicien vulgaire
+430000	Capuche de sage
+430100	Robe de sage
+430300	Pantalon de sage
+440000	Casque de citrouille
+460000	Couronne de Seigneur d'Elden
+460100	Armure de Seigneur d'Elden
+460200	Brassards de Seigneur d'Elden
+460300	Jambières de Seigneur d'Elden
+461100	Armure de Seigneur d'Elden (altérée)
+470000	Crinière rouge de Radahn
+470100	Armure léonine de Radahn
+470200	Gantelets de Radahn
+470300	Jambières de Radahn
+471100	Armure léonine de Radahn (altérée)
+480100	Robe du seigneur du sang
+481100	Robe du seigneur du sang (altérée)
+510000	Couronne lunaire de la reine
+510100	Robe de la reine
+510200	Bracelets de la reine
+510300	Pantalon de la reine
+520000	Capuche d'apôtre sanctechair
+520100	Robe d'apôtre sanctechair
+520200	Bracelets d'apôtre sanctechair
+520300	Pantalon d'apôtre sanctechair
+530000	Capuche de noble sanctechair
+530100	Robe de noble sanctechair
+530200	Bracelets de noble sanctechair
+530300	Pantalon de noble sanctechair
+540000	Couvre-chef de Parfumeur déchu
+540100	Robe de Parfumeur déchu
+540200	Gants de Parfumeur déchu
+540300	Pantalon de Parfumeur déchu
+541100	Robe de Parfumeur déchu (altérée)
+570000	Heaume-hache du Creuset
+570100	Armure-hache du Creuset
+570200	Gantelets du Creuset
+570300	Jambières du Creuset
+571000	Heaume arboriforme du Creuset
+571100	Armure arboriforme du Creuset
+572100	Armure-hache du Creuset (altérée)
+573100	Armure arboriforme du Creuset (altérée)
+580000	Masque de pierre d'éclat de Lusat
+580100	Robe de Lusat
+580200	Manchettes de Lusat
+580300	Jambards de vieux sorcier
+581000	Masque de pierre d'éclat d'Azur
+581100	Robe de pierre d'éclat d'Azur
+581200	Manchettes d'Azur
+590000	Casque de l'Omniscient
+590100	Armure de l'Omniscient
+590200	Gantelets de l'Omniscient
+590300	Jambières de l'Omniscient
+591100	Armure de l'Omniscient (altérée)
+600000	Casque géminé
+600100	Cuirasse géminée
+600200	Gantelets géminés
+600300	Jambières géminées
+601100	Cuirasse géminée (altérée)
+601300	Jambières géminées (altérées)
+610000	Chapeau élimé
+610100	Armure élimée
+610200	Gants élimés
+610300	Pagne élimé
+611000	Chapeau élimé (altéré)
+611100	Armure élimée (altérée)
+620000	Bandeau de prophète
+620100	Robe de Corhyn
+620300	Pantalon de prophète
+621100	Robe de prophète (altérée)
+622100	Robe de prophète
+630000	Capuche d'astrologue
+630100	Robe d'astrologue
+630200	Gants d'astrologue
+630300	Pantalon d'astrologue
+631100	Robe d'astrologue (altérée)
+640000	Heaume de Lionel
+640100	Armure de Lionel
+640200	Gantelets de Lionel
+640300	Jambières de Lionel
+641100	Armure de Lionel (altérée)
+650000	Heaume des Hoslow
+650100	Armure des Hoslow
+650200	Gantelets des Hoslow
+650300	Jambières des Hoslow
+651000	Masque de Diallos
+652100	Armure des Hoslow (altérée)
+660000	Heaume de chevalier errant
+660100	Armure de chevalier errant
+660200	Gantelets de chevalier errant
+660300	Jambières de chevalier errant
+661100	Armure de chevalier errant (altérée)
+670000	Capuche en tissu bleu
+670100	Gilet en tissu bleu
+670200	Gantelets de guerrier
+670300	Bottes de guerrier
+680000	Masque blanc
+680100	Tenue de médecin de guerre
+680200	Gants de médecin de guerre
+680300	Pantalon de médecin de guerre
+681100	Tenue de médecin de guerre (altérée)
+690000	Casque de la dépouille royale
+690100	Armure de la dépouille royale
+690200	Gantelets de la dépouille royale
+690300	Jambières de la dépouille royale
+700000	[ERROR]Bandeau en corde de brave
+700100	[ERROR]Tenue de combat de brave
+700200	[ERROR]Brassards de brave
+700300	[ERROR]Guêtres de brave
+701000	[ERROR]Casque en cuir de brave
+702000	[ERROR]Tenue de combat de brave (altérée)
+720000	Heaume du champion bestial
+720100	Armure du champion bestial
+720200	Gantelets du champion bestial
+720300	Jambières du champion bestial
+721100	Armure du champion bestial (altérée)
+730000	Bandeau de champion
+730100	Spalière de champion
+730200	Brassards de champion
+730300	Guêtres de champion
+740000	Capuche pourpre
+740100	Costume de voyage de noble
+740200	Gants de noble
+740300	Pantalon de noble
+741000	Capuche bleu marine
+742000	[ERROR]
+760000	Casque de Maliketh
+760100	Armure de Maliketh
+760200	Gantelets de Maliketh
+760300	Jambières de Maliketh
+761100	Armure de Maliketh (altérée)
+770000	Casque ailé de Malenia
+770100	Armure de Malenia
+770200	Gantelet de Malenia
+770300	Jambières de Malenia
+771100	Armure de Malenia (altérée)
+780000	Casque de vétéran
+780100	Armure de vétéran
+780200	Gantelets de vétéran
+780300	Jambières de vétéran
+781100	Armure de vétéran (altérée)
+790000	Heaume de Chevalier-limier
+790100	Armure de Chevalier-limier
+790200	Gantelets de Chevalier-limier
+790300	Jambières de Chevalier-limier
+791100	Armure de Chevalier-limier (altérée)
+800000	Capuche festive
+800100	Costume festif
+801000	Capuche festive (altérée)
+801100	Costume festif (altéré)
+802000	Capuche festive bleue
+802100	Costume festif bleu
+810000	Bandeau de sujet
+810100	Vêtements de sujet
+810300	Chaussures de sujet
+811000	Bandeau de sujet (altéré)
+811100	Vêtements de sujet (altérés)
+812000	Chemise ordinaire de sujet
+812100	Chemise ordinaire de sujet (altérée)
+820000	Turban d'émissaire
+830000	Masque de pierre d'éclat de sorcier bicéphale
+830100	Toge de Raya Lucaria
+830200	Manchettes de sorcier
+830300	Pantalon de sorcier
+831000	Masque de pierre d'éclat d'Olivinus
+832000	Masque de pierre d'éclat de Lazuli
+833000	Masque de pierre d'éclat de Karolos
+834000	Masque de pierre d'éclat de sorcière
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Heaume de soldat pantin
+840100	Armure de soldat pantin
+850000	Heaume de soldat pantin aviaire
+860000	Casque du Loup enragé
+860100	Armure du Loup enragé
+860200	Gantelets du Loup enragé
+860300	Jambières du Loup enragé
+861100	Armure du Loup enragé (altérée)
+870000	Casque des Terres des roseaux
+870100	Armure des Terres des roseaux
+870200	Gantelets des Terres des roseaux
+870300	Jambières des Terres des roseaux
+871100	Armure des Terres des roseaux (altérée)
+872000	Masque d'Okina
+872100	Armure blanche des Terres des roseaux
+872200	Gantelets blancs des Terres des roseaux
+872300	Jambières blanches des Terres des roseaux
+873000	[ERROR]
+880000	Capuche de confesseur
+880100	Armure de confesseur
+880200	Gants de confesseur
+880300	Bottes de confesseur
+881000	Capuche de confesseur (altérée)
+881100	Armure de confesseur (altérée)
+890000	Masque en fer de prisonnier
+890100	Habits de prisonnier
+890300	Pantalon de prisonnier
+891000	Masque en fer de malfrat
+892100	[ERROR]
+900000	Capuche de Servante itinérante
+900100	Robe de Servante itinérante
+900200	Gants de Servante itinérante
+900300	Bottes de Servante itinérante
+901100	Robe de Servante itinérante (altérée)
+901200	[ERROR]
+901600	[ERROR]
+902000	Toque de Servante
+902100	Robe de Servante
+902300	Chaussures de Servante
+903100	Robe de Servante (altérée)
+904100	[ERROR]
+910000	Galurin de précepteur
+910100	Longue robe de précepteur
+910200	Gants de précepteur
+910300	Pantalon de précepteur
+911000	Masque de confiance
+911100	Longue robe de précepteur (altérée)
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Masque squelettique
+930100	Plumes noires de rapace
+930200	Manchettes de bandit
+930300	Bottes de bandit
+931100	Tenue de bandit
+940000	Capuche d'excentrique
+940100	Armure d'excentrique
+940200	Manchettes d'excentrique
+940300	Hauts-de-chausses d'excentrique
+941000	Capuche d'excentrique (altérée)
+950000	Heaume des Doigts
+950100	Armure des Doigts
+950200	Gantelets des Doigts
+950300	Jambières des Doigts
+951100	Armure des Doigts (altérée)
+960000	Masque de consort
+960100	Robe de consort
+960300	Pantalon de consort
+961000	Masque de suzerain
+961100	Robe de suzerain
+962100	Robe bourgeoise
+963000	Masque des Tourbier
+963100	Robe des Tourbier
+963200	Manchettes gorgées de sang
+964000	Masque gorgé de sang
+964100	Atours de dignitaire
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Casque de Réprouvé
+970100	Armure de Réprouvé
+970200	Gantelets de Réprouvé
+970300	Jambières de Réprouvé
+980000	Casque de chevalier de Caria
+980100	Armure de chevalier de Caria
+980200	Gantelets de chevalier de Caria
+980300	Bottes de chevalier de Caria
+981100	Armure de chevalier de Caria (altérée)
+990000	Masque de pierre d'éclat de Hierodas
+990100	Robe de sorcier errant
+990200	Manchettes de sorcier errant
+990300	Bottes de sorcier errant
+991100	Robe de sorcier errant (altérée)
+992000	[ERROR]
+1000000	Masque de pierre d'éclat de Haima
+1000100	Robe de mage de bataille
+1000200	Manchettes de mage de bataille
+1000300	Guêtres de mage de bataille
+1010000	Chapeau de sorcière des neiges
+1010100	Robe de sorcière des neiges
+1010300	Jupe de sorcière des neiges
+1011100	Robe de sorcière des neiges (altérée)
+1020100	Vêtements de voyageur
+1020200	Manchettes de voyageur
+1020300	Bottes de voyageur
+1030000	Couvre-chef d'érudit néophyte
+1030100	Robe d'érudit néophyte
+1040000	Masque d'or radieux
+1040100	Guenilles du Masque d'or
+1040200	Bracelets dorés
+1040300	Écharpe dorée
+1050100	Cape du Déchu
+1060000	Masque d'Albinaurique
+1060100	Cotte de mailles crasseuse
+1070000	Masque de Zamor
+1070100	Armure de Zamor
+1070200	Bracelets de Zamor
+1070300	Guêtres de Zamor
+1080000	Tête de diablotin (chat)
+1081000	Tête de diablotin à crocs
+1082000	Tête de diablotin à langue
+1083000	Tête de diablotin (cadavre)
+1084000	Tête de diablotin (loup)
+1085000	Tête de diablotin (ancien)
+1090000	Masque de larme d'argent
+1100000	Coiffe de mailles
+1100100	Cotte de mailles
+1100200	Gantelets
+1100300	Jambières de mailles
+1101000	Grand heaume
+1101100	Tunique frappée d'un œil
+1102100	Tunique frappée d'un arbre
+1110000	Tête de pieuvre
+1120000	Jarre
+1130000	Tête fongique
+1130100	Corps fongique
+1130200	Bras fongiques
+1130300	Jambes fongiques
+1300000	Heaume-miroir nokrien
+1301000	Heaume-miroir d'Iji
+1400000	Capuche noire
+1400100	Armure de cuir
+1400200	Gants de cuir
+1400300	Bottes de cuir
+1401000	Masque de bandit
+1500000	Heaume de chevalier
+1500100	Armure de chevalier
+1500200	Gantelets de chevalier
+1500300	Jambières de chevalier
+1600000	Grande capuche
+1610000	[ERROR]
+1700000	Casque de soldat de Godrick
+1700100	Tunique avec arbre et bête
+1700200	Gantelets de soldat de Godrick
+1700300	Jambières de soldat de Godrick
+1710000	Casque de Raya Lucaria
+1710100	Tunique du Coucou
+1710200	Gantelets de Raya Lucaria
+1710300	Jambières de Raya Lucaria
+1720000	Casque de soldat de Leyndell
+1720100	Tunique de l'Arbre-Monde
+1720200	Gantelets de soldat de Leyndell
+1720300	Jambières de soldat de Leyndell
+1730000	Casque de soldat de Radahn
+1730100	Tunique du Lion rouge
+1730200	Gantelets de soldat de Radahn
+1730300	Jambières de soldat de Radahn
+1740100	Tunique du Mausolée
+1740200	Gantelets du Mausolée
+1740300	Jambières du Mausolée
+1750000	Casque de l'Arbre-Sacré
+1750100	Tunique de l'Arbre-Sacré
+1750200	Gantelets de l'Arbre-Sacré
+1750300	Jambières de l'Arbre-Sacré
+1760000	Heaume de chevalier de Gelmir
+1760100	Armure de chevalier de Gelmir
+1760200	Gantelets de chevalier de Gelmir
+1760300	Jambières de chevalier de Gelmir
+1761100	Armure de chevalier de Gelmir (altérée)
+1770000	Heaume de chevalier de Godrick
+1770100	Armure de chevalier de Godrick
+1770200	Gantelets de chevalier de Godrick
+1770300	Jambières de chevalier de Godrick
+1771100	Armure de chevalier de Godrick (altérée)
+1780000	Heaume de chevalier du Coucou
+1780100	Armure de chevalier du Coucou
+1780200	Gantelets de chevalier du Coucou
+1780300	Jambières de chevalier du Coucou
+1781100	Armure de chevalier du Coucou (altérée)
+1790000	Heaume de chevalier de Leyndell
+1790100	Armure de chevalier de Leyndell
+1790200	Gantelets de chevalier de Leyndell
+1790300	Jambières de chevalier de Leyndell
+1791100	Armure de chevalier de Leyndell (altérée)
+1800000	Heaume de chevalier du Lion rouge
+1800100	Armure de chevalier du Lion rouge
+1800200	Gantelets de chevalier du Lion rouge
+1800300	Jambières de chevalier du Lion rouge
+1801100	Armure de chevalier du Lion rouge (altérée)
+1810100	Armure de chevalier du Mausolée
+1810200	Gantelets de chevalier du Mausolée
+1810300	Jambières de chevalier du Mausolée
+1811100	Armure de chevalier du Mausolée (altérée)
+1820000	Heaume de chevalier de l'Arbre-Sacré
+1820100	Armure de chevalier de l'Arbre-Sacré
+1820200	Gantelets de chevalier de l'Arbre-Sacré
+1820300	Jambières de chevalier l'Arbre-Sacré
+1821100	Armure de chevalier de l'Arbre-Sacré (altérée)
+1830000	Chapel de fantassin
+1830100	Tabard drapé de mailles
+1830200	Gantelets de fantassin
+1830300	Jambières de fantassin
+1840000	Cervelière de fantassin
+1840100	Tabard de fantassin
+1850000	Morion doré de fantassin
+1850100	Tabard drapé de cuir
+1860000	Barbute de fantassin
+1860100	Tabard écarlate
+1870100	Tabard maculé de sang
+1880000	Morion sacré
+1880100	Tabard drapé d'ivoire
+1890000	Cauchemar des Réprouvés
+1890100	Robe de tueur de Réprouvés
+1890200	Gants longs de tueur de Réprouvés
+1890300	Bottes de tueur de Réprouvés
+1900000	Scarabée cendreux de guerre
+1901000	Scarabée incantatoire
+1902000	Scarabée de pierre d'éclat
+1910000	Scarabée larmoyant pourpre
+1920000	Scarabée larmoyant céruléen
+1930100	Robe mortuaire
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Capuche de Fia
+1940100	Robe de Fia
+1941100	Robe de Fia (altérée)
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Capuche de brigand
+1980100	Armure en tissu de brigand
+1980200	Gantelets de brigand
+1990000	Capuche de page noble
+1990100	Atours de page noble
+1991100	Atours de page noble (altérés)
+2000000	Casque de Duelliste putréfié
+2000100	Cape de gardien des tombes putréfiée
+2000300	Jambières de Duelliste putréfié
+2001100	Atour de gardien des tombes putréfiée (altérée)
+2010000	Couronne fongique
+2020000	Paupiette noire
+2030000	Robe de Lazuli

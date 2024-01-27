@@ -1,0 +1,2715 @@
+1010	 x
+3010	<?null?>
+3011	<?null?>
+3012	
+3013	
+3014	
+3015	
+3016	
+3017	
+3018	
+3019	
+3020	 
+3021	 
+3500	Ort der Wiederbelebung auswählen.
+3501	Marikas Pfahl
+3502	Letzter Ort der Gnade
+4100	Nutzen
+4101	Zurücklassen
+4102	Wegwerfen
+4103	
+4104	
+4105	
+4106	
+4107	
+4108	
+4109	
+4110	Auswahl nutzen
+4111	Auswahl zurücklassen
+4112	Auswahl wegwerfen
+5100	Wie viele nutzen?
+5101	Wie viele zurücklassen?
+5102	Wie viele wegwerfen?
+5103	
+5104	Wie viele kaufen?
+5105	Wie viele verkaufen?
+5106	Wie viele lagern?
+5107	Wie viele nehmen?
+5108	Wie viele herstellen?
+5109	Wie viele erhalten?
+5501	Erklärung
+5502	Steuerung ansehen
+5600	Menüerklärung
+5700	Mehrspieler-Statusanzeigen ein-/ausblenden
+5701	
+5702	
+5703	
+5704	
+5705	
+5706	
+5707	
+5708	
+5709	
+5710	Mehrspieler-Statusanzeigen ein-/ausblenden
+6100	Standardreihenfolge
+6101	
+6102	
+6103	
+6104	
+6105	Objekttyp
+6106	
+6107	
+6108	
+6109	
+6110	Vorhandene Anzahl
+6111	Gewicht
+6112	
+6113	
+6114	
+6115	
+6116	
+6117	
+6118	
+6119	
+6120	FP-Kosten
+6121	Verw. Plätze
+6122	
+6123	
+6124	
+6125	
+6126	
+6127	
+6128	
+6129	
+6130	Angriffskraft
+6131	
+6132	
+6133	
+6134	
+6135	
+6136	
+6137	
+6138	
+6139	
+6140	Abwehr-Schadensresistenz
+6170	Schadensresistenz
+6171	
+6172	
+6173	
+6174	
+6175	
+6176	
+6177	
+6178	
+6179	
+6180	Resistenz
+6181	
+6182	
+6183	
+6184	
+6185	
+6186	
+6187	
+6188	
+6189	
+6190	Erhaltreihenfolge
+10100	Name
+10101	Körpertyp
+10102	Ursprung
+10103	Andenken
+10200	Stufe
+10201	Vorhandene Runen
+10202	Runen benötigt
+10203	
+10204	Große Runen
+10300	
+10301	Alter
+10400	Kraft
+10401	Kondition
+10402	Geist
+10403	Stärke
+10404	Geschick
+10405	
+10406	Weisheit
+10407	Glaube
+10408	
+10409	Arkanenergie
+10500	LP
+10501	FP
+10502	Ausdauer
+10503	
+10504	
+10505	
+10506	
+10507	
+10508	
+10509	
+10510	Ausr.-Gewicht
+10511	
+10512	Max. Ausr.-Gew.
+10513	Kl. Last
+10514	Mitt. Last
+10515	Gr. Last
+10516	Überladen
+10517	
+10518	
+10519	
+10520	Waffe R 1
+10521	Waffe R 2
+10522	Waffe R 3
+10523	Waffe L 1
+10524	Waffe L 2
+10525	Waffe L 3
+10526	
+10527	
+10528	
+10529	
+10530	Körperlich
+10531	VS Schlag
+10532	VS Schnitt
+10533	VS Stich
+10534	Magisch
+10535	Feuer
+10536	Blitz
+10537	Heilig
+10538	
+10539	
+10540	Immunität
+10541	Robustheit
+10542	Fokus
+10543	Lebenskraft
+10561	Speicherplätze
+10562	Entdeckung
+10563	
+10564	
+10565	
+10566	
+10567	
+10568	
+10569	
+10570	Gleichgewicht
+11001	Waffenkategorie
+11002	Zaubertyp
+11003	Angriffsaffinität
+11004	Im Inventar
+11005	Im Lager
+11006	Talent
+11007	Im Besitz
+11008	
+11009	Behälter
+11010	Körperlich
+11011	Magisch
+11012	Feuer
+11013	Blitz
+11014	Heilig
+11015	
+11016	
+11017	
+11018	
+11019	
+11020	Körperlich
+11021	Magisch
+11022	Feuer
+11023	Blitz
+11024	Heilig
+11025	
+11026	
+11027	
+11028	
+11029	
+11030	Kritisch
+11031	Abwehrbonus
+11032	Reichweite
+11033	
+11034	FP-Kosten
+11035	Zaub.-Skal.
+11036	Anruf.-Skal.
+11037	
+11038	
+11039	
+11040	Verw. Plätze
+11041	FP-Kosten
+11042	FP-Kosten
+11043	LP-Kosten
+11180	Körperlich
+11181	VS Schlag
+11182	VS Schnitt
+11183	VS Stich
+11184	Magisch
+11185	Feuer
+11186	Blitz
+11187	Heilig
+11188	
+11189	
+11190	Immunität
+11191	Robustheit
+11192	Fokus
+11193	Lebenskraft
+11194	
+11195	
+11196	
+11197	
+11198	
+11199	
+11200	Gleichgewicht
+11300	STÄ
+11301	GES
+11302	WEI
+11303	GLA
+11304	ARK
+11305	
+11306	
+11307	
+11308	
+11309	
+11310	STÄ
+11311	GES
+11312	WEI
+11313	GLA
+11314	STÄ
+11315	GES
+11316	WEI
+11317	GLA
+11318	ARK
+11319	ARK
+11320	-
+11321	S
+11322	A
+11323	B
+11324	C
+11325	D
+11326	E
+11327	
+11328	
+11329	
+11330	Verbrauchsgut
+11331	Gebrauchsgut
+11351	Gewicht
+11352	
+11353	
+11354	
+11355	
+11356	
+11357	
+11358	
+11359	
+11360	Objekttyp
+11400	Behälter in Besitz
+12000	Benötigte Runen
+12001	
+12002	
+12003	
+12004	
+12005	
+12006	
+12007	
+12008	
+12009	
+12010	Angebotene Runen
+20000	Angriffskraft
+20001	Abwehr-Schadensresistenz
+20002	Nötige Attribute
+20003	Attributsskalierung
+20004	Passiveffekte
+20005	
+20006	Objekteffekt
+20007	Erhalten
+20008	Attributspunkte
+20009	Basiswerte
+20010	Verteid./Schad.-Res.
+20011	Verteidigungskraft
+20012	Schadensresistenz
+20013	Schutz
+20014	Körper
+20015	Abstammung
+20016	Ausrüstung
+20017	Resistenz
+20050	Schadensresistenz
+20051	Resistenz
+20100	Mischstatus
+20200	Nötige Werte
+30100	Charaktername
+30101	Körpertyp des Charakters
+30102	Ursprung des Charakters\nWelche verwinkelte Wege Euch hergeführt haben
+30103	Andenken des Charakters\nJeder Gedanke hat seinen eigenen Besitzer
+30200	Eine Gesamtsumme, die für den Wert aller Attribute steht.\nMit Runen könnt Ihr die Stufe steigern.
+30201	Gesamtzahl der Runen in Eurem Besitz.\nWenn Ihr sterbt, lasst Ihr alle Runen in Eurem Besitz am Ort Eures Todes fallen.
+30202	Die Anzahl der Runen, die für einen Stufenaufstieg benötigt werden.\nBeim Stufenaufstieg ist ein Attribut wählbar, das aufgewertet werden soll.
+30203	
+30204	Die Anzahl der großen Runen in Eurem Besitz.
+30301	Ungefähres Charakteralter
+30400	Dieses Attribut bestimmt Eure LP.\nBeeinflusst ebenfalls die Feuerresistenz und Immunität.
+30401	Dieses Attribut bestimmt Eure Ausdauer und Eure Robustheit.\nDas Attribut bestimmt ebenfalls, wie schwer Eure Ausrüstung sein darf.
+30402	Dieses Attribut bestimmt Eure FP und Euren Fokus.
+30403	Dieses Attribut ist für schwere Waffen erforderlich.\nVerstärkt ebenfalls die Angriffskraft von Waffen mit Stärkeskalierung und beeinflusst Eure körperliche Verteidigung.
+30404	Das nötige Attribut für komplexe Waffen.\nVerstärkt ebenfalls die Angriffskraft von Waffen mit Geschickskalierung, senkt Zauberzeit sowie Fallschaden und lässt Euch fester im Sattel sitzen.
+30405	
+30406	Dieses Attribut ist für Schimmersteinzauberei erforderlich.\nEs verstärkt außerdem die magische Kraft von Zaubereien mit Weisheitsskalierung und erhöht Eure Magieresistenz.
+30407	Dieses Attribut ist für heilige Anrufungen erforderlich. Verstärkt außerdem die magische Kraft von Anrufungen mit Glaubensskalierung.
+30408	
+30409	Dieses Attribut ist für Entdeckungen erforderlich.\nEs beeinflusst außerdem Eure Resistenz gegen Heiligschaden, Eure Lebenskraft sowie bestimmte Zaubereien und Anrufungen.
+30500	Euer Leben. Fällt der Wert auf Null, sterbt Ihr.\nUm Euer Leben zu regenerieren, könnt Ihr aus der Flasche mit Purpurtränen trinken oder an Orten der Gnade rasten.
+30501	Diese Energie verbraucht Ihr durch den Einsatz von Zaubern und Talenten.\nUm Energie zu regenerieren, könnt Ihr aus der Flasche mit Himmelstränen trinken oder an Orten der Gnade rasten.
+30502	Für diverse Aktionen benötigt.\nWird dabei verbraucht und automatisch regeneriert.
+30503	
+30504	
+30505	
+30506	
+30507	
+30508	
+30509	
+30510	Das Gesamtgewicht ausgerüsteter Waffen und Rüstung. Je größer das Gewicht, umso langsamer Eure Bewegungen.\nWird das maximale Ausrüstungsgewicht ganz rechts überschritten, bewegt Ihr Euch extrem langsam.
+30511	
+30512	Max. Gewicht ausrüstbarer Waffen und Rüstung. Je höher die Last, umso langsamer Eure Bewegungen. Wird diese Zahl überschritten, ist Euer Tempo extrem langsam.
+30513	
+30514	
+30515	
+30516	
+30517	
+30518	
+30519	
+30520	Die Angriffskraft der Waffe, die in Platz 1 für die rechte Hand ausgerüstet ist.
+30521	Die Angriffskraft der Waffe, die in Platz 2 für die rechte Hand ausgerüstet ist.
+30522	Die Angriffskraft der Waffe, die in Platz 3 für die rechte Hand ausgerüstet ist.
+30523	Die Angriffskraft der Waffe, die in Platz 1 für die linke Hand ausgerüstet ist.
+30524	Die Angriffskraft der Waffe, die in Platz 2 für die linke Hand ausgerüstet ist.
+30525	Die Angriffskraft der Waffe, die in Platz 3 für die linke Hand ausgerüstet ist.
+30526	
+30527	
+30528	
+30529	
+30530	Eure Fähigkeit, körperlichen Standardschaden zu ertragen.
+30531	Eure Fähigkeit, körperlichen Schaden durch Schläge zu ertragen.
+30532	Eure Fähigkeit, körperlichen Schaden durch Schnitte zu ertragen.
+30533	Eure Fähigkeit, körperlichen Schaden durchbohrender Stiche zu ertragen.
+30534	Eure Fähigkeit, Magieschaden zu ertragen.
+30535	Eure Fähigkeit, Feuerschaden zu ertragen.
+30536	Eure Fähigkeit, Blitzschaden zu ertragen.
+30537	Eure Fähigkeit, Heiligschaden zu ertragen.
+30538	
+30539	
+30540	Die Fähigkeit des Körpers, verschiedenen Giften und Fäulnis zu trotzen.\nJe höher der Wert, desto weniger anfällig seid Ihr für solche Übel.
+30541	Eure Fähigkeit, Blutverlust und Frost zu trotzen.\nJe höher der Wert, desto weniger anfällig seid Ihr für solche Übel.
+30542	Eure Fähigkeit, Schlaf und Wahnsinn zu trotzen.\nJe höher der Wert, desto weniger anfällig seid Ihr.
+30543	Die Fähigkeit, dem Tod zu trotzen.\nJe höher der Wert, desto geringer die Chance auf sofortigen Tod durch eine volle Todesanzeige.
+30561	Die Anzahl der verfügbaren Plätze für Zaubereien und Anrufungen, die Ihr lernen könnt.
+30562	Fundwahrscheinlichkeit von Objekten an toten Gegnern.
+30563	
+30564	
+30565	
+30566	
+30567	
+30568	
+30569	
+30570	Eure Widerstandskraft gegen feindliche Angriffe, bevor Ihr unter ihrer Wucht zusammenbrecht.
+30571	
+30572	
+30573	
+30574	
+30575	
+30576	
+30577	
+30578	
+30579	
+30580	Eure Verteidigungskraft und Schadensresistenz gegen körperliche Standardangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30581	Eure Verteidigungskraft und Schadensresistenz gegen körperliche Schlagangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30582	Eure Verteidigungskraft und Schadensresistenz gegen körperliche Schnittangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30583	Eure Verteidigungskraft und Schadensresistenz gegen körperliche Stichangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30584	Eure Verteidigungskraft und Schadensresistenz gegen magische Angriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30585	Eure Verteidigungskraft und Schadensresistenz gegen Feuerangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30586	Eure Verteidigungskraft und Schadensresistenz gegen Blitzangriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30587	Eure Verteidigungskraft und Schadensresistenz gegen heilige Angriffe. Attribute bestimmen die Verteidigungskraft und schützende Ausrüstung sowie jegliche zusätzliche Effekte die Resistenz.
+30588	
+30589	
+30590	Eure Resistenz gegen Gifte und Fäulnis. Je höher der Wert, desto weniger anfällig seid Ihr.\nWird von Euren Attributen, schützender Ausrüstung und jeglichen zusätzlichen Effekten bestimmt.
+30591	Eure Resistenz gegen Blutverlust und Frost. Je höher der Wert, desto weniger anfällig seid Ihr.\nWird von Euren Attributen, schützender Ausrüstung und jeglichen zusätzlichen Effekten bestimmt.
+30592	Eure Resistenz gegen Schlaf und Wahnsinn. Je höher der Wert, desto weniger anfällig seid Ihr.\nWird von Euren Attributen, schützender Ausrüstung und jeglichen zusätzlichen Effekten bestimmt.
+30593	Eure Resistenz gegen Tod. Je höher der Wert, desto weniger anfällig seid Ihr für sofortigen Tod.\nWird von Euren Attributen, schützender Ausrüstung und jeglichen zusätzlichen Effekten bestimmt.
+31001	Waffenkategorie.\nWaffen einer Kategorie zeigen ähnliche Eigenschaften.
+31002	Zaubereien und Anrufungen.
+31003	Die körperlichen Schadenstypen, die diese Waffe verursacht. \nNeben körperlichem Standardschaden könnt Ihr auch Schlag-, Schnitt- und Stichschaden (durchbohrend) zufügen.
+31004	Derzeit vorhandene Objektanzahl.\nDie Zahl ganz rechts zeigt an, wie viel Ihr maximal gleichzeitig haben dürft.
+31005	Derzeit in der Truhe gelagerte Objektanzahl.\nDie Zahl ganz rechts zeigt an, wie viel Ihr maximal gleichzeitig haben dürft.
+31006	Die Namen der Talente, die Ihr verwenden könnt.\nDie Verwendung der meisten Talente verbraucht FP.
+31007	Anzahl der Gefäße im Besitz.
+31008	Gefäßobjekte zur Herstellung gibt es in verschiedenen Formen wie gesprungenen Töpfen und Parfümflaschen.\nDie linke Zahl zeigt an, wie viele Gefäße momentan in Benutzung sind. Die rechte Zahl zeigt an, wie viele Gefäße Ihr besitzt.
+31009	Anzahl für die Herstellung verbleibender Gefäße.
+31010	Körperliche Angriffskraft
+31011	Magische Angriffskraft
+31012	Feuer-Angriffskraft
+31013	Blitz-Angriffskraft
+31014	Heiligangriffskraft
+31015	
+31016	
+31017	
+31018	
+31019	
+31020	Der Grad, um den sich körperlicher Schaden durch Abwehren reduziert.
+31021	Der Grad, um den sich Magieschaden durch Abwehren reduziert.
+31022	Der Grad, um den sich Feuerschaden durch Abwehren reduziert.
+31023	Der Grad, um den sich Blitzschaden durch Abwehren reduziert.
+31024	Der Grad, um den sich Heiligschaden durch Abwehren reduziert.
+31025	
+31026	
+31027	
+31028	
+31029	
+31030	Die Stärke von kritischen Treffern, die Ihr bei Gegnern landen könnt, wenn Ihr sie von hinten angreift oder ihre Haltung gebrochen ist.
+31031	Stabilität der Verteidigung.\nJe höher der Wert, umso weniger Ausdauer muss beim Abwehren von Angriffen verbraucht werden.
+31032	Distanz von Fernwaffen
+31033	
+31034	Die Anzahl der FP, die für den Einsatz dieses Talents benötigt werden.
+31035	Der Grad, um den Zaubereien an Macht gewinnen.
+31036	Der Grad, um den Anrufungen an Macht gewinnen.
+31037	
+31038	
+31039	
+31040	Die Anzahl der benötigten Plätze, um Zaubereien und Anrufungen lernen zu können.
+31041	Die Anzahl der FP, die für den Einsatz dieses Zaubers benötigt werden.
+31042	Die Anzahl der FP, die für den Einsatz dieses Objekts benötigt werden.
+31043	Die nötige Menge an LP, um dieses Objekt zu verwenden.
+31180	Der Grad, um den sich erlittener körperlicher Standardschaden reduziert.
+31181	Der Grad, um den sich erlittener körperlicher Schlagschaden reduziert.
+31182	Der Grad, um den sich erlittener körperlicher Schnittschaden reduziert.
+31183	Der Grad, um den sich erlittener körperlicher Stichschaden reduziert.
+31184	Der Grad, um den sich erlittener Magieschaden reduziert.
+31185	Der Grad, um den sich erlittener Feuerschaden reduziert.
+31186	Der Grad, um den sich erlittener Blitzschaden reduziert.
+31187	Der Grad, um den sich erlittener Heiligschaden reduziert.
+31188	
+31189	
+31190	Resistenz der Rüstung gegen verschiedene Gifte und Fäulnis.\nJe höher der Wert, desto geringer die Anfälligkeit für solche Übel.
+31191	Resistenz der Rüstung gegen Blutverlust und Frost.\nJe höher der Wert, desto geringer die Anfälligkeit für solche Übel.
+31192	Resistenz der Rüstung gegen Schlaf und Wahnsinn.\nJe höher der Wert, desto geringer die Anfälligkeit für solche Übel.
+31193	Die Resistenz Eurer Rüstung gegen Tod.\nJe höher der Wert, desto weniger anfällig seid Ihr für den sofortigen Tod.
+31194	
+31195	
+31196	
+31197	
+31198	
+31199	
+31200	Eure Widerstandskraft gegen feindliche Angriffe, bevor Ihr unter ihrer Wucht zusammenbrecht.
+31300	Diese Waffe zu meistern erfordert Stärke.\nOhne ausreichende Stärke verursacht diese Waffe deutlich weniger Schaden.
+31301	Diese Waffe zu meistern erfordert Geschick.\nOhne ausreichendes Geschick verursacht diese Waffe deutlich weniger Schaden.
+31302	Diese Waffe zu meistern erfordert Weisheit.\nOhne ausreichende Weisheit verursacht diese Waffe deutlich weniger Schaden.
+31303	Diese Waffe zu meistern erfordert Glaube.\nOhne ausreichenden Glauben verursacht diese Waffe deutlich weniger Schaden.
+31304	Diese Waffe zu meistern erfordert Arkanenergie.\nOhne ausreichende Arkanenergie verursacht diese Waffe deutlich weniger Schaden.
+31305	
+31306	
+31307	Weisheit ist erforderlich, um diese Zauberei oder Anrufung einzusetzen.\nOhne ausreichende Weisheit könnt Ihr sie nicht verwenden.
+31308	Glaube ist erforderlich, um diese Zauberei oder Anrufung einzusetzen.\nOhne ausreichenden Glauben könnt Ihr sie nicht verwenden.
+31309	Arkanenergie ist erforderlich, um diese Zauberei oder Anrufung einzusetzen.\nOhne ausreichende Arkanenergie könnt Ihr sie nicht verwenden.
+31310	Der Skalierungsgrad, mit dem sich der Angriff dieser Waffe durch steigende Stärke erhöht.
+31311	Der Skalierungsgrad, mit dem sich der Angriff dieser Waffe durch steigendes Geschick erhöht.
+31312	Der Skalierungsgrad, mit dem sich der Angriff dieser Waffe durch steigende Weisheit erhöht.
+31313	Der Skalierungsgrad, mit dem sich der Angriff dieser Waffe durch steigenden Glauben erhöht.\n
+31314	Der Skalierungsgrad, mit dem sich die Kraft oder passiven Effekte dieser Waffe durch steigende Stärke erhöhen.
+31315	Der Skalierungsgrad, mit dem sich die Kraft oder passiven Effekte dieser Waffe durch steigendes Geschick erhöhen.
+31316	Der Skalierungsgrad, mit dem sich die Kraft oder passiven Effekte dieser Waffe durch steigende Weisheit erhöhen.
+31317	Der Skalierungsgrad, mit dem sich die Kraft oder passive Effekte dieser Waffe durch steigenden Glauben erhöhen.
+31318	Der Skalierungsgrad, mit dem sich die Kraft oder passive Effekte dieser Waffe durch steigende Arkanenergie erhöhen.
+31319	Der Skalierungsgrad, mit dem sich der Angriff dieser Waffe durch steigende Arkanenergie erhöht.
+31351	Gewicht dieser Ausrüstung.
+31352	
+31353	
+31354	
+31355	
+31356	
+31357	
+31358	
+31359	
+31360	Objekttyp\nZeigt an, ob das Objekt bei Verwendung verbraucht wird.
+31500	Die natürlichen Effekte dieser Waffe.
+31511	Durch diese Kriegsasche gewährtes Talent.
+31512	Waffentypen, die diese Kriegsasche ändern kann.
+31513	Affinität, die diese Kriegsasche gewähren kann.\nKann mit Schleifmessern erweitert werden.
+32000	Der Kaufpreis in Runen
+32001	Anzahl der für eine Aufwertung nötige Runen.
+32002	Anzahl der zur Gewährung nötige Runen.
+32003	
+32004	Die Anzahl der Runen, die Ihr benötigt, um Kräfte aus Echos zu empfangen.
+32005	
+32006	
+32007	
+32008	
+32009	
+32010	Der Verkaufspreis in Runen
+40110	Bestätigen
+40111	
+40112	
+40113	
+40114	
+40115	
+40116	
+40117	
+40118	
+40119	
+40120	Keine Eingabe
+40300	An
+40301	Aus
+40302	Gering
+40303	Auto
+40304	
+40305	
+40306	
+40307	
+40308	
+40309	
+40310	Normal
+40311	Umgekehrt
+40312	
+40313	
+40314	
+40315	
+40316	
+40317	
+40318	
+40319	
+40320	Erlaubt
+40321	Eingeschränkt
+40322	
+40323	
+40324	
+40325	
+40326	
+40327	
+40328	
+40329	
+40330	Standard
+40331	Weiter
+40332	
+40333	
+40334	
+40335	
+40336	
+40337	
+40338	
+40339	
+40340	Spielersuche ausführen
+40341	Keine Spielersuche
+40342	
+40343	
+40344	
+40345	
+40346	
+40347	
+40348	
+40349	
+40350	Kein Passwort
+40351	
+40352	
+40353	
+40354	
+40355	
+40356	
+40357	
+40358	
+40359	
+40360	Online-Spiel
+40361	Offline-Spiel
+40362	
+40363	
+40364	
+40365	
+40366	
+40367	
+40368	
+40369	
+40370	Deaktivieren
+40371	Aktivieren
+40372	
+40373	
+40374	
+40375	Zustimmen
+40376	Ablehnen
+40377	Qualität priorisieren
+40378	Bildrate priorisieren
+40379	
+40380	Gamepad
+40381	Tastatur und Maus
+40400	Vollbild
+40401	Fenstermodus
+40402	Fenster, randlos
+40403	
+40404	
+40405	
+40406	
+40407	
+40408	
+40409	
+40410	x
+40411	
+40412	
+40413	
+40414	
+40415	
+40416	
+40417	
+40418	
+40419	
+40420	Angepasst
+40421	Niedrig
+40422	Mittel
+40423	Hoch
+40424	Maximum
+40440	An
+40441	Aus
+40500	Werkzeuge
+40501	Nahkampfwaffen
+40502	
+40503	
+40504	Schilde
+40505	Kopf
+40506	Brust
+40507	Arme
+40508	Beine
+40509	Talismane
+40510	Zaubereien/Anrufungen
+40511	Pfeile/Bolzen
+40512	Verstärkungsmaterialien
+40513	Schlüsselobjekte
+40514	
+40515	
+40516	Herstellungsmaterialien
+40517	Info
+40518	Kristalltränen
+40519	Fernwaffen/Katalysatoren
+40520	Asche
+40521	Zaubereien
+40522	Anrufungen
+40523	Kriegsasche
+40524	
+40525	
+40526	
+40527	
+40528	
+40529	
+40530	Ausgerüstete Waffen
+40531	Ausgerüstete Asche
+40532	Ausgerüstete Waffen
+40550	Waffen
+40551	Rüstung
+40552	
+40553	
+40554	
+40555	
+40556	
+40557	
+40558	
+40559	
+40560	Alle Objekte
+40561	
+40562	Verbrauchsgüter
+40563	
+40564	
+40565	
+40566	
+40567	
+40568	
+40569	
+40570	
+40571	Wurftöpfe
+40572	Parfümkunst
+40573	
+40574	
+40575	
+40576	
+40577	
+40578	
+40579	
+40580	Asche
+40581	Spezialasche
+40582	
+40583	
+40584	
+40585	
+40586	
+40587	
+40588	
+40589	
+40590	Zaubereien/Anrufungen
+40591	Offensive Zaubereien
+40592	Stärkende Zaubereien
+40593	Offensive Anrufungen
+40594	Stärkende Anrufungen
+40595	
+40596	
+40597	
+40598	
+40599	
+40600	
+40601	
+40602	Charakterstatus
+50000	Keine
+50001	
+50002	
+50003	
+50004	
+50005	Standard
+50050	Schlag
+50051	
+50052	
+50053	
+50054	
+50055	Standard/Schlag
+50500	Schnitt
+50501	
+50502	
+50503	
+50504	
+50505	Standard/Schnitt
+50550	Schlag/Schnitt
+50551	
+50552	
+50553	
+50554	
+50555	Standard/Schlag/Schnitt
+55000	Stich
+55001	
+55002	
+55003	
+55004	
+55005	Standard/Stich
+55050	Schlag/Stich
+55051	
+55052	
+55053	
+55054	
+55055	Standard/Schlag/Stich
+55500	Schnitt/Stich
+55501	
+55502	
+55503	
+55504	
+55505	Standard/Schnitt/Stich
+55550	Schlag/Schnitt/Stich
+55551	
+55552	
+55553	
+55554	
+55555	Standard/Schlag/Schnitt/Stich
+60000	Alle Waffen
+60001	,  
+60002	
+60003	
+60004	
+60005	
+60006	
+60007	
+60008	
+60009	
+60010	Dolch
+60011	
+60012	
+60013	
+60014	
+60015	Gerades Schwert
+60016	
+60017	
+60018	
+60019	
+60020	Großschwert
+60021	
+60022	
+60023	
+60024	
+60025	Riesenschwert
+60026	
+60027	
+60028	
+60029	
+60030	Krummschwert
+60031	
+60032	
+60033	
+60034	
+60035	Krummes Großschwert
+60036	
+60037	
+60038	
+60039	
+60040	Katana
+60041	
+60042	
+60043	Doppelklinge
+60044	
+60045	Stoßschwert
+60046	Schweres Stoßschwert
+60047	
+60048	
+60049	
+60050	Axt
+60051	
+60052	
+60053	
+60054	
+60055	Großaxt
+60056	
+60057	
+60058	
+60059	
+60060	Hammer
+60061	
+60062	
+60063	
+60064	
+60065	Kriegshammer
+60066	
+60067	Flegel
+60068	
+60069	
+60070	Speer
+60071	
+60072	
+60073	
+60074	
+60075	
+60076	
+60077	Großer Speer
+60078	
+60079	
+60080	Hellebarde
+60081	
+60082	
+60083	
+60084	
+60085	Schnitter
+60086	
+60087	
+60088	
+60089	
+60090	Faust
+60091	
+60092	
+60093	
+60094	
+60095	
+60096	
+60097	
+60098	
+60099	
+60100	Kralle
+60101	
+60102	Gigantische Waffe
+60103	
+60104	Leichter Bogen
+60105	Bogen
+60106	
+60107	
+60108	
+60109	
+60110	Großbogen
+60111	
+60112	
+60113	
+60114	
+60115	Armbrust
+60116	
+60117	Balliste
+60118	
+60119	
+60120	Schimmersteinstab
+60121	
+60122	
+60123	
+60124	
+60125	
+60126	
+60127	
+60128	
+60129	
+60130	Heiliges Siegel
+60131	
+60132	
+60133	
+60134	
+60135	
+60136	
+60137	
+60138	
+60139	
+60140	Kleiner Schild
+60141	
+60142	
+60143	
+60144	
+60145	Mittlerer Schild
+60146	
+60147	
+60148	
+60149	
+60150	Großschild
+60151	
+60152	
+60153	
+60154	
+60155	Peitsche
+60156	
+60157	
+60158	
+60159	
+60160	Pfeil
+60161	
+60162	
+60163	
+60164	
+60165	Großpfeil
+60166	
+60167	
+60168	
+60169	
+60170	Bolzen
+60171	Großbolzen
+60172	
+60173	
+60174	
+60175	Fackel
+61000	Zauberei
+61001	
+61002	Anrufung
+62000	Standard
+62001	Schwer
+62002	Solide
+62003	Wertig
+62004	Feurig
+62005	Flammend
+62006	Blitzend
+62007	Heilig
+62008	Magisch
+62009	Okkult
+62010	Eisig
+62011	Giftig
+62012	Blutig
+63000	Zur Verwendung mit Schwertern, Äxten und Hämmern (außer mit kleinen Waffen und Stoßschwertern).
+63001	Zur Verwendung mit mittelgroßen und großen Stoßwaffen.
+63002	Zur Verwendung mit Schwertern, Äxten und Stangenwaffen (außer mit gigantischen Waffen).
+63003	Zur Verwendung mit Schwertern, Äxten und Hämmern (außer mit kleinen und mittelgroßen Schwertern).
+63004	Zur Verwendung mit durchbohrenden Waffen (außer mit gigantischen Waffen).
+63005	Zur Verwendung mit Äxten, Hämmern, Krummschwertern, Großschwertern und Schnittern (außer mit gigantischen Waffen).
+63006	Zur Verwendung mit Schnittschwertern und Stangenschnittwaffen (außer mit gigantischen Waffen).
+63007	Zur Verwendung mit großen und gigantischen Äxten und Hämmern.
+63008	Zur Verwendung mit Katanas.
+63009	Zur Verwendung mit geraden Schwertern.
+63010	Zur Verwendung mit großen und gigantischen durchbohrenden Waffen, Speeren und Doppelklingen.
+63011	Zur Verwendung mit kleinen und mittelgroßen Schwertern (außer mit Doppelklingen).
+63012	Zur Verwendung mit kleinen und mittelgroßen Schwerten, Hämmern, Äxten, Stangenwaffen und Stäben (außer mit großen Speeren).
+63013	Zur Verwendung mit Stangenstoßwaffen, schweren Stoßschwertern und Doppelklingen.
+63014	Zur Verwendung mit Schnittschwertern, Hämmern, Äxten und Stangenwaffen (außer mit kleinen und gigantischen Waffen).
+63015	Zur Verwendung mit Schnittschwertern, Äxten und Stangenschnittwaffen (außer mit gigantischen Waffen und großen Speeren).
+63016	Zur Verwendung mit Stangenstoßwaffen und Doppelklingen.
+63017	Zur Verwendung mit Fäusten und Krallen.
+63018	Zur Verwendung mit Äxten und Hämmern.
+63019	Zur Verwendung mit Nahkampfwaffen (außer mit kleinen Waffen und Peitschen).
+63020	Zur Verwendung mit Schwertern (außer mit gigantischen Waffen und Doppelklingen).
+63021	Zur Verwendung mit Schwertern, Äxten und Hämmern.
+63022	Zur Verwendung mit Schwertern (außer mit gigantischen Waffen).
+63023	Zur Verwendung mit Schwertern und Äxten (außer mit kleinen und gigantischen Äxten).
+63024	Zur Verwendung mit Stangenwaffen und Doppelklingen.
+63025	Zur Verwendung mit Stangenwaffen (außer mit großen Speeren).
+63026	Zur Verwendung mit kleinen und mittelgroßen Schwertern.
+63027	Zur Verwendung mit Stangenwaffen und Doppelklingen (außer mit großen Speeren).
+63028	Zur Verwendung mit Stangenwaffen (außer mit Schnittern).
+63029	Zur Verwendung mit kleinen Nahkampfwaffen und Krummschwertern.
+63030	Zur Verwendung mit kleinen und mittleren Schilden.
+63031	Zur Verwendung mit Schilden und Fackeln.
+63032	Zur Verwendung mit Großbögen.
+63033	Zur Verwendung mit leichten Bögen und Langbögen.
+63034	Zur Verwendung mit allen Bögen.
+63035	Zur Verwendung mit Großäxten, Kriegshämmern und gigantischen Waffen.
+63036	Zur Verwendung mit kleinen und mittelgroßen geraden Schwertern und Stoßschwertern.
+63037	Zur Verwendung mit Schwertern und Stangenstoßwaffen (außer mit gigantischen Waffen).
+63038	Zur Verwendung mit Nahkampfwaffen (außer mit Peitschen).
+63039	Zur Verwendung mit großen Schwertern, Riesenschwertern, Äxten und Hämmern.
+63040	Zur Verwendung mit Nahkampfwaffen (außer mit Dolchen, Stoßschwertern und Peitschen).
+63041	Zur Verwendung bei allen Schilden.
+63042	Zur Verwendung mit allen Nahkampfwaffen.
+63043	Zur Verwendung mit Äxten, Hämmern, Krummschwertern und Großschwertern (außer mit gigantischen Waffen).
+63044	Zur Verwendung mit Nahkampfwaffen (außer mit Peitschen, Fäusten und Krallen).
+63045	Zur Verwendung mit Nahkampfwaffen (außer mit gigantischen Waffen und Peitschen).
+63046	Zur Verwendung mit Schwertern und Stangenstoßwaffen (außer mit kleinen und gigantischen Waffen).
+63047	Zur Verwendung mit Dolchen, Krummschwertern, Stoßschwertern, Fäusten, Krallen und kleinen und mittleren Schilden.
+63048	Zur Verwendung mit leichten Bögen.
+63049	Zur Verwendung mit Schwertern und Äxten (außer mit gigantischen Äxten).
+63050	Zur Verwendung mit Großäxten, Kriegshämmern, großen Speeren und gigantischen Waffen.
+63900	Zur Verwendung bei großen Stoßwaffen.
+63901	Zur Verwendung bei allen Stoßwaffen.
+63902	Sturmschleier
+63903	Zur Verwendung bei allen Nahkampfwaffen.
+63904	Zur Verwendung bei großen Nahkampfwaffen.
+63905	Orte
+63906	Hochstraße
+80000	Gespr. Topf
+80001	Parfümflasche
+80002	
+80003	
+80004	
+80005	
+80006	
+80007	
+80008	
+80009	
+80010	Ritualtopf
+90000	Morgen
+90001	Früh am Tag
+90002	Spät am Tag
+90003	Abend
+90004	Nacht
+90005	Spät in der Nacht
+101000	Ausrüstung
+101001	Inventar
+101002	Status
+101003	System
+101004	Nachrichten
+101005	Beutel
+101006	
+101007	Gesten
+101008	Mehrspieler
+101009	Objektherstellung
+103000	Waffe rechts 1
+103001	Waffe rechts 2
+103002	Waffe rechts 3
+103003	
+103004	
+103005	
+103006	
+103007	
+103008	
+103009	
+103010	
+103011	Waffe links 1
+103012	Waffe links 2
+103013	Waffe links 3
+103014	
+103015	
+103016	
+103017	
+103018	
+103019	
+103020	Pfeile 1
+103021	Pfeile 2
+103022	
+103023	
+103024	
+103025	
+103026	
+103027	
+103028	
+103029	
+103030	Bolzen 1
+103031	Bolzen 2
+103032	
+103033	
+103034	
+103035	
+103036	
+103037	
+103038	
+103039	
+103040	Schnellobjekt 1
+103041	Schnellobjekt 2
+103042	Schnellobjekt 3
+103043	Schnellobjekt 4
+103044	Schnellobjekt 5
+103045	Schnellobjekt 6
+103046	Schnellobjekt 7
+103047	Schnellobjekt 8
+103048	Schnellobjekt 9
+103049	Schnellobjekt 10
+103050	Talisman 1
+103051	Talisman 2
+103052	Talisman 3
+103053	Talisman 4
+103054	
+103055	
+103056	
+103057	
+103058	
+103059	
+103060	Beutel 1
+103061	Beutel 2
+103062	Beutel 3
+103063	Beutel 4
+103064	Beutel 5
+103065	Beutel 6
+103066	
+103067	
+103068	
+103069	
+103070	Geste 1
+103071	Geste 2
+103072	Geste 3
+103073	Geste 4
+103074	Geste 5
+103075	Geste 6
+110000	Spieloptionen
+110001	Kameraoptionen
+110002	
+110003	
+110004	
+110005	
+110006	
+110007	
+110008	
+110009	
+110010	Kamera Y-Achse
+110011	Kamera X-Achse
+110012	Kamera Y-Achse rücks.
+110013	Kameratempo
+110014	Auto-Erfassen an/aus
+110015	Auto-Zielen
+110016	Mauervermeidung d. Kamera
+110017	
+110018	Sprungsteuerung
+110019	Manuelles Zielen
+110020	Leistungseinstellungen
+110021	Raytracing
+110100	Sound und Anzeige
+110101	
+110102	
+110103	
+110104	
+110105	
+110106	
+110107	
+110108	
+110109	
+110110	Blut anzeigen
+110111	Untertitel
+110112	HUD
+110113	Filmeffekte
+110114	Musik
+110115	Soundeffekte
+110116	Stimme
+110117	Gesamtlautstärke
+110118	Automatische Kamerarotation
+110200	Helligkeit
+110201	Helligkeit anpassen, bis das Bild rechts kaum zu sehen ist
+110202	Helligkeit anpassen
+110203	TV-Helligkeit auf Maximum einstellen
+110204	Sättigung anpassen
+110205	
+110206	
+110207	
+110208	
+110209	HDR
+110210	Helligkeit anpassen
+110211	Bildqualität anpassen
+110212	Max. Helligkeit
+110213	Sättigung anpassen
+110214	Helligkeit anpassen
+110300	Netzwerk
+110301	
+110302	
+110303	
+110304	
+110305	
+110306	
+110307	
+110308	
+110309	
+110310	Voice-Chat
+110311	Regionsübergr. Spiel
+110312	
+110313	Spielernamen anzeigen
+110314	Starteinstellung
+110315	Rufzeichen senden
+110316	Datennutzungsvereinbarung
+110500	Spiel beenden
+110501	
+110502	Stufe
+110503	
+110504	
+110505	
+110506	
+110507	
+110508	
+110509	
+110510	Spiel beenden
+110511	Zurück zum Desktop
+111001	Steuerung
+111002	
+111003	
+111004	
+111005	Tastatur-/Maus-Einstellungen
+111006	Steuerung
+111007	
+111008	
+111009	
+111010	Gerät für Bildschirmaufford.
+111011	Tutorials anzeigen
+111012	
+111013	
+111014	
+111015	
+111016	
+111017	
+111018	
+111019	
+111020	Maussensitivität
+111021	
+111022	X-Achse Maus
+111023	Y-Achse Maus
+111024	
+111025	
+111026	
+111027	
+111028	
+111029	
+111030	
+111031	Tastenbelegung
+111100	Grafik
+111101	
+111102	
+111103	
+111104	
+111105	Änderungen wirksam bei Rückkehr zum Titelbildschirm
+111106	
+111107	
+111108	
+111109	
+111110	Bildschirmmodus
+111111	Auflösung
+111112	Beste Rendering-Option autom. erkennen
+111113	Qualitätseinstellungen
+111114	Erweiterte Einstellungen
+111210	Texturqualität
+111211	Antialiasing-Qualität
+111212	SSAO
+111213	Schärfentiefe
+111214	Bewegungsverzerrung
+111215	Schattenqualität
+111216	Beleuchtungsqualität
+111217	Effektqualität
+111218	Volumetrische Qualität
+111219	Reflexionsqualität
+111220	Wasseroberflächenqualität
+111221	Shaderqualität
+111222	Raytracing-Qualität
+111223	Globale Beleuchtungsqualität
+111224	Grasqualität
+121000	Mehrspieler-Passwort-Einstellung
+121001	Gruppenpasswort-Einstellung
+121002	
+121003	
+121004	
+121005	
+121006	
+121007	
+121008	
+121009	
+121010	Wenn Ihr ein Mehrspieler-Passwort festlegt, werdet Ihr bei den meisten Mehrspieler-Features nur jenen Spielern zugeordnet, die dasselbe Passwort verwenden.\n\nMehrspieler-Passwörter funktionieren allerdings nicht im Invasions- oder Unterstützer-Mehrspieler.
+121011	Wenn Ihr ein Gruppenpasswort festlegt, erhöht sich die Wahrscheinlichkeit, dass Ihr Nachrichten, Rufzeichen, Blutflecken und Phantome anderer Spieler seht, die dasselbe Passwort verwenden.\n\nElemente mit dieser Priorität sehen anders als der Rest aus.
+121100	Benutzt Krummfingermedizin, um Rufzeichen sichtbar zu machen und Spieler aus anderen Welten herbeirufen zu können.\n(Fingermedizin wird bei Verwendung verbraucht.)\n\nEs gibt verschiedene Rufzeichen.\nGold steht für Krummfinger-Gäste.\nRot steht für Duellanten.\n(In jedem dieser Mehrspielermodi wird der herbeirufende Spieler zum Wirt der Finger.)
+121101	Benutzt Krummfingermedizin, um Rufzeichen sichtbar zu machen und Spieler aus anderen Welten herbeirufen zu können.\n(Fingermedizin wird bei Verwendung verbraucht.)\n\nEs gibt verschiedene Rufzeichen.\nGold steht für Krummfinger-Gäste.\nRot steht für Duellanten.\n(In jedem dieser Mehrspielermodi wird der herbeirufende Spieler zum Wirt der Finger.)
+121102	Ihr könnt ein goldenes Rufzeichen hinterlassen, um den Koop-Mehrspielermodus zu spielen.\n\nDieses Zeichen erscheint in den Welten anderer Spieler und erlaubt es ihnen, Euch im Koop-Mehrspielermodus als Krummfinger herbeizurufen. \nWurdet Ihr herbeigerufen, beginnt der Mehrspielermodus.\n(Euer Ziel ist, dabei zu helfen, den Gebietsboss zu besiegen.)\n\nHinterlasst Ihr ein zweites Rufzeichen, verschwindet das ältere.
+121103	Ihr könnt ein goldenes Rufzeichen hinterlassen, um den Koop-Mehrspielermodus zu spielen.\n\nDieses Zeichen erscheint in den Welten anderer Spieler und erlaubt es ihnen, Euch im Koop-Mehrspielermodus als Krummfinger herbeizurufen.\nWurdet Ihr herbeigerufen, beginnt der Mehrspielermodus.\n(Euer Ziel ist, dabei zu helfen, den Gebietsboss zu besiegen.)\n\nHinterlasst Ihr ein zweites Rufzeichen, verschwindet das ältere.
+121104	Um im Wettkampf-Mehrspielermodus zu spielen, könnt Ihr ein rotes Rufzeichen platzieren.\n\nDas Zeichen erscheint dann in anderen Welten, damit Spieler Euch als Duellanten rufen können.\nSobald Ihr eintrefft, beginnt der Wettkampf-Mehrspielermodus.\n(Ihr müsst dann den Wirt der Finger besiegen.)\n\nPlatziert Ihr ein zweites Rufzeichen, verschwindet das alte.
+121105	Um im Wettkampf-Mehrspielermodus zu spielen, könnt Ihr ein rotes Rufzeichen platzieren.\n\nDas Zeichen erscheint dann in anderen Welten, damit Spieler Euch als Duellanten rufen können.\nSobald Ihr eintrefft, beginnt der Wettkampf-Mehrspielermodus.\n(Ihr müsst dann den Wirt der Finger besiegen.)\n\nPlatziert Ihr ein zweites Rufzeichen, verschwindet das alte.
+121106	Ihr könnt versuchen, in die Welten anderer Spieler einzufallen.\nGelingt es Euch, beginnt eine Mehrspielerinvasion, mit Euch als Blutigem Finger.\n(Euer Ziel ist, den Wirt der Finger zu besiegen.)\n\nPhantomfinger können als Objekte verwendet werden, um eine erneute Invasion in dieselbe Welt zu versuchen.\n(Phantomfinger werden bei Verwendung verbraucht.)
+121107	Invasion einer anderen Welt abbrechen
+121108	Wählt einen gerufenen Spieler aus, um ihn in seine Welt zurückzuschicken.\n\nDieser Spieler wird dann aus der Mehrspielersitzung entfernt.
+121109	Aus Mehrspielerpartie entfernt.\nRückkehr in die eigene Welt.
+121110	Lockt Eindringlinge an.\n\nSo kann eine Invasion Eurer Welt stattfinden, ohne dass ein Krummfinger-Gast anwesend ist, und die Zeit bis zu einer erneut möglichen Invasion wird verringert.\n\nAußerdem kann ein zweiter Eindringling einsteigen, wenn ein Gast anwesend ist.\n(Bei 2 Eindringlingen kann es maximal einen Koop-Gast geben.)
+121111	Keine Invasoren mehr in Eure Welt einladen.
+121112	Versetzt Euch in Bereitschaft, um auf einen Hilferuf einer anderen Welt antworten zu können.\nIhr werdet dann als Jäger in die Welt des Hilfesuchenden befördert.\n\nDer Mehrspielermodus beginnt, sobald Ihr herbeigerufen wurdet.\n(Euer Ziel ist es, Eindringlinge zu besiegen.)
+121113	Herbeirufungsgesuche ablehnen.
+121114	Ermöglicht es Euch, automatisch einen Jäger aus einer anderen Welt als Retter anzufordern, wenn ein Blutiger Finger in Eure Welt einfällt.\n\nIhr könnt dies auch nutzen, nachdem jemand in Eure Welt eingefallen ist, um einen Jäger zur Unterstützung zu rufen. \n(Unter bestimmten Umständen können Retter nicht herbeigerufen werden.)
+121115	Herbeirufungsgesuch abbrechen.
+121116	Sendet ein Koop-Rufzeichen an mehrere Herbeirufungsreserven (nur an aktivierte Reserven).\n\nWerdet Ihr gerufen, reist Ihr zu dieser Herbeirufungsreserve in der Welt des Spielerwirts und der Mehrspielermodus beginnt.\n(Euer Ziel ist, dabei zu helfen, den Gebietsboss zu besiegen.)
+121117	Koop-Rufzeichen aus Herbeirufungsreserve entfernen.
+121118	Sendet ein Wettkampf-Rufzeichen an mehrere Herbeirufungsreserven (nur an aktivierte Reserven).\n\nWerdet Ihr gerufen, reist Ihr zu dieser Herbeirufungsreserve in der Welt des Spielerwirts und der Mehrspielermodus beginnt.\n(Euer Ziel ist, den Wirt der Finger zu besiegen.)
+121119	Wettkampf-Rufzeichen aus Herbeirufungsreserve entfernen.
+121120	Ihr könnt versuchen, als Blutiger Finger in die Welten anderer Spieler einzufallen.\nGelingt es Euch, wird Euer Blutiger Eiterfinger verbraucht und eine Mehrspielerinvasion beginnt. \n(Euer Ziel ist, den Wirt der Finger zu besiegen.)\n\nBei Mehrspielerinvasionen lassen sich Phantomfinger als Objekte verwenden. Ihr könnt versuchen, noch einmal in eine Welt einzufallen, in der Ihr bereits wart. \n(Phantomfinger werden bei Verwendung verbraucht.)
+121121	Invasion einer anderen Welt stoppen.
+121122	Ihr könnt versuchen, als Rekusant in die Welten anderer Spieler einzufallen.\n\nGelingt es Euch, beginnt eine Mehrspielerinvasion.\n(Euer Ziel ist, den Wirt der Finger zu besiegen.)\n\nBei Mehrspielerinvasionen können Phantomfinger als Objekte verwendet werden, mithilfe derer Ihr noch einmal in eine Welt einfallen könnt.\n(Phantomfinger werden bei Verwendung verbraucht.)
+121123	Invasion einer anderen Welt stoppen.
+122010	Krummfingerrang
+122011	1.0
+122012	2.0
+122013	3.0
+122014	
+122015	
+122016	
+122017	
+122018	
+122019	
+122020	Duellantenrang
+122021	1.0
+122022	2.0
+122023	3.0
+122024	
+122025	
+122026	
+122027	
+122028	
+122029	
+122030	Blutiger Fingerrang
+122031	1.0
+122032	2.0
+122033	3.0
+122034	
+122035	
+122036	
+122037	
+122038	
+122039	
+122040	Rekusantenrang
+122041	1.0
+122042	2.0
+122043	3.0
+122044	
+122045	
+122046	
+122047	
+122048	
+122049	
+122050	Jägerrang
+122051	1.0
+122052	2.0
+122053	3.0
+122110	Beitrag
+123000	Mehrspieler-Passwort
+123001	Gruppenpasswort
+123002	
+123003	
+123004	
+123005	
+123006	
+123007	
+123008	
+123009	
+123010	Nicht festgelegt
+123011	Nicht festgelegt
+123012	
+123013	
+123014	
+123015	
+123016	
+123017	
+123018	
+123019	
+123020	Bitte das Mehrspieler-Passwort festlegen
+123021	Bitte das Gruppenpasswort festlegen
+123022	
+123023	
+123024	
+123025	
+123026	
+123027	
+123028	
+123029	
+123030	Passwort
+212000	Stufenaufstieg
+212750	Wiedergeburt
+213000	Schmied
+213001	Nötige Objekte
+213002	
+213003	
+213004	
+213005	
+213006	
+213007	
+213008	
+213009	
+213010	Schmiedetisch
+214000	Kriegsasche
+214020	Zu verbessern
+214021	
+214022	
+214023	
+214024	
+214025	
+214026	
+214027	
+214028	
+214029	
+214030	Affinität gewährt
+214110	Verbesserung entfernen
+215000	Große Runen
+216000	Geistereinstimmung
+216001	Nötige Objekte
+225000	Drachenkommunion
+225001	
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	Opfergaben
+225011	
+225012	
+225013	
+225014	
+225015	
+225016	
+225017	
+225018	
+225019	
+225020	Erforderlich (im Inventar)
+226000	Puppe
+226001	
+226002	
+226003	
+226004	
+226005	
+226006	
+226007	
+226008	
+226009	
+226010	Tauschen
+227000	Kriegsasche duplizieren
+227001	
+227002	
+227003	
+227004	
+227005	
+227006	
+227007	
+227008	
+227009	
+227010	Verbrauchsmaterial
+230000	Puppe
+230100	Echo duplizieren
+231000	Objekt kaufen
+231001	Benötigte Runen
+231002	
+231003	Limit
+231004	
+231005	
+231006	
+231007	
+231008	
+231009	
+231010	Zaubereianleitung
+231011	
+231012	
+231013	
+231014	
+231015	
+231016	
+231017	
+231018	
+231019	
+231020	Anrufungsanleitung
+231021	
+231022	
+231023	
+231024	
+231025	
+231026	
+231027	
+231028	
+231029	
+231030	Talentanleitung
+231500	Heldenausrüstung
+232000	Objekt verkaufen
+232001	Angebotene Runen
+233000	Zauber lernen
+233101	Speicherplätze
+233102	Leere Plätze
+233103	FP
+234020	----
+235000	Bitte teilt Eure Flaschennutzung auf.
+236000	Objektherstellung
+236001	Nötige Objekte
+236002	Erforderlich (im Inventar)
+236003	Hergestellte Objekte
+236200	Macht der Echos
+236201	
+236202	
+236203	
+236204	
+236205	
+236206	
+236207	
+236208	
+236209	
+236210	Nutzbare Echos
+236211	Erhaltene Macht
+236400	Kleidung anpassen
+236401	
+236402	
+236403	
+236404	
+236405	
+236406	
+236407	
+236408	
+236409	
+236410	Vor Anpassung
+236411	Nach Anpassung
+238000	Wundersame Arzneimischung
+241000	Karte
+241100	Markierungen
+241101	
+241102	
+241103	
+241104	
+241105	
+241106	
+241107	
+241108	
+241109	
+241110	Alle Markierungen entfernen
+241200	Orte der Gnade
+241201	
+241202	
+241203	
+241204	
+241205	
+241206	
+241207	
+241208	
+241209	
+241210	Markierte Orte der Gnade
+241300	Schloss Sturmschleier
+241301	Kapelle der Erwartung
+241302	Leyndell, Königliche Hauptstadt
+241303	Leyndell, Aschene Hauptstadt
+241304	Tafelrundfeste
+241305	Hauptarm der Ainsel
+241306	Fäulnissee
+241307	Ainsel
+241308	Nokron, die Ewige Stadt
+241309	Siofra
+241310	Tiefen von Tiefwurz
+241311	Mohgwyn-Palast
+241312	Zerfallendes Farum Azula
+241313	Akademie von Raya Lucaria
+241314	Miquellas Haligbaum
+241315	Elphael, Stütze des Haligbaums
+241316	Haus Vulkan
+241317	Friedhof der Gestrandeten
+241318	Steinplattform
+241319	Unterirdisches Reservat der Scham
+241320	Ruinenübersäter Abgrund
+241321	Limgrave
+241322	Sturmhügel
+241323	Halbinsel der Tränen
+241324	Liurnia das Seenland
+241325	Hochstraße von Bellum
+241326	Mondlichtaltar
+241327	Altus-Plateau
+241328	Gelmir
+241329	Außenbezirke der Hauptstadt
+241330	Verbotene Lande
+241331	Caelid
+241332	Greyolls Drachenhügel
+241333	Berggipfel der Riesen
+241334	Flammengipfel
+241335	Geweihtes Schneefeld
+241336	Sumpf von Aeonia
+241400	Tafelrundfeste
+241401	Schloss Sturmschleier
+241402	Leyndell, Königliche Hauptstadt
+241403	Zerfallendes Farum Azula
+241404	Akademie von Raya Lucaria
+241405	Miquellas Haligbaum
+241406	Haus Vulkan
+241407	Ainsel
+241408	Siofra
+241409	Tiefen von Tiefwurz
+241410	Limgrave
+241411	Liurnia das Seenland
+241412	Altus-Plateau
+241413	Caelid
+241414	Berggipfel der Riesen
+241415	Gipfel der Riesen
+241416	Geweihtes Schneefeld
+251000	Truhe sortieren
+251001	Inventar
+251002	Truhe
+280001	Tastenbelegung
+280002	
+280003	
+280004	
+280005	Tastatur
+280006	Maus
+280007	
+280008	
+280009	
+280010	Bewegen
+280011	
+280012	
+280013	
+280014	
+280015	
+280016	
+280017	
+280018	
+280019	
+280020	Kamerasteuerung
+280021	
+280022	
+280023	
+280024	
+280025	
+280026	
+280027	
+280028	
+280029	
+280030	Waffe wechseln
+280031	
+280032	
+280033	
+280034	
+280035	
+280036	
+280037	
+280038	
+280039	
+280040	Angriff
+280099	Keine Tastenbelegung
+280100	Bewegungssteuerung
+280101	Vorwärts bewegen
+280102	Rückwärts bewegen
+280103	Nach links bewegen
+280104	Nach rechts bewegen
+280105	Schritt zurück, Ausweichrolle, Sprint
+280106	Springen
+280107	Ducken/Aufstehen
+280108	
+280109	
+280110	Bewegung
+280199	Kamera bewegen/Ziel wechseln
+280200	Kamera bew. / Ziel ändern (Hoch)
+280201	Kamera bew. / Ziel ändern (Runter)
+280202	Kamera bew. / Ziel ändern (Links)
+280203	Kamera bew. / Ziel ändern (Rechts)
+280204	Kamera zurücks., Ziel aus-/abwählen
+280300	Objekt wechseln
+280301	Waffe für rechte Hand wechseln
+280302	Waffe für linke Hand wechseln
+280303	Zauberei/Anrufung wechseln
+280400	Angriff (RH- & 2H-Waffe)
+280401	Starker Angriff (RH- & 2H-Waffe)
+280402	Abwehr (LH-Waffe)
+280403	Talent
+280404	Ereignisaktion (prüfen, öffnen, ...)
+280405	Objekt benutzen
+280406	Aktuelle 2H-Waffe
+280500	Hauptmenü
+280501	Karte
+288000	Charakterauswahl
+288001	Charaktergrundlage auswählen
+288050	Ritter
+288051	Verzauberter Ritter
+288052	Prophet
+288053	Held
+288054	Blutiger Wolf
+288055	
+288056	
+288057	
+288058	
+288059	
+288060	Ritter
+288061	Verzauberter Ritter
+288062	Prophet
+288063	Held
+288064	Blutiger Wolf
+288100	Vagabund
+288101	Krieger
+288102	Held
+288103	Bandit
+288104	Astrologe
+288105	Prophet
+288106	Bekenner
+288107	Samurai
+288108	Gefangener
+288109	Bettler
+288500	Bitte wählt einen Körpertyp aus.
+288501	Typ A
+288502	Typ B
+290000	Erstellen
+290001	Anpassung
+290002	Anpassung
+290003	
+290004	
+290005	
+290006	
+290007	
+290008	
+290009	
+290010	 > 
+290900	_
+290990	Namen eingeben
+290991	
+290992	
+290993	
+290994	
+290995	
+290996	
+290997	
+290998	
+290999	
+291000	Name
+291001	Körpertyp
+291002	Alter
+291003	Stimme
+291004	
+291005	
+291006	
+291007	
+291008	
+291009	
+291010	Ursprung
+291011	Andenken
+291012	
+291013	
+291014	
+291015	
+291016	
+291017	
+291018	
+291019	
+291020	Grundvorlage auswählen
+291021	Gesicht & Haar ändern
+291022	Körper ändern
+291023	Hautfarbe ändern
+291024	
+291025	Detailliertes Aussehen
+291026	
+291027	
+291028	
+291029	
+291030	Als Favorit speichern
+291031	Favorit laden
+291050	Beenden
+291051	Anpassung beenden
+291052	Anpassung beenden
+292000	Gesichtszüge anpassen
+292001	Gesichtsstruktur
+292002	
+292003	
+292004	
+292005	
+292006	
+292007	
+292008	
+292009	
+292010	Haar
+292011	Augenbrauen
+292012	Gesichtsbehaarung
+292013	Wimpern
+292014	
+292015	
+292016	
+292017	
+292018	
+292019	
+292020	Augen
+292021	
+292022	
+292023	
+292024	
+292025	Hautdetails
+292026	
+292027	
+292028	
+292029	
+292030	Kosmetik
+292031	
+292032	
+292033	
+292034	
+292035	
+292036	
+292037	
+292038	
+292039	
+292040	Tattoo/Zeichen/Augenklappe
+292041	
+292042	
+292043	
+292044	
+292045	
+292046	
+292047	
+292048	
+292049	
+292050	Ähnliches Gesicht
+292051	
+292052	
+292053	
+292054	
+292055	
+292056	
+292057	
+292058	
+292059	
+292060	Kopf
+292061	Brust
+292062	Bauch
+292063	Arme
+292064	Beine
+292065	
+292066	
+292067	
+292068	
+292069	
+292070	Körperbehaarung
+292071	Körperhaarfarbe
+292072	Muskulatur
+292073	
+292074	
+292075	
+292076	
+292077	
+292078	
+292079	
+292080	Brandmale
+293000	Knochenstruktur
+293001	Gesichtsform
+293002	Scheinbares Alter
+293003	Gesichtsästhetik
+293004	
+293005	
+293006	
+293007	
+293008	
+293009	
+293010	Gesichtssymmetrie
+293011	Stirn/Glabella
+293012	Brauenwulst
+293013	Augen
+293014	Nasenrücken
+293015	Nasenlöcher
+293016	Wangen
+293017	Lippen
+293018	Mund
+293019	Kinn
+293020	Kiefer
+293100	Haar
+293101	Haarfarbe
+293102	Glanz
+293103	Wurzeldunkelheit
+293104	Weißes Haar
+293105	
+293106	
+293107	
+293108	
+293109	
+293110	Brauen
+293111	Brauenfarbe
+293112	Glanz
+293113	Wurzeldunkelheit
+293114	Weißes Haar
+293115	
+293116	
+293117	
+293118	
+293119	
+293120	Bart
+293121	Bartfarbe
+293122	Glanz
+293123	Wurzeldunkelheit
+293124	Weißes Haar
+293125	Stoppeln
+293126	
+293127	
+293128	
+293129	
+293130	Wimpern
+293131	Wimpernfarbe
+293132	
+293133	
+293134	
+293135	
+293136	
+293137	
+293138	
+293139	
+293140	Rechte Irisgröße
+293141	Rechte Irisfarbe
+293142	Augentrübung R
+293143	Trübungsfarbe R
+293144	Augenweißfarbe R
+293145	Augenposition R
+293146	
+293147	
+293148	
+293149	
+293150	Linke Irisgröße
+293151	Linke Irisfarbe
+293152	Augentrübung L
+293153	Trübungsfarbe L
+293154	Augenweißfarbe L
+293155	Augenposition L
+293156	Augendetails
+293157	
+293158	
+293159	
+293160	Poren
+293161	Hautglanz
+293162	Dunkle Schatten
+293163	Farbe der dunklen Schatten
+293164	Wangen
+293165	Wangenfarbe
+293166	Lidstrich
+293167	Lidstrichfarbe
+293168	Lidschatten (oben)
+293169	Lidschattenfarbe (oben)
+293170	Lidschatten (unten)
+293171	Lidschattenfarbe (unten)
+293172	Lippenstift
+293173	Lippenstiftfarbe
+293174	
+293175	
+293176	
+293177	
+293178	
+293179	
+293180	Tattoo/Zeichen
+293181	Farbe (Tattoo/Zeichen)
+293182	Tattoo/Zeichen anpassen
+293183	
+293184	
+293185	
+293186	
+293187	
+293188	
+293189	
+293190	Augenklappe
+293191	Augenklappenfarbe
+294050	Nasengröße
+294051	Nasen-/Stirn-Verhältnis
+294052	Vorstehendes Gesicht
+294053	Vertikales Verhältnis
+294054	Gesichtszugneigung
+294055	Horizontales Verhältnis
+294056	
+294057	
+294058	
+294059	
+294060	Stirntiefe
+294061	Vorstehende Stirn
+294062	Nasenrückenhöhe
+294063	Vorstehender Rücken 1
+294064	Vorstehender Rücken 2
+294065	Nasenrückenbreite
+294066	
+294067	
+294068	
+294069	
+294070	Brauenwulsthöhe
+294071	Brauenwulst innen
+294072	Brauenwulst außen
+294073	
+294074	
+294075	
+294076	
+294077	
+294078	
+294079	
+294080	Augenposition
+294081	Augengröße
+294082	Augenneigung
+294083	Augenabstand
+294084	
+294085	
+294086	
+294087	
+294088	
+294089	
+294090	Nasenrückentiefe
+294091	Nasenrückenlänge
+294092	Nasenposition
+294093	Nasenspitzenhöhe
+294094	Vorstehende Nase
+294095	Nasenhöhe
+294096	Nasenneigung
+294097	
+294098	
+294099	
+294100	Nasenlochneigung
+294101	Nasenlochgröße
+294102	Nasenlochbreite
+294103	
+294104	
+294105	
+294106	
+294107	
+294108	
+294109	
+294110	Wangenknochenhöhe
+294111	Wangenknochentiefe
+294112	Wangenknochenbreite
+294113	Vorstehende Wangenknochen
+294114	Wangen
+294115	
+294116	
+294117	
+294118	
+294119	
+294120	Lippenform
+294121	Mundausdruck
+294122	Lippenfülle
+294123	Lippengröße
+294124	Vorstehende Lippen
+294125	Lippendicke
+294126	
+294127	
+294128	
+294129	
+294130	Vorstehender Mund
+294131	Mundneigung
+294132	Zahnstellung
+294133	Mundposition
+294134	Mundbreite
+294135	Mund-Kinn-Distanz
+294136	
+294137	
+294138	
+294139	
+294140	Kinnspitzenposition
+294141	Kinnlänge
+294142	Vorstehendes Kinn
+294143	Kinntiefe
+294144	Kinngröße
+294145	Kinnhöhe
+294146	Kinnbreite
+294147	
+294148	
+294149	
+294150	Vorstehender Kiefer
+294151	Kieferbreite
+294152	Unterkiefer
+294153	Kieferkontur
+294154	
+294155	
+294156	
+294157	
+294158	
+294159	
+294160	Position (Vertikal)
+294161	Position (Horizontal)
+294162	Winkel
+294163	Größer/kleiner
+294164	Spiegeln
+296009	Wert ändern
+296010	Wie rechtes Auge
+296011	Wie linkes Auge
+296100	Klein
+296101	Groß
+296102	Klein
+296103	Groß
+296104	Klein
+296105	Groß
+296106	Klein
+296107	Groß
+296108	Klein
+296109	Groß
+296110	Wenig
+296111	Viel
+296112	Rund
+296113	Kantig
+296114	Jung
+296115	Älter
+296116	Maskulin
+296117	Feminin
+296118	Sanft
+296119	Stark
+296120	Hell
+296121	Dunkel
+296122	Wenig
+296123	Viel
+296124	Sanft
+296125	Stark
+296126	Hell
+296127	Dunkel
+296128	Wenig
+296129	Viel
+296130	Sanft
+296131	Stark
+296132	Hell
+296133	Dunkel
+296134	Wenig
+296135	Viel
+296136	Wenig
+296137	Viel
+296138	Klein
+296139	Groß
+296140	Klar
+296141	Opak
+296142	Schließen
+296143	Fern
+296144	Klein
+296145	Groß
+296146	Klar
+296147	Opak
+296148	Schließen
+296149	Fern
+296150	Geschlossen
+296151	Geöffnet
+296152	Schlicht
+296153	Glänzend
+296154	Hell
+296155	Dunkel
+296156	Hell
+296157	Dunkel
+296158	Hell
+296159	Dunkel
+296160	Hell
+296161	Dunkel
+296162	Hell
+296163	Dunkel
+296164	Dezent
+296165	Kräftig
+296166	Schmal
+296167	Breit
+296168	Nase
+296169	Stirn
+296170	Konkav
+296171	Konvex
+296172	Schmal
+296173	Breit
+296174	Nach unten
+296175	Nach oben
+296176	Schmal
+296177	Breit
+296178	Gering
+296179	Hoch
+296180	Konkav
+296181	Konvex
+296182	Niedrig
+296183	Hoch
+296184	Konkav
+296185	Konvex
+296186	Konkav
+296187	Konvex
+296188	Schmal
+296189	Breit
+296190	Hoch
+296191	Tief
+296192	Niedrig
+296193	Hoch
+296194	Niedrig
+296195	Hoch
+296196	Nach unten
+296197	Nach oben
+296198	Klein
+296199	Groß
+296200	Nach innen
+296201	Nach außen
+296202	Eng
+296203	Breit
+296204	Gering
+296205	Hoch
+296206	Kurz
+296207	Lang
+296208	Nach unten
+296209	Nach oben
+296210	Tief
+296211	Hoch
+296212	Konkav
+296213	Konvex
+296214	Unten
+296215	Oben
+296216	Nach unten
+296217	Nach oben
+296218	Nach unten
+296219	Nach oben
+296220	Klein
+296221	Groß
+296222	Schmal
+296223	Breit
+296224	Klein
+296225	Groß
+296226	Unten
+296227	Oben
+296228	Gering
+296229	Hoch
+296230	Schmal
+296231	Breit
+296232	Konkav
+296233	Konvex
+296234	Dünn
+296235	Dick
+296236	Gespitzt
+296237	Geöffnet
+296238	Traurig
+296239	Glücklich
+296240	Wenig
+296241	Viel
+296242	Klein
+296243	Groß
+296244	Konkav
+296245	Konvex
+296246	Dünn
+296247	Dick
+296248	Konkav
+296249	Konvex
+296250	Nach unten
+296251	Nach oben
+296252	Unten
+296253	Oben
+296254	Unten
+296255	Oben
+296256	Schmal
+296257	Breit
+296258	Kurz
+296259	Lang
+296260	Vorn
+296261	Hinten
+296262	Kurz
+296263	Lang
+296264	Wenig
+296265	Viel
+296266	Gering
+296267	Hoch
+296268	Klein
+296269	Groß
+296270	Unten
+296271	Oben
+296272	Schmal
+296273	Breit
+296274	Wenig
+296275	Viel
+296276	Schmal
+296277	Breit
+296278	Tief
+296279	Hoch
+296280	Dünn
+296281	Dick
+296282	Unten
+296283	Oben
+296284	Links
+296285	Rechts
+296286	Rotation links
+296287	Rotation rechts
+296288	Klein
+296289	Groß
+297100	Typ A
+297101	Typ B
+297102	
+297103	
+297104	
+297105	
+297106	
+297107	
+297108	
+297109	
+297110	Jung
+297111	Erwachsen
+297112	Älter
+297113	
+297114	
+297115	
+297116	
+297117	
+297118	
+297119	
+297120	Junge Stimme 1
+297121	Erwachsene Stimme 1
+297122	Ältere Stimme 1
+297123	
+297124	
+297125	Junge Stimme 2
+297126	Erwachsene Stimme 2
+297127	Ältere Stimme 2
+297128	
+297129	
+297130	Vagabund
+297131	Krieger
+297132	Held
+297133	Bandit
+297134	Astrologe
+297135	Prophet
+297136	Samurai
+297137	Gefangener
+297138	Bekenner
+297139	Bettler
+297140	
+297141	
+297142	
+297143	
+297144	
+297145	
+297146	
+297147	
+297148	
+297149	
+297150	Keine
+297151	Rotes Bernsteinmedaillon
+297152	Zwischenlandrune
+297153	Goldene Saat
+297154	Asche der Vampirwichte
+297155	
+297156	Gesprungene Töpfe
+297157	Steinschwertschlüssel
+297158	Betörende Äste
+297159	Gekochte Garnelen
+297160	Shabriris Kummer
+297161	
+297162	
+297163	
+297164	
+297165	
+297166	
+297167	
+297168	
+297169	
+297170	Standard
+297171	Muskulös
+297172	
+297173	
+297174	
+297175	
+297176	
+297177	
+297178	
+297179	
+297180	AN
+297181	AUS
+297182	
+297183	
+297184	
+297185	AN
+297186	AUS
+297187	AN
+297188	AUS
+297200	Krieger
+297201	Wahrheitspilger
+297202	Aristokrat
+297203	Einzelgänger
+297204	Nordländer
+297205	Matrose
+297206	Schilfländer
+297207	Drakonier
+297208	Nachtvolk
+297209	Numenvolk
+297220	Kriegerin
+297221	Wahrheitspilgerin
+297222	Aristokratin
+297223	Einzelgängerin
+297224	Nordländerin
+297225	Matrosin
+297226	Schilfländerin
+297227	Drakonierin
+297228	Nachtvolk
+297229	Numenvolk
+299005	Temporäre Farben
+299006	Voreingestellte Farben
+299007	
+299008	
+299009	Farbe ändern
+299010	Wie rechtes Auge
+299011	Wie linkes Auge
+299012	
+299013	
+299014	
+299015	
+299016	
+299017	
+299018	
+299019	
+299020	Wie Haar
+299050	Farbanpassung
+299051	
+299052	
+299053	
+299054	
+299055	
+299056	
+299057	
+299058	
+299059	
+299060	R
+299061	G
+299062	B
+301000	Gesten
+303000	NEU
+303001	
+303002	
+303003	
+303004	
+303005	
+303006	
+303007	
+303008	
+303009	
+303010	
+303011	
+303012	
+303013	
+303014	
+303015	
+303016	
+303017	
+303018	
+303019	
+303020	
+303021	
+303022	
+303023	
+303024	
+303025	
+303026	
+303027	
+303028	
+303029	
+303030	
+303031	
+303032	
+303033	
+303034	
+303035	
+303036	
+303037	
+303038	
+303039	
+303040	
+303041	
+303042	
+303043	
+303044	
+303045	
+303046	
+303047	
+303048	
+303049	
+303050	
+303051	
+303052	
+303053	
+303054	
+303055	
+303056	
+303057	
+303058	
+303059	
+303060	
+310000	Nachricht schreiben
+310001	Geschriebene Nachrichten
+310002	Gelesene Nachrichten
+311000	Bewertungen
+311001	Gut
+311002	Schlecht
+311003	
+311004	
+311005	
+311006	
+311007	
+311008	
+311009	
+311010	
+311011	Gut bewertet
+311012	Schlecht bew.
+321000	Vorlagen
+321001	Wörter
+321002	Konjunktionen
+321003	Vorlagen (2. Zeile)
+321004	Wörter (2. Zeile)
+321005	Gesten
+321006	Beenden
+322001	Gut
+322002	Schlecht
+324001	Bewertungen
+331100	Wirt der Finger
+331101	Krummfinger
+331102	Blutiger Finger
+331103	Duellant
+331104	Rekusant
+331105	
+331106	
+331107	
+331108	
+331109	
+331110	
+331111	Jäger
+331122	Krummfinger
+331123	Krummfinger
+331124	
+331125	
+331126	
+331127	
+331128	
+331129	
+331130	
+331131	
+331132	Duellant
+331133	Duellant
+331134	
+331135	
+331136	
+331137	
+331138	
+331139	
+331140	
+331141	
+331142	Blutiger Finger
+331143	Blutiger Finger
+331144	
+331145	
+331146	
+331147	
+331148	
+331149	
+331150	
+331151	
+331152	Rekusant
+331153	Rekusant
+331154	
+331155	
+331156	
+331157	
+331158	
+331159	
+331160	
+331161	
+331162	Jäger
+331163	Jäger
+331164	
+331165	
+331166	
+331167	
+331168	
+331169	
+331170	Kämpfer
+331171	Kämpfer
+331172	Kämpfer
+331173	Kämpfer
+331174	Goldener Kämpfer
+331175	
+331176	
+331177	
+331178	
+331179	
+331180	Eliminierungen
+331200	FROST
+331201	BLUTVERLUST
+331202	VERGIFTET
+331203	SCHARLACHFÄULE
+331204	SCHLAF
+331205	WAHNSINN
+331206	
+331207	TODESPEST
+331208	! WAFFE ZERBROCHEN !
+331209	! RÜSTUNG ZERBRICHT GLEICH !
+331210	! RÜSTUNG ZERBROCHEN !
+331301	HALBGOTT ZU FALL GEBRACHT
+331302	LEGENDE ZU FALL GEBRACHT
+331303	GROSSEN GEGNER ZU FALL GEBRACHT
+331304	GEGNER ZU FALL GEBRACHT
+331305	IHR SEID GESTORBEN
+331306	
+331307	WIRT BESIEGT
+331308	BLUTIGEN FINGER BESIEGT
+331309	PFLICHT ERFÜLLT
+331310	
+331311	VERLORENE GNADE ENTDECKT
+331312	
+331313	START
+331314	SIEG
+331315	UNENTSCHIEDEN
+331316	NIEDERLAGE
+331317	KARTE GEFUNDEN
+331318	RACHEBRINGER IST GESTORBEN
+331319	
+331320	
+331321	GROSSE RUNE WIEDERHEGESTELLT
+331322	GOTT BEZWUNGEN
+331323	DUELLANT BESIEGT
+331324	REKUSANT BESIEGT
+331325	EINDRINGLING BESIEGT
+331326	
+331327	
+331328	
+331329	
+331330	KRUMMFINGERRANG ERHÖHT
+331331	KRUMMFINGERRANG ERHÖHT
+331332	DUELLANTENRANG ERHÖHT
+331333	DUELLANTENRANG ERHÖHT
+331334	BLUTIGER-FINGER-RANG ERHÖHT
+331335	BLUTIGER-FINGER-RANG ERHÖHT
+331336	REKUSANTENRANG ERHÖHT
+331337	REKUSANTENRANG ERHÖHT
+331338	JÄGERRANG ERHÖHT
+331339	JÄGERRANG ERHÖHT
+400000	
+401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401100	™
+401301	WEITER
+401302	SPIEL LADEN
+401303	NEUES SPIEL
+401304	SYSTEM
+401305	INFORMATIONEN
+401306	ANMELDEN
+401307	PROFIL WECHSELN
+401308	
+401309	SPIEL BEENDEN
+401310	ONLINE
+401311	OFFLINE
+401312	VORBESTELLEN
+401313	GESPEICHERTE DATEN KONVERTIEREN
+401314	
+401315	
+401316	
+401317	
+401318	
+401319	
+401320	Version (Anwendung)
+401321	Version (Server)
+401322	Version (Kalibrationen)
+401400	INFORMATIONEN
+401401	Keine neue Informationen
+401500	TERMS OF SERVICE FOR ONLINE SERVICES FOR ELDEN RING
+401501	
+401502	
+401503	
+401504	
+401505	
+401506	
+401507	
+401508	
+401509	
+401510	Zustimmen
+401511	Ablehnen
+401900	Netzwerktest
+401901	Dieses Spiel steckt noch in der Entwicklung.
+401902	
+401903	
+401904	Für den Netzwerktest ist eine Internetverbindung erforderlich.
+406000	SPIEL LADEN
+406001	NEUES SPIEL
+502000	Ausgewählten Spieler nach Hause schicken
+506000	Kolosseum
+506100	Format
+506101	Kampfformat
+506102	Anzahl der Spieler
+506103	Geisterasche
+506104	Ort
+506105	Kolosseumspasswort
+506106	Kampf beginnen
+506107	Abbrechen
+506108	Gewünschtes Team
+506109	Einschränkungen
+506120	\nDuell
+506121	Schlacht /\nKampftribunal
+506122	Geisterasche\nerlaubt
+506200	Duell
+506201	Kampftribunal
+506202	Schlacht
+506300	Beliebiger Ort
+506301	Königliches Kolosseum
+506302	Limgrave Kolosseum
+506303	Caelid Kolosseum
+506400	2 Kämpfer
+506401	4 Kämpfer
+506402	6 Kämpfer
+506403	Beliebige Kämpferanzahl
+506500	Verboten
+506501	Erlaubt
+506600	Keine Vorgabe
+506601	Team A
+506602	Team B
+506800	Alle Spieler
+506801	Nur verbündetes Team
+506900	Das Kolosseumspasswort wird für die Suche nach Verbündeten und Gegnern verwendet.
+506901	Das Kolosseumspasswort wird nur für die Suche nach Verbündeten verwendet. Die Spielersuche für Gegner läuft über ein anderes Passwort.
+507000	Bester Kämpfer: <?mvpName?>
+507100	Kolosseumspasswort festlegen

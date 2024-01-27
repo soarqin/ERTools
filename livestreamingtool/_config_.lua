@@ -9,6 +9,8 @@ return {
         bosses = true,
         items = true,
     },
+    -- language, check `data` folder for language list
+    language = 'zhocn',
     -- Config entries for plugins
     bosses = {
         -- Show only rememberance bosses

@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Cendres de guerre : Griffe du lion
+10100	Cendres de guerre : Empalement
+10200	Cendres de guerre : Croc perçant
+10300	Cendres de guerre : Entaille tournoyante
+10500	Cendres de guerre : Charge
+10600	Cendres de guerre : Entaille ascendante
+10700	Cendres de guerre : Balayage tournoyant
+10800	Cendres de guerre : Dîme de sang
+10900	Cendres de guerre : Estoc répété
+11000	Cendres de guerre : Frappes déchaînées
+11100	Cendres de guerre : Frappes tournoyantes
+11200	Cendres de g. : Enchaîn. de tailles
+11300	Cendres de guerre : Charge du prélat
+11400	Cendres de guerre : Dégainer
+11500	Cendres de guerre : En garde
+11600	Cendres de guerre : Traque-Géant
+11700	Cendres de guerre : Coup de torche
+11800	Cendres de guerre : Entaille de Loretta
+11900	Cendres de guerre : Envol venimeux
+12000	Cendres de guerre : Arme tournoyante
+12100	
+12200	Cendres de guerre : Piqué tempétueux
+12300	Cendres de guerre : Mande-orage
+12400	Cendres de guerre : Danse des lames
+12500	Cendres de guerre : Chaîne tournoyante
+20000	Cendres de guerre : Phalange de laméclats
+20100	Cendres de guerre : Lame sacrée
+20200	Cendres de guerre : Lance de glace
+20300	Cendres de guerre : Flèche de pierre d'éclat
+20400	Cendres de guerre : Entaille sanglante
+20500	Cendres de guerre : Poing sangsue
+20700	Cendres de guerre : Éruption
+20800	Cendres de guerre : Frappe pieuse
+20900	Cendres de guerre : Gravité
+21000	Cendres de guerre : Lame-tempête
+21200	Cendres de guerre : Tremblement de terre
+21300	Cendres de guerre : Terre dorée
+21400	Cendres de guerre : Frappe ardente
+21600	Cendres de guerre : Éclair
+21700	Cendres de guerre : Entaille foudroyante
+21800	Cendres de guerre : Grandeur de Caria
+21900	Cendres de guerre : Espadon de Caria
+22000	Cendres de guerre : Entaille du vide
+22100	Cendres de g. : Tornade de la Flamme noire
+22200	Cendres de guerre : Halo sacré
+22300	Cendres de guerre : Souffle ardent
+22400	Cendres de guerre : Lame de sang
+22500	Cendres de guerre : Entaille fantomatique
+22600	Cendres de guerre : Lance spectrale
+22700	Cendres de guerre : Brume de givre
+22800	Cendres de guerre : Brume empoisonnée
+30000	Cendres de guerre : Coup de bouclier
+30100	Cendres de guerre : Rempart inébranlable
+30200	Cendres de guerre : Parade
+30300	Cendres de guerre : Parade à la rondache
+30400	Cendres de guerre : Parade
+30500	Cendres de guerre : Représailles de Caria
+30600	Cendres de guerre : Mur tempétueux
+30700	Cendres de guerre : Parade dorée
+30800	Cendres de guerre : Fracas de bouclier
+30900	Cendres de guerre : Aucune compétence
+31000	Cendres de guerre : Champ de force de Thops
+40000	Cendres de guerre : Projectile perforant
+40100	Cendres de guerre : Barrage
+40200	Cendres de guerre : Tir puissant
+40400	Cendres de guerre : Tir enchanté
+40500	Cendres de guerre : Tir céleste
+40600	Cendres de guerre : Pluie de flèches
+40700	
+50100	Cendres de guerre : Piétinement givrant
+50200	Cendres de guerre : Piétinement orageux
+50300	Cendres de guerre : Coup de pied
+50400	Cendres de g. : Roulade foudroyante
+50500	Cendres de g. : Flamme des Lions rouges
+50600	Cendres de guerre : Bond fracassant
+50700	Cendres de guerre : Bond fracassant doré
+50800	Cendres de guerre : Vagues ténébreuses
+50900	Cendres de guerre : Séisme de Hoarah Loux
+60000	Cendres de guerre : Détermination
+60100	Cendres de guerre : Résolut. de chevalier royal
+60200	Cendres de guerre : Manœuvre d'assassin
+60300	Cendres de guerre : Serment doré
+60400	Cendres de guerre : Ordre sacré
+60500	Cendres de guerre : Ordre partagé
+60600	Cendres de guerre : Seppuku
+60700	Cendres de guerre : Lame rocheuse
+65000	Cendres de guerre : Cri barbare
+65100	Cendres de guerre : Cri de guerre
+65200	Cendres de guerre : Cri bestial
+65300	Cendres de guerre : Cri de troll
+65400	Cendres de guerre : Cri du hâbleur
+70000	Cendres de guerre : Résilience
+70100	Cendres de guerre : Vœu d'inflexibilité
+70200	Cendres de guerre : Terre sacrée
+80000	Cendres de guerre : Pas vif
+80100	Cendres de guerre : Pas de Chevalier-limier
+80200	Cendres de guerre : Rapace des brumes
+85000	Cendres de guerre : Leurre blanc

@@ -1,0 +1,657 @@
+200	
+1000	[ERROR]Ogolone
+1100	[ERROR]Z zakolami
+1200	[ERROR]Krótkie
+1300	[ERROR]Zaczesane do tyłu
+1400	[ERROR]Kucyk
+1500	[ERROR]Rozczochrane
+1600	[ERROR]Z przedziałkiem
+1700	[ERROR]Półdługie
+1800	[ERROR]Kręcone
+1900	[ERROR]Na pazia
+2000	[ERROR]Mężczyzna 11
+2100	[ERROR]Mężczyzna 12
+2200	[ERROR]Mężczyzna 13
+2300	[ERROR]Mężczyzna 14
+2400	[ERROR]Mężczyzna 15
+2500	[ERROR]Mężczyzna 16
+2600	[ERROR]Mężczyzna 17
+2700	[ERROR]Mężczyzna 18
+2800	[ERROR]Mężczyzna 19
+2900	[ERROR]Mężczyzna 20
+3000	[ERROR]Ogolone
+3100	[ERROR]Bardzo krótkie
+3200	[ERROR]Falowane
+3300	[ERROR]Proste A
+3400	[ERROR]Proste B
+3500	[ERROR]Kucyk A
+3600	[ERROR]Kucyk B
+3700	[ERROR]Dwa kucyki
+3800	[ERROR]Kok
+3900	[ERROR]Zaplecione
+4000	[ERROR]Kobieta 11
+4100	[ERROR]Kobieta 12
+4200	[ERROR]Kobieta 13
+4300	[ERROR]Kobieta 14
+4400	[ERROR]Kobieta 15
+4500	[ERROR]Kobieta 16
+4600	[ERROR]Kobieta 17
+4700	[ERROR]Kobieta 18
+4800	[ERROR]Kobieta 19
+4900	[ERROR]Kobieta 20
+5000	[ERROR]Fryzura podróżna
+10000	Głowa
+10100	Ciało
+10200	Ręce
+10300	Nogi
+40000	Żelazny hełm
+40100	Zbroja łuskowa
+40200	Żelazne rękawice
+40300	Skórzane spodnie
+50000	Kaideński hełm
+50100	Kaideńska zbroja
+50200	Kaideńskie rękawice
+50300	Kaideńskie spodnie
+60000	Hełm smoczego rycerza
+60100	Zbroja smoczego rycerza
+60200	Rękawice smoczego rycerza
+60300	Nagolenniki smoczego rycerza
+61000	Hełm smoczego rycerza (przerobiony)
+61100	Zbroja smoczego rycerza (przerobiona)
+80000	Hełm łuskowy
+80100	Zbroja łuskowa
+80200	Rękawice łuskowe
+80300	Nagolenniki łuskowe
+81100	Zbroja łuskowa (przerobiona)
+90000	Kaptur perfumiarza
+90100	Szata perfumiarza
+90200	Rękawice perfumiarza
+90300	Sarong perfumiarza
+91100	Szata perfumiarza (przerobiona)
+100000	Kapelusz podróżnika
+100100	Strój podróżny perfumiarza
+100200	Rękawice podróżnika
+100300	Spodnie podróżnika
+101100	Strój podróżny perfumiarza (przerobiony)
+120000	Spiczasty kapelusz Albericha
+120100	Szata Albericha
+120200	Karwasze Albericha
+120300	Spodnie Albericha
+121000	Spiczasty kapelusz Albericha (przerobiony)
+121100	Szata Albericha (przerobiona)
+130000	Spiczasty kapelusz zaklinacza ostrzy
+130100	Strój podróżny zaklinacza ostrzy
+130200	Rękawice zaklinacza ostrzy
+130300	Spodnie zaklinacza ostrzy
+131100	Strój podróżny zaklinacza ostrzy (przerobiony)
+140000	Hełm kozobyka
+140100	Zbroja kozobyka
+140200	Rękawice kozobyka
+140300	Nagolenniki kozobyka
+150000	Żelazna kasa
+150100	Zbroja ronina
+150200	Rękawice ronina
+150300	Nagolenniki ronina
+151100	Zbroja ronina (przerobiona)
+160000	Kaptur grzesznika
+160100	Płócienny strój
+160200	
+160300	Płócienne spodnie
+170000	Maska czarnego wilka
+170100	Zbroja Blaidda
+170200	Rękawice Blaidda
+170300	Nagolenniki Blaidda
+171100	Zbroja Blaidda (przerobiona)
+180000	Kaptur Czarnego Noża
+180100	Zbroja Czarnego Noża
+180200	Rękawice Czarnego Noża
+180300	Nagolenniki Czarnego Noża
+181100	Zbroja Czarnego Noża (przerobiona)
+190000	Kaptur wygnańca
+190100	Zbroja wygnańca
+190200	Rękawice wygnańca
+190300	Nagolenniki wygnańca
+200000	Hełm wypędzonego rycerza
+200100	Zbroja wypędzonego rycerza
+200200	Rękawice wypędzonego rycerza
+200300	Nagolenniki wypędzonego rycerza
+201000	Hełm wypędzonego rycerza (przerobiony)
+201100	Zbroja wypędzonego rycerza (przerobiona)
+202100	[ERROR]
+210000	Hełm głogu
+210100	Zbroja głogu
+210200	Rękawice głogu
+210300	Nagolenniki głogu
+211100	Zbroja głogu (przerobiona)
+220000	Kaptur giermka
+220100	Strój giermka
+220300	Spodnie giermka
+221100	Strój giermka (przerobiony)
+230000	Hełm Nocnej Kawalerii
+230100	Zbroja Nocnej Kawalerii
+230200	Rękawice Nocnej Kawalerii
+230300	Nagolenniki Nocnej Kawalerii
+231000	Hełm Nocnej Kawalerii (przerobiony)
+231100	Zbroja Nocnej Kawalerii (przerobiona)
+240000	Kaptur kolczy z błękitnego srebra
+240100	Kolczuga z błękitnego srebra
+240200	Karwasze z błękitnego srebra
+240300	Spódnica kolcza z błękitnego srebra
+241100	Kolczuga z błękitnego srebra (przerobiona)
+250000	Kapelusz koczowniczego kupca
+250100	Zdobna szata koczowniczego kupca
+250300	Spodnie koczowniczego kupca
+251100	Zdobiona szata koczowniczego kupca (przerobiona)
+260000	Zdeformowany smoczy hełm
+260100	Zbroja zdeformowanego smoka
+260200	Rękawice zdeformowanego smoka
+260300	Nagolenniki zdeformowanego smoka
+270000	Hełm strażnika Drzewa
+270100	Zbroja strażnika Drzewa
+270200	Rękawice strażnika Drzewa
+270300	Nagolenniki strażnika Drzewa
+271100	Zbroja strażnika Drzewa (przerobiona)
+280000	Hełm królewskiego rycerza
+280100	Zbroja królewskiego rycerza
+280200	Rękawice królewskiego rycerza
+280300	Nagolenniki królewskiego rycerza
+281100	Zbroja królewskiego rycerza (przerobiona)
+290000	Kaptur kapłana Noxów
+290100	Zbroja kapłana Noxów
+290200	Rękawice Noxów
+290300	Nagolenniki Noxów
+291000	Kaptur kapłana Noxów (przerobiony)
+291100	Zbroja kapłana Noxów (przerobiona)
+292000	Korona Noxyjskiej szermierczyni
+292100	Zbroja Noxyjskiej szermierczyni
+293000	Bliźniacza korona nocnej służki
+293100	Zbroja nocnej służki
+294000	Korona Noxyjskiej szermierczyni (przerobiona)
+294100	Zbroja Noxyjskiej szermierczyni (przerobiona)
+300000	Obręcz z wielkimi rogami
+300100	Futrzany strój
+300300	Futrzane nogawice
+301000	Lśniąca obręcz z rogami
+301100	Futro szamana
+301300	Nogawice szamana
+310000	Hełm pojedynkowicza
+310100	Płaszcz strażnika grobów
+310300	Nagolenniki pojedynkowicza
+311100	Strój gladiatora
+320000	Kaptur krwawego szlachcica
+320100	Szata krwawego szlachcica
+320300	Przepaska krwawego szlachcica
+330000	Maska strażnika
+330100	Szata strażnika (w pełnym rozkwicie)
+330200	Karwasze strażnika
+330300	Nagolenniki strażnika
+331100	Szata strażnika
+340000	Hełm czystej zgnilizny
+340100	Zbroja czystej zgnilizny
+340200	Rękawice czystej zgnilizny
+340300	Nagolenniki czystej zgnilizny
+341000	Hełm czystej zgnilizny (przerobiony)
+341100	Zbroja czystej zgnilizny (przerobiona)
+350000	Kaptur mnicha ognia
+350100	Zbroja mnicha ognia
+350200	Rękawice mnicha ognia
+350300	Nagolenniki mnicha ognia
+351000	Kaptur mnicha czarnego płomienia
+351100	Zbroja mnicha czarnego płomienia
+351200	Rękawice mnicha czarnego płomienia
+351300	Nagolenniki mnicha czarnego płomienia
+360000	Hełm prałata ognia
+360100	Zbroja prałata ognia
+360200	Rękawice prałata ognia
+360300	Nagolenniki prałata ognia
+361100	Zbroja prałata ognia (przerobiona)
+370000	Obręcz arystokraty
+370100	Strój arystokraty
+370300	Trzewiki arystokraty
+371100	Strój arystokraty (przerobiony)
+380000	Kapelusz arystokraty
+380100	Płaszcz arystokraty
+390000	Stary chaperon arystokraty
+390100	Stara szata arystokraty
+390300	Stare buty arystokraty
+420000	Hełm pospolitaka
+420100	Zbroja pospolitaka
+420200	Rękawice pospolitaka
+420300	Nagolenniki pospolitaka
+430000	Kaptur mędrca
+430100	Szata mędrca
+430300	Spodnie mędrca
+440000	Dyniowy hełm
+460000	Korona Eldeńskiego Władcy
+460100	Zbroja Eldeńskiego Władcy
+460200	Karwasze Eldeńskiego Władcy
+460300	Nagolenniki Eldeńskiego Władcy
+461100	Zbroja Eldeńskiego Władcy (przerobiona)
+470000	Hełm Radahna Lwiej Grzywy
+470100	Lwia zbroja Radahna
+470200	Rękawice Radahna
+470300	Nagolenniki Radahna
+471100	Lwia zbroja Radahna (przerobiona)
+480100	Szata Pana Krwi
+481100	Szata Pana Krwi (przerobiona)
+510000	Korona królowej w kształcie półksiężyca
+510100	Szata królowej
+510200	Manszety królowej
+510300	Nogawice królowej
+520000	Kaptur apostoła boskiej skóry
+520100	Szata apostoła boskiej skóry
+520200	Karwasze apostoła boskiej skóry
+520300	Spodnie apostoła boskiej skóry
+530000	Kaptur szlachcica boskiej skóry
+530100	Szata szlachcica boskiej skóry
+530200	Karwasze szlachcica boskiej skóry
+530300	Spodnie szlachcica boskiej skóry
+540000	Kaptur zdeprawowanego perfumiarza
+540100	Szata zdeprawowanego perfumiarza
+540200	Rękawice zdeprawowanego perfumiarza
+540300	Spodnie zdeprawowanego perfumiarza
+541100	Szata zdeprawowanego perfumiarza (przerobiona)
+570000	Hełm Tygla z motywem topora
+570100	Zbroja Tygla z motywem topora
+570200	Rękawice Tygla
+570300	Nagolenniki Tygla
+571000	Hełm Tygla z motywem drzewa
+571100	Zbroja Tygla z motywem drzewa
+572100	Zbroja Tygla z motywem topora (przerobiona)
+573100	Zbroja Tygla z motywem drzewa (przerobiona)
+580000	Błyskamienna korona Lusata
+580100	Szata Lusata
+580200	Owijki Lusata
+580300	Owijacze starego czarodzieja
+581000	Błyskamienna korona Azura
+581100	Błyskamienna szata Azura
+581200	Owijki Azura
+590000	Hełm Wszechwiedzącego
+590100	Zbroja Wszechwiedzącego
+590200	Rękawice Wszechwiedzącego
+590300	Nagolenniki Wszechwiedzącego
+591100	Wszechwiedząca zbroja (przerobiona)
+600000	Bliźniaczy hełm
+600100	Bliźniacza zbroja
+600200	Bliźniacze rękawice
+600300	Bliźniacze nagolenniki
+601100	Bliźniacza zbroja (przerobiona)
+601300	Bliźniacze nagolenniki (przerobione)
+610000	Zniszczony kapelusz
+610100	Zniszczona zbroja
+610200	Zniszczone rękawice
+610300	Zniszczona przepaska
+611000	Zniszczony kapelusz (przerobiony)
+611100	Zniszczona zbroja (przerobiona)
+620000	Przepaska na oczy proroka
+620100	Szata Corhyna
+620300	Spodnie proroka
+621100	Szata proroka (przerobiona)
+622100	Szata proroka
+630000	Kaptur astrologa
+630100	Szata astrologa
+630200	Rękawice astrologa
+630300	Spodnie astrologa
+631100	Szata astrologa (przerobiona)
+640000	Hełm Lionela
+640100	Zbroja Lionela
+640200	Rękawice Lionela
+640300	Nagolenniki Lionela
+641100	Zbroja Lionela (przerobiona)
+650000	Hełm rodu Hoslow
+650100	Zbroja rodu Hoslow
+650200	Rękawice rodu Hoslow
+650300	Nagolenniki rodu Hoslow
+651000	Maska Diallosa
+652100	Zbroja rodu Hoslow (przerobiona)
+660000	Hełm rycerza włóczęgi
+660100	Zbroja rycerza włóczęgi
+660200	Rękawice rycerza włóczęgi
+660300	Nagolenniki rycerza włóczęgi
+661100	Zbroja rycerza włóczęgi (przerobiona)
+670000	Niebieska chusta
+670100	Niebieska szata z kamizelą
+670200	Rękawice wojownika
+670300	Nagolenniki wojownika
+680000	Biała maska
+680100	Szata chirurga polowego
+680200	Rękawice chirurga polowego
+680300	Spodnie chirurga polowego
+681100	Szata chirurga polowego (przerobiona)
+690000	Hełm królewskich szczątków
+690100	Zbroja królewskich szczątków
+690200	Rękawice królewskich szczątków
+690300	Nagolenniki królewskich szczątków
+700000	[ERROR]Diadem nieustraszonego
+700100	[ERROR]Strój bojowy nieustraszonego
+700200	[ERROR]Naramiennik nieustraszonego
+700300	[ERROR]Owijacze nieustraszonego
+701000	[ERROR]Skórzany hełm nieustraszonego
+702000	[ERROR]Strój bojowy nieustraszonego (przerobiony)
+720000	Hełm czempiona bestii
+720100	Zbroja czempiona bestii
+720200	Rękawice czempiona bestii
+720300	Nagolenniki czempiona bestii
+721100	Zbroja menażerysty (przerobiona)
+730000	Obręcz czempiona
+730100	Naramiennik czempiona
+730200	Karwasze czempiona
+730300	Stuptuty czempiona
+740000	Szkarłatny kaptur
+740100	Szlachecki strój podróżny
+740200	Szlacheckie rękawice
+740300	Szlacheckie spodnie
+741000	Granatowy kaptur
+742000	[ERROR]
+760000	Hełm Maliketha
+760100	Zbroja Maliketha
+760200	Rękawice Maliketha
+760300	Nagolenniki Maliketha
+761100	Zbroja Maliketha (przerobiona)
+770000	Uskrzydlony hełm Malenii
+770100	Zbroja Malenii
+770200	Rękawica Malenii
+770300	Nagolenniki Malenii
+771100	Zbroja Malenii (przerobiona)
+780000	Hełm weterana
+780100	Zbroja weterana
+780200	Rękawice weterana
+780300	Nagolenniki weterana
+781100	Zbroja weterana (przerobiona)
+790000	Hełm wasalnego rycerza
+790100	Zbroja wasalnego rycerza
+790200	Rękawice wasalnego rycerza
+790300	Nagolenniki wasalnego rycerza
+791100	Zbroja wasalnego rycerza (przerobiona)
+800000	Odświętny kaptur
+800100	Odświętna szata
+801000	Odświętny kaptur (przerobiony)
+801100	Odświętna szata (przerobiona)
+802000	Niebieski odświętny kaptur
+802100	Odświętna szata z niebieską peleryną
+810000	Plebejska obręcz
+810100	Plebejskie odzienie
+810300	Plebejskie buty
+811000	Plebejska obręcz (przerobiona)
+811100	Plebejskie odzienie (przerobione)
+812000	Zwykłe plebejskie odzienie
+812100	Zwykłe plebejskie odzienie (przerobione)
+820000	Korona wysłannika
+830000	Błyskamienna korona bliźnioksiężnika
+830100	Szata z Rai Lucarii
+830200	Owijki czarodzieja
+830300	Owijacze czarodzieja
+831000	Błyskamienna korona Olivinusa
+832000	Błyskamienna korona Lazuli
+833000	Błyskamienna korona Karolosa
+834000	Błyskamienna korona wiedźmy
+834100	[ERROR]
+835000	[ERROR]
+835100	[ERROR]
+835200	[ERROR]
+835300	[ERROR]
+840000	Hełm marionetkowego żołnierza
+840100	Zbroja marionetkowego żołnierza
+850000	Ptasi hełm marionetkowego żołnierza
+860000	Hełm Rozszalałego Wilka
+860100	Zbroja Rozszalałego Wilka
+860200	Rękawice Rozszalałego Wilka
+860300	Nagolenniki Rozszalałego Wilka
+861100	Zbroja Rozszalałego Wilka (przerobiona)
+870000	Hełm z Krainy Trzcin
+870100	Zbroja z Krainy Trzcin
+870200	Rękawice z Krainy Trzcin
+870300	Nagolenniki z Krainy Trzcin
+871100	Zbroja z Krainy Trzcin (przerobiona)
+872000	Maska Okiny
+872100	Zbroja Białej Trzciny
+872200	Rękawice Białej Trzciny
+872300	Nagolenniki Białej Trzciny
+873000	[ERROR]
+880000	Kaptur konfesora
+880100	Strój konfesora
+880200	Rękawice konfesora
+880300	Buty konfesora
+881000	Kaptur konfesora (przerobiony)
+881100	Strój konfesora (przerobiony)
+890000	Żelazna maska więźnia
+890100	Strój więźnia
+890300	Spodnie więźnia
+891000	Żelazna maska szubrawca
+892100	[ERROR]
+900000	Kaptur podróżującej służki
+900100	Szata podróżującej służki
+900200	Rękawice podróżującej służki
+900300	Buty podróżującej służki
+901100	Szata podróżującej służki (przerobiona)
+901200	[ERROR]
+901600	[ERROR]
+902000	Opaska na włosy służki palców
+902100	Szata służki palców
+902300	Buty służki palców
+903100	Szata służki palców (przerobiona)
+904100	[ERROR]
+910000	Duży kapelusz mistrza
+910100	Długa szata mistrza
+910200	Rękawice mistrza
+910300	Spodnie mistrza
+911000	Maska pewności siebie
+911100	Długa szata mistrza (przerobiona)
+912000	[ERROR]
+912100	[ERROR]
+912200	[ERROR]
+912300	[ERROR]
+913000	[ERROR]
+920000	[ERROR]
+930000	Szkieletowa maska
+930100	Czarne pióra drapieżnika
+930200	Owijki bandyty
+930300	Buty bandyty
+931100	Odzienie bandyty
+940000	Maska ekscentryka
+940100	Zbroja ekscentryka
+940200	Owijki ekscentryka
+940300	Bryczesy ekscentryka
+941000	Maska ekscentryka (przerobiona)
+950000	Opuszkowy hełm
+950100	Opuszkowa zbroja
+950200	Opuszkowe rękawice
+950300	Opuszkowe nagolenniki
+951100	Opuszkowa zbroja (przerobiona)
+960000	Maska małżonki
+960100	Szata małżonki
+960300	Spodnie małżonki
+961000	Maska władcy
+961100	Szata władcy
+962100	Szata wyższych sfer
+963000	Maska Maraisa
+963100	Szata Maraisa
+963200	Zakrwawione bandaże
+964000	Zakrwawiona maska
+964100	Strój oficjalny
+965000	[ERROR]
+965100	[ERROR]
+965300	[ERROR]
+966000	[ERROR]
+967000	[ERROR]
+970000	Hełm Omenu
+970100	Zbroja Omenu
+970200	Rękawice Omenu
+970300	Nagolenniki Omenu
+980000	Hełm karyjskiego rycerza
+980100	Zbroja karyjskiego rycerza
+980200	Rękawice karyjskiego rycerza
+980300	Nagolenniki karyjskiego rycerza
+981100	Zbroja karyjskiego rycerza (przerobiona)
+990000	Błyskamienna korona Hierodasa
+990100	Szata Błędnego Czarodzieja
+990200	Karwasze Błędnego Czarodzieja
+990300	Buty Błędnego Czarodzieja
+991100	Szata Błędnego Czarodzieja (przerobiona)
+992000	[ERROR]
+1000000	Błyskamienna korona Haimy
+1000100	Szata maga bitewnego
+1000200	Owijki maga bitewnego
+1000300	Owijacze maga bitewnego
+1010000	Kapelusz Śnieżnej Wiedźmy
+1010100	Szata Śnieżnej Wiedźmy
+1010300	Spódnica Śnieżnej Wiedźmy
+1011100	Szata Śnieżnej Wiedźmy (przerobiona)
+1020100	Ubranie podróżnika
+1020200	Karwasze podróżnika
+1020300	Buty podróżnika
+1030000	Czapka młodego uczonego
+1030100	Szata młodego uczonego
+1040000	Promieniująca złota maska
+1040100	Łachmany Złotej Maski
+1040200	Złote bransolety
+1040300	Złoty pas
+1050100	Peleryna Upadłego Omenu
+1060000	Maska albinauryków
+1060100	Brudna kolczuga
+1070000	Maska z Zamor
+1070100	Zbroja z Zamor
+1070200	Owijki z Zamor
+1070300	Owijacze z Zamor
+1080000	Głowa kociego chochlika
+1081000	Głowa zębatego chochlika
+1082000	Głowa chochlika z jęzorem
+1083000	Głowa trupiego chochlika
+1084000	Głowa wilczego chochlika
+1085000	Głowa pradawnego chochlika
+1090000	Maska srebrnej łzy
+1100000	Czepiec kolczy
+1100100	Zbroja kolcza
+1100200	Rękawice
+1100300	Nogawice kolcze
+1101000	Wielki hełm
+1101100	Kasak z motywem oka
+1102100	Kasak z motywem drzewa
+1110000	Głowa ośmiornicy
+1120000	Słoik
+1130000	Grzybowa głowa
+1130100	Grzybowe ciało
+1130200	Grzybowe ręce
+1130300	Grzybowe nogi
+1300000	Lustrzany hełm Noxów
+1301000	Lustrzany hełm Ijiego
+1400000	Czarny kaptur
+1400100	Skórzana zbroja
+1400200	Skórzane rękawice
+1400300	Skórzane buty
+1401000	Maska bandyty
+1500000	Rycerski hełm
+1500100	Rycerska zbroja
+1500200	Rycerskie rękawice
+1500300	Rycerskie nagolenniki
+1600000	Wielki kaptur
+1610000	[ERROR]
+1700000	Hełm żołnierza Godricka
+1700100	Kasak z motywem drzewa i bestii
+1700200	Rękawice żołnierza Godricka
+1700300	Nagolenniki żołnierza Godricka
+1710000	Hełm z Rai Lucarii
+1710100	Kasak z motywem kukułki
+1710200	Rękawice z Rai Lucarii
+1710300	Nagolenniki z Rai Lucarii
+1720000	Hełm żołnierza z Leyndell
+1720100	Kasak z motywem Złotego Drzewa
+1720200	Rękawice żołnierza z Leyndell
+1720300	Nagolenniki żołnierza z Leyndell
+1730000	Hełm żołnierza Radahna
+1730100	Kasak z motywem Lwiej Grzywy
+1730200	Rękawice żołnierza Radahna
+1730300	Nagolenniki żołnierza Radahna
+1740100	Kasak mauzoleum
+1740200	Rękawice mauzoleum
+1740300	Nagolenniki mauzoleum
+1750000	Hełm Świętego Drzewa
+1750100	Kasak z herbem Świętego Drzewa
+1750200	Rękawice Świętego Drzewa
+1750300	Nagolenniki Świętego Drzewa
+1760000	Hełm rycerza z Gelmir
+1760100	Zbroja rycerza z Gelmir
+1760200	Rękawice rycerza z Gelmir
+1760300	Nagolenniki rycerza z Gelmir
+1761100	Zbroja rycerza z Gelmir (przerobiona)
+1770000	Hełm rycerza Godricka
+1770100	Zbroja rycerza Godricka
+1770200	Rękawice rycerza Godricka
+1770300	Nagolenniki rycerza Godricka
+1771100	Zbroja rycerza Godricka (przerobiona)
+1780000	Hełm rycerza Kukułki
+1780100	Zbroja rycerza Kukułki
+1780200	Rękawice rycerza Kukułki
+1780300	Nagolenniki rycerza Kukułki
+1781100	Zbroja rycerza Kukułki (przerobiona)
+1790000	Hełm rycerza z Leyndell
+1790100	Zbroja rycerza z Leyndell
+1790200	Rękawice rycerza z Leyndell
+1790300	Nagolenniki rycerza z Leyndell
+1791100	Zbroja rycerza z Leyndell (przerobiona)
+1800000	Hełm rycerza Lwiej Grzywy
+1800100	Zbroja rycerza Lwiej Grzywy
+1800200	Rękawice rycerza Lwiej Grzywy
+1800300	Nagolenniki rycerza Lwiej Grzywy
+1801100	Zbroja rycerza Lwiej Grzywy (przerobiona)
+1810100	Zbroja rycerza mauzoleum
+1810200	Rękawice rycerza mauzoleum
+1810300	Nagolenniki rycerza mauzoleum
+1811100	Zbroja rycerza mauzoleum (przerobiona)
+1820000	Hełm rycerza Świętego Drzewa
+1820100	Zbroja rycerza Świętego Drzewa
+1820200	Rękawice rycerza Świętego Drzewa
+1820300	Nagolenniki rycerza Świętego Drzewa
+1821100	Zbroja rycerza Świętego Drzewa (przerobiona)
+1830000	Kapalin piechura
+1830100	Tabard opięty kolczugą
+1830200	Rękawice piechura
+1830300	Nagolenniki piechura
+1840000	Łebka piechura
+1840100	Tabard piechura
+1850000	Pozłacany morion piechura
+1850100	Tabard opięty skórą
+1860000	Hełm piechura
+1860100	Szkarłatny tabard
+1870100	Zakrwawiony tabard
+1880000	Morion świętej korony
+1880100	Tabard opięty kremową tkaniną
+1890000	Maska złowieszczego uśmiechu
+1890100	Szata Zabójcy Omenów
+1890200	Długie rękawice Zabójcy Omenów
+1890300	Buty Zabójcy Omenów
+1900000	Skarabeusz popiołów wojny
+1901000	Skarabeusz inkantacji
+1902000	Błyskamienny skarabeusz
+1910000	Skarabeusz szkarłatnej łzy
+1920000	Skarabeusz modrej łzy
+1930100	Suknia na łoże śmierci
+1930300	[ERROR]
+1932100	[ERROR]
+1940000	Kaptur Fii
+1940100	Szata Fii
+1941100	Szata Fii (przerobiona)
+1950000	
+1950100	[ERROR]
+1950200	[ERROR]
+1950300	[ERROR]
+1960000	
+1960100	[ERROR]
+1960200	[ERROR]
+1970100	[ERROR]
+1970200	[ERROR]
+1971100	[ERROR]
+1971200	[ERROR]
+1980000	Kaptur rabusia
+1980100	Wyściełana zbroja rabusia
+1980200	Rękawice rabusia
+1990000	Kaptur giermka o wysokiej pozycji
+1990100	Strój giermka o wysokiej pozycji
+1991100	Strój giermka o wysokiej pozycji (przerobiony)
+2000000	Przegniły hełm pojedynkowicza
+2000100	Przegniły płaszcz strażnika grobów
+2000300	Przegniłe nagolenniki pojedynkowicza
+2001100	Przegniły strój gladiatora
+2010000	Grzybowa korona
+2020000	Czarny pieróg
+2030000	Szata Lazuli

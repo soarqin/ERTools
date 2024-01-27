@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Abito da viaggiatore"
+  },
+  {
+    "id": 1020200,
+    "name": "Parabraccia da viaggiatore"
+  },
+  {
+    "id": 1020300,
+    "name": "Stivali da viaggiatore"
+  },
+  {
+    "id": 810000,
+    "name": "Fascia da popolano"
+  },
+  {
+    "id": 811000,
+    "name": "Fascia da popolano alterata"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Abito da popolano/Abito da popolano alterato"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Abito semplice da popolano/Abito semplice da popolano alterato"
+  },
+  {
+    "id": 810300,
+    "name": "Scarpe da popolano"
+  },
+  {
+    "id": 370000,
+    "name": "Fascia da aristocratico"
+  },
+  {
+    "id": 380000,
+    "name": "Cappello da aristocratico"
+  },
+  {
+    "id": 370100,
+    "name": "Abito da aristocratico"
+  },
+  {
+    "id": 371100,
+    "name": "Abito da aristocratico alterato"
+  },
+  {
+    "id": 380100,
+    "name": "Cappotto da aristocratico"
+  },
+  {
+    "id": 370300,
+    "name": "Stivali da aristocratico"
+  },
+  {
+    "id": 390000,
+    "name": "Chaperon da aristocratico attempato"
+  },
+  {
+    "id": 390100,
+    "name": "Veste da aristocratico attempato"
+  },
+  {
+    "id": 390300,
+    "name": "Scarpe da aristocratico attempato"
+  },
+  {
+    "id": 220000,
+    "name": "Cappuccio da paggio"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Abito da paggio/Abito da paggio alterato"
+  },
+  {
+    "id": 220300,
+    "name": "Pantaloni da paggio"
+  },
+  {
+    "id": 1990000,
+    "name": "Cappuccio da valletto"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "Abito da valletto/Abito da valletto alterato"
+  },
+  {
+    "id": 330000,
+    "name": "Maschera da guardiano"
+  },
+  {
+    "id": 331100,
+    "name": "Farsetto da guardiano"
+  },
+  {
+    "id": 330100,
+    "name": "Farsetto fiorito da guardiano"
+  },
+  {
+    "id": 330200,
+    "name": "Parabraccia da guardiano"
+  },
+  {
+    "id": 330300,
+    "name": "Schinieri da guardiano"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Copricapo festivo/Copricapo festivo alterato"
+  },
+  {
+    "id": 800100,
+    "name": "Abito festivo"
+  },
+  {
+    "id": 801100,
+    "name": "Abito festivo alterato"
+  },
+  {
+    "id": 802000,
+    "name": "Copricapo festivo blu"
+  },
+  {
+    "id": 802100,
+    "name": "Abito festivo blu"
+  },
+  {
+    "id": 160000,
+    "name": "Cappuccio da colpevole"
+  },
+  {
+    "id": 160100,
+    "name": "Abito di tessuto"
+  },
+  {
+    "id": 160300,
+    "name": "Pantaloni di tessuto"
+  },
+  {
+    "id": 890000,
+    "name": "Maschera da prigioniero"
+  },
+  {
+    "id": 890100,
+    "name": "Tenuta da prigioniero"
+  },
+  {
+    "id": 890300,
+    "name": "Pantaloni da prigioniero"
+  },
+  {
+    "id": 891000,
+    "name": "Maschera di ferro da brigante"
+  },
+  {
+    "id": 964000,
+    "name": "Maschera intrisa di sangue"
+  },
+  {
+    "id": 964100,
+    "name": "Tenuta del funzionario"
+  },
+  {
+    "id": 963200,
+    "name": "Bendaggi intrisi di sangue"
+  },
+  {
+    "id": 2020000,
+    "name": "Canederlo nero"
+  },
+  {
+    "id": 1130000,
+    "name": "Testa fungina"
+  },
+  {
+    "id": 2010000,
+    "name": "Corona fungina"
+  },
+  {
+    "id": 1130100,
+    "name": "Corpo fungino"
+  },
+  {
+    "id": 1130200,
+    "name": "Braccia fungine"
+  },
+  {
+    "id": 1130300,
+    "name": "Gambe fungine"
+  },
+  {
+    "id": 630000,
+    "name": "Cappuccio da astrologo"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Veste da astrologo/Veste da astrologo alterata"
+  },
+  {
+    "id": 630200,
+    "name": "Guanti da astrologo"
+  },
+  {
+    "id": 630300,
+    "name": "Pantaloni da astrologo"
+  },
+  {
+    "id": 1030000,
+    "name": "Tocco da neofita"
+  },
+  {
+    "id": 1030100,
+    "name": "Veste da neofita"
+  },
+  {
+    "id": 833000,
+    "name": "Maschera di scintipietra di Karolos"
+  },
+  {
+    "id": 831000,
+    "name": "Maschera di scintipietra di Olivinus"
+  },
+  {
+    "id": 830000,
+    "name": "Maschera di scintipietra del bisavio"
+  },
+  {
+    "id": 834000,
+    "name": "Maschera di scintipietra di Grana"
+  },
+  {
+    "id": 830100,
+    "name": "Veste di Raya Lucaria"
+  },
+  {
+    "id": 830200,
+    "name": "Fasciature da stregone"
+  },
+  {
+    "id": 830300,
+    "name": "Mollettiere da stregone"
+  },
+  {
+    "id": 832000,
+    "name": "Maschera di scintipietra di Lazuli"
+  },
+  {
+    "id": 2030000,
+    "name": "Veste di Lazuli"
+  },
+  {
+    "id": 1000000,
+    "name": "Maschera di scintipietra di Haima"
+  },
+  {
+    "id": 1000100,
+    "name": "Veste da mago guerriero"
+  },
+  {
+    "id": 1000200,
+    "name": "Fasciature da mago guerriero"
+  },
+  {
+    "id": 1000300,
+    "name": "Mollettiere da mago guerriero"
+  },
+  {
+    "id": 990000,
+    "name": "Maschera di scintipietra di Hierodas"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Veste da stregone errante/Veste da stregone errante alterata"
+  },
+  {
+    "id": 990200,
+    "name": "Polsini da stregone errante"
+  },
+  {
+    "id": 990300,
+    "name": "Stivali da stregone errante"
+  },
+  {
+    "id": 130000,
+    "name": "Cappello a punta da incantatore"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Tenuta da viaggio da incantatore/Tenuta da viaggio da incantatore alterata"
+  },
+  {
+    "id": 130200,
+    "name": "Guanti da incantatore"
+  },
+  {
+    "id": 130300,
+    "name": "Pantaloni da incantatore"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Cappello a punta di Alberich/Cappello a punta di Alberich alterato"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Veste di Alberich/Veste di Alberich alterata"
+  },
+  {
+    "id": 120200,
+    "name": "Parabraccia di Alberich"
+  },
+  {
+    "id": 120300,
+    "name": "Stivali di Alberich"
+  },
+  {
+    "id": 910000,
+    "name": "Gran cappello del precettore"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Veste lunga del precettore/Veste lunga del precettore alterata"
+  },
+  {
+    "id": 910200,
+    "name": "Guanti del precettore"
+  },
+  {
+    "id": 910300,
+    "name": "Pantaloni del precettore"
+  },
+  {
+    "id": 911000,
+    "name": "Maschera del precettore"
+  },
+  {
+    "id": 581000,
+    "name": "Corona di scintipietra di Azur"
+  },
+  {
+    "id": 581100,
+    "name": "Veste di scintipietra di Azur"
+  },
+  {
+    "id": 581200,
+    "name": "Fasciature di Azur"
+  },
+  {
+    "id": 580000,
+    "name": "Corona di scintipietra di Lusat"
+  },
+  {
+    "id": 580100,
+    "name": "Veste di scintipietra di Lusat"
+  },
+  {
+    "id": 580200,
+    "name": "Fasciature di Lusat"
+  },
+  {
+    "id": 580300,
+    "name": "Mollettiere da vecchio stregone"
+  },
+  {
+    "id": 510000,
+    "name": "Corona della luna crescente"
+  },
+  {
+    "id": 510100,
+    "name": "Veste della regina"
+  },
+  {
+    "id": 510200,
+    "name": "Polsini della regina"
+  },
+  {
+    "id": 510300,
+    "name": "Pantaloni della regina"
+  },
+  {
+    "id": 1010000,
+    "name": "Cappello da strega delle nevi"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Veste da strega delle nevi/Veste da strega delle nevi alterata"
+  },
+  {
+    "id": 1010300,
+    "name": "Gonna da strega delle nevi"
+  },
+  {
+    "id": 1940000,
+    "name": "Cappuccio di Fia"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Veste di Fia/Veste di Fia alterata"
+  },
+  {
+    "id": 1930100,
+    "name": "Vestito funebre"
+  },
+  {
+    "id": 620000,
+    "name": "Benda da profeta"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Veste da profeta alterata/Veste da profeta"
+  },
+  {
+    "id": 620300,
+    "name": "Pantaloni da profeta"
+  },
+  {
+    "id": 620100,
+    "name": "Veste di Corhyn"
+  },
+  {
+    "id": 900000,
+    "name": "Cappuccio da vergine viandante"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Veste da vergine viandante/Veste da vergine viandante alterata"
+  },
+  {
+    "id": 900200,
+    "name": "Guanti da vergine viandante"
+  },
+  {
+    "id": 900300,
+    "name": "Stivali da vergine viandante"
+  },
+  {
+    "id": 902000,
+    "name": "Torque da vergine delle Dita"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Veste da vergine delle Dita/Veste da vergine delle Dita alterata"
+  },
+  {
+    "id": 902300,
+    "name": "Scarpe da vergine delle Dita"
+  },
+  {
+    "id": 430000,
+    "name": "Cappuccio da saggio"
+  },
+  {
+    "id": 430100,
+    "name": "Veste da saggio"
+  },
+  {
+    "id": 430300,
+    "name": "Pantaloni da saggio"
+  },
+  {
+    "id": 1600000,
+    "name": "Grancappuccio"
+  },
+  {
+    "id": 1040000,
+    "name": "Maschera d'oro radiante"
+  },
+  {
+    "id": 1040100,
+    "name": "Stracci di Maschera d'oro"
+  },
+  {
+    "id": 1040200,
+    "name": "Bracciali d'oro"
+  },
+  {
+    "id": 1040300,
+    "name": "Cintura d'oro"
+  },
+  {
+    "id": 90000,
+    "name": "Tagelmust da profumiere"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Veste da profumiere/Veste da profumiere alterata"
+  },
+  {
+    "id": 90200,
+    "name": "Guanti da profumiere"
+  },
+  {
+    "id": 90300,
+    "name": "Sarong da profumiere"
+  },
+  {
+    "id": 100000,
+    "name": "Cappello da viaggiatore"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Abito da viaggio da profumiere/Abito da viaggio da profumiere alterato"
+  },
+  {
+    "id": 100200,
+    "name": "Guanti del viaggiatore"
+  },
+  {
+    "id": 100300,
+    "name": "Brache del viaggiatore"
+  },
+  {
+    "id": 540000,
+    "name": "Tagelmust da profumiere corrotto"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Veste da profumiere corrotto/Veste da profumiere corrotto alterata"
+  },
+  {
+    "id": 540200,
+    "name": "Guanti da profumiere corrotto"
+  },
+  {
+    "id": 540300,
+    "name": "Pantaloni da profumiere corrotto"
+  },
+  {
+    "id": 962100,
+    "name": "Veste d'alto bordo"
+  },
+  {
+    "id": 961000,
+    "name": "Maschera del signore"
+  },
+  {
+    "id": 961100,
+    "name": "Veste del signore"
+  },
+  {
+    "id": 960000,
+    "name": "Maschera della consorte"
+  },
+  {
+    "id": 960100,
+    "name": "Veste della consorte"
+  },
+  {
+    "id": 960300,
+    "name": "Pantaloni della consorte"
+  },
+  {
+    "id": 963000,
+    "name": "Maschera di Marais"
+  },
+  {
+    "id": 963100,
+    "name": "Veste di Marais"
+  },
+  {
+    "id": 300000,
+    "name": "Grandi corna"
+  },
+  {
+    "id": 300100,
+    "name": "Pelliccia"
+  },
+  {
+    "id": 300300,
+    "name": "Gambali di pelliccia"
+  },
+  {
+    "id": 301000,
+    "name": "Grandi corna luminose"
+  },
+  {
+    "id": 301100,
+    "name": "Pelliccia da sciamano"
+  },
+  {
+    "id": 301300,
+    "name": "Gambali da sciamano"
+  },
+  {
+    "id": 520000,
+    "name": "Cappuccio da apostolo Sacriderma"
+  },
+  {
+    "id": 520100,
+    "name": "Veste da apostolo Sacriderma"
+  },
+  {
+    "id": 520200,
+    "name": "Parabraccia da apostolo Sacriderma"
+  },
+  {
+    "id": 520300,
+    "name": "Pantaloni da apostolo Sacriderma"
+  },
+  {
+    "id": 530000,
+    "name": "Cappuccio da nobile Sacriderma"
+  },
+  {
+    "id": 530100,
+    "name": "Veste da nobile Sacriderma"
+  },
+  {
+    "id": 530200,
+    "name": "Polsini da nobile Sacriderma"
+  },
+  {
+    "id": 530300,
+    "name": "Pantaloni da nobile Sacriderma"
+  },
+  {
+    "id": 1050100,
+    "name": "Mantello del Presagio implacabile"
+  },
+  {
+    "id": 320000,
+    "name": "Cappuccio da sanguigno nobiliare"
+  },
+  {
+    "id": 320100,
+    "name": "Veste da sanguigno nobiliare"
+  },
+  {
+    "id": 320300,
+    "name": "Gonna da sanguigno nobiliare"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Veste del Signore del sangue/Veste del Signore del sangue alterata"
+  },
+  {
+    "id": 1910000,
+    "name": "Scarabeo della lacrima cremisi"
+  },
+  {
+    "id": 1920000,
+    "name": "Scarabeo della lacrima cerulea"
+  },
+  {
+    "id": 1900000,
+    "name": "Scarabeo delle ceneri di guerra"
+  },
+  {
+    "id": 1902000,
+    "name": "Scarabeo della scintipietra"
+  },
+  {
+    "id": 1901000,
+    "name": "Scarabeo degli incantesimi"
+  },
+  {
+    "id": 1080000,
+    "name": "Testa di demone felino"
+  },
+  {
+    "id": 1084000,
+    "name": "Testa di demone lupo"
+  },
+  {
+    "id": 1081000,
+    "name": "Testa di demone zannuto"
+  },
+  {
+    "id": 1082000,
+    "name": "Testa di demone satiro"
+  },
+  {
+    "id": 1083000,
+    "name": "Testa di demone cadaverico"
+  },
+  {
+    "id": 1085000,
+    "name": "Testa di demone ancestrale"
+  },
+  {
+    "id": 1300000,
+    "name": "Elmo specchiato da Nox"
+  },
+  {
+    "id": 1301000,
+    "name": "Elmo specchiato di Iji"
+  },
+  {
+    "id": 1090000,
+    "name": "Maschera della lacrima d'argento"
+  },
+  {
+    "id": 820000,
+    "name": "Turbante da messaggero"
+  },
+  {
+    "id": 1110000,
+    "name": "Polpo in testa"
+  },
+  {
+    "id": 1120000,
+    "name": "Vaso"
+  },
+  {
+    "id": 1060000,
+    "name": "Maschera da albinauro"
+  },
+  {
+    "id": 1060100,
+    "name": "Cotta di maglia sporca"
+  },
+  {
+    "id": 1400000,
+    "name": "Cappuccio nero"
+  },
+  {
+    "id": 1400100,
+    "name": "Corazza di cuoio"
+  },
+  {
+    "id": 1400200,
+    "name": "Guanti di cuoio"
+  },
+  {
+    "id": 1400300,
+    "name": "Stivali di cuoio"
+  },
+  {
+    "id": 670000,
+    "name": "Turbante di stoffa azzurra"
+  },
+  {
+    "id": 670100,
+    "name": "Veste di stoffa azzurra"
+  },
+  {
+    "id": 670200,
+    "name": "Guanti d'arme da guerriero"
+  },
+  {
+    "id": 670300,
+    "name": "Schinieri da guerriero"
+  },
+  {
+    "id": 740000,
+    "name": "Cappuccio cremisi"
+  },
+  {
+    "id": 741000,
+    "name": "Cappuccio blu"
+  },
+  {
+    "id": 740100,
+    "name": "Abito da viaggio nobiliare"
+  },
+  {
+    "id": 740200,
+    "name": "Guanti nobiliari"
+  },
+  {
+    "id": 740300,
+    "name": "Pantaloni nobiliari"
+  },
+  {
+    "id": 680000,
+    "name": "Maschera bianca"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "Veste da cerusico da campo/Veste da cerusico da campo alterata"
+  },
+  {
+    "id": 680200,
+    "name": "Guanti da cerusico da campo"
+  },
+  {
+    "id": 680300,
+    "name": "Pantaloni da cerusico da campo"
+  },
+  {
+    "id": 250000,
+    "name": "Cappello da mercante nomade"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Abito da mercante nomade/Abito da mercante nomade alterato"
+  },
+  {
+    "id": 250300,
+    "name": "Pantaloni da mercante nomade"
+  },
+  {
+    "id": 1401000,
+    "name": "Bandana da fuorilegge"
+  },
+  {
+    "id": 931100,
+    "name": "Abito da fuorilegge"
+  },
+  {
+    "id": 930200,
+    "name": "Polsini da fuorilegge"
+  },
+  {
+    "id": 930300,
+    "name": "Stivali da fuorilegge"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Cappuccio da confessore/Cappuccio da confessore alterato"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Abito da confessore/Abito da confessore alterato"
+  },
+  {
+    "id": 880200,
+    "name": "Guanti da confessore"
+  },
+  {
+    "id": 880300,
+    "name": "Stivali da confessore"
+  },
+  {
+    "id": 1890000,
+    "name": "Maschera del presagio ghignante"
+  },
+  {
+    "id": 1890100,
+    "name": "Veste da ammazzapresagi"
+  },
+  {
+    "id": 1890200,
+    "name": "Guanti lunghi da ammazzapresagi"
+  },
+  {
+    "id": 1890300,
+    "name": "Stivali da ammazzapresagi"
+  },
+  {
+    "id": 930000,
+    "name": "Maschera scheletrica"
+  },
+  {
+    "id": 930100,
+    "name": "Piume nere di rapace"
+  },
+  {
+    "id": 1830000,
+    "name": "Cappello d'arme da fante"
+  },
+  {
+    "id": 1830100,
+    "name": "Tabarro di maglia drappeggiato"
+  },
+  {
+    "id": 1830200,
+    "name": "Guanti d'arme da fante"
+  },
+  {
+    "id": 1830300,
+    "name": "Schinieri da fante"
+  },
+  {
+    "id": 1840000,
+    "name": "Cervelliera da fante"
+  },
+  {
+    "id": 1840100,
+    "name": "Tabarro da fante"
+  },
+  {
+    "id": 1860000,
+    "name": "Elmo da fante"
+  },
+  {
+    "id": 1860100,
+    "name": "Tabarro scarlatto"
+  },
+  {
+    "id": 1850000,
+    "name": "Morione dorato da fante"
+  },
+  {
+    "id": 1850100,
+    "name": "Tabarro di cuoio drappeggiato"
+  },
+  {
+    "id": 1880000,
+    "name": "Morione della sacra corona"
+  },
+  {
+    "id": 1880100,
+    "name": "Tabarro avorio drappeggiato"
+  },
+  {
+    "id": 1870100,
+    "name": "Tabarro insanguinato"
+  },
+  {
+    "id": 1980000,
+    "name": "Cappuccio da grassatore"
+  },
+  {
+    "id": 1980100,
+    "name": "Armatura di stoffa da grassatore"
+  },
+  {
+    "id": 1980200,
+    "name": "Guanti d'arme da grassatore"
+  },
+  {
+    "id": 420000,
+    "name": "Elmo da masnadiere"
+  },
+  {
+    "id": 420100,
+    "name": "Corazza da masnadiere"
+  },
+  {
+    "id": 420200,
+    "name": "Guanti da masnadiere"
+  },
+  {
+    "id": 420300,
+    "name": "Schinieri da masnadiere"
+  },
+  {
+    "id": 310000,
+    "name": "Elmo da duellante"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Manto da custode di tombe/Manto da custode di tombe alterato"
+  },
+  {
+    "id": 310300,
+    "name": "Schinieri da duellante"
+  },
+  {
+    "id": 2000000,
+    "name": "Elmo da duellante putrido"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Manto putrido da custode di tombe/Manto putrido da custode di tombe alterato"
+  },
+  {
+    "id": 2000300,
+    "name": "Schinieri da duellante putrido"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Gutrah da monaco Nox/Gutrah da monaco Nox alterata"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Corazza da monaco Nox/Corazza da monaco Nox alterata"
+  },
+  {
+    "id": 290200,
+    "name": "Guanti da Nox"
+  },
+  {
+    "id": 290300,
+    "name": "Schinieri da Nox"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Hennin da spadaccina Nox/Hennin da spadaccina Nox alterato"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Corazza da spadaccina Nox/Corazza da spadaccina Nox alterata"
+  },
+  {
+    "id": 293000,
+    "name": "Mitra gemella della vergine dell'oscurità"
+  },
+  {
+    "id": 293100,
+    "name": "Corazza della vergine dell'oscurità"
+  },
+  {
+    "id": 730000,
+    "name": "Copricapo del campione"
+  },
+  {
+    "id": 730100,
+    "name": "Spallaccio del campione"
+  },
+  {
+    "id": 730200,
+    "name": "Parabraccia del campione"
+  },
+  {
+    "id": 730300,
+    "name": "Ghette del campione"
+  },
+  {
+    "id": 1100000,
+    "name": "Camaglio"
+  },
+  {
+    "id": 1100100,
+    "name": "Cotta di maglia"
+  },
+  {
+    "id": 1102100,
+    "name": "Sopravveste dell'albero"
+  },
+  {
+    "id": 1101100,
+    "name": "Sopravveste dell'occhio"
+  },
+  {
+    "id": 1100200,
+    "name": "Guanti d'arme"
+  },
+  {
+    "id": 1100300,
+    "name": "Gambali di maglia"
+  },
+  {
+    "id": 40000,
+    "name": "Elmo di ferro"
+  },
+  {
+    "id": 40100,
+    "name": "Armatura a scaglie"
+  },
+  {
+    "id": 40200,
+    "name": "Guanti di ferro"
+  },
+  {
+    "id": 40300,
+    "name": "Pantaloni di cuoio"
+  },
+  {
+    "id": 1700000,
+    "name": "Elmo da soldato di Godrick"
+  },
+  {
+    "id": 1700100,
+    "name": "Sopravveste con albero e bestia"
+  },
+  {
+    "id": 1700200,
+    "name": "Guanti d'arme da soldato di Godrick"
+  },
+  {
+    "id": 1700300,
+    "name": "Schinieri da soldato di Godrick"
+  },
+  {
+    "id": 1710000,
+    "name": "Elmo di Raya Lucaria"
+  },
+  {
+    "id": 1710100,
+    "name": "Sopravveste del Cuculo"
+  },
+  {
+    "id": 1710200,
+    "name": "Guanti d'arme di Raya Lucaria"
+  },
+  {
+    "id": 1710300,
+    "name": "Schinieri di Raya Lucaria"
+  },
+  {
+    "id": 1730000,
+    "name": "Elmo da soldato di Radahn"
+  },
+  {
+    "id": 1730100,
+    "name": "Sopravveste del Mantorosso"
+  },
+  {
+    "id": 1730200,
+    "name": "Guanti d'arme da soldato di Radahn"
+  },
+  {
+    "id": 1730300,
+    "name": "Schinieri da soldato di Radahn"
+  },
+  {
+    "id": 1720000,
+    "name": "Elmo da soldato di Leyndell"
+  },
+  {
+    "id": 1720100,
+    "name": "Sopravveste dell'Albero Madre"
+  },
+  {
+    "id": 1720200,
+    "name": "Guanti d'arme da soldato di Leyndell"
+  },
+  {
+    "id": 1720300,
+    "name": "Schinieri da soldato di Leyndell"
+  },
+  {
+    "id": 1750000,
+    "name": "Elmo del Sacro Albero"
+  },
+  {
+    "id": 1750100,
+    "name": "Sopravveste del Sacro Albero"
+  },
+  {
+    "id": 1750200,
+    "name": "Guanti d'arme del Sacro Albero"
+  },
+  {
+    "id": 1750300,
+    "name": "Schinieri del Sacro Albero"
+  },
+  {
+    "id": 1740100,
+    "name": "Sopravveste del mausoleo"
+  },
+  {
+    "id": 1740200,
+    "name": "Guanti d'arme del mausoleo"
+  },
+  {
+    "id": 1740300,
+    "name": "Schinieri del mausoleo"
+  },
+  {
+    "id": 190000,
+    "name": "Cappuccio da esule"
+  },
+  {
+    "id": 190100,
+    "name": "Corazza da esule"
+  },
+  {
+    "id": 190200,
+    "name": "Guanti d'arme da esule"
+  },
+  {
+    "id": 190300,
+    "name": "Schinieri da esule"
+  },
+  {
+    "id": 50000,
+    "name": "Elmo di Kaiden"
+  },
+  {
+    "id": 50100,
+    "name": "Armatura di Kaiden"
+  },
+  {
+    "id": 50200,
+    "name": "Guanti di Kaiden"
+  },
+  {
+    "id": 50300,
+    "name": "Pantaloni di Kaiden"
+  },
+  {
+    "id": 870000,
+    "name": "Elmo dei giunchi"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Corazza dei giunchi/Corazza dei giunchi alterata"
+  },
+  {
+    "id": 870200,
+    "name": "Guanti dei giunchi"
+  },
+  {
+    "id": 870300,
+    "name": "Schinieri dei giunchi"
+  },
+  {
+    "id": 872000,
+    "name": "Maschera di Okina"
+  },
+  {
+    "id": 872100,
+    "name": "Corazza dei giunchi bianchi"
+  },
+  {
+    "id": 872200,
+    "name": "Guanti d'arme dei giunchi bianchi"
+  },
+  {
+    "id": 872300,
+    "name": "Schinieri dei giunchi bianchi"
+  },
+  {
+    "id": 150000,
+    "name": "Kasa di ferro"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Armatura da ronin/Armatura da ronin alterata"
+  },
+  {
+    "id": 150200,
+    "name": "Guanti d'arme da ronin"
+  },
+  {
+    "id": 150300,
+    "name": "Schinieri da ronin"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Maschera dell'eccentrico/Maschera dell'eccentrico alterata"
+  },
+  {
+    "id": 940100,
+    "name": "Corazza dell'eccentrico"
+  },
+  {
+    "id": 940200,
+    "name": "Fasciature dell'eccentrico"
+  },
+  {
+    "id": 940300,
+    "name": "Calzoni dell'eccentrico"
+  },
+  {
+    "id": 840000,
+    "name": "Elmo da soldato marionetta"
+  },
+  {
+    "id": 850000,
+    "name": "Elmobecco da soldato marionetta"
+  },
+  {
+    "id": 840100,
+    "name": "Corazza da soldato marionetta"
+  },
+  {
+    "id": 240000,
+    "name": "Camaglio d'argento blu"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Usbergo d'argento blu/Usbergo d'argento blu alterato"
+  },
+  {
+    "id": 240200,
+    "name": "Polsini d'argento blu"
+  },
+  {
+    "id": 240300,
+    "name": "Gonna di maglia d'argento blu"
+  },
+  {
+    "id": 350000,
+    "name": "Cappuccio da monaco del fuoco"
+  },
+  {
+    "id": 350100,
+    "name": "Corazza da monaco del fuoco"
+  },
+  {
+    "id": 350200,
+    "name": "Guanti da monaco del fuoco"
+  },
+  {
+    "id": 350300,
+    "name": "Schinieri da monaco del fuoco"
+  },
+  {
+    "id": 351000,
+    "name": "Cappuccio da monaco della nera fiamma"
+  },
+  {
+    "id": 351100,
+    "name": "Corazza da monaco della nera fiamma"
+  },
+  {
+    "id": 351200,
+    "name": "Guanti d'arme da monaco della nera fiamma"
+  },
+  {
+    "id": 351300,
+    "name": "Schinieri da monaco della nera fiamma"
+  },
+  {
+    "id": 1070000,
+    "name": "Maschera di Zamor"
+  },
+  {
+    "id": 1070100,
+    "name": "Corazza di Zamor"
+  },
+  {
+    "id": 1070200,
+    "name": "Fasciature di Zamor"
+  },
+  {
+    "id": 1070300,
+    "name": "Mollettiere di Zamor"
+  },
+  {
+    "id": 180000,
+    "name": "Cappuccio dei Neri Coltelli"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Corazza dei Neri Coltelli/Corazza dei Neri Coltelli alterata"
+  },
+  {
+    "id": 180200,
+    "name": "Guanti d'arme dei Neri Coltelli"
+  },
+  {
+    "id": 180300,
+    "name": "Schinieri dei Neri Coltelli"
+  },
+  {
+    "id": 770000,
+    "name": "Elmo alato di Malenia"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Corazza di Malenia/Corazza di Malenia alterata"
+  },
+  {
+    "id": 770200,
+    "name": "Guanto d'arme di Malenia"
+  },
+  {
+    "id": 770300,
+    "name": "Schinieri di Malenia"
+  },
+  {
+    "id": 460000,
+    "name": "Corona da Lord ancestrale"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Corazza da Lord ancestrale/Corazza da Lord ancestrale alterata"
+  },
+  {
+    "id": 460200,
+    "name": "Parabraccia da Lord ancestrale"
+  },
+  {
+    "id": 460300,
+    "name": "Schinieri da Lord ancestrale"
+  },
+  {
+    "id": 1500000,
+    "name": "Elmo da cavaliere"
+  },
+  {
+    "id": 1500100,
+    "name": "Corazza da cavaliere"
+  },
+  {
+    "id": 1500200,
+    "name": "Guanti d'arme da cavaliere"
+  },
+  {
+    "id": 1500300,
+    "name": "Schinieri da cavaliere"
+  },
+  {
+    "id": 660000,
+    "name": "Elmo da cavaliere errante"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Corazza da cavaliere errante/Corazza da cavaliere errante alterata"
+  },
+  {
+    "id": 660200,
+    "name": "Guanti d'arme da cavaliere errante"
+  },
+  {
+    "id": 660300,
+    "name": "Schinieri da cavaliere errante"
+  },
+  {
+    "id": 1101000,
+    "name": "Grande elmo"
+  },
+  {
+    "id": 980000,
+    "name": "Elmo da cavaliere cariano"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Corazza da cavaliere cariano/Corazza da cavaliere cariano alterata"
+  },
+  {
+    "id": 980200,
+    "name": "Guanti da cavaliere cariano"
+  },
+  {
+    "id": 980300,
+    "name": "Schinieri da cavaliere cariano"
+  },
+  {
+    "id": 1770000,
+    "name": "Elmo da cavaliere di Godrick"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Corazza da cavaliere di Godrick/Corazza da cavaliere di Godrick alterata"
+  },
+  {
+    "id": 1770200,
+    "name": "Guanti d'arme da cavaliere di Godrick"
+  },
+  {
+    "id": 1770300,
+    "name": "Schinieri da cavaliere di Godrick"
+  },
+  {
+    "id": 1780000,
+    "name": "Elmo da cavaliere del Cuculo"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Corazza da cavaliere del Cuculo/Corazza da cavaliere del Cuculo alterata"
+  },
+  {
+    "id": 1780200,
+    "name": "Guanti d'arme da cavaliere del Cuculo"
+  },
+  {
+    "id": 1780300,
+    "name": "Schinieri da cavaliere del Cuculo"
+  },
+  {
+    "id": 1800000,
+    "name": "Elmo da cavaliere Mantorosso"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Corazza da cavaliere Mantorosso/Corazza da cavaliere Mantorosso alterata"
+  },
+  {
+    "id": 1800200,
+    "name": "Guanti d'arme da cavaliere Mantorosso"
+  },
+  {
+    "id": 1800300,
+    "name": "Schinieri da cavaliere Mantorosso"
+  },
+  {
+    "id": 1760000,
+    "name": "Elmo da cavaliere di Gelmir"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Corazza da cavaliere di Gelmir/Corazza da cavaliere di Gelmir alterata"
+  },
+  {
+    "id": 1760200,
+    "name": "Guanti d'arme da cavaliere di Gelmir"
+  },
+  {
+    "id": 1760300,
+    "name": "Schinieri da cavaliere di Gelmir"
+  },
+  {
+    "id": 1790000,
+    "name": "Elmo da cavaliere di Leyndell"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Corazza da cavaliere di Leyndell/Corazza da cavaliere di Leyndell alterata"
+  },
+  {
+    "id": 1790200,
+    "name": "Guanti d'arme da cavaliere di Leyndell"
+  },
+  {
+    "id": 1790300,
+    "name": "Schinieri da cavaliere di Leyndell"
+  },
+  {
+    "id": 1820000,
+    "name": "Elmo da cavaliere del Sacro Albero"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Corazza da cavaliere del Sacro Albero/Corazza da cavaliere del Sacro Albero alt."
+  },
+  {
+    "id": 1820200,
+    "name": "Guanti d'arme da cavaliere del Sacro Albero"
+  },
+  {
+    "id": 1820300,
+    "name": "Schinieri da cavaliere del Sacro Albero"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Corazza da cavaliere del mausoleo/Corazza da cavaliere del mausoleo alterata"
+  },
+  {
+    "id": 1810200,
+    "name": "Guanti da cavaliere del mausoleo"
+  },
+  {
+    "id": 1810300,
+    "name": "Schinieri da cavaliere del mausoleo"
+  },
+  {
+    "id": 790000,
+    "name": "Elmo da cavalier limiere"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Corazza da cavalier limiere/Corazza da cavalier limiere alterata"
+  },
+  {
+    "id": 790200,
+    "name": "Guanti d'arme da cavalier limiere"
+  },
+  {
+    "id": 790300,
+    "name": "Schinieri da cavalier limiere"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Elmo del marcescente/Elmo del marcescente alterato"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Corazza del marcescente/Corazza del marcescente alterata"
+  },
+  {
+    "id": 340200,
+    "name": "Guanti d'arme del marcescente"
+  },
+  {
+    "id": 340300,
+    "name": "Schinieri del marcescente"
+  },
+  {
+    "id": 860000,
+    "name": "Elmo del Lupo sanguinario"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Corazza del Lupo sanguinario/Corazza del Lupo sanguinario alterata"
+  },
+  {
+    "id": 860200,
+    "name": "Guanti del Lupo sanguinario"
+  },
+  {
+    "id": 860300,
+    "name": "Schinieri del Lupo sanguinario"
+  },
+  {
+    "id": 650000,
+    "name": "Elmo degli Hoslow"
+  },
+  {
+    "id": 651000,
+    "name": "Maschera di Diallos"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Corazza degli Hoslow/Corazza degli Hoslow alterata"
+  },
+  {
+    "id": 650200,
+    "name": "Guanti d'arme degli Hoslow"
+  },
+  {
+    "id": 650300,
+    "name": "Schinieri degli Hoslow"
+  },
+  {
+    "id": 600000,
+    "name": "Elmo gemello"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Corazza gemella/Corazza gemella alterata"
+  },
+  {
+    "id": 600200,
+    "name": "Guanti d'arme gemelli"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Schinieri gemelli/Schinieri gemelli alterati"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Elmo da cavaliere del drago/Elmo da cavaliere del drago alterato"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Corazza da cavaliere del drago/Corazza da cavaliere del drago alterata"
+  },
+  {
+    "id": 60200,
+    "name": "Guanti d'arme da cavaliere del drago"
+  },
+  {
+    "id": 60300,
+    "name": "Schinieri da cavaliere del drago"
+  },
+  {
+    "id": 170000,
+    "name": "Maschera da lupo nero"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Corazza di Blaidd/Corazza di Blaidd alterata"
+  },
+  {
+    "id": 170200,
+    "name": "Guanti d'arme di Blaidd"
+  },
+  {
+    "id": 170300,
+    "name": "Schinieri di Blaidd"
+  },
+  {
+    "id": 210000,
+    "name": "Elmo del rovo"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Corazza del rovo/Corazza del rovo alterata"
+  },
+  {
+    "id": 210200,
+    "name": "Guanti d'arme del rovo"
+  },
+  {
+    "id": 210300,
+    "name": "Schinieri del rovo"
+  },
+  {
+    "id": 950000,
+    "name": "Elmo dell'impronta"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Corazza dell'impronta/Corazza dell'impronta alterata"
+  },
+  {
+    "id": 950200,
+    "name": "Guanti d'arme dell'impronta"
+  },
+  {
+    "id": 950300,
+    "name": "Schinieri dell'impronta"
+  },
+  {
+    "id": 690000,
+    "name": "Elmo delle spoglie reali"
+  },
+  {
+    "id": 690100,
+    "name": "Corazza delle spoglie reali"
+  },
+  {
+    "id": 690200,
+    "name": "Guanti d'arme delle spoglie reali"
+  },
+  {
+    "id": 690300,
+    "name": "Schinieri delle spoglie reali"
+  },
+  {
+    "id": 590000,
+    "name": "Elmo dell'onniscienza"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "Corazza dell'onniscienza/Corazza dell'onniscienza alterata"
+  },
+  {
+    "id": 590200,
+    "name": "Guanti d'arme dell'onniscienza"
+  },
+  {
+    "id": 590300,
+    "name": "Schinieri dell'onniscienza"
+  },
+  {
+    "id": 280000,
+    "name": "Elmo da cavaliere reale"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Corazza da cavaliere reale/Corazza da cavaliere reale alterata"
+  },
+  {
+    "id": 280200,
+    "name": "Guanti d'arme da cavaliere reale"
+  },
+  {
+    "id": 280300,
+    "name": "Schinieri da cavaliere reale"
+  },
+  {
+    "id": 760000,
+    "name": "Elmo di Maliketh"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Corazza di Maliketh/Corazza di Maliketh alterata"
+  },
+  {
+    "id": 760200,
+    "name": "Guanti d'arme di Maliketh"
+  },
+  {
+    "id": 760300,
+    "name": "Schinieri di Maliketh"
+  },
+  {
+    "id": 200000,
+    "name": "Elmo da cavaliere esule"
+  },
+  {
+    "id": 201000,
+    "name": "Elmo da cavaliere esule alterato"
+  },
+  {
+    "id": 200100,
+    "name": "Corazza da cavaliere esule"
+  },
+  {
+    "id": 201100,
+    "name": "Corazza da cavaliere esule alterata"
+  },
+  {
+    "id": 200200,
+    "name": "Guanti d'arme da cavaliere esule"
+  },
+  {
+    "id": 200300,
+    "name": "Schinieri da cavaliere esule"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Elmo dei cavalieri notturni/Elmo dei cavalieri notturni alterato"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Corazza dei cavalieri notturni/Corazza dei cavalieri notturni alterato"
+  },
+  {
+    "id": 230200,
+    "name": "Guanti d'arme dei cavalieri notturni"
+  },
+  {
+    "id": 230300,
+    "name": "Schinieri dei cavalieri notturni"
+  },
+  {
+    "id": 780000,
+    "name": "Elmo da veterano"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Corazza da veterano/Corazza da veterano alterata"
+  },
+  {
+    "id": 780200,
+    "name": "Guanti d'arme da veterano"
+  },
+  {
+    "id": 780300,
+    "name": "Schinieri da veterano"
+  },
+  {
+    "id": 80000,
+    "name": "Elmo a scaglie"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Corazza a scaglie/Corazza a scaglie alterata"
+  },
+  {
+    "id": 80200,
+    "name": "Guanti d'arme a scaglie"
+  },
+  {
+    "id": 80300,
+    "name": "Schinieri a scaglie"
+  },
+  {
+    "id": 720000,
+    "name": "Elmo da campione bestiale"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Corazza da campione bestiale/Corazza da campione bestiale alterata"
+  },
+  {
+    "id": 720200,
+    "name": "Guanti d'arme da campione bestiale"
+  },
+  {
+    "id": 720300,
+    "name": "Schinieri da campione bestiale"
+  },
+  {
+    "id": 270000,
+    "name": "Elmo da sentinella dell'albero"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Corazza da sentinella dell'albero/Corazza da sentinella dell'albero alt."
+  },
+  {
+    "id": 270200,
+    "name": "Guanti da sentinella dell'albero"
+  },
+  {
+    "id": 270300,
+    "name": "Schinieri da sentinella dell'albero"
+  },
+  {
+    "id": 260000,
+    "name": "Elmo draconico"
+  },
+  {
+    "id": 260100,
+    "name": "Corazza draconica"
+  },
+  {
+    "id": 260200,
+    "name": "Guanti d'arme draconici"
+  },
+  {
+    "id": 260300,
+    "name": "Schinieri draconici"
+  },
+  {
+    "id": 570000,
+    "name": "Elmo ascia del Crogiolo"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Corazza ascia del Crogiolo/Corazza ascia del Crogiolo alterata"
+  },
+  {
+    "id": 570200,
+    "name": "Guanti d'arme del Crogiolo"
+  },
+  {
+    "id": 570300,
+    "name": "Schinieri del Crogiolo"
+  },
+  {
+    "id": 571000,
+    "name": "Elmo arboreo del Crogiolo"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Corazza arborea del Crogiolo/Corazza arborea del Crogiolo alterata"
+  },
+  {
+    "id": 470000,
+    "name": "Chioma rossa di Radahn"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Corazza leonina di Radahn/Corazza leonina di Radahn alterata"
+  },
+  {
+    "id": 470200,
+    "name": "Guanti d'arme di Radahn"
+  },
+  {
+    "id": 470300,
+    "name": "Schinieri di Radahn"
+  },
+  {
+    "id": 640000,
+    "name": "Elmo di Lionel"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Corazza di Lionel/Corazza di Lionel alterata"
+  },
+  {
+    "id": 640200,
+    "name": "Guanti d'arme di Lionel"
+  },
+  {
+    "id": 640300,
+    "name": "Schinieri di Lionel"
+  },
+  {
+    "id": 140000,
+    "name": "Elmo dell'ariete"
+  },
+  {
+    "id": 140100,
+    "name": "Corazza dell'ariete"
+  },
+  {
+    "id": 140200,
+    "name": "Guanti d'arme dell'ariete"
+  },
+  {
+    "id": 140300,
+    "name": "Schinieri dell'ariete"
+  },
+  {
+    "id": 970000,
+    "name": "Elmo da presagio"
+  },
+  {
+    "id": 970100,
+    "name": "Corazza da presagio"
+  },
+  {
+    "id": 970200,
+    "name": "Guanti d'arme da presagio"
+  },
+  {
+    "id": 970300,
+    "name": "Schinieri da presagio"
+  },
+  {
+    "id": 360000,
+    "name": "Elmo da prelato del fuoco"
+  },
+  {
+    "id": 360100,
+    "name": "Corazza da prelato del fuoco"
+  },
+  {
+    "id": 361100,
+    "name": "Corazza da prelato del fuoco alterata"
+  },
+  {
+    "id": 360200,
+    "name": "Guanti da prelato del fuoco"
+  },
+  {
+    "id": 360300,
+    "name": "Schinieri da prelato del fuoco"
+  },
+  {
+    "id": 440000,
+    "name": "Elmo zucca"
+  }
+]

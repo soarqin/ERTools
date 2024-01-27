@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Medalhão de Âmbar Carmesim"
+  },
+  {
+    "id": 1001,
+    "name": "Medalhão de Âmbar Carmesim +1"
+  },
+  {
+    "id": 1002,
+    "name": "Medalhão de Âmbar Carmesim +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talismã de Semente Carmesim"
+  },
+  {
+    "id": 5020,
+    "name": "Talismã de Orvalho Abençoado"
+  },
+  {
+    "id": 1010,
+    "name": "Medalhão de Âmbar Cerúleo"
+  },
+  {
+    "id": 1011,
+    "name": "Medalhão de Âmbar Cerúleo +1"
+  },
+  {
+    "id": 1012,
+    "name": "Medalhão de Âmbar Cerúleo +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talismã de Semente Cerúlea"
+  },
+  {
+    "id": 1020,
+    "name": "Medalhão de Âmbar Viridiano"
+  },
+  {
+    "id": 1021,
+    "name": "Medalhão de Âmbar Viridiano +1"
+  },
+  {
+    "id": 1022,
+    "name": "Medalhão de Âmbar Viridiano +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talismã de Tartaruga Verde"
+  },
+  {
+    "id": 1030,
+    "name": "Amuleto de Arsenal"
+  },
+  {
+    "id": 1031,
+    "name": "Amuleto de Arsenal +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenal do Grande Jarro"
+  },
+  {
+    "id": 1040,
+    "name": "Bênção da Térvore"
+  },
+  {
+    "id": 1041,
+    "name": "Bênção da Térvore +1"
+  },
+  {
+    "id": 1042,
+    "name": "Bênção da Térvore +2"
+  },
+  {
+    "id": 1050,
+    "name": "Selo da Cicatriz de Radagon"
+  },
+  {
+    "id": 1051,
+    "name": "Selo da Ferida de Radagon"
+  },
+  {
+    "id": 1220,
+    "name": "Selo da Cicatriz de Marika"
+  },
+  {
+    "id": 1221,
+    "name": "Selo da Ferida de Marika"
+  },
+  {
+    "id": 1060,
+    "name": "Herança do Flagelo Estelar"
+  },
+  {
+    "id": 1070,
+    "name": "Herança de Usuário de Prótese"
+  },
+  {
+    "id": 1080,
+    "name": "Herança de Observador de Estrelas"
+  },
+  {
+    "id": 1090,
+    "name": "Herança de Dois Dedos"
+  },
+  {
+    "id": 4000,
+    "name": "Talismã de Escudo com Brasão de Dragão"
+  },
+  {
+    "id": 4001,
+    "name": "Talismã de Escudo com Brasão de Dragão +1"
+  },
+  {
+    "id": 4002,
+    "name": "Talismã de Escudo com Brasão de Dragão +2"
+  },
+  {
+    "id": 4003,
+    "name": "Talismã de Escudo Grande com Brasão de Dragão"
+  },
+  {
+    "id": 4010,
+    "name": "Talismã de Draco de Feitiço"
+  },
+  {
+    "id": 4011,
+    "name": "Talismã de Draco de Feitiço +1"
+  },
+  {
+    "id": 4012,
+    "name": "Talismã de Draco de Feitiço +2"
+  },
+  {
+    "id": 4020,
+    "name": "Talismã de Draco de Fogo"
+  },
+  {
+    "id": 4021,
+    "name": "Talismã de Draco de Fogo +1"
+  },
+  {
+    "id": 4022,
+    "name": "Talismã de Draco de Fogo +2"
+  },
+  {
+    "id": 4030,
+    "name": "Talismã de Draco Elétrico"
+  },
+  {
+    "id": 4031,
+    "name": "Talismã de Draco Elétrico +1"
+  },
+  {
+    "id": 4032,
+    "name": "Talismã de Draco Elétrico +2"
+  },
+  {
+    "id": 4040,
+    "name": "Talismã de Draco Sagrado"
+  },
+  {
+    "id": 4041,
+    "name": "Talismã de Draco Sagrado +1"
+  },
+  {
+    "id": 4042,
+    "name": "Talismã de Draco Sagrado +2"
+  },
+  {
+    "id": 4050,
+    "name": "Talismã de Draco de Pérola"
+  },
+  {
+    "id": 4051,
+    "name": "Talismã de Draco de Pérola +1"
+  },
+  {
+    "id": 4052,
+    "name": "Talismã de Draco de Pérola +2"
+  },
+  {
+    "id": 1170,
+    "name": "Amuleto de Chifre Imunizante"
+  },
+  {
+    "id": 1171,
+    "name": "Amuleto de Chifre Imunizante +1"
+  },
+  {
+    "id": 1160,
+    "name": "Amuleto de Chifre Robusto"
+  },
+  {
+    "id": 1161,
+    "name": "Amuleto de Chifre Robusto +1"
+  },
+  {
+    "id": 1180,
+    "name": "Amuleto de Chifre de Clarificação"
+  },
+  {
+    "id": 1181,
+    "name": "Amuleto de Chifre de Clarificação +1"
+  },
+  {
+    "id": 1200,
+    "name": "Colar Manchado"
+  },
+  {
+    "id": 1201,
+    "name": "Colar Manchado +1"
+  },
+  {
+    "id": 1190,
+    "name": "Pústula do Príncipe da Morte"
+  },
+  {
+    "id": 1191,
+    "name": "Cisto do Príncipe da Morte"
+  },
+  {
+    "id": 2090,
+    "name": "Talismã de Adaga"
+  },
+  {
+    "id": 2200,
+    "name": "Talismã de Espada Curva"
+  },
+  {
+    "id": 2120,
+    "name": "Talismã de Lâminas-Gêmeas"
+  },
+  {
+    "id": 2130,
+    "name": "Talismã de Machado"
+  },
+  {
+    "id": 2070,
+    "name": "Talismã de Martelo"
+  },
+  {
+    "id": 2060,
+    "name": "Talismã de Lança"
+  },
+  {
+    "id": 2140,
+    "name": "Talismã de Lança de Cavalaria"
+  },
+  {
+    "id": 2180,
+    "name": "Talismã de Garra"
+  },
+  {
+    "id": 4100,
+    "name": "Talismã de Escudo Grande"
+  },
+  {
+    "id": 2150,
+    "name": "Talismã do Pungir da Flecha"
+  },
+  {
+    "id": 2100,
+    "name": "Talismã de Alcance de Flecha"
+  },
+  {
+    "id": 3000,
+    "name": "Talismã da Escola da Pedra"
+  },
+  {
+    "id": 3001,
+    "name": "Talismã da Massa da Pedra"
+  },
+  {
+    "id": 3040,
+    "name": "Talismã de Tela do Fiel"
+  },
+  {
+    "id": 3050,
+    "name": "Talismã de Tela do Bando"
+  },
+  {
+    "id": 3080,
+    "name": "Lâmina de Pedrilhante Primordial"
+  },
+  {
+    "id": 1140,
+    "name": "Lua de Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talismã do Velho Lorde"
+  },
+  {
+    "id": 3070,
+    "name": "Ícone de Radagon"
+  },
+  {
+    "id": 2190,
+    "name": "Medalhão do Rugido"
+  },
+  {
+    "id": 2210,
+    "name": "Jarro Companheiro"
+  },
+  {
+    "id": 2220,
+    "name": "Talismã do Perfumista"
+  },
+  {
+    "id": 6020,
+    "name": "Brasão de Filigrana Cariano"
+  },
+  {
+    "id": 1230,
+    "name": "Fragmento de Jarro Guerreiro"
+  },
+  {
+    "id": 1231,
+    "name": "Fragmento de Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Ícone de Godfrey"
+  },
+  {
+    "id": 1210,
+    "name": "Talismã do Touro-Cabra"
+  },
+  {
+    "id": 2110,
+    "name": "Talismã de Dançarino Azul"
+  },
+  {
+    "id": 2000,
+    "name": "Talismã de Escorpião Mágico"
+  },
+  {
+    "id": 2020,
+    "name": "Talismã de Escorpião de Fogo"
+  },
+  {
+    "id": 2010,
+    "name": "Talismã de Escorpião Elétrico"
+  },
+  {
+    "id": 2030,
+    "name": "Talismã de Escorpião Sagrado"
+  },
+  {
+    "id": 4060,
+    "name": "Talismã de Escama do Crisol"
+  },
+  {
+    "id": 4070,
+    "name": "Talismã de Pena do Crisol"
+  },
+  {
+    "id": 4110,
+    "name": "Talismã de Nó do Crisol"
+  },
+  {
+    "id": 2040,
+    "name": "Espada de Ramo com Penas Vermelhas"
+  },
+  {
+    "id": 4080,
+    "name": "Espada de Ramo com Penas Azuis"
+  },
+  {
+    "id": 2050,
+    "name": "Talismã de Espada de Ritual"
+  },
+  {
+    "id": 4090,
+    "name": "Talismã de Escudo de Ritual"
+  },
+  {
+    "id": 5050,
+    "name": "Adaga de Assassino Carmesim"
+  },
+  {
+    "id": 5060,
+    "name": "Adaga de Assassino Cerúlea"
+  },
+  {
+    "id": 2080,
+    "name": "Insígnia de Espada Alada"
+  },
+  {
+    "id": 2081,
+    "name": "Insígnia de Espada Alada Apodrecida"
+  },
+  {
+    "id": 1250,
+    "name": "Prótese de Millicent"
+  },
+  {
+    "id": 5040,
+    "name": "Bandagem da Pele Divina"
+  },
+  {
+    "id": 2170,
+    "name": "Exultação do Companheiro da Podridão"
+  },
+  {
+    "id": 2160,
+    "name": "Exultação do Lorde do Sangue"
+  },
+  {
+    "id": 5030,
+    "name": "Camafeu do Saqueador"
+  },
+  {
+    "id": 6110,
+    "name": "Chifre de Espírito Ancestral"
+  },
+  {
+    "id": 1110,
+    "name": "Escaravelho de Ouro"
+  },
+  {
+    "id": 1100,
+    "name": "Escaravelho de Prata"
+  },
+  {
+    "id": 6000,
+    "name": "Frasco de Crepus"
+  },
+  {
+    "id": 6010,
+    "name": "Véu Ocultador"
+  },
+  {
+    "id": 6040,
+    "name": "Talismã de Gato de Cauda Longa"
+  },
+  {
+    "id": 6080,
+    "name": "Espelho Falso do Dedo Enrolado"
+  },
+  {
+    "id": 6090,
+    "name": "Espelho Falso do Anfitrião"
+  },
+  {
+    "id": 6050,
+    "name": "Pesar de Shabriri"
+  },
+  {
+    "id": 6060,
+    "name": "Pesar de Daedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Ramo do Sacrifício"
+  }
+]

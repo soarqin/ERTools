@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Ropa de viaje"
+  },
+  {
+    "id": 1020200,
+    "name": "Mangas de viajero"
+  },
+  {
+    "id": 1020300,
+    "name": "Botas de viajero"
+  },
+  {
+    "id": 810000,
+    "name": "Cinta para la cabeza de plebeyo"
+  },
+  {
+    "id": 811000,
+    "name": "Cinta para la cabeza de plebeyo (modificada)"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Vestimenta de plebeyo/Vestimenta de plebeyo (modificada)"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Vestimenta simple de plebeyo/Vestimenta simple de plebeyo (modificada)"
+  },
+  {
+    "id": 810300,
+    "name": "Calzado de plebeyo"
+  },
+  {
+    "id": 370000,
+    "name": "Cinta para la cabeza de aristócrata"
+  },
+  {
+    "id": 380000,
+    "name": "Sombrero de aristócrata"
+  },
+  {
+    "id": 370100,
+    "name": "Vestimenta de aristócrata"
+  },
+  {
+    "id": 371100,
+    "name": "Vestimenta de aristócrata (modificada)"
+  },
+  {
+    "id": 380100,
+    "name": "Abrigo de aristócrata"
+  },
+  {
+    "id": 370300,
+    "name": "Botas de aristócrata"
+  },
+  {
+    "id": 390000,
+    "name": "Capuz de viejo aristócrata"
+  },
+  {
+    "id": 390100,
+    "name": "Toga vieja de aristócrata"
+  },
+  {
+    "id": 390300,
+    "name": "Calzado viejo de aristócrata"
+  },
+  {
+    "id": 220000,
+    "name": "Capucha de paje"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Vestimenta de paje/Vestimenta de Paje (modificada)"
+  },
+  {
+    "id": 220300,
+    "name": "Pantalones de paje"
+  },
+  {
+    "id": 1990000,
+    "name": "Capucha de paje mayor"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "Ropa de paje mayor/Ropa de paje mayor (modificada)"
+  },
+  {
+    "id": 330000,
+    "name": "Máscara de guardián"
+  },
+  {
+    "id": 331100,
+    "name": "Vestimenta de guardián"
+  },
+  {
+    "id": 330100,
+    "name": "Vestimenta de guardián (plena floración)"
+  },
+  {
+    "id": 330200,
+    "name": "Brazales de guardián"
+  },
+  {
+    "id": 330300,
+    "name": "Grebas de guardián"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Corona festiva/Capucha festiva (modificada)"
+  },
+  {
+    "id": 800100,
+    "name": "Vestimenta festiva"
+  },
+  {
+    "id": 801100,
+    "name": "Vestimenta festiva (modificada)"
+  },
+  {
+    "id": 802000,
+    "name": "Capucha festiva azul"
+  },
+  {
+    "id": 802100,
+    "name": "Vestimenta festiva azul"
+  },
+  {
+    "id": 160000,
+    "name": "Capucha de culpable"
+  },
+  {
+    "id": 160100,
+    "name": "Vestimenta de tela"
+  },
+  {
+    "id": 160300,
+    "name": "Pantalones de tela"
+  },
+  {
+    "id": 890000,
+    "name": "Máscara de hierro del prisionero"
+  },
+  {
+    "id": 890100,
+    "name": "Ropa de prisionero"
+  },
+  {
+    "id": 890300,
+    "name": "Pantalones de prisionero"
+  },
+  {
+    "id": 891000,
+    "name": "Máscara de hierro de canalla"
+  },
+  {
+    "id": 964000,
+    "name": "Máscara empapada de sangre"
+  },
+  {
+    "id": 964100,
+    "name": "Atavío de oficial"
+  },
+  {
+    "id": 963200,
+    "name": "Mangas empapadas de sangre"
+  },
+  {
+    "id": 2020000,
+    "name": "Bola negra"
+  },
+  {
+    "id": 1130000,
+    "name": "Cabeza de hongo"
+  },
+  {
+    "id": 2010000,
+    "name": "Corona de hongo"
+  },
+  {
+    "id": 1130100,
+    "name": "Cuerpo de hongo"
+  },
+  {
+    "id": 1130200,
+    "name": "Brazos de hongo"
+  },
+  {
+    "id": 1130300,
+    "name": "Piernas de hongo"
+  },
+  {
+    "id": 630000,
+    "name": "Capucha de astrólogo"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Túnica de astrólogo/Túnica de astrólogo (modificada)"
+  },
+  {
+    "id": 630200,
+    "name": "Guantes de astrólogo"
+  },
+  {
+    "id": 630300,
+    "name": "Pantalones de astrólogo"
+  },
+  {
+    "id": 1030000,
+    "name": "Casco de joven erudito"
+  },
+  {
+    "id": 1030100,
+    "name": "Túnica de joven erudito"
+  },
+  {
+    "id": 833000,
+    "name": "Corona de destellita de Karolos"
+  },
+  {
+    "id": 831000,
+    "name": "Corona de destellita de Olivinus"
+  },
+  {
+    "id": 830000,
+    "name": "Corona de destellita de Sabios Gemelos"
+  },
+  {
+    "id": 834000,
+    "name": "Corona de destellita de la bruja"
+  },
+  {
+    "id": 830100,
+    "name": "Túnica de Raya Lucaria"
+  },
+  {
+    "id": 830200,
+    "name": "Mangas de hechicero"
+  },
+  {
+    "id": 830300,
+    "name": "Medias largas de hechicero"
+  },
+  {
+    "id": 832000,
+    "name": "Corona de destellita de Lazuli"
+  },
+  {
+    "id": 2030000,
+    "name": "Túnica de Lazuli"
+  },
+  {
+    "id": 1000000,
+    "name": "Corona de destellita de Haima"
+  },
+  {
+    "id": 1000100,
+    "name": "Túnica de mago de batalla"
+  },
+  {
+    "id": 1000200,
+    "name": "Mangas de mago de batalla"
+  },
+  {
+    "id": 1000300,
+    "name": "Vendas de pierna de mago de batalla"
+  },
+  {
+    "id": 990000,
+    "name": "Corona de destellita de Hierodas"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Túnica de hechicero errante/Túnica de hechicero errante (modificada)"
+  },
+  {
+    "id": 990200,
+    "name": "Mangas de hechicero errante"
+  },
+  {
+    "id": 990300,
+    "name": "Botas de hechicero errante"
+  },
+  {
+    "id": 130000,
+    "name": "Sombrero puntiagudo de hechicero"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Atuendo de viaje de hechicero/Atuendo de viaje de hechicero (modificado)"
+  },
+  {
+    "id": 130200,
+    "name": "Guantes de hechicero"
+  },
+  {
+    "id": 130300,
+    "name": "Pantalones de hechicero"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Sombrero puntiagudo de Alberich/Sombrero puntiagudo de Alberich (modificado)"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Túnica de Alberich/Túnica de Alberich (modificada)"
+  },
+  {
+    "id": 120200,
+    "name": "Brazales de Alberich"
+  },
+  {
+    "id": 120300,
+    "name": "Pantalones de Alberich"
+  },
+  {
+    "id": 910000,
+    "name": "Sombrero grande de preceptor"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Toga larga de preceptor/Toga larga de preceptor (modificada)"
+  },
+  {
+    "id": 910200,
+    "name": "Guantes de preceptor"
+  },
+  {
+    "id": 910300,
+    "name": "Pantalones de preceptor"
+  },
+  {
+    "id": 911000,
+    "name": "Máscara de confianza"
+  },
+  {
+    "id": 581000,
+    "name": "Corona de destellita de Azur"
+  },
+  {
+    "id": 581100,
+    "name": "Túnica de destellita de Azur"
+  },
+  {
+    "id": 581200,
+    "name": "Mangas de Azur"
+  },
+  {
+    "id": 580000,
+    "name": "Corona de destellita de Lusat"
+  },
+  {
+    "id": 580100,
+    "name": "Túnica de Lusat"
+  },
+  {
+    "id": 580200,
+    "name": "Mangas de Lusat"
+  },
+  {
+    "id": 580300,
+    "name": "Vendas de pierna viejas de hechicero"
+  },
+  {
+    "id": 510000,
+    "name": "Corona creciente de la reina"
+  },
+  {
+    "id": 510100,
+    "name": "Túnica de la reina"
+  },
+  {
+    "id": 510200,
+    "name": "Brazaletes de la reina"
+  },
+  {
+    "id": 510300,
+    "name": "Medias largas de la reina"
+  },
+  {
+    "id": 1010000,
+    "name": "Sombrero de bruja de la nieve"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Túnica de bruja de la nieve/Túnica de bruja de la nieve (modificada)"
+  },
+  {
+    "id": 1010300,
+    "name": "Falda de bruja de la nieve"
+  },
+  {
+    "id": 1940000,
+    "name": "Capucha de Fia"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Túnica de Fia/Túnica de Fia (modificada)"
+  },
+  {
+    "id": 1930100,
+    "name": "Vestido de lecho de muerte"
+  },
+  {
+    "id": 620000,
+    "name": "Venda para ojos de profeta"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Túnica de profeta (modificada)/Túnica de profeta"
+  },
+  {
+    "id": 620300,
+    "name": "Pantalones de profeta"
+  },
+  {
+    "id": 620100,
+    "name": "Túnica de Corhyn"
+  },
+  {
+    "id": 900000,
+    "name": "Capucha de doncella ambulante"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Túnica de doncella ambulante/Túnica de doncella nómade (modificada)"
+  },
+  {
+    "id": 900200,
+    "name": "Guantes de doncella ambulante"
+  },
+  {
+    "id": 900300,
+    "name": "Botas de doncella ambulante"
+  },
+  {
+    "id": 902000,
+    "name": "Banda para el pelo de Doncella de los Dedos"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Túnica de Doncella de los Dedos/Túnica de Doncella de los Dedos (modificada)"
+  },
+  {
+    "id": 902300,
+    "name": "Calzado de Doncella de los Dedos"
+  },
+  {
+    "id": 430000,
+    "name": "Capucha de sabio"
+  },
+  {
+    "id": 430100,
+    "name": "Túnica de sabio"
+  },
+  {
+    "id": 430300,
+    "name": "Pantalones de sabio"
+  },
+  {
+    "id": 1600000,
+    "name": "Gran capucha"
+  },
+  {
+    "id": 1040000,
+    "name": "Máscara de oro radiante"
+  },
+  {
+    "id": 1040100,
+    "name": "Harapos de Máscara de Oro"
+  },
+  {
+    "id": 1040200,
+    "name": "Brazaletes de oro"
+  },
+  {
+    "id": 1040300,
+    "name": "Cintura de oro"
+  },
+  {
+    "id": 90000,
+    "name": "Capucha de perfumista"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Túnica de perfumista/Túnica de perfumista (modificada)"
+  },
+  {
+    "id": 90200,
+    "name": "Guantes de perfumista"
+  },
+  {
+    "id": 90300,
+    "name": "Sarong de perfumista"
+  },
+  {
+    "id": 100000,
+    "name": "Sombrero de viajero"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Vestimenta de viaje de perfumista/Vestimenta de viaje de perfumista (modificada)"
+  },
+  {
+    "id": 100200,
+    "name": "Guantes de viajero"
+  },
+  {
+    "id": 100300,
+    "name": "Pantalón bombacho de viajero"
+  },
+  {
+    "id": 540000,
+    "name": "Pañuelo para la cabeza de perfumista corrompido"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Túnica de perfumista corrompido/Túnica de perfumista corrompido (modificada)"
+  },
+  {
+    "id": 540200,
+    "name": "Guantes de perfumista corrompido"
+  },
+  {
+    "id": 540300,
+    "name": "Pantalones de perfumista corrompido"
+  },
+  {
+    "id": 962100,
+    "name": "Túnica de clase alta"
+  },
+  {
+    "id": 961000,
+    "name": "Máscara de gobernante"
+  },
+  {
+    "id": 961100,
+    "name": "Túnica de gobernante"
+  },
+  {
+    "id": 960000,
+    "name": "Máscara de consorte"
+  },
+  {
+    "id": 960100,
+    "name": "Túnica de consorte"
+  },
+  {
+    "id": 960300,
+    "name": "Pantalones de consorte"
+  },
+  {
+    "id": 963000,
+    "name": "Máscara de Marais"
+  },
+  {
+    "id": 963100,
+    "name": "Túnica de Marais"
+  },
+  {
+    "id": 300000,
+    "name": "Cinta para la cabeza con grandes cuernos"
+  },
+  {
+    "id": 300100,
+    "name": "Ropaje de piel"
+  },
+  {
+    "id": 300300,
+    "name": "Medias largas de piel"
+  },
+  {
+    "id": 301000,
+    "name": "Cinta brillante para la cabeza con cuernos"
+  },
+  {
+    "id": 301100,
+    "name": "Pieles de chamán"
+  },
+  {
+    "id": 301300,
+    "name": "Medias largas de chamán"
+  },
+  {
+    "id": 520000,
+    "name": "Capucha de apóstol piel de dios"
+  },
+  {
+    "id": 520100,
+    "name": "Túnica de apóstol piel de dios"
+  },
+  {
+    "id": 520200,
+    "name": "Brazaletes de apóstol piel de dios"
+  },
+  {
+    "id": 520300,
+    "name": "Pantalones de apóstol piel de dios"
+  },
+  {
+    "id": 530000,
+    "name": "Capucha de noble piel de dios"
+  },
+  {
+    "id": 530100,
+    "name": "Túnica de noble piel de dios"
+  },
+  {
+    "id": 530200,
+    "name": "Brazaletes de noble piel de dios"
+  },
+  {
+    "id": 530300,
+    "name": "Pantalones de noble piel de dios"
+  },
+  {
+    "id": 1050100,
+    "name": "Capa de Aojo Cruel"
+  },
+  {
+    "id": 320000,
+    "name": "Capucha de noble sanguinario"
+  },
+  {
+    "id": 320100,
+    "name": "Túnica de noble sanguinario"
+  },
+  {
+    "id": 320300,
+    "name": "faldón de noble sanguinario"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Túnica del Señor de la Sangre/Túnica del Señor de la Sangre (modificada)"
+  },
+  {
+    "id": 1910000,
+    "name": "Escarabajo de lágrima carmesí"
+  },
+  {
+    "id": 1920000,
+    "name": "Escarabajo de lágrima cerúlea"
+  },
+  {
+    "id": 1900000,
+    "name": "Escarabajo de ceniza de guerra"
+  },
+  {
+    "id": 1902000,
+    "name": "Escarabajo de destellita"
+  },
+  {
+    "id": 1901000,
+    "name": "Escarabajo de rezo"
+  },
+  {
+    "id": 1080000,
+    "name": "Cabeza de diablillo (gato)"
+  },
+  {
+    "id": 1084000,
+    "name": "Cabeza de diablillo (lobo)"
+  },
+  {
+    "id": 1081000,
+    "name": "Cabeza de diablillo (con cuernos)"
+  },
+  {
+    "id": 1082000,
+    "name": "Cabeza de diablillo (con lengua larga)"
+  },
+  {
+    "id": 1083000,
+    "name": "Cabeza de diablillo (cadáver)"
+  },
+  {
+    "id": 1085000,
+    "name": "Cabeza de diablillo (anciano)"
+  },
+  {
+    "id": 1300000,
+    "name": "Yelmo espejo de Nox"
+  },
+  {
+    "id": 1301000,
+    "name": "Yelmo espejo de Iji"
+  },
+  {
+    "id": 1090000,
+    "name": "Máscara de lágrima plateada"
+  },
+  {
+    "id": 820000,
+    "name": "Corona de enviado"
+  },
+  {
+    "id": 1110000,
+    "name": "Cabeza de pulpo"
+  },
+  {
+    "id": 1120000,
+    "name": "Recipiente"
+  },
+  {
+    "id": 1060000,
+    "name": "Máscara albináurica"
+  },
+  {
+    "id": 1060100,
+    "name": "Cota de malla sucia"
+  },
+  {
+    "id": 1400000,
+    "name": "Capucha negra"
+  },
+  {
+    "id": 1400100,
+    "name": "Armadura de cuero"
+  },
+  {
+    "id": 1400200,
+    "name": "Guantes de cuero"
+  },
+  {
+    "id": 1400300,
+    "name": "Botas de cuero"
+  },
+  {
+    "id": 670000,
+    "name": "Capuz de tela azul"
+  },
+  {
+    "id": 670100,
+    "name": "Chaleco de tela azul"
+  },
+  {
+    "id": 670200,
+    "name": "Guanteletes de espadachín"
+  },
+  {
+    "id": 670300,
+    "name": "Grebas de espadachín"
+  },
+  {
+    "id": 740000,
+    "name": "Capucha carmesí"
+  },
+  {
+    "id": 741000,
+    "name": "Capucha azul marino"
+  },
+  {
+    "id": 740100,
+    "name": "Vestimenta de viaje de noble"
+  },
+  {
+    "id": 740200,
+    "name": "Guantes de noble"
+  },
+  {
+    "id": 740300,
+    "name": "Pantalones de noble"
+  },
+  {
+    "id": 680000,
+    "name": "Máscara blanca"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "Toga de cirujano de guerra/Toga de cirujano de guerra (modificada)"
+  },
+  {
+    "id": 680200,
+    "name": "Guantes de cirujano de guerra"
+  },
+  {
+    "id": 680300,
+    "name": "Pantalones de cirujano de guerra"
+  },
+  {
+    "id": 250000,
+    "name": "Sombrero de mercader nómade"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Ropa elegante de mercader nómade/Ropa elegante de mercader nómade (modificada)"
+  },
+  {
+    "id": 250300,
+    "name": "Pantalones de mercader nómade"
+  },
+  {
+    "id": 1401000,
+    "name": "Máscara de bandido"
+  },
+  {
+    "id": 931100,
+    "name": "Vestimenta de bandido"
+  },
+  {
+    "id": 930200,
+    "name": "Mangas de bandido"
+  },
+  {
+    "id": 930300,
+    "name": "Botas de bandido"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Capucha de confesor/Capucha de confesor (modificada)"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Armadura de confesor/Armadura de confesor (modificada)"
+  },
+  {
+    "id": 880200,
+    "name": "Guantes de confesor"
+  },
+  {
+    "id": 880300,
+    "name": "Botas de confesor"
+  },
+  {
+    "id": 1890000,
+    "name": "Máscara de aojo sonriente"
+  },
+  {
+    "id": 1890100,
+    "name": "Túnica de asesinaojos"
+  },
+  {
+    "id": 1890200,
+    "name": "Guantes largos de asesinaojos"
+  },
+  {
+    "id": 1890300,
+    "name": "Botas de asesinaojos"
+  },
+  {
+    "id": 930000,
+    "name": "Máscara esquelética"
+  },
+  {
+    "id": 930100,
+    "name": "Plumas negras de ave rapaz"
+  },
+  {
+    "id": 1830000,
+    "name": "Casco de soldado de infantería"
+  },
+  {
+    "id": 1830100,
+    "name": "Tabardo revestido de malla"
+  },
+  {
+    "id": 1830200,
+    "name": "Guanteletes de soldado de infantería"
+  },
+  {
+    "id": 1830300,
+    "name": "Grebas de soldado de infantería"
+  },
+  {
+    "id": 1840000,
+    "name": "Casco de soldado de infantería"
+  },
+  {
+    "id": 1840100,
+    "name": "Tabardo de soldado de infantería"
+  },
+  {
+    "id": 1860000,
+    "name": "Yelmo de soldado de infantería"
+  },
+  {
+    "id": 1860100,
+    "name": "Tabardo escarlata"
+  },
+  {
+    "id": 1850000,
+    "name": "Casco bañado en oro de soldado de infantería"
+  },
+  {
+    "id": 1850100,
+    "name": "Tabardo revestido de cuero"
+  },
+  {
+    "id": 1880000,
+    "name": "Yelmo de corona sagrada"
+  },
+  {
+    "id": 1880100,
+    "name": "Tabardo revestido de marfil"
+  },
+  {
+    "id": 1870100,
+    "name": "Tabardo empapado de sangre"
+  },
+  {
+    "id": 1980000,
+    "name": "Capucha de salteador de caminos"
+  },
+  {
+    "id": 1980100,
+    "name": "Armadura de tela de salteador de caminos"
+  },
+  {
+    "id": 1980200,
+    "name": "Guanteletes de salteador de caminos"
+  },
+  {
+    "id": 420000,
+    "name": "Yelmo de milicia vulgar"
+  },
+  {
+    "id": 420100,
+    "name": "Armadura de milicia vulgar"
+  },
+  {
+    "id": 420200,
+    "name": "Guanteletes de milicia vulgar"
+  },
+  {
+    "id": 420300,
+    "name": "Grebas de milicia vulgar"
+  },
+  {
+    "id": 310000,
+    "name": "Yelmo de duelista"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Capa de guardián de tumbas/Capa de guardián de tumbas (modificada)"
+  },
+  {
+    "id": 310300,
+    "name": "Grebas de duelista"
+  },
+  {
+    "id": 2000000,
+    "name": "Yelmo de duelista podrido"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Capa podrida de guardián de tumbas/Capa de guardián de tumbas (modificada)"
+  },
+  {
+    "id": 2000300,
+    "name": "Grebas de duelista podrido"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Capucha de monje de Nox/Capucha de monje nox (modificada)"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Armadura de monje de Nox/Armadura de monje nox (modificada)"
+  },
+  {
+    "id": 290200,
+    "name": "Brazaletes de nox"
+  },
+  {
+    "id": 290300,
+    "name": "Grebas de nox"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Corona de espadachina nox/Corona de espadachina nox (modificada)"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Armadura de espadachina nox/Armadura de espadachina nox (modificada)"
+  },
+  {
+    "id": 293000,
+    "name": "Corona doble de doncella de la noche"
+  },
+  {
+    "id": 293100,
+    "name": "Armadura de doncella de la noche"
+  },
+  {
+    "id": 730000,
+    "name": "Cinta para la cabeza de campeón"
+  },
+  {
+    "id": 730100,
+    "name": "Hombrera de campeón"
+  },
+  {
+    "id": 730200,
+    "name": "Brazales de campeón"
+  },
+  {
+    "id": 730300,
+    "name": "Polainas de campeón"
+  },
+  {
+    "id": 1100000,
+    "name": "Cofia de malla"
+  },
+  {
+    "id": 1100100,
+    "name": "Armadura de malla"
+  },
+  {
+    "id": 1102100,
+    "name": "Sobreveste de árbol"
+  },
+  {
+    "id": 1101100,
+    "name": "Sobreveste de ojo"
+  },
+  {
+    "id": 1100200,
+    "name": "Guanteletes"
+  },
+  {
+    "id": 1100300,
+    "name": "Grebas de malla"
+  },
+  {
+    "id": 40000,
+    "name": "Casco de hierro"
+  },
+  {
+    "id": 40100,
+    "name": "Armadura de escamas"
+  },
+  {
+    "id": 40200,
+    "name": "Guanteletes de hierro"
+  },
+  {
+    "id": 40300,
+    "name": "Pantalones de cuero"
+  },
+  {
+    "id": 1700000,
+    "name": "Yelmo de soldado de Godric"
+  },
+  {
+    "id": 1700100,
+    "name": "Sobreveste de árbol y bestia"
+  },
+  {
+    "id": 1700200,
+    "name": "Guanteletes de soldado de Godric"
+  },
+  {
+    "id": 1700300,
+    "name": "Grebas de soldado de Godric"
+  },
+  {
+    "id": 1710000,
+    "name": "Yelmo de Raya Lucaria"
+  },
+  {
+    "id": 1710100,
+    "name": "Sobreveste de Cuco"
+  },
+  {
+    "id": 1710200,
+    "name": "Guanteletes de Raya Lucaria"
+  },
+  {
+    "id": 1710300,
+    "name": "Grebas de Raya Lucaria"
+  },
+  {
+    "id": 1730000,
+    "name": "Yelmo de soldado de Radahn"
+  },
+  {
+    "id": 1730100,
+    "name": "Sobreveste de melenarroja"
+  },
+  {
+    "id": 1730200,
+    "name": "Guanteletes de soldado de Radahn"
+  },
+  {
+    "id": 1730300,
+    "name": "Grebas de soldado de Radahn"
+  },
+  {
+    "id": 1720000,
+    "name": "Yelmo de soldado de Leyndell"
+  },
+  {
+    "id": 1720100,
+    "name": "Sobreveste de Terrárbol"
+  },
+  {
+    "id": 1720200,
+    "name": "Guanteletes de soldado de Leyndell"
+  },
+  {
+    "id": 1720300,
+    "name": "Grebas de soldado de Leyndell"
+  },
+  {
+    "id": 1750000,
+    "name": "Yelmo de Santoárbol"
+  },
+  {
+    "id": 1750100,
+    "name": "Sobreveste de emblema de Santoárbol"
+  },
+  {
+    "id": 1750200,
+    "name": "Guanteletes de Santoárbol"
+  },
+  {
+    "id": 1750300,
+    "name": "Grebas de Santoárbol"
+  },
+  {
+    "id": 1740100,
+    "name": "Sobreveste del mausoleo"
+  },
+  {
+    "id": 1740200,
+    "name": "Guanteletes del mausoleo"
+  },
+  {
+    "id": 1740300,
+    "name": "Grebas del mausoleo"
+  },
+  {
+    "id": 190000,
+    "name": "Capucha de exiliado"
+  },
+  {
+    "id": 190100,
+    "name": "Armadura de exiliado"
+  },
+  {
+    "id": 190200,
+    "name": "Guanteletes de exiliado"
+  },
+  {
+    "id": 190300,
+    "name": "Grebas de exiliado"
+  },
+  {
+    "id": 50000,
+    "name": "Yelmo de Kaiden"
+  },
+  {
+    "id": 50100,
+    "name": "Armadura de Kaiden"
+  },
+  {
+    "id": 50200,
+    "name": "Guanteletes de Kaiden"
+  },
+  {
+    "id": 50300,
+    "name": "Pantalones de Kaiden"
+  },
+  {
+    "id": 870000,
+    "name": "Yelmo de los Juncales"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Armadura de los Juncales/Armadura de los Juncales (modificada)"
+  },
+  {
+    "id": 870200,
+    "name": "Guanteletes de los Juncales"
+  },
+  {
+    "id": 870300,
+    "name": "Grebas de los Juncales"
+  },
+  {
+    "id": 872000,
+    "name": "Máscara de Okina"
+  },
+  {
+    "id": 872100,
+    "name": "Armadura de Junco Blanco"
+  },
+  {
+    "id": 872200,
+    "name": "Guanteletes de Junco Blanco"
+  },
+  {
+    "id": 872300,
+    "name": "Grebas de Junco Blanco"
+  },
+  {
+    "id": 150000,
+    "name": "Kasa de hierro"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Armadura de Ronin/Armadura de Ronin (modificada)"
+  },
+  {
+    "id": 150200,
+    "name": "Guanteletes de Ronin"
+  },
+  {
+    "id": 150300,
+    "name": "Grebas de Ronin"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Capucha del excéntrico/Capucha de excéntrico (modificada)"
+  },
+  {
+    "id": 940100,
+    "name": "Armadura del excéntrico"
+  },
+  {
+    "id": 940200,
+    "name": "Mangas del excéntrico"
+  },
+  {
+    "id": 940300,
+    "name": "Pantalón bombacho del excéntrico"
+  },
+  {
+    "id": 840000,
+    "name": "Yelmo de soldado guiñol"
+  },
+  {
+    "id": 850000,
+    "name": "Yelmo de pájaro de soldado guiñol"
+  },
+  {
+    "id": 840100,
+    "name": "Armadura de soldado guiñol"
+  },
+  {
+    "id": 240000,
+    "name": "Capucha mallada de plata"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Armadura mallada de plata/Armadura mallada azul plata (modificada)"
+  },
+  {
+    "id": 240200,
+    "name": "Brazaletes de plata"
+  },
+  {
+    "id": 240300,
+    "name": "Falda mallada de plata"
+  },
+  {
+    "id": 350000,
+    "name": "Yelmo de monje de fuego"
+  },
+  {
+    "id": 350100,
+    "name": "Armadura de monje de fuego"
+  },
+  {
+    "id": 350200,
+    "name": "Guanteletes de monje de fuego"
+  },
+  {
+    "id": 350300,
+    "name": "Grebas de monje de fuego"
+  },
+  {
+    "id": 351000,
+    "name": "Capucha de monje de llama negra"
+  },
+  {
+    "id": 351100,
+    "name": "Armadura de monje de llama negra"
+  },
+  {
+    "id": 351200,
+    "name": "Guanteletes de monje de llama negra"
+  },
+  {
+    "id": 351300,
+    "name": "Grebas de monje de llama negra"
+  },
+  {
+    "id": 1070000,
+    "name": "Máscara de Zamor"
+  },
+  {
+    "id": 1070100,
+    "name": "Armadura de Zamor"
+  },
+  {
+    "id": 1070200,
+    "name": "Brazaletes de Zamor"
+  },
+  {
+    "id": 1070300,
+    "name": "Vendas de pierna de Zamor"
+  },
+  {
+    "id": 180000,
+    "name": "Capucha de Cuchillo Negro"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Armadura de Cuchillo Negro/Armadura de Cuchillo Negro (modificada)"
+  },
+  {
+    "id": 180200,
+    "name": "Guanteletes de Cuchillo Negro"
+  },
+  {
+    "id": 180300,
+    "name": "Grebas de Cuchillo Negro"
+  },
+  {
+    "id": 770000,
+    "name": "Yelmo alado de Malenia"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Armadura de Malenia/Armadura de Malenia (modificada)"
+  },
+  {
+    "id": 770200,
+    "name": "Guanteletes de Malenia"
+  },
+  {
+    "id": 770300,
+    "name": "Grebas de Malenia"
+  },
+  {
+    "id": 460000,
+    "name": "Corona del Señor de Elden"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Armadura del Señor de Elden/Armadura del Señor de Elden (modificada)"
+  },
+  {
+    "id": 460200,
+    "name": "Brazales del Señor de Elden"
+  },
+  {
+    "id": 460300,
+    "name": "Grebas del Señor de Elden"
+  },
+  {
+    "id": 1500000,
+    "name": "Yelmo de caballero"
+  },
+  {
+    "id": 1500100,
+    "name": "Armadura de caballero"
+  },
+  {
+    "id": 1500200,
+    "name": "Guanteletes de caballero"
+  },
+  {
+    "id": 1500300,
+    "name": "Grebas de caballero"
+  },
+  {
+    "id": 660000,
+    "name": "Yelmo de caballero vagabundo"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Armadura de caballero vagabundo/Armadura de caballero vagabundo (modificada)"
+  },
+  {
+    "id": 660200,
+    "name": "Guanteletes de caballero vagabundo"
+  },
+  {
+    "id": 660300,
+    "name": "Grebas de caballero vagabundo"
+  },
+  {
+    "id": 1101000,
+    "name": "Gran yelmo"
+  },
+  {
+    "id": 980000,
+    "name": "Yelmo de caballero de Caria"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Armadura de caballero de Caria/Armadura de caballero de Caria (modificada)"
+  },
+  {
+    "id": 980200,
+    "name": "Guanteletes de caballero de Caria"
+  },
+  {
+    "id": 980300,
+    "name": "Grebas de caballero de Caria"
+  },
+  {
+    "id": 1770000,
+    "name": "Yelmo de caballero de Godric"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Armadura de caballero de Godric/Armadura de caballero de Godric (modificada)"
+  },
+  {
+    "id": 1770200,
+    "name": "Guanteletes de caballero de Godric"
+  },
+  {
+    "id": 1770300,
+    "name": "Grebas de caballero de Godric"
+  },
+  {
+    "id": 1780000,
+    "name": "Yelmo de caballero de Cuco"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Armadura de caballero de Cuco/Armadura de caballero de Cuco (modificada)"
+  },
+  {
+    "id": 1780200,
+    "name": "Guanteletes de caballero de Cuco"
+  },
+  {
+    "id": 1780300,
+    "name": "Grebas de caballero de Cuco"
+  },
+  {
+    "id": 1800000,
+    "name": "Yelmo de caballero melenarroja"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Armadura de caballero melenarroja/Armadura de caballero melenarroja (modificada)"
+  },
+  {
+    "id": 1800200,
+    "name": "Guanteletes de caballero melenarroja"
+  },
+  {
+    "id": 1800300,
+    "name": "Grebas de caballero melenarroja"
+  },
+  {
+    "id": 1760000,
+    "name": "Yelmo de caballero de Gelmir"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Armadura de caballero de Gelmir/Armadura de caballero de Gelmir (modificada)"
+  },
+  {
+    "id": 1760200,
+    "name": "Guanteletes de caballero de Gelmir"
+  },
+  {
+    "id": 1760300,
+    "name": "Grebas de caballero de Gelmir"
+  },
+  {
+    "id": 1790000,
+    "name": "Yelmo de caballero de Leyndell"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Armadura de caballero de Leyndell/Armadura de caballero de Leyndell (modificada)"
+  },
+  {
+    "id": 1790200,
+    "name": "Guanteletes de caballero de Leyndell"
+  },
+  {
+    "id": 1790300,
+    "name": "Grebas de caballero de Leyndell"
+  },
+  {
+    "id": 1820000,
+    "name": "Yelmo de caballero de Santoárbol"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Armadura de caballero de Santoárbol/Armadura de caballero de Santoárbol (modificada)"
+  },
+  {
+    "id": 1820200,
+    "name": "Guanteletes de caballero de Santoárbol"
+  },
+  {
+    "id": 1820300,
+    "name": "Grebas de caballero de Santoárbol"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Armadura de caballero del mausoleo/Armadura de caballero del mausoleo (modificada)"
+  },
+  {
+    "id": 1810200,
+    "name": "Guanteletes de caballero del mausoleo"
+  },
+  {
+    "id": 1810300,
+    "name": "Grebas de caballero del mausoleo"
+  },
+  {
+    "id": 790000,
+    "name": "Yelmo de caballero sabueso"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Armadura de caballero sabueso/Armadura de caballero sabueso (modificada)"
+  },
+  {
+    "id": 790200,
+    "name": "Guanteletes de caballero sabueso"
+  },
+  {
+    "id": 790300,
+    "name": "Grebas de caballero sabueso"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Yelmo de purificador/Yelmo de purificador (modificado)"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Armadura de purificador/Armadura de purificador (modificada)"
+  },
+  {
+    "id": 340200,
+    "name": "Guanteletes de purificador"
+  },
+  {
+    "id": 340300,
+    "name": "Grebas de purificador"
+  },
+  {
+    "id": 860000,
+    "name": "Yelmo de Lobo Furioso"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Armadura de Lobo Furioso/Armadura de Lobo Furioso (modificada)"
+  },
+  {
+    "id": 860200,
+    "name": "Guanteletes de Lobo Furioso"
+  },
+  {
+    "id": 860300,
+    "name": "Grebas de Lobo Furioso"
+  },
+  {
+    "id": 650000,
+    "name": "Yelmo de Hondal"
+  },
+  {
+    "id": 651000,
+    "name": "Máscara de Diallos"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Armadura de Hondal/Armadura de Hondal (modificada)"
+  },
+  {
+    "id": 650200,
+    "name": "Guanteletes de Hondal"
+  },
+  {
+    "id": 650300,
+    "name": "Grebas de Hondal"
+  },
+  {
+    "id": 600000,
+    "name": "Yelmo del hermanado"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Armadura del hermanado/Armadura gemela (modificada)"
+  },
+  {
+    "id": 600200,
+    "name": "Guanteletes del hermanado"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Grebas del hermanado/Grebas gemelas (modificadas)"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Yelmo de caballero draco/Yelmo de caballero draco (modificado)"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Armadura de caballero draco/Armadura de caballero draco (modificada)"
+  },
+  {
+    "id": 60200,
+    "name": "Guanteletes de caballero draco"
+  },
+  {
+    "id": 60300,
+    "name": "Grebas de caballero draco"
+  },
+  {
+    "id": 170000,
+    "name": "Máscara de lobo negro"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Armadura de Blaidd/Armadura de Blaidd (modificada)"
+  },
+  {
+    "id": 170200,
+    "name": "Guanteletes de Blaidd"
+  },
+  {
+    "id": 170300,
+    "name": "Grebas de Blaidd"
+  },
+  {
+    "id": 210000,
+    "name": "Yelmo de zarza"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Armadura de zarza/Armadura de zarza (modificada)"
+  },
+  {
+    "id": 210200,
+    "name": "Guanteletes de zarza"
+  },
+  {
+    "id": 210300,
+    "name": "Grebas de zarza"
+  },
+  {
+    "id": 950000,
+    "name": "Yelmo con huellas dactilares"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Armadura con huellas dactilares/Armadura con huellas dactilares (modificada)"
+  },
+  {
+    "id": 950200,
+    "name": "Guanteletes con huellas dactilares"
+  },
+  {
+    "id": 950300,
+    "name": "Grebas con huellas dactilares"
+  },
+  {
+    "id": 690000,
+    "name": "Yelmo de restos reales"
+  },
+  {
+    "id": 690100,
+    "name": "Armadura de restos reales"
+  },
+  {
+    "id": 690200,
+    "name": "Guanteletes de restos reales"
+  },
+  {
+    "id": 690300,
+    "name": "Grebas de restos reales"
+  },
+  {
+    "id": 590000,
+    "name": "Yelmo del Omnisciente"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "Armadura del Omnisciente/Armadura del Omnisciente (modificada)"
+  },
+  {
+    "id": 590200,
+    "name": "Guanteletes del Omnisciente"
+  },
+  {
+    "id": 590300,
+    "name": "Grebas del Omnisciente"
+  },
+  {
+    "id": 280000,
+    "name": "Yelmo de caballero real"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Armadura de caballero real/Armadura de caballero real (modificada)"
+  },
+  {
+    "id": 280200,
+    "name": "Guanteletes de caballero real"
+  },
+  {
+    "id": 280300,
+    "name": "Grebas de caballero real"
+  },
+  {
+    "id": 760000,
+    "name": "Yelmo de Maliketh"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Armadura de Maliketh/Armadura de Maliketh (modificada)"
+  },
+  {
+    "id": 760200,
+    "name": "Guanteletes de Maliketh"
+  },
+  {
+    "id": 760300,
+    "name": "Grebas de Maliketh"
+  },
+  {
+    "id": 200000,
+    "name": "Yelmo de caballero desterrado"
+  },
+  {
+    "id": 201000,
+    "name": "Yelmo de caballero desterrado (modificado)"
+  },
+  {
+    "id": 200100,
+    "name": "Armadura de caballero desterrado"
+  },
+  {
+    "id": 201100,
+    "name": "Armadura de caballero desterrado (modificada)"
+  },
+  {
+    "id": 200200,
+    "name": "Guanteletes de caballero desterrado"
+  },
+  {
+    "id": 200300,
+    "name": "Grebas de caballero desterrado"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Yelmo de la Caballería de la Noche/Yelmo de la Caballería de la Noche (modificado)"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Armadura de la Caballería de la Noche/Armadura de la Caballería de la Noche (modificada)"
+  },
+  {
+    "id": 230200,
+    "name": "Guanteletes de la Caballería de la Noche"
+  },
+  {
+    "id": 230300,
+    "name": "Grebas de la Caballería de la Noche"
+  },
+  {
+    "id": 780000,
+    "name": "Yelmo de veterano"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Armadura de veterano/Armadura de veterano (modificada)"
+  },
+  {
+    "id": 780200,
+    "name": "Guanteletes de veterano"
+  },
+  {
+    "id": 780300,
+    "name": "Grebas de veterano"
+  },
+  {
+    "id": 80000,
+    "name": "Yelmo escamado"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Armadura escamada/Armadura escamada (modificada)"
+  },
+  {
+    "id": 80200,
+    "name": "Guanteletes escamados"
+  },
+  {
+    "id": 80300,
+    "name": "Grebas escamadas"
+  },
+  {
+    "id": 720000,
+    "name": "Yelmo de campeón de bestias"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Armadura de campeón de bestias/Armadura de campeón de bestias (modificada)"
+  },
+  {
+    "id": 720200,
+    "name": "Guanteletes de campeón de bestias"
+  },
+  {
+    "id": 720300,
+    "name": "Grebas de campeón de bestias"
+  },
+  {
+    "id": 270000,
+    "name": "Yelmo de centinela arbóreo"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Armadura de centinela arbóreo/Armadura de centinela arbóreo (modificada)"
+  },
+  {
+    "id": 270200,
+    "name": "Guanteletes de centinela arbóreo"
+  },
+  {
+    "id": 270300,
+    "name": "Grebas de centinela arbóreo"
+  },
+  {
+    "id": 260000,
+    "name": "Yelmo de dragón grotesco"
+  },
+  {
+    "id": 260100,
+    "name": "Armadura de dragón grotesco"
+  },
+  {
+    "id": 260200,
+    "name": "Guanteletes de dragón grotesco"
+  },
+  {
+    "id": 260300,
+    "name": "Grebas de dragón grotesco"
+  },
+  {
+    "id": 570000,
+    "name": "Yelmo de hacha del Crisol"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Armadura de hacha del Crisol/Armadura de hacha del Crisol (modificada)"
+  },
+  {
+    "id": 570200,
+    "name": "Guanteletes del Crisol"
+  },
+  {
+    "id": 570300,
+    "name": "Grebas del Crisol"
+  },
+  {
+    "id": 571000,
+    "name": "Yelmo de árbol del Crisol"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Armadura de árbol del Crisol/Armadura de árbol del Crisol (modificada)"
+  },
+  {
+    "id": 470000,
+    "name": "Yelmo de melenarroja de Radahn"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Armadura de león de Radahn/Armadura de león de Radahn (modificada)"
+  },
+  {
+    "id": 470200,
+    "name": "Guanteletes de Radahn"
+  },
+  {
+    "id": 470300,
+    "name": "Grebas de Radahn"
+  },
+  {
+    "id": 640000,
+    "name": "Yelmo de Lionel"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Armadura de Lionel/Armadura de Lionel (modificada)"
+  },
+  {
+    "id": 640200,
+    "name": "Guanteletes de Lionel"
+  },
+  {
+    "id": 640300,
+    "name": "Grebas de Lionel"
+  },
+  {
+    "id": 140000,
+    "name": "Yelmo de toro-cabra"
+  },
+  {
+    "id": 140100,
+    "name": "Armadura de toro-cabra"
+  },
+  {
+    "id": 140200,
+    "name": "Guanteletes de toro-cabra"
+  },
+  {
+    "id": 140300,
+    "name": "Grebas de toro-cabra"
+  },
+  {
+    "id": 970000,
+    "name": "Yelmo de aojo"
+  },
+  {
+    "id": 970100,
+    "name": "Armadura de aojo"
+  },
+  {
+    "id": 970200,
+    "name": "Guanteletes de aojo"
+  },
+  {
+    "id": 970300,
+    "name": "Grebas de aojo"
+  },
+  {
+    "id": 360000,
+    "name": "Yelmo de abad de fuego"
+  },
+  {
+    "id": 360100,
+    "name": "Armadura de abad de fuego"
+  },
+  {
+    "id": 361100,
+    "name": "Armadura de abad de fuego (modificada)"
+  },
+  {
+    "id": 360200,
+    "name": "Guanteletes de abad de fuego"
+  },
+  {
+    "id": 360300,
+    "name": "Grebas de abad de fuego"
+  },
+  {
+    "id": 440000,
+    "name": "Yelmo calabaza"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Flecha"
+  },
+  {
+    "id": 50010000,
+    "name": "Flecha ígnea"
+  },
+  {
+    "id": 50020000,
+    "name": "Flecha de serpiente"
+  },
+  {
+    "id": 50030000,
+    "name": "Flecha ósea (con remeras)"
+  },
+  {
+    "id": 50040000,
+    "name": "Flecha de Santa Trina"
+  },
+  {
+    "id": 50060000,
+    "name": "Flecha de esquirla devastadora (con remeras)"
+  },
+  {
+    "id": 50080000,
+    "name": "Flecha de piedra arcoíris (con remeras)"
+  },
+  {
+    "id": 50090000,
+    "name": "Flecha dorada"
+  },
+  {
+    "id": 50100000,
+    "name": "Flecha hostigadora"
+  },
+  {
+    "id": 50110000,
+    "name": "Flecha ósea"
+  },
+  {
+    "id": 50130000,
+    "name": "Flecha osígnea (con remeras)"
+  },
+  {
+    "id": 50140000,
+    "name": "Flecha osígnea"
+  },
+  {
+    "id": 50150000,
+    "name": "Flecha venenósea (con remeras)"
+  },
+  {
+    "id": 50160000,
+    "name": "Flecha venenósea"
+  },
+  {
+    "id": 50170000,
+    "name": "Flecha sueñósea (con remeras)"
+  },
+  {
+    "id": 50180000,
+    "name": "Flecha sueñósea"
+  },
+  {
+    "id": 50190000,
+    "name": "Flecha ósea del ala de la tormenta"
+  },
+  {
+    "id": 50200000,
+    "name": "Flecha rayósea (con remeras)"
+  },
+  {
+    "id": 50210000,
+    "name": "Flecha rayósea"
+  },
+  {
+    "id": 50220000,
+    "name": "Flecha de piedra arcoíris"
+  },
+  {
+    "id": 50230000,
+    "name": "Flecha de esquirla devastadora"
+  },
+  {
+    "id": 50240000,
+    "name": "Flecha de llama espectral"
+  },
+  {
+    "id": 50260000,
+    "name": "Flecha ósea mágica (con remeras)"
+  },
+  {
+    "id": 50270000,
+    "name": "Flecha ósea mágica"
+  },
+  {
+    "id": 50280000,
+    "name": "Flecha ósea santa (con remeras)"
+  },
+  {
+    "id": 50290000,
+    "name": "Flecha ósea santa"
+  },
+  {
+    "id": 50300000,
+    "name": "Flecha ósea sangrienta (con remeras)"
+  },
+  {
+    "id": 50310000,
+    "name": "Flecha ósea sangrienta"
+  },
+  {
+    "id": 50320000,
+    "name": "Flecha ósea fría (con remeras)"
+  },
+  {
+    "id": 50330000,
+    "name": "Flecha ósea fría"
+  },
+  {
+    "id": 50340000,
+    "name": "Flecha ósea podrida (con remeras)"
+  },
+  {
+    "id": 50350000,
+    "name": "Flecha ósea podrida"
+  },
+  {
+    "id": 51000000,
+    "name": "Gran flecha"
+  },
+  {
+    "id": 51010000,
+    "name": "Gran flecha de gólem"
+  },
+  {
+    "id": 51020000,
+    "name": "Gran flecha dorada"
+  },
+  {
+    "id": 51030000,
+    "name": "Flecha mágica de gólem"
+  },
+  {
+    "id": 51040000,
+    "name": "Lanza de Radahn"
+  },
+  {
+    "id": 51050000,
+    "name": "Gran flecha ósea (con remeras)"
+  },
+  {
+    "id": 51060000,
+    "name": "Gran flecha ósea"
+  },
+  {
+    "id": 52000000,
+    "name": "Virote"
+  },
+  {
+    "id": 52010000,
+    "name": "Virote de rayo"
+  },
+  {
+    "id": 52020000,
+    "name": "Virote de perfumista"
+  },
+  {
+    "id": 52030000,
+    "name": "Virote de llave negra"
+  },
+  {
+    "id": 52040000,
+    "name": "Virote con rebabas"
+  },
+  {
+    "id": 52050000,
+    "name": "Virote de meteoro"
+  },
+  {
+    "id": 52060000,
+    "name": "Virote explosivo"
+  },
+  {
+    "id": 52070000,
+    "name": "Virote dorado"
+  },
+  {
+    "id": 52080000,
+    "name": "Virote del Señor Juramento"
+  },
+  {
+    "id": 52090000,
+    "name": "Virote óseo"
+  },
+  {
+    "id": 52100000,
+    "name": "Virote osígneo"
+  },
+  {
+    "id": 52110000,
+    "name": "Virote rayóseo"
+  },
+  {
+    "id": 52120000,
+    "name": "Virote óseo mágico"
+  },
+  {
+    "id": 52130000,
+    "name": "Virote óseo santo"
+  },
+  {
+    "id": 52140000,
+    "name": "Virote venenóseo"
+  },
+  {
+    "id": 52150000,
+    "name": "Virote óseo sangriento"
+  },
+  {
+    "id": 52160000,
+    "name": "Virote óseo frío"
+  },
+  {
+    "id": 52170000,
+    "name": "Virote óseo podrido"
+  },
+  {
+    "id": 52180000,
+    "name": "Virote sueñóseo"
+  },
+  {
+    "id": 52190000,
+    "name": "Virote flamígero"
+  },
+  {
+    "id": 53000000,
+    "name": "Virote de ballesta"
+  },
+  {
+    "id": 53010000,
+    "name": "Virote grande de rayo"
+  },
+  {
+    "id": 53020000,
+    "name": "Virote grande explosivo"
+  },
+  {
+    "id": 53030000,
+    "name": "Virote óseo de balista"
+  }
+]

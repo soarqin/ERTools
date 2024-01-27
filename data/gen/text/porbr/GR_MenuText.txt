@@ -1,0 +1,2715 @@
+1010	 x
+3010	<?null?>
+3011	<?null?>
+3012	
+3013	
+3014	
+3015	
+3016	
+3017	
+3018	
+3019	
+3020	 
+3021	 
+3500	Escolha o local de renascimento
+3501	Estaca de Marika
+3502	Último local da graça visitado
+4100	Usar
+4101	Deixar
+4102	Descartar
+4103	
+4104	
+4105	
+4106	
+4107	
+4108	
+4109	
+4110	Usar número selecionado
+4111	Abandonar número selecionado
+4112	Descartar número selecionado
+5100	Usar quantos?
+5101	Deixar quantos?
+5102	Descartar quantos?
+5103	
+5104	Comprar quantos?
+5105	Vender quantos?
+5106	Guardar quantos?
+5107	Pegar quantos?
+5108	Produzir quantos?
+5109	Receber quantos?
+5501	Explicação
+5502	Ver controles
+5600	Explicação de menu
+5700	Alternar exibição de status de multijogador
+5701	
+5702	
+5703	
+5704	
+5705	
+5706	
+5707	
+5708	
+5709	
+5710	Alternar exibição de status de multijogador
+6100	Ordem padrão
+6101	
+6102	
+6103	
+6104	
+6105	Tipo de item
+6106	
+6107	
+6108	
+6109	
+6110	Quantidade carregada
+6111	Peso
+6112	
+6113	
+6114	
+6115	
+6116	
+6117	
+6118	
+6119	
+6120	Custo de PF
+6121	Espaços usados
+6122	
+6123	
+6124	
+6125	
+6126	
+6127	
+6128	
+6129	
+6130	Poder de ataque
+6131	
+6132	
+6133	
+6134	
+6135	
+6136	
+6137	
+6138	
+6139	
+6140	Dano negado ao defender
+6170	Negação de dano
+6171	
+6172	
+6173	
+6174	
+6175	
+6176	
+6177	
+6178	
+6179	
+6180	Resistência
+6181	
+6182	
+6183	
+6184	
+6185	
+6186	
+6187	
+6188	
+6189	
+6190	Ordem de aquisição
+10100	Nome
+10101	Tipo físico
+10102	Origem
+10103	Recordação
+10200	Nível
+10201	Runas carregadas
+10202	Runas necessárias
+10203	
+10204	Grandes Runas
+10300	
+10301	Idade
+10400	Vitalidade
+10401	Fortitude
+10402	Mente
+10403	Força
+10404	Destreza
+10405	
+10406	Inteligência
+10407	Fé
+10408	
+10409	Arcano
+10500	PV
+10501	PF
+10502	Vigor
+10503	
+10504	
+10505	
+10506	
+10507	
+10508	
+10509	
+10510	Carga de equipamentos
+10511	
+10512	Carga max equip
+10513	Carga leve
+10514	Carga média
+10515	Carga pesada
+10516	Sobrecarga
+10517	
+10518	
+10519	
+10520	Arma D 1
+10521	Arma D 2
+10522	Arma D 3
+10523	Arma E 1
+10524	Arma E 2
+10525	Arma E 3
+10526	
+10527	
+10528	
+10529	
+10530	Físico
+10531	vs esmagadores
+10532	vs cortantes
+10533	vs perfurantes
+10534	Mágico
+10535	Fogo
+10536	Relâmpago
+10537	Sagrado
+10538	
+10539	
+10540	Imunidade
+10541	Robustez
+10542	Foco
+10543	Vitalidade
+10561	Espaços de memória
+10562	Descoberta
+10563	
+10564	
+10565	
+10566	
+10567	
+10568	
+10569	
+10570	Equilíbrio
+11001	Tipo de arma
+11002	Tipo do feitiço
+11003	Afinidade de ataque
+11004	Qt. carregada
+11005	Armazenado(s)
+11006	Habilidade
+11007	Carregando
+11008	
+11009	Recipientes
+11010	Físico
+11011	Mágico
+11012	Fogo
+11013	Relâmpago
+11014	Sagrado
+11015	
+11016	
+11017	
+11018	
+11019	
+11020	Físico
+11021	Mágico
+11022	Fogo
+11023	Relâmpago
+11024	Sagrado
+11025	
+11026	
+11027	
+11028	
+11029	
+11030	Crítico
+11031	Aumento de defesa
+11032	Alcance
+11033	
+11034	Custo de PF
+11035	Feitiçaria
+11036	Encantamento
+11037	
+11038	
+11039	
+11040	Espaços usados
+11041	Custo de PF
+11042	Custo de PF
+11043	Custo de PV
+11180	Físico
+11181	vs esmagadores
+11182	vs cortantes
+11183	vs perfurantes
+11184	Mágico
+11185	Ígneo
+11186	Relâmpago
+11187	Sagrado
+11188	
+11189	
+11190	Imunidade
+11191	Robustez
+11192	Foco
+11193	Vitalidade
+11194	
+11195	
+11196	
+11197	
+11198	
+11199	
+11200	Equilíbrio
+11300	For
+11301	Des
+11302	Int
+11303	Fé
+11304	Arc
+11305	
+11306	
+11307	
+11308	
+11309	
+11310	For
+11311	Des
+11312	Int
+11313	Fé
+11314	For
+11315	Des
+11316	Int
+11317	Fé
+11318	Arc
+11319	Arc
+11320	-
+11321	S
+11322	A
+11323	B
+11324	C
+11325	D
+11326	E
+11327	
+11328	
+11329	
+11330	Consumível
+11331	Reutilizável
+11351	Peso
+11352	
+11353	
+11354	
+11355	
+11356	
+11357	
+11358	
+11359	
+11360	Tipo de item
+11400	Recipientes em posse
+12000	Runas necessárias
+12001	
+12002	
+12003	
+12004	
+12005	
+12006	
+12007	
+12008	
+12009	
+12010	Runas oferecidas
+20000	Poder de ataque
+20001	Dano negado ao defender
+20002	Atributos necessários
+20003	Bônus de atributo
+20004	Efeitos passivos
+20005	
+20006	Efeito do item
+20007	Obteve
+20008	Pontos de atributo
+20009	Poder base
+20010	Defesa/Negação de dano
+20011	Poder de defesa
+20012	Negação de dano
+20013	Proteção
+20014	Corpo
+20015	Linhagem
+20016	Equipamento
+20017	Resistência
+20050	Negação de dano
+20051	Resistência
+20100	Combinação de condições
+20200	Condição necessária
+30100	Nome deste personagem
+30101	O tipo físico deste personagem
+30102	A história deste personagem\nOs caminhos sinuosos que o trouxeram até aqui
+30103	A recordação carregada por este personagem\nCada uma, uma lembrança de seu dono
+30200	Um número cumulativo que representa a força\ngeral dos atributos.\nVocê pode subir de nível usando runas.
+30201	Total de runas em sua posse.\nVocê deixará as runas que possuir no local onde morreu.
+30202	Número de runas necessárias para subir de nível.\nQuando você passa de nível, você pode escolher qual atributo aumentar.
+30203	
+30204	O número de Grandes Runas que você possui
+30301	Idade aparente do personagem
+30400	Atributo que rege os PV.\nTambém afeta a resistência e a imunidade\nao fogo.
+30401	Atributo que governa o vigor.\nTambém afeta robustez.\nEsse atributo também determina quão\npesado seu equipamento pode ser.
+30402	Atributo que determina os PF.\nTambém afeta o foco.
+30403	Atributo requerido para empunhar armas pesadas.\nTambém melhora o poder de ataque de armas com\nbônus de força e afeta sua defesa física.
+30404	Atributo necessário para empunhar armas avançadas.\nTambém melhora o poder de ataque de armas com\nbônus de destreza, reduz o tempo de lançamento de\nfeitiços, suaviza o dano de queda e torna mais difícil\nser derrubado do seu cavalo.
+30405	
+30406	Atributo necessário para executar feitiços\npedrilhantes. Também aumenta o poder\nmágico de feitiços com influência de inteligência\ne melhora a resistência mágica.
+30407	Atributo necessário para executar encantamentos\nsagrados. Também melhora feitiços que\nrecebem bônus de fé.
+30408	
+30409	Atributo que rege a descoberta.\nTambém afeta a defesa sagrada, a vitalidade\ne certos feitiços e encantamentos.
+30500	Sua vida. Se reduzida a nada, você morre.\nRestaure-a bebendo do Frasco de Lágrimas\nCarmesins ou descansando em um local da graça.
+30501	Energia consumida para usar feitiços e habilidades.\nRestaure-a bebendo do Frasco de Lágrimas Cerúleas\nou descansando em um local da graça.
+30502	Necessário para várias ações.\nSe esgota quando certas ações são feitas,\nmas se recupera automaticamente.
+30503	
+30504	
+30505	
+30506	
+30507	
+30508	
+30509	
+30510	O peso total das armas e armaduras equipadas.\nA velocidade de movimento diminui conforme o peso\naumenta. O número à direta é o peso máximo que\npode ser equipado; se excedê-lo, a velocidade de\nmovimento diminuirá drasticamente.
+30511	
+30512	Peso máximo das armas e armaduras\nequipáveis. A velocidade de movimento\ndiminui conforme o peso aumenta.\nExceda esse número e o movimento\nse tornará drasticamente mais lento.
+30513	
+30514	
+30515	
+30516	
+30517	
+30518	
+30519	
+30520	Poder de ataque da arma \nno espaço 1 da mão direita.
+30521	Poder de ataque da arma \nno espaço 2 da mão direita.
+30522	Poder de ataque da arma \nno espaço 3 da mão direita.
+30523	Poder de ataque da arma \nno espaço 1 da mão esquerda.
+30524	Poder de ataque da arma \nno espaço 2 da mão esquerda.
+30525	Poder de ataque da arma \nno espaço 3 da mão esquerda.
+30526	
+30527	
+30528	
+30529	
+30530	A capacidade do corpo de\naguentar dano físico padrão.
+30531	A capacidade do corpo de\naguentar dano físico esmagador.
+30532	A capacidade do corpo de\naguentar dano físico cortante.
+30533	A capacidade do corpo de\naguentar dano físico perfurante.
+30534	A capacidade do corpo de\naguentar dano mágico.
+30535	A capacidade do corpo de\naguentar dano de fogo.
+30536	A capacidade do corpo de\naguentar dano elétrico.
+30537	A capacidade do corpo de aguentar dano sagrado.
+30538	
+30539	
+30540	A capacidade do corpo de resistir a vários\nvenenos e à podridão.\nQuanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+30541	A capacidade do corpo de resistir\nà perda de sangue e ao congelamento.\nQuanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+30542	A capacidade do corpo de resistir\nao sono e a surtos de loucura.\nQuanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+30543	A capacidade do corpo de resistir à morte.\nQuanto mais alto o valor, mais difícil de ser afligido pela morte instantânea.
+30561	O número de espaços disponíveis\npara memorizar feitiços e encantos
+30562	Determina a chance de encontrar itens\nao derrotar inimigos.
+30563	
+30564	
+30565	
+30566	
+30567	
+30568	
+30569	
+30570	O quanto você pode resistir\na colapsar sob ataques inimigos.
+30571	
+30572	
+30573	
+30574	
+30575	
+30576	
+30577	
+30578	
+30579	
+30580	Seu poder de defesa e negação de dano\ncontra ataques físicos padrões. O primeiro é \ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30581	Seu poder de defesa e negação de dano\ncontra ataques físicos esmagadores. O primeiro é \ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30582	Seu poder de defesa e negação de dano\ncontra ataques físicos cortantes. O primeiro é \ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30583	Seu poder de defesa e negação de dano\ncontra ataques físicos perfurantes. O primeiro é \ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30584	Seu poder de defesa e negação de dano\ncontra ataques mágicos. O primeiro é\ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30585	Seu poder de defesa e negação de dano\ncontra ataques de fogo. O primeiro é\ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30586	Seu poder de defesa e negação de dano\ncontra ataques elétricos. O primeiro é\ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e quaisquer efeitos adicionais.
+30587	Seu poder de defesa e negação de dano\ncontra ataques sagrados. O primeiro é\ncalculado através dos atributos, enquanto\no último é calculado através dos equipamentos\nde proteção e de quaisquer efeitos adicionais.
+30588	
+30589	
+30590	Sua resistência a diversos venenos e\nà podridão. Quanto maior o número,\nmenor sua suscetibilidade. Regida pelos seus\natributos, assim como pelos equipamentos de\nproteção e quaisquer efeitos adicionais.
+30591	Sua resistência à perda de sangue e\nao congelamento. Quanto maior o número,\nmenor sua suscetibilidade. Regida pelos seus\natributos, assim como pelos equipamentos de\nproteção e por quaisquer efeitos adicionais.
+30592	Sua resistência ao sono e a surtos de\nloucura. Quanto maior o número,\nmenor sua suscetibilidade. Regida pelos seus\natributos, assim como pelos equipamentos de\nproteção e por quaisquer efeitos adicionais.
+30593	Sua resistência à morte. Quanto maior o\nnúmero, menor sua suscetibilidade a uma\nmorte instantânea. Regida pelos seus atributos,\nassim como pelos equipamentos de defesa e por quaisquer efeitos adicionais.
+31001	Categoria da arma.\nArmas que pertencem à mesma categoria\npossuem propriedades semelhantes.
+31002	Feitiços e encantamentos
+31003	Os tipos de dano físico causados por\nesta arma. Além do dano físico padrão,\ndano esmagador, cortante e perfurante\ntambém podem ser causados.
+31004	O número que você tem desse item.\nO número à direita indica a quantidade\nmáxima que você pode ter de cada vez.
+31005	A quantidade desse item armazenado\nno baú. O número à direita indica a\nquantidade máxima que você pode\ncarregar de uma vez.
+31006	Os nomes das habilidades que você pode usar.\nA maioria das habilidades consome PF.
+31007	Número de recipientes carregados no momento
+31008	Recipientes, essenciais para a produção, existem em vários formatos, como potes rachados e frascos de perfume. O número da esquerda indica quantos recipientes estão sendo usados atualmente. O número da direita indica quantos recipientes você possui.
+31009	Número de recipientes restantes\npara usar na produção
+31010	Poder do ataque físico
+31011	Poder do ataque mágico
+31012	Poder do ataque de fogo
+31013	Poder do ataque elétrico
+31014	Poder do ataque sagrado
+31015	
+31016	
+31017	
+31018	
+31019	
+31020	O grau em qual o dano físico \né negado enquanto estiver defendendo
+31021	O grau em qual o dano mágico\né negado enquanto estiver defendendo
+31022	O grau em qual o dano de fogo\né negado enquanto estiver defendendo
+31023	O grau em qual o dano elétrico\né negado enquanto estiver defendendo
+31024	O grau em qual o dano sagrado\né negado enquanto estiver defendendo
+31025	
+31026	
+31027	
+31028	
+31029	
+31030	A força dos acertos críticos,\nque podem ser realizados em inimigos\npegos por trás ou com postura quebrada.
+31031	A estabilidade da defesa do personagem.\nQuanto mais alto o valor, menor será a\nquantidade de vigor gasto ao se\ndefender de ataques.
+31032	Distância das armas de longo alcance
+31033	
+31034	A quantidade de PF necessária para\nexecutar essa habilidade
+31035	O grau em que os feitiços aumentam em poder
+31036	O grau em que os encantos\naumentam em poder
+31037	
+31038	
+31039	
+31040	O número de espaços necessários\npara memorizar feitiços e encantos
+31041	A quantidade de PF necessária para\nlançar este feitiço
+31042	A quantidade de PF necessária para\nusar este item
+31043	A quantidade de PV necessária para usar este item
+31180	O grau em que o dano físico padrão\nrecebido é negado
+31181	O grau em que o dano físico esmagador\nrecebido é negado
+31182	O grau em que o dano físico cortante\nrecebido é negado
+31183	O grau em que o dano físico perfurante\nrecebido é negado
+31184	O grau em que o dano mágico\nrecebido é negado
+31185	O grau em que o dano de fogo\nrecebido é negado
+31186	O grau em que o dano elétrico\nrecebido é negado
+31187	O grau em que o dano\nsagrado recebido é negado
+31188	
+31189	
+31190	A resistência que sua armadura oferece contra vários venenos e a podridão. Quanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+31191	A resistência que sua armadura oferece contra a perda de sangue e o congelamento. Quanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+31192	A resistência que sua armadura oferece contra o sono e os surtos de loucura. Quanto mais alto o valor, mais difícil sucumbir a essas mazelas.
+31193	A resistência que sua armadura oferece contra a morte. Quanto mais alto o valor, mais difícil de ser afligido pela morte instantânea.
+31194	
+31195	
+31196	
+31197	
+31198	
+31199	
+31200	O quanto você pode resistir\na colapsar sob ataques inimigos.
+31300	Força necessária para dominar esta arma.\nSem força suficiente, o dano dessa\narma será significativamente reduzido.
+31301	Destreza necessária para dominar esta arma.\nSem destreza suficiente, o dano dessa\narma será significativamente reduzido.
+31302	Inteligência necessária para dominar esta arma.\nSem inteligência suficiente, o dano dessa\narma será significativamente reduzido.
+31303	Fé necessária para dominar esta arma.\nSem fé suficiente, o dano dessa\narma será significativamente reduzido.
+31304	Arcano necessário para dominar esta arma.\nSem arcano suficiente, o dano dessa\narma será consideravelmente reduzido.
+31305	
+31306	
+31307	Inteligência necessária para lançar esse\nfeitiço ou encantamento.\nSem inteligência suficiente, ele não pode\nser usado.
+31308	Fé necessária para lançar esse feitiço\nou encantamento.\nSem fé suficiente, ele não pode\nser usado.
+31309	Arcano necessário para lançar esse\nfeitiço ou encantamento.\nSem arcano suficiente, ele não pode\nser usado.
+31310	O grau em que os ataques desta \narma recebem bônus de força
+31311	O grau em que os ataques desta \narma recebem bônus de destreza
+31312	O grau em que os ataques desta \narma recebem bônus de inteligência
+31313	O grau em que os ataques desta \narma recebem bônus de fé
+31314	O grau em que o poder ou efeitos passivos\ndesta arma recebem bônus de força
+31315	O grau em que o poder ou efeitos passivos\ndesta arma recebem bônus de destreza
+31316	O grau em que o poder ou efeitos passivos\ndesta arma recebem bônus de inteligência
+31317	O grau em que o poder ou efeitos passivos\ndesta arma recebem bônus de fé
+31318	O grau em que o poder ou os efeitos passivos\ndesta arma recebem bônus de arcano
+31319	O grau em que os ataques desta\narma recebem bônus de arcano
+31351	Peso deste equipamento
+31352	
+31353	
+31354	
+31355	
+31356	
+31357	
+31358	
+31359	
+31360	Tipo do item.\nMostra se ele será ou não\nconsumido ao ser usado.
+31500	Os efeitos inatos desta arma
+31511	Habilidade concedida por estas Cinzas da Guerra
+31512	Tipos de arma que as Cinzas da Guerra podem alterar
+31513	Afinidades que estas Cinzas da Guerra podem conceder.\nPodem ser expandidas com lâminas de amolar.
+32000	Runas necessárias para comprar
+32001	Runas necessárias para fazer melhorias
+32002	Runas necessárias para conceder
+32003	
+32004	Número de runas necessárias para receber\npoder das lembranças.
+32005	
+32006	
+32007	
+32008	
+32009	
+32010	Runas recebidas na venda
+40110	Confirmar
+40111	
+40112	
+40113	
+40114	
+40115	
+40116	
+40117	
+40118	
+40119	
+40120	Nenhum inserido
+40300	Ligado
+40301	Desligado
+40302	Pouco
+40303	Automático
+40304	
+40305	
+40306	
+40307	
+40308	
+40309	
+40310	Normal
+40311	Invertido
+40312	
+40313	
+40314	
+40315	
+40316	
+40317	
+40318	
+40319	
+40320	Permitido
+40321	Restrito
+40322	
+40323	
+40324	
+40325	
+40326	
+40327	
+40328	
+40329	
+40330	Padrões
+40331	Próximo
+40332	
+40333	
+40334	
+40335	
+40336	
+40337	
+40338	
+40339	
+40340	Organizar partida
+40341	Sem organizar partida
+40342	
+40343	
+40344	
+40345	
+40346	
+40347	
+40348	
+40349	
+40350	Sem senha
+40351	
+40352	
+40353	
+40354	
+40355	
+40356	
+40357	
+40358	
+40359	
+40360	Jogar online
+40361	Jogar offline
+40362	
+40363	
+40364	
+40365	
+40366	
+40367	
+40368	
+40369	
+40370	Desativar
+40371	Ativar
+40372	
+40373	
+40374	
+40375	Concordar
+40376	Recusar
+40377	Priorizar qualidade
+40378	Priorizar taxa de quadros
+40379	
+40380	Controle
+40381	Mouse e teclado
+40400	Tela cheia
+40401	Modo janela
+40402	Modo janela sem bordas
+40403	
+40404	
+40405	
+40406	
+40407	
+40408	
+40409	
+40410	x
+40411	
+40412	
+40413	
+40414	
+40415	
+40416	
+40417	
+40418	
+40419	
+40420	Personalizado
+40421	Baixo
+40422	Médio
+40423	Alto
+40424	Máximo
+40440	Ligado
+40441	Desligado
+40500	Ferramentas
+40501	Armas corpo a corpo
+40502	
+40503	
+40504	Escudos
+40505	Cabeça
+40506	Torso
+40507	Braços
+40508	Pernas
+40509	Talismãs
+40510	Feitiços/Encantamentos
+40511	Flechas/Setas
+40512	Materiais de fortificação
+40513	Itens importantes
+40514	
+40515	
+40516	Materiais de produção
+40517	Informações
+40518	Lágrimas de Cristal
+40519	Armas de longo alcance/catalisadores
+40520	Cinzas
+40521	Feitiços
+40522	Encantamentos
+40523	Cinzas da Guerra
+40524	
+40525	
+40526	
+40527	
+40528	
+40529	
+40530	Armas equipadas
+40531	Cinzas equipadas
+40532	Armas equipadas
+40550	Armas
+40551	Armadura
+40552	
+40553	
+40554	
+40555	
+40556	
+40557	
+40558	
+40559	
+40560	Todos os itens
+40561	
+40562	Consumíveis
+40563	
+40564	
+40565	
+40566	
+40567	
+40568	
+40569	
+40570	
+40571	Potes de Arremesso
+40572	Artes de Perfume
+40573	
+40574	
+40575	
+40576	
+40577	
+40578	
+40579	
+40580	Cinzas
+40581	Cinzas especiais
+40582	
+40583	
+40584	
+40585	
+40586	
+40587	
+40588	
+40589	
+40590	Feitiços/Encantamentos
+40591	Feitiços de ataque
+40592	Feitiços de suporte
+40593	Encantamentos de ataque
+40594	Encantamentos de suporte
+40595	
+40596	
+40597	
+40598	
+40599	
+40600	
+40601	
+40602	Status do personagem
+50000	Nenhuma
+50001	
+50002	
+50003	
+50004	
+50005	Padrão
+50050	Esmagador
+50051	
+50052	
+50053	
+50054	
+50055	Padrão/Esmagador
+50500	Cortante
+50501	
+50502	
+50503	
+50504	
+50505	Padrão/Cortante
+50550	Esmagador/Cortante
+50551	
+50552	
+50553	
+50554	
+50555	Padrão/Esmagador/Cortante
+55000	Perfurante
+55001	
+55002	
+55003	
+55004	
+55005	Padrão/Perfurante
+55050	Esmagador/Perfurante
+55051	
+55052	
+55053	
+55054	
+55055	Padrão/Esmagador/Perfurante
+55500	Cortante/Perfurante
+55501	
+55502	
+55503	
+55504	
+55505	Padrão/Cortante/Perfurante
+55550	Esmagador/Cortante/Perfurante
+55551	
+55552	
+55553	
+55554	
+55555	Padrão/Esmagador/Cortante/Perfurante
+60000	Todas as armas
+60001	,
+60002	
+60003	
+60004	
+60005	
+60006	
+60007	
+60008	
+60009	
+60010	Adaga
+60011	
+60012	
+60013	
+60014	
+60015	Espada Reta
+60016	
+60017	
+60018	
+60019	
+60020	Espada Grande
+60021	
+60022	
+60023	
+60024	
+60025	Espada Colossal
+60026	
+60027	
+60028	
+60029	
+60030	Espada Curva
+60031	
+60032	
+60033	
+60034	
+60035	Espada Grande Curva
+60036	
+60037	
+60038	
+60039	
+60040	Katana
+60041	
+60042	
+60043	Lâminas-gêmeas
+60044	
+60045	Espada de Fincada
+60046	Espada Pesada de Fincada
+60047	
+60048	
+60049	
+60050	Machado
+60051	
+60052	
+60053	
+60054	
+60055	Grande Machado
+60056	
+60057	
+60058	
+60059	
+60060	Martelo
+60061	
+60062	
+60063	
+60064	
+60065	Grande Martelo
+60066	
+60067	Mangual
+60068	
+60069	
+60070	Lança
+60071	
+60072	
+60073	
+60074	
+60075	
+60076	
+60077	Lança Grande
+60078	
+60079	
+60080	Alabarda
+60081	
+60082	
+60083	
+60084	
+60085	Ceifador
+60086	
+60087	
+60088	
+60089	
+60090	Punho
+60091	
+60092	
+60093	
+60094	
+60095	
+60096	
+60097	
+60098	
+60099	
+60100	Garra
+60101	
+60102	Arma Colossal
+60103	
+60104	Arco Leve
+60105	Arco
+60106	
+60107	
+60108	
+60109	
+60110	Arco Grande
+60111	
+60112	
+60113	
+60114	
+60115	Besta
+60116	
+60117	Balista
+60118	
+60119	
+60120	Cajado Pedrilhante
+60121	
+60122	
+60123	
+60124	
+60125	
+60126	
+60127	
+60128	
+60129	
+60130	Selo Sagrado
+60131	
+60132	
+60133	
+60134	
+60135	
+60136	
+60137	
+60138	
+60139	
+60140	Escudo Pequeno
+60141	
+60142	
+60143	
+60144	
+60145	Escudo médio
+60146	
+60147	
+60148	
+60149	
+60150	Escudo Grande
+60151	
+60152	
+60153	
+60154	
+60155	Chicote
+60156	
+60157	
+60158	
+60159	
+60160	Flecha
+60161	
+60162	
+60163	
+60164	
+60165	Flecha Grande
+60166	
+60167	
+60168	
+60169	
+60170	Seta
+60171	Grande Seta
+60172	
+60173	
+60174	
+60175	Tocha
+61000	Feitiçaria
+61001	
+61002	Encantamento
+62000	Padrão
+62001	Pesado
+62002	Aguçado
+62003	Qualidade
+62004	Fogo
+62005	Arte da Chama
+62006	Relâmpago
+62007	Sagrado
+62008	Mágico
+62009	Oculto
+62010	do Frio
+62011	Veneno
+62012	Sangue
+63000	Utilizável em espadas, machados e\nmartelos (exceto armas pequenas\ne espadas perfurantes)
+63001	Utilizável em armas perfurantes médias e grandes
+63002	Utilizável em espadas, machados e armas de haste (exceto armas colossais)
+63003	Utilizável em espadas, machados e\nmartelos (exceto espadas pequenas\ne médias)
+63004	Utilizável em armas perfurantes (exceto armas colossais)
+63005	Utilizável em machados e martelos,\nbem como espadas curvas,\nespadas grandes e ceifadores\n(exceto armas colossais)
+63006	Utilizável em espadas e armas de haste capazes de realizar ataques cortantes (exceto armas colossais)
+63007	Utilizável em machados e martelos,\ngrandes e colossais
+63008	Utilizável em katanas
+63009	Utilizável em espadas retas
+63010	Utilizável em armas grandes e colossais perfurantes, além de lanças e lâminas-gêmeas
+63011	Utilizável em espadas pequenas e médias (exceto lâminas-gêmeas)
+63012	Utilizável em espadas pequenas e médias, martelos, machados e armas de haste\n(exceto lanças grandes)
+63013	Utilizável em armas de haste perfurantes, espadas de perfuração pesadas e lâminas-gêmeas
+63014	Utilizável em espadas de corte, martelos, machados e armas de haste (exceto armas colossais e pequenas)
+63015	Utilizável em espadas, machados e armas de haste capazes de realizar ataques cortantes (exceto armas colossais e lanças grandes)
+63016	Utilizável em armas de haste perfurantes e lâminas-duplas
+63017	Utilizável em punhos e garras
+63018	Utilizável em machados e martelos
+63019	Utilizável em armas de corpo a corpo\n(exceto armas pequenas e chicotes)
+63020	Utilizável em espadas (exceto armas colossais e lâminas-duplas)
+63021	Utilizável em espadas, machados e martelos
+63022	Utilizável em espadas\n(exceto armas colossais)
+63023	Utilizável em espadas e machados\n(exceto machados pequenos e colossais)
+63024	Utilizável em armas de haste e lâminas-duplas
+63025	Utilizável em armas de haste\n(exceto lanças grandes)
+63026	Utilizável em espadas pequenas e médias
+63027	Utilizável em armas de haste e lâminas gêmeas\n(exceto lanças grandes)
+63028	Utilizável em armas de haste\n(exceto ceifadores)
+63029	Utilizável em armas para corpo a\ncorpo pequenas e espadas curvas
+63030	Utilizável em escudos pequenos e médios
+63031	Utilizável em escudos e tochas
+63032	Utilizável em arcos grandes
+63033	Utilizável em arcos leves e arcos longos
+63034	Utilizável em todos os arcos
+63035	Utilizável em machados grandes, grande martelos e armas colossais
+63036	Utilizável em espadas retas pequenas\ne médias e espadas de perfuração
+63037	Utilizável em espadas, assim como em armas de haste capazes de realizar ataques cortantes (exceto armas colossais)
+63038	Utilizável em armas corpo a corpo\n(exceto chicotes)
+63039	Utilizável em machados, martelos e\nespadas grandes e colossais
+63040	Utilizável em armas corpo a corpo\n(exceto adagas, espadas de\nperfuração e chicotes)
+63041	Utilizável em todos os escudos
+63042	Utilizável em todas as armas corpo a corpo
+63043	Utilizável em machados e martelos, bem como espadas curvas \ne espadas grandes (exceto armas colossais)
+63044	Utilizável em armas corpo a corpo \n(exceto chicotes, punhos e garras)
+63045	Utilizável em armas corpo a corpo (exceto armas colossais e chicotes)
+63046	Utilizável em espadas, assim como em armas de haste capazes de realizar ataques cortantes (exceto armas pequenas e colossais)
+63047	Utilizável em adagas, espadas curvas,\nespadas de fincada, punhos, garras e\nescudos pequenos e médios
+63048	Utilizável em arcos leves
+63049	Utilizável em espadas e machados (exceto machados colossais)
+63050	Utilizável em machados grandes, martelos grandes, lanças grandes e armas colossais
+63900	Utilizável em armas perfurantes grandes
+63901	Utilizável em todas as armas perfurantes
+63902	Castelo Tempesvéu
+63903	Utilizável em todas as armas corpo a corpo
+63904	Utilizável em as armas corpo a corpo grandes
+63905	Locais
+63906	estrada principal
+80000	Pote Rachado
+80001	Frasco de Perfume
+80002	
+80003	
+80004	
+80005	
+80006	
+80007	
+80008	
+80009	
+80010	Pote Cerimonial
+90000	Manhã
+90001	Dia - Cedo
+90002	Dia - Tarde
+90003	Entardecer
+90004	Noite
+90005	Noite - Tarde
+101000	Equipamento
+101001	Inventário
+101002	Status
+101003	Sistema
+101004	Mensagens
+101005	Bolsa
+101006	
+101007	Gestos
+101008	Multijogador
+101009	Produção de itens
+103000	Arma da mão direita 1
+103001	Arma da mão direita 2
+103002	Arma da mão direita 3
+103003	
+103004	
+103005	
+103006	
+103007	
+103008	
+103009	
+103010	
+103011	Arma da mão esquerda 1
+103012	Arma da mão esquerda 2
+103013	Arma da mão esquerda 3
+103014	
+103015	
+103016	
+103017	
+103018	
+103019	
+103020	Flechas 1
+103021	Flechas 2
+103022	
+103023	
+103024	
+103025	
+103026	
+103027	
+103028	
+103029	
+103030	Setas 1
+103031	Setas 2
+103032	
+103033	
+103034	
+103035	
+103036	
+103037	
+103038	
+103039	
+103040	Item rápido 1
+103041	Item rápido 2
+103042	Item rápido 3
+103043	Item rápido 4
+103044	Item rápido 5
+103045	Item rápido 6
+103046	Item rápido 7
+103047	Item rápido 8
+103048	Item rápido 9
+103049	Item rápido 10
+103050	Talismã 1
+103051	Talismã 2
+103052	Talismã 3
+103053	Talismã 4
+103054	
+103055	
+103056	
+103057	
+103058	
+103059	
+103060	Bolsa 1
+103061	Bolsa 2
+103062	Bolsa 3
+103063	Bolsa 4
+103064	Bolsa 5
+103065	Bolsa 6
+103066	
+103067	
+103068	
+103069	
+103070	Gesto 1
+103071	Gesto 2
+103072	Gesto 3
+103073	Gesto 4
+103074	Gesto 5
+103075	Gesto 6
+110000	Opções de jogo
+110001	Opções de câmera
+110002	
+110003	
+110004	
+110005	
+110006	
+110007	
+110008	
+110009	
+110010	Eixo Y da câmera
+110011	Eixo X da câmera
+110012	Redefinir eixo Y da câmera
+110013	Velocidade da câmera
+110014	Alternar trava automática
+110015	Seleção automática de alvo
+110016	Recup. automática da câmera na parede
+110017	
+110018	Controles de pulo
+110019	Mira de ataque manual
+110020	Configurações de performance
+110021	Ray tracing
+110100	Som e tela
+110101	
+110102	
+110103	
+110104	
+110105	
+110106	
+110107	
+110108	
+110109	
+110110	Mostrar sangue
+110111	Legendas
+110112	Interface
+110113	Efeitos cinemáticos
+110114	Música
+110115	Efeitos sonoros
+110116	Voz
+110117	Volume principal
+110118	Rotação automática da câmera
+110200	Brilho
+110201	Ajuste o brilho até que a imagem da direita esteja quase invisível
+110202	Ajuste o brilho para o valor que desejar
+110203	Ajuste o brilho da TV para o valor mais alto
+110204	Ajuste a saturação para o valor que desejar
+110205	
+110206	
+110207	
+110208	
+110209	HDR
+110210	Ajustar brilho
+110211	Ajustar qualidade da imagem
+110212	Brilho máximo
+110213	Ajustar saturação
+110214	Ajustar brilho
+110300	Rede
+110301	
+110302	
+110303	
+110304	
+110305	
+110306	
+110307	
+110308	
+110309	
+110310	Chat de voz
+110311	Jogar com outras regiões
+110312	
+110313	Mostrar nomes de jogadores
+110314	Configuração de inicialização
+110315	Enviar sinal de invocação
+110316	Acordo de uso de dados
+110500	Sair do jogo
+110501	
+110502	Nível
+110503	
+110504	
+110505	
+110506	
+110507	
+110508	
+110509	
+110510	Sair do jogo
+110511	Voltar à área de trabalho
+111001	Controles
+111002	
+111003	
+111004	
+111005	Configurações de teclado/mouse
+111006	Controles
+111007	
+111008	
+111009	
+111010	Dispositivo para comandos na tela
+111011	Mostrar tutoriais
+111012	
+111013	
+111014	
+111015	
+111016	
+111017	
+111018	
+111019	
+111020	Sensibilidade do mouse
+111021	
+111022	Eixo X do mouse
+111023	Eixo Y do mouse
+111024	
+111025	
+111026	
+111027	
+111028	
+111029	
+111030	
+111031	Definição das teclas
+111100	Gráficos
+111101	
+111102	
+111103	
+111104	
+111105	Mudanças aplicadas do menu principal
+111106	
+111107	
+111108	
+111109	
+111110	Modo da tela
+111111	Resolução
+111112	Autodetectar melhores configurações de renderização
+111113	Configurações de qualidade
+111114	Configurações avançadas
+111210	Qualidade de texturas
+111211	Qualidade de antisserrilhamento
+111212	SSAO
+111213	Profundidade de campo
+111214	Desfoque de movimento
+111215	Qualidade das sombras
+111216	Qualidade da iluminação
+111217	Qualidade dos efeitos
+111218	Qualidade da volumetria
+111219	Qualidade dos reflexos
+111220	Qualidade da superfície da água
+111221	Qualidade de sombreamento
+111222	Qualidade de ray tracing
+111223	Qualidade de iluminação global
+111224	Qualidade da grama
+121000	Configuração de senha de multijogador
+121001	Configuração de senha de grupo
+121002	
+121003	
+121004	
+121005	
+121006	
+121007	
+121008	
+121009	
+121010	Se você definir uma senha de multijogador, na maioria das funções de multijogador, você só será combinado com outros jogadores com a mesma senha.\n\nEntretanto, senhas de multijogador não se aplicam ao multijogador de invasão ou suporte.
+121011	Se você definir uma senha de grupo, será mais provável que você veja mensagens, sinais de invocação, manchas de sangue, fantasmas etc. de outros jogadores usando a mesma senha.\n\nOs elementos que recebem esta prioridade especial aparecerão de forma diferente dos outros.
+121100	Com um Remédio de Dedo Invocador Enrolado, você pode ver sinais de invocação, que podem ser usados para invocar jogadores de outros mundos.\n(Remédios de Dedo são consumidos com o uso.)\n\nHá vários tipos de sinais de invocação.\nSinais dourados invocam cooperadores de Dedo Enrolado.\nSinais vermelhos invocam adversários duelistas.\n(Para cada tipo de multijogador, o jogador invocador se torna o Anfitrião de Dedos.)
+121101	Com um Remédio de Dedo Invocador Enrolado, você pode ver sinais de invocação, que podem ser usados para invocar jogadores de outros mundos.\n(Remédios de Dedo são consumidos com o uso.)\n\nHá vários tipos de sinais de invocação.\nSinais dourados invocam cooperadores de Dedo Enrolado.\nSinais vermelhos invocam adversários duelistas.\n(Para cada tipo de multijogador, o jogador invocador se torna o Anfitrião de Dedos.)
+121102	Você pode deixar um sinal de invocação dourado para jogar em multijogador cooperativo.\n\nEsse sinal aparecerá nos mundos de outros jogadores e permitirá que eles te invoquem como um Dedo Enrolado para o multijogador cooperativo.\nO multijogador começará uma vez que você for invocado.\n(Seu objetivo é ajudar o jogador anfitrião a derrotar o chefe da área.)\n\nSe você deixar um segundo sinal de invocação, o mais antigo desaparecerá.
+121103	Você pode deixar um sinal de invocação dourado para jogar em multijogador cooperativo.\n\nEsse sinal aparecerá nos mundos de outros jogadores e permitirá que eles te invoquem como um Dedo Enrolado para o multijogador cooperativo.\nO multijogador começará uma vez que você for invocado.\n(Seu objetivo é ajudar o jogador anfitrião a derrotar o chefe da área.)\n\nSe você deixar um segundo sinal de invocação, o mais antigo desaparecerá.
+121104	Você pode deixar um sinal de invocação vermelho para jogar em multijogador competitivo.\n\nEsse sinal aparecerá nos mundos de outros jogadores e permitirá que eles te invoquem como um adversário duelista para o multijogador competitivo.\nO multijogador começará uma vez que você for invocado.\n(Seu objetivo é derrotar o jogador Anfitrião de Dedos.)\n\nSe você deixar um segundo sinal de invocação, o mais antigo desaparecerá.
+121105	Você pode deixar um sinal de invocação vermelho para jogar em multijogador competitivo.\n\nEsse sinal aparecerá nos mundos de outros jogadores e permitirá que eles te invoquem como um adversário duelista para o multijogador competitivo.\nO multijogador começará uma vez que você for invocado.\n(Seu objetivo é derrotar o jogador Anfitrião de Dedos.)\n\nSe você deixar um segundo sinal de invocação, o mais antigo desaparecerá.
+121106	Tente invadir o mundo de outro jogador como um Dedo Sangrento.\n\nSe invadir com sucesso, o multijogador de invasão começará.\n(Seu objetivo é derrotar o jogador Anfitrião de Dedos.)\n\nVocê pode tentar reinvadir o mundo\nque invadiu anteriormente usando um item de Fantasma de Dedo.\n(Estes itens são consumidos com o uso.)
+121107	Cancelar invasão de outro mundo
+121108	Escolha um jogador invocado para\nmandar de volta ao próprio mundo.\n\nEsse jogador será removido\nda sessão de multijogador.
+121109	Removido da sessão de multijogador.\nRetornando ao seu mundo.
+121110	Atrai invasores.\n\nIsso permite que seu mundo seja invadido sem nenhum cooperador Dedo Enrolado presente, além de diminuir o intervalo entre as oportunidades de invasão.\n\nIsso também possibilita a chegada de um segundo invasor quando um cooperador estiver presente. (Com dois invasores, o número máximo de cooperadores passa a ser um.)
+121111	Parar de chamar invasores para o seu mundo
+121112	Coloca você em um estado de prontidão para responder,\ncaso alguém em outro mundo chame por resgate.\nVocê será invocado para o mundo dele como caçador.\n\nO multijogador começará uma vez que você for invocado.\n(Seu objetivo é derrotar invasores.)
+121113	Parar de aceitar pedidos de invocação
+121114	Permite que você solicite automaticamente que um caçador de outro mundo o resgate quando o seu mundo for invadido.\n\nVocê também pode usar isso após ser invadido para invocar um caçador para ajudar.\n(Invocar salvadores pode nem sempre ser possível.)
+121115	Cancelar pedido de invocação
+121116	Envia um sinal de invocação cooperativo a várias pedras de invocação (apenas pedras ativadas).\n\nSe você for invocado, será transportado ao local da pedra de invocação no mundo do jogador anfitrião e o multijogador começará.\n(Seu objetivo é ajudar o jogador anfitrião a derrotar o chefe da área.)
+121117	Remover sinal de invocação cooperativo da pedra de invocação
+121118	Envia um sinal de invocação competitivo a várias pedras de invocação (apenas pedras ativadas).\n\nSe você for invocado, será transportado ao local da pedra de invocação no mundo do jogador anfitrião e o multijogador começará.\n(Seu objetivo é derrotar o Anfitrião de Dedos.)
+121119	Remover sinal de invocação hostil da pedra de invocação
+121120	Tente invadir o mundo de outro jogador como um Dedo Sangrento.\n\nSe invadir com sucesso, seu Dedo Sangrento Fétido\nserá gasto e o multijogador de invasão começará.\n(Seu objetivo é derrotar o jogador\nAnfitrião de Dedos.)\n\nVocê pode tentar reinvadir o mundo\nque invadiu anteriormente usando um item de Fantasma de Dedo.\n(Estes itens são consumidos com o uso.)
+121121	Parar de invadir outro mundo
+121122	Você pode tentar invadir o mundo de outro jogador\ncomo um não conformista.\n\nSe invadir com sucesso, o multijogador de invasão\ncomeçará. (Seu objetivo é derrotar o jogador\nAnfitrião de Dedos.)\n\nDurante o multijogador de invasão, Fantasmas de Dedo podem ser usados como itens para uma nova tentativa de invadir o mundo que invadiu anteriormente.\n(Fantasmas de Dedo são consumidos com o uso.)
+121123	Parar de invadir outro mundo
+122010	Rank de Dedo Enrolado
+122011	1.0
+122012	2.0
+122013	3.0
+122014	
+122015	
+122016	
+122017	
+122018	
+122019	
+122020	Rank de Duelista
+122021	1.0
+122022	2.0
+122023	3.0
+122024	
+122025	
+122026	
+122027	
+122028	
+122029	
+122030	Rank de Dedo Sangrento
+122031	1.0
+122032	2.0
+122033	3.0
+122034	
+122035	
+122036	
+122037	
+122038	
+122039	
+122040	Rank de Não Conformista
+122041	1.0
+122042	2.0
+122043	3.0
+122044	
+122045	
+122046	
+122047	
+122048	
+122049	
+122050	Rank de Caçador
+122051	1.0
+122052	2.0
+122053	3.0
+122110	Contribuição
+123000	Senha de multijogador
+123001	Senha de grupo
+123002	
+123003	
+123004	
+123005	
+123006	
+123007	
+123008	
+123009	
+123010	Nenhuma definida
+123011	Nenhuma definida
+123012	
+123013	
+123014	
+123015	
+123016	
+123017	
+123018	
+123019	
+123020	Defina uma senha de multijogador
+123021	Defina uma senha de grupo
+123022	
+123023	
+123024	
+123025	
+123026	
+123027	
+123028	
+123029	
+123030	Senha
+212000	Subir de nível
+212750	Renascimento
+213000	Ferreiro
+213001	Itens necessários
+213002	
+213003	
+213004	
+213005	
+213006	
+213007	
+213008	
+213009	
+213010	Mesa de forja
+214000	Cinzas da Guerra
+214020	Para melhorar
+214021	
+214022	
+214023	
+214024	
+214025	
+214026	
+214027	
+214028	
+214029	
+214030	Afinidade atribuída
+214110	Desfazer aprimoramento
+215000	Grandes Runas
+216000	Canalização de Espíritos
+216001	Itens necessários
+225000	Comunhão do Dragão
+225001	
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	Oferendas
+225011	
+225012	
+225013	
+225014	
+225015	
+225016	
+225017	
+225018	
+225019	
+225020	Qt. necessária (Qt. possuída)
+226000	Marionete
+226001	
+226002	
+226003	
+226004	
+226005	
+226006	
+226007	
+226008	
+226009	
+226010	Troca
+227000	Duplicação de Cinza da Guerra
+227001	
+227002	
+227003	
+227004	
+227005	
+227006	
+227007	
+227008	
+227009	
+227010	Material consumível
+230000	Marionete
+230100	Duplicação de Lembrança
+231000	Comprar item
+231001	Runas necessárias
+231002	
+231003	Limite
+231004	
+231005	
+231006	
+231007	
+231008	
+231009	
+231010	Instrução de feitiçaria
+231011	
+231012	
+231013	
+231014	
+231015	
+231016	
+231017	
+231018	
+231019	
+231020	Instrução de encantamento
+231021	
+231022	
+231023	
+231024	
+231025	
+231026	
+231027	
+231028	
+231029	
+231030	Instrução de Habilidade
+231500	Equipamento de Campeões
+232000	Vender item
+232001	Runas oferecidas
+233000	Memorizar feitiços
+233101	Espaços de memória
+233102	Espaços vazios
+233103	PF
+234020	----
+235000	Distribua as cargas dos frascos
+236000	Produção de itens
+236001	Itens necessários
+236002	Qt. necessária (Qt. possuída)
+236003	Itens criados
+236200	Poder de Lembrança
+236201	
+236202	
+236203	
+236204	
+236205	
+236206	
+236207	
+236208	
+236209	
+236210	Lembranças utilizáveis
+236211	Poder recebido
+236400	Alterar vestes
+236401	
+236402	
+236403	
+236404	
+236405	
+236406	
+236407	
+236408	
+236409	
+236410	Antes das alterações
+236411	Depois das alterações
+238000	Mistura de Elixir Magnífico
+241000	Mapa
+241100	Marcadores
+241101	
+241102	
+241103	
+241104	
+241105	
+241106	
+241107	
+241108	
+241109	
+241110	Remover todos os marcadores
+241200	Locais da graça
+241201	
+241202	
+241203	
+241204	
+241205	
+241206	
+241207	
+241208	
+241209	
+241210	Locais da graça marcados
+241300	Castelo Tempesvéu
+241301	Capela da Antecipação
+241302	Leyndell, Capital Real
+241303	Leyndell, Capital Cinzenta
+241304	Mesa-Redonda
+241305	Rio Ainsel, Principal
+241306	Lago da Podridão
+241307	Rio Ainsel
+241308	Nokron, Cidade Eterna
+241309	Rio Siofra
+241310	Abismos da Raiz Profunda
+241311	Palácio de Mohgwyn
+241312	Ruína de Farum Azula
+241313	Academia de Raya Lucaria
+241314	Árvore Sacra de Miquella
+241315	Elphael, Suporte da Árvore Sacra
+241316	Mansão Vulcânica
+241317	Cemitério à Deriva
+241318	Plataforma de Pedra
+241319	Campos Subterrâneos de Reclusão
+241320	Precipício Pontilhado de Ruínas
+241321	Limgrave
+241322	Colina da Tormenta
+241323	Península das Lágrimas
+241324	Liurnia dos Lagos
+241325	Estrada Bellum
+241326	Altar do Luar
+241327	Platô Altus
+241328	Monte Gelmir
+241329	Arredores da Capital
+241330	Terras Proibidas
+241331	Caelid
+241332	Fenda da Dragoa Greyoll
+241333	Montanha dos Gigantes
+241334	Pico da Chama
+241335	Campo de Neve Consagrado
+241336	Pântano de Aeonia
+241400	Mesa-Redonda
+241401	Castelo Tempesvéu
+241402	Leyndell, Capital Real
+241403	Ruína de Farum Azula
+241404	Academia de Raya Lucaria
+241405	Árvore Sacra de Miquella
+241406	Mansão Vulcânica
+241407	Rio Ainsel
+241408	Rio Siofra
+241409	Abismos da Raiz Profunda
+241410	Limgrave
+241411	Liurnia dos Lagos
+241412	Platô Altus
+241413	Caelid
+241414	Montanha dos Gigantes
+241415	Pico dos Gigantes
+241416	Campo de Neve Consagrado
+251000	Ordenar baú
+251001	Inventário
+251002	Baú
+280001	Definição das teclas
+280002	
+280003	
+280004	
+280005	Teclado
+280006	Mouse
+280007	
+280008	
+280009	
+280010	Mover
+280011	
+280012	
+280013	
+280014	
+280015	
+280016	
+280017	
+280018	
+280019	
+280020	Controles da câmera
+280021	
+280022	
+280023	
+280024	
+280025	
+280026	
+280027	
+280028	
+280029	
+280030	Trocar arma
+280031	
+280032	
+280033	
+280034	
+280035	
+280036	
+280037	
+280038	
+280039	
+280040	Atacar
+280099	Sem tecla definida
+280100	Controle do movimento
+280101	Andar para a frente
+280102	Mover para trás
+280103	Mover para a esquerda
+280104	Mover para a direita
+280105	Retroceder, rolar, arremeter
+280106	Pular
+280107	Agachar/Levantar
+280108	
+280109	
+280110	Movimento
+280199	Mover câmera / Mudar alvo
+280200	Mover câmera/Mudar alvo (cima)
+280201	Mover câmera/Mudar alvo (baixo)
+280202	Mover câmera/Mudar alvo (esquerda)
+280203	Mover câmera/Mudar alvo (direita)
+280204	Redefinir câmera, travar/remover alvo
+280300	Trocar item
+280301	Mudar arma da mão direita
+280302	Mudar arma da mão esquerda
+280303	Alternar feitiçaria/encantamento
+280400	Ataque (mão direita e duas mãos)
+280401	Ataque forte (mão direita e duas mãos)
+280402	Bloquear (mão esquerda)
+280403	Habilidade
+280404	Ação de evento (examinar, abrir, etc.)
+280405	Usar item
+280406	Usar as duas mãos na arma atual
+280500	Menu principal
+280501	Mapa
+288000	Seleção de personagem
+288001	Selecione base de personagem
+288050	Cavaleiro
+288051	Cavaleiro Encantado
+288052	Profeta
+288053	Campeão
+288054	Lobo Sangrento
+288055	
+288056	
+288057	
+288058	
+288059	
+288060	Cavaleiro
+288061	Cavaleiro Encantado
+288062	Profeta
+288063	Campeão
+288064	Lobo Sangrento
+288100	Andarilho
+288101	Guerreiro
+288102	Herói
+288103	Bandido
+288104	Astrólogo
+288105	Profeta
+288106	Confessor
+288107	Samurai
+288108	Prisioneiro
+288109	Miserável
+288500	Selecione um tipo de corpo
+288501	Tipo A
+288502	Tipo B
+290000	Criar personagem
+290001	Cosméticos
+290002	Cosméticos
+290003	
+290004	
+290005	
+290006	
+290007	
+290008	
+290009	
+290010	 > 
+290900	_
+290990	Inserir nome
+290991	
+290992	
+290993	
+290994	
+290995	
+290996	
+290997	
+290998	
+290999	
+291000	Nome
+291001	Tipo físico
+291002	Idade
+291003	Voz
+291004	
+291005	
+291006	
+291007	
+291008	
+291009	
+291010	Origem
+291011	Recordação
+291012	
+291013	
+291014	
+291015	
+291016	
+291017	
+291018	
+291019	
+291020	Escolher modelo base
+291021	Alterar rosto e cabelo
+291022	Alterar corpo
+291023	Alterar cor de pele
+291024	
+291025	Aparência detalhada
+291026	
+291027	
+291028	
+291029	
+291030	Salvar em favoritos
+291031	Carregar favorito
+291050	Terminar
+291051	Terminar cosméticos
+291052	Terminar cosméticos
+292000	Ajustar modelo da face
+292001	Estrutura da face
+292002	
+292003	
+292004	
+292005	
+292006	
+292007	
+292008	
+292009	
+292010	Cabelo
+292011	Sobrancelhas
+292012	Pelo facial
+292013	Cílios
+292014	
+292015	
+292016	
+292017	
+292018	
+292019	
+292020	Olhos
+292021	
+292022	
+292023	
+292024	
+292025	Características da pele
+292026	
+292027	
+292028	
+292029	
+292030	Cosméticos
+292031	
+292032	
+292033	
+292034	
+292035	
+292036	
+292037	
+292038	
+292039	
+292040	Tatuagem/Marca/Tapa-olho
+292041	
+292042	
+292043	
+292044	
+292045	
+292046	
+292047	
+292048	
+292049	
+292050	Rosto semelhante
+292051	
+292052	
+292053	
+292054	
+292055	
+292056	
+292057	
+292058	
+292059	
+292060	Cabeça
+292061	Torso
+292062	Abdômen
+292063	Braços
+292064	Pernas
+292065	
+292066	
+292067	
+292068	
+292069	
+292070	Pelos corporais
+292071	Cor dos pelos corporais
+292072	Musculatura
+292073	
+292074	
+292075	
+292076	
+292077	
+292078	
+292079	
+292080	Marcas de queimadura
+293000	Estrutura óssea
+293001	Ênfase na forma
+293002	Idade aparente
+293003	Estética facial
+293004	
+293005	
+293006	
+293007	
+293008	
+293009	
+293010	Equilíbrio facial
+293011	Testa/Glabela
+293012	Arcada supraciliar
+293013	Olhos
+293014	Ponte nasal
+293015	Narinas
+293016	Bochechas
+293017	Lábios
+293018	Boca
+293019	Queixo
+293020	Mandíbula
+293100	Cabelo
+293101	Cor do cabelo
+293102	Brilho
+293103	Tonalidade das raízes
+293104	Fios grisalhos
+293105	
+293106	
+293107	
+293108	
+293109	
+293110	Sobrancelha
+293111	Cor da sobrancelha
+293112	Brilho
+293113	Tonalidade das raízes
+293114	Fios grisalhos
+293115	
+293116	
+293117	
+293118	
+293119	
+293120	Barba
+293121	Cor da barba
+293122	Brilho
+293123	Tonalidade das raízes
+293124	Fios grisalhos
+293125	Barba por Fazer
+293126	
+293127	
+293128	
+293129	
+293130	Cílios
+293131	Cor dos cílios
+293132	
+293133	
+293134	
+293135	
+293136	
+293137	
+293138	
+293139	
+293140	Tamanho da íris direita
+293141	Cor da íris direita
+293142	Nebulosidade do olho D
+293143	Cor da nebulosidade D
+293144	Cor da esclera do olho D
+293145	Posição do olho D
+293146	
+293147	
+293148	
+293149	
+293150	Tamanho da íris esquerda
+293151	Cor da íris esquerda
+293152	Nebulosidade do olho E
+293153	Cor da nebulosidade E
+293154	Cor da esclera do olho E
+293155	Posição do olho E
+293156	Alterações oculares
+293157	
+293158	
+293159	
+293160	Poros
+293161	Brilho da pele
+293162	Olheiras
+293163	Cor das olheiras
+293164	Bochechas
+293165	Cor da bochecha
+293166	Delineador
+293167	Cor do delineador
+293168	Sombra (superior)
+293169	Cor da sombra (superior)
+293170	Sombra (inferior)
+293171	Cor da sombra (inferior)
+293172	Batom
+293173	Cor do batom
+293174	
+293175	
+293176	
+293177	
+293178	
+293179	
+293180	Tatuagem/Marca
+293181	Cor da tatuagem/marca
+293182	Ajustar tatuagem/marca
+293183	
+293184	
+293185	
+293186	
+293187	
+293188	
+293189	
+293190	Tapa-olho
+293191	Cor do tapa-olho
+294050	Tamanho do nariz
+294051	Proporção nariz/testa
+294052	Protrusão facial
+294053	Proporção facial vert.
+294054	Ângulo das feições faciais
+294055	Proporção facial horiz.
+294056	
+294057	
+294058	
+294059	
+294060	Profundidade da testa
+294061	Protrusão da testa
+294062	Altura da ponte nasal
+294063	Protrusão da ponte nasal 1
+294064	Protrusão da ponte nasal 2
+294065	Largura da ponte nasal
+294066	
+294067	
+294068	
+294069	
+294070	Altura da arcada supraciliar
+294071	Arcada supraciliar interna
+294072	Arcada supraciliar externa
+294073	
+294074	
+294075	
+294076	
+294077	
+294078	
+294079	
+294080	Posição dos olhos
+294081	Tamanho dos olhos
+294082	Ângulo dos olhos
+294083	Espaçamento dos olhos
+294084	
+294085	
+294086	
+294087	
+294088	
+294089	
+294090	Profundidade da ponte nasal
+294091	Comprimento da ponte nasal
+294092	Posição do nariz
+294093	Altura da ponta do nariz
+294094	Protrusão do nariz
+294095	Altura do nariz
+294096	Ângulo do nariz
+294097	
+294098	
+294099	
+294100	Ângulo das narinas
+294101	Tamanho das narinas
+294102	Largura das narinas
+294103	
+294104	
+294105	
+294106	
+294107	
+294108	
+294109	
+294110	Altura das maçãs do rosto
+294111	Profundidade das maçãs do rosto
+294112	Largura das maçãs do rosto
+294113	Protrusão das maçãs do rosto
+294114	Bochechas
+294115	
+294116	
+294117	
+294118	
+294119	
+294120	Formato do lábio
+294121	Expressão da boca
+294122	Preenchimento do lábio
+294123	Tamanho do lábio
+294124	Protrusão do lábio
+294125	Grossura do lábio
+294126	
+294127	
+294128	
+294129	
+294130	Protrusão da boca
+294131	Ângulo da boca
+294132	Oclusão
+294133	Posição da boca
+294134	Largura da boca
+294135	Distância entre boca e queixo
+294136	
+294137	
+294138	
+294139	
+294140	Posição da ponta do queixo
+294141	Comprimento do queixo
+294142	Protrusão do queixo
+294143	Profundidade do queixo
+294144	Tamanho do queixo
+294145	Altura do queixo
+294146	Largura do queixo
+294147	
+294148	
+294149	
+294150	Protrusão da mandíbula
+294151	Largura da mandíbula
+294152	Mandíbula inferior
+294153	Contorno da mandíbula
+294154	
+294155	
+294156	
+294157	
+294158	
+294159	
+294160	Posição (vert.)
+294161	Posição (horiz.)
+294162	Ângulo
+294163	Tamanho
+294164	Inverter
+296009	Alterar valor
+296010	Combinar olho direito
+296011	Combinar com olho esquerdo
+296100	Pequena
+296101	Grande
+296102	Pequeno
+296103	Grande
+296104	Pequeno
+296105	Grande
+296106	Pequeno
+296107	Grande
+296108	Pequena
+296109	Grande
+296110	Esparsos
+296111	Abundantes
+296112	Fraco
+296113	Forte
+296114	Jovem
+296115	Idoso
+296116	Masculina
+296117	Feminina
+296118	Suave
+296119	Forte
+296120	Clara
+296121	Escura
+296122	Esparsos
+296123	Abundantes
+296124	Suave
+296125	Forte
+296126	Clara
+296127	Escura
+296128	Esparsos
+296129	Abundantes
+296130	Suave
+296131	Forte
+296132	Clara
+296133	Escura
+296134	Esparsos
+296135	Abundantes
+296136	Fina
+296137	Grossa
+296138	Pequeno
+296139	Grande
+296140	Limpo
+296141	Opaco
+296142	Perto
+296143	Longe
+296144	Pequeno
+296145	Grande
+296146	Limpo
+296147	Opaco
+296148	Perto
+296149	Longe
+296150	Fechados
+296151	Abertos
+296152	Simples
+296153	Lustrosa
+296154	Claras
+296155	Escuras
+296156	Claro
+296157	Escuro
+296158	Claro
+296159	Escuro
+296160	Clara
+296161	Escura
+296162	Clara
+296163	Escura
+296164	Sutil
+296165	Vibrante
+296166	Estreito
+296167	Largo
+296168	Nariz
+296169	Testa
+296170	Côncavo
+296171	Convexo
+296172	Estreito
+296173	Largo
+296174	Para baixo
+296175	Para cima
+296176	Estreito
+296177	Largo
+296178	Proeminente
+296179	Funda
+296180	Côncava
+296181	Convexa
+296182	Baixa
+296183	Alta
+296184	Côncava
+296185	Convexa
+296186	Côncava
+296187	Convexa
+296188	Estreita
+296189	Larga
+296190	Baixa
+296191	Alta
+296192	Baixa
+296193	Alta
+296194	Baixa
+296195	Alta
+296196	Para baixo
+296197	Para cima
+296198	Pequeno
+296199	Grande
+296200	Para dentro
+296201	Para fora
+296202	Estreito
+296203	Largo
+296204	Proeminente
+296205	Funda
+296206	Curto
+296207	Longo
+296208	Para baixo
+296209	Para cima
+296210	Baixo
+296211	Alto
+296212	Côncavo
+296213	Convexo
+296214	Baixo
+296215	Alto
+296216	Para baixo
+296217	Para cima
+296218	Para baixo
+296219	Para cima
+296220	Pequenas
+296221	Grandes
+296222	Estreitas
+296223	Largas
+296224	Pequeno
+296225	Grande
+296226	Baixa
+296227	Alta
+296228	Proeminente
+296229	Funda
+296230	Estreita
+296231	Larga
+296232	Côncava
+296233	Convexa
+296234	Finas
+296235	Grossas
+296236	Franzido
+296237	Aberto
+296238	Triste
+296239	Feliz
+296240	Pequeno
+296241	Grande
+296242	Pequeno
+296243	Grande
+296244	Côncavo
+296245	Convexo
+296246	Fino
+296247	Grosso
+296248	Côncava
+296249	Convexa
+296250	Para baixo
+296251	Para cima
+296252	Para baixo
+296253	Para cima
+296254	Para baixo
+296255	Para cima
+296256	Estreita
+296257	Larga
+296258	Curta
+296259	Longa
+296260	Frente
+296261	Atrás
+296262	Curto
+296263	Longo
+296264	Pequeno
+296265	Grande
+296266	Proeminente
+296267	Fundo
+296268	Pequeno
+296269	Grande
+296270	Baixo
+296271	Alto
+296272	Estreito
+296273	Largo
+296274	Pequena
+296275	Grande
+296276	Estreita
+296277	Larga
+296278	Baixa
+296279	Alta
+296280	Fina
+296281	Grossa
+296282	Para baixo
+296283	Para cima
+296284	Esquerda
+296285	Direita
+296286	Girar para esquerda
+296287	Girar para direita
+296288	Pequena
+296289	Grande
+297100	Tipo A
+297101	Tipo B
+297102	
+297103	
+297104	
+297105	
+297106	
+297107	
+297108	
+297109	
+297110	Jovem
+297111	Maduro
+297112	Idoso
+297113	
+297114	
+297115	
+297116	
+297117	
+297118	
+297119	
+297120	Voz jovem 1
+297121	Voz madura 1
+297122	Voz idosa 1
+297123	
+297124	
+297125	Voz jovem 2
+297126	Voz madura 2
+297127	Voz idosa 2
+297128	
+297129	
+297130	Andarilho
+297131	Guerreiro
+297132	Herói
+297133	Bandido
+297134	Astrólogo
+297135	Profeta
+297136	Samurai
+297137	Prisioneiro
+297138	Confessor
+297139	Miserável
+297140	
+297141	
+297142	
+297143	
+297144	
+297145	
+297146	
+297147	
+297148	
+297149	
+297150	Nenhuma
+297151	Medalhão de Âmbar Carmesim
+297152	Runa das Terras Intermédias
+297153	Semente Dourada
+297154	Cinzas de Demônio com Presas
+297155	
+297156	Pote Rachado
+297157	Chave de Espada de Pedra
+297158	Ramo Encantador
+297159	Camarão Cozido
+297160	Pesar de Shabriri
+297161	
+297162	
+297163	
+297164	
+297165	
+297166	
+297167	
+297168	
+297169	
+297170	Padrão
+297171	Musculoso
+297172	
+297173	
+297174	
+297175	
+297176	
+297177	
+297178	
+297179	
+297180	Ligado
+297181	Desligado
+297182	
+297183	
+297184	
+297185	Ligado
+297186	Desligado
+297187	Ligado
+297188	Desligado
+297200	Guerreiro
+297201	Investigador da Verdade
+297202	Aristocrata
+297203	Solitário
+297204	Nortista
+297205	Marinheiro
+297206	Junqueiro
+297207	Draconiano
+297208	Povo da Noite
+297209	Numen
+297220	Guerreiro
+297221	Investigador da Verdade
+297222	Aristocrata
+297223	Solitário
+297224	Nortista
+297225	Marinheiro
+297226	Junqueiro
+297227	Draconiano
+297228	Povo da Noite
+297229	Numen
+299005	Cores temporárias
+299006	Cores atuais
+299007	
+299008	
+299009	Alterar cor
+299010	Combinar olho direito
+299011	Combinar olho esquerdo
+299012	
+299013	
+299014	
+299015	
+299016	
+299017	
+299018	
+299019	
+299020	Combinar cabelo
+299050	Ajuste de cor
+299051	
+299052	
+299053	
+299054	
+299055	
+299056	
+299057	
+299058	
+299059	
+299060	R
+299061	G
+299062	B
+301000	Gestos
+303000	NOVO
+303001	
+303002	
+303003	
+303004	
+303005	
+303006	
+303007	
+303008	
+303009	
+303010	
+303011	
+303012	
+303013	
+303014	
+303015	
+303016	
+303017	
+303018	
+303019	
+303020	
+303021	
+303022	
+303023	
+303024	
+303025	
+303026	
+303027	
+303028	
+303029	
+303030	
+303031	
+303032	
+303033	
+303034	
+303035	
+303036	
+303037	
+303038	
+303039	
+303040	
+303041	
+303042	
+303043	
+303044	
+303045	
+303046	
+303047	
+303048	
+303049	
+303050	
+303051	
+303052	
+303053	
+303054	
+303055	
+303056	
+303057	
+303058	
+303059	
+303060	
+310000	Escrever mensagem
+310001	Mensagens escritas
+310002	Mensagens descobertas
+311000	Avaliações
+311001	Bom
+311002	Ruim
+311003	
+311004	
+311005	
+311006	
+311007	
+311008	
+311009	
+311010	
+311011	Classificação: Bom
+311012	Classificação: Ruim
+321000	Modelos
+321001	Palavras
+321002	Conjunções
+321003	Modelos (2ª linha)
+321004	Palavras (2ª linha)
+321005	Gestos
+321006	Terminar
+322001	Bom
+322002	Ruim
+324001	Avaliações
+331100	Anfitrião de Dedos
+331101	Dedo Enrolado
+331102	Dedo Sangrento
+331103	Duelista
+331104	Não Conformista
+331105	
+331106	
+331107	
+331108	
+331109	
+331110	
+331111	Caçador
+331122	Dedo Enrolado
+331123	Dedo Enrolado
+331124	
+331125	
+331126	
+331127	
+331128	
+331129	
+331130	
+331131	
+331132	Duelista
+331133	Duelista
+331134	
+331135	
+331136	
+331137	
+331138	
+331139	
+331140	
+331141	
+331142	Dedo Sangrento
+331143	Dedo Sangrento
+331144	
+331145	
+331146	
+331147	
+331148	
+331149	
+331150	
+331151	
+331152	Não Conformista
+331153	Não Conformista
+331154	
+331155	
+331156	
+331157	
+331158	
+331159	
+331160	
+331161	
+331162	Caçador
+331163	Caçador
+331164	
+331165	
+331166	
+331167	
+331168	
+331169	
+331170	Combatente
+331171	Combatente
+331172	Combatente
+331173	Combatente
+331174	Combatente de Ouro
+331175	
+331176	
+331177	
+331178	
+331179	
+331180	Eliminações
+331200	CONGELAMENTO
+331201	PERDA DE SANGUE
+331202	VENENO
+331203	PODRIDÃO ESCARLATE
+331204	SONO
+331205	LOUCURA
+331206	
+331207	MORTE ARRUINADA
+331208	! ARMA QUEBRADA !
+331209	! ARMADURA EM RISCO !
+331210	! ARMADURA QUEBRADA !
+331301	SEMIDEUS VENCIDO
+331302	LENDA DERRUBADA
+331303	GRANDE INIMIGO DERRUBADO
+331304	INIMIGO DERRUBADO
+331305	VOCÊ MORREU
+331306	
+331307	ANFITRIÃO DERROTADO
+331308	DEDO SANGRENTO DERROTADO
+331309	DEVER CUMPRIDO
+331310	
+331311	GRAÇA PERDIDA DESCOBERTA
+331312	
+331313	COMEÇAR
+331314	VITÓRIA
+331315	EMPATE
+331316	DERROTA
+331317	MAPA ENCONTRADO
+331318	REDENTOR MORREU
+331319	
+331320	
+331321	GRANDE RUNA RESTAURADA
+331322	DEUS MORTO
+331323	DUELISTA DERROTADO
+331324	NÃO CONFORMISTA DERROTADO
+331325	INVASOR DERROTADO
+331326	
+331327	
+331328	
+331329	
+331330	RANK DE DEDO ENROLADO AVANÇADO
+331331	RANK DE DEDO ENROLADO AVANÇADO
+331332	RANK DE DUELISTA AVANÇADO
+331333	RANK DE DUELISTA AVANÇADO
+331334	RANK DE DEDO SANGRENTO AVANÇADO
+331335	RANK DE DEDO SANGRENTO AVANÇADO
+331336	RANK DE NÃO CONFORMISTA AVANÇADO
+331337	RANK DE NÃO CONFORMISTA AVANÇADO
+331338	RANK DE CAÇADOR AVANÇADO
+331339	RANK DE CAÇADOR AVANÇADO
+400000	DARK SOULS™ Ⅲ NETWORK STRESS TEST VER. usa Havok™\n©Copyright 1999-2015. Havok.com Inc. (ou seus licenciadores). Todos os direitos reservados. Ver www.havok.com para mais detalhes.
+401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401100	™
+401301	CONTINUAR
+401302	CARREGAR JOGO
+401303	NOVO JOGO
+401304	SISTEMA
+401305	INFORMAÇÕES
+401306	ENTRAR
+401307	TROCAR DE PERFIL
+401308	
+401309	SAIR DO JOGO
+401310	ONLINE
+401311	OFFLINE
+401312	PRÉ-VENDA
+401313	CONVERTER DADOS DE SALVAMENTO
+401314	
+401315	
+401316	
+401317	
+401318	
+401319	
+401320	Ver. do aplicativo
+401321	Ver. do servidor
+401322	Ver. das calibrações
+401400	INFORMAÇÕES
+401401	Não há novas informações
+401500	TERMS OF SERVICE FOR ONLINE SERVICES FOR ELDEN RING
+401501	
+401502	
+401503	
+401504	
+401505	
+401506	
+401507	
+401508	
+401509	
+401510	Aceitar
+401511	Recusar
+401900	Teste de Rede
+401901	Este jogo ainda está em desenvolvimento
+401902	
+401903	
+401904	Uma conexão com a Internet é necessária para jogar o Teste de Rede
+406000	CARREGAR JOGO
+406001	NOVO JOGO
+502000	Enviar o jogador selecionado de volta para casa
+506000	Coliseu
+506100	Formato
+506101	Formato de combate
+506102	Número de jogadores
+506103	Cinzas de espíritos
+506104	Local
+506105	Senha do Coliseu
+506106	Entrar em combate
+506107	Cancelar
+506108	Equipe desejada
+506109	Restrições
+506120	\nDuelo
+506121	Combate Unido /\nCombate épico
+506122	Cinzas de espí.\npermitidas
+506200	Duelo
+506201	Combate Unido e Combate Épico
+506202	Combate Unido
+506300	Qualquer local
+506301	Coliseu Real
+506302	Coliseu de Limgrave
+506303	Coliseu de Caelid
+506400	2 combatentes
+506401	4 combatentes
+506402	6 combatentes
+506403	Qualquer número de combatentes
+506500	Proibido
+506501	Permitido
+506600	Sem preferência
+506601	Equipe A
+506602	Equipe B
+506800	Todos os jogadores
+506801	Apenas equipes aliadas
+506900	A senha do Coliseu será usada para formar partidas com membros de equipes tanto aliadas quanto inimigas.
+506901	A senha do Coliseu será usada para formar partidas apenas com membros de equipes aliadas. A equipe inimiga será formada usando uma senha diferente.
+507000	Combatente Supremo: <?mvpName?>
+507100	Definir senha do Coliseu

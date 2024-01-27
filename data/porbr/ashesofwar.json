@@ -1,0 +1,366 @@
+[
+  {
+    "id": 10600,
+    "name": "Cinza da Guerra: Esmagamento (Corte para Cima)"
+  },
+  {
+    "id": 10700,
+    "name": "Cinza da Guerra: Esmagamento (Em Arco)"
+  },
+  {
+    "id": 11000,
+    "name": "Cinza da Guerra: Golpes Selvagens"
+  },
+  {
+    "id": 10000,
+    "name": "Cinza da Guerra: Garra de Leão"
+  },
+  {
+    "id": 60700,
+    "name": "Cinza da Guerra: Lâmina de Pedra"
+  },
+  {
+    "id": 50300,
+    "name": "Cinza da Guerra: Chute"
+  },
+  {
+    "id": 70000,
+    "name": "Cinza da Guerra: Resistência"
+  },
+  {
+    "id": 50600,
+    "name": "Cinza da Guerra: Pancada no Solo"
+  },
+  {
+    "id": 21200,
+    "name": "Cinza da Guerra: Chacoalhador de Terra"
+  },
+  {
+    "id": 50900,
+    "name": "Cinza da Guerra: Chacoalhador de Terra de Hoarah Loux"
+  },
+  {
+    "id": 65100,
+    "name": "Cinza da Guerra: Grito de Guerra"
+  },
+  {
+    "id": 65000,
+    "name": "Cinza da Guerra: Rugido Bárbaro"
+  },
+  {
+    "id": 65400,
+    "name": "Cinza da Guerra: Grito do Exibido"
+  },
+  {
+    "id": 65300,
+    "name": "Cinza da Guerra: Rugido do Troll"
+  },
+  {
+    "id": 10300,
+    "name": "Cinza da Guerra: Corte Giratório"
+  },
+  {
+    "id": 10100,
+    "name": "Cinza da Guerra: Impulso Perfurante"
+  },
+  {
+    "id": 10200,
+    "name": "Cinza da Guerra: Presa Perfurante"
+  },
+  {
+    "id": 10900,
+    "name": "Cinza da Guerra: Impulso Repetitivo"
+  },
+  {
+    "id": 11200,
+    "name": "Cinza da Guerra: Corte Duplo"
+  },
+  {
+    "id": 12400,
+    "name": "Cinza da Guerra: Dança da Espada"
+  },
+  {
+    "id": 11400,
+    "name": "Cinza da Guerra: Desembainhar"
+  },
+  {
+    "id": 80000,
+    "name": "Cinza da Guerra: Passo Ágil"
+  },
+  {
+    "id": 80100,
+    "name": "Cinza da Guerra: Passo do Cão de Caça"
+  },
+  {
+    "id": 80200,
+    "name": "Cinza da Guerra: Ave de Rapina das Brumas"
+  },
+  {
+    "id": 65200,
+    "name": "Cinza da Guerra: Rugido da Fera"
+  },
+  {
+    "id": 11500,
+    "name": "Cinza da Guerra: Enfrentar"
+  },
+  {
+    "id": 10500,
+    "name": "Cinza da Guerra: Investida Frontal"
+  },
+  {
+    "id": 11100,
+    "name": "Cinza da Guerra: Golpes Giratórios"
+  },
+  {
+    "id": 11600,
+    "name": "Cinza da Guerra: Caça de Gigantes"
+  },
+  {
+    "id": 21000,
+    "name": "Cinza da Guerra: Lâmina Tempestuosa"
+  },
+  {
+    "id": 12200,
+    "name": "Cinza da Guerra: Ataque da Tormenta"
+  },
+  {
+    "id": 12300,
+    "name": "Cinza da Guerra: Invocador da Tempestade"
+  },
+  {
+    "id": 50200,
+    "name": "Cinza da Guerra: Pisão Tempestuoso"
+  },
+  {
+    "id": 22000,
+    "name": "Cinza da Guerra: Corte de Vácuo"
+  },
+  {
+    "id": 22500,
+    "name": "Cinza da Guerra: Corte Fantasma"
+  },
+  {
+    "id": 60000,
+    "name": "Cinza da Guerra: Determinação"
+  },
+  {
+    "id": 60100,
+    "name": "Cinza da Guerra: Determinação do Cavaleiro Real"
+  },
+  {
+    "id": 20300,
+    "name": "Cinza da Guerra: Calhau Pedrilhante"
+  },
+  {
+    "id": 20000,
+    "name": "Cinza da Guerra: Falange de Laminante"
+  },
+  {
+    "id": 21900,
+    "name": "Cinza da Guerra: Espada Grande Cariana"
+  },
+  {
+    "id": 21800,
+    "name": "Cinza da Guerra: Grandeza Cariana"
+  },
+  {
+    "id": 12000,
+    "name": "Cinza da Guerra: Arma Giratória"
+  },
+  {
+    "id": 11800,
+    "name": "Cinza da Guerra: Corte de Loretta"
+  },
+  {
+    "id": 20900,
+    "name": "Cinza da Guerra: Gravitas"
+  },
+  {
+    "id": 50800,
+    "name": "Cinza da Guerra: Ondas de Trevas"
+  },
+  {
+    "id": 21400,
+    "name": "Cinza da Guerra: Golpe Flamejante"
+  },
+  {
+    "id": 50500,
+    "name": "Cinza da Guerra: Chama do Leão Vermelho"
+  },
+  {
+    "id": 20700,
+    "name": "Cinza da Guerra: Erupção"
+  },
+  {
+    "id": 11300,
+    "name": "Cinza da Guerra: Investida do Prelado"
+  },
+  {
+    "id": 22100,
+    "name": "Cinza da Guerra: Tornado de Chama Negra"
+  },
+  {
+    "id": 21600,
+    "name": "Cinza da Guerra: Relâmpago"
+  },
+  {
+    "id": 21700,
+    "name": "Cinza da Guerra: Corte de Relâmpago"
+  },
+  {
+    "id": 50400,
+    "name": "Cinza da Guerra: Carneiro do Relâmpago"
+  },
+  {
+    "id": 20100,
+    "name": "Cinza da Guerra: Lâmina Sagrada"
+  },
+  {
+    "id": 20800,
+    "name": "Cinza da Guerra: Golpe Devoto"
+  },
+  {
+    "id": 22200,
+    "name": "Cinza da Guerra: Anel de Luz Sagrada"
+  },
+  {
+    "id": 60400,
+    "name": "Cinza da Guerra: Ordem Sagrada"
+  },
+  {
+    "id": 60500,
+    "name": "Cinza da Guerra: Ordem Compartilhada"
+  },
+  {
+    "id": 21300,
+    "name": "Cinza da Guerra: Terra Dourada"
+  },
+  {
+    "id": 50700,
+    "name": "Cinza da Guerra: Pancada Dourada"
+  },
+  {
+    "id": 60300,
+    "name": "Cinza da Guerra: Voto Dourado"
+  },
+  {
+    "id": 70100,
+    "name": "Cinza da Guerra: Voto do Indomável"
+  },
+  {
+    "id": 70200,
+    "name": "Cinza da Guerra: Solo Sagrado"
+  },
+  {
+    "id": 22800,
+    "name": "Cinza da Guerra: Névoa Venenosa"
+  },
+  {
+    "id": 11900,
+    "name": "Cinza da Guerra: Voo da Mariposa Venenosa"
+  },
+  {
+    "id": 22400,
+    "name": "Cinza da Guerra: Lâmina de Sangue"
+  },
+  {
+    "id": 20400,
+    "name": "Cinza da Guerra: Corte Sangrento"
+  },
+  {
+    "id": 10800,
+    "name": "Cinza da Guerra: Taxa de Sangue"
+  },
+  {
+    "id": 60600,
+    "name": "Cinza da Guerra: Seppuku"
+  },
+  {
+    "id": 20200,
+    "name": "Cinza da Guerra: Lança de Gelo"
+  },
+  {
+    "id": 22700,
+    "name": "Cinza da Guerra: Névoa Refrigeradora"
+  },
+  {
+    "id": 50100,
+    "name": "Cinza da Guerra: Pisão da Geada"
+  },
+  {
+    "id": 22600,
+    "name": "Cinza da Guerra: Lança Espectral"
+  },
+  {
+    "id": 20500,
+    "name": "Cinza da Guerra: Punho Ladrão de Vida"
+  },
+  {
+    "id": 85000,
+    "name": "Cinza da Guerra: Isca de Sombra Branca"
+  },
+  {
+    "id": 60200,
+    "name": "Cinza da Guerra: Gambito do Assassino"
+  },
+  {
+    "id": 40200,
+    "name": "Cinza da Guerra: Disparo Poderoso"
+  },
+  {
+    "id": 40000,
+    "name": "Cinza da Guerra: Disparo Penetrante"
+  },
+  {
+    "id": 40100,
+    "name": "Cinza da Guerra: Barragem"
+  },
+  {
+    "id": 40500,
+    "name": "Cinza da Guerra: Disparo do Céu"
+  },
+  {
+    "id": 40400,
+    "name": "Cinza da Guerra: Disparo Encantado"
+  },
+  {
+    "id": 40600,
+    "name": "Cinza da Guerra: Chuva de Flechas"
+  },
+  {
+    "id": 30200,
+    "name": "Cinza da Guerra: Aparar"
+  },
+  {
+    "id": 30700,
+    "name": "Cinza da Guerra: Aparagem Dourada"
+  },
+  {
+    "id": 30600,
+    "name": "Cinza da Guerra: Parede de Tormenta"
+  },
+  {
+    "id": 30000,
+    "name": "Cinza da Guerra: Batida com Escudo"
+  },
+  {
+    "id": 30800,
+    "name": "Cinza da Guerra: Colisão de Escudo"
+  },
+  {
+    "id": 30100,
+    "name": "Cinza da Guerra: Escudo-Barricada"
+  },
+  {
+    "id": 31000,
+    "name": "Cinza da Guerra: Barreira de Thops"
+  },
+  {
+    "id": 30500,
+    "name": "Cinza da Guerra: Retaliação Cariana"
+  },
+  {
+    "id": 30900,
+    "name": "Cinza da Guerra: nenhuma habilidade"
+  }
+]

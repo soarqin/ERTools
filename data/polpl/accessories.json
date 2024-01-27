@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Medalion z bursztynem szkarłatnym"
+  },
+  {
+    "id": 1001,
+    "name": "Medalion z bursztynem szkarłatnym +1"
+  },
+  {
+    "id": 1002,
+    "name": "Medalion z bursztynem szkarłatnym +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talizman szkarłatnego nasiona"
+  },
+  {
+    "id": 5020,
+    "name": "Talizman błogosławionej rosy"
+  },
+  {
+    "id": 1010,
+    "name": "Medalion z bursztynem modrym"
+  },
+  {
+    "id": 1011,
+    "name": "Medalion z bursztynem modrym +1"
+  },
+  {
+    "id": 1012,
+    "name": "Medalion z bursztynem modrym +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talizman modrego nasiona"
+  },
+  {
+    "id": 1020,
+    "name": "Medalion z bursztynem malachitowym"
+  },
+  {
+    "id": 1021,
+    "name": "Medalion z bursztynem malachitowym +1"
+  },
+  {
+    "id": 1022,
+    "name": "Medalion z bursztynem malachitowym +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talizman zielonego żółwia"
+  },
+  {
+    "id": 1030,
+    "name": "Amulet arsenału"
+  },
+  {
+    "id": 1031,
+    "name": "Amulet arsenału +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenał wielkiego naczynia"
+  },
+  {
+    "id": 1040,
+    "name": "Łaska Złotego Drzewa"
+  },
+  {
+    "id": 1041,
+    "name": "Łaska Złotego Drzewa +1"
+  },
+  {
+    "id": 1042,
+    "name": "Łaska Złotego Drzewa +2"
+  },
+  {
+    "id": 1050,
+    "name": "Naznaczająca pieczęć Radagona"
+  },
+  {
+    "id": 1051,
+    "name": "Bolesna pieczęć Radagona"
+  },
+  {
+    "id": 1220,
+    "name": "Naznaczająca pieczęć Mariki"
+  },
+  {
+    "id": 1221,
+    "name": "Bolesna pieczęć Mariki"
+  },
+  {
+    "id": 1060,
+    "name": "Dziedzictwo Gwiezdnej Plagi"
+  },
+  {
+    "id": 1070,
+    "name": "Dziedzictwo Nosiciela Protezy"
+  },
+  {
+    "id": 1080,
+    "name": "Dziedzictwo astrolożki"
+  },
+  {
+    "id": 1090,
+    "name": "Dziedzictwo Dwóch Palców"
+  },
+  {
+    "id": 4000,
+    "name": "Talizman starożytnego smoka"
+  },
+  {
+    "id": 4001,
+    "name": "Talizman starożytnego smoka +1"
+  },
+  {
+    "id": 4002,
+    "name": "Talizman starożytnego smoka +2"
+  },
+  {
+    "id": 4003,
+    "name": "Talizman olbrzymiego starożytnego smoka"
+  },
+  {
+    "id": 4010,
+    "name": "Talizman niebieskiego smoka"
+  },
+  {
+    "id": 4011,
+    "name": "Talizman niebieskiego smoka +1"
+  },
+  {
+    "id": 4012,
+    "name": "Talizman niebieskiego smoka +2"
+  },
+  {
+    "id": 4020,
+    "name": "Talizman czerwonego smoka"
+  },
+  {
+    "id": 4021,
+    "name": "Talizman czerwonego smoka +1"
+  },
+  {
+    "id": 4022,
+    "name": "Talizman czerwonego smoka +2"
+  },
+  {
+    "id": 4030,
+    "name": "Talizman żółtego smoka"
+  },
+  {
+    "id": 4031,
+    "name": "Talizman żółtego smoka +1"
+  },
+  {
+    "id": 4032,
+    "name": "Talizman żółtego smoka +2"
+  },
+  {
+    "id": 4040,
+    "name": "Talizman świętego smoka"
+  },
+  {
+    "id": 4041,
+    "name": "Talizman świętego smoka +1"
+  },
+  {
+    "id": 4042,
+    "name": "Talizman świętego smoka +2"
+  },
+  {
+    "id": 4050,
+    "name": "Talizman perłowego smoka"
+  },
+  {
+    "id": 4051,
+    "name": "Talizman perłowego smoka +1"
+  },
+  {
+    "id": 4052,
+    "name": "Talizman perłowego smoka +2"
+  },
+  {
+    "id": 1170,
+    "name": "Amulet uodparniającego rogu"
+  },
+  {
+    "id": 1171,
+    "name": "Amulet uodparniającego rogu +1"
+  },
+  {
+    "id": 1160,
+    "name": "Amulet niezłomnego rogu"
+  },
+  {
+    "id": 1161,
+    "name": "Amulet niezłomnego rogu +1"
+  },
+  {
+    "id": 1180,
+    "name": "Amulet rozjaśniającego umysł rogu"
+  },
+  {
+    "id": 1181,
+    "name": "Amulet rozjaśniającego umysł rogu +1"
+  },
+  {
+    "id": 1200,
+    "name": "Nakrapiany naszyjnik"
+  },
+  {
+    "id": 1201,
+    "name": "Nakrapiany naszyjnik +1"
+  },
+  {
+    "id": 1190,
+    "name": "Pryszcz Księcia Śmierci"
+  },
+  {
+    "id": 1191,
+    "name": "Torbiel Księcia Śmierci"
+  },
+  {
+    "id": 2090,
+    "name": "Talizman sztyletu"
+  },
+  {
+    "id": 2200,
+    "name": "Talizman zakrzywionego miecza"
+  },
+  {
+    "id": 2120,
+    "name": "Talizman podwójnego ostrza"
+  },
+  {
+    "id": 2130,
+    "name": "Talizman topora"
+  },
+  {
+    "id": 2070,
+    "name": "Talizman młota"
+  },
+  {
+    "id": 2060,
+    "name": "Talizman włóczni"
+  },
+  {
+    "id": 2140,
+    "name": "Talizman kopii"
+  },
+  {
+    "id": 2180,
+    "name": "Talizman pazura"
+  },
+  {
+    "id": 4100,
+    "name": "Talizman wielkiej tarczy"
+  },
+  {
+    "id": 2150,
+    "name": "Talizman żądlącej strzały"
+  },
+  {
+    "id": 2100,
+    "name": "Talizman dalekosiężnej strzały"
+  },
+  {
+    "id": 3000,
+    "name": "Talizman kamiennej szkoły"
+  },
+  {
+    "id": 3001,
+    "name": "Talizman kamiennej masy"
+  },
+  {
+    "id": 3040,
+    "name": "Płócienny talizman wiernych"
+  },
+  {
+    "id": 3050,
+    "name": "Płócienny talizman trzody"
+  },
+  {
+    "id": 3080,
+    "name": "Ostrze pierwotnego błyskamienia"
+  },
+  {
+    "id": 1140,
+    "name": "Księżyc Nokstelli"
+  },
+  {
+    "id": 3060,
+    "name": "Talizman starego władcy"
+  },
+  {
+    "id": 3070,
+    "name": "Ikona Radagona"
+  },
+  {
+    "id": 2190,
+    "name": "Medalion ryku"
+  },
+  {
+    "id": 2210,
+    "name": "Towarzyszące naczynie"
+  },
+  {
+    "id": 2220,
+    "name": "Talizman perfumiarza"
+  },
+  {
+    "id": 6020,
+    "name": "Karyjski herb z aplikacją"
+  },
+  {
+    "id": 1230,
+    "name": "Odłamek słojownika"
+  },
+  {
+    "id": 1231,
+    "name": "Odłamek Alexandra"
+  },
+  {
+    "id": 3090,
+    "name": "Ikona Godfreya"
+  },
+  {
+    "id": 1210,
+    "name": "Talizman kozobyka"
+  },
+  {
+    "id": 2110,
+    "name": "Niebieski amulet tancerki"
+  },
+  {
+    "id": 2000,
+    "name": "Amulet magicznego skorpiona"
+  },
+  {
+    "id": 2020,
+    "name": "Amulet ognistego skorpiona"
+  },
+  {
+    "id": 2010,
+    "name": "Amulet skorpiona błyskawic"
+  },
+  {
+    "id": 2030,
+    "name": "Amulet świętego skorpiona"
+  },
+  {
+    "id": 4060,
+    "name": "Łuskowaty talizman Tygla"
+  },
+  {
+    "id": 4070,
+    "name": "Pierzasty talizman Tygla"
+  },
+  {
+    "id": 4110,
+    "name": "Sękaty talizman Tygla"
+  },
+  {
+    "id": 2040,
+    "name": "Drzewny miecz z czerwonymi piórami"
+  },
+  {
+    "id": 4080,
+    "name": "Drzewny miecz z niebieskimi piórami"
+  },
+  {
+    "id": 2050,
+    "name": "Talizman rytualnego miecza"
+  },
+  {
+    "id": 4090,
+    "name": "Talizman rytualnej tarczy"
+  },
+  {
+    "id": 5050,
+    "name": "Szkarłatny sztylet skrytobójcy"
+  },
+  {
+    "id": 5060,
+    "name": "Modry sztylet skrytobójcy"
+  },
+  {
+    "id": 2080,
+    "name": "Insygnia uskrzydlonego miecza"
+  },
+  {
+    "id": 2081,
+    "name": "Przegniłe insygnia uskrzydlonego miecza"
+  },
+  {
+    "id": 1250,
+    "name": "Proteza Millicenty"
+  },
+  {
+    "id": 5040,
+    "name": "Powijak boskiej skóry"
+  },
+  {
+    "id": 2170,
+    "name": "Radość klanu zgnilizny"
+  },
+  {
+    "id": 2160,
+    "name": "Radość Pana Krwi"
+  },
+  {
+    "id": 5030,
+    "name": "Kamea szabrownika"
+  },
+  {
+    "id": 6110,
+    "name": "Róg ducha przodków"
+  },
+  {
+    "id": 1110,
+    "name": "Złoty skarabeusz"
+  },
+  {
+    "id": 1100,
+    "name": "Srebrny skarabeusz"
+  },
+  {
+    "id": 6000,
+    "name": "Fiolka Crepusa"
+  },
+  {
+    "id": 6010,
+    "name": "Kryjący welon"
+  },
+  {
+    "id": 6040,
+    "name": "Brosza kota z długim ogonem"
+  },
+  {
+    "id": 6080,
+    "name": "Figlarne lustro zgiętego palca"
+  },
+  {
+    "id": 6090,
+    "name": "Figlarne lustro gospodarza"
+  },
+  {
+    "id": 6050,
+    "name": "Niedola Shabririego"
+  },
+  {
+    "id": 6060,
+    "name": "Niedola Daedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Gałązka ofiarna"
+  }
+]

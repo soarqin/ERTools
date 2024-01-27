@@ -24,7 +24,7 @@ local arrows_by_id = {}
 local accessories = {}
 local accessories_by_id = {}
 
-for _, v in ipairs(cjson.decode(util.read_file('data/weapons.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons.json'))) do
   local index = #categories + 1
   categories[index] = v.category
   for _, v2 in ipairs(v.items) do
@@ -34,7 +34,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/weapons.json'))) do
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/protectors.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/protectors.json'))) do
   local pindex = #protectors + 1
   if type(v.id) == 'table' then
     protectors[pindex] = { id = v.id[1], name = v.name }
@@ -47,7 +47,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/protectors.json'))) do
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/arrows.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/arrows.json'))) do
   local pindex = #arrows + 1
   if type(v.id) == 'table' then
     arrows[pindex] = { id = v.id[1], name = v.name }
@@ -60,7 +60,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/arrows.json'))) do
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/accessories.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/accessories.json'))) do
   local pindex = #accessories + 1
   if type(v.id) == 'table' then
     accessories[pindex] = { id = v.id[1], name = v.name }

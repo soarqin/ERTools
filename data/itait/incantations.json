@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Cura urgente"
+  },
+  {
+    "id": 6421,
+    "name": "Cura"
+  },
+  {
+    "id": 6422,
+    "name": "Cura maggiore"
+  },
+  {
+    "id": 6423,
+    "name": "Cura del Lord"
+  },
+  {
+    "id": 6440,
+    "name": "Cura veleno"
+  },
+  {
+    "id": 6441,
+    "name": "Ausilio del Lord"
+  },
+  {
+    "id": 6460,
+    "name": "Fortificazione magica"
+  },
+  {
+    "id": 6450,
+    "name": "Fortificazione della fiamma"
+  },
+  {
+    "id": 6470,
+    "name": "Fortificazione del fulmine"
+  },
+  {
+    "id": 6480,
+    "name": "Fortificazione divina"
+  },
+  {
+    "id": 6490,
+    "name": "Fortificazione divina del Lord"
+  },
+  {
+    "id": 6400,
+    "name": "Rifiuto"
+  },
+  {
+    "id": 6520,
+    "name": "Esca delle ombre"
+  },
+  {
+    "id": 6530,
+    "name": "Tenebre"
+  },
+  {
+    "id": 6510,
+    "name": "Tattica dell'assassino"
+  },
+  {
+    "id": 6600,
+    "name": "Voto aureo"
+  },
+  {
+    "id": 6330,
+    "name": "Barriera dorata"
+  },
+  {
+    "id": 7903,
+    "name": "Fortificazione del fulmine aureo"
+  },
+  {
+    "id": 6340,
+    "name": "Protezione dell'Albero Madre"
+  },
+  {
+    "id": 6410,
+    "name": "Ira dorata"
+  },
+  {
+    "id": 6424,
+    "name": "Cura dell'Albero Madre"
+  },
+  {
+    "id": 6430,
+    "name": "Dono benedetto"
+  },
+  {
+    "id": 6431,
+    "name": "Benedizione dell'Albero Madre"
+  },
+  {
+    "id": 7520,
+    "name": "Forma del Crogiolo: sacca vocale"
+  },
+  {
+    "id": 7500,
+    "name": "Forma del Crogiolo: coda"
+  },
+  {
+    "id": 7510,
+    "name": "Forma del Crogiolo: corna"
+  },
+  {
+    "id": 6720,
+    "name": "Stelle ancestrali"
+  },
+  {
+    "id": 7530,
+    "name": "Lama nera"
+  },
+  {
+    "id": 6700,
+    "name": "Disco di luce"
+  },
+  {
+    "id": 6701,
+    "name": "Triplici anelli di luce"
+  },
+  {
+    "id": 6710,
+    "name": "Anelli di luce di Radagon"
+  },
+  {
+    "id": 6750,
+    "name": "Litania della legittima morte"
+  },
+  {
+    "id": 6780,
+    "name": "Cura dell'ordine"
+  },
+  {
+    "id": 6770,
+    "name": "Lama dell'ordine"
+  },
+  {
+    "id": 6740,
+    "name": "Scudo immutabile"
+  },
+  {
+    "id": 6760,
+    "name": "Legge della causalità"
+  },
+  {
+    "id": 6730,
+    "name": "Legge del regresso"
+  },
+  {
+    "id": 6900,
+    "name": "Lancia folgorante"
+  },
+  {
+    "id": 6920,
+    "name": "Attacco folgorante"
+  },
+  {
+    "id": 6930,
+    "name": "Fulmine perforante"
+  },
+  {
+    "id": 6940,
+    "name": "Lancia folgorante dei draghi antichi"
+  },
+  {
+    "id": 6910,
+    "name": "Attacco folgorante dei draghi antichi"
+  },
+  {
+    "id": 6950,
+    "name": "Falcione di Lansseax"
+  },
+  {
+    "id": 6941,
+    "name": "Lancia folgorante di Fortissax"
+  },
+  {
+    "id": 6921,
+    "name": "Lancia folgorante congelata"
+  },
+  {
+    "id": 5040,
+    "name": "Saetta mortale"
+  },
+  {
+    "id": 6960,
+    "name": "Armamento elettrificato"
+  },
+  {
+    "id": 6971,
+    "name": "Benedizione del fulmine draconico"
+  },
+  {
+    "id": 6970,
+    "name": "Fulmine draconico di Vyke"
+  },
+  {
+    "id": 6000,
+    "name": "Fiamma fugace"
+  },
+  {
+    "id": 6001,
+    "name": "O, fiamma!"
+  },
+  {
+    "id": 6010,
+    "name": "Proiezione infuocata"
+  },
+  {
+    "id": 6100,
+    "name": "Che la fiamma gigante ti porti"
+  },
+  {
+    "id": 6020,
+    "name": "Fiamma, colpiscili"
+  },
+  {
+    "id": 6110,
+    "name": "Fiamma del dio caduto"
+  },
+  {
+    "id": 6220,
+    "name": "Alzati, o fiamma!"
+  },
+  {
+    "id": 6030,
+    "name": "Turbina, o fiamma!"
+  },
+  {
+    "id": 6120,
+    "name": "Ardi, o fiamma!"
+  },
+  {
+    "id": 6040,
+    "name": "Fiamma, purificami"
+  },
+  {
+    "id": 6060,
+    "name": "Fiamma, proteggimi"
+  },
+  {
+    "id": 6050,
+    "name": "Fiamma, donami forza"
+  },
+  {
+    "id": 7900,
+    "name": "Peccato mortale del fuoco"
+  },
+  {
+    "id": 6210,
+    "name": "Nera fiamma"
+  },
+  {
+    "id": 6230,
+    "name": "Nera fiamma funesta"
+  },
+  {
+    "id": 6240,
+    "name": "Rituale della nera fiamma"
+  },
+  {
+    "id": 6250,
+    "name": "Lama della nera fiamma"
+  },
+  {
+    "id": 6260,
+    "name": "Protezione della nera fiamma"
+  },
+  {
+    "id": 6270,
+    "name": "Nobile presenza"
+  },
+  {
+    "id": 6820,
+    "name": "Artiglio ferino"
+  },
+  {
+    "id": 6830,
+    "name": "Artiglio ferino di Gurranq"
+  },
+  {
+    "id": 6800,
+    "name": "Proiezione bestiale"
+  },
+  {
+    "id": 6810,
+    "name": "Pietra di Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Costituzione ferina"
+  },
+  {
+    "id": 6840,
+    "name": "Vitalità ferina"
+  },
+  {
+    "id": 7210,
+    "name": "Sciame di mosche"
+  },
+  {
+    "id": 6300,
+    "name": "Artigli della fiamma sanguinaria"
+  },
+  {
+    "id": 6310,
+    "name": "Manna del sangue"
+  },
+  {
+    "id": 6320,
+    "name": "Lama della fiamma sanguinaria"
+  },
+  {
+    "id": 7220,
+    "name": "Foschia velenosa"
+  },
+  {
+    "id": 7200,
+    "name": "Filamenti infestanti"
+  },
+  {
+    "id": 7230,
+    "name": "Armamento avvelenato"
+  },
+  {
+    "id": 7240,
+    "name": "Aeonia cremisi"
+  },
+  {
+    "id": 7310,
+    "name": "Fiamma della frenesia"
+  },
+  {
+    "id": 7311,
+    "name": "Frenesia intollerabile"
+  },
+  {
+    "id": 7320,
+    "name": "Esplosione frenetica"
+  },
+  {
+    "id": 7330,
+    "name": "Ululato di Shabriri"
+  },
+  {
+    "id": 7300,
+    "name": "Frenesia ineluttabile"
+  },
+  {
+    "id": 7000,
+    "name": "Fuoco di drago"
+  },
+  {
+    "id": 7001,
+    "name": "Fiamma di Agheel"
+  },
+  {
+    "id": 7010,
+    "name": "Respiro di magma"
+  },
+  {
+    "id": 7011,
+    "name": "Magma di Theodorix"
+  },
+  {
+    "id": 7040,
+    "name": "Respiro di scintipietra"
+  },
+  {
+    "id": 7041,
+    "name": "Respiro di scintipietra di Smarag"
+  },
+  {
+    "id": 7030,
+    "name": "Respiro marcescente"
+  },
+  {
+    "id": 7031,
+    "name": "Decadimento di Ekzykes"
+  },
+  {
+    "id": 7020,
+    "name": "Gelo draconico"
+  },
+  {
+    "id": 7021,
+    "name": "Foschia di Borealis"
+  },
+  {
+    "id": 7050,
+    "name": "Rovina di Placidusax"
+  },
+  {
+    "id": 7060,
+    "name": "Artiglio di drago"
+  },
+  {
+    "id": 7080,
+    "name": "Fauci di drago"
+  },
+  {
+    "id": 7090,
+    "name": "Ruggito di Greyoll"
+  }
+]

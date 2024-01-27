@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Błyskamienny pocisk"
+  },
+  {
+    "id": 4010,
+    "name": "Szybki odłamek błyskamienia"
+  },
+  {
+    "id": 4001,
+    "name": "Wielki odłamek błyskamienia"
+  },
+  {
+    "id": 4020,
+    "name": "Odłamek błyskamiennej komety"
+  },
+  {
+    "id": 4021,
+    "name": "Kometa"
+  },
+  {
+    "id": 4030,
+    "name": "Spirala odłamków"
+  },
+  {
+    "id": 4040,
+    "name": "Błyskamienne gwiazdy"
+  },
+  {
+    "id": 4050,
+    "name": "Deszcz gwiazd"
+  },
+  {
+    "id": 4070,
+    "name": "Błyskamienny łuk"
+  },
+  {
+    "id": 4060,
+    "name": "Nawałnica kryształów"
+  },
+  {
+    "id": 4090,
+    "name": "Kryształowy wybuch"
+  },
+  {
+    "id": 4080,
+    "name": "Armata Haimy"
+  },
+  {
+    "id": 4120,
+    "name": "Młotek Haimy"
+  },
+  {
+    "id": 4100,
+    "name": "Rozbicie ziemi"
+  },
+  {
+    "id": 4110,
+    "name": "Niszczyciel skał"
+  },
+  {
+    "id": 4460,
+    "name": "Oręż uczonego"
+  },
+  {
+    "id": 4470,
+    "name": "Tarcza uczonego"
+  },
+  {
+    "id": 4140,
+    "name": "Światło gwiazd"
+  },
+  {
+    "id": 4130,
+    "name": "Terra Magica"
+  },
+  {
+    "id": 4630,
+    "name": "Bariera Thopsa"
+  },
+  {
+    "id": 4200,
+    "name": "Kometa Azura"
+  },
+  {
+    "id": 4220,
+    "name": "Gwiazdy Ruiny"
+  },
+  {
+    "id": 4210,
+    "name": "Pierwotny deszcz gwiazd"
+  },
+  {
+    "id": 4390,
+    "name": "Magiczne błyskostrze"
+  },
+  {
+    "id": 4300,
+    "name": "Falanga błyskostrza"
+  },
+  {
+    "id": 4301,
+    "name": "Karyjska falanga"
+  },
+  {
+    "id": 4302,
+    "name": "Falanga wielkiego ostrza"
+  },
+  {
+    "id": 4370,
+    "name": "Magiczna ulewa"
+  },
+  {
+    "id": 4380,
+    "name": "Wielki łuk Loretty"
+  },
+  {
+    "id": 4381,
+    "name": "Mistrzostwo Loretty"
+  },
+  {
+    "id": 4360,
+    "name": "Pełnia Księżyca Rennali"
+  },
+  {
+    "id": 4361,
+    "name": "Ciemny Księżyc Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Karyjski siekacz"
+  },
+  {
+    "id": 4430,
+    "name": "Karyjski wielki miecz"
+  },
+  {
+    "id": 4450,
+    "name": "Karyjski przebijak"
+  },
+  {
+    "id": 4431,
+    "name": "Księżycowe ostrze Aduli"
+  },
+  {
+    "id": 4480,
+    "name": "Klarowność"
+  },
+  {
+    "id": 4640,
+    "name": "Karyjski odwet"
+  },
+  {
+    "id": 4600,
+    "name": "Odłamek zasadzki"
+  },
+  {
+    "id": 4610,
+    "name": "Nocny odłamek"
+  },
+  {
+    "id": 4620,
+    "name": "Nocna kometa"
+  },
+  {
+    "id": 6500,
+    "name": "Mgła nocnej służki"
+  },
+  {
+    "id": 4660,
+    "name": "Niewidoczne ostrze"
+  },
+  {
+    "id": 4670,
+    "name": "Niewidoczna forma"
+  },
+  {
+    "id": 4650,
+    "name": "Wieczna ciemność"
+  },
+  {
+    "id": 4800,
+    "name": "Magmowy strzał"
+  },
+  {
+    "id": 4820,
+    "name": "Zmącona magma"
+  },
+  {
+    "id": 4810,
+    "name": "Furia Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Animozje Rykarda"
+  },
+  {
+    "id": 4400,
+    "name": "Błyskamienna lodowa skała"
+  },
+  {
+    "id": 4420,
+    "name": "Mroźna mgła"
+  },
+  {
+    "id": 4490,
+    "name": "Mroźny oręż"
+  },
+  {
+    "id": 4410,
+    "name": "Burza lodowa z Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Druzgocący kryształ"
+  },
+  {
+    "id": 4520,
+    "name": "Kryształowa struga"
+  },
+  {
+    "id": 4510,
+    "name": "Uwolnienie kryształu"
+  },
+  {
+    "id": 4720,
+    "name": "Studnia grawitacyjna"
+  },
+  {
+    "id": 4721,
+    "name": "Umierające gwiazdy"
+  },
+  {
+    "id": 4710,
+    "name": "Proca"
+  },
+  {
+    "id": 4700,
+    "name": "Meteoryt"
+  },
+  {
+    "id": 4701,
+    "name": "Meteoryt Astela"
+  },
+  {
+    "id": 5100,
+    "name": "Bańki wyroczni"
+  },
+  {
+    "id": 5110,
+    "name": "Duża bańka proroctwa"
+  },
+  {
+    "id": 4900,
+    "name": "Kolce grzechu"
+  },
+  {
+    "id": 4910,
+    "name": "Ciernie kary"
+  },
+  {
+    "id": 5000,
+    "name": "Zew animozji"
+  },
+  {
+    "id": 5001,
+    "name": "Starożytna śmiertelna animozja"
+  },
+  {
+    "id": 5010,
+    "name": "Wybuchowy ogień duchów"
+  },
+  {
+    "id": 5020,
+    "name": "Mgła Fii"
+  },
+  {
+    "id": 5030,
+    "name": "Przyzwanie Kościeja"
+  }
+]

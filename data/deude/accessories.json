@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Purpurbernstein-Medaillon"
+  },
+  {
+    "id": 1001,
+    "name": "Purpurbernstein-Medaillon +1"
+  },
+  {
+    "id": 1002,
+    "name": "Purpurbernstein-Medaillon +2"
+  },
+  {
+    "id": 5000,
+    "name": "Purpursamentalisman"
+  },
+  {
+    "id": 5020,
+    "name": "Gesegneter Tautalisman"
+  },
+  {
+    "id": 1010,
+    "name": "Himmelsbernstein-Medaillon"
+  },
+  {
+    "id": 1011,
+    "name": "Himmelsbernstein-Medaillon +1"
+  },
+  {
+    "id": 1012,
+    "name": "Himmelsbernstein-Medaillon +2"
+  },
+  {
+    "id": 5010,
+    "name": "Himmelssamentalisman"
+  },
+  {
+    "id": 1020,
+    "name": "Smaragdbernstein-Medaillon"
+  },
+  {
+    "id": 1021,
+    "name": "Smaragdbernstein-Medaillon +1"
+  },
+  {
+    "id": 1022,
+    "name": "Smaragdbernstein-Medaillon +2"
+  },
+  {
+    "id": 1150,
+    "name": "Grüner Schildkrötentalisman"
+  },
+  {
+    "id": 1030,
+    "name": "Arsenaltalisman"
+  },
+  {
+    "id": 1031,
+    "name": "Arsenaltalisman +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenal des großen Gefäßes"
+  },
+  {
+    "id": 1040,
+    "name": "Gunst des Erdenbaums"
+  },
+  {
+    "id": 1041,
+    "name": "Gunst des Erdenbaums +1"
+  },
+  {
+    "id": 1042,
+    "name": "Gunst des Erdenbaums +2"
+  },
+  {
+    "id": 1050,
+    "name": "Radagons Narbensiegel"
+  },
+  {
+    "id": 1051,
+    "name": "Radagons Wundsiegel"
+  },
+  {
+    "id": 1220,
+    "name": "Marikas Narbensiegel"
+  },
+  {
+    "id": 1221,
+    "name": "Marikas Wundsiegel"
+  },
+  {
+    "id": 1060,
+    "name": "Erbe der Sternengeißel"
+  },
+  {
+    "id": 1070,
+    "name": "Erbe der Prothesenträgerin"
+  },
+  {
+    "id": 1080,
+    "name": "Erbe der Sterngucker"
+  },
+  {
+    "id": 1090,
+    "name": "Erbe der Zwei Finger"
+  },
+  {
+    "id": 4000,
+    "name": "Drachenschildtalisman"
+  },
+  {
+    "id": 4001,
+    "name": "Drachenschildtalisman +1"
+  },
+  {
+    "id": 4002,
+    "name": "Drachenschildtalisman +2"
+  },
+  {
+    "id": 4003,
+    "name": "Drachengroßschildtalisman"
+  },
+  {
+    "id": 4010,
+    "name": "Zauberdrachentalisman"
+  },
+  {
+    "id": 4011,
+    "name": "Zauberdrachentalisman +1"
+  },
+  {
+    "id": 4012,
+    "name": "Zauberdrachentalisman +2"
+  },
+  {
+    "id": 4020,
+    "name": "Flammendrachentalisman"
+  },
+  {
+    "id": 4021,
+    "name": "Flammendrachentalisman +1"
+  },
+  {
+    "id": 4022,
+    "name": "Flammendrachentalisman +2"
+  },
+  {
+    "id": 4030,
+    "name": "Blitzdrachentalisman"
+  },
+  {
+    "id": 4031,
+    "name": "Blitzdrachentalisman +1"
+  },
+  {
+    "id": 4032,
+    "name": "Blitzdrachentalisman +2"
+  },
+  {
+    "id": 4040,
+    "name": "Haligdrachentalisman"
+  },
+  {
+    "id": 4041,
+    "name": "Haligdrachentalisman +1"
+  },
+  {
+    "id": 4042,
+    "name": "Haligdrachentalisman +2"
+  },
+  {
+    "id": 4050,
+    "name": "Perldrachentalisman"
+  },
+  {
+    "id": 4051,
+    "name": "Perldrachentalisman +1"
+  },
+  {
+    "id": 4052,
+    "name": "Perldrachentalisman +2"
+  },
+  {
+    "id": 1170,
+    "name": "Horntalisman der Immunität"
+  },
+  {
+    "id": 1171,
+    "name": "Horntalisman der Immunität +1"
+  },
+  {
+    "id": 1160,
+    "name": "Horntalisman der Tapferen"
+  },
+  {
+    "id": 1161,
+    "name": "Horntalisman der Tapferen +1"
+  },
+  {
+    "id": 1180,
+    "name": "Horntalisman der Klarheit"
+  },
+  {
+    "id": 1181,
+    "name": "Horntalisman der Klarheit +1"
+  },
+  {
+    "id": 1200,
+    "name": "Gesprenkelte Halskette"
+  },
+  {
+    "id": 1201,
+    "name": "Gesprenkelte Halskette +1"
+  },
+  {
+    "id": 1190,
+    "name": "Geschwür des Todesprinzen"
+  },
+  {
+    "id": 1191,
+    "name": "Zyste des Todesprinzen"
+  },
+  {
+    "id": 2090,
+    "name": "Dolchtalisman"
+  },
+  {
+    "id": 2200,
+    "name": "Krummschwerttalisman"
+  },
+  {
+    "id": 2120,
+    "name": "Doppelklingentalisman"
+  },
+  {
+    "id": 2130,
+    "name": "Axttalisman"
+  },
+  {
+    "id": 2070,
+    "name": "Hammertalisman"
+  },
+  {
+    "id": 2060,
+    "name": "Speertalisman"
+  },
+  {
+    "id": 2140,
+    "name": "Lanzentalisman"
+  },
+  {
+    "id": 2180,
+    "name": "Klauentalisman"
+  },
+  {
+    "id": 4100,
+    "name": "Großschildtalisman"
+  },
+  {
+    "id": 2150,
+    "name": "Durchschuss-Talisman"
+  },
+  {
+    "id": 2100,
+    "name": "Weitschuss-Talisman"
+  },
+  {
+    "id": 3000,
+    "name": "Götzenschule-Talisman"
+  },
+  {
+    "id": 3001,
+    "name": "Götzenmasse-Talisman"
+  },
+  {
+    "id": 3040,
+    "name": "Leinwandtalisman der Gläubigen"
+  },
+  {
+    "id": 3050,
+    "name": "Leinwandtalisman der Herde"
+  },
+  {
+    "id": 3080,
+    "name": "Urschimmersteinklinge"
+  },
+  {
+    "id": 1140,
+    "name": "Mond von Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talisman des alten Fürsten"
+  },
+  {
+    "id": 3070,
+    "name": "Radagons Ikone"
+  },
+  {
+    "id": 2190,
+    "name": "Medaillon des Brüllens"
+  },
+  {
+    "id": 2210,
+    "name": "Begleitergefäß"
+  },
+  {
+    "id": 2220,
+    "name": "Parfümeurstalisman"
+  },
+  {
+    "id": 6020,
+    "name": "Carianisches Filigranwappen"
+  },
+  {
+    "id": 1230,
+    "name": "Scherbe eines Kriegergefäßes"
+  },
+  {
+    "id": 1231,
+    "name": "Scherbe von Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Godfreys Ikone"
+  },
+  {
+    "id": 1210,
+    "name": "Talisman des Ziegenbocks"
+  },
+  {
+    "id": 2110,
+    "name": "Blauer Tänzerintalisman"
+  },
+  {
+    "id": 2000,
+    "name": "Magischer Skorpionstalisman"
+  },
+  {
+    "id": 2020,
+    "name": "Feuriger Skorpionstalisman"
+  },
+  {
+    "id": 2010,
+    "name": "Blitzender Skorpionstalisman"
+  },
+  {
+    "id": 2030,
+    "name": "Heiliger Skorpionstalisman"
+  },
+  {
+    "id": 4060,
+    "name": "Schuppentalisman des Schmelztiegels"
+  },
+  {
+    "id": 4070,
+    "name": "Federtalisman des Schmelztiegels"
+  },
+  {
+    "id": 4110,
+    "name": "Knotentalisman des Schmelztiegels"
+  },
+  {
+    "id": 2040,
+    "name": "Rot gefiedertes Astschwert"
+  },
+  {
+    "id": 4080,
+    "name": "Blau gefiedertes Astschwert"
+  },
+  {
+    "id": 2050,
+    "name": "Ritualschwerttalisman"
+  },
+  {
+    "id": 4090,
+    "name": "Ritualschildtalisman"
+  },
+  {
+    "id": 5050,
+    "name": "Assassinen-Purpurklinge"
+  },
+  {
+    "id": 5060,
+    "name": "Assassinen-Himmelsklinge"
+  },
+  {
+    "id": 2080,
+    "name": "Geflügelte Schwertinsignie"
+  },
+  {
+    "id": 2081,
+    "name": "Verrottende geflügelte Schwertinsignie"
+  },
+  {
+    "id": 1250,
+    "name": "Millicents Prothese"
+  },
+  {
+    "id": 5040,
+    "name": "Tuch der Götterskalpe"
+  },
+  {
+    "id": 2170,
+    "name": "Jubel des Sprosses der Fäulnis"
+  },
+  {
+    "id": 2160,
+    "name": "Jubel des Blutes"
+  },
+  {
+    "id": 5030,
+    "name": "Kamee der Räuber"
+  },
+  {
+    "id": 6110,
+    "name": "Horn der Ahnengeister"
+  },
+  {
+    "id": 1110,
+    "name": "Goldskarabäus"
+  },
+  {
+    "id": 1100,
+    "name": "Silberskarabäus"
+  },
+  {
+    "id": 6000,
+    "name": "Crepus' Phiole"
+  },
+  {
+    "id": 6010,
+    "name": "Verhüllender Schleier"
+  },
+  {
+    "id": 6040,
+    "name": "Langschwanzkatzentalisman"
+  },
+  {
+    "id": 6080,
+    "name": "Trickspiegel des Krummfingers"
+  },
+  {
+    "id": 6090,
+    "name": "Trickspiegel des Wirts"
+  },
+  {
+    "id": 6050,
+    "name": "Shabriris Kummer"
+  },
+  {
+    "id": 6060,
+    "name": "Daedicars Kummer"
+  },
+  {
+    "id": 6070,
+    "name": "Opferzweig"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Calhau Pedrilhante"
+  },
+  {
+    "id": 4010,
+    "name": "Fragmento Pedrilhante Veloz"
+  },
+  {
+    "id": 4001,
+    "name": "Grande Fragmento Pedrilhante"
+  },
+  {
+    "id": 4020,
+    "name": "Fragmento de Cometa Pedrilhante"
+  },
+  {
+    "id": 4021,
+    "name": "Cometa"
+  },
+  {
+    "id": 4030,
+    "name": "Espiral de Fragmento"
+  },
+  {
+    "id": 4040,
+    "name": "Estrelas Pedrilhantes"
+  },
+  {
+    "id": 4050,
+    "name": "Chuva de Estrelas"
+  },
+  {
+    "id": 4070,
+    "name": "Arco Pedrilhante"
+  },
+  {
+    "id": 4060,
+    "name": "Barragem de Cristal"
+  },
+  {
+    "id": 4090,
+    "name": "Estouro de Cristal"
+  },
+  {
+    "id": 4080,
+    "name": "Canhão de Haima"
+  },
+  {
+    "id": 4120,
+    "name": "Malho de Haima"
+  },
+  {
+    "id": 4100,
+    "name": "Terra Partida"
+  },
+  {
+    "id": 4110,
+    "name": "Explosão de Rocha"
+  },
+  {
+    "id": 4460,
+    "name": "Arma do Estudioso"
+  },
+  {
+    "id": 4470,
+    "name": "Escudo do Estudioso"
+  },
+  {
+    "id": 4140,
+    "name": "Luz Estelar"
+  },
+  {
+    "id": 4130,
+    "name": "Terra Mágica"
+  },
+  {
+    "id": 4630,
+    "name": "Barreira de Thops"
+  },
+  {
+    "id": 4200,
+    "name": "Bólido Escuro"
+  },
+  {
+    "id": 4220,
+    "name": "Plêiades"
+  },
+  {
+    "id": 4210,
+    "name": "Chuva de Estrelas Fundadora"
+  },
+  {
+    "id": 4390,
+    "name": "Laminante Mágica"
+  },
+  {
+    "id": 4300,
+    "name": "Falange de Laminante"
+  },
+  {
+    "id": 4301,
+    "name": "Falange Cariana"
+  },
+  {
+    "id": 4302,
+    "name": "Falange de Lâmina Grande"
+  },
+  {
+    "id": 4370,
+    "name": "Tormenta de Magia"
+  },
+  {
+    "id": 4380,
+    "name": "Arco Grande de Loretta"
+  },
+  {
+    "id": 4381,
+    "name": "Maestria de Loretta"
+  },
+  {
+    "id": 4360,
+    "name": "Lua Cheia de Rennala"
+  },
+  {
+    "id": 4361,
+    "name": "Lua Sombria de Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Fatiadora Cariana"
+  },
+  {
+    "id": 4430,
+    "name": "Espada Grande Cariana"
+  },
+  {
+    "id": 4450,
+    "name": "Perfurador Cariano"
+  },
+  {
+    "id": 4431,
+    "name": "Lâmina Lunar de Adula"
+  },
+  {
+    "id": 4480,
+    "name": "Lucidez"
+  },
+  {
+    "id": 4640,
+    "name": "Retaliação Cariana"
+  },
+  {
+    "id": 4600,
+    "name": "Fragmento de Emboscada"
+  },
+  {
+    "id": 4610,
+    "name": "Fragmento da Noite"
+  },
+  {
+    "id": 4620,
+    "name": "Cometa Noturno"
+  },
+  {
+    "id": 6500,
+    "name": "Névoa da Donzela da Noite"
+  },
+  {
+    "id": 4660,
+    "name": "Lâmina Oculta"
+  },
+  {
+    "id": 4670,
+    "name": "Forma Oculta"
+  },
+  {
+    "id": 4650,
+    "name": "Escuridão Eterna"
+  },
+  {
+    "id": 4800,
+    "name": "Disparo de Magma"
+  },
+  {
+    "id": 4820,
+    "name": "Magma Turvo"
+  },
+  {
+    "id": 4810,
+    "name": "Fúria de Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Rancor de Rykard"
+  },
+  {
+    "id": 4400,
+    "name": "Penhasco de Gelo de Pedrilhante"
+  },
+  {
+    "id": 4420,
+    "name": "Névoa Congelante"
+  },
+  {
+    "id": 4490,
+    "name": "Arma Congelada"
+  },
+  {
+    "id": 4410,
+    "name": "Tempestade de Gelo de Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Cristal Estilhaçado"
+  },
+  {
+    "id": 4520,
+    "name": "Torrente de Cristal"
+  },
+  {
+    "id": 4510,
+    "name": "Liberação de Cristal"
+  },
+  {
+    "id": 4720,
+    "name": "Poço da Gravidade"
+  },
+  {
+    "id": 4721,
+    "name": "Estrelas em Colapso"
+  },
+  {
+    "id": 4710,
+    "name": "Funda de Pedra"
+  },
+  {
+    "id": 4700,
+    "name": "Meteorito"
+  },
+  {
+    "id": 4701,
+    "name": "Meteorito de Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Bolhas de Oráculo"
+  },
+  {
+    "id": 5110,
+    "name": "Grande Bolha Oracular"
+  },
+  {
+    "id": 4900,
+    "name": "Sarça Pecadora"
+  },
+  {
+    "id": 4910,
+    "name": "Sarças da Punição"
+  },
+  {
+    "id": 5000,
+    "name": "Chamada de Rancor"
+  },
+  {
+    "id": 5001,
+    "name": "Rancor da Morte Anciã"
+  },
+  {
+    "id": 5010,
+    "name": "Chama Espectral Explosiva"
+  },
+  {
+    "id": 5020,
+    "name": "Neblina da Fia"
+  },
+  {
+    "id": 5030,
+    "name": "Chamado de Tibia"
+  }
+]

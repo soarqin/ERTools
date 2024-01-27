@@ -1,0 +1,267 @@
+10	[ERROR]
+11	
+12	
+13	
+14	
+15	
+16	
+17	
+18	
+19	
+20	[ERROR]
+21	
+22	
+23	
+24	
+25	
+26	
+27	
+28	
+29	
+30	[ERROR]
+31	
+32	
+33	
+34	
+35	
+36	
+37	
+38	
+39	
+40	[ERROR]
+41	[ERROR]
+80	[ERROR]
+81	[ERROR]
+82	[ERROR]
+83	[ERROR]
+84	[ERROR]
+85	[ERROR]
+86	[ERROR]
+87	[ERROR]
+88	[ERROR]
+89	[ERROR]
+90	[ERROR]
+91	
+92	
+93	
+94	
+95	
+96	
+97	
+98	
+99	
+100	[ERROR]
+101	[ERROR]
+102	[ERROR]
+103	[ERROR]
+104	[ERROR]
+105	[ERROR]
+106	[ERROR]
+107	[ERROR]
+108	[ERROR]
+109	[ERROR]
+110	[ERROR]
+111	[ERROR]
+112	[ERROR]
+113	[ERROR]
+114	[ERROR]
+115	[ERROR]
+116	[ERROR]
+117	[ERROR]
+118	[ERROR]
+119	[ERROR]
+120	[ERROR]
+121	[ERROR]
+122	[ERROR]
+123	[ERROR]
+124	[ERROR]
+125	[ERROR]
+126	[ERROR]
+127	[ERROR]
+128	[ERROR]
+129	[ERROR]
+130	[ERROR]
+131	[ERROR]
+132	[ERROR]
+133	[ERROR]
+134	[ERROR]
+135	[ERROR]
+136	[ERROR]
+137	[ERROR]
+138	[ERROR]
+139	[ERROR]
+140	[ERROR]
+141	[ERROR]
+142	[ERROR]
+143	[ERROR]
+144	[ERROR]
+145	
+146	[ERROR]
+147	[ERROR]
+148	[ERROR]
+149	[ERROR]
+150	
+151	[ERROR]
+152	[ERROR]
+153	[ERROR]
+154	[ERROR]
+155	[ERROR]
+156	[ERROR]
+157	[ERROR]
+158	[ERROR]
+159	[ERROR]
+160	[ERROR]
+161	[ERROR]
+162	
+163	[ERROR]
+164	[ERROR]
+165	[ERROR]
+166	[ERROR]
+167	[ERROR]
+168	[ERROR]
+169	[ERROR]
+170	[ERROR]
+171	[ERROR]
+172	
+173	[ERROR]
+174	[ERROR]
+175	[ERROR]
+176	[ERROR]
+177	[ERROR]
+178	[ERROR]
+179	[ERROR]
+180	[ERROR]
+181	[ERROR]
+182	[ERROR]
+183	[ERROR]
+184	[ERROR]
+185	[ERROR]
+186	[ERROR]
+187	[ERROR]
+188	
+189	
+190	[ERROR]
+191	[ERROR]
+192	[ERROR]
+193	
+194	[ERROR]
+195	[ERROR]
+196	[ERROR]
+197	[ERROR]
+198	[ERROR]
+1000	[ERROR]
+1001	[ERROR]
+1002	[ERROR]
+1003	[ERROR]
+1004	[ERROR]
+1005	[ERROR]
+1006	[ERROR]
+1007	[ERROR]
+1008	[ERROR]
+1009	[ERROR]
+1010	[ERROR]
+1011	[ERROR]
+1012	[ERROR]
+1013	[ERROR]
+1014	[ERROR]
+1015	[ERROR]
+1016	[ERROR]
+1017	[ERROR]
+10000	Cinza da Guerra: Garra de Leão
+10100	Cinza da Guerra: Impulso Perfurante
+10200	Cinza da Guerra: Presa Perfurante
+10300	Cinza da Guerra: Corte Giratório
+10500	Cinza da Guerra: Investida Frontal
+10600	Cinza da Guerra: Esmagamento (Corte para Cima)
+10700	Cinza da Guerra: Esmagamento (Em Arco)
+10800	Cinza da Guerra: Taxa de Sangue
+10900	Cinza da Guerra: Impulso Repetitivo
+11000	Cinza da Guerra: Golpes Selvagens
+11100	Cinza da Guerra: Golpes Giratórios
+11200	Cinza da Guerra: Corte Duplo
+11300	Cinza da Guerra: Investida do Prelado
+11400	Cinza da Guerra: Desembainhar
+11500	Cinza da Guerra: Enfrentar
+11600	Cinza da Guerra: Caça de Gigantes
+11700	Cinza da Guerra: Ataque com Tocha
+11800	Cinza da Guerra: Corte de Loretta
+11900	Cinza da Guerra: Voo da Mariposa Venenosa
+12000	Cinza da Guerra: Arma Giratória
+12100	
+12200	Cinza da Guerra: Ataque da Tormenta
+12300	Cinza da Guerra: Invocador da Tempestade
+12400	Cinza da Guerra: Dança da Espada
+12500	Cinza da Guerra: Corrente Giratória
+20000	Cinza da Guerra: Falange de Laminante
+20100	Cinza da Guerra: Lâmina Sagrada
+20200	Cinza da Guerra: Lança de Gelo
+20300	Cinza da Guerra: Calhau Pedrilhante
+20400	Cinza da Guerra: Corte Sangrento
+20500	Cinza da Guerra: Punho Ladrão de Vida
+20700	Cinza da Guerra: Erupção
+20800	Cinza da Guerra: Golpe Devoto
+20900	Cinza da Guerra: Gravitas
+21000	Cinza da Guerra: Lâmina Tempestuosa
+21200	Cinza da Guerra: Chacoalhador de Terra
+21300	Cinza da Guerra: Terra Dourada
+21400	Cinza da Guerra: Golpe Flamejante
+21600	Cinza da Guerra: Relâmpago
+21700	Cinza da Guerra: Corte de Relâmpago
+21800	Cinza da Guerra: Grandeza Cariana
+21900	Cinza da Guerra: Espada Grande Cariana
+22000	Cinza da Guerra: Corte de Vácuo
+22100	Cinza da Guerra: Tornado de Chama Negra
+22200	Cinza da Guerra: Anel de Luz Sagrada
+22300	Cinza da Guerra: Cuspidor de Fogo
+22400	Cinza da Guerra: Lâmina de Sangue
+22500	Cinza da Guerra: Corte Fantasma
+22600	Cinza da Guerra: Lança Espectral
+22700	Cinza da Guerra: Névoa Refrigeradora
+22800	Cinza da Guerra: Névoa Venenosa
+30000	Cinza da Guerra: Batida com Escudo
+30100	Cinza da Guerra: Escudo-Barricada
+30200	Cinza da Guerra: Aparar
+30300	Cinza da Guerra: Aparar com Broquel
+30400	Cinza da Guerra: Aparar
+30500	Cinza da Guerra: Retaliação Cariana
+30600	Cinza da Guerra: Parede de Tormenta
+30700	Cinza da Guerra: Aparagem Dourada
+30800	Cinza da Guerra: Colisão de Escudo
+30900	Cinza da Guerra: nenhuma habilidade
+31000	Cinza da Guerra: Barreira de Thops
+40000	Cinza da Guerra: Disparo Penetrante
+40100	Cinza da Guerra: Barragem
+40200	Cinza da Guerra: Disparo Poderoso
+40400	Cinza da Guerra: Disparo Encantado
+40500	Cinza da Guerra: Disparo do Céu
+40600	Cinza da Guerra: Chuva de Flechas
+40700	
+50100	Cinza da Guerra: Pisão da Geada
+50200	Cinza da Guerra: Pisão Tempestuoso
+50300	Cinza da Guerra: Chute
+50400	Cinza da Guerra: Carneiro do Relâmpago
+50500	Cinza da Guerra: Chama do Leão Vermelho
+50600	Cinza da Guerra: Pancada no Solo
+50700	Cinza da Guerra: Pancada Dourada
+50800	Cinza da Guerra: Ondas de Trevas
+50900	Cinza da Guerra: Chacoalhador de Terra de Hoarah Loux
+60000	Cinza da Guerra: Determinação
+60100	Cinza da Guerra: Determinação do Cavaleiro Real
+60200	Cinza da Guerra: Gambito do Assassino
+60300	Cinza da Guerra: Voto Dourado
+60400	Cinza da Guerra: Ordem Sagrada
+60500	Cinza da Guerra: Ordem Compartilhada
+60600	Cinza da Guerra: Seppuku
+60700	Cinza da Guerra: Lâmina de Pedra
+65000	Cinza da Guerra: Rugido Bárbaro
+65100	Cinza da Guerra: Grito de Guerra
+65200	Cinza da Guerra: Rugido da Fera
+65300	Cinza da Guerra: Rugido do Troll
+65400	Cinza da Guerra: Grito do Exibido
+70000	Cinza da Guerra: Resistência
+70100	Cinza da Guerra: Voto do Indomável
+70200	Cinza da Guerra: Solo Sagrado
+80000	Cinza da Guerra: Passo Ágil
+80100	Cinza da Guerra: Passo do Cão de Caça
+80200	Cinza da Guerra: Ave de Rapina das Brumas
+85000	Cinza da Guerra: Isca de Sombra Branca
