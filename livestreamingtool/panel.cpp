@@ -588,7 +588,6 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
                     auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
                     if (panel == nullptr) break;
                     return panel->handleButtonClick(hwnd, wParam & 0xFFFF, lParam);
-                    break;
                 }
                 case EN_CHANGE: {
                     auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
