@@ -1,3 +1,4 @@
+;表格面板选项
 ; 单个格子边长
 CellSize=150
 ; 格子间距
@@ -14,6 +15,13 @@ FontSize=24
 Color1=255,32,32
 ; 玩家2颜色(红,绿,蓝)
 Color2=32,32,255
+; 是否Bingo Brawlers规则
+;   此规则只需要完成bingo即可获胜，如果在指定时间内没有一方完成bingo，则占据格子数多者获胜
+;   0: 关闭  1: 开启
+;   注意：开启此规则时，积分面板的显示会变成Bingo Brawlers模式，即显示占据格子数
+BingoBrawlersMode=0
+
+;积分面板选项
 ; 积分面板透明度(0完全透明，255完全不透明)
 ScoreAlpha=0
 ; 积分文字字体
@@ -33,6 +41,6 @@ ClearScore=0
 ; 通关后的任务差积分倍率
 ClearQuestMultiplier=2
 ; 玩家1名
-Player1=Right丶
+Player1=红方
 ; 玩家2名
-Player2=Iridium_ore
+Player2=蓝方

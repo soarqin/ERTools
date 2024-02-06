@@ -9,12 +9,9 @@
 #include <string>
 #include <vector>
 #include <fstream>
-
-struct Cell {
-    std::string text;
-    SDL_Texture *texture = nullptr;
-    uint32_t status = 0;
-};
+#include <utility>
+#include <random>
+#include <algorithm>
 
 static int gCellSize = 150;
 static int gCellSpacing = 2;
@@ -30,6 +27,7 @@ static SDL_Color gColors[3] = {
     {255, 0, 0, 0},
     {0, 0, 255, 0},
 };
+static int gBingoBrawlersMode = 0;
 static int gScores[5] = {2, 4, 6, 8, 10};
 static int gNFScores[5] = {1, 2, 3, 4, 5};
 static int gLineScore = 3;
@@ -42,6 +40,31 @@ static SDL_Window *gWindow = nullptr;
 static SDL_Renderer *gRenderer = nullptr;
 static TTF_Font *gFont = nullptr;
 static TTF_Font *gScoreFont = nullptr;
+
+struct Cell {
+    std::string text;
+    SDL_Texture *texture = nullptr;
+    uint32_t status = 0;
+    void updateTexture() {
+        auto *font = gFont;
+        auto fontSize = gFontSize;
+        while (true) {
+            auto *surface =
+                TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), gTextColor, gCellSize * 9 / 10);
+            if (surface->h <= gCellSize * 9 / 10) {
+                texture = SDL_CreateTextureFromSurface(gRenderer, surface);
+                SDL_DestroySurface(surface);
+                break;
+            }
+            fontSize--;
+            font = TTF_OpenFont(gFontFile.c_str(), fontSize);
+        }
+        if (font != gFont) {
+            TTF_CloseFont(font);
+        }
+    }
+};
+
 static Cell gCells[5][5];
 
 struct ScoreWindow {
@@ -95,7 +118,10 @@ struct ScoreWindow {
         }
         auto clr = gColors[index + 1];
         clr.a = 255;
-        auto surface = TTF_RenderUTF8_Blended(gScoreFont, (playerName + "积分：" + std::to_string(score)).c_str(), clr);
+        auto surface =
+            gBingoBrawlersMode
+            ? TTF_RenderUTF8_Blended(gScoreFont, (playerName + (score >= 100 ? "达成Bingo" : ("完成：" + std::to_string(score) + (score >= 13 ? " 完成数获胜" : "")))).c_str(), clr)
+            : TTF_RenderUTF8_Blended(gScoreFont, (playerName + "积分：" + std::to_string(score)).c_str(), clr);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
         int w, h;
@@ -139,6 +165,86 @@ struct ScoreWindow {
 static ScoreWindow gScoreWindows[2];
 
 static void updateScores() {
+    if (gBingoBrawlersMode) {
+        int score[2] = {0, 0};
+        for (auto & row : gCells) {
+            for (auto & cell : row) {
+                switch (cell.status) {
+                    case 1:
+                        score[0]++;
+                        break;
+                    case 2:
+                        score[1]++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        auto n = gCells[0][0].status;
+        if (n) {
+            auto match = true;
+            for (int i = 1; i < 5; i++) {
+                if (gCells[i][i].status != n) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                score[n - 1] = 100;
+            }
+        }
+        n = gCells[4][0].status;
+        if (n) {
+            auto match = true;
+            for (int i = 1; i < 5; i++) {
+                if (gCells[4 - i][i].status != n) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                score[n - 1] = 100;
+            }
+        }
+        for (int j = 0; j < 5; j++) {
+            n = gCells[j][0].status;
+            if (n) {
+                auto match = true;
+                for (int i = 1; i < 5; i++) {
+                    if (gCells[j][i].status != n) {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match) {
+                    score[n - 1] = 100;
+                }
+            }
+            n = gCells[0][j].status;
+            if (n) {
+                auto match = true;
+                for (int i = 1; i < 5; i++) {
+                    if (gCells[i][j].status != n) {
+                        match = false;
+                        break;
+                    }
+                }
+                if (match) {
+                    score[n - 1] = 100;
+                }
+            }
+        }
+        if (score[0] != gScoreWindows[0].score) {
+            gScoreWindows[0].score = score[0];
+            gScoreWindows[0].updateTexture();
+        }
+        if (score[1] != gScoreWindows[1].score) {
+            gScoreWindows[1].score = score[1];
+            gScoreWindows[1].updateTexture();
+        }
+        return;
+    }
     int score[2] = {0, 0};
     int line[5] = {0};
     for (int i = 0; i < 5; ++i) {
@@ -244,6 +350,102 @@ static std::vector<std::string> splitString(const std::string &str, char sep) {
     return result;
 }
 
+static void randomCells() {
+    std::ifstream ifs("data/randomtable.txt");
+    std::string line;
+    std::vector<std::string> fixed;
+    struct Group {
+        uint64_t ratio = 0;
+        uint64_t total = 0;
+        std::vector<std::pair<uint64_t, std::string>> strings;
+    };
+    std::vector<Group> groups;
+    std::vector<std::pair<uint64_t, std::string>> strings;
+    uint64_t total = 0;
+    while (!ifs.eof()) {
+        std::getline(ifs, line);
+        if (line.empty() || line[0] == ';') continue;
+        if (line[0] == 'F') {
+            auto sl = splitString(line, ',');
+            fixed.emplace_back(sl[1]);
+            continue;
+        }
+        if (line[0] == 'G') {
+            auto sl = splitString(line, ',');
+            auto id = std::stoi(sl[1]);
+            auto ratio = std::stoul(sl[2]);
+            if (id >= (int)groups.size()) {
+                groups.resize(id + 1);
+            }
+            groups[id].ratio = ratio;
+            total += ratio;
+            continue;
+        }
+        if (line[0] < '0' || line[0] > '9') continue;
+        auto sl = splitString(line, ',');
+        auto groupId = std::stoi(sl[0]);
+        auto ratio = std::stoul(sl[1]);
+        if (groupId == 0) {
+            strings.emplace_back(ratio, sl[2]);
+            total += ratio;
+        } else {
+            if (groupId >= (int)groups.size()) {
+                groups.resize(groupId + 1);
+            }
+            auto &group = groups[groupId];
+            group.strings.emplace_back(ratio, sl[2]);
+            group.total += ratio;
+        }
+    }
+    int idx = 0;
+    std::string result[25];
+    for (auto &s: fixed) {
+        result[idx] = s;
+        if (++idx >= 25) break;
+    }
+    static std::mt19937_64 rand((std::random_device())());
+    for (; idx < 25; idx++) {
+        uint64_t r = rand() % total;
+        for (auto ite = strings.begin(); ite != strings.end(); ite++) {
+            if (r < ite->first) {
+                result[idx] = ite->second;
+                total -= ite->first;
+                strings.erase(ite);
+                break;
+            }
+            r -= ite->first;
+        }
+        for (auto ite = groups.begin(); ite != groups.end(); ite++) {
+            if (r < ite->ratio) {
+                auto r2 = rand() % total;
+                for (auto &s: ite->strings) {
+                    if (r2 < s.first) {
+                        result[idx] = s.second;
+                        break;
+                    }
+                    r2 -= s.first;
+                }
+                break;
+            }
+            r -= ite->total;
+            groups.erase(ite);
+        }
+    }
+    std::shuffle(result, result + 25, rand);
+    std::ofstream ofs("data/squares.txt");
+    for (auto &r: gCells) {
+        for (auto &c: r) {
+            c.status = 0;
+            c.text = result[--idx];
+            c.updateTexture();
+            ofs << c.text << std::endl;
+        }
+    }
+    ofs.close();
+    gScoreWindows[0].reset();
+    gScoreWindows[1].reset();
+}
+
 static std::string mergeString(const std::vector<std::string> &strs, char sep) {
     std::string result;
     for (auto &s: strs) {
@@ -291,6 +493,8 @@ static void load() {
             gColors[2].r = std::stoi(sl[0]);
             gColors[2].g = std::stoi(sl[1]);
             gColors[2].b = std::stoi(sl[2]);
+        } else if (key == "BingoBrawlersMode") {
+            gBingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
         } else if (key == "ScoreAlpha") {
             gScoreAlpha = std::stoi(value);
         } else if (key == "ScoreFontFile") {
@@ -348,33 +552,26 @@ static void load() {
     for (auto &c: gColors) {
         c.a = gAlpha;
     }
+    if (gBingoBrawlersMode) {
+        gMaxPerRow = 5;
+        gClearQuestMultiplier = 0;
+        for (int i = 0; i < 5; i++) {
+            gScores[i] = 1;
+            gNFScores[i] = 0;
+        }
+    }
 }
 
 static void postLoad() {
     gFont = TTF_OpenFont(gFontFile.c_str(), gFontSize);
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
-    std::ifstream ifs2("data/squares.txt");
+    std::ifstream ifs("data/squares.txt");
     std::string line;
     for (auto & row : gCells) {
         for (auto & cell : row) {
-            std::getline(ifs2, line);
+            std::getline(ifs, line);
             cell.text = line;
-            auto *font = gFont;
-            auto fontSize = gFontSize;
-            while (true) {
-                auto *surface =
-                    TTF_RenderUTF8_Blended_Wrapped(font, cell.text.c_str(), gTextColor, gCellSize * 9 / 10);
-                if (surface->h <= gCellSize * 9 / 10) {
-                    cell.texture = SDL_CreateTextureFromSurface(gRenderer, surface);
-                    SDL_DestroySurface(surface);
-                    break;
-                }
-                fontSize--;
-                font = TTF_OpenFont(gFontFile.c_str(), fontSize);
-            }
-            if (font != gFont) {
-                TTF_CloseFont(font);
-            }
+            cell.updateTexture();
         }
     }
 }
@@ -509,83 +706,142 @@ int wmain(int argc, wchar_t *argv[]) {
                                 break;
                         }
                     }
-                    AppendMenuW(menu,
-                                (cell.status == 1 || cell.status == 3 || cell.status == 4 || count[0] >= gMaxPerRow ? MF_DISABLED : 0) | MF_STRING,
-                                1, (gPlayerName[0] + L"完成").c_str());
-                    AppendMenuW(menu,
-                                (cell.status == 2 || cell.status == 3 || cell.status == 4 || count[1] >= gMaxPerRow ? MF_DISABLED : 0) | MF_STRING,
-                                2, (gPlayerName[1] + L"完成").c_str());
-                    AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                    AppendMenuW(menu, (cell.status == 0 ? MF_DISABLED : 0) | MF_STRING, 3, L"重置");
-                    AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                    AppendMenuW(menu, MF_STRING | (gScoreWindows[1].hasExtraScore ? MF_DISABLED : 0), 4,
-                                (gPlayerName[0] + (gScoreWindows[0].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
-                    AppendMenuW(menu, MF_STRING | (gScoreWindows[0].hasExtraScore ? MF_DISABLED : 0), 5,
-                                (gPlayerName[1] + (gScoreWindows[1].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
-                    AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                    AppendMenuW(menu, MF_STRING, 6, L"重新开始");
-                    AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                    AppendMenuW(menu, MF_STRING, 7, L"退出");
-                    POINT pt;
-                    GetCursorPos(&pt);
-                    auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
-                    auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
-                    switch (cmd) {
-                        case 1: {
-                            if (cell.status == 0) {
+                    if (gBingoBrawlersMode) {
+                        AppendMenuW(menu,
+                                    (cell.status != 0 ? MF_DISABLED : 0)
+                                        | MF_STRING,
+                                    1, (gPlayerName[0] + L"完成").c_str());
+                        AppendMenuW(menu,
+                                    (cell.status != 0 ? MF_DISABLED : 0)
+                                        | MF_STRING,
+                                    2, (gPlayerName[1] + L"完成").c_str());
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, (cell.status == 0 ? MF_DISABLED : 0) | MF_STRING, 3, L"重置");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 5, L"重新开始");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 6, L"重新随机表格");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 7, L"退出");
+                        POINT pt;
+                        GetCursorPos(&pt);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        switch (cmd) {
+                            case 1: {
                                 cell.status = 1;
-                            } else {
-                                cell.status = 4;
+                                updateScores();
+                                break;
                             }
-                            updateScores();
-                            break;
-                        }
-                        case 2: {
-                            if (cell.status == 0) {
+                            case 2: {
                                 cell.status = 2;
-                            } else {
-                                cell.status = 3;
+                                updateScores();
+                                break;
                             }
-                            updateScores();
-                            break;
-                        }
-                        case 3: {
-                            cell.status = 0;
-                            updateScores();
-                            break;
-                        }
-                        case 4: {
-                            if (gScoreWindows[0].hasExtraScore) {
-                                gScoreWindows[0].unsetExtraScore();
-                            } else {
-                                gScoreWindows[0].setExtraScore(0);
+                            case 3: {
+                                cell.status = 0;
+                                updateScores();
+                                break;
                             }
-                            updateScores();
-                            break;
-                        }
-                        case 5: {
-                            if (gScoreWindows[1].hasExtraScore) {
-                                gScoreWindows[1].unsetExtraScore();
-                            } else {
-                                gScoreWindows[1].setExtraScore(1);
-                            }
-                            updateScores();
-                            break;
-                        }
-                        case 6: {
-                            for (auto &r: gCells) {
-                                for (auto &c: r) {
-                                    c.status = 0;
+                            case 5: {
+                                for (auto &r: gCells) {
+                                    for (auto &c: r) {
+                                        c.status = 0;
+                                    }
                                 }
+                                gScoreWindows[0].reset();
+                                gScoreWindows[1].reset();
+                                break;
                             }
-                            gScoreWindows[0].reset();
-                            gScoreWindows[1].reset();
-                            break;
+                            case 6:
+                                randomCells();
+                                break;
+                            case 7:
+                                goto QUIT;
+                            default:
+                                break;
                         }
-                        case 7:
-                            goto QUIT;
-                        default:
-                            break;
+                    } else {
+                        AppendMenuW(menu,
+                                    (cell.status == 1 || cell.status == 3 || cell.status == 4 || count[0] >= gMaxPerRow ? MF_DISABLED : 0)
+                                        | MF_STRING,
+                                    1, (gPlayerName[0] + L"完成").c_str());
+                        AppendMenuW(menu,
+                                    (cell.status == 2 || cell.status == 3 || cell.status == 4 || count[1] >= gMaxPerRow ? MF_DISABLED : 0)
+                                        | MF_STRING,
+                                    2, (gPlayerName[1] + L"完成").c_str());
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, (cell.status == 0 ? MF_DISABLED : 0) | MF_STRING, 3, L"重置");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING | (gScoreWindows[1].hasExtraScore ? MF_DISABLED : 0), 4,
+                                    (gPlayerName[0] + (gScoreWindows[0].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
+                        AppendMenuW(menu, MF_STRING | (gScoreWindows[0].hasExtraScore ? MF_DISABLED : 0), 5,
+                                    (gPlayerName[1] + (gScoreWindows[1].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 6, L"重新开始");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 7, L"退出");
+                        POINT pt;
+                        GetCursorPos(&pt);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        switch (cmd) {
+                            case 1: {
+                                if (cell.status == 0) {
+                                    cell.status = 1;
+                                } else {
+                                    cell.status = 4;
+                                }
+                                updateScores();
+                                break;
+                            }
+                            case 2: {
+                                if (cell.status == 0) {
+                                    cell.status = 2;
+                                } else {
+                                    cell.status = 3;
+                                }
+                                updateScores();
+                                break;
+                            }
+                            case 3: {
+                                cell.status = 0;
+                                updateScores();
+                                break;
+                            }
+                            case 4: {
+                                if (gScoreWindows[0].hasExtraScore) {
+                                    gScoreWindows[0].unsetExtraScore();
+                                } else {
+                                    gScoreWindows[0].setExtraScore(0);
+                                }
+                                updateScores();
+                                break;
+                            }
+                            case 5: {
+                                if (gScoreWindows[1].hasExtraScore) {
+                                    gScoreWindows[1].unsetExtraScore();
+                                } else {
+                                    gScoreWindows[1].setExtraScore(1);
+                                }
+                                updateScores();
+                                break;
+                            }
+                            case 6: {
+                                for (auto &r: gCells) {
+                                    for (auto &c: r) {
+                                        c.status = 0;
+                                    }
+                                }
+                                gScoreWindows[0].reset();
+                                gScoreWindows[1].reset();
+                                break;
+                            }
+                            case 7:
+                                goto QUIT;
+                            default:
+                                break;
+                        }
                     }
                     break;
                 }
