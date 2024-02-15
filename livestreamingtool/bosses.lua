@@ -15,11 +15,11 @@ local boss_count = 0
 
 for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/bosses.json'))) do
   local index = #bosses + 1
-  for _, v2 in pairs(v.regions) do
+  for _, v2 in ipairs(v.regions) do
     regions[v2] = index
   end
   bosses[index] = v.bosses
-  region_name[index] = v['name']
+  region_name[index] = v['region_name']
 end
 for _, v in pairs(bosses) do
   for _, v2 in pairs(v) do
