@@ -22,10 +22,10 @@ static std::string gScoreFontFile = "data/font.ttf";
 static int gScoreFontSize = 24;
 static int gScoreAlpha = 0;
 static SDL_Color gTextColor = {255, 255, 255, 255};
-static SDL_Color gColors[3] = {
+static SDL_FColor gColors[3] = {
     {0, 0, 0, 0},
-    {255, 0, 0, 0},
-    {0, 0, 255, 0},
+    {1, 0, 0, 0},
+    {0, 0, 1, 0},
 };
 static int gBingoBrawlersMode = 0;
 static int gScores[5] = {2, 4, 6, 8, 10};
@@ -58,6 +58,7 @@ struct Cell {
             }
             fontSize--;
             font = TTF_OpenFont(gFontFile.c_str(), fontSize);
+            TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
         }
         if (font != gFont) {
             TTF_CloseFont(font);
@@ -116,8 +117,8 @@ struct ScoreWindow {
             SDL_DestroyTexture(texture);
             texture = nullptr;
         }
-        auto clr = gColors[index + 1];
-        clr.a = 255;
+        auto clrf = gColors[index + 1];
+        SDL_Color clr = { (uint8_t)roundf(clrf.r * 255), (uint8_t)roundf(clrf.g * 255), (uint8_t)roundf(clrf.b * 255), 255 };
         auto surface =
             gBingoBrawlersMode
             ? TTF_RenderUTF8_Blended(gScoreFont, (playerName + (score >= 100 ? "达成Bingo" : ("完成：" + std::to_string(score) + (score >= 13 ? " 完成数获胜" : "")))).c_str(), clr)
@@ -484,15 +485,15 @@ static void load() {
         } else if (key == "Color1") {
             auto sl = splitString(value, ',');
             if (sl.size() != 3) continue;
-            gColors[1].r = std::stoi(sl[0]);
-            gColors[1].g = std::stoi(sl[1]);
-            gColors[1].b = std::stoi(sl[2]);
+            gColors[1].r = std::stof(sl[0]) / 255.f;
+            gColors[1].g = std::stof(sl[1]) / 255.f;
+            gColors[1].b = std::stof(sl[2]) / 255.f;
         } else if (key == "Color2") {
             auto sl = splitString(value, ',');
             if (sl.size() != 3) continue;
-            gColors[2].r = std::stoi(sl[0]);
-            gColors[2].g = std::stoi(sl[1]);
-            gColors[2].b = std::stoi(sl[2]);
+            gColors[2].r = std::stof(sl[0]) / 255.f;
+            gColors[2].g = std::stof(sl[1]) / 255.f;
+            gColors[2].b = std::stof(sl[2]) / 255.f;
         } else if (key == "BingoBrawlersMode") {
             gBingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
         } else if (key == "ScoreAlpha") {
@@ -550,7 +551,7 @@ static void load() {
         }
     }
     for (auto &c: gColors) {
-        c.a = gAlpha;
+        c.a = (float)gAlpha / 255.f;
     }
     if (gBingoBrawlersMode) {
         gMaxPerRow = 5;
@@ -564,6 +565,7 @@ static void load() {
 
 static void postLoad() {
     gFont = TTF_OpenFont(gFontFile.c_str(), gFontSize);
+    TTF_SetFontWrappedAlign(gFont, TTF_WRAPPED_ALIGN_CENTER);
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
     std::ifstream ifs("data/squares.txt");
     std::string line;
@@ -725,7 +727,7 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING, 7, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 1: {
@@ -783,7 +785,7 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING, 7, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 1: {
@@ -857,7 +859,7 @@ int wmain(int argc, wchar_t *argv[]) {
                 auto &cell = gCells[i][j];
                 bool dbl = cell.status > 2;
                 auto &col = gColors[dbl ? (cell.status - 2) : cell.status];
-                SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
+                SDL_SetRenderDrawColorFloat(gRenderer, col.r, col.g, col.b, col.a);
                 SDL_FRect rect = {x, y, cs, cs};
                 SDL_RenderFillRect(gRenderer, &rect);
                 if (dbl) {

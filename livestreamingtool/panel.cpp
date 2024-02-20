@@ -611,7 +611,7 @@ void Panel::showSettingsWindow() {
     if (configDialog) {
         initConfigDialog(configDialog);
     } else {
-        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROPERTY_WINDOW_WIN32_HWND_POINTER, nullptr);
+        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
     ShowWindow(configDialog, SW_SHOW);
