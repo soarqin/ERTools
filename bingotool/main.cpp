@@ -88,7 +88,11 @@ struct ScoreWindow {
         char name[256];
         WideCharToMultiByte(CP_UTF8, 0, gPlayerName[idx].c_str(), -1, name, 256, nullptr, nullptr);
         playerName = name;
-        window = SDL_CreateWindow(name, 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
+        const char *title = idx == 0 ? "Player A" : "Player B";
+        SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
+        SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
+        SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
+        window = SDL_CreateWindow(title, 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
         renderer = SDL_CreateRenderer(window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         SDL_SetWindowHitTest(window, ScoreWindowHitTestCallback, nullptr);
         int x, y, w, h;
@@ -121,7 +125,7 @@ struct ScoreWindow {
         SDL_Color clr = { (uint8_t)roundf(clrf.r * 255), (uint8_t)roundf(clrf.g * 255), (uint8_t)roundf(clrf.b * 255), 255 };
         auto surface =
             gBingoBrawlersMode
-            ? TTF_RenderUTF8_Blended(gScoreFont, (playerName + (score >= 100 ? "达成Bingo" : ("完成：" + std::to_string(score) + (score >= 13 ? " 完成数获胜" : "")))).c_str(), clr)
+            ? TTF_RenderUTF8_Blended(gScoreFont, (playerName + (score >= 100 ? "达成Bingo" : ("　" + std::to_string(score) + (score >= 13 ? "　完成数获胜" : "")))).c_str(), clr)
             : TTF_RenderUTF8_Blended(gScoreFont, (playerName + "积分：" + std::to_string(score)).c_str(), clr);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
