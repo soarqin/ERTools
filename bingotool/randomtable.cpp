@@ -4,6 +4,7 @@
 #include <fstream>
 #include <algorithm>
 #include <random>
+#include <functional>
 
 static void stripString(std::string &str) {
     str.erase(0, str.find_first_not_of(" \t"));
@@ -80,8 +81,6 @@ static void logGroup(RandomGroup *group, int indent = 0) {
 }
 
 void RandomTable::load(const char *filename) {
-    std::ifstream file(filename);
-    if (!file.is_open()) { return; }
     root_ = RandomGroup();
     groups_.clear();
     struct CurrentGroup {
@@ -90,68 +89,80 @@ void RandomTable::load(const char *filename) {
     };
     std::vector<CurrentGroup> indents = {{&root_, 0}};
     RandomGroup *lastGroup = &root_;
-    while (!file.eof()) {
-        std::string line;
-        std::getline(file, line);
-        auto pos = line.find_first_not_of(" \t");
-        if (pos == std::string::npos) { continue; }
-        line = line.substr(pos);
-        if (line.empty() || line[0] == '#' || line[0] == ';') { continue; }
-        auto lastIndent = indents.back().indent;
-        if (line.substr(0, 4) == "====") {
-            lastGroup = nullptr;
-            indents[0].group = nullptr;
-            continue;
-        }
-        if (pos > lastIndent) {
-            if (lastGroup) {
-                indents.emplace_back(CurrentGroup {lastGroup, pos });
+    std::function<void(std::string)> f = [this, &indents, &lastGroup, &f](const std::string &fn) {
+        std::ifstream file("data/" + fn);
+        if (!file.is_open()) { return; }
+        while (!file.eof()) {
+            std::string line;
+            std::getline(file, line);
+            auto pos = line.find_first_not_of(" \t");
+            if (pos == std::string::npos) { continue; }
+            line = line.substr(pos);
+            if (line.empty() || line[0] == '#' || line[0] == ';') { continue; }
+            auto lastIndent = indents.back().indent;
+            if (line.substr(0, 4) == "====") {
+                lastGroup = nullptr;
+                indents[0].group = nullptr;
+                continue;
             }
-        } else {
-            while (pos < lastIndent) {
-                indents.pop_back();
-                lastIndent = indents.back().indent;
+            if (pos > lastIndent) {
+                if (lastGroup) {
+                    indents.emplace_back(CurrentGroup{lastGroup, pos});
+                }
+            } else {
+                while (pos < lastIndent) {
+                    indents.pop_back();
+                    lastIndent = indents.back().indent;
+                }
             }
-        }
-        switch (line[0]) {
-            case '+': {
-                auto sl = splitString(line.substr(1), ',');
-                if (sl.size() == 1) {
-                    if (pos > 0) break;
-                    lastGroup = &groups_[sl[0]];
-                    if (lastGroup->name.empty()) lastGroup->name = sl[2];
+            switch (line[0]) {
+                case '@': {
+                    auto incfn = line.substr(1);
+                    stripString(incfn);
+                    if (incfn.empty()) break;
+                    f(incfn);
                     break;
                 }
-                if (sl.size() == 3) {
-                    auto &group = groups_[sl[2]];
-                    if (group.name.empty()) group.name = sl[2];
-                    lastGroup = &group;
-                    auto g = indents.back().group;
-                    if (g) {
-                        auto &ref = g->groups.emplace_back();
-                        ref.group = &group;
-                        ref.weight = std::stoi(sl[0]);
-                        ref.maxCount = std::stoi(sl[1]);
+                case '+': {
+                    auto sl = splitString(line.substr(1), ',');
+                    if (sl.size() == 1) {
+                        if (pos > 0) break;
+                        lastGroup = &groups_[sl[0]];
+                        if (lastGroup->name.empty()) lastGroup->name = sl[2];
+                        break;
                     }
-                }
-                break;
-            }
-            case '-': {
-                lastGroup = nullptr;
-                auto sl = splitString(line.substr(1), ',');
-                if (sl.size() == 2) {
-                    auto g = indents.back().group;
-                    if (g) {
-                        auto &entry = g->entries.emplace_back();
-                        entry.name = sl[1];
-                        entry.weight = std::stoi(sl[0]);
+                    if (sl.size() == 3) {
+                        auto &group = groups_[sl[2]];
+                        if (group.name.empty()) group.name = sl[2];
+                        lastGroup = &group;
+                        auto g = indents.back().group;
+                        if (g) {
+                            auto &ref = g->groups.emplace_back();
+                            ref.group = &group;
+                            ref.weight = std::stoi(sl[0]);
+                            ref.maxCount = std::stoi(sl[1]);
+                        }
                     }
+                    break;
                 }
-                break;
+                case '-': {
+                    lastGroup = nullptr;
+                    auto sl = splitString(line.substr(1), ',');
+                    if (sl.size() == 2) {
+                        auto g = indents.back().group;
+                        if (g) {
+                            auto &entry = g->entries.emplace_back();
+                            entry.name = sl[1];
+                            entry.weight = std::stoi(sl[0]);
+                        }
+                    }
+                    break;
+                }
             }
         }
-    }
-    file.close();
+        file.close();
+    };
+    f(filename);
     calcGroupWeight(&root_);
     // logGroup(&root_);
 }

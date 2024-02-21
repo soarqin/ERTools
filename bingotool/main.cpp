@@ -452,9 +452,9 @@ static std::vector<std::string> splitString(const std::string &str, char sep) {
 
 static void randomCells() {
     RandomTable rt;
-    rt.load("data/randomtable.txt");
+    rt.load("randomtable.txt");
     std::vector<std::string> result;
-    rt.generate("data/squares.txt", result);
+    rt.generate("squares.txt", result);
     size_t idx = 0;
     for (auto &r: gCells) {
         for (auto &c: r) {
