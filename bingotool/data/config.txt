@@ -1,12 +1,19 @@
+;红绿蓝范围为0-255, 255最深
+;对于透明度，0为完全透明，255为完全不透明
+
 ;表格面板选项
 ; 单个格子边长
 CellSize=150
+; 格子圆角
+CellRoundCorner=0
 ; 格子间距
-CellSpacing=5
-; 目标文字颜色
-TextColor=255,255,255
-; 格子透明度(0完全透明，255完全不透明)
-Alpha=160
+CellSpacing=3
+; 格子颜色(红,绿,蓝,透明度)
+CellColor=0,0,0,200
+; 格子间隙颜色(红,绿,蓝,透明度)
+CellSpacingColor=255,255,255,200
+; 目标文字颜色(红,绿,蓝,透明度)
+TextColor=255,255,255,200
 ; 目标文字字体
 FontFile=data/font.ttf
 ; 目标文字字体大小
@@ -19,15 +26,33 @@ Color2=32,32,255
 ;   此规则只需要完成bingo即可获胜，如果在指定时间内没有一方完成bingo，则占据格子数多者获胜
 ;   0: 关闭  1: 开启
 ;   注意：开启此规则时，积分面板的显示会变成Bingo Brawlers模式，即显示占据格子数
-BingoBrawlersMode=0
+BingoBrawlersMode=1
+; 玩家1名
+Player1=红方
+; 玩家2名
+Player2=蓝方
 
 ;积分面板选项
-; 积分面板透明度(0完全透明，255完全不透明)
-ScoreAlpha=0
+; 积分面板背景颜色(红,绿,蓝,透明度)
+ScoreBackgroundColor=0,0,0,0
+; 积分面板文字周围的边距
+ScorePadding=8
+; 积分面板圆角
+ScoreRoundCorner=10
 ; 积分文字字体
 ScoreFontFile=data/font.ttf
 ; 积分文字字体大小
 ScoreFontSize=24
+
+;在文本格式中{0}为选手名，{1}为选手积分
+; 选手积分文本格式
+ScoreFormat={1}\n{0}
+; 选手达成Bingo文本格式
+BingoFormat={1}\n{0}达成Bingo!
+; 选手积分获胜文本格式
+ScoreWinFormat={1}\n{0}获胜!
+
+;以下选项仅用于非Bingo Brawlers规则的五阶段积分制
 ; 首先完成积分
 FirstScores=2,4,6,8,10
 ; 非首先完成积分
@@ -40,7 +65,3 @@ MaxPerRow=3
 ClearScore=0
 ; 通关后的任务差积分倍率
 ClearQuestMultiplier=2
-; 玩家1名
-Player1=红方
-; 玩家2名
-Player2=蓝方

@@ -1,9 +1,11 @@
 project(bingotool C CXX)
 
 add_executable(${PROJECT_NAME} WIN32
-    main.cpp)
+    main.cpp
+    randomtable.cpp randomtable.h
+)
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers comctl32 shlwapi)
+    SDL3_gfx SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers fmt::fmt comctl32 shlwapi)
 set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
     FOLDER "apps")

@@ -1,6 +1,10 @@
+#include "randomtable.h"
+
+#include <fmt/format.h>
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
 #include <SDL3_ttf/SDL_ttf.h>
+#include <SDL3_gfxPrimitives.h>
 #include <windows.h>
 #include <shellapi.h>
 #undef WIN32_LEAN_AND_MEAN
@@ -14,18 +18,27 @@
 #include <algorithm>
 
 static int gCellSize = 150;
+static int gCellRoundCorner = 5;
 static int gCellSpacing = 2;
-static int gAlpha = 128;
+static SDL_FColor gCellColor = {0, 0, 0, 160.f / 255.f};
+static SDL_Color gCellSpacingColor = {255, 255, 255, 160};
+static SDL_Color gTextColor = {255, 255, 255, 255};
 static std::string gFontFile = "data/font.ttf";
 static int gFontSize = 24;
 static std::string gScoreFontFile = "data/font.ttf";
 static int gScoreFontSize = 24;
-static int gScoreAlpha = 0;
-static SDL_Color gTextColor = {255, 255, 255, 255};
+static SDL_Color gScoreBackgroundColor = {0, 0, 0, 0};
+static int gScorePadding = 8;
+static int gScoreRoundCorner = 10;
 static SDL_FColor gColors[3] = {
     {0, 0, 0, 0},
     {1, 0, 0, 0},
     {0, 0, 1, 0},
+};
+static SDL_Color gColorsInt[3] = {
+    {0, 0, 0, 0},
+    {255, 0, 0, 0},
+    {0, 0, 255, 0},
 };
 static int gBingoBrawlersMode = 0;
 static int gScores[5] = {2, 4, 6, 8, 10};
@@ -41,18 +54,97 @@ static SDL_Renderer *gRenderer = nullptr;
 static TTF_Font *gFont = nullptr;
 static TTF_Font *gScoreFont = nullptr;
 
+static std::string gScoreFormat = "{0}  {1}", gBingoFormat = "{0}达成Bingo!", gScoreWinFormat = "{0}  {1}  积分获胜!";
+
+static const SDL_Color black = {0x00, 0x00, 0x00, 0x00};
+static const SDL_Color white = {0xff, 0xff, 0xff, 0x00};
+
+SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength) {
+    SDL_Surface *out;
+    SDL_Surface *black_letters;
+    SDL_Surface *white_letters;
+    SDL_Surface *bg;
+    SDL_Rect dstrect;
+    Uint32 color_key;
+
+    if (!font) {
+        fprintf(stderr, "BlackOutline(): could not load needed font - returning.\n");
+        return nullptr;
+    }
+
+    if (!t || !c) {
+        fprintf(stderr, "BlackOutline(): invalid ptr parameter, returning.\n");
+        return nullptr;
+    }
+
+    if (t[0] == '\0') {
+        fprintf(stderr, "BlackOutline(): empty string, returning\n");
+        return nullptr;
+    }
+
+    black_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, black, wrapLength);
+
+    if (!black_letters) {
+        fprintf(stderr, "Warning - BlackOutline() could not create image for %s\n", t);
+        return nullptr;
+    }
+
+    bg = SDL_CreateSurface(black_letters->w + 5, black_letters->h + 5, SDL_PIXELFORMAT_RGBA8888);
+    /* Use color key for eventual transparency: */
+    color_key = SDL_MapRGB(bg->format, 01, 01, 01);
+    SDL_FillSurfaceRect(bg, nullptr, color_key);
+
+    /* Now draw black outline/shadow 2 pixels on each side: */
+    dstrect.w = black_letters->w;
+    dstrect.h = black_letters->h;
+
+    /* NOTE: can make the "shadow" more or less pronounced by */
+    /* changing the parameters of these loops.                */
+    for (dstrect.x = 1; dstrect.x < 4; dstrect.x++)
+        for (dstrect.y = 1; dstrect.y < 3; dstrect.y++)
+            SDL_BlitSurface(black_letters, nullptr, bg, &dstrect);
+
+    SDL_DestroySurface(black_letters);
+
+    /* --- Put the color version of the text on top! --- */
+    white_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
+
+    if (!white_letters) {
+        fprintf(stderr, "Warning - BlackOutline() could not create image for %s\n", t);
+        return nullptr;
+    }
+
+    dstrect.x = 1;
+    dstrect.y = 1;
+    SDL_BlitSurface(white_letters, nullptr, bg, &dstrect);
+    SDL_DestroySurface(white_letters);
+
+    /* --- Convert to the screen format for quicker blits --- */
+    SDL_SetSurfaceRLE(bg, SDL_TRUE);
+    SDL_SetSurfaceColorKey(bg, SDL_TRUE, color_key);
+    out = SDL_ConvertSurfaceFormat(bg, SDL_PIXELFORMAT_RGBA8888);
+    SDL_DestroySurface(bg);
+
+    return out;
+}
+
 struct Cell {
     std::string text;
     SDL_Texture *texture = nullptr;
     uint32_t status = 0;
+    int w = 0, h = 0;
     void updateTexture() {
         auto *font = gFont;
         auto fontSize = gFontSize;
         while (true) {
+            auto wrapLength = gCellSize * 9 / 10;
             auto *surface =
-                TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), gTextColor, gCellSize * 9 / 10);
+                TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), gTextColor, wrapLength);
             if (surface->h <= gCellSize * 9 / 10) {
-                texture = SDL_CreateTextureFromSurface(gRenderer, surface);
+                auto *shadow = BlackOutline(font, text.c_str(), &black, wrapLength);
+                SDL_BlitSurface(surface, nullptr, shadow, nullptr);
+                texture = SDL_CreateTextureFromSurface(gRenderer, shadow);
+                SDL_DestroySurface(shadow);
                 SDL_DestroySurface(surface);
                 break;
             }
@@ -63,6 +155,8 @@ struct Cell {
         if (font != gFont) {
             TTF_CloseFont(font);
         }
+        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
+        SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
     }
 };
 
@@ -95,7 +189,7 @@ struct ScoreWindow {
         window = SDL_CreateWindow(title, 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
         renderer = SDL_CreateRenderer(window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         SDL_SetWindowHitTest(window, ScoreWindowHitTestCallback, nullptr);
-        int x, y, w, h;
+        int x, y;
         SDL_GetWindowPosition(gWindow, &x, &y);
         SDL_GetWindowSize(gWindow, &w, &h);
         SDL_SetWindowPosition(window, x, y + h + 8 + idx * 50);
@@ -123,14 +217,14 @@ struct ScoreWindow {
         }
         auto clrf = gColors[index + 1];
         SDL_Color clr = { (uint8_t)roundf(clrf.r * 255), (uint8_t)roundf(clrf.g * 255), (uint8_t)roundf(clrf.b * 255), 255 };
-        auto surface =
-            gBingoBrawlersMode
-            ? TTF_RenderUTF8_Blended(gScoreFont, (playerName + (score >= 100 ? "达成Bingo" : ("　" + std::to_string(score) + (score >= 13 ? "　完成数获胜" : "")))).c_str(), clr)
-            : TTF_RenderUTF8_Blended(gScoreFont, (playerName + "积分：" + std::to_string(score)).c_str(), clr);
+        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score);
+        auto *surface = TTF_RenderUTF8_Blended_Wrapped(gScoreFont, scoreText.c_str(), clr, 0);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
-        int w, h;
-        SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
+        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
+        SDL_QueryTexture(texture, nullptr, nullptr, &tw, &th);
+        w = tw + gScorePadding * 2;
+        h = th + gScorePadding * 2 - 2;
         SDL_SetWindowSize(window, w, h);
     }
 
@@ -160,6 +254,7 @@ struct ScoreWindow {
     SDL_Window *window = nullptr;
     SDL_Renderer *renderer = nullptr;
     SDL_Texture *texture = nullptr;
+    int w = 0, h = 0, tw = 0, th = 0;
     std::string playerName;
     int index = -1;
     int score = -1;
@@ -356,97 +451,18 @@ static std::vector<std::string> splitString(const std::string &str, char sep) {
 }
 
 static void randomCells() {
-    std::ifstream ifs("data/randomtable.txt");
-    std::string line;
-    std::vector<std::string> fixed;
-    struct Group {
-        uint64_t ratio = 0;
-        uint64_t total = 0;
-        std::vector<std::pair<uint64_t, std::string>> strings;
-    };
-    std::vector<Group> groups;
-    std::vector<std::pair<uint64_t, std::string>> strings;
-    uint64_t total = 0;
-    while (!ifs.eof()) {
-        std::getline(ifs, line);
-        if (line.empty() || line[0] == ';') continue;
-        if (line[0] == 'F') {
-            auto sl = splitString(line, ',');
-            fixed.emplace_back(sl[1]);
-            continue;
-        }
-        if (line[0] == 'G') {
-            auto sl = splitString(line, ',');
-            auto id = std::stoi(sl[1]);
-            auto ratio = std::stoul(sl[2]);
-            if (id >= (int)groups.size()) {
-                groups.resize(id + 1);
-            }
-            groups[id].ratio = ratio;
-            total += ratio;
-            continue;
-        }
-        if (line[0] < '0' || line[0] > '9') continue;
-        auto sl = splitString(line, ',');
-        auto groupId = std::stoi(sl[0]);
-        auto ratio = std::stoul(sl[1]);
-        if (groupId == 0) {
-            strings.emplace_back(ratio, sl[2]);
-            total += ratio;
-        } else {
-            if (groupId >= (int)groups.size()) {
-                groups.resize(groupId + 1);
-            }
-            auto &group = groups[groupId];
-            group.strings.emplace_back(ratio, sl[2]);
-            group.total += ratio;
-        }
-    }
-    int idx = 0;
-    std::string result[25];
-    for (auto &s: fixed) {
-        result[idx] = s;
-        if (++idx >= 25) break;
-    }
-    static std::mt19937_64 rand((std::random_device())());
-    for (; idx < 25; idx++) {
-        uint64_t r = rand() % total;
-        for (auto ite = strings.begin(); ite != strings.end(); ite++) {
-            if (r < ite->first) {
-                result[idx] = ite->second;
-                total -= ite->first;
-                strings.erase(ite);
-                break;
-            }
-            r -= ite->first;
-        }
-        for (auto ite = groups.begin(); ite != groups.end(); ite++) {
-            if (r < ite->ratio) {
-                auto r2 = rand() % total;
-                for (auto &s: ite->strings) {
-                    if (r2 < s.first) {
-                        result[idx] = s.second;
-                        break;
-                    }
-                    r2 -= s.first;
-                }
-                break;
-            }
-            r -= ite->total;
-            groups.erase(ite);
-        }
-    }
-    std::shuffle(result, result + 25, rand);
-    std::ofstream ofs("data/squares.txt");
+    RandomTable rt;
+    rt.load("data/randomtable.txt");
+    std::vector<std::string> result;
+    rt.generate("data/squares.txt", result);
+    size_t idx = 0;
     for (auto &r: gCells) {
         for (auto &c: r) {
             c.status = 0;
-            c.text = result[--idx];
+            c.text = result[idx++];
             c.updateTexture();
-            ofs << c.text << std::endl;
         }
     }
-    ofs.close();
     gScoreWindows[0].reset();
     gScoreWindows[1].reset();
 }
@@ -458,6 +474,34 @@ static std::string mergeString(const std::vector<std::string> &strs, char sep) {
         result += s;
     }
     return result;
+}
+
+static void unescape(std::string &str) {
+    for (auto ite = str.begin(); ite != str.end(); ite++) {
+        if (*ite == '\\') {
+            ite = str.erase(ite);
+            if (ite == str.end()) break;
+            switch (*ite) {
+                case 'n':
+                    *ite = '\n';
+                    break;
+                case 'r':
+                    *ite = '\r';
+                    break;
+                case 't':
+                    *ite = '\t';
+                    break;
+                case '0':
+                    *ite = '\0';
+                    break;
+                case '\\':
+                    break;
+                default:
+                    ite--;
+                    break;
+            }
+        }
+    }
 }
 
 static void load() {
@@ -472,40 +516,73 @@ static void load() {
         auto value = line.substr(pos + 1);
         if (key == "CellSize") {
             gCellSize = std::stoi(value);
+        } else if (key == "CellRoundCorner") {
+            gCellRoundCorner = std::stoi(value);
         } else if (key == "CellSpacing") {
             gCellSpacing = std::stoi(value);
         } else if (key == "FontFile") {
             gFontFile = value;
+        } else if (key == "CellColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gCellColor.r = std::stof(sl[0]) / 255.f;
+            gCellColor.g = std::stof(sl[1]) / 255.f;
+            gCellColor.b = std::stof(sl[2]) / 255.f;
+            gCellColor.a = std::stof(sl[3]) / 255.f;
+        } else if (key == "CellSpacingColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gCellSpacingColor.r = std::stoi(sl[0]);
+            gCellSpacingColor.g = std::stoi(sl[1]);
+            gCellSpacingColor.b = std::stoi(sl[2]);
+            gCellSpacingColor.a = std::stoi(sl[3]);
         } else if (key == "FontSize") {
             gFontSize = std::stoi(value);
-        } else if (key == "Alpha") {
-            gAlpha = std::stoi(value);
         } else if (key == "TextColor") {
             auto sl = splitString(value, ',');
-            if (sl.size() != 3) continue;
+            if (sl.size() != 4) continue;
             gTextColor.r = std::stoi(sl[0]);
             gTextColor.g = std::stoi(sl[1]);
             gTextColor.b = std::stoi(sl[2]);
+            gTextColor.a = std::stoi(sl[3]);
         } else if (key == "Color1") {
             auto sl = splitString(value, ',');
             if (sl.size() != 3) continue;
-            gColors[1].r = std::stof(sl[0]) / 255.f;
-            gColors[1].g = std::stof(sl[1]) / 255.f;
-            gColors[1].b = std::stof(sl[2]) / 255.f;
+            gColorsInt[1].r = std::stoi(sl[0]);
+            gColorsInt[1].g = std::stoi(sl[1]);
+            gColorsInt[1].b = std::stoi(sl[2]);
         } else if (key == "Color2") {
             auto sl = splitString(value, ',');
             if (sl.size() != 3) continue;
-            gColors[2].r = std::stof(sl[0]) / 255.f;
-            gColors[2].g = std::stof(sl[1]) / 255.f;
-            gColors[2].b = std::stof(sl[2]) / 255.f;
+            gColorsInt[2].r = std::stoi(sl[0]);
+            gColorsInt[2].g = std::stoi(sl[1]);
+            gColorsInt[2].b = std::stoi(sl[2]);
         } else if (key == "BingoBrawlersMode") {
             gBingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
-        } else if (key == "ScoreAlpha") {
-            gScoreAlpha = std::stoi(value);
+        } else if (key == "ScoreBackgroundColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gScoreBackgroundColor.r = std::stoi(sl[0]);
+            gScoreBackgroundColor.g = std::stoi(sl[1]);
+            gScoreBackgroundColor.b = std::stoi(sl[2]);
+            gScoreBackgroundColor.a = std::stoi(sl[3]);
+        } else if (key == "ScorePadding") {
+            gScorePadding = std::stoi(value);
+        } else if (key == "ScoreRoundCorner") {
+            gScoreRoundCorner = std::stoi(value);
         } else if (key == "ScoreFontFile") {
             gScoreFontFile = value;
         } else if (key == "ScoreFontSize") {
             gScoreFontSize = std::stoi(value);
+        } else if (key == "ScoreFormat") {
+            gScoreFormat = value;
+            unescape(gScoreFormat);
+        } else if (key == "BingoFormat") {
+            gBingoFormat = value;
+            unescape(gBingoFormat);
+        } else if (key == "ScoreWinFormat") {
+            gScoreWinFormat = value;
+            unescape(gScoreWinFormat);
         } else if (key == "FirstScores") {
             auto sl = splitString(value, ',');
             int sz = (int)sl.size();
@@ -554,8 +631,13 @@ static void load() {
             gPlayerName[1] = name;
         }
     }
-    for (auto &c: gColors) {
-        c.a = (float)gAlpha / 255.f;
+    for (int i = 0; i < 3; i++) {
+        auto &c = gColors[i];
+        c.r = (float)gColorsInt[i].r / 255.f;
+        c.g = (float)gColorsInt[i].g / 255.f;
+        c.b = (float)gColorsInt[i].b / 255.f;
+        c.a = gCellColor.a;
+        gColorsInt[i].a = (int)roundf(c.a * 255.f);
     }
     if (gBingoBrawlersMode) {
         gMaxPerRow = 5;
@@ -571,6 +653,7 @@ static void postLoad() {
     gFont = TTF_OpenFont(gFontFile.c_str(), gFontSize);
     TTF_SetFontWrappedAlign(gFont, TTF_WRAPPED_ALIGN_CENTER);
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
+    TTF_SetFontWrappedAlign(gScoreFont, TTF_WRAPPED_ALIGN_CENTER);
     std::ifstream ifs("data/squares.txt");
     std::string line;
     for (auto & row : gCells) {
@@ -659,16 +742,13 @@ int wmain(int argc, wchar_t *argv[]) {
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     gWindow = SDL_CreateWindow("BingoTool",
-                               gCellSize * 5 + gCellSpacing * 4,
-                               gCellSize * 5 + gCellSpacing * 4,
+                               gCellSize * 5 + gCellSpacing * 6,
+                               gCellSize * 5 + gCellSpacing * 6,
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(gWindow, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(gWindow, HitTestCallback, nullptr);
-    SDL_SetRenderDrawBlendMode(gRenderer,
-                               SDL_ComposeCustomBlendMode(SDL_BLENDFACTOR_SRC_COLOR, SDL_BLENDFACTOR_ZERO,
-                                                          SDL_BLENDOPERATION_ADD, SDL_BLENDFACTOR_SRC_ALPHA,
-                                                          SDL_BLENDFACTOR_ZERO, SDL_BLENDOPERATION_ADD));
+    SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
 
     postLoad();
     gScoreWindows[0].create(0);
@@ -691,8 +771,8 @@ int wmain(int argc, wchar_t *argv[]) {
                     float fx, fy;
                     SDL_GetMouseState(&fx, &fy);
                     int x = (int)fx, y = (int)fy;
-                    int dx = x / (gCellSize + gCellSpacing);
-                    int dy = y / (gCellSize + gCellSpacing);
+                    int dx = (x - gCellSpacing) / (gCellSize + gCellSpacing);
+                    int dy = (y - gCellSpacing) / (gCellSize + gCellSpacing);
                     if (dx >= gCellSize || dy >= gCellSize) break;
                     auto &cell = gCells[dy][dx];
                     auto menu = CreatePopupMenu();
@@ -855,45 +935,60 @@ int wmain(int argc, wchar_t *argv[]) {
         }
         SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0);
         SDL_RenderClear(gRenderer);
-        auto cs = (float)gCellSize;
+        SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_BLEND);
+        SDL_SetRenderDrawColor(gRenderer, gCellSpacingColor.r, gCellSpacingColor.g, gCellSpacingColor.b, gCellSpacingColor.a);
+        SDL_RenderFillRect(gRenderer, nullptr);
+        SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
+        auto cs = gCellSize;
         for (int i = 0; i < 5; i++) {
-            auto y = (float)(i * (gCellSize + gCellSpacing));
+            auto y = i * (gCellSize + gCellSpacing) + gCellSpacing;
             for (int j = 0; j < 5; j++) {
-                auto x = (float)(j * (gCellSize + gCellSpacing));
+                auto x = j * (gCellSize + gCellSpacing) + gCellSpacing;
                 auto &cell = gCells[i][j];
                 bool dbl = cell.status > 2;
-                auto &col = gColors[dbl ? (cell.status - 2) : cell.status];
-                SDL_SetRenderDrawColorFloat(gRenderer, col.r, col.g, col.b, col.a);
-                SDL_FRect rect = {x, y, cs, cs};
-                SDL_RenderFillRect(gRenderer, &rect);
+                auto fx = (float)x, fy = (float)y, fcs = (float)cs;
+                auto &col = gColorsInt[dbl ? (cell.status - 2) : cell.status];
+                if (gCellRoundCorner > 0) {
+                    roundedBoxRGBA(gRenderer, x, y, x + cs, y + cs, gCellRoundCorner, col.r, col.g, col.b, col.a);
+                } else {
+                    SDL_FRect dstrect = {fx, fy, fcs, fcs};
+                    SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
+                    SDL_RenderFillRect(gRenderer, &dstrect);
+                }
                 if (dbl) {
                     auto &color = gColors[5 - cell.status];
                     const SDL_Vertex verts[] = {
-                        {SDL_FPoint{x, y + cs}, color, SDL_FPoint{0},},
-                        {SDL_FPoint{x, y + cs * .7f}, color, SDL_FPoint{0},},
-                        {SDL_FPoint{x + cs * .3f, y + cs}, color, SDL_FPoint{0},},
+                        {SDL_FPoint{fx, fy + fcs}, color, SDL_FPoint{0},},
+                        {SDL_FPoint{fx, fy + fcs * .7f}, color, SDL_FPoint{0},},
+                        {SDL_FPoint{fx + fcs * .3f, fy + fcs}, color, SDL_FPoint{0},},
                     };
                     SDL_RenderGeometry(gRenderer, nullptr, verts, 3, nullptr, 0);
                 }
                 if (cell.texture) {
-                    int w, h;
-                    SDL_QueryTexture(cell.texture, nullptr, nullptr, &w, &h);
-                    auto ww = (float)w, hh = (float)h;
-                    auto l = (float)(gCellSize - w) / 2, t = (float)(gCellSize - h) / 2;
-                    rect = {x + l, y + t, ww, hh};
+                    auto fw = (float)cell.w, fh = (float)cell.h;
+                    auto l = (float)(gCellSize - cell.w) * .5f, t = (float)(gCellSize - cell.h) * .5f;
+                    SDL_FRect rect = {fx + l, fy + t, fw, fh};
                     SDL_RenderTexture(gRenderer, cell.texture, nullptr, &rect);
                 }
             }
         }
         for (auto &sw : gScoreWindows) {
-            SDL_SetRenderDrawColor(sw.renderer, 0, 0, 0, gScoreAlpha);
+            SDL_SetRenderDrawColor(sw.renderer, 0, 0, 0, 0);
             SDL_RenderClear(sw.renderer);
-            SDL_RenderTexture(sw.renderer, sw.texture, nullptr, nullptr);
+            if (gScoreRoundCorner > 0)
+                roundedBoxRGBA(sw.renderer, 0, 0, sw.w, sw.h, gScoreRoundCorner, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
+            else {
+                SDL_SetRenderDrawColor(sw.renderer, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
+                SDL_FRect dstrect = {0, 0, (float)sw.w, (float)sw.h};
+                SDL_RenderFillRect(sw.renderer, &dstrect);
+            }
+            SDL_FRect dstRect = {(float)(sw.w - sw.tw) * .5f, (float)(sw.h - sw.th) * .5f + 1.f, (float)sw.tw, (float)sw.th};
+            SDL_RenderTexture(sw.renderer, sw.texture, nullptr, &dstRect);
             SDL_RenderPresent(sw.renderer);
         }
         SDL_RenderPresent(gRenderer);
     }
-    QUIT:
+QUIT:
     saveState();
     TTF_CloseFont(gScoreFont);
     TTF_CloseFont(gFont);
