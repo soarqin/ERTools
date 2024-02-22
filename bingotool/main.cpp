@@ -20,7 +20,6 @@
 static int gCellSize = 150;
 static int gCellRoundCorner = 5;
 static int gCellSpacing = 2;
-static SDL_FColor gCellColor = {0, 0, 0, 160.f / 255.f};
 static SDL_Color gCellSpacingColor = {255, 255, 255, 160};
 static SDL_Color gTextColor = {255, 255, 255, 255};
 static std::string gFontFile = "data/font.ttf";
@@ -526,10 +525,10 @@ static void load() {
         } else if (key == "CellColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
-            gCellColor.r = std::stof(sl[0]) / 255.f;
-            gCellColor.g = std::stof(sl[1]) / 255.f;
-            gCellColor.b = std::stof(sl[2]) / 255.f;
-            gCellColor.a = std::stof(sl[3]) / 255.f;
+            gColorsInt[0].r = std::stoi(sl[0]);
+            gColorsInt[0].g = std::stoi(sl[1]);
+            gColorsInt[0].b = std::stoi(sl[2]);
+            gColorsInt[0].a = std::stoi(sl[3]);
         } else if (key == "CellSpacingColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -637,8 +636,9 @@ static void load() {
         c.r = (float)gColorsInt[i].r / 255.f;
         c.g = (float)gColorsInt[i].g / 255.f;
         c.b = (float)gColorsInt[i].b / 255.f;
-        c.a = gCellColor.a;
-        gColorsInt[i].a = (int)roundf(c.a * 255.f);
+        if (i > 0)
+            gColorsInt[i].a = gColorsInt[0].a;
+        c.a = (float)gColorsInt[i].a / 255.f;
     }
     if (gBingoBrawlersMode) {
         gMaxPerRow = 5;
