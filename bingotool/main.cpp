@@ -58,7 +58,7 @@ static std::string gScoreFormat = "{0}  {1}", gBingoFormat = "{0}达成Bingo!", 
 static const SDL_Color black = {0x00, 0x00, 0x00, 0x00};
 static const SDL_Color white = {0xff, 0xff, 0xff, 0x00};
 
-SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength) {
+SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, int outline) {
     SDL_Surface *out;
     SDL_Surface *black_letters;
     SDL_Surface *white_letters;
@@ -88,7 +88,8 @@ SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int
         return nullptr;
     }
 
-    bg = SDL_CreateSurface(black_letters->w + 5, black_letters->h + 5, SDL_PIXELFORMAT_RGBA8888);
+    auto ol = 1 + outline * 2;
+    bg = SDL_CreateSurface(black_letters->w + ol, black_letters->h + ol, SDL_PIXELFORMAT_RGBA8888);
     /* Use color key for eventual transparency: */
     color_key = SDL_MapRGB(bg->format, 01, 01, 01);
     SDL_FillSurfaceRect(bg, nullptr, color_key);
@@ -99,8 +100,8 @@ SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int
 
     /* NOTE: can make the "shadow" more or less pronounced by */
     /* changing the parameters of these loops.                */
-    for (dstrect.x = 1; dstrect.x < 4; dstrect.x++)
-        for (dstrect.y = 1; dstrect.y < 3; dstrect.y++)
+    for (dstrect.x = 0; dstrect.x < ol; dstrect.x++)
+        for (dstrect.y = 0; dstrect.y < ol; dstrect.y++)
             SDL_BlitSurface(black_letters, nullptr, bg, &dstrect);
 
     SDL_DestroySurface(black_letters);
@@ -113,8 +114,8 @@ SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int
         return nullptr;
     }
 
-    dstrect.x = 1;
-    dstrect.y = 1;
+    dstrect.x = outline;
+    dstrect.y = outline;
     SDL_BlitSurface(white_letters, nullptr, bg, &dstrect);
     SDL_DestroySurface(white_letters);
 
@@ -139,15 +140,13 @@ struct Cell {
         while (true) {
             auto wrapLength = gCellSize * 9 / 10;
             auto *surface =
-                TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), gTextColor, wrapLength);
+                BlackOutline(font, text.c_str(), &gTextColor, wrapLength, 2);
             if (surface->h <= gCellSize * 9 / 10) {
-                auto *shadow = BlackOutline(font, text.c_str(), &black, wrapLength);
-                SDL_BlitSurface(surface, nullptr, shadow, nullptr);
-                texture = SDL_CreateTextureFromSurface(gRenderer, shadow);
-                SDL_DestroySurface(shadow);
+                texture = SDL_CreateTextureFromSurface(gRenderer, surface);
                 SDL_DestroySurface(surface);
                 break;
             }
+            SDL_DestroySurface(surface);
             fontSize--;
             font = TTF_OpenFont(gFontFile.c_str(), fontSize);
             TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);

@@ -179,7 +179,7 @@ void RandomTable::generate(const char *filename, std::vector<std::string> &resul
     std::ofstream ofs("data/squares.txt");
     for (int i = 0; i < 25; i++) {
         const auto s = randomGroupEntry(&gen, rd);
-        fmt::print(ofs, "{}\n", s);
+        ofs << s << std::endl;
         result.emplace_back(s);
     }
     ofs.close();
