@@ -134,6 +134,7 @@ struct Cell {
     uint32_t status = 0;
     int w = 0, h = 0;
     void updateTexture() {
+        if (text.empty()) return;
         auto *font = gFont;
         auto fontSize = gFontSize;
         while (true) {

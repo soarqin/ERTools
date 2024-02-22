@@ -53,9 +53,14 @@ static const std::string randomGroupEntry(RandomGroup *group, RANDENGINE &re) {
         }
         weight -= e.weight;
     }
-    for (auto ite = group->groups.begin(); ite != group->groups.end(); ite++) {
+    for (auto ite = group->groups.begin(); ite != group->groups.end();) {
         auto &ref = *ite;
         if (weight < ref.weight) {
+            if (ref.group->totalWeight == 0) {
+                group->totalWeight -= ref.weight;
+                ite = group->groups.erase(ite);
+                continue;
+            }
             const auto res = randomGroupEntry(ref.group, re);
             if (--ref.maxCount <= 0) {
                 group->totalWeight -= ref.weight;
@@ -64,6 +69,7 @@ static const std::string randomGroupEntry(RandomGroup *group, RANDENGINE &re) {
             return res;
         }
         weight -= ref.weight;
+        ite++;
     }
     return "";
 }
