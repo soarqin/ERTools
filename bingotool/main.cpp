@@ -64,7 +64,6 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
     if (outline <= 0)
         return TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
 
-    SDL_Surface *out;
     SDL_Surface *black_letters;
     SDL_Surface *white_letters;
     SDL_Surface *bg;
@@ -95,9 +94,6 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
 
     auto ol = 1 + outline * 2;
     bg = SDL_CreateSurface(black_letters->w + ol, black_letters->h + ol, SDL_PIXELFORMAT_RGBA8888);
-    /* Use color key for eventual transparency: */
-    color_key = SDL_MapRGB(bg->format, 01, 01, 01);
-    SDL_FillSurfaceRect(bg, nullptr, color_key);
 
     /* Now draw black outline/shadow 2 pixels on each side: */
     dstrect.w = black_letters->w;
@@ -124,13 +120,7 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
     SDL_BlitSurface(white_letters, nullptr, bg, &dstrect);
     SDL_DestroySurface(white_letters);
 
-    /* --- Convert to the screen format for quicker blits --- */
-    SDL_SetSurfaceRLE(bg, SDL_TRUE);
-    SDL_SetSurfaceColorKey(bg, SDL_TRUE, color_key);
-    out = SDL_ConvertSurfaceFormat(bg, SDL_PIXELFORMAT_RGBA8888);
-    SDL_DestroySurface(bg);
-
-    return out;
+    return bg;
 }
 
 struct Cell {
@@ -222,7 +212,7 @@ struct ScoreWindow {
         auto clrf = gColors[index + 1];
         SDL_Color clr = { (uint8_t)roundf(clrf.r * 255), (uint8_t)roundf(clrf.g * 255), (uint8_t)roundf(clrf.b * 255), 255 };
         auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score);
-        auto *surface = TTF_RenderUTF8_Blended_Wrapped(gScoreFont, scoreText.c_str(), clr, 0);
+        auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
         SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
@@ -975,7 +965,7 @@ int wmain(int argc, wchar_t *argv[]) {
                 auto fx = (float)x, fy = (float)y, fcs = (float)cs;
                 auto &col = gColorsInt[dbl ? (cell.status - 2) : cell.status];
                 if (gCellRoundCorner > 0) {
-                    roundedBoxRGBA(gRenderer, x, y, x + cs, y + cs, gCellRoundCorner, col.r, col.g, col.b, col.a);
+                    roundedBoxRGBA(gRenderer, x, y, x + cs - 1, y + cs - 1, gCellRoundCorner, col.r, col.g, col.b, col.a);
                 } else {
                     SDL_FRect dstrect = {fx, fy, fcs, fcs};
                     SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
@@ -1002,7 +992,7 @@ int wmain(int argc, wchar_t *argv[]) {
             SDL_SetRenderDrawColor(sw.renderer, 0, 0, 0, 0);
             SDL_RenderClear(sw.renderer);
             if (gScoreRoundCorner > 0)
-                roundedBoxRGBA(sw.renderer, 0, 0, sw.w, sw.h, gScoreRoundCorner, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
+                roundedBoxRGBA(sw.renderer, 0, 0, sw.w - 1, sw.h - 1, gScoreRoundCorner, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
             else {
                 SDL_SetRenderDrawColor(sw.renderer, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
                 SDL_FRect dstrect = {0, 0, (float)sw.w, (float)sw.h};
