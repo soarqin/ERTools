@@ -1,4 +1,5 @@
 #include "randomtable.h"
+#include "common.h"
 
 #include <fmt/format.h>
 #define WIN32_LEAN_AND_MEAN
@@ -31,6 +32,8 @@ static int gScoreFontSize = 24;
 static SDL_Color gScoreBackgroundColor = {0, 0, 0, 0};
 static int gScorePadding = 8;
 static int gScoreRoundCorner = 0;
+static std::string gColorTextureFile[2];
+static SDL_Texture *gColorTexture[2] = {nullptr, nullptr};
 static SDL_FColor gColors[3] = {
     {0, 0, 0, 0},
     {1, 0, 0, 0},
@@ -40,6 +43,10 @@ static SDL_Color gColorsInt[3] = {
     {0, 0, 0, 0},
     {255, 0, 0, 0},
     {0, 0, 255, 0},
+};
+static SDL_Color gScoreColors[2] = {
+    {255, 0, 0, 255},
+    {0, 0, 255, 255},
 };
 static int gBingoBrawlersMode = 0;
 static int gScores[5] = {2, 4, 6, 8, 10};
@@ -209,10 +216,8 @@ struct ScoreWindow {
             SDL_DestroyTexture(texture);
             texture = nullptr;
         }
-        auto clrf = gColors[index + 1];
-        SDL_Color clr = { (uint8_t)roundf(clrf.r * 255), (uint8_t)roundf(clrf.g * 255), (uint8_t)roundf(clrf.b * 255), 255 };
         auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score);
-        auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
+        auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gScoreColors[index], 0, &gTextShadowColor, gTextShadow);
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_DestroySurface(surface);
         SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
@@ -559,18 +564,42 @@ static void load() {
             gTextShadowColor.a = std::stoi(sl[3]);
         } else if (key == "Color1") {
             auto sl = splitString(value, ',');
-            if (sl.size() != 3) continue;
-            gColorsInt[1].r = std::stoi(sl[0]);
-            gColorsInt[1].g = std::stoi(sl[1]);
-            gColorsInt[1].b = std::stoi(sl[2]);
+            if (sl.size() == 3) {
+                gColorsInt[1].r = std::stoi(sl[0]);
+                gColorsInt[1].g = std::stoi(sl[1]);
+                gColorsInt[1].b = std::stoi(sl[2]);
+                gColorTextureFile[0].clear();
+                gColorTexture[0] = nullptr;
+            } else if (sl.size() == 1) {
+                gColorTextureFile[0] = sl[0].c_str();
+            }
         } else if (key == "Color2") {
             auto sl = splitString(value, ',');
-            if (sl.size() != 3) continue;
-            gColorsInt[2].r = std::stoi(sl[0]);
-            gColorsInt[2].g = std::stoi(sl[1]);
-            gColorsInt[2].b = std::stoi(sl[2]);
+            if (sl.size() == 3) {
+                gColorsInt[2].r = std::stoi(sl[0]);
+                gColorsInt[2].g = std::stoi(sl[1]);
+                gColorsInt[2].b = std::stoi(sl[2]);
+                gColorTextureFile[1].clear();
+                gColorTexture[1] = nullptr;
+            } else if (sl.size() == 1) {
+                gColorTextureFile[1] = sl[0].c_str();
+            }
         } else if (key == "BingoBrawlersMode") {
             gBingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
+        } else if (key == "ScoreColor1") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 3) continue;
+            gScoreColors[0].r = std::stoi(sl[0]);
+            gScoreColors[0].g = std::stoi(sl[1]);
+            gScoreColors[0].b = std::stoi(sl[2]);
+            gScoreColors[0].a = 255;
+        } else if (key == "ScoreColor2") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 3) continue;
+            gScoreColors[1].r = std::stoi(sl[0]);
+            gScoreColors[1].g = std::stoi(sl[1]);
+            gScoreColors[1].b = std::stoi(sl[2]);
+            gScoreColors[1].a = 255;
         } else if (key == "ScoreBackgroundColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -762,6 +791,10 @@ int wmain(int argc, wchar_t *argv[]) {
     gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(gWindow, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
+    for (int i = 0; i < 2; i++) {
+        if (gColorTextureFile[i].empty()) continue;
+        gColorTexture[i] = loadTexture(gRenderer, gColorTextureFile[i].c_str());
+    }
 
     postLoad();
     gScoreWindows[0].create(0);
@@ -963,13 +996,19 @@ int wmain(int argc, wchar_t *argv[]) {
                 auto &cell = gCells[i][j];
                 bool dbl = cell.status > 2;
                 auto fx = (float)x, fy = (float)y, fcs = (float)cs;
-                auto &col = gColorsInt[dbl ? (cell.status - 2) : cell.status];
-                if (gCellRoundCorner > 0) {
-                    roundedBoxRGBA(gRenderer, x, y, x + cs - 1, y + cs - 1, gCellRoundCorner, col.r, col.g, col.b, col.a);
-                } else {
+                auto status = dbl ? (cell.status - 2) : cell.status;
+                if (status > 0 && gColorTexture[status - 1]) {
                     SDL_FRect dstrect = {fx, fy, fcs, fcs};
-                    SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
-                    SDL_RenderFillRect(gRenderer, &dstrect);
+                    SDL_RenderTexture(gRenderer, gColorTexture[status - 1], nullptr, &dstrect);
+                } else {
+                    auto &col = gColorsInt[status];
+                    if (gCellRoundCorner > 0) {
+                        roundedBoxRGBA(gRenderer, x, y, x + cs - 1, y + cs - 1, gCellRoundCorner, col.r, col.g, col.b, col.a);
+                    } else {
+                        SDL_FRect dstrect = {fx, fy, fcs, fcs};
+                        SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
+                        SDL_RenderFillRect(gRenderer, &dstrect);
+                    }
                 }
                 if (dbl) {
                     auto &color = gColors[5 - cell.status];

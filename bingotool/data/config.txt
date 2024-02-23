@@ -26,10 +26,10 @@ TextShadowColor=0,0,0,200
 FontFile=data/font.ttf
 ; 目标文字字体大小
 FontSize=24
-; 玩家1颜色(红,绿,蓝)
-Color1=255,32,32
-; 玩家2颜色(红,绿,蓝)
-Color2=32,32,255
+; 玩家1颜色，可以为两种形式之一：1. RGB(红,绿,蓝)   2. 贴图文件路径
+Color1=data/red.png
+; 玩家2颜色，可以为两种形式之一：1. RGB(红,绿,蓝)   2. 贴图文件路径
+Color2=data/blue.png
 ; 是否Bingo Brawlers规则
 ;   此规则只需要完成bingo即可获胜，如果在指定时间内没有一方完成bingo，则占据格子数多者获胜
 ;   0: 关闭  1: 开启
@@ -41,6 +41,10 @@ Player1=红方
 Player2=蓝方
 
 ;积分面板选项
+; 玩家1积分颜色(红,绿,蓝)
+ScoreColor1=255,32,32
+; 玩家2积分颜色(红,绿,蓝)
+ScoreColor2=32,32,255
 ; 积分面板背景颜色(红,绿,蓝,透明度)
 ScoreBackgroundColor=0,0,0,0
 ; 积分面板文字周围的边距
