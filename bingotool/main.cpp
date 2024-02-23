@@ -44,10 +44,6 @@ static SDL_Color gColorsInt[3] = {
     {255, 0, 0, 0},
     {0, 0, 255, 0},
 };
-static SDL_Color gScoreColors[2] = {
-    {255, 0, 0, 255},
-    {0, 0, 255, 255},
-};
 static int gBingoBrawlersMode = 0;
 static int gScores[5] = {2, 4, 6, 8, 10};
 static int gNFScores[5] = {1, 2, 3, 4, 5};
@@ -194,9 +190,16 @@ struct ScoreWindow {
         SDL_GetWindowPosition(gWindow, &x, &y);
         SDL_GetWindowSize(gWindow, &w, &h);
         SDL_SetWindowPosition(window, x, y + h + 8 + idx * 50);
+        if (!gColorTextureFile[index].empty()) {
+            colorMask = loadTexture(renderer, gColorTextureFile[index].c_str());
+        }
     }
 
     void destroy() {
+        if (colorMask) {
+            SDL_DestroyTexture(colorMask);
+            colorMask = nullptr;
+        }
         if (texture) {
             SDL_DestroyTexture(texture);
             texture = nullptr;
@@ -216,10 +219,24 @@ struct ScoreWindow {
             SDL_DestroyTexture(texture);
             texture = nullptr;
         }
-        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score);
-        auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gScoreColors[index], 0, &gTextShadowColor, gTextShadow);
-        texture = SDL_CreateTextureFromSurface(renderer, surface);
-        SDL_DestroySurface(surface);
+        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score >= 100 ? "Bingo!" : std::to_string(score));
+        if (colorMask) {
+            SDL_Color clr = {255, 255, 255, 255};
+            auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
+            auto *texture2 = SDL_CreateTextureFromSurface(renderer, surface);
+            SDL_DestroySurface(surface);
+            texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, surface->w, surface->h);
+            SDL_SetRenderTarget(renderer, texture);
+            SDL_RenderTexture(renderer, texture2, nullptr, nullptr);
+            SDL_SetTextureBlendMode(colorMask, SDL_BLENDMODE_MUL);
+            SDL_RenderTexture(renderer, colorMask, nullptr, nullptr);
+            SDL_DestroyTexture(texture2);
+            SDL_SetRenderTarget(renderer, nullptr);
+        } else {
+            auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
+            texture = SDL_CreateTextureFromSurface(renderer, surface);
+            SDL_DestroySurface(surface);
+        }
         SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
         SDL_QueryTexture(texture, nullptr, nullptr, &tw, &th);
         w = tw + gScorePadding * 2;
@@ -253,6 +270,7 @@ struct ScoreWindow {
     SDL_Window *window = nullptr;
     SDL_Renderer *renderer = nullptr;
     SDL_Texture *texture = nullptr;
+    SDL_Texture *colorMask = nullptr;
     int w = 0, h = 0, tw = 0, th = 0;
     std::string playerName;
     int index = -1;
@@ -586,20 +604,6 @@ static void load() {
             }
         } else if (key == "BingoBrawlersMode") {
             gBingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
-        } else if (key == "ScoreColor1") {
-            auto sl = splitString(value, ',');
-            if (sl.size() != 3) continue;
-            gScoreColors[0].r = std::stoi(sl[0]);
-            gScoreColors[0].g = std::stoi(sl[1]);
-            gScoreColors[0].b = std::stoi(sl[2]);
-            gScoreColors[0].a = 255;
-        } else if (key == "ScoreColor2") {
-            auto sl = splitString(value, ',');
-            if (sl.size() != 3) continue;
-            gScoreColors[1].r = std::stoi(sl[0]);
-            gScoreColors[1].g = std::stoi(sl[1]);
-            gScoreColors[1].b = std::stoi(sl[2]);
-            gScoreColors[1].a = 255;
         } else if (key == "ScoreBackgroundColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -1045,6 +1049,9 @@ int wmain(int argc, wchar_t *argv[]) {
     }
 QUIT:
     saveState();
+    for (int i = 0; i < 2; i++) {
+        SDL_DestroyTexture(gColorTexture[i]);
+    }
     TTF_CloseFont(gScoreFont);
     TTF_CloseFont(gFont);
     for (auto &w: gScoreWindows) {

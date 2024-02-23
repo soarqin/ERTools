@@ -41,10 +41,6 @@ Player1=红方
 Player2=蓝方
 
 ;积分面板选项
-; 玩家1积分颜色(红,绿,蓝)
-ScoreColor1=255,32,32
-; 玩家2积分颜色(红,绿,蓝)
-ScoreColor2=32,32,255
 ; 积分面板背景颜色(红,绿,蓝,透明度)
 ScoreBackgroundColor=0,0,0,0
 ; 积分面板文字周围的边距
@@ -60,7 +56,7 @@ ScoreFontSize=24
 ; 选手积分文本格式
 ScoreFormat={1}\n{0}
 ; 选手达成Bingo文本格式
-BingoFormat={1}\n{0}达成Bingo!
+BingoFormat={1}\n{0}
 ; 选手积分获胜文本格式
 ScoreWinFormat={1}\n{0}获胜!
 
