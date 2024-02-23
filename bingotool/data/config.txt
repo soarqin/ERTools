@@ -18,6 +18,10 @@ CellSpacingColor=255,255,255,200
 CellBorderColor=255,255,255,200
 ; 目标文字颜色(红,绿,蓝,透明度)
 TextColor=255,255,255,200
+; 文字阴影厚度
+TextShadow=0
+; 文字阴影颜色
+TextShadowColor=0,0,0,200
 ; 目标文字字体
 FontFile=data/font.ttf
 ; 目标文字字体大小

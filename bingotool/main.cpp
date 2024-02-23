@@ -22,6 +22,8 @@ static int gCellBorder = 0;
 static SDL_Color gCellSpacingColor = {255, 255, 255, 160};
 static SDL_Color gCellBorderColor = {0, 0, 0, 0};
 static SDL_Color gTextColor = {255, 255, 255, 255};
+static int gTextShadow = 0;
+static SDL_Color gTextShadowColor = {0, 0, 0, 255};
 static std::string gFontFile = "data/font.ttf";
 static int gFontSize = 24;
 static std::string gScoreFontFile = "data/font.ttf";
@@ -58,7 +60,10 @@ static std::string gScoreFormat = "{0}  {1}", gBingoFormat = "{0}达成Bingo!", 
 static const SDL_Color black = {0x00, 0x00, 0x00, 0x00};
 static const SDL_Color white = {0xff, 0xff, 0xff, 0x00};
 
-SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, int outline) {
+SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, const SDL_Color *shadowColor, int outline) {
+    if (outline <= 0)
+        return TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
+
     SDL_Surface *out;
     SDL_Surface *black_letters;
     SDL_Surface *white_letters;
@@ -67,24 +72,24 @@ SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int
     Uint32 color_key;
 
     if (!font) {
-        fprintf(stderr, "BlackOutline(): could not load needed font - returning.\n");
+        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): could not load needed font - returning.\n");
         return nullptr;
     }
 
     if (!t || !c) {
-        fprintf(stderr, "BlackOutline(): invalid ptr parameter, returning.\n");
+        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): invalid ptr parameter, returning.\n");
         return nullptr;
     }
 
     if (t[0] == '\0') {
-        fprintf(stderr, "BlackOutline(): empty string, returning\n");
+        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): empty string, returning\n");
         return nullptr;
     }
 
-    black_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, black, wrapLength);
+    black_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *shadowColor, wrapLength);
 
     if (!black_letters) {
-        fprintf(stderr, "Warning - BlackOutline() could not create image for %s\n", t);
+        fprintf(stderr, "Warning - TTF_RenderUTF8_BlackOutline_Wrapped() could not create image for %s\n", t);
         return nullptr;
     }
 
@@ -110,7 +115,7 @@ SDL_Surface *BlackOutline(TTF_Font *font, const char *t, const SDL_Color *c, int
     white_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
 
     if (!white_letters) {
-        fprintf(stderr, "Warning - BlackOutline() could not create image for %s\n", t);
+        fprintf(stderr, "Warning - TTF_RenderUTF8_BlackOutline_Wrapped() could not create image for %s\n", t);
         return nullptr;
     }
 
@@ -140,7 +145,7 @@ struct Cell {
         while (true) {
             auto wrapLength = gCellSize * 9 / 10;
             auto *surface =
-                BlackOutline(font, text.c_str(), &gTextColor, wrapLength, 2);
+                TTF_RenderUTF8_BlackOutline_Wrapped(font, text.c_str(), &gTextColor, wrapLength, &gTextShadowColor, gTextShadow);
             if (surface->h <= gCellSize * 9 / 10) {
                 texture = SDL_CreateTextureFromSurface(gRenderer, surface);
                 SDL_DestroySurface(surface);
@@ -553,6 +558,15 @@ static void load() {
             gTextColor.g = std::stoi(sl[1]);
             gTextColor.b = std::stoi(sl[2]);
             gTextColor.a = std::stoi(sl[3]);
+        } else if (key == "TextShadow") {
+            gTextShadow = std::stoi(value);
+        } else if (key == "TextShadowColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gTextShadowColor.r = std::stoi(sl[0]);
+            gTextShadowColor.g = std::stoi(sl[1]);
+            gTextShadowColor.b = std::stoi(sl[2]);
+            gTextShadowColor.a = std::stoi(sl[3]);
         } else if (key == "Color1") {
             auto sl = splitString(value, ',');
             if (sl.size() != 3) continue;
@@ -953,9 +967,9 @@ int wmain(int argc, wchar_t *argv[]) {
         SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
         auto cs = gCellSize;
         for (int i = 0; i < 5; i++) {
-            auto y = i * (gCellSize + gCellSpacing) + gCellSpacing;
+            auto y = i * (gCellSize + gCellSpacing) + gCellBorder;
             for (int j = 0; j < 5; j++) {
-                auto x = j * (gCellSize + gCellSpacing) + gCellSpacing;
+                auto x = j * (gCellSize + gCellSpacing) + gCellBorder;
                 auto &cell = gCells[i][j];
                 bool dbl = cell.status > 2;
                 auto fx = (float)x, fy = (float)y, fcs = (float)cs;
