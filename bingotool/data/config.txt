@@ -8,10 +8,14 @@ CellSize=150
 CellRoundCorner=0
 ; 格子间距
 CellSpacing=3
+; 格子边框
+CellBorder=3
 ; 格子颜色(红,绿,蓝,透明度)
 CellColor=0,0,0,200
 ; 格子间隙颜色(红,绿,蓝,透明度)
 CellSpacingColor=255,255,255,200
+; 格子边框颜色(红,绿,蓝,透明度)
+CellBorderColor=255,255,255,200
 ; 目标文字颜色(红,绿,蓝,透明度)
 TextColor=255,255,255,200
 ; 目标文字字体

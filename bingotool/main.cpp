@@ -13,14 +13,14 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include <utility>
-#include <random>
 #include <algorithm>
 
 static int gCellSize = 150;
 static int gCellRoundCorner = 5;
 static int gCellSpacing = 2;
+static int gCellBorder = 0;
 static SDL_Color gCellSpacingColor = {255, 255, 255, 160};
+static SDL_Color gCellBorderColor = {0, 0, 0, 0};
 static SDL_Color gTextColor = {255, 255, 255, 255};
 static std::string gFontFile = "data/font.ttf";
 static int gFontSize = 24;
@@ -28,7 +28,7 @@ static std::string gScoreFontFile = "data/font.ttf";
 static int gScoreFontSize = 24;
 static SDL_Color gScoreBackgroundColor = {0, 0, 0, 0};
 static int gScorePadding = 8;
-static int gScoreRoundCorner = 10;
+static int gScoreRoundCorner = 0;
 static SDL_FColor gColors[3] = {
     {0, 0, 0, 0},
     {1, 0, 0, 0},
@@ -519,6 +519,8 @@ static void load() {
             gCellRoundCorner = std::stoi(value);
         } else if (key == "CellSpacing") {
             gCellSpacing = std::stoi(value);
+        } else if (key == "CellBorder") {
+            gCellBorder = std::stoi(value);
         } else if (key == "FontFile") {
             gFontFile = value;
         } else if (key == "CellColor") {
@@ -535,6 +537,13 @@ static void load() {
             gCellSpacingColor.g = std::stoi(sl[1]);
             gCellSpacingColor.b = std::stoi(sl[2]);
             gCellSpacingColor.a = std::stoi(sl[3]);
+        } else if (key == "CellBorderColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gCellBorderColor.r = std::stoi(sl[0]);
+            gCellBorderColor.g = std::stoi(sl[1]);
+            gCellBorderColor.b = std::stoi(sl[2]);
+            gCellBorderColor.a = std::stoi(sl[3]);
         } else if (key == "FontSize") {
             gFontSize = std::stoi(value);
         } else if (key == "TextColor") {
@@ -742,8 +751,8 @@ int wmain(int argc, wchar_t *argv[]) {
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     gWindow = SDL_CreateWindow("BingoTool",
-                               gCellSize * 5 + gCellSpacing * 6,
-                               gCellSize * 5 + gCellSpacing * 6,
+                               gCellSize * 5 + gCellSpacing * 4 + gCellBorder * 2,
+                               gCellSize * 5 + gCellSpacing * 4 + gCellBorder * 2,
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(gWindow, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
@@ -771,8 +780,8 @@ int wmain(int argc, wchar_t *argv[]) {
                     float fx, fy;
                     SDL_GetMouseState(&fx, &fy);
                     int x = (int)fx, y = (int)fy;
-                    int dx = (x - gCellSpacing) / (gCellSize + gCellSpacing);
-                    int dy = (y - gCellSpacing) / (gCellSize + gCellSpacing);
+                    int dx = (x - gCellBorder) / (gCellSize + gCellSpacing);
+                    int dy = (y - gCellBorder) / (gCellSize + gCellSpacing);
                     if (dx >= gCellSize || dy >= gCellSize) break;
                     auto &cell = gCells[dy][dx];
                     auto menu = CreatePopupMenu();
@@ -936,8 +945,11 @@ int wmain(int argc, wchar_t *argv[]) {
         SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0);
         SDL_RenderClear(gRenderer);
         SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_BLEND);
-        SDL_SetRenderDrawColor(gRenderer, gCellSpacingColor.r, gCellSpacingColor.g, gCellSpacingColor.b, gCellSpacingColor.a);
+        SDL_SetRenderDrawColor(gRenderer, gCellBorderColor.r, gCellBorderColor.g, gCellBorderColor.b, gCellBorderColor.a);
         SDL_RenderFillRect(gRenderer, nullptr);
+        SDL_SetRenderDrawColor(gRenderer, gCellSpacingColor.r, gCellSpacingColor.g, gCellSpacingColor.b, gCellSpacingColor.a);
+        SDL_FRect rcInner = {(float)gCellBorder, (float)gCellBorder, (float)(gCellSize * 5 + gCellSpacing * 4), (float)(gCellSize * 5 + gCellSpacing * 4)};
+        SDL_RenderFillRect(gRenderer, &rcInner);
         SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
         auto cs = gCellSize;
         for (int i = 0; i < 5; i++) {
