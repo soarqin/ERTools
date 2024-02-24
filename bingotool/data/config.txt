@@ -50,15 +50,22 @@ ScoreRoundCorner=10
 ; 积分文字字体
 ScoreFontFile=data/font.ttf
 ; 积分文字字体大小
-ScoreFontSize=24
-
-;在文本格式中{0}为选手名，{1}为选手积分
-; 选手积分文本格式
-ScoreFormat={1}\n{0}
-; 选手达成Bingo文本格式
-BingoFormat={1}\n{0}
-; 选手积分获胜文本格式
-ScoreWinFormat={1}\n{0}获胜!
+ScoreFontSize=48
+; 积分面板玩家名字文字字体
+ScoreNameFontFile=data/font.ttf
+; 积分面板玩家名字文字字体大小
+ScoreNameFontSize=24
+; 积分文本格式，0: “玩家名\n积分”  1: “积分\n玩家名”
+ScoreFormat=1
+; 以下选项中，{0}代表玩家名，{1}代表积分
+; 积分获胜时的积分文本
+ScoreWinText={1}
+; 达成Bingo时的积分文本
+ScoreBingoText=Bingo!
+; 积分获胜时的玩家名字文本
+ScoreNameWinText={0}获胜
+; 达成Bingo时的玩家名字文本
+ScoreNameBingoText={0}达成Bingo!
 
 ;以下选项仅用于非Bingo Brawlers规则的五阶段积分制
 ; 首先完成积分

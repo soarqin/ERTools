@@ -27,7 +27,7 @@ struct RandomGroupRef {
 class RandomTable {
 public:
     void load(const char *filename);
-    void generate(const char *filename, std::vector<std::string> &result) const;
+    void generate(std::vector<std::string> &result) const;
 
 private:
     RandomGroup root_;

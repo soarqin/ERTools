@@ -1,0 +1,7 @@
+; 同步服务器地址
+Server=bingosync.soar.im
+; 同步模式
+;   0-选手  1-裁判
+Mode=0
+; 同步频道
+Channel=1

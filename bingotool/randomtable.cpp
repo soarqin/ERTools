@@ -174,7 +174,7 @@ void RandomTable::load(const char *filename) {
     // logGroup(&root_);
 }
 
-void RandomTable::generate(const char *filename, std::vector<std::string> &result) const {
+void RandomTable::generate(std::vector<std::string> &result) const {
     auto gen = root_;
     std::mt19937 rd((std::random_device())());
     result.clear();
@@ -183,9 +183,4 @@ void RandomTable::generate(const char *filename, std::vector<std::string> &resul
         result.emplace_back(s);
     }
     std::shuffle(result.begin(), result.end(), rd);
-    std::ofstream ofs("data/squares.txt");
-    for (auto &s: result) {
-        ofs << s << std::endl;
-    }
-    ofs.close();
 }

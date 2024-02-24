@@ -1,4 +1,5 @@
 #include "randomtable.h"
+#include "sync.h"
 #include "common.h"
 
 #include <fmt/format.h>
@@ -8,6 +9,10 @@
 #include <SDL3_gfxPrimitives.h>
 #include <windows.h>
 #include <shellapi.h>
+#if defined(_MSC_VER)
+#undef max
+#undef min
+#endif
 #undef WIN32_LEAN_AND_MEAN
 
 #include <cstdio>
@@ -29,6 +34,8 @@ static std::string gFontFile = "data/font.ttf";
 static int gFontSize = 24;
 static std::string gScoreFontFile = "data/font.ttf";
 static int gScoreFontSize = 24;
+static std::string gScoreNameFontFile = "data/font.ttf";
+static int gScoreNameFontSize = 24;
 static SDL_Color gScoreBackgroundColor = {0, 0, 0, 0};
 static int gScorePadding = 8;
 static int gScoreRoundCorner = 0;
@@ -57,8 +64,13 @@ static SDL_Window *gWindow = nullptr;
 static SDL_Renderer *gRenderer = nullptr;
 static TTF_Font *gFont = nullptr;
 static TTF_Font *gScoreFont = nullptr;
+static TTF_Font *gScoreNameFont = nullptr;
 
-static std::string gScoreFormat = "{0}  {1}", gBingoFormat = "{0}达成Bingo!", gScoreWinFormat = "{0}  {1}  积分获胜!";
+static int gScoreFormat = 1;
+static std::string gScoreWinText = "{1}";
+static std::string gScoreBingoText = "Bingo!";
+static std::string gScoreNameWinText = "{0}获胜";
+static std::string gScoreNameBingoText = "{0}达成Bingo!";
 
 static const SDL_Color black = {0x00, 0x00, 0x00, 0x00};
 static const SDL_Color white = {0xff, 0xff, 0xff, 0x00};
@@ -71,27 +83,22 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
     SDL_Surface *white_letters;
     SDL_Surface *bg;
     SDL_Rect dstrect;
-    Uint32 color_key;
 
     if (!font) {
-        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): could not load needed font - returning.\n");
         return nullptr;
     }
 
     if (!t || !c) {
-        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): invalid ptr parameter, returning.\n");
         return nullptr;
     }
 
     if (t[0] == '\0') {
-        fprintf(stderr, "TTF_RenderUTF8_BlackOutline_Wrapped(): empty string, returning\n");
         return nullptr;
     }
 
     black_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *shadowColor, wrapLength);
 
     if (!black_letters) {
-        fprintf(stderr, "Warning - TTF_RenderUTF8_BlackOutline_Wrapped() could not create image for %s\n", t);
         return nullptr;
     }
 
@@ -114,7 +121,6 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
     white_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
 
     if (!white_letters) {
-        fprintf(stderr, "Warning - TTF_RenderUTF8_BlackOutline_Wrapped() could not create image for %s\n", t);
         return nullptr;
     }
 
@@ -192,6 +198,7 @@ struct ScoreWindow {
         SDL_SetWindowPosition(window, x, y + h + 8 + idx * 50);
         if (!gColorTextureFile[index].empty()) {
             colorMask = loadTexture(renderer, gColorTextureFile[index].c_str());
+            SDL_SetTextureBlendMode(colorMask, SDL_BLENDMODE_MUL);
         }
     }
 
@@ -215,28 +222,45 @@ struct ScoreWindow {
     }
 
     void updateTexture() {
-        if (texture) {
-            SDL_DestroyTexture(texture);
-            texture = nullptr;
-        }
-        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gBingoFormat : score >= 13 ? gScoreWinFormat : gScoreFormat : gScoreFormat, playerName, score >= 100 ? "Bingo!" : std::to_string(score));
+        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreBingoText : score >= 13 ? gScoreWinText : "{1}" : "{1}", playerName, score);
+        auto nameText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreNameBingoText : score >= 13 ? gScoreNameWinText : "{0}" : "{0}", playerName, score);
+        SDL_Surface *surface1, *surface2;
         if (colorMask) {
             SDL_Color clr = {255, 255, 255, 255};
-            auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
-            auto *texture2 = SDL_CreateTextureFromSurface(renderer, surface);
-            SDL_DestroySurface(surface);
-            texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, surface->w, surface->h);
-            SDL_SetRenderTarget(renderer, texture);
-            SDL_RenderTexture(renderer, texture2, nullptr, nullptr);
-            SDL_SetTextureBlendMode(colorMask, SDL_BLENDMODE_MUL);
-            SDL_RenderTexture(renderer, colorMask, nullptr, nullptr);
-            SDL_DestroyTexture(texture2);
-            SDL_SetRenderTarget(renderer, nullptr);
+            surface1 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
+            surface2 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreNameFont, nameText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
         } else {
-            auto *surface = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
-            texture = SDL_CreateTextureFromSurface(renderer, surface);
-            SDL_DestroySurface(surface);
+            surface1 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
+            surface2 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreNameFont, nameText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
         }
+        auto *texture1 = SDL_CreateTextureFromSurface(renderer, surface1);
+        auto *texture2 = SDL_CreateTextureFromSurface(renderer, surface2);
+        auto mw = std::max(surface1->w, surface2->w), mh = surface1->h + surface2->h;
+        if (texture)
+            SDL_DestroyTexture(texture);
+        texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
+        SDL_SetRenderTarget(renderer, texture);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
+        SDL_RenderClear(renderer);
+        if (gScoreFormat > 0) {
+            SDL_FRect rc1 = {(float)(mw - surface1->w) * .5f, 0, (float)surface1->w, (float)surface1->h};
+            SDL_RenderTexture(renderer, texture1, nullptr, &rc1);
+            SDL_FRect rc2 = {(float)(mw - surface2->w) * .5f, (float)surface1->h, (float)surface2->w, (float)surface2->h};
+            SDL_RenderTexture(renderer, texture2, nullptr, &rc2);
+        } else {
+            SDL_FRect rc2 = {(float)(mw - surface2->w) * .5f, 0, (float)surface2->w, (float)surface2->h};
+            SDL_RenderTexture(renderer, texture2, nullptr, &rc2);
+            SDL_FRect rc1 = {(float)(mw - surface1->w) * .5f, (float)surface2->h, (float)surface1->w, (float)surface1->h};
+            SDL_RenderTexture(renderer, texture1, nullptr, &rc1);
+        }
+        if (colorMask) {
+            SDL_RenderTexture(renderer, colorMask, nullptr, nullptr);
+        }
+        SDL_DestroyTexture(texture1);
+        SDL_DestroyTexture(texture2);
+        SDL_DestroySurface(surface1);
+        SDL_DestroySurface(surface2);
+        SDL_SetRenderTarget(renderer, nullptr);
         SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
         SDL_QueryTexture(texture, nullptr, nullptr, &tw, &th);
         w = tw + gScorePadding * 2;
@@ -467,11 +491,44 @@ static std::vector<std::string> splitString(const std::string &str, char sep) {
     return result;
 }
 
+void sendJudgeSyncState() {
+    uint64_t val[2] = {0, 0};
+    size_t idx = 0;
+    for (auto &v: gCells) {
+        for (auto &c: v) {
+            val[idx / 16] |= (uint64_t)(uint32_t)c.status << (4 * (idx % 16));
+            idx++;
+        }
+    }
+    if (!gBingoBrawlersMode) {
+        val[1] |= (uint64_t)gScoreWindows[0].score << 48;
+        val[1] |= (uint64_t)gScoreWindows[1].score << 56;
+    }
+    syncSendData('S', std::to_string(val[0]) + ',' + std::to_string(val[1]));
+}
+
+void sendJudgeSyncData() {
+    std::vector<std::string> n;
+    for (auto &v: gCells) {
+        for (auto &c: v) {
+            n.emplace_back(c.text);
+        }
+    }
+    syncSendData('T', n);
+    sendJudgeSyncState();
+}
+
 static void randomCells() {
+    if (syncGetMode() == 0) return;
     RandomTable rt;
     rt.load("randomtable.txt");
     std::vector<std::string> result;
-    rt.generate("squares.txt", result);
+    rt.generate(result);
+    std::ofstream ofs("data/squares.txt");
+    for (auto &s: result) {
+        ofs << s << std::endl;
+    }
+    ofs.close();
     size_t idx = 0;
     for (auto &r: gCells) {
         for (auto &c: r) {
@@ -482,6 +539,7 @@ static void randomCells() {
     }
     gScoreWindows[0].reset();
     gScoreWindows[1].reset();
+    sendJudgeSyncData();
 }
 
 static std::string mergeString(const std::vector<std::string> &strs, char sep) {
@@ -619,15 +677,24 @@ static void load() {
             gScoreFontFile = value;
         } else if (key == "ScoreFontSize") {
             gScoreFontSize = std::stoi(value);
+        } else if (key == "ScoreNameFontFile") {
+            gScoreNameFontFile = value;
+        } else if (key == "ScoreNameFontSize") {
+            gScoreNameFontSize = std::stoi(value);
         } else if (key == "ScoreFormat") {
-            gScoreFormat = value;
-            unescape(gScoreFormat);
-        } else if (key == "BingoFormat") {
-            gBingoFormat = value;
-            unescape(gBingoFormat);
-        } else if (key == "ScoreWinFormat") {
-            gScoreWinFormat = value;
-            unescape(gScoreWinFormat);
+            gScoreFormat = std::stoi(value);
+        } else if (key == "ScoreWinText") {
+            gScoreWinText = value;
+            unescape(gScoreWinText);
+        } else if (key == "ScoreBingoText") {
+            gScoreBingoText = value;
+            unescape(gScoreBingoText);
+        } else if (key == "ScoreNameWinText") {
+            gScoreNameWinText = value;
+            unescape(gScoreNameWinText);
+        } else if (key == "ScoreNameBingoText") {
+            gScoreNameBingoText = value;
+            unescape(gScoreNameBingoText);
         } else if (key == "FirstScores") {
             auto sl = splitString(value, ',');
             int sz = (int)sl.size();
@@ -700,6 +767,8 @@ static void postLoad() {
     TTF_SetFontWrappedAlign(gFont, TTF_WRAPPED_ALIGN_CENTER);
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
     TTF_SetFontWrappedAlign(gScoreFont, TTF_WRAPPED_ALIGN_CENTER);
+    gScoreNameFont = TTF_OpenFont(gScoreNameFontFile.c_str(), gScoreNameFontSize);
+    TTF_SetFontWrappedAlign(gScoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
     std::ifstream ifs("data/squares.txt");
     std::string line;
     for (auto & row : gCells) {
@@ -783,6 +852,7 @@ int wmain(int argc, wchar_t *argv[]) {
 
     TTF_Init();
     load();
+    syncInit();
 
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
@@ -806,6 +876,80 @@ int wmain(int argc, wchar_t *argv[]) {
     loadState();
     updateScores();
 
+    syncOpen([]{
+        syncSetChannel([](char t, const std::string &s) {
+            switch (t) {
+                case 'T': {
+                    if (syncGetMode() != 0) break;
+                    auto sl = splitString(s, '\n');
+                    size_t idx = 0;
+                    bool dirty = false;
+                    for (auto &r: gCells) {
+                        for (auto &c: r) {
+                            if (idx >= sl.size()) break;
+                            const auto &text = sl[idx++];
+                            if (c.text == text) continue;
+                            c.text = text;
+                            c.updateTexture();
+                            dirty = true;
+                        }
+                    }
+                    if (dirty) {
+                        std::ofstream ofs("data/squares.txt");
+                        ofs << s << std::endl;
+                        ofs.close();
+                    }
+                    break;
+                }
+                case 'S': {
+                    if (syncGetMode() != 0) break;
+                    auto sl = splitString(s, ',');
+                    uint64_t val[2];
+                    size_t idx = 0;
+                    for (const auto &ss: sl) {
+                        val[idx++] = std::stoull(ss);
+                    }
+                    idx = 0;
+                    bool dirty = false;
+                    for (auto &r: gCells) {
+                        for (auto &c: r) {
+                            auto state = (int)((val[idx / 16] >> (4 * (idx % 16))) & 0x0FULL);
+                            idx++;
+                            if (c.status == state) continue;
+                            c.status = state;
+                            c.updateTexture();
+                            dirty = true;
+                        }
+                    }
+                    if (!gBingoBrawlersMode) {
+                        int es[2] = {
+                            (int)(uint32_t)((val[1] >> 48) & 0xFFULL),
+                            (int)(uint32_t)((val[1] >> 56) & 0xFFULL),
+                        };
+                        for (int i = 0; i < 2; i++) {
+                            if (es[i] != gScoreWindows[i].extraScore) {
+                                gScoreWindows[i].extraScore = es[i];
+                                gScoreWindows[i].hasExtraScore = es[i] != 0;
+                                dirty = true;
+                            }
+                        }
+                    }
+                    if (dirty) {
+                        updateScores();
+                        saveState();
+                    }
+                    break;
+                }
+            }
+        });
+        if (syncGetMode() != 0) {
+            sendJudgeSyncData();
+        } else {
+            syncSendData('T', "");
+            syncSendData('S', "");
+        }
+    });
+
     while (true) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
@@ -818,6 +962,21 @@ int wmain(int argc, wchar_t *argv[]) {
                 }
                 case SDL_EVENT_MOUSE_BUTTON_UP: {
                     if (e.button.windowID == SDL_GetWindowID(gWindow) && e.button.button != SDL_BUTTON_RIGHT) break;
+                    if (syncGetMode() == 0) {
+                        auto menu = CreatePopupMenu();
+                        AppendMenuW(menu, MF_STRING, 7, L"退出");
+                        POINT pt;
+                        GetCursorPos(&pt);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        switch (cmd) {
+                            case 7:
+                                goto QUIT;
+                            default:
+                                break;
+                        }
+                        break;
+                    }
                     float fx, fy;
                     SDL_GetMouseState(&fx, &fy);
                     int x = (int)fx, y = (int)fy;
@@ -867,16 +1026,19 @@ int wmain(int argc, wchar_t *argv[]) {
                             case 1: {
                                 cell.status = 1;
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 2: {
                                 cell.status = 2;
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 3: {
                                 cell.status = 0;
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 5: {
@@ -887,6 +1049,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                 }
                                 gScoreWindows[0].reset();
                                 gScoreWindows[1].reset();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 6:
@@ -929,6 +1092,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                     cell.status = 4;
                                 }
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 2: {
@@ -938,11 +1102,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                     cell.status = 3;
                                 }
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 3: {
                                 cell.status = 0;
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 4: {
@@ -952,6 +1118,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                     gScoreWindows[0].setExtraScore(0);
                                 }
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 5: {
@@ -961,6 +1128,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                     gScoreWindows[1].setExtraScore(1);
                                 }
                                 updateScores();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 6: {
@@ -971,6 +1139,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                 }
                                 gScoreWindows[0].reset();
                                 gScoreWindows[1].reset();
+                                sendJudgeSyncState();
                                 break;
                             }
                             case 7:
@@ -1046,6 +1215,7 @@ int wmain(int argc, wchar_t *argv[]) {
             SDL_RenderPresent(sw.renderer);
         }
         SDL_RenderPresent(gRenderer);
+        syncProcess();
     }
 QUIT:
     saveState();
