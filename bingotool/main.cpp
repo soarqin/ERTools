@@ -882,6 +882,8 @@ int wmain(int argc, wchar_t *argv[]) {
                             dirty = true;
                         }
                     }
+                    if (idx < sl.size()) gPlayerName[0] = Utf8ToUnicode(sl[idx++]);
+                    if (idx < sl.size()) gPlayerName[1] = Utf8ToUnicode(sl[idx++]);
                     if (dirty) {
                         std::ofstream ofs("data/squares.txt");
                         ofs << s << std::endl;

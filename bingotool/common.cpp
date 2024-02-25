@@ -74,3 +74,14 @@ std::string UnicodeToUtf8(const std::wstring &wstr) {
     if (result.back() == 0) result.pop_back();
     return result;
 }
+
+std::wstring Utf8ToUnicode(const std::string &str) {
+    std::wstring result;
+    auto requiredSize = MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, nullptr, 0);
+    if (requiredSize > 0) {
+        result.resize(requiredSize);
+        MultiByteToWideChar(CP_UTF8, 0, str.c_str(), -1, &result[0], requiredSize);
+    }
+    if (result.back() == 0) result.pop_back();
+    return result;
+}

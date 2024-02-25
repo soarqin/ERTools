@@ -131,6 +131,7 @@ int syncGetMode() {
 }
 
 bool syncOpen(ConnectionCallback callback) {
+    if (gChannel.empty()) return true;
     if (loop == nullptr) {
         loop = uv_default_loop();
     }
@@ -156,6 +157,7 @@ bool syncOpen(ConnectionCallback callback) {
 }
 
 void syncClose() {
+    if (gChannel.empty()) return;
     uv_read_stop((uv_stream_t*)&clientCtx);
     uv_close((uv_handle_t*)&clientCtx, [](uv_handle_t* handle) {
         syncCallback = nullptr;
@@ -167,6 +169,7 @@ void syncClose() {
 }
 
 bool syncSetChannel(ChannelCallback callback) {
+    if (gChannel.empty()) return true;
     syncCallback = callback;
     return syncSendData(gMode == 0 ? 'C' : 'J', gChannel);
 }
@@ -174,6 +177,7 @@ bool syncSetChannel(ChannelCallback callback) {
 void write_cb(uv_write_t* req, int status);
 
 bool syncSendData(char type, const std::string &data) {
+    if (gChannel.empty()) return true;
     auto len = (int)data.size();
     uv_buf_t buf;
     buf.len = (unsigned int)(4 + 1 + len);
@@ -194,6 +198,7 @@ void write_cb(uv_write_t *req, int status) {
 }
 
 bool syncSendData(char type, const std::vector<std::string> &data, char separator) {
+    if (gChannel.empty()) return true;
     std::string n;
     for (auto &s : data) {
         n += s;

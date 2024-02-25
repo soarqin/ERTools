@@ -14,3 +14,4 @@ void stripString(std::string &str);
 std::vector<std::string> splitString(const std::string &str, char sep);
 
 std::string UnicodeToUtf8(const std::wstring &wstr);
+std::wstring Utf8ToUnicode(const std::string &str);
