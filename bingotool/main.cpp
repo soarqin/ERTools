@@ -195,7 +195,7 @@ struct ScoreWindow {
         int x, y;
         SDL_GetWindowPosition(gWindow, &x, &y);
         SDL_GetWindowSize(gWindow, &w, &h);
-        SDL_SetWindowPosition(window, x, y + h + 8 + idx * 50);
+        SDL_SetWindowPosition(window, x, y + h + 8 + idx * (gScoreFontSize + gScoreNameFontSize + gScorePadding * 2 + 8));
         if (!gColorTextureFile[index].empty()) {
             colorMask = loadTexture(renderer, gColorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask, SDL_BLENDMODE_MUL);
@@ -477,20 +477,6 @@ static void updateScores() {
     }
 }
 
-static std::vector<std::string> splitString(const std::string &str, char sep) {
-    std::vector<std::string> result;
-    std::string::size_type pos1 = 0, pos2 = str.find(sep);
-    while (pos2 != std::string::npos) {
-        result.push_back(str.substr(pos1, pos2 - pos1));
-        pos1 = pos2 + 1;
-        pos2 = str.find(sep, pos1);
-    }
-    if (pos1 < str.length()) {
-        result.push_back(str.substr(pos1));
-    }
-    return result;
-}
-
 void sendJudgeSyncState() {
     uint64_t val[2] = {0, 0};
     size_t idx = 0;
@@ -514,6 +500,8 @@ void sendJudgeSyncData() {
             n.emplace_back(c.text);
         }
     }
+    n.emplace_back(UnicodeToUtf8(gPlayerName[0]));
+    n.emplace_back(UnicodeToUtf8(gPlayerName[1]));
     syncSendData('T', n);
     sendJudgeSyncState();
 }

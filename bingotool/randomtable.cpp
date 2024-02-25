@@ -1,33 +1,11 @@
 #include "randomtable.h"
+#include "common.h"
 
 #include <fmt/ostream.h>
 #include <fstream>
 #include <algorithm>
 #include <random>
 #include <functional>
-
-static void stripString(std::string &str) {
-    str.erase(0, str.find_first_not_of(" \t"));
-    str.erase(str.find_last_not_of(" \t") + 1);
-}
-
-static std::vector<std::string> splitString(const std::string &str, char sep) {
-    std::vector<std::string> result;
-    std::string::size_type pos1 = 0, pos2 = str.find(sep);
-    while (pos2 != std::string::npos) {
-        auto s = str.substr(pos1, pos2 - pos1);
-        stripString(s);
-        result.emplace_back(std::move(s));
-        pos1 = pos2 + 1;
-        pos2 = str.find(sep, pos1);
-    }
-    if (pos1 < str.length()) {
-        auto s = str.substr(pos1);
-        stripString(s);
-        result.emplace_back(std::move(s));
-    }
-    return result;
-}
 
 static void calcGroupWeight(RandomGroup *group) {
     group->totalWeight = 0;
@@ -57,12 +35,13 @@ static const std::string randomGroupEntry(RandomGroup *group, RANDENGINE &re) {
     for (auto ite = group->groups.begin(); ite != group->groups.end();) {
         auto &ref = *ite;
         if (weight < ref.weight) {
-            if (ref.group->totalWeight == 0) {
+            const auto res = randomGroupEntry(ref.group, re);
+            if (res.empty()) {
                 group->totalWeight -= ref.weight;
                 ite = group->groups.erase(ite);
+                weight -= ref.weight;
                 continue;
             }
-            const auto res = randomGroupEntry(ref.group, re);
             if (--ref.maxCount <= 0) {
                 group->totalWeight -= ref.weight;
                 group->groups.erase(ite);
