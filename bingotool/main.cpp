@@ -182,9 +182,7 @@ struct ScoreWindow {
 
     void create(int idx) {
         index = idx;
-        char name[256];
-        WideCharToMultiByte(CP_UTF8, 0, gPlayerName[idx].c_str(), -1, name, 256, nullptr, nullptr);
-        playerName = name;
+        playerName = UnicodeToUtf8(gPlayerName[idx]);
         const char *title = idx == 0 ? "Player A" : "Player B";
         SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
         SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
@@ -722,13 +720,9 @@ static void load() {
         } else if (key == "ClearQuestMultiplier") {
             gClearQuestMultiplier = std::stoi(value);
         } else if (key == "Player1") {
-            wchar_t name[256];
-            MultiByteToWideChar(CP_UTF8, 0, value.c_str(), -1, name, 256);
-            gPlayerName[0] = name;
+            gPlayerName[0] = Utf8ToUnicode(value);
         } else if (key == "Player2") {
-            wchar_t name[256];
-            MultiByteToWideChar(CP_UTF8, 0, value.c_str(), -1, name, 256);
-            gPlayerName[1] = name;
+            gPlayerName[1] = Utf8ToUnicode(value);
         }
     }
     for (int i = 0; i < 3; i++) {
@@ -882,8 +876,22 @@ int wmain(int argc, wchar_t *argv[]) {
                             dirty = true;
                         }
                     }
-                    if (idx < sl.size()) gPlayerName[0] = Utf8ToUnicode(sl[idx++]);
-                    if (idx < sl.size()) gPlayerName[1] = Utf8ToUnicode(sl[idx++]);
+                    if (idx < sl.size()) {
+                        auto pname = sl[idx++];;
+                        gPlayerName[0] = Utf8ToUnicode(pname);
+                        if (gScoreWindows[0].playerName != pname) {
+                            gScoreWindows[0].playerName = pname;
+                            gScoreWindows[0].updateTexture();
+                        }
+                    }
+                    if (idx < sl.size()) {
+                        auto pname = sl[idx++];;
+                        gPlayerName[1] = Utf8ToUnicode(pname);
+                        if (gScoreWindows[1].playerName != pname) {
+                            gScoreWindows[1].playerName = pname;
+                            gScoreWindows[1].updateTexture();
+                        }
+                    }
                     if (dirty) {
                         std::ofstream ofs("data/squares.txt");
                         ofs << s << std::endl;
