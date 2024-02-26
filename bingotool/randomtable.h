@@ -1,8 +1,9 @@
 #pragma once
 
 #include <vector>
-#include <unordered_map>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
 
 struct RandomGroupRef;
 
@@ -24,6 +25,10 @@ struct RandomGroupRef {
     int maxCount = 0;
 };
 
+struct MutualExclusion {
+    std::vector<std::string> entries;
+};
+
 class RandomTable {
 public:
     void load(const char *filename);
@@ -32,4 +37,5 @@ public:
 private:
     RandomGroup root_;
     std::unordered_map<std::string, RandomGroup> groups_;
+    std::unordered_map<std::string, MutualExclusion> mutualExclusions_;
 };

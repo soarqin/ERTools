@@ -19,39 +19,50 @@ static void calcGroupWeight(RandomGroup *group) {
 }
 
 template<class RANDENGINE>
-static const std::string randomGroupEntry(RandomGroup *group, RANDENGINE &re) {
-    if (group->totalWeight == 0) { return ""; }
-    int weight = re() % group->totalWeight;
-    for (auto ite = group->entries.begin(); ite != group->entries.end(); ite++) {
-        auto &e = *ite;
-        if (weight < e.weight) {
-            auto res = e.name;
-            group->totalWeight -= e.weight;
-            group->entries.erase(ite);
-            return res;
-        }
-        weight -= e.weight;
-    }
-    for (auto ite = group->groups.begin(); ite != group->groups.end();) {
-        auto &ref = *ite;
-        if (weight < ref.weight) {
-            const auto res = randomGroupEntry(ref.group, re);
-            if (res.empty()) {
-                group->totalWeight -= ref.weight;
-                ite = group->groups.erase(ite);
-                weight -= ref.weight;
-                continue;
+static std::string randomGroupEntry(RandomGroup *group, const std::unordered_map<std::string, MutualExclusion> &mutualExclusions, std::unordered_set<std::string> &exclusions, RANDENGINE &re) {
+    while (true) {
+        if (group->totalWeight == 0) { return ""; }
+        std::string res;
+        int weight = re() % group->totalWeight;
+        for (auto ite = group->entries.begin(); ite != group->entries.end(); ite++) {
+            auto &e = *ite;
+            if (weight < e.weight) {
+                res = e.name;
+                group->totalWeight -= e.weight;
+                group->entries.erase(ite);
+                break;
             }
-            if (--ref.maxCount <= 0) {
-                group->totalWeight -= ref.weight;
-                group->groups.erase(ite);
+            weight -= e.weight;
+        }
+        if (!res.empty()) {
+            if (exclusions.find(res) != exclusions.end()) continue;
+            auto ite = mutualExclusions.find(res);
+            if (ite != mutualExclusions.end()) {
+                exclusions.insert(ite->second.entries.begin(), ite->second.entries.end());
             }
             return res;
         }
-        weight -= ref.weight;
-        ite++;
+        for (auto ite = group->groups.begin(); ite != group->groups.end();) {
+            auto &ref = *ite;
+            if (weight < ref.weight) {
+                res = randomGroupEntry(ref.group, mutualExclusions, exclusions, re);
+                if (res.empty()) {
+                    group->totalWeight -= ref.weight;
+                    ite = group->groups.erase(ite);
+                    weight -= ref.weight;
+                    continue;
+                }
+                if (--ref.maxCount <= 0) {
+                    group->totalWeight -= ref.weight;
+                    group->groups.erase(ite);
+                }
+                return res;
+            }
+            weight -= ref.weight;
+            ite++;
+        }
+        return "";
     }
-    return "";
 }
 
 static void logGroup(RandomGroup *group, int indent = 0) {
@@ -144,6 +155,19 @@ void RandomTable::load(const char *filename) {
                     }
                     break;
                 }
+                case '^': {
+                    auto sl = splitString(line.substr(1), ',');
+                    if (sl.size() > 1) {
+                        std::vector<std::string> entries;
+                        for (const auto &S : sl) {
+                            entries.push_back(S);
+                        }
+                        for (const auto &S : sl) {
+                            mutualExclusions_[S].entries = entries;
+                        }
+                    }
+                    break;
+                }
             }
         }
         file.close();
@@ -157,8 +181,9 @@ void RandomTable::generate(std::vector<std::string> &result) const {
     auto gen = root_;
     std::mt19937 rd((std::random_device())());
     result.clear();
+    std::unordered_set<std::string> exclusions;
     for (int i = 0; i < 25; i++) {
-        const auto s = randomGroupEntry(&gen, rd);
+        auto s = randomGroupEntry(&gen, mutualExclusions_, exclusions, rd);
         result.emplace_back(s);
     }
     std::shuffle(result.begin(), result.end(), rd);
