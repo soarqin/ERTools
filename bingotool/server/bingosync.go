@@ -109,14 +109,22 @@ func processRead(c *Client, conn net.Conn) {
 		var l uint32
 		err := binary.Read(reader, binary.LittleEndian, &l)
 		if err != nil {
-			fmt.Println("read from client failed, err: ", err)
+			if err != io.EOF {
+				fmt.Println("read from client failed, err: ", err)
+			}
 			break
 		}
 		len := int(l)
+		if len >= 0x40000 {
+			fmt.Println("Suspecious packet got, drop and close connection!")
+			break
+		}
 		msg := make([]byte, len)
 		n, err := io.ReadFull(reader, msg)
 		if err != nil {
-			fmt.Println("read from client failed, err: ", err)
+			if err != io.EOF {
+				fmt.Println("read from client failed, err: ", err)
+			}
 			break
 		}
 		if n < len {

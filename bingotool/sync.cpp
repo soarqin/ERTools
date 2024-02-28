@@ -6,7 +6,7 @@
 
 static int gMode = 0;
 static std::string gServer = "bingosync.soar.im";
-static std::string gChannel = "1";
+static std::string gChannel = "";
 
 static uv_loop_t *loop = nullptr;
 static uv_tcp_t clientCtx;
