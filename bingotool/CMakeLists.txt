@@ -5,6 +5,8 @@ add_executable(${PROJECT_NAME} WIN32
     randomtable.cpp randomtable.h
     common.cpp common.h
     sync.cpp sync.h
+    rectpacker.cpp rectpacker.h
+    ttf.cpp ttf.h
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE
     SDL3_gfx SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers fmt::fmt uv_a comctl32 shlwapi)
