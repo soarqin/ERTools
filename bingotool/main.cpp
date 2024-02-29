@@ -21,7 +21,7 @@
 #include <fstream>
 #include <algorithm>
 
-static int gCellSize = 150;
+static int gCellSize[2] = {150, 150};
 static int gCellRoundCorner = 5;
 static int gCellSpacing = 2;
 static int gCellBorder = 0;
@@ -30,12 +30,22 @@ static SDL_Color gCellBorderColor = {0, 0, 0, 0};
 static SDL_Color gTextColor = {255, 255, 255, 255};
 static int gTextShadow = 0;
 static SDL_Color gTextShadowColor = {0, 0, 0, 255};
+static int gTextShadowOffset[2] = {0, 0};
 static std::string gFontFile = "data/font.ttf";
+static int gFontStyle = TTF_STYLE_NORMAL;
 static int gFontSize = 24;
 static std::string gScoreFontFile = "data/font.ttf";
+static int gScoreFontStyle = TTF_STYLE_NORMAL;
 static int gScoreFontSize = 24;
+static int gScoreTextShadow = 0;
+static SDL_Color gScoreTextShadowColor = {0, 0, 0, 255};
+static int gScoreTextShadowOffset[2] = {0, 0};
 static std::string gScoreNameFontFile = "data/font.ttf";
+static int gScoreNameFontStyle = TTF_STYLE_NORMAL;
 static int gScoreNameFontSize = 24;
+static int gScoreNameTextShadow = 0;
+static SDL_Color gScoreNameTextShadowColor = {0, 0, 0, 255};
+static int gScoreNameTextShadowOffset[2] = {0, 0};
 static SDL_Color gScoreBackgroundColor = {0, 0, 0, 0};
 static int gScorePadding = 8;
 static int gScoreRoundCorner = 0;
@@ -66,7 +76,6 @@ static TTF_Font *gFont = nullptr;
 static TTF_Font *gScoreFont = nullptr;
 static TTF_Font *gScoreNameFont = nullptr;
 
-static int gScoreFormat = 1;
 static std::string gScoreWinText = "{1}";
 static std::string gScoreBingoText = "Bingo!";
 static std::string gScoreNameWinText = "{0}获胜";
@@ -75,7 +84,7 @@ static std::string gScoreNameBingoText = "{0}达成Bingo!";
 static const SDL_Color black = {0x00, 0x00, 0x00, 0x00};
 static const SDL_Color white = {0xff, 0xff, 0xff, 0x00};
 
-SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, const SDL_Color *shadowColor, int outline) {
+SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, const SDL_Color *shadowColor, int outline, int offset[2]) {
     if (outline <= 0)
         return TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
 
@@ -102,18 +111,22 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
         return nullptr;
     }
 
-    auto ol = 1 + outline * 2;
-    bg = SDL_CreateSurface(black_letters->w + ol, black_letters->h + ol, SDL_PIXELFORMAT_RGBA8888);
+    bool fullOutline = offset[0] == 0 && offset[1] == 0;
+    auto olx = fullOutline ? (1 + outline * 2) : std::abs(offset[0]);
+    auto oly = fullOutline ? (1 + outline * 2) : std::abs(offset[1]);
+    auto sw = fullOutline ? (1 + outline * 2) : outline;
+    auto sh = fullOutline ? (1 + outline * 2) : outline;
+    bg = SDL_CreateSurface(black_letters->w + olx, black_letters->h + oly, SDL_PIXELFORMAT_RGBA8888);
 
-    /* Now draw black outline/shadow 2 pixels on each side: */
+    dstrect.y = offset[1] > 0 ? offset[1] : 0;
     dstrect.w = black_letters->w;
     dstrect.h = black_letters->h;
 
-    /* NOTE: can make the "shadow" more or less pronounced by */
-    /* changing the parameters of these loops.                */
-    for (dstrect.x = 0; dstrect.x < ol; dstrect.x++)
-        for (dstrect.y = 0; dstrect.y < ol; dstrect.y++)
+    for (int j = 0; j < sh; j++, dstrect.y++) {
+        dstrect.x = offset[0] > 0 ? offset[0] : 0;
+        for (int i = 0; i < sw; i++, dstrect.x++)
             SDL_BlitSurface(black_letters, nullptr, bg, &dstrect);
+    }
 
     SDL_DestroySurface(black_letters);
 
@@ -124,8 +137,22 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, 
         return nullptr;
     }
 
-    dstrect.x = outline;
-    dstrect.y = outline;
+    if (fullOutline) {
+        dstrect.x = outline;
+    } else if (offset[0] >= 0) {
+        dstrect.x = 0;
+    } else if (offset[0] < 0) {
+        dstrect.x = -offset[0];
+    }
+
+    if (fullOutline) {
+        dstrect.y = outline;
+    } else if (offset[1] >= 0) {
+        dstrect.y = 0;
+    } else if (offset[1] < 0) {
+        dstrect.y = -offset[1];
+    }
+
     SDL_BlitSurface(white_letters, nullptr, bg, &dstrect);
     SDL_DestroySurface(white_letters);
 
@@ -149,10 +176,10 @@ struct Cell {
         auto *font = gFont;
         auto fontSize = gFontSize;
         while (true) {
-            auto wrapLength = gCellSize * 9 / 10;
+            auto wrapLength = gCellSize[0] * 9 / 10;
             auto *surface =
-                TTF_RenderUTF8_BlackOutline_Wrapped(font, text.c_str(), &gTextColor, wrapLength, &gTextShadowColor, gTextShadow);
-            if (surface->h <= gCellSize * 9 / 10) {
+                TTF_RenderUTF8_BlackOutline_Wrapped(font, text.c_str(), &gTextColor, wrapLength, &gTextShadowColor, gTextShadow, gTextShadowOffset);
+            if (surface->h <= gCellSize[1] * 9 / 10) {
                 texture = SDL_CreateTextureFromSurface(gRenderer, surface);
                 SDL_DestroySurface(surface);
                 break;
@@ -160,6 +187,7 @@ struct Cell {
             SDL_DestroySurface(surface);
             fontSize--;
             font = TTF_OpenFont(gFontFile.c_str(), fontSize);
+            TTF_SetFontStyle(font, gFontStyle);
             TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
         }
         if (font != gFont) {
@@ -167,6 +195,40 @@ struct Cell {
         }
         SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
         SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
+    }
+
+    inline void render(int x, int y, int cx, int cy) {
+        bool dbl = status > 2;
+        auto fx = (float)x, fy = (float)y, fcx = (float)cx, fcy = (float)cy;
+        auto st = dbl ? (status - 2) : status;
+        if (st > 0 && gColorTexture[st - 1]) {
+            SDL_FRect dstrect = {fx, fy, fcx, fcy};
+            SDL_RenderTexture(gRenderer, gColorTexture[st - 1], nullptr, &dstrect);
+        } else {
+            auto &col = gColorsInt[st];
+            if (gCellRoundCorner > 0) {
+                roundedBoxRGBA(gRenderer, x, y, x + cx - 1, y + cy - 1, gCellRoundCorner, col.r, col.g, col.b, col.a);
+            } else {
+                SDL_FRect dstrect = {fx, fy, fcx, fcy};
+                SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
+                SDL_RenderFillRect(gRenderer, &dstrect);
+            }
+        }
+        if (dbl) {
+            auto &color = gColors[5 - status];
+            const SDL_Vertex verts[] = {
+                {SDL_FPoint{fx, fy + fcy}, color, SDL_FPoint{0},},
+                {SDL_FPoint{fx, fy + fcy * .7f}, color, SDL_FPoint{0},},
+                {SDL_FPoint{fx + fcx * .3f, fy + fcy}, color, SDL_FPoint{0},},
+            };
+            SDL_RenderGeometry(gRenderer, nullptr, verts, 3, nullptr, 0);
+        }
+        if (texture) {
+            auto fw = (float)w, fh = (float)h;
+            auto l = (float)(cx - w) * .5f, t = (float)(cy - h) * .5f;
+            SDL_FRect rect = {fx + l, fy + t, fw, fh};
+            SDL_RenderTexture(gRenderer, texture, nullptr, &rect);
+        }
     }
 };
 
@@ -188,89 +250,118 @@ struct ScoreWindow {
     }
 
     void create(int idx) {
+        destroy();
         index = idx;
         playerName = UnicodeToUtf8(gPlayerName[idx]);
-        const char *title = idx == 0 ? "Player A" : "Player B";
         SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
         SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
         SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
-        window = SDL_CreateWindow(title, 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
-        renderer = SDL_CreateRenderer(window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-        SDL_SetWindowHitTest(window, ScoreWindowHitTestCallback, nullptr);
-        int x, y;
-        SDL_GetWindowPosition(gWindow, &x, &y);
-        SDL_GetWindowSize(gWindow, &w, &h);
-        SDL_SetWindowPosition(window, x, y + h + 8 + idx * (gScoreFontSize + gScoreNameFontSize + gScorePadding * 2 + 8));
-        if (!gColorTextureFile[index].empty()) {
-            colorMask = loadTexture(renderer, gColorTextureFile[index].c_str());
-            SDL_SetTextureBlendMode(colorMask, SDL_BLENDMODE_MUL);
+        for (int i = 0; i < 2; i++) {
+            std::string title = i == 0 ? "Score A" : "Player A";
+            title.back() += idx;
+            window[i] = SDL_CreateWindow(title.c_str(), 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
+            renderer[i] = SDL_CreateRenderer(window[i], "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+            SDL_SetWindowHitTest(window[i], ScoreWindowHitTestCallback, nullptr);
+            int x, y;
+            SDL_GetWindowPosition(gWindow, &x, &y);
+            int cw, ch;
+            SDL_GetWindowSize(gWindow, &cw, &ch);
+            SDL_SetWindowPosition(window[i], x + i * 200, y + ch + 8 + idx * (std::max(gScoreFontSize, gScoreNameFontSize) + gScorePadding * 2 + 8));
+            if (!gColorTextureFile[index].empty()) {
+                colorMask[i] = loadTexture(renderer[i], gColorTextureFile[index].c_str());
+                SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
+            }
         }
     }
 
     void destroy() {
-        if (colorMask) {
-            SDL_DestroyTexture(colorMask);
-            colorMask = nullptr;
+        for (int i = 0; i < 2; i++) {
+            if (colorMask[i]) {
+                SDL_DestroyTexture(colorMask[i]);
+                colorMask[i] = nullptr;
+            }
+            if (texture[i]) {
+                SDL_DestroyTexture(texture[i]);
+                texture[i] = nullptr;
+            }
+            if (renderer[i]) {
+                SDL_DestroyRenderer(renderer[i]);
+                renderer[i] = nullptr;
+            }
+            if (window[i]) {
+                SDL_DestroyWindow(window[i]);
+                window[i] = nullptr;
+            }
+            w[i] = 0;
+            h[i] = 0;
+            tw[i] = 0;
+            th[i] = 0;
         }
-        if (texture) {
-            SDL_DestroyTexture(texture);
-            texture = nullptr;
-        }
-        if (renderer) {
-            SDL_DestroyRenderer(renderer);
-            renderer = nullptr;
-        }
-        if (window) {
-            SDL_DestroyWindow(window);
-            window = nullptr;
-        }
+        index = -1;
+        score = -1;
+        hasExtraScore = false;
+        extraScore = 0;
     }
 
     void updateTexture() {
-        auto scoreText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreBingoText : score >= 13 ? gScoreWinText : "{1}" : "{1}", playerName, score);
-        auto nameText = fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreNameBingoText : score >= 13 ? gScoreNameWinText : "{0}" : "{0}", playerName, score);
-        SDL_Surface *surface1, *surface2;
-        if (colorMask) {
-            SDL_Color clr = {255, 255, 255, 255};
-            surface1 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
-            surface2 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreNameFont, nameText.c_str(), &clr, 0, &gTextShadowColor, gTextShadow);
-        } else {
-            surface1 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreFont, scoreText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
-            surface2 = TTF_RenderUTF8_BlackOutline_Wrapped(gScoreNameFont, nameText.c_str(), &gColorsInt[index + 1], 0, &gTextShadowColor, gTextShadow);
+        std::string utext[2] = {
+            fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreBingoText : score >= 13 ? gScoreWinText : "{1}" : "{1}", playerName, score),
+            fmt::format(gBingoBrawlersMode ? score >= 100 ? gScoreNameBingoText : score >= 13 ? gScoreNameWinText : "{0}" : "{0}", playerName, score)
+        };
+        TTF_Font *ufont[2] = {gScoreFont, gScoreNameFont};
+        int ushadow[2] = {gScoreTextShadow, gScoreNameTextShadow};
+        SDL_Color ushadowColor[2] = {gScoreTextShadowColor, gScoreNameTextShadowColor};
+        int *ushadowOffset[2] = {gScoreTextShadowOffset, gScoreNameTextShadowOffset};
+        for (int i = 0; i < 2; i++) {
+            SDL_Surface *usurface;
+            if (colorMask[i]) {
+                SDL_Color clr = {255, 255, 255, 255};
+                usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &clr, 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
+            } else {
+                usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &gColorsInt[index + 1], 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
+            }
+            auto *utexture = SDL_CreateTextureFromSurface(renderer[i], usurface);
+            auto mw = usurface->w, mh = usurface->h;
+            if (texture[i])
+                SDL_DestroyTexture(texture[i]);
+            texture[i] = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
+            SDL_SetRenderTarget(renderer[i], texture[i]);
+            SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
+            SDL_RenderClear(renderer[i]);
+            SDL_FRect rc = {0, 0, (float)mw, (float)mh};
+            SDL_RenderTexture(renderer[i], utexture, nullptr, &rc);
+            if (colorMask[i]) {
+                SDL_RenderTexture(renderer[i], colorMask[i], nullptr, nullptr);
+            }
+            SDL_DestroyTexture(utexture);
+            SDL_DestroySurface(usurface);
+            SDL_SetRenderTarget(renderer[i], nullptr);
+            SDL_SetTextureBlendMode(texture[i], SDL_BLENDMODE_BLEND);
+            SDL_QueryTexture(texture[i], nullptr, nullptr, &tw[i], &th[i]);
+            w[i] = tw[i] + gScorePadding * 2;
+            h[i] = th[i] + gScorePadding * 2;
+            SDL_SetWindowSize(window[i], w[i], h[i]);
         }
-        auto *texture1 = SDL_CreateTextureFromSurface(renderer, surface1);
-        auto *texture2 = SDL_CreateTextureFromSurface(renderer, surface2);
-        auto mw = std::max(surface1->w, surface2->w), mh = surface1->h + surface2->h;
-        if (texture)
-            SDL_DestroyTexture(texture);
-        texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
-        SDL_SetRenderTarget(renderer, texture);
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
-        SDL_RenderClear(renderer);
-        if (gScoreFormat > 0) {
-            SDL_FRect rc1 = {(float)(mw - surface1->w) * .5f, 0, (float)surface1->w, (float)surface1->h};
-            SDL_RenderTexture(renderer, texture1, nullptr, &rc1);
-            SDL_FRect rc2 = {(float)(mw - surface2->w) * .5f, (float)surface1->h, (float)surface2->w, (float)surface2->h};
-            SDL_RenderTexture(renderer, texture2, nullptr, &rc2);
-        } else {
-            SDL_FRect rc2 = {(float)(mw - surface2->w) * .5f, 0, (float)surface2->w, (float)surface2->h};
-            SDL_RenderTexture(renderer, texture2, nullptr, &rc2);
-            SDL_FRect rc1 = {(float)(mw - surface1->w) * .5f, (float)surface2->h, (float)surface1->w, (float)surface1->h};
-            SDL_RenderTexture(renderer, texture1, nullptr, &rc1);
+    }
+
+    inline void render() {
+        for (int i = 0; i < 2; i++) {
+            SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
+            SDL_RenderClear(renderer[i]);
+            if (gScoreRoundCorner > 0)
+                roundedBoxRGBA(renderer[i], 0, 0, w[i] - 1, h[i] - 1, gScoreRoundCorner,
+                               gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
+            else {
+                SDL_SetRenderDrawColor(renderer[i],
+                                       gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
+                SDL_FRect dstrect = {0, 0, (float)w[i], (float)h[i]};
+                SDL_RenderFillRect(renderer[i], &dstrect);
+            }
+            auto descend = TTF_FontDescent(i == 0 ? gScoreFont : gScoreNameFont);
+            SDL_FRect dstRect = {(float)(w[i] - tw[i]) * .5f, (float)(h[i] - th[i] - (descend >> 1)) * .5f, (float)tw[i], (float)th[i]};
+            SDL_RenderTexture(renderer[i], texture[i], nullptr, &dstRect);
+            SDL_RenderPresent(renderer[i]);
         }
-        if (colorMask) {
-            SDL_RenderTexture(renderer, colorMask, nullptr, nullptr);
-        }
-        SDL_DestroyTexture(texture1);
-        SDL_DestroyTexture(texture2);
-        SDL_DestroySurface(surface1);
-        SDL_DestroySurface(surface2);
-        SDL_SetRenderTarget(renderer, nullptr);
-        SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
-        SDL_QueryTexture(texture, nullptr, nullptr, &tw, &th);
-        w = tw + gScorePadding * 2;
-        h = th + gScorePadding * 2 - 2;
-        SDL_SetWindowSize(window, w, h);
     }
 
     inline void setExtraScore(int idx) {
@@ -296,11 +387,11 @@ struct ScoreWindow {
         hasExtraScore = false;
     }
 
-    SDL_Window *window = nullptr;
-    SDL_Renderer *renderer = nullptr;
-    SDL_Texture *texture = nullptr;
-    SDL_Texture *colorMask = nullptr;
-    int w = 0, h = 0, tw = 0, th = 0;
+    SDL_Window *window[2] = {nullptr, nullptr};
+    SDL_Renderer *renderer[2] = {nullptr, nullptr};
+    SDL_Texture *texture[2] = {nullptr, nullptr};
+    SDL_Texture *colorMask[2] = {nullptr, nullptr};
+    int w[2] = {0, 0}, h[2] = {0, 0}, tw[2] = {0, 0}, th[2] = {0, 0};
     std::string playerName;
     int index = -1;
     int score = -1;
@@ -572,6 +663,23 @@ static void unescape(std::string &str) {
     }
 }
 
+inline int setFontStyle(const std::string &style) {
+    int res = TTF_STYLE_NORMAL;
+    for (auto &c: style) {
+        switch (c) {
+            case 'B':
+                res |= TTF_STYLE_BOLD;
+                break;
+            case 'I':
+                res |= TTF_STYLE_ITALIC;
+                break;
+            default:
+                break;
+        }
+    }
+    return res;
+}
+
 static void load() {
     std::ifstream ifs("data/config.txt");
     std::string line;
@@ -583,7 +691,18 @@ static void load() {
         auto key = line.substr(0, pos);
         auto value = line.substr(pos + 1);
         if (key == "CellSize") {
-            gCellSize = std::stoi(value);
+            auto sl = splitString(value, ',');
+            switch (sl.size()) {
+            case 1:
+                gCellSize[0] = gCellSize[1] = std::stoi(sl[0]);
+                break;
+            case 2:
+                gCellSize[0] = std::stoi(sl[0]);
+                gCellSize[1] = std::stoi(sl[1]);
+                break;
+            default:
+                break;
+            }
         } else if (key == "CellRoundCorner") {
             gCellRoundCorner = std::stoi(value);
         } else if (key == "CellSpacing") {
@@ -591,7 +710,13 @@ static void load() {
         } else if (key == "CellBorder") {
             gCellBorder = std::stoi(value);
         } else if (key == "FontFile") {
-            gFontFile = value;
+            auto sl = splitString(value, '|');
+            if (sl.size() == 2) {
+                gFontFile = sl[0];
+                gFontStyle = setFontStyle(sl[1]);
+            } else {
+                gFontFile = value;
+            }
         } else if (key == "CellColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -631,6 +756,11 @@ static void load() {
             gTextShadowColor.g = std::stoi(sl[1]);
             gTextShadowColor.b = std::stoi(sl[2]);
             gTextShadowColor.a = std::stoi(sl[3]);
+        } else if (key == "TextShadowOffset") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 2) continue;
+            gTextShadowOffset[0] = std::stoi(sl[0]);
+            gTextShadowOffset[1] = std::stoi(sl[1]);
         } else if (key == "Color1") {
             auto sl = splitString(value, ',');
             if (sl.size() == 3) {
@@ -667,15 +797,53 @@ static void load() {
         } else if (key == "ScoreRoundCorner") {
             gScoreRoundCorner = std::stoi(value);
         } else if (key == "ScoreFontFile") {
-            gScoreFontFile = value;
+            auto sl = splitString(value, '|');
+            if (sl.size() == 2) {
+                gScoreFontFile = sl[0];
+                gScoreFontStyle = setFontStyle(sl[1]);
+            } else {
+                gScoreFontFile = value;
+            }
         } else if (key == "ScoreFontSize") {
             gScoreFontSize = std::stoi(value);
+        } else if (key == "ScoreTextShadow") {
+            gScoreTextShadow = std::stoi(value);
+        } else if (key == "ScoreTextShadowColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gScoreTextShadowColor.r = std::stoi(sl[0]);
+            gScoreTextShadowColor.g = std::stoi(sl[1]);
+            gScoreTextShadowColor.b = std::stoi(sl[2]);
+            gScoreTextShadowColor.a = std::stoi(sl[3]);
+        } else if (key == "ScoreTextShadowOffset") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 2) continue;
+            gScoreTextShadowOffset[0] = std::stoi(sl[0]);
+            gScoreTextShadowOffset[1] = std::stoi(sl[1]);
         } else if (key == "ScoreNameFontFile") {
-            gScoreNameFontFile = value;
+            auto sl = splitString(value, '|');
+            if (sl.size() == 2) {
+                gScoreNameFontFile = sl[0];
+                gScoreNameFontStyle = setFontStyle(sl[1]);
+            } else {
+                gScoreNameFontFile = value;
+            }
         } else if (key == "ScoreNameFontSize") {
             gScoreNameFontSize = std::stoi(value);
-        } else if (key == "ScoreFormat") {
-            gScoreFormat = std::stoi(value);
+        } else if (key == "ScoreNameTextShadow") {
+            gScoreNameTextShadow = std::stoi(value);
+        } else if (key == "ScoreNameTextShadowColor") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 4) continue;
+            gScoreNameTextShadowColor.r = std::stoi(sl[0]);
+            gScoreNameTextShadowColor.g = std::stoi(sl[1]);
+            gScoreNameTextShadowColor.b = std::stoi(sl[2]);
+            gScoreNameTextShadowColor.a = std::stoi(sl[3]);
+        } else if (key == "ScoreNameTextShadowOffset") {
+            auto sl = splitString(value, ',');
+            if (sl.size() != 2) continue;
+            gScoreNameTextShadowOffset[0] = std::stoi(sl[0]);
+            gScoreNameTextShadowOffset[1] = std::stoi(sl[1]);
         } else if (key == "ScoreWinText") {
             gScoreWinText = value;
             unescape(gScoreWinText);
@@ -752,11 +920,26 @@ static void load() {
 }
 
 static void postLoad() {
+    if (gFont) {
+        TTF_CloseFont(gFont);
+        gFont = nullptr;
+    }
     gFont = TTF_OpenFont(gFontFile.c_str(), gFontSize);
+    TTF_SetFontStyle(gFont, gFontStyle);
     TTF_SetFontWrappedAlign(gFont, TTF_WRAPPED_ALIGN_CENTER);
+    if (gScoreFont) {
+        TTF_CloseFont(gScoreFont);
+        gScoreFont = nullptr;
+    }
     gScoreFont = TTF_OpenFont(gScoreFontFile.c_str(), gScoreFontSize);
+    TTF_SetFontStyle(gScoreFont, gScoreFontStyle);
     TTF_SetFontWrappedAlign(gScoreFont, TTF_WRAPPED_ALIGN_CENTER);
+    if (gScoreNameFont) {
+        TTF_CloseFont(gScoreNameFont);
+        gScoreNameFont = nullptr;
+    }
     gScoreNameFont = TTF_OpenFont(gScoreNameFontFile.c_str(), gScoreNameFontSize);
+    TTF_SetFontStyle(gScoreNameFont, gScoreNameFontStyle);
     TTF_SetFontWrappedAlign(gScoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
     std::ifstream ifs("data/squares.txt");
     std::string line;
@@ -785,10 +968,12 @@ static void saveState() {
     SDL_GetWindowPosition(gWindow, &x, &y);
     n.emplace_back(std::to_string(x));
     n.emplace_back(std::to_string(y));
-    for (auto &win: gScoreWindows) {
-        SDL_GetWindowPosition(win.window, &x, &y);
-        n.emplace_back(std::to_string(x));
-        n.emplace_back(std::to_string(y));
+    for (int i = 0; i < 2; i++) {
+        for (auto &win: gScoreWindows) {
+            SDL_GetWindowPosition(win.window[i], &x, &y);
+            n.emplace_back(std::to_string(x));
+            n.emplace_back(std::to_string(y));
+        }
     }
     ofs << mergeString(n, ',') << std::endl;
 }
@@ -813,10 +998,12 @@ static void loadState() {
     int x = std::stoi(sl[i++]);
     int y = std::stoi(sl[i++]);
     SDL_SetWindowPosition(gWindow, x, y);
-    for (auto &win: gScoreWindows) {
-        x = std::stoi(sl[i++]);
-        y = std::stoi(sl[i++]);
-        SDL_SetWindowPosition(win.window, x, y);
+    for (int i = 0; i < 2; i++) {
+        for (auto &win: gScoreWindows) {
+            x = std::stoi(sl[i++]);
+            y = std::stoi(sl[i++]);
+            SDL_SetWindowPosition(win.window[i], x, y);
+        }
     }
 }
 
@@ -828,27 +1015,25 @@ SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void 
     return SDL_HITTEST_NORMAL;
 }
 
-int wmain(int argc, wchar_t *argv[]) {
-    // Unused argc, argv
-    (void)argc;
-    (void)argv;
-
-    if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
-        printf("SDL could not be initialized!\n"
-               "SDL_Error: %s\n", SDL_GetError());
-        return 0;
-    }
-
-    TTF_Init();
+void reloadAll() {
     load();
+    syncClose();
     syncInit();
 
+    if (gWindow != nullptr) {
+        SDL_DestroyWindow(gWindow);
+        gWindow = nullptr;
+    }
+    if (gRenderer != nullptr) {
+        SDL_DestroyRenderer(gRenderer);
+        gRenderer = nullptr;
+    }
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     gWindow = SDL_CreateWindow("BingoTool",
-                               gCellSize * 5 + gCellSpacing * 4 + gCellBorder * 2,
-                               gCellSize * 5 + gCellSpacing * 4 + gCellBorder * 2,
+                               gCellSize[0] * 5 + gCellSpacing * 4 + gCellBorder * 2,
+                               gCellSize[1] * 5 + gCellSpacing * 4 + gCellBorder * 2,
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(gWindow, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
@@ -954,6 +1139,21 @@ int wmain(int argc, wchar_t *argv[]) {
             syncSendData('S', "");
         }
     });
+}
+
+int wmain(int argc, wchar_t *argv[]) {
+    // Unused argc, argv
+    (void)argc;
+    (void)argv;
+
+    if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
+        printf("SDL could not be initialized!\n"
+               "SDL_Error: %s\n", SDL_GetError());
+        return 0;
+    }
+
+    TTF_Init();
+    reloadAll();
 
     while (true) {
         SDL_Event e;
@@ -969,13 +1169,17 @@ int wmain(int argc, wchar_t *argv[]) {
                     if (e.button.windowID == SDL_GetWindowID(gWindow) && e.button.button != SDL_BUTTON_RIGHT) break;
                     if (syncGetMode() == 0) {
                         auto menu = CreatePopupMenu();
-                        AppendMenuW(menu, MF_STRING, 7, L"退出");
+                        AppendMenuW(menu, MF_STRING, 7, L"重新加载选项");
+                        AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 7:
+                                reloadAll();
+                                break;
+                            case 8:
                                 goto QUIT;
                             default:
                                 break;
@@ -985,9 +1189,9 @@ int wmain(int argc, wchar_t *argv[]) {
                     float fx, fy;
                     SDL_GetMouseState(&fx, &fy);
                     int x = (int)fx, y = (int)fy;
-                    int dx = (x - gCellBorder) / (gCellSize + gCellSpacing);
-                    int dy = (y - gCellBorder) / (gCellSize + gCellSpacing);
-                    if (dx >= gCellSize || dy >= gCellSize) break;
+                    int dx = (x - gCellBorder) / (gCellSize[0] + gCellSpacing);
+                    int dy = (y - gCellBorder) / (gCellSize[1] + gCellSpacing);
+                    if (dx >= gCellSize[0] || dy >= gCellSize[1]) break;
                     auto &cell = gCells[dy][dx];
                     auto menu = CreatePopupMenu();
                     int count[2] = {0, 0};
@@ -1022,7 +1226,8 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 6, L"重新随机表格");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 7, L"退出");
+                        AppendMenuW(menu, MF_STRING, 7, L"重新加载选项");
+                        AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
@@ -1061,6 +1266,9 @@ int wmain(int argc, wchar_t *argv[]) {
                                 randomCells();
                                 break;
                             case 7:
+                                reloadAll();
+                                break;
+                            case 8:
                                 goto QUIT;
                             default:
                                 break;
@@ -1163,61 +1371,20 @@ int wmain(int argc, wchar_t *argv[]) {
         SDL_SetRenderDrawColor(gRenderer, gCellBorderColor.r, gCellBorderColor.g, gCellBorderColor.b, gCellBorderColor.a);
         SDL_RenderFillRect(gRenderer, nullptr);
         SDL_SetRenderDrawColor(gRenderer, gCellSpacingColor.r, gCellSpacingColor.g, gCellSpacingColor.b, gCellSpacingColor.a);
-        SDL_FRect rcInner = {(float)gCellBorder, (float)gCellBorder, (float)(gCellSize * 5 + gCellSpacing * 4), (float)(gCellSize * 5 + gCellSpacing * 4)};
+        SDL_FRect rcInner = {(float)gCellBorder, (float)gCellBorder, (float)(gCellSize[0] * 5 + gCellSpacing * 4), (float)(gCellSize[1] * 5 + gCellSpacing * 4)};
         SDL_RenderFillRect(gRenderer, &rcInner);
         SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
-        auto cs = gCellSize;
+        auto cx = gCellSize[0], cy = gCellSize[1];
         for (int i = 0; i < 5; i++) {
-            auto y = i * (gCellSize + gCellSpacing) + gCellBorder;
+            auto y = i * (cy + gCellSpacing) + gCellBorder;
             for (int j = 0; j < 5; j++) {
-                auto x = j * (gCellSize + gCellSpacing) + gCellBorder;
+                auto x = j * (cx + gCellSpacing) + gCellBorder;
                 auto &cell = gCells[i][j];
-                bool dbl = cell.status > 2;
-                auto fx = (float)x, fy = (float)y, fcs = (float)cs;
-                auto status = dbl ? (cell.status - 2) : cell.status;
-                if (status > 0 && gColorTexture[status - 1]) {
-                    SDL_FRect dstrect = {fx, fy, fcs, fcs};
-                    SDL_RenderTexture(gRenderer, gColorTexture[status - 1], nullptr, &dstrect);
-                } else {
-                    auto &col = gColorsInt[status];
-                    if (gCellRoundCorner > 0) {
-                        roundedBoxRGBA(gRenderer, x, y, x + cs - 1, y + cs - 1, gCellRoundCorner, col.r, col.g, col.b, col.a);
-                    } else {
-                        SDL_FRect dstrect = {fx, fy, fcs, fcs};
-                        SDL_SetRenderDrawColor(gRenderer, col.r, col.g, col.b, col.a);
-                        SDL_RenderFillRect(gRenderer, &dstrect);
-                    }
-                }
-                if (dbl) {
-                    auto &color = gColors[5 - cell.status];
-                    const SDL_Vertex verts[] = {
-                        {SDL_FPoint{fx, fy + fcs}, color, SDL_FPoint{0},},
-                        {SDL_FPoint{fx, fy + fcs * .7f}, color, SDL_FPoint{0},},
-                        {SDL_FPoint{fx + fcs * .3f, fy + fcs}, color, SDL_FPoint{0},},
-                    };
-                    SDL_RenderGeometry(gRenderer, nullptr, verts, 3, nullptr, 0);
-                }
-                if (cell.texture) {
-                    auto fw = (float)cell.w, fh = (float)cell.h;
-                    auto l = (float)(gCellSize - cell.w) * .5f, t = (float)(gCellSize - cell.h) * .5f;
-                    SDL_FRect rect = {fx + l, fy + t, fw, fh};
-                    SDL_RenderTexture(gRenderer, cell.texture, nullptr, &rect);
-                }
+                cell.render(x, y, cx, cy);
             }
         }
         for (auto &sw : gScoreWindows) {
-            SDL_SetRenderDrawColor(sw.renderer, 0, 0, 0, 0);
-            SDL_RenderClear(sw.renderer);
-            if (gScoreRoundCorner > 0)
-                roundedBoxRGBA(sw.renderer, 0, 0, sw.w - 1, sw.h - 1, gScoreRoundCorner, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
-            else {
-                SDL_SetRenderDrawColor(sw.renderer, gScoreBackgroundColor.r, gScoreBackgroundColor.g, gScoreBackgroundColor.b, gScoreBackgroundColor.a);
-                SDL_FRect dstrect = {0, 0, (float)sw.w, (float)sw.h};
-                SDL_RenderFillRect(sw.renderer, &dstrect);
-            }
-            SDL_FRect dstRect = {(float)(sw.w - sw.tw) * .5f, (float)(sw.h - sw.th) * .5f + 1.f, (float)sw.tw, (float)sw.th};
-            SDL_RenderTexture(sw.renderer, sw.texture, nullptr, &dstRect);
-            SDL_RenderPresent(sw.renderer);
+            sw.render();
         }
         SDL_RenderPresent(gRenderer);
         syncProcess();

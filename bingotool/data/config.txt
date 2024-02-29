@@ -2,8 +2,8 @@
 ;对于透明度，0为完全透明，255为完全不透明
 
 ;表格面板选项
-; 单个格子边长
-CellSize=150
+; 单个格子边长，为单个数字时表示长和宽，为两个数字时分别表示长和宽
+CellSize=150,150
 ; 格子圆角
 CellRoundCorner=0
 ; 格子间距
@@ -22,6 +22,8 @@ TextColor=255,255,255,200
 TextShadow=0
 ; 文字阴影颜色
 TextShadowColor=0,0,0,200
+; 文字阴影偏移(x方向,y方向), 均为0时表示在周围扩散
+TextShadowOffset=2,2
 ; 目标文字字体
 FontFile=data/font.ttf
 ; 目标文字字体大小
@@ -51,12 +53,22 @@ ScoreRoundCorner=10
 ScoreFontFile=data/font.ttf
 ; 积分文字字体大小
 ScoreFontSize=48
+; 积分文字阴影厚度
+ScoreTextShadow=0
+; 积分文字阴影颜色
+ScoreTextShadowColor=0,0,0,200
+; 积分文字阴影偏移(x方向,y方向), 均为0时表示在周围扩散
+ScoreTextShadowOffset=2,2
 ; 积分面板玩家名字文字字体
 ScoreNameFontFile=data/font.ttf
 ; 积分面板玩家名字文字字体大小
 ScoreNameFontSize=24
-; 积分文本格式，0: “玩家名\n积分”  1: “积分\n玩家名”
-ScoreFormat=1
+; 积分面板玩家名字文字阴影厚度
+ScoreNameTextShadow=0
+; 积分面板玩家名字文字阴影颜色
+ScoreNameTextShadowColor=0,0,0,200
+; 积分面板玩家名字文字阴影偏移(x方向,y方向), 均为0时表示在周围扩散
+ScoreNameTextShadowOffset=2,2
 ; 以下选项中，{0}代表玩家名，{1}代表积分
 ; 积分获胜时的积分文本
 ScoreWinText={1}
