@@ -7,6 +7,8 @@ import (
 	"io"
 	"net"
 	"sync"
+
+	"github.com/redis/go-redis/v9"
 )
 
 type Channel struct {
@@ -146,6 +148,11 @@ func main() {
 		fmt.Println("Listen() failed, err: ", err)
 		return
 	}
+	rdb := redis.NewClient(&redis.Options{
+		Addr:     "localhost:6379",
+		Password: "",
+		DB:       0,
+	})
 	for {
 		conn, err := listen.Accept()
 		if err != nil {
@@ -155,4 +162,5 @@ func main() {
 		client := &Client {}
 		go processRead(client, conn)
 	}
+	rdb.Close()
 }
