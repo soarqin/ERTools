@@ -8,7 +8,6 @@
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
 #include <SDL3_ttf/SDL_ttf.h>
-#include <SDL3_gfxPrimitives.h>
 #include <windows.h>
 #include <shellapi.h>
 #if defined(_MSC_VER)
@@ -198,20 +197,14 @@ void reloadAll() {
                             dirty = true;
                         }
                     }
-                    if (idx < sl.size()) {
-                        auto pname = sl[idx++];;
-                        gConfig.playerName[0] = Utf8ToUnicode(pname);
-                        if (gScoreWindows[0].playerName != pname) {
-                            gScoreWindows[0].playerName = pname;
-                            gScoreWindows[0].updateTexture();
-                        }
-                    }
-                    if (idx < sl.size()) {
-                        auto pname = sl[idx++];;
-                        gConfig.playerName[1] = Utf8ToUnicode(pname);
-                        if (gScoreWindows[1].playerName != pname) {
-                            gScoreWindows[1].playerName = pname;
-                            gScoreWindows[1].updateTexture();
+                    for (int i = 0; i < 2; i++) {
+                        if (idx < sl.size()) {
+                            auto pname = sl[idx++];
+                            gConfig.playerName[i] = Utf8ToUnicode(pname);
+                            if (gScoreWindows[i].playerName != pname) {
+                                gScoreWindows[i].playerName = pname;
+                                gScoreWindows[i].updateTexture();
+                            }
                         }
                     }
                     if (dirty) {
@@ -262,6 +255,8 @@ void reloadAll() {
                     }
                     break;
                 }
+                default:
+                    break;
             }
         });
         if (syncGetMode() != 0) {
@@ -381,6 +376,7 @@ int wmain(int argc, wchar_t *argv[]) {
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        DestroyMenu(tables);
                         DestroyMenu(menu);
                         switch (cmd) {
                             case 1: {
