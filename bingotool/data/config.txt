@@ -27,7 +27,7 @@ TextShadowOffset=2,2
 ; 目标文字字体
 FontFile=data/font.ttf
 ; 目标文字字体大小
-FontSize=24
+FontSize=30
 ; 玩家1颜色，可以为两种形式之一：1. RGB(红,绿,蓝)   2. 贴图文件路径
 Color1=data/red.png
 ; 玩家2颜色，可以为两种形式之一：1. RGB(红,绿,蓝)   2. 贴图文件路径
@@ -62,7 +62,7 @@ ScoreTextShadowOffset=2,2
 ; 积分面板玩家名字文字字体
 ScoreNameFontFile=data/font.ttf
 ; 积分面板玩家名字文字字体大小
-ScoreNameFontSize=24
+ScoreNameFontSize=48
 ; 积分面板玩家名字文字阴影厚度
 ScoreNameTextShadow=0
 ; 积分面板玩家名字文字阴影颜色
