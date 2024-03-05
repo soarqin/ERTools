@@ -6,11 +6,10 @@
 
 static int gMode = 0;
 static std::string gServer = "bingosync.soar.im";
-static std::string gChannel = "";
+static std::string gChannel;
 
 static uv_loop_t *loop = nullptr;
-static uv_tcp_t clientCtx;
-static uv_connect_t connectCtx;
+static uv_tcp_t *clientCtx = nullptr;
 static int state = 0;
 static size_t headerRead = 0;
 static char header[4];
@@ -31,12 +30,13 @@ void doReconnect() {
 }
 
 void on_connect(uv_connect_t *req, int status) {
+    delete req;
     if (status < 0) {
         doReconnect();
         return;
     }
     state = 0;
-    uv_read_start((uv_stream_t*)&clientCtx, [](uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) {
+    uv_read_start((uv_stream_t*)clientCtx, [](uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) {
         auto *mem = new char[suggested_size];
         *buf = uv_buf_init(mem, suggested_size);
     }, read_cb);
@@ -135,7 +135,11 @@ bool syncOpen(ConnectionCallback callback) {
     if (loop == nullptr) {
         loop = uv_default_loop();
     }
-    if (uv_tcp_init(loop, &clientCtx) < 0)
+    if (clientCtx != nullptr) {
+        syncClose();
+    }
+    clientCtx = new uv_tcp_t;
+    if (uv_tcp_init(loop, clientCtx) < 0)
         return false;
     int port = 8307;
     auto h = gServer;
@@ -151,15 +155,16 @@ bool syncOpen(ConnectionCallback callback) {
     if (getaddrinfo(h.c_str(), std::to_string(port).c_str(), &hints, &result) != 0) {
         return false;
     }
-    memset(&connectCtx, 0, sizeof(connectCtx));
+    auto *connectCtx = new uv_connect_t;
+    memset(connectCtx, 0, sizeof(*connectCtx));
     syncOpenCallback = callback;
-    return uv_tcp_connect(&connectCtx, &clientCtx, result->ai_addr, on_connect) == 0;
+    return uv_tcp_connect(connectCtx, clientCtx, result->ai_addr, on_connect) == 0;
 }
 
 void syncClose() {
-    if (gChannel.empty()) return;
-    uv_read_stop((uv_stream_t*)&clientCtx);
-    uv_close((uv_handle_t*)&clientCtx, [](uv_handle_t* handle) {
+    if (clientCtx == nullptr || uv_is_closing((uv_handle_t*)clientCtx)) return;
+    uv_close((uv_handle_t*)clientCtx, [](uv_handle_t* handle) {
+        delete (uv_tcp_t*)handle;
         syncCallback = nullptr;
         state = 0;
         headerRead = 0;
@@ -189,7 +194,7 @@ bool syncSendData(char type, const std::string &data) {
     auto *req = new uv_write_t;
     memset(req, 0, sizeof(uv_write_t));
     req->data = buf.base;
-    return uv_write(req, (uv_stream_t*)&clientCtx, &buf, 1, write_cb) == 0;
+    return uv_write(req, (uv_stream_t*)clientCtx, &buf, 1, write_cb) == 0;
 }
 
 void write_cb(uv_write_t *req, int status) {

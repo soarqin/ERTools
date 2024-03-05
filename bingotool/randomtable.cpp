@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <random>
 #include <functional>
+#include <filesystem>
 
 static void calcGroupWeight(RandomGroup *group) {
     group->totalWeight = 0;
@@ -77,7 +78,7 @@ static void logGroup(RandomGroup *group, int indent = 0) {
     }
 }
 
-void RandomTable::load(const char *filename) {
+void RandomTable::load(const std::string &filename) {
     root_ = RandomGroup();
     groups_.clear();
     struct CurrentGroup {
@@ -87,7 +88,9 @@ void RandomTable::load(const char *filename) {
     std::vector<CurrentGroup> indents = {{&root_, 0}};
     RandomGroup *lastGroup = &root_;
     std::function<void(std::string)> f = [this, &indents, &lastGroup, &f](const std::string &fn) {
-        std::ifstream file("data/" + fn);
+        auto p = std::filesystem::u8path(fn);
+        auto parent = p.parent_path().string();
+        std::ifstream file(p);
         if (!file.is_open()) { return; }
         while (!file.eof()) {
             std::string line;
@@ -117,7 +120,10 @@ void RandomTable::load(const char *filename) {
                     auto incfn = line.substr(1);
                     stripString(incfn);
                     if (incfn.empty()) break;
-                    f(incfn);
+                    auto newfn = parent;
+                    newfn.push_back('/');
+                    newfn.append(incfn);
+                    f(newfn);
                     break;
                 }
                 case '+': {

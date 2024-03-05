@@ -2,6 +2,9 @@ project(bingotool C CXX)
 
 add_executable(${PROJECT_NAME} WIN32
     main.cpp
+    config.cpp config.h
+    cell.cpp cell.h
+    scorewindow.cpp scorewindow.h
     randomtable.cpp randomtable.h
     common.cpp common.h
     sync.cpp sync.h

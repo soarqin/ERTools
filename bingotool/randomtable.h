@@ -31,7 +31,7 @@ struct MutualExclusion {
 
 class RandomTable {
 public:
-    void load(const char *filename);
+    void load(const std::string &filename);
     void generate(std::vector<std::string> &result) const;
 
 private:
