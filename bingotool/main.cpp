@@ -344,7 +344,7 @@ int wmain(int argc, wchar_t *argv[]) {
                             AppendMenuW(tables, MF_STRING, 6, L"data/randomtable.txt");
                         }
                         std::vector<std::string> tableFilenames;
-                        {
+                        if (std::filesystem::exists("randomtables")) {
                             UINT_PTR idx = 100;
                             std::filesystem::directory_iterator it("randomtables");
                             for (const auto &entry: it) {

@@ -131,7 +131,7 @@ void RandomTable::load(const std::string &filename) {
                     if (sl.size() == 1) {
                         if (pos > 0) break;
                         lastGroup = &groups_[sl[0]];
-                        if (lastGroup->name.empty()) lastGroup->name = sl[2];
+                        if (lastGroup->name.empty()) lastGroup->name = sl[0];
                         break;
                     }
                     if (sl.size() == 3) {
