@@ -88,7 +88,7 @@ void RandomTable::load(const std::string &filename) {
     std::vector<CurrentGroup> indents = {{&root_, 0}};
     RandomGroup *lastGroup = &root_;
     std::function<void(std::string)> f = [this, &indents, &lastGroup, &f](const std::string &fn) {
-        auto p = std::filesystem::u8path(fn);
+        auto p = std::filesystem::path(fn);
         auto parent = p.parent_path().string();
         std::ifstream file(p);
         if (!file.is_open()) { return; }
@@ -123,7 +123,8 @@ void RandomTable::load(const std::string &filename) {
                     auto newfn = parent;
                     newfn.push_back('/');
                     newfn.append(incfn);
-                    f(newfn);
+                    auto p = std::filesystem::u8path(newfn);
+                    f(p.string());
                     break;
                 }
                 case '+': {
