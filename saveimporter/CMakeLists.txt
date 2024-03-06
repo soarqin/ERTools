@@ -30,10 +30,18 @@ if(HAVE_AVX2_EXTENSIONS)
 else()
     set(MD5_SRC md5.c md5.h)
 endif()
+if(NOT MSVC)
+    set(RES_FILES res/commctrl.rc)
+endif()
 add_executable(${PROJECT_NAME} WIN32 main.cpp ${MD5_SRC}
     mem.cpp mem.h
-    savefile.cpp savefile.h)
-add_executable(${PROJECT_NAME}_maker maker.cpp)
+    savefile.cpp savefile.h
+    res/saveimporter.rc ${RES_FILES}
+)
+add_executable(${PROJECT_NAME}_maker
+    maker.cpp
+    res/saveimporter.rc ${RES_FILES}
+)
 target_include_directories(${PROJECT_NAME} PRIVATE .)
 target_link_libraries(${PROJECT_NAME} PRIVATE shlwapi)
 if(HAVE_AVX2_EXTENSIONS)
