@@ -1,0 +1,53 @@
+
+[rules]
+clear_quest_multiplier = 0
+clear_score = 0
+line_score = 3
+none_first_scores = [0,0,0,0,0]
+max_per_row = 5
+scores = [1,1,1,1,1]
+bingo_brawlers_mode = 1
+
+[scores_window]
+name_win_text = "{0}获胜"
+bingo_text = "Bingo!"
+win_text = "{1}"
+round_corner = 0
+padding = 0
+name_text_shadow_offset = [2,2]
+player1 = "红方"
+font_size = 128
+name_text_shadow_color = "0,0,0,200"
+background_color = "50,50,50,255"
+player2 = "蓝方"
+name_bingo_text = "{0}达成Bingo!"
+font_style = ""
+name_font_file = "data/font.ttf"
+text_shadow = 1
+name_font_style = ""
+text_shadow_color = "0,0,0,200"
+name_text_shadow = 1
+text_shadow_offset = [2,2]
+font_file = "data/font.ttf"
+name_font_size = 128
+
+[cells_window]
+color1 = "data/red.png"
+font_size = 40
+font_style = ""
+cell_color = "50,50,50,255"
+width = 150
+color2 = "data/blue.png"
+round_corner = 0
+border = 3
+spacing = 3
+text_color = "255,255,255,255"
+height = 150
+spacing_color = "255,255,255,160"
+border_color = "255,255,255,255"
+auto_fit = 1
+text_shadow = 1
+text_shadow_color = "0,0,0,255"
+text_shadow_offset = [2,2]
+font_file = "data/font.ttf"
+

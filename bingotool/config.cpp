@@ -2,7 +2,10 @@
 
 #include "common.h"
 
+#include <toml.hpp>
+
 #include <fstream>
+#include <algorithm>
 
 Config gConfig;
 
@@ -24,7 +27,209 @@ inline int setFontStyle(const std::string &style) {
 }
 
 void Config::load() {
+    oldLoad();
+
+    auto stringToColor = [](const std::string &s, SDL_Color &c) {
+        auto sl = splitString(s, ',');
+        if (sl.size() == 4) {
+            c.r = std::stoi(sl[0]);
+            c.g = std::stoi(sl[1]);
+            c.b = std::stoi(sl[2]);
+            c.a = std::stoi(sl[3]);
+        }
+    };
+    auto extractColor = [&stringToColor](const toml::value &parent, const char *key, SDL_Color &c) {
+        auto s = toml::find_or(parent, key, "");
+        stringToColor(s, c);
+    };
+    auto extractOffset = [](const toml::value &parent, const char *key, int &x, int &y) {
+        const auto &v = toml::find_or(parent, key, toml::value());
+        if (v.is_array() && v.size() >= 2) {
+            x = toml::get_or(v.at(0), x);
+            y = toml::get_or(v.at(1), y);
+        }
+    };
+
+    toml::value data;
+    try {
+        data = toml::parse("config.toml");
+    } catch (...) {
+        return;
+    }
+    const auto cells = toml::find_or(data, "cells_window", toml::value());
+    if (cells.is_table()) {
+        cellSize[0] = toml::find_or(cells, "width", cellSize[0]);
+        cellSize[1] = toml::find_or(cells, "height", cellSize[0]);
+        cellRoundCorner = toml::find_or(cells, "round_corner", cellRoundCorner);
+        cellSpacing = toml::find_or(cells, "spacing", cellSpacing);
+        cellBorder = toml::find_or(cells, "border", cellBorder);
+        extractColor(cells, "spacing_color", cellSpacingColor);
+        extractColor(cells, "border_color", cellBorderColor);
+        cellAutoFit = toml::find_or(cells, "auto_fit", cellAutoFit);
+        extractColor(cells, "text_color", textColor);
+        textShadow = toml::find_or(cells, "text_shadow", textShadow);
+        extractColor(cells, "text_shadow_color", textShadowColor);
+        extractOffset(cells, "text_shadow_offset", textShadowOffset[0], textShadowOffset[1]);
+        fontFile = toml::find_or(cells, "font_file", fontFile);
+        auto style = toml::find_or(cells, "font_style", "-");
+        if (style != "-") fontStyle = setFontStyle(style);
+        originalFontSize = fontSize = toml::find_or(cells, "font_size", originalFontSize);
+        extractColor(cells, "cell_color", colorsInt[0]);
+        auto color1 = toml::find_or(cells, "color1", "");
+        auto sl = splitString(color1, ',');
+        if (sl.size() == 1) {
+            colorTextureFile[0] = color1;
+        } else {
+            stringToColor(color1, colorsInt[1]);
+        }
+        auto color2 = toml::find_or(cells, "color2", "");
+        sl = splitString(color2, ',');
+        if (sl.size() == 1) {
+            colorTextureFile[1] = color2;
+        } else {
+            stringToColor(color2, colorsInt[2]);
+        }
+    }
+    const auto score = toml::find_or(data, "scores_window", toml::value());
+    if (score.is_table()) {
+        playerName[0] = toml::find_or(score, "player1", playerName[0]);
+        playerName[1] = toml::find_or(score, "player2", playerName[1]);
+        scoreFontFile = toml::find_or(score, "font_file", scoreFontFile);
+        auto style = toml::find_or(score, "font_style", "-");
+        if (style != "-") scoreFontStyle = setFontStyle(style);
+        scoreFontSize = toml::find_or(score, "font_size", scoreFontSize);
+        scoreTextShadow = toml::find_or(score, "text_shadow", scoreTextShadow);
+        extractColor(score, "text_shadow_color", scoreTextShadowColor);
+        extractOffset(score, "text_shadow_offset", scoreTextShadowOffset[0], scoreTextShadowOffset[1]);
+        scoreNameFontFile = toml::find_or(score, "name_font_file", scoreNameFontFile);
+        style = toml::find_or(score, "name_font_style", "-");
+        if (style != "-") scoreNameFontStyle = setFontStyle(style);
+        scoreNameFontSize = toml::find_or(score, "name_font_size", scoreNameFontSize);
+        scoreNameTextShadow = toml::find_or(score, "name_text_shadow", scoreNameTextShadow);
+        extractColor(score, "name_text_shadow_color", scoreNameTextShadowColor);
+        extractOffset(score, "name_text_shadow_offset", scoreNameTextShadowOffset[0], scoreNameTextShadowOffset[1]);
+        extractColor(score, "background_color", scoreBackgroundColor);
+        scorePadding = toml::find_or(score, "padding", scorePadding);
+        scoreRoundCorner = toml::find_or(score, "round_corner", scoreRoundCorner);
+        scoreWinText = toml::find_or(score, "win_text", scoreWinText);
+        scoreBingoText = toml::find_or(score, "bingo_text", scoreBingoText);
+        scoreNameWinText = toml::find_or(score, "name_win_text", scoreNameWinText);
+        scoreNameBingoText = toml::find_or(score, "name_bingo_text", scoreNameBingoText);
+    }
+    const auto rules = toml::find_or(data, "rules", toml::value());
+    if (rules.is_table()) {
+        bingoBrawlersMode = toml::find_or(rules, "bingo_brawlers_mode", bingoBrawlersMode);
+        const auto scr = toml::find_or(rules, "scores", toml::value());
+        if (scr.is_array()) {
+            for (size_t i = 0; i < scr.size() && i < 5; i++) {
+                this->scores[i] = toml::get<int>(scr.at(i));
+            }
+        }
+        const auto nfs = toml::find_or(rules, "none_first_scores", toml::value());
+        if (nfs.is_array()) {
+            for (size_t i = 0; i < nfs.size() && i < 5; i++) {
+                this->nFScores[i] = toml::get<int>(nfs.at(i));
+            }
+        }
+        lineScore = toml::find_or(rules, "line_score", lineScore);
+        maxPerRow = toml::find_or(rules, "max_per_row", maxPerRow);
+        clearScore = toml::find_or(rules, "clear_score", clearScore);
+        clearQuestMultiplier = toml::find_or(rules, "clear_quest_multiplier", clearQuestMultiplier);
+    }
+    for (int i = 0; i < 3; i++) {
+        auto &c = colors[i];
+        c.r = (float)colorsInt[i].r / 255.f;
+        c.g = (float)colorsInt[i].g / 255.f;
+        c.b = (float)colorsInt[i].b / 255.f;
+        if (i > 0)
+            colorsInt[i].a = colorsInt[0].a;
+        c.a = (float)colorsInt[i].a / 255.f;
+    }
+    if (bingoBrawlersMode) {
+        maxPerRow = 5;
+        clearQuestMultiplier = 0;
+        for (int i = 0; i < 5; i++) {
+            scores[i] = 1;
+            nFScores[i] = 0;
+        }
+    }
+}
+
+void Config::save() {
+    auto colorToString = [](const SDL_Color &c) {
+        return std::to_string(c.r) + "," + std::to_string(c.g) + "," + std::to_string(c.b) + "," + std::to_string(c.a);
+    };
+    toml::value data = {
+        {
+            "cells_window",
+            {
+                {"width", cellSize[0]},
+                {"height", cellSize[1]},
+                {"round_corner", cellRoundCorner},
+                {"spacing", cellSpacing},
+                {"border", cellBorder},
+                {"spacing_color", colorToString(cellSpacingColor)},
+                {"border_color", colorToString(cellBorderColor)},
+                {"auto_fit", cellAutoFit},
+                {"text_color", colorToString(textColor)},
+                {"text_shadow", textShadow},
+                {"text_shadow_color", colorToString(textShadowColor)},
+                {"text_shadow_offset", {textShadowOffset[0], textShadowOffset[1]}},
+                {"font_file", fontFile},
+                {"font_style", std::string(fontStyle & TTF_STYLE_BOLD ? "B" : "") + (fontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"font_size", originalFontSize},
+                {"cell_color", colorToString(colorsInt[0])},
+                {"color1", colorTextureFile[0].empty() ? colorToString(colorsInt[1]) : colorTextureFile[0]},
+                {"color2", colorTextureFile[1].empty() ? colorToString(colorsInt[2]) : colorTextureFile[1]},
+            }
+        },
+        {
+            "scores_window",
+            {
+                {"player1", UnicodeToUtf8(playerName[0])},
+                {"player2", UnicodeToUtf8(playerName[1])},
+                {"font_file", scoreFontFile},
+                {"font_style", std::string(scoreFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"font_size", scoreFontSize},
+                {"text_shadow", scoreTextShadow},
+                {"text_shadow_color", colorToString(scoreTextShadowColor)},
+                {"text_shadow_offset", {scoreTextShadowOffset[0], scoreTextShadowOffset[1]}},
+                {"name_font_file", scoreNameFontFile},
+                {"name_font_style", std::string(scoreNameFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreNameFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"name_font_size", scoreNameFontSize},
+                {"name_text_shadow", scoreNameTextShadow},
+                {"name_text_shadow_color", colorToString(scoreNameTextShadowColor)},
+                {"name_text_shadow_offset", {scoreNameTextShadowOffset[0], scoreNameTextShadowOffset[1]}},
+                {"background_color", colorToString(scoreBackgroundColor)},
+                {"padding", scorePadding},
+                {"round_corner", scoreRoundCorner},
+                {"win_text", scoreWinText},
+                {"bingo_text", scoreBingoText},
+                {"name_win_text", scoreNameWinText},
+                {"name_bingo_text", scoreNameBingoText},
+            }
+        },
+        {
+            "rules",
+            {
+                {"bingo_brawlers_mode", bingoBrawlersMode},
+                {"scores", {scores[0], scores[1], scores[2], scores[3], scores[4]}},
+                {"none_first_scores", {nFScores[0], nFScores[1], nFScores[2], nFScores[3], nFScores[4]}},
+                {"line_score", lineScore},
+                {"max_per_row", maxPerRow},
+                {"clear_score", clearScore},
+                {"clear_quest_multiplier", clearQuestMultiplier},
+            }
+        },
+    };
+    std::ofstream file("config.toml");
+    if (file.is_open())
+        file << toml::format(data);
+}
+
+void Config::oldLoad() {
     std::ifstream ifs("data/config.txt");
+    if (!ifs.is_open()) return;
     std::string line;
     while (!ifs.eof()) {
         std::getline(ifs, line);
@@ -81,8 +286,10 @@ void Config::load() {
             cellBorderColor.g = std::stoi(sl[1]);
             cellBorderColor.b = std::stoi(sl[2]);
             cellBorderColor.a = std::stoi(sl[3]);
+        } else if (key == "CellAutoFit") {
+            cellAutoFit = std::clamp(std::stoi(value), 0, 2);
         } else if (key == "FontSize") {
-            fontSize = std::stoi(value);
+            originalFontSize = fontSize = std::stoi(value);
         } else if (key == "TextColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -241,23 +448,6 @@ void Config::load() {
             playerName[0] = Utf8ToUnicode(value);
         } else if (key == "Player2") {
             playerName[1] = Utf8ToUnicode(value);
-        }
-    }
-    for (int i = 0; i < 3; i++) {
-        auto &c = colors[i];
-        c.r = (float)colorsInt[i].r / 255.f;
-        c.g = (float)colorsInt[i].g / 255.f;
-        c.b = (float)colorsInt[i].b / 255.f;
-        if (i > 0)
-            colorsInt[i].a = colorsInt[0].a;
-        c.a = (float)colorsInt[i].a / 255.f;
-    }
-    if (bingoBrawlersMode) {
-        maxPerRow = 5;
-        clearQuestMultiplier = 0;
-        for (int i = 0; i < 5; i++) {
-            scores[i] = 1;
-            nFScores[i] = 0;
         }
     }
 }

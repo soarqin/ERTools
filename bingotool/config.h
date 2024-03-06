@@ -6,6 +6,8 @@
 
 struct Config {
     void load();
+    void save();
+    void oldLoad();
     void postLoad();
 
     int cellSize[2] = {150, 150};
@@ -14,13 +16,15 @@ struct Config {
     int cellBorder = 0;
     SDL_Color cellSpacingColor = {255, 255, 255, 160};
     SDL_Color cellBorderColor = {0, 0, 0, 0};
+    int cellAutoFit = 0;
     SDL_Color textColor = {255, 255, 255, 255};
     int textShadow = 0;
     SDL_Color textShadowColor = {0, 0, 0, 255};
     int textShadowOffset[2] = {0, 0};
     std::string fontFile = "data/font.ttf";
     int fontStyle = TTF_STYLE_NORMAL;
-    int fontSize = 24;
+    int originalFontSize = 24;
+    int fontSize = originalFontSize;
     std::string scoreFontFile = "data/font.ttf";
     int scoreFontStyle = TTF_STYLE_NORMAL;
     int scoreFontSize = 24;

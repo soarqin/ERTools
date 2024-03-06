@@ -24,6 +24,8 @@ public:
     Cell *operator[](int index) { return cells_[index]; }
     void fitCellsForText();
     void foreach(const std::function<void(Cell &cell, int x, int y)> &callback);
+    void updateTextures();
+    void showSettingsWindow();
 
 private:
     Cell cells_[5][5];

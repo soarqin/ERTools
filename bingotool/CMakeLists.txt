@@ -1,5 +1,9 @@
 project(bingotool C CXX)
 
+if(NOT MSVC)
+    set(RES_FILES res/commctrl.rc)
+endif()
+
 add_executable(${PROJECT_NAME} WIN32
     main.cpp
     config.cpp config.h
@@ -10,6 +14,8 @@ add_executable(${PROJECT_NAME} WIN32
     sync.cpp sync.h
     rectpacker.cpp rectpacker.h
     ttf.cpp ttf.h
+
+    res/bingotool.rc ${RES_FILES}
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE
     SDL3_gfx SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers fmt::fmt uv_a comctl32 shlwapi)

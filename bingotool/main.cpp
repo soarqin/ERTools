@@ -9,6 +9,8 @@
 #include <SDL3/SDL.h>
 #include <SDL3_ttf/SDL_ttf.h>
 #include <windows.h>
+#include <commctrl.h>
+#include <objbase.h>
 #include <shellapi.h>
 #if defined(_MSC_VER)
 #undef max
@@ -273,6 +275,10 @@ int wmain(int argc, wchar_t *argv[]) {
     (void)argc;
     (void)argv;
 
+    INITCOMMONCONTROLSEX iccex = {sizeof(INITCOMMONCONTROLSEX), ICC_UPDOWN_CLASS | ICC_STANDARD_CLASSES};
+    InitCommonControlsEx(&iccex);
+    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+
     if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
         printf("SDL could not be initialized!\n"
                "SDL_Error: %s\n", SDL_GetError());
@@ -296,18 +302,23 @@ int wmain(int argc, wchar_t *argv[]) {
                     if (e.button.windowID == SDL_GetWindowID(gWindow) && e.button.button != SDL_BUTTON_RIGHT) break;
                     if (syncGetMode() == 0) {
                         auto menu = CreatePopupMenu();
-                        AppendMenuW(menu, MF_STRING, 7, L"重新加载选项");
-                        AppendMenuW(menu, MF_STRING, 8, L"退出");
+                        AppendMenuW(menu, MF_STRING, 7, L"设置");
+                        AppendMenuW(menu, MF_STRING, 8, L"重新加载选项");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 9, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 7:
+                                gCells.showSettingsWindow();
+                                break;
+                            case 8:
                                 saveState();
                                 reloadAll();
                                 break;
-                            case 8:
+                            case 9:
                                 goto QUIT;
                             default:
                                 break;
@@ -370,8 +381,10 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING | MF_POPUP, (UINT_PTR)tables, L"重新随机表格");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 7, L"重新加载选项");
-                        AppendMenuW(menu, MF_STRING, 8, L"退出");
+                        AppendMenuW(menu, MF_STRING, 7, L"设置");
+                        AppendMenuW(menu, MF_STRING, 8, L"重新加载选项");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 9, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
@@ -410,10 +423,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                 randomCells("data/randomtable.txt");
                                 break;
                             case 7:
+                                gCells.showSettingsWindow();
+                                break;
+                            case 8:
                                 saveState();
                                 reloadAll();
                                 break;
-                            case 8:
+                            case 9:
                                 goto QUIT;
                             default:
                                 if (cmd >= 100 && cmd < 100 + tableFilenames.size()) {
@@ -559,6 +575,7 @@ QUIT:
     SDL_DestroyWindow(gWindow);
     TTF_Quit();
     SDL_Quit();
+    CoUninitialize();
     return 0;
 }
 
