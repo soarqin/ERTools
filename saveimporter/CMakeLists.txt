@@ -33,17 +33,22 @@ endif()
 if(NOT MSVC)
     set(RES_FILES res/commctrl.rc)
 endif()
-add_executable(${PROJECT_NAME} WIN32 main.cpp ${MD5_SRC}
+add_executable(${PROJECT_NAME} WIN32
+    main.cpp
     mem.cpp mem.h
     savefile.cpp savefile.h
+    ${MD5_SRC}
+    common.cpp common.h
     res/saveimporter.rc ${RES_FILES}
 )
-add_executable(${PROJECT_NAME}_maker
+add_executable(${PROJECT_NAME}_maker WIN32
     maker.cpp
-    res/saveimporter.rc ${RES_FILES}
+    common.cpp common.h
+    res/saveimporter_maker.rc ${RES_FILES}
 )
 target_include_directories(${PROJECT_NAME} PRIVATE .)
 target_link_libraries(${PROJECT_NAME} PRIVATE shlwapi)
+target_link_libraries(${PROJECT_NAME}_maker PRIVATE shlwapi)
 if(HAVE_AVX2_EXTENSIONS)
     if(MSVC)
         target_compile_options(${PROJECT_NAME} PUBLIC /arch:AVX2)

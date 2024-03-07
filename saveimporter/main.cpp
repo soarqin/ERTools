@@ -1,4 +1,5 @@
 #include "savefile.h"
+#include "common.h"
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -9,49 +10,49 @@
 #include <fstream>
 #include <cstdint>
 
+#if defined(_MSC_VER)
+#pragma comment(linker,"\"/manifestdependency:type='win32' \
+    name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
+    processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
+#endif
+
 #define MSGBOX_CAPTION L"法环存档导入"
 
 int wmain(int argc, wchar_t *argv[]) {
     // Unused argc, argv
     (void)argc;
     (void)argv;
-    CoInitialize(nullptr);
+    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+
+    wchar_t path[MAX_PATH];
+    GetModuleFileNameW(nullptr, path, sizeof(path));
+    std::ifstream file(path, std::ios::binary);
+    if (!file.is_open()) {
+        return -1;
+    }
+    file.seekg(-4, std::ios::end);
+    uint32_t magic;
+    file.read(reinterpret_cast<char *>(&magic), 4);
+    if (magic != 0x49535245) {
+        MessageBoxW(nullptr, L"无效的存档导入文件!", MSGBOX_CAPTION, 0);
+        return -1;
+    }
+    file.seekg(-8, std::ios::end);
+    int size;
+    file.read(reinterpret_cast<char *>(&size), 4);
+    file.seekg(-size - 4, std::ios::cur);
+    std::wstring msg;
+    msg.resize((size + 1) / 2);
+    file.read(reinterpret_cast<char *>(msg.data()), size);
+    file.seekg(-size, std::ios::cur);
+    MessageBoxW(nullptr, msg.c_str(), MSGBOX_CAPTION, 0);
 
     wchar_t savepath[MAX_PATH];
     SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
     PathAppendW(savepath, L"EldenRing");
-    IFileDialog *pfd;
-    if (SUCCEEDED(CoCreateInstance(CLSID_FileOpenDialog, NULL, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pfd))))
-    {
-        DWORD dwOptions;
-        if (SUCCEEDED(pfd->GetOptions(&dwOptions)))
-        {
-            pfd->SetOptions(dwOptions | FOS_PICKFOLDERS);
-        }
-        pfd->SetTitle(L"选择艾尔登法环存档目录(请选择数字ID子目录)");
-        IShellItem *pCurFolder = nullptr;
-        if (SUCCEEDED(SHCreateItemFromParsingName(savepath, NULL, IID_PPV_ARGS(&pCurFolder))))
-        {
-            pfd->SetDefaultFolder(pCurFolder);
-            pCurFolder->Release();
-        }
-        if (SUCCEEDED(pfd->Show(nullptr)))
-        {
-            IShellItem *psi;
-            if (SUCCEEDED(pfd->GetResult(&psi)))
-            {
-                PWSTR selPath;
-                if(!SUCCEEDED(psi->GetDisplayName(SIGDN_DESKTOPABSOLUTEPARSING, &selPath)))
-                {
-                    MessageBoxW(nullptr, L"GetIDListName() failed", MSGBOX_CAPTION, 0);
-                }
-                lstrcpyW(savepath, selPath);
-                CoTaskMemFree(selPath);
-                psi->Release();
-            }
-        }
-        pfd->Release();
-    }
+    auto res = selectFile(L"选择艾尔登法环存档目录(请选择数字ID子目录)", savepath, L"", true);
+    if (res.empty()) return -1;
+    lstrcpyW(savepath, res.c_str());
     wchar_t testPath[MAX_PATH];
     lstrcpyW(testPath, savepath);
     PathRemoveFileSpecW(testPath);
@@ -73,16 +74,9 @@ int wmain(int argc, wchar_t *argv[]) {
         }
     }
 
-    wchar_t path[MAX_PATH];
-    GetModuleFileNameW(nullptr, path, sizeof(path));
-    std::ifstream file(path, std::ios::binary);
-    if (!file.is_open()) {
-        return -1;
-    }
-    file.seekg(-4, std::ios::end);
-    int size;
+    file.seekg(-4, std::ios::cur);
     file.read(reinterpret_cast<char *>(&size), 4);
-    file.seekg(-size - 4, std::ios::end);
+    file.seekg(-size - 4, std::ios::cur);
     std::string data;
     data.resize(size);
     file.read(data.data(), size);
