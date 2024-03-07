@@ -8,8 +8,8 @@
 #include <cstdint>
 
 int wmain(int argc, wchar_t *argv[]) {
-    if (argc < 3) {
-        std::cerr << "Usage: saveimporter_maker <input> <output>" << std::endl;
+    if (argc < 2) {
+        std::cerr << "Usage: saveimporter_maker <input> [output]" << std::endl;
         return -1;
     }
     std::ifstream exe("saveimporter.exe", std::ios::binary);
@@ -22,7 +22,7 @@ int wmain(int argc, wchar_t *argv[]) {
         std::cerr << "Failed to open input file" << std::endl;
         return -1;
     }
-    std::ofstream out(argv[2], std::ios::binary);
+    std::ofstream out(argc > 2 ? argv[2] : L"output.exe", std::ios::binary);
     if (!out.is_open()) {
         std::cerr << "Failed to open output file" << std::endl;
         return -1;
