@@ -60,7 +60,6 @@ void Config::load() {
     if (cells.is_table()) {
         cellSize[0] = toml::find_or(cells, "width", cellSize[0]);
         cellSize[1] = toml::find_or(cells, "height", cellSize[0]);
-        cellRoundCorner = toml::find_or(cells, "round_corner", cellRoundCorner);
         cellSpacing = toml::find_or(cells, "spacing", cellSpacing);
         cellBorder = toml::find_or(cells, "border", cellBorder);
         extractColor(cells, "spacing_color", cellSpacingColor);
@@ -165,7 +164,6 @@ void Config::save() {
             {
                 {"width", cellSize[0]},
                 {"height", cellSize[1]},
-                {"round_corner", cellRoundCorner},
                 {"spacing", cellSpacing},
                 {"border", cellBorder},
                 {"spacing_color", colorToString(cellSpacingColor)},
@@ -251,8 +249,6 @@ void Config::oldLoad() {
                 default:
                     break;
             }
-        } else if (key == "CellRoundCorner") {
-            cellRoundCorner = std::stoi(value);
         } else if (key == "CellSpacing") {
             cellSpacing = std::stoi(value);
         } else if (key == "CellBorder") {

@@ -11,7 +11,6 @@ struct Config {
     void postLoad();
 
     int cellSize[2] = {150, 150};
-    int cellRoundCorner = 5;
     int cellSpacing = 2;
     int cellBorder = 0;
     SDL_Color cellSpacingColor = {255, 255, 255, 160};

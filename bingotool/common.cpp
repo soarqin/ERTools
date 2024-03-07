@@ -161,7 +161,9 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font,
     auto oly = fullOutline ? (1 + outline * 2) : std::abs(offset[1]);
     auto sw = fullOutline ? (1 + outline * 2) : outline;
     auto sh = fullOutline ? (1 + outline * 2) : outline;
-    bg = SDL_CreateSurface(black_letters->w + olx, black_letters->h + oly, SDL_PIXELFORMAT_RGBA8888);
+    int tw, th;
+    TTF_SizeUTF8(font, t, &tw, &th);
+    bg = SDL_CreateSurface(black_letters->w + olx, black_letters->h + oly - std::max(0, TTF_FontLineSkip(font) - th), SDL_PIXELFORMAT_RGBA8888);
 
     dstrect.y = offset[1] > 0 ? offset[1] : 0;
     dstrect.w = black_letters->w;

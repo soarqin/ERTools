@@ -58,7 +58,7 @@ void Cell::updateTexture() {
                     TTF_CloseFont(font);
                 }
                 if (fit) break;
-                fontSize = (fontSize - 2) & ~1;
+                fontSize--;
                 font = TTF_OpenFont(gConfig.fontFile.c_str(), fontSize);
                 TTF_SetFontStyle(font, gConfig.fontStyle);
                 TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
@@ -86,13 +86,9 @@ void Cell::render(int x, int y, int cx, int cy) const {
         SDL_RenderTexture(renderer, gConfig.colorTexture[st - 1], nullptr, &dstrect);
     } else {
         auto &col = gConfig.colorsInt[st];
-        if (gConfig.cellRoundCorner > 0) {
-            roundedBoxRGBA(renderer, x, y, x + cx - 1, y + cy - 1, gConfig.cellRoundCorner, col.r, col.g, col.b, col.a);
-        } else {
-            SDL_FRect dstrect = {fx, fy, fcx, fcy};
-            SDL_SetRenderDrawColor(renderer, col.r, col.g, col.b, col.a);
-            SDL_RenderFillRect(renderer, &dstrect);
-        }
+        SDL_FRect dstrect = {fx, fy, fcx, fcy};
+        SDL_SetRenderDrawColor(renderer, col.r, col.g, col.b, col.a);
+        SDL_RenderFillRect(renderer, &dstrect);
     }
     if (dbl) {
         auto &color = gConfig.colors[5 - status];
@@ -113,11 +109,11 @@ void Cell::render(int x, int y, int cx, int cy) const {
 
 int Cell::calculateMinimalWidth(TTF_Font *font) {
     auto maxHeight = gConfig.cellSize[1] - 2;
-    auto width = gConfig.cellSize[0] & ~1;
+    auto width = gConfig.cellSize[0];
     size_t len = text.length();
-    int tw, th;
-    TTF_SizeText(font, text.c_str(), &tw, &th);
-    th = std::max(th, TTF_FontHeight(font));
+    int sw, sh;
+    TTF_SizeUTF8(font, text.c_str(), &sw, &sh);
+    int th = std::max(sh, TTF_FontLineSkip(font));
     while (true) {
         auto maxWidth = width * 9 / 10;
         size_t index = 0;
@@ -138,7 +134,7 @@ int Cell::calculateMinimalWidth(TTF_Font *font) {
                 count--;
             }
         }
-        auto currHeight = lines * th;
+        auto currHeight = (lines - 1) * th + sh;
         if (currHeight <= maxHeight) break;
         width += 2;
     }
@@ -167,8 +163,8 @@ int Cell::calculateMinimalHeight(TTF_Font *font) {
         }
     }
     int tw, th;
-    TTF_SizeText(font, text.c_str(), &tw, &th);
-    return lines * std::max(th, TTF_FontHeight(font));
+    TTF_SizeUTF8(font, text.c_str(), &tw, &th);
+    return (lines - 1) * std::max(th, TTF_FontLineSkip(font)) + th;
 }
 
 void Cells::init(SDL_Renderer *renderer) {
@@ -187,9 +183,8 @@ void Cells::fitCellsForText() {
             auto *font = gConfig.font;
             auto fontSize = gConfig.fontSize;
             auto maxHeight = gConfig.cellSize[1] - 2;
-            bool fit = true;
             while (fontSize > 11) {
-                fit = true;
+                bool fit = true;
                 for (int i = 0; i < 25; i++) {
                     auto &cell = cells_[i / 5][i % 5];
                     int h = cell.calculateMinimalHeight(font);
@@ -200,16 +195,16 @@ void Cells::fitCellsForText() {
                 }
                 if (fit) {
                     if (font != gConfig.font) {
-                        gConfig.fontSize = fontSize;
                         TTF_CloseFont(gConfig.font);
                         gConfig.font = font;
+                        gConfig.fontSize = fontSize;
                     }
                     break;
                 }
                 if (font != gConfig.font) {
                     TTF_CloseFont(font);
                 }
-                fontSize = (fontSize - 2) & ~1;
+                fontSize--;
                 font = TTF_OpenFont(gConfig.fontFile.c_str(), fontSize);
                 TTF_SetFontStyle(font, gConfig.fontStyle);
                 TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
@@ -249,6 +244,13 @@ void Cells::updateTextures() {
     });
 }
 
+static void setEditUpDownIntAndRange(HWND hwnd, int id, int newVal, int min, int max) {
+    noEnChangeNotification = true;
+    SetWindowTextW(GetDlgItem(hwnd, id), std::to_wstring(newVal).c_str());
+    noEnChangeNotification = false;
+    SendDlgItemMessageW(hwnd, id + 1, UDM_SETRANGE32, min, max);
+}
+
 void initConfigDialog(HWND hwnd) {
     if (textColorBrush) {
         DeleteObject(textColorBrush);
@@ -266,30 +268,14 @@ void initConfigDialog(HWND hwnd) {
     HWND edc = GetDlgItem(hwnd, 1001);
     auto fontFileName = Utf8ToUnicode(gConfig.fontFile);
     SetWindowTextW(edc, fontFileName.c_str());
-    edc = GetDlgItem(hwnd, 1003);
-    SetWindowTextW(edc, std::to_wstring(gConfig.originalFontSize).c_str());
-    HWND udc = GetDlgItem(hwnd, 1004);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(256, 6));
 
-    edc = GetDlgItem(hwnd, 1007);
-    SetWindowTextW(edc, std::to_wstring(gConfig.textColor.a).c_str());
-    udc = GetDlgItem(hwnd, 1008);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(255, 0));
-
-    edc = GetDlgItem(hwnd, 1009);
-    SetWindowTextW(edc, std::to_wstring(gConfig.colorsInt[0].a).c_str());
-    udc = GetDlgItem(hwnd, 1010);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(255, 0));
-
-    edc = GetDlgItem(hwnd, 1011);
-    SetWindowTextW(edc, std::to_wstring(gConfig.cellBorder).c_str());
-    udc = GetDlgItem(hwnd, 1012);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
-
-    edc = GetDlgItem(hwnd, 1013);
-    SetWindowTextW(edc, std::to_wstring(gConfig.cellSpacing).c_str());
-    udc = GetDlgItem(hwnd, 1014);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+    setEditUpDownIntAndRange(hwnd, 1003, gConfig.originalFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, 1007, gConfig.textColor.a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, 1009, gConfig.colorsInt[0].a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, 1011, gConfig.cellBorder, 0, 100);
+    setEditUpDownIntAndRange(hwnd, 1013, gConfig.cellSpacing, 0, 100);
+    setEditUpDownIntAndRange(hwnd, 1015, gConfig.cellSize[0], 20, 1000);
+    setEditUpDownIntAndRange(hwnd, 1017, gConfig.cellSize[1], 20, 1000);
 
     noEnChangeNotification = false;
 }
@@ -439,53 +425,21 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
     return 0;
 }
 
-static bool setNewFontSize(HWND hwnd, int newSize) {
-    if (newSize == gConfig.fontSize) return false;
-    auto ft = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.fontSize);
-    if (ft == nullptr) {
-        MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
-        return false;
+template<typename T>
+static void setNewValFromControl(HWND hwnd, int id, T &val, int min, int max, const std::function<bool(int)> &postFunc = nullptr) {
+    wchar_t str[16];
+    auto hwndCtl = GetDlgItem(hwnd, id);
+    GetWindowTextW(hwndCtl, str, 16);
+    if (str[0] == 0) return;
+    auto newVal = std::clamp((int)std::wcstol(str, nullptr, 10), min, max);
+    if (T(newVal) == val) return;
+    auto oldVal = val;
+    val = T(newVal);
+    if (!postFunc || postFunc(oldVal)) {
+        noEnChangeNotification = true;
+        SetWindowTextW(hwndCtl, std::to_wstring(val).c_str());
+        noEnChangeNotification = false;
     }
-    TTF_SetFontStyle(ft, gConfig.fontStyle);
-    TTF_SetFontWrappedAlign(ft, TTF_WRAPPED_ALIGN_CENTER);
-    if (gConfig.font) {
-        TTF_CloseFont(gConfig.font);
-    }
-    gConfig.font = ft;
-    gConfig.originalFontSize = gConfig.fontSize = newSize;
-    gCells.updateTextures();
-    return true;
-}
-
-static bool setNewTextAlpha(int newVal) {
-    if (newVal == gConfig.textColor.a) return false;
-    gConfig.textColor.a = newVal;
-    gCells.updateTextures();
-    return true;
-}
-
-static bool setNewBackgroundAlpha(int newVal) {
-    if (newVal == gConfig.colorsInt[0].a) return false;
-    gConfig.colorsInt[0].a = newVal;
-    return true;
-}
-
-static bool setNewBorder(int newVal) {
-    if (newVal == gConfig.cellBorder) return false;
-    gConfig.cellBorder = newVal;
-    SDL_SetWindowSize(gWindow,
-                      gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                      gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
-    return true;
-}
-
-static bool setNewCellSpacing(int newVal) {
-    if (newVal == gConfig.cellSpacing) return false;
-    gConfig.cellSpacing = newVal;
-    SDL_SetWindowSize(gWindow,
-                      gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                      gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
-    return true;
 }
 
 INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
@@ -493,132 +447,72 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
         case 1003: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 6) {
-                newVal = 6;
-                changed = true;
-            } else if (newVal > 256) {
-                newVal = 256;
-                changed = true;
-            }
-            if (!setNewFontSize(hwnd, newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(gConfig.fontSize).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            setNewValFromControl(hwnd, 1003, gConfig.originalFontSize, 6, 256, [hwnd](int oldSize) {
+                auto ft = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
+                if (ft == nullptr) {
+                    gConfig.originalFontSize = oldSize;
+                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
+                    return true;
+                }
+                gConfig.fontSize = gConfig.originalFontSize;
+                TTF_SetFontStyle(ft, gConfig.fontStyle);
+                TTF_SetFontWrappedAlign(ft, TTF_WRAPPED_ALIGN_CENTER);
+                if (gConfig.font) {
+                    TTF_CloseFont(gConfig.font);
+                }
+                gConfig.font = ft;
+                gCells.updateTextures();
+                return true;
+            });
             break;
         }
         case 1007: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            if (str[0] == 0) break;
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 0) {
-                newVal = 0;
-                changed = true;
-            } else if (newVal > 256) {
-                newVal = 256;
-                changed = true;
-            }
-            if (!setNewTextAlpha(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(gConfig.textColor.a).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            setNewValFromControl(hwnd, 1007, gConfig.textColor.a, 0, 255, [](int newVal) {
+                gCells.updateTextures();
+                return true;
+            });
             break;
         }
         case 1009: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            if (str[0] == 0) break;
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 0) {
-                newVal = 0;
-                changed = true;
-            } else if (newVal > 256) {
-                newVal = 256;
-                changed = true;
-            }
-            if (!setNewBackgroundAlpha(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(gConfig.colorsInt[0].a).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            setNewValFromControl(hwnd, 1009, gConfig.colorsInt[0].a, 0, 255);
             break;
         }
         case 1011: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            if (str[0] == 0) break;
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 0) {
-                newVal = 0;
-                changed = true;
-            } else if (newVal > 100) {
-                newVal = 100;
-                changed = true;
-            }
-            if (!setNewBorder(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(gConfig.cellBorder).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            setNewValFromControl(hwnd, 1011, gConfig.cellBorder, 0, 100, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                return true;
+            });
             break;
         }
         case 1013: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            if (str[0] == 0) break;
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 0) {
-                newVal = 0;
-                changed = true;
-            } else if (newVal > 100) {
-                newVal = 100;
-                changed = true;
-            }
-            if (!setNewCellSpacing(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(gConfig.cellSpacing).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            setNewValFromControl(hwnd, 1013, gConfig.cellSpacing, 0, 100, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                return true;
+            });
+            break;
+        }
+        case 1015: {
+            setNewValFromControl(hwnd, 1015, gConfig.cellSize[0], 20, 1000, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.updateTextures();
+                return true;
+            });
+            break;
+        }
+        case 1017: {
+            setNewValFromControl(hwnd, 1017, gConfig.cellSize[1], 20, 1000, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.updateTextures();
+                return true;
+            });
             break;
         }
         default:
