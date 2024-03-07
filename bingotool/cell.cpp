@@ -33,6 +33,7 @@ static HBRUSH cellBorderColorBrush = nullptr;
 static HBRUSH cellSpacingColorBrush = nullptr;
 static HBRUSH scoreShadowColorBrush = nullptr;
 static HBRUSH scoreBackgroundColorBrush = nullptr;
+static HBRUSH nameShadowColorBrush = nullptr;
 
 void Cell::updateTexture() {
     if (texture) {
@@ -281,6 +282,9 @@ void initConfigDialog(HWND hwnd) {
     if (scoreBackgroundColorBrush) {
         DeleteObject(scoreBackgroundColorBrush);
     }
+    if (nameShadowColorBrush) {
+        DeleteObject(nameShadowColorBrush);
+    }
     textColorBrush = CreateSolidBrush(RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
     backgroundColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b));
     textShadowColorBrush = CreateSolidBrush(RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
@@ -288,6 +292,7 @@ void initConfigDialog(HWND hwnd) {
     cellSpacingColorBrush = CreateSolidBrush(RGB(gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b));
     scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
     scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
+    nameShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
 
     int x, y;
     SDL_GetWindowPosition(gWindow, &x, &y);
@@ -329,6 +334,19 @@ void initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreWinText).c_str());
     edc = GetDlgItem(hwnd, IDC_SCOREBINGOTEXT);
     SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreBingoText).c_str());
+
+    edc = GetDlgItem(hwnd, IDC_NAMEFONT);
+    fontFileName = Utf8ToUnicode(gConfig.scoreNameFontFile);
+    SetWindowTextW(edc, fontFileName.c_str());
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWCOLORA, gConfig.scoreNameTextShadowColor.a, 0, 255);
+    edc = GetDlgItem(hwnd, IDC_NAMEWINTEXT);
+    SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreNameWinText).c_str());
+    edc = GetDlgItem(hwnd, IDC_NAMEBINGOTEXT);
+    SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreNameBingoText).c_str());
 
     noEnChangeNotification = false;
 }
@@ -485,6 +503,38 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             InvalidateRect(GetDlgItem(hwnd, IDC_SPACINGCOLOR), nullptr, TRUE);
             break;
         }
+        case IDC_BTN_SEL_SCOREFONT: {
+            auto fontSelected = openDialogForFontFileSelection(hwnd);
+            if (fontSelected.empty()) return 0;
+            wchar_t szFileRel[MAX_PATH] = {0};
+            wchar_t szCurrentPath[MAX_PATH];
+            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
+            PathRemoveFileSpecW(szCurrentPath);
+            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, fontSelected.c_str(), FILE_ATTRIBUTE_NORMAL);
+            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
+                lstrcpyW(szFileRel, fontSelected.c_str());
+            }
+            for (int i = 0; szFileRel[i]; i++) {
+                if (szFileRel[i] == '\\') szFileRel[i] = '/';
+            }
+            auto fontFileName = UnicodeToUtf8(szFileRel);
+            if (strcasecmp(fontFileName.c_str(), gConfig.scoreFontFile.c_str()) != 0) {
+                gConfig.scoreFontFile = fontFileName;
+                auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.scoreFontSize);
+                if (newFont == nullptr) {
+                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
+                } else {
+                    if (gConfig.scoreFont) {
+                        TTF_CloseFont(gConfig.scoreFont);
+                    }
+                    gConfig.scoreFont = newFont;
+                    gCells.updateTextures();
+                    auto edc = GetDlgItem(hwnd, IDC_SCOREFONT);
+                    SetWindowTextW(edc, szFileRel);
+                }
+            }
+            return 0;
+        }
         case IDC_SCORESHADOWCOLOR: {
             if (!chooseColor(hwnd, gConfig.scoreTextShadowColor, custColors)) return false;
             if (scoreShadowColorBrush) {
@@ -503,6 +553,48 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             InvalidateRect(GetDlgItem(hwnd, IDC_SCOREBGCOLOR), nullptr, TRUE);
             break;
         }
+        case IDC_BTN_SEL_NAMEFONT: {
+            auto fontSelected = openDialogForFontFileSelection(hwnd);
+            if (fontSelected.empty()) return 0;
+            wchar_t szFileRel[MAX_PATH] = {0};
+            wchar_t szCurrentPath[MAX_PATH];
+            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
+            PathRemoveFileSpecW(szCurrentPath);
+            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, fontSelected.c_str(), FILE_ATTRIBUTE_NORMAL);
+            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
+                lstrcpyW(szFileRel, fontSelected.c_str());
+            }
+            for (int i = 0; szFileRel[i]; i++) {
+                if (szFileRel[i] == '\\') szFileRel[i] = '/';
+            }
+            auto fontFileName = UnicodeToUtf8(szFileRel);
+            if (strcasecmp(fontFileName.c_str(), gConfig.scoreNameFontFile.c_str()) != 0) {
+                gConfig.scoreNameFontFile = fontFileName;
+                auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.scoreNameFontSize);
+                if (newFont == nullptr) {
+                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
+                } else {
+                    if (gConfig.scoreNameFont) {
+                        TTF_CloseFont(gConfig.scoreNameFont);
+                    }
+                    gConfig.scoreNameFont = newFont;
+                    gCells.updateTextures();
+                    auto edc = GetDlgItem(hwnd, IDC_NAMEFONT);
+                    SetWindowTextW(edc, szFileRel);
+                }
+            }
+            return 0;
+        }
+        case IDC_NAMESHADOWCOLOR: {
+            if (!chooseColor(hwnd, gConfig.scoreNameTextShadowColor, custColors)) return false;
+            if (nameShadowColorBrush) {
+                DeleteObject(nameShadowColorBrush);
+            }
+            nameShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_NAMESHADOWCOLOR), nullptr, TRUE);
+            break;
+        }
+
         case IDC_AUTOSIZE: {
             auto cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
             gConfig.cellAutoFit = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
@@ -708,6 +800,77 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             gScoreWindows[1].updateTexture();
             break;
         }
+        case IDC_NAMESIZE: {
+            setNewValFromControl(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 6, 256, [hwnd](int newVal) {
+                auto ft = TTF_OpenFont(gConfig.scoreNameFontFile.c_str(), gConfig.scoreNameFontSize);
+                if (ft == nullptr) {
+                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
+                    return true;
+                }
+                if (gConfig.scoreNameFont) {
+                    TTF_CloseFont(gConfig.scoreNameFont);
+                }
+                gConfig.scoreNameFont = ft;
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_NAMESHADOW: {
+            setNewValFromControl(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_NAMESHADOWOFFSET_X: {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_NAMESHADOWOFFSET_Y: {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_NAMESHADOWCOLORA: {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWCOLORA, gConfig.scoreNameTextShadowColor.a, 0, 255, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_NAMEWINTEXT: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_NAMEWINTEXT);
+            GetWindowTextW(hwndCtl, str, 256);
+            auto newText = UnicodeToUtf8(str);
+            if (newText == gConfig.scoreNameWinText) return 0;
+            gConfig.scoreNameWinText = newText;
+            gScoreWindows[0].updateTexture();
+            gScoreWindows[1].updateTexture();
+            break;
+        }
+        case IDC_NAMEBINGOTEXT: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_NAMEBINGOTEXT);
+            GetWindowTextW(hwndCtl, str, 256);
+            auto newText = UnicodeToUtf8(str);
+            if (newText == gConfig.scoreNameBingoText) return 0;
+            gConfig.scoreNameBingoText = newText;
+            gScoreWindows[0].updateTexture();
+            gScoreWindows[1].updateTexture();
+            break;
+        }
         default:
             break;
     }
@@ -751,6 +914,11 @@ INT_PTR handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam) {
             SetBkMode((HDC)wParam, OPAQUE);
             SetBkColor((HDC)wParam, RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
             return (INT_PTR)scoreBackgroundColorBrush;
+        }
+        case IDC_NAMESHADOWCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
+            return (INT_PTR)nameShadowColorBrush;
         }
         default:
             break;
