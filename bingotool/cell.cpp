@@ -1,7 +1,10 @@
 #include "cell.h"
 
+#include "res/resource.h"
+
 #include "common.h"
 #include "config.h"
+#include "scorewindow.h"
 
 #if defined(_MSC_VER)
 #define strcasecmp _stricmp
@@ -25,6 +28,11 @@ static HWND configDialog = nullptr;
 static bool noEnChangeNotification = true;
 static HBRUSH textColorBrush = nullptr;
 static HBRUSH backgroundColorBrush = nullptr;
+static HBRUSH textShadowColorBrush = nullptr;
+static HBRUSH cellBorderColorBrush = nullptr;
+static HBRUSH cellSpacingColorBrush = nullptr;
+static HBRUSH scoreShadowColorBrush = nullptr;
+static HBRUSH scoreBackgroundColorBrush = nullptr;
 
 void Cell::updateTexture() {
     if (texture) {
@@ -237,8 +245,8 @@ void Cells::foreach(const std::function<void(Cell &, int, int)> &callback) {
     }
 }
 
-void Cells::updateTextures() {
-    fitCellsForText();
+void Cells::updateTextures(bool fit) {
+    if (fit) fitCellsForText();
     foreach([](Cell &cell, int, int) {
         cell.updateTexture();
     });
@@ -258,24 +266,69 @@ void initConfigDialog(HWND hwnd) {
     if (backgroundColorBrush) {
         DeleteObject(backgroundColorBrush);
     }
+    if (textShadowColorBrush) {
+        DeleteObject(textShadowColorBrush);
+    }
+    if (cellBorderColorBrush) {
+        DeleteObject(cellBorderColorBrush);
+    }
+    if (cellSpacingColorBrush) {
+        DeleteObject(cellSpacingColorBrush);
+    }
+    if (scoreShadowColorBrush) {
+        DeleteObject(scoreShadowColorBrush);
+    }
+    if (scoreBackgroundColorBrush) {
+        DeleteObject(scoreBackgroundColorBrush);
+    }
     textColorBrush = CreateSolidBrush(RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
     backgroundColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b));
+    textShadowColorBrush = CreateSolidBrush(RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
+    cellBorderColorBrush = CreateSolidBrush(RGB(gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b));
+    cellSpacingColorBrush = CreateSolidBrush(RGB(gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b));
+    scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
+    scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
 
     int x, y;
     SDL_GetWindowPosition(gWindow, &x, &y);
     noEnChangeNotification = true;
     SetWindowPos(hwnd, nullptr, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
-    HWND edc = GetDlgItem(hwnd, 1001);
+
+    HWND edc = GetDlgItem(hwnd, IDC_TEXTFONT);
     auto fontFileName = Utf8ToUnicode(gConfig.fontFile);
     SetWindowTextW(edc, fontFileName.c_str());
 
-    setEditUpDownIntAndRange(hwnd, 1003, gConfig.originalFontSize, 6, 256);
-    setEditUpDownIntAndRange(hwnd, 1007, gConfig.textColor.a, 0, 255);
-    setEditUpDownIntAndRange(hwnd, 1009, gConfig.colorsInt[0].a, 0, 255);
-    setEditUpDownIntAndRange(hwnd, 1011, gConfig.cellBorder, 0, 100);
-    setEditUpDownIntAndRange(hwnd, 1013, gConfig.cellSpacing, 0, 100);
-    setEditUpDownIntAndRange(hwnd, 1015, gConfig.cellSize[0], 20, 1000);
-    setEditUpDownIntAndRange(hwnd, 1017, gConfig.cellSize[1], 20, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10);
+    setEditUpDownIntAndRange(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_SHADOWOFFSET_Y, gConfig.textShadowOffset[1], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_SHADOWCOLORA, gConfig.textShadowColor.a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, IDC_BGCOLORA, gConfig.colorsInt[0].a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.cellSize[0], 20, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000);
+
+    HWND cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"自动缩小文字");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一缩小文字");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一扩展宽度");
+    SendMessageW(cbc, CB_SETCURSEL, gConfig.cellAutoFit, 0);
+
+    edc = GetDlgItem(hwnd, IDC_SCOREFONT);
+    fontFileName = Utf8ToUnicode(gConfig.scoreFontFile);
+    SetWindowTextW(edc, fontFileName.c_str());
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWCOLORA, gConfig.scoreTextShadowColor.a, 0, 255);
+    setEditUpDownIntAndRange(hwnd, IDC_SCOREBGCOLORA, gConfig.scoreBackgroundColor.a, 0, 255);
+    edc = GetDlgItem(hwnd, IDC_SCOREWINTEXT);
+    SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreWinText).c_str());
+    edc = GetDlgItem(hwnd, IDC_SCOREBINGOTEXT);
+    SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreBingoText).c_str());
 
     noEnChangeNotification = false;
 }
@@ -353,7 +406,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             ShowWindow(hwnd, SW_HIDE);
             return 0;
         }
-        case 1002: {
+        case IDC_BTN_SEL_TEXTFONT: {
             auto fontSelected = openDialogForFontFileSelection(hwnd);
             if (fontSelected.empty()) return 0;
             wchar_t szFileRel[MAX_PATH] = {0};
@@ -379,44 +432,81 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                     }
                     gConfig.font = newFont;
                     gCells.updateTextures();
-                    auto edc = GetDlgItem(hwnd, 1001);
+                    auto edc = GetDlgItem(hwnd, IDC_TEXTFONT);
                     SetWindowTextW(edc, szFileRel);
                 }
             }
             return 0;
         }
-        case 1005: {
+        case IDC_TEXTCOLOR: {
             if (!chooseColor(hwnd, gConfig.textColor, custColors)) return false;
             if (textColorBrush) {
                 DeleteObject(textColorBrush);
             }
             textColorBrush = CreateSolidBrush(RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
-            InvalidateRect(GetDlgItem(hwnd, 1005), nullptr, TRUE);
-            gCells.updateTextures();
+            InvalidateRect(GetDlgItem(hwnd, IDC_TEXTCOLOR), nullptr, TRUE);
+            gCells.updateTextures(false);
             break;
         }
-        case 1006: {
-            CHOOSECOLORW cc = {sizeof(CHOOSECOLORW)};
-            cc.hInstance = (HWND)GetModuleHandleW(nullptr);
-            cc.hwndOwner = hwnd;
-            cc.lpCustColors = custColors;
-            cc.rgbResult = RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b);
-            cc.Flags = CC_RGBINIT | CC_FULLOPEN | CC_ANYCOLOR;
-            if (!ChooseColorW(&cc)) break;
-            auto r = GetRValue(cc.rgbResult);
-            auto g = GetGValue(cc.rgbResult);
-            auto b = GetBValue(cc.rgbResult);
-            if (gConfig.colorsInt[0].r == r && gConfig.colorsInt[0].g == g
-                && gConfig.colorsInt[0].b == b)
-                break;
-            gConfig.colorsInt[0].r = r;
-            gConfig.colorsInt[0].g = g;
-            gConfig.colorsInt[0].b = b;
+        case IDC_BGCOLOR: {
+            if (!chooseColor(hwnd, gConfig.colorsInt[0], custColors)) return false;
             if (backgroundColorBrush) {
                 DeleteObject(backgroundColorBrush);
             }
-            backgroundColorBrush = CreateSolidBrush(cc.rgbResult);
-            InvalidateRect(GetDlgItem(hwnd, 1006), nullptr, TRUE);
+            backgroundColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_BGCOLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_SHADOWCOLOR: {
+            if (!chooseColor(hwnd, gConfig.textShadowColor, custColors)) return false;
+            if (textShadowColorBrush) {
+                DeleteObject(textShadowColorBrush);
+            }
+            textShadowColorBrush = CreateSolidBrush(RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_SHADOWCOLOR), nullptr, TRUE);
+            gCells.updateTextures(false);
+            break;
+        }
+        case IDC_BORDERCOLOR: {
+            if (!chooseColor(hwnd, gConfig.cellBorderColor, custColors)) return false;
+            if (cellBorderColorBrush) {
+                DeleteObject(cellBorderColorBrush);
+            }
+            cellBorderColorBrush = CreateSolidBrush(RGB(gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_BORDERCOLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_SPACINGCOLOR: {
+            if (!chooseColor(hwnd, gConfig.cellSpacingColor, custColors)) return false;
+            if (cellSpacingColorBrush) {
+                DeleteObject(cellSpacingColorBrush);
+            }
+            cellSpacingColorBrush = CreateSolidBrush(RGB(gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_SPACINGCOLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_SCORESHADOWCOLOR: {
+            if (!chooseColor(hwnd, gConfig.scoreTextShadowColor, custColors)) return false;
+            if (scoreShadowColorBrush) {
+                DeleteObject(scoreShadowColorBrush);
+            }
+            scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_SCORESHADOWCOLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_SCOREBGCOLOR: {
+            if (!chooseColor(hwnd, gConfig.scoreBackgroundColor, custColors)) return false;
+            if (scoreBackgroundColorBrush) {
+                DeleteObject(scoreBackgroundColorBrush);
+            }
+            scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_SCOREBGCOLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_AUTOSIZE: {
+            auto cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
+            gConfig.cellAutoFit = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
+            gCells.updateTextures();
             break;
         }
         default:
@@ -446,8 +536,8 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
     if (noEnChangeNotification)
         return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
-        case 1003: {
-            setNewValFromControl(hwnd, 1003, gConfig.originalFontSize, 6, 256, [hwnd](int oldSize) {
+        case IDC_TEXTSIZE: {
+            setNewValFromControl(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 6, 256, [hwnd](int oldSize) {
                 auto ft = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
                 if (ft == nullptr) {
                     gConfig.originalFontSize = oldSize;
@@ -466,37 +556,75 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             });
             break;
         }
-        case 1007: {
-            setNewValFromControl(hwnd, 1007, gConfig.textColor.a, 0, 255, [](int newVal) {
+        case IDC_TEXTCOLORA: {
+            setNewValFromControl(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255, [](int newVal) {
+                gCells.updateTextures(false);
+                return true;
+            });
+            break;
+        }
+        case IDC_SHADOW: {
+            setNewValFromControl(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10, [hwnd](int newVal) {
+                gCells.updateTextures(false);
+                return true;
+            });
+            break;
+        }
+        case IDC_SHADOWOFFSET_X: {
+            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20, [hwnd](int newVal) {
+                gCells.updateTextures(false);
+                return true;
+            });
+            break;
+        }
+        case IDC_SHADOWOFFSET_Y: {
+            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_Y, gConfig.textShadowOffset[1], -20, 20, [hwnd](int newVal) {
+                gCells.updateTextures(false);
+                return true;
+            });
+            break;
+        }
+        case IDC_SHADOWCOLORA: {
+            setNewValFromControl(hwnd, IDC_SHADOWCOLORA, gConfig.textShadowColor.a, 0, 255, [](int newVal) {
+                gCells.updateTextures(false);
+                return true;
+            });
+            break;
+        }
+        case IDC_BGCOLORA: {
+            setNewValFromControl(hwnd, IDC_BGCOLORA, gConfig.colorsInt[0].a, 0, 255);
+            break;
+        }
+        case IDC_BORDER: {
+            setNewValFromControl(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                return true;
+            });
+            break;
+        }
+        case IDC_CELLSPACING: {
+            setNewValFromControl(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                return true;
+            });
+            break;
+        }
+        case IDC_CELLWIDTH: {
+            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.cellSize[0], 20, 1000, [hwnd](int newVal) {
+                SDL_SetWindowSize(gWindow,
+                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
                 gCells.updateTextures();
                 return true;
             });
             break;
         }
-        case 1009: {
-            setNewValFromControl(hwnd, 1009, gConfig.colorsInt[0].a, 0, 255);
-            break;
-        }
-        case 1011: {
-            setNewValFromControl(hwnd, 1011, gConfig.cellBorder, 0, 100, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
-                return true;
-            });
-            break;
-        }
-        case 1013: {
-            setNewValFromControl(hwnd, 1013, gConfig.cellSpacing, 0, 100, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
-                return true;
-            });
-            break;
-        }
-        case 1015: {
-            setNewValFromControl(hwnd, 1015, gConfig.cellSize[0], 20, 1000, [hwnd](int newVal) {
+        case IDC_CELLHEIGHT: {
+            setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000, [hwnd](int newVal) {
                 SDL_SetWindowSize(gWindow,
                                   gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                                   gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
@@ -505,14 +633,79 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             });
             break;
         }
-        case 1017: {
-            setNewValFromControl(hwnd, 1017, gConfig.cellSize[1], 20, 1000, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
-                gCells.updateTextures();
+        case IDC_SCORESIZE: {
+            setNewValFromControl(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 6, 256, [hwnd](int newVal) {
+                auto ft = TTF_OpenFont(gConfig.scoreFontFile.c_str(), gConfig.scoreFontSize);
+                if (ft == nullptr) {
+                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
+                    return true;
+                }
+                if (gConfig.scoreFont) {
+                    TTF_CloseFont(gConfig.scoreFont);
+                }
+                gConfig.scoreFont = ft;
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
                 return true;
             });
+            break;
+        }
+        case IDC_SCORESHADOW: {
+            setNewValFromControl(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_SCORESHADOWOFFSET_X: {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_SCORESHADOWOFFSET_Y: {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_SCORESHADOWCOLORA: {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWCOLORA, gConfig.scoreTextShadowColor.a, 0, 255, [hwnd](int newVal) {
+                gScoreWindows[0].updateTexture();
+                gScoreWindows[1].updateTexture();
+                return true;
+            });
+            break;
+        }
+        case IDC_SCOREBGCOLORA: {
+            setNewValFromControl(hwnd, IDC_SCOREBGCOLORA, gConfig.scoreBackgroundColor.a, 0, 255);
+            break;
+        }
+        case IDC_SCOREWINTEXT: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_SCOREWINTEXT);
+            GetWindowTextW(hwndCtl, str, 256);
+            auto newText = UnicodeToUtf8(str);
+            if (newText == gConfig.scoreWinText) return 0;
+            gConfig.scoreWinText = newText;
+            gScoreWindows[0].updateTexture();
+            gScoreWindows[1].updateTexture();
+            break;
+        }
+        case IDC_SCOREBINGOTEXT: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_SCOREBINGOTEXT);
+            GetWindowTextW(hwndCtl, str, 256);
+            auto newText = UnicodeToUtf8(str);
+            if (newText == gConfig.scoreBingoText) return 0;
+            gConfig.scoreBingoText = newText;
+            gScoreWindows[0].updateTexture();
+            gScoreWindows[1].updateTexture();
             break;
         }
         default:
@@ -523,16 +716,41 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
 
 INT_PTR handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam) {
     switch (GetDlgCtrlID((HWND)lParam)) {
-        case 1005: {
+        case IDC_TEXTCOLOR: {
             SetBkMode((HDC)wParam, OPAQUE);
             SetBkColor((HDC)wParam, RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
             return (INT_PTR)textColorBrush;
         }
-        case 1006: {
+        case IDC_SHADOWCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
+            return (INT_PTR)textShadowColorBrush;
+        }
+        case IDC_BGCOLOR: {
             SetBkMode((HDC)wParam, OPAQUE);
             SetBkColor((HDC)wParam,
                        RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b));
             return (INT_PTR)backgroundColorBrush;
+        }
+        case IDC_BORDERCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b));
+            return (INT_PTR)cellBorderColorBrush;
+        }
+        case IDC_SPACINGCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b));
+            return (INT_PTR)cellSpacingColorBrush;
+        }
+        case IDC_SCORESHADOWCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
+            return (INT_PTR)scoreShadowColorBrush;
+        }
+        case IDC_SCOREBGCOLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
+            return (INT_PTR)scoreBackgroundColorBrush;
         }
         default:
             break;
@@ -548,6 +766,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         }
         case WM_COMMAND:
             switch (HIWORD(wParam)) {
+                case CBN_SELCHANGE:
                 case BN_CLICKED: {
                     return handleButtonClick(hwnd, wParam & 0xFFFF, lParam);
                 }
