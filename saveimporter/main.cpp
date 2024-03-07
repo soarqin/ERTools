@@ -45,7 +45,8 @@ int wmain(int argc, wchar_t *argv[]) {
     msg.resize((size + 1) / 2);
     file.read(reinterpret_cast<char *>(msg.data()), size);
     file.seekg(-size, std::ios::cur);
-    MessageBoxW(nullptr, msg.c_str(), MSGBOX_CAPTION, 0);
+    if (!msg.empty())
+        MessageBoxW(nullptr, msg.c_str(), MSGBOX_CAPTION, 0);
 
     wchar_t savepath[MAX_PATH];
     SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
