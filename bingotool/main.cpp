@@ -31,7 +31,7 @@
 #endif
 
 SDL_Window *gWindow = nullptr;
-static SDL_Renderer *gRenderer = nullptr;
+SDL_Renderer *gRenderer = nullptr;
 
 void sendJudgeSyncState() {
     uint64_t val[2] = {0, 0};

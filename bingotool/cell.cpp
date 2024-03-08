@@ -22,6 +22,7 @@
 #undef WIN32_LEAN_AND_MEAN
 
 extern SDL_Window *gWindow;
+extern SDL_Renderer *gRenderer;
 Cells gCells;
 
 static HWND configDialog = nullptr;
@@ -34,6 +35,10 @@ static HBRUSH cellSpacingColorBrush = nullptr;
 static HBRUSH scoreShadowColorBrush = nullptr;
 static HBRUSH scoreBackgroundColorBrush = nullptr;
 static HBRUSH nameShadowColorBrush = nullptr;
+static HBRUSH player1ColorBrush = nullptr;
+static HBRUSH player2ColorBrush = nullptr;
+static HBITMAP player1Bitmap = nullptr;
+static HBITMAP player2Bitmap = nullptr;
 
 void Cell::updateTexture() {
     if (texture) {
@@ -293,6 +298,18 @@ void initConfigDialog(HWND hwnd) {
     if (nameShadowColorBrush) {
         DeleteObject(nameShadowColorBrush);
     }
+    if (player1ColorBrush) {
+        DeleteObject(player1ColorBrush);
+    }
+    if (player2ColorBrush) {
+        DeleteObject(player2ColorBrush);
+    }
+    if (player1Bitmap) {
+        DeleteObject(player1Bitmap);
+    }
+    if (player2Bitmap) {
+        DeleteObject(player2Bitmap);
+    }
     textColorBrush = CreateSolidBrush(RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
     backgroundColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[0].r, gConfig.colorsInt[0].g, gConfig.colorsInt[0].b));
     textShadowColorBrush = CreateSolidBrush(RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
@@ -301,6 +318,10 @@ void initConfigDialog(HWND hwnd) {
     scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
     scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
     nameShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
+    player1ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[1].r, gConfig.colorsInt[1].g, gConfig.colorsInt[1].b));
+    player2ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[2].r, gConfig.colorsInt[2].g, gConfig.colorsInt[2].b));
+    if (gConfig.useColorTexture[0]) player1Bitmap = loadBitmap(gConfig.colorTextureFile[0].c_str());
+    if (gConfig.useColorTexture[1]) player2Bitmap = loadBitmap(gConfig.colorTextureFile[1].c_str());
 
     int x, y;
     SDL_GetWindowPosition(gWindow, &x, &y);
@@ -328,6 +349,10 @@ void initConfigDialog(HWND hwnd) {
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一缩小文字");
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一扩展宽度");
     SendMessageW(cbc, CB_SETCURSEL, gConfig.cellAutoFit, 0);
+    cbc = GetDlgItem(hwnd, IDC_PLAYER1USETEXTURE);
+    SendMessageW(cbc, BM_SETCHECK, gConfig.useColorTexture[0] ? BST_CHECKED : BST_UNCHECKED, 0);
+    cbc = GetDlgItem(hwnd, IDC_PLAYER2USETEXTURE);
+    SendMessageW(cbc, BM_SETCHECK, gConfig.useColorTexture[1] ? BST_CHECKED : BST_UNCHECKED, 0);
 
     edc = GetDlgItem(hwnd, IDC_SCOREFONT);
     fontFileName = Utf8ToUnicode(gConfig.scoreFontFile);
@@ -355,6 +380,10 @@ void initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreNameWinText).c_str());
     edc = GetDlgItem(hwnd, IDC_NAMEBINGOTEXT);
     SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreNameBingoText).c_str());
+    edc = GetDlgItem(hwnd, IDC_PLAYER1NAME);
+    SetWindowTextW(edc, gConfig.playerName[0].c_str());
+    edc = GetDlgItem(hwnd, IDC_PLAYER2NAME);
+    SetWindowTextW(edc, gConfig.playerName[1].c_str());
 
     noEnChangeNotification = false;
 }
@@ -602,11 +631,74 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             InvalidateRect(GetDlgItem(hwnd, IDC_NAMESHADOWCOLOR), nullptr, TRUE);
             break;
         }
-
         case IDC_AUTOSIZE: {
             auto cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
             gConfig.cellAutoFit = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
             gCells.updateTextures();
+            break;
+        }
+        case IDC_PLAYER1COLOR: {
+            if (!chooseColor(hwnd, gConfig.colorsInt[1], custColors)) return false;
+            if (player1ColorBrush) {
+                DeleteObject(player1ColorBrush);
+            }
+            player1ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[1].r, gConfig.colorsInt[1].g, gConfig.colorsInt[1].b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER1COLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_PLAYER1USETEXTURE: {
+            auto cbc = GetDlgItem(hwnd, IDC_PLAYER1USETEXTURE);
+            gConfig.useColorTexture[0] = SendMessageW(cbc, BM_GETCHECK, 0, 0) == BST_CHECKED;
+            gCells.updateTextures();
+            gScoreWindows[0].updateTexture();
+            break;
+        }
+        case IDC_PLAYER1TEXTURE: {
+            auto file = selectFile(hwnd, L"选择贴图文件", L"", L"PNG文件|*.png|BMP文件|*.bmp", false, true);
+            if (file.empty()) break;
+            auto filename = UnicodeToUtf8(file);
+            if (gConfig.colorTextureFile[0] == filename) break;
+            gConfig.colorTextureFile[0] = filename;
+            if (player1Bitmap) {
+                DeleteObject(player1Bitmap);
+            }
+            player1Bitmap = loadBitmap(filename.c_str());
+            InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER1TEXTURE), nullptr, TRUE);
+            gConfig.reloadColorTexture(gRenderer, 0);
+            gCells.updateTextures();
+            gScoreWindows[0].updateTexture(true);
+            break;
+        }
+        case IDC_PLAYER2COLOR: {
+            if (!chooseColor(hwnd, gConfig.colorsInt[2], custColors)) return false;
+            if (player2ColorBrush) {
+                DeleteObject(player2ColorBrush);
+            }
+            player2ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[2].r, gConfig.colorsInt[2].g, gConfig.colorsInt[2].b));
+            InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER2COLOR), nullptr, TRUE);
+            break;
+        }
+        case IDC_PLAYER2USETEXTURE: {
+            auto cbc = GetDlgItem(hwnd, IDC_PLAYER2USETEXTURE);
+            gConfig.useColorTexture[1] = SendMessageW(cbc, BM_GETCHECK, 0, 0) == BST_CHECKED;
+            gCells.updateTextures();
+            gScoreWindows[1].updateTexture();
+            break;
+        }
+        case IDC_PLAYER2TEXTURE: {
+            auto file = selectFile(hwnd, L"选择贴图文件", L"", L"PNG文件|*.png|BMP文件|*.bmp", false, true);
+            if (file.empty()) break;
+            auto filename = UnicodeToUtf8(file);
+            if (gConfig.colorTextureFile[1] == filename) break;
+            gConfig.colorTextureFile[1] = filename;
+            if (player2Bitmap) {
+                DeleteObject(player2Bitmap);
+            }
+            player2Bitmap = loadBitmap(filename.c_str());
+            InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER2TEXTURE), nullptr, TRUE);
+            gConfig.reloadColorTexture(gRenderer, 1);
+            gCells.updateTextures();
+            gScoreWindows[1].updateTexture(true);
             break;
         }
         default:
@@ -880,6 +972,26 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             gScoreWindows[1].updateTexture();
             break;
         }
+        case IDC_PLAYER1NAME: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_PLAYER1NAME);
+            GetWindowTextW(hwndCtl, str, 256);
+            if (str == gConfig.playerName[0]) return 0;
+            gConfig.playerName[0] = str;
+            gScoreWindows[0].playerName = UnicodeToUtf8(str);
+            gScoreWindows[0].updateTexture();
+            break;
+        }
+        case IDC_PLAYER2NAME: {
+            wchar_t str[256];
+            auto hwndCtl = GetDlgItem(hwnd, IDC_PLAYER2NAME);
+            GetWindowTextW(hwndCtl, str, 256);
+            if (str == gConfig.playerName[1]) return 0;
+            gConfig.playerName[1] = str;
+            gScoreWindows[1].playerName = UnicodeToUtf8(str);
+            gScoreWindows[1].updateTexture();
+            break;
+        }
         default:
             break;
     }
@@ -929,10 +1041,49 @@ INT_PTR handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam) {
             SetBkColor((HDC)wParam, RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
             return (INT_PTR)nameShadowColorBrush;
         }
+        case IDC_PLAYER1COLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.colorsInt[1].r, gConfig.colorsInt[1].g, gConfig.colorsInt[1].b));
+            return (INT_PTR)player1ColorBrush;
+        }
+        case IDC_PLAYER2COLOR: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam, RGB(gConfig.colorsInt[2].r, gConfig.colorsInt[2].g, gConfig.colorsInt[2].b));
+            return (INT_PTR)player2ColorBrush;
+        }
         default:
             break;
     }
     return DefWindowProcW(hwnd, WM_CTLCOLORSTATIC, wParam, lParam);
+}
+
+INT_PTR handleDrawItem(HWND hwnd, WPARAM wParam, LPARAM lParam) {
+    auto lpdis = (LPDRAWITEMSTRUCT)lParam;
+    switch (wParam) {
+        case IDC_PLAYER1TEXTURE: {
+            if (player1Bitmap) {
+                auto hdc = CreateCompatibleDC(lpdis->hDC);
+                SelectObject(hdc, player1Bitmap);
+                BITMAP bm;
+                GetObject(player1Bitmap, (int)sizeof(bm), &bm);
+                StretchBlt(lpdis->hDC, 0, 0, lpdis->rcItem.right, lpdis->rcItem.bottom, hdc, 0, 0, bm.bmWidth, bm.bmHeight, SRCCOPY);
+                DeleteDC(hdc);
+            }
+            return TRUE;
+        }
+        case IDC_PLAYER2TEXTURE: {
+            if (player2Bitmap) {
+                auto hdc = CreateCompatibleDC(lpdis->hDC);
+                SelectObject(hdc, player2Bitmap);
+                BITMAP bm;
+                GetObject(player2Bitmap, (int)sizeof(bm), &bm);
+                StretchBlt(lpdis->hDC, 0, 0, lpdis->rcItem.right, lpdis->rcItem.bottom, hdc, 0, 0, bm.bmWidth, bm.bmHeight, SRCCOPY);
+                DeleteDC(hdc);
+            }
+            return TRUE;
+        }
+    }
+    return DefWindowProcW(hwnd, WM_DRAWITEM, wParam, lParam);
 }
 
 INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
@@ -954,6 +1105,9 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
             break;
         case WM_CTLCOLORSTATIC: {
             return handleCtlColorStatic(hwnd, wParam, lParam);
+        }
+        case WM_DRAWITEM: {
+            return handleDrawItem(hwnd, wParam, lParam);
         }
         default:
             break;

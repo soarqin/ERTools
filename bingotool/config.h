@@ -9,6 +9,7 @@ struct Config {
     void save();
     void oldLoad();
     void postLoad(SDL_Renderer *renderer);
+    void reloadColorTexture(SDL_Renderer *renderer, int index);
 
     int originCellSizeX = 150;
     int cellSize[2] = {originCellSizeX, originCellSizeX};

@@ -12,7 +12,7 @@ struct ScoreWindow {
 
     void destroy();
 
-    void updateTexture();
+    void updateTexture(bool reloadMask = false);
 
     void render();
 

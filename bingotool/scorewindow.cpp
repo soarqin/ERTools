@@ -43,7 +43,7 @@ void ScoreWindow::create(int idx, const std::string &name) {
         int cw, ch;
         SDL_GetWindowSize(gWindow, &cw, &ch);
         SDL_SetWindowPosition(window[i], x + i * 200, y + ch + 8 + idx * (std::max(gConfig.scoreFontSize, gConfig.scoreNameFontSize) + gConfig.scorePadding * 2 + 8));
-        if (gConfig.useColorTexture[index]) {
+        if (!gConfig.colorTextureFile[index].empty()) {
             colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
         }
@@ -79,7 +79,16 @@ void ScoreWindow::destroy() {
     extraScore = 0;
 }
 
-void ScoreWindow::updateTexture() {
+void ScoreWindow::updateTexture(bool reloadMask) {
+    if (reloadMask) {
+        for (int i = 0; i < 2; i++) {
+            if (colorMask[i]) {
+                SDL_DestroyTexture(colorMask[i]);
+            }
+            colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
+            SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
+        }
+    }
     std::string utext[2] = {
         fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}", playerName, score),
         fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreNameBingoText : score >= 13 ? gConfig.scoreNameWinText : "{0}" : "{0}", playerName, score)
@@ -90,7 +99,7 @@ void ScoreWindow::updateTexture() {
     int *ushadowOffset[2] = {gConfig.scoreTextShadowOffset, gConfig.scoreNameTextShadowOffset};
     for (int i = 0; i < 2; i++) {
         SDL_Surface *usurface;
-        if (colorMask[i]) {
+        if (gConfig.useColorTexture[index]) {
             SDL_Color clr = {255, 255, 255, 255};
             usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &clr, 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
         } else {
@@ -106,7 +115,7 @@ void ScoreWindow::updateTexture() {
         SDL_RenderClear(renderer[i]);
         SDL_FRect rc = {0, 0, (float)mw, (float)mh};
         SDL_RenderTexture(renderer[i], utexture, nullptr, &rc);
-        if (colorMask[i]) {
+        if (gConfig.useColorTexture[index]) {
             SDL_RenderTexture(renderer[i], colorMask[i], nullptr, nullptr);
         }
         SDL_DestroyTexture(utexture);

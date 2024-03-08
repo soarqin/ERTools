@@ -105,8 +105,8 @@ void Config::load() {
     }
     const auto score = toml::find_or(data, "scores_window", toml::value());
     if (score.is_table()) {
-        playerName[0] = toml::find_or(score, "player1", playerName[0]);
-        playerName[1] = toml::find_or(score, "player2", playerName[1]);
+        playerName[0] = Utf8ToUnicode(toml::find_or(score, "player1", UnicodeToUtf8(playerName[0])));
+        playerName[1] = Utf8ToUnicode(toml::find_or(score, "player2", UnicodeToUtf8(playerName[1])));
         scoreFontFile = toml::find_or(score, "font_file", scoreFontFile);
         auto style = toml::find_or(score, "font_style", "-");
         if (style != "-") scoreFontStyle = setFontStyle(style);
@@ -490,9 +490,12 @@ void Config::postLoad(SDL_Renderer *renderer) {
     scoreNameFont = TTF_OpenFont(scoreNameFontFile.c_str(), scoreNameFontSize);
     TTF_SetFontStyle(scoreNameFont, scoreNameFontStyle);
     TTF_SetFontWrappedAlign(scoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
-    for (int i = 0; i < 2; i++) {
-        if (!gConfig.useColorTexture[i] || gConfig.colorTextureFile[i].empty()) continue;
-        gConfig.colorTexture[i] = loadTexture(renderer, gConfig.colorTextureFile[i].c_str());
-        if (!gConfig.colorTexture[i]) gConfig.useColorTexture[i] = false;
-    }
+    reloadColorTexture(renderer, 0);
+    reloadColorTexture(renderer, 1);
+}
+
+void Config::reloadColorTexture(SDL_Renderer *renderer, int index) {
+    if (!useColorTexture[index] || colorTextureFile[index].empty()) return;
+    colorTexture[index] = loadTexture(renderer, colorTextureFile[index].c_str());
+    if (!colorTexture[index]) useColorTexture[index] = false;
 }
