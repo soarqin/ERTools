@@ -173,12 +173,8 @@ void reloadAll() {
     gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(gWindow, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
-    for (int i = 0; i < 2; i++) {
-        if (gConfig.colorTextureFile[i].empty()) continue;
-        gConfig.colorTexture[i] = loadTexture(gRenderer, gConfig.colorTextureFile[i].c_str());
-    }
 
-    gConfig.postLoad();
+    gConfig.postLoad(gRenderer);
     loadSquares();
     gScoreWindows[0].create(0, UnicodeToUtf8(gConfig.playerName[0]));
     gScoreWindows[1].create(1, UnicodeToUtf8(gConfig.playerName[1]));
@@ -566,7 +562,7 @@ int wmain(int argc, wchar_t *argv[]) {
 QUIT:
     saveState();
     for (auto & tex : gConfig.colorTexture) {
-        SDL_DestroyTexture(tex);
+        if (tex != nullptr) SDL_DestroyTexture(tex);
     }
     TTF_CloseFont(gConfig.scoreFont);
     TTF_CloseFont(gConfig.font);

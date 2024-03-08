@@ -43,7 +43,7 @@ void ScoreWindow::create(int idx, const std::string &name) {
         int cw, ch;
         SDL_GetWindowSize(gWindow, &cw, &ch);
         SDL_SetWindowPosition(window[i], x + i * 200, y + ch + 8 + idx * (std::max(gConfig.scoreFontSize, gConfig.scoreNameFontSize) + gConfig.scorePadding * 2 + 8));
-        if (!gConfig.colorTextureFile[index].empty()) {
+        if (gConfig.useColorTexture[index]) {
             colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
         }

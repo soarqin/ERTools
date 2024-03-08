@@ -58,8 +58,8 @@ void Config::load() {
     }
     const auto cells = toml::find_or(data, "cells_window", toml::value());
     if (cells.is_table()) {
-        cellSize[0] = toml::find_or(cells, "width", cellSize[0]);
-        cellSize[1] = toml::find_or(cells, "height", cellSize[0]);
+        originCellSizeX = cellSize[0] = toml::find_or(cells, "width", originCellSizeX);
+        cellSize[1] = toml::find_or(cells, "height", originCellSizeX);
         cellSpacing = toml::find_or(cells, "spacing", cellSpacing);
         cellBorder = toml::find_or(cells, "border", cellBorder);
         extractColor(cells, "spacing_color", cellSpacingColor);
@@ -77,16 +77,30 @@ void Config::load() {
         auto color1 = toml::find_or(cells, "color1", "");
         auto sl = splitString(color1, ',');
         if (sl.size() == 1) {
+            useColorTexture[0] = true;
             colorTextureFile[0] = color1;
         } else {
+            useColorTexture[0] = false;
             stringToColor(color1, colorsInt[1]);
         }
         auto color2 = toml::find_or(cells, "color2", "");
         sl = splitString(color2, ',');
         if (sl.size() == 1) {
+            useColorTexture[1] = true;
             colorTextureFile[1] = color2;
         } else {
+            useColorTexture[1] = false;
             stringToColor(color2, colorsInt[2]);
+        }
+        auto uctv = toml::find_or(cells, "use_color_texture", toml::value());
+        if (uctv.is_array() && uctv.size() >= 2) {
+            useColorTexture[0] = toml::get_or(uctv.at(0), useColorTexture[0]);
+            useColorTexture[1] = toml::get_or(uctv.at(1), useColorTexture[1]);
+        }
+        auto ctv = toml::find_or(cells, "color_texture", toml::value());
+        if (ctv.is_array() && ctv.size() >= 2) {
+            colorTextureFile[0] = toml::get_or(ctv.at(0), colorTextureFile[0]);
+            colorTextureFile[1] = toml::get_or(ctv.at(1), colorTextureFile[1]);
         }
     }
     const auto score = toml::find_or(data, "scores_window", toml::value());
@@ -162,7 +176,7 @@ void Config::save() {
         {
             "cells_window",
             {
-                {"width", cellSize[0]},
+                {"width", originCellSizeX},
                 {"height", cellSize[1]},
                 {"spacing", cellSpacing},
                 {"border", cellBorder},
@@ -177,8 +191,10 @@ void Config::save() {
                 {"font_style", std::string(fontStyle & TTF_STYLE_BOLD ? "B" : "") + (fontStyle & TTF_STYLE_ITALIC ? "I" : "")},
                 {"font_size", originalFontSize},
                 {"cell_color", colorToString(colorsInt[0])},
-                {"color1", colorTextureFile[0].empty() ? colorToString(colorsInt[1]) : colorTextureFile[0]},
-                {"color2", colorTextureFile[1].empty() ? colorToString(colorsInt[2]) : colorTextureFile[1]},
+                {"color1", colorToString(colorsInt[1])},
+                {"color2", colorToString(colorsInt[2])},
+                {"use_color_texture", {useColorTexture[0], useColorTexture[1]}},
+                {"color_texture", {colorTextureFile[0], colorTextureFile[1]}},
             }
         },
         {
@@ -240,10 +256,10 @@ void Config::oldLoad() {
             auto sl = splitString(value, ',');
             switch (sl.size()) {
                 case 1:
-                    cellSize[0] = cellSize[1] = std::stoi(sl[0]);
+                    originCellSizeX = cellSize[0] = cellSize[1] = std::stoi(sl[0]);
                     break;
                 case 2:
-                    cellSize[0] = std::stoi(sl[0]);
+                    originCellSizeX = cellSize[0] = std::stoi(sl[0]);
                     cellSize[1] = std::stoi(sl[1]);
                     break;
                 default:
@@ -313,10 +329,12 @@ void Config::oldLoad() {
                 colorsInt[1].r = std::stoi(sl[0]);
                 colorsInt[1].g = std::stoi(sl[1]);
                 colorsInt[1].b = std::stoi(sl[2]);
+                useColorTexture[0] = false;
                 colorTextureFile[0].clear();
                 colorTexture[0] = nullptr;
             } else if (sl.size() == 1) {
-                colorTextureFile[0] = sl[0].c_str();
+                useColorTexture[0] = true;
+                colorTextureFile[0] = sl[0];
             }
         } else if (key == "Color2") {
             auto sl = splitString(value, ',');
@@ -324,10 +342,12 @@ void Config::oldLoad() {
                 colorsInt[2].r = std::stoi(sl[0]);
                 colorsInt[2].g = std::stoi(sl[1]);
                 colorsInt[2].b = std::stoi(sl[2]);
+                useColorTexture[1] = false;
                 colorTextureFile[1].clear();
                 colorTexture[1] = nullptr;
             } else if (sl.size() == 1) {
-                colorTextureFile[1] = sl[0].c_str();
+                useColorTexture[1] = true;
+                colorTextureFile[1] = sl[0];
             }
         } else if (key == "BingoBrawlersMode") {
             bingoBrawlersMode = std::stoi(value) != 0 ? 1 : 0;
@@ -448,7 +468,7 @@ void Config::oldLoad() {
     }
 }
 
-void Config::postLoad() {
+void Config::postLoad(SDL_Renderer *renderer) {
     if (font) {
         TTF_CloseFont(font);
         font = nullptr;
@@ -470,4 +490,9 @@ void Config::postLoad() {
     scoreNameFont = TTF_OpenFont(scoreNameFontFile.c_str(), scoreNameFontSize);
     TTF_SetFontStyle(scoreNameFont, scoreNameFontStyle);
     TTF_SetFontWrappedAlign(scoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
+    for (int i = 0; i < 2; i++) {
+        if (!gConfig.useColorTexture[i] || gConfig.colorTextureFile[i].empty()) continue;
+        gConfig.colorTexture[i] = loadTexture(renderer, gConfig.colorTextureFile[i].c_str());
+        if (!gConfig.colorTexture[i]) gConfig.useColorTexture[i] = false;
+    }
 }

@@ -90,7 +90,7 @@ void Cell::render(int x, int y, int cx, int cy) const {
     bool dbl = status > 2;
     auto fx = (float)x, fy = (float)y, fcx = (float)cx, fcy = (float)cy;
     auto st = dbl ? (status - 2) : status;
-    if (st > 0 && gConfig.colorTexture[st - 1]) {
+    if (st > 0 && gConfig.useColorTexture[st - 1]) {
         SDL_FRect dstrect = {fx, fy, fcx, fcy};
         SDL_RenderTexture(renderer, gConfig.colorTexture[st - 1], nullptr, &dstrect);
     } else {
@@ -187,6 +187,14 @@ void Cells::init(SDL_Renderer *renderer) {
 }
 
 void Cells::fitCellsForText() {
+    gConfig.cellSize[0] = gConfig.originCellSizeX;
+    if (gConfig.fontSize != gConfig.originalFontSize) {
+        TTF_CloseFont(gConfig.font);
+        gConfig.font = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
+        TTF_SetFontStyle(gConfig.font, gConfig.fontStyle);
+        TTF_SetFontWrappedAlign(gConfig.font, TTF_WRAPPED_ALIGN_CENTER);
+        gConfig.fontSize = gConfig.originalFontSize;
+    }
     switch (gConfig.cellAutoFit) {
         case 1: {
             auto *font = gConfig.font;
@@ -312,7 +320,7 @@ void initConfigDialog(HWND hwnd) {
     setEditUpDownIntAndRange(hwnd, IDC_BGCOLORA, gConfig.colorsInt[0].a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100);
-    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.cellSize[0], 20, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 20, 1000);
     setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000);
 
     HWND cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
@@ -706,7 +714,8 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_CELLWIDTH: {
-            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.cellSize[0], 20, 1000, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 20, 1000, [hwnd](int newVal) {
+                gConfig.cellSize[0] = gConfig.originCellSizeX;
                 SDL_SetWindowSize(gWindow,
                                   gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                                   gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);

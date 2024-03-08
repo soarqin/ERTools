@@ -8,9 +8,10 @@ struct Config {
     void load();
     void save();
     void oldLoad();
-    void postLoad();
+    void postLoad(SDL_Renderer *renderer);
 
-    int cellSize[2] = {150, 150};
+    int originCellSizeX = 150;
+    int cellSize[2] = {originCellSizeX, originCellSizeX};
     int cellSpacing = 2;
     int cellBorder = 0;
     SDL_Color cellSpacingColor = {255, 255, 255, 160};
@@ -39,6 +40,7 @@ struct Config {
     SDL_Color scoreBackgroundColor = {0, 0, 0, 0};
     int scorePadding = 8;
     int scoreRoundCorner = 0;
+    bool useColorTexture[2] = {false, false};
     std::string colorTextureFile[2];
     SDL_Texture *colorTexture[2] = {nullptr, nullptr};
     SDL_FColor colors[3] = {
