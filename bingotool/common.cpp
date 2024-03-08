@@ -9,6 +9,12 @@
 #include <shlobj.h>
 #include <shlwapi.h>
 #undef WIN32_LEAN_AND_MEAN
+#if defined(max)
+#undef max
+#endif
+#if defined(min)
+#undef min
+#endif
 
 SDL_Texture *loadTexture(SDL_Renderer *renderer, const unsigned char *buffer, int len) {
     int width, height, bytesPerPixel;

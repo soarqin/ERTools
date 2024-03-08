@@ -20,6 +20,13 @@
 #include <shlguid.h>
 #include <shellapi.h>
 #undef WIN32_LEAN_AND_MEAN
+#include <algorithm>
+#if defined(max)
+#undef max
+#endif
+#if defined(min)
+#undef min
+#endif
 
 extern SDL_Window *gWindow;
 extern SDL_Renderer *gRenderer;

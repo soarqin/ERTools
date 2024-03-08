@@ -305,9 +305,8 @@ int wmain(int argc, wchar_t *argv[]) {
                     if (syncGetMode() == 0) {
                         auto menu = CreatePopupMenu();
                         AppendMenuW(menu, MF_STRING, 7, L"设置");
-                        AppendMenuW(menu, MF_STRING, 8, L"重新加载选项");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 9, L"退出");
+                        AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
@@ -317,10 +316,6 @@ int wmain(int argc, wchar_t *argv[]) {
                                 gCells.showSettingsWindow();
                                 break;
                             case 8:
-                                saveState();
-                                reloadAll();
-                                break;
-                            case 9:
                                 goto QUIT;
                             default:
                                 break;
@@ -384,9 +379,8 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING | MF_POPUP, (UINT_PTR)tables, L"重新随机表格");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 7, L"设置");
-                        AppendMenuW(menu, MF_STRING, 8, L"重新加载选项");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 9, L"退出");
+                        AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
@@ -428,10 +422,6 @@ int wmain(int argc, wchar_t *argv[]) {
                                 gCells.showSettingsWindow();
                                 break;
                             case 8:
-                                saveState();
-                                reloadAll();
-                                break;
-                            case 9:
                                 goto QUIT;
                             default:
                                 if (cmd >= 100 && cmd < 100 + tableFilenames.size()) {
@@ -458,7 +448,6 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 6, L"重新开始");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 7, L"重新加载选项");
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
@@ -521,10 +510,6 @@ int wmain(int argc, wchar_t *argv[]) {
                                 sendJudgeSyncState();
                                 break;
                             }
-                            case 7:
-                                saveState();
-                                reloadAll();
-                                break;
                             case 8:
                                 goto QUIT;
                             default:

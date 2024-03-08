@@ -6,6 +6,12 @@
 
 #include <SDL3_gfxPrimitives.h>
 #include <fmt/format.h>
+#if defined(max)
+#undef max
+#endif
+#if defined(min)
+#undef min
+#endif
 
 ScoreWindow gScoreWindows[2];
 
