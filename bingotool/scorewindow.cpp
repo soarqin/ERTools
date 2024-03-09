@@ -15,9 +15,7 @@
 
 ScoreWindow gScoreWindows[2];
 
-extern SDL_Window *gWindow;
-
-SDL_HitTestResult ScoreWindow::ScoreWindowHitTestCallback(SDL_Window *window, const SDL_Point *pt, void *data) {
+SDL_HitTestResult ScoreWindowHitTestCallback(SDL_Window *window, const SDL_Point *pt, void *data) {
     (void)data;
     (void)window;
     (void)pt;
@@ -35,20 +33,28 @@ void ScoreWindow::create(int idx, const std::string &name) {
     destroy();
     index = idx;
     playerName = name;
+    if (!gConfig.simpleMode)
+        createWindow();
+}
+
+void ScoreWindow::createWindow() {
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     for (int i = 0; i < 2; i++) {
         std::string title = i == 0 ? "Score A" : "Player A";
-        title.back() += idx;
-        window[i] = SDL_CreateWindow(title.c_str(), 200, 200, SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
+        title.back() += index;
+        window[i] = SDL_CreateWindow(title.c_str(), tw[i], th[i], SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
         renderer[i] = SDL_CreateRenderer(window[i], "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         SDL_SetWindowHitTest(window[i], ScoreWindowHitTestCallback, nullptr);
         int x, y;
-        SDL_GetWindowPosition(gWindow, &x, &y);
+        auto *cellwin = gCells.window();
+        SDL_GetWindowPosition(cellwin, &x, &y);
         int cw, ch;
-        SDL_GetWindowSize(gWindow, &cw, &ch);
-        SDL_SetWindowPosition(window[i], x + i * 200, y + ch + 8 + idx * (std::max(gConfig.scoreFontSize, gConfig.scoreNameFontSize) + gConfig.scorePadding * 2 + 8));
+        SDL_GetWindowSize(cellwin, &cw, &ch);
+        SDL_SetWindowPosition(window[i],
+                              x + i * 200,
+                              y + ch + 8 + index * (std::max(gConfig.scoreFontSize, gConfig.scoreNameFontSize) + gConfig.scorePadding * 2 + 8));
         if (!gConfig.colorTextureFile[index].empty()) {
             colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
@@ -56,7 +62,17 @@ void ScoreWindow::create(int idx, const std::string &name) {
     }
 }
 
-void ScoreWindow::destroy() {
+void ScoreWindow::switchMode() {
+    destroyWindow();
+    if (!gConfig.simpleMode) {
+        createWindow();
+        for (int i = 0; i < 2; i++) {
+            SDL_SetWindowPosition(window[i], tx[i], ty[i]);
+        }
+    }
+}
+
+void ScoreWindow::destroyWindow() {
     for (int i = 0; i < 2; i++) {
         if (colorMask[i]) {
             SDL_DestroyTexture(colorMask[i]);
@@ -74,11 +90,11 @@ void ScoreWindow::destroy() {
             SDL_DestroyWindow(window[i]);
             window[i] = nullptr;
         }
-        w[i] = 0;
-        h[i] = 0;
-        tw[i] = 0;
-        th[i] = 0;
     }
+}
+
+void ScoreWindow::destroy() {
+    destroyWindow();
     index = -1;
     score = -1;
     hasExtraScore = false;
@@ -86,6 +102,10 @@ void ScoreWindow::destroy() {
 }
 
 void ScoreWindow::updateTexture(bool reloadMask) {
+    if (gConfig.simpleMode) {
+        gCells.updateScoreTextures(index);
+        return;
+    }
     if (reloadMask) {
         for (int i = 0; i < 2; i++) {
             if (colorMask[i]) {
@@ -96,8 +116,12 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         }
     }
     std::string utext[2] = {
-        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}", playerName, score),
-        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreNameBingoText : score >= 13 ? gConfig.scoreNameWinText : "{0}" : "{0}", playerName, score)
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}",
+                    playerName,
+                    score),
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreNameBingoText : score >= 13 ? gConfig.scoreNameWinText : "{0}" : "{0}",
+                    playerName,
+                    score)
     };
     TTF_Font *ufont[2] = {gConfig.scoreFont, gConfig.scoreNameFont};
     int ushadow[2] = {gConfig.scoreTextShadow, gConfig.scoreNameTextShadow};
@@ -109,7 +133,13 @@ void ScoreWindow::updateTexture(bool reloadMask) {
             SDL_Color clr = {255, 255, 255, 255};
             usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &clr, 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
         } else {
-            usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &gConfig.colorsInt[index + 1], 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
+            usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i],
+                                                           utext[i].c_str(),
+                                                           &gConfig.colorsInt[index + 1],
+                                                           0,
+                                                           &ushadowColor[i],
+                                                           ushadow[i],
+                                                           ushadowOffset[i]);
         }
         SDL_Texture *utexture;
         if (usurface) {
@@ -141,16 +171,35 @@ void ScoreWindow::updateTexture(bool reloadMask) {
     }
 }
 
+void ScoreWindow::updateXYValue() {
+    if (gConfig.simpleMode) return;
+    for (int i = 0; i < 2; i++) {
+        SDL_GetWindowPosition(window[i], &tx[i], &ty[i]);
+    }
+}
+
 void ScoreWindow::render() {
+    if (gConfig.simpleMode) return;
     for (int i = 0; i < 2; i++) {
         SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
         SDL_RenderClear(renderer[i]);
         if (gConfig.scoreRoundCorner > 0)
-            roundedBoxRGBA(renderer[i], 0, 0, w[i] - 1, h[i] - 1, gConfig.scoreRoundCorner,
-                           gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b, gConfig.scoreBackgroundColor.a);
+            roundedBoxRGBA(renderer[i],
+                           0,
+                           0,
+                           w[i] - 1,
+                           h[i] - 1,
+                           gConfig.scoreRoundCorner,
+                           gConfig.scoreBackgroundColor.r,
+                           gConfig.scoreBackgroundColor.g,
+                           gConfig.scoreBackgroundColor.b,
+                           gConfig.scoreBackgroundColor.a);
         else {
             SDL_SetRenderDrawColor(renderer[i],
-                                   gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b, gConfig.scoreBackgroundColor.a);
+                                   gConfig.scoreBackgroundColor.r,
+                                   gConfig.scoreBackgroundColor.g,
+                                   gConfig.scoreBackgroundColor.b,
+                                   gConfig.scoreBackgroundColor.a);
             SDL_FRect dstrect = {0, 0, (float)w[i], (float)h[i]};
             SDL_RenderFillRect(renderer[i], &dstrect);
         }

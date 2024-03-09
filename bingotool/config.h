@@ -8,9 +8,9 @@ struct Config {
     void load();
     void save();
     void oldLoad();
-    void postLoad(SDL_Renderer *renderer);
-    void reloadColorTexture(SDL_Renderer *renderer, int index);
+    void postLoad();
 
+    bool simpleMode = false;
     int originCellSizeX = 150;
     int cellSize[2] = {originCellSizeX, originCellSizeX};
     int cellSpacing = 2;
@@ -43,7 +43,6 @@ struct Config {
     int scoreRoundCorner = 0;
     bool useColorTexture[2] = {false, false};
     std::string colorTextureFile[2];
-    SDL_Texture *colorTexture[2] = {nullptr, nullptr};
     SDL_FColor colors[3] = {
         {0, 0, 0, 0},
         {1, 0, 0, 0},

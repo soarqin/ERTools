@@ -11,6 +11,7 @@
 #endif
 
 #include <SDL3_gfxPrimitives.h>
+#include <fmt/format.h>
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <commctrl.h>
@@ -28,8 +29,6 @@
 #undef min
 #endif
 
-extern SDL_Window *gWindow;
-extern SDL_Renderer *gRenderer;
 Cells gCells;
 
 static HWND configDialog = nullptr;
@@ -104,7 +103,7 @@ void Cell::render(int x, int y, int cx, int cy) const {
     auto st = dbl ? (status - 2) : status;
     if (st > 0 && gConfig.useColorTexture[st - 1]) {
         SDL_FRect dstrect = {fx, fy, fcx, fcy};
-        SDL_RenderTexture(renderer, gConfig.colorTexture[st - 1], nullptr, &dstrect);
+        SDL_RenderTexture(renderer, gCells.colorTexture(st - 1), nullptr, &dstrect);
     } else {
         auto &col = gConfig.colorsInt[st];
         SDL_FRect dstrect = {fx, fy, fcx, fcy};
@@ -188,14 +187,96 @@ int Cell::calculateMinimalHeight(TTF_Font *font) {
     return (lines - 1) * std::max(th, TTF_FontLineSkip(font)) + th;
 }
 
-void Cells::init(SDL_Renderer *renderer) {
+SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void *data) {
+    (void)data;
+    (void)window;
+    if (pt->y < 30)
+        return SDL_HITTEST_DRAGGABLE;
+    return SDL_HITTEST_NORMAL;
+}
+
+void Cells::init() {
+    if (window_ != nullptr) {
+        SDL_DestroyWindow(window_);
+        window_ = nullptr;
+    }
+    if (renderer_ != nullptr) {
+        SDL_DestroyRenderer(renderer_);
+        renderer_ = nullptr;
+    }
+    SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
+    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
+    SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
+    window_ = SDL_CreateWindow("BingoTool",
+                               gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                               gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
+                                   + (gConfig.simpleMode ? (TTF_FontHeight(gConfig.scoreFont) + 5) : 0),
+                               SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
+    SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
+    renderer_ = SDL_CreateRenderer(window_, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
+    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
+
     fitCellsForText();
     for (auto &r : cells_) {
         for (auto &c : r) {
-            c.renderer = renderer;
+            c.renderer = renderer_;
             c.updateTexture();
         }
     }
+    reloadColorTexture();
+}
+
+void Cells::deinit() {
+    for (auto & tex : colorTexture_) {
+        if (tex != nullptr) SDL_DestroyTexture(tex);
+    }
+    for (auto & tex : scoreTexture_) {
+        if (tex != nullptr) SDL_DestroyTexture(tex);
+    }
+    SDL_DestroyRenderer(renderer_);
+    SDL_DestroyWindow(window_);
+}
+
+void Cells::render() {
+    SDL_SetRenderDrawColor(renderer_, 0, 0, 0, 0);
+    SDL_RenderClear(renderer_);
+    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
+    SDL_SetRenderDrawColor(renderer_, gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b, gConfig.cellBorderColor.a);
+    SDL_FRect rcOuter = {0, 0, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2), (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2)};
+    SDL_RenderFillRect(renderer_, &rcOuter);
+    SDL_SetRenderDrawColor(renderer_, gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b, gConfig.cellSpacingColor.a);
+    SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4), (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
+    SDL_RenderFillRect(renderer_, &rcInner);
+    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
+    auto cx = gConfig.cellSize[0], cy = gConfig.cellSize[1];
+    for (int i = 0; i < 5; i++) {
+        auto y = i * (cy + gConfig.cellSpacing) + gConfig.cellBorder;
+        for (int j = 0; j < 5; j++) {
+            auto x = j * (cx + gConfig.cellSpacing) + gConfig.cellBorder;
+            auto &cell = gCells[i][j];
+            cell.render(x, y, cx, cy);
+        }
+    }
+
+    if (gConfig.simpleMode) {
+        int ww, wh;
+        SDL_GetWindowSize(window_, &ww, &wh);
+        int fh = TTF_FontHeight(gConfig.scoreFont);
+        int sw, sh;
+        SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
+        SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
+        SDL_RenderTexture(renderer_, scoreTexture_[0], nullptr, &rect);
+        SDL_QueryTexture(scoreTexture_[1], nullptr, nullptr, &sw, &sh);
+        rect = {(float)(ww - sw - 20), (float)(wh - fh + 5), (float)sw, (float)sh};
+        SDL_RenderTexture(renderer_, scoreTexture_[1], nullptr, &rect);
+    }
+
+    SDL_RenderPresent(renderer_);
+}
+
+void Cells::switchMode() {
+    resizeWindow();
 }
 
 void Cells::fitCellsForText() {
@@ -248,9 +329,7 @@ void Cells::fitCellsForText() {
             });
             if (minWidth > gConfig.cellSize[0]) {
                 gConfig.cellSize[0] = minWidth;
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.resizeWindow();
             }
             break;
         }
@@ -266,11 +345,85 @@ void Cells::foreach(const std::function<void(Cell &, int, int)> &callback) {
     }
 }
 
+void Cells::resizeWindow() {
+    SDL_SetWindowSize(window_,
+                      gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
+                      gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
+                      + (gConfig.simpleMode ? (TTF_FontHeight(gConfig.scoreFont) + 5) : 0));
+}
+
 void Cells::updateTextures(bool fit) {
     if (fit) fitCellsForText();
     foreach([](Cell &cell, int, int) {
         cell.updateTexture();
     });
+}
+
+void Cells::updateScoreTextures() {
+    updateScoreTextures(0);
+    updateScoreTextures(1);
+}
+
+void Cells::updateScoreTextures(int index) {
+    auto score = gScoreWindows[index].score;
+    const auto &playerName = gScoreWindows[index].playerName;
+    std::string utext =
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}",
+                    playerName,
+                    score);
+    TTF_Font *ufont = gConfig.scoreFont;
+    int ushadow = gConfig.scoreTextShadow;
+    SDL_Color ushadowColor = gConfig.scoreTextShadowColor;
+    int *ushadowOffset = gConfig.scoreTextShadowOffset;
+    SDL_Surface *usurface;
+    if (gConfig.useColorTexture[index]) {
+        SDL_Color clr = {255, 255, 255, 255};
+        usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont, utext.c_str(), &clr, 0, &ushadowColor, ushadow, ushadowOffset);
+    } else {
+        usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont,
+                                                       utext.c_str(),
+                                                       &gConfig.colorsInt[index + 1],
+                                                       0,
+                                                       &ushadowColor,
+                                                       ushadow,
+                                                       ushadowOffset);
+    }
+    SDL_Texture *utexture;
+    if (usurface) {
+        utexture = SDL_CreateTextureFromSurface(renderer_, usurface);
+    } else {
+        utexture = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
+    }
+    int mw, mh;
+    SDL_QueryTexture(utexture, nullptr, nullptr, &mw, &mh);
+    if (scoreTexture_[index])
+        SDL_DestroyTexture(scoreTexture_[index]);
+    scoreTexture_[index] = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
+    SDL_SetRenderTarget(renderer_, scoreTexture_[index]);
+    SDL_SetRenderDrawColor(renderer_, 0, 0, 0, 0);
+    SDL_RenderClear(renderer_);
+    SDL_FRect rc = {0, 0, (float)mw, (float)mh};
+    SDL_RenderTexture(renderer_, utexture, nullptr, &rc);
+    if (gConfig.useColorTexture[index]) {
+        SDL_SetTextureBlendMode(colorTexture_[index], SDL_BLENDMODE_MOD);
+        SDL_RenderTexture(renderer_, colorTexture_[index], nullptr, nullptr);
+        SDL_SetTextureBlendMode(colorTexture_[index], SDL_BLENDMODE_NONE);
+    }
+    SDL_DestroyTexture(utexture);
+    SDL_DestroySurface(usurface);
+    SDL_SetRenderTarget(renderer_, nullptr);
+    SDL_SetTextureBlendMode(scoreTexture_[index], SDL_BLENDMODE_BLEND);
+}
+
+void Cells::reloadColorTexture() {
+    reloadColorTexture(0);
+    reloadColorTexture(1);
+}
+
+void Cells::reloadColorTexture(int index) {
+    if (!gConfig.useColorTexture[index] || gConfig.colorTextureFile[index].empty()) return;
+    colorTexture_[index] = loadTexture(renderer_, gConfig.colorTextureFile[index].c_str());
+    if (!colorTexture_[index]) gConfig.useColorTexture[index] = false;
 }
 
 static void setEditUpDownIntAndRange(HWND hwnd, int id, int newVal, int min, int max) {
@@ -331,7 +484,7 @@ void initConfigDialog(HWND hwnd) {
     if (gConfig.useColorTexture[1]) player2Bitmap = loadBitmap(gConfig.colorTextureFile[1].c_str());
 
     int x, y;
-    SDL_GetWindowPosition(gWindow, &x, &y);
+    SDL_GetWindowPosition(gCells.window(), &x, &y);
     noEnChangeNotification = true;
     SetWindowPos(hwnd, nullptr, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 
@@ -339,7 +492,7 @@ void initConfigDialog(HWND hwnd) {
     auto fontFileName = Utf8ToUnicode(gConfig.fontFile);
     SetWindowTextW(edc, fontFileName.c_str());
 
-    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 1, 256);
     setEditUpDownIntAndRange(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20);
@@ -348,8 +501,8 @@ void initConfigDialog(HWND hwnd) {
     setEditUpDownIntAndRange(hwnd, IDC_BGCOLORA, gConfig.colorsInt[0].a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100);
-    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 20, 1000);
-    setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 1, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 1, 1000);
 
     HWND cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"自动缩小文字");
@@ -364,7 +517,7 @@ void initConfigDialog(HWND hwnd) {
     edc = GetDlgItem(hwnd, IDC_SCOREFONT);
     fontFileName = Utf8ToUnicode(gConfig.scoreFontFile);
     SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 1, 256);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20);
@@ -378,7 +531,7 @@ void initConfigDialog(HWND hwnd) {
     edc = GetDlgItem(hwnd, IDC_NAMEFONT);
     fontFileName = Utf8ToUnicode(gConfig.scoreNameFontFile);
     SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 6, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 1, 256);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20);
@@ -572,7 +725,10 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                         TTF_CloseFont(gConfig.scoreFont);
                     }
                     gConfig.scoreFont = newFont;
-                    gCells.updateTextures();
+                    if (gConfig.simpleMode)
+                        gCells.resizeWindow();
+                    gScoreWindows[0].updateTexture();
+                    gScoreWindows[1].updateTexture();
                     auto edc = GetDlgItem(hwnd, IDC_SCOREFONT);
                     SetWindowTextW(edc, szFileRel);
                 }
@@ -622,7 +778,8 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                         TTF_CloseFont(gConfig.scoreNameFont);
                     }
                     gConfig.scoreNameFont = newFont;
-                    gCells.updateTextures();
+                    gScoreWindows[0].updateTexture();
+                    gScoreWindows[1].updateTexture();
                     auto edc = GetDlgItem(hwnd, IDC_NAMEFONT);
                     SetWindowTextW(edc, szFileRel);
                 }
@@ -671,7 +828,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             }
             player1Bitmap = loadBitmap(filename.c_str());
             InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER1TEXTURE), nullptr, TRUE);
-            gConfig.reloadColorTexture(gRenderer, 0);
+            gCells.reloadColorTexture(0);
             gCells.updateTextures();
             gScoreWindows[0].updateTexture(true);
             break;
@@ -703,7 +860,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             }
             player2Bitmap = loadBitmap(filename.c_str());
             InvalidateRect(GetDlgItem(hwnd, IDC_PLAYER2TEXTURE), nullptr, TRUE);
-            gConfig.reloadColorTexture(gRenderer, 1);
+            gCells.reloadColorTexture(1);
             gCells.updateTextures();
             gScoreWindows[1].updateTexture(true);
             break;
@@ -796,18 +953,14 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         }
         case IDC_BORDER: {
             setNewValFromControl(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.resizeWindow();
                 return true;
             });
             break;
         }
         case IDC_CELLSPACING: {
             setNewValFromControl(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.resizeWindow();
                 return true;
             });
             break;
@@ -815,9 +968,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_CELLWIDTH: {
             setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 20, 1000, [hwnd](int newVal) {
                 gConfig.cellSize[0] = gConfig.originCellSizeX;
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.resizeWindow();
                 gCells.updateTextures();
                 return true;
             });
@@ -825,9 +976,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         }
         case IDC_CELLHEIGHT: {
             setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000, [hwnd](int newVal) {
-                SDL_SetWindowSize(gWindow,
-                                  gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                                  gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2);
+                gCells.resizeWindow();
                 gCells.updateTextures();
                 return true;
             });
@@ -844,6 +993,8 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
                     TTF_CloseFont(gConfig.scoreFont);
                 }
                 gConfig.scoreFont = ft;
+                if (gConfig.simpleMode)
+                    gCells.resizeWindow();
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1126,7 +1277,7 @@ void Cells::showSettingsWindow() {
     if (configDialog) {
         initConfigDialog(configDialog);
     } else {
-        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window_), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
     ShowWindow(configDialog, SW_SHOW);

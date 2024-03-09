@@ -4,18 +4,31 @@ import (
 	"bufio"
 	"encoding/binary"
 	"fmt"
+	"github.com/redis/go-redis/v9"
 	"io"
+	"math/rand"
 	"net"
 	"sync"
-
-	"github.com/redis/go-redis/v9"
 )
 
+var letters = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+func randSeq(n int) string {
+	b := make([]rune, n)
+	for i := range b {
+		b[i] = letters[rand.Intn(len(letters))]
+	}
+	return string(b)
+}
+
 type Channel struct {
-	Clients map[*Client]int
-	Table   string
-	State   string
-	mux     sync.Mutex
+	Clients        map[*Client]int
+	Table          string
+	State          string
+	clientsMux     sync.Mutex
+	tableMux       sync.Mutex
+	stateMux       sync.Mutex
+	ClientPassword string
 }
 
 type Client struct {
@@ -26,6 +39,8 @@ type Client struct {
 
 var channels = make(map[string]*Channel)
 var mutex sync.Mutex
+var clientMap = make(map[string]string)
+var clientMapMutex sync.Mutex
 
 func getChannel(c string) *Channel {
 	mutex.Lock()
@@ -35,6 +50,17 @@ func getChannel(c string) *Channel {
 	}
 	cnl := &Channel{}
 	cnl.Clients = make(map[*Client]int)
+	clientMapMutex.Lock()
+	defer clientMapMutex.Unlock()
+	for {
+		rndPwd := randSeq(8)
+		if _, ok := clientMap[rndPwd]; ok {
+			continue
+		}
+		clientMap[rndPwd] = c
+		cnl.ClientPassword = rndPwd
+		break
+	}
 	channels[c] = cnl
 	return cnl
 }
@@ -54,8 +80,8 @@ func broadcastToPlayers(c *Channel, t byte, m string) {
 	binary.LittleEndian.PutUint32(s[0:4], uint32(l))
 	s[4] = t
 	copy(s[5:], m[:])
-	c.mux.Lock()
-	defer c.mux.Unlock()
+	c.clientsMux.Lock()
+	defer c.clientsMux.Unlock()
 	for k := range c.Clients {
 		if k.IsJudge {
 			continue
@@ -65,27 +91,55 @@ func broadcastToPlayers(c *Channel, t byte, m string) {
 }
 
 func (c *Client) EnterChannel(isJudge bool, channel string) {
+	randChannel := false
+	if channel == "" {
+		if isJudge {
+			mutex.Lock()
+			defer mutex.Unlock()
+			for {
+				channel = randSeq(8)
+				if _, ok := channels[channel]; ok {
+					continue
+				}
+				break
+			}
+			randChannel = true
+		} else {
+			_ = c.Conn.Close()
+		}
+	}
 	c.IsJudge = isJudge
 	c.Cnl = getChannel(channel)
-	c.Cnl.mux.Lock()
-	c.Cnl.Clients[c] = 1
-	c.Cnl.mux.Unlock()
+	{
+		c.Cnl.clientsMux.Lock()
+		defer c.Cnl.clientsMux.Unlock()
+		c.Cnl.Clients[c] = 1
+	}
+	if c.IsJudge {
+		if randChannel {
+			sendMsg(c.Conn, 'J', channel)
+		}
+		sendMsg(c.Conn, 'C', c.Cnl.ClientPassword)
+	}
 }
 
 func (c *Client) LeaveChannel() {
 	if c.Cnl == nil {
 		return
 	}
-	c.Cnl.mux.Lock()
-	if _, ok := c.Cnl.Clients[c]; ok {
-		delete(c.Cnl.Clients, c)
+	{
+		c.Cnl.clientsMux.Lock()
+		defer c.Cnl.clientsMux.Unlock()
+		if _, ok := c.Cnl.Clients[c]; ok {
+			delete(c.Cnl.Clients, c)
+		}
 	}
-	c.Cnl.mux.Unlock()
 	c.Cnl = nil
 }
 
 func (c *Client) FetchOrUpdateTable(table string) {
-	c.Cnl.mux.Lock()
+	c.Cnl.tableMux.Lock()
+	defer c.Cnl.tableMux.Unlock()
 	if c.IsJudge {
 		if c.Cnl.Table != table {
 			c.Cnl.Table = table
@@ -96,11 +150,11 @@ func (c *Client) FetchOrUpdateTable(table string) {
 			sendMsg(c.Conn, 'T', c.Cnl.Table)
 		}
 	}
-	c.Cnl.mux.Unlock()
 }
 
 func (c *Client) FetchOrUpdateState(state string) {
-	c.Cnl.mux.Lock()
+	c.Cnl.stateMux.Lock()
+	defer c.Cnl.stateMux.Unlock()
 	if c.IsJudge {
 		if c.Cnl.State != state {
 			c.Cnl.State = state
@@ -111,13 +165,23 @@ func (c *Client) FetchOrUpdateState(state string) {
 			sendMsg(c.Conn, 'S', c.Cnl.State)
 		}
 	}
-	c.Cnl.mux.Unlock()
 }
 
 func handleMsg(c *Client, t byte, m string) {
 	switch t {
 	case 'C':
-		c.EnterChannel(false, m)
+		var v string
+		var ok bool
+		{
+			clientMapMutex.Lock()
+			defer clientMapMutex.Unlock()
+			v, ok = clientMap[m]
+		}
+		if ok {
+			c.EnterChannel(false, v)
+		} else {
+			_ = c.Conn.Close()
+		}
 	case 'J':
 		c.EnterChannel(true, m)
 	case 'T':

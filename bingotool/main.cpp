@@ -30,9 +30,6 @@
     processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 #endif
 
-SDL_Window *gWindow = nullptr;
-SDL_Renderer *gRenderer = nullptr;
-
 void sendJudgeSyncState() {
     uint64_t val[2] = {0, 0};
     size_t idx = 0;
@@ -91,14 +88,14 @@ static void saveState() {
         n.emplace_back(std::to_string(cell.status));
     });
     int x, y;
-    SDL_GetWindowPosition(gWindow, &x, &y);
+    SDL_GetWindowPosition(gCells.window(), &x, &y);
     n.emplace_back(std::to_string(x));
     n.emplace_back(std::to_string(y));
     for (int i = 0; i < 2; i++) {
         for (auto &win: gScoreWindows) {
-            SDL_GetWindowPosition(win.window[i], &x, &y);
-            n.emplace_back(std::to_string(x));
-            n.emplace_back(std::to_string(y));
+            win.updateXYValue();
+            n.emplace_back(std::to_string(win.tx[i]));
+            n.emplace_back(std::to_string(win.ty[i]));
         }
     }
     ofs << mergeString(n, ',') << std::endl;
@@ -121,12 +118,15 @@ static void loadState() {
     });
     int x = std::stoi(sl[i++]);
     int y = std::stoi(sl[i++]);
-    SDL_SetWindowPosition(gWindow, x, y);
+    SDL_SetWindowPosition(gCells.window(), x, y);
     for (int j = 0; j < 2; j++) {
         for (auto &win: gScoreWindows) {
             x = std::stoi(sl[i++]);
             y = std::stoi(sl[i++]);
-            SDL_SetWindowPosition(win.window[j], x, y);
+            win.tx[j] = x;
+            win.ty[j] = y;
+            if (!gConfig.simpleMode)
+                SDL_SetWindowPosition(win.window[j], x, y);
         }
     }
 }
@@ -138,44 +138,15 @@ static void loadSquares() {
         std::getline(ifs, line);
         cell.text = line;
     });
-    gCells.init(gRenderer);
-}
-
-SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void *data) {
-    (void)data;
-    (void)window;
-    if (pt->y < 30)
-        return SDL_HITTEST_DRAGGABLE;
-    return SDL_HITTEST_NORMAL;
 }
 
 void reloadAll() {
     gConfig.load();
     syncClose();
-    syncInit();
 
-    if (gWindow != nullptr) {
-        SDL_DestroyWindow(gWindow);
-        gWindow = nullptr;
-    }
-    if (gRenderer != nullptr) {
-        SDL_DestroyRenderer(gRenderer);
-        gRenderer = nullptr;
-    }
-    SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
-    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
-    SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
-    gWindow = SDL_CreateWindow("BingoTool",
-                               gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                               gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
-                               SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
-    SDL_SetWindowPosition(gWindow, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
-    gRenderer = SDL_CreateRenderer(gWindow, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-    SDL_SetWindowHitTest(gWindow, HitTestCallback, nullptr);
-    SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
-
-    gConfig.postLoad(gRenderer);
+    gConfig.postLoad();
     loadSquares();
+    gCells.init();
     gScoreWindows[0].create(0, UnicodeToUtf8(gConfig.playerName[0]));
     gScoreWindows[1].create(1, UnicodeToUtf8(gConfig.playerName[1]));
     loadState();
@@ -281,6 +252,65 @@ int wmain(int argc, wchar_t *argv[]) {
     InitCommonControlsEx(&iccex);
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
 
+    syncLoadConfig();
+    const TASKDIALOG_BUTTON buttons[] = {
+        {IDYES, L"裁判模式"},
+        {IDNO, L"解说模式"},
+        {IDRETRY, L"选手模式"},
+    };
+    TASKDIALOGCONFIG taskDialogConfig = {
+        .cbSize = sizeof(TASKDIALOGCONFIG),
+        .hInstance = GetModuleHandleW(nullptr),
+        .pszWindowTitle = L"运行模式",
+        .pszMainIcon = MAKEINTRESOURCEW(1),
+        .pszContent = L"请选择运行模式：\n裁判和解说模式为多窗口，选手模式为单窗口。\n裁判模式可操作表格，其他模式只能查看和被动同步。",
+        .cButtons = ARRAYSIZE(buttons),
+        .pButtons = buttons,
+    };
+    int sel;
+    if (TaskDialogIndirect(&taskDialogConfig, &sel, nullptr, nullptr) != S_OK
+        || sel == IDCANCEL) return -1;
+    gConfig.simpleMode = sel == IDRETRY;
+    syncSetMode(sel == IDYES ? 1 : 0);
+    if (sel == IDYES) {
+
+    } else {
+        DialogBoxW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(130), nullptr, [](HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) -> INT_PTR {
+            switch (msg) {
+                case WM_INITDIALOG: {
+                    // Center on desktop
+                    RECT rc;
+                    GetWindowRect(GetDesktopWindow(), &rc);
+                    int x = (rc.right - rc.left) / 2;
+                    int y = (rc.bottom - rc.top) / 2;
+                    GetWindowRect(hwnd, &rc);
+                    SetWindowPos(hwnd, nullptr, x - (rc.right - rc.left) / 2, y - (rc.bottom - rc.top) / 2, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
+
+                    SetWindowTextW(GetDlgItem(hwnd, 1001), Utf8ToUnicode(syncGetChannelPassword()).c_str());
+                    return TRUE;
+                }
+                case WM_COMMAND: {
+                    switch (LOWORD(wParam)) {
+                        case IDOK: {
+                            HWND hwndEdit = GetDlgItem(hwnd, 1001);
+                            wchar_t text[256];
+                            GetWindowTextW(hwndEdit, text, 256);
+                            syncSetChannelPassword(UnicodeToUtf8(text));
+                            EndDialog(hwnd, IDOK);
+                            return TRUE;
+                        }
+                        case IDCANCEL: {
+                            EndDialog(hwnd, IDCANCEL);
+                            return TRUE;
+                        }
+                    }
+                    break;
+                }
+            }
+            return FALSE;
+        });
+    }
+
     if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
         printf("SDL could not be initialized!\n"
                "SDL_Error: %s\n", SDL_GetError());
@@ -297,19 +327,21 @@ int wmain(int argc, wchar_t *argv[]) {
                 case SDL_EVENT_QUIT:
                     goto QUIT;
                 case SDL_EVENT_WINDOW_CLOSE_REQUESTED: {
-                    if (e.window.windowID == SDL_GetWindowID(gWindow)) goto QUIT;
+                    if (e.window.windowID == SDL_GetWindowID(gCells.window())) goto QUIT;
                     break;
                 }
                 case SDL_EVENT_MOUSE_BUTTON_UP: {
-                    if (e.button.windowID == SDL_GetWindowID(gWindow) && e.button.button != SDL_BUTTON_RIGHT) break;
+                    if (e.button.windowID == SDL_GetWindowID(gCells.window()) && e.button.button != SDL_BUTTON_RIGHT) break;
                     if (syncGetMode() == 0) {
                         auto menu = CreatePopupMenu();
+                        AppendMenuW(menu, MF_STRING | ((SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) ? MF_CHECKED : 0), 9, L"窗口置顶");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 7, L"设置");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 7:
@@ -317,6 +349,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                 break;
                             case 8:
                                 goto QUIT;
+                            case 9:
+                                if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                } else {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                }
+                                break;
                             default:
                                 break;
                         }
@@ -363,6 +402,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                 tableFilenames.emplace_back(path.filename().string());
                             }
                         }
+                        HMENU syncMenu = nullptr;
+                        auto password = syncGetChannelPasswordForC();
+                        if (!password.empty()) {
+                            syncMenu = CreatePopupMenu();
+                            AppendMenuW(syncMenu, MF_STRING | MF_DISABLED, 0, Utf8ToUnicode(password).c_str());
+                            AppendMenuW(syncMenu, MF_STRING, 10, L"复制到剪贴板");
+                        }
                         AppendMenuW(menu,
                                     (cell.status != 0 ? MF_DISABLED : 0)
                                         | MF_STRING,
@@ -377,14 +423,21 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING, 5, L"重新开始");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING | MF_POPUP, (UINT_PTR)tables, L"重新随机表格");
+                        if (syncMenu != nullptr) {
+                            AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                            AppendMenuW(menu, MF_STRING | MF_POPUP, (UINT_PTR)syncMenu, L"选手同步码");
+                        }
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING | ((SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) ? MF_CHECKED : 0), 9, L"窗口置顶");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 7, L"设置");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        if (syncMenu != nullptr) DestroyMenu(syncMenu);
                         DestroyMenu(tables);
                         DestroyMenu(menu);
                         switch (cmd) {
@@ -423,6 +476,36 @@ int wmain(int argc, wchar_t *argv[]) {
                                 break;
                             case 8:
                                 goto QUIT;
+                            case 9:
+                                if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                    for (auto &w: gScoreWindows) {
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_FALSE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_FALSE);
+                                    }
+                                } else {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                    for (auto &w: gScoreWindows) {
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_TRUE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_TRUE);
+                                    }
+                                }
+                                break;
+                            case 10:
+                                if (OpenClipboard(nullptr)) {
+                                    EmptyClipboard();
+                                    HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, (password.size() + 1) * sizeof(wchar_t));
+                                    if (hMem != nullptr) {
+                                        auto *pMem = (wchar_t *)GlobalLock(hMem);
+                                        if (pMem != nullptr) {
+                                            lstrcpyW(pMem, Utf8ToUnicode(password).c_str());
+                                            GlobalUnlock(hMem);
+                                            SetClipboardData(CF_UNICODETEXT, hMem);
+                                        }
+                                    }
+                                    CloseClipboard();
+                                }
+                                break;
                             default:
                                 if (cmd >= 100 && cmd < 100 + tableFilenames.size()) {
                                     randomCells("randomtables/" + tableFilenames[cmd - 100]);
@@ -451,7 +534,7 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gWindow), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         DestroyMenu(menu);
                         switch (cmd) {
@@ -520,35 +603,14 @@ int wmain(int argc, wchar_t *argv[]) {
                 }
             }
         }
-        SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0);
-        SDL_RenderClear(gRenderer);
-        SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_BLEND);
-        SDL_SetRenderDrawColor(gRenderer, gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b, gConfig.cellBorderColor.a);
-        SDL_RenderFillRect(gRenderer, nullptr);
-        SDL_SetRenderDrawColor(gRenderer, gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b, gConfig.cellSpacingColor.a);
-        SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4), (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
-        SDL_RenderFillRect(gRenderer, &rcInner);
-        SDL_SetRenderDrawBlendMode(gRenderer, SDL_BLENDMODE_NONE);
-        auto cx = gConfig.cellSize[0], cy = gConfig.cellSize[1];
-        for (int i = 0; i < 5; i++) {
-            auto y = i * (cy + gConfig.cellSpacing) + gConfig.cellBorder;
-            for (int j = 0; j < 5; j++) {
-                auto x = j * (cx + gConfig.cellSpacing) + gConfig.cellBorder;
-                auto &cell = gCells[i][j];
-                cell.render(x, y, cx, cy);
-            }
-        }
+        gCells.render();
         for (auto &sw : gScoreWindows) {
             sw.render();
         }
-        SDL_RenderPresent(gRenderer);
         syncProcess();
     }
 QUIT:
     saveState();
-    for (auto & tex : gConfig.colorTexture) {
-        if (tex != nullptr) SDL_DestroyTexture(tex);
-    }
     TTF_CloseFont(gConfig.scoreFont);
     TTF_CloseFont(gConfig.font);
     for (auto &w: gScoreWindows) {
@@ -558,8 +620,7 @@ QUIT:
         SDL_DestroyTexture(cell.texture);
         cell.texture = nullptr;
     });
-    SDL_DestroyRenderer(gRenderer);
-    SDL_DestroyWindow(gWindow);
+    gCells.deinit();
     TTF_Quit();
     SDL_Quit();
     CoUninitialize();

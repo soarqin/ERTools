@@ -7,6 +7,7 @@
 static int gMode = 0;
 static std::string gServer = "bingosync.soar.im";
 static std::string gChannel;
+static std::string gPassword;
 
 static uv_loop_t *loop = nullptr;
 static uv_tcp_t *clientCtx = nullptr;
@@ -79,8 +80,17 @@ void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf) {
                     nread -= toRead;
                     state = 0;
                     msgPos = 0;
-                    if (syncCallback)
-                        syncCallback(msg[0], msg.substr(1));
+                    switch (msg[0]) {
+                        case 'C':
+                            syncSetChannelPasswordForC(msg.substr(1));
+                            break;
+                        case 'J':
+                            syncSetChannelPassword(msg.substr(1));
+                            break;
+                        default:
+                            syncCallback(msg[0], msg.substr(1));
+                            break;
+                    }
                     msg.clear();
                     break;
                 }
@@ -95,7 +105,27 @@ void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf) {
     delete[] buf->base;
 }
 
-static void loadConfig() {
+void saveState() {
+    std::ofstream file("sync_state.txt");
+    if (!file.is_open()) return;
+    file << gMode << std::endl;
+    file << gChannel << std::endl;
+    file << gPassword;
+    file.close();
+}
+
+void loadState() {
+    std::ifstream file("sync_state.txt");
+    if (!file.is_open()) return;
+    std::string line;
+    std::getline(file, line);
+    gMode = std::stoi(line);
+    std::getline(file, gChannel);
+    std::getline(file, gPassword);
+    file.close();
+}
+
+void syncLoadConfig() {
     std::ifstream file("data/sync.txt");
     if (!file.is_open()) return;
     std::string line;
@@ -114,10 +144,7 @@ static void loadConfig() {
         }
     }
     file.close();
-}
-
-void syncInit() {
-    loadConfig();
+    loadState();
 }
 
 void syncProcess() {
@@ -126,12 +153,17 @@ void syncProcess() {
     }
 }
 
+void syncSetMode(int mode) {
+    gMode = mode;
+    saveState();
+}
+
 int syncGetMode() {
     return gMode;
 }
 
 bool syncOpen(ConnectionCallback callback) {
-    if (gChannel.empty()) return true;
+    if (gMode == 0 && gChannel.empty()) return true;
     if (loop == nullptr) {
         loop = uv_default_loop();
     }
@@ -171,18 +203,39 @@ void syncClose() {
         msgPos = 0;
         msg.clear();
     });
+    clientCtx = nullptr;
 }
 
 bool syncSetChannel(ChannelCallback callback) {
-    if (gChannel.empty()) return true;
+    if (gMode == 0 && gChannel.empty()) return false;
     syncCallback = callback;
     return syncSendData(gMode == 0 ? 'C' : 'J', gChannel);
+}
+
+void syncSetChannelPassword(const std::string &password) {
+    if (gChannel == password) return;
+    gChannel = password;
+    saveState();
+}
+
+void syncSetChannelPasswordForC(const std::string &password) {
+    if (gPassword == password) return;
+    gPassword = password;
+    saveState();
+}
+
+const std::string &syncGetChannelPassword() {
+    return gChannel;
+}
+
+const std::string &syncGetChannelPasswordForC() {
+    return gPassword;
 }
 
 void write_cb(uv_write_t* req, int status);
 
 bool syncSendData(char type, const std::string &data) {
-    if (gChannel.empty()) return true;
+    if (gMode == 0 && gChannel.empty()) return false;
     auto len = (int)data.size();
     uv_buf_t buf;
     buf.len = (unsigned int)(4 + 1 + len);
@@ -203,7 +256,7 @@ void write_cb(uv_write_t *req, int status) {
 }
 
 bool syncSendData(char type, const std::vector<std::string> &data, char separator) {
-    if (gChannel.empty()) return true;
+    if (gMode == 0 && gChannel.empty()) return false;
     std::string n;
     for (auto &s : data) {
         n += s;

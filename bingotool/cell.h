@@ -20,15 +20,29 @@ struct Cell {
 
 class Cells {
 public:
-    void init(SDL_Renderer *renderer);
+    void init();
+    void deinit();
+    void render();
+    void switchMode();
     Cell *operator[](int index) { return cells_[index]; }
     void fitCellsForText();
     void foreach(const std::function<void(Cell &cell, int x, int y)> &callback);
+    void resizeWindow();
     void updateTextures(bool fit = true);
+    void updateScoreTextures();
+    void updateScoreTextures(int index);
+    void reloadColorTexture();
+    void reloadColorTexture(int index);
     void showSettingsWindow();
+    SDL_Window *window() { return window_; }
+    SDL_Texture *colorTexture(int index) { return colorTexture_[index]; }
 
 private:
+    SDL_Window *window_ = nullptr;
+    SDL_Renderer *renderer_ = nullptr;
     Cell cells_[5][5];
+    SDL_Texture *colorTexture_[2] = {nullptr, nullptr};
+    SDL_Texture *scoreTexture_[2] = {nullptr, nullptr};
 };
 
 extern Cells gCells;

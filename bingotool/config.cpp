@@ -331,7 +331,6 @@ void Config::oldLoad() {
                 colorsInt[1].b = std::stoi(sl[2]);
                 useColorTexture[0] = false;
                 colorTextureFile[0].clear();
-                colorTexture[0] = nullptr;
             } else if (sl.size() == 1) {
                 useColorTexture[0] = true;
                 colorTextureFile[0] = sl[0];
@@ -344,7 +343,6 @@ void Config::oldLoad() {
                 colorsInt[2].b = std::stoi(sl[2]);
                 useColorTexture[1] = false;
                 colorTextureFile[1].clear();
-                colorTexture[1] = nullptr;
             } else if (sl.size() == 1) {
                 useColorTexture[1] = true;
                 colorTextureFile[1] = sl[0];
@@ -468,7 +466,7 @@ void Config::oldLoad() {
     }
 }
 
-void Config::postLoad(SDL_Renderer *renderer) {
+void Config::postLoad() {
     if (font) {
         TTF_CloseFont(font);
         font = nullptr;
@@ -490,12 +488,4 @@ void Config::postLoad(SDL_Renderer *renderer) {
     scoreNameFont = TTF_OpenFont(scoreNameFontFile.c_str(), scoreNameFontSize);
     TTF_SetFontStyle(scoreNameFont, scoreNameFontStyle);
     TTF_SetFontWrappedAlign(scoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
-    reloadColorTexture(renderer, 0);
-    reloadColorTexture(renderer, 1);
-}
-
-void Config::reloadColorTexture(SDL_Renderer *renderer, int index) {
-    if (!useColorTexture[index] || colorTextureFile[index].empty()) return;
-    colorTexture[index] = loadTexture(renderer, colorTextureFile[index].c_str());
-    if (!colorTexture[index]) useColorTexture[index] = false;
 }
