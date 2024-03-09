@@ -258,15 +258,13 @@ int wmain(int argc, wchar_t *argv[]) {
         {IDNO, L"解说模式"},
         {IDRETRY, L"选手模式"},
     };
-    TASKDIALOGCONFIG taskDialogConfig = {
-        .cbSize = sizeof(TASKDIALOGCONFIG),
-        .hInstance = GetModuleHandleW(nullptr),
-        .pszWindowTitle = L"运行模式",
-        .pszMainIcon = MAKEINTRESOURCEW(1),
-        .pszContent = L"请选择运行模式：\n裁判和解说模式为多窗口，选手模式为单窗口。\n裁判模式可操作表格，其他模式只能查看和被动同步。",
-        .cButtons = ARRAYSIZE(buttons),
-        .pButtons = buttons,
-    };
+    TASKDIALOGCONFIG taskDialogConfig = {sizeof(TASKDIALOGCONFIG)};
+    taskDialogConfig.hInstance = GetModuleHandleW(nullptr);
+    taskDialogConfig.pszWindowTitle = L"运行模式";
+    taskDialogConfig.pszMainIcon = MAKEINTRESOURCEW(1);
+    taskDialogConfig.pszContent = L"请选择运行模式：\n裁判和解说模式为多窗口，选手模式为单窗口。\n裁判模式可操作表格，其他模式只能查看和被动同步。";
+    taskDialogConfig.cButtons = ARRAYSIZE(buttons);
+    taskDialogConfig.pButtons = buttons;
     int sel;
     if (TaskDialogIndirect(&taskDialogConfig, &sel, nullptr, nullptr) != S_OK
         || sel == IDCANCEL) return -1;
