@@ -111,8 +111,14 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         } else {
             usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont[i], utext[i].c_str(), &gConfig.colorsInt[index + 1], 0, &ushadowColor[i], ushadow[i], ushadowOffset[i]);
         }
-        auto *utexture = SDL_CreateTextureFromSurface(renderer[i], usurface);
-        auto mw = usurface->w, mh = usurface->h;
+        SDL_Texture *utexture;
+        if (usurface) {
+            utexture = SDL_CreateTextureFromSurface(renderer[i], usurface);
+        } else {
+            utexture = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
+        }
+        int mw, mh;
+        SDL_QueryTexture(utexture, nullptr, nullptr, &mw, &mh);
         if (texture[i])
             SDL_DestroyTexture(texture[i]);
         texture[i] = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
