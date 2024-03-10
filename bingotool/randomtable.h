@@ -33,9 +33,11 @@ class RandomTable {
 public:
     void load(const std::string &filename);
     void generate(std::vector<std::string> &result) const;
+    inline static const std::string &lastFilename() { return lastFilename_; }
 
 private:
     RandomGroup root_;
+    static std::string lastFilename_;
     std::unordered_map<std::string, RandomGroup> groups_;
     std::unordered_map<std::string, MutualExclusion> mutualExclusions_;
 };

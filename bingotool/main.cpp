@@ -58,7 +58,13 @@ void sendJudgeSyncData() {
 static void randomCells(const std::string &filename) {
     if (syncGetMode() == 0) return;
     RandomTable rt;
-    rt.load(filename);
+    if (filename.empty()) {
+        const auto &lastFilename = RandomTable::lastFilename();
+        if (lastFilename.empty()) return;
+        rt.load(lastFilename);
+    } else {
+        rt.load(filename);
+    }
     std::vector<std::string> result;
     rt.generate(result);
     std::ofstream ofs("data/squares.txt");
@@ -70,8 +76,8 @@ static void randomCells(const std::string &filename) {
     gCells.foreach([&result, &idx](Cell &cell, int x, int y) {
         cell.status = 0;
         cell.text = result[idx++];
-        cell.updateTexture();
     });
+    gCells.updateTextures();
     gScoreWindows[0].reset();
     gScoreWindows[1].reset();
     sendJudgeSyncData();
@@ -140,18 +146,7 @@ static void loadSquares() {
     });
 }
 
-void reloadAll() {
-    gConfig.load();
-    syncClose();
-
-    gConfig.postLoad();
-    loadSquares();
-    gCells.init();
-    gScoreWindows[0].create(0, UnicodeToUtf8(gConfig.playerName[0]));
-    gScoreWindows[1].create(1, UnicodeToUtf8(gConfig.playerName[1]));
-    loadState();
-    updateScores();
-
+void startSync() {
     syncOpen([]{
         syncSetChannel([](char t, const std::string &s) {
             switch (t) {
@@ -243,6 +238,21 @@ void reloadAll() {
     });
 }
 
+void reloadAll() {
+    gConfig.load();
+    syncClose();
+
+    gConfig.postLoad();
+    loadSquares();
+    gCells.init();
+    gScoreWindows[0].create(0, UnicodeToUtf8(gConfig.playerName[0]));
+    gScoreWindows[1].create(1, UnicodeToUtf8(gConfig.playerName[1]));
+    loadState();
+    updateScores();
+
+    startSync();
+}
+
 int wmain(int argc, wchar_t *argv[]) {
     // Unused argc, argv
     (void)argc;
@@ -324,6 +334,11 @@ int wmain(int argc, wchar_t *argv[]) {
             switch (e.type) {
                 case SDL_EVENT_QUIT:
                     goto QUIT;
+                case SDL_EVENT_KEY_UP:
+                    if (e.key.keysym.sym == SDLK_r && (e.key.keysym.mod & SDL_KMOD_CTRL) != 0) {
+                        randomCells("");
+                    }
+                    break;
                 case SDL_EVENT_WINDOW_CLOSE_REQUESTED: {
                     if (e.window.windowID == SDL_GetWindowID(gCells.window())) goto QUIT;
                     break;
@@ -385,6 +400,7 @@ int wmain(int argc, wchar_t *argv[]) {
                     }
                     if (gConfig.bingoBrawlersMode) {
                         auto tables = CreatePopupMenu();
+                        AppendMenuW(tables, MF_STRING | (RandomTable::lastFilename().empty() ?  MF_DISABLED : 0), 99, L"使用上次的随机表格\tCtrl+R");
                         if (std::filesystem::exists("data/randomtable.txt")) {
                             AppendMenuW(tables, MF_STRING, 6, L"data/randomtable.txt");
                         }
@@ -401,11 +417,12 @@ int wmain(int argc, wchar_t *argv[]) {
                             }
                         }
                         HMENU syncMenu = nullptr;
-                        auto password = syncGetChannelPasswordForC();
+                        const auto &password = syncGetChannelPasswordForC();
                         if (!password.empty()) {
                             syncMenu = CreatePopupMenu();
                             AppendMenuW(syncMenu, MF_STRING | MF_DISABLED, 0, Utf8ToUnicode(password).c_str());
                             AppendMenuW(syncMenu, MF_STRING, 10, L"复制到剪贴板");
+                            AppendMenuW(syncMenu, MF_STRING, 11, L"重新生成同步码");
                         }
                         AppendMenuW(menu,
                                     (cell.status != 0 ? MF_DISABLED : 0)
@@ -503,6 +520,15 @@ int wmain(int argc, wchar_t *argv[]) {
                                     }
                                     CloseClipboard();
                                 }
+                                break;
+                            case 11:
+                                syncSetChannelPassword("");
+                                syncSetChannelPasswordForC("");
+                                syncClose();
+                                startSync();
+                                break;
+                            case 99:
+                                randomCells("");
                                 break;
                             default:
                                 if (cmd >= 100 && cmd < 100 + tableFilenames.size()) {

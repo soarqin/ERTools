@@ -8,6 +8,8 @@
 #include <functional>
 #include <filesystem>
 
+std::string RandomTable::lastFilename_;
+
 static void calcGroupWeight(RandomGroup *group) {
     group->totalWeight = 0;
     for (auto &entry : group->entries) {
@@ -136,6 +138,8 @@ void RandomTable::load(const std::string &filename) {
                         break;
                     }
                     if (sl.size() == 3) {
+                        auto w = std::stoi(sl[0]);
+                        if (w <= 0) break;
                         auto &group = groups_[sl[2]];
                         if (group.name.empty()) group.name = sl[2];
                         lastGroup = &group;
@@ -143,7 +147,7 @@ void RandomTable::load(const std::string &filename) {
                         if (g) {
                             auto &ref = g->groups.emplace_back();
                             ref.group = &group;
-                            ref.weight = std::stoi(sl[0]);
+                            ref.weight = w;
                             ref.maxCount = std::stoi(sl[1]);
                         }
                     }
@@ -153,11 +157,13 @@ void RandomTable::load(const std::string &filename) {
                     lastGroup = nullptr;
                     auto sl = splitString(line.substr(1), ',');
                     if (sl.size() == 2) {
+                        auto w = std::stoi(sl[0]);
+                        if (w <= 0) break;
                         auto g = indents.back().group;
                         if (g) {
                             auto &entry = g->entries.emplace_back();
                             entry.name = sl[1];
-                            entry.weight = std::stoi(sl[0]);
+                            entry.weight = w;
                         }
                     }
                     break;
@@ -181,6 +187,7 @@ void RandomTable::load(const std::string &filename) {
     };
     f(filename);
     calcGroupWeight(&root_);
+    lastFilename_ = filename;
     // logGroup(&root_);
 }
 
