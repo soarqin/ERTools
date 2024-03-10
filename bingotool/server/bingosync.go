@@ -95,7 +95,6 @@ func (c *Client) EnterChannel(isJudge bool, channel string) {
 	if channel == "" {
 		if isJudge {
 			mutex.Lock()
-			defer mutex.Unlock()
 			for {
 				channel = randSeq(8)
 				if _, ok := channels[channel]; ok {
@@ -103,6 +102,7 @@ func (c *Client) EnterChannel(isJudge bool, channel string) {
 				}
 				break
 			}
+			mutex.Unlock()
 			randChannel = true
 		} else {
 			_ = c.Conn.Close()
@@ -110,11 +110,9 @@ func (c *Client) EnterChannel(isJudge bool, channel string) {
 	}
 	c.IsJudge = isJudge
 	c.Cnl = getChannel(channel)
-	{
-		c.Cnl.clientsMux.Lock()
-		defer c.Cnl.clientsMux.Unlock()
-		c.Cnl.Clients[c] = 1
-	}
+	c.Cnl.clientsMux.Lock()
+	c.Cnl.Clients[c] = 1
+	c.Cnl.clientsMux.Unlock()
 	if c.IsJudge {
 		if randChannel {
 			sendMsg(c.Conn, 'J', channel)
@@ -127,13 +125,11 @@ func (c *Client) LeaveChannel() {
 	if c.Cnl == nil {
 		return
 	}
-	{
-		c.Cnl.clientsMux.Lock()
-		defer c.Cnl.clientsMux.Unlock()
-		if _, ok := c.Cnl.Clients[c]; ok {
-			delete(c.Cnl.Clients, c)
-		}
+	c.Cnl.clientsMux.Lock()
+	if _, ok := c.Cnl.Clients[c]; ok {
+		delete(c.Cnl.Clients, c)
 	}
+	c.Cnl.clientsMux.Unlock()
 	c.Cnl = nil
 }
 
@@ -170,13 +166,9 @@ func (c *Client) FetchOrUpdateState(state string) {
 func handleMsg(c *Client, t byte, m string) {
 	switch t {
 	case 'C':
-		var v string
-		var ok bool
-		{
-			clientMapMutex.Lock()
-			defer clientMapMutex.Unlock()
-			v, ok = clientMap[m]
-		}
+		clientMapMutex.Lock()
+		v, ok := clientMap[m]
+		clientMapMutex.Unlock()
 		if ok {
 			c.EnterChannel(false, v)
 		} else {
