@@ -23,7 +23,7 @@ struct ScoreWindow {
     int tx[2] = {0, 0}, ty[2] = {0, 0};
     std::string playerName;
     int index = -1;
-    int score = 0;
+    int score = -1;
     bool cleared = false;
     int clearCount = 0;
 };

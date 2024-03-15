@@ -25,6 +25,7 @@ template<class RANDENGINE>
 static std::string randomGroupEntry(RandomGroup *group, const std::unordered_map<std::string, MutualExclusion> &mutualExclusions, std::unordered_set<std::string> &exclusions, RANDENGINE &re) {
     while (true) {
         if (group->totalWeight == 0) { return ""; }
+        if (exclusions.find(group->name) != exclusions.end()) { return ""; }
         std::string res;
         int weight = re() % group->totalWeight;
         for (auto ite = group->entries.begin(); ite != group->entries.end(); ite++) {
@@ -39,10 +40,6 @@ static std::string randomGroupEntry(RandomGroup *group, const std::unordered_map
         }
         if (!res.empty()) {
             if (exclusions.find(res) != exclusions.end()) continue;
-            auto ite = mutualExclusions.find(res);
-            if (ite != mutualExclusions.end()) {
-                exclusions.insert(ite->second.entries.begin(), ite->second.entries.end());
-            }
             return res;
         }
         for (auto ite = group->groups.begin(); ite != group->groups.end();) {
@@ -54,6 +51,14 @@ static std::string randomGroupEntry(RandomGroup *group, const std::unordered_map
                     ite = group->groups.erase(ite);
                     weight -= ref.weight;
                     continue;
+                }
+                auto ite2 = mutualExclusions.find(group->name);
+                if (ite2 != mutualExclusions.end()) {
+                    exclusions.insert(ite2->second.entries.begin(), ite2->second.entries.end());
+                }
+                auto ite3 = mutualExclusions.find(res);
+                if (ite3 != mutualExclusions.end()) {
+                    exclusions.insert(ite3->second.entries.begin(), ite3->second.entries.end());
                 }
                 if (--ref.maxCount <= 0) {
                     group->totalWeight -= ref.weight;

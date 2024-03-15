@@ -96,7 +96,7 @@ void ScoreWindow::destroyWindow() {
 void ScoreWindow::destroy() {
     destroyWindow();
     index = -1;
-    score = 0;
+    score = -1;
     clearCount = 0;
     cleared = false;
 }
