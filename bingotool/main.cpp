@@ -87,8 +87,8 @@ static void saveState() {
     std::ofstream ofs("state.txt");
     std::vector<std::string> n;
     for (auto &w: gScoreWindows) {
-        n.emplace_back(std::to_string(w.hasExtraScore ? 1 : 0));
-        n.emplace_back(std::to_string(w.extraScore));
+        n.emplace_back(std::to_string(w.cleared ? 1 : 0));
+        n.emplace_back(std::to_string(w.clearCount));
     }
     gCells.foreach([&n](Cell &cell, int x, int y) {
         n.emplace_back(std::to_string(cell.status));
@@ -116,8 +116,8 @@ static void loadState() {
     if (sl.size() < 35) return;
     int i = 0;
     for (auto &w: gScoreWindows) {
-        w.hasExtraScore = sl[i++] == "1";
-        w.extraScore = std::stoi(sl[i++]);
+        w.cleared = sl[i++] == "1";
+        w.clearCount = std::stoi(sl[i++]);
     }
     gCells.foreach([&sl, &i](Cell &cell, int x, int y) {
         cell.status = std::stoi(sl[i++]);
@@ -212,9 +212,9 @@ void startSync() {
                             (int)(uint32_t)((val[1] >> 56) & 0xFFULL),
                         };
                         for (int i = 0; i < 2; i++) {
-                            if (es[i] != gScoreWindows[i].extraScore) {
-                                gScoreWindows[i].extraScore = es[i];
-                                gScoreWindows[i].hasExtraScore = es[i] != 0;
+                            if (es[i] != gScoreWindows[i].clearCount) {
+                                gScoreWindows[i].cleared = es[i];
+                                gScoreWindows[i].clearCount = es[i] != 0;
                                 dirty = true;
                             }
                         }
@@ -398,6 +398,14 @@ int wmain(int argc, wchar_t *argv[]) {
                                 break;
                         }
                     }
+                    HMENU syncMenu = nullptr;
+                    const auto &password = syncGetChannelPasswordForC();
+                    if (!password.empty()) {
+                        syncMenu = CreatePopupMenu();
+                        AppendMenuW(syncMenu, MF_STRING | MF_DISABLED, 0, Utf8ToUnicode(password).c_str());
+                        AppendMenuW(syncMenu, MF_STRING, 10, L"复制到剪贴板");
+                        AppendMenuW(syncMenu, MF_STRING, 11, L"重新生成同步码");
+                    }
                     if (gConfig.bingoBrawlersMode) {
                         auto tables = CreatePopupMenu();
                         AppendMenuW(tables, MF_STRING | (RandomTable::lastFilename().empty() ?  MF_DISABLED : 0), 99, L"使用上次的随机表格\tCtrl+R");
@@ -415,14 +423,6 @@ int wmain(int argc, wchar_t *argv[]) {
                                 AppendMenuW(tables, MF_STRING, idx++, path.stem().c_str());
                                 tableFilenames.emplace_back(path.filename().string());
                             }
-                        }
-                        HMENU syncMenu = nullptr;
-                        const auto &password = syncGetChannelPasswordForC();
-                        if (!password.empty()) {
-                            syncMenu = CreatePopupMenu();
-                            AppendMenuW(syncMenu, MF_STRING | MF_DISABLED, 0, Utf8ToUnicode(password).c_str());
-                            AppendMenuW(syncMenu, MF_STRING, 10, L"复制到剪贴板");
-                            AppendMenuW(syncMenu, MF_STRING, 11, L"重新生成同步码");
                         }
                         AppendMenuW(menu,
                                     (cell.status != 0 ? MF_DISABLED : 0)
@@ -454,7 +454,6 @@ int wmain(int argc, wchar_t *argv[]) {
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         if (syncMenu != nullptr) DestroyMenu(syncMenu);
                         DestroyMenu(tables);
-                        DestroyMenu(menu);
                         switch (cmd) {
                             case 1: {
                                 cell.status = 1;
@@ -490,6 +489,7 @@ int wmain(int argc, wchar_t *argv[]) {
                                 gCells.showSettingsWindow();
                                 break;
                             case 8:
+                                DestroyMenu(menu);
                                 goto QUIT;
                             case 9:
                                 if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
@@ -548,12 +548,20 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, (cell.status == 0 ? MF_DISABLED : 0) | MF_STRING, 3, L"重置");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING | (gScoreWindows[1].hasExtraScore ? MF_DISABLED : 0), 4,
-                                    (gConfig.playerName[0] + (gScoreWindows[0].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
-                        AppendMenuW(menu, MF_STRING | (gScoreWindows[0].hasExtraScore ? MF_DISABLED : 0), 5,
-                                    (gConfig.playerName[1] + (gScoreWindows[1].hasExtraScore ? L"重置为未通关状态" : L"通关")).c_str());
+                        AppendMenuW(menu, MF_STRING | (gScoreWindows[1].cleared ? MF_DISABLED : 0), 4,
+                                    (gConfig.playerName[0] + (gScoreWindows[0].cleared ? L"重置为未通关状态" : L"通关")).c_str());
+                        AppendMenuW(menu, MF_STRING | (gScoreWindows[0].cleared ? MF_DISABLED : 0), 5,
+                                    (gConfig.playerName[1] + (gScoreWindows[1].cleared ? L"重置为未通关状态" : L"通关")).c_str());
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 6, L"重新开始");
+                        if (syncMenu != nullptr) {
+                            AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                            AppendMenuW(menu, MF_STRING | MF_POPUP, (UINT_PTR)syncMenu, L"选手同步码");
+                        }
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING | ((SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) ? MF_CHECKED : 0), 9, L"窗口置顶");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 7, L"设置");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
@@ -589,21 +597,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                 break;
                             }
                             case 4: {
-                                if (gScoreWindows[0].hasExtraScore) {
-                                    gScoreWindows[0].unsetExtraScore();
-                                } else {
-                                    gScoreWindows[0].setExtraScore(0);
-                                }
+                                gScoreWindows[0].setClear(!gScoreWindows[0].cleared);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 5: {
-                                if (gScoreWindows[1].hasExtraScore) {
-                                    gScoreWindows[1].unsetExtraScore();
-                                } else {
-                                    gScoreWindows[1].setExtraScore(1);
-                                }
+                                gScoreWindows[1].setClear(!gScoreWindows[1].cleared);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
@@ -617,12 +617,53 @@ int wmain(int argc, wchar_t *argv[]) {
                                 sendJudgeSyncState();
                                 break;
                             }
+                            case 7:
+                                gCells.showSettingsWindow();
+                                break;
                             case 8:
+                                DestroyMenu(menu);
                                 goto QUIT;
+                            case 9:
+                                if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                    for (auto &w: gScoreWindows) {
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_FALSE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_FALSE);
+                                    }
+                                } else {
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                    for (auto &w: gScoreWindows) {
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_TRUE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_TRUE);
+                                    }
+                                }
+                                break;
+                            case 10:
+                                if (OpenClipboard(nullptr)) {
+                                    EmptyClipboard();
+                                    HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, (password.size() + 1) * sizeof(wchar_t));
+                                    if (hMem != nullptr) {
+                                        auto *pMem = (wchar_t *)GlobalLock(hMem);
+                                        if (pMem != nullptr) {
+                                            lstrcpyW(pMem, Utf8ToUnicode(password).c_str());
+                                            GlobalUnlock(hMem);
+                                            SetClipboardData(CF_UNICODETEXT, hMem);
+                                        }
+                                    }
+                                    CloseClipboard();
+                                }
+                                break;
+                            case 11:
+                                syncSetChannelPassword("");
+                                syncSetChannelPasswordForC("");
+                                syncClose();
+                                startSync();
+                                break;
                             default:
                                 break;
                         }
                     }
+                    DestroyMenu(menu);
                     break;
                 }
             }

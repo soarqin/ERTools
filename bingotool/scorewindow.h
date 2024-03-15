@@ -13,8 +13,7 @@ struct ScoreWindow {
     void updateTexture(bool reloadMask = false);
     void updateXYValue();
     void render();
-    void setExtraScore(int idx);
-    void unsetExtraScore();
+    void setClear(bool clear);
 
     SDL_Window *window[2] = {nullptr, nullptr};
     SDL_Renderer *renderer[2] = {nullptr, nullptr};
@@ -24,9 +23,9 @@ struct ScoreWindow {
     int tx[2] = {0, 0}, ty[2] = {0, 0};
     std::string playerName;
     int index = -1;
-    int score = -1;
-    bool hasExtraScore = false;
-    int extraScore = 0;
+    int score = 0;
+    bool cleared = false;
+    int clearCount = 0;
 };
 
 extern void updateScores();

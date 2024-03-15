@@ -53,7 +53,7 @@ struct Config {
         {255, 0, 0, 0},
         {0, 0, 255, 0},
     };
-    int bingoBrawlersMode = 0;
+    int bingoBrawlersMode = 1;
     int scores[5] = {2, 4, 6, 8, 10};
     int nFScores[5] = {1, 2, 3, 4, 5};
     int lineScore = 3;

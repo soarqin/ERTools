@@ -1,13 +1,4 @@
 
-[rules]
-clear_quest_multiplier = 0
-clear_score = 0
-line_score = 3
-none_first_scores = [0,0,0,0,0]
-max_per_row = 5
-scores = [1,1,1,1,1]
-bingo_brawlers_mode = 1
-
 [scores_window]
 name_win_text = "{0}获胜"
 bingo_text = "Bingo!"

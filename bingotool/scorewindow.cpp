@@ -24,8 +24,8 @@ SDL_HitTestResult ScoreWindowHitTestCallback(SDL_Window *window, const SDL_Point
 
 void ScoreWindow::reset() {
     score = 0;
-    extraScore = 0;
-    hasExtraScore = false;
+    cleared = false;
+    clearCount = 0;
     updateTexture();
 }
 
@@ -96,9 +96,9 @@ void ScoreWindow::destroyWindow() {
 void ScoreWindow::destroy() {
     destroyWindow();
     index = -1;
-    score = -1;
-    hasExtraScore = false;
-    extraScore = 0;
+    score = 0;
+    clearCount = 0;
+    cleared = false;
 }
 
 void ScoreWindow::updateTexture(bool reloadMask) {
@@ -210,7 +210,12 @@ void ScoreWindow::render() {
     }
 }
 
-void ScoreWindow::setExtraScore(int idx) {
+void ScoreWindow::setClear(bool clear) {
+    if (cleared == clear) return;
+    cleared = clear;
+    if (!clear) {
+        return;
+    }
     int count[2] = {0, 0};
     gCells.foreach([&count](Cell &cell, int, int) {
         switch (cell.status) {
@@ -222,13 +227,8 @@ void ScoreWindow::setExtraScore(int idx) {
                 break;
         }
     });
-    extraScore = gConfig.clearScore + gConfig.clearQuestMultiplier * (count[idx] - count[1 - idx]);
-    hasExtraScore = true;
-}
-
-void ScoreWindow::unsetExtraScore() {
-    extraScore = 0;
-    hasExtraScore = false;
+    gScoreWindows[0].clearCount = count[0];
+    gScoreWindows[1].clearCount = count[1];
 }
 
 void updateScores() {
@@ -382,11 +382,10 @@ void updateScores() {
         if (i < 0) continue;
         score[i] += gConfig.lineScore;
     }
-    if (gScoreWindows[0].hasExtraScore) {
-        score[0] += gScoreWindows[0].extraScore;
-    }
-    if (gScoreWindows[1].hasExtraScore) {
-        score[1] += gScoreWindows[1].extraScore;
+    bool player1Cleared = gScoreWindows[0].cleared;
+    if (player1Cleared || gScoreWindows[1].cleared) {
+        score[0] += (player1Cleared ? gConfig.clearScore : 0) + (gScoreWindows[0].clearCount - gScoreWindows[1].clearCount) * gConfig.clearQuestMultiplier;
+        score[1] += (player1Cleared ? 0 : gConfig.clearScore) + (gScoreWindows[1].clearCount - gScoreWindows[0].clearCount) * gConfig.clearQuestMultiplier;
     }
     if (score[0] != gScoreWindows[0].score) {
         gScoreWindows[0].score = score[0];

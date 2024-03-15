@@ -492,7 +492,7 @@ void initConfigDialog(HWND hwnd) {
     auto fontFileName = Utf8ToUnicode(gConfig.fontFile);
     SetWindowTextW(edc, fontFileName.c_str());
 
-    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 1, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 0, 256);
     setEditUpDownIntAndRange(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20);
@@ -501,10 +501,11 @@ void initConfigDialog(HWND hwnd) {
     setEditUpDownIntAndRange(hwnd, IDC_BGCOLORA, gConfig.colorsInt[0].a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100);
-    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 1, 1000);
-    setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 1, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 0, 1000);
+    setEditUpDownIntAndRange(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 0, 1000);
 
     HWND cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"自动缩小文字");
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一缩小文字");
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一扩展宽度");
@@ -517,7 +518,7 @@ void initConfigDialog(HWND hwnd) {
     edc = GetDlgItem(hwnd, IDC_SCOREFONT);
     fontFileName = Utf8ToUnicode(gConfig.scoreFontFile);
     SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 1, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 0, 256);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20);
@@ -531,7 +532,7 @@ void initConfigDialog(HWND hwnd) {
     edc = GetDlgItem(hwnd, IDC_NAMEFONT);
     fontFileName = Utf8ToUnicode(gConfig.scoreNameFontFile);
     SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 1, 256);
+    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 0, 256);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20);
@@ -544,6 +545,22 @@ void initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, gConfig.playerName[0].c_str());
     edc = GetDlgItem(hwnd, IDC_PLAYER2NAME);
     SetWindowTextW(edc, gConfig.playerName[1].c_str());
+
+    cbc = GetDlgItem(hwnd, IDC_BINGOBRAWLERS);
+    SendMessageW(cbc, BM_SETCHECK, gConfig.bingoBrawlersMode ? BST_CHECKED : BST_UNCHECKED, 0);
+    for (int id = IDC_SCORE0; id <= IDC_SCORE4; id += 2) {
+        setEditUpDownIntAndRange(hwnd, id, gConfig.scores[(id - IDC_SCORE0) / 2], 0, 100);
+    }
+    for (int id = IDC_NFSCORE0; id <= IDC_NFSCORE4; id += 2) {
+        setEditUpDownIntAndRange(hwnd, id, gConfig.nFScores[(id - IDC_NFSCORE0) / 2], 0, 100);
+    }
+    setEditUpDownIntAndRange(hwnd, IDC_BINGOSCORE, gConfig.lineScore, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_MAXPERROW, gConfig.maxPerRow, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_CLEARSCORE, gConfig.clearScore, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_CLEARQUESTDIFFMULT, gConfig.clearQuestMultiplier, 0, 100);
+    for (int id = IDC_SCORE0; id <= IDC_CLEARQUESTDIFFMULT_UPDOWN; id++) {
+        EnableWindow(GetDlgItem(hwnd, id), !gConfig.bingoBrawlersMode);
+    }
 
     noEnChangeNotification = false;
 }
@@ -865,6 +882,15 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             gScoreWindows[1].updateTexture(true);
             break;
         }
+        case IDC_BINGOBRAWLERS: {
+            auto cbc = GetDlgItem(hwnd, IDC_BINGOBRAWLERS);
+            gConfig.bingoBrawlersMode = SendMessageW(cbc, BM_GETCHECK, 0, 0) == BST_CHECKED;
+            for (int cid = IDC_SCORE0; cid <= IDC_CLEARQUESTDIFFMULT_UPDOWN; cid++) {
+                EnableWindow(GetDlgItem(hwnd, cid), !gConfig.bingoBrawlersMode);
+            }
+            updateScores();
+            break;
+        }
         default:
             break;
     }
@@ -893,7 +919,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
         case IDC_TEXTSIZE: {
-            setNewValFromControl(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 6, 256, [hwnd](int oldSize) {
+            setNewValFromControl(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 0, 256, [hwnd](int oldSize) {
                 auto ft = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
                 if (ft == nullptr) {
                     gConfig.originalFontSize = oldSize;
@@ -966,7 +992,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_CELLWIDTH: {
-            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 20, 1000, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 0, 1000, [hwnd](int newVal) {
                 gConfig.cellSize[0] = gConfig.originCellSizeX;
                 gCells.resizeWindow();
                 gCells.updateTextures();
@@ -975,7 +1001,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_CELLHEIGHT: {
-            setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 20, 1000, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 0, 1000, [hwnd](int newVal) {
                 gCells.resizeWindow();
                 gCells.updateTextures();
                 return true;
@@ -983,7 +1009,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SCORESIZE: {
-            setNewValFromControl(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 6, 256, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 0, 256, [hwnd](int newVal) {
                 auto ft = TTF_OpenFont(gConfig.scoreFontFile.c_str(), gConfig.scoreFontSize);
                 if (ft == nullptr) {
                     MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
@@ -1060,7 +1086,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_NAMESIZE: {
-            setNewValFromControl(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 6, 256, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 0, 256, [hwnd](int newVal) {
                 auto ft = TTF_OpenFont(gConfig.scoreNameFontFile.c_str(), gConfig.scoreNameFontSize);
                 if (ft == nullptr) {
                     MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
@@ -1148,6 +1174,53 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             gConfig.playerName[1] = str;
             gScoreWindows[1].playerName = UnicodeToUtf8(str);
             gScoreWindows[1].updateTexture();
+            break;
+        }
+        case IDC_SCORE0:
+        case IDC_SCORE1:
+        case IDC_SCORE2:
+        case IDC_SCORE3:
+        case IDC_SCORE4: {
+            setNewValFromControl(hwnd, (int)id, gConfig.scores[id - IDC_SCORE0], 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_NFSCORE0:
+        case IDC_NFSCORE1:
+        case IDC_NFSCORE2:
+        case IDC_NFSCORE3:
+        case IDC_NFSCORE4: {
+            setNewValFromControl(hwnd, (int)id, gConfig.nFScores[id - IDC_NFSCORE0], 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_BINGOSCORE: {
+            setNewValFromControl(hwnd, IDC_BINGOSCORE, gConfig.lineScore, 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_MAXPERROW: {
+            setNewValFromControl(hwnd, IDC_MAXPERROW, gConfig.maxPerRow, 0, 100);
+            break;
+        }
+        case IDC_CLEARSCORE: {
+            setNewValFromControl(hwnd, IDC_CLEARSCORE, gConfig.clearScore, 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_CLEARQUESTDIFFMULT: {
+            setNewValFromControl(hwnd, IDC_CLEARQUESTDIFFMULT, gConfig.clearQuestMultiplier, 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
             break;
         }
         default:

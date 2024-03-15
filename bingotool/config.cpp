@@ -158,14 +158,6 @@ void Config::load() {
             colorsInt[i].a = colorsInt[0].a;
         c.a = (float)colorsInt[i].a / 255.f;
     }
-    if (bingoBrawlersMode) {
-        maxPerRow = 5;
-        clearQuestMultiplier = 0;
-        for (int i = 0; i < 5; i++) {
-            scores[i] = 1;
-            nFScores[i] = 0;
-        }
-    }
 }
 
 void Config::save() {
