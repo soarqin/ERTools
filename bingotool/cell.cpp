@@ -1181,7 +1181,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_SCORE2:
         case IDC_SCORE3:
         case IDC_SCORE4: {
-            setNewValFromControl(hwnd, (int)id, gConfig.scores[id - IDC_SCORE0], 0, 100, [](int newVal) {
+            setNewValFromControl(hwnd, (int)id, gConfig.scores[(id - IDC_SCORE0) / 2], 0, 100, [](int newVal) {
                 updateScores();
                 return true;
             });
@@ -1192,7 +1192,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_NFSCORE2:
         case IDC_NFSCORE3:
         case IDC_NFSCORE4: {
-            setNewValFromControl(hwnd, (int)id, gConfig.nFScores[id - IDC_NFSCORE0], 0, 100, [](int newVal) {
+            setNewValFromControl(hwnd, (int)id, gConfig.nFScores[(id - IDC_NFSCORE0) / 2], 0, 100, [](int newVal) {
                 updateScores();
                 return true;
             });
