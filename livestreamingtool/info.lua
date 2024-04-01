@@ -42,6 +42,9 @@ local function update()
     end
     return
   end
+  if attr[9] < 100 then
+    return
+  end
   attr_str = string.format('游戏时间 %02d:%02d\n第%d周目\n卢恩 %d\n累计 %d\n死亡 %d\n等级 %d\n生命 %d\n集中 %d\n耐力 %d\n力气 %d\n灵巧 %d\n智力 %d\n信仰 %d\n感应 %d', attr[9] // 3600000, (attr[9] // 60000) % 60, attr[10], attr[13], attr[14], attr[11], attr[12], attr[1], attr[2], attr[3], attr[4], attr[5], attr[6], attr[7], attr[8])
   if last_attr == attr_str then return end
   last_attr = attr_str

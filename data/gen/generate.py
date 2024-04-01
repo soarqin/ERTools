@@ -66,8 +66,7 @@ def generate(j, lang):
             o3 = {}
             o3['boss'] = process(m['boss'])
             o3['place'] = process(m['place'])
-            o3['offset'] = m['offset']
-            o3['bit'] = m['bit']
+            o3['flag_id'] = m['flag_id']
             if 'rememberance' in m:
                 o3['rememberance'] = m['rememberance']
             o2.append(o3)

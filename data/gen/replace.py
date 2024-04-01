@@ -82,8 +82,7 @@ if __name__ == '__main__':
                 print(w[-1])
             curr_boss['boss'] = bosses[3:]
             curr_boss['place'] = places[2:]
-            curr_boss['offset'] = '0x' + p[1]
-            curr_boss['bit'] = int(p[2])
-            if len(p) > 4:
-                curr_boss['rememberance'] = int(p[4])
+            curr_boss['flag_id'] = int(p[0])
+            if len(p) > 1:
+                curr_boss['rememberance'] = int(p[1])
     codecs.open('template.json', 'w', 'utf-8').write(json.dumps(sections, ensure_ascii=False))

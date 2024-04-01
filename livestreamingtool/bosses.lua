@@ -22,10 +22,8 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/bosse
   region_name[index] = v['region_name']
 end
 for _, v in pairs(bosses) do
+  boss_count = boss_count + #v
   for _, v2 in pairs(v) do
-    boss_count = boss_count + 1
-    v2.offset = tonumber(string.sub(v2.offset, 3), 16)
-    v2.bit = 1 << tonumber(v2.bit)
     local rem = v2.rememberance
     if rem ~= nil and rem > 0 then
       rememberance_bosses[rem] = v2
@@ -38,12 +36,69 @@ local last_count = 0
 local last_region = 0
 local last_running = false
 
+local function calc_flag_offset_and_bit(flag_id)
+  local addr = process.read_u64(address_table.event_flag_man_addr)
+  if addr == 0 then return 0,1 end
+  local divisor = process.read_u32(addr + 0x1C)
+  local category = flag_id // divisor
+  local least_significant_digits = flag_id - category * divisor
+  local current_element = process.read_u64(addr + 0x38)
+  local current_sub_element = process.read_u64(current_element + 0x08)
+  while process.read_u8(current_sub_element + 0x19) == 0 do
+    if process.read_u32(current_sub_element + 0x20) < category then
+      current_sub_element = process.read_u64(current_sub_element + 0x10)
+    else
+      current_element = current_sub_element
+      current_sub_element = process.read_u64(current_sub_element)
+    end
+  end
+  if current_element == current_sub_element then
+    return 0,1
+  end
+  local mystery_value = process.read_u32(current_element + 0x28) - 1
+  local calculated_pointer = 0;
+  if mystery_value ~= 0 then
+    if mystery_value ~= 1 then
+      calculated_pointer = process.read_u64(current_element + 0x30);
+    else
+      return 0,1
+    end
+  else
+    calculated_pointer = process.read_u32(addr + 0x20) * process.read_u32(current_element + 0x30) + process.read_u64(addr + 0x28)
+  end
+
+  if calculated_pointer == 0 then
+    return 0,1
+  end
+  local thing = 7 - (least_significant_digits & 7)
+  local another_thing = 1 << thing
+  local shifted = least_significant_digits >> 3
+
+  return calculated_pointer + shifted - event_flag_address, another_thing
+end
+
+local first = true
+local function calculate_all_flag_offsets()
+  if not first then
+    return
+  end
+  first = false
+  for _, v in pairs(bosses) do
+    for _, v2 in pairs(v) do
+      v2.offset, v2.bit = calc_flag_offset_and_bit(v2.flag_id)
+      if v2.bit == nil then
+        print(v2.boss, v2.flag_id, v2.offset, v2.bit)
+      end
+    end
+  end
+end
+
 local function update_memory_address()
   local addr = process.read_u64(address_table.event_flag_man_addr)
   if addr == 0 then return end
   event_flag_address = process.read_u64(addr + 0x28)
+  calculate_all_flag_offsets()
 end
-
 
 local function read_flag(offset)
   if event_flag_address == 0 then

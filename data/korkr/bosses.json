@@ -19,116 +19,97 @@
       {
         "boss": "고드릭의 군병",
         "place": "표류 묘지",
-        "offset": "0x15B608",
-        "bit": 5
+        "flag_id": 18000850
       },
       {
         "boss": "트리 가드",
         "place": "엘레의 교회",
-        "offset": "0xA0749",
-        "bit": 7
+        "flag_id": 1042360800
       },
       {
         "boss": "아인 두목(x2)",
         "place": "해안 동굴",
-        "offset": "0x174184",
-        "bit": 7
+        "flag_id": 31150800
       },
       {
         "boss": "환수의 파수견",
         "place": "폭풍 기슭의 지하 묘지",
-        "offset": "0x16848D",
-        "bit": 7
+        "flag_id": 30020800
       },
       {
         "boss": "파름 아즈라의 수인",
         "place": "숲 옆 동굴",
-        "offset": "0x170CC8",
-        "bit": 7
+        "flag_id": 31030800
       },
       {
         "boss": "채석꾼 트롤",
         "place": "림그레이브 갱도",
-        "offset": "0x1787D4",
-        "bit": 7
+        "flag_id": 32010800
       },
       {
         "boss": "호박머리 광병",
         "place": "역참터",
-        "offset": "0xB18B9",
-        "bit": 7
+        "flag_id": 1044360800
       },
       {
         "boss": "사냥개기사 대리윌",
         "place": "주인 잃은 사냥개의 봉인감옥",
-        "offset": "0xB154E",
-        "bit": 7
+        "flag_id": 1044350800
       },
       {
         "boss": "패치",
         "place": "흐린 강 동굴",
-        "offset": "0x16FF99",
-        "bit": 7
+        "flag_id": 31000800
       },
       {
         "boss": "묘지기 투사",
         "place": "흐린 강의 지하 묘지",
-        "offset": "0x168D57",
-        "bit": 7
+        "flag_id": 30040800
       },
       {
         "boss": "가디언 골렘",
         "place": "높은 길 아래 동굴",
-        "offset": "0x1745E9",
-        "bit": 7
+        "flag_id": 31170800
       },
       {
         "boss": "검은 칼날의 자객",
         "place": "죽음에 닿은 지하 묘지",
-        "offset": "0x16AC1A",
-        "bit": 7
+        "flag_id": 30110800
       },
       {
         "boss": "문드러진 나무령",
         "place": "변경의 영웅 묘지",
-        "offset": "0x15B602",
-        "bit": 7
+        "flag_id": 18000800
       },
       {
         "boss": "비룡 아길",
         "place": "아길 호수",
-        "offset": "0xA9001",
-        "bit": 7
+        "flag_id": 1043360800
       },
       {
         "boss": "티비아의 배",
         "place": "마중물 마을",
-        "offset": "0xBABB2",
-        "bit": 7
+        "flag_id": 1045390800
       },
       {
         "boss": "도가니의 기사",
         "place": "폭풍 언덕의 봉인감옥",
-        "offset": "0xA0AB4",
-        "bit": 7
+        "flag_id": 1042370800
       },
       {
         "boss": "밤 기병",
         "place": "",
-        "offset": "0xA936C",
-        "bit": 7
+        "flag_id": 1043370800
       },
       {
         "boss": "죽음의 새",
         "place": "",
-        "offset": "0xA0E1F",
-        "bit": 7
+        "flag_id": 1042380800
       },
       {
         "boss": "방울 사냥꾼",
         "place": "전쟁 배움의 낡은 집",
-        "offset": "0xA0E25",
-        "bit": 5
+        "flag_id": 1042380850
       }
     ]
   },
@@ -146,62 +127,52 @@
       {
         "boss": "룬베어",
         "place": "구멍을 내려가는 동굴",
-        "offset": "0x1703FE",
-        "bit": 7
+        "flag_id": 31010800
       },
       {
         "boss": "비늘 혼종",
         "place": "몬 갱도",
-        "offset": "0x17836F",
-        "bit": 7
+        "flag_id": 32000800
       },
       {
         "boss": "환수의 파수견",
         "place": "꼬챙이의 지하 묘지",
-        "offset": "0x168028",
-        "bit": 7
+        "flag_id": 30010800
       },
       {
         "boss": "묘소 그림자",
         "place": "영묘 들판 지하 묘지",
-        "offset": "0x167BC3",
-        "bit": 7
+        "flag_id": 30000800
       },
       {
         "boss": "병든 꽃 미란다",
         "place": "영묘 들판 동굴",
-        "offset": "0x170863",
-        "bit": 7
+        "flag_id": 31020800
       },
       {
         "boss": "황금 나무의 화신",
         "place": "작은 황금 나무",
-        "offset": "0xA85C0",
-        "bit": 7
+        "flag_id": 1043330800
       },
       {
         "boss": "자미엘의 옛 영웅",
         "place": "흐느낌의 봉인감옥",
-        "offset": "0x9FD08",
-        "bit": 7
+        "flag_id": 1042330800
       },
       {
         "boss": "밤 기병",
         "place": "몬 성문 앞",
-        "offset": "0xB0B13",
-        "bit": 5
+        "flag_id": 1044320850
       },
       {
         "boss": "죽음의 새",
         "place": "",
-        "offset": "0xB0B0D",
-        "bit": 7
+        "flag_id": 1044320800
       },
       {
         "boss": "사자 혼종",
         "place": "몬의 한탄묘",
-        "offset": "0xA7B7F",
-        "bit": 7
+        "flag_id": 1043300800
       }
     ]
   },
@@ -214,14 +185,12 @@
       {
         "boss": "끔찍한 흉조 멀기트",
         "place": "스톰빌 성",
-        "offset": "0x151C39",
-        "bit": 5
+        "flag_id": 10000850
       },
       {
         "boss": "접목의 고드릭",
         "place": "스톰빌 성",
-        "offset": "0x151C33",
-        "bit": 7,
+        "flag_id": 10000800,
         "rememberance": 1
       }
     ]
@@ -246,152 +215,127 @@
       {
         "boss": "말레니아의 귀부기사",
         "place": "고인 물 동굴",
-        "offset": "0x17112D",
-        "bit": 7
+        "flag_id": 31040800
       },
       {
         "boss": "사냥개기사",
         "place": "호수 옆 결정 동굴",
-        "offset": "0x171592",
-        "bit": 7
+        "flag_id": 31050800
       },
       {
         "boss": "환수의 파수견",
         "place": "절벽 아래 지하 묘지",
-        "offset": "0x169621",
-        "bit": 7
+        "flag_id": 30060800
       },
       {
         "boss": "결정인(지팡이) & 결정인(창)",
         "place": "학원 결정 동굴",
-        "offset": "0x1719F7",
-        "bit": 7
+        "flag_id": 31060800
       },
       {
         "boss": "결정인(윤도)",
         "place": "레아 루카리아 결정 갱도",
-        "offset": "0x178C39",
-        "bit": 7
+        "flag_id": 32020800
       },
       {
         "boss": "묘소 그림자",
         "place": "검은 칼날의 지하 묘지",
-        "offset": "0x1691BC",
-        "bit": 7
+        "flag_id": 30050800
       },
       {
         "boss": "검은 칼날의 자객",
         "place": "검은 칼날의 지하 묘지",
-        "offset": "0x1691C2",
-        "bit": 5
+        "flag_id": 30050850
       },
       {
         "boss": "환혼 달팽이",
         "place": "막다른 길의 지하 묘지",
-        "offset": "0x1688F2",
-        "bit": 7
+        "flag_id": 30030800
       },
       {
         "boss": "접목의 귀공자",
         "place": "왕을 기다리는 예배당",
-        "offset": "0x152098",
-        "bit": 7
+        "flag_id": 10010800
       },
       {
         "boss": "휘석룡 스마라그",
         "place": "성당구획",
-        "offset": "0x5E04C",
-        "bit": 7
+        "flag_id": 1034450800
       },
       {
         "boss": "흉조잡이",
         "place": "백금 마을",
-        "offset": "0x65EC3",
-        "bit": 7
+        "flag_id": 1035420800
       },
       {
         "boss": "왕족의 망령",
         "place": "왕가령 폐허",
-        "offset": "0x5EA8D",
-        "bit": 7
+        "flag_id": 1034480800
       },
       {
         "boss": "티비아의 배",
         "place": "",
-        "offset": "0x88879",
-        "bit": 7
+        "flag_id": 1039440800
       },
       {
         "boss": "황금 나무의 화신",
         "place": "개종된 탑",
-        "offset": "0x550BE",
-        "bit": 7
+        "flag_id": 1033430800
       },
       {
         "boss": "황금 나무의 화신",
         "place": "영묘 무리",
-        "offset": "0x80D6D",
-        "bit": 7
+        "flag_id": 1038480800
       },
       {
         "boss": "불을 훔친 아단",
         "place": "도둑의 봉인감옥",
-        "offset": "0x7F580",
-        "bit": 7
+        "flag_id": 1038410800
       },
       {
         "boss": "카리아 기사 볼스",
         "place": "뻐꾸기의 봉인감옥",
-        "offset": "0x55794",
-        "bit": 7
+        "flag_id": 1033450800
       },
       {
         "boss": "돌 피부의 흑왕",
         "place": "왕가 묘지의 봉인감옥",
-        "offset": "0x702D3",
-        "bit": 7
+        "flag_id": 1036500800
       },
       {
         "boss": "밤 기병",
         "place": "문 앞 마을 다리",
-        "offset": "0x8850E",
-        "bit": 7
+        "flag_id": 1039430800
       },
       {
         "boss": "밤 기병",
         "place": "벨룸 교회",
-        "offset": "0x6FBFD",
-        "bit": 7
+        "flag_id": 1036480800
       },
       {
         "boss": "죽음의 새",
         "place": "조망섬",
-        "offset": "0x77033",
-        "bit": 7
+        "flag_id": 1037420800
       },
       {
         "boss": "죽음 의례의 새",
         "place": "문 앞 마을 북쪽",
-        "offset": "0x6F1BC",
-        "bit": 7
+        "flag_id": 1036450800
       },
       {
         "boss": "방울 사냥꾼",
         "place": "맺음의 교회",
-        "offset": "0x77DDF",
-        "bit": 7
+        "flag_id": 1037460800
       },
       {
         "boss": "친위기사 로레타",
         "place": "카리아 성관",
-        "offset": "0x67A1B",
-        "bit": 7
+        "flag_id": 1035500800
       },
       {
         "boss": "용암토룡 마카르",
         "place": "옛 유적 절벽",
-        "offset": "0x15DD8F",
-        "bit": 7
+        "flag_id": 39200800
       }
     ]
   },
@@ -404,14 +348,12 @@
       {
         "boss": "휘석룡 아듀라",
         "place": "월광의 제단",
-        "offset": "0x5D60B",
-        "bit": 7
+        "flag_id": 1034420800
       },
       {
         "boss": "검은 칼날의 우두머리 알렉토",
         "place": "칼날 우두머리의 봉인감옥",
-        "offset": "0x54D53",
-        "bit": 7
+        "flag_id": 1033420800
       }
     ]
   },
@@ -424,15 +366,13 @@
       {
         "boss": "라다곤의 붉은 늑대",
         "place": "",
-        "offset": "0x15814C",
-        "bit": 5
+        "flag_id": 14000850
       },
       {
         "boss": "만월의 여왕 레날라",
         "place": "",
-        "offset": "0x158146",
-        "bit": 7,
-        "rememberance": 2
+        "flag_id": 14000800,
+        "rememberance": 1
       }
     ]
   },
@@ -450,87 +390,73 @@
       {
         "boss": "용암토룡",
         "place": "게르 갱도",
-        "offset": "0x179DCD",
-        "bit": 7
+        "flag_id": 32070800
       },
       {
         "boss": "환수의 파수견(검) & 환수의 파수견(홀)",
         "place": "작은 황금 나무 지하 묘지",
-        "offset": "0x16B949",
-        "bit": 7
+        "flag_id": 30140800
       },
       {
         "boss": "미친 투사",
         "place": "감옥 동굴",
-        "offset": "0x17577D",
-        "bit": 7
+        "flag_id": 31210800
       },
       {
         "boss": "묘소 그림자",
         "place": "케일리드 지하 묘지",
-        "offset": "0x16BDAE",
-        "bit": 7
+        "flag_id": 30150800
       },
       {
         "boss": "내리는 별의 짐승",
         "place": "사리아의 결정 갱도",
-        "offset": "0x17A232",
-        "bit": 7
+        "flag_id": 32080800
       },
       {
         "boss": "호박머리 광병(해머) & 호박머리 광병(철퇴)",
         "place": "키렘 폐허",
-        "offset": "0xD4945",
-        "bit": 7
+        "flag_id": 1048400800
       },
       {
         "boss": "썩어가는 엑디키스",
         "place": "부패병의 교회",
-        "offset": "0xD3F04",
-        "bit": 7
+        "flag_id": 1048370800
       },
       {
         "boss": "녹스의 승려 & 녹스의 검사",
         "place": "마술도시 사리아",
-        "offset": "0xDCE92",
-        "bit": 7
+        "flag_id": 1049390800
       },
       {
         "boss": "노장 오닐",
         "place": "에오니아 늪",
-        "offset": "0xDCB27",
-        "bit": 7
+        "flag_id": 1049380800
       },
       {
         "boss": "부패한 화신",
         "place": "작은 황금 나무",
-        "offset": "0xCC08D",
-        "bit": 7
+        "flag_id": 1047400800
       },
       {
         "boss": "밤 기병",
         "place": "케일리드 가도 남쪽",
-        "offset": "0xDC7BC",
-        "bit": 7
+        "flag_id": 1049370800
       },
       {
         "boss": "죽음 의례의 새",
         "place": "에오니아 늪 남쪽",
-        "offset": "0xDC7C2",
-        "bit": 5
+        "flag_id": 1049370850
       },
       {
         "boss": "도가니의 기사 & 혼종 전사",
         "place": "적사자성",
-        "offset": "0xED5C1",
-        "bit": 7
+        "flag_id": 1051360800
       },
       {
         "boss": "별 부수는 라단",
         "place": "통곡 사구",
-        "offset": "0x1A1B02",
-        "bit": 7,
-        "rememberance": 3
+        "flag_id": 1252380800,
+        "rememberance": 1
       }
     ]
   },
@@ -548,68 +474,57 @@
       {
         "boss": "말레니아의 귀부기사(창) & 말레니아의 귀부기사(낫)",
         "place": "폐기 동굴",
-        "offset": "0x175318",
-        "bit": 7
+        "flag_id": 31200800
       },
       {
         "boss": "부패한 결정인(윤도) & 부패한 결정인(창) & 부패한 결정인(지팡이)",
         "place": "사리아의 은신 동굴",
-        "offset": "0x172FF0",
-        "bit": 7
+        "flag_id": 31110800
       },
       {
         "boss": "파름 아즈라의 수인(대도) & 파름 아즈라의 수인(투척도)",
         "place": "용총 동굴",
-        "offset": "0x172B8B",
-        "bit": 7
+        "flag_id": 31100800
       },
       {
         "boss": "부패한 나무령",
         "place": "영령들의 지하 묘지",
-        "offset": "0x16C213",
-        "bit": 7
+        "flag_id": 30160800
       },
       {
         "boss": "신의 살갗의 사도",
         "place": "케일리드 신수탑",
-        "offset": "0x16310E",
-        "bit": 7
+        "flag_id": 34130800
       },
       {
         "boss": "흑검의 권속",
         "place": "짐승의 신전",
-        "offset": "0xEEDAE",
-        "bit": 7
+        "flag_id": 1051430800
       },
       {
         "boss": "비룡 그레일",
         "place": "그레이오르의 용총",
-        "offset": "0xF6F90",
-        "bit": 7
+        "flag_id": 1052410800
       },
       {
         "boss": "부패한 화신",
         "place": "작은 황금 나무",
-        "offset": "0xEE36D",
-        "bit": 7
+        "flag_id": 1051400800
       },
       {
         "boss": "전쟁마술사 유그",
         "place": "사리아 봉인감옥",
-        "offset": "0xDCE98",
-        "bit": 5
+        "flag_id": 1049390850
       },
       {
         "boss": "밤 기병",
         "place": "렌의 마술사탑",
-        "offset": "0xF6F96",
-        "bit": 5
+        "flag_id": 1052410850
       },
       {
         "boss": "방울 사냥꾼",
         "place": "은둔 상인의 오두막",
-        "offset": "0xD4CB0",
-        "bit": 7
+        "flag_id": 1048410800
       }
     ]
   },
@@ -629,122 +544,102 @@
       {
         "boss": "사술사 가레스",
         "place": "현자의 동굴",
-        "offset": "0x174EB9",
-        "bit": 5
+        "flag_id": 31190850
       },
       {
         "boss": "검은 칼날의 자객",
         "place": "현자의 동굴",
-        "offset": "0x174EB3",
-        "bit": 7
+        "flag_id": 31190800
       },
       {
         "boss": "채석꾼 트롤",
         "place": "구 알터 갱도",
-        "offset": "0x17909E",
-        "bit": 7
+        "flag_id": 32040800
       },
       {
         "boss": "결정인(창) & 결정인(윤도)",
         "place": "알터 갱도",
-        "offset": "0x179968",
-        "bit": 7
+        "flag_id": 32050800
       },
       {
         "boss": "검은 칼날의 자객",
         "place": "고귀한 자의 영웅 묘지",
-        "offset": "0x92C89",
-        "bit": 7
+        "flag_id": 1040520800
       },
       {
         "boss": "자미엘의 옛 영웅",
         "place": "고귀한 자의 영웅 묘지",
-        "offset": "0x169EEB",
-        "bit": 7
+        "flag_id": 30080800
       },
       {
         "boss": "흉조잡이 & 병든 꽃 미란다",
         "place": "조향사의 은신 동굴",
-        "offset": "0x174A4E",
-        "bit": 7
+        "flag_id": 31180800
       },
       {
         "boss": "조향사 트리샤 & 혼종 전사",
         "place": "추한 지하 묘지",
-        "offset": "0x16B07F",
-        "bit": 7
+        "flag_id": 30120800
       },
       {
         "boss": "환수의 파수견",
         "place": "윈덤 지하 묘지",
-        "offset": "0x169A86",
-        "bit": 7
+        "flag_id": 30070800
       },
       {
         "boss": "고룡 란삭스",
         "place": "성벽을 따라 난 샛길",
-        "offset": "0x9B541",
-        "bit": 7
+        "flag_id": 1041520800
       },
       {
         "boss": "아인 여왕 기리카",
         "place": "루크스의 폐허",
-        "offset": "0x817AE",
-        "bit": 7
+        "flag_id": 1038510800
       },
       {
         "boss": "피의 귀족",
         "place": "피가 꿈틀거리는 폐허",
-        "offset": "0x92FF4",
-        "bit": 7
+        "flag_id": 1040530800
       },
       {
         "boss": "신의 살갗의 사도",
         "place": "풍차 마을 도미눌라",
-        "offset": "0xA483A",
-        "bit": 7
+        "flag_id": 1042550800
       },
       {
         "boss": "내리는 별의 짐승",
         "place": "별이 떨어진 땅",
-        "offset": "0x9AE6B",
-        "bit": 7
+        "flag_id": 1041500800
       },
       {
         "boss": "트리 가드(x2)",
         "place": "",
-        "offset": "0x9B1D6",
-        "bit": 7
+        "flag_id": 1041510800
       },
       {
         "boss": "티비아의 배",
         "place": "윈덤 폐허",
-        "offset": "0x81B19",
-        "bit": 7
+        "flag_id": 1038520800
       },
       {
         "boss": "지렁이 얼굴",
         "place": "작은 황금 나무",
-        "offset": "0x9B8AC",
-        "bit": 7
+        "flag_id": 1041530800
       },
       {
         "boss": "접목의 고드플로어",
         "place": "황금 일족의 봉인감옥",
-        "offset": "0x89CFB",
-        "bit": 7
+        "flag_id": 1039500800
       },
       {
         "boss": "밤 기병",
         "place": "알터 가도 세갈래 길",
-        "offset": "0x8A066",
-        "bit": 7
+        "flag_id": 1039510800
       },
       {
         "boss": "철가시 엘레메르",
         "place": "그늘성",
-        "offset": "0x8AAA7",
-        "bit": 7
+        "flag_id": 1039540800
       }
     ]
   },
@@ -760,38 +655,32 @@
       {
         "boss": "돌 피부의 흑왕",
         "place": "봉인된 갱도",
-        "offset": "0x162CA9",
-        "bit": 7
+        "flag_id": 34120800
       },
       {
         "boss": "묘지기 투사",
         "place": "아우리자 부묘지",
-        "offset": "0x16B4E4",
-        "bit": 7
+        "flag_id": 30130800
       },
       {
         "boss": "도가니의 기사 & 도가니의 기사 오르도비스",
         "place": "아우리자 영웅 묘지",
-        "offset": "0x16A7B5",
-        "bit": 7
+        "flag_id": 30100800
       },
       {
         "boss": "용의 트리 가드",
         "place": "도읍 성벽 앞",
-        "offset": "0xBD821",
-        "bit": 7
+        "flag_id": 1045520800
       },
       {
         "boss": "죽음의 새",
         "place": "전쟁 배움의 낡은 집",
-        "offset": "0xB52D4",
-        "bit": 7
+        "flag_id": 1044530800
       },
       {
         "boss": "방울 사냥꾼",
         "place": "속세를 떠난 상인의 오두막",
-        "offset": "0xACA1C",
-        "bit": 7
+        "flag_id": 1043530800
       }
     ]
   },
@@ -807,44 +696,37 @@
       {
         "boss": "아인 여왕 마고",
         "place": "화산 동굴",
-        "offset": "0x172726",
-        "bit": 7
+        "flag_id": 31090800
       },
       {
         "boss": "부패의 권속(x2)",
         "place": "끓는 강 동굴",
-        "offset": "0x171E5C",
-        "bit": 7
+        "flag_id": 31070800
       },
       {
         "boss": "영웅의 붉은 늑대",
         "place": "겔미어 영웅 묘지",
-        "offset": "0x16A350",
-        "bit": 7
+        "flag_id": 30090800
       },
       {
         "boss": "용암토룡",
         "place": "라이드 요새",
-        "offset": "0x6845C",
-        "bit": 7
+        "flag_id": 1035530800
       },
       {
         "boss": "내리는 별의 짐승 성체",
         "place": "겔미어 화산 구부 능선",
-        "offset": "0x7107F",
-        "bit": 7
+        "flag_id": 1036540800
       },
       {
         "boss": "아인 여왕 마기",
         "place": "은자의 마을",
-        "offset": "0x795CC",
-        "bit": 7
+        "flag_id": 1037530800
       },
       {
         "boss": "문드러진 나무령",
         "place": "작은 황금 나무",
-        "offset": "0x79938",
-        "bit": 5
+        "flag_id": 1037540810
       }
     ]
   },
@@ -857,21 +739,18 @@
       {
         "boss": "납치하는 소녀 인형(진자 낫) & 납치하는 소녀 인형(수레바퀴)",
         "place": "땅 밑 책문소",
-        "offset": "0x159BAB",
-        "bit": 3
+        "flag_id": 16000860
       },
       {
         "boss": "신의 살갗의 귀인",
         "place": "에이그레이 성당",
-        "offset": "0x159BAA",
-        "bit": 5
+        "flag_id": 16000850
       },
       {
         "boss": "신을 먹는 큰 뱀 & 모독의 군주 라이커드",
         "place": "화산관",
-        "offset": "0x159BA4",
-        "bit": 7,
-        "rememberance": 4
+        "flag_id": 16000800,
+        "rememberance": 1
       }
     ]
   },
@@ -887,33 +766,28 @@
       {
         "boss": "피의 사제 에스거",
         "place": "로데일 지하 묘지",
-        "offset": "0x15D066",
-        "bit": 5
+        "flag_id": 35000850
       },
       {
         "boss": "흉조의 쌍둥이(x2)",
         "place": "동 알터 신수탑",
-        "offset": "0x163579",
-        "bit": 5
+        "flag_id": 34140850
       },
       {
         "boss": "흉조의 아이 모그",
         "place": "흉조가 버려진 대성당",
-        "offset": "0x15D060",
-        "bit": 7
+        "flag_id": 35000800
       },
       {
         "boss": "첫 왕 고드프리",
         "place": "황금 나무의 대성당",
-        "offset": "0x152DCD",
-        "bit": 5
+        "flag_id": 11000850
       },
       {
         "boss": "흉조의 왕 모르고트",
         "place": "엘데의 왕좌",
-        "offset": "0x152DC7",
-        "bit": 7,
-        "rememberance": 5
+        "flag_id": 11000800,
+        "rememberance": 1
       }
     ]
   },
@@ -926,14 +800,12 @@
       {
         "boss": "밤 기병",
         "place": "",
-        "offset": "0xD6EDE",
-        "bit": 7
+        "flag_id": 1048510800
       },
       {
         "boss": "흑검의 권속",
         "place": "",
-        "offset": "0xDFB01",
-        "bit": 7
+        "flag_id": 1049520800
       }
     ]
   },
@@ -950,57 +822,48 @@
       {
         "boss": "자미엘의 옛 영웅",
         "place": "거인 전쟁의 영웅 묘지",
-        "offset": "0x16C678",
-        "bit": 7
+        "flag_id": 30170800
       },
       {
         "boss": "문드러진 나무령",
         "place": "거인 산령 지하 묘지",
-        "offset": "0x16CADD",
-        "bit": 7
+        "flag_id": 30180800
       },
       {
         "boss": "신의 살갗의 사도 & 신의 살갗의 귀인 & 환혼 달팽이",
         "place": "환혼 동굴",
-        "offset": "0x175BE2",
-        "bit": 7
+        "flag_id": 31220800
       },
       {
         "boss": "얼어붙는 안개 볼레아리스",
         "place": "빙결 호수",
-        "offset": "0x1AA7A2",
-        "bit": 7
+        "flag_id": 1254560800
       },
       {
         "boss": "황금 나무의 화신",
         "place": "작은 황금 나무",
-        "offset": "0xFA2D5",
-        "bit": 7
+        "flag_id": 1052560800
       },
       {
         "boss": "원탁의 기사 바이크",
         "place": "왕에 다가간 자의 봉인감옥",
-        "offset": "0x102B8D",
-        "bit": 7
+        "flag_id": 1053560800
       },
       {
         "boss": "죽음 의례의 새",
         "place": "",
-        "offset": "0xE94D0",
-        "bit": 7
+        "flag_id": 1050570800
       },
       {
         "boss": "노장 니아르",
         "place": "소르 성채",
-        "offset": "0xF1D88",
-        "bit": 7
+        "flag_id": 1051570800
       },
       {
         "boss": "불의 거인",
         "place": "불의 정상",
-        "offset": "0x1AAC07",
-        "bit": 7,
-        "rememberance": 6
+        "flag_id": 1252520800,
+        "rememberance": 1
       }
     ]
   },
@@ -1013,22 +876,19 @@
       {
         "boss": "신의 살갗의 두 명",
         "place": "용성당의 제단",
-        "offset": "0x15741D",
-        "bit": 5
+        "flag_id": 13000850
       },
       {
         "boss": "용왕 플라키두삭스",
         "place": "대도량 옆",
-        "offset": "0x15741A",
-        "bit": 1,
-        "rememberance": 11
+        "flag_id": 13000830,
+        "rememberance": 1
       },
       {
         "boss": "흑검 말리케스",
         "place": "",
-        "offset": "0x157417",
-        "bit": 7,
-        "rememberance": 12
+        "flag_id": 13000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1045,50 +905,42 @@
       {
         "boss": "낙오된 화신의 물방울",
         "place": "성수로 가는 숨은 길",
-        "offset": "0x16D3A7",
-        "bit": 7
+        "flag_id": 30200800
       },
       {
         "boss": "부패한 묘지기 투사",
         "place": "구별된 설원 지하 묘지",
-        "offset": "0x16CF42",
-        "bit": 7
+        "flag_id": 30190800
       },
       {
         "boss": "암흑의 별들 아스테르",
         "place": "이엘로 아니스 갱도",
-        "offset": "0x17A697",
-        "bit": 7
+        "flag_id": 32110800
       },
       {
         "boss": "혼종의 성기사",
         "place": "기댈 동굴",
-        "offset": "0x173455",
-        "bit": 7
+        "flag_id": 31120800
       },
       {
         "boss": "대토룡 테오드릭스",
         "place": "",
-        "offset": "0xE9165",
-        "bit": 7
+        "flag_id": 1050560800
       },
       {
         "boss": "부패한 화신",
         "place": "작은 황금 나무",
-        "offset": "0xE94D6",
-        "bit": 5
+        "flag_id": 1050570850
       },
       {
         "boss": "밤 기병(글레이브) & 밤 기병(철퇴)",
         "place": "구별된 설원 심부",
-        "offset": "0x1ABD9B",
-        "bit": 7
+        "flag_id": 1248550800
       },
       {
         "boss": "죽음 의례의 새",
         "place": "",
-        "offset": "0xD8360",
-        "bit": 7
+        "flag_id": 1048570800
       }
     ]
   },
@@ -1101,15 +953,13 @@
       {
         "boss": "성수의 기사 로레타",
         "place": "",
-        "offset": "0x158E7B",
-        "bit": 5
+        "flag_id": 15000850
       },
       {
         "boss": "미켈라의 칼날 말레니아 & 부패의 여신 말레니아",
         "place": "",
-        "offset": "0x158E75",
-        "bit": 7,
-        "rememberance": 13
+        "flag_id": 15000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1123,33 +973,28 @@
       {
         "boss": "용인병",
         "place": "시프라 강 강가",
-        "offset": "0x1550F2",
-        "bit": 1
+        "flag_id": 12020830
       },
       {
         "boss": "선조령",
         "place": "시프라 강 강가",
-        "offset": "0x156B4D",
-        "bit": 7
+        "flag_id": 12080800
       },
       {
         "boss": "화신의 물방울",
         "place": "",
-        "offset": "0x1550F5",
-        "bit": 5
+        "flag_id": 12020850
       },
       {
         "boss": "선조령의 왕",
         "place": "각해의 영지",
-        "offset": "0x156FB2",
-        "bit": 7,
-        "rememberance": 7
+        "flag_id": 12090800,
+        "rememberance": 1
       },
       {
         "boss": "영웅의 가고일 & 영웅의 가고일(쌍날검)",
         "place": "시프라 수도교",
-        "offset": "0x1550EF",
-        "bit": 7
+        "flag_id": 12020800
       }
     ]
   },
@@ -1162,9 +1007,8 @@
       {
         "boss": "피의 군주 모그",
         "place": "",
-        "offset": "0x155E1E",
-        "bit": 7,
-        "rememberance": 10
+        "flag_id": 12050800,
+        "rememberance": 1
       }
     ]
   },
@@ -1178,21 +1022,18 @@
       {
         "boss": "녹스텔라의 용인병",
         "place": "",
-        "offset": "0x154C8A",
-        "bit": 7
+        "flag_id": 12010800
       },
       {
         "boss": "용인병",
         "place": "",
-        "offset": "0x154C90",
-        "bit": 5
+        "flag_id": 12010850
       },
       {
         "boss": "암흑의 부산물 아스테르",
         "place": "대회랑",
-        "offset": "0x1559B9",
-        "bit": 7,
-        "rememberance": 8
+        "flag_id": 12040800,
+        "rememberance": 1
       }
     ]
   },
@@ -1205,21 +1046,18 @@
       {
         "boss": "도가니의 기사 실루리아",
         "place": "",
-        "offset": "0x155520",
-        "bit": 1
+        "flag_id": 12030390
       },
       {
         "boss": "피아의 영웅 & 마술사 로지에르 & 호담 라이오넬",
         "place": "",
-        "offset": "0x155554",
-        "bit": 7
+        "flag_id": 12030800
       },
       {
         "boss": "사룡 포르삭스",
         "place": "",
-        "offset": "0x15555A",
-        "bit": 5,
-        "rememberance": 9
+        "flag_id": 12030850,
+        "rememberance": 1
       }
     ]
   },
@@ -1233,22 +1071,19 @@
       {
         "boss": "온 지혜의 기드온 오프닐 경",
         "place": "황금 나무의 대성당",
-        "offset": "0x153232",
-        "bit": 5
+        "flag_id": 11050850
       },
       {
         "boss": "첫 왕 고드프리",
         "place": "엘데의 왕좌",
-        "offset": "0x15322C",
-        "bit": 7,
-        "rememberance": 14
+        "flag_id": 11050800,
+        "rememberance": 1
       },
       {
         "boss": "황금률 라다곤 & 엘데의 짐승",
         "place": "무너져가는 마리카",
-        "offset": "0x15C331",
-        "bit": 7,
-        "rememberance": 15
+        "flag_id": 19000800,
+        "rememberance": 1
       }
     ]
   }

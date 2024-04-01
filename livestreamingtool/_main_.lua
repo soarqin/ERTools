@@ -18,8 +18,10 @@ lfs.mkdir(config.output_folder)
 local plugins = {}
 print('+ Loading plugins...')
 for plugin_name, enabled in pairs(config.plugins) do
-  print('  > ' .. plugin_name)
-  plugins[#plugins + 1] = require(script_directory .. plugin_name)
+  if enabled then
+    print('  > ' .. plugin_name)
+    plugins[#plugins + 1] = require(script_directory .. plugin_name)
+  end
 end
 print('- Done.')
 

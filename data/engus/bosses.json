@@ -19,116 +19,97 @@
       {
         "boss": "Soldier of Godrick",
         "place": "Stranded Graveyard",
-        "offset": "0x15B608",
-        "bit": 5
+        "flag_id": 18000850
       },
       {
         "boss": "Tree Sentinel",
         "place": "Church of Elleh",
-        "offset": "0xA0749",
-        "bit": 7
+        "flag_id": 1042360800
       },
       {
         "boss": "Demi-Human Chief(x2)",
         "place": "Coastal Cave",
-        "offset": "0x174184",
-        "bit": 7
+        "flag_id": 31150800
       },
       {
         "boss": "Erdtree Burial Watchdog",
         "place": "Stormfoot Catacombs",
-        "offset": "0x16848D",
-        "bit": 7
+        "flag_id": 30020800
       },
       {
         "boss": "Beastman of Farum Azula",
         "place": "Groveside Cave",
-        "offset": "0x170CC8",
-        "bit": 7
+        "flag_id": 31030800
       },
       {
         "boss": "Stonedigger Troll",
         "place": "Limgrave Tunnels",
-        "offset": "0x1787D4",
-        "bit": 7
+        "flag_id": 32010800
       },
       {
         "boss": "Mad Pumpkin Head",
         "place": "Waypoint Ruins",
-        "offset": "0xB18B9",
-        "bit": 7
+        "flag_id": 1044360800
       },
       {
         "boss": "Bloodhound Knight Darriwil",
         "place": "Forlorn Hound Evergaol",
-        "offset": "0xB154E",
-        "bit": 7
+        "flag_id": 1044350800
       },
       {
         "boss": "Patches",
         "place": "Murkwater Cave",
-        "offset": "0x16FF99",
-        "bit": 7
+        "flag_id": 31000800
       },
       {
         "boss": "Grave Warden Duelist",
         "place": "Murkwater Catacombs",
-        "offset": "0x168D57",
-        "bit": 7
+        "flag_id": 30040800
       },
       {
         "boss": "Guardian Golem",
         "place": "Highroad Cave",
-        "offset": "0x1745E9",
-        "bit": 7
+        "flag_id": 31170800
       },
       {
         "boss": "Black Knife Assassin",
         "place": "Deathtouched Catacombs",
-        "offset": "0x16AC1A",
-        "bit": 7
+        "flag_id": 30110800
       },
       {
         "boss": "Ulcerated Tree Spirit",
         "place": "Fringefolk Hero's Grave",
-        "offset": "0x15B602",
-        "bit": 7
+        "flag_id": 18000800
       },
       {
         "boss": "Flying Dragon Agheel",
         "place": "Agheel Lake",
-        "offset": "0xA9001",
-        "bit": 7
+        "flag_id": 1043360800
       },
       {
         "boss": "Tibia Mariner",
         "place": "Summonwater Village",
-        "offset": "0xBABB2",
-        "bit": 7
+        "flag_id": 1045390800
       },
       {
         "boss": "Crucible Knight",
         "place": "Stormhill Evergaol",
-        "offset": "0xA0AB4",
-        "bit": 7
+        "flag_id": 1042370800
       },
       {
         "boss": "Night's Cavalry",
         "place": "",
-        "offset": "0xA936C",
-        "bit": 7
+        "flag_id": 1043370800
       },
       {
         "boss": "Deathbird",
         "place": "",
-        "offset": "0xA0E1F",
-        "bit": 7
+        "flag_id": 1042380800
       },
       {
         "boss": "Bell Bearing Hunter",
         "place": "Warmaster's Shack",
-        "offset": "0xA0E25",
-        "bit": 5
+        "flag_id": 1042380850
       }
     ]
   },
@@ -146,62 +127,52 @@
       {
         "boss": "Runebear",
         "place": "Earthbore Cave",
-        "offset": "0x1703FE",
-        "bit": 7
+        "flag_id": 31010800
       },
       {
         "boss": "Scaly Misbegotten",
         "place": "Morne Tunnel",
-        "offset": "0x17836F",
-        "bit": 7
+        "flag_id": 32000800
       },
       {
         "boss": "Erdtree Burial Watchdog",
         "place": "Impaler's Catacombs",
-        "offset": "0x168028",
-        "bit": 7
+        "flag_id": 30010800
       },
       {
         "boss": "Cemetery Shade",
         "place": "Tombsward Catacombs",
-        "offset": "0x167BC3",
-        "bit": 7
+        "flag_id": 30000800
       },
       {
         "boss": "Miranda the Blighted Bloom",
         "place": "Tombsward Cave",
-        "offset": "0x170863",
-        "bit": 7
+        "flag_id": 31020800
       },
       {
         "boss": "Erdtree Avatar",
         "place": "Minor Erdtree",
-        "offset": "0xA85C0",
-        "bit": 7
+        "flag_id": 1043330800
       },
       {
         "boss": "Ancient Hero of Zamor",
         "place": "Weeping Evergaol",
-        "offset": "0x9FD08",
-        "bit": 7
+        "flag_id": 1042330800
       },
       {
         "boss": "Night's Cavalry",
         "place": "Castle Morne Rampart",
-        "offset": "0xB0B13",
-        "bit": 5
+        "flag_id": 1044320850
       },
       {
         "boss": "Deathbird",
         "place": "",
-        "offset": "0xB0B0D",
-        "bit": 7
+        "flag_id": 1044320800
       },
       {
         "boss": "Leonine Misbegotten",
         "place": "Morne Moangrave",
-        "offset": "0xA7B7F",
-        "bit": 7
+        "flag_id": 1043300800
       }
     ]
   },
@@ -214,14 +185,12 @@
       {
         "boss": "Margit, the Fell Omen",
         "place": "Stormveil Castle",
-        "offset": "0x151C39",
-        "bit": 5
+        "flag_id": 10000850
       },
       {
         "boss": "Godrick the Grafted",
         "place": "Stormveil Castle",
-        "offset": "0x151C33",
-        "bit": 7,
+        "flag_id": 10000800,
         "rememberance": 1
       }
     ]
@@ -246,152 +215,127 @@
       {
         "boss": "Cleanrot Knight",
         "place": "Stillwater Cave",
-        "offset": "0x17112D",
-        "bit": 7
+        "flag_id": 31040800
       },
       {
         "boss": "Bloodhound Knight",
         "place": "Lakeside Crystal Cave",
-        "offset": "0x171592",
-        "bit": 7
+        "flag_id": 31050800
       },
       {
         "boss": "Erdtree Burial Watchdog",
         "place": "Cliffbottom Catacombs",
-        "offset": "0x169621",
-        "bit": 7
+        "flag_id": 30060800
       },
       {
         "boss": "Crystalian (Staff) & Crystalian (Spear)",
         "place": "Academy Crystal Cave",
-        "offset": "0x1719F7",
-        "bit": 7
+        "flag_id": 31060800
       },
       {
         "boss": "Crystalian (Ringblade)",
         "place": "Raya Lucaria Crystal Tunnel",
-        "offset": "0x178C39",
-        "bit": 7
+        "flag_id": 32020800
       },
       {
         "boss": "Cemetery Shade",
         "place": "Black Knife Catacombs",
-        "offset": "0x1691BC",
-        "bit": 7
+        "flag_id": 30050800
       },
       {
         "boss": "Black Knife Assassin",
         "place": "Black Knife Catacombs",
-        "offset": "0x1691C2",
-        "bit": 5
+        "flag_id": 30050850
       },
       {
         "boss": "Spiritcaller Snail",
         "place": "Road's End Catacombs",
-        "offset": "0x1688F2",
-        "bit": 7
+        "flag_id": 30030800
       },
       {
         "boss": "Grafted Scion",
         "place": "Chapel of Anticipation",
-        "offset": "0x152098",
-        "bit": 7
+        "flag_id": 10010800
       },
       {
         "boss": "Glintstone Dragon Smarag",
         "place": "Temple Quarter",
-        "offset": "0x5E04C",
-        "bit": 7
+        "flag_id": 1034450800
       },
       {
         "boss": "Omenkiller",
         "place": "Village of the Albinaurics",
-        "offset": "0x65EC3",
-        "bit": 7
+        "flag_id": 1035420800
       },
       {
         "boss": "Royal Revenant",
         "place": "Kingsrealm Ruins",
-        "offset": "0x5EA8D",
-        "bit": 7
+        "flag_id": 1034480800
       },
       {
         "boss": "Tibia Mariner",
         "place": "",
-        "offset": "0x88879",
-        "bit": 7
+        "flag_id": 1039440800
       },
       {
         "boss": "Erdtree Avatar",
         "place": "Converted Tower",
-        "offset": "0x550BE",
-        "bit": 7
+        "flag_id": 1033430800
       },
       {
         "boss": "Erdtree Avatar",
         "place": "Mausoleum Compound",
-        "offset": "0x80D6D",
-        "bit": 7
+        "flag_id": 1038480800
       },
       {
         "boss": "Adan, Thief of Fire",
         "place": "Malefactor's Evergaol",
-        "offset": "0x7F580",
-        "bit": 7
+        "flag_id": 1038410800
       },
       {
         "boss": "Bols, Carian Knight",
         "place": "Cuckoo's Evergaol",
-        "offset": "0x55794",
-        "bit": 7
+        "flag_id": 1033450800
       },
       {
         "boss": "Onyx Lord",
         "place": "Royal Grave Evergaol",
-        "offset": "0x702D3",
-        "bit": 7
+        "flag_id": 1036500800
       },
       {
         "boss": "Night's Cavalry",
         "place": "Gate Town Bridge",
-        "offset": "0x8850E",
-        "bit": 7
+        "flag_id": 1039430800
       },
       {
         "boss": "Night's Cavalry",
         "place": "Bellum Church",
-        "offset": "0x6FBFD",
-        "bit": 7
+        "flag_id": 1036480800
       },
       {
         "boss": "Deathbird",
         "place": "Scenic Isle",
-        "offset": "0x77033",
-        "bit": 7
+        "flag_id": 1037420800
       },
       {
         "boss": "Death Rite Bird",
         "place": "Gate Town North",
-        "offset": "0x6F1BC",
-        "bit": 7
+        "flag_id": 1036450800
       },
       {
         "boss": "Bell Bearing Hunter",
         "place": "Church of Vows",
-        "offset": "0x77DDF",
-        "bit": 7
+        "flag_id": 1037460800
       },
       {
         "boss": "Royal Knight Loretta",
         "place": "Caria Manor",
-        "offset": "0x67A1B",
-        "bit": 7
+        "flag_id": 1035500800
       },
       {
         "boss": "Magma Wyrm Makar",
         "place": "Ruin-Strewn Precipice",
-        "offset": "0x15DD8F",
-        "bit": 7
+        "flag_id": 39200800
       }
     ]
   },
@@ -404,14 +348,12 @@
       {
         "boss": "Glintstone Dragon Adula",
         "place": "Moonlight Altar",
-        "offset": "0x5D60B",
-        "bit": 7
+        "flag_id": 1034420800
       },
       {
         "boss": "Alecto, Black Knife Ringleader",
         "place": "Ringleader's Evergaol",
-        "offset": "0x54D53",
-        "bit": 7
+        "flag_id": 1033420800
       }
     ]
   },
@@ -424,15 +366,13 @@
       {
         "boss": "Red Wolf of Radagon",
         "place": "",
-        "offset": "0x15814C",
-        "bit": 5
+        "flag_id": 14000850
       },
       {
         "boss": "Rennala, Queen of the Full Moon",
         "place": "",
-        "offset": "0x158146",
-        "bit": 7,
-        "rememberance": 2
+        "flag_id": 14000800,
+        "rememberance": 1
       }
     ]
   },
@@ -450,87 +390,73 @@
       {
         "boss": "Magma Wyrm",
         "place": "Gael Tunnel",
-        "offset": "0x179DCD",
-        "bit": 7
+        "flag_id": 32070800
       },
       {
         "boss": "Erdtree Burial Watchdog (Sword) & Erdtree Burial Watchdog (Scepter)",
         "place": "Minor Erdtree Catacombs",
-        "offset": "0x16B949",
-        "bit": 7
+        "flag_id": 30140800
       },
       {
         "boss": "Frenzied Duelist",
         "place": "Gaol Cave",
-        "offset": "0x17577D",
-        "bit": 7
+        "flag_id": 31210800
       },
       {
         "boss": "Cemetery Shade",
         "place": "Caelid Catacombs",
-        "offset": "0x16BDAE",
-        "bit": 7
+        "flag_id": 30150800
       },
       {
         "boss": "Fallingstar Beast",
         "place": "Sellia Crystal Tunnel",
-        "offset": "0x17A232",
-        "bit": 7
+        "flag_id": 32080800
       },
       {
         "boss": "Mad Pumpkin Head (Hammer) & Mad Pumpkin Head (Flail)",
         "place": "Caelem Ruins",
-        "offset": "0xD4945",
-        "bit": 7
+        "flag_id": 1048400800
       },
       {
         "boss": "Decaying Ekzykes",
         "place": "Church of the Plague",
-        "offset": "0xD3F04",
-        "bit": 7
+        "flag_id": 1048370800
       },
       {
         "boss": "Nox Monk & Nox Swordstress",
         "place": "Sellia, Town of Sorcery",
-        "offset": "0xDCE92",
-        "bit": 7
+        "flag_id": 1049390800
       },
       {
         "boss": "Commander O'Neil",
         "place": "Swamp of Aeonia",
-        "offset": "0xDCB27",
-        "bit": 7
+        "flag_id": 1049380800
       },
       {
         "boss": "Putrid Avatar",
         "place": "Minor Erdtree",
-        "offset": "0xCC08D",
-        "bit": 7
+        "flag_id": 1047400800
       },
       {
         "boss": "Night's Cavalry",
         "place": "Caelid Highway South",
-        "offset": "0xDC7BC",
-        "bit": 7
+        "flag_id": 1049370800
       },
       {
         "boss": "Death Rite Bird",
         "place": "Southern Aeonia Swamp Bank",
-        "offset": "0xDC7C2",
-        "bit": 5
+        "flag_id": 1049370850
       },
       {
         "boss": "Crucible Knight & Misbegotten Warrior",
         "place": "Redmane Castle",
-        "offset": "0xED5C1",
-        "bit": 7
+        "flag_id": 1051360800
       },
       {
         "boss": "Starscourge Radahn",
         "place": "Wailing Dunes",
-        "offset": "0x1A1B02",
-        "bit": 7,
-        "rememberance": 3
+        "flag_id": 1252380800,
+        "rememberance": 1
       }
     ]
   },
@@ -548,68 +474,57 @@
       {
         "boss": "Cleanrot Knight (Spear) & Cleanrot Knight (Sickle)",
         "place": "Abandoned Cave",
-        "offset": "0x175318",
-        "bit": 7
+        "flag_id": 31200800
       },
       {
         "boss": "Putrid Crystalian (Ringblade) & Putrid Crystalian (Spear) & Putrid Crystalian (Staff)",
         "place": "Sellia Hideaway",
-        "offset": "0x172FF0",
-        "bit": 7
+        "flag_id": 31110800
       },
       {
         "boss": "Beastman of Farum Azula (Cleaver) & Beastman of Farum Azula (Throwing Knife)",
         "place": "Dragonbarrow Cave",
-        "offset": "0x172B8B",
-        "bit": 7
+        "flag_id": 31100800
       },
       {
         "boss": "Putrid Tree Spirit",
         "place": "War-Dead Catacombs",
-        "offset": "0x16C213",
-        "bit": 7
+        "flag_id": 30160800
       },
       {
         "boss": "Godskin Apostle",
         "place": "Divine Tower of Caelid",
-        "offset": "0x16310E",
-        "bit": 7
+        "flag_id": 34130800
       },
       {
         "boss": "Black Blade Kindred",
         "place": "Bestial Sanctum",
-        "offset": "0xEEDAE",
-        "bit": 7
+        "flag_id": 1051430800
       },
       {
         "boss": "Flying Dragon Greyll",
         "place": "Greyoll's Dragonbarrow",
-        "offset": "0xF6F90",
-        "bit": 7
+        "flag_id": 1052410800
       },
       {
         "boss": "Putrid Avatar",
         "place": "Minor Erdtree",
-        "offset": "0xEE36D",
-        "bit": 7
+        "flag_id": 1051400800
       },
       {
         "boss": "Battlemage Hugues",
         "place": "Sellia Evergaol",
-        "offset": "0xDCE98",
-        "bit": 5
+        "flag_id": 1049390850
       },
       {
         "boss": "Night's Cavalry",
         "place": "Lenne's Rise",
-        "offset": "0xF6F96",
-        "bit": 5
+        "flag_id": 1052410850
       },
       {
         "boss": "Bell Bearing Hunter",
         "place": "Isolated Merchant's Shack",
-        "offset": "0xD4CB0",
-        "bit": 7
+        "flag_id": 1048410800
       }
     ]
   },
@@ -629,122 +544,102 @@
       {
         "boss": "Necromancer Garris",
         "place": "Sage's Cave",
-        "offset": "0x174EB9",
-        "bit": 5
+        "flag_id": 31190850
       },
       {
         "boss": "Black Knife Assassin",
         "place": "Sage's Cave",
-        "offset": "0x174EB3",
-        "bit": 7
+        "flag_id": 31190800
       },
       {
         "boss": "Stonedigger Troll",
         "place": "Old Altus Tunnel",
-        "offset": "0x17909E",
-        "bit": 7
+        "flag_id": 32040800
       },
       {
         "boss": "Crystalian (Spear) & Crystalian (Ringblade)",
         "place": "Altus Tunnel",
-        "offset": "0x179968",
-        "bit": 7
+        "flag_id": 32050800
       },
       {
         "boss": "Black Knife Assassin",
         "place": "Sainted Hero's Grave",
-        "offset": "0x92C89",
-        "bit": 7
+        "flag_id": 1040520800
       },
       {
         "boss": "Ancient Hero of Zamor",
         "place": "Sainted Hero's Grave",
-        "offset": "0x169EEB",
-        "bit": 7
+        "flag_id": 30080800
       },
       {
         "boss": "Omenkiller & Miranda the Blighted Bloom",
         "place": "Perfumer's Grotto",
-        "offset": "0x174A4E",
-        "bit": 7
+        "flag_id": 31180800
       },
       {
         "boss": "Perfumer Tricia & Misbegotten Warrior",
         "place": "Unsightly Catacombs",
-        "offset": "0x16B07F",
-        "bit": 7
+        "flag_id": 30120800
       },
       {
         "boss": "Erdtree Burial Watchdog",
         "place": "Wyndham Catacombs",
-        "offset": "0x169A86",
-        "bit": 7
+        "flag_id": 30070800
       },
       {
         "boss": "Ancient Dragon Lansseax",
         "place": "Rampartside Path",
-        "offset": "0x9B541",
-        "bit": 7
+        "flag_id": 1041520800
       },
       {
         "boss": "Demi-Human Queen Gilika",
         "place": "Lux Ruins",
-        "offset": "0x817AE",
-        "bit": 7
+        "flag_id": 1038510800
       },
       {
         "boss": "Sanguine Noble",
         "place": "Writheblood Ruins",
-        "offset": "0x92FF4",
-        "bit": 7
+        "flag_id": 1040530800
       },
       {
         "boss": "Godskin Apostle",
         "place": "Dominula, Windmill Village",
-        "offset": "0xA483A",
-        "bit": 7
+        "flag_id": 1042550800
       },
       {
         "boss": "Fallingstar Beast",
         "place": "Starfall Crater",
-        "offset": "0x9AE6B",
-        "bit": 7
+        "flag_id": 1041500800
       },
       {
         "boss": "Tree Sentinel(x2)",
         "place": "",
-        "offset": "0x9B1D6",
-        "bit": 7
+        "flag_id": 1041510800
       },
       {
         "boss": "Tibia Mariner",
         "place": "Wyndham Ruins",
-        "offset": "0x81B19",
-        "bit": 7
+        "flag_id": 1038520800
       },
       {
         "boss": "Wormface",
         "place": "Minor Erdtree",
-        "offset": "0x9B8AC",
-        "bit": 7
+        "flag_id": 1041530800
       },
       {
         "boss": "Godefroy the Grafted",
         "place": "Golden Lineage Evergaol",
-        "offset": "0x89CFB",
-        "bit": 7
+        "flag_id": 1039500800
       },
       {
         "boss": "Night's Cavalry",
         "place": "Altus Highway Junction",
-        "offset": "0x8A066",
-        "bit": 7
+        "flag_id": 1039510800
       },
       {
         "boss": "Elemer of the Briar",
         "place": "The Shaded Castle",
-        "offset": "0x8AAA7",
-        "bit": 7
+        "flag_id": 1039540800
       }
     ]
   },
@@ -760,38 +655,32 @@
       {
         "boss": "Onyx Lord",
         "place": "Sealed Tunnel",
-        "offset": "0x162CA9",
-        "bit": 7
+        "flag_id": 34120800
       },
       {
         "boss": "Grave Warden Duelist",
         "place": "Auriza Side Tomb",
-        "offset": "0x16B4E4",
-        "bit": 7
+        "flag_id": 30130800
       },
       {
         "boss": "Crucible Knight & Crucible Knight Ordovis",
         "place": "Auriza Hero's Grave",
-        "offset": "0x16A7B5",
-        "bit": 7
+        "flag_id": 30100800
       },
       {
         "boss": "Draconic Tree Sentinel",
         "place": "Capital Rampart",
-        "offset": "0xBD821",
-        "bit": 7
+        "flag_id": 1045520800
       },
       {
         "boss": "Deathbird",
         "place": "Warmaster's Shack",
-        "offset": "0xB52D4",
-        "bit": 7
+        "flag_id": 1044530800
       },
       {
         "boss": "Bell Bearing Hunter",
         "place": "Hermit Merchant's Shack",
-        "offset": "0xACA1C",
-        "bit": 7
+        "flag_id": 1043530800
       }
     ]
   },
@@ -807,44 +696,37 @@
       {
         "boss": "Demi-Human Queen Margot",
         "place": "Volcano Cave",
-        "offset": "0x172726",
-        "bit": 7
+        "flag_id": 31090800
       },
       {
         "boss": "Kindred of Rot(x2)",
         "place": "Seethewater Cave",
-        "offset": "0x171E5C",
-        "bit": 7
+        "flag_id": 31070800
       },
       {
         "boss": "Red Wolf of the Champion",
         "place": "Gelmir Hero's Grave",
-        "offset": "0x16A350",
-        "bit": 7
+        "flag_id": 30090800
       },
       {
         "boss": "Magma Wyrm",
         "place": "Fort Laiedd",
-        "offset": "0x6845C",
-        "bit": 7
+        "flag_id": 1035530800
       },
       {
         "boss": "Full-Grown Fallingstar Beast",
         "place": "Ninth Mt. Gelmir Campsite",
-        "offset": "0x7107F",
-        "bit": 7
+        "flag_id": 1036540800
       },
       {
         "boss": "Demi-Human Queen Maggie",
         "place": "Hermit Village",
-        "offset": "0x795CC",
-        "bit": 7
+        "flag_id": 1037530800
       },
       {
         "boss": "Ulcerated Tree Spirit",
         "place": "Minor Erdtree",
-        "offset": "0x79938",
-        "bit": 5
+        "flag_id": 1037540810
       }
     ]
   },
@@ -857,21 +739,18 @@
       {
         "boss": "Abductor Virgin (Swinging Sickle) & Abductor Virgin (Wheel)",
         "place": "Subterranean Inquisition Chamber",
-        "offset": "0x159BAB",
-        "bit": 3
+        "flag_id": 16000860
       },
       {
         "boss": "Godskin Noble",
         "place": "Temple of Eiglay",
-        "offset": "0x159BAA",
-        "bit": 5
+        "flag_id": 16000850
       },
       {
         "boss": "God-Devouring Serpent & Rykard, Lord of Blasphemy",
         "place": "Volcano Manor",
-        "offset": "0x159BA4",
-        "bit": 7,
-        "rememberance": 4
+        "flag_id": 16000800,
+        "rememberance": 1
       }
     ]
   },
@@ -887,33 +766,28 @@
       {
         "boss": "Esgar, Priest of Blood",
         "place": "Leyndell Catacombs",
-        "offset": "0x15D066",
-        "bit": 5
+        "flag_id": 35000850
       },
       {
         "boss": "Fell Twin(x2)",
         "place": "Divine Tower of East Altus",
-        "offset": "0x163579",
-        "bit": 5
+        "flag_id": 34140850
       },
       {
         "boss": "Mohg, the Omen",
         "place": "Cathedral of the Forsaken",
-        "offset": "0x15D060",
-        "bit": 7
+        "flag_id": 35000800
       },
       {
         "boss": "Godfrey, First Elden Lord",
         "place": "Erdtree Sanctuary",
-        "offset": "0x152DCD",
-        "bit": 5
+        "flag_id": 11000850
       },
       {
         "boss": "Morgott, the Omen King",
         "place": "Elden Throne",
-        "offset": "0x152DC7",
-        "bit": 7,
-        "rememberance": 5
+        "flag_id": 11000800,
+        "rememberance": 1
       }
     ]
   },
@@ -926,14 +800,12 @@
       {
         "boss": "Night's Cavalry",
         "place": "",
-        "offset": "0xD6EDE",
-        "bit": 7
+        "flag_id": 1048510800
       },
       {
         "boss": "Black Blade Kindred",
         "place": "",
-        "offset": "0xDFB01",
-        "bit": 7
+        "flag_id": 1049520800
       }
     ]
   },
@@ -950,57 +822,48 @@
       {
         "boss": "Ancient Hero of Zamor",
         "place": "Giant-Conquering Hero's Grave",
-        "offset": "0x16C678",
-        "bit": 7
+        "flag_id": 30170800
       },
       {
         "boss": "Ulcerated Tree Spirit",
         "place": "Giants' Mountaintop Catacombs",
-        "offset": "0x16CADD",
-        "bit": 7
+        "flag_id": 30180800
       },
       {
         "boss": "Godskin Apostle & Godskin Noble & Spiritcaller Snail",
         "place": "Spiritcaller Cave",
-        "offset": "0x175BE2",
-        "bit": 7
+        "flag_id": 31220800
       },
       {
         "boss": "Borealis the Freezing Fog",
         "place": "Freezing Lake",
-        "offset": "0x1AA7A2",
-        "bit": 7
+        "flag_id": 1254560800
       },
       {
         "boss": "Erdtree Avatar",
         "place": "Minor Erdtree",
-        "offset": "0xFA2D5",
-        "bit": 7
+        "flag_id": 1052560800
       },
       {
         "boss": "Roundtable Knight Vyke",
         "place": "Lord Contender's Evergaol",
-        "offset": "0x102B8D",
-        "bit": 7
+        "flag_id": 1053560800
       },
       {
         "boss": "Death Rite Bird",
         "place": "",
-        "offset": "0xE94D0",
-        "bit": 7
+        "flag_id": 1050570800
       },
       {
         "boss": "Commander Niall",
         "place": "Castle Sol",
-        "offset": "0xF1D88",
-        "bit": 7
+        "flag_id": 1051570800
       },
       {
         "boss": "Fire Giant",
         "place": "Flame Peak",
-        "offset": "0x1AAC07",
-        "bit": 7,
-        "rememberance": 6
+        "flag_id": 1252520800,
+        "rememberance": 1
       }
     ]
   },
@@ -1013,22 +876,19 @@
       {
         "boss": "Godskin Duo",
         "place": "Dragon Temple Altar",
-        "offset": "0x15741D",
-        "bit": 5
+        "flag_id": 13000850
       },
       {
         "boss": "Dragonlord Placidusax",
         "place": "Beside the Great Bridge",
-        "offset": "0x15741A",
-        "bit": 1,
-        "rememberance": 11
+        "flag_id": 13000830,
+        "rememberance": 1
       },
       {
         "boss": "Maliketh, the Black Blade",
         "place": "",
-        "offset": "0x157417",
-        "bit": 7,
-        "rememberance": 12
+        "flag_id": 13000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1045,50 +905,42 @@
       {
         "boss": "Stray Mimic Tear",
         "place": "Hidden Path to the Haligtree",
-        "offset": "0x16D3A7",
-        "bit": 7
+        "flag_id": 30200800
       },
       {
         "boss": "Putrid Grave Warden Duelist",
         "place": "Consecrated Snowfield Catacombs",
-        "offset": "0x16CF42",
-        "bit": 7
+        "flag_id": 30190800
       },
       {
         "boss": "Astel, Stars of Darkness",
         "place": "Yelough Anix Tunnel",
-        "offset": "0x17A697",
-        "bit": 7
+        "flag_id": 32110800
       },
       {
         "boss": "Misbegotten Crusader",
         "place": "Cave of the Forlorn",
-        "offset": "0x173455",
-        "bit": 7
+        "flag_id": 31120800
       },
       {
         "boss": "Great Wyrm Theodorix",
         "place": "",
-        "offset": "0xE9165",
-        "bit": 7
+        "flag_id": 1050560800
       },
       {
         "boss": "Putrid Avatar",
         "place": "Minor Erdtree",
-        "offset": "0xE94D6",
-        "bit": 5
+        "flag_id": 1050570850
       },
       {
         "boss": "Night's Cavalry (Glaive) & Night's Cavalry (Flail)",
         "place": "Inner Consecrated Snowfield",
-        "offset": "0x1ABD9B",
-        "bit": 7
+        "flag_id": 1248550800
       },
       {
         "boss": "Death Rite Bird",
         "place": "",
-        "offset": "0xD8360",
-        "bit": 7
+        "flag_id": 1048570800
       }
     ]
   },
@@ -1101,15 +953,13 @@
       {
         "boss": "Loretta, Knight of the Haligtree",
         "place": "",
-        "offset": "0x158E7B",
-        "bit": 5
+        "flag_id": 15000850
       },
       {
         "boss": "Malenia, Blade of Miquella & Malenia, Goddess of Rot",
         "place": "",
-        "offset": "0x158E75",
-        "bit": 7,
-        "rememberance": 13
+        "flag_id": 15000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1123,33 +973,28 @@
       {
         "boss": "Dragonkin Soldier",
         "place": "Siofra River Bank",
-        "offset": "0x1550F2",
-        "bit": 1
+        "flag_id": 12020830
       },
       {
         "boss": "Ancestor Spirit",
         "place": "Siofra River Bank",
-        "offset": "0x156B4D",
-        "bit": 7
+        "flag_id": 12080800
       },
       {
         "boss": "Mimic Tear",
         "place": "",
-        "offset": "0x1550F5",
-        "bit": 5
+        "flag_id": 12020850
       },
       {
         "boss": "Regal Ancestor Spirit",
         "place": "Hallowhorn Grounds",
-        "offset": "0x156FB2",
-        "bit": 7,
-        "rememberance": 7
+        "flag_id": 12090800,
+        "rememberance": 1
       },
       {
         "boss": "Valiant Gargoyle & Valiant Gargoyle (Twinblade)",
         "place": "Siofra Aqueduct",
-        "offset": "0x1550EF",
-        "bit": 7
+        "flag_id": 12020800
       }
     ]
   },
@@ -1162,9 +1007,8 @@
       {
         "boss": "Mohg, Lord of Blood",
         "place": "",
-        "offset": "0x155E1E",
-        "bit": 7,
-        "rememberance": 10
+        "flag_id": 12050800,
+        "rememberance": 1
       }
     ]
   },
@@ -1178,21 +1022,18 @@
       {
         "boss": "Dragonkin Soldier of Nokstella",
         "place": "",
-        "offset": "0x154C8A",
-        "bit": 7
+        "flag_id": 12010800
       },
       {
         "boss": "Dragonkin Soldier",
         "place": "",
-        "offset": "0x154C90",
-        "bit": 5
+        "flag_id": 12010850
       },
       {
         "boss": "Astel, Naturalborn of the Void",
         "place": "Grand Cloister",
-        "offset": "0x1559B9",
-        "bit": 7,
-        "rememberance": 8
+        "flag_id": 12040800,
+        "rememberance": 1
       }
     ]
   },
@@ -1205,21 +1046,18 @@
       {
         "boss": "Crucible Knight Siluria",
         "place": "",
-        "offset": "0x155520",
-        "bit": 1
+        "flag_id": 12030390
       },
       {
         "boss": "Fia's Champion & Sorcerer Rogier & Lionel the Lionhearted",
         "place": "",
-        "offset": "0x155554",
-        "bit": 7
+        "flag_id": 12030800
       },
       {
         "boss": "Lichdragon Fortissax",
         "place": "",
-        "offset": "0x15555A",
-        "bit": 5,
-        "rememberance": 9
+        "flag_id": 12030850,
+        "rememberance": 1
       }
     ]
   },
@@ -1233,22 +1071,19 @@
       {
         "boss": "Sir Gideon Ofnir, the All-Knowing",
         "place": "Erdtree Sanctuary",
-        "offset": "0x153232",
-        "bit": 5
+        "flag_id": 11050850
       },
       {
         "boss": "Godfrey, First Elden Lord",
         "place": "Elden Throne",
-        "offset": "0x15322C",
-        "bit": 7,
-        "rememberance": 14
+        "flag_id": 11050800,
+        "rememberance": 1
       },
       {
         "boss": "Radagon of the Golden Order & Elden Beast",
         "place": "Fractured Marika",
-        "offset": "0x15C331",
-        "bit": 7,
-        "rememberance": 15
+        "flag_id": 19000800,
+        "rememberance": 1
       }
     ]
   }

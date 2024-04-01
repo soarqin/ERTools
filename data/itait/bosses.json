@@ -19,116 +19,97 @@
       {
         "boss": "Soldato di Godrick",
         "place": "Cimitero abbandonato",
-        "offset": "0x15B608",
-        "bit": 5
+        "flag_id": 18000850
       },
       {
         "boss": "Sentinella dell'albero",
         "place": "Chiesa di Elleh",
-        "offset": "0xA0749",
-        "bit": 7
+        "flag_id": 1042360800
       },
       {
         "boss": "Capo semiumano(x2)",
         "place": "Caverna costiera",
-        "offset": "0x174184",
-        "bit": 7
+        "flag_id": 31150800
       },
       {
         "boss": "Guardiano sepolcrale dell'Albero Madre",
         "place": "Catacombe di Passo Tempesta",
-        "offset": "0x16848D",
-        "bit": 7
+        "flag_id": 30020800
       },
       {
         "boss": "Bestia umana di Farum Azula",
         "place": "Caverna di Latibosco",
-        "offset": "0x170CC8",
-        "bit": 7
+        "flag_id": 31030800
       },
       {
         "boss": "Troll scavapietra",
         "place": "Gallerie di Sepolcride",
-        "offset": "0x1787D4",
-        "bit": 7
+        "flag_id": 32010800
       },
       {
         "boss": "Testa di zucca folle",
         "place": "Punto di sosta in rovina",
-        "offset": "0xB18B9",
-        "bit": 7
+        "flag_id": 1044360800
       },
       {
         "boss": "Cavalier limiere Darriwil",
         "place": "Galera eterna del limiere alacre",
-        "offset": "0xB154E",
-        "bit": 7
+        "flag_id": 1044350800
       },
       {
         "boss": "Patches",
         "place": "Caverna di Acquafosca",
-        "offset": "0x16FF99",
-        "bit": 7
+        "flag_id": 31000800
       },
       {
         "boss": "Guardia sepolcrale duellante",
         "place": "Catacombe di Acquafosca",
-        "offset": "0x168D57",
-        "bit": 7
+        "flag_id": 30040800
       },
       {
         "boss": "Golem guardiano",
         "place": "Caverna della strada maestra",
-        "offset": "0x1745E9",
-        "bit": 7
+        "flag_id": 31170800
       },
       {
         "boss": "Assassina dei Neri Coltelli",
         "place": "Catacombe mortifere",
-        "offset": "0x16AC1A",
-        "bit": 7
+        "flag_id": 30110800
       },
       {
         "boss": "Spirito arboreo ulcerato",
         "place": "Tomba dell'eroe degli acriti",
-        "offset": "0x15B602",
-        "bit": 7
+        "flag_id": 18000800
       },
       {
         "boss": "Drago volante Agheel",
         "place": "Lago di Agheel",
-        "offset": "0xA9001",
-        "bit": 7
+        "flag_id": 1043360800
       },
       {
         "boss": "Marinaio tibiale",
         "place": "Villaggio di Idrocanto",
-        "offset": "0xBABB2",
-        "bit": 7
+        "flag_id": 1045390800
       },
       {
         "boss": "Cavaliere del Crogiolo",
         "place": "Galera eterna di Colle Tempesta",
-        "offset": "0xA0AB4",
-        "bit": 7
+        "flag_id": 1042370800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "",
-        "offset": "0xA936C",
-        "bit": 7
+        "flag_id": 1043370800
       },
       {
         "boss": "Uccello della morte",
         "place": "",
-        "offset": "0xA0E1F",
-        "bit": 7
+        "flag_id": 1042380800
       },
       {
         "boss": "Cacciatore di globi cinerei",
         "place": "Capanna del maestro guerriero",
-        "offset": "0xA0E25",
-        "bit": 5
+        "flag_id": 1042380850
       }
     ]
   },
@@ -146,62 +127,52 @@
       {
         "boss": "Orso runico",
         "place": "Caverna di Profundis",
-        "offset": "0x1703FE",
-        "bit": 7
+        "flag_id": 31010800
       },
       {
         "boss": "Progenie squamata",
         "place": "Galleria di Morne",
-        "offset": "0x17836F",
-        "bit": 7
+        "flag_id": 32000800
       },
       {
         "boss": "Guardiano sepolcrale dell'Albero Madre",
         "place": "Catacombe dell'impalatore",
-        "offset": "0x168028",
-        "bit": 7
+        "flag_id": 30010800
       },
       {
         "boss": "Ombra cimiteriale",
         "place": "Catacombe di Guardiasepolcro",
-        "offset": "0x167BC3",
-        "bit": 7
+        "flag_id": 30000800
       },
       {
         "boss": "Miranda il bocciolo avvizzito",
         "place": "Caverna di Guardiasepolcro",
-        "offset": "0x170863",
-        "bit": 7
+        "flag_id": 31020800
       },
       {
         "boss": "Avatar dell'Albero Madre",
         "place": "Albero Madre minore",
-        "offset": "0xA85C0",
-        "bit": 7
+        "flag_id": 1043330800
       },
       {
         "boss": "Antico eroe di Zamor",
         "place": "Galera eterna del lamento",
-        "offset": "0x9FD08",
-        "bit": 7
+        "flag_id": 1042330800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Baluardo del castello di Morne",
-        "offset": "0xB0B13",
-        "bit": 5
+        "flag_id": 1044320850
       },
       {
         "boss": "Uccello della morte",
         "place": "",
-        "offset": "0xB0B0D",
-        "bit": 7
+        "flag_id": 1044320800
       },
       {
         "boss": "Progenie leonina",
         "place": "Lutto di Morne",
-        "offset": "0xA7B7F",
-        "bit": 7
+        "flag_id": 1043300800
       }
     ]
   },
@@ -214,14 +185,12 @@
       {
         "boss": "Margit il Presagio implacabile",
         "place": "Castello di Grantempesta",
-        "offset": "0x151C39",
-        "bit": 5
+        "flag_id": 10000850
       },
       {
         "boss": "Godrick l'Innestato",
         "place": "Castello di Grantempesta",
-        "offset": "0x151C33",
-        "bit": 7,
+        "flag_id": 10000800,
         "rememberance": 1
       }
     ]
@@ -246,152 +215,127 @@
       {
         "boss": "Cavaliere marcescente",
         "place": "Caverna di Acquacheta",
-        "offset": "0x17112D",
-        "bit": 7
+        "flag_id": 31040800
       },
       {
         "boss": "Cavalier limiere",
         "place": "Caverna cristallina del lago",
-        "offset": "0x171592",
-        "bit": 7
+        "flag_id": 31050800
       },
       {
         "boss": "Guardiano sepolcrale dell'Albero Madre",
         "place": "Catacombe ai piedi della rupe",
-        "offset": "0x169621",
-        "bit": 7
+        "flag_id": 30060800
       },
       {
         "boss": "Cristalliano (bastone) & Cristalliano (lancia)",
         "place": "Caverna cristallina dell'Accademia",
-        "offset": "0x1719F7",
-        "bit": 7
+        "flag_id": 31060800
       },
       {
         "boss": "Cristalliano (lama circolare)",
         "place": "Galleria di cristallo di Raya Lucaria",
-        "offset": "0x178C39",
-        "bit": 7
+        "flag_id": 32020800
       },
       {
         "boss": "Ombra cimiteriale",
         "place": "Catacombe dei Neri Coltelli",
-        "offset": "0x1691BC",
-        "bit": 7
+        "flag_id": 30050800
       },
       {
         "boss": "Assassina dei Neri Coltelli",
         "place": "Catacombe dei Neri Coltelli",
-        "offset": "0x1691C2",
-        "bit": 5
+        "flag_id": 30050850
       },
       {
         "boss": "Lumaca evoca-spiriti",
         "place": "Catacombe della strada morta",
-        "offset": "0x1688F2",
-        "bit": 7
+        "flag_id": 30030800
       },
       {
         "boss": "Erede innestato",
         "place": "Cappella dell'attesa",
-        "offset": "0x152098",
-        "bit": 7
+        "flag_id": 10010800
       },
       {
         "boss": "Drago di scintipietra Smarag",
         "place": "Quartiere del tempio",
-        "offset": "0x5E04C",
-        "bit": 7
+        "flag_id": 1034450800
       },
       {
         "boss": "Ammazzapresagi",
         "place": "Villaggio degli albinauri",
-        "offset": "0x65EC3",
-        "bit": 7
+        "flag_id": 1035420800
       },
       {
         "boss": "Spirito inquieto reale",
         "place": "Rovine del re",
-        "offset": "0x5EA8D",
-        "bit": 7
+        "flag_id": 1034480800
       },
       {
         "boss": "Marinaio tibiale",
         "place": "",
-        "offset": "0x88879",
-        "bit": 7
+        "flag_id": 1039440800
       },
       {
         "boss": "Avatar dell'Albero Madre",
         "place": "Torre ricostruita",
-        "offset": "0x550BE",
-        "bit": 7
+        "flag_id": 1033430800
       },
       {
         "boss": "Avatar dell'Albero Madre",
         "place": "Complesso del mausoleo",
-        "offset": "0x80D6D",
-        "bit": 7
+        "flag_id": 1038480800
       },
       {
         "boss": "Adan, ladro del fuoco",
         "place": "Galera eterna del malfattore",
-        "offset": "0x7F580",
-        "bit": 7
+        "flag_id": 1038410800
       },
       {
         "boss": "Cavaliere cariano Bols",
         "place": "Galera eterna del Cuculo",
-        "offset": "0x55794",
-        "bit": 7
+        "flag_id": 1033450800
       },
       {
         "boss": "Campione di onice",
         "place": "Galera eterna della tomba reale",
-        "offset": "0x702D3",
-        "bit": 7
+        "flag_id": 1036500800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Ponte dei sobborghi dell'Accademia",
-        "offset": "0x8850E",
-        "bit": 7
+        "flag_id": 1039430800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Chiesa di Bellum",
-        "offset": "0x6FBFD",
-        "bit": 7
+        "flag_id": 1036480800
       },
       {
         "boss": "Uccello della morte",
         "place": "Isola panoramica",
-        "offset": "0x77033",
-        "bit": 7
+        "flag_id": 1037420800
       },
       {
         "boss": "Uccello del rito di morte",
         "place": "Sobborghi dell'Accademia settentrionali",
-        "offset": "0x6F1BC",
-        "bit": 7
+        "flag_id": 1036450800
       },
       {
         "boss": "Cacciatore di globi cinerei",
         "place": "Chiesa dei voti",
-        "offset": "0x77DDF",
-        "bit": 7
+        "flag_id": 1037460800
       },
       {
         "boss": "Guardia reale Loretta",
         "place": "Maniero cariano",
-        "offset": "0x67A1B",
-        "bit": 7
+        "flag_id": 1035500800
       },
       {
         "boss": "Drago di magma Makar",
         "place": "Precipizio sulle rovine",
-        "offset": "0x15DD8F",
-        "bit": 7
+        "flag_id": 39200800
       }
     ]
   },
@@ -404,14 +348,12 @@
       {
         "boss": "Drago di scintipietra Adula",
         "place": "Altare del chiaro di luna",
-        "offset": "0x5D60B",
-        "bit": 7
+        "flag_id": 1034420800
       },
       {
         "boss": "Alecto, capo dei Neri Coltelli",
         "place": "Galera eterna del capo",
-        "offset": "0x54D53",
-        "bit": 7
+        "flag_id": 1033420800
       }
     ]
   },
@@ -424,15 +366,13 @@
       {
         "boss": "Lupo rosso di Radagon",
         "place": "",
-        "offset": "0x15814C",
-        "bit": 5
+        "flag_id": 14000850
       },
       {
         "boss": "Rennala, Regina del plenilunio",
         "place": "",
-        "offset": "0x158146",
-        "bit": 7,
-        "rememberance": 2
+        "flag_id": 14000800,
+        "rememberance": 1
       }
     ]
   },
@@ -450,87 +390,73 @@
       {
         "boss": "Drago di magma",
         "place": "Galleria di Gael",
-        "offset": "0x179DCD",
-        "bit": 7
+        "flag_id": 32070800
       },
       {
         "boss": "Guardiano sepolcrale dell'Albero Madre (spada) & Guardiano sepolcrale dell'Albero Madre (scettro)",
         "place": "Catacombe dell'Albero Madre minore",
-        "offset": "0x16B949",
-        "bit": 7
+        "flag_id": 30140800
       },
       {
         "boss": "Duellante frenetico",
         "place": "Caverna carceraria",
-        "offset": "0x17577D",
-        "bit": 7
+        "flag_id": 31210800
       },
       {
         "boss": "Ombra cimiteriale",
         "place": "Catacombe di Caelid",
-        "offset": "0x16BDAE",
-        "bit": 7
+        "flag_id": 30150800
       },
       {
         "boss": "Belva meteoritica",
         "place": "Galleria di cristallo di Sellia",
-        "offset": "0x17A232",
-        "bit": 7
+        "flag_id": 32080800
       },
       {
         "boss": "Testa di zucca (martello) & Testa di zucca (flagello)",
         "place": "Rovine di Caelem",
-        "offset": "0xD4945",
-        "bit": 7
+        "flag_id": 1048400800
       },
       {
         "boss": "Ekzykes decadente",
         "place": "Chiesa della pestilenza",
-        "offset": "0xD3F04",
-        "bit": 7
+        "flag_id": 1048370800
       },
       {
         "boss": "Monaco Nox & Spadaccina Nox",
         "place": "Sellia, città della stregoneria",
-        "offset": "0xDCE92",
-        "bit": 7
+        "flag_id": 1049390800
       },
       {
         "boss": "Comandante O'Neil",
         "place": "Palude di Aeonia",
-        "offset": "0xDCB27",
-        "bit": 7
+        "flag_id": 1049380800
       },
       {
         "boss": "Avatar putrescente",
         "place": "Albero Madre minore",
-        "offset": "0xCC08D",
-        "bit": 7
+        "flag_id": 1047400800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Strada maestra di Caelid meridionale",
-        "offset": "0xDC7BC",
-        "bit": 7
+        "flag_id": 1049370800
       },
       {
         "boss": "Uccello del rito di morte",
         "place": "Argine sud della palude di Aeonia",
-        "offset": "0xDC7C2",
-        "bit": 5
+        "flag_id": 1049370850
       },
       {
         "boss": "Cavaliere del Crogiolo & Guerriero aberrante",
         "place": "Castello di Mantorosso",
-        "offset": "0xED5C1",
-        "bit": 7
+        "flag_id": 1051360800
       },
       {
         "boss": "Radahn il Flagello celeste",
         "place": "Dune sibilanti",
-        "offset": "0x1A1B02",
-        "bit": 7,
-        "rememberance": 3
+        "flag_id": 1252380800,
+        "rememberance": 1
       }
     ]
   },
@@ -548,68 +474,57 @@
       {
         "boss": "Cavaliere marcescente (lancia) & Cavaliere marcescente (falcetto)",
         "place": "Caverna abbandonata",
-        "offset": "0x175318",
-        "bit": 7
+        "flag_id": 31200800
       },
       {
         "boss": "Cristalliano putrescente (lama circolare) & Cristalliano putrescente (lancia) & Cristalliano putrescente (bastone)",
         "place": "Ritiro di Sellia",
-        "offset": "0x172FF0",
-        "bit": 7
+        "flag_id": 31110800
       },
       {
         "boss": "Bestia umana di Farum Azula (mannaia) & Bestia umana di Farum Azula (coltello da lancio)",
         "place": "Caverna di Dracotumulo",
-        "offset": "0x172B8B",
-        "bit": 7
+        "flag_id": 31100800
       },
       {
         "boss": "Spirito arboreo putrescente",
         "place": "Catacombe dei caduti in guerra",
-        "offset": "0x16C213",
-        "bit": 7
+        "flag_id": 30160800
       },
       {
         "boss": "Apostolo Sacriderma",
         "place": "Torre divina di Caelid",
-        "offset": "0x16310E",
-        "bit": 7
+        "flag_id": 34130800
       },
       {
         "boss": "Seguace della Lama nera",
         "place": "Santuario ferino",
-        "offset": "0xEEDAE",
-        "bit": 7
+        "flag_id": 1051430800
       },
       {
         "boss": "Drago volante Greyll",
         "place": "Dracotumulo di Greyoll",
-        "offset": "0xF6F90",
-        "bit": 7
+        "flag_id": 1052410800
       },
       {
         "boss": "Avatar putrescente",
         "place": "Albero Madre minore",
-        "offset": "0xEE36D",
-        "bit": 7
+        "flag_id": 1051400800
       },
       {
         "boss": "Mago guerriero Hugues",
         "place": "Galera eterna di Sellia",
-        "offset": "0xDCE98",
-        "bit": 5
+        "flag_id": 1049390850
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Guglia di Lenne",
-        "offset": "0xF6F96",
-        "bit": 5
+        "flag_id": 1052410850
       },
       {
         "boss": "Cacciatore di globi cinerei",
         "place": "Capanna del mercante solitario",
-        "offset": "0xD4CB0",
-        "bit": 7
+        "flag_id": 1048410800
       }
     ]
   },
@@ -629,122 +544,102 @@
       {
         "boss": "Necromante Garris",
         "place": "Caverna del savio",
-        "offset": "0x174EB9",
-        "bit": 5
+        "flag_id": 31190850
       },
       {
         "boss": "Assassina dei Neri Coltelli",
         "place": "Caverna del savio",
-        "offset": "0x174EB3",
-        "bit": 7
+        "flag_id": 31190800
       },
       {
         "boss": "Troll scavapietra",
         "place": "Vecchia galleria di Altus",
-        "offset": "0x17909E",
-        "bit": 7
+        "flag_id": 32040800
       },
       {
         "boss": "Cristalliano (lancia) & Cristalliano (lama circolare)",
         "place": "Galleria di Altus",
-        "offset": "0x179968",
-        "bit": 7
+        "flag_id": 32050800
       },
       {
         "boss": "Assassina dei Neri Coltelli",
         "place": "Tomba dell'eroe beato",
-        "offset": "0x92C89",
-        "bit": 7
+        "flag_id": 1040520800
       },
       {
         "boss": "Antico eroe di Zamor",
         "place": "Tomba dell'eroe beato",
-        "offset": "0x169EEB",
-        "bit": 7
+        "flag_id": 30080800
       },
       {
         "boss": "Ammazzapresagi & Miranda il bocciolo avvizzito",
         "place": "Grotta del profumiere",
-        "offset": "0x174A4E",
-        "bit": 7
+        "flag_id": 31180800
       },
       {
         "boss": "Profumiera Tricia & Guerriero aberrante",
         "place": "Catacombe ripugnanti",
-        "offset": "0x16B07F",
-        "bit": 7
+        "flag_id": 30120800
       },
       {
         "boss": "Guardiano sepolcrale dell'Albero Madre",
         "place": "Catacombe di Wyndham",
-        "offset": "0x169A86",
-        "bit": 7
+        "flag_id": 30070800
       },
       {
         "boss": "Lansseax, drago antico",
         "place": "Sentiero lungo il baluardo",
-        "offset": "0x9B541",
-        "bit": 7
+        "flag_id": 1041520800
       },
       {
         "boss": "Regina semiumana Gilika",
         "place": "Rovine di Lux",
-        "offset": "0x817AE",
-        "bit": 7
+        "flag_id": 1038510800
       },
       {
         "boss": "Sanguigno nobiliare",
         "place": "Rovine di Risangue",
-        "offset": "0x92FF4",
-        "bit": 7
+        "flag_id": 1040530800
       },
       {
         "boss": "Apostolo Sacriderma",
         "place": "Dominula, villaggio dei mulini",
-        "offset": "0xA483A",
-        "bit": 7
+        "flag_id": 1042550800
       },
       {
         "boss": "Belva meteoritica",
         "place": "Cratere di stella cadente",
-        "offset": "0x9AE6B",
-        "bit": 7
+        "flag_id": 1041500800
       },
       {
         "boss": "Sentinella dell'albero(x2)",
         "place": "",
-        "offset": "0x9B1D6",
-        "bit": 7
+        "flag_id": 1041510800
       },
       {
         "boss": "Marinaio tibiale",
         "place": "Rovine di Wyndham",
-        "offset": "0x81B19",
-        "bit": 7
+        "flag_id": 1038520800
       },
       {
         "boss": "Facciadiverme",
         "place": "Albero Madre minore",
-        "offset": "0x9B8AC",
-        "bit": 7
+        "flag_id": 1041530800
       },
       {
         "boss": "Godefroy l'Innestato",
         "place": "Galera eterna del lignaggio aureo",
-        "offset": "0x89CFB",
-        "bit": 7
+        "flag_id": 1039500800
       },
       {
         "boss": "Cavaliere notturno",
         "place": "Raccordo della strada di Altus",
-        "offset": "0x8A066",
-        "bit": 7
+        "flag_id": 1039510800
       },
       {
         "boss": "Elemer del rovo",
         "place": "Castellombroso",
-        "offset": "0x8AAA7",
-        "bit": 7
+        "flag_id": 1039540800
       }
     ]
   },
@@ -760,38 +655,32 @@
       {
         "boss": "Campione di onice",
         "place": "Galleria sigillata",
-        "offset": "0x162CA9",
-        "bit": 7
+        "flag_id": 34120800
       },
       {
         "boss": "Guardia sepolcrale duellante",
         "place": "Tomba secondaria di Auriza",
-        "offset": "0x16B4E4",
-        "bit": 7
+        "flag_id": 30130800
       },
       {
         "boss": "Cavaliere del Crogiolo & Cavaliere del Crogiolo Ordovis",
         "place": "Tomba dell'eroe di Auriza",
-        "offset": "0x16A7B5",
-        "bit": 7
+        "flag_id": 30100800
       },
       {
         "boss": "Sentinella draconica dell'albero",
         "place": "Baluardo della capitale",
-        "offset": "0xBD821",
-        "bit": 7
+        "flag_id": 1045520800
       },
       {
         "boss": "Uccello della morte",
         "place": "Capanna del maestro guerriero",
-        "offset": "0xB52D4",
-        "bit": 7
+        "flag_id": 1044530800
       },
       {
         "boss": "Cacciatore di globi cinerei",
         "place": "Capanna del mercante eremita",
-        "offset": "0xACA1C",
-        "bit": 7
+        "flag_id": 1043530800
       }
     ]
   },
@@ -807,44 +696,37 @@
       {
         "boss": "Regina semiumana Margot",
         "place": "Caverna del vulcano",
-        "offset": "0x172726",
-        "bit": 7
+        "flag_id": 31090800
       },
       {
         "boss": "Seguace della marcescenza(x2)",
         "place": "Caverna di Thermae",
-        "offset": "0x171E5C",
-        "bit": 7
+        "flag_id": 31070800
       },
       {
         "boss": "Lupo rosso del campione",
         "place": "Tomba dell'eroe di Gelmir",
-        "offset": "0x16A350",
-        "bit": 7
+        "flag_id": 30090800
       },
       {
         "boss": "Drago di magma",
         "place": "Forte Laiedd",
-        "offset": "0x6845C",
-        "bit": 7
+        "flag_id": 1035530800
       },
       {
         "boss": "Belva meteoritica adulta",
         "place": "Nono accampamento sul Gelmir",
-        "offset": "0x7107F",
-        "bit": 7
+        "flag_id": 1036540800
       },
       {
         "boss": "Regina semiumana Maggie",
         "place": "Villaggio secluso",
-        "offset": "0x795CC",
-        "bit": 7
+        "flag_id": 1037530800
       },
       {
         "boss": "Spirito arboreo ulcerato",
         "place": "Albero Madre minore",
-        "offset": "0x79938",
-        "bit": 5
+        "flag_id": 1037540810
       }
     ]
   },
@@ -857,21 +739,18 @@
       {
         "boss": "Vergine rapitrice (falcetto oscillante) & Vergine rapitrice (ruota)",
         "place": "Stanza sotterranea dell'inquisizione",
-        "offset": "0x159BAB",
-        "bit": 3
+        "flag_id": 16000860
       },
       {
         "boss": "Nobile Sacriderma",
         "place": "Tempio di Eiglay",
-        "offset": "0x159BAA",
-        "bit": 5
+        "flag_id": 16000850
       },
       {
         "boss": "Serpente divoratore di dei & Rykard, signore della blasfemia",
         "place": "Villa Vulcano",
-        "offset": "0x159BA4",
-        "bit": 7,
-        "rememberance": 4
+        "flag_id": 16000800,
+        "rememberance": 1
       }
     ]
   },
@@ -887,33 +766,28 @@
       {
         "boss": "Esgar, sacerdote del sangue",
         "place": "Catacombe di Leyndell",
-        "offset": "0x15D066",
-        "bit": 5
+        "flag_id": 35000850
       },
       {
         "boss": "Gemello implacabile(x2)",
         "place": "Torre divina di Altus est",
-        "offset": "0x163579",
-        "bit": 5
+        "flag_id": 34140850
       },
       {
         "boss": "Mohg il Presagio",
         "place": "Cattedrale del rinnegato",
-        "offset": "0x15D060",
-        "bit": 7
+        "flag_id": 35000800
       },
       {
         "boss": "Godfrey, primo Lord ancestrale",
         "place": "Santuario dell'Albero Madre",
-        "offset": "0x152DCD",
-        "bit": 5
+        "flag_id": 11000850
       },
       {
         "boss": "Morgott il Re Presagio",
         "place": "Trono ancestrale",
-        "offset": "0x152DC7",
-        "bit": 7,
-        "rememberance": 5
+        "flag_id": 11000800,
+        "rememberance": 1
       }
     ]
   },
@@ -926,14 +800,12 @@
       {
         "boss": "Cavaliere notturno",
         "place": "",
-        "offset": "0xD6EDE",
-        "bit": 7
+        "flag_id": 1048510800
       },
       {
         "boss": "Seguace della Lama nera",
         "place": "",
-        "offset": "0xDFB01",
-        "bit": 7
+        "flag_id": 1049520800
       }
     ]
   },
@@ -950,57 +822,48 @@
       {
         "boss": "Antico eroe di Zamor",
         "place": "Tomba del conquistatore di giganti",
-        "offset": "0x16C678",
-        "bit": 7
+        "flag_id": 30170800
       },
       {
         "boss": "Spirito arboreo ulcerato",
         "place": "Catacombe della vetta dei giganti",
-        "offset": "0x16CADD",
-        "bit": 7
+        "flag_id": 30180800
       },
       {
         "boss": "Apostolo Sacriderma & Nobile Sacriderma & Lumaca evoca-spiriti",
         "place": "Caverna dell'evoca-spiriti",
-        "offset": "0x175BE2",
-        "bit": 7
+        "flag_id": 31220800
       },
       {
         "boss": "Borealis la nebbia gelida",
         "place": "Lago ghiacciato",
-        "offset": "0x1AA7A2",
-        "bit": 7
+        "flag_id": 1254560800
       },
       {
         "boss": "Avatar dell'Albero Madre",
         "place": "Albero Madre minore",
-        "offset": "0xFA2D5",
-        "bit": 7
+        "flag_id": 1052560800
       },
       {
         "boss": "Vyke, cavaliere della Tavola rotonda",
         "place": "Galera eterna del Lord pretendente",
-        "offset": "0x102B8D",
-        "bit": 7
+        "flag_id": 1053560800
       },
       {
         "boss": "Uccello del rito di morte",
         "place": "",
-        "offset": "0xE94D0",
-        "bit": 7
+        "flag_id": 1050570800
       },
       {
         "boss": "Comandante Niall",
         "place": "Castel Sol",
-        "offset": "0xF1D88",
-        "bit": 7
+        "flag_id": 1051570800
       },
       {
         "boss": "Gigante di fuoco",
         "place": "Picco del fuoco",
-        "offset": "0x1AAC07",
-        "bit": 7,
-        "rememberance": 6
+        "flag_id": 1252520800,
+        "rememberance": 1
       }
     ]
   },
@@ -1013,22 +876,19 @@
       {
         "boss": "Duo Sacriderma",
         "place": "Altare del tempio del drago",
-        "offset": "0x15741D",
-        "bit": 5
+        "flag_id": 13000850
       },
       {
         "boss": "Lord draconico Placidusax",
         "place": "Prossimità del granponte",
-        "offset": "0x15741A",
-        "bit": 1,
-        "rememberance": 11
+        "flag_id": 13000830,
+        "rememberance": 1
       },
       {
         "boss": "Maliketh la Lama nera",
         "place": "",
-        "offset": "0x157417",
-        "bit": 7,
-        "rememberance": 12
+        "flag_id": 13000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1045,50 +905,42 @@
       {
         "boss": "Lacrima riflessa smarrita",
         "place": "Sentiero segreto del Sacro Albero",
-        "offset": "0x16D3A7",
-        "bit": 7
+        "flag_id": 30200800
       },
       {
         "boss": "Guardia sepolcrale duellante putrescente",
         "place": "Catacombe dei campi di neve consacrati",
-        "offset": "0x16CF42",
-        "bit": 7
+        "flag_id": 30190800
       },
       {
         "boss": "Astel, stelle di tenebra",
         "place": "Galleria di Yelough Anix",
-        "offset": "0x17A697",
-        "bit": 7
+        "flag_id": 32110800
       },
       {
         "boss": "Crociato della progenie",
         "place": "Caverna dei desolati",
-        "offset": "0x173455",
-        "bit": 7
+        "flag_id": 31120800
       },
       {
         "boss": "Drago gigante Theodorix",
         "place": "",
-        "offset": "0xE9165",
-        "bit": 7
+        "flag_id": 1050560800
       },
       {
         "boss": "Avatar putrescente",
         "place": "Albero Madre minore",
-        "offset": "0xE94D6",
-        "bit": 5
+        "flag_id": 1050570850
       },
       {
         "boss": "Cavaliere notturno (falcione) & Cavaliere notturno (flagello)",
         "place": "Campi di neve consacrati interni",
-        "offset": "0x1ABD9B",
-        "bit": 7
+        "flag_id": 1248550800
       },
       {
         "boss": "Uccello del rito di morte",
         "place": "",
-        "offset": "0xD8360",
-        "bit": 7
+        "flag_id": 1048570800
       }
     ]
   },
@@ -1101,15 +953,13 @@
       {
         "boss": "Loretta, cavaliere del Sacro Albero",
         "place": "",
-        "offset": "0x158E7B",
-        "bit": 5
+        "flag_id": 15000850
       },
       {
         "boss": "Malenia, spada di Miquella & Malenia, Dea della marcescenza",
         "place": "",
-        "offset": "0x158E75",
-        "bit": 7,
-        "rememberance": 13
+        "flag_id": 15000800,
+        "rememberance": 1
       }
     ]
   },
@@ -1123,33 +973,28 @@
       {
         "boss": "Soldato draconide",
         "place": "Sponda del fiume Siofra",
-        "offset": "0x1550F2",
-        "bit": 1
+        "flag_id": 12020830
       },
       {
         "boss": "Spirito ancestrale",
         "place": "Sponda del fiume Siofra",
-        "offset": "0x156B4D",
-        "bit": 7
+        "flag_id": 12080800
       },
       {
         "boss": "Lacrima riflessa",
         "place": "",
-        "offset": "0x1550F5",
-        "bit": 5
+        "flag_id": 12020850
       },
       {
         "boss": "Spirito ancestrale regale",
         "place": "Campi del Sacro Corno",
-        "offset": "0x156FB2",
-        "bit": 7,
-        "rememberance": 7
+        "flag_id": 12090800,
+        "rememberance": 1
       },
       {
         "boss": "Audace gargoyle & Audace gargoyle (lama gemella)",
         "place": "Acquedotto di Siofra",
-        "offset": "0x1550EF",
-        "bit": 7
+        "flag_id": 12020800
       }
     ]
   },
@@ -1162,9 +1007,8 @@
       {
         "boss": "Mohg, Signore del sangue",
         "place": "",
-        "offset": "0x155E1E",
-        "bit": 7,
-        "rememberance": 10
+        "flag_id": 12050800,
+        "rememberance": 1
       }
     ]
   },
@@ -1178,21 +1022,18 @@
       {
         "boss": "Soldato draconide di Nokstella",
         "place": "",
-        "offset": "0x154C8A",
-        "bit": 7
+        "flag_id": 12010800
       },
       {
         "boss": "Soldato draconide",
         "place": "",
-        "offset": "0x154C90",
-        "bit": 5
+        "flag_id": 12010850
       },
       {
         "boss": "Astel, progenie del vuoto",
         "place": "Grande chiostro",
-        "offset": "0x1559B9",
-        "bit": 7,
-        "rememberance": 8
+        "flag_id": 12040800,
+        "rememberance": 1
       }
     ]
   },
@@ -1205,21 +1046,18 @@
       {
         "boss": "Cavaliere del Crogiolo Siluria",
         "place": "",
-        "offset": "0x155520",
-        "bit": 1
+        "flag_id": 12030390
       },
       {
         "boss": "Campione di Fia & Stregone Rogier & Lionel cuor di leone",
         "place": "",
-        "offset": "0x155554",
-        "bit": 7
+        "flag_id": 12030800
       },
       {
         "boss": "Necrodrago Fortissax",
         "place": "",
-        "offset": "0x15555A",
-        "bit": 5,
-        "rememberance": 9
+        "flag_id": 12030850,
+        "rememberance": 1
       }
     ]
   },
@@ -1233,22 +1071,19 @@
       {
         "boss": "Ser Gideon Ofnir l'Onnisciente",
         "place": "Santuario dell'Albero Madre",
-        "offset": "0x153232",
-        "bit": 5
+        "flag_id": 11050850
       },
       {
         "boss": "Godfrey, primo Lord ancestrale",
         "place": "Trono ancestrale",
-        "offset": "0x15322C",
-        "bit": 7,
-        "rememberance": 14
+        "flag_id": 11050800,
+        "rememberance": 1
       },
       {
         "boss": "Radagon dell'Ordine aureo & Belva ancestrale",
         "place": "Marika della Disgregazione",
-        "offset": "0x15C331",
-        "bit": 7,
-        "rememberance": 15
+        "flag_id": 19000800,
+        "rememberance": 1
       }
     ]
   }
