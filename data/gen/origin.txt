@@ -126,7 +126,7 @@ Capital Outskirts|3010,3013,3412,6301:
 + Grave Warden Duelist|Auriza Side Tomb:30130800
 + Crucible Knight|Crucible Knight Ordovis|Auriza Hero's Grave:30100800
 + Draconic Tree Sentinel|Capital Rampart:1045520800
-+ Deathbird|Warmaster's Shack:1044530800
++ Deathbird:1044530800
 + Bell Bearing Hunter|Hermit Merchant's Shack:1043530800
 
 Mt. Gelmir|3009,3107,3109,6302:
