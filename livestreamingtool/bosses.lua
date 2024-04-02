@@ -1,5 +1,6 @@
 local cjson = require('cjson')
 local only_rememberance = config.bosses.only_rememberance
+local max_display_count = config.bosses.max_display_count
 
 -- addresses
 local address_table = nil
@@ -144,9 +145,7 @@ local function update()
     if count == last_count then return end
     last_count = count
     f = io.open(config.output_folder .. 'bosses.txt', 'w')
-    if f == nil then
-      return
-    end
+    if f == nil then return end
     f:write(string.format('追忆Boss: %d/%d\n', count, rememberance_boss_count))
     for _, v in pairs(cbosses) do
       f:write(string.format('%s %s\n', v[1], v[2]))
@@ -154,11 +153,18 @@ local function update()
   else
     local rcount = 0
     local region_bosses = {}
+    local other_bosses = {}
     local r = regions[get_map_area() // 1000]
+    local count_left
+    if r then
+      count_left = max_display_count - #bosses[r]
+    else
+      count_left = max_display_count
+    end
     for i, v in ipairs(bosses) do
       local is_current = i == r
       for _, v2 in pairs(v) do
-        if (read_flag(v2.offset) & v2.bit) > 0 then
+        if (read_flag(v2.offset) & v2.bit) ~= 0 then
           count = count + 1
           if is_current then
             rcount = rcount + 1
@@ -167,6 +173,9 @@ local function update()
         else
           if is_current then
             region_bosses[#region_bosses + 1] = {'☐', v2.boss, v2.place}
+          elseif count_left > 0 then
+            count_left = count_left - 1
+            other_bosses[#other_bosses + 1] = {'☐', v2.boss, v2.place, r}
           end
         end
       end
@@ -180,13 +189,25 @@ local function update()
     end
     f:write(string.format('全Boss: %d/%d\n', count, boss_count))
     if r ~= nil then
-      f:write(string.format('%sBoss: %d/%d\n', region_name[r], rcount, #bosses[r]))
+      f:write(string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r]))
       for _, v in pairs(region_bosses) do
         if #v[3] > 0 then
-          f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
+          f:write(string.format('  %s %s - %s\n', v[1], v[2], v[3]))
         else
-          f:write(string.format('%s %s\n', v[1], v[2]))
+          f:write(string.format('  %s %s\n', v[1], v[2]))
         end
+      end
+    end
+    local last_region = -1
+    for _, v in pairs(other_bosses) do
+      if last_region ~= v[4] then
+        last_region = v[4]
+        f:write(string.format('%s:\n', region_name[last_region]))
+      end
+      if #v[3] > 0 then
+        f:write(string.format('  %s %s - %s\n', v[1], v[2], v[3]))
+      else
+        f:write(string.format('  %s %s\n', v[1], v[2]))
       end
     end
   end

@@ -15,6 +15,10 @@ items=true
 [bosses]
 ; Show only rememberance bosses
 only_rememberance=true
+; Max display count for non-rememberance mode.
+; Local area bosses are always fully displayed, and other alive bosses are
+; displayed up to this count.
+max_display_count=20
 
 [items]
 ; Show weapon collection progress
