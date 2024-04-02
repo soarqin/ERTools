@@ -13,7 +13,8 @@ local script_directory = string.sub(current_script, 1, #current_script - #script
 -- load process and plugins
 process = require('common.process')
 util = require('common.util')
-config = require(script_directory .. '_config_')
+inifile = require('common.inifile')
+config = inifile.parse('livestreamingtool.ini')
 lfs.mkdir(config.output_folder)
 local plugins = {}
 print('+ Loading plugins...')

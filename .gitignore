@@ -41,3 +41,6 @@ luac.out
 
 # Output files
 /output/
+
+# .ini
+/*.ini
