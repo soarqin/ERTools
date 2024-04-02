@@ -372,7 +372,7 @@
         "boss": "Rennala, Królowa Pełni Księżyca",
         "place": "",
         "flag_id": 14000800,
-        "rememberance": 1
+        "rememberance": 2
       }
     ]
   },
@@ -456,7 +456,7 @@
         "boss": "Radahn, Gwiezdna Plaga",
         "place": "Zawodzące Wydmy",
         "flag_id": 1252380800,
-        "rememberance": 1
+        "rememberance": 3
       }
     ]
   },
@@ -750,7 +750,7 @@
         "boss": "Wężowy pożeracz bogów & Rykard, Pan Bluźnierstwa",
         "place": "Wulkaniczny Dwór",
         "flag_id": 16000800,
-        "rememberance": 1
+        "rememberance": 5
       }
     ]
   },
@@ -787,7 +787,7 @@
         "boss": "Morgott, Król Omenów",
         "place": "Eldeński Tron",
         "flag_id": 11000800,
-        "rememberance": 1
+        "rememberance": 4
       }
     ]
   },
@@ -863,7 +863,7 @@
         "boss": "Ognisty olbrzym",
         "place": "Szczyt Płomienia",
         "flag_id": 1252520800,
-        "rememberance": 1
+        "rememberance": 6
       }
     ]
   },
@@ -882,13 +882,13 @@
         "boss": "Placidusax, Władca Smoków",
         "place": "Przy wielkim moście",
         "flag_id": 13000830,
-        "rememberance": 1
+        "rememberance": 12
       },
       {
         "boss": "Maliketh, Czarna Klinga",
         "place": "",
         "flag_id": 13000800,
-        "rememberance": 1
+        "rememberance": 11
       }
     ]
   },
@@ -959,7 +959,7 @@
         "boss": "Malenia, Miecz Miquelli & Malenia, Bogini Zgnilizny",
         "place": "",
         "flag_id": 15000800,
-        "rememberance": 1
+        "rememberance": 13
       }
     ]
   },
@@ -989,7 +989,7 @@
         "boss": "Duch królewskiego przodka",
         "place": "Świątynia Poroża",
         "flag_id": 12090800,
-        "rememberance": 1
+        "rememberance": 7
       },
       {
         "boss": "Nieustraszony gargulec & Nieustraszony gargulec (podwójne ostrze)",
@@ -1008,7 +1008,7 @@
         "boss": "Mohg, Pan Krwi",
         "place": "",
         "flag_id": 12050800,
-        "rememberance": 1
+        "rememberance": 10
       }
     ]
   },
@@ -1033,7 +1033,7 @@
         "boss": "Astel, Zrodzony z Pustki",
         "place": "Wielki Klasztor",
         "flag_id": 12040800,
-        "rememberance": 1
+        "rememberance": 8
       }
     ]
   },
@@ -1057,7 +1057,7 @@
         "boss": "Drakolicz Fortissax",
         "place": "",
         "flag_id": 12030850,
-        "rememberance": 1
+        "rememberance": 9
       }
     ]
   },
@@ -1077,13 +1077,13 @@
         "boss": "Godfrey, Pierwszy Eldeński Władca",
         "place": "Eldeński Tron",
         "flag_id": 11050800,
-        "rememberance": 1
+        "rememberance": 14
       },
       {
         "boss": "Radagon ze Złotego Porządku & Eldeńska Bestia",
         "place": "Roztrzaskana Marika",
         "flag_id": 19000800,
-        "rememberance": 1
+        "rememberance": 15
       }
     ]
   }

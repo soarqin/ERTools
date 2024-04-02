@@ -372,7 +372,7 @@
         "boss": "Rennala, Regina del plenilunio",
         "place": "",
         "flag_id": 14000800,
-        "rememberance": 1
+        "rememberance": 2
       }
     ]
   },
@@ -456,7 +456,7 @@
         "boss": "Radahn il Flagello celeste",
         "place": "Dune sibilanti",
         "flag_id": 1252380800,
-        "rememberance": 1
+        "rememberance": 3
       }
     ]
   },
@@ -750,7 +750,7 @@
         "boss": "Serpente divoratore di dei & Rykard, signore della blasfemia",
         "place": "Villa Vulcano",
         "flag_id": 16000800,
-        "rememberance": 1
+        "rememberance": 5
       }
     ]
   },
@@ -787,7 +787,7 @@
         "boss": "Morgott il Re Presagio",
         "place": "Trono ancestrale",
         "flag_id": 11000800,
-        "rememberance": 1
+        "rememberance": 4
       }
     ]
   },
@@ -863,7 +863,7 @@
         "boss": "Gigante di fuoco",
         "place": "Picco del fuoco",
         "flag_id": 1252520800,
-        "rememberance": 1
+        "rememberance": 6
       }
     ]
   },
@@ -882,13 +882,13 @@
         "boss": "Lord draconico Placidusax",
         "place": "Prossimità del granponte",
         "flag_id": 13000830,
-        "rememberance": 1
+        "rememberance": 12
       },
       {
         "boss": "Maliketh la Lama nera",
         "place": "",
         "flag_id": 13000800,
-        "rememberance": 1
+        "rememberance": 11
       }
     ]
   },
@@ -959,7 +959,7 @@
         "boss": "Malenia, spada di Miquella & Malenia, Dea della marcescenza",
         "place": "",
         "flag_id": 15000800,
-        "rememberance": 1
+        "rememberance": 13
       }
     ]
   },
@@ -989,7 +989,7 @@
         "boss": "Spirito ancestrale regale",
         "place": "Campi del Sacro Corno",
         "flag_id": 12090800,
-        "rememberance": 1
+        "rememberance": 7
       },
       {
         "boss": "Audace gargoyle & Audace gargoyle (lama gemella)",
@@ -1008,7 +1008,7 @@
         "boss": "Mohg, Signore del sangue",
         "place": "",
         "flag_id": 12050800,
-        "rememberance": 1
+        "rememberance": 10
       }
     ]
   },
@@ -1033,7 +1033,7 @@
         "boss": "Astel, progenie del vuoto",
         "place": "Grande chiostro",
         "flag_id": 12040800,
-        "rememberance": 1
+        "rememberance": 8
       }
     ]
   },
@@ -1057,7 +1057,7 @@
         "boss": "Necrodrago Fortissax",
         "place": "",
         "flag_id": 12030850,
-        "rememberance": 1
+        "rememberance": 9
       }
     ]
   },
@@ -1077,13 +1077,13 @@
         "boss": "Godfrey, primo Lord ancestrale",
         "place": "Trono ancestrale",
         "flag_id": 11050800,
-        "rememberance": 1
+        "rememberance": 14
       },
       {
         "boss": "Radagon dell'Ordine aureo & Belva ancestrale",
         "place": "Marika della Disgregazione",
         "flag_id": 19000800,
-        "rememberance": 1
+        "rememberance": 15
       }
     ]
   }

@@ -372,7 +372,7 @@
         "boss": "“满月女王”蕾娜菈",
         "place": "",
         "flag_id": 14000800,
-        "rememberance": 1
+        "rememberance": 2
       }
     ]
   },
@@ -456,7 +456,7 @@
         "boss": "“碎星”拉塔恩",
         "place": "恸哭沙丘",
         "flag_id": 1252380800,
-        "rememberance": 1
+        "rememberance": 3
       }
     ]
   },
@@ -750,7 +750,7 @@
         "boss": "噬神大蛇 & “亵渎君王”拉卡德",
         "place": "火山官邸",
         "flag_id": 16000800,
-        "rememberance": 1
+        "rememberance": 5
       }
     ]
   },
@@ -787,7 +787,7 @@
         "boss": "“恶兆王”蒙葛特",
         "place": "艾尔登宝座",
         "flag_id": 11000800,
-        "rememberance": 1
+        "rememberance": 4
       }
     ]
   },
@@ -863,7 +863,7 @@
         "boss": "火焰巨人",
         "place": "火焰之巅",
         "flag_id": 1252520800,
-        "rememberance": 1
+        "rememberance": 6
       }
     ]
   },
@@ -882,13 +882,13 @@
         "boss": "“龙王”普拉顿桑克斯",
         "place": "大桥侧边",
         "flag_id": 13000830,
-        "rememberance": 1
+        "rememberance": 12
       },
       {
         "boss": "“黑剑”玛利喀斯",
         "place": "",
         "flag_id": 13000800,
-        "rememberance": 1
+        "rememberance": 11
       }
     ]
   },
@@ -959,7 +959,7 @@
         "boss": "“米凯拉的锋刃”玛莲妮亚 & “腐败女神”玛莲妮亚",
         "place": "",
         "flag_id": 15000800,
-        "rememberance": 1
+        "rememberance": 13
       }
     ]
   },
@@ -989,7 +989,7 @@
         "boss": "祖灵之王",
         "place": "角骸灵地",
         "flag_id": 12090800,
-        "rememberance": 1
+        "rememberance": 7
       },
       {
         "boss": "英雄石像鬼 & 英雄石像鬼（双头剑）",
@@ -1008,7 +1008,7 @@
         "boss": "“鲜血君王”蒙格",
         "place": "",
         "flag_id": 12050800,
-        "rememberance": 1
+        "rememberance": 10
       }
     ]
   },
@@ -1033,7 +1033,7 @@
         "boss": "“黑暗弃子”艾丝缇",
         "place": "大回廊",
         "flag_id": 12040800,
-        "rememberance": 1
+        "rememberance": 8
       }
     ]
   },
@@ -1057,7 +1057,7 @@
         "boss": "“死龙”弗尔桑克斯",
         "place": "",
         "flag_id": 12030850,
-        "rememberance": 1
+        "rememberance": 9
       }
     ]
   },
@@ -1077,13 +1077,13 @@
         "boss": "“初始之王”葛孚雷",
         "place": "艾尔登宝座",
         "flag_id": 11050800,
-        "rememberance": 1
+        "rememberance": 14
       },
       {
         "boss": "“黄金律法”拉达冈 & 艾尔登之兽",
         "place": "濒毁玛莉卡",
         "flag_id": 19000800,
-        "rememberance": 1
+        "rememberance": 15
       }
     ]
   }

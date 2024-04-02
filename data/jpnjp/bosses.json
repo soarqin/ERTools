@@ -372,7 +372,7 @@
         "boss": "満月の女王、レナラ",
         "place": "",
         "flag_id": 14000800,
-        "rememberance": 1
+        "rememberance": 2
       }
     ]
   },
@@ -456,7 +456,7 @@
         "boss": "星砕きのラダーン",
         "place": "慟哭砂丘",
         "flag_id": 1252380800,
-        "rememberance": 1
+        "rememberance": 3
       }
     ]
   },
@@ -750,7 +750,7 @@
         "boss": "神喰らいの大蛇 & 冒涜の君主、ライカード",
         "place": "火山館",
         "flag_id": 16000800,
-        "rememberance": 1
+        "rememberance": 5
       }
     ]
   },
@@ -787,7 +787,7 @@
         "boss": "忌み王、モーゴット",
         "place": "エルデの王座",
         "flag_id": 11000800,
-        "rememberance": 1
+        "rememberance": 4
       }
     ]
   },
@@ -863,7 +863,7 @@
         "boss": "火の巨人",
         "place": "火の頂",
         "flag_id": 1252520800,
-        "rememberance": 1
+        "rememberance": 6
       }
     ]
   },
@@ -882,13 +882,13 @@
         "boss": "竜王プラキドサクス",
         "place": "大橋梁の脇",
         "flag_id": 13000830,
-        "rememberance": 1
+        "rememberance": 12
       },
       {
         "boss": "黒き剣のマリケス",
         "place": "",
         "flag_id": 13000800,
-        "rememberance": 1
+        "rememberance": 11
       }
     ]
   },
@@ -959,7 +959,7 @@
         "boss": "ミケラの刃、マレニア & 腐敗の女神、マレニア",
         "place": "",
         "flag_id": 15000800,
-        "rememberance": 1
+        "rememberance": 13
       }
     ]
   },
@@ -989,7 +989,7 @@
         "boss": "祖霊の王",
         "place": "角骸の霊場",
         "flag_id": 12090800,
-        "rememberance": 1
+        "rememberance": 7
       },
       {
         "boss": "英雄のガーゴイル & 英雄のガーゴイル：両刃剣",
@@ -1008,7 +1008,7 @@
         "boss": "血の君主、モーグ",
         "place": "",
         "flag_id": 12050800,
-        "rememberance": 1
+        "rememberance": 10
       }
     ]
   },
@@ -1033,7 +1033,7 @@
         "boss": "暗黒の落とし子、アステール",
         "place": "大回廊",
         "flag_id": 12040800,
-        "rememberance": 1
+        "rememberance": 8
       }
     ]
   },
@@ -1057,7 +1057,7 @@
         "boss": "死竜フォルサクス",
         "place": "",
         "flag_id": 12030850,
-        "rememberance": 1
+        "rememberance": 9
       }
     ]
   },
@@ -1077,13 +1077,13 @@
         "boss": "最初の王、ゴッドフレイ",
         "place": "エルデの王座",
         "flag_id": 11050800,
-        "rememberance": 1
+        "rememberance": 14
       },
       {
         "boss": "黄金律、ラダゴン & エルデの獣",
         "place": "壊れかけのマリカ",
         "flag_id": 19000800,
-        "rememberance": 1
+        "rememberance": 15
       }
     ]
   }

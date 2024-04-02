@@ -88,7 +88,7 @@ local function calculate_all_flag_offsets()
     for _, v2 in pairs(v) do
       v2.offset, v2.bit = calc_flag_offset_and_bit(v2.flag_id)
       if v2.bit == nil then
-        print(v2.boss, v2.flag_id, v2.offset, v2.bit)
+        print(string.format("Boss flag cannot be found: %s %d", v2.boss, v2.flag_id))
       end
     end
   end
@@ -175,7 +175,7 @@ local function update()
             region_bosses[#region_bosses + 1] = {'☐', v2.boss, v2.place}
           elseif count_left > 0 then
             count_left = count_left - 1
-            other_bosses[#other_bosses + 1] = {'☐', v2.boss, v2.place, r}
+            other_bosses[#other_bosses + 1] = {'☐', v2.boss, v2.place, i}
           end
         end
       end
@@ -192,9 +192,9 @@ local function update()
       f:write(string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r]))
       for _, v in pairs(region_bosses) do
         if #v[3] > 0 then
-          f:write(string.format('  %s %s - %s\n', v[1], v[2], v[3]))
+          f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
         else
-          f:write(string.format('  %s %s\n', v[1], v[2]))
+          f:write(string.format('%s %s\n', v[1], v[2]))
         end
       end
     end
@@ -205,9 +205,9 @@ local function update()
         f:write(string.format('%s:\n', region_name[last_region]))
       end
       if #v[3] > 0 then
-        f:write(string.format('  %s %s - %s\n', v[1], v[2], v[3]))
+        f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
       else
-        f:write(string.format('  %s %s\n', v[1], v[2]))
+        f:write(string.format('%s %s\n', v[1], v[2]))
       end
     end
   end

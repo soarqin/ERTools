@@ -68,7 +68,7 @@ Moonlight Altar|6202:
 
 Academy of Raya Lucaria|1400:
 + Red Wolf of Radagon:14000850
-+ Rennala, Queen of the Full Moon:14000800,1
++ Rennala, Queen of the Full Moon:14000800,2
 
 Caelid|3014,3015,3121,3207,3208,6400:
 + Magma Wyrm|Gael Tunnel:32070800
@@ -84,7 +84,7 @@ Caelid|3014,3015,3121,3207,3208,6400:
 + Night's Cavalry|Caelid Highway South:1049370800
 + Death Rite Bird|Southern Aeonia Swamp Bank:1049370850
 + Crucible Knight|Misbegotten Warrior|Redmane Castle:1051360800
-+ Starscourge Radahn|Wailing Dunes:1252380800,1
++ Starscourge Radahn|Wailing Dunes:1252380800,3
 
 Greyoll's Dragonbarrow|3016,3110,3111,3120,3413,6402:
 + Cleanrot Knight (Spear)|Cleanrot Knight (Sickle)|Abandoned Cave:31200800
@@ -141,14 +141,14 @@ Mt. Gelmir|3009,3107,3109,6302:
 Volcano Manor|1600:
 + Abductor Virgin (Swinging Sickle)|Abductor Virgin (Wheel)|Subterranean Inquisition Chamber:16000860
 + Godskin Noble|Temple of Eiglay:16000850
-+ God-Devouring Serpent|Rykard, Lord of Blasphemy|Volcano Manor:16000800,1
++ God-Devouring Serpent|Rykard, Lord of Blasphemy|Volcano Manor:16000800,5
 
 Leyndell, Royal Capital|1100,3414,3415,3500:
 + Esgar, Priest of Blood|Leyndell Catacombs:35000850
 + Fell Twin|(x2)|Divine Tower of East Altus:34140850
 + Mohg, the Omen|Cathedral of the Forsaken:35000800
 + Godfrey, First Elden Lord|Erdtree Sanctuary:11000850
-+ Morgott, the Omen King|Elden Throne:11000800,1
++ Morgott, the Omen King|Elden Throne:11000800,4
 
 Forbidden Lands|6500:
 + Night's Cavalry:1048510800
@@ -163,12 +163,12 @@ Mountaintops of the Giants|3017,3018,3122,6501,6502:
 + Roundtable Knight Vyke|Lord Contender's Evergaol:1053560800
 + Death Rite Bird:1050570800
 + Commander Niall|Castle Sol:1051570800
-+ Fire Giant|Flame Peak:1252520800,1
++ Fire Giant|Flame Peak:1252520800,6
 
 Crumbling Farum Azula|1300:
 + Godskin Duo|Dragon Temple Altar:13000850
-+ Dragonlord Placidusax|Beside the Great Bridge:13000830,1
-+ Maliketh, the Black Blade:13000800,1
++ Dragonlord Placidusax|Beside the Great Bridge:13000830,12
++ Maliketh, the Black Blade:13000800,11
 
 Consecrated Snowfield|3019,3020,3112,3211,6503:
 + Stray Mimic Tear|Hidden Path to the Haligtree:30200800
@@ -182,29 +182,29 @@ Consecrated Snowfield|3019,3020,3112,3211,6503:
 
 Miquella's Haligtree|1500:
 + Loretta, Knight of the Haligtree:15000850
-+ Malenia, Blade of Miquella|Malenia, Goddess of Rot:15000800,1
++ Malenia, Blade of Miquella|Malenia, Goddess of Rot:15000800,13
 
 Siofra River|1202,1207:
 + Dragonkin Soldier|Siofra River Bank:12020830
 + Ancestor Spirit|Siofra River Bank:12080800
 + Mimic Tear:12020850
-+ Regal Ancestor Spirit|Hallowhorn Grounds:12090800,1
++ Regal Ancestor Spirit|Hallowhorn Grounds:12090800,7
 + Valiant Gargoyle|Valiant Gargoyle (Twinblade)|Siofra Aqueduct:12020800
 
 Mohgwyn Dynasty Mausoleum|1205:
-+ Mohg, Lord of Blood:12050800,1
++ Mohg, Lord of Blood:12050800,10
 
 Ainsel River|1201,1204:
 + Dragonkin Soldier of Nokstella:12010800
 + Dragonkin Soldier:12010850
-+ Astel, Naturalborn of the Void|Grand Cloister:12040800,1
++ Astel, Naturalborn of the Void|Grand Cloister:12040800,8
 
 Deeproot Depths|1203:
 + Crucible Knight Siluria:12030390
 + Fia's Champion|Sorcerer Rogier|Lionel the Lionhearted:12030800
-+ Lichdragon Fortissax:12030850,1
++ Lichdragon Fortissax:12030850,9
 
 Leyndell, Ashen Capital|1105,1900:
 + Sir Gideon Ofnir, the All-Knowing|Erdtree Sanctuary:11050850
-+ Godfrey, First Elden Lord|Elden Throne:11050800,1
-+ Radagon of the Golden Order|Elden Beast|Fractured Marika:19000800,1
++ Godfrey, First Elden Lord|Elden Throne:11050800,14
++ Radagon of the Golden Order|Elden Beast|Fractured Marika:19000800,15

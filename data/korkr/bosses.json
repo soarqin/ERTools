@@ -372,7 +372,7 @@
         "boss": "만월의 여왕 레날라",
         "place": "",
         "flag_id": 14000800,
-        "rememberance": 1
+        "rememberance": 2
       }
     ]
   },
@@ -456,7 +456,7 @@
         "boss": "별 부수는 라단",
         "place": "통곡 사구",
         "flag_id": 1252380800,
-        "rememberance": 1
+        "rememberance": 3
       }
     ]
   },
@@ -750,7 +750,7 @@
         "boss": "신을 먹는 큰 뱀 & 모독의 군주 라이커드",
         "place": "화산관",
         "flag_id": 16000800,
-        "rememberance": 1
+        "rememberance": 5
       }
     ]
   },
@@ -787,7 +787,7 @@
         "boss": "흉조의 왕 모르고트",
         "place": "엘데의 왕좌",
         "flag_id": 11000800,
-        "rememberance": 1
+        "rememberance": 4
       }
     ]
   },
@@ -863,7 +863,7 @@
         "boss": "불의 거인",
         "place": "불의 정상",
         "flag_id": 1252520800,
-        "rememberance": 1
+        "rememberance": 6
       }
     ]
   },
@@ -882,13 +882,13 @@
         "boss": "용왕 플라키두삭스",
         "place": "대도량 옆",
         "flag_id": 13000830,
-        "rememberance": 1
+        "rememberance": 12
       },
       {
         "boss": "흑검 말리케스",
         "place": "",
         "flag_id": 13000800,
-        "rememberance": 1
+        "rememberance": 11
       }
     ]
   },
@@ -959,7 +959,7 @@
         "boss": "미켈라의 칼날 말레니아 & 부패의 여신 말레니아",
         "place": "",
         "flag_id": 15000800,
-        "rememberance": 1
+        "rememberance": 13
       }
     ]
   },
@@ -989,7 +989,7 @@
         "boss": "선조령의 왕",
         "place": "각해의 영지",
         "flag_id": 12090800,
-        "rememberance": 1
+        "rememberance": 7
       },
       {
         "boss": "영웅의 가고일 & 영웅의 가고일(쌍날검)",
@@ -1008,7 +1008,7 @@
         "boss": "피의 군주 모그",
         "place": "",
         "flag_id": 12050800,
-        "rememberance": 1
+        "rememberance": 10
       }
     ]
   },
@@ -1033,7 +1033,7 @@
         "boss": "암흑의 부산물 아스테르",
         "place": "대회랑",
         "flag_id": 12040800,
-        "rememberance": 1
+        "rememberance": 8
       }
     ]
   },
@@ -1057,7 +1057,7 @@
         "boss": "사룡 포르삭스",
         "place": "",
         "flag_id": 12030850,
-        "rememberance": 1
+        "rememberance": 9
       }
     ]
   },
@@ -1077,13 +1077,13 @@
         "boss": "첫 왕 고드프리",
         "place": "엘데의 왕좌",
         "flag_id": 11050800,
-        "rememberance": 1
+        "rememberance": 14
       },
       {
         "boss": "황금률 라다곤 & 엘데의 짐승",
         "place": "무너져가는 마리카",
         "flag_id": 19000800,
-        "rememberance": 1
+        "rememberance": 15
       }
     ]
   }
