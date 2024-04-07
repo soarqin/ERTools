@@ -59,6 +59,7 @@ void ScoreWindow::createWindow() {
             colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
         }
+        textSource[i] = new TextSource();
     }
 }
 
@@ -74,6 +75,10 @@ void ScoreWindow::switchMode() {
 
 void ScoreWindow::destroyWindow() {
     for (int i = 0; i < 2; i++) {
+        if (textSource[i]) {
+            delete textSource[i];
+            textSource[i] = nullptr;
+        }
         if (colorMask[i]) {
             SDL_DestroyTexture(colorMask[i]);
             colorMask[i] = nullptr;
@@ -123,6 +128,29 @@ void ScoreWindow::updateTexture(bool reloadMask) {
                     playerName,
                     score)
     };
+    for (int i = 0; i < 2; i++) {
+        if (!textSource[i]->font) {
+            textSource[i]->face = L"方正大黑简体";
+            textSource[i]->face_size = gConfig.scoreFontSize;
+            textSource[i]->bold = gConfig.scoreFontStyle & 1;
+            textSource[i]->italic = gConfig.scoreFontStyle & 2;
+            textSource[i]->underline = gConfig.scoreFontStyle & 4;
+            textSource[i]->strikeout = gConfig.scoreFontStyle & 8;
+            auto &c = gConfig.colorsInt[index + 1];
+            textSource[i]->color = textSource[i]->color2 = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+        }
+        textSource[i]->text = Utf8ToUnicode(utext[i]);
+        textSource[i]->Update();
+        if (texture[i])
+            SDL_DestroyTexture(texture[i]);
+        texture[i] = SDL_CreateTextureFromSurface(renderer[i], textSource[i]->surface);
+        SDL_SetTextureBlendMode(texture[i], SDL_BLENDMODE_BLEND);
+        SDL_QueryTexture(texture[i], nullptr, nullptr, &tw[i], &th[i]);
+        w[i] = tw[i] + gConfig.scorePadding * 2;
+        h[i] = th[i] + gConfig.scorePadding * 2;
+        SDL_SetWindowSize(window[i], w[i], h[i]);
+    }
+    return;
     TTF_Font *ufont[2] = {gConfig.scoreFont, gConfig.scoreNameFont};
     int ushadow[2] = {gConfig.scoreTextShadow, gConfig.scoreNameTextShadow};
     SDL_Color ushadowColor[2] = {gConfig.scoreTextShadowColor, gConfig.scoreNameTextShadowColor};

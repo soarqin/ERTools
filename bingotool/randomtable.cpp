@@ -130,8 +130,8 @@ void RandomTable::load(const std::string &filename) {
                     auto newfn = parent;
                     newfn.push_back('/');
                     newfn.append(incfn);
-                    auto p = std::filesystem::u8path(newfn);
-                    f(p.string());
+                    auto path = std::filesystem::u8path(newfn);
+                    f(path.string());
                     break;
                 }
                 case '+': {

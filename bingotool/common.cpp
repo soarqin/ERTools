@@ -8,6 +8,7 @@
 #include <windows.h>
 #include <shlobj.h>
 #include <shlwapi.h>
+#include <gdiplus.h>
 #undef WIN32_LEAN_AND_MEAN
 #if defined(max)
 #undef max

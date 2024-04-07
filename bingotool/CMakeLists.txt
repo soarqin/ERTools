@@ -12,14 +12,13 @@ add_executable(${PROJECT_NAME} WIN32
     randomtable.cpp randomtable.h
     common.cpp common.h
     sync.cpp sync.h
-    rectpacker.cpp rectpacker.h
-    ttf.cpp ttf.h
+    textsource.cpp textsource.h
 
     res/resource.h
     res/bingotool.rc ${RES_FILES}
 )
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    SDL3_gfx SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers fmt::fmt uv_a comctl32 shlwapi)
+    SDL3_gfx SDL3_ttf::SDL3_ttf SDL3::SDL3 toml11::headers fmt::fmt uv_a comctl32 shlwapi gdiplus)
 set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
     FOLDER "apps")

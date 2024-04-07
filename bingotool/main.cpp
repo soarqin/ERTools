@@ -12,6 +12,7 @@
 #include <commctrl.h>
 #include <objbase.h>
 #include <shellapi.h>
+#include <gdiplus.h>
 #if defined(_MSC_VER)
 #undef max
 #undef min
@@ -29,6 +30,37 @@
     name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
     processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 #endif
+
+static int mainLoop();
+
+int wmain(int argc, wchar_t *argv[]) {
+    // Unused argc, argv
+    (void)argc;
+    (void)argv;
+
+    INITCOMMONCONTROLSEX iccex = {sizeof(INITCOMMONCONTROLSEX), ICC_UPDOWN_CLASS | ICC_STANDARD_CLASSES};
+    InitCommonControlsEx(&iccex);
+
+    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+
+    Gdiplus::GdiplusStartupInput gdiplusStartupInput;
+    ULONG_PTR gdiplusToken;
+    Gdiplus::GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, nullptr);
+
+    auto result = mainLoop();
+
+    Gdiplus::GdiplusShutdown(gdiplusToken);
+
+    CoUninitialize();
+
+    return result;
+}
+
+int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
+    int argc;
+    wchar_t **argv = CommandLineToArgvW(lpCmdLine, &argc);
+    return wmain(argc, argv);
+}
 
 void sendJudgeSyncState() {
     uint64_t val[2] = {0, 0};
@@ -253,15 +285,7 @@ void reloadAll() {
     startSync();
 }
 
-int wmain(int argc, wchar_t *argv[]) {
-    // Unused argc, argv
-    (void)argc;
-    (void)argv;
-
-    INITCOMMONCONTROLSEX iccex = {sizeof(INITCOMMONCONTROLSEX), ICC_UPDOWN_CLASS | ICC_STANDARD_CLASSES};
-    InitCommonControlsEx(&iccex);
-    CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
-
+static int mainLoop() {
     syncLoadConfig();
     const TASKDIALOG_BUTTON buttons[] = {
         {IDYES, L"裁判模式"},
@@ -280,9 +304,7 @@ int wmain(int argc, wchar_t *argv[]) {
         || sel == IDCANCEL) return -1;
     gConfig.simpleMode = sel == IDRETRY;
     syncSetMode(sel == IDYES ? 1 : 0);
-    if (sel == IDYES) {
-
-    } else {
+    if (sel != IDYES) {
         DialogBoxW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(130), nullptr, [](HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) -> INT_PTR {
             switch (msg) {
                 case WM_INITDIALOG: {
@@ -674,7 +696,7 @@ int wmain(int argc, wchar_t *argv[]) {
         }
         syncProcess();
     }
-QUIT:
+    QUIT:
     saveState();
     TTF_CloseFont(gConfig.scoreFont);
     TTF_CloseFont(gConfig.font);
@@ -686,14 +708,8 @@ QUIT:
         cell.texture = nullptr;
     });
     gCells.deinit();
+
     TTF_Quit();
     SDL_Quit();
-    CoUninitialize();
     return 0;
-}
-
-int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow) {
-    int argc;
-    wchar_t **argv = CommandLineToArgvW(lpCmdLine, &argc);
-    return wmain(argc, argv);
 }
