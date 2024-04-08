@@ -282,10 +282,6 @@ void Cells::render() {
     SDL_RenderPresent(renderer_);
 }
 
-void Cells::switchMode() {
-    resizeWindow();
-}
-
 void Cells::fitCellsForText() {
     gConfig.cellSize[0] = gConfig.originCellSizeX;
     if (gConfig.fontSize != gConfig.originalFontSize) {
@@ -364,11 +360,6 @@ void Cells::updateTextures(bool fit) {
     foreach([](Cell &cell, int, int) {
         cell.updateTexture();
     });
-}
-
-void Cells::updateScoreTextures() {
-    updateScoreTextures(0);
-    updateScoreTextures(1);
 }
 
 void Cells::updateScoreTextures(int index) {
@@ -752,9 +743,9 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                         gCells.updateScoreTextures(i);
                     }
                 } else {
-                    for (int i = 0; i < 2; i++) {
-                        gScoreWindows[i].textSource[0]->font.reset(nullptr);
-                        gScoreWindows[i].updateTexture();
+                    for (auto & window : gScoreWindows) {
+                        window.textSource[0]->font.reset(nullptr);
+                        window.updateTexture();
                     }
                 }
                 auto edc = GetDlgItem(hwnd, IDC_SCOREFONT);
@@ -806,9 +797,9 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                         gCells.updateScoreTextures(i);
                     }
                 } else {
-                    for (int i = 0; i < 2; i++) {
-                        gScoreWindows[i].textSource[0]->font.reset(nullptr);
-                        gScoreWindows[i].updateTexture();
+                    for (auto & window : gScoreWindows) {
+                        window.textSource[0]->font.reset(nullptr);
+                        window.updateTexture();
                     }
                 }
                 auto edc = GetDlgItem(hwnd, IDC_NAMEFONT);
@@ -959,21 +950,21 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SHADOW: {
-            setNewValFromControl(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10, [](int newVal) {
                 gCells.updateTextures(false);
                 return true;
             });
             break;
         }
         case IDC_SHADOWOFFSET_X: {
-            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20, [](int newVal) {
                 gCells.updateTextures(false);
                 return true;
             });
             break;
         }
         case IDC_SHADOWOFFSET_Y: {
-            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_Y, gConfig.textShadowOffset[1], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SHADOWOFFSET_Y, gConfig.textShadowOffset[1], -20, 20, [](int newVal) {
                 gCells.updateTextures(false);
                 return true;
             });
@@ -991,21 +982,21 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_BORDER: {
-            setNewValFromControl(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_BORDER, gConfig.cellBorder, 0, 100, [](int newVal) {
                 gCells.resizeWindow();
                 return true;
             });
             break;
         }
         case IDC_CELLSPACING: {
-            setNewValFromControl(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLSPACING, gConfig.cellSpacing, 0, 100, [](int newVal) {
                 gCells.resizeWindow();
                 return true;
             });
             break;
         }
         case IDC_CELLWIDTH: {
-            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 0, 1000, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 0, 1000, [](int newVal) {
                 gConfig.cellSize[0] = gConfig.originCellSizeX;
                 gCells.resizeWindow();
                 gCells.updateTextures();
@@ -1014,7 +1005,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_CELLHEIGHT: {
-            setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 0, 1000, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 0, 1000, [](int newVal) {
                 gCells.resizeWindow();
                 gCells.updateTextures();
                 return true;
@@ -1022,7 +1013,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SCORESHADOW: {
-            setNewValFromControl(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1030,7 +1021,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SCORESHADOWOFFSET_X: {
-            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1038,7 +1029,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SCORESHADOWOFFSET_Y: {
-            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1046,7 +1037,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_SCORESHADOWCOLORA: {
-            setNewValFromControl(hwnd, IDC_SCORESHADOWCOLORA, gConfig.scoreTextShadowColor.a, 0, 255, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_SCORESHADOWCOLORA, gConfig.scoreTextShadowColor.a, 0, 255, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1080,7 +1071,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_NAMESHADOW: {
-            setNewValFromControl(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1088,7 +1079,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_NAMESHADOWOFFSET_X: {
-            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1096,7 +1087,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_NAMESHADOWOFFSET_Y: {
-            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;
@@ -1104,7 +1095,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_NAMESHADOWCOLORA: {
-            setNewValFromControl(hwnd, IDC_NAMESHADOWCOLORA, gConfig.scoreNameTextShadowColor.a, 0, 255, [hwnd](int newVal) {
+            setNewValFromControl(hwnd, IDC_NAMESHADOWCOLORA, gConfig.scoreNameTextShadowColor.a, 0, 255, [](int newVal) {
                 gScoreWindows[0].updateTexture();
                 gScoreWindows[1].updateTexture();
                 return true;

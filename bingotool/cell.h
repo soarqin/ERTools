@@ -25,13 +25,11 @@ public:
     void init();
     void deinit();
     void render();
-    void switchMode();
     Cell *operator[](int index) { return cells_[index]; }
     void fitCellsForText();
     void foreach(const std::function<void(Cell &cell, int x, int y)> &callback);
     void resizeWindow();
     void updateTextures(bool fit = true);
-    void updateScoreTextures();
     void updateScoreTextures(int index);
     void reloadColorTexture();
     void reloadColorTexture(int index);
