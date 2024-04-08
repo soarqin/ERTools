@@ -23,16 +23,17 @@ struct Config {
     SDL_Color textShadowColor = {0, 0, 0, 255};
     int textShadowOffset[2] = {0, 0};
     std::string fontFile = "data/font.ttf";
+    std::wstring fontFace = L"微软雅黑";
     int fontStyle = TTF_STYLE_NORMAL;
     int originalFontSize = 24;
     int fontSize = originalFontSize;
-    std::string scoreFontFile = "data/font.ttf";
+    std::wstring scoreFontFace = L"微软雅黑";
     int scoreFontStyle = TTF_STYLE_NORMAL;
     int scoreFontSize = 24;
     int scoreTextShadow = 0;
     SDL_Color scoreTextShadowColor = {0, 0, 0, 255};
     int scoreTextShadowOffset[2] = {0, 0};
-    std::string scoreNameFontFile = "data/font.ttf";
+    std::wstring scoreNameFontFace = L"微软雅黑";
     int scoreNameFontStyle = TTF_STYLE_NORMAL;
     int scoreNameFontSize = 24;
     int scoreNameTextShadow = 0;
@@ -68,8 +69,6 @@ struct Config {
     std::string scoreNameBingoText = "{0}达成Bingo!";
 
     TTF_Font *font = nullptr;
-    TTF_Font *scoreFont = nullptr;
-    TTF_Font *scoreNameFont = nullptr;
 };
 
 extern Config gConfig;

@@ -6,10 +6,6 @@
 #include "config.h"
 #include "scorewindow.h"
 
-#if defined(_MSC_VER)
-#define strcasecmp _stricmp
-#endif
-
 #include <SDL3_gfxPrimitives.h>
 #include <fmt/format.h>
 #define WIN32_LEAN_AND_MEAN
@@ -210,12 +206,13 @@ void Cells::init() {
     window_ = SDL_CreateWindow("BingoTool",
                                gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                                gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                                   + (gConfig.simpleMode ? (TTF_FontHeight(gConfig.scoreFont) + 5) : 0),
+                                   + (gConfig.simpleMode ? gConfig.scoreFontSize + 5 : 0),
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     renderer_ = SDL_CreateRenderer(window_, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
+    textSource_ = new TextSource();
 
     fitCellsForText();
     for (auto &r : cells_) {
@@ -229,13 +226,23 @@ void Cells::init() {
 
 void Cells::deinit() {
     for (auto & tex : colorTexture_) {
-        if (tex != nullptr) SDL_DestroyTexture(tex);
+        if (tex == nullptr) continue;
+        SDL_DestroyTexture(tex);
+        tex = nullptr;
     }
     for (auto & tex : scoreTexture_) {
-        if (tex != nullptr) SDL_DestroyTexture(tex);
+        if (tex == nullptr) continue;
+        SDL_DestroyTexture(tex);
+        tex = nullptr;
+    }
+    if (textSource_) {
+        delete textSource_;
+        textSource_ = nullptr;
     }
     SDL_DestroyRenderer(renderer_);
+    renderer_ = nullptr;
     SDL_DestroyWindow(window_);
+    window_ = nullptr;
 }
 
 void Cells::render() {
@@ -262,7 +269,7 @@ void Cells::render() {
     if (gConfig.simpleMode) {
         int ww, wh;
         SDL_GetWindowSize(window_, &ww, &wh);
-        int fh = TTF_FontHeight(gConfig.scoreFont);
+        int fh = gConfig.scoreFontSize;
         int sw, sh;
         SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
         SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
@@ -349,7 +356,7 @@ void Cells::resizeWindow() {
     SDL_SetWindowSize(window_,
                       gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                       gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                      + (gConfig.simpleMode ? (TTF_FontHeight(gConfig.scoreFont) + 5) : 0));
+                      + (gConfig.simpleMode ? (gConfig.scoreFontSize + 5) : 0));
 }
 
 void Cells::updateTextures(bool fit) {
@@ -371,26 +378,33 @@ void Cells::updateScoreTextures(int index) {
         fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}",
                     playerName,
                     score);
-    TTF_Font *ufont = gConfig.scoreFont;
     int ushadow = gConfig.scoreTextShadow;
     SDL_Color ushadowColor = gConfig.scoreTextShadowColor;
     int *ushadowOffset = gConfig.scoreTextShadowOffset;
-    SDL_Surface *usurface;
-    if (gConfig.useColorTexture[index]) {
-        SDL_Color clr = {255, 255, 255, 255};
-        usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont, utext.c_str(), &clr, 0, &ushadowColor, ushadow, ushadowOffset);
-    } else {
-        usurface = TTF_RenderUTF8_BlackOutline_Wrapped(ufont,
-                                                       utext.c_str(),
-                                                       &gConfig.colorsInt[index + 1],
-                                                       0,
-                                                       &ushadowColor,
-                                                       ushadow,
-                                                       ushadowOffset);
+
+    if (!textSource_->font) {
+        textSource_->face = gConfig.scoreFontFace;
+        textSource_->face_size = gConfig.scoreFontSize;
+        textSource_->bold = gConfig.scoreFontStyle & 1;
+        textSource_->italic = gConfig.scoreFontStyle & 2;
     }
+    if (gConfig.useColorTexture[index]) {
+        textSource_->color = 0xFFFFFFFF;
+    } else {
+        auto &c = gConfig.colorsInt[index + 1];
+        textSource_->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+    }
+    textSource_->shadow_mode = ushadow == 0 ? ShadowMode::None : ushadowOffset[0] == 0 && ushadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+    textSource_->shadow_size = float(ushadow);
+    textSource_->shadow_offset[0] = float(ushadowOffset[0]);
+    textSource_->shadow_offset[1] = float(ushadowOffset[1]);
+    textSource_->shadow_color = ushadowColor.b | (ushadowColor.g << 8) | (ushadowColor.r << 16) | (ushadowColor.a << 24);
+    textSource_->text = Utf8ToUnicode(utext);
+    textSource_->Update();
+
     SDL_Texture *utexture;
-    if (usurface) {
-        utexture = SDL_CreateTextureFromSurface(renderer_, usurface);
+    if (textSource_->surface) {
+        utexture = SDL_CreateTextureFromSurface(renderer_, textSource_->surface);
     } else {
         utexture = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
     }
@@ -410,7 +424,6 @@ void Cells::updateScoreTextures(int index) {
         SDL_SetTextureBlendMode(colorTexture_[index], SDL_BLENDMODE_NONE);
     }
     SDL_DestroyTexture(utexture);
-    SDL_DestroySurface(usurface);
     SDL_SetRenderTarget(renderer_, nullptr);
     SDL_SetTextureBlendMode(scoreTexture_[index], SDL_BLENDMODE_BLEND);
 }
@@ -516,9 +529,7 @@ void initConfigDialog(HWND hwnd) {
     SendMessageW(cbc, BM_SETCHECK, gConfig.useColorTexture[1] ? BST_CHECKED : BST_UNCHECKED, 0);
 
     edc = GetDlgItem(hwnd, IDC_SCOREFONT);
-    fontFileName = Utf8ToUnicode(gConfig.scoreFontFile);
-    SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 0, 256);
+    SetWindowTextW(edc, (gConfig.scoreFontFace + L", " + std::to_wstring(gConfig.scoreFontSize) + L"pt").c_str());
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_X, gConfig.scoreTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_SCORESHADOWOFFSET_Y, gConfig.scoreTextShadowOffset[1], -20, 20);
@@ -530,9 +541,7 @@ void initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, Utf8ToUnicode(gConfig.scoreBingoText).c_str());
 
     edc = GetDlgItem(hwnd, IDC_NAMEFONT);
-    fontFileName = Utf8ToUnicode(gConfig.scoreNameFontFile);
-    SetWindowTextW(edc, fontFileName.c_str());
-    setEditUpDownIntAndRange(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 0, 256);
+    SetWindowTextW(edc, (gConfig.scoreNameFontFace + L", " + std::to_wstring(gConfig.scoreNameFontSize) + L"pt").c_str());
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOW, gConfig.scoreNameTextShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_X, gConfig.scoreNameTextShadowOffset[0], -20, 20);
     setEditUpDownIntAndRange(hwnd, IDC_NAMESHADOWOFFSET_Y, gConfig.scoreNameTextShadowOffset[1], -20, 20);
@@ -653,7 +662,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                 if (szFileRel[i] == '\\') szFileRel[i] = '/';
             }
             auto fontFileName = UnicodeToUtf8(szFileRel);
-            if (strcasecmp(fontFileName.c_str(), gConfig.fontFile.c_str()) != 0) {
+            if (lstrcmpiA(fontFileName.c_str(), gConfig.fontFile.c_str()) != 0) {
                 gConfig.fontFile = fontFileName;
                 auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.fontSize);
                 if (newFont == nullptr) {
@@ -718,37 +727,38 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_BTN_SEL_SCOREFONT: {
-            auto fontSelected = openDialogForFontFileSelection(hwnd);
-            if (fontSelected.empty()) return 0;
-            wchar_t szFileRel[MAX_PATH] = {0};
-            wchar_t szCurrentPath[MAX_PATH];
-            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
-            PathRemoveFileSpecW(szCurrentPath);
-            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, fontSelected.c_str(), FILE_ATTRIBUTE_NORMAL);
-            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
-                lstrcpyW(szFileRel, fontSelected.c_str());
-            }
-            for (int i = 0; szFileRel[i]; i++) {
-                if (szFileRel[i] == '\\') szFileRel[i] = '/';
-            }
-            auto fontFileName = UnicodeToUtf8(szFileRel);
-            if (strcasecmp(fontFileName.c_str(), gConfig.scoreFontFile.c_str()) != 0) {
-                gConfig.scoreFontFile = fontFileName;
-                auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.scoreFontSize);
-                if (newFont == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
-                } else {
-                    if (gConfig.scoreFont) {
-                        TTF_CloseFont(gConfig.scoreFont);
+            auto style = gConfig.scoreFontStyle;
+            LOGFONTW lf = {};
+            lf.lfHeight = -MulDiv(gConfig.scoreFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfWeight = style & 1 ? FW_BOLD : FW_DONTCARE;
+            lf.lfItalic = style & 2;
+            lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
+            lf.lfCharSet = DEFAULT_CHARSET;
+            lstrcpyW(lf.lfFaceName, gConfig.scoreFontFace.c_str());
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            cf.hwndOwner = hwnd;
+            cf.lpLogFont = &lf;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.nSizeMin = 6;
+            cf.nSizeMax = 256;
+            if (ChooseFontW(&cf)) {
+                gConfig.scoreFontFace = lf.lfFaceName;
+                gConfig.scoreFontSize = cf.iPointSize / 10;
+                gConfig.scoreFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                if (gConfig.simpleMode) {
+                    gCells.textSource()->font.reset(nullptr);
+                    gCells.resizeWindow();
+                    for (int i = 0; i < 2; i++) {
+                        gCells.updateScoreTextures(i);
                     }
-                    gConfig.scoreFont = newFont;
-                    if (gConfig.simpleMode)
-                        gCells.resizeWindow();
-                    gScoreWindows[0].updateTexture();
-                    gScoreWindows[1].updateTexture();
-                    auto edc = GetDlgItem(hwnd, IDC_SCOREFONT);
-                    SetWindowTextW(edc, szFileRel);
+                } else {
+                    for (int i = 0; i < 2; i++) {
+                        gScoreWindows[i].textSource[0]->font.reset(nullptr);
+                        gScoreWindows[i].updateTexture();
+                    }
                 }
+                auto edc = GetDlgItem(hwnd, IDC_SCOREFONT);
+                SetWindowTextW(edc, (gConfig.scoreFontFace + L", " + std::to_wstring(gConfig.scoreFontSize) + L"pt").c_str());
             }
             return 0;
         }
@@ -771,35 +781,38 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_BTN_SEL_NAMEFONT: {
-            auto fontSelected = openDialogForFontFileSelection(hwnd);
-            if (fontSelected.empty()) return 0;
-            wchar_t szFileRel[MAX_PATH] = {0};
-            wchar_t szCurrentPath[MAX_PATH];
-            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
-            PathRemoveFileSpecW(szCurrentPath);
-            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, fontSelected.c_str(), FILE_ATTRIBUTE_NORMAL);
-            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
-                lstrcpyW(szFileRel, fontSelected.c_str());
-            }
-            for (int i = 0; szFileRel[i]; i++) {
-                if (szFileRel[i] == '\\') szFileRel[i] = '/';
-            }
-            auto fontFileName = UnicodeToUtf8(szFileRel);
-            if (strcasecmp(fontFileName.c_str(), gConfig.scoreNameFontFile.c_str()) != 0) {
-                gConfig.scoreNameFontFile = fontFileName;
-                auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.scoreNameFontSize);
-                if (newFont == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
-                } else {
-                    if (gConfig.scoreNameFont) {
-                        TTF_CloseFont(gConfig.scoreNameFont);
+            auto style = gConfig.scoreNameFontStyle;
+            LOGFONTW lf = {};
+            lf.lfHeight = -MulDiv(gConfig.scoreNameFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfWeight = style & 1 ? FW_BOLD : FW_DONTCARE;
+            lf.lfItalic = style & 2;
+            lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
+            lf.lfCharSet = DEFAULT_CHARSET;
+            lstrcpyW(lf.lfFaceName, gConfig.scoreNameFontFace.c_str());
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            cf.hwndOwner = hwnd;
+            cf.lpLogFont = &lf;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.nSizeMin = 6;
+            cf.nSizeMax = 256;
+            if (ChooseFontW(&cf)) {
+                gConfig.scoreNameFontFace = lf.lfFaceName;
+                gConfig.scoreNameFontSize = cf.iPointSize / 10;
+                gConfig.scoreNameFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                if (gConfig.simpleMode) {
+                    gCells.textSource()->font.reset(nullptr);
+                    gCells.resizeWindow();
+                    for (int i = 0; i < 2; i++) {
+                        gCells.updateScoreTextures(i);
                     }
-                    gConfig.scoreNameFont = newFont;
-                    gScoreWindows[0].updateTexture();
-                    gScoreWindows[1].updateTexture();
-                    auto edc = GetDlgItem(hwnd, IDC_NAMEFONT);
-                    SetWindowTextW(edc, szFileRel);
+                } else {
+                    for (int i = 0; i < 2; i++) {
+                        gScoreWindows[i].textSource[0]->font.reset(nullptr);
+                        gScoreWindows[i].updateTexture();
+                    }
                 }
+                auto edc = GetDlgItem(hwnd, IDC_NAMEFONT);
+                SetWindowTextW(edc, (gConfig.scoreNameFontFace + L", " + std::to_wstring(gConfig.scoreNameFontSize) + L"pt").c_str());
             }
             return 0;
         }
@@ -1008,25 +1021,6 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             });
             break;
         }
-        case IDC_SCORESIZE: {
-            setNewValFromControl(hwnd, IDC_SCORESIZE, gConfig.scoreFontSize, 0, 256, [hwnd](int newVal) {
-                auto ft = TTF_OpenFont(gConfig.scoreFontFile.c_str(), gConfig.scoreFontSize);
-                if (ft == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
-                    return true;
-                }
-                if (gConfig.scoreFont) {
-                    TTF_CloseFont(gConfig.scoreFont);
-                }
-                gConfig.scoreFont = ft;
-                if (gConfig.simpleMode)
-                    gCells.resizeWindow();
-                gScoreWindows[0].updateTexture();
-                gScoreWindows[1].updateTexture();
-                return true;
-            });
-            break;
-        }
         case IDC_SCORESHADOW: {
             setNewValFromControl(hwnd, IDC_SCORESHADOW, gConfig.scoreTextShadow, 0, 10, [hwnd](int newVal) {
                 gScoreWindows[0].updateTexture();
@@ -1083,23 +1077,6 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             gConfig.scoreBingoText = newText;
             gScoreWindows[0].updateTexture();
             gScoreWindows[1].updateTexture();
-            break;
-        }
-        case IDC_NAMESIZE: {
-            setNewValFromControl(hwnd, IDC_NAMESIZE, gConfig.scoreNameFontSize, 0, 256, [hwnd](int newVal) {
-                auto ft = TTF_OpenFont(gConfig.scoreNameFontFile.c_str(), gConfig.scoreNameFontSize);
-                if (ft == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
-                    return true;
-                }
-                if (gConfig.scoreNameFont) {
-                    TTF_CloseFont(gConfig.scoreNameFont);
-                }
-                gConfig.scoreNameFont = ft;
-                gScoreWindows[0].updateTexture();
-                gScoreWindows[1].updateTexture();
-                return true;
-            });
             break;
         }
         case IDC_NAMESHADOW: {

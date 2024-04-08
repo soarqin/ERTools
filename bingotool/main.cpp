@@ -698,7 +698,6 @@ static int mainLoop() {
     }
     QUIT:
     saveState();
-    TTF_CloseFont(gConfig.scoreFont);
     TTF_CloseFont(gConfig.font);
     for (auto &w: gScoreWindows) {
         w.destroy();

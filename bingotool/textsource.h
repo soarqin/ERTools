@@ -53,6 +53,12 @@ enum class VAlign {
     Bottom,
 };
 
+enum class ShadowMode {
+    None,
+    Outline,
+    Shadow,
+};
+
 struct TextSource {
     SDL_Surface *surface = nullptr;
 
@@ -68,26 +74,17 @@ struct TextSource {
     std::wstring face;
     int face_size = 0;
     uint32_t color = 0xFFFFFF;
-    uint32_t color2 = 0xFFFFFF;
-    float gradient_dir = 0;
-    uint32_t opacity = 100;
-    uint32_t opacity2 = 100;
-    uint32_t bk_color = 0;
-    uint32_t bk_opacity = 0;
     Align align = Align::Left;
     VAlign valign = VAlign::Top;
     bool bold = false;
     bool italic = false;
-    bool underline = false;
-    bool strikeout = false;
     bool antialiasing = true;
     bool vertical = false;
 
-    bool use_outline = false;
-    float outline_size = 0.0f;
-    uint32_t shadow_offset[2] = {0, 0};
-    uint32_t outline_color = 0;
-    uint32_t outline_opacity = 100;
+    ShadowMode shadow_mode = ShadowMode::None;
+    float shadow_size = 1.f;
+    float shadow_offset[2] = {0.f, 0.f};
+    uint32_t shadow_color = 0;
 
     bool use_extents = false;
     bool wrap = false;
@@ -102,8 +99,8 @@ struct TextSource {
     void RemoveNewlinePadding(const StringFormat &format, RectF &box) const;
     void CalculateTextSizes(const StringFormat &format, RectF &bounding_box,
                             SIZE &text_size) const;
-    void RenderOutlineText(Graphics &graphics, const GraphicsPath &path,
-                           const Brush &brush) const;
+    void RenderTextWithShadow(Graphics &graphics, const GraphicsPath &path,
+                              const Brush &brush, float width) const;
     void RenderText();
     void SetAntiAliasing(Graphics &graphics_bitmap) const;
 

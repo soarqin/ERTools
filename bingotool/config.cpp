@@ -107,14 +107,14 @@ void Config::load() {
     if (score.is_table()) {
         playerName[0] = Utf8ToUnicode(toml::find_or(score, "player1", UnicodeToUtf8(playerName[0])));
         playerName[1] = Utf8ToUnicode(toml::find_or(score, "player2", UnicodeToUtf8(playerName[1])));
-        scoreFontFile = toml::find_or(score, "font_file", scoreFontFile);
+        scoreFontFace = toml::find_or(score, "font_face", scoreFontFace);
         auto style = toml::find_or(score, "font_style", "-");
         if (style != "-") scoreFontStyle = setFontStyle(style);
         scoreFontSize = toml::find_or(score, "font_size", scoreFontSize);
         scoreTextShadow = toml::find_or(score, "text_shadow", scoreTextShadow);
         extractColor(score, "text_shadow_color", scoreTextShadowColor);
         extractOffset(score, "text_shadow_offset", scoreTextShadowOffset[0], scoreTextShadowOffset[1]);
-        scoreNameFontFile = toml::find_or(score, "name_font_file", scoreNameFontFile);
+        scoreNameFontFace = toml::find_or(score, "name_font_face", scoreNameFontFace);
         style = toml::find_or(score, "name_font_style", "-");
         if (style != "-") scoreNameFontStyle = setFontStyle(style);
         scoreNameFontSize = toml::find_or(score, "name_font_size", scoreNameFontSize);
@@ -194,13 +194,13 @@ void Config::save() {
             {
                 {"player1", UnicodeToUtf8(playerName[0])},
                 {"player2", UnicodeToUtf8(playerName[1])},
-                {"font_file", scoreFontFile},
+                {"font_face", scoreFontFace},
                 {"font_style", std::string(scoreFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
                 {"font_size", scoreFontSize},
                 {"text_shadow", scoreTextShadow},
                 {"text_shadow_color", colorToString(scoreTextShadowColor)},
                 {"text_shadow_offset", {scoreTextShadowOffset[0], scoreTextShadowOffset[1]}},
-                {"name_font_file", scoreNameFontFile},
+                {"name_font_face", scoreNameFontFace},
                 {"name_font_style", std::string(scoreNameFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreNameFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
                 {"name_font_size", scoreNameFontSize},
                 {"name_text_shadow", scoreNameTextShadow},
@@ -352,13 +352,13 @@ void Config::oldLoad() {
             scorePadding = std::stoi(value);
         } else if (key == "ScoreRoundCorner") {
             scoreRoundCorner = std::stoi(value);
-        } else if (key == "ScoreFontFile") {
+        } else if (key == "ScoreFontFace") {
             auto sl = splitString(value, '|');
             if (sl.size() == 2) {
-                scoreFontFile = sl[0];
+                scoreFontFace = Utf8ToUnicode(sl[0]);
                 scoreFontStyle = setFontStyle(sl[1]);
             } else {
-                scoreFontFile = value;
+                scoreFontFace = Utf8ToUnicode(value);
             }
         } else if (key == "ScoreFontSize") {
             scoreFontSize = std::stoi(value);
@@ -376,13 +376,13 @@ void Config::oldLoad() {
             if (sl.size() != 2) continue;
             scoreTextShadowOffset[0] = std::stoi(sl[0]);
             scoreTextShadowOffset[1] = std::stoi(sl[1]);
-        } else if (key == "ScoreNameFontFile") {
+        } else if (key == "ScoreNameFontFace") {
             auto sl = splitString(value, '|');
             if (sl.size() == 2) {
-                scoreNameFontFile = sl[0];
+                scoreNameFontFace = Utf8ToUnicode(sl[0]);
                 scoreNameFontStyle = setFontStyle(sl[1]);
             } else {
-                scoreNameFontFile = value;
+                scoreNameFontFace = Utf8ToUnicode(value);
             }
         } else if (key == "ScoreNameFontSize") {
             scoreNameFontSize = std::stoi(value);
@@ -466,18 +466,4 @@ void Config::postLoad() {
     font = TTF_OpenFont(fontFile.c_str(), fontSize);
     TTF_SetFontStyle(font, fontStyle);
     TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
-    if (scoreFont) {
-        TTF_CloseFont(scoreFont);
-        scoreFont = nullptr;
-    }
-    scoreFont = TTF_OpenFont(scoreFontFile.c_str(), scoreFontSize);
-    TTF_SetFontStyle(scoreFont, scoreFontStyle);
-    TTF_SetFontWrappedAlign(scoreFont, TTF_WRAPPED_ALIGN_CENTER);
-    if (scoreNameFont) {
-        TTF_CloseFont(scoreNameFont);
-        scoreNameFont = nullptr;
-    }
-    scoreNameFont = TTF_OpenFont(scoreNameFontFile.c_str(), scoreNameFontSize);
-    TTF_SetFontStyle(scoreNameFont, scoreNameFontStyle);
-    TTF_SetFontWrappedAlign(scoreNameFont, TTF_WRAPPED_ALIGN_CENTER);
 }

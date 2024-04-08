@@ -1,5 +1,7 @@
 #pragma once
 
+#include "textsource.h"
+
 #include <SDL3/SDL.h>
 #include <SDL3_ttf/SDL_ttf.h>
 #include <string>
@@ -34,6 +36,7 @@ public:
     void reloadColorTexture();
     void reloadColorTexture(int index);
     void showSettingsWindow();
+    inline TextSource *textSource() { return textSource_; }
     SDL_Window *window() { return window_; }
     SDL_Texture *colorTexture(int index) { return colorTexture_[index]; }
 
@@ -43,6 +46,7 @@ private:
     Cell cells_[5][5];
     SDL_Texture *colorTexture_[2] = {nullptr, nullptr};
     SDL_Texture *scoreTexture_[2] = {nullptr, nullptr};
+    TextSource *textSource_ = nullptr;
 };
 
 extern Cells gCells;

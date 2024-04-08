@@ -128,29 +128,60 @@ void ScoreWindow::updateTexture(bool reloadMask) {
                     playerName,
                     score)
     };
+    int ushadow[2] = {gConfig.scoreTextShadow, gConfig.scoreNameTextShadow};
+    SDL_Color ushadowColor[2] = {gConfig.scoreTextShadowColor, gConfig.scoreNameTextShadowColor};
+    int *ushadowOffset[2] = {gConfig.scoreTextShadowOffset, gConfig.scoreNameTextShadowOffset};
     for (int i = 0; i < 2; i++) {
         if (!textSource[i]->font) {
-            textSource[i]->face = L"方正大黑简体";
-            textSource[i]->face_size = gConfig.scoreFontSize;
-            textSource[i]->bold = gConfig.scoreFontStyle & 1;
-            textSource[i]->italic = gConfig.scoreFontStyle & 2;
-            textSource[i]->underline = gConfig.scoreFontStyle & 4;
-            textSource[i]->strikeout = gConfig.scoreFontStyle & 8;
-            auto &c = gConfig.colorsInt[index + 1];
-            textSource[i]->color = textSource[i]->color2 = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+            textSource[i]->face = i == 0 ? gConfig.scoreFontFace : gConfig.scoreNameFontFace;
+            textSource[i]->face_size = i == 0 ? gConfig.scoreFontSize : gConfig.scoreNameFontSize;
+            auto style = i == 0 ? gConfig.scoreFontStyle : gConfig.scoreNameFontStyle;
+            textSource[i]->bold = style & 1;
+            textSource[i]->italic = style & 2;
         }
+        if (gConfig.useColorTexture[index]) {
+            textSource[i]->color = 0xFFFFFFFF;
+        } else {
+            auto &c = gConfig.colorsInt[index + 1];
+            textSource[i]->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+        }
+        textSource[i]->shadow_mode = ushadow[i] == 0 ? ShadowMode::None : ushadowOffset[i][0] == 0 && ushadowOffset[i][1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+        textSource[i]->shadow_size = float(ushadow[i]);
+        textSource[i]->shadow_offset[0] = float(ushadowOffset[i][0]);
+        textSource[i]->shadow_offset[1] = float(ushadowOffset[i][1]);
+        textSource[i]->shadow_color = ushadowColor[i].b | (ushadowColor[i].g << 8) | (ushadowColor[i].r << 16) | (ushadowColor[i].a << 24);
         textSource[i]->text = Utf8ToUnicode(utext[i]);
         textSource[i]->Update();
+
+        SDL_Texture *utexture;
+        if (textSource[i]->surface) {
+            utexture = SDL_CreateTextureFromSurface(renderer[i], textSource[i]->surface);
+        } else {
+            utexture = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
+        }
+        int mw, mh;
+        SDL_QueryTexture(utexture, nullptr, nullptr, &mw, &mh);
         if (texture[i])
             SDL_DestroyTexture(texture[i]);
-        texture[i] = SDL_CreateTextureFromSurface(renderer[i], textSource[i]->surface);
+        texture[i] = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
+        SDL_SetRenderTarget(renderer[i], texture[i]);
+        SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
+        SDL_RenderClear(renderer[i]);
+        SDL_FRect rc = {0, 0, (float)mw, (float)mh};
+        SDL_RenderTexture(renderer[i], utexture, nullptr, &rc);
+        if (gConfig.useColorTexture[index]) {
+            SDL_RenderTexture(renderer[i], colorMask[i], nullptr, nullptr);
+        }
+        SDL_DestroyTexture(utexture);
+        SDL_SetRenderTarget(renderer[i], nullptr);
         SDL_SetTextureBlendMode(texture[i], SDL_BLENDMODE_BLEND);
+
         SDL_QueryTexture(texture[i], nullptr, nullptr, &tw[i], &th[i]);
         w[i] = tw[i] + gConfig.scorePadding * 2;
         h[i] = th[i] + gConfig.scorePadding * 2;
         SDL_SetWindowSize(window[i], w[i], h[i]);
     }
-    return;
+    /*
     TTF_Font *ufont[2] = {gConfig.scoreFont, gConfig.scoreNameFont};
     int ushadow[2] = {gConfig.scoreTextShadow, gConfig.scoreNameTextShadow};
     SDL_Color ushadowColor[2] = {gConfig.scoreTextShadowColor, gConfig.scoreNameTextShadowColor};
@@ -197,6 +228,7 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         h[i] = th[i] + gConfig.scorePadding * 2;
         SDL_SetWindowSize(window[i], w[i], h[i]);
     }
+     */
 }
 
 void ScoreWindow::updateXYValue() {
@@ -231,8 +263,7 @@ void ScoreWindow::render() {
             SDL_FRect dstrect = {0, 0, (float)w[i], (float)h[i]};
             SDL_RenderFillRect(renderer[i], &dstrect);
         }
-        auto descend = TTF_FontDescent(i == 0 ? gConfig.scoreFont : gConfig.scoreNameFont);
-        SDL_FRect dstRect = {(float)(w[i] - tw[i]) * .5f, (float)(h[i] - th[i] - (descend >> 1)) * .5f, (float)tw[i], (float)th[i]};
+        SDL_FRect dstRect = {(float)(w[i] - tw[i]) * .5f, (float)(h[i] - th[i]) * .5f, (float)tw[i], (float)th[i]};
         SDL_RenderTexture(renderer[i], texture[i], nullptr, &dstRect);
         SDL_RenderPresent(renderer[i]);
     }

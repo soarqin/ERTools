@@ -21,19 +21,6 @@ static const auto EPSILON = std::numeric_limits<REAL>::epsilon();
 
 #define MAX_AREA (4096LL * 4096LL)
 
-
-static inline DWORD get_alpha_val(uint32_t opacity) {
-    return ((opacity * 255 / 100) & 0xFF) << 24;
-}
-
-static inline DWORD calc_color(uint32_t color, uint32_t opacity) {
-    return color & 0xFFFFFF | get_alpha_val(opacity);
-}
-
-static inline uint32_t rgb_to_bgr(uint32_t rgb) {
-    return ((rgb & 0xFF) << 16) | (rgb & 0xFF00) | ((rgb & 0xFF0000) >> 16);
-}
-
 TextSource::TextSource() :
     hdc(CreateCompatibleDC(nullptr)),
     graphics(hdc) {
@@ -54,16 +41,14 @@ void TextSource::UpdateFont() {
     font.reset(nullptr);
 
     LOGFONTW lf = {};
-    lf.lfHeight = face_size;
+    lf.lfHeight = -MulDiv(face_size, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
     lf.lfWeight = bold ? FW_BOLD : FW_DONTCARE;
     lf.lfItalic = italic;
-    lf.lfUnderline = underline;
-    lf.lfStrikeOut = strikeout;
-    lf.lfQuality = ANTIALIASED_QUALITY;
+    lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
     lf.lfCharSet = DEFAULT_CHARSET;
 
     if (!face.empty()) {
-        wcscpy(lf.lfFaceName, face.c_str());
+        lstrcpyW(lf.lfFaceName, face.c_str());
     }
     font = std::make_unique<Font>(hdc, &lf);
 
@@ -175,9 +160,17 @@ void TextSource::CalculateTextSizes(const StringFormat &format,
             layout_box.Width = float(extents_cx);
             layout_box.Height = float(extents_cy);
 
-            if (use_outline) {
-                layout_box.Width -= outline_size;
-                layout_box.Height -= outline_size;
+            switch (shadow_mode) {
+                case ShadowMode::None:
+                    break;
+                case ShadowMode::Outline:
+                    layout_box.Width -= shadow_size * 2.f;
+                    layout_box.Height -= shadow_size * 2.f;
+                    break;
+                case ShadowMode::Shadow:
+                    layout_box.Width -= std::abs(shadow_offset[0]);
+                    layout_box.Height -= std::abs(shadow_offset[1]);
+                    break;
             }
 
             graphics.MeasureString(text.c_str(),
@@ -197,9 +190,17 @@ void TextSource::CalculateTextSizes(const StringFormat &format,
 
             RemoveNewlinePadding(format, bounding_box);
 
-            if (use_outline) {
-                bounding_box.Width += outline_size;
-                bounding_box.Height += outline_size;
+            switch (shadow_mode) {
+                case ShadowMode::None:
+                    break;
+                case ShadowMode::Outline:
+                    bounding_box.Width += shadow_size * 2.f;
+                    bounding_box.Height += shadow_size * 2.f;
+                    break;
+                case ShadowMode::Shadow:
+                    bounding_box.Width += std::abs(shadow_offset[0]) + shadow_size - 1.f;
+                    bounding_box.Height += std::abs(shadow_offset[1]) + shadow_size - 1.f;
+                    break;
             }
         }
     }
@@ -252,16 +253,14 @@ void TextSource::CalculateTextSizes(const StringFormat &format,
     bounding_box.Height = temp_box.Height;
 }
 
-void TextSource::RenderOutlineText(Graphics &graphics, const GraphicsPath &path,
-                                   const Brush &brush) const {
-    DWORD outline_rgba = calc_color(outline_color, outline_opacity);
-
-    Pen pen(Color(outline_rgba), outline_size);
+void TextSource::RenderTextWithShadow(Graphics &gr, const GraphicsPath &path,
+                                      const Brush &brush, float width) const {
+    Pen pen(Color(shadow_color), width);
     pen.SetLineJoin(LineJoinRound);
 
-    graphics.DrawPath(&pen, &path);
+    gr.DrawPath(&pen, &path);
 
-    graphics.FillPath(&brush, &path);
+    gr.FillPath(&brush, &path);
 }
 
 void TextSource::RenderText() {
@@ -278,55 +277,65 @@ void TextSource::RenderText() {
                   bits.get());
 
     Graphics graphics_bitmap(&bitmap);
-    LinearGradientBrush brush(RectF(0, 0, (float)size.cx, (float)size.cy),
-                              Color(calc_color(color, opacity)),
-                              Color(calc_color(color2, opacity2)),
-                              gradient_dir, 1);
-    DWORD full_bk_color = bk_color & 0xFFFFFF;
+    SolidBrush brush((Color(color)));
 
-    if (!text.empty() || use_extents)
-        full_bk_color |= get_alpha_val(bk_opacity);
-
-    if ((size.cx > box.Width || size.cy > box.Height) && !use_extents) {
-        graphics_bitmap.Clear(Color(0));
-
-        SolidBrush bk_brush = Color(full_bk_color);
-        graphics_bitmap.FillRectangle(&bk_brush, box);
-    } else {
-        graphics_bitmap.Clear(Color(full_bk_color));
-    }
+    graphics_bitmap.Clear(Color(0));
 
     graphics_bitmap.SetCompositingMode(CompositingModeSourceOver);
     SetAntiAliasing(graphics_bitmap);
 
     if (!text.empty()) {
-        if (use_outline) {
-            box.Offset(outline_size / 2, outline_size / 2);
+        switch (shadow_mode) {
+            case ShadowMode::None:
+                break;
+            case ShadowMode::Outline: {
+                box.Offset(shadow_size, shadow_size);
 
-            FontFamily family;
-            GraphicsPath path;
+                FontFamily family;
+                GraphicsPath path;
 
-            font->GetFamily(&family);
-            path.AddString(text.c_str(), (int)text.size(),
-                           &family, font->GetStyle(),
-                           font->GetSize(), box, &format);
+                font->GetFamily(&family);
+                path.AddString(text.c_str(), (int)text.size(),
+                               &family, font->GetStyle(),
+                               font->GetSize(), box, &format);
 
-            RenderOutlineText(graphics_bitmap, path, brush);
-        } else {
-            if (shadow_offset[0] != 0 || shadow_offset[1] != 0) {
-                SolidBrush brush_bk(Color(calc_color(0, 100)));
-                auto bkbox = box;
-                bkbox.X += shadow_offset[0];
-                bkbox.Y += shadow_offset[1];
+                RenderTextWithShadow(graphics_bitmap, path, brush, shadow_size * 2);
+                break;
+            }
+            case ShadowMode::Shadow:
+                if (shadow_offset[0] != 0.f || shadow_offset[1] != 0.f) {
+                    SolidBrush bkbrush((Color(shadow_color)));
+                    auto bkbox = box;
+                    if (shadow_offset[0] > 0)
+                        bkbox.X += shadow_offset[0];
+                    else
+                        box.X -= shadow_offset[0];
+                    if (shadow_offset[1] > 0)
+                        bkbox.Y += shadow_offset[1];
+                    else
+                        box.Y -= shadow_offset[1];
+                    if (shadow_size > 0.5f) {
+                        FontFamily family;
+                        GraphicsPath path;
+
+                        font->GetFamily(&family);
+                        path.AddString(text.c_str(), (int)text.size(),
+                                       &family, font->GetStyle(),
+                                       font->GetSize(), bkbox, &format);
+
+                        RenderTextWithShadow(graphics_bitmap, path, bkbrush, shadow_size);
+                    } else {
+                        graphics_bitmap.DrawString(text.c_str(),
+                                                   (int)text.size(),
+                                                   font.get(), bkbox,
+                                                   &format, &bkbrush);
+                    }
+                }
                 graphics_bitmap.DrawString(text.c_str(),
                                            (int)text.size(),
-                                           font.get(), bkbox,
-                                           &format, &brush_bk);
-            }
-            graphics_bitmap.DrawString(text.c_str(),
-                                       (int)text.size(),
-                                       font.get(), box,
-                                       &format, &brush);
+                                           font.get(), box,
+                                           &format, &brush);
+                break;
         }
     }
 
@@ -341,7 +350,7 @@ void TextSource::RenderText() {
     }
     if (!surface) return;
     if (!SDL_MUSTLOCK(surface) || SDL_LockSurface(surface) == 0) {
-        auto *data = (uint8_t*)surface->pixels;
+        auto *data = (uint8_t *)surface->pixels;
         auto pitch = surface->pitch;
         int srcpitch = int(cx * 4);
         if (pitch == srcpitch) {
@@ -373,53 +382,7 @@ void TextSource::SetAntiAliasing(Graphics &graphics_bitmap) const {
 #define obs_data_get_uint32 (uint32_t) obs_data_get_int
 
 void TextSource::Update() {
-/*
-    const char *new_text = obs_data_get_string(s, S_TEXT);
-    obs_data_t *font_obj = obs_data_get_obj(s, S_FONT);
-    const char *align_str = obs_data_get_string(s, S_ALIGN);
-    const char *valign_str = obs_data_get_string(s, S_VALIGN);
-    uint32_t new_color = obs_data_get_uint32(s, S_COLOR);
-    uint32_t new_opacity = obs_data_get_uint32(s, S_OPACITY);
-    bool gradient = obs_data_get_bool(s, S_GRADIENT);
-    uint32_t new_color2 = obs_data_get_uint32(s, S_GRADIENT_COLOR);
-    uint32_t new_opacity2 = obs_data_get_uint32(s, S_GRADIENT_OPACITY);
-    float new_grad_dir = (float)obs_data_get_double(s, S_GRADIENT_DIR);
-    bool new_vertical = obs_data_get_bool(s, S_VERTICAL);
-    bool new_outline = obs_data_get_bool(s, S_OUTLINE);
-    uint32_t new_o_color = obs_data_get_uint32(s, S_OUTLINE_COLOR);
-    uint32_t new_o_opacity = obs_data_get_uint32(s, S_OUTLINE_OPACITY);
-    uint32_t new_o_size = obs_data_get_uint32(s, S_OUTLINE_SIZE);
-    bool new_use_file = obs_data_get_bool(s, S_USE_FILE);
-    const char *new_file = obs_data_get_string(s, S_FILE);
-    bool new_chat_mode = obs_data_get_bool(s, S_CHATLOG_MODE);
-    int new_chat_lines = (int)obs_data_get_int(s, S_CHATLOG_LINES);
-    bool new_extents = obs_data_get_bool(s, S_EXTENTS);
-    bool new_extents_wrap = obs_data_get_bool(s, S_EXTENTS_WRAP);
-    uint32_t n_extents_cx = obs_data_get_uint32(s, S_EXTENTS_CX);
-    uint32_t n_extents_cy = obs_data_get_uint32(s, S_EXTENTS_CY);
-    int new_text_transform = (int)obs_data_get_int(s, S_TRANSFORM);
-    bool new_antialiasing = obs_data_get_bool(s, S_ANTIALIASING);
-
-    const char *font_face = obs_data_get_string(font_obj, "face");
-    int font_size = (int)obs_data_get_int(font_obj, "size");
-    int64_t font_flags = obs_data_get_int(font_obj, "flags");
-    bool new_bold = (font_flags & OBS_FONT_BOLD) != 0;
-    bool new_italic = (font_flags & OBS_FONT_ITALIC) != 0;
-    bool new_underline = (font_flags & OBS_FONT_UNDERLINE) != 0;
-    bool new_strikeout = (font_flags & OBS_FONT_STRIKEOUT) != 0;
-
-    uint32_t new_bk_color = obs_data_get_uint32(s, S_BKCOLOR);
-    uint32_t new_bk_opacity = obs_data_get_uint32(s, S_BKOPACITY);
-
-    */
-
     if (!font) UpdateFont();
-/*
-    if (!gradient) {
-        color2 = color;
-        opacity2 = opacity;
-    }
-*/
     if (!text.empty())
         text.push_back('\n');
 
