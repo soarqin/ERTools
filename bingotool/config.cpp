@@ -10,14 +10,14 @@
 Config gConfig;
 
 inline int setFontStyle(const std::string &style) {
-    int res = TTF_STYLE_NORMAL;
+    int res = 0;
     for (auto &c: style) {
         switch (c) {
             case 'B':
-                res |= TTF_STYLE_BOLD;
+                res |= 1;
                 break;
             case 'I':
-                res |= TTF_STYLE_ITALIC;
+                res |= 2;
                 break;
             default:
                 break;
@@ -69,7 +69,7 @@ void Config::load() {
         textShadow = toml::find_or(cells, "text_shadow", textShadow);
         extractColor(cells, "text_shadow_color", textShadowColor);
         extractOffset(cells, "text_shadow_offset", textShadowOffset[0], textShadowOffset[1]);
-        fontFile = toml::find_or(cells, "font_file", fontFile);
+        fontFace = Utf8ToUnicode(toml::find_or(cells, "font_face", UnicodeToUtf8(fontFace)));
         auto style = toml::find_or(cells, "font_style", "-");
         if (style != "-") fontStyle = setFontStyle(style);
         originalFontSize = fontSize = toml::find_or(cells, "font_size", originalFontSize);
@@ -107,14 +107,14 @@ void Config::load() {
     if (score.is_table()) {
         playerName[0] = Utf8ToUnicode(toml::find_or(score, "player1", UnicodeToUtf8(playerName[0])));
         playerName[1] = Utf8ToUnicode(toml::find_or(score, "player2", UnicodeToUtf8(playerName[1])));
-        scoreFontFace = toml::find_or(score, "font_face", scoreFontFace);
+        scoreFontFace = Utf8ToUnicode(toml::find_or(score, "font_face", UnicodeToUtf8(scoreFontFace)));
         auto style = toml::find_or(score, "font_style", "-");
         if (style != "-") scoreFontStyle = setFontStyle(style);
         scoreFontSize = toml::find_or(score, "font_size", scoreFontSize);
         scoreTextShadow = toml::find_or(score, "text_shadow", scoreTextShadow);
         extractColor(score, "text_shadow_color", scoreTextShadowColor);
         extractOffset(score, "text_shadow_offset", scoreTextShadowOffset[0], scoreTextShadowOffset[1]);
-        scoreNameFontFace = toml::find_or(score, "name_font_face", scoreNameFontFace);
+        scoreNameFontFace = Utf8ToUnicode(toml::find_or(score, "name_font_face", UnicodeToUtf8(scoreNameFontFace)));
         style = toml::find_or(score, "name_font_style", "-");
         if (style != "-") scoreNameFontStyle = setFontStyle(style);
         scoreNameFontSize = toml::find_or(score, "name_font_size", scoreNameFontSize);
@@ -179,8 +179,8 @@ void Config::save() {
                 {"text_shadow", textShadow},
                 {"text_shadow_color", colorToString(textShadowColor)},
                 {"text_shadow_offset", {textShadowOffset[0], textShadowOffset[1]}},
-                {"font_file", fontFile},
-                {"font_style", std::string(fontStyle & TTF_STYLE_BOLD ? "B" : "") + (fontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"font_face", UnicodeToUtf8(fontFace)},
+                {"font_style", std::string(fontStyle & 1 ? "B" : "") + (fontStyle & 2 ? "I" : "")},
                 {"font_size", originalFontSize},
                 {"cell_color", colorToString(colorsInt[0])},
                 {"color1", colorToString(colorsInt[1])},
@@ -194,14 +194,14 @@ void Config::save() {
             {
                 {"player1", UnicodeToUtf8(playerName[0])},
                 {"player2", UnicodeToUtf8(playerName[1])},
-                {"font_face", scoreFontFace},
-                {"font_style", std::string(scoreFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"font_face", UnicodeToUtf8(scoreFontFace)},
+                {"font_style", std::string(scoreFontStyle & 1 ? "B" : "") + (scoreFontStyle & 2 ? "I" : "")},
                 {"font_size", scoreFontSize},
                 {"text_shadow", scoreTextShadow},
                 {"text_shadow_color", colorToString(scoreTextShadowColor)},
                 {"text_shadow_offset", {scoreTextShadowOffset[0], scoreTextShadowOffset[1]}},
-                {"name_font_face", scoreNameFontFace},
-                {"name_font_style", std::string(scoreNameFontStyle & TTF_STYLE_BOLD ? "B" : "") + (scoreNameFontStyle & TTF_STYLE_ITALIC ? "I" : "")},
+                {"name_font_face", UnicodeToUtf8(scoreNameFontFace)},
+                {"name_font_style", std::string(scoreNameFontStyle & 1 ? "B" : "") + (scoreNameFontStyle & 2 ? "I" : "")},
                 {"name_font_size", scoreNameFontSize},
                 {"name_text_shadow", scoreNameTextShadow},
                 {"name_text_shadow_color", colorToString(scoreNameTextShadowColor)},
@@ -261,14 +261,6 @@ void Config::oldLoad() {
             cellSpacing = std::stoi(value);
         } else if (key == "CellBorder") {
             cellBorder = std::stoi(value);
-        } else if (key == "FontFile") {
-            auto sl = splitString(value, '|');
-            if (sl.size() == 2) {
-                fontFile = sl[0];
-                fontStyle = setFontStyle(sl[1]);
-            } else {
-                fontFile = value;
-            }
         } else if (key == "CellColor") {
             auto sl = splitString(value, ',');
             if (sl.size() != 4) continue;
@@ -456,14 +448,4 @@ void Config::oldLoad() {
             playerName[1] = Utf8ToUnicode(value);
         }
     }
-}
-
-void Config::postLoad() {
-    if (font) {
-        TTF_CloseFont(font);
-        font = nullptr;
-    }
-    font = TTF_OpenFont(fontFile.c_str(), fontSize);
-    TTF_SetFontStyle(font, fontStyle);
-    TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
 }

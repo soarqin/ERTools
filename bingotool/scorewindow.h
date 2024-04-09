@@ -19,6 +19,7 @@ struct ScoreWindow {
     SDL_Window *window[2] = {nullptr, nullptr};
     SDL_Renderer *renderer[2] = {nullptr, nullptr};
     SDL_Texture *texture[2] = {nullptr, nullptr};
+    TextSettings *textSettings[2];
     TextSource *textSource[2];
     SDL_Texture *colorMask[2] = {nullptr, nullptr};
     int w[2] = {0, 0}, h[2] = {0, 0}, tw[2] = {0, 0}, th[2] = {0, 0};

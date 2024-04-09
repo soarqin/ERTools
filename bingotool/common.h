@@ -2,7 +2,6 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
 #include <windows.h>
 #undef WIN32_LEAN_AND_MEAN
 #include <vector>
@@ -22,6 +21,8 @@ void unescape(std::string &str);
 std::string UnicodeToUtf8(const std::wstring &wstr);
 std::wstring Utf8ToUnicode(const std::string &str);
 
+/*
 SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, const SDL_Color *shadowColor, int outline, int offset[2]);
+*/
 
 std::wstring selectFile(HWND hwnd, const std::wstring &title, const std::wstring &defaultFolder, const std::wstring &filters, bool folderOnly, bool openMode);

@@ -59,18 +59,19 @@ enum class ShadowMode {
     Shadow,
 };
 
-struct TextSource {
-    SDL_Surface *surface = nullptr;
-
-    uint32_t cx = 0;
-    uint32_t cy = 0;
+struct TextSettings {
+    TextSettings();
+    ~TextSettings();
+    void updateFont();
+    void getStringFormat(StringFormat &format) const;
+    void removeNewlinePadding(const StringFormat &format, RectF &box) const;
+    int measureTextWithFixedWidth(const std::wstring &text, int width) const;
 
     HDCObj hdc;
     Graphics graphics;
 
     std::unique_ptr<Font> font;
 
-    std::wstring text;
     std::wstring face;
     int face_size = 0;
     uint32_t color = 0xFFFFFF;
@@ -85,24 +86,33 @@ struct TextSource {
     float shadow_size = 1.f;
     float shadow_offset[2] = {0.f, 0.f};
     uint32_t shadow_color = 0;
+};
+
+struct TextSource {
+    TextSource() = default;
+    inline explicit TextSource(TextSettings *s): settings(s) {}
+    ~TextSource();
+
+    void calculateTextSizes(const StringFormat &format, RectF &bounding_box,
+                            SIZE &text_size) const;
+    void renderTextWithShadow(Graphics &graphics, const GraphicsPath &path,
+                              const Brush &brush, float width) const;
+    void renderText();
+    void setAntiAliasing(Graphics &graphics_bitmap) const;
+
+    void update();
+
+    SDL_Surface *surface = nullptr;
+
+    TextSettings *settings = nullptr;
+
+    uint32_t cx = 0;
+    uint32_t cy = 0;
+
+    std::wstring text;
 
     bool use_extents = false;
     bool wrap = false;
     uint32_t extents_cx = 0;
     uint32_t extents_cy = 0;
-
-    TextSource();
-    ~TextSource();
-
-    void UpdateFont();
-    void GetStringFormat(StringFormat &format) const;
-    void RemoveNewlinePadding(const StringFormat &format, RectF &box) const;
-    void CalculateTextSizes(const StringFormat &format, RectF &bounding_box,
-                            SIZE &text_size) const;
-    void RenderTextWithShadow(Graphics &graphics, const GraphicsPath &path,
-                              const Brush &brush, float width) const;
-    void RenderText();
-    void SetAntiAliasing(Graphics &graphics_bitmap) const;
-
-    void Update();
 };

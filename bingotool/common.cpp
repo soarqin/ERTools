@@ -189,6 +189,7 @@ std::wstring Utf8ToUnicode(const std::string &str) {
     return result;
 }
 
+/*
 SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font,
                                                  const char *t,
                                                  const SDL_Color *c,
@@ -243,7 +244,9 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font,
 
     SDL_DestroySurface(black_letters);
 
-    /* --- Put the color version of the text on top! --- */
+    */
+/* --- Put the color version of the text on top! --- *//*
+
     white_letters = TTF_RenderUTF8_Blended_Wrapped(font, t, *c, wrapLength);
 
     if (!white_letters) {
@@ -271,6 +274,7 @@ SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font,
 
     return bg;
 }
+*/
 
 std::wstring selectFile(HWND hwnd, const std::wstring &title, const std::wstring &defaultFolder, const std::wstring &filters, bool folderOnly, bool openMode) {
     IFileDialog *pfd;

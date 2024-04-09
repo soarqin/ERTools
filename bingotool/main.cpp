@@ -7,7 +7,6 @@
 
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
 #include <windows.h>
 #include <commctrl.h>
 #include <objbase.h>
@@ -79,7 +78,7 @@ void sendJudgeSyncState() {
 void sendJudgeSyncData() {
     std::vector<std::string> n;
     gCells.foreach([&n](Cell &cell, int x, int y) {
-        n.emplace_back(cell.text);
+        n.emplace_back(UnicodeToUtf8(cell.textSource->text));
     });
     n.emplace_back(UnicodeToUtf8(gConfig.playerName[0]));
     n.emplace_back(UnicodeToUtf8(gConfig.playerName[1]));
@@ -107,7 +106,7 @@ static void randomCells(const std::string &filename) {
     size_t idx = 0;
     gCells.foreach([&result, &idx](Cell &cell, int x, int y) {
         cell.status = 0;
-        cell.text = result[idx++];
+        cell.setText(result[idx++]);
     });
     gCells.updateTextures();
     gScoreWindows[0].reset();
@@ -174,7 +173,7 @@ static void loadSquares() {
     std::string line;
     gCells.foreach([&ifs, &line](Cell &cell, int x, int y) {
         std::getline(ifs, line);
-        cell.text = line;
+        cell.setText(line);
     });
 }
 
@@ -193,8 +192,7 @@ void startSync() {
                             auto &cell = row[j];
                             if (idx >= sl.size()) break;
                             const auto &text = sl[idx++];
-                            if (cell.text == text) continue;
-                            cell.text = text;
+                            if (!cell.setText(text)) continue;
                             cell.updateTexture();
                             dirty = true;
                         }
@@ -274,7 +272,7 @@ void reloadAll() {
     gConfig.load();
     syncClose();
 
-    gConfig.postLoad();
+    gCells.preinit();
     loadSquares();
     gCells.init();
     gScoreWindows[0].create(0, UnicodeToUtf8(gConfig.playerName[0]));
@@ -347,7 +345,6 @@ static int mainLoop() {
         return 0;
     }
 
-    TTF_Init();
     reloadAll();
 
     while (true) {
@@ -698,17 +695,19 @@ static int mainLoop() {
     }
     QUIT:
     saveState();
-    TTF_CloseFont(gConfig.font);
     for (auto &w: gScoreWindows) {
         w.destroy();
     }
     gCells.foreach([](Cell &cell, int x, int y) {
+        if (cell.textSource != nullptr) {
+            delete cell.textSource;
+            cell.textSource = nullptr;
+        }
         SDL_DestroyTexture(cell.texture);
         cell.texture = nullptr;
     });
     gCells.deinit();
 
-    TTF_Quit();
     SDL_Quit();
     return 0;
 }

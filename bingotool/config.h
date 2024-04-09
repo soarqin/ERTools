@@ -1,14 +1,12 @@
 #pragma once
 
 #include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
 #include <string>
 
 struct Config {
     void load();
     void save();
     void oldLoad();
-    void postLoad();
 
     bool simpleMode = false;
     int originCellSizeX = 150;
@@ -22,19 +20,18 @@ struct Config {
     int textShadow = 0;
     SDL_Color textShadowColor = {0, 0, 0, 255};
     int textShadowOffset[2] = {0, 0};
-    std::string fontFile = "data/font.ttf";
     std::wstring fontFace = L"微软雅黑";
-    int fontStyle = TTF_STYLE_NORMAL;
+    int fontStyle = 0;
     int originalFontSize = 24;
     int fontSize = originalFontSize;
     std::wstring scoreFontFace = L"微软雅黑";
-    int scoreFontStyle = TTF_STYLE_NORMAL;
+    int scoreFontStyle = 0;
     int scoreFontSize = 24;
     int scoreTextShadow = 0;
     SDL_Color scoreTextShadowColor = {0, 0, 0, 255};
     int scoreTextShadowOffset[2] = {0, 0};
     std::wstring scoreNameFontFace = L"微软雅黑";
-    int scoreNameFontStyle = TTF_STYLE_NORMAL;
+    int scoreNameFontStyle = 0;
     int scoreNameFontSize = 24;
     int scoreNameTextShadow = 0;
     SDL_Color scoreNameTextShadowColor = {0, 0, 0, 255};
@@ -67,8 +64,6 @@ struct Config {
     std::string scoreBingoText = "Bingo!";
     std::string scoreNameWinText = "{0}获胜";
     std::string scoreNameBingoText = "{0}达成Bingo!";
-
-    TTF_Font *font = nullptr;
 };
 
 extern Config gConfig;

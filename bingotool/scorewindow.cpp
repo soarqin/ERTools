@@ -59,7 +59,8 @@ void ScoreWindow::createWindow() {
             colorMask[i] = loadTexture(renderer[i], gConfig.colorTextureFile[index].c_str());
             SDL_SetTextureBlendMode(colorMask[i], SDL_BLENDMODE_MUL);
         }
-        textSource[i] = new TextSource();
+        textSettings[i] = new TextSettings();
+        textSource[i] = new TextSource(textSettings[i]);
     }
 }
 
@@ -78,6 +79,10 @@ void ScoreWindow::destroyWindow() {
         if (textSource[i]) {
             delete textSource[i];
             textSource[i] = nullptr;
+        }
+        if (textSettings[i]) {
+            delete textSettings[i];
+            textSettings[i] = nullptr;
         }
         if (colorMask[i]) {
             SDL_DestroyTexture(colorMask[i]);
@@ -132,26 +137,26 @@ void ScoreWindow::updateTexture(bool reloadMask) {
     SDL_Color ushadowColor[2] = {gConfig.scoreTextShadowColor, gConfig.scoreNameTextShadowColor};
     int *ushadowOffset[2] = {gConfig.scoreTextShadowOffset, gConfig.scoreNameTextShadowOffset};
     for (int i = 0; i < 2; i++) {
-        if (!textSource[i]->font) {
-            textSource[i]->face = i == 0 ? gConfig.scoreFontFace : gConfig.scoreNameFontFace;
-            textSource[i]->face_size = i == 0 ? gConfig.scoreFontSize : gConfig.scoreNameFontSize;
+        if (!textSettings[i]->font) {
+            textSettings[i]->face = i == 0 ? gConfig.scoreFontFace : gConfig.scoreNameFontFace;
+            textSettings[i]->face_size = i == 0 ? gConfig.scoreFontSize : gConfig.scoreNameFontSize;
             auto style = i == 0 ? gConfig.scoreFontStyle : gConfig.scoreNameFontStyle;
-            textSource[i]->bold = style & 1;
-            textSource[i]->italic = style & 2;
+            textSettings[i]->bold = style & 1;
+            textSettings[i]->italic = style & 2;
         }
         if (gConfig.useColorTexture[index]) {
-            textSource[i]->color = 0xFFFFFFFF;
+            textSettings[i]->color = 0xFFFFFFFF;
         } else {
             auto &c = gConfig.colorsInt[index + 1];
-            textSource[i]->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+            textSettings[i]->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
         }
-        textSource[i]->shadow_mode = ushadow[i] == 0 ? ShadowMode::None : ushadowOffset[i][0] == 0 && ushadowOffset[i][1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
-        textSource[i]->shadow_size = float(ushadow[i]);
-        textSource[i]->shadow_offset[0] = float(ushadowOffset[i][0]);
-        textSource[i]->shadow_offset[1] = float(ushadowOffset[i][1]);
-        textSource[i]->shadow_color = ushadowColor[i].b | (ushadowColor[i].g << 8) | (ushadowColor[i].r << 16) | (ushadowColor[i].a << 24);
+        textSettings[i]->shadow_mode = ushadow[i] == 0 ? ShadowMode::None : ushadowOffset[i][0] == 0 && ushadowOffset[i][1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+        textSettings[i]->shadow_size = float(ushadow[i]);
+        textSettings[i]->shadow_offset[0] = float(ushadowOffset[i][0]);
+        textSettings[i]->shadow_offset[1] = float(ushadowOffset[i][1]);
+        textSettings[i]->shadow_color = ushadowColor[i].b | (ushadowColor[i].g << 8) | (ushadowColor[i].r << 16) | (ushadowColor[i].a << 24);
         textSource[i]->text = Utf8ToUnicode(utext[i]);
-        textSource[i]->Update();
+        textSource[i]->update();
 
         SDL_Texture *utexture;
         if (textSource[i]->surface) {

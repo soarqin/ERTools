@@ -21,23 +21,19 @@ static const auto EPSILON = std::numeric_limits<REAL>::epsilon();
 
 #define MAX_AREA (4096LL * 4096LL)
 
-TextSource::TextSource() :
+TextSettings::TextSettings() :
     hdc(CreateCompatibleDC(nullptr)),
     graphics(hdc) {
 }
 
-TextSource::~TextSource() {
-    if (surface) {
-        SDL_DestroySurface(surface);
-        surface = nullptr;
-    }
+TextSettings::~TextSettings() {
     if (hdc) {
         DeleteDC(hdc);
         hdc = nullptr;
     }
 }
 
-void TextSource::UpdateFont() {
+void TextSettings::updateFont() {
     font.reset(nullptr);
 
     LOGFONTW lf = {};
@@ -58,8 +54,15 @@ void TextSource::UpdateFont() {
     }
 }
 
-void TextSource::GetStringFormat(StringFormat &format) const {
-    UINT flags = StringFormatFlagsNoFitBlackBox |
+TextSource::~TextSource() {
+    if (surface) {
+        SDL_DestroySurface(surface);
+        surface = nullptr;
+    }
+}
+
+void TextSettings::getStringFormat(StringFormat &format) const {
+    INT flags = StringFormatFlagsNoFitBlackBox |
         StringFormatFlagsMeasureTrailingSpaces;
 
     if (vertical)
@@ -114,7 +117,7 @@ void TextSource::GetStringFormat(StringFormat &format) const {
  * calculating the texture size, so we have to calculate the size of '\n' to
  * remove the padding.  Because we always add a newline to the string, we
  * also remove the extra unused newline. */
-void TextSource::RemoveNewlinePadding(const StringFormat &format, RectF &box) const {
+void TextSettings::removeNewlinePadding(const StringFormat &format, RectF &box) const {
     RectF before;
     RectF after;
 
@@ -149,7 +152,32 @@ void TextSource::RemoveNewlinePadding(const StringFormat &format, RectF &box) co
     box.Height -= offset_cy;
 }
 
-void TextSource::CalculateTextSizes(const StringFormat &format,
+int TextSettings::measureTextWithFixedWidth(const std::wstring &text, int width) const {
+    StringFormat format(StringFormat::GenericTypographic());
+    getStringFormat(format);
+    RectF layout_box;
+    RectF temp_box;
+    layout_box.X = layout_box.Y = 0;
+    layout_box.Width = float(width);
+    layout_box.Height = MAX_SIZE_CY;
+
+    switch (shadow_mode) {
+        case ShadowMode::None:
+            break;
+        case ShadowMode::Outline:
+            layout_box.Width -= shadow_size * 2.f;
+            break;
+        case ShadowMode::Shadow:
+            layout_box.Width -= std::abs(shadow_offset[0]) + std::max(shadow_size - 1.f, 0.f);
+            break;
+    }
+    graphics.MeasureString(text.c_str(), -1, font.get(), layout_box,
+                           &format, &temp_box);
+    //removeNewlinePadding(format, temp_box);
+    return std::ceil(temp_box.Height + std::abs(shadow_offset[1]) + std::max(shadow_size - 1.f, 0.f));
+}
+
+void TextSource::calculateTextSizes(const StringFormat &format,
                                     RectF &bounding_box, SIZE &text_size) const {
     RectF layout_box;
     RectF temp_box;
@@ -160,64 +188,65 @@ void TextSource::CalculateTextSizes(const StringFormat &format,
             layout_box.Width = float(extents_cx);
             layout_box.Height = float(extents_cy);
 
-            switch (shadow_mode) {
+            switch (settings->shadow_mode) {
                 case ShadowMode::None:
                     break;
                 case ShadowMode::Outline:
-                    layout_box.Width -= shadow_size * 2.f;
-                    layout_box.Height -= shadow_size * 2.f;
+                    layout_box.Width -= settings->shadow_size * 2.f;
+                    layout_box.Height -= settings->shadow_size * 2.f;
                     break;
                 case ShadowMode::Shadow:
-                    layout_box.Width -= std::abs(shadow_offset[0]);
-                    layout_box.Height -= std::abs(shadow_offset[1]);
+                    layout_box.Width -= std::abs(settings->shadow_offset[0]) + std::max(settings->shadow_size - 1.f, 0.f);
+                    layout_box.Height -= std::abs(settings->shadow_offset[1]) + std::max(settings->shadow_size - 1.f, 0.f);
                     break;
             }
 
-            graphics.MeasureString(text.c_str(),
-                                   -1,
-                                   font.get(), layout_box,
-                                   &format, &bounding_box);
+            settings->graphics.MeasureString(text.c_str(),
+                                             -1,
+                                             settings->font.get(), layout_box,
+                                             &format, &bounding_box);
 
             temp_box = bounding_box;
+            //settings->removeNewlinePadding(format, bounding_box);
         } else {
-            graphics.MeasureString(
-                text.c_str(), -1, font.get(),
+            settings->graphics.MeasureString(
+                text.c_str(), -1, settings->font.get(),
                 PointF(0.0f, 0.0f), &format, &bounding_box);
             temp_box = bounding_box;
 
             bounding_box.X = 0.0f;
             bounding_box.Y = 0.0f;
 
-            RemoveNewlinePadding(format, bounding_box);
+            //settings->removeNewlinePadding(format, bounding_box);
 
-            switch (shadow_mode) {
+            switch (settings->shadow_mode) {
                 case ShadowMode::None:
                     break;
                 case ShadowMode::Outline:
-                    bounding_box.Width += shadow_size * 2.f;
-                    bounding_box.Height += shadow_size * 2.f;
+                    bounding_box.Width += settings->shadow_size * 2.f;
+                    bounding_box.Height += settings->shadow_size * 2.f;
                     break;
                 case ShadowMode::Shadow:
-                    bounding_box.Width += std::abs(shadow_offset[0]) + shadow_size - 1.f;
-                    bounding_box.Height += std::abs(shadow_offset[1]) + shadow_size - 1.f;
+                    bounding_box.Width += std::abs(settings->shadow_offset[0]) + std::max(settings->shadow_size - 1.f, 0.f);
+                    bounding_box.Height += std::abs(settings->shadow_offset[1]) + std::max(settings->shadow_size - 1.f, 0.f);
                     break;
             }
         }
     }
 
-    if (vertical) {
-        if (bounding_box.Width < face_size) {
-            text_size.cx = face_size;
-            bounding_box.Width = float(face_size);
+    if (settings->vertical) {
+        if (bounding_box.Width < settings->face_size) {
+            text_size.cx = settings->face_size;
+            bounding_box.Width = float(settings->face_size);
         } else {
             text_size.cx = LONG(bounding_box.Width + EPSILON);
         }
 
         text_size.cy = LONG(bounding_box.Height + EPSILON);
     } else {
-        if (bounding_box.Height < face_size) {
-            text_size.cy = face_size;
-            bounding_box.Height = float(face_size);
+        if (bounding_box.Height < settings->face_size) {
+            text_size.cy = settings->face_size;
+            bounding_box.Height = float(settings->face_size);
         } else {
             text_size.cy = LONG(bounding_box.Height + EPSILON);
         }
@@ -253,87 +282,87 @@ void TextSource::CalculateTextSizes(const StringFormat &format,
     bounding_box.Height = temp_box.Height;
 }
 
-void TextSource::RenderTextWithShadow(Graphics &gr, const GraphicsPath &path,
+void TextSource::renderTextWithShadow(Graphics &graphics, const GraphicsPath &path,
                                       const Brush &brush, float width) const {
-    Pen pen(Color(shadow_color), width);
+    Pen pen(Color(settings->shadow_color), width);
     pen.SetLineJoin(LineJoinRound);
 
-    gr.DrawPath(&pen, &path);
+    graphics.DrawPath(&pen, &path);
 
-    gr.FillPath(&brush, &path);
+    graphics.FillPath(&brush, &path);
 }
 
-void TextSource::RenderText() {
+void TextSource::renderText() {
     StringFormat format(StringFormat::GenericTypographic());
 
     RectF box;
     SIZE size;
 
-    GetStringFormat(format);
-    CalculateTextSizes(format, box, size);
+    settings->getStringFormat(format);
+    calculateTextSizes(format, box, size);
 
     std::unique_ptr<uint8_t[]> bits(new uint8_t[size.cx * size.cy * 4]);
     Bitmap bitmap(size.cx, size.cy, 4 * size.cx, PixelFormat32bppARGB,
                   bits.get());
 
     Graphics graphics_bitmap(&bitmap);
-    SolidBrush brush((Color(color)));
+    SolidBrush brush((Color(settings->color)));
 
     graphics_bitmap.Clear(Color(0));
 
     graphics_bitmap.SetCompositingMode(CompositingModeSourceOver);
-    SetAntiAliasing(graphics_bitmap);
+    setAntiAliasing(graphics_bitmap);
 
     if (!text.empty()) {
-        switch (shadow_mode) {
+        switch (settings->shadow_mode) {
             case ShadowMode::None:
                 break;
             case ShadowMode::Outline: {
-                box.Offset(shadow_size, shadow_size);
+                box.Offset(settings->shadow_size, settings->shadow_size);
 
                 FontFamily family;
                 GraphicsPath path;
 
-                font->GetFamily(&family);
+                settings->font->GetFamily(&family);
                 path.AddString(text.c_str(), (int)text.size(),
-                               &family, font->GetStyle(),
-                               font->GetSize(), box, &format);
+                               &family, settings->font->GetStyle(),
+                               settings->font->GetSize(), box, &format);
 
-                RenderTextWithShadow(graphics_bitmap, path, brush, shadow_size * 2);
+                renderTextWithShadow(graphics_bitmap, path, brush, settings->shadow_size * 2);
                 break;
             }
             case ShadowMode::Shadow:
-                if (shadow_offset[0] != 0.f || shadow_offset[1] != 0.f) {
-                    SolidBrush bkbrush((Color(shadow_color)));
+                if (settings->shadow_offset[0] != 0.f || settings->shadow_offset[1] != 0.f) {
+                    SolidBrush bkbrush((Color(settings->shadow_color)));
                     auto bkbox = box;
-                    if (shadow_offset[0] > 0)
-                        bkbox.X += shadow_offset[0];
+                    if (settings->shadow_offset[0] > 0)
+                        bkbox.X += settings->shadow_offset[0];
                     else
-                        box.X -= shadow_offset[0];
-                    if (shadow_offset[1] > 0)
-                        bkbox.Y += shadow_offset[1];
+                        box.X -= settings->shadow_offset[0];
+                    if (settings->shadow_offset[1] > 0)
+                        bkbox.Y += settings->shadow_offset[1];
                     else
-                        box.Y -= shadow_offset[1];
-                    if (shadow_size > 0.5f) {
+                        box.Y -= settings->shadow_offset[1];
+                    if (settings->shadow_size > 0.5f) {
                         FontFamily family;
                         GraphicsPath path;
 
-                        font->GetFamily(&family);
+                        settings->font->GetFamily(&family);
                         path.AddString(text.c_str(), (int)text.size(),
-                                       &family, font->GetStyle(),
-                                       font->GetSize(), bkbox, &format);
+                                       &family, settings->font->GetStyle(),
+                                       settings->font->GetSize(), bkbox, &format);
 
-                        RenderTextWithShadow(graphics_bitmap, path, bkbrush, shadow_size);
+                        renderTextWithShadow(graphics_bitmap, path, bkbrush, settings->shadow_size);
                     } else {
                         graphics_bitmap.DrawString(text.c_str(),
                                                    (int)text.size(),
-                                                   font.get(), bkbox,
+                                                   settings->font.get(), bkbox,
                                                    &format, &bkbrush);
                     }
                 }
                 graphics_bitmap.DrawString(text.c_str(),
                                            (int)text.size(),
-                                           font.get(), box,
+                                           settings->font.get(), box,
                                            &format, &brush);
                 break;
         }
@@ -367,8 +396,8 @@ void TextSource::RenderText() {
     }
 }
 
-void TextSource::SetAntiAliasing(Graphics &graphics_bitmap) const {
-    if (!antialiasing) {
+void TextSource::setAntiAliasing(Graphics &graphics_bitmap) const {
+    if (!settings->antialiasing) {
         graphics_bitmap.SetTextRenderingHint(
             TextRenderingHintSingleBitPerPixel);
         graphics_bitmap.SetSmoothingMode(SmoothingModeNone);
@@ -381,10 +410,12 @@ void TextSource::SetAntiAliasing(Graphics &graphics_bitmap) const {
 
 #define obs_data_get_uint32 (uint32_t) obs_data_get_int
 
-void TextSource::Update() {
-    if (!font) UpdateFont();
-    if (!text.empty())
+void TextSource::update() {
+    if (!settings->font) settings->updateFont();
+/*
+    if (!text.empty() && text.back() != '\n')
         text.push_back('\n');
+*/
 
-    RenderText();
+    renderText();
 }

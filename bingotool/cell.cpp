@@ -47,48 +47,38 @@ void Cell::updateTexture() {
         SDL_DestroyTexture(texture);
         texture = nullptr;
     }
-    if (text.empty()) {
+    if (textSource->text.empty()) {
         w = h = 0;
         return;
     }
-    auto *font = gConfig.font;
+    auto side = status > 2 ? status - 2 : status;
+    if (side > 0 && gConfig.useColorTexture[side - 1]) {
+        textSettings->color = 0xFFFFFFFF;
+    } else {
+        auto &c = gConfig.textColor;
+        textSettings->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+    }
     switch (gConfig.cellAutoFit) {
         case 0: {
             auto fontSize = gConfig.fontSize;
             auto maxHeight = gConfig.cellSize[1] - 2;
-            while (true) {
-                bool fit = calculateMinimalHeight(font) <= maxHeight;
-                if (fit) {
-                    auto *surface =
-                        TTF_RenderUTF8_BlackOutline_Wrapped(font,
-                                                            text.c_str(),
-                                                            &gConfig.textColor,
-                                                            gConfig.cellSize[0] * 9 / 10,
-                                                            &gConfig.textShadowColor,
-                                                            gConfig.textShadow,
-                                                            gConfig.textShadowOffset);
-                    texture = SDL_CreateTextureFromSurface(renderer, surface);
-                    SDL_DestroySurface(surface);
+            auto cwidth = gConfig.cellSize[0] * 9 / 10;
+            while (fontSize > 11) {
+                if (textSettings->measureTextWithFixedWidth(textSource->text, cwidth) <= maxHeight) {
+                    break;
                 }
-                if (font != gConfig.font) {
-                    TTF_CloseFont(font);
-                }
-                if (fit) break;
                 fontSize--;
-                font = TTF_OpenFont(gConfig.fontFile.c_str(), fontSize);
-                TTF_SetFontStyle(font, gConfig.fontStyle);
-                TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
+                textSettings->face_size = fontSize;
+                textSettings->updateFont();
             }
             break;
         }
         default: {
-            auto *surface =
-                TTF_RenderUTF8_BlackOutline_Wrapped(font, text.c_str(), &gConfig.textColor, gConfig.cellSize[0] * 9 / 10, &gConfig.textShadowColor, gConfig.textShadow, gConfig.textShadowOffset);
-            texture = SDL_CreateTextureFromSurface(renderer, surface);
-            SDL_DestroySurface(surface);
             break;
         }
     }
+    textSource->update();
+    texture = SDL_CreateTextureFromSurface(renderer, textSource->surface);
     SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
     SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
 }
@@ -123,64 +113,22 @@ void Cell::render(int x, int y, int cx, int cy) const {
     }
 }
 
-int Cell::calculateMinimalWidth(TTF_Font *font) {
+int Cell::calculateMinimalWidth() const {
     auto maxHeight = gConfig.cellSize[1] - 2;
-    auto width = gConfig.cellSize[0];
-    size_t len = text.length();
-    int sw, sh;
-    TTF_SizeUTF8(font, text.c_str(), &sw, &sh);
-    int th = std::max(sh, TTF_FontLineSkip(font));
+    auto width = gConfig.cellSize[0] & ~1;
     while (true) {
         auto maxWidth = width * 9 / 10;
-        size_t index = 0;
-        int lines = 0;
-        while (index < len) {
-            int count;
-            if (TTF_MeasureUTF8(font, text.c_str() + index, maxWidth, nullptr, &count) < 0) break;
-            if (count == 0) break;
-            lines++;
-            while (count > 0 && index < len) {
-                auto c = uint8_t(text[index]);
-                if (c < 0x80) index++;
-                else if (c < 0xE0) index += 2;
-                else if (c < 0xF0) index += 3;
-                else if (c < 0xF8) index += 4;
-                else if (c < 0xFC) index += 5;
-                else index += 6;
-                count--;
-            }
-        }
-        auto currHeight = (lines - 1) * th + sh;
-        if (currHeight <= maxHeight) break;
+        if (textSettings->measureTextWithFixedWidth(textSource->text, maxWidth) <= maxHeight) break;
         width += 2;
     }
     return width;
 }
 
-int Cell::calculateMinimalHeight(TTF_Font *font) {
-    auto maxWidth = gConfig.cellSize[0] * 9 / 10;
-    size_t index = 0;
-    size_t len = text.length();
-    int lines = 0;
-    while (index < len) {
-        int count;
-        if (TTF_MeasureUTF8(font, text.c_str() + index, maxWidth, nullptr, &count) < 0) break;
-        if (count == 0) break;
-        lines++;
-        while (count > 0 && index < len) {
-            auto c = uint8_t(text[index]);
-            if (c < 0x80) index++;
-            else if (c < 0xE0) index += 2;
-            else if (c < 0xF0) index += 3;
-            else if (c < 0xF8) index += 4;
-            else if (c < 0xFC) index += 5;
-            else index += 6;
-            count--;
-        }
-    }
-    int tw, th;
-    TTF_SizeUTF8(font, text.c_str(), &tw, &th);
-    return (lines - 1) * std::max(th, TTF_FontLineSkip(font)) + th;
+bool Cell::setText(const std::string &text) {
+    auto utext = Utf8ToUnicode(text);
+    if (utext == textSource->text) return false;
+    textSource->text = std::move(utext);
+    return true;
 }
 
 SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void *data) {
@@ -189,6 +137,22 @@ SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void 
     if (pt->y < 30)
         return SDL_HITTEST_DRAGGABLE;
     return SDL_HITTEST_NORMAL;
+}
+
+void Cells::preinit() {
+    cellTextSettings_ = new TextSettings();
+    cellTextSettings_->align = Align::Center;
+    cellTextSettings_->valign = VAlign::Center;
+    for (auto &r : cells_) {
+        for (auto &c : r) {
+            c.textSettings = cellTextSettings_;
+            c.textSource = new TextSource(c.textSettings);
+            c.textSource->wrap = true;
+            c.textSource->use_extents = true;
+            c.textSource->extents_cx = gConfig.cellSize[0] * 9 / 10;
+            c.textSource->extents_cy = gConfig.cellSize[1] - 2;
+        }
+    }
 }
 
 void Cells::init() {
@@ -212,16 +176,17 @@ void Cells::init() {
     renderer_ = SDL_CreateRenderer(window_, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
-    textSource_ = new TextSource();
+    updateCellTextSettings();
+    scoreTextSettings_ = new TextSettings();
+    scoreTextSource_ = new TextSource(scoreTextSettings_);
 
-    fitCellsForText();
     for (auto &r : cells_) {
         for (auto &c : r) {
             c.renderer = renderer_;
-            c.updateTexture();
         }
     }
     reloadColorTexture();
+    updateTextures(true);
 }
 
 void Cells::deinit() {
@@ -235,9 +200,13 @@ void Cells::deinit() {
         SDL_DestroyTexture(tex);
         tex = nullptr;
     }
-    if (textSource_) {
-        delete textSource_;
-        textSource_ = nullptr;
+    if (scoreTextSource_) {
+        delete scoreTextSource_;
+        scoreTextSource_ = nullptr;
+    }
+    if (scoreTextSettings_) {
+        delete scoreTextSettings_;
+        scoreTextSettings_ = nullptr;
     }
     SDL_DestroyRenderer(renderer_);
     renderer_ = nullptr;
@@ -285,49 +254,38 @@ void Cells::render() {
 void Cells::fitCellsForText() {
     gConfig.cellSize[0] = gConfig.originCellSizeX;
     if (gConfig.fontSize != gConfig.originalFontSize) {
-        TTF_CloseFont(gConfig.font);
-        gConfig.font = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
-        TTF_SetFontStyle(gConfig.font, gConfig.fontStyle);
-        TTF_SetFontWrappedAlign(gConfig.font, TTF_WRAPPED_ALIGN_CENTER);
         gConfig.fontSize = gConfig.originalFontSize;
+        cellTextSettings_->face_size = gConfig.fontSize;
+        cellTextSettings_->updateFont();
     }
     switch (gConfig.cellAutoFit) {
         case 1: {
-            auto *font = gConfig.font;
             auto fontSize = gConfig.fontSize;
             auto maxHeight = gConfig.cellSize[1] - 2;
             while (fontSize > 11) {
                 bool fit = true;
                 for (int i = 0; i < 25; i++) {
                     auto &cell = cells_[i / 5][i % 5];
-                    int h = cell.calculateMinimalHeight(font);
+                    int h = cell.textSettings->measureTextWithFixedWidth(cell.textSource->text, gConfig.cellSize[0] * 9 / 10);
                     if (h > maxHeight) {
                         fit = false;
                         break;
                     }
                 }
                 if (fit) {
-                    if (font != gConfig.font) {
-                        TTF_CloseFont(gConfig.font);
-                        gConfig.font = font;
-                        gConfig.fontSize = fontSize;
-                    }
+                    gConfig.fontSize = fontSize;
                     break;
                 }
-                if (font != gConfig.font) {
-                    TTF_CloseFont(font);
-                }
                 fontSize--;
-                font = TTF_OpenFont(gConfig.fontFile.c_str(), fontSize);
-                TTF_SetFontStyle(font, gConfig.fontStyle);
-                TTF_SetFontWrappedAlign(font, TTF_WRAPPED_ALIGN_CENTER);
+                cellTextSettings_->face_size = fontSize;
+                cellTextSettings_->updateFont();
             }
             break;
         }
         case 2: {
             int minWidth = gConfig.cellSize[0];
             foreach([&minWidth](Cell &cell, int, int) {
-                int w = cell.calculateMinimalWidth(gConfig.font);
+                int w = cell.calculateMinimalWidth();
                 if (w > minWidth) minWidth = w;
             });
             if (minWidth > gConfig.cellSize[0]) {
@@ -355,6 +313,29 @@ void Cells::resizeWindow() {
                       + (gConfig.simpleMode ? (gConfig.scoreFontSize + 5) : 0));
 }
 
+void Cells::updateCellTextSettings() {
+    if (!cellTextSettings_->font) {
+        cellTextSettings_->face = gConfig.fontFace;
+        cellTextSettings_->face_size = gConfig.fontSize;
+        cellTextSettings_->bold = gConfig.fontStyle & 1;
+        cellTextSettings_->italic = gConfig.fontStyle & 2;
+        cellTextSettings_->updateFont();
+    }
+    cellTextSettings_->shadow_mode = gConfig.textShadow == 0 ? ShadowMode::None : gConfig.textShadowOffset[0] == 0 && gConfig.textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+    cellTextSettings_->shadow_size = float(gConfig.textShadow);
+    cellTextSettings_->shadow_offset[0] = float(gConfig.textShadowOffset[0]);
+    cellTextSettings_->shadow_offset[1] = float(gConfig.textShadowOffset[1]);
+    cellTextSettings_->shadow_color = gConfig.textShadowColor.b | (gConfig.textShadowColor.g << 8) | (gConfig.textShadowColor.r << 16) | (gConfig.textShadowColor.a << 24);
+}
+
+void Cells::resetCellFonts() {
+    cellTextSettings_->face = gConfig.fontFace;
+    cellTextSettings_->face_size = gConfig.fontSize;
+    cellTextSettings_->bold = gConfig.fontStyle & 1;
+    cellTextSettings_->italic = gConfig.fontStyle & 2;
+    cellTextSettings_->updateFont();
+}
+
 void Cells::updateTextures(bool fit) {
     if (fit) fitCellsForText();
     foreach([](Cell &cell, int, int) {
@@ -373,29 +354,29 @@ void Cells::updateScoreTextures(int index) {
     SDL_Color ushadowColor = gConfig.scoreTextShadowColor;
     int *ushadowOffset = gConfig.scoreTextShadowOffset;
 
-    if (!textSource_->font) {
-        textSource_->face = gConfig.scoreFontFace;
-        textSource_->face_size = gConfig.scoreFontSize;
-        textSource_->bold = gConfig.scoreFontStyle & 1;
-        textSource_->italic = gConfig.scoreFontStyle & 2;
+    if (!scoreTextSettings_->font) {
+        scoreTextSettings_->face = gConfig.scoreFontFace;
+        scoreTextSettings_->face_size = gConfig.scoreFontSize;
+        scoreTextSettings_->bold = gConfig.scoreFontStyle & 1;
+        scoreTextSettings_->italic = gConfig.scoreFontStyle & 2;
     }
     if (gConfig.useColorTexture[index]) {
-        textSource_->color = 0xFFFFFFFF;
+        scoreTextSettings_->color = 0xFFFFFFFF;
     } else {
         auto &c = gConfig.colorsInt[index + 1];
-        textSource_->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+        scoreTextSettings_->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
     }
-    textSource_->shadow_mode = ushadow == 0 ? ShadowMode::None : ushadowOffset[0] == 0 && ushadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
-    textSource_->shadow_size = float(ushadow);
-    textSource_->shadow_offset[0] = float(ushadowOffset[0]);
-    textSource_->shadow_offset[1] = float(ushadowOffset[1]);
-    textSource_->shadow_color = ushadowColor.b | (ushadowColor.g << 8) | (ushadowColor.r << 16) | (ushadowColor.a << 24);
-    textSource_->text = Utf8ToUnicode(utext);
-    textSource_->Update();
+    scoreTextSettings_->shadow_mode = ushadow == 0 ? ShadowMode::None : ushadowOffset[0] == 0 && ushadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+    scoreTextSettings_->shadow_size = float(ushadow);
+    scoreTextSettings_->shadow_offset[0] = float(ushadowOffset[0]);
+    scoreTextSettings_->shadow_offset[1] = float(ushadowOffset[1]);
+    scoreTextSettings_->shadow_color = ushadowColor.b | (ushadowColor.g << 8) | (ushadowColor.r << 16) | (ushadowColor.a << 24);
+    scoreTextSource_->text = Utf8ToUnicode(utext);
+    scoreTextSource_->update();
 
     SDL_Texture *utexture;
-    if (textSource_->surface) {
-        utexture = SDL_CreateTextureFromSurface(renderer_, textSource_->surface);
+    if (scoreTextSource_->surface) {
+        utexture = SDL_CreateTextureFromSurface(renderer_, scoreTextSource_->surface);
     } else {
         utexture = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
     }
@@ -493,10 +474,8 @@ void initConfigDialog(HWND hwnd) {
     SetWindowPos(hwnd, nullptr, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 
     HWND edc = GetDlgItem(hwnd, IDC_TEXTFONT);
-    auto fontFileName = Utf8ToUnicode(gConfig.fontFile);
-    SetWindowTextW(edc, fontFileName.c_str());
+    SetWindowTextW(edc, (gConfig.fontFace + L", " + std::to_wstring(gConfig.originalFontSize) + L"pt").c_str());
 
-    setEditUpDownIntAndRange(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 0, 256);
     setEditUpDownIntAndRange(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOW, gConfig.textShadow, 0, 10);
     setEditUpDownIntAndRange(hwnd, IDC_SHADOWOFFSET_X, gConfig.textShadowOffset[0], -20, 20);
@@ -639,34 +618,28 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             return 0;
         }
         case IDC_BTN_SEL_TEXTFONT: {
-            auto fontSelected = openDialogForFontFileSelection(hwnd);
-            if (fontSelected.empty()) return 0;
-            wchar_t szFileRel[MAX_PATH] = {0};
-            wchar_t szCurrentPath[MAX_PATH];
-            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
-            PathRemoveFileSpecW(szCurrentPath);
-            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, fontSelected.c_str(), FILE_ATTRIBUTE_NORMAL);
-            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
-                lstrcpyW(szFileRel, fontSelected.c_str());
-            }
-            for (int i = 0; szFileRel[i]; i++) {
-                if (szFileRel[i] == '\\') szFileRel[i] = '/';
-            }
-            auto fontFileName = UnicodeToUtf8(szFileRel);
-            if (lstrcmpiA(fontFileName.c_str(), gConfig.fontFile.c_str()) != 0) {
-                gConfig.fontFile = fontFileName;
-                auto newFont = TTF_OpenFont(fontFileName.c_str(), gConfig.fontSize);
-                if (newFont == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
-                } else {
-                    if (gConfig.font) {
-                        TTF_CloseFont(gConfig.font);
-                    }
-                    gConfig.font = newFont;
-                    gCells.updateTextures();
-                    auto edc = GetDlgItem(hwnd, IDC_TEXTFONT);
-                    SetWindowTextW(edc, szFileRel);
-                }
+            auto style = gConfig.fontStyle;
+            LOGFONTW lf = {};
+            lf.lfHeight = -MulDiv(gConfig.originalFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfWeight = style & 1 ? FW_BOLD : FW_DONTCARE;
+            lf.lfItalic = style & 2;
+            lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
+            lf.lfCharSet = DEFAULT_CHARSET;
+            lstrcpyW(lf.lfFaceName, gConfig.fontFace.c_str());
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            cf.hwndOwner = hwnd;
+            cf.lpLogFont = &lf;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.nSizeMin = 6;
+            cf.nSizeMax = 256;
+            if (ChooseFontW(&cf)) {
+                gConfig.fontFace = lf.lfFaceName;
+                gConfig.fontSize = gConfig.originalFontSize = cf.iPointSize / 10;
+                gConfig.fontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                gCells.resetCellFonts();
+                gCells.updateTextures();
+                auto edc = GetDlgItem(hwnd, IDC_TEXTFONT);
+                SetWindowTextW(edc, (gConfig.fontFace + L", " + std::to_wstring(gConfig.originalFontSize) + L"pt").c_str());
             }
             return 0;
         }
@@ -737,14 +710,14 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                 gConfig.scoreFontSize = cf.iPointSize / 10;
                 gConfig.scoreFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
                 if (gConfig.simpleMode) {
-                    gCells.textSource()->font.reset(nullptr);
+                    gCells.scoreTextSettings()->font.reset(nullptr);
                     gCells.resizeWindow();
                     for (int i = 0; i < 2; i++) {
                         gCells.updateScoreTextures(i);
                     }
                 } else {
                     for (auto & window : gScoreWindows) {
-                        window.textSource[0]->font.reset(nullptr);
+                        window.textSettings[0]->font.reset(nullptr);
                         window.updateTexture();
                     }
                 }
@@ -772,14 +745,14 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             break;
         }
         case IDC_BTN_SEL_NAMEFONT: {
-            auto style = gConfig.scoreNameFontStyle;
+            auto style = gConfig.scoreFontStyle;
             LOGFONTW lf = {};
-            lf.lfHeight = -MulDiv(gConfig.scoreNameFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfHeight = -MulDiv(gConfig.scoreFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
             lf.lfWeight = style & 1 ? FW_BOLD : FW_DONTCARE;
             lf.lfItalic = style & 2;
             lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
             lf.lfCharSet = DEFAULT_CHARSET;
-            lstrcpyW(lf.lfFaceName, gConfig.scoreNameFontFace.c_str());
+            lstrcpyW(lf.lfFaceName, gConfig.scoreFontFace.c_str());
             CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
             cf.hwndOwner = hwnd;
             cf.lpLogFont = &lf;
@@ -787,18 +760,12 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             cf.nSizeMin = 6;
             cf.nSizeMax = 256;
             if (ChooseFontW(&cf)) {
-                gConfig.scoreNameFontFace = lf.lfFaceName;
-                gConfig.scoreNameFontSize = cf.iPointSize / 10;
-                gConfig.scoreNameFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
-                if (gConfig.simpleMode) {
-                    gCells.textSource()->font.reset(nullptr);
-                    gCells.resizeWindow();
-                    for (int i = 0; i < 2; i++) {
-                        gCells.updateScoreTextures(i);
-                    }
-                } else {
+                gConfig.scoreFontFace = lf.lfFaceName;
+                gConfig.scoreFontSize = cf.iPointSize / 10;
+                gConfig.scoreFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                if (!gConfig.simpleMode) {
                     for (auto & window : gScoreWindows) {
-                        window.textSource[0]->font.reset(nullptr);
+                        window.textSettings[1]->font.reset(nullptr);
                         window.updateTexture();
                     }
                 }
@@ -922,26 +889,6 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
     if (noEnChangeNotification)
         return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
-        case IDC_TEXTSIZE: {
-            setNewValFromControl(hwnd, IDC_TEXTSIZE, gConfig.originalFontSize, 0, 256, [hwnd](int oldSize) {
-                auto ft = TTF_OpenFont(gConfig.fontFile.c_str(), gConfig.originalFontSize);
-                if (ft == nullptr) {
-                    gConfig.originalFontSize = oldSize;
-                    MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
-                    return true;
-                }
-                gConfig.fontSize = gConfig.originalFontSize;
-                TTF_SetFontStyle(ft, gConfig.fontStyle);
-                TTF_SetFontWrappedAlign(ft, TTF_WRAPPED_ALIGN_CENTER);
-                if (gConfig.font) {
-                    TTF_CloseFont(gConfig.font);
-                }
-                gConfig.font = ft;
-                gCells.updateTextures();
-                return true;
-            });
-            break;
-        }
         case IDC_TEXTCOLORA: {
             setNewValFromControl(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255, [](int newVal) {
                 gCells.updateTextures(false);
