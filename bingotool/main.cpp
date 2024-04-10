@@ -698,14 +698,6 @@ static int mainLoop() {
     for (auto &w: gScoreWindows) {
         w.destroy();
     }
-    gCells.foreach([](Cell &cell, int x, int y) {
-        if (cell.textSource != nullptr) {
-            delete cell.textSource;
-            cell.textSource = nullptr;
-        }
-        SDL_DestroyTexture(cell.texture);
-        cell.texture = nullptr;
-    });
     gCells.deinit();
 
     SDL_Quit();

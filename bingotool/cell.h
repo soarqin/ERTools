@@ -7,6 +7,7 @@
 #include <functional>
 
 struct Cell {
+    void deinit();
     void updateTexture();
     void render(int x, int y, int cx, int cy) const;
     int calculateMinimalWidth() const;
@@ -18,6 +19,7 @@ struct Cell {
     TextSource *textSource = nullptr;
     uint32_t status = 0;
     int w = 0, h = 0;
+    bool needDeallocTextSettings = false;
 };
 
 class Cells {
@@ -30,7 +32,8 @@ public:
     void fitCellsForText();
     void foreach(const std::function<void(Cell &cell, int x, int y)> &callback);
     void resizeWindow();
-    void updateCellTextSettings();
+    static void updateCellTextSettings(TextSettings *s);
+    void updateScoreTextSettings();
     void resetCellFonts();
     void updateTextures(bool fit = true);
     void updateScoreTextures(int index);

@@ -132,6 +132,8 @@ void Config::load() {
     const auto rules = toml::find_or(data, "rules", toml::value());
     if (rules.is_table()) {
         bingoBrawlersMode = toml::find_or(rules, "bingo_brawlers_mode", bingoBrawlersMode);
+
+        // Periodic rules
         const auto scr = toml::find_or(rules, "scores", toml::value());
         if (scr.is_array()) {
             for (size_t i = 0; i < scr.size() && i < 5; i++) {
@@ -148,6 +150,10 @@ void Config::load() {
         maxPerRow = toml::find_or(rules, "max_per_row", maxPerRow);
         clearScore = toml::find_or(rules, "clear_score", clearScore);
         clearQuestMultiplier = toml::find_or(rules, "clear_quest_multiplier", clearQuestMultiplier);
+
+        // Bingo Brawlers Season 3 rules
+        bingoScore = toml::find_or(rules, "bingo_score", bingoScore);
+        winScore = toml::find_or(rules, "win_score", winScore);
     }
     for (int i = 0; i < 3; i++) {
         auto &c = colors[i];
@@ -225,6 +231,8 @@ void Config::save() {
                 {"max_per_row", maxPerRow},
                 {"clear_score", clearScore},
                 {"clear_quest_multiplier", clearQuestMultiplier},
+                {"bingo_score", bingoScore},
+                {"win_score", winScore},
             }
         },
     };

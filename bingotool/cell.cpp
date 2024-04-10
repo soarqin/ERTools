@@ -42,6 +42,22 @@ static HBRUSH player2ColorBrush = nullptr;
 static HBITMAP player1Bitmap = nullptr;
 static HBITMAP player2Bitmap = nullptr;
 
+void Cell::deinit() {
+    if (needDeallocTextSettings && textSettings) {
+        delete textSettings;
+        needDeallocTextSettings = false;
+    }
+    textSettings = nullptr;
+    if (textSource != nullptr) {
+        delete textSource;
+        textSource = nullptr;
+    }
+    if (texture != nullptr) {
+        SDL_DestroyTexture(texture);
+        texture = nullptr;
+    }
+}
+
 void Cell::updateTexture() {
     if (texture) {
         SDL_DestroyTexture(texture);
@@ -50,13 +66,6 @@ void Cell::updateTexture() {
     if (textSource->text.empty()) {
         w = h = 0;
         return;
-    }
-    auto side = status > 2 ? status - 2 : status;
-    if (side > 0 && gConfig.useColorTexture[side - 1]) {
-        textSettings->color = 0xFFFFFFFF;
-    } else {
-        auto &c = gConfig.textColor;
-        textSettings->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
     }
     switch (gConfig.cellAutoFit) {
         case 0: {
@@ -68,6 +77,12 @@ void Cell::updateTexture() {
                     break;
                 }
                 fontSize--;
+                if (!needDeallocTextSettings) {
+                    textSettings = new TextSettings();
+                    Cells::updateCellTextSettings(textSettings);
+                    needDeallocTextSettings = true;
+                    textSource->settings = textSettings;
+                }
                 textSettings->face_size = fontSize;
                 textSettings->updateFont();
             }
@@ -141,10 +156,8 @@ SDL_HitTestResult HitTestCallback(SDL_Window *window, const SDL_Point *pt, void 
 
 void Cells::preinit() {
     cellTextSettings_ = new TextSettings();
-    cellTextSettings_->align = Align::Center;
-    cellTextSettings_->valign = VAlign::Center;
-    for (auto &r : cells_) {
-        for (auto &c : r) {
+    for (auto &r: cells_) {
+        for (auto &c: r) {
             c.textSettings = cellTextSettings_;
             c.textSource = new TextSource(c.textSettings);
             c.textSource->wrap = true;
@@ -167,21 +180,23 @@ void Cells::init() {
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
+    scoreTextSettings_ = new TextSettings();
+    scoreTextSource_ = new TextSource(scoreTextSettings_);
+    updateScoreTextSettings();
+    scoreTextSettings_->updateFont();
     window_ = SDL_CreateWindow("BingoTool",
                                gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                                gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                                   + (gConfig.simpleMode ? gConfig.scoreFontSize + 5 : 0),
+                                   + (gConfig.simpleMode ? scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5 : 0),
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     renderer_ = SDL_CreateRenderer(window_, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
-    updateCellTextSettings();
-    scoreTextSettings_ = new TextSettings();
-    scoreTextSource_ = new TextSource(scoreTextSettings_);
+    updateCellTextSettings(cellTextSettings_);
 
-    for (auto &r : cells_) {
-        for (auto &c : r) {
+    for (auto &r: cells_) {
+        for (auto &c: r) {
             c.renderer = renderer_;
         }
     }
@@ -190,12 +205,15 @@ void Cells::init() {
 }
 
 void Cells::deinit() {
-    for (auto & tex : colorTexture_) {
+    foreach([](Cell &cell, int x, int y) {
+        cell.deinit();
+    });
+    for (auto &tex: colorTexture_) {
         if (tex == nullptr) continue;
         SDL_DestroyTexture(tex);
         tex = nullptr;
     }
-    for (auto & tex : scoreTexture_) {
+    for (auto &tex: scoreTexture_) {
         if (tex == nullptr) continue;
         SDL_DestroyTexture(tex);
         tex = nullptr;
@@ -219,10 +237,12 @@ void Cells::render() {
     SDL_RenderClear(renderer_);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
     SDL_SetRenderDrawColor(renderer_, gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b, gConfig.cellBorderColor.a);
-    SDL_FRect rcOuter = {0, 0, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2), (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2)};
+    SDL_FRect rcOuter = {0, 0, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2),
+                         (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2)};
     SDL_RenderFillRect(renderer_, &rcOuter);
     SDL_SetRenderDrawColor(renderer_, gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b, gConfig.cellSpacingColor.a);
-    SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4), (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
+    SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4),
+                         (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
     SDL_RenderFillRect(renderer_, &rcInner);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
     auto cx = gConfig.cellSize[0], cy = gConfig.cellSize[1];
@@ -238,7 +258,7 @@ void Cells::render() {
     if (gConfig.simpleMode) {
         int ww, wh;
         SDL_GetWindowSize(window_, &ww, &wh);
-        int fh = gConfig.scoreFontSize;
+        int fh = std::ceil(scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)));
         int sw, sh;
         SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
         SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
@@ -253,6 +273,11 @@ void Cells::render() {
 
 void Cells::fitCellsForText() {
     gConfig.cellSize[0] = gConfig.originCellSizeX;
+    for (auto &r: cells_) {
+        for (auto &c: r) {
+            c.textSource->extents_cx = gConfig.cellSize[0] * 9 / 10;
+        }
+    }
     if (gConfig.fontSize != gConfig.originalFontSize) {
         gConfig.fontSize = gConfig.originalFontSize;
         cellTextSettings_->face_size = gConfig.fontSize;
@@ -290,11 +315,17 @@ void Cells::fitCellsForText() {
             });
             if (minWidth > gConfig.cellSize[0]) {
                 gConfig.cellSize[0] = minWidth;
+                for (auto &r: cells_) {
+                    for (auto &c: r) {
+                        c.textSource->extents_cx = gConfig.cellSize[0] * 9 / 10;
+                    }
+                }
                 gCells.resizeWindow();
             }
             break;
         }
-        default: break;
+        default:
+            break;
     }
 }
 
@@ -310,22 +341,29 @@ void Cells::resizeWindow() {
     SDL_SetWindowSize(window_,
                       gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                       gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                      + (gConfig.simpleMode ? (gConfig.scoreFontSize + 5) : 0));
+                          + (gConfig.simpleMode ? (scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5) : 0));
 }
 
-void Cells::updateCellTextSettings() {
-    if (!cellTextSettings_->font) {
-        cellTextSettings_->face = gConfig.fontFace;
-        cellTextSettings_->face_size = gConfig.fontSize;
-        cellTextSettings_->bold = gConfig.fontStyle & 1;
-        cellTextSettings_->italic = gConfig.fontStyle & 2;
-        cellTextSettings_->updateFont();
+void Cells::updateCellTextSettings(TextSettings *s) {
+    if (!s->font) {
+        s->face = gConfig.fontFace;
+        s->face_size = gConfig.fontSize;
+        s->bold = gConfig.fontStyle & 1;
+        s->italic = gConfig.fontStyle & 2;
+        auto &c = gConfig.textColor;
+        s->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+        s->updateFont();
     }
-    cellTextSettings_->shadow_mode = gConfig.textShadow == 0 ? ShadowMode::None : gConfig.textShadowOffset[0] == 0 && gConfig.textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
-    cellTextSettings_->shadow_size = float(gConfig.textShadow);
-    cellTextSettings_->shadow_offset[0] = float(gConfig.textShadowOffset[0]);
-    cellTextSettings_->shadow_offset[1] = float(gConfig.textShadowOffset[1]);
-    cellTextSettings_->shadow_color = gConfig.textShadowColor.b | (gConfig.textShadowColor.g << 8) | (gConfig.textShadowColor.r << 16) | (gConfig.textShadowColor.a << 24);
+    s->align = Align::Center;
+    s->valign = VAlign::Center;
+    s->shadow_mode =
+        gConfig.textShadow == 0 ? ShadowMode::None : gConfig.textShadowOffset[0] == 0 && gConfig.textShadowOffset[1] == 0 ? ShadowMode::Outline
+                                                                                                                          : ShadowMode::Shadow;
+    s->shadow_size = float(gConfig.textShadow);
+    s->shadow_offset[0] = float(gConfig.textShadowOffset[0]);
+    s->shadow_offset[1] = float(gConfig.textShadowOffset[1]);
+    s->shadow_color =
+        gConfig.textShadowColor.b | (gConfig.textShadowColor.g << 8) | (gConfig.textShadowColor.r << 16) | (gConfig.textShadowColor.a << 24);
 }
 
 void Cells::resetCellFonts() {
@@ -334,10 +372,23 @@ void Cells::resetCellFonts() {
     cellTextSettings_->bold = gConfig.fontStyle & 1;
     cellTextSettings_->italic = gConfig.fontStyle & 2;
     cellTextSettings_->updateFont();
+    for (auto &r: cells_) {
+        for (auto &c: r) {
+            if (c.needDeallocTextSettings) {
+                delete c.textSettings;
+                c.needDeallocTextSettings = false;
+                c.textSettings = cellTextSettings_;
+                c.textSource->settings = cellTextSettings_;
+            }
+        }
+    }
 }
 
 void Cells::updateTextures(bool fit) {
-    if (fit) fitCellsForText();
+    if (fit) {
+        resetCellFonts();
+        fitCellsForText();
+    }
     foreach([](Cell &cell, int, int) {
         cell.updateTexture();
     });
@@ -347,30 +398,17 @@ void Cells::updateScoreTextures(int index) {
     auto score = gScoreWindows[index].score;
     const auto &playerName = gScoreWindows[index].playerName;
     std::string utext =
-        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}",
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= gConfig.winScore ? gConfig.scoreWinText : "{1}" : "{1}",
                     playerName,
                     score);
-    int ushadow = gConfig.scoreTextShadow;
-    SDL_Color ushadowColor = gConfig.scoreTextShadowColor;
-    int *ushadowOffset = gConfig.scoreTextShadowOffset;
 
-    if (!scoreTextSettings_->font) {
-        scoreTextSettings_->face = gConfig.scoreFontFace;
-        scoreTextSettings_->face_size = gConfig.scoreFontSize;
-        scoreTextSettings_->bold = gConfig.scoreFontStyle & 1;
-        scoreTextSettings_->italic = gConfig.scoreFontStyle & 2;
-    }
+    updateScoreTextSettings();
     if (gConfig.useColorTexture[index]) {
         scoreTextSettings_->color = 0xFFFFFFFF;
     } else {
         auto &c = gConfig.colorsInt[index + 1];
         scoreTextSettings_->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
     }
-    scoreTextSettings_->shadow_mode = ushadow == 0 ? ShadowMode::None : ushadowOffset[0] == 0 && ushadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
-    scoreTextSettings_->shadow_size = float(ushadow);
-    scoreTextSettings_->shadow_offset[0] = float(ushadowOffset[0]);
-    scoreTextSettings_->shadow_offset[1] = float(ushadowOffset[1]);
-    scoreTextSettings_->shadow_color = ushadowColor.b | (ushadowColor.g << 8) | (ushadowColor.r << 16) | (ushadowColor.a << 24);
     scoreTextSource_->text = Utf8ToUnicode(utext);
     scoreTextSource_->update();
 
@@ -462,7 +500,8 @@ void initConfigDialog(HWND hwnd) {
     cellSpacingColorBrush = CreateSolidBrush(RGB(gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b));
     scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
     scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
-    nameShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
+    nameShadowColorBrush =
+        CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
     player1ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[1].r, gConfig.colorsInt[1].g, gConfig.colorsInt[1].b));
     player2ColorBrush = CreateSolidBrush(RGB(gConfig.colorsInt[2].r, gConfig.colorsInt[2].g, gConfig.colorsInt[2].b));
     if (gConfig.useColorTexture[0]) player1Bitmap = loadBitmap(gConfig.colorTextureFile[0].c_str());
@@ -526,19 +565,28 @@ void initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, gConfig.playerName[1].c_str());
 
     cbc = GetDlgItem(hwnd, IDC_BINGOBRAWLERS);
-    SendMessageW(cbc, BM_SETCHECK, gConfig.bingoBrawlersMode ? BST_CHECKED : BST_UNCHECKED, 0);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"阶段规则");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"随机Bingo");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"随机Bingo第三赛季");
+    SendMessageW(cbc, CB_SETCURSEL, gConfig.bingoBrawlersMode, 0);
     for (int id = IDC_SCORE0; id <= IDC_SCORE4; id += 2) {
         setEditUpDownIntAndRange(hwnd, id, gConfig.scores[(id - IDC_SCORE0) / 2], 0, 100);
     }
     for (int id = IDC_NFSCORE0; id <= IDC_NFSCORE4; id += 2) {
         setEditUpDownIntAndRange(hwnd, id, gConfig.nFScores[(id - IDC_NFSCORE0) / 2], 0, 100);
     }
-    setEditUpDownIntAndRange(hwnd, IDC_BINGOSCORE, gConfig.lineScore, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_LINESCORE, gConfig.lineScore, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_MAXPERROW, gConfig.maxPerRow, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_CLEARSCORE, gConfig.clearScore, 0, 100);
     setEditUpDownIntAndRange(hwnd, IDC_CLEARQUESTDIFFMULT, gConfig.clearQuestMultiplier, 0, 100);
+    setEditUpDownIntAndRange(hwnd, IDC_BINGOSCORE, gConfig.bingoScore, 0, 20);
+    setEditUpDownIntAndRange(hwnd, IDC_WINSCORE, gConfig.winScore, 0, 20);
     for (int id = IDC_SCORE0; id <= IDC_CLEARQUESTDIFFMULT_UPDOWN; id++) {
-        EnableWindow(GetDlgItem(hwnd, id), !gConfig.bingoBrawlersMode);
+        EnableWindow(GetDlgItem(hwnd, id), gConfig.bingoBrawlersMode == 0);
+    }
+    for (int cid = IDC_BINGOSCORE; cid <= IDC_BINGOSCORE_UPDOWN; cid++) {
+        EnableWindow(GetDlgItem(hwnd, cid), gConfig.bingoBrawlersMode == 2);
     }
 
     noEnChangeNotification = false;
@@ -626,17 +674,16 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
             lf.lfCharSet = DEFAULT_CHARSET;
             lstrcpyW(lf.lfFaceName, gConfig.fontFace.c_str());
-            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW)};
             cf.hwndOwner = hwnd;
             cf.lpLogFont = &lf;
-            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_NOVERTFONTS | CF_LIMITSIZE;
             cf.nSizeMin = 6;
             cf.nSizeMax = 256;
             if (ChooseFontW(&cf)) {
                 gConfig.fontFace = lf.lfFaceName;
                 gConfig.fontSize = gConfig.originalFontSize = cf.iPointSize / 10;
                 gConfig.fontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
-                gCells.resetCellFonts();
                 gCells.updateTextures();
                 auto edc = GetDlgItem(hwnd, IDC_TEXTFONT);
                 SetWindowTextW(edc, (gConfig.fontFace + L", " + std::to_wstring(gConfig.originalFontSize) + L"pt").c_str());
@@ -699,10 +746,10 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
             lf.lfCharSet = DEFAULT_CHARSET;
             lstrcpyW(lf.lfFaceName, gConfig.scoreFontFace.c_str());
-            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW)};
             cf.hwndOwner = hwnd;
             cf.lpLogFont = &lf;
-            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_NOVERTFONTS | CF_LIMITSIZE;
             cf.nSizeMin = 6;
             cf.nSizeMax = 256;
             if (ChooseFontW(&cf)) {
@@ -711,12 +758,14 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                 gConfig.scoreFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
                 if (gConfig.simpleMode) {
                     gCells.scoreTextSettings()->font.reset(nullptr);
+                    gCells.updateScoreTextSettings();
+                    gCells.scoreTextSettings()->updateFont();
                     gCells.resizeWindow();
                     for (int i = 0; i < 2; i++) {
                         gCells.updateScoreTextures(i);
                     }
                 } else {
-                    for (auto & window : gScoreWindows) {
+                    for (auto &window: gScoreWindows) {
                         window.textSettings[0]->font.reset(nullptr);
                         window.updateTexture();
                     }
@@ -731,7 +780,8 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             if (scoreShadowColorBrush) {
                 DeleteObject(scoreShadowColorBrush);
             }
-            scoreShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
+            scoreShadowColorBrush =
+                CreateSolidBrush(RGB(gConfig.scoreTextShadowColor.r, gConfig.scoreTextShadowColor.g, gConfig.scoreTextShadowColor.b));
             InvalidateRect(GetDlgItem(hwnd, IDC_SCORESHADOWCOLOR), nullptr, TRUE);
             break;
         }
@@ -740,31 +790,32 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             if (scoreBackgroundColorBrush) {
                 DeleteObject(scoreBackgroundColorBrush);
             }
-            scoreBackgroundColorBrush = CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
+            scoreBackgroundColorBrush =
+                CreateSolidBrush(RGB(gConfig.scoreBackgroundColor.r, gConfig.scoreBackgroundColor.g, gConfig.scoreBackgroundColor.b));
             InvalidateRect(GetDlgItem(hwnd, IDC_SCOREBGCOLOR), nullptr, TRUE);
             break;
         }
         case IDC_BTN_SEL_NAMEFONT: {
-            auto style = gConfig.scoreFontStyle;
+            auto style = gConfig.scoreNameFontStyle;
             LOGFONTW lf = {};
-            lf.lfHeight = -MulDiv(gConfig.scoreFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfHeight = -MulDiv(gConfig.scoreNameFontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
             lf.lfWeight = style & 1 ? FW_BOLD : FW_DONTCARE;
             lf.lfItalic = style & 2;
             lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
             lf.lfCharSet = DEFAULT_CHARSET;
-            lstrcpyW(lf.lfFaceName, gConfig.scoreFontFace.c_str());
-            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW) };
+            lstrcpyW(lf.lfFaceName, gConfig.scoreNameFontFace.c_str());
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW)};
             cf.hwndOwner = hwnd;
             cf.lpLogFont = &lf;
-            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_LIMITSIZE;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_NOVERTFONTS | CF_LIMITSIZE;
             cf.nSizeMin = 6;
             cf.nSizeMax = 256;
             if (ChooseFontW(&cf)) {
-                gConfig.scoreFontFace = lf.lfFaceName;
-                gConfig.scoreFontSize = cf.iPointSize / 10;
-                gConfig.scoreFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                gConfig.scoreNameFontFace = lf.lfFaceName;
+                gConfig.scoreNameFontSize = cf.iPointSize / 10;
+                gConfig.scoreNameFontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
                 if (!gConfig.simpleMode) {
-                    for (auto & window : gScoreWindows) {
+                    for (auto &window: gScoreWindows) {
                         window.textSettings[1]->font.reset(nullptr);
                         window.updateTexture();
                     }
@@ -779,7 +830,8 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             if (nameShadowColorBrush) {
                 DeleteObject(nameShadowColorBrush);
             }
-            nameShadowColorBrush = CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
+            nameShadowColorBrush =
+                CreateSolidBrush(RGB(gConfig.scoreNameTextShadowColor.r, gConfig.scoreNameTextShadowColor.g, gConfig.scoreNameTextShadowColor.b));
             InvalidateRect(GetDlgItem(hwnd, IDC_NAMESHADOWCOLOR), nullptr, TRUE);
             break;
         }
@@ -855,9 +907,12 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
         }
         case IDC_BINGOBRAWLERS: {
             auto cbc = GetDlgItem(hwnd, IDC_BINGOBRAWLERS);
-            gConfig.bingoBrawlersMode = SendMessageW(cbc, BM_GETCHECK, 0, 0) == BST_CHECKED;
+            gConfig.bingoBrawlersMode = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
             for (int cid = IDC_SCORE0; cid <= IDC_CLEARQUESTDIFFMULT_UPDOWN; cid++) {
-                EnableWindow(GetDlgItem(hwnd, cid), !gConfig.bingoBrawlersMode);
+                EnableWindow(GetDlgItem(hwnd, cid), gConfig.bingoBrawlersMode == 0);
+            }
+            for (int cid = IDC_BINGOSCORE; cid <= IDC_BINGOSCORE_UPDOWN; cid++) {
+                EnableWindow(GetDlgItem(hwnd, cid), gConfig.bingoBrawlersMode == 2);
             }
             updateScores();
             break;
@@ -1113,8 +1168,8 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             });
             break;
         }
-        case IDC_BINGOSCORE: {
-            setNewValFromControl(hwnd, IDC_BINGOSCORE, gConfig.lineScore, 0, 100, [](int newVal) {
+        case IDC_LINESCORE: {
+            setNewValFromControl(hwnd, IDC_LINESCORE, gConfig.lineScore, 0, 100, [](int newVal) {
                 updateScores();
                 return true;
             });
@@ -1133,6 +1188,20 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         }
         case IDC_CLEARQUESTDIFFMULT: {
             setNewValFromControl(hwnd, IDC_CLEARQUESTDIFFMULT, gConfig.clearQuestMultiplier, 0, 100, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_BINGOSCORE: {
+            setNewValFromControl(hwnd, IDC_BINGOSCORE, gConfig.bingoScore, 0, 20, [](int newVal) {
+                updateScores();
+                return true;
+            });
+            break;
+        }
+        case IDC_WINSCORE: {
+            setNewValFromControl(hwnd, IDC_WINSCORE, gConfig.winScore, 0, 100, [](int newVal) {
                 updateScores();
                 return true;
             });
@@ -1270,4 +1339,22 @@ void Cells::showSettingsWindow() {
     }
     ShowWindow(configDialog, SW_SHOW);
     SetForegroundWindow(configDialog);
+}
+
+void Cells::updateScoreTextSettings() {
+    int ushadow = gConfig.scoreTextShadow;
+    SDL_Color ushadowColor = gConfig.scoreTextShadowColor;
+    int *ushadowOffset = gConfig.scoreTextShadowOffset;
+    if (!scoreTextSettings_->font) {
+        scoreTextSettings_->face = gConfig.scoreFontFace;
+        scoreTextSettings_->face_size = gConfig.scoreFontSize;
+        scoreTextSettings_->bold = gConfig.scoreFontStyle & 1;
+        scoreTextSettings_->italic = gConfig.scoreFontStyle & 2;
+    }
+    scoreTextSettings_->shadow_mode =
+        ushadow == 0 ? ShadowMode::None : ushadowOffset[0] == 0 && ushadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+    scoreTextSettings_->shadow_size = float(ushadow);
+    scoreTextSettings_->shadow_offset[0] = float(ushadowOffset[0]);
+    scoreTextSettings_->shadow_offset[1] = float(ushadowOffset[1]);
+    scoreTextSettings_->shadow_color = ushadowColor.b | (ushadowColor.g << 8) | (ushadowColor.r << 16) | (ushadowColor.a << 24);
 }

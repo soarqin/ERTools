@@ -126,10 +126,10 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         }
     }
     std::string utext[2] = {
-        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= 13 ? gConfig.scoreWinText : "{1}" : "{1}",
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreBingoText : score >= gConfig.winScore ? gConfig.scoreWinText : "{1}" : "{1}",
                     playerName,
                     score),
-        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreNameBingoText : score >= 13 ? gConfig.scoreNameWinText : "{0}" : "{0}",
+        fmt::format(gConfig.bingoBrawlersMode ? score >= 100 ? gConfig.scoreNameBingoText : score >= gConfig.winScore ? gConfig.scoreNameWinText : "{0}" : "{0}",
                     playerName,
                     score)
     };
@@ -320,7 +320,7 @@ void updateScores() {
                 }
             }
             if (match) {
-                score[n - 1] = 100;
+                if (gConfig.bingoBrawlersMode == 2) score[n - 1] += gConfig.bingoScore; else score[n - 1] = 100;
             }
         }
         n = gCells[4][0].status;
@@ -333,7 +333,7 @@ void updateScores() {
                 }
             }
             if (match) {
-                score[n - 1] = 100;
+                if (gConfig.bingoBrawlersMode == 2) score[n - 1] += gConfig.bingoScore; else score[n - 1] = 100;
             }
         }
         for (int j = 0; j < 5; j++) {
@@ -347,7 +347,7 @@ void updateScores() {
                     }
                 }
                 if (match) {
-                    score[n - 1] = 100;
+                    if (gConfig.bingoBrawlersMode == 2) score[n - 1] += gConfig.bingoScore; else score[n - 1] = 100;
                 }
             }
             n = gCells[0][j].status;
@@ -360,7 +360,7 @@ void updateScores() {
                     }
                 }
                 if (match) {
-                    score[n - 1] = 100;
+                    if (gConfig.bingoBrawlersMode == 2) score[n - 1] += gConfig.bingoScore; else score[n - 1] = 100;
                 }
             }
         }

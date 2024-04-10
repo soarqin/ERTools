@@ -21,8 +21,4 @@ void unescape(std::string &str);
 std::string UnicodeToUtf8(const std::wstring &wstr);
 std::wstring Utf8ToUnicode(const std::string &str);
 
-/*
-SDL_Surface *TTF_RenderUTF8_BlackOutline_Wrapped(TTF_Font *font, const char *t, const SDL_Color *c, int wrapLength, const SDL_Color *shadowColor, int outline, int offset[2]);
-*/
-
 std::wstring selectFile(HWND hwnd, const std::wstring &title, const std::wstring &defaultFolder, const std::wstring &filters, bool folderOnly, bool openMode);

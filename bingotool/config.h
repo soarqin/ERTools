@@ -51,13 +51,24 @@ struct Config {
         {255, 0, 0, 0},
         {0, 0, 255, 0},
     };
+
+    /* 0 - Periodic
+     * 1 - Bingo Brawlers Season 1/2
+     * 2 - Bingo Brawlers Season 3 */
     int bingoBrawlersMode = 1;
-    int scores[5] = {2, 4, 6, 8, 10};
-    int nFScores[5] = {1, 2, 3, 4, 5};
+
+    /* Periodic rules */
+    int scores[5] = {2, 2, 4, 4, 6};
+    int nFScores[5] = {1, 1, 2, 2, 3};
     int lineScore = 3;
     int maxPerRow = 3;
     int clearScore = 0;
     int clearQuestMultiplier = 2;
+
+    /* Bingo Brawlers Season 3 rules */
+    int bingoScore = 2;
+    int winScore = 13;
+
     std::wstring playerName[2] = {L"红方", L"蓝方"};
 
     std::string scoreWinText = "{1}";
