@@ -18,6 +18,7 @@
 #include <shellapi.h>
 #undef WIN32_LEAN_AND_MEAN
 #include <algorithm>
+#include <cmath>
 #if defined(max)
 #undef max
 #endif

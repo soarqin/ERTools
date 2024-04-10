@@ -1,6 +1,12 @@
 #include "textsource.h"
 
-#include <algorithm>
+#include <cmath>
+#if defined(max)
+#undef max
+#endif
+#if defined(min)
+#undef min
+#endif
 
 using namespace Gdiplus;
 
