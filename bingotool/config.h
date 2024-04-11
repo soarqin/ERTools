@@ -12,27 +12,27 @@ struct Config {
     int originCellSizeX = 150;
     int cellSize[2] = {originCellSizeX, originCellSizeX};
     int cellSpacing = 2;
-    int cellBorder = 0;
+    int cellBorder = 2;
     SDL_Color cellSpacingColor = {255, 255, 255, 160};
-    SDL_Color cellBorderColor = {0, 0, 0, 0};
-    int cellAutoFit = 0;
+    SDL_Color cellBorderColor = {255, 255, 255, 160};
+    int cellAutoFit = 1;
     SDL_Color textColor = {255, 255, 255, 255};
     int textShadow = 0;
     SDL_Color textShadowColor = {0, 0, 0, 255};
     int textShadowOffset[2] = {0, 0};
     std::wstring fontFace = L"微软雅黑";
     int fontStyle = 0;
-    int originalFontSize = 24;
+    int originalFontSize = 36;
     int fontSize = originalFontSize;
     std::wstring scoreFontFace = L"微软雅黑";
     int scoreFontStyle = 0;
-    int scoreFontSize = 24;
+    int scoreFontSize = 72;
     int scoreTextShadow = 0;
     SDL_Color scoreTextShadowColor = {0, 0, 0, 255};
     int scoreTextShadowOffset[2] = {0, 0};
     std::wstring scoreNameFontFace = L"微软雅黑";
     int scoreNameFontStyle = 0;
-    int scoreNameFontSize = 24;
+    int scoreNameFontSize = 72;
     int scoreNameTextShadow = 0;
     SDL_Color scoreNameTextShadowColor = {0, 0, 0, 255};
     int scoreNameTextShadowOffset[2] = {0, 0};
@@ -42,12 +42,12 @@ struct Config {
     bool useColorTexture[2] = {false, false};
     std::string colorTextureFile[2];
     SDL_FColor colors[3] = {
-        {0, 0, 0, 0},
+        {0, 0, 0, 0.2},
         {1, 0, 0, 0},
         {0, 0, 1, 0},
     };
     SDL_Color colorsInt[3] = {
-        {0, 0, 0, 0},
+        {0, 0, 0, 51},
         {255, 0, 0, 0},
         {0, 0, 255, 0},
     };

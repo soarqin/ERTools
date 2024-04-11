@@ -148,7 +148,7 @@ void ScoreWindow::updateTexture(bool reloadMask) {
             textSettings[i]->color = 0xFFFFFFFF;
         } else {
             auto &c = gConfig.colorsInt[index + 1];
-            textSettings[i]->color = c.b | (c.g << 8) | (c.r << 16) | (c.a << 24);
+            textSettings[i]->color = c.b | (c.g << 8) | (c.r << 16) | (255 << 24);
         }
         textSettings[i]->shadow_mode = ushadow[i] == 0 ? ShadowMode::None : ushadowOffset[i][0] == 0 && ushadowOffset[i][1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
         textSettings[i]->shadow_size = float(ushadow[i]);

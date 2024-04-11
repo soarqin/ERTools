@@ -163,7 +163,7 @@ int syncGetMode() {
 }
 
 bool syncOpen(ConnectionCallback callback) {
-    if (gMode == 0 && gChannel.empty()) return true;
+    if (gMode == 0 && gPassword.empty()) return true;
     if (loop == nullptr) {
         loop = uv_default_loop();
     }
@@ -207,14 +207,14 @@ void syncClose() {
 }
 
 bool syncSetChannel(ChannelCallback callback) {
-    if (gMode == 0 && gChannel.empty()) return false;
+    if (gMode == 0 && gPassword.empty()) return false;
     syncCallback = callback;
-    return syncSendData(gMode == 0 ? 'C' : 'J', gChannel);
+    return syncSendData(gMode == 0 ? 'C' : 'J', gMode == 0 ? gPassword : gChannel);
 }
 
 void syncSetChannelPassword(const std::string &password) {
-    if (gChannel == password) return;
-    gChannel = password;
+    if ((gMode == 0 ? gPassword : gChannel) == password) return;
+    (gMode == 0 ? gPassword : gChannel) = password;
     saveState();
 }
 
@@ -225,7 +225,7 @@ void syncSetChannelPasswordForC(const std::string &password) {
 }
 
 const std::string &syncGetChannelPassword() {
-    return gChannel;
+    return gMode == 0 ? gPassword : gChannel;
 }
 
 const std::string &syncGetChannelPasswordForC() {
@@ -235,7 +235,7 @@ const std::string &syncGetChannelPasswordForC() {
 void write_cb(uv_write_t* req, int status);
 
 bool syncSendData(char type, const std::string &data) {
-    if (gMode == 0 && gChannel.empty()) return false;
+    if (gMode == 0 && gPassword.empty()) return false;
     auto len = (int)data.size();
     uv_buf_t buf;
     buf.len = (unsigned int)(4 + 1 + len);
@@ -256,7 +256,7 @@ void write_cb(uv_write_t *req, int status) {
 }
 
 bool syncSendData(char type, const std::vector<std::string> &data, char separator) {
-    if (gMode == 0 && gChannel.empty()) return false;
+    if (gMode == 0 && gPassword.empty()) return false;
     std::string n;
     for (auto &s : data) {
         n += s;

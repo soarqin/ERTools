@@ -322,6 +322,10 @@ void TextSource::renderText() {
     if (!text.empty()) {
         switch (settings->shadow_mode) {
             case ShadowMode::None:
+                graphics_bitmap.DrawString(text.c_str(),
+                                           (int)text.size(),
+                                           settings->font.get(), box,
+                                           &format, &brush);
                 break;
             case ShadowMode::Outline: {
                 box.Offset(settings->shadow_size, settings->shadow_size);

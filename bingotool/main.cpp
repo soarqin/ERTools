@@ -193,9 +193,11 @@ void startSync() {
                             if (idx >= sl.size()) break;
                             const auto &text = sl[idx++];
                             if (!cell.setText(text)) continue;
-                            cell.updateTexture();
                             dirty = true;
                         }
+                    }
+                    if (dirty) {
+                        gCells.updateTextures(true);
                     }
                     for (int i = 0; i < 2; i++) {
                         if (idx < sl.size()) {
