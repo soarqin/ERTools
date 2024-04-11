@@ -8,8 +8,8 @@ extern "C" {
 
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
 #include <windows.h>
+#include <gdiplus.h>
 #include <shellapi.h>
 #include <commctrl.h>
 #include <shlwapi.h>
@@ -72,6 +72,7 @@ static int luaPanelBegin(lua_State *L) {
 static int luaPanelEnd(lua_State *L) {
     (void)L;
     if (gCurrentPanel != nullptr) {
+        gCurrentPanel->updateText();
         gCurrentPanel->updateTextTexture();
         gCurrentPanel = nullptr;
     }
@@ -90,6 +91,10 @@ int wmain(int argc, wchar_t *argv[]) {
     (void)argc;
     (void)argv;
 
+    Gdiplus::GdiplusStartupInput gdiplusStartupInput;
+    ULONG_PTR gdiplusToken;
+    Gdiplus::GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, nullptr);
+
     if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
         printf("SDL could not be initialized!\n"
                "SDL_Error: %s\n", SDL_GetError());
@@ -98,8 +103,6 @@ int wmain(int argc, wchar_t *argv[]) {
     INITCOMMONCONTROLSEX iccex = {sizeof(INITCOMMONCONTROLSEX), ICC_UPDOWN_CLASS | ICC_STANDARD_CLASSES};
     InitCommonControlsEx(&iccex);
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
-
-    TTF_Init();
 
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
@@ -189,9 +192,12 @@ int wmain(int argc, wchar_t *argv[]) {
     for (auto &p: gPanels) {
         p.second.close();
     }
-    TTF_Quit();
+
     CoUninitialize();
     SDL_Quit();
+
+    Gdiplus::GdiplusShutdown(gdiplusToken);
+
     return 0;
 }
 

@@ -6,11 +6,9 @@
 
 #include <commctrl.h>
 #include <commdlg.h>
-#include <shobjidl.h>
-#include <shlobj.h>
-#include <shellapi.h>
 #include <shlwapi.h>
 #include <fstream>
+#include <filesystem>
 
 enum : int {
     MOUSE_GRAB_PADDING = 10,
@@ -58,12 +56,26 @@ void Panel::init(const char *n) {
     SDL_SetWindowPosition(window, x, y);
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);
     renderer = SDL_CreateRenderer(window, "opengl", SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-    if (font != nullptr) TTF_CloseFont(font);
-    font = TTF_OpenFont(fontFile.c_str(), fontSize);
+
+    settings = new TextSettings();
+    settings->face = fontFace;
+    settings->face_size = fontSize;
+    settings->color = textColor.b | (textColor.g << 8) | (textColor.r << 16) | (textColor.a << 24);
+    settings->align = textAlign;
+    settings->valign = textVAlign;
+    settings->shadow_mode =
+        textShadow == 0 ? ShadowMode::None : textShadowOffset[0] == 0 && textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+    settings->shadow_size = float(textShadow);
+    settings->shadow_offset[0] = float(textShadowOffset[0]);
+    settings->shadow_offset[1] = float(textShadowOffset[1]);
+    settings->shadow_color = textShadowColor.b | (textShadowColor.g << 8) | (textShadowColor.r << 16) | (textShadowColor.a << 24);
+    source = new TextSource(settings);
     textColorBrush = CreateSolidBrush(RGB(textColor.r, textColor.g, textColor.b));
     backgroundColorBrush = CreateSolidBrush(RGB(backgroundColor.r, backgroundColor.g, backgroundColor.b));
+    shadowColorBrush = CreateSolidBrush(RGB(textShadowColor.r, textShadowColor.g, textShadowColor.b));
     SDL_SetWindowHitTest(window, HitTestCallback, nullptr);
     text = n;
+    source->text = Utf8ToUnicode(n);
     updateTextTexture();
     if (settingsTexture == nullptr) {
         settingsTexture = loadTexture(renderer, settings_png, sizeof(settings_png));
@@ -88,20 +100,28 @@ void Panel::saveToConfig() {
         {
             "font",
             {
-                {"fontFile", fontFile},
+                {"fontFace", UnicodeToUtf8(fontFace)},
                 {"fontSize", fontSize},
+                {"fontStyle", fontStyle},
                 {"textColor", toml::array{textColor.r, textColor.g, textColor.b, textColor.a}},
+                {"textAlign", int(textAlign)},
+                {"textVAlign", int(textVAlign)},
+                {"textShadow", textShadow},
+                {"textShadowColor", toml::array{textShadowColor.r, textShadowColor.g, textShadowColor.b, textShadowColor.a}},
+                {"textShadowOffset", toml::array{textShadowOffset[0], textShadowOffset[1]}},
             }
         },
     };
-    std::ofstream file("config/" + name + ".toml");
+    CreateDirectoryW(L"config", nullptr);
+    std::ofstream file(std::filesystem::path(L"config/" + Utf8ToUnicode(name) + L".toml"));
     file << toml::format(data);
 }
 
 void Panel::loadFromConfig() {
     toml::value data;
     try {
-        data = toml::parse("config/" + name + ".toml");
+        std::ifstream ifs(std::filesystem::path(L"config/" + Utf8ToUnicode(name) + L".toml"), std::ios::binary);
+        data = toml::parse(ifs);
     } catch (...) {
         return;
     }
@@ -123,14 +143,30 @@ void Panel::loadFromConfig() {
     }
     const auto fontData = toml::find_or(data, "font", toml::value());
     if (fontData.is_table()) {
-        fontFile = toml::find_or(fontData, "fontFile", fontFile);
+        fontFace = Utf8ToUnicode(toml::find_or(fontData, "fontFile", UnicodeToUtf8(fontFace)));
         fontSize = toml::find_or(fontData, "fontSize", fontSize);
+        fontStyle = toml::find_or(fontData, "fontStyle", fontStyle);
         const auto textColorData = toml::find_or(fontData, "textColor", toml::value());
         if (textColorData.is_array() && textColorData.size() >= 4) {
             textColor.r = toml::get_or(textColorData.at(0), textColor.r);
             textColor.g = toml::get_or(textColorData.at(1), textColor.g);
             textColor.b = toml::get_or(textColorData.at(2), textColor.b);
             textColor.a = toml::get_or(textColorData.at(3), textColor.a);
+        }
+        textAlign = static_cast<Align>(toml::find_or(fontData, "textAlign", int(textAlign)));
+        textVAlign = static_cast<VAlign>(toml::find_or(fontData, "textVAlign", int(textVAlign)));
+        textShadow = toml::find_or(fontData, "textShadow", textShadow);
+        const auto textShadowColorData = toml::find_or(fontData, "textShadowColor", toml::value());
+        if (textShadowColorData.is_array() && textShadowColorData.size() >= 4) {
+            textShadowColor.r = toml::get_or(textShadowColorData.at(0), textShadowColor.r);
+            textShadowColor.g = toml::get_or(textShadowColorData.at(1), textShadowColor.g);
+            textShadowColor.b = toml::get_or(textShadowColorData.at(2), textShadowColor.b);
+            textShadowColor.a = toml::get_or(textShadowColorData.at(3), textShadowColor.a);
+        }
+        const auto textShadowOffsetData = toml::find_or(fontData, "textShadowOffset", toml::value());
+        if (textShadowOffsetData.is_array() && textShadowOffsetData.size() >= 2) {
+            textShadowOffset[0] = toml::get_or(textShadowOffsetData.at(0), textShadowOffset[0]);
+            textShadowOffset[1] = toml::get_or(textShadowOffsetData.at(1), textShadowOffset[1]);
         }
     }
 }
@@ -145,6 +181,10 @@ void Panel::close() {
         DeleteObject(backgroundColorBrush);
         backgroundColorBrush = nullptr;
     }
+    if (shadowColorBrush) {
+        DeleteObject(shadowColorBrush);
+        shadowColorBrush = nullptr;
+    }
     if (settingsTexture) {
         SDL_DestroyTexture(settingsTexture);
         settingsTexture = nullptr;
@@ -153,9 +193,13 @@ void Panel::close() {
         SDL_DestroyTexture(texture);
         texture = nullptr;
     }
-    if (font) {
-        TTF_CloseFont(font);
-        font = nullptr;
+    if (source) {
+        delete source;
+        source = nullptr;
+    }
+    if (settings) {
+        delete settings;
+        settings = nullptr;
     }
     if (renderer) {
         SDL_DestroyRenderer(renderer);
@@ -167,16 +211,19 @@ void Panel::close() {
     }
 }
 
+void Panel::updateText() {
+    source->text = Utf8ToUnicode(text);
+}
+
 void Panel::updateTextTexture() {
     if (texture != nullptr) {
         SDL_DestroyTexture(texture);
         texture = nullptr;
     }
     if (!text.empty()) {
-        auto *surface = TTF_RenderUTF8_Blended_Wrapped(font, text.c_str(), textColor, 0);
-        if (surface != nullptr) {
-            texture = SDL_CreateTextureFromSurface(renderer, surface);
-            SDL_DestroySurface(surface);
+        source->update();
+        if (source->surface != nullptr) {
+            texture = SDL_CreateTextureFromSurface(renderer, source->surface);
             if (texture != nullptr) {
                 updateTextRenderRect();
             }
@@ -187,56 +234,78 @@ void Panel::updateTextTexture() {
 void Panel::updateTextRenderRect() {
     int ww, hh;
     SDL_QueryTexture(texture, nullptr, nullptr, &ww, &hh);
-    dstRect = {(float)border, (float)border, (float)ww, (float)hh};
-    srcRect = {0, 0, (float)ww, (float)hh};
-    auto fw = ww + border * 2;
-    auto fh = hh + border * 2;
     if (autoSize) {
+        auto fw = ww + border * 2;
+        auto fh = hh + border * 2;
         if (fw < DLG_SIZE_MIN) fw = DLG_SIZE_MIN;
         if (fh < DLG_SIZE_MIN) fh = DLG_SIZE_MIN;
         if (w != fw || h != fh) {
             SDL_SetWindowSize(window, fw, fh);
         }
-    } else if (w < fw || h < fh) {
-        dstRect = {(float)border, (float)border, (float)(w - border * 2), (float)(h - border * 2)};
-        srcRect = {0, 0, (float)(w - border * 2), (float)(h - border * 2)};
+        dstRect = {(float)border, (float)border, (float)ww, (float)hh};
+        srcRect = {0, 0, (float)ww, (float)hh};
+    } else {
+        auto nw = w - border * 2;
+        auto nh = h - border * 2;
+        dstRect = {0, 0, (float)ww, (float)hh};
+        srcRect = {0, 0, (float)ww, (float)hh};
+        switch (textAlign) {
+            case Align::Left:
+                dstRect.x = (float)border;
+                if (nw < ww) {
+                    srcRect.w = dstRect.w = (float)nw;
+                }
+                break;
+            case Align::Center:
+                if (nw < ww) {
+                    dstRect.x = (float)border;
+                    dstRect.w = (float)nw;
+                    srcRect.x = (float)((ww - nw) >> 1);
+                    srcRect.w = (float)nw;
+                } else {
+                    dstRect.x = (float)(border + ((nw - ww) >> 1));
+                }
+                break;
+            case Align::Right:
+                if (nw < ww) {
+                    dstRect.x = (float)border;
+                    dstRect.w = (float)nw;
+                    srcRect.x = (float)(ww - nw);
+                    srcRect.w = (float)nw;
+                } else {
+                    dstRect.x = (float)(nw + border - ww);
+                }
+                break;
+        }
+        switch (textVAlign) {
+            case VAlign::Top:
+                dstRect.y = (float)border;
+                if (nh < hh) {
+                    srcRect.h = dstRect.h = (float)nh;
+                }
+                break;
+            case VAlign::Center:
+                if (nh < hh) {
+                    dstRect.y = (float)border;
+                    dstRect.h = (float)nh;
+                    srcRect.y = (float)((hh - nh) >> 1);
+                    srcRect.h = (float)nh;
+                } else {
+                    dstRect.y = (float)(border + ((nh - hh) >> 1));
+                }
+                break;
+            case VAlign::Bottom:
+                if (nh < hh) {
+                    dstRect.y = (float)border;
+                    dstRect.h = (float)nh;
+                    srcRect.y = (float)(hh - nh);
+                    srcRect.h = (float)nh;
+                } else {
+                    dstRect.y = (float)(nh + border - hh);
+                }
+                break;
+        }
     }
-}
-
-bool Panel::setNewFontSize(HWND hwnd, int newSize) {
-    if (newSize == fontSize) return false;
-    auto ft = TTF_OpenFont(fontFile.c_str(), fontSize);
-    if (ft == nullptr) {
-        MessageBoxW(hwnd, L"Failed to change font size", L"Error", MB_OK);
-        return false;
-    }
-    if (font) {
-        TTF_CloseFont(font);
-    }
-    font = ft;
-    fontSize = newSize;
-    updateTextTexture();
-    return true;
-}
-
-bool Panel::setNewTextAlpha(int newVal) {
-    if (newVal == textColor.a) return false;
-    textColor.a = newVal;
-    updateTextTexture();
-    return true;
-}
-
-bool Panel::setNewBackgroundAlpha(int newVal) {
-    if (newVal == backgroundColor.a) return false;
-    backgroundColor.a = newVal;
-    return true;
-}
-
-bool Panel::setNewBorder(int newVal) {
-    if (newVal == border) return false;
-    border = newVal;
-    updateTextRenderRect();
-    return true;
 }
 
 void Panel::render() {
@@ -271,17 +340,11 @@ void Panel::initConfigDialog(HWND hwnd) {
     SetWindowLongPtrW(hwnd, GWLP_USERDATA, (LPARAM)this);
     SetWindowPos(hwnd, nullptr, x, y, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
     HWND edc = GetDlgItem(hwnd, 1001);
-    wchar_t fontFileName[MAX_PATH];
-    MultiByteToWideChar(CP_UTF8, 0, fontFile.c_str(), -1, fontFileName, MAX_PATH);
-    SetWindowTextW(edc, fontFileName);
-    edc = GetDlgItem(hwnd, 1003);
-    SetWindowTextW(edc, std::to_wstring(fontSize).c_str());
-    HWND udc = GetDlgItem(hwnd, 1004);
-    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(256, 6));
+    SetWindowTextW(edc, (fontFace + L", " + std::to_wstring(fontSize) + L"pt").c_str());
 
     edc = GetDlgItem(hwnd, 1007);
     SetWindowTextW(edc, std::to_wstring(textColor.a).c_str());
-    udc = GetDlgItem(hwnd, 1008);
+    HWND udc = GetDlgItem(hwnd, 1008);
     SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(255, 0));
 
     edc = GetDlgItem(hwnd, 1009);
@@ -293,6 +356,39 @@ void Panel::initConfigDialog(HWND hwnd) {
     SetWindowTextW(edc, std::to_wstring(border).c_str());
     udc = GetDlgItem(hwnd, 1012);
     SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+
+    edc = GetDlgItem(hwnd, 1014);
+    SetWindowTextW(edc, std::to_wstring(textShadow).c_str());
+    udc = GetDlgItem(hwnd, 1015);
+    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+
+    edc = GetDlgItem(hwnd, 1016);
+    SetWindowTextW(edc, std::to_wstring(textShadowOffset[0]).c_str());
+    udc = GetDlgItem(hwnd, 1017);
+    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+
+    edc = GetDlgItem(hwnd, 1018);
+    SetWindowTextW(edc, std::to_wstring(textShadowOffset[1]).c_str());
+    udc = GetDlgItem(hwnd, 1019);
+    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(100, 0));
+
+    edc = GetDlgItem(hwnd, 1021);
+    SetWindowTextW(edc, std::to_wstring(textShadowColor.a).c_str());
+    udc = GetDlgItem(hwnd, 1022);
+    SendMessageW(udc, UDM_SETRANGE, 0, MAKELPARAM(255, 0));
+
+    auto cbc = GetDlgItem(hwnd, 1003);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Left");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Middle");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Right");
+    SendMessageW(cbc, CB_SETCURSEL, int(textAlign), 0);
+    cbc = GetDlgItem(hwnd, 1004);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Top");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Center");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Bottom");
+    SendMessageW(cbc, CB_SETCURSEL, int(textVAlign), 0);
 
     auto chc = GetDlgItem(hwnd, 1013);
     SendMessageW(chc, BM_SETCHECK, autoSize ? BST_CHECKED : BST_UNCHECKED, 0);
@@ -309,75 +405,31 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             return 0;
         }
         case 1002: {
-            IFileOpenDialog *pFileOpen;
-            auto hr = CoCreateInstance(CLSID_FileOpenDialog, nullptr, CLSCTX_ALL, IID_IFileOpenDialog, reinterpret_cast<void **>(&pFileOpen));
-            wchar_t szFile[MAX_PATH] = {0};
-            if (SUCCEEDED(hr)) {
-                pFileOpen->SetOptions(FOS_ALLNONSTORAGEITEMS);
-                hr = pFileOpen->Show(hwnd);
-                if (SUCCEEDED(hr)) {
-                    IShellItem *pItem;
-                    hr = pFileOpen->GetResult(&pItem);
-                    if (SUCCEEDED(hr)) {
-                        PWSTR pszFilePath;
-                        hr = pItem->GetDisplayName(SIGDN_FILESYSPATH, &pszFilePath);
-                        if (SUCCEEDED(hr)) {
-                            lstrcpyW(szFile, pszFilePath);
-                            CoTaskMemFree(pszFilePath);
-                        } else {
-                            SFGAOF attr;
-                            pItem->GetAttributes(0xFFFFFFFFU, &attr);
-                            if (!(attr & SFGAO_CANMONIKER)) {
-                                IDataObject *pDataObject;
-                                hr = pItem->BindToHandler(nullptr, BHID_DataObject, IID_IDataObject, (void **)&pDataObject);
-                                if (SUCCEEDED(hr)) {
-                                    FORMATETC fmt = {CF_HDROP, nullptr, DVASPECT_CONTENT, -1, TYMED_HGLOBAL};
-                                    STGMEDIUM stg = {TYMED_HGLOBAL};
-                                    hr = pDataObject->GetData(&fmt, &stg);
-                                    if (SUCCEEDED(hr)) {
-                                        auto hDrop = (HDROP)GlobalLock(stg.hGlobal);
-                                        if (hDrop) {
-                                            DragQueryFileW(hDrop, 0, szFile, MAX_PATH);
-                                            GlobalUnlock(stg.hGlobal);
-                                        }
-                                        ReleaseStgMedium(&stg);
-                                    }
-                                    pDataObject->Release();
-                                }
-                            }
-                        }
-                        pItem->Release();
-                    }
-                }
-                pFileOpen->Release();
-            }
-            if (!szFile[0]) return 0;
-            wchar_t szFileRel[MAX_PATH] = {0};
-            wchar_t szCurrentPath[MAX_PATH];
-            GetModuleFileNameW(nullptr, szCurrentPath, MAX_PATH);
-            PathRemoveFileSpecW(szCurrentPath);
-            PathRelativePathToW(szFileRel, szCurrentPath, FILE_ATTRIBUTE_NORMAL, szFile, FILE_ATTRIBUTE_NORMAL);
-            if (szFileRel[0] == 0 || szFileRel[0] == '.') {
-                lstrcpyW(szFileRel, szFile);
-            }
-            for (int i = 0; szFileRel[i]; i++) {
-                if (szFileRel[i] == '\\') szFileRel[i] = '/';
-            }
-            char fontFileName[MAX_PATH];
-            WideCharToMultiByte(CP_UTF8, 0, szFileRel, -1, fontFileName, MAX_PATH, nullptr, nullptr);
-            if (strcasecmp(fontFileName, fontFile.c_str()) != 0) {
-                fontFile = fontFileName;
-                auto newFont = TTF_OpenFont(fontFileName, fontSize);
-                if (newFont == nullptr) {
-                    MessageBoxW(hwnd, L"Failed to load font", L"Error", MB_OK);
-                } else {
-                    if (font) {
-                        TTF_CloseFont(font);
-                    }
-                    font = newFont;
+            LOGFONTW lf = {};
+            lf.lfHeight = -MulDiv(fontSize, GetDeviceCaps(GetDC(nullptr), LOGPIXELSY), 72);
+            lf.lfWeight = fontStyle & 1 ? FW_BOLD : FW_DONTCARE;
+            lf.lfItalic = fontStyle & 2;
+            lf.lfQuality = CLEARTYPE_NATURAL_QUALITY;
+            lf.lfCharSet = DEFAULT_CHARSET;
+            lstrcpyW(lf.lfFaceName, fontFace.c_str());
+            CHOOSEFONTW cf = {sizeof(CHOOSEFONTW)};
+            cf.hwndOwner = hwnd;
+            cf.lpLogFont = &lf;
+            cf.Flags = CF_SCREENFONTS | CF_INITTOLOGFONTSTRUCT | CF_FORCEFONTEXIST | CF_NOSCRIPTSEL | CF_NOVERTFONTS | CF_LIMITSIZE;
+            cf.nSizeMin = 6;
+            cf.nSizeMax = 256;
+            if (ChooseFontW(&cf)) {
+                auto newStyle = (lf.lfWeight >= FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
+                if (fontFace != lf.lfFaceName || fontSize != cf.iPointSize / 10 || fontStyle != newStyle) {
+                    fontFace = settings->face = lf.lfFaceName;
+                    fontSize = settings->face_size = cf.iPointSize / 10;
+                    fontStyle = newStyle;
+                    settings->bold = lf.lfWeight >= FW_BOLD;
+                    settings->italic = lf.lfItalic;
+                    settings->updateFont();
                     updateTextTexture();
                     auto edc = GetDlgItem(hwnd, 1001);
-                    SetWindowTextW(edc, szFileRel);
+                    SetWindowTextW(edc, (fontFace + L", " + std::to_wstring(fontSize) + L"pt").c_str());
                 }
             }
             return 0;
@@ -430,6 +482,45 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             updateTextTexture();
             break;
         }
+        case 1020: {
+            CHOOSECOLORW cc = {sizeof(CHOOSECOLORW)};
+            cc.hInstance = (HWND)GetModuleHandleW(nullptr);
+            cc.hwndOwner = hwnd;
+            cc.lpCustColors = custColors;
+            cc.rgbResult = RGB(textShadowColor.r, textShadowColor.g, textShadowColor.b);
+            cc.Flags = CC_RGBINIT | CC_FULLOPEN | CC_ANYCOLOR;
+            if (!ChooseColorW(&cc)) break;
+            auto r = GetRValue(cc.rgbResult);
+            auto g = GetGValue(cc.rgbResult);
+            auto b = GetBValue(cc.rgbResult);
+            if (textShadowColor.r == r && textShadowColor.g == g
+                && textShadowColor.b == b)
+                break;
+            textShadowColor.r = r;
+            textShadowColor.g = g;
+            textShadowColor.b = b;
+            if (shadowColorBrush) {
+                DeleteObject(shadowColorBrush);
+            }
+            shadowColorBrush = CreateSolidBrush(cc.rgbResult);
+            InvalidateRect(GetDlgItem(hwnd, 1006), nullptr, TRUE);
+            updateTextTexture();
+            break;
+        }
+        case 1003: {
+            auto cbc = GetDlgItem(hwnd, 1003);
+            textAlign = Align(int(SendMessageW(cbc, CB_GETCURSEL, 0, 0)));
+            settings->align = textAlign;
+            updateTextTexture();
+            break;
+        }
+        case 1004: {
+            auto cbc = GetDlgItem(hwnd, 1004);
+            textVAlign = VAlign(int(SendMessageW(cbc, CB_GETCURSEL, 0, 0)));
+            settings->valign = textVAlign;
+            updateTextTexture();
+            break;
+        }
         case 1013: {
             auto newAuto = SendMessageW((HWND)lParam, BM_GETCHECK, 0, 0) == BST_CHECKED;
             if (newAuto == autoSize) break;
@@ -448,55 +539,23 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
     if (noEnChangeNotification)
         return DefWindowProcW(hwnd, WM_COMMAND, MAKEWPARAM(id, EN_CHANGE), lParam);
     switch (id) {
-        case 1003: {
-            wchar_t str[16];
-            GetWindowTextW((HWND)lParam, str, 16);
-            auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
-            if (newVal < 6) {
-                newVal = 6;
-                changed = true;
-            } else if (newVal > 256) {
-                newVal = 256;
-                changed = true;
-            }
-            if (!setNewFontSize(hwnd, newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(fontSize).c_str());
-                noEnChangeNotification = false;
-                break;
-            }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
-            break;
-        }
         case 1007: {
             wchar_t str[16];
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
             auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
             if (newVal < 0) {
                 newVal = 0;
-                changed = true;
             } else if (newVal > 256) {
                 newVal = 256;
-                changed = true;
             }
-            if (!setNewTextAlpha(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(textColor.a).c_str());
-                noEnChangeNotification = false;
-                break;
+            if (newVal != textColor.a) {
+                textColor.a = newVal;
+                updateTextTexture();
             }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
             break;
         }
         case 1009: {
@@ -504,25 +563,17 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
             auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
             if (newVal < 0) {
                 newVal = 0;
-                changed = true;
             } else if (newVal > 256) {
                 newVal = 256;
-                changed = true;
             }
-            if (!setNewBackgroundAlpha(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(backgroundColor.a).c_str());
-                noEnChangeNotification = false;
-                break;
+            if (newVal != backgroundColor.a) {
+                backgroundColor.a = newVal;
             }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
-            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
             break;
         }
         case 1011: {
@@ -530,25 +581,104 @@ INT_PTR Panel::handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
             GetWindowTextW((HWND)lParam, str, 16);
             if (str[0] == 0) break;
             auto newVal = (int)std::wcstol(str, nullptr, 10);
-            auto changed = false;
             if (newVal < 0) {
                 newVal = 0;
-                changed = true;
             } else if (newVal > 100) {
                 newVal = 100;
-                changed = true;
             }
-            if (!setNewBorder(newVal)) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(border).c_str());
-                noEnChangeNotification = false;
-                break;
+            if (newVal != border) {
+                border = newVal;
+                updateTextRenderRect();
             }
-            if (changed) {
-                noEnChangeNotification = true;
-                SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
-                noEnChangeNotification = false;
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
+            break;
+        }
+        case 1014: {
+            wchar_t str[16];
+            GetWindowTextW((HWND)lParam, str, 16);
+            if (str[0] == 0) break;
+            auto newVal = (int)std::wcstol(str, nullptr, 10);
+            if (newVal < 0) {
+                newVal = 0;
+            } else if (newVal > 100) {
+                newVal = 100;
             }
+            if (newVal != textShadow) {
+                textShadow = newVal;
+                settings->shadow_mode =
+                    textShadow == 0 ? ShadowMode::None : textShadowOffset[0] == 0 && textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+                settings->shadow_size = float(newVal);
+                updateTextTexture();
+            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
+            break;
+        }
+        case 1016: {
+            wchar_t str[16];
+            GetWindowTextW((HWND)lParam, str, 16);
+            if (str[0] == 0) break;
+            auto newVal = (int)std::wcstol(str, nullptr, 10);
+            if (newVal < 0) {
+                newVal = 0;
+            } else if (newVal > 100) {
+                newVal = 100;
+            }
+            if (newVal != textShadowOffset[0]) {
+                textShadowOffset[0] = newVal;
+                settings->shadow_mode =
+                    textShadow == 0 ? ShadowMode::None : textShadowOffset[0] == 0 && textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+                settings->shadow_offset[0] = float(newVal);
+                updateTextTexture();
+            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
+            break;
+        }
+        case 1018: {
+            wchar_t str[16];
+            GetWindowTextW((HWND)lParam, str, 16);
+            if (str[0] == 0) break;
+            auto newVal = (int)std::wcstol(str, nullptr, 10);
+            if (newVal < 0) {
+                newVal = 0;
+            } else if (newVal > 100) {
+                newVal = 100;
+            }
+            if (newVal != textShadowOffset[1]) {
+                textShadowOffset[1] = newVal;
+                settings->shadow_mode =
+                    textShadow == 0 ? ShadowMode::None : textShadowOffset[0] == 0 && textShadowOffset[1] == 0 ? ShadowMode::Outline : ShadowMode::Shadow;
+                settings->shadow_offset[1] = float(newVal);
+                updateTextTexture();
+            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
+            break;
+        }
+        case 1021: {
+            wchar_t str[16];
+            GetWindowTextW((HWND)lParam, str, 16);
+            if (str[0] == 0) break;
+            auto newVal = (int)std::wcstol(str, nullptr, 10);
+            if (newVal < 0) {
+                newVal = 0;
+            } else if (newVal > 256) {
+                newVal = 256;
+            }
+            if (newVal != textShadowColor.a) {
+                textShadowColor.a = newVal;
+                settings->shadow_color = textShadowColor.b | (textShadowColor.g << 8) | (textShadowColor.r << 16) | (textShadowColor.a << 24);
+                updateTextTexture();
+            }
+            noEnChangeNotification = true;
+            SetWindowTextW((HWND)lParam, std::to_wstring(newVal).c_str());
+            noEnChangeNotification = false;
             break;
         }
         default:
@@ -570,6 +700,12 @@ INT_PTR Panel::handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam) {
                        RGB(backgroundColor.r, backgroundColor.g, backgroundColor.b));
             return (INT_PTR)backgroundColorBrush;
         }
+        case 1020: {
+            SetBkMode((HDC)wParam, OPAQUE);
+            SetBkColor((HDC)wParam,
+                       RGB(textShadowColor.r, textShadowColor.g, textShadowColor.b));
+            return (INT_PTR)shadowColorBrush;
+        }
         default:
             break;
     }
@@ -584,6 +720,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         }
         case WM_COMMAND:
             switch (HIWORD(wParam)) {
+                case CBN_SELCHANGE:
                 case BN_CLICKED: {
                     auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
                     if (panel == nullptr) break;
@@ -599,7 +736,7 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
         case WM_CTLCOLORSTATIC: {
             auto *panel = (Panel *)GetWindowLongPtrW(hwnd, GWLP_USERDATA);
             if (panel == nullptr) break;
-            panel->handleCtlColorStatic(hwnd, wParam, lParam);
+            return panel->handleCtlColorStatic(hwnd, wParam, lParam);
         }
         default:
             break;

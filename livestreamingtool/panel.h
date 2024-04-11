@@ -1,8 +1,9 @@
 #pragma once
 
+#include "textsource.h"
+
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
 #include <windows.h>
 #undef WIN32_LEAN_AND_MEAN
 
@@ -15,6 +16,7 @@ public:
     void loadFromConfig();
     void close();
 
+    void updateText();
     void updateTextTexture();
     void updateTextRenderRect();
 
@@ -25,6 +27,7 @@ public:
     inline void setWindowSize(int nw, int nh) {
         w = nw;
         h = nh;
+        if (!autoSize) updateTextRenderRect();
     }
     inline void setWindowPos(int nx, int ny) {
         x = nx;
@@ -41,15 +44,11 @@ public:
     INT_PTR handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam);
 
 private:
-    bool setNewFontSize(HWND hwnd, int newSize);
-    bool setNewTextAlpha(int newVal);
-    bool setNewBackgroundAlpha(int newVal);
-    bool setNewBorder(int newVal);
-
     SDL_Window *window = nullptr;
     SDL_Renderer *renderer = nullptr;
     std::string text;
-    TTF_Font *font = nullptr;
+    TextSettings *settings;
+    TextSource *source;
     SDL_Texture *texture = nullptr;
     SDL_Texture *settingsTexture = nullptr;
     SDL_FRect srcRect = {0, 0, 0, 0};
@@ -57,6 +56,7 @@ private:
 
     HBRUSH textColorBrush = nullptr;
     HBRUSH backgroundColorBrush = nullptr;
+    HBRUSH shadowColorBrush = nullptr;
 
     std::string name;
     int x = 0;
@@ -64,9 +64,15 @@ private:
     int w = 250;
     int h = 500;
     int border = 10;
-    std::string fontFile = "data/font.ttf";
+    std::wstring fontFace = L"微软雅黑";
     int fontSize = 24;
+    int fontStyle = 0;
     SDL_Color textColor = {0xff, 0xff, 0xff, 0xff};
     SDL_Color backgroundColor = {0, 0, 0, 0x40};
+    Align textAlign = Align::Left;
+    VAlign textVAlign = VAlign::Top;
+    int textShadow = 0;
+    SDL_Color textShadowColor = {0, 0, 0, 255};
+    int textShadowOffset[2] = {0, 0};
     bool autoSize = false;
 };
