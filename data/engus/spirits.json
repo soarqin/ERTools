@@ -1,0 +1,258 @@
+[
+  {
+    "id": 240000,
+    "name": "Wandering Noble Ashes"
+  },
+  {
+    "id": 241000,
+    "name": "Noble Sorcerer Ashes"
+  },
+  {
+    "id": 205000,
+    "name": "Nomad Ashes"
+  },
+  {
+    "id": 215000,
+    "name": "Putrid Corpse Ashes"
+  },
+  {
+    "id": 212000,
+    "name": "Skeletal Militiaman Ashes"
+  },
+  {
+    "id": 213000,
+    "name": "Skeletal Bandit Ashes"
+  },
+  {
+    "id": 211000,
+    "name": "Albinauric Ashes"
+  },
+  {
+    "id": 210000,
+    "name": "Winged Misbegotten Ashes"
+  },
+  {
+    "id": 234000,
+    "name": "Demi-Human Ashes"
+  },
+  {
+    "id": 222000,
+    "name": "Clayman Ashes"
+  },
+  {
+    "id": 214000,
+    "name": "Oracle Envoy Ashes"
+  },
+  {
+    "id": 232000,
+    "name": "Lone Wolf Ashes"
+  },
+  {
+    "id": 235000,
+    "name": "Rotten Stray Ashes"
+  },
+  {
+    "id": 233000,
+    "name": "Giant Rat Ashes"
+  },
+  {
+    "id": 237000,
+    "name": "Warhawk Ashes"
+  },
+  {
+    "id": 244000,
+    "name": "Land Squirt Ashes"
+  },
+  {
+    "id": 236000,
+    "name": "Spirit Jellyfish Ashes"
+  },
+  {
+    "id": 245000,
+    "name": "Miranda Sprout Ashes"
+  },
+  {
+    "id": 203000,
+    "name": "Fanged Imp Ashes"
+  },
+  {
+    "id": 246000,
+    "name": "Soldjars of Fortune Ashes"
+  },
+  {
+    "id": 249000,
+    "name": "Archer Ashes"
+  },
+  {
+    "id": 248000,
+    "name": "Greatshield Soldier Ashes"
+  },
+  {
+    "id": 220000,
+    "name": "Page Ashes"
+  },
+  {
+    "id": 242000,
+    "name": "Vulgar Militia Ashes"
+  },
+  {
+    "id": 225000,
+    "name": "Marionette Soldier Ashes"
+  },
+  {
+    "id": 226000,
+    "name": "Avionette Soldier Ashes"
+  },
+  {
+    "id": 231000,
+    "name": "Kaiden Sellsword Ashes"
+  },
+  {
+    "id": 243000,
+    "name": "Mad Pumpkin Head Ashes"
+  },
+  {
+    "id": 227000,
+    "name": "Fire Monk Ashes"
+  },
+  {
+    "id": 209000,
+    "name": "Ancestral Follower Ashes"
+  },
+  {
+    "id": 230000,
+    "name": "Azula Beastman Ashes"
+  },
+  {
+    "id": 229000,
+    "name": "Man-Serpent Ashes"
+  },
+  {
+    "id": 208000,
+    "name": "Crystalian Ashes"
+  },
+  {
+    "id": 224000,
+    "name": "Kindred of Rot Ashes"
+  },
+  {
+    "id": 218000,
+    "name": "Glintstone Sorcerer Ashes"
+  },
+  {
+    "id": 219000,
+    "name": "Twinsage Sorcerer Ashes"
+  },
+  {
+    "id": 250000,
+    "name": "Godrick Soldier Ashes"
+  },
+  {
+    "id": 251000,
+    "name": "Raya Lucaria Soldier Ashes"
+  },
+  {
+    "id": 252000,
+    "name": "Leyndell Soldier Ashes"
+  },
+  {
+    "id": 253000,
+    "name": "Radahn Soldier Ashes"
+  },
+  {
+    "id": 255000,
+    "name": "Haligtree Soldier Ashes"
+  },
+  {
+    "id": 254000,
+    "name": "Mausoleum Soldier Ashes"
+  },
+  {
+    "id": 238000,
+    "name": "Stormhawk Deenh"
+  },
+  {
+    "id": 201000,
+    "name": "Banished Knight Oleg"
+  },
+  {
+    "id": 202000,
+    "name": "Banished Knight Engvall"
+  },
+  {
+    "id": 239000,
+    "name": "Bloodhound Knight Floh"
+  },
+  {
+    "id": 221000,
+    "name": "Battlemage Hugues"
+  },
+  {
+    "id": 204000,
+    "name": "Latenna the Albinauric"
+  },
+  {
+    "id": 217000,
+    "name": "Perfumer Tricia"
+  },
+  {
+    "id": 216000,
+    "name": "Depraved Perfumer Carmaan"
+  },
+  {
+    "id": 247000,
+    "name": "Omenkiller Rollo"
+  },
+  {
+    "id": 228000,
+    "name": "Blackflame Monk Amon"
+  },
+  {
+    "id": 256000,
+    "name": "Ancient Dragon Knight Kristoff"
+  },
+  {
+    "id": 257000,
+    "name": "Redmane Knight Ogha"
+  },
+  {
+    "id": 258000,
+    "name": "Lhutel the Headless"
+  },
+  {
+    "id": 223000,
+    "name": "Cleanrot Knight Finlay"
+  },
+  {
+    "id": 200000,
+    "name": "Black Knife Tiche"
+  },
+  {
+    "id": 207000,
+    "name": "Mimic Tear Ashes"
+  },
+  {
+    "id": 261000,
+    "name": "Finger Maiden Therolina Puppet"
+  },
+  {
+    "id": 263000,
+    "name": "Jarwight Puppet"
+  },
+  {
+    "id": 262000,
+    "name": "Dolores the Sleeping Arrow Puppet"
+  },
+  {
+    "id": 259000,
+    "name": "Nepheli Loux Puppet"
+  },
+  {
+    "id": 260000,
+    "name": "Dung Eater Puppet"
+  },
+  {
+    "id": 206000,
+    "name": "Nightmaiden & Swordstress Puppets"
+  }
+]

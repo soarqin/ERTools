@@ -1,0 +1,258 @@
+[
+  {
+    "id": 240000,
+    "name": "Cinzas de Nobre Errante"
+  },
+  {
+    "id": 241000,
+    "name": "Cinzas de Nobre Feiticeiro"
+  },
+  {
+    "id": 205000,
+    "name": "Cinzas de Nômade"
+  },
+  {
+    "id": 215000,
+    "name": "Cinzas de Cadáveres Pútridos"
+  },
+  {
+    "id": 212000,
+    "name": "Cinzas de Esqueleto Miliciano"
+  },
+  {
+    "id": 213000,
+    "name": "Cinzas de Salteador Esquelético"
+  },
+  {
+    "id": 211000,
+    "name": "Cinzas Albináuricas"
+  },
+  {
+    "id": 210000,
+    "name": "Cinzas do Bastardo Alado"
+  },
+  {
+    "id": 234000,
+    "name": "Cinzas de Semi-Humano"
+  },
+  {
+    "id": 222000,
+    "name": "Cinzas de Homem de Barro"
+  },
+  {
+    "id": 214000,
+    "name": "Cinzas do Enviado do Oráculo"
+  },
+  {
+    "id": 232000,
+    "name": "Cinzas de Lobo Solitário"
+  },
+  {
+    "id": 235000,
+    "name": "Cinzas de Errante Apodrecido"
+  },
+  {
+    "id": 233000,
+    "name": "Cinzas de Rato Gigante"
+  },
+  {
+    "id": 237000,
+    "name": "Cinzas de Falcão de Guerra"
+  },
+  {
+    "id": 244000,
+    "name": "Cinzas de Ascídia Terrestre"
+  },
+  {
+    "id": 236000,
+    "name": "Cinzas de Espírito de Água-Viva"
+  },
+  {
+    "id": 245000,
+    "name": "Cinzas de Broto de Miranda"
+  },
+  {
+    "id": 203000,
+    "name": "Cinzas de Demônio com Presas"
+  },
+  {
+    "id": 246000,
+    "name": "Cinzas de Soldjar do Destino"
+  },
+  {
+    "id": 249000,
+    "name": "Cinzas de Arqueiro"
+  },
+  {
+    "id": 248000,
+    "name": "Cinzas de Soldado de Escudo Grande"
+  },
+  {
+    "id": 220000,
+    "name": "Cinzas de Pajem"
+  },
+  {
+    "id": 242000,
+    "name": "Cinzas de Milícia Vulgar"
+  },
+  {
+    "id": 225000,
+    "name": "Cinzas de Soldados Marionetes"
+  },
+  {
+    "id": 226000,
+    "name": "Cinzas de Soldados Avionetes"
+  },
+  {
+    "id": 231000,
+    "name": "Cinzas de Mercenário Kaiden"
+  },
+  {
+    "id": 243000,
+    "name": "Cinzas de Cabeça de Abóbora Louco"
+  },
+  {
+    "id": 227000,
+    "name": "Cinzas de Monge do Fogo"
+  },
+  {
+    "id": 209000,
+    "name": "Cinzas de Seguidor Ancestral"
+  },
+  {
+    "id": 230000,
+    "name": "Cinzas de Homem-Fera de Azula"
+  },
+  {
+    "id": 229000,
+    "name": "Cinzas de Homem-Serpente"
+  },
+  {
+    "id": 208000,
+    "name": "Cinzas de Cristaliano"
+  },
+  {
+    "id": 224000,
+    "name": "Cinzas do Companheiro da Podridão"
+  },
+  {
+    "id": 218000,
+    "name": "Cinzas de Feiticeiro Pedrilhante"
+  },
+  {
+    "id": 219000,
+    "name": "Cinzas de Feiticeiro Sábio Gêmeo"
+  },
+  {
+    "id": 250000,
+    "name": "Cinzas de Soldado de Godrick"
+  },
+  {
+    "id": 251000,
+    "name": "Cinzas de Soldado de Raya Lucaria"
+  },
+  {
+    "id": 252000,
+    "name": "Cinzas de Soldado de Leyndell"
+  },
+  {
+    "id": 253000,
+    "name": "Cinzas de Soldado de Radahn"
+  },
+  {
+    "id": 255000,
+    "name": "Cinzas de Soldado da Árvore Sacra"
+  },
+  {
+    "id": 254000,
+    "name": "Cinzas de Soldado do Mausoléu"
+  },
+  {
+    "id": 238000,
+    "name": "Falcão da Tempestade Deenh"
+  },
+  {
+    "id": 201000,
+    "name": "Oleg, Cavaleiro Banido"
+  },
+  {
+    "id": 202000,
+    "name": "Cavaleiro Banido, Engvall"
+  },
+  {
+    "id": 239000,
+    "name": "Cinzas de Floh, Cavaleiro Cão de Caça"
+  },
+  {
+    "id": 221000,
+    "name": "Hugues, Mago de Batalha"
+  },
+  {
+    "id": 204000,
+    "name": "Latenna, a Albináurica"
+  },
+  {
+    "id": 217000,
+    "name": "Cinzas da Perfumista Tricia"
+  },
+  {
+    "id": 216000,
+    "name": "Cinzas de Carmaan, Perfumista Caído"
+  },
+  {
+    "id": 247000,
+    "name": "Rollo, Assassino de Agouros"
+  },
+  {
+    "id": 228000,
+    "name": "Cinzas de Amon, Monge da Chama Negra"
+  },
+  {
+    "id": 256000,
+    "name": "Cinzas de Kristoff, Cavaleiro do Dragão Ancião"
+  },
+  {
+    "id": 257000,
+    "name": "Cinzas de Ogha, Cavaleiro da Juba Vermelha"
+  },
+  {
+    "id": 258000,
+    "name": "Cinzas de Lhutel, a Sem-Cabeça"
+  },
+  {
+    "id": 223000,
+    "name": "Cinzas de Finlay, Cavaleira da Podridão Imaculada"
+  },
+  {
+    "id": 200000,
+    "name": "Pequena Faca Negra"
+  },
+  {
+    "id": 207000,
+    "name": "Cinzas de Lágrima Imitadora"
+  },
+  {
+    "id": 261000,
+    "name": "Marionete de Therolina, Donzela dos Dedos"
+  },
+  {
+    "id": 263000,
+    "name": "Marionete de Jarro"
+  },
+  {
+    "id": 262000,
+    "name": "Marionete de Dolores, a Flecha Adormecida"
+  },
+  {
+    "id": 259000,
+    "name": "Marionete de Nepheli Loux"
+  },
+  {
+    "id": 260000,
+    "name": "Marionete do Comedor de Estrume"
+  },
+  {
+    "id": 206000,
+    "name": "Marionetes de Donzelas da Noite e Espadachim"
+  }
+]

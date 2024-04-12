@@ -39,7 +39,7 @@ local last_running = false
 
 local function calc_flag_offset_and_bit(flag_id)
   local addr = process.read_u64(address_table.event_flag_man_addr)
-  if addr == 0 then return 0,1 end
+  if addr == 0 then return 0,nil end
   local divisor = process.read_u32(addr + 0x1C)
   local category = flag_id // divisor
   local least_significant_digits = flag_id - category * divisor
@@ -54,7 +54,7 @@ local function calc_flag_offset_and_bit(flag_id)
     end
   end
   if current_element == current_sub_element then
-    return 0,1
+    return 0,nil
   end
   local mystery_value = process.read_u32(current_element + 0x28) - 1
   local calculated_pointer = 0;
@@ -62,14 +62,14 @@ local function calc_flag_offset_and_bit(flag_id)
     if mystery_value ~= 1 then
       calculated_pointer = process.read_u64(current_element + 0x30);
     else
-      return 0,1
+      return 0,nil
     end
   else
     calculated_pointer = process.read_u32(addr + 0x20) * process.read_u32(current_element + 0x30) + process.read_u64(addr + 0x28)
   end
 
   if calculated_pointer == 0 then
-    return 0,1
+    return 0,nil
   end
   local thing = 7 - (least_significant_digits & 7)
   local another_thing = 1 << thing

@@ -1,0 +1,258 @@
+[
+  {
+    "id": 240000,
+    "name": "Ceneri di nobile viandante"
+  },
+  {
+    "id": 241000,
+    "name": "Ceneri di nobile stregone"
+  },
+  {
+    "id": 205000,
+    "name": "Ceneri di nomade"
+  },
+  {
+    "id": 215000,
+    "name": "Ceneri di cadavere putrescente"
+  },
+  {
+    "id": 212000,
+    "name": "Ceneri di milite scheletrico"
+  },
+  {
+    "id": 213000,
+    "name": "Ceneri di bandito scheletrico"
+  },
+  {
+    "id": 211000,
+    "name": "Ceneri di albinauro"
+  },
+  {
+    "id": 210000,
+    "name": "Ceneri di progenie alata"
+  },
+  {
+    "id": 234000,
+    "name": "Ceneri di semiumano"
+  },
+  {
+    "id": 222000,
+    "name": "Ceneri di uomo d'argilla"
+  },
+  {
+    "id": 214000,
+    "name": "Ceneri di messaggero dell'oracolo"
+  },
+  {
+    "id": 232000,
+    "name": "Ceneri di lupo solitario"
+  },
+  {
+    "id": 235000,
+    "name": "Ceneri di cane randagio marcescente"
+  },
+  {
+    "id": 233000,
+    "name": "Ceneri di topo gigante"
+  },
+  {
+    "id": 237000,
+    "name": "Ceneri di falco da guerra"
+  },
+  {
+    "id": 244000,
+    "name": "Ceneri di ascidia di terra"
+  },
+  {
+    "id": 236000,
+    "name": "Ceneri di medusa spiritica"
+  },
+  {
+    "id": 245000,
+    "name": "Ceneri di germoglio di miranda"
+  },
+  {
+    "id": 203000,
+    "name": "Ceneri di demone zannuto"
+  },
+  {
+    "id": 246000,
+    "name": "Ceneri di vaso mercenario"
+  },
+  {
+    "id": 249000,
+    "name": "Ceneri di arciere"
+  },
+  {
+    "id": 248000,
+    "name": "Ceneri di oplita"
+  },
+  {
+    "id": 220000,
+    "name": "Ceneri di paggio"
+  },
+  {
+    "id": 242000,
+    "name": "Ceneri di masnadiere"
+  },
+  {
+    "id": 225000,
+    "name": "Ceneri di soldato marionetta"
+  },
+  {
+    "id": 226000,
+    "name": "Ceneri di soldato marionetta volante"
+  },
+  {
+    "id": 231000,
+    "name": "Ceneri di mercenario di Kaiden"
+  },
+  {
+    "id": 243000,
+    "name": "Ceneri di testa di zucca folle"
+  },
+  {
+    "id": 227000,
+    "name": "Ceneri di monaco del fuoco"
+  },
+  {
+    "id": 209000,
+    "name": "Ceneri di devoto ancestrale"
+  },
+  {
+    "id": 230000,
+    "name": "Ceneri di bestia umana di Azula"
+  },
+  {
+    "id": 229000,
+    "name": "Ceneri di uomo-serpente"
+  },
+  {
+    "id": 208000,
+    "name": "Ceneri di cristalliano"
+  },
+  {
+    "id": 224000,
+    "name": "Ceneri di seguace della marcescenza"
+  },
+  {
+    "id": 218000,
+    "name": "Ceneri di stregone della scintipietra"
+  },
+  {
+    "id": 219000,
+    "name": "Ceneri di stregone bisavio"
+  },
+  {
+    "id": 250000,
+    "name": "Ceneri di soldato di Godrick"
+  },
+  {
+    "id": 251000,
+    "name": "Ceneri di soldato di Raya Lucaria"
+  },
+  {
+    "id": 252000,
+    "name": "Ceneri di soldato di Leyndell"
+  },
+  {
+    "id": 253000,
+    "name": "Ceneri di soldato di Radahn"
+  },
+  {
+    "id": 255000,
+    "name": "Ceneri di soldato del Sacro Albero"
+  },
+  {
+    "id": 254000,
+    "name": "Ceneri di soldato del mausoleo"
+  },
+  {
+    "id": 238000,
+    "name": "Falco tempesta Deenh"
+  },
+  {
+    "id": 201000,
+    "name": "Oleg, cavaliere esule"
+  },
+  {
+    "id": 202000,
+    "name": "Engvall, cavaliere esule"
+  },
+  {
+    "id": 239000,
+    "name": "Cavalier limiere Floh"
+  },
+  {
+    "id": 221000,
+    "name": "Mago guerriero Hugues"
+  },
+  {
+    "id": 204000,
+    "name": "Latenna l'albinaura"
+  },
+  {
+    "id": 217000,
+    "name": "Tricia la profumiera"
+  },
+  {
+    "id": 216000,
+    "name": "Carmaan, profumiere corrotto"
+  },
+  {
+    "id": 247000,
+    "name": "Ceneri di Rollo ammazzapresagi"
+  },
+  {
+    "id": 228000,
+    "name": "Amon, monaco della nera fiamma"
+  },
+  {
+    "id": 256000,
+    "name": "Antico cavaliere drago Kristoff"
+  },
+  {
+    "id": 257000,
+    "name": "Ogha, cavaliere Mantorosso"
+  },
+  {
+    "id": 258000,
+    "name": "Lhutel Senzatesta"
+  },
+  {
+    "id": 223000,
+    "name": "Cavaliere marcescente Finlay"
+  },
+  {
+    "id": 200000,
+    "name": "Tiche dei Neri Coltelli"
+  },
+  {
+    "id": 207000,
+    "name": "Ceneri di lacrima riflessa"
+  },
+  {
+    "id": 261000,
+    "name": "Fantoccio della vergine Therolina"
+  },
+  {
+    "id": 263000,
+    "name": "Fantoccio di vasaio"
+  },
+  {
+    "id": 262000,
+    "name": "Fantoccio di Dolores la freccia dormiente"
+  },
+  {
+    "id": 259000,
+    "name": "Fantoccio di Nepheli Loux"
+  },
+  {
+    "id": 260000,
+    "name": "Fantoccio del Mangiasterco"
+  },
+  {
+    "id": 206000,
+    "name": "Fantocci di vergine e spadaccina"
+  }
+]

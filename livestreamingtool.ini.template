@@ -22,8 +22,18 @@ max_display_count=20
 
 [items]
 ; Show weapon collection progress
-show_weapon_collections=false
+show_weapons_collections=false
 ; Show protector collection progress
-show_protector_collections=false
+show_protectors_collections=false
+; Show accessories collection progress
+show_accessories_collections=false
+; Show sorceries collection progress
+show_sorceries_collections=false
+; Show incantations collection progress
+show_incantations_collections=false
+; Show ashesofwar collection progress
+show_ashesofwar_collections=false
+; Show spirits collection progress
+show_spirits_collections=false
 ; Show equipped items
 show_equipped=true

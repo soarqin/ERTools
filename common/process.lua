@@ -139,30 +139,22 @@ end
 
 local function read_u8(addr)
   if process == nil then return 0 end
-  local str = process:read(addr, 1)
-  if str == nil then return 0 end
-  return string.unpack('=I1', str)
+  return process:readbyte(addr)
 end
 
 local function read_u16(addr)
   if process == nil then return 0 end
-  local str = process:read(addr, 2)
-  if str == nil then return 0 end
-  return string.unpack('=I2', str)
+  return process:readshort(addr)
 end
 
 local function read_u32(addr)
   if process == nil then return 0 end
-  local str = process:read(addr, 4)
-  if str == nil then return 0 end
-  return string.unpack('=I4', str)
+  return process:readint(addr)
 end
 
 local function read_u64(addr)
   if process == nil then return 0 end
-  local str = process:read(addr, 8)
-  if str == nil then return 0 end
-  return string.unpack('=I8', str)
+  return process:readlong(addr)
 end
 
 return {
