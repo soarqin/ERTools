@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Cristaliano Pútrido (Lâmina Circular) & Cristaliano Pútrido (Lança) & Cristaliano Pútrido (Cajado)",
+        "place": "Esconderijo de Sellia",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Cabeça de Abóbora Louco (Martelo) & Cabeça de Abóbora Louco (Mangual)",
         "place": "Ruínas de Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Cavaleiro da Podridão Imaculada (Lança) & Cavaleiro da Podridão Imaculada (Foice)",
         "place": "Caverna Abandonada",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Cristaliano Pútrido (Lâmina Circular) & Cristaliano Pútrido (Lança) & Cristaliano Pútrido (Cajado)",
-        "place": "Esconderijo de Sellia",
-        "flag_id": 31110800
       },
       {
         "boss": "Homem-Fera de Farum Azula (Cutelo) & Homem-Fera de Farum Azula (Faca de Arremesso)",

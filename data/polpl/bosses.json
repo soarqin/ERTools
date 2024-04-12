@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Gnijący Krysztalnik (brzmiące ostrze) & Gnijący Krysztalnik (włócznia) & Gnijący krysztalnik (kostur)",
+        "place": "Selliańska kryjówka",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Szalony Dyniogłowy (młot) & Szalony Dyniogłowy (korbacz)",
         "place": "Ruiny Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Rycerz czystej zgnilizny (włócznia) & Rycerz czystej zgnilizny (sierp)",
         "place": "Opuszczona jaskinia",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Gnijący Krysztalnik (brzmiące ostrze) & Gnijący Krysztalnik (włócznia) & Gnijący krysztalnik (kostur)",
-        "place": "Selliańska kryjówka",
-        "flag_id": 31110800
       },
       {
         "boss": "Człowiek-bestia z Farum Azuli (tasak) & Człowiek-bestia z Farum Azuli (nóż do rzucania)",

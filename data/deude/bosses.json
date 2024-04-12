@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Stinkender Kristallianer (Ringklinge) & Stinkender Kristallianer (Speer) & Stinkender Kristallianer (Stab)",
+        "place": "Sellias Versteck",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Wahnsinniger Kürbiskopf (Hammer) & Wahnsinniger Kürbiskopf (Flegel)",
         "place": "Ruinen von Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Reinfäule-Ritter (Speer) & Reinfäule-Ritter (Sichel)",
         "place": "Verlassene Höhle",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Stinkender Kristallianer (Ringklinge) & Stinkender Kristallianer (Speer) & Stinkender Kristallianer (Stab)",
-        "place": "Sellias Versteck",
-        "flag_id": 31110800
       },
       {
         "boss": "Bestienmensch von Farum Azula (Beil) & Bestienmensch von Farum Azula (Wurfmesser)",

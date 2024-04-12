@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Putrid Crystalian (Ringblade) & Putrid Crystalian (Spear) & Putrid Crystalian (Staff)",
+        "place": "Sellia Hideaway",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Mad Pumpkin Head (Hammer) & Mad Pumpkin Head (Flail)",
         "place": "Caelem Ruins",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Cleanrot Knight (Spear) & Cleanrot Knight (Sickle)",
         "place": "Abandoned Cave",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Putrid Crystalian (Ringblade) & Putrid Crystalian (Spear) & Putrid Crystalian (Staff)",
-        "place": "Sellia Hideaway",
-        "flag_id": 31110800
       },
       {
         "boss": "Beastman of Farum Azula (Cleaver) & Beastman of Farum Azula (Throwing Knife)",

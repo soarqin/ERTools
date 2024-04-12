@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Danseur cristalien putride & Lancier cristalien putride & Sorcier cristalien putride",
+        "place": "Antre de Sellia",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Tête de citrouille démente au marteau & Tête de citrouille démente au fléau d'armes",
         "place": "Ruines de Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Chevalier lancier de la Noble putréfaction & Chevalier faucheur de la Noble putréfaction",
         "place": "Grotte désertée",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Danseur cristalien putride & Lancier cristalien putride & Sorcier cristalien putride",
-        "place": "Antre de Sellia",
-        "flag_id": 31110800
       },
       {
         "boss": "Homme-bête guerrier de Farum Azula & Homme-bête aux couteaux de Farum Azula",

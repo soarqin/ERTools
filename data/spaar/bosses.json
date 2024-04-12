@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Cristalino podrido (anillo cortante) & Cristalino podrido (lanza) & Cristalino podrido (báculo)",
+        "place": "Escondite de Sellia",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Calabáceo loco (martillo) & Calabáceo loco (mangual)",
         "place": "Ruinas de Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Caballero purificador (lanza) & Caballero purificador (hoz)",
         "place": "Cueva abandonada",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Cristalino podrido (anillo cortante) & Cristalino podrido (lanza) & Cristalino podrido (báculo)",
-        "place": "Escondite de Sellia",
-        "flag_id": 31110800
       },
       {
         "boss": "Hombre bestia de Farum Azula (cuchilla) & Hombre bestia de Farum Azula (cuchillo arrojadizo)",

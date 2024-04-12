@@ -76,6 +76,7 @@ Caelid|3014,3015,3121,3207,3208,6400:
 + Frenzied Duelist|Gaol Cave:31210800
 + Cemetery Shade|Caelid Catacombs:30150800
 + Fallingstar Beast|Sellia Crystal Tunnel:32080800
++ Putrid Crystalian (Ringblade)|Putrid Crystalian (Spear)|Putrid Crystalian (Staff)|Sellia Hideaway:31110800
 + Mad Pumpkin Head (Hammer)|Mad Pumpkin Head (Flail)|Caelem Ruins:1048400800
 + Decaying Ekzykes|Church of the Plague:1048370800
 + Nox Monk|Nox Swordstress|Sellia, Town of Sorcery:1049390800
@@ -88,7 +89,6 @@ Caelid|3014,3015,3121,3207,3208,6400:
 
 Greyoll's Dragonbarrow|3016,3110,3111,3120,3413,6402:
 + Cleanrot Knight (Spear)|Cleanrot Knight (Sickle)|Abandoned Cave:31200800
-+ Putrid Crystalian (Ringblade)|Putrid Crystalian (Spear)|Putrid Crystalian (Staff)|Sellia Hideaway:31110800
 + Beastman of Farum Azula (Cleaver)|Beastman of Farum Azula (Throwing Knife)|Dragonbarrow Cave:31100800
 + Putrid Tree Spirit|War-Dead Catacombs:30160800
 + Godskin Apostle|Divine Tower of Caelid:34130800

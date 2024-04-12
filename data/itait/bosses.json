@@ -413,6 +413,11 @@
         "flag_id": 32080800
       },
       {
+        "boss": "Cristalliano putrescente (lama circolare) & Cristalliano putrescente (lancia) & Cristalliano putrescente (bastone)",
+        "place": "Ritiro di Sellia",
+        "flag_id": 31110800
+      },
+      {
         "boss": "Testa di zucca (martello) & Testa di zucca (flagello)",
         "place": "Rovine di Caelem",
         "flag_id": 1048400800
@@ -475,11 +480,6 @@
         "boss": "Cavaliere marcescente (lancia) & Cavaliere marcescente (falcetto)",
         "place": "Caverna abbandonata",
         "flag_id": 31200800
-      },
-      {
-        "boss": "Cristalliano putrescente (lama circolare) & Cristalliano putrescente (lancia) & Cristalliano putrescente (bastone)",
-        "place": "Ritiro di Sellia",
-        "flag_id": 31110800
       },
       {
         "boss": "Bestia umana di Farum Azula (mannaia) & Bestia umana di Farum Azula (coltello da lancio)",
