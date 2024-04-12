@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Curación urgente"
+  },
+  {
+    "id": 6421,
+    "name": "Curación"
+  },
+  {
+    "id": 6422,
+    "name": "Curación superior"
+  },
+  {
+    "id": 6423,
+    "name": "Curación de señor"
+  },
+  {
+    "id": 6440,
+    "name": "Curar veneno"
+  },
+  {
+    "id": 6441,
+    "name": "Ayuda de señor"
+  },
+  {
+    "id": 6460,
+    "name": "Fortaleza mágica"
+  },
+  {
+    "id": 6450,
+    "name": "Fortaleza llameante"
+  },
+  {
+    "id": 6470,
+    "name": "Fortaleza fulgurante"
+  },
+  {
+    "id": 6480,
+    "name": "Fortaleza divina"
+  },
+  {
+    "id": 6490,
+    "name": "Fortaleza divina de señor"
+  },
+  {
+    "id": 6400,
+    "name": "Empuje"
+  },
+  {
+    "id": 6520,
+    "name": "Cebo sombrío"
+  },
+  {
+    "id": 6530,
+    "name": "Oscuridad"
+  },
+  {
+    "id": 6510,
+    "name": "Estrategia del asesino"
+  },
+  {
+    "id": 6600,
+    "name": "Juramento dorado"
+  },
+  {
+    "id": 6330,
+    "name": "Barrera dorada"
+  },
+  {
+    "id": 7903,
+    "name": "Fortaleza fulgurante dorada"
+  },
+  {
+    "id": 6340,
+    "name": "Protección del Árbol Áureo"
+  },
+  {
+    "id": 6410,
+    "name": "Ira dorada"
+  },
+  {
+    "id": 6424,
+    "name": "Curación de Árbol Áureo"
+  },
+  {
+    "id": 6430,
+    "name": "Don de la bendición"
+  },
+  {
+    "id": 6431,
+    "name": "Bendición del Árbol Áureo"
+  },
+  {
+    "id": 7520,
+    "name": "Características del crisol: Aliento"
+  },
+  {
+    "id": 7500,
+    "name": "Características del crisol: Cola"
+  },
+  {
+    "id": 7510,
+    "name": "Características del crisol: Cuernos"
+  },
+  {
+    "id": 6720,
+    "name": "Estrellas de Elden"
+  },
+  {
+    "id": 7530,
+    "name": "Hoja Negra"
+  },
+  {
+    "id": 6700,
+    "name": "Disco de luz"
+  },
+  {
+    "id": 6701,
+    "name": "Anillos de luz triples"
+  },
+  {
+    "id": 6710,
+    "name": "Anillo de luz de Radagon"
+  },
+  {
+    "id": 6750,
+    "name": "Letanía de una muerte digna"
+  },
+  {
+    "id": 6780,
+    "name": "Curación de la Orden"
+  },
+  {
+    "id": 6770,
+    "name": "Hoja de la Orden"
+  },
+  {
+    "id": 6740,
+    "name": "Escudo inalterable"
+  },
+  {
+    "id": 6760,
+    "name": "Ley de causalidad"
+  },
+  {
+    "id": 6730,
+    "name": "Ley de regresión"
+  },
+  {
+    "id": 6900,
+    "name": "Lanza fulgurante"
+  },
+  {
+    "id": 6920,
+    "name": "Ataque fulgurante"
+  },
+  {
+    "id": 6930,
+    "name": "Rayo punzante"
+  },
+  {
+    "id": 6940,
+    "name": "Lanza fulgurante de dragón antiguo"
+  },
+  {
+    "id": 6910,
+    "name": "Ataque fulgurante de dragón antiguo"
+  },
+  {
+    "id": 6950,
+    "name": "Guja de Lansseax"
+  },
+  {
+    "id": 6941,
+    "name": "Lanza fulgurante de Fortissax"
+  },
+  {
+    "id": 6921,
+    "name": "Lanza fulgurante helada"
+  },
+  {
+    "id": 5040,
+    "name": "Rayo letal"
+  },
+  {
+    "id": 6960,
+    "name": "Electrificar armamento"
+  },
+  {
+    "id": 6971,
+    "name": "Bendición del dracorrayo"
+  },
+  {
+    "id": 6970,
+    "name": "Dracorrayo de Vyke"
+  },
+  {
+    "id": 6000,
+    "name": "Chasquido ardiente"
+  },
+  {
+    "id": 6001,
+    "name": "¡Oh, llama!"
+  },
+  {
+    "id": 6010,
+    "name": "Llamapulta"
+  },
+  {
+    "id": 6100,
+    "name": "Llama del gigante, álzate"
+  },
+  {
+    "id": 6020,
+    "name": "Llama, cae sobre ellos"
+  },
+  {
+    "id": 6110,
+    "name": "Llama del dios caído"
+  },
+  {
+    "id": 6220,
+    "name": "Surge, ¡oh, llama!"
+  },
+  {
+    "id": 6030,
+    "name": "Gira, ¡oh, llama!"
+  },
+  {
+    "id": 6120,
+    "name": "Arde, ¡oh, llama!"
+  },
+  {
+    "id": 6040,
+    "name": "Llama, purifícame"
+  },
+  {
+    "id": 6060,
+    "name": "Llama, protégeme"
+  },
+  {
+    "id": 6050,
+    "name": "Llama, dame fuerza"
+  },
+  {
+    "id": 7900,
+    "name": "Pecado letal de fuego"
+  },
+  {
+    "id": 6210,
+    "name": "Llama negra"
+  },
+  {
+    "id": 6230,
+    "name": "Llama negra abrasadora"
+  },
+  {
+    "id": 6240,
+    "name": "Ritual de la llama negra"
+  },
+  {
+    "id": 6250,
+    "name": "Hoja de la llama negra"
+  },
+  {
+    "id": 6260,
+    "name": "Protección de la llama negra"
+  },
+  {
+    "id": 6270,
+    "name": "Presencia noble"
+  },
+  {
+    "id": 6820,
+    "name": "Garras de bestia"
+  },
+  {
+    "id": 6830,
+    "name": "Garras de la bestia Gurranq"
+  },
+  {
+    "id": 6800,
+    "name": "Lanzamiento de bestia"
+  },
+  {
+    "id": 6810,
+    "name": "Piedra de Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Constitución de bestia"
+  },
+  {
+    "id": 6840,
+    "name": "Vitalidad de bestia"
+  },
+  {
+    "id": 7210,
+    "name": "Enjambre de moscas"
+  },
+  {
+    "id": 6300,
+    "name": "Garras de hemofuego"
+  },
+  {
+    "id": 6310,
+    "name": "Favor sanguino"
+  },
+  {
+    "id": 6320,
+    "name": "Hoja de hemofuego"
+  },
+  {
+    "id": 7220,
+    "name": "Niebla venenosa"
+  },
+  {
+    "id": 7200,
+    "name": "Hilera de la plaga"
+  },
+  {
+    "id": 7230,
+    "name": "Envenenar armamento"
+  },
+  {
+    "id": 7240,
+    "name": "Aeonia carmesí"
+  },
+  {
+    "id": 7310,
+    "name": "La llama frenética"
+  },
+  {
+    "id": 7311,
+    "name": "Frenesí insoportable"
+  },
+  {
+    "id": 7320,
+    "name": "Estallido frenético"
+  },
+  {
+    "id": 7330,
+    "name": "Aullido de Shabriri"
+  },
+  {
+    "id": 7300,
+    "name": "Frenesí ineludible"
+  },
+  {
+    "id": 7000,
+    "name": "Fuego de dragón"
+  },
+  {
+    "id": 7001,
+    "name": "Llama de Agheel"
+  },
+  {
+    "id": 7010,
+    "name": "Aliento de magma"
+  },
+  {
+    "id": 7011,
+    "name": "Magma de Theodorix"
+  },
+  {
+    "id": 7040,
+    "name": "Aliento de piedras refulgentes"
+  },
+  {
+    "id": 7041,
+    "name": "Piedra refulgente de Smarag"
+  },
+  {
+    "id": 7030,
+    "name": "Aliento podrido"
+  },
+  {
+    "id": 7031,
+    "name": "Putrefacción de Ekzykes"
+  },
+  {
+    "id": 7020,
+    "name": "Hielo de dragón"
+  },
+  {
+    "id": 7021,
+    "name": "Niebla de Boreal"
+  },
+  {
+    "id": 7050,
+    "name": "Perdición de Placidusax"
+  },
+  {
+    "id": 7060,
+    "name": "Garra de dragón"
+  },
+  {
+    "id": 7080,
+    "name": "Fauces de dragón"
+  },
+  {
+    "id": 7090,
+    "name": "Rugido de Greyoll"
+  }
+]

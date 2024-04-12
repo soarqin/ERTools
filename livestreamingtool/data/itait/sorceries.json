@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Ciottolo di scintipietra"
+  },
+  {
+    "id": 4010,
+    "name": "Scheggia di scintipietra veloce"
+  },
+  {
+    "id": 4001,
+    "name": "Scheggia di scintipietra maggiore"
+  },
+  {
+    "id": 4020,
+    "name": "Scheggiacometa di scintipietra"
+  },
+  {
+    "id": 4021,
+    "name": "Cometa"
+  },
+  {
+    "id": 4030,
+    "name": "Vortice di schegge"
+  },
+  {
+    "id": 4040,
+    "name": "Stelle di scintipietra"
+  },
+  {
+    "id": 4050,
+    "name": "Pioggia di meteore"
+  },
+  {
+    "id": 4070,
+    "name": "Arco di scintipietra"
+  },
+  {
+    "id": 4060,
+    "name": "Bombardamento di cristallo"
+  },
+  {
+    "id": 4090,
+    "name": "Esplosione di cristallo"
+  },
+  {
+    "id": 4080,
+    "name": "Cannone di Haima"
+  },
+  {
+    "id": 4120,
+    "name": "Martelletto di Haima"
+  },
+  {
+    "id": 4100,
+    "name": "Sisma terrestre"
+  },
+  {
+    "id": 4110,
+    "name": "Frantumatore"
+  },
+  {
+    "id": 4460,
+    "name": "Armamento da erudito"
+  },
+  {
+    "id": 4470,
+    "name": "Scudo da erudito"
+  },
+  {
+    "id": 4140,
+    "name": "Luce astrale"
+  },
+  {
+    "id": 4130,
+    "name": "Terra Magica"
+  },
+  {
+    "id": 4630,
+    "name": "Barriera di Thops"
+  },
+  {
+    "id": 4200,
+    "name": "Cometa di Azur"
+  },
+  {
+    "id": 4220,
+    "name": "Stelle della rovina"
+  },
+  {
+    "id": 4210,
+    "name": "Pioggia di stelle primordiali"
+  },
+  {
+    "id": 4390,
+    "name": "Scintilama magica"
+  },
+  {
+    "id": 4300,
+    "name": "Falange di scintilama"
+  },
+  {
+    "id": 4301,
+    "name": "Falange cariana"
+  },
+  {
+    "id": 4302,
+    "name": "Falange dello spadone"
+  },
+  {
+    "id": 4370,
+    "name": "Diluvio magico"
+  },
+  {
+    "id": 4380,
+    "name": "Arco pesante di Loretta"
+  },
+  {
+    "id": 4381,
+    "name": "Maestria di Loretta"
+  },
+  {
+    "id": 4360,
+    "name": "Plenilunio di Rennala"
+  },
+  {
+    "id": 4361,
+    "name": "Luna nera di Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Incisore cariano"
+  },
+  {
+    "id": 4430,
+    "name": "Spadone cariano"
+  },
+  {
+    "id": 4450,
+    "name": "Pungolo cariano"
+  },
+  {
+    "id": 4431,
+    "name": "Lama lunare di Adula"
+  },
+  {
+    "id": 4480,
+    "name": "Lucidità"
+  },
+  {
+    "id": 4640,
+    "name": "Rappresaglia cariana"
+  },
+  {
+    "id": 4600,
+    "name": "Scheggia da imboscata"
+  },
+  {
+    "id": 4610,
+    "name": "Scheggia notturna"
+  },
+  {
+    "id": 4620,
+    "name": "Cometa notturna"
+  },
+  {
+    "id": 6500,
+    "name": "Foschia della vergine dell'oscurità"
+  },
+  {
+    "id": 4660,
+    "name": "Lama invisibile"
+  },
+  {
+    "id": 4670,
+    "name": "Forma invisibile"
+  },
+  {
+    "id": 4650,
+    "name": "Tenebre eterne"
+  },
+  {
+    "id": 4800,
+    "name": "Proiettile magmatico"
+  },
+  {
+    "id": 4820,
+    "name": "Magma torbido"
+  },
+  {
+    "id": 4810,
+    "name": "Furia di Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Rancore di Rykard"
+  },
+  {
+    "id": 4400,
+    "name": "Gelo di scintipietra"
+  },
+  {
+    "id": 4420,
+    "name": "Foschia congelante"
+  },
+  {
+    "id": 4490,
+    "name": "Congela armamento"
+  },
+  {
+    "id": 4410,
+    "name": "Tormenta di Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Cristallo polverizzante"
+  },
+  {
+    "id": 4520,
+    "name": "Torrente cristallino"
+  },
+  {
+    "id": 4510,
+    "name": "Emissione cristallina"
+  },
+  {
+    "id": 4720,
+    "name": "Pozzo gravitazionale"
+  },
+  {
+    "id": 4721,
+    "name": "Collasso stellare"
+  },
+  {
+    "id": 4710,
+    "name": "Proiezione rocciosa"
+  },
+  {
+    "id": 4700,
+    "name": "Meteorite"
+  },
+  {
+    "id": 4701,
+    "name": "Meteorite di Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Bolle dell'oracolo"
+  },
+  {
+    "id": 5110,
+    "name": "Bolla dell'oracolo maggiore"
+  },
+  {
+    "id": 4900,
+    "name": "Rovo del peccato"
+  },
+  {
+    "id": 4910,
+    "name": "Rovo del castigo"
+  },
+  {
+    "id": 5000,
+    "name": "Richiamo del rancore"
+  },
+  {
+    "id": 5001,
+    "name": "Rancore dell'antica morte"
+  },
+  {
+    "id": 5010,
+    "name": "Fiamma spettrale esplosiva"
+  },
+  {
+    "id": 5020,
+    "name": "Foschia di Fia"
+  },
+  {
+    "id": 5030,
+    "name": "Evocazioni di Tibia"
+  }
+]

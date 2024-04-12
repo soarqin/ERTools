@@ -1,0 +1,258 @@
+[
+  {
+    "id": 240000,
+    "name": "Cenizas de noble errante"
+  },
+  {
+    "id": 241000,
+    "name": "Cenizas de hechicero noble"
+  },
+  {
+    "id": 205000,
+    "name": "Cenizas nómadas"
+  },
+  {
+    "id": 215000,
+    "name": "Cenizas de cadáver putrefacto"
+  },
+  {
+    "id": 212000,
+    "name": "Cenizas de miliciano esquelético"
+  },
+  {
+    "id": 213000,
+    "name": "Cenizas de bandido esquelético"
+  },
+  {
+    "id": 211000,
+    "name": "Cenizas albináuricas"
+  },
+  {
+    "id": 210000,
+    "name": "Cenizas de malnacido alado"
+  },
+  {
+    "id": 234000,
+    "name": "Cenizas de semihumano"
+  },
+  {
+    "id": 222000,
+    "name": "Cenizas de hombre de arcilla"
+  },
+  {
+    "id": 214000,
+    "name": "Cenizas de enviado del oráculo"
+  },
+  {
+    "id": 232000,
+    "name": "Cenizas de lobo solitario"
+  },
+  {
+    "id": 235000,
+    "name": "Cenizas de criatura perdida podrida"
+  },
+  {
+    "id": 233000,
+    "name": "Cenizas de rata gigante"
+  },
+  {
+    "id": 237000,
+    "name": "Cenizas de halcón guerrero"
+  },
+  {
+    "id": 244000,
+    "name": "Cenizas de ascidia terrestre"
+  },
+  {
+    "id": 236000,
+    "name": "Cenizas de medusa espectral"
+  },
+  {
+    "id": 245000,
+    "name": "Cenizas de brote de Miranda"
+  },
+  {
+    "id": 203000,
+    "name": "Cenizas de diablillo con colmillos"
+  },
+  {
+    "id": 246000,
+    "name": "Cenizas de crisoldados de la fortuna"
+  },
+  {
+    "id": 249000,
+    "name": "Cenizas de arquero"
+  },
+  {
+    "id": 248000,
+    "name": "Cenizas de soldado de gran escudo"
+  },
+  {
+    "id": 220000,
+    "name": "Cenizas de paje"
+  },
+  {
+    "id": 242000,
+    "name": "Cenizas de la milicia vulgar"
+  },
+  {
+    "id": 225000,
+    "name": "Cenizas de soldado guiñol"
+  },
+  {
+    "id": 226000,
+    "name": "Cenizas de soldado de vuelo"
+  },
+  {
+    "id": 231000,
+    "name": "Cenizas de mercenario de Kaiden"
+  },
+  {
+    "id": 243000,
+    "name": "Cenizas de calabáceo loco"
+  },
+  {
+    "id": 227000,
+    "name": "Cenizas de monje de fuego"
+  },
+  {
+    "id": 209000,
+    "name": "Cenizas de seguidor ancestral"
+  },
+  {
+    "id": 230000,
+    "name": "Cenizas de hombre bestia de Azula"
+  },
+  {
+    "id": 229000,
+    "name": "Cenizas de hombre serpiente"
+  },
+  {
+    "id": 208000,
+    "name": "Cenizas cristalinas"
+  },
+  {
+    "id": 224000,
+    "name": "Cenizas de la Parentela de la Podredumbre"
+  },
+  {
+    "id": 218000,
+    "name": "Cenizas de hechicero de destellita"
+  },
+  {
+    "id": 219000,
+    "name": "Cenizas de hechicero de Sabios Gemelos"
+  },
+  {
+    "id": 250000,
+    "name": "Cenizas de soldado de Godric"
+  },
+  {
+    "id": 251000,
+    "name": "Cenizas de soldado de Raya Lucaria"
+  },
+  {
+    "id": 252000,
+    "name": "Cenizas de soldado de Leyndell"
+  },
+  {
+    "id": 253000,
+    "name": "Cenizas de soldado de Radahn"
+  },
+  {
+    "id": 255000,
+    "name": "Cenizas de soldado de Santoárbol"
+  },
+  {
+    "id": 254000,
+    "name": "Cenizas de soldado del mausoleo"
+  },
+  {
+    "id": 238000,
+    "name": "Halcón de tormenta Deenh"
+  },
+  {
+    "id": 201000,
+    "name": "Caballero desterrado Oleg"
+  },
+  {
+    "id": 202000,
+    "name": "Caballero desterrado Engvall"
+  },
+  {
+    "id": 239000,
+    "name": "Caballero sabueso Floh"
+  },
+  {
+    "id": 221000,
+    "name": "Mago de batalla Hugues"
+  },
+  {
+    "id": 204000,
+    "name": "Latenna la Albináurica"
+  },
+  {
+    "id": 217000,
+    "name": "Perfumista Tricia"
+  },
+  {
+    "id": 216000,
+    "name": "Perfumista corrompido Carmaan"
+  },
+  {
+    "id": 247000,
+    "name": "Asesinaojos Rollo"
+  },
+  {
+    "id": 228000,
+    "name": "Monje de llama negra Amón"
+  },
+  {
+    "id": 256000,
+    "name": "Caballero dragón antiguo Kristoff"
+  },
+  {
+    "id": 257000,
+    "name": "Caballero melenarroja Ogha"
+  },
+  {
+    "id": 258000,
+    "name": "Lhutel la Decapitada"
+  },
+  {
+    "id": 223000,
+    "name": "Caballera purificadora Finlay"
+  },
+  {
+    "id": 200000,
+    "name": "Tiche, la Cuchillo Negro"
+  },
+  {
+    "id": 207000,
+    "name": "Cenizas de lágrima mimética"
+  },
+  {
+    "id": 261000,
+    "name": "Marioneta de Therolina, Doncella de los Dedos"
+  },
+  {
+    "id": 263000,
+    "name": "Marioneta de espectripiente"
+  },
+  {
+    "id": 262000,
+    "name": "Marioneta de Dolores, la Flecha Durmiente"
+  },
+  {
+    "id": 259000,
+    "name": "Marioneta de Nepheli Loux"
+  },
+  {
+    "id": 260000,
+    "name": "Marioneta de comefiemo"
+  },
+  {
+    "id": 206000,
+    "name": "Marionetas de Donce. de la Noche y Esp."
+  }
+]

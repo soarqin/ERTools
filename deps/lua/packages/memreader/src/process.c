@@ -30,19 +30,96 @@ void init_process(process_t* process, DWORD pid, HANDLE handle)
 	GetModuleFileNameEx(process->handle, NULL, process->path, sizeof(process->path) / sizeof(TCHAR));
 }
 
+static SIZE_T process_read_common(process_t* process, LPVOID address, LPVOID buff, SIZE_T size)
+{
+	SIZE_T numBytesRead;
+	if (!ReadProcessMemory(process->handle, address, buff, size, &numBytesRead))
+		return (SIZE_T)-1;
+	return numBytesRead;
+}
+
 static int process_read(lua_State *L)
 {
 	process_t* process = check_process(L, 1);
 	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
 	SIZE_T bytes = (SIZE_T)luaL_checkinteger(L, 3);
 
-	char *buff = malloc(bytes);
-	SIZE_T numBytesRead;
+	if (bytes <= 256)
+	{
+		char buff[256];
+		SIZE_T numBytesRead = process_read_common(process, address, buff, bytes);
+		if (numBytesRead == (SIZE_T)-1)
+			return push_last_error(L);
+		lua_pushlstring(L, buff, numBytesRead);
+	}
+	else
+	{
+		char *buff = malloc(bytes);
+		SIZE_T numBytesRead = process_read_common(process, address, buff, bytes);
+		if (numBytesRead == (SIZE_T)-1)
+		{
+			free(buff);
+			return push_last_error(L);
+		}
+		lua_pushlstring(L, buff, numBytesRead);
+		free(buff);
+	}
+	return 1;
+}
 
-	if (!ReadProcessMemory(process->handle, address, buff, bytes, &numBytesRead))
+static int process_readbyte(lua_State *L)
+{
+	process_t* process = check_process(L, 1);
+	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+
+	char buff = 0;
+	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(char));
+	if (numBytesRead == (SIZE_T)-1)
 		return push_last_error(L);
 
-	lua_pushlstring(L, buff, numBytesRead);
+	lua_pushinteger(L, buff);
+	return 1;
+}
+
+static int process_readshort(lua_State *L)
+{
+	process_t* process = check_process(L, 1);
+	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+
+	short buff = 0;
+	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(short));
+	if (numBytesRead == (SIZE_T)-1)
+		return push_last_error(L);
+
+	lua_pushinteger(L, buff);
+	return 1;
+}
+
+static int process_readint(lua_State *L)
+{
+	process_t* process = check_process(L, 1);
+	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+
+	int buff = 0;
+	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(int));
+	if (numBytesRead == (SIZE_T)-1)
+		return push_last_error(L);
+
+	lua_pushinteger(L, buff);
+	return 1;
+}
+
+static int process_readlong(lua_State *L)
+{
+	process_t* process = check_process(L, 1);
+	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+
+	long long buff = 0;
+	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(long long));
+	if (numBytesRead == (SIZE_T)-1)
+		return push_last_error(L);
+
+	lua_pushinteger(L, buff);
 	return 1;
 }
 
@@ -194,6 +271,10 @@ static const luaL_Reg process_meta[] = {
 static const luaL_Reg process_methods[] = {
 	{ "version", process_version },
 	{ "read", process_read },
+	{ "readbyte", process_readbyte },
+	{ "readshort", process_readshort },
+	{ "readint", process_readint },
+	{ "readlong", process_readlong },
 	{ "readrelative", process_read_relative },
 	{ "modules", process_modules },
 	{ "exitcode", process_exit_code },

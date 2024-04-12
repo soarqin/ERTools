@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Vêtements de voyageur"
+  },
+  {
+    "id": 1020200,
+    "name": "Manchettes de voyageur"
+  },
+  {
+    "id": 1020300,
+    "name": "Bottes de voyageur"
+  },
+  {
+    "id": 810000,
+    "name": "Bandeau de sujet"
+  },
+  {
+    "id": 811000,
+    "name": "Bandeau de sujet (altéré)"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Vêtements de sujet/Vêtements de sujet (altérés)"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Chemise ordinaire de sujet/Chemise ordinaire de sujet (altérée)"
+  },
+  {
+    "id": 810300,
+    "name": "Chaussures de sujet"
+  },
+  {
+    "id": 370000,
+    "name": "Bandeau d'aristocrate"
+  },
+  {
+    "id": 380000,
+    "name": "Chapeau d'aristocrate"
+  },
+  {
+    "id": 370100,
+    "name": "Costume d'aristocrate"
+  },
+  {
+    "id": 371100,
+    "name": "Costume d'aristocrate (altéré)"
+  },
+  {
+    "id": 380100,
+    "name": "Manteau d'aristocrate"
+  },
+  {
+    "id": 370300,
+    "name": "Bottes d'aristocrate"
+  },
+  {
+    "id": 390000,
+    "name": "Vieux chapeau d'aristocrate"
+  },
+  {
+    "id": 390100,
+    "name": "Vieille tenue d'aristocrate"
+  },
+  {
+    "id": 390300,
+    "name": "Vieilles chaussures d'aristocrate"
+  },
+  {
+    "id": 220000,
+    "name": "Capuchon de page"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Costume de page/Costume de page (altéré)"
+  },
+  {
+    "id": 220300,
+    "name": "Pantalon de page"
+  },
+  {
+    "id": 1990000,
+    "name": "Capuche de page noble"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "Atours de page noble/Atours de page noble (altérés)"
+  },
+  {
+    "id": 330000,
+    "name": "Masque de gardien"
+  },
+  {
+    "id": 331100,
+    "name": "Costume de gardien"
+  },
+  {
+    "id": 330100,
+    "name": "Costume de gardien (en fleur)"
+  },
+  {
+    "id": 330200,
+    "name": "Brassards de gardien"
+  },
+  {
+    "id": 330300,
+    "name": "Jambières de gardien"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Capuche festive/Capuche festive (altérée)"
+  },
+  {
+    "id": 800100,
+    "name": "Costume festif"
+  },
+  {
+    "id": 801100,
+    "name": "Costume festif (altéré)"
+  },
+  {
+    "id": 802000,
+    "name": "Capuche festive bleue"
+  },
+  {
+    "id": 802100,
+    "name": "Costume festif bleu"
+  },
+  {
+    "id": 160000,
+    "name": "Capuche de coupable"
+  },
+  {
+    "id": 160100,
+    "name": "Costume en tissu"
+  },
+  {
+    "id": 160300,
+    "name": "Pantalon en tissu"
+  },
+  {
+    "id": 890000,
+    "name": "Masque en fer de prisonnier"
+  },
+  {
+    "id": 890100,
+    "name": "Habits de prisonnier"
+  },
+  {
+    "id": 890300,
+    "name": "Pantalon de prisonnier"
+  },
+  {
+    "id": 891000,
+    "name": "Masque en fer de malfrat"
+  },
+  {
+    "id": 964000,
+    "name": "Masque gorgé de sang"
+  },
+  {
+    "id": 964100,
+    "name": "Atours de dignitaire"
+  },
+  {
+    "id": 963200,
+    "name": "Manchettes gorgées de sang"
+  },
+  {
+    "id": 2020000,
+    "name": "Paupiette noire"
+  },
+  {
+    "id": 1130000,
+    "name": "Tête fongique"
+  },
+  {
+    "id": 2010000,
+    "name": "Couronne fongique"
+  },
+  {
+    "id": 1130100,
+    "name": "Corps fongique"
+  },
+  {
+    "id": 1130200,
+    "name": "Bras fongiques"
+  },
+  {
+    "id": 1130300,
+    "name": "Jambes fongiques"
+  },
+  {
+    "id": 630000,
+    "name": "Capuche d'astrologue"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Robe d'astrologue/Robe d'astrologue (altérée)"
+  },
+  {
+    "id": 630200,
+    "name": "Gants d'astrologue"
+  },
+  {
+    "id": 630300,
+    "name": "Pantalon d'astrologue"
+  },
+  {
+    "id": 1030000,
+    "name": "Couvre-chef d'érudit néophyte"
+  },
+  {
+    "id": 1030100,
+    "name": "Robe d'érudit néophyte"
+  },
+  {
+    "id": 833000,
+    "name": "Masque de pierre d'éclat de Karolos"
+  },
+  {
+    "id": 831000,
+    "name": "Masque de pierre d'éclat d'Olivinus"
+  },
+  {
+    "id": 830000,
+    "name": "Masque de pierre d'éclat de sorcier bicéphale"
+  },
+  {
+    "id": 834000,
+    "name": "Masque de pierre d'éclat de sorcière"
+  },
+  {
+    "id": 830100,
+    "name": "Toge de Raya Lucaria"
+  },
+  {
+    "id": 830200,
+    "name": "Manchettes de sorcier"
+  },
+  {
+    "id": 830300,
+    "name": "Pantalon de sorcier"
+  },
+  {
+    "id": 832000,
+    "name": "Masque de pierre d'éclat de Lazuli"
+  },
+  {
+    "id": 2030000,
+    "name": "Robe de Lazuli"
+  },
+  {
+    "id": 1000000,
+    "name": "Masque de pierre d'éclat de Haima"
+  },
+  {
+    "id": 1000100,
+    "name": "Robe de mage de bataille"
+  },
+  {
+    "id": 1000200,
+    "name": "Manchettes de mage de bataille"
+  },
+  {
+    "id": 1000300,
+    "name": "Guêtres de mage de bataille"
+  },
+  {
+    "id": 990000,
+    "name": "Masque de pierre d'éclat de Hierodas"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Robe de sorcier errant/Robe de sorcier errant (altérée)"
+  },
+  {
+    "id": 990200,
+    "name": "Manchettes de sorcier errant"
+  },
+  {
+    "id": 990300,
+    "name": "Bottes de sorcier errant"
+  },
+  {
+    "id": 130000,
+    "name": "Chapeau pointu de lamesort"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Tenue de voyage de lamesort/Tenue de voyage de lamesort (altérée)"
+  },
+  {
+    "id": 130200,
+    "name": "Gants de lamesort"
+  },
+  {
+    "id": 130300,
+    "name": "Pantalon de lamesort"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Chapeau pointu d'Alberich/Chapeau pointu d'Alberich (altéré)"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Robe d'Alberich/Robe d'Alberich (altérée)"
+  },
+  {
+    "id": 120200,
+    "name": "Brassards d'Alberich"
+  },
+  {
+    "id": 120300,
+    "name": "Pantalon d'Alberich"
+  },
+  {
+    "id": 910000,
+    "name": "Galurin de précepteur"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Longue robe de précepteur/Longue robe de précepteur (altérée)"
+  },
+  {
+    "id": 910200,
+    "name": "Gants de précepteur"
+  },
+  {
+    "id": 910300,
+    "name": "Pantalon de précepteur"
+  },
+  {
+    "id": 911000,
+    "name": "Masque de confiance"
+  },
+  {
+    "id": 581000,
+    "name": "Masque de pierre d'éclat d'Azur"
+  },
+  {
+    "id": 581100,
+    "name": "Robe de pierre d'éclat d'Azur"
+  },
+  {
+    "id": 581200,
+    "name": "Manchettes d'Azur"
+  },
+  {
+    "id": 580000,
+    "name": "Masque de pierre d'éclat de Lusat"
+  },
+  {
+    "id": 580100,
+    "name": "Robe de Lusat"
+  },
+  {
+    "id": 580200,
+    "name": "Manchettes de Lusat"
+  },
+  {
+    "id": 580300,
+    "name": "Jambards de vieux sorcier"
+  },
+  {
+    "id": 510000,
+    "name": "Couronne lunaire de la reine"
+  },
+  {
+    "id": 510100,
+    "name": "Robe de la reine"
+  },
+  {
+    "id": 510200,
+    "name": "Bracelets de la reine"
+  },
+  {
+    "id": 510300,
+    "name": "Pantalon de la reine"
+  },
+  {
+    "id": 1010000,
+    "name": "Chapeau de sorcière des neiges"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Robe de sorcière des neiges/Robe de sorcière des neiges (altérée)"
+  },
+  {
+    "id": 1010300,
+    "name": "Jupe de sorcière des neiges"
+  },
+  {
+    "id": 1940000,
+    "name": "Capuche de Fia"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Robe de Fia/Robe de Fia (altérée)"
+  },
+  {
+    "id": 1930100,
+    "name": "Robe mortuaire"
+  },
+  {
+    "id": 620000,
+    "name": "Bandeau de prophète"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Robe de prophète (altérée)/Robe de prophète"
+  },
+  {
+    "id": 620300,
+    "name": "Pantalon de prophète"
+  },
+  {
+    "id": 620100,
+    "name": "Robe de Corhyn"
+  },
+  {
+    "id": 900000,
+    "name": "Capuche de Servante itinérante"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Robe de Servante itinérante/Robe de Servante itinérante (altérée)"
+  },
+  {
+    "id": 900200,
+    "name": "Gants de Servante itinérante"
+  },
+  {
+    "id": 900300,
+    "name": "Bottes de Servante itinérante"
+  },
+  {
+    "id": 902000,
+    "name": "Toque de Servante"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Robe de Servante/Robe de Servante (altérée)"
+  },
+  {
+    "id": 902300,
+    "name": "Chaussures de Servante"
+  },
+  {
+    "id": 430000,
+    "name": "Capuche de sage"
+  },
+  {
+    "id": 430100,
+    "name": "Robe de sage"
+  },
+  {
+    "id": 430300,
+    "name": "Pantalon de sage"
+  },
+  {
+    "id": 1600000,
+    "name": "Grande capuche"
+  },
+  {
+    "id": 1040000,
+    "name": "Masque d'or radieux"
+  },
+  {
+    "id": 1040100,
+    "name": "Guenilles du Masque d'or"
+  },
+  {
+    "id": 1040200,
+    "name": "Bracelets dorés"
+  },
+  {
+    "id": 1040300,
+    "name": "Écharpe dorée"
+  },
+  {
+    "id": 90000,
+    "name": "Capuche de Parfumeur"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Toge de Parfumeur/Toge de Parfumeur (altérée)"
+  },
+  {
+    "id": 90200,
+    "name": "Gants de Parfumeur"
+  },
+  {
+    "id": 90300,
+    "name": "Sarong de Parfumeur"
+  },
+  {
+    "id": 100000,
+    "name": "Chapeau de voyageur"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Tenue de voyage de Parfumeur/Tenue de voyage de Parfumeur (altérée)"
+  },
+  {
+    "id": 100200,
+    "name": "Gants de voyageur"
+  },
+  {
+    "id": 100300,
+    "name": "Pantalon de voyageur"
+  },
+  {
+    "id": 540000,
+    "name": "Couvre-chef de Parfumeur déchu"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Robe de Parfumeur déchu/Robe de Parfumeur déchu (altérée)"
+  },
+  {
+    "id": 540200,
+    "name": "Gants de Parfumeur déchu"
+  },
+  {
+    "id": 540300,
+    "name": "Pantalon de Parfumeur déchu"
+  },
+  {
+    "id": 962100,
+    "name": "Robe bourgeoise"
+  },
+  {
+    "id": 961000,
+    "name": "Masque de suzerain"
+  },
+  {
+    "id": 961100,
+    "name": "Robe de suzerain"
+  },
+  {
+    "id": 960000,
+    "name": "Masque de consort"
+  },
+  {
+    "id": 960100,
+    "name": "Robe de consort"
+  },
+  {
+    "id": 960300,
+    "name": "Pantalon de consort"
+  },
+  {
+    "id": 963000,
+    "name": "Masque des Tourbier"
+  },
+  {
+    "id": 963100,
+    "name": "Robe des Tourbier"
+  },
+  {
+    "id": 300000,
+    "name": "Grand bandeau à cornes"
+  },
+  {
+    "id": 300100,
+    "name": "Tunique en fourrure"
+  },
+  {
+    "id": 300300,
+    "name": "Pantalon en fourrure"
+  },
+  {
+    "id": 301000,
+    "name": "Bandeau à cornes lumineux"
+  },
+  {
+    "id": 301100,
+    "name": "Peaux de chaman"
+  },
+  {
+    "id": 301300,
+    "name": "Bottes de chaman"
+  },
+  {
+    "id": 520000,
+    "name": "Capuche d'apôtre sanctechair"
+  },
+  {
+    "id": 520100,
+    "name": "Robe d'apôtre sanctechair"
+  },
+  {
+    "id": 520200,
+    "name": "Bracelets d'apôtre sanctechair"
+  },
+  {
+    "id": 520300,
+    "name": "Pantalon d'apôtre sanctechair"
+  },
+  {
+    "id": 530000,
+    "name": "Capuche de noble sanctechair"
+  },
+  {
+    "id": 530100,
+    "name": "Robe de noble sanctechair"
+  },
+  {
+    "id": 530200,
+    "name": "Bracelets de noble sanctechair"
+  },
+  {
+    "id": 530300,
+    "name": "Pantalon de noble sanctechair"
+  },
+  {
+    "id": 1050100,
+    "name": "Cape du Déchu"
+  },
+  {
+    "id": 320000,
+    "name": "Capuchon de noble sanglant"
+  },
+  {
+    "id": 320100,
+    "name": "Toge de noble sanglant"
+  },
+  {
+    "id": 320300,
+    "name": "Couvre-jambes de noble sanglant"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Robe du seigneur du sang/Robe du seigneur du sang (altérée)"
+  },
+  {
+    "id": 1910000,
+    "name": "Scarabée larmoyant pourpre"
+  },
+  {
+    "id": 1920000,
+    "name": "Scarabée larmoyant céruléen"
+  },
+  {
+    "id": 1900000,
+    "name": "Scarabée cendreux de guerre"
+  },
+  {
+    "id": 1902000,
+    "name": "Scarabée de pierre d'éclat"
+  },
+  {
+    "id": 1901000,
+    "name": "Scarabée incantatoire"
+  },
+  {
+    "id": 1080000,
+    "name": "Tête de diablotin (chat)"
+  },
+  {
+    "id": 1084000,
+    "name": "Tête de diablotin (loup)"
+  },
+  {
+    "id": 1081000,
+    "name": "Tête de diablotin à crocs"
+  },
+  {
+    "id": 1082000,
+    "name": "Tête de diablotin à langue"
+  },
+  {
+    "id": 1083000,
+    "name": "Tête de diablotin (cadavre)"
+  },
+  {
+    "id": 1085000,
+    "name": "Tête de diablotin (ancien)"
+  },
+  {
+    "id": 1300000,
+    "name": "Heaume-miroir nokrien"
+  },
+  {
+    "id": 1301000,
+    "name": "Heaume-miroir d'Iji"
+  },
+  {
+    "id": 1090000,
+    "name": "Masque de larme d'argent"
+  },
+  {
+    "id": 820000,
+    "name": "Turban d'émissaire"
+  },
+  {
+    "id": 1110000,
+    "name": "Tête de pieuvre"
+  },
+  {
+    "id": 1120000,
+    "name": "Jarre"
+  },
+  {
+    "id": 1060000,
+    "name": "Masque d'Albinaurique"
+  },
+  {
+    "id": 1060100,
+    "name": "Cotte de mailles crasseuse"
+  },
+  {
+    "id": 1400000,
+    "name": "Capuche noire"
+  },
+  {
+    "id": 1400100,
+    "name": "Armure de cuir"
+  },
+  {
+    "id": 1400200,
+    "name": "Gants de cuir"
+  },
+  {
+    "id": 1400300,
+    "name": "Bottes de cuir"
+  },
+  {
+    "id": 670000,
+    "name": "Capuche en tissu bleu"
+  },
+  {
+    "id": 670100,
+    "name": "Gilet en tissu bleu"
+  },
+  {
+    "id": 670200,
+    "name": "Gantelets de guerrier"
+  },
+  {
+    "id": 670300,
+    "name": "Bottes de guerrier"
+  },
+  {
+    "id": 740000,
+    "name": "Capuche pourpre"
+  },
+  {
+    "id": 741000,
+    "name": "Capuche bleu marine"
+  },
+  {
+    "id": 740100,
+    "name": "Costume de voyage de noble"
+  },
+  {
+    "id": 740200,
+    "name": "Gants de noble"
+  },
+  {
+    "id": 740300,
+    "name": "Pantalon de noble"
+  },
+  {
+    "id": 680000,
+    "name": "Masque blanc"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "Tenue de médecin de guerre/Tenue de médecin de guerre (altérée)"
+  },
+  {
+    "id": 680200,
+    "name": "Gants de médecin de guerre"
+  },
+  {
+    "id": 680300,
+    "name": "Pantalon de médecin de guerre"
+  },
+  {
+    "id": 250000,
+    "name": "Chapeau de marchand nomade"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Atours de marchand nomade/Atours de marchand nomade (altérés)"
+  },
+  {
+    "id": 250300,
+    "name": "Pantalon de marchand nomade"
+  },
+  {
+    "id": 1401000,
+    "name": "Masque de bandit"
+  },
+  {
+    "id": 931100,
+    "name": "Tenue de bandit"
+  },
+  {
+    "id": 930200,
+    "name": "Manchettes de bandit"
+  },
+  {
+    "id": 930300,
+    "name": "Bottes de bandit"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Capuche de confesseur/Capuche de confesseur (altérée)"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Armure de confesseur/Armure de confesseur (altérée)"
+  },
+  {
+    "id": 880200,
+    "name": "Gants de confesseur"
+  },
+  {
+    "id": 880300,
+    "name": "Bottes de confesseur"
+  },
+  {
+    "id": 1890000,
+    "name": "Cauchemar des Réprouvés"
+  },
+  {
+    "id": 1890100,
+    "name": "Robe de tueur de Réprouvés"
+  },
+  {
+    "id": 1890200,
+    "name": "Gants longs de tueur de Réprouvés"
+  },
+  {
+    "id": 1890300,
+    "name": "Bottes de tueur de Réprouvés"
+  },
+  {
+    "id": 930000,
+    "name": "Masque squelettique"
+  },
+  {
+    "id": 930100,
+    "name": "Plumes noires de rapace"
+  },
+  {
+    "id": 1830000,
+    "name": "Chapel de fantassin"
+  },
+  {
+    "id": 1830100,
+    "name": "Tabard drapé de mailles"
+  },
+  {
+    "id": 1830200,
+    "name": "Gantelets de fantassin"
+  },
+  {
+    "id": 1830300,
+    "name": "Jambières de fantassin"
+  },
+  {
+    "id": 1840000,
+    "name": "Cervelière de fantassin"
+  },
+  {
+    "id": 1840100,
+    "name": "Tabard de fantassin"
+  },
+  {
+    "id": 1860000,
+    "name": "Barbute de fantassin"
+  },
+  {
+    "id": 1860100,
+    "name": "Tabard écarlate"
+  },
+  {
+    "id": 1850000,
+    "name": "Morion doré de fantassin"
+  },
+  {
+    "id": 1850100,
+    "name": "Tabard drapé de cuir"
+  },
+  {
+    "id": 1880000,
+    "name": "Morion sacré"
+  },
+  {
+    "id": 1880100,
+    "name": "Tabard drapé d'ivoire"
+  },
+  {
+    "id": 1870100,
+    "name": "Tabard maculé de sang"
+  },
+  {
+    "id": 1980000,
+    "name": "Capuche de brigand"
+  },
+  {
+    "id": 1980100,
+    "name": "Armure en tissu de brigand"
+  },
+  {
+    "id": 1980200,
+    "name": "Gantelets de brigand"
+  },
+  {
+    "id": 420000,
+    "name": "Casque de milicien vulgaire"
+  },
+  {
+    "id": 420100,
+    "name": "Armure de milicien vulgaire"
+  },
+  {
+    "id": 420200,
+    "name": "Gantelets de milicien vulgaire"
+  },
+  {
+    "id": 420300,
+    "name": "Jambières de milicien vulgaire"
+  },
+  {
+    "id": 310000,
+    "name": "Casque de Duelliste"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Cape de gardien des tombes/Atour de gardien des tombes (altérée)"
+  },
+  {
+    "id": 310300,
+    "name": "Jambières de Duelliste"
+  },
+  {
+    "id": 2000000,
+    "name": "Casque de Duelliste putréfié"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Cape de gardien des tombes putréfiée/Atour de gardien des tombes putréfiée (altérée)"
+  },
+  {
+    "id": 2000300,
+    "name": "Jambières de Duelliste putréfié"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Capuche de moine nokrien/Capuche de moine nokrien (altérée)"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Armure de moine nokrien/Armure de moine nokrien (altérée)"
+  },
+  {
+    "id": 290200,
+    "name": "Bracelets nokriens"
+  },
+  {
+    "id": 290300,
+    "name": "Jambières nokriennes"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Hennin d'épéiste nokrienne/Hennin de épéiste nokrienne (altéré)"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Armure d'épéiste nokrienne/Armure d'épéiste nokrienne (altérée)"
+  },
+  {
+    "id": 293000,
+    "name": "Double hennin de noctedame"
+  },
+  {
+    "id": 293100,
+    "name": "Armure de noctedame"
+  },
+  {
+    "id": 730000,
+    "name": "Bandeau de champion"
+  },
+  {
+    "id": 730100,
+    "name": "Spalière de champion"
+  },
+  {
+    "id": 730200,
+    "name": "Brassards de champion"
+  },
+  {
+    "id": 730300,
+    "name": "Guêtres de champion"
+  },
+  {
+    "id": 1100000,
+    "name": "Coiffe de mailles"
+  },
+  {
+    "id": 1100100,
+    "name": "Cotte de mailles"
+  },
+  {
+    "id": 1102100,
+    "name": "Tunique frappée d'un arbre"
+  },
+  {
+    "id": 1101100,
+    "name": "Tunique frappée d'un œil"
+  },
+  {
+    "id": 1100200,
+    "name": "Gantelets"
+  },
+  {
+    "id": 1100300,
+    "name": "Jambières de mailles"
+  },
+  {
+    "id": 40000,
+    "name": "Casque en fer"
+  },
+  {
+    "id": 40100,
+    "name": "Armure d'écailles"
+  },
+  {
+    "id": 40200,
+    "name": "Gantelets en fer"
+  },
+  {
+    "id": 40300,
+    "name": "Pantalon en cuir"
+  },
+  {
+    "id": 1700000,
+    "name": "Casque de soldat de Godrick"
+  },
+  {
+    "id": 1700100,
+    "name": "Tunique avec arbre et bête"
+  },
+  {
+    "id": 1700200,
+    "name": "Gantelets de soldat de Godrick"
+  },
+  {
+    "id": 1700300,
+    "name": "Jambières de soldat de Godrick"
+  },
+  {
+    "id": 1710000,
+    "name": "Casque de Raya Lucaria"
+  },
+  {
+    "id": 1710100,
+    "name": "Tunique du Coucou"
+  },
+  {
+    "id": 1710200,
+    "name": "Gantelets de Raya Lucaria"
+  },
+  {
+    "id": 1710300,
+    "name": "Jambières de Raya Lucaria"
+  },
+  {
+    "id": 1730000,
+    "name": "Casque de soldat de Radahn"
+  },
+  {
+    "id": 1730100,
+    "name": "Tunique du Lion rouge"
+  },
+  {
+    "id": 1730200,
+    "name": "Gantelets de soldat de Radahn"
+  },
+  {
+    "id": 1730300,
+    "name": "Jambières de soldat de Radahn"
+  },
+  {
+    "id": 1720000,
+    "name": "Casque de soldat de Leyndell"
+  },
+  {
+    "id": 1720100,
+    "name": "Tunique de l'Arbre-Monde"
+  },
+  {
+    "id": 1720200,
+    "name": "Gantelets de soldat de Leyndell"
+  },
+  {
+    "id": 1720300,
+    "name": "Jambières de soldat de Leyndell"
+  },
+  {
+    "id": 1750000,
+    "name": "Casque de l'Arbre-Sacré"
+  },
+  {
+    "id": 1750100,
+    "name": "Tunique de l'Arbre-Sacré"
+  },
+  {
+    "id": 1750200,
+    "name": "Gantelets de l'Arbre-Sacré"
+  },
+  {
+    "id": 1750300,
+    "name": "Jambières de l'Arbre-Sacré"
+  },
+  {
+    "id": 1740100,
+    "name": "Tunique du Mausolée"
+  },
+  {
+    "id": 1740200,
+    "name": "Gantelets du Mausolée"
+  },
+  {
+    "id": 1740300,
+    "name": "Jambières du Mausolée"
+  },
+  {
+    "id": 190000,
+    "name": "Capuche d'exilé"
+  },
+  {
+    "id": 190100,
+    "name": "Armure d'exilé"
+  },
+  {
+    "id": 190200,
+    "name": "Gantelets d'exilé"
+  },
+  {
+    "id": 190300,
+    "name": "Jambières d'exilé"
+  },
+  {
+    "id": 50000,
+    "name": "Casque de Kaiden"
+  },
+  {
+    "id": 50100,
+    "name": "Armure de Kaiden"
+  },
+  {
+    "id": 50200,
+    "name": "Gantelets de Kaiden"
+  },
+  {
+    "id": 50300,
+    "name": "Pantalon de Kaiden"
+  },
+  {
+    "id": 870000,
+    "name": "Casque des Terres des roseaux"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Armure des Terres des roseaux/Armure des Terres des roseaux (altérée)"
+  },
+  {
+    "id": 870200,
+    "name": "Gantelets des Terres des roseaux"
+  },
+  {
+    "id": 870300,
+    "name": "Jambières des Terres des roseaux"
+  },
+  {
+    "id": 872000,
+    "name": "Masque d'Okina"
+  },
+  {
+    "id": 872100,
+    "name": "Armure blanche des Terres des roseaux"
+  },
+  {
+    "id": 872200,
+    "name": "Gantelets blancs des Terres des roseaux"
+  },
+  {
+    "id": 872300,
+    "name": "Jambières blanches des Terres des roseaux"
+  },
+  {
+    "id": 150000,
+    "name": "Kasa en fer"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Armure de ronin/Armure de ronin (altérée)"
+  },
+  {
+    "id": 150200,
+    "name": "Gantelets de ronin"
+  },
+  {
+    "id": 150300,
+    "name": "Jambières de ronin"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Capuche d'excentrique/Capuche d'excentrique (altérée)"
+  },
+  {
+    "id": 940100,
+    "name": "Armure d'excentrique"
+  },
+  {
+    "id": 940200,
+    "name": "Manchettes d'excentrique"
+  },
+  {
+    "id": 940300,
+    "name": "Hauts-de-chausses d'excentrique"
+  },
+  {
+    "id": 840000,
+    "name": "Heaume de soldat pantin"
+  },
+  {
+    "id": 850000,
+    "name": "Heaume de soldat pantin aviaire"
+  },
+  {
+    "id": 840100,
+    "name": "Armure de soldat pantin"
+  },
+  {
+    "id": 240000,
+    "name": "Capuchon de mailles en argent bleuté"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Armure de mailles en argent bleuté/Armure de mailles en argent bleuté (altérée)"
+  },
+  {
+    "id": 240200,
+    "name": "Bracelets en argent bleuté"
+  },
+  {
+    "id": 240300,
+    "name": "Jupe de mailles en argent bleuté"
+  },
+  {
+    "id": 350000,
+    "name": "Capuchon de moine-gardien du feu"
+  },
+  {
+    "id": 350100,
+    "name": "Armure de moine-gardien du feu"
+  },
+  {
+    "id": 350200,
+    "name": "Gantelets de moine-gardien du feu"
+  },
+  {
+    "id": 350300,
+    "name": "Jambières de moine-gardien du feu"
+  },
+  {
+    "id": 351000,
+    "name": "Capuchon de moine de la Flamme noire"
+  },
+  {
+    "id": 351100,
+    "name": "Armure de moine de la Flamme noire"
+  },
+  {
+    "id": 351200,
+    "name": "Gantelets de moine de Flamme noire"
+  },
+  {
+    "id": 351300,
+    "name": "Jambières de moine de la Flamme noire"
+  },
+  {
+    "id": 1070000,
+    "name": "Masque de Zamor"
+  },
+  {
+    "id": 1070100,
+    "name": "Armure de Zamor"
+  },
+  {
+    "id": 1070200,
+    "name": "Bracelets de Zamor"
+  },
+  {
+    "id": 1070300,
+    "name": "Guêtres de Zamor"
+  },
+  {
+    "id": 180000,
+    "name": "Capuche des Couteaux noirs"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Armure des Couteaux noirs/Armure des Couteaux noirs (altérée)"
+  },
+  {
+    "id": 180200,
+    "name": "Gantelets des Couteaux noirs"
+  },
+  {
+    "id": 180300,
+    "name": "Jambières des Couteaux noirs"
+  },
+  {
+    "id": 770000,
+    "name": "Casque ailé de Malenia"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Armure de Malenia/Armure de Malenia (altérée)"
+  },
+  {
+    "id": 770200,
+    "name": "Gantelet de Malenia"
+  },
+  {
+    "id": 770300,
+    "name": "Jambières de Malenia"
+  },
+  {
+    "id": 460000,
+    "name": "Couronne de Seigneur d'Elden"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Armure de Seigneur d'Elden/Armure de Seigneur d'Elden (altérée)"
+  },
+  {
+    "id": 460200,
+    "name": "Brassards de Seigneur d'Elden"
+  },
+  {
+    "id": 460300,
+    "name": "Jambières de Seigneur d'Elden"
+  },
+  {
+    "id": 1500000,
+    "name": "Heaume de chevalier"
+  },
+  {
+    "id": 1500100,
+    "name": "Armure de chevalier"
+  },
+  {
+    "id": 1500200,
+    "name": "Gantelets de chevalier"
+  },
+  {
+    "id": 1500300,
+    "name": "Jambières de chevalier"
+  },
+  {
+    "id": 660000,
+    "name": "Heaume de chevalier errant"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Armure de chevalier errant/Armure de chevalier errant (altérée)"
+  },
+  {
+    "id": 660200,
+    "name": "Gantelets de chevalier errant"
+  },
+  {
+    "id": 660300,
+    "name": "Jambières de chevalier errant"
+  },
+  {
+    "id": 1101000,
+    "name": "Grand heaume"
+  },
+  {
+    "id": 980000,
+    "name": "Casque de chevalier de Caria"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Armure de chevalier de Caria/Armure de chevalier de Caria (altérée)"
+  },
+  {
+    "id": 980200,
+    "name": "Gantelets de chevalier de Caria"
+  },
+  {
+    "id": 980300,
+    "name": "Bottes de chevalier de Caria"
+  },
+  {
+    "id": 1770000,
+    "name": "Heaume de chevalier de Godrick"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Armure de chevalier de Godrick/Armure de chevalier de Godrick (altérée)"
+  },
+  {
+    "id": 1770200,
+    "name": "Gantelets de chevalier de Godrick"
+  },
+  {
+    "id": 1770300,
+    "name": "Jambières de chevalier de Godrick"
+  },
+  {
+    "id": 1780000,
+    "name": "Heaume de chevalier du Coucou"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Armure de chevalier du Coucou/Armure de chevalier du Coucou (altérée)"
+  },
+  {
+    "id": 1780200,
+    "name": "Gantelets de chevalier du Coucou"
+  },
+  {
+    "id": 1780300,
+    "name": "Jambières de chevalier du Coucou"
+  },
+  {
+    "id": 1800000,
+    "name": "Heaume de chevalier du Lion rouge"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Armure de chevalier du Lion rouge/Armure de chevalier du Lion rouge (altérée)"
+  },
+  {
+    "id": 1800200,
+    "name": "Gantelets de chevalier du Lion rouge"
+  },
+  {
+    "id": 1800300,
+    "name": "Jambières de chevalier du Lion rouge"
+  },
+  {
+    "id": 1760000,
+    "name": "Heaume de chevalier de Gelmir"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Armure de chevalier de Gelmir/Armure de chevalier de Gelmir (altérée)"
+  },
+  {
+    "id": 1760200,
+    "name": "Gantelets de chevalier de Gelmir"
+  },
+  {
+    "id": 1760300,
+    "name": "Jambières de chevalier de Gelmir"
+  },
+  {
+    "id": 1790000,
+    "name": "Heaume de chevalier de Leyndell"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Armure de chevalier de Leyndell/Armure de chevalier de Leyndell (altérée)"
+  },
+  {
+    "id": 1790200,
+    "name": "Gantelets de chevalier de Leyndell"
+  },
+  {
+    "id": 1790300,
+    "name": "Jambières de chevalier de Leyndell"
+  },
+  {
+    "id": 1820000,
+    "name": "Heaume de chevalier de l'Arbre-Sacré"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Armure de chevalier de l'Arbre-Sacré/Armure de chevalier de l'Arbre-Sacré (altérée)"
+  },
+  {
+    "id": 1820200,
+    "name": "Gantelets de chevalier de l'Arbre-Sacré"
+  },
+  {
+    "id": 1820300,
+    "name": "Jambières de chevalier l'Arbre-Sacré"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Armure de chevalier du Mausolée/Armure de chevalier du Mausolée (altérée)"
+  },
+  {
+    "id": 1810200,
+    "name": "Gantelets de chevalier du Mausolée"
+  },
+  {
+    "id": 1810300,
+    "name": "Jambières de chevalier du Mausolée"
+  },
+  {
+    "id": 790000,
+    "name": "Heaume de Chevalier-limier"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Armure de Chevalier-limier/Armure de Chevalier-limier (altérée)"
+  },
+  {
+    "id": 790200,
+    "name": "Gantelets de Chevalier-limier"
+  },
+  {
+    "id": 790300,
+    "name": "Jambières de Chevalier-limier"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Heaume de la Noble putréfaction/Heaume de la Noble putréfaction (altéré)"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Armure de la Noble putréfaction/Armure de la Noble putréfaction (altérée)"
+  },
+  {
+    "id": 340200,
+    "name": "Gantelets de la Noble putréfaction"
+  },
+  {
+    "id": 340300,
+    "name": "Jambières de la Noble putréfaction"
+  },
+  {
+    "id": 860000,
+    "name": "Casque du Loup enragé"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Armure du Loup enragé/Armure du Loup enragé (altérée)"
+  },
+  {
+    "id": 860200,
+    "name": "Gantelets du Loup enragé"
+  },
+  {
+    "id": 860300,
+    "name": "Jambières du Loup enragé"
+  },
+  {
+    "id": 650000,
+    "name": "Heaume des Hoslow"
+  },
+  {
+    "id": 651000,
+    "name": "Masque de Diallos"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Armure des Hoslow/Armure des Hoslow (altérée)"
+  },
+  {
+    "id": 650200,
+    "name": "Gantelets des Hoslow"
+  },
+  {
+    "id": 650300,
+    "name": "Jambières des Hoslow"
+  },
+  {
+    "id": 600000,
+    "name": "Casque géminé"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Cuirasse géminée/Cuirasse géminée (altérée)"
+  },
+  {
+    "id": 600200,
+    "name": "Gantelets géminés"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Jambières géminées/Jambières géminées (altérées)"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Casque de chevalier draconique/Casque de chevalier draconique (altéré)"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Armure de chevalier draconique/Armure de chevalier draconique (altérée)"
+  },
+  {
+    "id": 60200,
+    "name": "Gantelets de chevalier draconique"
+  },
+  {
+    "id": 60300,
+    "name": "Jambières de chevalier draconique"
+  },
+  {
+    "id": 170000,
+    "name": "Masque lupin noir"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Armure de Blaidd/Armure de Blaidd (altérée)"
+  },
+  {
+    "id": 170200,
+    "name": "Gantelets de Blaidd"
+  },
+  {
+    "id": 170300,
+    "name": "Jambières de Blaidd"
+  },
+  {
+    "id": 210000,
+    "name": "Heaume du Roncier"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Armure du Roncier/Armure du Roncier (altérée)"
+  },
+  {
+    "id": 210200,
+    "name": "Gantelets du Roncier"
+  },
+  {
+    "id": 210300,
+    "name": "Jambières du Roncier"
+  },
+  {
+    "id": 950000,
+    "name": "Heaume des Doigts"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Armure des Doigts/Armure des Doigts (altérée)"
+  },
+  {
+    "id": 950200,
+    "name": "Gantelets des Doigts"
+  },
+  {
+    "id": 950300,
+    "name": "Jambières des Doigts"
+  },
+  {
+    "id": 690000,
+    "name": "Casque de la dépouille royale"
+  },
+  {
+    "id": 690100,
+    "name": "Armure de la dépouille royale"
+  },
+  {
+    "id": 690200,
+    "name": "Gantelets de la dépouille royale"
+  },
+  {
+    "id": 690300,
+    "name": "Jambières de la dépouille royale"
+  },
+  {
+    "id": 590000,
+    "name": "Casque de l'Omniscient"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "Armure de l'Omniscient/Armure de l'Omniscient (altérée)"
+  },
+  {
+    "id": 590200,
+    "name": "Gantelets de l'Omniscient"
+  },
+  {
+    "id": 590300,
+    "name": "Jambières de l'Omniscient"
+  },
+  {
+    "id": 280000,
+    "name": "Heaume de chevalier royal"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Armure de chevalier royal/Armure de chevalier royal (altérée)"
+  },
+  {
+    "id": 280200,
+    "name": "Gantelets de chevalier royal"
+  },
+  {
+    "id": 280300,
+    "name": "Jambières de chevalier royal"
+  },
+  {
+    "id": 760000,
+    "name": "Casque de Maliketh"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Armure de Maliketh/Armure de Maliketh (altérée)"
+  },
+  {
+    "id": 760200,
+    "name": "Gantelets de Maliketh"
+  },
+  {
+    "id": 760300,
+    "name": "Jambières de Maliketh"
+  },
+  {
+    "id": 200000,
+    "name": "Casque de chevalier banni"
+  },
+  {
+    "id": 201000,
+    "name": "Casque de chevalier banni (altéré)"
+  },
+  {
+    "id": 200100,
+    "name": "Armure de chevalier banni"
+  },
+  {
+    "id": 201100,
+    "name": "Armure de chevalier banni (altérée)"
+  },
+  {
+    "id": 200200,
+    "name": "Gantelets de chevalier banni"
+  },
+  {
+    "id": 200300,
+    "name": "Jambières de chevalier banni"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Heaume de cavalier crépusculaire/Heaume de cavalier crépusculaire (altéré)"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Armure de cavalier crépusculaire/Armure de cavalier crépusculaire (altérée)"
+  },
+  {
+    "id": 230200,
+    "name": "Gantelets de cavalier crépusculaire"
+  },
+  {
+    "id": 230300,
+    "name": "Jambières de cavalier crépusculaire"
+  },
+  {
+    "id": 780000,
+    "name": "Casque de vétéran"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Armure de vétéran/Armure de vétéran (altérée)"
+  },
+  {
+    "id": 780200,
+    "name": "Gantelets de vétéran"
+  },
+  {
+    "id": 780300,
+    "name": "Jambières de vétéran"
+  },
+  {
+    "id": 80000,
+    "name": "Heaume en écailles"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Armure en écailles/Armure en écailles (altérée)"
+  },
+  {
+    "id": 80200,
+    "name": "Gantelets en écailles"
+  },
+  {
+    "id": 80300,
+    "name": "Jambières en écailles"
+  },
+  {
+    "id": 720000,
+    "name": "Heaume du champion bestial"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Armure du champion bestial/Armure du champion bestial (altérée)"
+  },
+  {
+    "id": 720200,
+    "name": "Gantelets du champion bestial"
+  },
+  {
+    "id": 720300,
+    "name": "Jambières du champion bestial"
+  },
+  {
+    "id": 270000,
+    "name": "Heaume de Sentinelle de l'Arbre"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Armure de Sentinelle de l'Arbre/Armure de Sentinelle de l'Arbre (altérée)"
+  },
+  {
+    "id": 270200,
+    "name": "Gantelets de Sentinelle de l'Arbre"
+  },
+  {
+    "id": 270300,
+    "name": "Jambières de Sentinelle de l'Arbre"
+  },
+  {
+    "id": 260000,
+    "name": "Heaume draconique difforme"
+  },
+  {
+    "id": 260100,
+    "name": "Armure draconique difforme"
+  },
+  {
+    "id": 260200,
+    "name": "Gantelets draconiques difformes"
+  },
+  {
+    "id": 260300,
+    "name": "Jambières draconiques difformes"
+  },
+  {
+    "id": 570000,
+    "name": "Heaume-hache du Creuset"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Armure-hache du Creuset/Armure-hache du Creuset (altérée)"
+  },
+  {
+    "id": 570200,
+    "name": "Gantelets du Creuset"
+  },
+  {
+    "id": 570300,
+    "name": "Jambières du Creuset"
+  },
+  {
+    "id": 571000,
+    "name": "Heaume arboriforme du Creuset"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Armure arboriforme du Creuset/Armure arboriforme du Creuset (altérée)"
+  },
+  {
+    "id": 470000,
+    "name": "Crinière rouge de Radahn"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Armure léonine de Radahn/Armure léonine de Radahn (altérée)"
+  },
+  {
+    "id": 470200,
+    "name": "Gantelets de Radahn"
+  },
+  {
+    "id": 470300,
+    "name": "Jambières de Radahn"
+  },
+  {
+    "id": 640000,
+    "name": "Heaume de Lionel"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Armure de Lionel/Armure de Lionel (altérée)"
+  },
+  {
+    "id": 640200,
+    "name": "Gantelets de Lionel"
+  },
+  {
+    "id": 640300,
+    "name": "Jambières de Lionel"
+  },
+  {
+    "id": 140000,
+    "name": "Casque du mouflon"
+  },
+  {
+    "id": 140100,
+    "name": "Armure du mouflon"
+  },
+  {
+    "id": 140200,
+    "name": "Gantelets du mouflon"
+  },
+  {
+    "id": 140300,
+    "name": "Jambières du mouflon"
+  },
+  {
+    "id": 970000,
+    "name": "Casque de Réprouvé"
+  },
+  {
+    "id": 970100,
+    "name": "Armure de Réprouvé"
+  },
+  {
+    "id": 970200,
+    "name": "Gantelets de Réprouvé"
+  },
+  {
+    "id": 970300,
+    "name": "Jambières de Réprouvé"
+  },
+  {
+    "id": 360000,
+    "name": "Heaume de prélat de feu"
+  },
+  {
+    "id": 360100,
+    "name": "Armure de prélat de feu"
+  },
+  {
+    "id": 361100,
+    "name": "Armure de prélat de feu (altérée)"
+  },
+  {
+    "id": 360200,
+    "name": "Gantelets de prélat de feu"
+  },
+  {
+    "id": 360300,
+    "name": "Jambières de prélat de feu"
+  },
+  {
+    "id": 440000,
+    "name": "Casque de citrouille"
+  }
+]

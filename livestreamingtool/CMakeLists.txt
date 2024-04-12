@@ -8,6 +8,7 @@ add_executable(${PROJECT_NAME} WIN32
     # main sources
     main.cpp
     panel.cpp panel.h
+    luavm.cpp luavm.h
     common.cpp common.h
     textsource.cpp textsource.h
     # inlined images

@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Ubranie podróżnika"
+  },
+  {
+    "id": 1020200,
+    "name": "Karwasze podróżnika"
+  },
+  {
+    "id": 1020300,
+    "name": "Buty podróżnika"
+  },
+  {
+    "id": 810000,
+    "name": "Plebejska obręcz"
+  },
+  {
+    "id": 811000,
+    "name": "Plebejska obręcz (przerobiona)"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Plebejskie odzienie/Plebejskie odzienie (przerobione)"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Zwykłe plebejskie odzienie/Zwykłe plebejskie odzienie (przerobione)"
+  },
+  {
+    "id": 810300,
+    "name": "Plebejskie buty"
+  },
+  {
+    "id": 370000,
+    "name": "Obręcz arystokraty"
+  },
+  {
+    "id": 380000,
+    "name": "Kapelusz arystokraty"
+  },
+  {
+    "id": 370100,
+    "name": "Strój arystokraty"
+  },
+  {
+    "id": 371100,
+    "name": "Strój arystokraty (przerobiony)"
+  },
+  {
+    "id": 380100,
+    "name": "Płaszcz arystokraty"
+  },
+  {
+    "id": 370300,
+    "name": "Trzewiki arystokraty"
+  },
+  {
+    "id": 390000,
+    "name": "Stary chaperon arystokraty"
+  },
+  {
+    "id": 390100,
+    "name": "Stara szata arystokraty"
+  },
+  {
+    "id": 390300,
+    "name": "Stare buty arystokraty"
+  },
+  {
+    "id": 220000,
+    "name": "Kaptur giermka"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Strój giermka/Strój giermka (przerobiony)"
+  },
+  {
+    "id": 220300,
+    "name": "Spodnie giermka"
+  },
+  {
+    "id": 1990000,
+    "name": "Kaptur giermka o wysokiej pozycji"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "Strój giermka o wysokiej pozycji/Strój giermka o wysokiej pozycji (przerobiony)"
+  },
+  {
+    "id": 330000,
+    "name": "Maska strażnika"
+  },
+  {
+    "id": 331100,
+    "name": "Szata strażnika"
+  },
+  {
+    "id": 330100,
+    "name": "Szata strażnika (w pełnym rozkwicie)"
+  },
+  {
+    "id": 330200,
+    "name": "Karwasze strażnika"
+  },
+  {
+    "id": 330300,
+    "name": "Nagolenniki strażnika"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Odświętny kaptur/Odświętny kaptur (przerobiony)"
+  },
+  {
+    "id": 800100,
+    "name": "Odświętna szata"
+  },
+  {
+    "id": 801100,
+    "name": "Odświętna szata (przerobiona)"
+  },
+  {
+    "id": 802000,
+    "name": "Niebieski odświętny kaptur"
+  },
+  {
+    "id": 802100,
+    "name": "Odświętna szata z niebieską peleryną"
+  },
+  {
+    "id": 160000,
+    "name": "Kaptur grzesznika"
+  },
+  {
+    "id": 160100,
+    "name": "Płócienny strój"
+  },
+  {
+    "id": 160300,
+    "name": "Płócienne spodnie"
+  },
+  {
+    "id": 890000,
+    "name": "Żelazna maska więźnia"
+  },
+  {
+    "id": 890100,
+    "name": "Strój więźnia"
+  },
+  {
+    "id": 890300,
+    "name": "Spodnie więźnia"
+  },
+  {
+    "id": 891000,
+    "name": "Żelazna maska szubrawca"
+  },
+  {
+    "id": 964000,
+    "name": "Zakrwawiona maska"
+  },
+  {
+    "id": 964100,
+    "name": "Strój oficjalny"
+  },
+  {
+    "id": 963200,
+    "name": "Zakrwawione bandaże"
+  },
+  {
+    "id": 2020000,
+    "name": "Czarny pieróg"
+  },
+  {
+    "id": 1130000,
+    "name": "Grzybowa głowa"
+  },
+  {
+    "id": 2010000,
+    "name": "Grzybowa korona"
+  },
+  {
+    "id": 1130100,
+    "name": "Grzybowe ciało"
+  },
+  {
+    "id": 1130200,
+    "name": "Grzybowe ręce"
+  },
+  {
+    "id": 1130300,
+    "name": "Grzybowe nogi"
+  },
+  {
+    "id": 630000,
+    "name": "Kaptur astrologa"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Szata astrologa/Szata astrologa (przerobiona)"
+  },
+  {
+    "id": 630200,
+    "name": "Rękawice astrologa"
+  },
+  {
+    "id": 630300,
+    "name": "Spodnie astrologa"
+  },
+  {
+    "id": 1030000,
+    "name": "Czapka młodego uczonego"
+  },
+  {
+    "id": 1030100,
+    "name": "Szata młodego uczonego"
+  },
+  {
+    "id": 833000,
+    "name": "Błyskamienna korona Karolosa"
+  },
+  {
+    "id": 831000,
+    "name": "Błyskamienna korona Olivinusa"
+  },
+  {
+    "id": 830000,
+    "name": "Błyskamienna korona bliźnioksiężnika"
+  },
+  {
+    "id": 834000,
+    "name": "Błyskamienna korona wiedźmy"
+  },
+  {
+    "id": 830100,
+    "name": "Szata z Rai Lucarii"
+  },
+  {
+    "id": 830200,
+    "name": "Owijki czarodzieja"
+  },
+  {
+    "id": 830300,
+    "name": "Owijacze czarodzieja"
+  },
+  {
+    "id": 832000,
+    "name": "Błyskamienna korona Lazuli"
+  },
+  {
+    "id": 2030000,
+    "name": "Szata Lazuli"
+  },
+  {
+    "id": 1000000,
+    "name": "Błyskamienna korona Haimy"
+  },
+  {
+    "id": 1000100,
+    "name": "Szata maga bitewnego"
+  },
+  {
+    "id": 1000200,
+    "name": "Owijki maga bitewnego"
+  },
+  {
+    "id": 1000300,
+    "name": "Owijacze maga bitewnego"
+  },
+  {
+    "id": 990000,
+    "name": "Błyskamienna korona Hierodasa"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Szata Błędnego Czarodzieja/Szata Błędnego Czarodzieja (przerobiona)"
+  },
+  {
+    "id": 990200,
+    "name": "Karwasze Błędnego Czarodzieja"
+  },
+  {
+    "id": 990300,
+    "name": "Buty Błędnego Czarodzieja"
+  },
+  {
+    "id": 130000,
+    "name": "Spiczasty kapelusz zaklinacza ostrzy"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Strój podróżny zaklinacza ostrzy/Strój podróżny zaklinacza ostrzy (przerobiony)"
+  },
+  {
+    "id": 130200,
+    "name": "Rękawice zaklinacza ostrzy"
+  },
+  {
+    "id": 130300,
+    "name": "Spodnie zaklinacza ostrzy"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Spiczasty kapelusz Albericha/Spiczasty kapelusz Albericha (przerobiony)"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Szata Albericha/Szata Albericha (przerobiona)"
+  },
+  {
+    "id": 120200,
+    "name": "Karwasze Albericha"
+  },
+  {
+    "id": 120300,
+    "name": "Spodnie Albericha"
+  },
+  {
+    "id": 910000,
+    "name": "Duży kapelusz mistrza"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Długa szata mistrza/Długa szata mistrza (przerobiona)"
+  },
+  {
+    "id": 910200,
+    "name": "Rękawice mistrza"
+  },
+  {
+    "id": 910300,
+    "name": "Spodnie mistrza"
+  },
+  {
+    "id": 911000,
+    "name": "Maska pewności siebie"
+  },
+  {
+    "id": 581000,
+    "name": "Błyskamienna korona Azura"
+  },
+  {
+    "id": 581100,
+    "name": "Błyskamienna szata Azura"
+  },
+  {
+    "id": 581200,
+    "name": "Owijki Azura"
+  },
+  {
+    "id": 580000,
+    "name": "Błyskamienna korona Lusata"
+  },
+  {
+    "id": 580100,
+    "name": "Szata Lusata"
+  },
+  {
+    "id": 580200,
+    "name": "Owijki Lusata"
+  },
+  {
+    "id": 580300,
+    "name": "Owijacze starego czarodzieja"
+  },
+  {
+    "id": 510000,
+    "name": "Korona królowej w kształcie półksiężyca"
+  },
+  {
+    "id": 510100,
+    "name": "Szata królowej"
+  },
+  {
+    "id": 510200,
+    "name": "Manszety królowej"
+  },
+  {
+    "id": 510300,
+    "name": "Nogawice królowej"
+  },
+  {
+    "id": 1010000,
+    "name": "Kapelusz Śnieżnej Wiedźmy"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Szata Śnieżnej Wiedźmy/Szata Śnieżnej Wiedźmy (przerobiona)"
+  },
+  {
+    "id": 1010300,
+    "name": "Spódnica Śnieżnej Wiedźmy"
+  },
+  {
+    "id": 1940000,
+    "name": "Kaptur Fii"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Szata Fii/Szata Fii (przerobiona)"
+  },
+  {
+    "id": 1930100,
+    "name": "Suknia na łoże śmierci"
+  },
+  {
+    "id": 620000,
+    "name": "Przepaska na oczy proroka"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Szata proroka (przerobiona)/Szata proroka"
+  },
+  {
+    "id": 620300,
+    "name": "Spodnie proroka"
+  },
+  {
+    "id": 620100,
+    "name": "Szata Corhyna"
+  },
+  {
+    "id": 900000,
+    "name": "Kaptur podróżującej służki"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Szata podróżującej służki/Szata podróżującej służki (przerobiona)"
+  },
+  {
+    "id": 900200,
+    "name": "Rękawice podróżującej służki"
+  },
+  {
+    "id": 900300,
+    "name": "Buty podróżującej służki"
+  },
+  {
+    "id": 902000,
+    "name": "Opaska na włosy służki palców"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Szata służki palców/Szata służki palców (przerobiona)"
+  },
+  {
+    "id": 902300,
+    "name": "Buty służki palców"
+  },
+  {
+    "id": 430000,
+    "name": "Kaptur mędrca"
+  },
+  {
+    "id": 430100,
+    "name": "Szata mędrca"
+  },
+  {
+    "id": 430300,
+    "name": "Spodnie mędrca"
+  },
+  {
+    "id": 1600000,
+    "name": "Wielki kaptur"
+  },
+  {
+    "id": 1040000,
+    "name": "Promieniująca złota maska"
+  },
+  {
+    "id": 1040100,
+    "name": "Łachmany Złotej Maski"
+  },
+  {
+    "id": 1040200,
+    "name": "Złote bransolety"
+  },
+  {
+    "id": 1040300,
+    "name": "Złoty pas"
+  },
+  {
+    "id": 90000,
+    "name": "Kaptur perfumiarza"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Szata perfumiarza/Szata perfumiarza (przerobiona)"
+  },
+  {
+    "id": 90200,
+    "name": "Rękawice perfumiarza"
+  },
+  {
+    "id": 90300,
+    "name": "Sarong perfumiarza"
+  },
+  {
+    "id": 100000,
+    "name": "Kapelusz podróżnika"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Strój podróżny perfumiarza/Strój podróżny perfumiarza (przerobiony)"
+  },
+  {
+    "id": 100200,
+    "name": "Rękawice podróżnika"
+  },
+  {
+    "id": 100300,
+    "name": "Spodnie podróżnika"
+  },
+  {
+    "id": 540000,
+    "name": "Kaptur zdeprawowanego perfumiarza"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Szata zdeprawowanego perfumiarza/Szata zdeprawowanego perfumiarza (przerobiona)"
+  },
+  {
+    "id": 540200,
+    "name": "Rękawice zdeprawowanego perfumiarza"
+  },
+  {
+    "id": 540300,
+    "name": "Spodnie zdeprawowanego perfumiarza"
+  },
+  {
+    "id": 962100,
+    "name": "Szata wyższych sfer"
+  },
+  {
+    "id": 961000,
+    "name": "Maska władcy"
+  },
+  {
+    "id": 961100,
+    "name": "Szata władcy"
+  },
+  {
+    "id": 960000,
+    "name": "Maska małżonki"
+  },
+  {
+    "id": 960100,
+    "name": "Szata małżonki"
+  },
+  {
+    "id": 960300,
+    "name": "Spodnie małżonki"
+  },
+  {
+    "id": 963000,
+    "name": "Maska Maraisa"
+  },
+  {
+    "id": 963100,
+    "name": "Szata Maraisa"
+  },
+  {
+    "id": 300000,
+    "name": "Obręcz z wielkimi rogami"
+  },
+  {
+    "id": 300100,
+    "name": "Futrzany strój"
+  },
+  {
+    "id": 300300,
+    "name": "Futrzane nogawice"
+  },
+  {
+    "id": 301000,
+    "name": "Lśniąca obręcz z rogami"
+  },
+  {
+    "id": 301100,
+    "name": "Futro szamana"
+  },
+  {
+    "id": 301300,
+    "name": "Nogawice szamana"
+  },
+  {
+    "id": 520000,
+    "name": "Kaptur apostoła boskiej skóry"
+  },
+  {
+    "id": 520100,
+    "name": "Szata apostoła boskiej skóry"
+  },
+  {
+    "id": 520200,
+    "name": "Karwasze apostoła boskiej skóry"
+  },
+  {
+    "id": 520300,
+    "name": "Spodnie apostoła boskiej skóry"
+  },
+  {
+    "id": 530000,
+    "name": "Kaptur szlachcica boskiej skóry"
+  },
+  {
+    "id": 530100,
+    "name": "Szata szlachcica boskiej skóry"
+  },
+  {
+    "id": 530200,
+    "name": "Karwasze szlachcica boskiej skóry"
+  },
+  {
+    "id": 530300,
+    "name": "Spodnie szlachcica boskiej skóry"
+  },
+  {
+    "id": 1050100,
+    "name": "Peleryna Upadłego Omenu"
+  },
+  {
+    "id": 320000,
+    "name": "Kaptur krwawego szlachcica"
+  },
+  {
+    "id": 320100,
+    "name": "Szata krwawego szlachcica"
+  },
+  {
+    "id": 320300,
+    "name": "Przepaska krwawego szlachcica"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Szata Pana Krwi/Szata Pana Krwi (przerobiona)"
+  },
+  {
+    "id": 1910000,
+    "name": "Skarabeusz szkarłatnej łzy"
+  },
+  {
+    "id": 1920000,
+    "name": "Skarabeusz modrej łzy"
+  },
+  {
+    "id": 1900000,
+    "name": "Skarabeusz popiołów wojny"
+  },
+  {
+    "id": 1902000,
+    "name": "Błyskamienny skarabeusz"
+  },
+  {
+    "id": 1901000,
+    "name": "Skarabeusz inkantacji"
+  },
+  {
+    "id": 1080000,
+    "name": "Głowa kociego chochlika"
+  },
+  {
+    "id": 1084000,
+    "name": "Głowa wilczego chochlika"
+  },
+  {
+    "id": 1081000,
+    "name": "Głowa zębatego chochlika"
+  },
+  {
+    "id": 1082000,
+    "name": "Głowa chochlika z jęzorem"
+  },
+  {
+    "id": 1083000,
+    "name": "Głowa trupiego chochlika"
+  },
+  {
+    "id": 1085000,
+    "name": "Głowa pradawnego chochlika"
+  },
+  {
+    "id": 1300000,
+    "name": "Lustrzany hełm Noxów"
+  },
+  {
+    "id": 1301000,
+    "name": "Lustrzany hełm Ijiego"
+  },
+  {
+    "id": 1090000,
+    "name": "Maska srebrnej łzy"
+  },
+  {
+    "id": 820000,
+    "name": "Korona wysłannika"
+  },
+  {
+    "id": 1110000,
+    "name": "Głowa ośmiornicy"
+  },
+  {
+    "id": 1120000,
+    "name": "Słoik"
+  },
+  {
+    "id": 1060000,
+    "name": "Maska albinauryków"
+  },
+  {
+    "id": 1060100,
+    "name": "Brudna kolczuga"
+  },
+  {
+    "id": 1400000,
+    "name": "Czarny kaptur"
+  },
+  {
+    "id": 1400100,
+    "name": "Skórzana zbroja"
+  },
+  {
+    "id": 1400200,
+    "name": "Skórzane rękawice"
+  },
+  {
+    "id": 1400300,
+    "name": "Skórzane buty"
+  },
+  {
+    "id": 670000,
+    "name": "Niebieska chusta"
+  },
+  {
+    "id": 670100,
+    "name": "Niebieska szata z kamizelą"
+  },
+  {
+    "id": 670200,
+    "name": "Rękawice wojownika"
+  },
+  {
+    "id": 670300,
+    "name": "Nagolenniki wojownika"
+  },
+  {
+    "id": 740000,
+    "name": "Szkarłatny kaptur"
+  },
+  {
+    "id": 741000,
+    "name": "Granatowy kaptur"
+  },
+  {
+    "id": 740100,
+    "name": "Szlachecki strój podróżny"
+  },
+  {
+    "id": 740200,
+    "name": "Szlacheckie rękawice"
+  },
+  {
+    "id": 740300,
+    "name": "Szlacheckie spodnie"
+  },
+  {
+    "id": 680000,
+    "name": "Biała maska"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "Szata chirurga polowego/Szata chirurga polowego (przerobiona)"
+  },
+  {
+    "id": 680200,
+    "name": "Rękawice chirurga polowego"
+  },
+  {
+    "id": 680300,
+    "name": "Spodnie chirurga polowego"
+  },
+  {
+    "id": 250000,
+    "name": "Kapelusz koczowniczego kupca"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Zdobna szata koczowniczego kupca/Zdobiona szata koczowniczego kupca (przerobiona)"
+  },
+  {
+    "id": 250300,
+    "name": "Spodnie koczowniczego kupca"
+  },
+  {
+    "id": 1401000,
+    "name": "Maska bandyty"
+  },
+  {
+    "id": 931100,
+    "name": "Odzienie bandyty"
+  },
+  {
+    "id": 930200,
+    "name": "Owijki bandyty"
+  },
+  {
+    "id": 930300,
+    "name": "Buty bandyty"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Kaptur konfesora/Kaptur konfesora (przerobiony)"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Strój konfesora/Strój konfesora (przerobiony)"
+  },
+  {
+    "id": 880200,
+    "name": "Rękawice konfesora"
+  },
+  {
+    "id": 880300,
+    "name": "Buty konfesora"
+  },
+  {
+    "id": 1890000,
+    "name": "Maska złowieszczego uśmiechu"
+  },
+  {
+    "id": 1890100,
+    "name": "Szata Zabójcy Omenów"
+  },
+  {
+    "id": 1890200,
+    "name": "Długie rękawice Zabójcy Omenów"
+  },
+  {
+    "id": 1890300,
+    "name": "Buty Zabójcy Omenów"
+  },
+  {
+    "id": 930000,
+    "name": "Szkieletowa maska"
+  },
+  {
+    "id": 930100,
+    "name": "Czarne pióra drapieżnika"
+  },
+  {
+    "id": 1830000,
+    "name": "Kapalin piechura"
+  },
+  {
+    "id": 1830100,
+    "name": "Tabard opięty kolczugą"
+  },
+  {
+    "id": 1830200,
+    "name": "Rękawice piechura"
+  },
+  {
+    "id": 1830300,
+    "name": "Nagolenniki piechura"
+  },
+  {
+    "id": 1840000,
+    "name": "Łebka piechura"
+  },
+  {
+    "id": 1840100,
+    "name": "Tabard piechura"
+  },
+  {
+    "id": 1860000,
+    "name": "Hełm piechura"
+  },
+  {
+    "id": 1860100,
+    "name": "Szkarłatny tabard"
+  },
+  {
+    "id": 1850000,
+    "name": "Pozłacany morion piechura"
+  },
+  {
+    "id": 1850100,
+    "name": "Tabard opięty skórą"
+  },
+  {
+    "id": 1880000,
+    "name": "Morion świętej korony"
+  },
+  {
+    "id": 1880100,
+    "name": "Tabard opięty kremową tkaniną"
+  },
+  {
+    "id": 1870100,
+    "name": "Zakrwawiony tabard"
+  },
+  {
+    "id": 1980000,
+    "name": "Kaptur rabusia"
+  },
+  {
+    "id": 1980100,
+    "name": "Wyściełana zbroja rabusia"
+  },
+  {
+    "id": 1980200,
+    "name": "Rękawice rabusia"
+  },
+  {
+    "id": 420000,
+    "name": "Hełm pospolitaka"
+  },
+  {
+    "id": 420100,
+    "name": "Zbroja pospolitaka"
+  },
+  {
+    "id": 420200,
+    "name": "Rękawice pospolitaka"
+  },
+  {
+    "id": 420300,
+    "name": "Nagolenniki pospolitaka"
+  },
+  {
+    "id": 310000,
+    "name": "Hełm pojedynkowicza"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Płaszcz strażnika grobów/Strój gladiatora"
+  },
+  {
+    "id": 310300,
+    "name": "Nagolenniki pojedynkowicza"
+  },
+  {
+    "id": 2000000,
+    "name": "Przegniły hełm pojedynkowicza"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Przegniły płaszcz strażnika grobów/Przegniły strój gladiatora"
+  },
+  {
+    "id": 2000300,
+    "name": "Przegniłe nagolenniki pojedynkowicza"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Kaptur kapłana Noxów/Kaptur kapłana Noxów (przerobiony)"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Zbroja kapłana Noxów/Zbroja kapłana Noxów (przerobiona)"
+  },
+  {
+    "id": 290200,
+    "name": "Rękawice Noxów"
+  },
+  {
+    "id": 290300,
+    "name": "Nagolenniki Noxów"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Korona Noxyjskiej szermierczyni/Korona Noxyjskiej szermierczyni (przerobiona)"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Zbroja Noxyjskiej szermierczyni/Zbroja Noxyjskiej szermierczyni (przerobiona)"
+  },
+  {
+    "id": 293000,
+    "name": "Bliźniacza korona nocnej służki"
+  },
+  {
+    "id": 293100,
+    "name": "Zbroja nocnej służki"
+  },
+  {
+    "id": 730000,
+    "name": "Obręcz czempiona"
+  },
+  {
+    "id": 730100,
+    "name": "Naramiennik czempiona"
+  },
+  {
+    "id": 730200,
+    "name": "Karwasze czempiona"
+  },
+  {
+    "id": 730300,
+    "name": "Stuptuty czempiona"
+  },
+  {
+    "id": 1100000,
+    "name": "Czepiec kolczy"
+  },
+  {
+    "id": 1100100,
+    "name": "Zbroja kolcza"
+  },
+  {
+    "id": 1102100,
+    "name": "Kasak z motywem drzewa"
+  },
+  {
+    "id": 1101100,
+    "name": "Kasak z motywem oka"
+  },
+  {
+    "id": 1100200,
+    "name": "Rękawice"
+  },
+  {
+    "id": 1100300,
+    "name": "Nogawice kolcze"
+  },
+  {
+    "id": 40000,
+    "name": "Żelazny hełm"
+  },
+  {
+    "id": 40100,
+    "name": "Zbroja łuskowa"
+  },
+  {
+    "id": 40200,
+    "name": "Żelazne rękawice"
+  },
+  {
+    "id": 40300,
+    "name": "Skórzane spodnie"
+  },
+  {
+    "id": 1700000,
+    "name": "Hełm żołnierza Godricka"
+  },
+  {
+    "id": 1700100,
+    "name": "Kasak z motywem drzewa i bestii"
+  },
+  {
+    "id": 1700200,
+    "name": "Rękawice żołnierza Godricka"
+  },
+  {
+    "id": 1700300,
+    "name": "Nagolenniki żołnierza Godricka"
+  },
+  {
+    "id": 1710000,
+    "name": "Hełm z Rai Lucarii"
+  },
+  {
+    "id": 1710100,
+    "name": "Kasak z motywem kukułki"
+  },
+  {
+    "id": 1710200,
+    "name": "Rękawice z Rai Lucarii"
+  },
+  {
+    "id": 1710300,
+    "name": "Nagolenniki z Rai Lucarii"
+  },
+  {
+    "id": 1730000,
+    "name": "Hełm żołnierza Radahna"
+  },
+  {
+    "id": 1730100,
+    "name": "Kasak z motywem Lwiej Grzywy"
+  },
+  {
+    "id": 1730200,
+    "name": "Rękawice żołnierza Radahna"
+  },
+  {
+    "id": 1730300,
+    "name": "Nagolenniki żołnierza Radahna"
+  },
+  {
+    "id": 1720000,
+    "name": "Hełm żołnierza z Leyndell"
+  },
+  {
+    "id": 1720100,
+    "name": "Kasak z motywem Złotego Drzewa"
+  },
+  {
+    "id": 1720200,
+    "name": "Rękawice żołnierza z Leyndell"
+  },
+  {
+    "id": 1720300,
+    "name": "Nagolenniki żołnierza z Leyndell"
+  },
+  {
+    "id": 1750000,
+    "name": "Hełm Świętego Drzewa"
+  },
+  {
+    "id": 1750100,
+    "name": "Kasak z herbem Świętego Drzewa"
+  },
+  {
+    "id": 1750200,
+    "name": "Rękawice Świętego Drzewa"
+  },
+  {
+    "id": 1750300,
+    "name": "Nagolenniki Świętego Drzewa"
+  },
+  {
+    "id": 1740100,
+    "name": "Kasak mauzoleum"
+  },
+  {
+    "id": 1740200,
+    "name": "Rękawice mauzoleum"
+  },
+  {
+    "id": 1740300,
+    "name": "Nagolenniki mauzoleum"
+  },
+  {
+    "id": 190000,
+    "name": "Kaptur wygnańca"
+  },
+  {
+    "id": 190100,
+    "name": "Zbroja wygnańca"
+  },
+  {
+    "id": 190200,
+    "name": "Rękawice wygnańca"
+  },
+  {
+    "id": 190300,
+    "name": "Nagolenniki wygnańca"
+  },
+  {
+    "id": 50000,
+    "name": "Kaideński hełm"
+  },
+  {
+    "id": 50100,
+    "name": "Kaideńska zbroja"
+  },
+  {
+    "id": 50200,
+    "name": "Kaideńskie rękawice"
+  },
+  {
+    "id": 50300,
+    "name": "Kaideńskie spodnie"
+  },
+  {
+    "id": 870000,
+    "name": "Hełm z Krainy Trzcin"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Zbroja z Krainy Trzcin/Zbroja z Krainy Trzcin (przerobiona)"
+  },
+  {
+    "id": 870200,
+    "name": "Rękawice z Krainy Trzcin"
+  },
+  {
+    "id": 870300,
+    "name": "Nagolenniki z Krainy Trzcin"
+  },
+  {
+    "id": 872000,
+    "name": "Maska Okiny"
+  },
+  {
+    "id": 872100,
+    "name": "Zbroja Białej Trzciny"
+  },
+  {
+    "id": 872200,
+    "name": "Rękawice Białej Trzciny"
+  },
+  {
+    "id": 872300,
+    "name": "Nagolenniki Białej Trzciny"
+  },
+  {
+    "id": 150000,
+    "name": "Żelazna kasa"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Zbroja ronina/Zbroja ronina (przerobiona)"
+  },
+  {
+    "id": 150200,
+    "name": "Rękawice ronina"
+  },
+  {
+    "id": 150300,
+    "name": "Nagolenniki ronina"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Maska ekscentryka/Maska ekscentryka (przerobiona)"
+  },
+  {
+    "id": 940100,
+    "name": "Zbroja ekscentryka"
+  },
+  {
+    "id": 940200,
+    "name": "Owijki ekscentryka"
+  },
+  {
+    "id": 940300,
+    "name": "Bryczesy ekscentryka"
+  },
+  {
+    "id": 840000,
+    "name": "Hełm marionetkowego żołnierza"
+  },
+  {
+    "id": 850000,
+    "name": "Ptasi hełm marionetkowego żołnierza"
+  },
+  {
+    "id": 840100,
+    "name": "Zbroja marionetkowego żołnierza"
+  },
+  {
+    "id": 240000,
+    "name": "Kaptur kolczy z błękitnego srebra"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Kolczuga z błękitnego srebra/Kolczuga z błękitnego srebra (przerobiona)"
+  },
+  {
+    "id": 240200,
+    "name": "Karwasze z błękitnego srebra"
+  },
+  {
+    "id": 240300,
+    "name": "Spódnica kolcza z błękitnego srebra"
+  },
+  {
+    "id": 350000,
+    "name": "Kaptur mnicha ognia"
+  },
+  {
+    "id": 350100,
+    "name": "Zbroja mnicha ognia"
+  },
+  {
+    "id": 350200,
+    "name": "Rękawice mnicha ognia"
+  },
+  {
+    "id": 350300,
+    "name": "Nagolenniki mnicha ognia"
+  },
+  {
+    "id": 351000,
+    "name": "Kaptur mnicha czarnego płomienia"
+  },
+  {
+    "id": 351100,
+    "name": "Zbroja mnicha czarnego płomienia"
+  },
+  {
+    "id": 351200,
+    "name": "Rękawice mnicha czarnego płomienia"
+  },
+  {
+    "id": 351300,
+    "name": "Nagolenniki mnicha czarnego płomienia"
+  },
+  {
+    "id": 1070000,
+    "name": "Maska z Zamor"
+  },
+  {
+    "id": 1070100,
+    "name": "Zbroja z Zamor"
+  },
+  {
+    "id": 1070200,
+    "name": "Owijki z Zamor"
+  },
+  {
+    "id": 1070300,
+    "name": "Owijacze z Zamor"
+  },
+  {
+    "id": 180000,
+    "name": "Kaptur Czarnego Noża"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Zbroja Czarnego Noża/Zbroja Czarnego Noża (przerobiona)"
+  },
+  {
+    "id": 180200,
+    "name": "Rękawice Czarnego Noża"
+  },
+  {
+    "id": 180300,
+    "name": "Nagolenniki Czarnego Noża"
+  },
+  {
+    "id": 770000,
+    "name": "Uskrzydlony hełm Malenii"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Zbroja Malenii/Zbroja Malenii (przerobiona)"
+  },
+  {
+    "id": 770200,
+    "name": "Rękawica Malenii"
+  },
+  {
+    "id": 770300,
+    "name": "Nagolenniki Malenii"
+  },
+  {
+    "id": 460000,
+    "name": "Korona Eldeńskiego Władcy"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Zbroja Eldeńskiego Władcy/Zbroja Eldeńskiego Władcy (przerobiona)"
+  },
+  {
+    "id": 460200,
+    "name": "Karwasze Eldeńskiego Władcy"
+  },
+  {
+    "id": 460300,
+    "name": "Nagolenniki Eldeńskiego Władcy"
+  },
+  {
+    "id": 1500000,
+    "name": "Rycerski hełm"
+  },
+  {
+    "id": 1500100,
+    "name": "Rycerska zbroja"
+  },
+  {
+    "id": 1500200,
+    "name": "Rycerskie rękawice"
+  },
+  {
+    "id": 1500300,
+    "name": "Rycerskie nagolenniki"
+  },
+  {
+    "id": 660000,
+    "name": "Hełm rycerza włóczęgi"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Zbroja rycerza włóczęgi/Zbroja rycerza włóczęgi (przerobiona)"
+  },
+  {
+    "id": 660200,
+    "name": "Rękawice rycerza włóczęgi"
+  },
+  {
+    "id": 660300,
+    "name": "Nagolenniki rycerza włóczęgi"
+  },
+  {
+    "id": 1101000,
+    "name": "Wielki hełm"
+  },
+  {
+    "id": 980000,
+    "name": "Hełm karyjskiego rycerza"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Zbroja karyjskiego rycerza/Zbroja karyjskiego rycerza (przerobiona)"
+  },
+  {
+    "id": 980200,
+    "name": "Rękawice karyjskiego rycerza"
+  },
+  {
+    "id": 980300,
+    "name": "Nagolenniki karyjskiego rycerza"
+  },
+  {
+    "id": 1770000,
+    "name": "Hełm rycerza Godricka"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Zbroja rycerza Godricka/Zbroja rycerza Godricka (przerobiona)"
+  },
+  {
+    "id": 1770200,
+    "name": "Rękawice rycerza Godricka"
+  },
+  {
+    "id": 1770300,
+    "name": "Nagolenniki rycerza Godricka"
+  },
+  {
+    "id": 1780000,
+    "name": "Hełm rycerza Kukułki"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Zbroja rycerza Kukułki/Zbroja rycerza Kukułki (przerobiona)"
+  },
+  {
+    "id": 1780200,
+    "name": "Rękawice rycerza Kukułki"
+  },
+  {
+    "id": 1780300,
+    "name": "Nagolenniki rycerza Kukułki"
+  },
+  {
+    "id": 1800000,
+    "name": "Hełm rycerza Lwiej Grzywy"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Zbroja rycerza Lwiej Grzywy/Zbroja rycerza Lwiej Grzywy (przerobiona)"
+  },
+  {
+    "id": 1800200,
+    "name": "Rękawice rycerza Lwiej Grzywy"
+  },
+  {
+    "id": 1800300,
+    "name": "Nagolenniki rycerza Lwiej Grzywy"
+  },
+  {
+    "id": 1760000,
+    "name": "Hełm rycerza z Gelmir"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Zbroja rycerza z Gelmir/Zbroja rycerza z Gelmir (przerobiona)"
+  },
+  {
+    "id": 1760200,
+    "name": "Rękawice rycerza z Gelmir"
+  },
+  {
+    "id": 1760300,
+    "name": "Nagolenniki rycerza z Gelmir"
+  },
+  {
+    "id": 1790000,
+    "name": "Hełm rycerza z Leyndell"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Zbroja rycerza z Leyndell/Zbroja rycerza z Leyndell (przerobiona)"
+  },
+  {
+    "id": 1790200,
+    "name": "Rękawice rycerza z Leyndell"
+  },
+  {
+    "id": 1790300,
+    "name": "Nagolenniki rycerza z Leyndell"
+  },
+  {
+    "id": 1820000,
+    "name": "Hełm rycerza Świętego Drzewa"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Zbroja rycerza Świętego Drzewa/Zbroja rycerza Świętego Drzewa (przerobiona)"
+  },
+  {
+    "id": 1820200,
+    "name": "Rękawice rycerza Świętego Drzewa"
+  },
+  {
+    "id": 1820300,
+    "name": "Nagolenniki rycerza Świętego Drzewa"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Zbroja rycerza mauzoleum/Zbroja rycerza mauzoleum (przerobiona)"
+  },
+  {
+    "id": 1810200,
+    "name": "Rękawice rycerza mauzoleum"
+  },
+  {
+    "id": 1810300,
+    "name": "Nagolenniki rycerza mauzoleum"
+  },
+  {
+    "id": 790000,
+    "name": "Hełm wasalnego rycerza"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Zbroja wasalnego rycerza/Zbroja wasalnego rycerza (przerobiona)"
+  },
+  {
+    "id": 790200,
+    "name": "Rękawice wasalnego rycerza"
+  },
+  {
+    "id": 790300,
+    "name": "Nagolenniki wasalnego rycerza"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Hełm czystej zgnilizny/Hełm czystej zgnilizny (przerobiony)"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Zbroja czystej zgnilizny/Zbroja czystej zgnilizny (przerobiona)"
+  },
+  {
+    "id": 340200,
+    "name": "Rękawice czystej zgnilizny"
+  },
+  {
+    "id": 340300,
+    "name": "Nagolenniki czystej zgnilizny"
+  },
+  {
+    "id": 860000,
+    "name": "Hełm Rozszalałego Wilka"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Zbroja Rozszalałego Wilka/Zbroja Rozszalałego Wilka (przerobiona)"
+  },
+  {
+    "id": 860200,
+    "name": "Rękawice Rozszalałego Wilka"
+  },
+  {
+    "id": 860300,
+    "name": "Nagolenniki Rozszalałego Wilka"
+  },
+  {
+    "id": 650000,
+    "name": "Hełm rodu Hoslow"
+  },
+  {
+    "id": 651000,
+    "name": "Maska Diallosa"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Zbroja rodu Hoslow/Zbroja rodu Hoslow (przerobiona)"
+  },
+  {
+    "id": 650200,
+    "name": "Rękawice rodu Hoslow"
+  },
+  {
+    "id": 650300,
+    "name": "Nagolenniki rodu Hoslow"
+  },
+  {
+    "id": 600000,
+    "name": "Bliźniaczy hełm"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Bliźniacza zbroja/Bliźniacza zbroja (przerobiona)"
+  },
+  {
+    "id": 600200,
+    "name": "Bliźniacze rękawice"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Bliźniacze nagolenniki/Bliźniacze nagolenniki (przerobione)"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Hełm smoczego rycerza/Hełm smoczego rycerza (przerobiony)"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Zbroja smoczego rycerza/Zbroja smoczego rycerza (przerobiona)"
+  },
+  {
+    "id": 60200,
+    "name": "Rękawice smoczego rycerza"
+  },
+  {
+    "id": 60300,
+    "name": "Nagolenniki smoczego rycerza"
+  },
+  {
+    "id": 170000,
+    "name": "Maska czarnego wilka"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Zbroja Blaidda/Zbroja Blaidda (przerobiona)"
+  },
+  {
+    "id": 170200,
+    "name": "Rękawice Blaidda"
+  },
+  {
+    "id": 170300,
+    "name": "Nagolenniki Blaidda"
+  },
+  {
+    "id": 210000,
+    "name": "Hełm głogu"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Zbroja głogu/Zbroja głogu (przerobiona)"
+  },
+  {
+    "id": 210200,
+    "name": "Rękawice głogu"
+  },
+  {
+    "id": 210300,
+    "name": "Nagolenniki głogu"
+  },
+  {
+    "id": 950000,
+    "name": "Opuszkowy hełm"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Opuszkowa zbroja/Opuszkowa zbroja (przerobiona)"
+  },
+  {
+    "id": 950200,
+    "name": "Opuszkowe rękawice"
+  },
+  {
+    "id": 950300,
+    "name": "Opuszkowe nagolenniki"
+  },
+  {
+    "id": 690000,
+    "name": "Hełm królewskich szczątków"
+  },
+  {
+    "id": 690100,
+    "name": "Zbroja królewskich szczątków"
+  },
+  {
+    "id": 690200,
+    "name": "Rękawice królewskich szczątków"
+  },
+  {
+    "id": 690300,
+    "name": "Nagolenniki królewskich szczątków"
+  },
+  {
+    "id": 590000,
+    "name": "Hełm Wszechwiedzącego"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "Zbroja Wszechwiedzącego/Wszechwiedząca zbroja (przerobiona)"
+  },
+  {
+    "id": 590200,
+    "name": "Rękawice Wszechwiedzącego"
+  },
+  {
+    "id": 590300,
+    "name": "Nagolenniki Wszechwiedzącego"
+  },
+  {
+    "id": 280000,
+    "name": "Hełm królewskiego rycerza"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Zbroja królewskiego rycerza/Zbroja królewskiego rycerza (przerobiona)"
+  },
+  {
+    "id": 280200,
+    "name": "Rękawice królewskiego rycerza"
+  },
+  {
+    "id": 280300,
+    "name": "Nagolenniki królewskiego rycerza"
+  },
+  {
+    "id": 760000,
+    "name": "Hełm Maliketha"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Zbroja Maliketha/Zbroja Maliketha (przerobiona)"
+  },
+  {
+    "id": 760200,
+    "name": "Rękawice Maliketha"
+  },
+  {
+    "id": 760300,
+    "name": "Nagolenniki Maliketha"
+  },
+  {
+    "id": 200000,
+    "name": "Hełm wypędzonego rycerza"
+  },
+  {
+    "id": 201000,
+    "name": "Hełm wypędzonego rycerza (przerobiony)"
+  },
+  {
+    "id": 200100,
+    "name": "Zbroja wypędzonego rycerza"
+  },
+  {
+    "id": 201100,
+    "name": "Zbroja wypędzonego rycerza (przerobiona)"
+  },
+  {
+    "id": 200200,
+    "name": "Rękawice wypędzonego rycerza"
+  },
+  {
+    "id": 200300,
+    "name": "Nagolenniki wypędzonego rycerza"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Hełm Nocnej Kawalerii/Hełm Nocnej Kawalerii (przerobiony)"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Zbroja Nocnej Kawalerii/Zbroja Nocnej Kawalerii (przerobiona)"
+  },
+  {
+    "id": 230200,
+    "name": "Rękawice Nocnej Kawalerii"
+  },
+  {
+    "id": 230300,
+    "name": "Nagolenniki Nocnej Kawalerii"
+  },
+  {
+    "id": 780000,
+    "name": "Hełm weterana"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Zbroja weterana/Zbroja weterana (przerobiona)"
+  },
+  {
+    "id": 780200,
+    "name": "Rękawice weterana"
+  },
+  {
+    "id": 780300,
+    "name": "Nagolenniki weterana"
+  },
+  {
+    "id": 80000,
+    "name": "Hełm łuskowy"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Zbroja łuskowa/Zbroja łuskowa (przerobiona)"
+  },
+  {
+    "id": 80200,
+    "name": "Rękawice łuskowe"
+  },
+  {
+    "id": 80300,
+    "name": "Nagolenniki łuskowe"
+  },
+  {
+    "id": 720000,
+    "name": "Hełm czempiona bestii"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Zbroja czempiona bestii/Zbroja menażerysty (przerobiona)"
+  },
+  {
+    "id": 720200,
+    "name": "Rękawice czempiona bestii"
+  },
+  {
+    "id": 720300,
+    "name": "Nagolenniki czempiona bestii"
+  },
+  {
+    "id": 270000,
+    "name": "Hełm strażnika Drzewa"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Zbroja strażnika Drzewa/Zbroja strażnika Drzewa (przerobiona)"
+  },
+  {
+    "id": 270200,
+    "name": "Rękawice strażnika Drzewa"
+  },
+  {
+    "id": 270300,
+    "name": "Nagolenniki strażnika Drzewa"
+  },
+  {
+    "id": 260000,
+    "name": "Zdeformowany smoczy hełm"
+  },
+  {
+    "id": 260100,
+    "name": "Zbroja zdeformowanego smoka"
+  },
+  {
+    "id": 260200,
+    "name": "Rękawice zdeformowanego smoka"
+  },
+  {
+    "id": 260300,
+    "name": "Nagolenniki zdeformowanego smoka"
+  },
+  {
+    "id": 570000,
+    "name": "Hełm Tygla z motywem topora"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Zbroja Tygla z motywem topora/Zbroja Tygla z motywem topora (przerobiona)"
+  },
+  {
+    "id": 570200,
+    "name": "Rękawice Tygla"
+  },
+  {
+    "id": 570300,
+    "name": "Nagolenniki Tygla"
+  },
+  {
+    "id": 571000,
+    "name": "Hełm Tygla z motywem drzewa"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Zbroja Tygla z motywem drzewa/Zbroja Tygla z motywem drzewa (przerobiona)"
+  },
+  {
+    "id": 470000,
+    "name": "Hełm Radahna Lwiej Grzywy"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Lwia zbroja Radahna/Lwia zbroja Radahna (przerobiona)"
+  },
+  {
+    "id": 470200,
+    "name": "Rękawice Radahna"
+  },
+  {
+    "id": 470300,
+    "name": "Nagolenniki Radahna"
+  },
+  {
+    "id": 640000,
+    "name": "Hełm Lionela"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Zbroja Lionela/Zbroja Lionela (przerobiona)"
+  },
+  {
+    "id": 640200,
+    "name": "Rękawice Lionela"
+  },
+  {
+    "id": 640300,
+    "name": "Nagolenniki Lionela"
+  },
+  {
+    "id": 140000,
+    "name": "Hełm kozobyka"
+  },
+  {
+    "id": 140100,
+    "name": "Zbroja kozobyka"
+  },
+  {
+    "id": 140200,
+    "name": "Rękawice kozobyka"
+  },
+  {
+    "id": 140300,
+    "name": "Nagolenniki kozobyka"
+  },
+  {
+    "id": 970000,
+    "name": "Hełm Omenu"
+  },
+  {
+    "id": 970100,
+    "name": "Zbroja Omenu"
+  },
+  {
+    "id": 970200,
+    "name": "Rękawice Omenu"
+  },
+  {
+    "id": 970300,
+    "name": "Nagolenniki Omenu"
+  },
+  {
+    "id": 360000,
+    "name": "Hełm prałata ognia"
+  },
+  {
+    "id": 360100,
+    "name": "Zbroja prałata ognia"
+  },
+  {
+    "id": 361100,
+    "name": "Zbroja prałata ognia (przerobiona)"
+  },
+  {
+    "id": 360200,
+    "name": "Rękawice prałata ognia"
+  },
+  {
+    "id": 360300,
+    "name": "Nagolenniki prałata ognia"
+  },
+  {
+    "id": 440000,
+    "name": "Dyniowy hełm"
+  }
+]

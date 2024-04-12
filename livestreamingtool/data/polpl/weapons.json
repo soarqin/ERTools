@@ -1,0 +1,1680 @@
+[
+  {
+    "category": "Sztylet",
+    "items": [
+      {
+        "id": 1000000,
+        "name": "Sztylet"
+      },
+      {
+        "id": 1020000,
+        "name": "Sztylet do parowania"
+      },
+      {
+        "id": 1030000,
+        "name": "Mizerykordia"
+      },
+      {
+        "id": 1090000,
+        "name": "Wielki nóż"
+      },
+      {
+        "id": 1140000,
+        "name": "Zakrwawiony sztylet"
+      },
+      {
+        "id": 1150000,
+        "name": "Sztylet ze złotej stali"
+      },
+      {
+        "id": 1100000,
+        "name": "Wakizashi"
+      },
+      {
+        "id": 1060000,
+        "name": "Sierp celebranta"
+      },
+      {
+        "id": 1130000,
+        "name": "Sierp z kości słoniowej"
+      },
+      {
+        "id": 1050000,
+        "name": "Kryształowy nóż"
+      },
+      {
+        "id": 1080000,
+        "name": "Żądło skorpiona"
+      },
+      {
+        "id": 1110000,
+        "name": "Cinquedea"
+      },
+      {
+        "id": 1070000,
+        "name": "Błyskamienny kris"
+      },
+      {
+        "id": 1040000,
+        "name": "Reduvia"
+      },
+      {
+        "id": 1160000,
+        "name": "Klinga przywołania"
+      },
+      {
+        "id": 1010000,
+        "name": "Czarny nóż"
+      }
+    ]
+  },
+  {
+    "category": "Prosty miecz",
+    "items": [
+      {
+        "id": 2010000,
+        "name": "Krótki miecz"
+      },
+      {
+        "id": 2000000,
+        "name": "Długi miecz"
+      },
+      {
+        "id": 2020000,
+        "name": "Szeroki miecz"
+      },
+      {
+        "id": 2050000,
+        "name": "Podniszczony prosty miecz"
+      },
+      {
+        "id": 2040000,
+        "name": "Prosty miecz zaprzysiężonego"
+      },
+      {
+        "id": 2230000,
+        "name": "Smukły miecz szlachecki"
+      },
+      {
+        "id": 2210000,
+        "name": "Mieczolaska"
+      },
+      {
+        "id": 2240000,
+        "name": "Szpon jastrzębia bojowego"
+      },
+      {
+        "id": 2250000,
+        "name": "Błyskamienny miecz Lazuli"
+      },
+      {
+        "id": 2180000,
+        "name": "Miecz karyjskiego rycerza"
+      },
+      {
+        "id": 2150000,
+        "name": "Kryształowy miecz"
+      },
+      {
+        "id": 2260000,
+        "name": "Zgniły kryształowy miecz"
+      },
+      {
+        "id": 2200000,
+        "name": "Miecz rycerza Miquelli"
+      },
+      {
+        "id": 2060000,
+        "name": "Ozdobny prosty miecz"
+      },
+      {
+        "id": 2070000,
+        "name": "Złote epitafium"
+      },
+      {
+        "id": 2190000,
+        "name": "Miecz św. Triny"
+      },
+      {
+        "id": 2220000,
+        "name": "Regalia z Eochaid"
+      },
+      {
+        "id": 2110000,
+        "name": "Zaszyfrowany miecz"
+      },
+      {
+        "id": 2140000,
+        "name": "Miecz nocy i ognia"
+      }
+    ]
+  },
+  {
+    "category": "Wielki miecz",
+    "items": [
+      {
+        "id": 3000000,
+        "name": "Miecz półtoraręczny"
+      },
+      {
+        "id": 3180000,
+        "name": "Claymore"
+      },
+      {
+        "id": 3020000,
+        "name": "Żelazny wielki miecz"
+      },
+      {
+        "id": 3030000,
+        "name": "Wielki miecz zaprzysiężonego"
+      },
+      {
+        "id": 3040000,
+        "name": "Wielki miecz rycerski"
+      },
+      {
+        "id": 3080000,
+        "name": "Wielki miecz wypędzonego rycerza"
+      },
+      {
+        "id": 3010000,
+        "name": "Rozwidlony wielki miecz"
+      },
+      {
+        "id": 3050000,
+        "name": "Flamberg"
+      },
+      {
+        "id": 3190000,
+        "name": "Wielki miecz gargulca"
+      },
+      {
+        "id": 3210000,
+        "name": "Czarne ostrze gargulca"
+      },
+      {
+        "id": 2090000,
+        "name": "Nierozłączny miecz"
+      },
+      {
+        "id": 3160000,
+        "name": "Miecz Milosa"
+      },
+      {
+        "id": 3150000,
+        "name": "Miecz kata Maraisa"
+      },
+      {
+        "id": 3060000,
+        "name": "Wielki miecz Ordovisa"
+      },
+      {
+        "id": 3070000,
+        "name": "Miecz alabastrowego władcy"
+      },
+      {
+        "id": 3200000,
+        "name": "Pogrzebacz śmierci"
+      },
+      {
+        "id": 3130000,
+        "name": "Iglica Helphena"
+      },
+      {
+        "id": 3140000,
+        "name": "Bluźniercze ostrze"
+      },
+      {
+        "id": 3170000,
+        "name": "Wielki miecz Złotego Porządku"
+      },
+      {
+        "id": 3090000,
+        "name": "Wielki miecz ciemnego księżyca"
+      },
+      {
+        "id": 3100000,
+        "name": "Miecz świętego reliktu"
+      }
+    ]
+  },
+  {
+    "category": "Olbrzymi miecz",
+    "items": [
+      {
+        "id": 4040000,
+        "name": "Miecz dwuręczny"
+      },
+      {
+        "id": 4000000,
+        "name": "Wielki miecz"
+      },
+      {
+        "id": 4010000,
+        "name": "Wielki miecz ogara"
+      },
+      {
+        "id": 4030000,
+        "name": "Złoty miecz trolla"
+      },
+      {
+        "id": 4110000,
+        "name": "Miecz rycerza trolli"
+      },
+      {
+        "id": 4060000,
+        "name": "Królewski wielki miecz"
+      },
+      {
+        "id": 4100000,
+        "name": "Wielki miecz Pozszywanego"
+      },
+      {
+        "id": 4080000,
+        "name": "Wielki miecz ruin"
+      },
+      {
+        "id": 4050000,
+        "name": "Wielkie miecze Gwiezdnej Plagi"
+      },
+      {
+        "id": 4070000,
+        "name": "Wielki miecz zabójczyni bogów"
+      },
+      {
+        "id": 4020000,
+        "name": "Czarne ostrze Maliketha"
+      }
+    ]
+  },
+  {
+    "category": "Miecz do pchnięć",
+    "items": [
+      {
+        "id": 5020000,
+        "name": "Rapier"
+      },
+      {
+        "id": 5000000,
+        "name": "Estok"
+      },
+      {
+        "id": 5060000,
+        "name": "Estok szlachcica"
+      },
+      {
+        "id": 5010000,
+        "name": "Miecz rycerza czystej zgnilizny"
+      },
+      {
+        "id": 5030000,
+        "name": "Rapier Rogiera"
+      },
+      {
+        "id": 5040000,
+        "name": "Rapier z ostrogami mrówek"
+      },
+      {
+        "id": 5050000,
+        "name": "Zamarznięta igła"
+      }
+    ]
+  },
+  {
+    "category": "Ciężki miecz do pchnięć",
+    "items": [
+      {
+        "id": 6020000,
+        "name": "Wielka szpada"
+      },
+      {
+        "id": 6010000,
+        "name": "Zszywacz boskiej skóry"
+      },
+      {
+        "id": 6000000,
+        "name": "Krwawa helisa"
+      },
+      {
+        "id": 6040000,
+        "name": "Wyszczerbione ostrze smoczego króla"
+      }
+    ]
+  },
+  {
+    "category": "Zakrzywiony miecz",
+    "items": [
+      {
+        "id": 7140000,
+        "name": "Bułat"
+      },
+      {
+        "id": 7000000,
+        "name": "Tasak"
+      },
+      {
+        "id": 7030000,
+        "name": "Szamszir"
+      },
+      {
+        "id": 7150000,
+        "name": "Grossmesser"
+      },
+      {
+        "id": 7040000,
+        "name": "Zakrzywiony miecz bandyty"
+      },
+      {
+        "id": 7020000,
+        "name": "Szotel"
+      },
+      {
+        "id": 7080000,
+        "name": "Zakrzywiony miecz grabieżcy"
+      },
+      {
+        "id": 7120000,
+        "name": "Ostrze modliszki"
+      },
+      {
+        "id": 7010000,
+        "name": "Miecz człowieka-bestii"
+      },
+      {
+        "id": 7060000,
+        "name": "Dynamiczny zakrzywiony miecz"
+      },
+      {
+        "id": 7110000,
+        "name": "Miecz wężowego boga"
+      },
+      {
+        "id": 7050000,
+        "name": "Magmowe ostrze"
+      },
+      {
+        "id": 2080000,
+        "name": "Dynamiczny miecz Noxów"
+      },
+      {
+        "id": 7070000,
+        "name": "Skrzydło Astela"
+      },
+      {
+        "id": 7100000,
+        "name": "Szotel zaćmienia"
+      }
+    ]
+  },
+  {
+    "category": "Zakrzywiony wielki miecz",
+    "items": [
+      {
+        "id": 8020000,
+        "name": "Zrzucacz"
+      },
+      {
+        "id": 8060000,
+        "name": "Tasak Omenów"
+      },
+      {
+        "id": 8070000,
+        "name": "Płomienne ostrze mnicha"
+      },
+      {
+        "id": 8080000,
+        "name": "Tasak człowieka-bestii"
+      },
+      {
+        "id": 8030000,
+        "name": "Kieł wasalnego rycerza"
+      },
+      {
+        "id": 8010000,
+        "name": "Wielki miecz onyksowego władcy"
+      },
+      {
+        "id": 8050000,
+        "name": "Zakrzywiony miecz z Zamor"
+      },
+      {
+        "id": 8040000,
+        "name": "Łuskowy miecz magmowego żmija"
+      },
+      {
+        "id": 8100000,
+        "name": "Przeklęty miecz Morgotta"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9000000,
+        "name": "Uchigatana"
+      },
+      {
+        "id": 9010000,
+        "name": "Nagakiba"
+      },
+      {
+        "id": 9080000,
+        "name": "Ostrze z wężowej kości"
+      },
+      {
+        "id": 9030000,
+        "name": "Ostrze z rudy meteorytu"
+      },
+      {
+        "id": 9060000,
+        "name": "Księżycowy woal"
+      },
+      {
+        "id": 9040000,
+        "name": "Rzeki Krwi"
+      },
+      {
+        "id": 9070000,
+        "name": "Ostrze ze smoczych łusek"
+      },
+      {
+        "id": 9020000,
+        "name": "Dłoń Malenii"
+      }
+    ]
+  },
+  {
+    "category": "Podwójne ostrze",
+    "items": [
+      {
+        "id": 10000000,
+        "name": "Podwójne ostrze"
+      },
+      {
+        "id": 10030000,
+        "name": "Bliźniacze miecze rycerza"
+      },
+      {
+        "id": 10010000,
+        "name": "Obieracz boskiej skóry"
+      },
+      {
+        "id": 10080000,
+        "name": "Podwójne ostrze gargulca"
+      },
+      {
+        "id": 10090000,
+        "name": "Czarne ostrza gargulca"
+      },
+      {
+        "id": 10050000,
+        "name": "Drzewcowe ostrze Eleonory"
+      }
+    ]
+  },
+  {
+    "category": "Topór",
+    "items": [
+      {
+        "id": 14010000,
+        "name": "Rozwidlony topór"
+      },
+      {
+        "id": 14020000,
+        "name": "Topór ręczny"
+      },
+      {
+        "id": 14000000,
+        "name": "Topór wojenny"
+      },
+      {
+        "id": 15010000,
+        "name": "Wypaczony topór"
+      },
+      {
+        "id": 14030000,
+        "name": "Topór z kości żuchwy"
+      },
+      {
+        "id": 14040000,
+        "name": "Żelazny tasak"
+      },
+      {
+        "id": 14100000,
+        "name": "Topór wyżynny"
+      },
+      {
+        "id": 14060000,
+        "name": "Tasak celebranta"
+      },
+      {
+        "id": 14110000,
+        "name": "Topór ofiarny"
+      },
+      {
+        "id": 14080000,
+        "name": "Mroźny topór"
+      },
+      {
+        "id": 14050000,
+        "name": "Falowane ostrze"
+      },
+      {
+        "id": 14140000,
+        "name": "Topór burzowego jastrzębia"
+      },
+      {
+        "id": 14120000,
+        "name": "Topór Rosusa"
+      }
+    ]
+  },
+  {
+    "category": "Wielki topór",
+    "items": [
+      {
+        "id": 15000000,
+        "name": "Wielki topór"
+      },
+      {
+        "id": 15030000,
+        "name": "Topór w kształcie półksiężyca"
+      },
+      {
+        "id": 15050000,
+        "name": "Topór z długą rękojeścią"
+      },
+      {
+        "id": 15080000,
+        "name": "Wielki topór kata"
+      },
+      {
+        "id": 15020000,
+        "name": "Wielki tasak Zabójcy Omenów"
+      },
+      {
+        "id": 15060000,
+        "name": "Zardzewiała kotwica"
+      },
+      {
+        "id": 15120000,
+        "name": "Nóż rzeźnika"
+      },
+      {
+        "id": 15130000,
+        "name": "Wielki topór gargulca"
+      },
+      {
+        "id": 15140000,
+        "name": "Czarny topór gargulca"
+      },
+      {
+        "id": 15110000,
+        "name": "Uskrzydlony wielki cierń"
+      },
+      {
+        "id": 15040000,
+        "name": "Topór Godricka"
+      }
+    ]
+  },
+  {
+    "category": "Młot",
+    "items": [
+      {
+        "id": 11010000,
+        "name": "Pałka"
+      },
+      {
+        "id": 11030000,
+        "name": "Zakrzywiona pałka"
+      },
+      {
+        "id": 11070000,
+        "name": "Kolczasta pałka"
+      },
+      {
+        "id": 11140000,
+        "name": "Kamienna pałka"
+      },
+      {
+        "id": 11000000,
+        "name": "Buława"
+      },
+      {
+        "id": 11050000,
+        "name": "Gwiazda zaranna"
+      },
+      {
+        "id": 11040000,
+        "name": "Pika wojenna"
+      },
+      {
+        "id": 11080000,
+        "name": "Młot"
+      },
+      {
+        "id": 11090000,
+        "name": "Płomienna buława mnicha"
+      },
+      {
+        "id": 11060000,
+        "name": "Bukiet Varrégo"
+      },
+      {
+        "id": 11100000,
+        "name": "Róg wysłannika"
+      },
+      {
+        "id": 11120000,
+        "name": "Dynamiczna buława Noxów"
+      },
+      {
+        "id": 11130000,
+        "name": "Palec z pierścieniami"
+      },
+      {
+        "id": 11110000,
+        "name": "Berło Wszechwiedzącego"
+      },
+      {
+        "id": 11150000,
+        "name": "Młot Mariki"
+      }
+    ]
+  },
+  {
+    "category": "Wielki młot",
+    "items": [
+      {
+        "id": 12000000,
+        "name": "Duży kij"
+      },
+      {
+        "id": 12080000,
+        "name": "Zakrzywiony wielki kij"
+      },
+      {
+        "id": 12060000,
+        "name": "Wielka buława"
+      },
+      {
+        "id": 12140000,
+        "name": "Kilof"
+      },
+      {
+        "id": 12190000,
+        "name": "Młot murarski"
+      },
+      {
+        "id": 12020000,
+        "name": "Młot wojenny"
+      },
+      {
+        "id": 12210000,
+        "name": "Zgniły młot wojenny"
+      },
+      {
+        "id": 12130000,
+        "name": "Czaszka celebranta"
+      },
+      {
+        "id": 12180000,
+        "name": "Wielkie gwiazdy"
+      },
+      {
+        "id": 12010000,
+        "name": "Młot wielkiego rogu"
+      },
+      {
+        "id": 12160000,
+        "name": "Długi róg wysłannika"
+      },
+      {
+        "id": 12170000,
+        "name": "Czaszkowy świecznik"
+      },
+      {
+        "id": 12150000,
+        "name": "Wielki młot szponów bestii"
+      },
+      {
+        "id": 12200000,
+        "name": "Berło pożeracza"
+      }
+    ]
+  },
+  {
+    "category": "Korbacz",
+    "items": [
+      {
+        "id": 13010000,
+        "name": "Korbacz"
+      },
+      {
+        "id": 13000000,
+        "name": "Korbacz Nocnego Jeźdźca"
+      },
+      {
+        "id": 13040000,
+        "name": "Cep bojowy"
+      },
+      {
+        "id": 13020000,
+        "name": "Głowy klanu"
+      },
+      {
+        "id": 13030000,
+        "name": "Gwiazdy bękarta"
+      }
+    ]
+  },
+  {
+    "category": "Olbrzymia broń",
+    "items": [
+      {
+        "id": 23040000,
+        "name": "Wielki topór pojedynkowicza"
+      },
+      {
+        "id": 23150000,
+        "name": "Zgniły wielki topór"
+      },
+      {
+        "id": 23120000,
+        "name": "Halabarda golema"
+      },
+      {
+        "id": 23110000,
+        "name": "Niszczyciel olbrzymów"
+      },
+      {
+        "id": 23000000,
+        "name": "Piekielny pastorał prałata"
+      },
+      {
+        "id": 23020000,
+        "name": "Wielka pałka"
+      },
+      {
+        "id": 23130000,
+        "name": "Młot trolla"
+      },
+      {
+        "id": 23060000,
+        "name": "Wielki smoczy pazur"
+      },
+      {
+        "id": 23010000,
+        "name": "Kostur ogara"
+      },
+      {
+        "id": 23070000,
+        "name": "Kostur awatara"
+      },
+      {
+        "id": 23140000,
+        "name": "Spróchniały kostur"
+      },
+      {
+        "id": 23030000,
+        "name": "Wielki róg wysłannika"
+      },
+      {
+        "id": 23100000,
+        "name": "Koło Ghizy"
+      },
+      {
+        "id": 23080000,
+        "name": "Szczęka bestii spadającej gwiazdy"
+      },
+      {
+        "id": 23050000,
+        "name": "Topór Godfreya"
+      }
+    ]
+  },
+  {
+    "category": "Włócznia",
+    "items": [
+      {
+        "id": 16000000,
+        "name": "Krótka włócznia"
+      },
+      {
+        "id": 16150000,
+        "name": "Żelazna włócznia"
+      },
+      {
+        "id": 16010000,
+        "name": "Włócznia"
+      },
+      {
+        "id": 16050000,
+        "name": "Partyzana"
+      },
+      {
+        "id": 16070000,
+        "name": "Pika"
+      },
+      {
+        "id": 16140000,
+        "name": "Włócznia najeżona kolcami"
+      },
+      {
+        "id": 16110000,
+        "name": "Krzyżowa naginata"
+      },
+      {
+        "id": 16030000,
+        "name": "Harpun glinianego człowieka"
+      },
+      {
+        "id": 16060000,
+        "name": "Kościane grabie celebranta"
+      },
+      {
+        "id": 16080000,
+        "name": "Stojąca pochodnia"
+      },
+      {
+        "id": 16130000,
+        "name": "Kandelabr inkwizytora"
+      },
+      {
+        "id": 16020000,
+        "name": "Kryształowa włócznia"
+      },
+      {
+        "id": 16160000,
+        "name": "Zgniła kryształowa włócznia"
+      },
+      {
+        "id": 16040000,
+        "name": "Włócznia czystej zgnilizny"
+      },
+      {
+        "id": 16120000,
+        "name": "Włócznia rytuału śmierci"
+      },
+      {
+        "id": 16090000,
+        "name": "Bełt Gransaxa"
+      }
+    ]
+  },
+  {
+    "category": "Wielka włócznia",
+    "items": [
+      {
+        "id": 17060000,
+        "name": "Lanca"
+      },
+      {
+        "id": 17070000,
+        "name": "Drzewna włócznia"
+      },
+      {
+        "id": 17030000,
+        "name": "Łowca węży"
+      },
+      {
+        "id": 17020000,
+        "name": "Drzewo Silurii"
+      },
+      {
+        "id": 17050000,
+        "name": "Wojenna włócznia Vykego"
+      },
+      {
+        "id": 17010000,
+        "name": "Święta włócznia Mohgwynów"
+      }
+    ]
+  },
+  {
+    "category": "Halabarda",
+    "items": [
+      {
+        "id": 18000000,
+        "name": "Halabarda"
+      },
+      {
+        "id": 18030000,
+        "name": "Halabarda wypędzonego rycerza"
+      },
+      {
+        "id": 18020000,
+        "name": "Młot lucereński"
+      },
+      {
+        "id": 18090000,
+        "name": "Glewia"
+      },
+      {
+        "id": 18130000,
+        "name": "Szotel prostackiej gwardii"
+      },
+      {
+        "id": 18070000,
+        "name": "Piła pospolitaka"
+      },
+      {
+        "id": 18110000,
+        "name": "Miecznia strażnika"
+      },
+      {
+        "id": 18150000,
+        "name": "Halabarda gargulca"
+      },
+      {
+        "id": 18160000,
+        "name": "Czarna halabarda gargulca"
+      },
+      {
+        "id": 18050000,
+        "name": "Glewia nocnego jeźdźca"
+      },
+      {
+        "id": 18010000,
+        "name": "Glewia szkodnika"
+      },
+      {
+        "id": 18060000,
+        "name": "Halabarda półksiężyca"
+      },
+      {
+        "id": 18080000,
+        "name": "Złota halabarda"
+      },
+      {
+        "id": 18140000,
+        "name": "Smocza halabarda"
+      },
+      {
+        "id": 18100000,
+        "name": "Sierp bojowy Loretty"
+      },
+      {
+        "id": 18040000,
+        "name": "Sztandar dowódcy"
+      }
+    ]
+  },
+  {
+    "category": "Kosa",
+    "items": [
+      {
+        "id": 19000000,
+        "name": "Kosa"
+      },
+      {
+        "id": 19010000,
+        "name": "Grobowa kosa"
+      },
+      {
+        "id": 19020000,
+        "name": "Kosa aureoli"
+      },
+      {
+        "id": 19060000,
+        "name": "Skrzydlata kosa"
+      }
+    ]
+  },
+  {
+    "category": "Bicz",
+    "items": [
+      {
+        "id": 20000000,
+        "name": "Bicz"
+      },
+      {
+        "id": 20020000,
+        "name": "Cierniowy bicz"
+      },
+      {
+        "id": 20070000,
+        "name": "Urumi"
+      },
+      {
+        "id": 20050000,
+        "name": "Bicz płatkowy rodu Hoslow"
+      },
+      {
+        "id": 20030000,
+        "name": "Magmowy bicz w kształcie świecznika"
+      },
+      {
+        "id": 20060000,
+        "name": "Rudy warkocz olbrzyma"
+      }
+    ]
+  },
+  {
+    "category": "Pięść",
+    "items": [
+      {
+        "id": 21000000,
+        "name": "Cestus"
+      },
+      {
+        "id": 21010000,
+        "name": "Kolczaste cestus"
+      },
+      {
+        "id": 21100000,
+        "name": "Katar"
+      },
+      {
+        "id": 21070000,
+        "name": "Żelazna kula"
+      },
+      {
+        "id": 21080000,
+        "name": "Gwiezdna pięść"
+      },
+      {
+        "id": 21110000,
+        "name": "Przywierająca kość"
+      },
+      {
+        "id": 21120000,
+        "name": "Proteza weterana"
+      },
+      {
+        "id": 21130000,
+        "name": "Zaszyfrowana pata"
+      },
+      {
+        "id": 21060000,
+        "name": "Pozszywany smok"
+      }
+    ]
+  },
+  {
+    "category": "Pazur",
+    "items": [
+      {
+        "id": 22000000,
+        "name": "Hakoszpony"
+      },
+      {
+        "id": 22010000,
+        "name": "Jadowity kieł"
+      },
+      {
+        "id": 22020000,
+        "name": "Pazury wasalnego rycerza"
+      },
+      {
+        "id": 22030000,
+        "name": "Drapieżne szpony"
+      }
+    ]
+  },
+  {
+    "category": "Lekki łuk",
+    "items": [
+      {
+        "id": 40000000,
+        "name": "Krótki łuk"
+      },
+      {
+        "id": 40050000,
+        "name": "Łuk kompozytowy"
+      },
+      {
+        "id": 40020000,
+        "name": "Krótki łuk z czerwonej gałęzi"
+      },
+      {
+        "id": 40010000,
+        "name": "Krótki łuk aberracji"
+      },
+      {
+        "id": 40030000,
+        "name": "Łuk w kształcie harfy"
+      }
+    ]
+  },
+  {
+    "category": "Łuk",
+    "items": [
+      {
+        "id": 41000000,
+        "name": "Długi łuk"
+      },
+      {
+        "id": 41010000,
+        "name": "Łuk albinauryków"
+      },
+      {
+        "id": 41070000,
+        "name": "Czarny łuk"
+      },
+      {
+        "id": 41060000,
+        "name": "Łuk rolkowy"
+      },
+      {
+        "id": 41020000,
+        "name": "Kolczasty łuk"
+      },
+      {
+        "id": 41040000,
+        "name": "Wężowy łuk"
+      },
+      {
+        "id": 41030000,
+        "name": "Łuk Złotego Drzewa"
+      }
+    ]
+  },
+  {
+    "category": "Wielki łuk",
+    "items": [
+      {
+        "id": 42040000,
+        "name": "Wielki łuk"
+      },
+      {
+        "id": 42010000,
+        "name": "Wielki łuk golema"
+      },
+      {
+        "id": 42030000,
+        "name": "Wielki łuk Złotego Drzewa"
+      },
+      {
+        "id": 42000000,
+        "name": "Lwi wielki łuk"
+      }
+    ]
+  },
+  {
+    "category": "Kusza",
+    "items": [
+      {
+        "id": 43000000,
+        "name": "Żołnierska kusza"
+      },
+      {
+        "id": 43020000,
+        "name": "Lekka kusza"
+      },
+      {
+        "id": 43030000,
+        "name": "Ciężka kusza"
+      },
+      {
+        "id": 43080000,
+        "name": "Arbalest"
+      },
+      {
+        "id": 43110000,
+        "name": "Kusza czarnego klucza Crepusa"
+      },
+      {
+        "id": 43050000,
+        "name": "Kusza rolkowa"
+      },
+      {
+        "id": 43060000,
+        "name": "Kusza pełni księżyca"
+      }
+    ]
+  },
+  {
+    "category": "Balista",
+    "items": [
+      {
+        "id": 44000000,
+        "name": "Ręczna balista"
+      },
+      {
+        "id": 44010000,
+        "name": "Słojomiot"
+      }
+    ]
+  },
+  {
+    "category": "Błyskamienny kostur",
+    "items": [
+      {
+        "id": 33130000,
+        "name": "Kostur astrologa"
+      },
+      {
+        "id": 33000000,
+        "name": "Błyskamienny kostur"
+      },
+      {
+        "id": 33200000,
+        "name": "Błyskamienny kostur Akademii"
+      },
+      {
+        "id": 33120000,
+        "name": "Kostur górnika"
+      },
+      {
+        "id": 33060000,
+        "name": "Kostur półludzkiej królowej"
+      },
+      {
+        "id": 33230000,
+        "name": "Błyskamienny kostur Azura"
+      },
+      {
+        "id": 33240000,
+        "name": "Błyskamienny kostur Lusata"
+      },
+      {
+        "id": 33210000,
+        "name": "Karyjski błyskamienny kostur"
+      },
+      {
+        "id": 33170000,
+        "name": "Karyjski kostur błyskostrza"
+      },
+      {
+        "id": 33090000,
+        "name": "Karyjskie berło królewskie"
+      },
+      {
+        "id": 33190000,
+        "name": "Kostur albinauryków"
+      },
+      {
+        "id": 33280000,
+        "name": "Kostur straty"
+      },
+      {
+        "id": 33050000,
+        "name": "Błyskamienny kostur z Gelmir"
+      },
+      {
+        "id": 33040000,
+        "name": "Kryształowy kostur"
+      },
+      {
+        "id": 33270000,
+        "name": "Zgniły kryształowy kostur"
+      },
+      {
+        "id": 33250000,
+        "name": "Kostur z meteorytu"
+      },
+      {
+        "id": 33260000,
+        "name": "Kostur winowajców"
+      },
+      {
+        "id": 33180000,
+        "name": "Kostur Księcia Śmierci"
+      }
+    ]
+  },
+  {
+    "category": "Święta pieczęć",
+    "items": [
+      {
+        "id": 34000000,
+        "name": "Pieczęć palców"
+      },
+      {
+        "id": 34070000,
+        "name": "Pieczęć Złotego Drzewa"
+      },
+      {
+        "id": 34060000,
+        "name": "Pieczęć Złotego Porządku"
+      },
+      {
+        "id": 34030000,
+        "name": "Żwirowa pieczęć"
+      },
+      {
+        "id": 34020000,
+        "name": "Pieczęć olbrzyma"
+      },
+      {
+        "id": 34010000,
+        "name": "Pieczęć zabójcy bogów"
+      },
+      {
+        "id": 34040000,
+        "name": "Pieczęć Bestii"
+      },
+      {
+        "id": 34090000,
+        "name": "Pieczęć Oszalałego Płomienia"
+      },
+      {
+        "id": 34080000,
+        "name": "Pieczęć smoczej komunii"
+      }
+    ]
+  },
+  {
+    "category": "Pochodnia",
+    "items": [
+      {
+        "id": 24000000,
+        "name": "Pochodnia"
+      },
+      {
+        "id": 24060000,
+        "name": "Pochodnia odganiająca bestie"
+      },
+      {
+        "id": 24020000,
+        "name": "Pochodnia ze stalowym drutem"
+      },
+      {
+        "id": 24070000,
+        "name": "Pochodnia strażnika"
+      },
+      {
+        "id": 24050000,
+        "name": "Pochodnia ognia duchów"
+      },
+      {
+        "id": 24040000,
+        "name": "Pochodnia św. Triny"
+      }
+    ]
+  },
+  {
+    "category": "Mała tarcza",
+    "items": [
+      {
+        "id": 30030000,
+        "name": "Koślawa tarcza"
+      },
+      {
+        "id": 30090000,
+        "name": "Ćwiekowana drewniana tarcza"
+      },
+      {
+        "id": 30100000,
+        "name": "Niebiesko-biała tarcza z drewna"
+      },
+      {
+        "id": 30080000,
+        "name": "Zapisana drewniana tarcza"
+      },
+      {
+        "id": 30070000,
+        "name": "Ciernista okrągła tarcza"
+      },
+      {
+        "id": 30040000,
+        "name": "Tarcza pręgierza"
+      },
+      {
+        "id": 30000000,
+        "name": "Puklerz"
+      },
+      {
+        "id": 30120000,
+        "name": "Żelazna okrągła tarcza"
+      },
+      {
+        "id": 30130000,
+        "name": "Pozłacana żelazna tarcza"
+      },
+      {
+        "id": 30020000,
+        "name": "Tarcza człowieka-węża"
+      },
+      {
+        "id": 30140000,
+        "name": "Tarcza lodowego herbu"
+      },
+      {
+        "id": 30110000,
+        "name": "Tarcza szczelinowa"
+      },
+      {
+        "id": 30010000,
+        "name": "Tarcza perfumiarza"
+      },
+      {
+        "id": 31170000,
+        "name": "Tarcza winowajców"
+      },
+      {
+        "id": 30190000,
+        "name": "Tarcza kręconego rogu"
+      },
+      {
+        "id": 30150000,
+        "name": "Tarcza dymu"
+      },
+      {
+        "id": 30200000,
+        "name": "Wężowa tarcza"
+      }
+    ]
+  },
+  {
+    "category": "Średnia tarcza",
+    "items": [
+      {
+        "id": 31270000,
+        "name": "Drewniana tarcza z motywem jastrzębia"
+      },
+      {
+        "id": 31240000,
+        "name": "Drewniana tarcza z motywem konia"
+      },
+      {
+        "id": 31250000,
+        "name": "Drewniana tarcza z drzewa świecowego"
+      },
+      {
+        "id": 31260000,
+        "name": "Drewniana tarcza ognistego herbu"
+      },
+      {
+        "id": 31020000,
+        "name": "Oszpecona drewniana tarcza"
+      },
+      {
+        "id": 31050000,
+        "name": "Tarcza Krainy Słońca"
+      },
+      {
+        "id": 31070000,
+        "name": "Okrągła tarcza"
+      },
+      {
+        "id": 31230000,
+        "name": "Duża skórzana tarcza"
+      },
+      {
+        "id": 31340000,
+        "name": "Czarna skórzana tarcza"
+      },
+      {
+        "id": 31010000,
+        "name": "Oszpecona skórzana tarcza"
+      },
+      {
+        "id": 31330000,
+        "name": "Tarcza żelazkowa"
+      },
+      {
+        "id": 31300000,
+        "name": "Tarcza żelazkowa z niebieskim herbem"
+      },
+      {
+        "id": 31290000,
+        "name": "Tarcza żelazkowa z czerwonym herbem"
+      },
+      {
+        "id": 31280000,
+        "name": "Tarcza żelazkowa z herbem bestii"
+      },
+      {
+        "id": 31320000,
+        "name": "Tarcza z odwróconym jastrzębiem"
+      },
+      {
+        "id": 31310000,
+        "name": "Tarcza żelazkowa z herbem zaćmienia"
+      },
+      {
+        "id": 31000000,
+        "name": "Trójkątna tarcza"
+      },
+      {
+        "id": 31100000,
+        "name": "Niebiesko-złota trójkątna tarcza"
+      },
+      {
+        "id": 31030000,
+        "name": "Tarcza wypędzonego rycerza"
+      },
+      {
+        "id": 31080000,
+        "name": "Trójkątna tarcza skorpiona"
+      },
+      {
+        "id": 31090000,
+        "name": "Tarcza z dwugłowym ptakiem"
+      },
+      {
+        "id": 31130000,
+        "name": "Mosiężna tarcza"
+      },
+      {
+        "id": 31040000,
+        "name": "Tarcza albinauryków"
+      },
+      {
+        "id": 30060000,
+        "name": "Słojowa tarcza człowieka-bestii"
+      },
+      {
+        "id": 31190000,
+        "name": "Tarcza karyjskiego rycerza"
+      },
+      {
+        "id": 31060000,
+        "name": "Srebrna lustrzana tarcza"
+      },
+      {
+        "id": 31140000,
+        "name": "Wielka skorupa żółwia"
+      }
+    ]
+  },
+  {
+    "category": "Wielka tarcza",
+    "items": [
+      {
+        "id": 32290000,
+        "name": "Wielka tarcza z drewna"
+      },
+      {
+        "id": 32300000,
+        "name": "Tarcza zaprzysiężonego"
+      },
+      {
+        "id": 32050000,
+        "name": "Wielka tarcza głogu"
+      },
+      {
+        "id": 32170000,
+        "name": "Tarcza kolczastej palisady"
+      },
+      {
+        "id": 32140000,
+        "name": "Tarcza z ikoną"
+      },
+      {
+        "id": 32090000,
+        "name": "Złota tarcza z herbem bestii"
+      },
+      {
+        "id": 32190000,
+        "name": "Długa tarcza z motywem dworu"
+      },
+      {
+        "id": 32200000,
+        "name": "Tarcza z motywem krzyżodrzewa"
+      },
+      {
+        "id": 32210000,
+        "name": "Tarcza z odwróconym jastrzębiem"
+      },
+      {
+        "id": 32000000,
+        "name": "Długa tarcza z motywem smoka"
+      },
+      {
+        "id": 32020000,
+        "name": "Wielka dystyngowana tarcza"
+      },
+      {
+        "id": 32270000,
+        "name": "Pozłacana wielka tarcza"
+      },
+      {
+        "id": 32250000,
+        "name": "Wielka kukułcza tarcza"
+      },
+      {
+        "id": 32230000,
+        "name": "Wielka tarcza Lwiej Grzywy"
+      },
+      {
+        "id": 32260000,
+        "name": "Wielka złota tarcza"
+      },
+      {
+        "id": 32280000,
+        "name": "Tarcza z herbem Świętego Drzewa"
+      },
+      {
+        "id": 32030000,
+        "name": "Rogata tarcza Tygla"
+      },
+      {
+        "id": 32040000,
+        "name": "Tarcza smoczego szponu"
+      },
+      {
+        "id": 32130000,
+        "name": "Kamienna opuszkowa tarcza"
+      },
+      {
+        "id": 32240000,
+        "name": "Wielka tarcza z herbem zaćmienia"
+      },
+      {
+        "id": 32220000,
+        "name": "Mrówcza tarczaszka"
+      },
+      {
+        "id": 32080000,
+        "name": "Wielka tarcza Złotego Drzewa"
+      },
+      {
+        "id": 32120000,
+        "name": "Tarcza z meduzy"
+      },
+      {
+        "id": 32160000,
+        "name": "Tarcza z obliczem"
+      },
+      {
+        "id": 32150000,
+        "name": "Jednooka tarcza"
+      }
+    ]
+  }
+]

@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Szybkie leczenie"
+  },
+  {
+    "id": 6421,
+    "name": "Leczenie"
+  },
+  {
+    "id": 6422,
+    "name": "Wielkie leczenie"
+  },
+  {
+    "id": 6423,
+    "name": "Leczenie władcy"
+  },
+  {
+    "id": 6440,
+    "name": "Leczenie zatrucia"
+  },
+  {
+    "id": 6441,
+    "name": "Pomoc władcy"
+  },
+  {
+    "id": 6460,
+    "name": "Magiczne fortyfikacje"
+  },
+  {
+    "id": 6450,
+    "name": "Ogniste fortyfikacje"
+  },
+  {
+    "id": 6470,
+    "name": "Fortyfikacje błyskawic"
+  },
+  {
+    "id": 6480,
+    "name": "Boskie fortyfikacje"
+  },
+  {
+    "id": 6490,
+    "name": "Boskie fortyfikacje władcy"
+  },
+  {
+    "id": 6400,
+    "name": "Odmowa"
+  },
+  {
+    "id": 6520,
+    "name": "Przynęta cieni"
+  },
+  {
+    "id": 6530,
+    "name": "Ciemność"
+  },
+  {
+    "id": 6510,
+    "name": "Nadejście zabójcy"
+  },
+  {
+    "id": 6600,
+    "name": "Złota przysięga"
+  },
+  {
+    "id": 6330,
+    "name": "Złota bariera"
+  },
+  {
+    "id": 7903,
+    "name": "Fortyfikacja złotej błyskawicy"
+  },
+  {
+    "id": 6340,
+    "name": "Ochrona Złotego Drzewa"
+  },
+  {
+    "id": 6410,
+    "name": "Gniew złota"
+  },
+  {
+    "id": 6424,
+    "name": "Leczenie Złotego Drzewa"
+  },
+  {
+    "id": 6430,
+    "name": "Nagroda błogosławieństwa"
+  },
+  {
+    "id": 6431,
+    "name": "Błogosławieństwo Złotego Drzewa"
+  },
+  {
+    "id": 7520,
+    "name": "Aspekty Tygla: Zionięcie"
+  },
+  {
+    "id": 7500,
+    "name": "Aspekty Tygla: Ogon"
+  },
+  {
+    "id": 7510,
+    "name": "Aspekty Tygla: Rogi"
+  },
+  {
+    "id": 6720,
+    "name": "Eldeńskie gwiazdy"
+  },
+  {
+    "id": 7530,
+    "name": "Czarne ostrze"
+  },
+  {
+    "id": 6700,
+    "name": "Dysk światła"
+  },
+  {
+    "id": 6701,
+    "name": "Potrójne kręgi światła"
+  },
+  {
+    "id": 6710,
+    "name": "Kręgi światła Radagona"
+  },
+  {
+    "id": 6750,
+    "name": "Litania prawdziwej śmierci"
+  },
+  {
+    "id": 6780,
+    "name": "Leczenie Porządku"
+  },
+  {
+    "id": 6770,
+    "name": "Klinga Porządku"
+  },
+  {
+    "id": 6740,
+    "name": "Niezmienna tarcza"
+  },
+  {
+    "id": 6760,
+    "name": "Prawo przyczynowości"
+  },
+  {
+    "id": 6730,
+    "name": "Prawo regresji"
+  },
+  {
+    "id": 6900,
+    "name": "Włócznia błyskawic"
+  },
+  {
+    "id": 6920,
+    "name": "Uderzenie pioruna"
+  },
+  {
+    "id": 6930,
+    "name": "Udoskonalony piorun"
+  },
+  {
+    "id": 6940,
+    "name": "Włócznia błyskawic starożytnych smoków"
+  },
+  {
+    "id": 6910,
+    "name": "Uderzenie pioruna starożytnych smoków"
+  },
+  {
+    "id": 6950,
+    "name": "Glewia Lansseax"
+  },
+  {
+    "id": 6941,
+    "name": "Włócznia błyskawic Fortissaxa"
+  },
+  {
+    "id": 6921,
+    "name": "Zamarznięta włócznia błyskawic"
+  },
+  {
+    "id": 5040,
+    "name": "Błyskawica śmierci"
+  },
+  {
+    "id": 6960,
+    "name": "Naelektryzowanie oręża"
+  },
+  {
+    "id": 6971,
+    "name": "Błogosławieństwo smoczego pioruna"
+  },
+  {
+    "id": 6970,
+    "name": "Smoczy piorun Vykego"
+  },
+  {
+    "id": 6000,
+    "name": "Zapalenie"
+  },
+  {
+    "id": 6001,
+    "name": "O, płomieniu!"
+  },
+  {
+    "id": 6010,
+    "name": "Proca płomienia"
+  },
+  {
+    "id": 6100,
+    "name": "Niech pochłonie cię ogień olbrzymów"
+  },
+  {
+    "id": 6020,
+    "name": "Ogniu, pochłoń ich"
+  },
+  {
+    "id": 6110,
+    "name": "Płomień okrutnego boga"
+  },
+  {
+    "id": 6220,
+    "name": "Ogniu, rośnij!"
+  },
+  {
+    "id": 6030,
+    "name": "Ogniu, wiruj!"
+  },
+  {
+    "id": 6120,
+    "name": "Ogniu, płoń!"
+  },
+  {
+    "id": 6040,
+    "name": "Ogniu, oczyść mnie"
+  },
+  {
+    "id": 6060,
+    "name": "Ogniu, chroń mnie"
+  },
+  {
+    "id": 6050,
+    "name": "Ogniu, daj mi siłę"
+  },
+  {
+    "id": 7900,
+    "name": "Śmiertelny grzech ognia"
+  },
+  {
+    "id": 6210,
+    "name": "Czarny płomień"
+  },
+  {
+    "id": 6230,
+    "name": "Oczyszczający czarny płomień"
+  },
+  {
+    "id": 6240,
+    "name": "Rytuał czarnego płomienia"
+  },
+  {
+    "id": 6250,
+    "name": "Klinga czarnego płomienia"
+  },
+  {
+    "id": 6260,
+    "name": "Ochrona czarnego płomienia"
+  },
+  {
+    "id": 6270,
+    "name": "Szlachetna obecność"
+  },
+  {
+    "id": 6820,
+    "name": "Szpon bestii"
+  },
+  {
+    "id": 6830,
+    "name": "Szpon bestii Gurranqa"
+  },
+  {
+    "id": 6800,
+    "name": "Proca bestii"
+  },
+  {
+    "id": 6810,
+    "name": "Kamień Gurranqa"
+  },
+  {
+    "id": 6850,
+    "name": "Wytrzymałość bestii"
+  },
+  {
+    "id": 6840,
+    "name": "Żywotność bestii"
+  },
+  {
+    "id": 7210,
+    "name": "Rój much"
+  },
+  {
+    "id": 6300,
+    "name": "Szpony krwawego płomienia"
+  },
+  {
+    "id": 6310,
+    "name": "Dar krwi"
+  },
+  {
+    "id": 6320,
+    "name": "Ostrze krwawego płomienia"
+  },
+  {
+    "id": 7220,
+    "name": "Trująca mgła"
+  },
+  {
+    "id": 7200,
+    "name": "Nici szkodników"
+  },
+  {
+    "id": 7230,
+    "name": "Zatrucie oręża"
+  },
+  {
+    "id": 7240,
+    "name": "Szkarłatna Aeonia"
+  },
+  {
+    "id": 7310,
+    "name": "Płomień szału"
+  },
+  {
+    "id": 7311,
+    "name": "Nieznośny szał"
+  },
+  {
+    "id": 7320,
+    "name": "Wybuch szału"
+  },
+  {
+    "id": 7330,
+    "name": "Skowyt Shabririego"
+  },
+  {
+    "id": 7300,
+    "name": "Nieuchronny szał"
+  },
+  {
+    "id": 7000,
+    "name": "Smoczy ogień"
+  },
+  {
+    "id": 7001,
+    "name": "Płomień Agheela"
+  },
+  {
+    "id": 7010,
+    "name": "Magmowe zionięcie"
+  },
+  {
+    "id": 7011,
+    "name": "Magma Theodorixa"
+  },
+  {
+    "id": 7040,
+    "name": "Błyskamienne zionięcie"
+  },
+  {
+    "id": 7041,
+    "name": "Błyskamienne zionięcie Smaraga"
+  },
+  {
+    "id": 7030,
+    "name": "Zionięcie zgnilizną"
+  },
+  {
+    "id": 7031,
+    "name": "Rozkład Ekzykesa"
+  },
+  {
+    "id": 7020,
+    "name": "Smoczy lód"
+  },
+  {
+    "id": 7021,
+    "name": "Mgła Borealisa"
+  },
+  {
+    "id": 7050,
+    "name": "Ruina Placidusaxa"
+  },
+  {
+    "id": 7060,
+    "name": "Smoczy szpon"
+  },
+  {
+    "id": 7080,
+    "name": "Smocza paszcza"
+  },
+  {
+    "id": 7090,
+    "name": "Ryk Greyoll"
+  }
+]

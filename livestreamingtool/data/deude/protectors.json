@@ -1,0 +1,2171 @@
+[
+  {
+    "id": 1020100,
+    "name": "Kleidung der Reisenden"
+  },
+  {
+    "id": 1020200,
+    "name": "Armschutz der Reisenden"
+  },
+  {
+    "id": 1020300,
+    "name": "Stiefel der Reisenden"
+  },
+  {
+    "id": 810000,
+    "name": "Bürgerstirnband"
+  },
+  {
+    "id": 811000,
+    "name": "Bürgerstirnband (Geänd.)"
+  },
+  {
+    "id": [
+      810100,
+      811100
+    ],
+    "name": "Bürgerkleidung/Bürgerkleidung (Geänd.)"
+  },
+  {
+    "id": [
+      812000,
+      812100
+    ],
+    "name": "Einfache Bürgerkleidung/Einfache Bürgerkleidung (Geänd.)"
+  },
+  {
+    "id": 810300,
+    "name": "Bürgerschuhe"
+  },
+  {
+    "id": 370000,
+    "name": "Aristokraten-Stirnband"
+  },
+  {
+    "id": 380000,
+    "name": "Aristokraten-Hut"
+  },
+  {
+    "id": 370100,
+    "name": "Aristokraten-Kleidung"
+  },
+  {
+    "id": 371100,
+    "name": "Aristokraten-Kleidung (Geänd.)"
+  },
+  {
+    "id": 380100,
+    "name": "Aristokraten-Mantel"
+  },
+  {
+    "id": 370300,
+    "name": "Aristokraten-Stiefel"
+  },
+  {
+    "id": 390000,
+    "name": "Alte Aristokraten-Haube"
+  },
+  {
+    "id": 390100,
+    "name": "Altes Aristokraten-Gewand"
+  },
+  {
+    "id": 390300,
+    "name": "Alte Aristokraten-Schuhe"
+  },
+  {
+    "id": 220000,
+    "name": "Pagen-Kapuze"
+  },
+  {
+    "id": [
+      220100,
+      221100
+    ],
+    "name": "Pagen-Kleidung/Pagen-Kleidung (Geänd.)"
+  },
+  {
+    "id": 220300,
+    "name": "Pagen-Hose"
+  },
+  {
+    "id": 1990000,
+    "name": "Edle Pagen-Kapuze"
+  },
+  {
+    "id": [
+      1990100,
+      1991100
+    ],
+    "name": "Edle Pagen-Kleidung/Edle Pagen-Kleidung (Geänd.)"
+  },
+  {
+    "id": 330000,
+    "name": "Wächtermaske"
+  },
+  {
+    "id": 331100,
+    "name": "Wächtergewand"
+  },
+  {
+    "id": 330100,
+    "name": "Wächtergewand (Volle Blüte)"
+  },
+  {
+    "id": 330200,
+    "name": "Wächterarmschutz"
+  },
+  {
+    "id": 330300,
+    "name": "Wächterbeinschutz"
+  },
+  {
+    "id": [
+      800000,
+      801000
+    ],
+    "name": "Festliche Kapuze/Festliche Kapuze (Geänd.)"
+  },
+  {
+    "id": 800100,
+    "name": "Festliche Kleidung"
+  },
+  {
+    "id": 801100,
+    "name": "Festliche Kleidung (Geänd.)"
+  },
+  {
+    "id": 802000,
+    "name": "Festliche blaue Kapuze"
+  },
+  {
+    "id": 802100,
+    "name": "Festliche blaue Kleidung"
+  },
+  {
+    "id": 160000,
+    "name": "Kapuze der Schuldigen"
+  },
+  {
+    "id": 160100,
+    "name": "Stoffkleidung"
+  },
+  {
+    "id": 160300,
+    "name": "Stoffhose"
+  },
+  {
+    "id": 890000,
+    "name": "Eiserne Gefangenenmaske"
+  },
+  {
+    "id": 890100,
+    "name": "Gefangenenkleidung"
+  },
+  {
+    "id": 890300,
+    "name": "Gefangenenhose"
+  },
+  {
+    "id": 891000,
+    "name": "Eisenmaske der Schwarzwache"
+  },
+  {
+    "id": 964000,
+    "name": "Blutgetränkte Maske"
+  },
+  {
+    "id": 964100,
+    "name": "Beamtenkleidung"
+  },
+  {
+    "id": 963200,
+    "name": "Blutgetränkte Manschetten"
+  },
+  {
+    "id": 2020000,
+    "name": "Schwarze Knute"
+  },
+  {
+    "id": 1130000,
+    "name": "Pilzkopf"
+  },
+  {
+    "id": 2010000,
+    "name": "Pilzkrone"
+  },
+  {
+    "id": 1130100,
+    "name": "Pilzkörper"
+  },
+  {
+    "id": 1130200,
+    "name": "Pilzarme"
+  },
+  {
+    "id": 1130300,
+    "name": "Pilzbeine"
+  },
+  {
+    "id": 630000,
+    "name": "Astrologenkapuze"
+  },
+  {
+    "id": [
+      630100,
+      631100
+    ],
+    "name": "Astrologenrobe/Astrologenrobe (Geänd.)"
+  },
+  {
+    "id": 630200,
+    "name": "Astrologenhandschuhe"
+  },
+  {
+    "id": 630300,
+    "name": "Astrologenhose"
+  },
+  {
+    "id": 1030000,
+    "name": "Kappe der jungen Gelehrten"
+  },
+  {
+    "id": 1030100,
+    "name": "Robe der jungen Gelehrten"
+  },
+  {
+    "id": 833000,
+    "name": "Schimmersteinkrone von Haus Karolos"
+  },
+  {
+    "id": 831000,
+    "name": "Schimmersteinkrone von Haus Olivinus"
+  },
+  {
+    "id": 830000,
+    "name": "Schimmersteinkrone von Haus Zwillingsweis"
+  },
+  {
+    "id": 834000,
+    "name": "Schimmersteinkrone der Hexe"
+  },
+  {
+    "id": 830100,
+    "name": "Robe von Raya Lucaria"
+  },
+  {
+    "id": 830200,
+    "name": "Zauberer-Manschetten"
+  },
+  {
+    "id": 830300,
+    "name": "Zauberer-Beinwickel"
+  },
+  {
+    "id": 832000,
+    "name": "Schimmersteinkrone von Haus Lazuli"
+  },
+  {
+    "id": 2030000,
+    "name": "Lazuli-Robe"
+  },
+  {
+    "id": 1000000,
+    "name": "Schimmersteinkrone von Haus Haima"
+  },
+  {
+    "id": 1000100,
+    "name": "Kriegsmagier-Robe"
+  },
+  {
+    "id": 1000200,
+    "name": "Kriegsmagier-Manschetten"
+  },
+  {
+    "id": 1000300,
+    "name": "Kriegsmagier-Beinwickel"
+  },
+  {
+    "id": 990000,
+    "name": "Schimmersteinkrone von Haus Hierodas"
+  },
+  {
+    "id": [
+      990100,
+      991100
+    ],
+    "name": "Robe des abtrünnigen Zauberers/Robe des abtrünnigen Zauberers (Geänd.)"
+  },
+  {
+    "id": 990200,
+    "name": "Manschetten des abtrünnigen Zauberers"
+  },
+  {
+    "id": 990300,
+    "name": "Stiefel des abtrünnigen Zauberers"
+  },
+  {
+    "id": 130000,
+    "name": "Spitzhut der Zauberklinge"
+  },
+  {
+    "id": [
+      130100,
+      131100
+    ],
+    "name": "Reisekleidung der Zauberklinge/Reisekleidung der Zauberklinge (Geänd.)"
+  },
+  {
+    "id": 130200,
+    "name": "Handschuhe der Zauberklinge"
+  },
+  {
+    "id": 130300,
+    "name": "Hose der Zauberklinge"
+  },
+  {
+    "id": [
+      120000,
+      121000
+    ],
+    "name": "Alberichs Spitzhut/Alberichs Spitzhut (Geänd.)"
+  },
+  {
+    "id": [
+      120100,
+      121100
+    ],
+    "name": "Alberichs Robe/Alberichs Robe (Geänd.)"
+  },
+  {
+    "id": 120200,
+    "name": "Alberichs Armschutz"
+  },
+  {
+    "id": 120300,
+    "name": "Alberichs Hose"
+  },
+  {
+    "id": 910000,
+    "name": "Großer Präzeptorenhut"
+  },
+  {
+    "id": [
+      910100,
+      911100
+    ],
+    "name": "Langes Präzeptorengewand/Langes Präzeptorengewand (Geänd.)"
+  },
+  {
+    "id": 910200,
+    "name": "Präzeptorenhandschuhe"
+  },
+  {
+    "id": 910300,
+    "name": "Präzeptorenhose"
+  },
+  {
+    "id": 911000,
+    "name": "Maske des Vertrauens"
+  },
+  {
+    "id": 581000,
+    "name": "Azurs Schimmersteinkrone"
+  },
+  {
+    "id": 581100,
+    "name": "Azurs Schimmersteinrobe"
+  },
+  {
+    "id": 581200,
+    "name": "Azurs Manschetten"
+  },
+  {
+    "id": 580000,
+    "name": "Lusats Schimmersteinkrone"
+  },
+  {
+    "id": 580100,
+    "name": "Lusats Robe"
+  },
+  {
+    "id": 580200,
+    "name": "Lusats Manschetten"
+  },
+  {
+    "id": 580300,
+    "name": "Beinwickel des alten Zauberers"
+  },
+  {
+    "id": 510000,
+    "name": "Halbmondkrone der Königin"
+  },
+  {
+    "id": 510100,
+    "name": "Robe der Königin"
+  },
+  {
+    "id": 510200,
+    "name": "Armreife der Königin"
+  },
+  {
+    "id": 510300,
+    "name": "Hose der Königin"
+  },
+  {
+    "id": 1010000,
+    "name": "Hut der Schneehexe"
+  },
+  {
+    "id": [
+      1010100,
+      1011100
+    ],
+    "name": "Robe der Schneehexe/Robe der Schneehexe (Geänd.)"
+  },
+  {
+    "id": 1010300,
+    "name": "Rock der Schneehexe"
+  },
+  {
+    "id": 1940000,
+    "name": "Fias Kapuze"
+  },
+  {
+    "id": [
+      1940100,
+      1941100
+    ],
+    "name": "Fias Robe/Fias Robe (Geänd.)"
+  },
+  {
+    "id": 1930100,
+    "name": "Sterbebettkleid"
+  },
+  {
+    "id": 620000,
+    "name": "Prophetenaugenbinde"
+  },
+  {
+    "id": [
+      621100,
+      622100
+    ],
+    "name": "Prophetenrobe (Geänd.)/Prophetenrobe"
+  },
+  {
+    "id": 620300,
+    "name": "Prophetenhose"
+  },
+  {
+    "id": 620100,
+    "name": "Corhyns Robe"
+  },
+  {
+    "id": 900000,
+    "name": "Kapuze der Wanderjungfer"
+  },
+  {
+    "id": [
+      900100,
+      901100
+    ],
+    "name": "Robe der Wanderjungfer/Robe der Wanderjungfer (Geänd.)"
+  },
+  {
+    "id": 900200,
+    "name": "Handschuhe der Wanderjungfer"
+  },
+  {
+    "id": 900300,
+    "name": "Stiefel der Wanderjungfer"
+  },
+  {
+    "id": 902000,
+    "name": "Haarband der Fingerjungfer"
+  },
+  {
+    "id": [
+      902100,
+      903100
+    ],
+    "name": "Robe der Fingerjungfer/Robe der Fingerjungfer (Geänd.)"
+  },
+  {
+    "id": 902300,
+    "name": "Schuhe der Fingerjungfer"
+  },
+  {
+    "id": 430000,
+    "name": "Weisenkapuze"
+  },
+  {
+    "id": 430100,
+    "name": "Weisenrobe"
+  },
+  {
+    "id": 430300,
+    "name": "Weisenhose"
+  },
+  {
+    "id": 1600000,
+    "name": "Großkapuze"
+  },
+  {
+    "id": 1040000,
+    "name": "Strahlende Goldmaske"
+  },
+  {
+    "id": 1040100,
+    "name": "Lumpen der Goldenen Maske"
+  },
+  {
+    "id": 1040200,
+    "name": "Goldene Armreife"
+  },
+  {
+    "id": 1040300,
+    "name": "Goldener Hüftwickel"
+  },
+  {
+    "id": 90000,
+    "name": "Parfümeurkapuze"
+  },
+  {
+    "id": [
+      90100,
+      91100
+    ],
+    "name": "Parfümeurrobe/Parfümeurrobe (Geänd.)"
+  },
+  {
+    "id": 90200,
+    "name": "Parfümeurhandschuhe"
+  },
+  {
+    "id": 90300,
+    "name": "Parfümeursarong"
+  },
+  {
+    "id": 100000,
+    "name": "Hut des Reisenden"
+  },
+  {
+    "id": [
+      100100,
+      101100
+    ],
+    "name": "Kleidung des Reisenden/Kleidung des Reisenden (Geänd.)"
+  },
+  {
+    "id": 100200,
+    "name": "Handschuhe des Reisenden"
+  },
+  {
+    "id": 100300,
+    "name": "Hose des Reisenden"
+  },
+  {
+    "id": 540000,
+    "name": "Kopftuch des wahnsinnigen Parfümeurs"
+  },
+  {
+    "id": [
+      540100,
+      541100
+    ],
+    "name": "Robe des wahnsinnigen Parfümeurs/Robe des wahnsinnigen Parfümeurs (Geänd.)"
+  },
+  {
+    "id": 540200,
+    "name": "Handschuhe des wahnsinnigen Parfümeurs"
+  },
+  {
+    "id": 540300,
+    "name": "Hose des wahnsinnigen Parfümeurs"
+  },
+  {
+    "id": 962100,
+    "name": "Robe der Oberschicht"
+  },
+  {
+    "id": 961000,
+    "name": "Herrschermaske"
+  },
+  {
+    "id": 961100,
+    "name": "Herrscherrobe"
+  },
+  {
+    "id": 960000,
+    "name": "Maske der Gefährtin"
+  },
+  {
+    "id": 960100,
+    "name": "Kleidung der Gefährtin"
+  },
+  {
+    "id": 960300,
+    "name": "Hose der Gefährtin"
+  },
+  {
+    "id": 963000,
+    "name": "Maske der Marais"
+  },
+  {
+    "id": 963100,
+    "name": "Robe der Marais"
+  },
+  {
+    "id": 300000,
+    "name": "Großes gehörntes Stirnband"
+  },
+  {
+    "id": 300100,
+    "name": "Pelzkleidung"
+  },
+  {
+    "id": 300300,
+    "name": "Pelzgamaschen"
+  },
+  {
+    "id": 301000,
+    "name": "Glänzendes gehörntes Stirnband"
+  },
+  {
+    "id": 301100,
+    "name": "Felle des Schamanen"
+  },
+  {
+    "id": 301300,
+    "name": "Gamaschen des Schamanen"
+  },
+  {
+    "id": 520000,
+    "name": "Kapuze der Apostel der Götterskalpe"
+  },
+  {
+    "id": 520100,
+    "name": "Robe der Apostel der Götterskalpe"
+  },
+  {
+    "id": 520200,
+    "name": "Armschutz der Apostel der Götterskalpe"
+  },
+  {
+    "id": 520300,
+    "name": "Hose der Apostel der Götterskalpe"
+  },
+  {
+    "id": 530000,
+    "name": "Kapuze der Adligen der Götterskalpe"
+  },
+  {
+    "id": 530100,
+    "name": "Robe der Adligen der Götterskalpe"
+  },
+  {
+    "id": 530200,
+    "name": "Armreife der Adligen der Götterskalpe"
+  },
+  {
+    "id": 530300,
+    "name": "Hose der Adligen der Götterskalpe"
+  },
+  {
+    "id": 1050100,
+    "name": "Umhang des Grausamen Mals"
+  },
+  {
+    "id": 320000,
+    "name": "Kapuze des Blutadligen"
+  },
+  {
+    "id": 320100,
+    "name": "Robe des Blutadligen"
+  },
+  {
+    "id": 320300,
+    "name": "Lendentuch des Blutadligen"
+  },
+  {
+    "id": [
+      480100,
+      481100
+    ],
+    "name": "Robe des Fürsten des Blutes/Robe des Fürsten des Blutes (Geänd.)"
+  },
+  {
+    "id": 1910000,
+    "name": "Purpurtränenskarabäus"
+  },
+  {
+    "id": 1920000,
+    "name": "Himmelstränenskarabäus"
+  },
+  {
+    "id": 1900000,
+    "name": "Kriegsaschenskarabäus"
+  },
+  {
+    "id": 1902000,
+    "name": "Schimmersteinskarabäus"
+  },
+  {
+    "id": 1901000,
+    "name": "Anrufungsskarabäus"
+  },
+  {
+    "id": 1080000,
+    "name": "Wichtkopf (Katze)"
+  },
+  {
+    "id": 1084000,
+    "name": "Wichtkopf (Wolf)"
+  },
+  {
+    "id": 1081000,
+    "name": "Wichtkopf (Mit Reißzähnen)"
+  },
+  {
+    "id": 1082000,
+    "name": "Wichtkopf (Langzüngig)"
+  },
+  {
+    "id": 1083000,
+    "name": "Wichtkopf (Leiche)"
+  },
+  {
+    "id": 1085000,
+    "name": "Wichtkopf (Ältester)"
+  },
+  {
+    "id": 1300000,
+    "name": "Noxspiegelhelm"
+  },
+  {
+    "id": 1301000,
+    "name": "Ijis Spiegelhelm"
+  },
+  {
+    "id": 1090000,
+    "name": "Silbertränenmaske"
+  },
+  {
+    "id": 820000,
+    "name": "Gesandtenkrone"
+  },
+  {
+    "id": 1110000,
+    "name": "Oktopuskopf"
+  },
+  {
+    "id": 1120000,
+    "name": "Gefäß"
+  },
+  {
+    "id": 1060000,
+    "name": "Albinauric-Maske"
+  },
+  {
+    "id": 1060100,
+    "name": "Schmutziger Kettenschutz"
+  },
+  {
+    "id": 1400000,
+    "name": "Schwarze Kapuze"
+  },
+  {
+    "id": 1400100,
+    "name": "Lederrüstung"
+  },
+  {
+    "id": 1400200,
+    "name": "Lederhandschuhe"
+  },
+  {
+    "id": 1400300,
+    "name": "Lederstiefel"
+  },
+  {
+    "id": 670000,
+    "name": "Haube aus blauem Stoff"
+  },
+  {
+    "id": 670100,
+    "name": "Weste aus blauem Stoff"
+  },
+  {
+    "id": 670200,
+    "name": "Kriegerstulpen"
+  },
+  {
+    "id": 670300,
+    "name": "Kriegerbeinschutz"
+  },
+  {
+    "id": 740000,
+    "name": "Blutrote Kapuze"
+  },
+  {
+    "id": 741000,
+    "name": "Dunkelblaue Kapuze"
+  },
+  {
+    "id": 740100,
+    "name": "Adligenreisekleidung"
+  },
+  {
+    "id": 740200,
+    "name": "Adligenhandschuhe"
+  },
+  {
+    "id": 740300,
+    "name": "Adligenhose"
+  },
+  {
+    "id": 680000,
+    "name": "Weiße Maske"
+  },
+  {
+    "id": [
+      680100,
+      681100
+    ],
+    "name": "Gewand der Feldchirurgen/Gewand der Feldchirurgen (Geänd.)"
+  },
+  {
+    "id": 680200,
+    "name": "Handschuhe der Feldchirurgen"
+  },
+  {
+    "id": 680300,
+    "name": "Hose der Feldchirurgen"
+  },
+  {
+    "id": 250000,
+    "name": "Hut des nomadischen Händlers"
+  },
+  {
+    "id": [
+      250100,
+      251100
+    ],
+    "name": "Kleidung des nomadischen Händlers/Kleidung des nomadischen Händlers (Geänd.)"
+  },
+  {
+    "id": 250300,
+    "name": "Hose des nomadischen Händlers"
+  },
+  {
+    "id": 1401000,
+    "name": "Banditenmaske"
+  },
+  {
+    "id": 931100,
+    "name": "Banditenkleidung"
+  },
+  {
+    "id": 930200,
+    "name": "Banditenmanschetten"
+  },
+  {
+    "id": 930300,
+    "name": "Banditenstiefel"
+  },
+  {
+    "id": [
+      880000,
+      881000
+    ],
+    "name": "Bekennerkapuze/Bekennerkapuze (Geänd.)"
+  },
+  {
+    "id": [
+      880100,
+      881100
+    ],
+    "name": "Bekennerkleidung/Bekennerkleidung (Geänd.)"
+  },
+  {
+    "id": 880200,
+    "name": "Bekennerhandschuhe"
+  },
+  {
+    "id": 880300,
+    "name": "Bekennerstiefel"
+  },
+  {
+    "id": 1890000,
+    "name": "Maske des grinsenden Mals"
+  },
+  {
+    "id": 1890100,
+    "name": "Robe der Maltöter"
+  },
+  {
+    "id": 1890200,
+    "name": "Lange Handschuhe der Maltöter"
+  },
+  {
+    "id": 1890300,
+    "name": "Stiefel der Maltöter"
+  },
+  {
+    "id": 930000,
+    "name": "Skelettmaske"
+  },
+  {
+    "id": 930100,
+    "name": "Schwarze Raubvogelfedern"
+  },
+  {
+    "id": 1830000,
+    "name": "Fußsoldaten-Kappe"
+  },
+  {
+    "id": 1830100,
+    "name": "Kettenbesetzter Tabard"
+  },
+  {
+    "id": 1830200,
+    "name": "Fußsoldaten-Stulpen"
+  },
+  {
+    "id": 1830300,
+    "name": "Fußsoldaten-Beinschutz"
+  },
+  {
+    "id": 1840000,
+    "name": "Fußsoldaten-Helm"
+  },
+  {
+    "id": 1840100,
+    "name": "Fußsoldaten-Tabard"
+  },
+  {
+    "id": 1860000,
+    "name": "Fußsoldaten-Eisenhelm"
+  },
+  {
+    "id": 1860100,
+    "name": "Scharlachroter Tabard"
+  },
+  {
+    "id": 1850000,
+    "name": "Vergoldete Fußsoldaten-Kappe"
+  },
+  {
+    "id": 1850100,
+    "name": "Lederbesetzter Tabard"
+  },
+  {
+    "id": 1880000,
+    "name": "Helm der heiligen Krone"
+  },
+  {
+    "id": 1880100,
+    "name": "Elfenbeinbesetzter Tabard"
+  },
+  {
+    "id": 1870100,
+    "name": "Blutgetränkter Tabard"
+  },
+  {
+    "id": 1980000,
+    "name": "Wegelagerer-Kapuze"
+  },
+  {
+    "id": 1980100,
+    "name": "Wegelagerer-Stoffrüstung"
+  },
+  {
+    "id": 1980200,
+    "name": "Wegelagerer-Stulpen"
+  },
+  {
+    "id": 420000,
+    "name": "Helm der niederen Soldaten"
+  },
+  {
+    "id": 420100,
+    "name": "Rüstung der niederen Soldaten"
+  },
+  {
+    "id": 420200,
+    "name": "Handschuhe der niederen Soldaten"
+  },
+  {
+    "id": 420300,
+    "name": "Beinschutz der niederen Soldaten"
+  },
+  {
+    "id": 310000,
+    "name": "Duellantenhelm"
+  },
+  {
+    "id": [
+      310100,
+      311100
+    ],
+    "name": "Umhang der Grabhüter/Umhang der Grabhüter (Geänd.)"
+  },
+  {
+    "id": 310300,
+    "name": "Duellantenbeinschutz"
+  },
+  {
+    "id": 2000000,
+    "name": "Helm des verrotteten Duellanten"
+  },
+  {
+    "id": [
+      2000100,
+      2001100
+    ],
+    "name": "Verrotteter Grabhüterumhang/Verrotteter Grabhüterumhang (Geänd.)"
+  },
+  {
+    "id": 2000300,
+    "name": "Beinschutz des verrotteten Duellanten"
+  },
+  {
+    "id": [
+      290000,
+      291000
+    ],
+    "name": "Noxmönch-Kapuze/Noxmönch-Kapuze (Geänd.)"
+  },
+  {
+    "id": [
+      290100,
+      291100
+    ],
+    "name": "Noxmönch-Rüstung/Noxmönch-Rüstung (Geänd.)"
+  },
+  {
+    "id": 290200,
+    "name": "Nox-Armreife"
+  },
+  {
+    "id": 290300,
+    "name": "Nox-Beinschutz"
+  },
+  {
+    "id": [
+      292000,
+      294000
+    ],
+    "name": "Schwertmaidkrone der Nox/Schwertmaidkrone der Nox (Geänd.)"
+  },
+  {
+    "id": [
+      292100,
+      294100
+    ],
+    "name": "Schwertmaidrüstung der Nox/Schwertmaidrüstung der Nox (Geänd.)"
+  },
+  {
+    "id": 293000,
+    "name": "Zwillingskrone der Nachtjungfern"
+  },
+  {
+    "id": 293100,
+    "name": "Nachtjungfernrüstung"
+  },
+  {
+    "id": 730000,
+    "name": "Heldenstirnband"
+  },
+  {
+    "id": 730100,
+    "name": "Heldenschulterplatte"
+  },
+  {
+    "id": 730200,
+    "name": "Heldenarmschutz"
+  },
+  {
+    "id": 730300,
+    "name": "Heldengamaschen"
+  },
+  {
+    "id": 1100000,
+    "name": "Kettenhaube"
+  },
+  {
+    "id": 1100100,
+    "name": "Kettenrüstung"
+  },
+  {
+    "id": 1102100,
+    "name": "Baumwappenrock"
+  },
+  {
+    "id": 1101100,
+    "name": "Augenwappenrock"
+  },
+  {
+    "id": 1100200,
+    "name": "Stulpen"
+  },
+  {
+    "id": 1100300,
+    "name": "Kettenbeinschutz"
+  },
+  {
+    "id": 40000,
+    "name": "Eisenhelm"
+  },
+  {
+    "id": 40100,
+    "name": "Metallschuppenrüstung"
+  },
+  {
+    "id": 40200,
+    "name": "Eisenstulpen"
+  },
+  {
+    "id": 40300,
+    "name": "Lederhose"
+  },
+  {
+    "id": 1700000,
+    "name": "Godrick-Soldatenhelm"
+  },
+  {
+    "id": 1700100,
+    "name": "Godrick-Soldatenwappenrock"
+  },
+  {
+    "id": 1700200,
+    "name": "Godrick-Soldatenstulpen"
+  },
+  {
+    "id": 1700300,
+    "name": "Godrick-Soldatenbeinschutz"
+  },
+  {
+    "id": 1710000,
+    "name": "Kuckucks-Soldatenhelm"
+  },
+  {
+    "id": 1710100,
+    "name": "Kuckucks-Soldatenwappenrock"
+  },
+  {
+    "id": 1710200,
+    "name": "Kuckucks-Soldatenstulpen"
+  },
+  {
+    "id": 1710300,
+    "name": "Kuckucks-Soldatenbeinschutz"
+  },
+  {
+    "id": 1730000,
+    "name": "Radahn-Soldatenhelm"
+  },
+  {
+    "id": 1730100,
+    "name": "Radahn-Soldatenwappenrock"
+  },
+  {
+    "id": 1730200,
+    "name": "Radahn-Soldatenstulpen"
+  },
+  {
+    "id": 1730300,
+    "name": "Radahn-Soldatenbeinschutz"
+  },
+  {
+    "id": 1720000,
+    "name": "Leyndell-Soldatenhelm"
+  },
+  {
+    "id": 1720100,
+    "name": "Leyndell-Soldatenwappenrock"
+  },
+  {
+    "id": 1720200,
+    "name": "Leyndell-Soldatenstulpen"
+  },
+  {
+    "id": 1720300,
+    "name": "Leyndell-Soldatenbeinschutz"
+  },
+  {
+    "id": 1750000,
+    "name": "Haligbaum-Soldatenhelm"
+  },
+  {
+    "id": 1750100,
+    "name": "Haligbaum-Soldatenwappenrock"
+  },
+  {
+    "id": 1750200,
+    "name": "Haligbaum-Soldatenstulpen"
+  },
+  {
+    "id": 1750300,
+    "name": "Haligbaum-Soldatenbeinschutz"
+  },
+  {
+    "id": 1740100,
+    "name": "Mausoleums-Soldatenwappenrock"
+  },
+  {
+    "id": 1740200,
+    "name": "Mausoleums-Soldatenstulpen"
+  },
+  {
+    "id": 1740300,
+    "name": "Mausoleums-Soldatenbeinschutz"
+  },
+  {
+    "id": 190000,
+    "name": "Kapuze der Verbannten"
+  },
+  {
+    "id": 190100,
+    "name": "Rüstung der Verbannten"
+  },
+  {
+    "id": 190200,
+    "name": "Stulpen der Verbannten"
+  },
+  {
+    "id": 190300,
+    "name": "Beinschutz der Verbannten"
+  },
+  {
+    "id": 50000,
+    "name": "Kaiden-Helm"
+  },
+  {
+    "id": 50100,
+    "name": "Kaiden-Rüstung"
+  },
+  {
+    "id": 50200,
+    "name": "Kaiden-Stulpen"
+  },
+  {
+    "id": 50300,
+    "name": "Kaiden-Hose"
+  },
+  {
+    "id": 870000,
+    "name": "Schilflandhelm"
+  },
+  {
+    "id": [
+      870100,
+      871100
+    ],
+    "name": "Schilflandrüstung/Schilflandrüstung (Geänd.)"
+  },
+  {
+    "id": 870200,
+    "name": "Schilflandstulpen"
+  },
+  {
+    "id": 870300,
+    "name": "Schilflandbeinschutz"
+  },
+  {
+    "id": 872000,
+    "name": "Okina-Maske"
+  },
+  {
+    "id": 872100,
+    "name": "Rüstung der Weißen Halme"
+  },
+  {
+    "id": 872200,
+    "name": "Stulpen der Weißen Halme"
+  },
+  {
+    "id": 872300,
+    "name": "Beinschutz der Weißen Halme"
+  },
+  {
+    "id": 150000,
+    "name": "Eisenkasa"
+  },
+  {
+    "id": [
+      150100,
+      151100
+    ],
+    "name": "Ronin-Rüstung/Ronin-Rüstung (Geänd.)"
+  },
+  {
+    "id": 150200,
+    "name": "Ronin-Stulpen"
+  },
+  {
+    "id": 150300,
+    "name": "Ronin-Beinschutz"
+  },
+  {
+    "id": [
+      940000,
+      941000
+    ],
+    "name": "Kapuze des Exzentrikers/Kapuze des Exzentrikers (Geänd.)"
+  },
+  {
+    "id": 940100,
+    "name": "Rüstung des Exzentrikers"
+  },
+  {
+    "id": 940200,
+    "name": "Manschetten des Exzentrikers"
+  },
+  {
+    "id": 940300,
+    "name": "Kniehose des Exzentrikers"
+  },
+  {
+    "id": 840000,
+    "name": "Marionettensoldaten-Helm"
+  },
+  {
+    "id": 850000,
+    "name": "Marionettensoldaten-Vogelhelm"
+  },
+  {
+    "id": 840100,
+    "name": "Marionettensoldaten-Rüstung"
+  },
+  {
+    "id": 240000,
+    "name": "Blausilberne Kettenhaube"
+  },
+  {
+    "id": [
+      240100,
+      241100
+    ],
+    "name": "Blausilberne Kettenrüstung/Blausilberne Kettenrüstung (Geänd.)"
+  },
+  {
+    "id": 240200,
+    "name": "Blausilberne Armreife"
+  },
+  {
+    "id": 240300,
+    "name": "Blausilberner Kettenrock"
+  },
+  {
+    "id": 350000,
+    "name": "Feuermönch-Kapuze"
+  },
+  {
+    "id": 350100,
+    "name": "Feuermönch-Rüstung"
+  },
+  {
+    "id": 350200,
+    "name": "Feuermönch-Stulpen"
+  },
+  {
+    "id": 350300,
+    "name": "Feuermönch-Beinschutz"
+  },
+  {
+    "id": 351000,
+    "name": "Schwarzflammenmönch-Kapuze"
+  },
+  {
+    "id": 351100,
+    "name": "Schwarzflammenmönch-Rüstung"
+  },
+  {
+    "id": 351200,
+    "name": "Schwarzflammenmönch-Stulpen"
+  },
+  {
+    "id": 351300,
+    "name": "Schwarzflammenmönch-Beinschutz"
+  },
+  {
+    "id": 1070000,
+    "name": "Zamor-Maske"
+  },
+  {
+    "id": 1070100,
+    "name": "Zamor-Rüstung"
+  },
+  {
+    "id": 1070200,
+    "name": "Zamor-Armreife"
+  },
+  {
+    "id": 1070300,
+    "name": "Zamor-Beinwickel"
+  },
+  {
+    "id": 180000,
+    "name": "Kapuze der Schwarzen Klingen"
+  },
+  {
+    "id": [
+      180100,
+      181100
+    ],
+    "name": "Rüstung der Schwarzen Klingen/Rüstung der Schwarzen Klingen (Geänd.)"
+  },
+  {
+    "id": 180200,
+    "name": "Stulpen der Schwarzen Klingen"
+  },
+  {
+    "id": 180300,
+    "name": "Beinschutz der Schwarzen Klingen"
+  },
+  {
+    "id": 770000,
+    "name": "Malenias Flügelhelm"
+  },
+  {
+    "id": [
+      770100,
+      771100
+    ],
+    "name": "Malenias Rüstung/Malenias Rüstung (Geänd.)"
+  },
+  {
+    "id": 770200,
+    "name": "Malenias Stulpen"
+  },
+  {
+    "id": 770300,
+    "name": "Malenias Beinschutz"
+  },
+  {
+    "id": 460000,
+    "name": "Krone des Eldenfürsten"
+  },
+  {
+    "id": [
+      460100,
+      461100
+    ],
+    "name": "Rüstung des Eldenfürsten/Rüstung des Eldenfürsten (Geänd.)"
+  },
+  {
+    "id": 460200,
+    "name": "Armschutz des Eldenfürsten"
+  },
+  {
+    "id": 460300,
+    "name": "Beinschutz des Eldenfürsten"
+  },
+  {
+    "id": 1500000,
+    "name": "Ritterhelm"
+  },
+  {
+    "id": 1500100,
+    "name": "Ritterrüstung"
+  },
+  {
+    "id": 1500200,
+    "name": "Ritterstulpen"
+  },
+  {
+    "id": 1500300,
+    "name": "Ritterbeinschutz"
+  },
+  {
+    "id": 660000,
+    "name": "Vagabundenritter-Helm"
+  },
+  {
+    "id": [
+      660100,
+      661100
+    ],
+    "name": "Vagabundenritter-Rüstung/Vagabundenritter-Rüstung (Geänd.)"
+  },
+  {
+    "id": 660200,
+    "name": "Vagabundenritter-Stulpen"
+  },
+  {
+    "id": 660300,
+    "name": "Vagabundenritter-Beinschutz"
+  },
+  {
+    "id": 1101000,
+    "name": "Großhelm"
+  },
+  {
+    "id": 980000,
+    "name": "Carianischer Ritterhelm"
+  },
+  {
+    "id": [
+      980100,
+      981100
+    ],
+    "name": "Carianische Ritterrüstung/Carianische Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 980200,
+    "name": "Carianische Ritterstulpen"
+  },
+  {
+    "id": 980300,
+    "name": "Carianischer Ritterbeinschutz"
+  },
+  {
+    "id": 1770000,
+    "name": "Godrick-Ritterhelm"
+  },
+  {
+    "id": [
+      1770100,
+      1771100
+    ],
+    "name": "Godrick-Ritterrüstung/Godrick-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1770200,
+    "name": "Godrick-Ritterstulpen"
+  },
+  {
+    "id": 1770300,
+    "name": "Godrick-Ritterbeinschutz"
+  },
+  {
+    "id": 1780000,
+    "name": "Kuckucks-Ritterhelm"
+  },
+  {
+    "id": [
+      1780100,
+      1781100
+    ],
+    "name": "Kuckucks-Ritterrüstung/Kuckucks-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1780200,
+    "name": "Kuckucks-Ritterstulpen"
+  },
+  {
+    "id": 1780300,
+    "name": "Kuckucks-Ritterbeinschutz"
+  },
+  {
+    "id": 1800000,
+    "name": "Radahn-Ritterhelm"
+  },
+  {
+    "id": [
+      1800100,
+      1801100
+    ],
+    "name": "Radahn-Ritterrüstung/Radahn-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1800200,
+    "name": "Radahn-Ritterstulpen"
+  },
+  {
+    "id": 1800300,
+    "name": "Radahn-Ritterbeinschutz"
+  },
+  {
+    "id": 1760000,
+    "name": "Gelmir-Ritterhelm"
+  },
+  {
+    "id": [
+      1760100,
+      1761100
+    ],
+    "name": "Gelmir-Ritterrüstung/Gelmir-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1760200,
+    "name": "Gelmir-Ritterstulpen"
+  },
+  {
+    "id": 1760300,
+    "name": "Gelmir-Ritterbeinschutz"
+  },
+  {
+    "id": 1790000,
+    "name": "Leyndell-Ritterhelm"
+  },
+  {
+    "id": [
+      1790100,
+      1791100
+    ],
+    "name": "Leyndell-Ritterrüstung/Leyndell-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1790200,
+    "name": "Leyndell-Ritterstulpen"
+  },
+  {
+    "id": 1790300,
+    "name": "Leyndell-Ritterbeinschutz"
+  },
+  {
+    "id": 1820000,
+    "name": "Haligbaum-Ritterhelm"
+  },
+  {
+    "id": [
+      1820100,
+      1821100
+    ],
+    "name": "Haligbaum-Ritterrüstung/Haligbaum-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 1820200,
+    "name": "Haligbaum-Ritterstulpen"
+  },
+  {
+    "id": 1820300,
+    "name": "Haligbaum-Ritterbeinschutz"
+  },
+  {
+    "id": [
+      1810100,
+      1811100
+    ],
+    "name": "Rüstung der Ritter des Mausoleums/Rüstung der Ritter des Mausoleums (Geänd.)"
+  },
+  {
+    "id": 1810200,
+    "name": "Stulpen der Ritter des Mausoleums"
+  },
+  {
+    "id": 1810300,
+    "name": "Beinschutz der Ritter des Mausoleums"
+  },
+  {
+    "id": 790000,
+    "name": "Bluthund-Ritterhelm"
+  },
+  {
+    "id": [
+      790100,
+      791100
+    ],
+    "name": "Bluthund-Ritterrüstung/Bluthund-Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 790200,
+    "name": "Bluthund-Ritterstulpen"
+  },
+  {
+    "id": 790300,
+    "name": "Bluthund-Ritterbeinschutz"
+  },
+  {
+    "id": [
+      340000,
+      341000
+    ],
+    "name": "Reinfäule-Helm/Reinfäule-Helm (Geänd.)"
+  },
+  {
+    "id": [
+      340100,
+      341100
+    ],
+    "name": "Reinfäule-Rüstung/Reinfäule-Rüstung (Geänd.)"
+  },
+  {
+    "id": 340200,
+    "name": "Reinfäule-Stulpen"
+  },
+  {
+    "id": 340300,
+    "name": "Reinfäule-Beinschutz"
+  },
+  {
+    "id": 860000,
+    "name": "Helm des blutigen Wolfs"
+  },
+  {
+    "id": [
+      860100,
+      861100
+    ],
+    "name": "Rüstung des blutigen Wolfs/Rüstung des blutigen Wolfs (Geänd.)"
+  },
+  {
+    "id": 860200,
+    "name": "Stulpen des blutigen Wolfs"
+  },
+  {
+    "id": 860300,
+    "name": "Beinschutz des blutigen Wolfs"
+  },
+  {
+    "id": 650000,
+    "name": "Hoslows Helm"
+  },
+  {
+    "id": 651000,
+    "name": "Diallos' Maske"
+  },
+  {
+    "id": [
+      650100,
+      652100
+    ],
+    "name": "Hoslows Rüstung/Hoslows Rüstung (Geänd.)"
+  },
+  {
+    "id": 650200,
+    "name": "Hoslows Stulpen"
+  },
+  {
+    "id": 650300,
+    "name": "Hoslows Beinschutz"
+  },
+  {
+    "id": 600000,
+    "name": "Zwillingshelm"
+  },
+  {
+    "id": [
+      600100,
+      601100
+    ],
+    "name": "Zwillingsrüstung/Zwillingsrüstung (Geänd.)"
+  },
+  {
+    "id": 600200,
+    "name": "Zwillingsstulpen"
+  },
+  {
+    "id": [
+      600300,
+      601300
+    ],
+    "name": "Zwillingsbeinschutz/Zwillingsbeinschutz (Geänd.)"
+  },
+  {
+    "id": [
+      60000,
+      61000
+    ],
+    "name": "Drachenritter-Helm/Drachenritter-Helm (Geänd.)"
+  },
+  {
+    "id": [
+      60100,
+      61100
+    ],
+    "name": "Drachenritter-Rüstung/Drachenritter-Rüstung (Geänd.)"
+  },
+  {
+    "id": 60200,
+    "name": "Drachenritter-Stulpen"
+  },
+  {
+    "id": 60300,
+    "name": "Drachenritter-Beinschutz"
+  },
+  {
+    "id": 170000,
+    "name": "Schwarze Wolfsmaske"
+  },
+  {
+    "id": [
+      170100,
+      171100
+    ],
+    "name": "Blaidds Rüstung/Blaidds Rüstung (Geänd.)"
+  },
+  {
+    "id": 170200,
+    "name": "Blaidds Stulpen"
+  },
+  {
+    "id": 170300,
+    "name": "Blaidds Beinschutz"
+  },
+  {
+    "id": 210000,
+    "name": "Dornenhelm"
+  },
+  {
+    "id": [
+      210100,
+      211100
+    ],
+    "name": "Dornenrüstung/Dornenrüstung (Geänd.)"
+  },
+  {
+    "id": 210200,
+    "name": "Dornenstulpen"
+  },
+  {
+    "id": 210300,
+    "name": "Dornenbeinschutz"
+  },
+  {
+    "id": 950000,
+    "name": "Fingerabdruckhelm"
+  },
+  {
+    "id": [
+      950100,
+      951100
+    ],
+    "name": "Fingerabdruckrüstung/Fingerabdruckrüstung (Geänd.)"
+  },
+  {
+    "id": 950200,
+    "name": "Fingerabdruckstulpen"
+  },
+  {
+    "id": 950300,
+    "name": "Fingerabdruckbeinschutz"
+  },
+  {
+    "id": 690000,
+    "name": "Helm des toten Königs"
+  },
+  {
+    "id": 690100,
+    "name": "Rüstung des toten Königs"
+  },
+  {
+    "id": 690200,
+    "name": "Stulpen des toten Königs"
+  },
+  {
+    "id": 690300,
+    "name": "Beinschutz des toten Königs"
+  },
+  {
+    "id": 590000,
+    "name": "Helm des Allwissenden"
+  },
+  {
+    "id": [
+      590100,
+      591100
+    ],
+    "name": "Rüstung des Allwissenden/Rüstung des Allwissenden (Geänd.)"
+  },
+  {
+    "id": 590200,
+    "name": "Stulpen des Allwissenden"
+  },
+  {
+    "id": 590300,
+    "name": "Beinschutz des Allwissenden"
+  },
+  {
+    "id": 280000,
+    "name": "Königlicher Ritterhelm"
+  },
+  {
+    "id": [
+      280100,
+      281100
+    ],
+    "name": "Königliche Ritterrüstung/Königliche Ritterrüstung (Geänd.)"
+  },
+  {
+    "id": 280200,
+    "name": "Königliche Ritterstulpen"
+  },
+  {
+    "id": 280300,
+    "name": "Königlicher Ritterbeinschutz"
+  },
+  {
+    "id": 760000,
+    "name": "Malikeths Helm"
+  },
+  {
+    "id": [
+      760100,
+      761100
+    ],
+    "name": "Malikeths Rüstung/Malikeths Rüstung (Geänd.)"
+  },
+  {
+    "id": 760200,
+    "name": "Malikeths Stulpen"
+  },
+  {
+    "id": 760300,
+    "name": "Malikeths Beinschutz"
+  },
+  {
+    "id": 200000,
+    "name": "Helm der verbannten Ritter"
+  },
+  {
+    "id": 201000,
+    "name": "Helm der verbannten Ritter (Geänd.)"
+  },
+  {
+    "id": 200100,
+    "name": "Rüstung der verbannten Ritter"
+  },
+  {
+    "id": 201100,
+    "name": "Rüstung der verbannten Ritter (Geänd.)"
+  },
+  {
+    "id": 200200,
+    "name": "Stulpen der verbannten Ritter"
+  },
+  {
+    "id": 200300,
+    "name": "Beinschutz der verbannten Ritter"
+  },
+  {
+    "id": [
+      230000,
+      231000
+    ],
+    "name": "Dunkelkavalleristen-Helm/Dunkelkavalleristen-Helm (Geänd.)"
+  },
+  {
+    "id": [
+      230100,
+      231100
+    ],
+    "name": "Dunkelkavalleristen-Rüstung/Dunkelkavalleristen-Rüstung (Geänd.)"
+  },
+  {
+    "id": 230200,
+    "name": "Dunkelkavalleristen-Stulpen"
+  },
+  {
+    "id": 230300,
+    "name": "Dunkelkavalleristen-Beinschutz"
+  },
+  {
+    "id": 780000,
+    "name": "Veteranenhelm"
+  },
+  {
+    "id": [
+      780100,
+      781100
+    ],
+    "name": "Veteranenrüstung/Veteranenrüstung (Geänd.)"
+  },
+  {
+    "id": 780200,
+    "name": "Veteranenstulpen"
+  },
+  {
+    "id": 780300,
+    "name": "Veteranenbeinschutz"
+  },
+  {
+    "id": 80000,
+    "name": "Schuppenhelm"
+  },
+  {
+    "id": [
+      80100,
+      81100
+    ],
+    "name": "Schuppenrüstung/Schuppenrüstung (Geänd.)"
+  },
+  {
+    "id": 80200,
+    "name": "Schuppenstulpen"
+  },
+  {
+    "id": 80300,
+    "name": "Schuppenbeinschutz"
+  },
+  {
+    "id": 720000,
+    "name": "Helm des Bestienhelden"
+  },
+  {
+    "id": [
+      720100,
+      721100
+    ],
+    "name": "Rüstung des Bestienhelden/Rüstung des Bestienhelden (Geänd.)"
+  },
+  {
+    "id": 720200,
+    "name": "Stulpen des Bestienhelden"
+  },
+  {
+    "id": 720300,
+    "name": "Beinschutz des Bestienhelden"
+  },
+  {
+    "id": 270000,
+    "name": "Baumwächter-Helm"
+  },
+  {
+    "id": [
+      270100,
+      271100
+    ],
+    "name": "Baumwächter-Rüstung/Baumwächter-Rüstung (Geänd.)"
+  },
+  {
+    "id": 270200,
+    "name": "Baumwächter-Stulpen"
+  },
+  {
+    "id": 270300,
+    "name": "Baumwächter-Beinschutz"
+  },
+  {
+    "id": 260000,
+    "name": "Deformierter Drachenhelm"
+  },
+  {
+    "id": 260100,
+    "name": "Deformierte Drachenrüstung"
+  },
+  {
+    "id": 260200,
+    "name": "Deformierte Drachenstulpen"
+  },
+  {
+    "id": 260300,
+    "name": "Deformierte Drachenbeinschutz"
+  },
+  {
+    "id": 570000,
+    "name": "Axthelm des Schmelztiegels"
+  },
+  {
+    "id": [
+      570100,
+      572100
+    ],
+    "name": "Axtrüstung des Schmelztiegels/Axtrüstung des Schmelztiegels (Geänd.)"
+  },
+  {
+    "id": 570200,
+    "name": "Stulpen des Schmelztiegels"
+  },
+  {
+    "id": 570300,
+    "name": "Beinschutz des Schmelztiegels"
+  },
+  {
+    "id": 571000,
+    "name": "Baumhelm des Schmelztiegels"
+  },
+  {
+    "id": [
+      571100,
+      573100
+    ],
+    "name": "Baumrüstung des Schmelztiegels/Baumrüstung des Schmelztiegels (Geänd.)"
+  },
+  {
+    "id": 470000,
+    "name": "Radahns Rotmähnenhelm"
+  },
+  {
+    "id": [
+      470100,
+      471100
+    ],
+    "name": "Radahns Löwenrüstung/Radahns Löwenrüstung (Geänd.)"
+  },
+  {
+    "id": 470200,
+    "name": "Radahns Stulpen"
+  },
+  {
+    "id": 470300,
+    "name": "Radahns Beinschutz"
+  },
+  {
+    "id": 640000,
+    "name": "Lionels Helm"
+  },
+  {
+    "id": [
+      640100,
+      641100
+    ],
+    "name": "Lionels Rüstung/Lionels Rüstung (Geänd.)"
+  },
+  {
+    "id": 640200,
+    "name": "Lionels Stulpen"
+  },
+  {
+    "id": 640300,
+    "name": "Lionels Beinschutz"
+  },
+  {
+    "id": 140000,
+    "name": "Ziegenbockhelm"
+  },
+  {
+    "id": 140100,
+    "name": "Ziegenbockrüstung"
+  },
+  {
+    "id": 140200,
+    "name": "Ziegenbockstulpen"
+  },
+  {
+    "id": 140300,
+    "name": "Ziegenbockbeinschutz"
+  },
+  {
+    "id": 970000,
+    "name": "Helm des Mals"
+  },
+  {
+    "id": 970100,
+    "name": "Rüstung des Mals"
+  },
+  {
+    "id": 970200,
+    "name": "Stulpen des Mals"
+  },
+  {
+    "id": 970300,
+    "name": "Beinschutz des Mals"
+  },
+  {
+    "id": 360000,
+    "name": "Feuerprälaten-Helm"
+  },
+  {
+    "id": 360100,
+    "name": "Feuerprälaten-Rüstung"
+  },
+  {
+    "id": 361100,
+    "name": "Feuerprälaten-Rüstung (Geänd.)"
+  },
+  {
+    "id": 360200,
+    "name": "Feuerprälaten-Stulpen"
+  },
+  {
+    "id": 360300,
+    "name": "Feuerprälaten-Beinschutz"
+  },
+  {
+    "id": 440000,
+    "name": "Kürbishelm"
+  }
+]

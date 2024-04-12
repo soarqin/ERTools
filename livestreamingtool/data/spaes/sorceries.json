@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Guijarro de piedras refulgentes"
+  },
+  {
+    "id": 4010,
+    "name": "Esquirla de piedra refulgente ligera"
+  },
+  {
+    "id": 4001,
+    "name": "Esquirla de piedra refulgente grande"
+  },
+  {
+    "id": 4020,
+    "name": "Cometa esquirlado de piedra refulgente"
+  },
+  {
+    "id": 4021,
+    "name": "Cometa"
+  },
+  {
+    "id": 4030,
+    "name": "Vórtice de esquirlas"
+  },
+  {
+    "id": 4040,
+    "name": "Estrellas de piedras refulgentes"
+  },
+  {
+    "id": 4050,
+    "name": "Lluvia estelar"
+  },
+  {
+    "id": 4070,
+    "name": "Arco de piedra refulgente"
+  },
+  {
+    "id": 4060,
+    "name": "Aluvión de cristales"
+  },
+  {
+    "id": 4090,
+    "name": "Estallido de cristales"
+  },
+  {
+    "id": 4080,
+    "name": "Cañonazo de Haima"
+  },
+  {
+    "id": 4120,
+    "name": "Maza de Haima"
+  },
+  {
+    "id": 4100,
+    "name": "Rompetierra"
+  },
+  {
+    "id": 4110,
+    "name": "Desintegrador de rocas"
+  },
+  {
+    "id": 4460,
+    "name": "Armamento de erudito"
+  },
+  {
+    "id": 4470,
+    "name": "Escudo de erudito"
+  },
+  {
+    "id": 4140,
+    "name": "Luz de las estrellas"
+  },
+  {
+    "id": 4130,
+    "name": "Terra Magica"
+  },
+  {
+    "id": 4630,
+    "name": "Barrera de Thops"
+  },
+  {
+    "id": 4200,
+    "name": "Cometa Azur"
+  },
+  {
+    "id": 4220,
+    "name": "Estrellas de ruina"
+  },
+  {
+    "id": 4210,
+    "name": "Lluvia de estrellas de Goliath"
+  },
+  {
+    "id": 4390,
+    "name": "Hoja refulgente mágica"
+  },
+  {
+    "id": 4300,
+    "name": "Círculo de hojas refulgentes"
+  },
+  {
+    "id": 4301,
+    "name": "Círculo cariano"
+  },
+  {
+    "id": 4302,
+    "name": "Círculo de espadones"
+  },
+  {
+    "id": 4370,
+    "name": "Aguacero mágico"
+  },
+  {
+    "id": 4380,
+    "name": "Arco grande de Loretta"
+  },
+  {
+    "id": 4381,
+    "name": "Dominio de Loretta"
+  },
+  {
+    "id": 4360,
+    "name": "Luna Llena de Rennala"
+  },
+  {
+    "id": 4361,
+    "name": "Luna Negra de Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Rebanador cariano"
+  },
+  {
+    "id": 4430,
+    "name": "Espadón refulgente cariano"
+  },
+  {
+    "id": 4450,
+    "name": "Punzada cariana"
+  },
+  {
+    "id": 4431,
+    "name": "Hoja lunar de Adula"
+  },
+  {
+    "id": 4480,
+    "name": "Lucidez"
+  },
+  {
+    "id": 4640,
+    "name": "Represalia de los Caria"
+  },
+  {
+    "id": 4600,
+    "name": "Esquirla trampa"
+  },
+  {
+    "id": 4610,
+    "name": "Esquirla nocturna"
+  },
+  {
+    "id": 4620,
+    "name": "Cometa nocturno"
+  },
+  {
+    "id": 6500,
+    "name": "Niebla de doncella nocturna"
+  },
+  {
+    "id": 4660,
+    "name": "Hoja invisible"
+  },
+  {
+    "id": 4670,
+    "name": "Formación invisible"
+  },
+  {
+    "id": 4650,
+    "name": "Oscuridad eterna"
+  },
+  {
+    "id": 4800,
+    "name": "Disparo de magma"
+  },
+  {
+    "id": 4820,
+    "name": "Magma lodoso"
+  },
+  {
+    "id": 4810,
+    "name": "Ira de Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Rencor de Rykard"
+  },
+  {
+    "id": 4400,
+    "name": "Risco helado de piedras refulgentes"
+  },
+  {
+    "id": 4420,
+    "name": "Niebla glacial"
+  },
+  {
+    "id": 4490,
+    "name": "Congelar armamento"
+  },
+  {
+    "id": 4410,
+    "name": "Tormenta helada de Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Cristal devastador"
+  },
+  {
+    "id": 4520,
+    "name": "Torrente de cristal"
+  },
+  {
+    "id": 4510,
+    "name": "Liberación de cristal"
+  },
+  {
+    "id": 4720,
+    "name": "Pozo de gravedad"
+  },
+  {
+    "id": 4721,
+    "name": "Estrellas en colapso"
+  },
+  {
+    "id": 4710,
+    "name": "Lanzarrocas"
+  },
+  {
+    "id": 4700,
+    "name": "Meteoritos"
+  },
+  {
+    "id": 4701,
+    "name": "Meteoritos de Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Burbujas oraculares"
+  },
+  {
+    "id": 5110,
+    "name": "Gran burbuja oracular"
+  },
+  {
+    "id": 4900,
+    "name": "Zarza pecaminosa"
+  },
+  {
+    "id": 4910,
+    "name": "Zarza de castigo"
+  },
+  {
+    "id": 5000,
+    "name": "Llamada del rencor"
+  },
+  {
+    "id": 5001,
+    "name": "Rencor mortal antiguo"
+  },
+  {
+    "id": 5010,
+    "name": "Llama espectral explosiva"
+  },
+  {
+    "id": 5020,
+    "name": "Niebla de Fia"
+  },
+  {
+    "id": 5030,
+    "name": "Invocaciones tibiales"
+  }
+]

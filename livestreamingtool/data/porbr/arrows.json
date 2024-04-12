@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Flecha"
+  },
+  {
+    "id": 50010000,
+    "name": "Flecha de Fogo"
+  },
+  {
+    "id": 50020000,
+    "name": "Flecha Serpente"
+  },
+  {
+    "id": 50030000,
+    "name": "Flecha Óssea (Com Penas)"
+  },
+  {
+    "id": 50040000,
+    "name": "Flecha de Santa Trina"
+  },
+  {
+    "id": 50060000,
+    "name": "Flecha Estilhaçante (Com Penas)"
+  },
+  {
+    "id": 50080000,
+    "name": "Flecha de Pedra Arco-Íris (Com Penas)"
+  },
+  {
+    "id": 50090000,
+    "name": "Flecha de Ouro"
+  },
+  {
+    "id": 50100000,
+    "name": "Flecha Habitada"
+  },
+  {
+    "id": 50110000,
+    "name": "Flecha Óssea"
+  },
+  {
+    "id": 50130000,
+    "name": "Flecha Óssea de Fogo (Com Penas)"
+  },
+  {
+    "id": 50140000,
+    "name": "Flecha Óssea de Fogo"
+  },
+  {
+    "id": 50150000,
+    "name": "Flecha Óssea Venenosa (Com Penas)"
+  },
+  {
+    "id": 50160000,
+    "name": "Flecha Óssea Venenosa"
+  },
+  {
+    "id": 50170000,
+    "name": "Flecha Óssea de Sono (Com Penas)"
+  },
+  {
+    "id": 50180000,
+    "name": "Flecha Óssea de Sono"
+  },
+  {
+    "id": 50190000,
+    "name": "Flecha de Osso da Asa da Tempestade"
+  },
+  {
+    "id": 50200000,
+    "name": "Flecha Óssea Elétrica (Com Penas)"
+  },
+  {
+    "id": 50210000,
+    "name": "Flecha Óssea Elétrica"
+  },
+  {
+    "id": 50220000,
+    "name": "Flecha de Pedra Arco-Íris"
+  },
+  {
+    "id": 50230000,
+    "name": "Flecha Estilhaçante"
+  },
+  {
+    "id": 50240000,
+    "name": "Flecha de Chama Espiritual"
+  },
+  {
+    "id": 50260000,
+    "name": "Flecha Óssea Mágica (Com Penas)"
+  },
+  {
+    "id": 50270000,
+    "name": "Flecha Óssea Mágica"
+  },
+  {
+    "id": 50280000,
+    "name": "Flecha Óssea Sagrada (Com Penas)"
+  },
+  {
+    "id": 50290000,
+    "name": "Flecha Óssea Sagrada"
+  },
+  {
+    "id": 50300000,
+    "name": "Flecha Óssea de Sangue (Com Penas)"
+  },
+  {
+    "id": 50310000,
+    "name": "Flecha Óssea de Sangue"
+  },
+  {
+    "id": 50320000,
+    "name": "Flecha Óssea do Frio (Com Penas)"
+  },
+  {
+    "id": 50330000,
+    "name": "Flecha Óssea do Frio"
+  },
+  {
+    "id": 50340000,
+    "name": "Flecha Óssea Podre (Com Penas)"
+  },
+  {
+    "id": 50350000,
+    "name": "Flecha Óssea Podre"
+  },
+  {
+    "id": 51000000,
+    "name": "Flecha Grande"
+  },
+  {
+    "id": 51010000,
+    "name": "Flecha Grande de Golem"
+  },
+  {
+    "id": 51020000,
+    "name": "Flecha Grande de Ouro"
+  },
+  {
+    "id": 51030000,
+    "name": "Flecha Grande de Golem Mágica"
+  },
+  {
+    "id": 51040000,
+    "name": "Lança de Radahn"
+  },
+  {
+    "id": 51050000,
+    "name": "Flecha Grande Óssea (Com Penas)"
+  },
+  {
+    "id": 51060000,
+    "name": "Flecha Grande Óssea"
+  },
+  {
+    "id": 52000000,
+    "name": "Seta"
+  },
+  {
+    "id": 52010000,
+    "name": "Seta de Relâmpago"
+  },
+  {
+    "id": 52020000,
+    "name": "Seta de Perfumista"
+  },
+  {
+    "id": 52030000,
+    "name": "Seta da Chave Negra"
+  },
+  {
+    "id": 52040000,
+    "name": "Seta de Rebarba"
+  },
+  {
+    "id": 52050000,
+    "name": "Seta de Meteoro"
+  },
+  {
+    "id": 52060000,
+    "name": "Seta Explosiva"
+  },
+  {
+    "id": 52070000,
+    "name": "Seta de Ouro"
+  },
+  {
+    "id": 52080000,
+    "name": "Seta do Lorde"
+  },
+  {
+    "id": 52090000,
+    "name": "Seta Óssea"
+  },
+  {
+    "id": 52100000,
+    "name": "Seta Óssea de Fogo"
+  },
+  {
+    "id": 52110000,
+    "name": "Seta Óssea Elétrica"
+  },
+  {
+    "id": 52120000,
+    "name": "Seta Óssea Mágica"
+  },
+  {
+    "id": 52130000,
+    "name": "Seta Óssea Sagrada"
+  },
+  {
+    "id": 52140000,
+    "name": "Seta Óssea Venenosa"
+  },
+  {
+    "id": 52150000,
+    "name": "Seta Óssea de Sangue"
+  },
+  {
+    "id": 52160000,
+    "name": "Seta Óssea do Frio"
+  },
+  {
+    "id": 52170000,
+    "name": "Seta Óssea Podre"
+  },
+  {
+    "id": 52180000,
+    "name": "Seta Óssea de Sono"
+  },
+  {
+    "id": 52190000,
+    "name": "Seta Flamejante"
+  },
+  {
+    "id": 53000000,
+    "name": "Seta de Balista"
+  },
+  {
+    "id": 53010000,
+    "name": "Seta Grande de Relâmpago"
+  },
+  {
+    "id": 53020000,
+    "name": "Seta Grande Explosiva"
+  },
+  {
+    "id": 53030000,
+    "name": "Seta Óssea de Balista"
+  }
+]

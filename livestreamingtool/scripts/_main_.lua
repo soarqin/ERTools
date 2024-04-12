@@ -7,18 +7,15 @@ package.path = script_directory..'?.lua;'..package.path
 -- load process and plugins
 process = require('common.process')
 util = require('common.util')
-config = require(script_directory .. '_config_')
+inifile = require('common.inifile')
+config = inifile.parse('livestreamingtool.ini')
 
 local plugins = {}
 print('+ Loading plugins...')
-for file in lfs.dir(script_directory) do
-  if file ~= '.' and file ~= '..' and file ~= script_filename and string.sub(file, 1, 1) ~= '_' then
-    local filename = script_directory .. file
-    local attr = lfs.attributes(filename)
-    if attr.mode ~= 'directory' and string.sub(file, -4) == '.lua' then
-      print('  > ' .. string.sub(file, 1, -5))
-      plugins[#plugins + 1] = require(string.sub(filename, 1, -5))
-    end
+for plugin_name, enabled in pairs(config.plugins) do
+  if enabled then
+    print('  > ' .. plugin_name)
+    plugins[#plugins + 1] = require(script_directory .. plugin_name)
   end
 end
 print('- Done.')

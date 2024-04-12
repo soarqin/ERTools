@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Medallón de ámbar carmesí"
+  },
+  {
+    "id": 1001,
+    "name": "Medallón de ámbar carmesí +1"
+  },
+  {
+    "id": 1002,
+    "name": "Medallón de ámbar carmesí +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talismán de semilla carmesí"
+  },
+  {
+    "id": 5020,
+    "name": "Talismán de rocío bendito"
+  },
+  {
+    "id": 1010,
+    "name": "Medallón de ámbar cerúleo"
+  },
+  {
+    "id": 1011,
+    "name": "Medallón de ámbar cerúleo +1"
+  },
+  {
+    "id": 1012,
+    "name": "Medallón de ámbar cerúleo +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talismán de semilla cerúlea"
+  },
+  {
+    "id": 1020,
+    "name": "Medallón de ámbar viridián"
+  },
+  {
+    "id": 1021,
+    "name": "Medallón de ámbar viridián +1"
+  },
+  {
+    "id": 1022,
+    "name": "Medallón de ámbar viridián +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talismán de tortuga verde"
+  },
+  {
+    "id": 1030,
+    "name": "Amuleto de arsenal"
+  },
+  {
+    "id": 1031,
+    "name": "Amuleto de arsenal +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenal del Gran Tarro"
+  },
+  {
+    "id": 1040,
+    "name": "Favor del Árbol Áureo"
+  },
+  {
+    "id": 1041,
+    "name": "Favor del Árbol Áureo +1"
+  },
+  {
+    "id": 1042,
+    "name": "Favor del Árbol Áureo +2"
+  },
+  {
+    "id": 1050,
+    "name": "Marca cicatrizada de Radagon"
+  },
+  {
+    "id": 1051,
+    "name": "Marca ulcerada de Radagon"
+  },
+  {
+    "id": 1220,
+    "name": "Marca cicatrizada de Márika"
+  },
+  {
+    "id": 1221,
+    "name": "Marca ulcerada de Márika"
+  },
+  {
+    "id": 1060,
+    "name": "Reliquia del Azote de las Estrellas"
+  },
+  {
+    "id": 1070,
+    "name": "Reliquia de la guerrera protésica"
+  },
+  {
+    "id": 1080,
+    "name": "Reliquia de la astrónoma"
+  },
+  {
+    "id": 1090,
+    "name": "Reliquia de los Dos Dedos"
+  },
+  {
+    "id": 4000,
+    "name": "Tal. de escudo con blasón de dragón"
+  },
+  {
+    "id": 4001,
+    "name": "Tal. de escudo con blasón de dragón +1"
+  },
+  {
+    "id": 4002,
+    "name": "Tal. de escudo con blasón de dragón +2"
+  },
+  {
+    "id": 4003,
+    "name": "Tal. de escudo grande con blasón de drag."
+  },
+  {
+    "id": 4010,
+    "name": "Talismán con dragón hechicero"
+  },
+  {
+    "id": 4011,
+    "name": "Talismán con dragón hechicero +1"
+  },
+  {
+    "id": 4012,
+    "name": "Talismán con dragón hechicero +2"
+  },
+  {
+    "id": 4020,
+    "name": "Talismán con dragón ígneo"
+  },
+  {
+    "id": 4021,
+    "name": "Talismán con dragón ígneo +1"
+  },
+  {
+    "id": 4022,
+    "name": "Talismán con dragón ígneo +2"
+  },
+  {
+    "id": 4030,
+    "name": "Talismán con dragón fulgurante"
+  },
+  {
+    "id": 4031,
+    "name": "Talismán con dragón fulgurante +1"
+  },
+  {
+    "id": 4032,
+    "name": "Talismán con dragón fulgurante +2"
+  },
+  {
+    "id": 4040,
+    "name": "Talismán con dragón hierático"
+  },
+  {
+    "id": 4041,
+    "name": "Talismán con dragón hierático +1"
+  },
+  {
+    "id": 4042,
+    "name": "Talismán con dragón hierático +2"
+  },
+  {
+    "id": 4050,
+    "name": "Talismán con dragón perlado"
+  },
+  {
+    "id": 4051,
+    "name": "Talismán con dragón perlado +1"
+  },
+  {
+    "id": 4052,
+    "name": "Talismán con dragón perlado +2"
+  },
+  {
+    "id": 1170,
+    "name": "Amuleto córneo inmunizante"
+  },
+  {
+    "id": 1171,
+    "name": "Amuleto córneo inmunizante +1"
+  },
+  {
+    "id": 1160,
+    "name": "Amuleto córneo de fiel"
+  },
+  {
+    "id": 1161,
+    "name": "Amuleto córneo de fiel +1"
+  },
+  {
+    "id": 1180,
+    "name": "Amuleto córneo clarificador"
+  },
+  {
+    "id": 1181,
+    "name": "Amuleto córneo clarificador +1"
+  },
+  {
+    "id": 1200,
+    "name": "Collar jaspeado"
+  },
+  {
+    "id": 1201,
+    "name": "Collar jaspeado +1"
+  },
+  {
+    "id": 1190,
+    "name": "Pústula del Príncipe de la Muerte"
+  },
+  {
+    "id": 1191,
+    "name": "Quiste del Príncipe de la Muerte"
+  },
+  {
+    "id": 2090,
+    "name": "Talismán con daga"
+  },
+  {
+    "id": 2200,
+    "name": "Talismán con espada curva"
+  },
+  {
+    "id": 2120,
+    "name": "Talismán con hoja doble"
+  },
+  {
+    "id": 2130,
+    "name": "Talismán con hacha"
+  },
+  {
+    "id": 2070,
+    "name": "Talismán con maza"
+  },
+  {
+    "id": 2060,
+    "name": "Talismán de lancero"
+  },
+  {
+    "id": 2140,
+    "name": "Talismán de caballería"
+  },
+  {
+    "id": 2180,
+    "name": "Talismán con garra"
+  },
+  {
+    "id": 4100,
+    "name": "Talismán con escudo grande"
+  },
+  {
+    "id": 2150,
+    "name": "Talismán de punzada de flecha"
+  },
+  {
+    "id": 2100,
+    "name": "Talismán de alcance de flecha"
+  },
+  {
+    "id": 3000,
+    "name": "Talismán de amalgama de magos"
+  },
+  {
+    "id": 3001,
+    "name": "Talismán de gran amalgama de magos"
+  },
+  {
+    "id": 3040,
+    "name": "Talismán del lienzo de la fe"
+  },
+  {
+    "id": 3050,
+    "name": "Talismán del lienzo de la congregación"
+  },
+  {
+    "id": 3080,
+    "name": "Hoja de piedra refulgente atávica"
+  },
+  {
+    "id": 1140,
+    "name": "Luna de Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talismán del antiguo señor"
+  },
+  {
+    "id": 3070,
+    "name": "Icono de Radagon"
+  },
+  {
+    "id": 2190,
+    "name": "Medallón de rugido"
+  },
+  {
+    "id": 2210,
+    "name": "Tarrismán"
+  },
+  {
+    "id": 2220,
+    "name": "Talismán de perfumista"
+  },
+  {
+    "id": 6020,
+    "name": "Blasón cariano con filigrana"
+  },
+  {
+    "id": 1230,
+    "name": "Fragmento de guerrero tarro"
+  },
+  {
+    "id": 1231,
+    "name": "Fragmento de Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Icono de Godfrey"
+  },
+  {
+    "id": 1210,
+    "name": "Talismán de taurocabra"
+  },
+  {
+    "id": 2110,
+    "name": "Amuleto de bailarina azul"
+  },
+  {
+    "id": 2000,
+    "name": "Amuleto de escorpión mágico"
+  },
+  {
+    "id": 2020,
+    "name": "Amuleto de escorpión ígneo"
+  },
+  {
+    "id": 2010,
+    "name": "Amuleto de escorpión fulgurante"
+  },
+  {
+    "id": 2030,
+    "name": "Amuleto de escorpión sagrado"
+  },
+  {
+    "id": 4060,
+    "name": "Talismán de escamas del crisol"
+  },
+  {
+    "id": 4070,
+    "name": "Talismán de plumas del crisol"
+  },
+  {
+    "id": 4110,
+    "name": "Talismán de nudo del crisol"
+  },
+  {
+    "id": 2040,
+    "name": "Espada ramificada con plumas rojas"
+  },
+  {
+    "id": 4080,
+    "name": "Espada ramificada con plumas azules"
+  },
+  {
+    "id": 2050,
+    "name": "Talismán de espada ritual"
+  },
+  {
+    "id": 4090,
+    "name": "Talismán de escudo ritual"
+  },
+  {
+    "id": 5050,
+    "name": "Daga carmesí de asesino"
+  },
+  {
+    "id": 5060,
+    "name": "Daga cerúlea de asesino"
+  },
+  {
+    "id": 2080,
+    "name": "Insignia con espada alada"
+  },
+  {
+    "id": 2081,
+    "name": "Insignia con espada alada podrida"
+  },
+  {
+    "id": 1250,
+    "name": "Prótesis de Millicent"
+  },
+  {
+    "id": 5040,
+    "name": "Empañadura sacroderma"
+  },
+  {
+    "id": 2170,
+    "name": "Exaltación de ancestro de la putrefacción"
+  },
+  {
+    "id": 2160,
+    "name": "Exaltación del Señor de la Sangre"
+  },
+  {
+    "id": 5030,
+    "name": "Camafeo del megalómano"
+  },
+  {
+    "id": 6110,
+    "name": "Cuerno de espíritu ancestral"
+  },
+  {
+    "id": 1110,
+    "name": "Escarabeo de oro"
+  },
+  {
+    "id": 1100,
+    "name": "Escarabeo de plata"
+  },
+  {
+    "id": 6000,
+    "name": "Frasco de Crepus"
+  },
+  {
+    "id": 6010,
+    "name": "Velo de camuflaje"
+  },
+  {
+    "id": 6040,
+    "name": "Talismán de gata de cola larga"
+  },
+  {
+    "id": 6080,
+    "name": "Espejo trucado del Dedo Doblado"
+  },
+  {
+    "id": 6090,
+    "name": "Espejo trucado del poseedor"
+  },
+  {
+    "id": 6050,
+    "name": "Pesar de Shabriri"
+  },
+  {
+    "id": 6060,
+    "name": "Pesar de Daedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Vara sacrificial"
+  }
+]

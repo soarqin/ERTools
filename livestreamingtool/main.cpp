@@ -1,10 +1,5 @@
 #include "panel.h"
-
-extern "C" {
-#include <lauxlib.h>
-#include <lualib.h>
-#include <luapkgs.h>
-}
+#include "luavm.h"
 
 #define WIN32_LEAN_AND_MEAN
 #include <SDL3/SDL.h>
@@ -24,8 +19,7 @@ extern "C" {
 #define strcasecmp _stricmp
 #endif
 
-static std::unordered_map<std::string, Panel> gPanels;
-static Panel *gCurrentPanel = nullptr;
+std::unordered_map<std::string, Panel> gPanels;
 
 static Panel *findPanelByWindow(SDL_Window *window) {
     if (!window) return nullptr;
@@ -41,50 +35,6 @@ static Panel *findPanelByWindowID(SDL_WindowID windowID) {
     return findPanelByWindow(SDL_GetWindowFromID(windowID));
 }
 
-static int luaLog(lua_State *L) {
-    fprintf(stdout, "%s\n", luaL_checkstring(L, 1));
-    fflush(stdout);
-    return 0;
-}
-
-static int luaPanelCreate(lua_State *L) {
-    const char *name = luaL_checkstring(L, 1);
-    auto *panel = &gPanels[name];
-    if (!panel->isWindow(nullptr)) {
-        return 0;
-    }
-    panel->init(name);
-    return 0;
-}
-
-static int luaPanelBegin(lua_State *L) {
-    const char *name = luaL_checkstring(L, 1);
-    auto ite = gPanels.find(name);
-    if (ite == gPanels.end()) {
-        gCurrentPanel = nullptr;
-        return 0;
-    }
-    gCurrentPanel = &ite->second;
-    gCurrentPanel->clear();
-    return 0;
-}
-
-static int luaPanelEnd(lua_State *L) {
-    (void)L;
-    if (gCurrentPanel != nullptr) {
-        gCurrentPanel->updateText();
-        gCurrentPanel->updateTextTexture();
-        gCurrentPanel = nullptr;
-    }
-    return 0;
-}
-
-static int luaPanelOutput(lua_State *L) {
-    if (gCurrentPanel) {
-        gCurrentPanel->addText(luaL_checkstring(L, 1));
-    }
-    return 0;
-}
 
 int wmain(int argc, wchar_t *argv[]) {
     // Unused argc, argv
@@ -108,30 +58,10 @@ int wmain(int argc, wchar_t *argv[]) {
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     uint64_t nextTick = SDL_GetTicks() / 1000ULL * 1000ULL + 1000ULL;
-    lua_State *L = luaL_newstate();
-    luaL_openlibs(L);
-    luaL_openpkgs(L);
-    lua_pushcfunction(L, luaLog);
-    lua_setglobal(L, "log");
-    lua_pushcfunction(L, luaPanelCreate);
-    lua_setglobal(L, "panel_create");
-    lua_pushcfunction(L, luaPanelBegin);
-    lua_setglobal(L, "panel_begin");
-    lua_pushcfunction(L, luaPanelEnd);
-    lua_setglobal(L, "panel_end");
-    lua_pushcfunction(L, luaPanelOutput);
-    lua_setglobal(L, "panel_output");
-    lua_gc(L, LUA_GCRESTART);
-    lua_gc(L, LUA_GCGEN, 0, 0);
-    if (luaL_loadfile(L, "scripts/_main_.lua") != 0) {
-        fprintf(stderr, "Error: %s\n", lua_tostring(L, -1));
-        fflush(stderr);
-    } else {
-        if (lua_pcall(L, 0, LUA_MULTRET, 0) != 0) {
-            fprintf(stderr, "Error: %s\n", lua_tostring(L, -1));
-            fflush(stderr);
-        }
-    }
+
+    auto *luaVM = new LuaVM();
+    luaVM->registerFunctions();
+    luaVM->loadFile("scripts/_main_.lua");
     while (true) {
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
@@ -175,11 +105,7 @@ int wmain(int argc, wchar_t *argv[]) {
         uint64_t currentTick = SDL_GetTicks();
         if (currentTick >= nextTick) {
             nextTick = currentTick / 1000ULL * 1000ULL + 1000ULL;
-            lua_getglobal(L, "update");
-            if (lua_pcall(L, 0, 0, 0) != 0) {
-                fprintf(stderr, "Error: %s\n", lua_tostring(L, -1));
-                fflush(stderr);
-            }
+            luaVM->call("update");
         }
         for (auto &p: gPanels) {
             auto *panel = &p.second;
@@ -187,7 +113,7 @@ int wmain(int argc, wchar_t *argv[]) {
         }
     }
     QUIT:
-    lua_close(L);
+    delete luaVM;
 
     for (auto &p: gPanels) {
         p.second.close();

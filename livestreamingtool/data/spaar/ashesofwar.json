@@ -1,0 +1,366 @@
+[
+  {
+    "id": 10600,
+    "name": "Ceniza de guerra: Pisada (corte hacia arriba)"
+  },
+  {
+    "id": 10700,
+    "name": "Ceniza de guerra: Pisada (movimiento amplio)"
+  },
+  {
+    "id": 11000,
+    "name": "Ceniza de guerra: Golpes salvajes"
+  },
+  {
+    "id": 10000,
+    "name": "Ceniza de guerra: Garra de león"
+  },
+  {
+    "id": 60700,
+    "name": "Ceniza de guerra: Hoja de peñasco"
+  },
+  {
+    "id": 50300,
+    "name": "Ceniza de guerra: Patada"
+  },
+  {
+    "id": 70000,
+    "name": "Ceniza de guerra: Resistencia"
+  },
+  {
+    "id": 50600,
+    "name": "Ceniza de guerra: Golpe de tierra"
+  },
+  {
+    "id": 21200,
+    "name": "Ceniza de guerra: Sacudidor de tierra"
+  },
+  {
+    "id": 50900,
+    "name": "Ceniza de guerra: Sacudidor de tierra de Hoarah Loux"
+  },
+  {
+    "id": 65100,
+    "name": "Ceniza de guerra: Grito de guerra"
+  },
+  {
+    "id": 65000,
+    "name": "Ceniza de guerra: Rugido de bárbaro"
+  },
+  {
+    "id": 65400,
+    "name": "Ceniza de guerra: Rugido de fanfarrón"
+  },
+  {
+    "id": 65300,
+    "name": "Ceniza de guerra: Rugido de trol"
+  },
+  {
+    "id": 10300,
+    "name": "Ceniza de guerra: Corte giratorio"
+  },
+  {
+    "id": 10100,
+    "name": "Ceniza de guerra: Carga atravesadora"
+  },
+  {
+    "id": 10200,
+    "name": "Ceniza de guerra: Colmillo perforante"
+  },
+  {
+    "id": 10900,
+    "name": "Ceniza de guerra: Aluvión de embestidas"
+  },
+  {
+    "id": 11200,
+    "name": "Ceniza de guerra: Corte doble"
+  },
+  {
+    "id": 12400,
+    "name": "Ceniza de guerra: Danza de la espada"
+  },
+  {
+    "id": 11400,
+    "name": "Ceniza de guerra: Desenvaine"
+  },
+  {
+    "id": 80000,
+    "name": "Ceniza de guerra: Paso ligero"
+  },
+  {
+    "id": 80100,
+    "name": "Ceniza de guerra: Paso del sabueso"
+  },
+  {
+    "id": 80200,
+    "name": "Ceniza de guerra: Ave rapaz de las nieblas"
+  },
+  {
+    "id": 65200,
+    "name": "Ceniza de guerra: Rugido de bestia"
+  },
+  {
+    "id": 11500,
+    "name": "Ceniza de guerra: Posición de guardia"
+  },
+  {
+    "id": 10500,
+    "name": "Ceniza de guerra: Carga frontal"
+  },
+  {
+    "id": 11100,
+    "name": "Ceniza de guerra: Golpes giratorios"
+  },
+  {
+    "id": 11600,
+    "name": "Ceniza de guerra: Caza de gigantes"
+  },
+  {
+    "id": 21000,
+    "name": "Ceniza de guerra: Hoja de la tormenta"
+  },
+  {
+    "id": 12200,
+    "name": "Ceniza de guerra: Ataque de tormenta"
+  },
+  {
+    "id": 12300,
+    "name": "Ceniza de guerra: Invocatormentas"
+  },
+  {
+    "id": 50200,
+    "name": "Ceniza de guerra: Estampida de tormenta"
+  },
+  {
+    "id": 22000,
+    "name": "Ceniza de guerra: Corte al vacío"
+  },
+  {
+    "id": 22500,
+    "name": "Ceniza de guerra: Corte fantasma"
+  },
+  {
+    "id": 60000,
+    "name": "Ceniza de guerra: Determinación"
+  },
+  {
+    "id": 60100,
+    "name": "Ceniza de guerra: Determinación de caballero real"
+  },
+  {
+    "id": 20300,
+    "name": "Ceniza de guerra: Guijarro de destellita"
+  },
+  {
+    "id": 20000,
+    "name": "Ceniza de guerra: Falange de destelloja"
+  },
+  {
+    "id": 21900,
+    "name": "Ceniza de guerra: Espadón de Caria"
+  },
+  {
+    "id": 21800,
+    "name": "Ceniza de guerra: Grandeza de Caria"
+  },
+  {
+    "id": 12000,
+    "name": "Ceniza de guerra: Arma giratoria"
+  },
+  {
+    "id": 11800,
+    "name": "Ceniza de guerra: Corte de Loretta"
+  },
+  {
+    "id": 20900,
+    "name": "Ceniza de guerra: Gravedad"
+  },
+  {
+    "id": 50800,
+    "name": "Ceniza de guerra: Olas de oscuridad"
+  },
+  {
+    "id": 21400,
+    "name": "Ceniza de guerra: Golpe llameante"
+  },
+  {
+    "id": 50500,
+    "name": "Ceniza de guerra: Llama de los melenarroja"
+  },
+  {
+    "id": 20700,
+    "name": "Ceniza de guerra: Erupción"
+  },
+  {
+    "id": 11300,
+    "name": "Ceniza de guerra: Carga del abad"
+  },
+  {
+    "id": 22100,
+    "name": "Ceniza de guerra: Tornado de llama negra"
+  },
+  {
+    "id": 21600,
+    "name": "Ceniza de guerra: Rayo fulminante"
+  },
+  {
+    "id": 21700,
+    "name": "Ceniza de guerra: Corte de rayo"
+  },
+  {
+    "id": 50400,
+    "name": "Ceniza de guerra: Embestida de rayo"
+  },
+  {
+    "id": 20100,
+    "name": "Ceniza de guerra: Hoja sagradas"
+  },
+  {
+    "id": 20800,
+    "name": "Ceniza de guerra: Golpe devoto"
+  },
+  {
+    "id": 22200,
+    "name": "Ceniza de guerra: Anillo de luz sagradas"
+  },
+  {
+    "id": 60400,
+    "name": "Ceniza de guerra: Orden sagrada"
+  },
+  {
+    "id": 60500,
+    "name": "Ceniza de guerra: Orden compartida"
+  },
+  {
+    "id": 21300,
+    "name": "Ceniza de guerra: Tierra Dorada"
+  },
+  {
+    "id": 50700,
+    "name": "Ceniza de guerra: Golpe dorado"
+  },
+  {
+    "id": 60300,
+    "name": "Ceniza de guerra: Voto dorado"
+  },
+  {
+    "id": 70100,
+    "name": "Ceniza de guerra: Juramento de los indomables"
+  },
+  {
+    "id": 70200,
+    "name": "Ceniza de guerra: Suelo santo"
+  },
+  {
+    "id": 22800,
+    "name": "Ceniza de guerra: Niebla venenosa"
+  },
+  {
+    "id": 11900,
+    "name": "Ceniza de guerra: Vuelo de polilla venenosa"
+  },
+  {
+    "id": 22400,
+    "name": "Ceniza de guerra: Hoja de sangre"
+  },
+  {
+    "id": 20400,
+    "name": "Ceniza de guerra: Corte sangriento"
+  },
+  {
+    "id": 10800,
+    "name": "Ceniza de guerra: Tributo en sangre"
+  },
+  {
+    "id": 60600,
+    "name": "Ceniza de guerra: Seppuku"
+  },
+  {
+    "id": 20200,
+    "name": "Ceniza de guerra: Lanza de hielo"
+  },
+  {
+    "id": 22700,
+    "name": "Ceniza de guerra: Niebla gélida"
+  },
+  {
+    "id": 50100,
+    "name": "Ceniza de guerra: Pisotón de escarcha"
+  },
+  {
+    "id": 22600,
+    "name": "Ceniza de guerra: Lanza pesada espectral"
+  },
+  {
+    "id": 20500,
+    "name": "Ceniza de guerra: Puño robavida"
+  },
+  {
+    "id": 85000,
+    "name": "Ceniza de guerra: Señuelo de sombra blanca"
+  },
+  {
+    "id": 60200,
+    "name": "Ceniza de guerra: Gambito de asesino"
+  },
+  {
+    "id": 40200,
+    "name": "Ceniza de guerra: Disparo poderoso"
+  },
+  {
+    "id": 40000,
+    "name": "Ceniza de guerra: De pies a cabeza"
+  },
+  {
+    "id": 40100,
+    "name": "Ceniza de guerra: Bombardeo"
+  },
+  {
+    "id": 40500,
+    "name": "Ceniza de guerra: Disparo al cielo"
+  },
+  {
+    "id": 40400,
+    "name": "Ceniza de guerra: Disparo encantado"
+  },
+  {
+    "id": 40600,
+    "name": "Ceniza de guerra: Lluvia de flechas"
+  },
+  {
+    "id": 30200,
+    "name": "Ceniza de guerra: Rechazo"
+  },
+  {
+    "id": 30700,
+    "name": "Ceniza de guerra: Rechazo dorado"
+  },
+  {
+    "id": 30600,
+    "name": "Ceniza de guerra: Muro de tormenta"
+  },
+  {
+    "id": 30000,
+    "name": "Ceniza de guerra: Golpe de escudo"
+  },
+  {
+    "id": 30800,
+    "name": "Ceniza de guerra: Choque de escudo"
+  },
+  {
+    "id": 30100,
+    "name": "Ceniza de guerra: Escudo de barricada"
+  },
+  {
+    "id": 31000,
+    "name": "Ceniza de guerra: Barrera de Thops"
+  },
+  {
+    "id": 30500,
+    "name": "Ceniza de guerra: Contraataque de Caria"
+  },
+  {
+    "id": 30900,
+    "name": "Ceniza de guerra: Sin habilidades"
+  }
+]

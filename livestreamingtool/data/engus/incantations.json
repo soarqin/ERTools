@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Urgent Heal"
+  },
+  {
+    "id": 6421,
+    "name": "Heal"
+  },
+  {
+    "id": 6422,
+    "name": "Great Heal"
+  },
+  {
+    "id": 6423,
+    "name": "Lord's Heal"
+  },
+  {
+    "id": 6440,
+    "name": "Cure Poison"
+  },
+  {
+    "id": 6441,
+    "name": "Lord's Aid"
+  },
+  {
+    "id": 6460,
+    "name": "Magic Fortification"
+  },
+  {
+    "id": 6450,
+    "name": "Flame Fortification"
+  },
+  {
+    "id": 6470,
+    "name": "Lightning Fortification"
+  },
+  {
+    "id": 6480,
+    "name": "Divine Fortification"
+  },
+  {
+    "id": 6490,
+    "name": "Lord's Divine Fortification"
+  },
+  {
+    "id": 6400,
+    "name": "Rejection"
+  },
+  {
+    "id": 6520,
+    "name": "Shadow Bait"
+  },
+  {
+    "id": 6530,
+    "name": "Darkness"
+  },
+  {
+    "id": 6510,
+    "name": "Assassin's Approach"
+  },
+  {
+    "id": 6600,
+    "name": "Golden Vow"
+  },
+  {
+    "id": 6330,
+    "name": "Barrier of Gold"
+  },
+  {
+    "id": 7903,
+    "name": "Golden Lightning Fortification"
+  },
+  {
+    "id": 6340,
+    "name": "Protection of the Erdtree"
+  },
+  {
+    "id": 6410,
+    "name": "Wrath of Gold"
+  },
+  {
+    "id": 6424,
+    "name": "Erdtree Heal"
+  },
+  {
+    "id": 6430,
+    "name": "Blessing's Boon"
+  },
+  {
+    "id": 6431,
+    "name": "Blessing of the Erdtree"
+  },
+  {
+    "id": 7520,
+    "name": "Aspects of the Crucible: Breath"
+  },
+  {
+    "id": 7500,
+    "name": "Aspects of the Crucible: Tail"
+  },
+  {
+    "id": 7510,
+    "name": "Aspects of the Crucible: Horns"
+  },
+  {
+    "id": 6720,
+    "name": "Elden Stars"
+  },
+  {
+    "id": 7530,
+    "name": "Black Blade"
+  },
+  {
+    "id": 6700,
+    "name": "Discus of Light"
+  },
+  {
+    "id": 6701,
+    "name": "Triple Rings of Light"
+  },
+  {
+    "id": 6710,
+    "name": "Radagon's Rings of Light"
+  },
+  {
+    "id": 6750,
+    "name": "Litany of Proper Death"
+  },
+  {
+    "id": 6780,
+    "name": "Order Healing"
+  },
+  {
+    "id": 6770,
+    "name": "Order's Blade"
+  },
+  {
+    "id": 6740,
+    "name": "Immutable Shield"
+  },
+  {
+    "id": 6760,
+    "name": "Law of Causality"
+  },
+  {
+    "id": 6730,
+    "name": "Law of Regression"
+  },
+  {
+    "id": 6900,
+    "name": "Lightning Spear"
+  },
+  {
+    "id": 6920,
+    "name": "Lightning Strike"
+  },
+  {
+    "id": 6930,
+    "name": "Honed Bolt"
+  },
+  {
+    "id": 6940,
+    "name": "Ancient Dragons' Lightning Spear"
+  },
+  {
+    "id": 6910,
+    "name": "Ancient Dragons' Lightning Strike"
+  },
+  {
+    "id": 6950,
+    "name": "Lansseax's Glaive"
+  },
+  {
+    "id": 6941,
+    "name": "Fortissax's Lightning Spear"
+  },
+  {
+    "id": 6921,
+    "name": "Frozen Lightning Spear"
+  },
+  {
+    "id": 5040,
+    "name": "Death Lightning"
+  },
+  {
+    "id": 6960,
+    "name": "Electrify Armament"
+  },
+  {
+    "id": 6971,
+    "name": "Dragonbolt Blessing"
+  },
+  {
+    "id": 6970,
+    "name": "Vyke's Dragonbolt"
+  },
+  {
+    "id": 6000,
+    "name": "Catch Flame"
+  },
+  {
+    "id": 6001,
+    "name": "O, Flame!"
+  },
+  {
+    "id": 6010,
+    "name": "Flame Sling"
+  },
+  {
+    "id": 6100,
+    "name": "Giantsflame Take Thee"
+  },
+  {
+    "id": 6020,
+    "name": "Flame, Fall Upon Them"
+  },
+  {
+    "id": 6110,
+    "name": "Flame of the Fell God"
+  },
+  {
+    "id": 6220,
+    "name": "Surge, O Flame!"
+  },
+  {
+    "id": 6030,
+    "name": "Whirl, O Flame!"
+  },
+  {
+    "id": 6120,
+    "name": "Burn, O Flame!"
+  },
+  {
+    "id": 6040,
+    "name": "Flame, Cleanse Me"
+  },
+  {
+    "id": 6060,
+    "name": "Flame, Protect Me"
+  },
+  {
+    "id": 6050,
+    "name": "Flame, Grant Me Strength"
+  },
+  {
+    "id": 7900,
+    "name": "Fire's Deadly Sin"
+  },
+  {
+    "id": 6210,
+    "name": "Black Flame"
+  },
+  {
+    "id": 6230,
+    "name": "Scouring Black Flame"
+  },
+  {
+    "id": 6240,
+    "name": "Black Flame Ritual"
+  },
+  {
+    "id": 6250,
+    "name": "Black Flame Blade"
+  },
+  {
+    "id": 6260,
+    "name": "Black Flame's Protection"
+  },
+  {
+    "id": 6270,
+    "name": "Noble Presence"
+  },
+  {
+    "id": 6820,
+    "name": "Beast Claw"
+  },
+  {
+    "id": 6830,
+    "name": "Gurranq's Beast Claw"
+  },
+  {
+    "id": 6800,
+    "name": "Bestial Sling"
+  },
+  {
+    "id": 6810,
+    "name": "Stone of Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Bestial Constitution"
+  },
+  {
+    "id": 6840,
+    "name": "Bestial Vitality"
+  },
+  {
+    "id": 7210,
+    "name": "Swarm of Flies"
+  },
+  {
+    "id": 6300,
+    "name": "Bloodflame Talons"
+  },
+  {
+    "id": 6310,
+    "name": "Bloodboon"
+  },
+  {
+    "id": 6320,
+    "name": "Bloodflame Blade"
+  },
+  {
+    "id": 7220,
+    "name": "Poison Mist"
+  },
+  {
+    "id": 7200,
+    "name": "Pest Threads"
+  },
+  {
+    "id": 7230,
+    "name": "Poison Armament"
+  },
+  {
+    "id": 7240,
+    "name": "Scarlet Aeonia"
+  },
+  {
+    "id": 7310,
+    "name": "The Flame of Frenzy"
+  },
+  {
+    "id": 7311,
+    "name": "Unendurable Frenzy"
+  },
+  {
+    "id": 7320,
+    "name": "Frenzied Burst"
+  },
+  {
+    "id": 7330,
+    "name": "Howl of Shabriri"
+  },
+  {
+    "id": 7300,
+    "name": "Inescapable Frenzy"
+  },
+  {
+    "id": 7000,
+    "name": "Dragonfire"
+  },
+  {
+    "id": 7001,
+    "name": "Agheel's Flame"
+  },
+  {
+    "id": 7010,
+    "name": "Magma Breath"
+  },
+  {
+    "id": 7011,
+    "name": "Theodorix's Magma"
+  },
+  {
+    "id": 7040,
+    "name": "Glintstone Breath"
+  },
+  {
+    "id": 7041,
+    "name": "Smarag's Glintstone Breath"
+  },
+  {
+    "id": 7030,
+    "name": "Rotten Breath"
+  },
+  {
+    "id": 7031,
+    "name": "Ekzykes's Decay"
+  },
+  {
+    "id": 7020,
+    "name": "Dragonice"
+  },
+  {
+    "id": 7021,
+    "name": "Borealis's Mist"
+  },
+  {
+    "id": 7050,
+    "name": "Placidusax's Ruin"
+  },
+  {
+    "id": 7060,
+    "name": "Dragonclaw"
+  },
+  {
+    "id": 7080,
+    "name": "Dragonmaw"
+  },
+  {
+    "id": 7090,
+    "name": "Greyoll's Roar"
+  }
+]

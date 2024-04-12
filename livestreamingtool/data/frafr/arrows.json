@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Flèche"
+  },
+  {
+    "id": 50010000,
+    "name": "Flèche de feu"
+  },
+  {
+    "id": 50020000,
+    "name": "Flèche serpentine"
+  },
+  {
+    "id": 50030000,
+    "name": "Flèche en os empennée"
+  },
+  {
+    "id": 50040000,
+    "name": "Flèche de Trina"
+  },
+  {
+    "id": 50060000,
+    "name": "Flèche fragmentée empennée"
+  },
+  {
+    "id": 50080000,
+    "name": "Flèche arc-en-ciel empennée"
+  },
+  {
+    "id": 50090000,
+    "name": "Flèche dorée"
+  },
+  {
+    "id": 50100000,
+    "name": "Flèche hantée"
+  },
+  {
+    "id": 50110000,
+    "name": "Flèche en os"
+  },
+  {
+    "id": 50130000,
+    "name": "Flèche en os enflammée empennée"
+  },
+  {
+    "id": 50140000,
+    "name": "Flèche en os enflammée"
+  },
+  {
+    "id": 50150000,
+    "name": "Flèche en os empoisonnée empennée"
+  },
+  {
+    "id": 50160000,
+    "name": "Flèche en os empoisonnée"
+  },
+  {
+    "id": 50170000,
+    "name": "Flèche en os soporifique empennée"
+  },
+  {
+    "id": 50180000,
+    "name": "Flèche en os soporifique"
+  },
+  {
+    "id": 50190000,
+    "name": "Flèche en os des tempêtes"
+  },
+  {
+    "id": 50200000,
+    "name": "Flèche en os foudroyante empennée"
+  },
+  {
+    "id": 50210000,
+    "name": "Flèche en os foudroyante"
+  },
+  {
+    "id": 50220000,
+    "name": "Flèche arc-en-ciel"
+  },
+  {
+    "id": 50230000,
+    "name": "Flèche fragmentée"
+  },
+  {
+    "id": 50240000,
+    "name": "Flèche de flamme spirituelle"
+  },
+  {
+    "id": 50260000,
+    "name": "Flèche en os magique empennée"
+  },
+  {
+    "id": 50270000,
+    "name": "Flèche en os magique"
+  },
+  {
+    "id": 50280000,
+    "name": "Flèche en os sacrée empennée"
+  },
+  {
+    "id": 50290000,
+    "name": "Flèche en os sacrée"
+  },
+  {
+    "id": 50300000,
+    "name": "Flèche en os sanguine empennée"
+  },
+  {
+    "id": 50310000,
+    "name": "Flèche en os sanguine"
+  },
+  {
+    "id": 50320000,
+    "name": "Flèche en os glaciale empennée"
+  },
+  {
+    "id": 50330000,
+    "name": "Flèche en os glaciale"
+  },
+  {
+    "id": 50340000,
+    "name": "Flèche en os putréfiée empennée"
+  },
+  {
+    "id": 50350000,
+    "name": "Flèche en os putréfiée"
+  },
+  {
+    "id": 51000000,
+    "name": "Grande flèche"
+  },
+  {
+    "id": 51010000,
+    "name": "Grande flèche du golem"
+  },
+  {
+    "id": 51020000,
+    "name": "Grande flèche dorée"
+  },
+  {
+    "id": 51030000,
+    "name": "Flèche magique du golem"
+  },
+  {
+    "id": 51040000,
+    "name": "Lance de Radahn"
+  },
+  {
+    "id": 51050000,
+    "name": "Grande flèche en os empennée"
+  },
+  {
+    "id": 51060000,
+    "name": "Grande flèche en os"
+  },
+  {
+    "id": 52000000,
+    "name": "Carreau"
+  },
+  {
+    "id": 52010000,
+    "name": "Carreau de foudre"
+  },
+  {
+    "id": 52020000,
+    "name": "Carreau de Parfumeur"
+  },
+  {
+    "id": 52030000,
+    "name": "Carreau torsadé noir"
+  },
+  {
+    "id": 52040000,
+    "name": "Carreau barbelé"
+  },
+  {
+    "id": 52050000,
+    "name": "Carreau météorique"
+  },
+  {
+    "id": 52060000,
+    "name": "Carreau explosif"
+  },
+  {
+    "id": 52070000,
+    "name": "Carreau doré"
+  },
+  {
+    "id": 52080000,
+    "name": "Carreau seigneurial"
+  },
+  {
+    "id": 52090000,
+    "name": "Carreau en os"
+  },
+  {
+    "id": 52100000,
+    "name": "Carreau en os enflammé"
+  },
+  {
+    "id": 52110000,
+    "name": "Carreau en os foudroyant"
+  },
+  {
+    "id": 52120000,
+    "name": "Carreau en os magique"
+  },
+  {
+    "id": 52130000,
+    "name": "Carreau en os sacré"
+  },
+  {
+    "id": 52140000,
+    "name": "Carreau en os empoisonné"
+  },
+  {
+    "id": 52150000,
+    "name": "Carreau en os sanguin"
+  },
+  {
+    "id": 52160000,
+    "name": "Carreau en os glacial"
+  },
+  {
+    "id": 52170000,
+    "name": "Carreau en os putréfié"
+  },
+  {
+    "id": 52180000,
+    "name": "Carreau en os soporifique"
+  },
+  {
+    "id": 52190000,
+    "name": "Carreau enflammé"
+  },
+  {
+    "id": 53000000,
+    "name": "Carreau de baliste"
+  },
+  {
+    "id": 53010000,
+    "name": "Grand carreau de foudre"
+  },
+  {
+    "id": 53020000,
+    "name": "Grand carreau explosif"
+  },
+  {
+    "id": 53030000,
+    "name": "Carreau de baliste en os"
+  }
+]

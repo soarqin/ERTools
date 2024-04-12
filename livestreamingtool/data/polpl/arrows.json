@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Strzała"
+  },
+  {
+    "id": 50010000,
+    "name": "Ognista strzała"
+  },
+  {
+    "id": 50020000,
+    "name": "Wężowa strzała"
+  },
+  {
+    "id": 50030000,
+    "name": "Kościana strzała (z piórami)"
+  },
+  {
+    "id": 50040000,
+    "name": "Strzała św. Triny"
+  },
+  {
+    "id": 50060000,
+    "name": "Strzała odłamków (z piórami)"
+  },
+  {
+    "id": 50080000,
+    "name": "Strzała tęczowego kamienia (z piórami)"
+  },
+  {
+    "id": 50090000,
+    "name": "Złota strzała"
+  },
+  {
+    "id": 50100000,
+    "name": "Poszukująca strzała"
+  },
+  {
+    "id": 50110000,
+    "name": "Kościana strzała"
+  },
+  {
+    "id": 50130000,
+    "name": "Ognista strzała z kości (z piórami)"
+  },
+  {
+    "id": 50140000,
+    "name": "Ognista strzała z kości"
+  },
+  {
+    "id": 50150000,
+    "name": "Zatruta strzała z kości (z piórami)"
+  },
+  {
+    "id": 50160000,
+    "name": "Zatruta strzała z kości"
+  },
+  {
+    "id": 50170000,
+    "name": "Strzała z sennej kości (z piórami)"
+  },
+  {
+    "id": 50180000,
+    "name": "Strzała z sennej kości"
+  },
+  {
+    "id": 50190000,
+    "name": "Kościana strzała burzowego skrzydła"
+  },
+  {
+    "id": 50200000,
+    "name": "Strzała z kości błyskawic (z piórami)"
+  },
+  {
+    "id": 50210000,
+    "name": "Strzała z kości błyskawic"
+  },
+  {
+    "id": 50220000,
+    "name": "Strzała tęczowego kamienia"
+  },
+  {
+    "id": 50230000,
+    "name": "Strzała odłamków"
+  },
+  {
+    "id": 50240000,
+    "name": "Strzała duchowego płomienia"
+  },
+  {
+    "id": 50260000,
+    "name": "Strzała z magicznej kości (z piórami)"
+  },
+  {
+    "id": 50270000,
+    "name": "Strzała z magicznej kości"
+  },
+  {
+    "id": 50280000,
+    "name": "Strzała ze świętej Kości (z piórami)"
+  },
+  {
+    "id": 50290000,
+    "name": "Strzała ze świętej Kości"
+  },
+  {
+    "id": 50300000,
+    "name": "Strzała z krwawej kości (z piórami)"
+  },
+  {
+    "id": 50310000,
+    "name": "Strzała z krwawej kości"
+  },
+  {
+    "id": 50320000,
+    "name": "Strzała z zimnej kości (z piórami)"
+  },
+  {
+    "id": 50330000,
+    "name": "Strzała z zimnej kości"
+  },
+  {
+    "id": 50340000,
+    "name": "Strzała z przegniłej kości (z piórami)"
+  },
+  {
+    "id": 50350000,
+    "name": "Strzała z przegniłej kości"
+  },
+  {
+    "id": 51000000,
+    "name": "Wielka strzała"
+  },
+  {
+    "id": 51010000,
+    "name": "Wielka strzała golema"
+  },
+  {
+    "id": 51020000,
+    "name": "Wielka złota strzała"
+  },
+  {
+    "id": 51030000,
+    "name": "Magiczna strzała golema"
+  },
+  {
+    "id": 51040000,
+    "name": "Włócznia Radahna"
+  },
+  {
+    "id": 51050000,
+    "name": "Kościana wielka strzała (z piórami)"
+  },
+  {
+    "id": 51060000,
+    "name": "Kościana wielka strzała"
+  },
+  {
+    "id": 52000000,
+    "name": "Bełt"
+  },
+  {
+    "id": 52010000,
+    "name": "Bełt błyskawic"
+  },
+  {
+    "id": 52020000,
+    "name": "Bełt perfumiarza"
+  },
+  {
+    "id": 52030000,
+    "name": "Bełt czarnego klucza"
+  },
+  {
+    "id": 52040000,
+    "name": "Gratowany bełt"
+  },
+  {
+    "id": 52050000,
+    "name": "Bełt z meteoru"
+  },
+  {
+    "id": 52060000,
+    "name": "Wybuchowy bełt"
+  },
+  {
+    "id": 52070000,
+    "name": "Złoty bełt"
+  },
+  {
+    "id": 52080000,
+    "name": "Bełt zaprzysiężonego"
+  },
+  {
+    "id": 52090000,
+    "name": "Kościany bełt"
+  },
+  {
+    "id": 52100000,
+    "name": "Ognisty bełt z kości"
+  },
+  {
+    "id": 52110000,
+    "name": "Bełt z kości błyskawic"
+  },
+  {
+    "id": 52120000,
+    "name": "Bełt z magicznej kości"
+  },
+  {
+    "id": 52130000,
+    "name": "Bełt ze świętej Kości"
+  },
+  {
+    "id": 52140000,
+    "name": "Zatruty bełt z kości"
+  },
+  {
+    "id": 52150000,
+    "name": "Bełt z krwawej kości"
+  },
+  {
+    "id": 52160000,
+    "name": "Bełt z zimnej kości"
+  },
+  {
+    "id": 52170000,
+    "name": "Bełt z przegniłej kości"
+  },
+  {
+    "id": 52180000,
+    "name": "Bełt z sennej kości"
+  },
+  {
+    "id": 52190000,
+    "name": "Płonący bełt"
+  },
+  {
+    "id": 53000000,
+    "name": "Bełt do balisty"
+  },
+  {
+    "id": 53010000,
+    "name": "Wielki bełt błyskawic"
+  },
+  {
+    "id": 53020000,
+    "name": "Wielki wybuchowy bełt"
+  },
+  {
+    "id": 53030000,
+    "name": "Kościany bełt do balisty"
+  }
+]

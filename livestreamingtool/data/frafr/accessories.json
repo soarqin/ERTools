@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Médaillon d'ambre pourpre"
+  },
+  {
+    "id": 1001,
+    "name": "Médaillon d'ambre pourpre +1"
+  },
+  {
+    "id": 1002,
+    "name": "Médaillon d'ambre pourpre +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talisman de la graine pourpre"
+  },
+  {
+    "id": 5020,
+    "name": "Talisman de la larme bénie"
+  },
+  {
+    "id": 1010,
+    "name": "Médaillon d'ambre céruléen"
+  },
+  {
+    "id": 1011,
+    "name": "Médaillon d'ambre céruléen +1"
+  },
+  {
+    "id": 1012,
+    "name": "Médaillon d'ambre céruléen +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talisman de la graine céruléenne"
+  },
+  {
+    "id": 1020,
+    "name": "Médaillon d'ambre vert émeraude"
+  },
+  {
+    "id": 1021,
+    "name": "Médaillon d'ambre vert émeraude +1"
+  },
+  {
+    "id": 1022,
+    "name": "Médaillon d'ambre vert émeraude +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talisman de tortue verte"
+  },
+  {
+    "id": 1030,
+    "name": "Talisman d'arsenal"
+  },
+  {
+    "id": 1031,
+    "name": "Talisman d'arsenal +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenal de la Grande jarre"
+  },
+  {
+    "id": 1040,
+    "name": "Faveur de l'Arbre-Monde"
+  },
+  {
+    "id": 1041,
+    "name": "Faveur de l'Arbre-Monde +1"
+  },
+  {
+    "id": 1042,
+    "name": "Faveur de l'Arbre-Monde +2"
+  },
+  {
+    "id": 1050,
+    "name": "Sceau scarifié de Radagon"
+  },
+  {
+    "id": 1051,
+    "name": "Sceau meurtri de Radagon"
+  },
+  {
+    "id": 1220,
+    "name": "Sceau scarifié de Marika"
+  },
+  {
+    "id": 1221,
+    "name": "Sceau meurtri de Marika"
+  },
+  {
+    "id": 1060,
+    "name": "Héritage du Fléau des astres"
+  },
+  {
+    "id": 1070,
+    "name": "Héritage de l'épéiste amputée"
+  },
+  {
+    "id": 1080,
+    "name": "Héritage de l'astrologue"
+  },
+  {
+    "id": 1090,
+    "name": "Héritage des Deux Doigts"
+  },
+  {
+    "id": 4000,
+    "name": "Talisman de bouclier draconique"
+  },
+  {
+    "id": 4001,
+    "name": "Talisman de bouclier draconique +1"
+  },
+  {
+    "id": 4002,
+    "name": "Talisman de bouclier draconique +2"
+  },
+  {
+    "id": 4003,
+    "name": "Talisman de pavois draconique"
+  },
+  {
+    "id": 4010,
+    "name": "Talisman de dragon magique"
+  },
+  {
+    "id": 4011,
+    "name": "Talisman de dragon magique +1"
+  },
+  {
+    "id": 4012,
+    "name": "Talisman de dragon magique +2"
+  },
+  {
+    "id": 4020,
+    "name": "Talisman de dragon de feu"
+  },
+  {
+    "id": 4021,
+    "name": "Talisman de dragon de feu +1"
+  },
+  {
+    "id": 4022,
+    "name": "Talisman de dragon de feu +2"
+  },
+  {
+    "id": 4030,
+    "name": "Talisman de dragon de foudre"
+  },
+  {
+    "id": 4031,
+    "name": "Talisman de dragon de foudre +1"
+  },
+  {
+    "id": 4032,
+    "name": "Talisman de dragon de foudre +2"
+  },
+  {
+    "id": 4040,
+    "name": "Talisman de dragon sacré"
+  },
+  {
+    "id": 4041,
+    "name": "Talisman de dragon sacré +1"
+  },
+  {
+    "id": 4042,
+    "name": "Talisman de dragon sacré +2"
+  },
+  {
+    "id": 4050,
+    "name": "Talisman de dragon de perle"
+  },
+  {
+    "id": 4051,
+    "name": "Talisman de dragon de perle +1"
+  },
+  {
+    "id": 4052,
+    "name": "Talisman de dragon de perle +2"
+  },
+  {
+    "id": 1170,
+    "name": "Corne d'immunité"
+  },
+  {
+    "id": 1171,
+    "name": "Corne d'immunité +1"
+  },
+  {
+    "id": 1160,
+    "name": "Corne de robustesse"
+  },
+  {
+    "id": 1161,
+    "name": "Corne de robustesse +1"
+  },
+  {
+    "id": 1180,
+    "name": "Corne de focalisation"
+  },
+  {
+    "id": 1181,
+    "name": "Corne de focalisation +1"
+  },
+  {
+    "id": 1200,
+    "name": "Pendentif bariolé"
+  },
+  {
+    "id": 1201,
+    "name": "Pendentif bariolé +1"
+  },
+  {
+    "id": 1190,
+    "name": "Excroissance du Prince de la Mort"
+  },
+  {
+    "id": 1191,
+    "name": "Kyste du Prince de la Mort"
+  },
+  {
+    "id": 2090,
+    "name": "Talisman de la dague"
+  },
+  {
+    "id": 2200,
+    "name": "Talisman d'épée courbée"
+  },
+  {
+    "id": 2120,
+    "name": "Talisman de la lame double"
+  },
+  {
+    "id": 2130,
+    "name": "Talisman de la hache"
+  },
+  {
+    "id": 2070,
+    "name": "Talisman du marteau"
+  },
+  {
+    "id": 2060,
+    "name": "Talisman de la lance"
+  },
+  {
+    "id": 2140,
+    "name": "Talisman de la lance de cavalerie"
+  },
+  {
+    "id": 2180,
+    "name": "Talisman de la griffe"
+  },
+  {
+    "id": 4100,
+    "name": "Talisman de pavois"
+  },
+  {
+    "id": 2150,
+    "name": "Talisman des flèches mordantes"
+  },
+  {
+    "id": 2100,
+    "name": "Talisman des flèches filantes"
+  },
+  {
+    "id": 3000,
+    "name": "Talisman de l'amalgame sculpté"
+  },
+  {
+    "id": 3001,
+    "name": "Talisman de l'amas sculpté"
+  },
+  {
+    "id": 3040,
+    "name": "Talisman en toile des fidèles"
+  },
+  {
+    "id": 3050,
+    "name": "Talisman en toile des ouailles"
+  },
+  {
+    "id": 3080,
+    "name": "Lame de pierre d'éclat primordiale"
+  },
+  {
+    "id": 1140,
+    "name": "Lune de Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talisman d'ancien seigneur"
+  },
+  {
+    "id": 3070,
+    "name": "Icône de Radagon"
+  },
+  {
+    "id": 2190,
+    "name": "Médaillon de cri"
+  },
+  {
+    "id": 2210,
+    "name": "Jarre de compagnie"
+  },
+  {
+    "id": 2220,
+    "name": "Talisman de Parfumeur"
+  },
+  {
+    "id": 6020,
+    "name": "Emblème de Caria à filigrane"
+  },
+  {
+    "id": 1230,
+    "name": "Fragment de guerrier-jarre"
+  },
+  {
+    "id": 1231,
+    "name": "Fragment d'Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Icône de Godfrey"
+  },
+  {
+    "id": 1210,
+    "name": "Talisman du mouflon"
+  },
+  {
+    "id": 2110,
+    "name": "Talisman de la danseuse bleue"
+  },
+  {
+    "id": 2000,
+    "name": "Talisman du scorpion magique"
+  },
+  {
+    "id": 2020,
+    "name": "Talisman du scorpion de feu"
+  },
+  {
+    "id": 2010,
+    "name": "Talisman du scorpion de foudre"
+  },
+  {
+    "id": 2030,
+    "name": "Talisman du scorpion sacré"
+  },
+  {
+    "id": 4060,
+    "name": "Talisman à écaille du Creuset"
+  },
+  {
+    "id": 4070,
+    "name": "Talisman à plume du Creuset"
+  },
+  {
+    "id": 4110,
+    "name": "Talisman à nœud du Creuset"
+  },
+  {
+    "id": 2040,
+    "name": "Lame cornue aux plumes rouges"
+  },
+  {
+    "id": 4080,
+    "name": "Lame cornue aux plumes bleues"
+  },
+  {
+    "id": 2050,
+    "name": "Talisman d'épée rituelle"
+  },
+  {
+    "id": 4090,
+    "name": "Talisman de bouclier rituel"
+  },
+  {
+    "id": 5050,
+    "name": "Dague pourpre de l'assassin"
+  },
+  {
+    "id": 5060,
+    "name": "Dague céruléenne de l'assassin"
+  },
+  {
+    "id": 2080,
+    "name": "Insigne d'épée ailée"
+  },
+  {
+    "id": 2081,
+    "name": "Insigne d'épée ailée putréfiée"
+  },
+  {
+    "id": 1250,
+    "name": "Prothèse de Millicent"
+  },
+  {
+    "id": 5040,
+    "name": "Lange sanctechair"
+  },
+  {
+    "id": 2170,
+    "name": "Exultation des adeptes de la putréfaction"
+  },
+  {
+    "id": 2160,
+    "name": "Exultation du seigneur du sang"
+  },
+  {
+    "id": 5030,
+    "name": "Camée de pillard"
+  },
+  {
+    "id": 6110,
+    "name": "Corne de l'esprit ancestral"
+  },
+  {
+    "id": 1110,
+    "name": "Scarabée d'or"
+  },
+  {
+    "id": 1100,
+    "name": "Scarabée d'argent"
+  },
+  {
+    "id": 6000,
+    "name": "Fiole de Crepus"
+  },
+  {
+    "id": 6010,
+    "name": "Cape dissimulatrice"
+  },
+  {
+    "id": 6040,
+    "name": "Talisman du chat à longue queue"
+  },
+  {
+    "id": 6080,
+    "name": "Miroir retors de Doigt crochu"
+  },
+  {
+    "id": 6090,
+    "name": "Miroir retors d'hôte"
+  },
+  {
+    "id": 6050,
+    "name": "Malheur de Shabriri"
+  },
+  {
+    "id": 6060,
+    "name": "Malheur de Daedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Branche sacrificielle"
+  }
+]

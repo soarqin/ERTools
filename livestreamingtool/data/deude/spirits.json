@@ -1,0 +1,258 @@
+[
+  {
+    "id": 240000,
+    "name": "Asche der Wanderadligen"
+  },
+  {
+    "id": 241000,
+    "name": "Asche des Zaubereradligen"
+  },
+  {
+    "id": 205000,
+    "name": "Nomadenasche"
+  },
+  {
+    "id": 215000,
+    "name": "Stinkende Leichenasche"
+  },
+  {
+    "id": 212000,
+    "name": "Asche der Skelettmiliz"
+  },
+  {
+    "id": 213000,
+    "name": "Asche des Skelettbanditen"
+  },
+  {
+    "id": 211000,
+    "name": "Albinauricasche"
+  },
+  {
+    "id": 210000,
+    "name": "Flugscheusalsasche"
+  },
+  {
+    "id": 234000,
+    "name": "Halbmenschenasche"
+  },
+  {
+    "id": 222000,
+    "name": "Tonmenschenasche"
+  },
+  {
+    "id": 214000,
+    "name": "Asche der Orakelgesandten"
+  },
+  {
+    "id": 232000,
+    "name": "Asche der einsamen Wölfe"
+  },
+  {
+    "id": 235000,
+    "name": "Asche eines verrottenden Hunds"
+  },
+  {
+    "id": 233000,
+    "name": "Riesenrattenasche"
+  },
+  {
+    "id": 237000,
+    "name": "Kriegsfalkenasche"
+  },
+  {
+    "id": 244000,
+    "name": "Asche der Landschleimer"
+  },
+  {
+    "id": 236000,
+    "name": "Asche der Geisterqualle"
+  },
+  {
+    "id": 245000,
+    "name": "Asche von Mirandas Spross"
+  },
+  {
+    "id": 203000,
+    "name": "Asche der Vampirwichte"
+  },
+  {
+    "id": 246000,
+    "name": "Asche der Kriegergefäße"
+  },
+  {
+    "id": 249000,
+    "name": "Asche der Bogenschützen"
+  },
+  {
+    "id": 248000,
+    "name": "Asche der Großschildsoldaten"
+  },
+  {
+    "id": 220000,
+    "name": "Pagen-Asche"
+  },
+  {
+    "id": 242000,
+    "name": "Asche der niederen Soldaten"
+  },
+  {
+    "id": 225000,
+    "name": "Asche der Marionettensoldaten"
+  },
+  {
+    "id": 226000,
+    "name": "Asche der Flugmarionettensoldaten"
+  },
+  {
+    "id": 231000,
+    "name": "Asche des Kaiden-Söldners"
+  },
+  {
+    "id": 243000,
+    "name": "Asche des wahnsinnigen Kürbiskopfs"
+  },
+  {
+    "id": 227000,
+    "name": "Feuermönch-Asche"
+  },
+  {
+    "id": 209000,
+    "name": "Ahnenjüngerasche"
+  },
+  {
+    "id": 230000,
+    "name": "Asche der Bestienmenschen von Azula"
+  },
+  {
+    "id": 229000,
+    "name": "Schlangenmenschenasche"
+  },
+  {
+    "id": 208000,
+    "name": "Kristallianerasche"
+  },
+  {
+    "id": 224000,
+    "name": "Asche des Sprosses der Fäulnis"
+  },
+  {
+    "id": 218000,
+    "name": "Asche des Schimmersteinzauberers"
+  },
+  {
+    "id": 219000,
+    "name": "Asche des Zaubererzwillings"
+  },
+  {
+    "id": 250000,
+    "name": "Asche der Soldaten von Godrick"
+  },
+  {
+    "id": 251000,
+    "name": "Asche der Soldaten von Raya Lucaria"
+  },
+  {
+    "id": 252000,
+    "name": "Asche der Soldaten von Leyndell"
+  },
+  {
+    "id": 253000,
+    "name": "Asche der Soldaten von Radahn"
+  },
+  {
+    "id": 255000,
+    "name": "Asche der Soldaten des Haligbaums"
+  },
+  {
+    "id": 254000,
+    "name": "Asche der Mausoleumssoldaten"
+  },
+  {
+    "id": 238000,
+    "name": "Asche des Sturmfalken Deenh"
+  },
+  {
+    "id": 201000,
+    "name": "Asche des verbannten Ritters Oleg"
+  },
+  {
+    "id": 202000,
+    "name": "Asche des verbannten Ritters Engvall"
+  },
+  {
+    "id": 239000,
+    "name": "Asche des Bluthundritters Floh"
+  },
+  {
+    "id": 221000,
+    "name": "Asche des Kriegsmagiers Hugues"
+  },
+  {
+    "id": 204000,
+    "name": "Asche von Latenna der Albinauric"
+  },
+  {
+    "id": 217000,
+    "name": "Asche der Parfümeurin Tricia"
+  },
+  {
+    "id": 216000,
+    "name": "Asche des wahnsinnigen Parfümeurs Carmaan"
+  },
+  {
+    "id": 247000,
+    "name": "Asche von Maltöter Rollo"
+  },
+  {
+    "id": 228000,
+    "name": "Asche des Schwarzflammenmönchs Amon"
+  },
+  {
+    "id": 256000,
+    "name": "Asche des Drachenritters Kristoff"
+  },
+  {
+    "id": 257000,
+    "name": "Asche des Rotmähnenritters Ogha"
+  },
+  {
+    "id": 258000,
+    "name": "Asche von Lhutel der Kopflosen"
+  },
+  {
+    "id": 223000,
+    "name": "Asche der Reinfäule-Ritterin Finlay"
+  },
+  {
+    "id": 200000,
+    "name": "Asche von Tiche der Schwarzen Klinge"
+  },
+  {
+    "id": 207000,
+    "name": "Imitatortränenasche"
+  },
+  {
+    "id": 261000,
+    "name": "Puppe von Fingerjungfer Therolina"
+  },
+  {
+    "id": 263000,
+    "name": "Puppe eines Gefäßunholds"
+  },
+  {
+    "id": 262000,
+    "name": "Puppe von Dolores dem schlafenden Pfeil"
+  },
+  {
+    "id": 259000,
+    "name": "Puppe von Nepheli Loux"
+  },
+  {
+    "id": 260000,
+    "name": "Puppe des Dungfressers"
+  },
+  {
+    "id": 206000,
+    "name": "Nachtjungfer- & Schwertmaidpuppen"
+  }
+]

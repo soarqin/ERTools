@@ -1,0 +1,366 @@
+[
+  {
+    "id": 10600,
+    "name": "Kriegsasche: Stampfer (Aufwärtsschnitt)"
+  },
+  {
+    "id": 10700,
+    "name": "Kriegsasche: Stampfer (Feger)"
+  },
+  {
+    "id": 11000,
+    "name": "Kriegsasche: Wilde Schläge"
+  },
+  {
+    "id": 10000,
+    "name": "Kriegsasche: Löwenkralle"
+  },
+  {
+    "id": 60700,
+    "name": "Kriegsasche: Felsklinge"
+  },
+  {
+    "id": 50300,
+    "name": "Kriegsasche: Tritt"
+  },
+  {
+    "id": 70000,
+    "name": "Kriegsasche: Beharren"
+  },
+  {
+    "id": 50600,
+    "name": "Kriegsasche: Bodenschlag"
+  },
+  {
+    "id": 21200,
+    "name": "Kriegsasche: Erderschütterer"
+  },
+  {
+    "id": 50900,
+    "name": "Kriegsasche: Hoarah Loux' Erschütterer"
+  },
+  {
+    "id": 65100,
+    "name": "Kriegsasche: Kriegsgebrüll"
+  },
+  {
+    "id": 65000,
+    "name": "Kriegsasche: Barbarenbrüllen"
+  },
+  {
+    "id": 65400,
+    "name": "Kriegsasche: Prahlendes Brüllen"
+  },
+  {
+    "id": 65300,
+    "name": "Kriegsasche: Trollbrüllen"
+  },
+  {
+    "id": 10300,
+    "name": "Kriegsasche: Wirbelhieb"
+  },
+  {
+    "id": 10100,
+    "name": "Kriegsasche: Aufspießender Stoß"
+  },
+  {
+    "id": 10200,
+    "name": "Kriegsasche: Bohrender Reißzahn"
+  },
+  {
+    "id": 10900,
+    "name": "Kriegsasche: Stoßhagel"
+  },
+  {
+    "id": 11200,
+    "name": "Kriegsasche: Doppelschnitt"
+  },
+  {
+    "id": 12400,
+    "name": "Kriegsasche: Schwerttanz"
+  },
+  {
+    "id": 11400,
+    "name": "Kriegsasche: Iaido"
+  },
+  {
+    "id": 80000,
+    "name": "Kriegsasche: Schnellschritt"
+  },
+  {
+    "id": 80100,
+    "name": "Kriegsasche: Bluthundschritt"
+  },
+  {
+    "id": 80200,
+    "name": "Kriegsasche: Nebelraptor"
+  },
+  {
+    "id": 65200,
+    "name": "Kriegsasche: Schrei der Bestie"
+  },
+  {
+    "id": 11500,
+    "name": "Kriegsasche: Duell"
+  },
+  {
+    "id": 10500,
+    "name": "Kriegsasche: Wuchtiger Ansturm"
+  },
+  {
+    "id": 11100,
+    "name": "Kriegsasche: Wirbelhiebe"
+  },
+  {
+    "id": 11600,
+    "name": "Kriegsasche: Riesenjagd"
+  },
+  {
+    "id": 21000,
+    "name": "Kriegsasche: Sturmklinge"
+  },
+  {
+    "id": 12200,
+    "name": "Kriegsasche: Sturmangriff"
+  },
+  {
+    "id": 12300,
+    "name": "Kriegsasche: Sturmrufer"
+  },
+  {
+    "id": 50200,
+    "name": "Kriegsasche: Sturmstampfer"
+  },
+  {
+    "id": 22000,
+    "name": "Kriegsasche: Vakuumschnitt"
+  },
+  {
+    "id": 22500,
+    "name": "Kriegsasche: Phantomschnitt"
+  },
+  {
+    "id": 60000,
+    "name": "Kriegsasche: Eiserner Wille"
+  },
+  {
+    "id": 60100,
+    "name": "Kriegsasche: Mut der Königsritter"
+  },
+  {
+    "id": 20300,
+    "name": "Kriegsasche: Schimmersteinkiesel"
+  },
+  {
+    "id": 20000,
+    "name": "Kriegsasche: Schimmerphalanx"
+  },
+  {
+    "id": 21900,
+    "name": "Kriegsasche: Cariagroßschwert"
+  },
+  {
+    "id": 21800,
+    "name": "Kriegsasche: Carianische Erhabenheit"
+  },
+  {
+    "id": 12000,
+    "name": "Kriegsasche: Wirbelnde Waffe"
+  },
+  {
+    "id": 11800,
+    "name": "Kriegsasche: Lorettas Schnitt"
+  },
+  {
+    "id": 20900,
+    "name": "Kriegsasche: Gravitation"
+  },
+  {
+    "id": 50800,
+    "name": "Kriegsasche: Wellen der Finsternis"
+  },
+  {
+    "id": 21400,
+    "name": "Kriegsasche: Flammender Schlag"
+  },
+  {
+    "id": 50500,
+    "name": "Kriegsasche: Flamme der Rotmähnen"
+  },
+  {
+    "id": 20700,
+    "name": "Kriegsasche: Eruption"
+  },
+  {
+    "id": 11300,
+    "name": "Kriegsasche: Ansturm des Prälaten"
+  },
+  {
+    "id": 22100,
+    "name": "Kriegsasche: Schwarzflammentornado"
+  },
+  {
+    "id": 21600,
+    "name": "Kriegsasche: Donnerblitz"
+  },
+  {
+    "id": 21700,
+    "name": "Kriegsasche: Blitzschnitt"
+  },
+  {
+    "id": 50400,
+    "name": "Kriegsasche: Blitzbock"
+  },
+  {
+    "id": 20100,
+    "name": "Kriegsasche: Heilige Klinge"
+  },
+  {
+    "id": 20800,
+    "name": "Kriegsasche: Gebetsschlag"
+  },
+  {
+    "id": 22200,
+    "name": "Kriegsasche: Heiliger Lichtring"
+  },
+  {
+    "id": 60400,
+    "name": "Kriegsasche: Heilige Ordnung"
+  },
+  {
+    "id": 60500,
+    "name": "Kriegsasche: Geteilte Ordnung"
+  },
+  {
+    "id": 21300,
+    "name": "Kriegsasche: Goldenes Land"
+  },
+  {
+    "id": 50700,
+    "name": "Kriegsasche: Goldener Schlag"
+  },
+  {
+    "id": 60300,
+    "name": "Kriegsasche: Goldener Schwur"
+  },
+  {
+    "id": 70100,
+    "name": "Kriegsasche: Unbeugsamer Schwur"
+  },
+  {
+    "id": 70200,
+    "name": "Kriegsasche: Heiliger Boden"
+  },
+  {
+    "id": 22800,
+    "name": "Kriegsasche: Giftiger Nebel"
+  },
+  {
+    "id": 11900,
+    "name": "Kriegsasche: Giftiger Falter"
+  },
+  {
+    "id": 22400,
+    "name": "Kriegsasche: Blutklinge"
+  },
+  {
+    "id": 20400,
+    "name": "Kriegsasche: Blutiger Schnitt"
+  },
+  {
+    "id": 10800,
+    "name": "Kriegsasche: Blutzoll"
+  },
+  {
+    "id": 60600,
+    "name": "Kriegsasche: Seppuku"
+  },
+  {
+    "id": 20200,
+    "name": "Kriegsasche: Eisspeer"
+  },
+  {
+    "id": 22700,
+    "name": "Kriegsasche: Frostnebel"
+  },
+  {
+    "id": 50100,
+    "name": "Kriegsasche: Raureifstampfer"
+  },
+  {
+    "id": 22600,
+    "name": "Kriegsasche: Spektrallanze"
+  },
+  {
+    "id": 20500,
+    "name": "Kriegsasche: Vampirfaust"
+  },
+  {
+    "id": 85000,
+    "name": "Kriegsasche: Ruf des Weißen Schatten"
+  },
+  {
+    "id": 60200,
+    "name": "Kriegsasche: Schachzug des Assassinen"
+  },
+  {
+    "id": 40200,
+    "name": "Kriegsasche: Mächtiger Schuss"
+  },
+  {
+    "id": 40000,
+    "name": "Kriegsasche: Durch und durch"
+  },
+  {
+    "id": 40100,
+    "name": "Kriegsasche: Sperrfeuer"
+  },
+  {
+    "id": 40500,
+    "name": "Kriegsasche: Himmelsschuss"
+  },
+  {
+    "id": 40400,
+    "name": "Kriegsasche: Verzauberter Schuss"
+  },
+  {
+    "id": 40600,
+    "name": "Kriegsasche: Pfeilhagel"
+  },
+  {
+    "id": 30200,
+    "name": "Kriegsasche: Parade"
+  },
+  {
+    "id": 30700,
+    "name": "Kriegsasche: Goldene Parade"
+  },
+  {
+    "id": 30600,
+    "name": "Kriegsasche: Sturmwall"
+  },
+  {
+    "id": 30000,
+    "name": "Kriegsasche: Schildschlag"
+  },
+  {
+    "id": 30800,
+    "name": "Kriegsasche: Schildaufprall"
+  },
+  {
+    "id": 30100,
+    "name": "Kriegsasche: Barrikadenschild"
+  },
+  {
+    "id": 31000,
+    "name": "Kriegsasche: Thops' Barriere"
+  },
+  {
+    "id": 30500,
+    "name": "Kriegsasche: Carianischer Gegenschlag"
+  },
+  {
+    "id": 30900,
+    "name": "Kriegsasche: Kein Talent"
+  }
+]

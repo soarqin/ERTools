@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Guijarro de destellita"
+  },
+  {
+    "id": 4010,
+    "name": "Fragmento de destellita veloz"
+  },
+  {
+    "id": 4001,
+    "name": "Gran fragmento de destellita"
+  },
+  {
+    "id": 4020,
+    "name": "Fragmento de cometa de destellita"
+  },
+  {
+    "id": 4021,
+    "name": "Cometa"
+  },
+  {
+    "id": 4030,
+    "name": "Espiral de fragmentos"
+  },
+  {
+    "id": 4040,
+    "name": "Estrellas de destellita"
+  },
+  {
+    "id": 4050,
+    "name": "Lluvia de estrellas"
+  },
+  {
+    "id": 4070,
+    "name": "Arco de destellita"
+  },
+  {
+    "id": 4060,
+    "name": "Bombardeo de cristales"
+  },
+  {
+    "id": 4090,
+    "name": "Ráfaga de cristales"
+  },
+  {
+    "id": 4080,
+    "name": "Cañón de Haima"
+  },
+  {
+    "id": 4120,
+    "name": "Mazo de Haima"
+  },
+  {
+    "id": 4100,
+    "name": "Destruyetierra"
+  },
+  {
+    "id": 4110,
+    "name": "Desintegrador de rocas"
+  },
+  {
+    "id": 4460,
+    "name": "Armamento del erudito"
+  },
+  {
+    "id": 4470,
+    "name": "Escudo del erudito"
+  },
+  {
+    "id": 4140,
+    "name": "Luz estelar"
+  },
+  {
+    "id": 4130,
+    "name": "Tierra Mágica"
+  },
+  {
+    "id": 4630,
+    "name": "Barrera de Thops"
+  },
+  {
+    "id": 4200,
+    "name": "Bólido oscuro"
+  },
+  {
+    "id": 4220,
+    "name": "Estrellas de la ruina"
+  },
+  {
+    "id": 4210,
+    "name": "Lluvia de estrellas original"
+  },
+  {
+    "id": 4390,
+    "name": "Destelloja mágica"
+  },
+  {
+    "id": 4300,
+    "name": "Falange de destelloja"
+  },
+  {
+    "id": 4301,
+    "name": "Falange de Caria"
+  },
+  {
+    "id": 4302,
+    "name": "Falange de hoja grande"
+  },
+  {
+    "id": 4370,
+    "name": "Lluvia mágica"
+  },
+  {
+    "id": 4380,
+    "name": "Gran arco de Loretta"
+  },
+  {
+    "id": 4381,
+    "name": "Dominio de Loretta"
+  },
+  {
+    "id": 4360,
+    "name": "Luna llena de Rennala"
+  },
+  {
+    "id": 4361,
+    "name": "Luna oscura de Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Cortador de Caria"
+  },
+  {
+    "id": 4430,
+    "name": "Espadón de Caria"
+  },
+  {
+    "id": 4450,
+    "name": "Perforador de Caria"
+  },
+  {
+    "id": 4431,
+    "name": "Hojaluna de Adula"
+  },
+  {
+    "id": 4480,
+    "name": "Lucidez"
+  },
+  {
+    "id": 4640,
+    "name": "Contraataque de Caria"
+  },
+  {
+    "id": 4600,
+    "name": "Fragmento de emboscada"
+  },
+  {
+    "id": 4610,
+    "name": "Fragmento de noche"
+  },
+  {
+    "id": 4620,
+    "name": "Cometa nocturno"
+  },
+  {
+    "id": 6500,
+    "name": "Niebla de doncella de la noche"
+  },
+  {
+    "id": 4660,
+    "name": "Hoja invisible"
+  },
+  {
+    "id": 4670,
+    "name": "Forma invisible"
+  },
+  {
+    "id": 4650,
+    "name": "Oscuridad eterna"
+  },
+  {
+    "id": 4800,
+    "name": "Disparo de magma"
+  },
+  {
+    "id": 4820,
+    "name": "Magma turbulento"
+  },
+  {
+    "id": 4810,
+    "name": "Furia de Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Rencor de Rykard"
+  },
+  {
+    "id": 4400,
+    "name": "Peñasco de hielo de destellita"
+  },
+  {
+    "id": 4420,
+    "name": "Niebla de congelación"
+  },
+  {
+    "id": 4490,
+    "name": "Armamento congelado"
+  },
+  {
+    "id": 4410,
+    "name": "Tormenta de hielo de Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Cristal devastador"
+  },
+  {
+    "id": 4520,
+    "name": "Torrente de cristal"
+  },
+  {
+    "id": 4510,
+    "name": "Liberación de cristal"
+  },
+  {
+    "id": 4720,
+    "name": "Pozo de gravedad"
+  },
+  {
+    "id": 4721,
+    "name": "Colapso de estrellas"
+  },
+  {
+    "id": 4710,
+    "name": "Honda de piedra"
+  },
+  {
+    "id": 4700,
+    "name": "Meteorito"
+  },
+  {
+    "id": 4701,
+    "name": "Meteorito de Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Burbujas del oráculo"
+  },
+  {
+    "id": 5110,
+    "name": "Gran burbuja profética"
+  },
+  {
+    "id": 4900,
+    "name": "Arbustos espinosos del pecado"
+  },
+  {
+    "id": 4910,
+    "name": "Zarzas de castigo"
+  },
+  {
+    "id": 5000,
+    "name": "Llamada de rencor"
+  },
+  {
+    "id": 5001,
+    "name": "Rencor de muerte antiguo"
+  },
+  {
+    "id": 5010,
+    "name": "Llama espectral explosiva"
+  },
+  {
+    "id": 5020,
+    "name": "Niebla de Fia"
+  },
+  {
+    "id": 5030,
+    "name": "Invocaciones de Tibia"
+  }
+]

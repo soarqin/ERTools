@@ -1,0 +1,1680 @@
+[
+  {
+    "category": "Dague",
+    "items": [
+      {
+        "id": 1000000,
+        "name": "Dague"
+      },
+      {
+        "id": 1020000,
+        "name": "Dague de parade"
+      },
+      {
+        "id": 1030000,
+        "name": "Miséricorde"
+      },
+      {
+        "id": 1090000,
+        "name": "Grand couteau"
+      },
+      {
+        "id": 1140000,
+        "name": "Dague maculée de sang"
+      },
+      {
+        "id": 1150000,
+        "name": "Dague en acier-monde"
+      },
+      {
+        "id": 1100000,
+        "name": "Wakizashi"
+      },
+      {
+        "id": 1060000,
+        "name": "Faucille de l'officiant"
+      },
+      {
+        "id": 1130000,
+        "name": "Faucille en ivoire"
+      },
+      {
+        "id": 1050000,
+        "name": "Couteau de cristal"
+      },
+      {
+        "id": 1080000,
+        "name": "Aiguillon de scorpion"
+      },
+      {
+        "id": 1110000,
+        "name": "Cinquedea"
+      },
+      {
+        "id": 1070000,
+        "name": "Kriss de pierre d'éclat"
+      },
+      {
+        "id": 1040000,
+        "name": "Reduvia"
+      },
+      {
+        "id": 1160000,
+        "name": "Lame du devoir"
+      },
+      {
+        "id": 1010000,
+        "name": "Couteau noir"
+      }
+    ]
+  },
+  {
+    "category": "Épée droite",
+    "items": [
+      {
+        "id": 2010000,
+        "name": "Épée courte"
+      },
+      {
+        "id": 2000000,
+        "name": "Épée longue"
+      },
+      {
+        "id": 2020000,
+        "name": "Épée large"
+      },
+      {
+        "id": 2050000,
+        "name": "Épée droite usée"
+      },
+      {
+        "id": 2040000,
+        "name": "Épée droite seigneuriale"
+      },
+      {
+        "id": 2230000,
+        "name": "Épée fine de noble"
+      },
+      {
+        "id": 2210000,
+        "name": "Épée-canne"
+      },
+      {
+        "id": 2240000,
+        "name": "Serre de faucon de guerre"
+      },
+      {
+        "id": 2250000,
+        "name": "Épée de pierre d'éclat de Lazuli"
+      },
+      {
+        "id": 2180000,
+        "name": "Épée de chevalier de Caria"
+      },
+      {
+        "id": 2150000,
+        "name": "Épée de cristal"
+      },
+      {
+        "id": 2260000,
+        "name": "Épée de cristal putréfiée"
+      },
+      {
+        "id": 2200000,
+        "name": "Épée de chevalier de Miquella"
+      },
+      {
+        "id": 2060000,
+        "name": "Épée droite ornementale"
+      },
+      {
+        "id": 2070000,
+        "name": "Épitaphe dorée"
+      },
+      {
+        "id": 2190000,
+        "name": "Épée de sainte Trina"
+      },
+      {
+        "id": 2220000,
+        "name": "Joyau d'Eochaid"
+      },
+      {
+        "id": 2110000,
+        "name": "Épée cryptée"
+      },
+      {
+        "id": 2140000,
+        "name": "Épée de la nuit ardente"
+      }
+    ]
+  },
+  {
+    "category": "Espadon",
+    "items": [
+      {
+        "id": 3000000,
+        "name": "Épée bâtarde"
+      },
+      {
+        "id": 3180000,
+        "name": "Claymore"
+      },
+      {
+        "id": 3020000,
+        "name": "Espadon en fer"
+      },
+      {
+        "id": 3030000,
+        "name": "Espadon seigneurial"
+      },
+      {
+        "id": 3040000,
+        "name": "Espadon de chevalier"
+      },
+      {
+        "id": 3080000,
+        "name": "Espadon de chevalier banni"
+      },
+      {
+        "id": 3010000,
+        "name": "Espadon fourchu"
+      },
+      {
+        "id": 3050000,
+        "name": "Flamberge"
+      },
+      {
+        "id": 3190000,
+        "name": "Espadon de gargouille"
+      },
+      {
+        "id": 3210000,
+        "name": "Lame sombre de gargouille"
+      },
+      {
+        "id": 2090000,
+        "name": "Épée en alliage"
+      },
+      {
+        "id": 3160000,
+        "name": "Épée de Milos"
+      },
+      {
+        "id": 3150000,
+        "name": "Épée d'exécution des Tourbier"
+      },
+      {
+        "id": 3060000,
+        "name": "Espadon d'Ordovis"
+      },
+      {
+        "id": 3070000,
+        "name": "Espadon de seigneur d'albâtre"
+      },
+      {
+        "id": 3200000,
+        "name": "Aiguillon funeste"
+      },
+      {
+        "id": 3130000,
+        "name": "Clocher d'Helfen"
+      },
+      {
+        "id": 3140000,
+        "name": "Lame blasphématoire"
+      },
+      {
+        "id": 3170000,
+        "name": "Espadon de l'Ordre d'or"
+      },
+      {
+        "id": 3090000,
+        "name": "Espadon de la lune obscure"
+      },
+      {
+        "id": 3100000,
+        "name": "Lame-relique sacrée"
+      }
+    ]
+  },
+  {
+    "category": "Épée colossale",
+    "items": [
+      {
+        "id": 4040000,
+        "name": "Épée à deux mains"
+      },
+      {
+        "id": 4000000,
+        "name": "Grand espadon"
+      },
+      {
+        "id": 4010000,
+        "name": "Espadon de veilleur"
+      },
+      {
+        "id": 4030000,
+        "name": "Épée dorée de troll"
+      },
+      {
+        "id": 4110000,
+        "name": "Épée de chevalier troll"
+      },
+      {
+        "id": 4060000,
+        "name": "Espadon royal"
+      },
+      {
+        "id": 4100000,
+        "name": "Espadon fusionné"
+      },
+      {
+        "id": 4080000,
+        "name": "Espadon des ruines"
+      },
+      {
+        "id": 4050000,
+        "name": "Espadon du Fléau des astres"
+      },
+      {
+        "id": 4070000,
+        "name": "Espadon du déicide"
+      },
+      {
+        "id": 4020000,
+        "name": "Lame d'ébène de Maliketh"
+      }
+    ]
+  },
+  {
+    "category": "Épée d'estoc",
+    "items": [
+      {
+        "id": 5020000,
+        "name": "Rapière"
+      },
+      {
+        "id": 5000000,
+        "name": "Estoc"
+      },
+      {
+        "id": 5060000,
+        "name": "Rapière de noble"
+      },
+      {
+        "id": 5010000,
+        "name": "Épée de la Noble putréfaction"
+      },
+      {
+        "id": 5030000,
+        "name": "Rapière de Rogier"
+      },
+      {
+        "id": 5040000,
+        "name": "Rapière myrmicéenne"
+      },
+      {
+        "id": 5050000,
+        "name": "Aiguille givrée"
+      }
+    ]
+  },
+  {
+    "category": "Épée d'estoc lourde",
+    "items": [
+      {
+        "id": 6020000,
+        "name": "Grande rapière"
+      },
+      {
+        "id": 6010000,
+        "name": "Aiguille sanctechair"
+      },
+      {
+        "id": 6000000,
+        "name": "Spirale sanglante"
+      },
+      {
+        "id": 6040000,
+        "name": "Lame rocheuse du Roi des dragons"
+      }
+    ]
+  },
+  {
+    "category": "Épée courbée",
+    "items": [
+      {
+        "id": 7140000,
+        "name": "Cimeterre"
+      },
+      {
+        "id": 7000000,
+        "name": "Fauchon"
+      },
+      {
+        "id": 7030000,
+        "name": "Shamshir"
+      },
+      {
+        "id": 7150000,
+        "name": "Messer"
+      },
+      {
+        "id": 7040000,
+        "name": "Épée courbée de bandit"
+      },
+      {
+        "id": 7020000,
+        "name": "Shotel"
+      },
+      {
+        "id": 7080000,
+        "name": "Épée courbée du charognard"
+      },
+      {
+        "id": 7120000,
+        "name": "Lame de la mante"
+      },
+      {
+        "id": 7010000,
+        "name": "Épée courbée d'homme-bête"
+      },
+      {
+        "id": 7060000,
+        "name": "Épée courbée gracieuse"
+      },
+      {
+        "id": 7110000,
+        "name": "Épée courbée du dieu-serpent"
+      },
+      {
+        "id": 7050000,
+        "name": "Lame de magma"
+      },
+      {
+        "id": 2080000,
+        "name": "Épée nokrienne"
+      },
+      {
+        "id": 7070000,
+        "name": "Aile d'Astel"
+      },
+      {
+        "id": 7100000,
+        "name": "Shotel de l'éclipse"
+      }
+    ]
+  },
+  {
+    "category": "Espadon courbé",
+    "items": [
+      {
+        "id": 8020000,
+        "name": "Désarçonneur"
+      },
+      {
+        "id": 8060000,
+        "name": "Fendoir de Réprouvé"
+      },
+      {
+        "id": 8070000,
+        "name": "Lame ardente de moine"
+      },
+      {
+        "id": 8080000,
+        "name": "Fendoir d'homme-bête"
+      },
+      {
+        "id": 8030000,
+        "name": "Croc de limier"
+      },
+      {
+        "id": 8010000,
+        "name": "Espadon de seigneur d'onyx"
+      },
+      {
+        "id": 8050000,
+        "name": "Épée courbée de Zamor"
+      },
+      {
+        "id": 8040000,
+        "name": "Lame-écaille du Dragon du magma"
+      },
+      {
+        "id": 8100000,
+        "name": "Épée maudite de Morgott"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9000000,
+        "name": "Uchigatana"
+      },
+      {
+        "id": 9010000,
+        "name": "Nagakiba"
+      },
+      {
+        "id": 9080000,
+        "name": "Katana vipérin"
+      },
+      {
+        "id": 9030000,
+        "name": "Lame météorique"
+      },
+      {
+        "id": 9060000,
+        "name": "Éclipse lunaire"
+      },
+      {
+        "id": 9040000,
+        "name": "Rivière sanglante"
+      },
+      {
+        "id": 9070000,
+        "name": "Lame en écailles de dragon"
+      },
+      {
+        "id": 9020000,
+        "name": "Main de Malenia"
+      }
+    ]
+  },
+  {
+    "category": "Lame double",
+    "items": [
+      {
+        "id": 10000000,
+        "name": "Lame double"
+      },
+      {
+        "id": 10030000,
+        "name": "Épées géminées de chevalier"
+      },
+      {
+        "id": 10010000,
+        "name": "Écorcheur sanctechair"
+      },
+      {
+        "id": 10080000,
+        "name": "Lame double de gargouille"
+      },
+      {
+        "id": 10090000,
+        "name": "Lame double noire de gargouille"
+      },
+      {
+        "id": 10050000,
+        "name": "Lame double d'Eleonora"
+      }
+    ]
+  },
+  {
+    "category": "Hache",
+    "items": [
+      {
+        "id": 14010000,
+        "name": "Hachette fourchue"
+      },
+      {
+        "id": 14020000,
+        "name": "Hache légère"
+      },
+      {
+        "id": 14000000,
+        "name": "Hache de guerre"
+      },
+      {
+        "id": 15010000,
+        "name": "Hache distordue"
+      },
+      {
+        "id": 14030000,
+        "name": "Hache dentelée"
+      },
+      {
+        "id": 14040000,
+        "name": "Fendoir en fer"
+      },
+      {
+        "id": 14100000,
+        "name": "Hache des montagnes"
+      },
+      {
+        "id": 14060000,
+        "name": "Fendoir de l'officiant"
+      },
+      {
+        "id": 14110000,
+        "name": "Hache sacrificielle"
+      },
+      {
+        "id": 14080000,
+        "name": "Hachette auréolée de glace"
+      },
+      {
+        "id": 14050000,
+        "name": "Épée ondulée"
+      },
+      {
+        "id": 14140000,
+        "name": "Hache de faucon des tempêtes"
+      },
+      {
+        "id": 14120000,
+        "name": "Hache de Rosus"
+      }
+    ]
+  },
+  {
+    "category": "Grande hache",
+    "items": [
+      {
+        "id": 15000000,
+        "name": "Grande hache"
+      },
+      {
+        "id": 15030000,
+        "name": "Hache lunaire"
+      },
+      {
+        "id": 15050000,
+        "name": "Hache longue"
+      },
+      {
+        "id": 15080000,
+        "name": "Hache du bourreau"
+      },
+      {
+        "id": 15020000,
+        "name": "Réprouvicide"
+      },
+      {
+        "id": 15060000,
+        "name": "Ancre rouillée"
+      },
+      {
+        "id": 15120000,
+        "name": "Couteau de boucher"
+      },
+      {
+        "id": 15130000,
+        "name": "Grande hache de gargouille"
+      },
+      {
+        "id": 15140000,
+        "name": "Hache noire de gargouille"
+      },
+      {
+        "id": 15110000,
+        "name": "Grande corne ailée"
+      },
+      {
+        "id": 15040000,
+        "name": "Hache de Godrick"
+      }
+    ]
+  },
+  {
+    "category": "Marteau",
+    "items": [
+      {
+        "id": 11010000,
+        "name": "Gourdin"
+      },
+      {
+        "id": 11030000,
+        "name": "Gourdin courbé"
+      },
+      {
+        "id": 11070000,
+        "name": "Gourdin à pointes"
+      },
+      {
+        "id": 11140000,
+        "name": "Gourdin en pierre"
+      },
+      {
+        "id": 11000000,
+        "name": "Masse"
+      },
+      {
+        "id": 11050000,
+        "name": "Morgenstern"
+      },
+      {
+        "id": 11040000,
+        "name": "Pic de guerre"
+      },
+      {
+        "id": 11080000,
+        "name": "Marteau"
+      },
+      {
+        "id": 11090000,
+        "name": "Heurtoir ardent de moine"
+      },
+      {
+        "id": 11060000,
+        "name": "Bouquet de Varré"
+      },
+      {
+        "id": 11100000,
+        "name": "Corne de l'émissaire"
+      },
+      {
+        "id": 11120000,
+        "name": "Marteau nokrien"
+      },
+      {
+        "id": 11130000,
+        "name": "Annulaire"
+      },
+      {
+        "id": 11110000,
+        "name": "Sceptre de l'Omniscient"
+      },
+      {
+        "id": 11150000,
+        "name": "Marteau de Marika"
+      }
+    ]
+  },
+  {
+    "category": "Marteau de guerre",
+    "items": [
+      {
+        "id": 12000000,
+        "name": "Grand gourdin"
+      },
+      {
+        "id": 12080000,
+        "name": "Grand gourdin courbé"
+      },
+      {
+        "id": 12060000,
+        "name": "Grande masse"
+      },
+      {
+        "id": 12140000,
+        "name": "Pioche"
+      },
+      {
+        "id": 12190000,
+        "name": "Marteau en pierre"
+      },
+      {
+        "id": 12020000,
+        "name": "Marteau de guerre"
+      },
+      {
+        "id": 12210000,
+        "name": "Marteau de guerre putréfié"
+      },
+      {
+        "id": 12130000,
+        "name": "Crâne de l'officiant"
+      },
+      {
+        "id": 12180000,
+        "name": "Gourdin hérissé"
+      },
+      {
+        "id": 12010000,
+        "name": "Marteau cornu"
+      },
+      {
+        "id": 12160000,
+        "name": "Longue corne de l'émissaire"
+      },
+      {
+        "id": 12170000,
+        "name": "Chandelier crânien"
+      },
+      {
+        "id": 12150000,
+        "name": "Grand marteau griffu"
+      },
+      {
+        "id": 12200000,
+        "name": "Spectre du dévoreur"
+      }
+    ]
+  },
+  {
+    "category": "Fléau d'armes",
+    "items": [
+      {
+        "id": 13010000,
+        "name": "Fléau d'armes"
+      },
+      {
+        "id": 13000000,
+        "name": "Fléau de cavalier crépusculaire"
+      },
+      {
+        "id": 13040000,
+        "name": "Fléau d'armes articulé"
+      },
+      {
+        "id": 13020000,
+        "name": "Têtes du clan"
+      },
+      {
+        "id": 13030000,
+        "name": "Étoiles du bâtard"
+      }
+    ]
+  },
+  {
+    "category": "Arme colossale",
+    "items": [
+      {
+        "id": 23040000,
+        "name": "Grande hache de gladiateur"
+      },
+      {
+        "id": 23150000,
+        "name": "Grande hache putréfiée"
+      },
+      {
+        "id": 23120000,
+        "name": "Arme d'hast de golem"
+      },
+      {
+        "id": 23110000,
+        "name": "Fléau des Géants"
+      },
+      {
+        "id": 23000000,
+        "name": "Grand marteau de prélat"
+      },
+      {
+        "id": 23020000,
+        "name": "Grand gourdin"
+      },
+      {
+        "id": 23130000,
+        "name": "Marteau de troll"
+      },
+      {
+        "id": 23060000,
+        "name": "Griffe draconique"
+      },
+      {
+        "id": 23010000,
+        "name": "Crosse de veilleur"
+      },
+      {
+        "id": 23070000,
+        "name": "Bâton de l'avatar"
+      },
+      {
+        "id": 23140000,
+        "name": "Bâton putréfié"
+      },
+      {
+        "id": 23030000,
+        "name": "Grande corne de l'émissaire"
+      },
+      {
+        "id": 23100000,
+        "name": "Rouet de Ghiza"
+      },
+      {
+        "id": 23080000,
+        "name": "Mâchoire de créature stellaire"
+      },
+      {
+        "id": 23050000,
+        "name": "Hache de Godfrey"
+      }
+    ]
+  },
+  {
+    "category": "Lance",
+    "items": [
+      {
+        "id": 16000000,
+        "name": "Lance courte"
+      },
+      {
+        "id": 16150000,
+        "name": "Lance en fer"
+      },
+      {
+        "id": 16010000,
+        "name": "Lance"
+      },
+      {
+        "id": 16050000,
+        "name": "Pertuisane"
+      },
+      {
+        "id": 16070000,
+        "name": "Pique"
+      },
+      {
+        "id": 16140000,
+        "name": "Lance à pointes"
+      },
+      {
+        "id": 16110000,
+        "name": "Yari"
+      },
+      {
+        "id": 16030000,
+        "name": "Harpon de boueux"
+      },
+      {
+        "id": 16060000,
+        "name": "Râteau d'os de l'officiant"
+      },
+      {
+        "id": 16080000,
+        "name": "Flambeau"
+      },
+      {
+        "id": 16130000,
+        "name": "Girandole du tortionnaire"
+      },
+      {
+        "id": 16020000,
+        "name": "Lance de cristal"
+      },
+      {
+        "id": 16160000,
+        "name": "Lance de cristal putréfiée"
+      },
+      {
+        "id": 16040000,
+        "name": "Lance de la Noble putréfaction"
+      },
+      {
+        "id": 16120000,
+        "name": "Lance de rite funéraire"
+      },
+      {
+        "id": 16090000,
+        "name": "Éclair de Gransax"
+      }
+    ]
+  },
+  {
+    "category": "Grande lance",
+    "items": [
+      {
+        "id": 17060000,
+        "name": "Lance de cavalerie"
+      },
+      {
+        "id": 17070000,
+        "name": "Lance arborescente"
+      },
+      {
+        "id": 17030000,
+        "name": "Traque-vipère"
+      },
+      {
+        "id": 17020000,
+        "name": "Arbre de Siluria"
+      },
+      {
+        "id": 17050000,
+        "name": "Lance de guerre de Vyke"
+      },
+      {
+        "id": 17010000,
+        "name": "Lance sacrée de Mohgwyn"
+      }
+    ]
+  },
+  {
+    "category": "Hallebarde",
+    "items": [
+      {
+        "id": 18000000,
+        "name": "Hallebarde"
+      },
+      {
+        "id": 18030000,
+        "name": "Hallebarde de chevalier banni"
+      },
+      {
+        "id": 18020000,
+        "name": "Bec-de-corbin"
+      },
+      {
+        "id": 18090000,
+        "name": "Glaive"
+      },
+      {
+        "id": 18130000,
+        "name": "Shotel de milicien vulgaire"
+      },
+      {
+        "id": 18070000,
+        "name": "Scie de milicien vulgaire"
+      },
+      {
+        "id": 18110000,
+        "name": "Épée-lance de gardien"
+      },
+      {
+        "id": 18150000,
+        "name": "Hallebarde de gargouille"
+      },
+      {
+        "id": 18160000,
+        "name": "Hallebarde noire de gargouille"
+      },
+      {
+        "id": 18050000,
+        "name": "Vouge de cavalier crépusculaire"
+      },
+      {
+        "id": 18010000,
+        "name": "Insectolame"
+      },
+      {
+        "id": 18060000,
+        "name": "Hallebarde lunaire"
+      },
+      {
+        "id": 18080000,
+        "name": "Hallebarde dorée"
+      },
+      {
+        "id": 18140000,
+        "name": "Hallebarde draconique"
+      },
+      {
+        "id": 18100000,
+        "name": "Faucille de guerre de Loretta"
+      },
+      {
+        "id": 18040000,
+        "name": "Étendard de commandant"
+      }
+    ]
+  },
+  {
+    "category": "Fauchard",
+    "items": [
+      {
+        "id": 19000000,
+        "name": "Faux"
+      },
+      {
+        "id": 19010000,
+        "name": "Faux mortuaire"
+      },
+      {
+        "id": 19020000,
+        "name": "Faux du halo"
+      },
+      {
+        "id": 19060000,
+        "name": "Faux ailée"
+      }
+    ]
+  },
+  {
+    "category": "Fouet",
+    "items": [
+      {
+        "id": 20000000,
+        "name": "Fouet"
+      },
+      {
+        "id": 20020000,
+        "name": "Fouet épineux"
+      },
+      {
+        "id": 20070000,
+        "name": "Urumi"
+      },
+      {
+        "id": 20050000,
+        "name": "Fouet floral des Hoslow"
+      },
+      {
+        "id": 20030000,
+        "name": "Chandelier-fouet volcanique"
+      },
+      {
+        "id": 20060000,
+        "name": "Tresse rousse de Géant"
+      }
+    ]
+  },
+  {
+    "category": "Poing",
+    "items": [
+      {
+        "id": 21000000,
+        "name": "Ceste"
+      },
+      {
+        "id": 21010000,
+        "name": "Ceste à pointes"
+      },
+      {
+        "id": 21100000,
+        "name": "Katar"
+      },
+      {
+        "id": 21070000,
+        "name": "Globe en fer"
+      },
+      {
+        "id": 21080000,
+        "name": "Globe hérissé"
+      },
+      {
+        "id": 21110000,
+        "name": "Main agrippée"
+      },
+      {
+        "id": 21120000,
+        "name": "Prothèse de vétéran"
+      },
+      {
+        "id": 21130000,
+        "name": "Pata runique"
+      },
+      {
+        "id": 21060000,
+        "name": "Dragon greffé"
+      }
+    ]
+  },
+  {
+    "category": "Griffes",
+    "items": [
+      {
+        "id": 22000000,
+        "name": "Griffes"
+      },
+      {
+        "id": 22010000,
+        "name": "Croc venimeux"
+      },
+      {
+        "id": 22020000,
+        "name": "Griffes de limier"
+      },
+      {
+        "id": 22030000,
+        "name": "Serres de rapace"
+      }
+    ]
+  },
+  {
+    "category": "Arc court",
+    "items": [
+      {
+        "id": 40000000,
+        "name": "Arc court"
+      },
+      {
+        "id": 40050000,
+        "name": "Arc composite"
+      },
+      {
+        "id": 40020000,
+        "name": "Arc court en bois rouge"
+      },
+      {
+        "id": 40010000,
+        "name": "Arc court de chimère"
+      },
+      {
+        "id": 40030000,
+        "name": "Arc-lyre"
+      }
+    ]
+  },
+  {
+    "category": "Arc long",
+    "items": [
+      {
+        "id": 41000000,
+        "name": "Arc long"
+      },
+      {
+        "id": 41010000,
+        "name": "Arc d'Albinaurique"
+      },
+      {
+        "id": 41070000,
+        "name": "Arc noir"
+      },
+      {
+        "id": 41060000,
+        "name": "Arc à poulies"
+      },
+      {
+        "id": 41020000,
+        "name": "Arc en corne"
+      },
+      {
+        "id": 41040000,
+        "name": "Arc serpentin"
+      },
+      {
+        "id": 41030000,
+        "name": "Arc de l'Arbre-Monde"
+      }
+    ]
+  },
+  {
+    "category": "Arc géant",
+    "items": [
+      {
+        "id": 42040000,
+        "name": "Arc géant"
+      },
+      {
+        "id": 42010000,
+        "name": "Arc géant de golem"
+      },
+      {
+        "id": 42030000,
+        "name": "Grand arc de l'Arbre-Monde"
+      },
+      {
+        "id": 42000000,
+        "name": "Arc géant léonin"
+      }
+    ]
+  },
+  {
+    "category": "Arbalète",
+    "items": [
+      {
+        "id": 43000000,
+        "name": "Arbalète de soldat"
+      },
+      {
+        "id": 43020000,
+        "name": "Arbalète légère"
+      },
+      {
+        "id": 43030000,
+        "name": "Arbalète lourde"
+      },
+      {
+        "id": 43080000,
+        "name": "Arbalète ordinaire"
+      },
+      {
+        "id": 43110000,
+        "name": "Arbalète noire de Crepus"
+      },
+      {
+        "id": 43050000,
+        "name": "Arbalète à poulies"
+      },
+      {
+        "id": 43060000,
+        "name": "Arbalète de la pleine lune"
+      }
+    ]
+  },
+  {
+    "category": "Baliste",
+    "items": [
+      {
+        "id": 44000000,
+        "name": "Baliste portative"
+      },
+      {
+        "id": 44010000,
+        "name": "Canon jarre"
+      }
+    ]
+  },
+  {
+    "category": "Bâton d'éclat",
+    "items": [
+      {
+        "id": 33130000,
+        "name": "Bâton d'astrologue"
+      },
+      {
+        "id": 33000000,
+        "name": "Bâton d'éclat"
+      },
+      {
+        "id": 33200000,
+        "name": "Bâton d'éclat de l'Académie"
+      },
+      {
+        "id": 33120000,
+        "name": "Bâton d'excavateur"
+      },
+      {
+        "id": 33060000,
+        "name": "Bâton de la reine semi-humaine"
+      },
+      {
+        "id": 33230000,
+        "name": "Bâton d'éclat d'Azur"
+      },
+      {
+        "id": 33240000,
+        "name": "Bâton d'éclat de Lusat"
+      },
+      {
+        "id": 33210000,
+        "name": "Bâton d'éclat de Caria"
+      },
+      {
+        "id": 33170000,
+        "name": "Bâton-laméclat de Caria"
+      },
+      {
+        "id": 33090000,
+        "name": "Sceptre royal de Caria"
+      },
+      {
+        "id": 33190000,
+        "name": "Bâton d'Albinaurique"
+      },
+      {
+        "id": 33280000,
+        "name": "Bâton de revers"
+      },
+      {
+        "id": 33050000,
+        "name": "Bâton d'éclat de Gelmir"
+      },
+      {
+        "id": 33040000,
+        "name": "Bâton de cristal"
+      },
+      {
+        "id": 33270000,
+        "name": "Bâton de cristal putréfié"
+      },
+      {
+        "id": 33250000,
+        "name": "Bâton météorique"
+      },
+      {
+        "id": 33260000,
+        "name": "Bâton de culpabilité"
+      },
+      {
+        "id": 33180000,
+        "name": "Bâton du Prince de la Mort"
+      }
+    ]
+  },
+  {
+    "category": "Sceau sacré",
+    "items": [
+      {
+        "id": 34000000,
+        "name": "Sceau des Doigts"
+      },
+      {
+        "id": 34070000,
+        "name": "Sceau de l'Arbre-Monde"
+      },
+      {
+        "id": 34060000,
+        "name": "Sceau de l'Ordre d'or"
+      },
+      {
+        "id": 34030000,
+        "name": "Sceau de granite"
+      },
+      {
+        "id": 34020000,
+        "name": "Sceau des Géants"
+      },
+      {
+        "id": 34010000,
+        "name": "Sceau du déicide"
+      },
+      {
+        "id": 34040000,
+        "name": "Sceau de griffure"
+      },
+      {
+        "id": 34090000,
+        "name": "Étincelle exaltée"
+      },
+      {
+        "id": 34080000,
+        "name": "Sceau de communion draconique"
+      }
+    ]
+  },
+  {
+    "category": "Torche",
+    "items": [
+      {
+        "id": 24000000,
+        "name": "Torche"
+      },
+      {
+        "id": 24060000,
+        "name": "Torche anti-bêtes"
+      },
+      {
+        "id": 24020000,
+        "name": "Torche barbelée"
+      },
+      {
+        "id": 24070000,
+        "name": "Torche de Sentinelle"
+      },
+      {
+        "id": 24050000,
+        "name": "Torche de flamme spectrale"
+      },
+      {
+        "id": 24040000,
+        "name": "Torche de sainte Trina"
+      }
+    ]
+  },
+  {
+    "category": "Petit bouclier",
+    "items": [
+      {
+        "id": 30030000,
+        "name": "Bouclier croulant"
+      },
+      {
+        "id": 30090000,
+        "name": "Bouclier rond renforcé"
+      },
+      {
+        "id": 30100000,
+        "name": "Bouclier rond bleuté"
+      },
+      {
+        "id": 30080000,
+        "name": "Bouclier rond gravé"
+      },
+      {
+        "id": 30070000,
+        "name": "Bouclier rond aux épines rouges"
+      },
+      {
+        "id": 30040000,
+        "name": "Bouclier-pilori"
+      },
+      {
+        "id": 30000000,
+        "name": "Rondache"
+      },
+      {
+        "id": 30120000,
+        "name": "Bouclier rond en métal"
+      },
+      {
+        "id": 30130000,
+        "name": "Bouclier en fer doré"
+      },
+      {
+        "id": 30020000,
+        "name": "Bouclier de reptilien"
+      },
+      {
+        "id": 30140000,
+        "name": "Bouclier du flocon"
+      },
+      {
+        "id": 30110000,
+        "name": "Bouclier de la faille"
+      },
+      {
+        "id": 30010000,
+        "name": "Bouclier de Parfumeur"
+      },
+      {
+        "id": 31170000,
+        "name": "Bouclier de culpabilité"
+      },
+      {
+        "id": 30190000,
+        "name": "Bouclier à ramures"
+      },
+      {
+        "id": 30150000,
+        "name": "Bouclier de lave"
+      },
+      {
+        "id": 30200000,
+        "name": "Bouclier serpentin"
+      }
+    ]
+  },
+  {
+    "category": "Bouclier",
+    "items": [
+      {
+        "id": 31270000,
+        "name": "Bouclier en bois aquilin"
+      },
+      {
+        "id": 31240000,
+        "name": "Bouclier en bois chevalin"
+      },
+      {
+        "id": 31250000,
+        "name": "Bouclier du candélarbre"
+      },
+      {
+        "id": 31260000,
+        "name": "Bouclier en bois flamboyant"
+      },
+      {
+        "id": 31020000,
+        "name": "Bouclier en bois entaché"
+      },
+      {
+        "id": 31050000,
+        "name": "Bouclier de la cité solaire"
+      },
+      {
+        "id": 31070000,
+        "name": "Bouclier rond"
+      },
+      {
+        "id": 31230000,
+        "name": "Grand bouclier de cuir"
+      },
+      {
+        "id": 31340000,
+        "name": "Bouclier en cuir noir"
+      },
+      {
+        "id": 31010000,
+        "name": "Bouclier de cuir entaché"
+      },
+      {
+        "id": 31330000,
+        "name": "Écu"
+      },
+      {
+        "id": 31300000,
+        "name": "Écu à motif bleu"
+      },
+      {
+        "id": 31290000,
+        "name": "Écu à motif rouge"
+      },
+      {
+        "id": 31280000,
+        "name": "Écu bestial"
+      },
+      {
+        "id": 31320000,
+        "name": "Écu aquilin inversé"
+      },
+      {
+        "id": 31310000,
+        "name": "Écu de l'éclipse"
+      },
+      {
+        "id": 31000000,
+        "name": "Rempart"
+      },
+      {
+        "id": 31100000,
+        "name": "Rempart azur"
+      },
+      {
+        "id": 31030000,
+        "name": "Bouclier de chevalier banni"
+      },
+      {
+        "id": 31080000,
+        "name": "Rempart du scorpion"
+      },
+      {
+        "id": 31090000,
+        "name": "Rempart de l'oiseau bicéphale"
+      },
+      {
+        "id": 31130000,
+        "name": "Bouclier en cuivre"
+      },
+      {
+        "id": 31040000,
+        "name": "Bouclier d'Albinaurique"
+      },
+      {
+        "id": 30060000,
+        "name": "Bouclier-jarre d'homme-bête"
+      },
+      {
+        "id": 31190000,
+        "name": "Bouclier de chevalier de Caria"
+      },
+      {
+        "id": 31060000,
+        "name": "Bouclier-miroir en argent"
+      },
+      {
+        "id": 31140000,
+        "name": "Grande carapace"
+      }
+    ]
+  },
+  {
+    "category": "Pavois",
+    "items": [
+      {
+        "id": 32290000,
+        "name": "Pavois en bois"
+      },
+      {
+        "id": 32300000,
+        "name": "Bouclier seigneurial"
+      },
+      {
+        "id": 32050000,
+        "name": "Pavois des ronces"
+      },
+      {
+        "id": 32170000,
+        "name": "Bouclier-bastion hérissé"
+      },
+      {
+        "id": 32140000,
+        "name": "Bouclier de l'icône"
+      },
+      {
+        "id": 32090000,
+        "name": "Bouclier bestial doré"
+      },
+      {
+        "id": 32190000,
+        "name": "Égide du Manoir"
+      },
+      {
+        "id": 32200000,
+        "name": "Égide enchevêtrée"
+      },
+      {
+        "id": 32210000,
+        "name": "Égide aquiline inversée"
+      },
+      {
+        "id": 32000000,
+        "name": "Égide draconique"
+      },
+      {
+        "id": 32020000,
+        "name": "Pavois distingué"
+      },
+      {
+        "id": 32270000,
+        "name": "Pavois à dorures"
+      },
+      {
+        "id": 32250000,
+        "name": "Pavois du Coucou"
+      },
+      {
+        "id": 32230000,
+        "name": "Pavois du Lion rouge"
+      },
+      {
+        "id": 32260000,
+        "name": "Pavois doré"
+      },
+      {
+        "id": 32280000,
+        "name": "Pavois de l'Arbre-Sacré"
+      },
+      {
+        "id": 32030000,
+        "name": "Bouclier à corne du Creuset"
+      },
+      {
+        "id": 32040000,
+        "name": "Bouclier griffe de dragon"
+      },
+      {
+        "id": 32130000,
+        "name": "Bouclier des empreintes"
+      },
+      {
+        "id": 32240000,
+        "name": "Pavois de l'éclipse"
+      },
+      {
+        "id": 32220000,
+        "name": "Targe de la fourmi"
+      },
+      {
+        "id": 32080000,
+        "name": "Pavois de l'Arbre-Monde"
+      },
+      {
+        "id": 32120000,
+        "name": "Bouclier de la méduse"
+      },
+      {
+        "id": 32160000,
+        "name": "Bouclier-visage"
+      },
+      {
+        "id": 32150000,
+        "name": "Bouclier cyclope"
+      }
+    ]
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "id": 1000,
+    "name": "Medaglione d'ambra cremisi"
+  },
+  {
+    "id": 1001,
+    "name": "Medaglione d'ambra cremisi +1"
+  },
+  {
+    "id": 1002,
+    "name": "Medaglione d'ambra cremisi +2"
+  },
+  {
+    "id": 5000,
+    "name": "Talismano del seme cremisi"
+  },
+  {
+    "id": 5020,
+    "name": "Talismano della rugiada benedetta"
+  },
+  {
+    "id": 1010,
+    "name": "Medaglione d'ambra cerulea"
+  },
+  {
+    "id": 1011,
+    "name": "Medaglione d'ambra cerulea +1"
+  },
+  {
+    "id": 1012,
+    "name": "Medaglione d'ambra cerulea +2"
+  },
+  {
+    "id": 5010,
+    "name": "Talismano del seme ceruleo"
+  },
+  {
+    "id": 1020,
+    "name": "Medaglione d'ambra verde"
+  },
+  {
+    "id": 1021,
+    "name": "Medaglione d'ambra verde +1"
+  },
+  {
+    "id": 1022,
+    "name": "Medaglione d'ambra verde +2"
+  },
+  {
+    "id": 1150,
+    "name": "Talismano tartaruga verde"
+  },
+  {
+    "id": 1030,
+    "name": "Amuleto arsenale"
+  },
+  {
+    "id": 1031,
+    "name": "Amuleto arsenale +1"
+  },
+  {
+    "id": 1032,
+    "name": "Arsenale del grande vaso"
+  },
+  {
+    "id": 1040,
+    "name": "Favore dell'Albero Madre"
+  },
+  {
+    "id": 1041,
+    "name": "Favore dell'Albero Madre +1"
+  },
+  {
+    "id": 1042,
+    "name": "Favore dell'Albero Madre +2"
+  },
+  {
+    "id": 1050,
+    "name": "Sigillo cicatrice di Radagon"
+  },
+  {
+    "id": 1051,
+    "name": "Sigillo piaga di Radagon"
+  },
+  {
+    "id": 1220,
+    "name": "Sigillo cicatrice di Marika"
+  },
+  {
+    "id": 1221,
+    "name": "Sigillo piaga di Marika"
+  },
+  {
+    "id": 1060,
+    "name": "Cimelio del Flagello celeste"
+  },
+  {
+    "id": 1070,
+    "name": "Cimelio della portatrice di protesi"
+  },
+  {
+    "id": 1080,
+    "name": "Cimelio dell'astrologa"
+  },
+  {
+    "id": 1090,
+    "name": "Cimelio delle Due Dita"
+  },
+  {
+    "id": 4000,
+    "name": "Talismano scudo del drago"
+  },
+  {
+    "id": 4001,
+    "name": "Talismano scudo del drago +1"
+  },
+  {
+    "id": 4002,
+    "name": "Talismano scudo del drago +2"
+  },
+  {
+    "id": 4003,
+    "name": "Talismano granscudo del drago"
+  },
+  {
+    "id": 4010,
+    "name": "Talismano del drago magico"
+  },
+  {
+    "id": 4011,
+    "name": "Talismano del drago magico +1"
+  },
+  {
+    "id": 4012,
+    "name": "Talismano del drago magico +2"
+  },
+  {
+    "id": 4020,
+    "name": "Talismano del drago di fuoco"
+  },
+  {
+    "id": 4021,
+    "name": "Talismano del drago di fuoco +1"
+  },
+  {
+    "id": 4022,
+    "name": "Talismano del drago di fuoco +2"
+  },
+  {
+    "id": 4030,
+    "name": "Talismano del drago folgorante"
+  },
+  {
+    "id": 4031,
+    "name": "Talismano del drago folgorante +1"
+  },
+  {
+    "id": 4032,
+    "name": "Talismano del drago folgorante +2"
+  },
+  {
+    "id": 4040,
+    "name": "Talismano del drago sacro"
+  },
+  {
+    "id": 4041,
+    "name": "Talismano del drago sacro +1"
+  },
+  {
+    "id": 4042,
+    "name": "Talismano del drago sacro +2"
+  },
+  {
+    "id": 4050,
+    "name": "Talismano del drago perlaceo"
+  },
+  {
+    "id": 4051,
+    "name": "Talismano del drago perlaceo +1"
+  },
+  {
+    "id": 4052,
+    "name": "Talismano del drago perlaceo +2"
+  },
+  {
+    "id": 1170,
+    "name": "Corno portafortuna dell'immunità"
+  },
+  {
+    "id": 1171,
+    "name": "Corno portafortuna dell'immunità +1"
+  },
+  {
+    "id": 1160,
+    "name": "Corno portafortuna della forza"
+  },
+  {
+    "id": 1161,
+    "name": "Corno portafortuna della forza +1"
+  },
+  {
+    "id": 1180,
+    "name": "Corno portafortuna della chiarezza"
+  },
+  {
+    "id": 1181,
+    "name": "Corno portafortuna della chiarezza +1"
+  },
+  {
+    "id": 1200,
+    "name": "Corno portafortuna multicolore"
+  },
+  {
+    "id": 1201,
+    "name": "Corno portafortuna multicolore +1"
+  },
+  {
+    "id": 1190,
+    "name": "Pustola del Principe della morte"
+  },
+  {
+    "id": 1191,
+    "name": "Ciste del Principe della morte"
+  },
+  {
+    "id": 2090,
+    "name": "Talismano pugnale"
+  },
+  {
+    "id": 2200,
+    "name": "Talismano spada curva"
+  },
+  {
+    "id": 2120,
+    "name": "Talismano lama gemella"
+  },
+  {
+    "id": 2130,
+    "name": "Talismano ascia"
+  },
+  {
+    "id": 2070,
+    "name": "Talismano martello"
+  },
+  {
+    "id": 2060,
+    "name": "Talismano lancia"
+  },
+  {
+    "id": 2140,
+    "name": "Talismano lancia da giostra"
+  },
+  {
+    "id": 2180,
+    "name": "Talismano artiglio"
+  },
+  {
+    "id": 4100,
+    "name": "Talismano granscudo"
+  },
+  {
+    "id": 2150,
+    "name": "Talismano della freccia acuminata"
+  },
+  {
+    "id": 2100,
+    "name": "Talismano della freccia implacabile"
+  },
+  {
+    "id": 3000,
+    "name": "Talismano della scuola di pietra"
+  },
+  {
+    "id": 3001,
+    "name": "Talismano della messa di pietra"
+  },
+  {
+    "id": 3040,
+    "name": "Talismano di tela dei fedeli"
+  },
+  {
+    "id": 3050,
+    "name": "Talismano di tela del gregge"
+  },
+  {
+    "id": 3080,
+    "name": "Lama di scintipietra primigenia"
+  },
+  {
+    "id": 1140,
+    "name": "Luna di Nokstella"
+  },
+  {
+    "id": 3060,
+    "name": "Talismano del vecchio signore"
+  },
+  {
+    "id": 3070,
+    "name": "Icona di Radagon"
+  },
+  {
+    "id": 2190,
+    "name": "Medaglione ruggente"
+  },
+  {
+    "id": 2210,
+    "name": "Vaso compagno"
+  },
+  {
+    "id": 2220,
+    "name": "Talismano del profumiere"
+  },
+  {
+    "id": 6020,
+    "name": "Stemma cariano in filigrana"
+  },
+  {
+    "id": 1230,
+    "name": "Scheggia di vaso guerriero"
+  },
+  {
+    "id": 1231,
+    "name": "Scheggia di Alexander"
+  },
+  {
+    "id": 3090,
+    "name": "Icona di Godfrey"
+  },
+  {
+    "id": 1210,
+    "name": "Talismano dell'ariete"
+  },
+  {
+    "id": 2110,
+    "name": "Amuleto della danzatrice blu"
+  },
+  {
+    "id": 2000,
+    "name": "Amuleto scorpione della magia"
+  },
+  {
+    "id": 2020,
+    "name": "Amuleto scorpione del fuoco"
+  },
+  {
+    "id": 2010,
+    "name": "Amuleto scorpione del fulmine"
+  },
+  {
+    "id": 2030,
+    "name": "Amuleto scorpione sacro"
+  },
+  {
+    "id": 4060,
+    "name": "Talismano scaglia del Crogiolo"
+  },
+  {
+    "id": 4070,
+    "name": "Talismano piuma del Crogiolo"
+  },
+  {
+    "id": 4110,
+    "name": "Talismano nodo del Crogiolo"
+  },
+  {
+    "id": 2040,
+    "name": "Spada ramificata dalla piuma rossa"
+  },
+  {
+    "id": 4080,
+    "name": "Spada ramificata dalla piuma blu"
+  },
+  {
+    "id": 2050,
+    "name": "Talismano spada rituale"
+  },
+  {
+    "id": 4090,
+    "name": "Talismano scudo rituale"
+  },
+  {
+    "id": 5050,
+    "name": "Pugnale cremisi dell'assassino"
+  },
+  {
+    "id": 5060,
+    "name": "Pugnale ceruleo dell'assassino"
+  },
+  {
+    "id": 2080,
+    "name": "Emblema della spada alata"
+  },
+  {
+    "id": 2081,
+    "name": "Emblema della spada alata marcescente"
+  },
+  {
+    "id": 1250,
+    "name": "Protesi di Millicent"
+  },
+  {
+    "id": 5040,
+    "name": "Fascia per infanti di Sacriderma"
+  },
+  {
+    "id": 2170,
+    "name": "Giubilo del seguace della marcescenza"
+  },
+  {
+    "id": 2160,
+    "name": "Giubilo del Signore del sangue"
+  },
+  {
+    "id": 5030,
+    "name": "Cammeo del ghermitore"
+  },
+  {
+    "id": 6110,
+    "name": "Corno dello spirito ancestrale"
+  },
+  {
+    "id": 1110,
+    "name": "Scarabeo d'oro"
+  },
+  {
+    "id": 1100,
+    "name": "Scarabeo d'argento"
+  },
+  {
+    "id": 6000,
+    "name": "Ampolla di Crepus"
+  },
+  {
+    "id": 6010,
+    "name": "Velo coprente"
+  },
+  {
+    "id": 6040,
+    "name": "Talismano del gatto dalla coda lunga"
+  },
+  {
+    "id": 6080,
+    "name": "Specchio ingannevole del Dito torto"
+  },
+  {
+    "id": 6090,
+    "name": "Specchio ingannevole dell'ospite"
+  },
+  {
+    "id": 6050,
+    "name": "Dolore di Shabriri"
+  },
+  {
+    "id": 6060,
+    "name": "Dolore di Daedicar"
+  },
+  {
+    "id": 6070,
+    "name": "Ramoscello sacrificale"
+  }
+]

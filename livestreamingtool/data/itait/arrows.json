@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Freccia"
+  },
+  {
+    "id": 50010000,
+    "name": "Freccia incendiaria"
+  },
+  {
+    "id": 50020000,
+    "name": "Freccia serpente"
+  },
+  {
+    "id": 50030000,
+    "name": "Freccia d'osso piumata"
+  },
+  {
+    "id": 50040000,
+    "name": "Freccia di Santa Trina"
+  },
+  {
+    "id": 50060000,
+    "name": "Freccia scheggiata piumata"
+  },
+  {
+    "id": 50080000,
+    "name": "Freccia di pietra arcobaleno piumata"
+  },
+  {
+    "id": 50090000,
+    "name": "Freccia aurea"
+  },
+  {
+    "id": 50100000,
+    "name": "Freccia persecutoria"
+  },
+  {
+    "id": 50110000,
+    "name": "Freccia d'osso"
+  },
+  {
+    "id": 50130000,
+    "name": "Freccia d'osso incendiaria piumata"
+  },
+  {
+    "id": 50140000,
+    "name": "Freccia d'osso incendiaria"
+  },
+  {
+    "id": 50150000,
+    "name": "Freccia d'osso avvelenata piumata"
+  },
+  {
+    "id": 50160000,
+    "name": "Freccia d'osso avvelenata"
+  },
+  {
+    "id": 50170000,
+    "name": "Freccia d'osso soporifera piumata"
+  },
+  {
+    "id": 50180000,
+    "name": "Freccia d'osso soporifera"
+  },
+  {
+    "id": 50190000,
+    "name": "Freccia d'osso ala di tempesta"
+  },
+  {
+    "id": 50200000,
+    "name": "Freccia d'osso folgorante piumata"
+  },
+  {
+    "id": 50210000,
+    "name": "Freccia d'osso folgorante"
+  },
+  {
+    "id": 50220000,
+    "name": "Freccia di pietra arcobaleno"
+  },
+  {
+    "id": 50230000,
+    "name": "Freccia scheggiata"
+  },
+  {
+    "id": 50240000,
+    "name": "Freccia di fiamma spiritica"
+  },
+  {
+    "id": 50260000,
+    "name": "Freccia d'osso magica piumata"
+  },
+  {
+    "id": 50270000,
+    "name": "Freccia d'osso magica"
+  },
+  {
+    "id": 50280000,
+    "name": "Freccia d'osso consacrata piumata"
+  },
+  {
+    "id": 50290000,
+    "name": "Freccia d'osso consacrata"
+  },
+  {
+    "id": 50300000,
+    "name": "Freccia d'osso sanguinaria piumata"
+  },
+  {
+    "id": 50310000,
+    "name": "Freccia d'osso sanguinaria"
+  },
+  {
+    "id": 50320000,
+    "name": "Freccia d'osso fredda piumata"
+  },
+  {
+    "id": 50330000,
+    "name": "Freccia d'osso fredda"
+  },
+  {
+    "id": 50340000,
+    "name": "Freccia d'osso marcescente piumata"
+  },
+  {
+    "id": 50350000,
+    "name": "Freccia d'osso marcescente"
+  },
+  {
+    "id": 51000000,
+    "name": "Freccia grande"
+  },
+  {
+    "id": 51010000,
+    "name": "Freccia grande del golem"
+  },
+  {
+    "id": 51020000,
+    "name": "Freccia grande aurea"
+  },
+  {
+    "id": 51030000,
+    "name": "Freccia magica del golem"
+  },
+  {
+    "id": 51040000,
+    "name": "Lancia di Radahn"
+  },
+  {
+    "id": 51050000,
+    "name": "Freccia grande d'osso piumata"
+  },
+  {
+    "id": 51060000,
+    "name": "Freccia grande d'osso"
+  },
+  {
+    "id": 52000000,
+    "name": "Dardo"
+  },
+  {
+    "id": 52010000,
+    "name": "Dardo folgorante"
+  },
+  {
+    "id": 52020000,
+    "name": "Dardo da profumiere"
+  },
+  {
+    "id": 52030000,
+    "name": "Dardo della chiave nera"
+  },
+  {
+    "id": 52040000,
+    "name": "Dardo frastagliato"
+  },
+  {
+    "id": 52050000,
+    "name": "Dardo meteoritico"
+  },
+  {
+    "id": 52060000,
+    "name": "Dardo esplosivo"
+  },
+  {
+    "id": 52070000,
+    "name": "Dardo aureo"
+  },
+  {
+    "id": 52080000,
+    "name": "Dardo del vassallo"
+  },
+  {
+    "id": 52090000,
+    "name": "Dardo d'osso"
+  },
+  {
+    "id": 52100000,
+    "name": "Dardo d'osso incendiario"
+  },
+  {
+    "id": 52110000,
+    "name": "Dardo d'osso folgorante"
+  },
+  {
+    "id": 52120000,
+    "name": "Dardo d'osso magico"
+  },
+  {
+    "id": 52130000,
+    "name": "Dardo d'osso consacrato"
+  },
+  {
+    "id": 52140000,
+    "name": "Dardo d'osso avvelenato"
+  },
+  {
+    "id": 52150000,
+    "name": "Dardo d'osso sanguinario"
+  },
+  {
+    "id": 52160000,
+    "name": "Dardo d'osso freddo"
+  },
+  {
+    "id": 52170000,
+    "name": "Dardo d'osso marcescente"
+  },
+  {
+    "id": 52180000,
+    "name": "Dardo d'osso soporifero"
+  },
+  {
+    "id": 52190000,
+    "name": "Dardo fiammante"
+  },
+  {
+    "id": 53000000,
+    "name": "Dardo per balista"
+  },
+  {
+    "id": 53010000,
+    "name": "Dardo pesante folgorante"
+  },
+  {
+    "id": 53020000,
+    "name": "Dardo pesante esplosivo"
+  },
+  {
+    "id": 53030000,
+    "name": "Dardo d'osso per balista"
+  }
+]

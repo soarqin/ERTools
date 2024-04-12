@@ -1,0 +1,406 @@
+[
+  {
+    "id": 6420,
+    "name": "Dringende Heilung"
+  },
+  {
+    "id": 6421,
+    "name": "Heilung"
+  },
+  {
+    "id": 6422,
+    "name": "Große Heilung"
+  },
+  {
+    "id": 6423,
+    "name": "Heilung des Fürsten"
+  },
+  {
+    "id": 6440,
+    "name": "Gegengift"
+  },
+  {
+    "id": 6441,
+    "name": "Hilfe des Fürsten"
+  },
+  {
+    "id": 6460,
+    "name": "Magiefestigung"
+  },
+  {
+    "id": 6450,
+    "name": "Flammenfestigung"
+  },
+  {
+    "id": 6470,
+    "name": "Blitzfestigung"
+  },
+  {
+    "id": 6480,
+    "name": "Göttliche Festigung"
+  },
+  {
+    "id": 6490,
+    "name": "Göttliche Festigung des Fürsten"
+  },
+  {
+    "id": 6400,
+    "name": "Zurückweisung"
+  },
+  {
+    "id": 6520,
+    "name": "Schattenköder"
+  },
+  {
+    "id": 6530,
+    "name": "Dunkelheit"
+  },
+  {
+    "id": 6510,
+    "name": "Assassinenschritt"
+  },
+  {
+    "id": 6600,
+    "name": "Goldener Schwur"
+  },
+  {
+    "id": 6330,
+    "name": "Goldene Barriere"
+  },
+  {
+    "id": 7903,
+    "name": "Goldene Blitzfestigung"
+  },
+  {
+    "id": 6340,
+    "name": "Schutz des Erdenbaums"
+  },
+  {
+    "id": 6410,
+    "name": "Goldener Zorn"
+  },
+  {
+    "id": 6424,
+    "name": "Heilung des Erdenbaums"
+  },
+  {
+    "id": 6430,
+    "name": "Gunst des Segens"
+  },
+  {
+    "id": 6431,
+    "name": "Segen des Erdenbaums"
+  },
+  {
+    "id": 7520,
+    "name": "Aspekt des Schmelztiegels: Hauch"
+  },
+  {
+    "id": 7500,
+    "name": "Aspekt des Schmelztiegels: Schweif"
+  },
+  {
+    "id": 7510,
+    "name": "Aspekt des Schmelztiegels: Hörner"
+  },
+  {
+    "id": 6720,
+    "name": "Eldensterne"
+  },
+  {
+    "id": 7530,
+    "name": "Schwarze Klinge"
+  },
+  {
+    "id": 6700,
+    "name": "Diskus aus Licht"
+  },
+  {
+    "id": 6701,
+    "name": "Dreifache Lichtringe"
+  },
+  {
+    "id": 6710,
+    "name": "Radagons Lichtringe"
+  },
+  {
+    "id": 6750,
+    "name": "Litanei des Wahren Tods"
+  },
+  {
+    "id": 6780,
+    "name": "Heilung der Ordnung"
+  },
+  {
+    "id": 6770,
+    "name": "Klinge der Ordnung"
+  },
+  {
+    "id": 6740,
+    "name": "Ewiger Schild"
+  },
+  {
+    "id": 6760,
+    "name": "Gesetz der Kausalität"
+  },
+  {
+    "id": 6730,
+    "name": "Gesetz der Regression"
+  },
+  {
+    "id": 6900,
+    "name": "Blitzender Speer"
+  },
+  {
+    "id": 6920,
+    "name": "Blitzschlag"
+  },
+  {
+    "id": 6930,
+    "name": "Gezielter Blitz"
+  },
+  {
+    "id": 6940,
+    "name": "Blitzender Speer der uralten Drachen"
+  },
+  {
+    "id": 6910,
+    "name": "Blitzschlag der uralten Drachen"
+  },
+  {
+    "id": 6950,
+    "name": "Lansseax' Gleve"
+  },
+  {
+    "id": 6941,
+    "name": "Fortissax' Blitzender Speer"
+  },
+  {
+    "id": 6921,
+    "name": "Eisiger Blitzspeer"
+  },
+  {
+    "id": 5040,
+    "name": "Todesgewitter"
+  },
+  {
+    "id": 6960,
+    "name": "Elektrifizierte Waffe"
+  },
+  {
+    "id": 6971,
+    "name": "Segen des Drachenblitzes"
+  },
+  {
+    "id": 6970,
+    "name": "Vykes Drachenblitz"
+  },
+  {
+    "id": 6000,
+    "name": "Geht in Flammen auf"
+  },
+  {
+    "id": 6001,
+    "name": "Oh, Flamme!"
+  },
+  {
+    "id": 6010,
+    "name": "Flammenschleuder"
+  },
+  {
+    "id": 6100,
+    "name": "Riesenfeuer, verbrenne sie!"
+  },
+  {
+    "id": 6020,
+    "name": "Flamme, entlade dich!"
+  },
+  {
+    "id": 6110,
+    "name": "Flamme des grausamen Gottes"
+  },
+  {
+    "id": 6220,
+    "name": "Woge, oh, Flamme!"
+  },
+  {
+    "id": 6030,
+    "name": "Wirbel, oh, Flamme!"
+  },
+  {
+    "id": 6120,
+    "name": "Brenne, oh, Flamme!"
+  },
+  {
+    "id": 6040,
+    "name": "Flamme, heile mich!"
+  },
+  {
+    "id": 6060,
+    "name": "Flamme, beschütze mich!"
+  },
+  {
+    "id": 6050,
+    "name": "Flamme, gib mir Kraft!"
+  },
+  {
+    "id": 7900,
+    "name": "Todsünde des Feuers"
+  },
+  {
+    "id": 6210,
+    "name": "Schwarze Flamme"
+  },
+  {
+    "id": 6230,
+    "name": "Geißelnde schwarze Flamme"
+  },
+  {
+    "id": 6240,
+    "name": "Ritual der schwarzen Flamme"
+  },
+  {
+    "id": 6250,
+    "name": "Klinge der schwarzen Flamme"
+  },
+  {
+    "id": 6260,
+    "name": "Schutz der schwarzen Flamme"
+  },
+  {
+    "id": 6270,
+    "name": "Erhabene Präsenz"
+  },
+  {
+    "id": 6820,
+    "name": "Bestienklaue"
+  },
+  {
+    "id": 6830,
+    "name": "Gurranqs Bestienklaue"
+  },
+  {
+    "id": 6800,
+    "name": "Bestialische Schlinge"
+  },
+  {
+    "id": 6810,
+    "name": "Stein von Gurranq"
+  },
+  {
+    "id": 6850,
+    "name": "Bestialische Robustheit"
+  },
+  {
+    "id": 6840,
+    "name": "Bestialische Lebenskraft"
+  },
+  {
+    "id": 7210,
+    "name": "Fliegenschwarm"
+  },
+  {
+    "id": 6300,
+    "name": "Blutflammenklauen"
+  },
+  {
+    "id": 6310,
+    "name": "Blutsegen"
+  },
+  {
+    "id": 6320,
+    "name": "Blutflammenklinge"
+  },
+  {
+    "id": 7220,
+    "name": "Giftnebel"
+  },
+  {
+    "id": 7200,
+    "name": "Ungezieferfäden"
+  },
+  {
+    "id": 7230,
+    "name": "Waffe vergiften"
+  },
+  {
+    "id": 7240,
+    "name": "Scharlachrotes Aeonia"
+  },
+  {
+    "id": 7310,
+    "name": "Die Rasende Flamme"
+  },
+  {
+    "id": 7311,
+    "name": "Unerträgliche Raserei"
+  },
+  {
+    "id": 7320,
+    "name": "Rasende Explosion"
+  },
+  {
+    "id": 7330,
+    "name": "Shabriris Geheul"
+  },
+  {
+    "id": 7300,
+    "name": "Unausweichliche Raserei"
+  },
+  {
+    "id": 7000,
+    "name": "Drachenfeuer"
+  },
+  {
+    "id": 7001,
+    "name": "Agheels Flamme"
+  },
+  {
+    "id": 7010,
+    "name": "Magmaodem"
+  },
+  {
+    "id": 7011,
+    "name": "Theodorix' Magma"
+  },
+  {
+    "id": 7040,
+    "name": "Schimmersteinhauch"
+  },
+  {
+    "id": 7041,
+    "name": "Smarags Schimmersteinhauch"
+  },
+  {
+    "id": 7030,
+    "name": "Fauliger Atem"
+  },
+  {
+    "id": 7031,
+    "name": "Ekzykes' Verfall"
+  },
+  {
+    "id": 7020,
+    "name": "Dracheneis"
+  },
+  {
+    "id": 7021,
+    "name": "Borealis' Nebel"
+  },
+  {
+    "id": 7050,
+    "name": "Placidusax' Untergang"
+  },
+  {
+    "id": 7060,
+    "name": "Drachenklaue"
+  },
+  {
+    "id": 7080,
+    "name": "Drachenschlund"
+  },
+  {
+    "id": 7090,
+    "name": "Greyolls Brüllen"
+  }
+]

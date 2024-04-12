@@ -1,0 +1,282 @@
+[
+  {
+    "id": 4000,
+    "name": "Flèche de pierre d'éclat"
+  },
+  {
+    "id": 4010,
+    "name": "Fragment de pierre d'éclat rapide"
+  },
+  {
+    "id": 4001,
+    "name": "Grand fragment de pierre d'éclat"
+  },
+  {
+    "id": 4020,
+    "name": "Comète de pierre d'éclat"
+  },
+  {
+    "id": 4021,
+    "name": "Comète"
+  },
+  {
+    "id": 4030,
+    "name": "Spirale d'éclats"
+  },
+  {
+    "id": 4040,
+    "name": "Étoiles de pierre d'éclat"
+  },
+  {
+    "id": 4050,
+    "name": "Rafale stellaire"
+  },
+  {
+    "id": 4070,
+    "name": "Arc de pierre d'éclat"
+  },
+  {
+    "id": 4060,
+    "name": "Barrage de cristal"
+  },
+  {
+    "id": 4090,
+    "name": "Volée de cristal"
+  },
+  {
+    "id": 4080,
+    "name": "Canon de Haima"
+  },
+  {
+    "id": 4120,
+    "name": "Marteau de Haima"
+  },
+  {
+    "id": 4100,
+    "name": "Brise-terre"
+  },
+  {
+    "id": 4110,
+    "name": "Perce-roche"
+  },
+  {
+    "id": 4460,
+    "name": "Arme d'érudit"
+  },
+  {
+    "id": 4470,
+    "name": "Bouclier d'érudit"
+  },
+  {
+    "id": 4140,
+    "name": "Lumière stellaire"
+  },
+  {
+    "id": 4130,
+    "name": "Domaine magique"
+  },
+  {
+    "id": 4630,
+    "name": "Champ de force de Thops"
+  },
+  {
+    "id": 4200,
+    "name": "Comète d'Azur"
+  },
+  {
+    "id": 4220,
+    "name": "Étoiles de la perdition"
+  },
+  {
+    "id": 4210,
+    "name": "Pluie d'étoiles primordiale"
+  },
+  {
+    "id": 4390,
+    "name": "Laméclat magique"
+  },
+  {
+    "id": 4300,
+    "name": "Phalange de laméclats"
+  },
+  {
+    "id": 4301,
+    "name": "Phalange de Caria"
+  },
+  {
+    "id": 4302,
+    "name": "Phalange de grandes lames"
+  },
+  {
+    "id": 4370,
+    "name": "Déluge magique"
+  },
+  {
+    "id": 4380,
+    "name": "Grand arc de Loretta"
+  },
+  {
+    "id": 4381,
+    "name": "Virtuosité de Loretta"
+  },
+  {
+    "id": 4360,
+    "name": "Pleine lune de Rennala"
+  },
+  {
+    "id": 4361,
+    "name": "Lune noire de Ranni"
+  },
+  {
+    "id": 4440,
+    "name": "Trancheuse de Caria"
+  },
+  {
+    "id": 4430,
+    "name": "Espadon de Caria"
+  },
+  {
+    "id": 4450,
+    "name": "Empaleuse de Caria"
+  },
+  {
+    "id": 4431,
+    "name": "Lame lunaire d'Adula"
+  },
+  {
+    "id": 4480,
+    "name": "Lucidité"
+  },
+  {
+    "id": 4640,
+    "name": "Représailles de Caria"
+  },
+  {
+    "id": 4600,
+    "name": "Éclat pernicieux"
+  },
+  {
+    "id": 4610,
+    "name": "Éclat nocturne"
+  },
+  {
+    "id": 4620,
+    "name": "Comète nocturne"
+  },
+  {
+    "id": 6500,
+    "name": "Brume de noctedame"
+  },
+  {
+    "id": 4660,
+    "name": "Lame indiscernable"
+  },
+  {
+    "id": 4670,
+    "name": "Forme indiscernable"
+  },
+  {
+    "id": 4650,
+    "name": "Ténèbres éternelles"
+  },
+  {
+    "id": 4800,
+    "name": "Tir de magma"
+  },
+  {
+    "id": 4820,
+    "name": "Coulée de magma"
+  },
+  {
+    "id": 4810,
+    "name": "Fureur de Gelmir"
+  },
+  {
+    "id": 4830,
+    "name": "Rancœur de Rykard"
+  },
+  {
+    "id": 4400,
+    "name": "Pierre d'éclat glaciale"
+  },
+  {
+    "id": 4420,
+    "name": "Brume glaciale"
+  },
+  {
+    "id": 4490,
+    "name": "Arme gelée"
+  },
+  {
+    "id": 4410,
+    "name": "Tempête de givre de Zamor"
+  },
+  {
+    "id": 4500,
+    "name": "Cristal brisé"
+  },
+  {
+    "id": 4520,
+    "name": "Torrent de cristal"
+  },
+  {
+    "id": 4510,
+    "name": "Explosion de cristal"
+  },
+  {
+    "id": 4720,
+    "name": "Puits gravitationnel"
+  },
+  {
+    "id": 4721,
+    "name": "Effondrement stellaire"
+  },
+  {
+    "id": 4710,
+    "name": "Fronde"
+  },
+  {
+    "id": 4700,
+    "name": "Météorite"
+  },
+  {
+    "id": 4701,
+    "name": "Météorite d'Astel"
+  },
+  {
+    "id": 5100,
+    "name": "Bulles d'oracle"
+  },
+  {
+    "id": 5110,
+    "name": "Grande sphère prophétique"
+  },
+  {
+    "id": 4900,
+    "name": "Ronces du péché"
+  },
+  {
+    "id": 4910,
+    "name": "Ronces du châtiment"
+  },
+  {
+    "id": 5000,
+    "name": "Invocation vindicative"
+  },
+  {
+    "id": 5001,
+    "name": "Antique rancœur mortelle"
+  },
+  {
+    "id": 5010,
+    "name": "Flammes spectrales explosives"
+  },
+  {
+    "id": 5020,
+    "name": "Brume de Fia"
+  },
+  {
+    "id": 5030,
+    "name": "Semonce des os"
+  }
+]

@@ -1,0 +1,39 @@
+; Output folder for txt files
+output_folder=output/
+; Interval for memory reading, in milliseconds
+update_interval=1000
+; Set plugins to load (set to false or remove certain items to disable them)
+; language, check `data` folder for language list
+language=zhocn
+
+; Config entries for plugins
+[plugins]
+info=true
+bosses=true
+items=true
+
+[bosses]
+; Show only rememberance bosses
+only_rememberance=true
+; Max display count for non-rememberance mode.
+; Local area bosses are always fully displayed, and other alive bosses are
+; displayed up to this count.
+max_display_count=20
+
+[items]
+; Show weapon collection progress
+show_weapons_collections=false
+; Show protector collection progress
+show_protectors_collections=false
+; Show accessories collection progress
+show_accessories_collections=false
+; Show sorceries collection progress
+show_sorceries_collections=false
+; Show incantations collection progress
+show_incantations_collections=false
+; Show ashesofwar collection progress
+show_ashesofwar_collections=false
+; Show spirits collection progress
+show_spirits_collections=false
+; Show equipped items
+show_equipped=true

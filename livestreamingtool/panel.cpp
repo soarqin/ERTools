@@ -454,6 +454,7 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             }
             textColorBrush = CreateSolidBrush(cc.rgbResult);
             InvalidateRect(GetDlgItem(hwnd, 1005), nullptr, TRUE);
+            settings->color = textColor.b | (textColor.g << 8) | (textColor.r << 16) | (textColor.a << 24);
             updateTextTexture();
             break;
         }

@@ -1,0 +1,254 @@
+[
+  {
+    "id": 50000000,
+    "name": "Flecha"
+  },
+  {
+    "id": 50010000,
+    "name": "Flecha de fuego"
+  },
+  {
+    "id": 50020000,
+    "name": "Flecha serpentina"
+  },
+  {
+    "id": 50030000,
+    "name": "Flecha ósea emplumada"
+  },
+  {
+    "id": 50040000,
+    "name": "Flecha de Santa Trina"
+  },
+  {
+    "id": 50060000,
+    "name": "Flecha esquirlada emplumada"
+  },
+  {
+    "id": 50080000,
+    "name": "Flecha de piedra arcoíris emplumada"
+  },
+  {
+    "id": 50090000,
+    "name": "Flecha dorada"
+  },
+  {
+    "id": 50100000,
+    "name": "Flecha embrujada"
+  },
+  {
+    "id": 50110000,
+    "name": "Flecha ósea"
+  },
+  {
+    "id": 50130000,
+    "name": "Flecha ósea ígnea emplumada"
+  },
+  {
+    "id": 50140000,
+    "name": "Flecha ósea ígnea"
+  },
+  {
+    "id": 50150000,
+    "name": "Flecha ósea ponzoñosa emplumada"
+  },
+  {
+    "id": 50160000,
+    "name": "Flecha ósea ponzoñosa"
+  },
+  {
+    "id": 50170000,
+    "name": "Flecha ósea soporífera emplumada"
+  },
+  {
+    "id": 50180000,
+    "name": "Flecha ósea soporífera"
+  },
+  {
+    "id": 50190000,
+    "name": "Flecha ósea de ala tormentosa"
+  },
+  {
+    "id": 50200000,
+    "name": "Flecha ósea fulgurante emplumada"
+  },
+  {
+    "id": 50210000,
+    "name": "Flecha ósea fulgurante"
+  },
+  {
+    "id": 50220000,
+    "name": "Flecha de piedra arcoíris"
+  },
+  {
+    "id": 50230000,
+    "name": "Flecha esquirlada"
+  },
+  {
+    "id": 50240000,
+    "name": "Flecha de llamas espirituales"
+  },
+  {
+    "id": 50260000,
+    "name": "Flecha ósea mágica emplumada"
+  },
+  {
+    "id": 50270000,
+    "name": "Flecha ósea mágica"
+  },
+  {
+    "id": 50280000,
+    "name": "Flecha ósea hierática emplumada"
+  },
+  {
+    "id": 50290000,
+    "name": "Flecha ósea hierática"
+  },
+  {
+    "id": 50300000,
+    "name": "Flecha ósea sangrienta emplumada"
+  },
+  {
+    "id": 50310000,
+    "name": "Flecha ósea sangrienta"
+  },
+  {
+    "id": 50320000,
+    "name": "Flecha ósea fría emplumada"
+  },
+  {
+    "id": 50330000,
+    "name": "Flecha ósea fría"
+  },
+  {
+    "id": 50340000,
+    "name": "Flecha ósea podrida emplumada"
+  },
+  {
+    "id": 50350000,
+    "name": "Flecha ósea podrida"
+  },
+  {
+    "id": 51000000,
+    "name": "Gran flecha"
+  },
+  {
+    "id": 51010000,
+    "name": "Gran flecha de gólem"
+  },
+  {
+    "id": 51020000,
+    "name": "Gran flecha dorada"
+  },
+  {
+    "id": 51030000,
+    "name": "Gran flecha mágica de gólem"
+  },
+  {
+    "id": 51040000,
+    "name": "Lanza de Radahn"
+  },
+  {
+    "id": 51050000,
+    "name": "Gran flecha ósea emplumada"
+  },
+  {
+    "id": 51060000,
+    "name": "Gran flecha ósea"
+  },
+  {
+    "id": 52000000,
+    "name": "Saeta"
+  },
+  {
+    "id": 52010000,
+    "name": "Saeta fulgurante"
+  },
+  {
+    "id": 52020000,
+    "name": "Saeta de perfumista"
+  },
+  {
+    "id": 52030000,
+    "name": "Saeta de llave negra"
+  },
+  {
+    "id": 52040000,
+    "name": "Saeta espinosa"
+  },
+  {
+    "id": 52050000,
+    "name": "Saeta meteórica"
+  },
+  {
+    "id": 52060000,
+    "name": "Saeta explosiva"
+  },
+  {
+    "id": 52070000,
+    "name": "Saeta dorada"
+  },
+  {
+    "id": 52080000,
+    "name": "Saeta de juramentado"
+  },
+  {
+    "id": 52090000,
+    "name": "Saeta ósea"
+  },
+  {
+    "id": 52100000,
+    "name": "Saeta ósea ígnea"
+  },
+  {
+    "id": 52110000,
+    "name": "Saeta ósea fulgurante"
+  },
+  {
+    "id": 52120000,
+    "name": "Saeta ósea mágica"
+  },
+  {
+    "id": 52130000,
+    "name": "Saeta ósea hierática"
+  },
+  {
+    "id": 52140000,
+    "name": "Saeta ósea ponzoñosa"
+  },
+  {
+    "id": 52150000,
+    "name": "Saeta ósea sangrienta"
+  },
+  {
+    "id": 52160000,
+    "name": "Saeta ósea fría"
+  },
+  {
+    "id": 52170000,
+    "name": "Saeta ósea podrida"
+  },
+  {
+    "id": 52180000,
+    "name": "Saeta ósea soporífera"
+  },
+  {
+    "id": 52190000,
+    "name": "Saeta llameante"
+  },
+  {
+    "id": 53000000,
+    "name": "Saeta de balista"
+  },
+  {
+    "id": 53010000,
+    "name": "Saeta grande fulgurante"
+  },
+  {
+    "id": 53020000,
+    "name": "Saeta grande explosiva"
+  },
+  {
+    "id": 53030000,
+    "name": "Saeta ósea de balista"
+  }
+]
