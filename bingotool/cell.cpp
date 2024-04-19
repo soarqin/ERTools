@@ -179,7 +179,6 @@ void Cells::init() {
         renderer_ = nullptr;
     }
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
-    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     scoreTextSettings_ = new TextSettings();
     scoreTextSource_ = new TextSource(scoreTextSettings_);
@@ -191,7 +190,7 @@ void Cells::init() {
                                    + (gConfig.simpleMode ? scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5 : 0),
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
-    renderer_ = SDL_CreateRenderer(window_, "opengl", SDL_RENDERER_PRESENTVSYNC);
+    renderer_ = SDL_CreateRenderer(window_, "opengl", 0);
     SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
     updateCellTextSettings(cellTextSettings_);

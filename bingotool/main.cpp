@@ -349,7 +349,10 @@ static int mainLoop() {
 
     reloadAll();
 
+    Uint64 freq = SDL_GetPerformanceFrequency() / 1000000ULL;
+    auto nextRenderTime = SDL_GetPerformanceCounter() / freq;
     while (true) {
+        SDL_Delay(1);
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             switch (e.type) {
@@ -689,6 +692,11 @@ static int mainLoop() {
                 }
             }
         }
+        auto curTime = SDL_GetPerformanceCounter() / freq;
+        if (curTime < nextRenderTime) {
+            continue;
+        }
+        nextRenderTime += 1000000ULL / 60ULL;
         gCells.render();
         for (auto &sw : gScoreWindows) {
             sw.render();

@@ -39,13 +39,12 @@ void ScoreWindow::create(int idx, const std::string &name) {
 
 void ScoreWindow::createWindow() {
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
-    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
     for (int i = 0; i < 2; i++) {
         std::string title = i == 0 ? "Score A" : "Player A";
         title.back() += index;
         window[i] = SDL_CreateWindow(title.c_str(), tw[i], th[i], SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
-        renderer[i] = SDL_CreateRenderer(window[i], "opengl", SDL_RENDERER_PRESENTVSYNC);
+        renderer[i] = SDL_CreateRenderer(window[i], "opengl", 0);
         SDL_SetWindowHitTest(window[i], ScoreWindowHitTestCallback, nullptr);
         int x, y;
         auto *cellwin = gCells.window();

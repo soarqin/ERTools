@@ -57,12 +57,15 @@ int wmain(int argc, wchar_t *argv[]) {
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
-    uint64_t nextTick = SDL_GetTicks() / 1000ULL * 1000ULL + 1000ULL;
 
     auto *luaVM = new LuaVM();
     luaVM->registerFunctions();
     luaVM->loadFile("scripts/_main_.lua");
+    auto freq = SDL_GetPerformanceFrequency() / 1000000ULL;
+    auto nextRenderTime = SDL_GetPerformanceCounter() / freq;
+    auto nextUpdateTime = nextRenderTime / 1000000ULL * 1000000ULL;
     while (true) {
+        SDL_Delay(1);
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             switch (e.type) {
@@ -102,11 +105,15 @@ int wmain(int argc, wchar_t *argv[]) {
                 }
             }
         }
-        uint64_t currentTick = SDL_GetTicks();
-        if (currentTick >= nextTick) {
-            nextTick = currentTick / 1000ULL * 1000ULL + 1000ULL;
+        auto curTime = SDL_GetPerformanceCounter() / freq;
+        if (curTime >= nextUpdateTime) {
+            nextUpdateTime = curTime / 1000000ULL * 1000000ULL + 1000000ULL;
             luaVM->call("update");
         }
+        if (curTime < nextRenderTime) {
+            continue;
+        }
+        nextRenderTime += 1000000ULL / 60ULL;
         for (auto &p: gPanels) {
             auto *panel = &p.second;
             panel->render();

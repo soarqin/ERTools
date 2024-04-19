@@ -143,7 +143,7 @@ void Panel::loadFromConfig() {
     }
     const auto fontData = toml::find_or(data, "font", toml::value());
     if (fontData.is_table()) {
-        fontFace = Utf8ToUnicode(toml::find_or(fontData, "fontFile", UnicodeToUtf8(fontFace)));
+        fontFace = Utf8ToUnicode(toml::find_or(fontData, "fontFace", UnicodeToUtf8(fontFace)));
         fontSize = toml::find_or(fontData, "fontSize", fontSize);
         fontStyle = toml::find_or(fontData, "fontStyle", fontStyle);
         const auto textColorData = toml::find_or(fontData, "textColor", toml::value());
