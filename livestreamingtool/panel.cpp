@@ -95,6 +95,7 @@ void Panel::saveToConfig() {
                  toml::array{backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a}},
                 {"autoSize", autoSize},
                 {"border", border},
+                {"anchor", int(anchorPoint)},
             }
         },
         {
@@ -140,6 +141,7 @@ void Panel::loadFromConfig() {
         }
         autoSize = toml::find_or(windowData, "autoSize", autoSize);
         border = toml::find_or(windowData, "border", border);
+        anchorPoint = Anchor(toml::find_or(windowData, "anchor", int(anchorPoint)));
     }
     const auto fontData = toml::find_or(data, "font", toml::value());
     if (fontData.is_table()) {
@@ -235,18 +237,53 @@ void Panel::updateTextRenderRect() {
     int ww, hh;
     SDL_QueryTexture(texture, nullptr, nullptr, &ww, &hh);
     if (autoSize) {
-        auto fw = ww + border * 2;
-        auto fh = hh + border * 2;
+        auto fw = ((ww + 1) & ~1) + border * 2;
+        auto fh = ((hh + 1) & ~1) + border * 2;
         if (fw < DLG_SIZE_MIN) fw = DLG_SIZE_MIN;
         if (fh < DLG_SIZE_MIN) fh = DLG_SIZE_MIN;
         if (w != fw || h != fh) {
+            switch (anchorPoint) {
+                case Anchor::TopLeft:
+                    break;
+                case Anchor::Top:
+                    x += (w - fw) >> 1;
+                    break;
+                case Anchor::TopRight:
+                    x += w - fw;
+                    break;
+                case Anchor::Left:
+                    y += (h - fh) >> 1;
+                    break;
+                case Anchor::Center:
+                    x += (w - fw) >> 1;
+                    y += (h - fh) >> 1;
+                    break;
+                case Anchor::Right:
+                    x += w - fw;
+                    y += (h - fh) >> 1;
+                    break;
+                case Anchor::BottomLeft:
+                    y += h - fh;
+                    break;
+                case Anchor::Bottom:
+                    x += (w - fw) >> 1;
+                    y += h - fh;
+                    break;
+                case Anchor::BottomRight:
+                    x += w - fw;
+                    y += h - fh;
+                    break;
+            }
+            w = fw;
+            h = fh;
+            SDL_SetWindowPosition(window, x, y);
             SDL_SetWindowSize(window, fw, fh);
         }
         dstRect = {(float)border, (float)border, (float)ww, (float)hh};
         srcRect = {0, 0, (float)ww, (float)hh};
     } else {
-        auto nw = w - border * 2;
-        auto nh = h - border * 2;
+        auto nw = ((w + 1) & ~1) - border * 2;
+        auto nh = ((h + 1) & ~1) - border * 2;
         dstRect = {0, 0, (float)ww, (float)hh};
         srcRect = {0, 0, (float)ww, (float)hh};
         switch (textAlign) {
@@ -392,6 +429,20 @@ void Panel::initConfigDialog(HWND hwnd) {
 
     auto chc = GetDlgItem(hwnd, 1013);
     SendMessageW(chc, BM_SETCHECK, autoSize ? BST_CHECKED : BST_UNCHECKED, 0);
+
+    cbc = GetDlgItem(hwnd, 1023);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Top-Left");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Top-Center");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Top-Right");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Center-Left");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Center-Center");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Center-Right");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Bottom-Left");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Bottom-Center");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Bottom-Right");
+    SendMessageW(cbc, CB_SETCURSEL, int(anchorPoint), 0);
+
     noEnChangeNotification = false;
 }
 
@@ -528,6 +579,11 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             autoSize = newAuto;
             SDL_SetWindowResizable(window, newAuto ? SDL_FALSE : SDL_TRUE);
             updateTextRenderRect();
+            break;
+        }
+        case 1023: {
+            auto cbc = GetDlgItem(hwnd, 1023);
+            anchorPoint = Anchor(int(SendMessageW(cbc, CB_GETCURSEL, 0, 0)));
             break;
         }
         default:

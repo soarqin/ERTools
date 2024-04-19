@@ -10,6 +10,17 @@
 #include <string>
 
 class Panel {
+    enum class Anchor {
+        TopLeft,
+        Top,
+        TopRight,
+        Left,
+        Center,
+        Right,
+        BottomLeft,
+        Bottom,
+        BottomRight
+    };
 public:
     void init(const char *name);
     void saveToConfig();
@@ -75,4 +86,5 @@ private:
     SDL_Color textShadowColor = {0, 0, 0, 255};
     int textShadowOffset[2] = {0, 0};
     bool autoSize = false;
+    Anchor anchorPoint = Anchor::TopLeft;
 };

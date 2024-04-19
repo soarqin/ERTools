@@ -56,7 +56,7 @@ if show_ashesofwar_collections then
   check_list[9][#check_list[9] + 1] = {{}, function(id) return ashesofwar_by_id[id] end, ashesofwar, '战灰'}
 end
 if show_spirits_collections then
-  check_list[5][#check_list[5] + 1] = {{}, function(id) return spirits_by_id[id] end, spirits, '骨灰'}
+  check_list[5][#check_list[5] + 1] = {{}, function(id) return spirits_by_id[id // 100 * 100] end, spirits, '骨灰'}
 end
 
 for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons.json'))) do
