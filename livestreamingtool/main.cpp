@@ -55,7 +55,6 @@ int wmain(int argc, wchar_t *argv[]) {
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
 
     SDL_SetHint("SDL_BORDERLESS_RESIZABLE_STYLE", "1");
-    SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR, "0");
 
     auto *luaVM = new LuaVM();

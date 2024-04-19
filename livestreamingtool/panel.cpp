@@ -55,7 +55,7 @@ void Panel::init(const char *n) {
     window = SDL_CreateWindow(n, w, h, (autoSize ? 0 : SDL_WINDOW_RESIZABLE) | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
     SDL_SetWindowPosition(window, x, y);
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);
-    renderer = SDL_CreateRenderer(window, "opengl", SDL_RENDERER_PRESENTVSYNC);
+    renderer = SDL_CreateRenderer(window, "opengl", 0);
 
     settings = new TextSettings();
     settings->face = fontFace;
