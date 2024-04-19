@@ -70,7 +70,7 @@ Academy of Raya Lucaria|1400:
 + Red Wolf of Radagon:14000850
 + Rennala, Queen of the Full Moon:14000800,2
 
-Caelid|3014,3015,3121,3207,3208,6400:
+Caelid|3014,3015,3111,3121,3207,3208,6400:
 + Magma Wyrm|Gael Tunnel:32070800
 + Erdtree Burial Watchdog (Sword)|Erdtree Burial Watchdog (Scepter)|Minor Erdtree Catacombs:30140800
 + Frenzied Duelist|Gaol Cave:31210800
@@ -87,7 +87,7 @@ Caelid|3014,3015,3121,3207,3208,6400:
 + Crucible Knight|Misbegotten Warrior|Redmane Castle:1051360800
 + Starscourge Radahn|Wailing Dunes:1252380800,3
 
-Greyoll's Dragonbarrow|3016,3110,3111,3120,3413,6402:
+Greyoll's Dragonbarrow|3016,3110,3120,3413,6402:
 + Cleanrot Knight (Spear)|Cleanrot Knight (Sickle)|Abandoned Cave:31200800
 + Beastman of Farum Azula (Cleaver)|Beastman of Farum Azula (Throwing Knife)|Dragonbarrow Cave:31100800
 + Putrid Tree Spirit|War-Dead Catacombs:30160800
