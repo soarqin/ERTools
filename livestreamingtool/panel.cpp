@@ -9,7 +9,6 @@
 #include <shlwapi.h>
 #include <fstream>
 #include <filesystem>
-#include <dwmapi.h>
 
 enum : int {
     MOUSE_GRAB_PADDING = 10,
@@ -53,7 +52,7 @@ void Panel::init(const char *n) {
 #include "images.inc"
     name = n;
     loadFromConfig();
-    window = SDL_CreateWindow(n, w, h, (autoSize ? 0 : SDL_WINDOW_RESIZABLE) | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
+    window = SDL_CreateWindow(n, w, h, (autoSize ? 0 : SDL_WINDOW_RESIZABLE) | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | (alwaysOnTop ? SDL_WINDOW_ALWAYS_ON_TOP : 0));
     SDL_SetWindowPosition(window, x, y);
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);
     renderer = SDL_CreateRenderer(window, "direct3d11", 0);
@@ -100,6 +99,7 @@ void Panel::saveToConfig() {
                 {"autoSize", autoSize},
                 {"border", border},
                 {"anchor", int(anchorPoint)},
+                {"alwaysOnTop", int(alwaysOnTop)}
             }
         },
         {
@@ -146,6 +146,7 @@ void Panel::loadFromConfig() {
         autoSize = toml::find_or(windowData, "autoSize", autoSize);
         border = toml::find_or(windowData, "border", border);
         anchorPoint = Anchor(toml::find_or(windowData, "anchor", int(anchorPoint)));
+        alwaysOnTop = toml::find_or(windowData, "alwaysOnTop", alwaysOnTop);
     }
     const auto fontData = toml::find_or(data, "font", toml::value());
     if (fontData.is_table()) {
@@ -376,6 +377,34 @@ void Panel::addText(const char *str) {
     text.append(str);
 }
 
+void Panel::setAlwaysOnTop(bool top) {
+    if (top == alwaysOnTop) return;
+    alwaysOnTop = top;
+    SDL_SetWindowAlwaysOnTop(window, top ? SDL_TRUE : SDL_FALSE);
+    saveToConfig();
+}
+
+void Panel::setAutoSize(bool as) {
+    if (as == autoSize) return;
+    autoSize = as;
+    SDL_SetWindowResizable(window, as ? SDL_FALSE : SDL_TRUE);
+    updateTextRenderRect();
+    saveToConfig();
+}
+
+static INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+
+void Panel::showSettingsWindow() {
+    if (configDialog) {
+        initConfigDialog(configDialog);
+    } else {
+        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+        configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
+    }
+    ShowWindow(configDialog, SW_SHOW);
+    SetForegroundWindow(configDialog);
+}
+
 void Panel::initConfigDialog(HWND hwnd) {
     noEnChangeNotification = true;
     SetWindowLongPtrW(hwnd, GWLP_USERDATA, (LPARAM)this);
@@ -430,9 +459,6 @@ void Panel::initConfigDialog(HWND hwnd) {
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Center");
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"Bottom");
     SendMessageW(cbc, CB_SETCURSEL, int(textVAlign), 0);
-
-    auto chc = GetDlgItem(hwnd, 1013);
-    SendMessageW(chc, BM_SETCHECK, autoSize ? BST_CHECKED : BST_UNCHECKED, 0);
 
     cbc = GetDlgItem(hwnd, 1023);
     SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
@@ -575,14 +601,6 @@ INT_PTR Panel::handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             textVAlign = VAlign(int(SendMessageW(cbc, CB_GETCURSEL, 0, 0)));
             settings->valign = textVAlign;
             updateTextTexture();
-            break;
-        }
-        case 1013: {
-            auto newAuto = SendMessageW((HWND)lParam, BM_GETCHECK, 0, 0) == BST_CHECKED;
-            if (newAuto == autoSize) break;
-            autoSize = newAuto;
-            SDL_SetWindowResizable(window, newAuto ? SDL_FALSE : SDL_TRUE);
-            updateTextRenderRect();
             break;
         }
         case 1023: {
@@ -773,7 +791,7 @@ INT_PTR Panel::handleCtlColorStatic(HWND hwnd, WPARAM wParam, LPARAM lParam) {
     return DefWindowProcW(hwnd, WM_CTLCOLORSTATIC, wParam, lParam);
 }
 
-INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+static INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
     switch (uMsg) {
         case WM_INITDIALOG: {
             ((Panel *)lParam)->initConfigDialog(hwnd);
@@ -803,15 +821,4 @@ INT_PTR WINAPI dlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
             break;
     }
     return 0;
-}
-
-void Panel::showSettingsWindow() {
-    if (configDialog) {
-        initConfigDialog(configDialog);
-    } else {
-        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
-        configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
-    }
-    ShowWindow(configDialog, SW_SHOW);
-    SetForegroundWindow(configDialog);
 }

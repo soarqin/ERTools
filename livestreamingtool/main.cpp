@@ -85,10 +85,39 @@ int wmain(int argc, wchar_t *argv[]) {
                     break;
                 }
                 case SDL_EVENT_MOUSE_BUTTON_UP: {
-                    if (e.button.button != SDL_BUTTON_LEFT) break;
-                    SDL_Window *win = SDL_GetKeyboardFocus();
-                    auto *panel = findPanelByWindow(win);
-                    if (panel) panel->showSettingsWindow();
+                    switch (e.button.button) {
+                    case SDL_BUTTON_LEFT: {
+                        SDL_Window *win = SDL_GetKeyboardFocus();
+                        auto *panel = findPanelByWindow(win);
+                        if (panel) panel->showSettingsWindow();
+                        break;
+                    }
+                    case SDL_BUTTON_RIGHT: {
+                        SDL_Window *win = SDL_GetKeyboardFocus();
+                        auto *panel = findPanelByWindow(win);
+                        if (panel == nullptr) break;
+                        auto menu = CreatePopupMenu();
+                        AppendMenuW(menu, MF_STRING | (panel->isAlwaysOnTop() ? MF_CHECKED : 0), 1, L"&Always on top");
+                        AppendMenuW(menu, MF_STRING | (panel->isAutoSize() ? MF_CHECKED : 0), 2, L"Auto&size");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 3, L"&Quit");
+                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(win), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        POINT pt;
+                        GetCursorPos(&pt);
+                        auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
+                        switch (cmd) {
+                            case 1:
+                                panel->setAlwaysOnTop(!panel->isAlwaysOnTop());
+                                break;
+                            case 2:
+                                panel->setAutoSize(!panel->isAutoSize());
+                                break;
+                            case 3:
+                                goto QUIT;
+                        }
+                        break;
+                    }
+                    }
                     break;
                 }
                 case SDL_EVENT_WINDOW_CLOSE_REQUESTED: {

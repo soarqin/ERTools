@@ -47,6 +47,14 @@ public:
     inline bool isWindow(SDL_Window *win) {
         return win == window;
     }
+    [[nodiscard]] inline bool isAlwaysOnTop() const {
+        return alwaysOnTop;
+    }
+    [[nodiscard]] inline bool isAutoSize() const {
+        return autoSize;
+    }
+    void setAlwaysOnTop(bool top);
+    void setAutoSize(bool as);
 
     void showSettingsWindow();
     void initConfigDialog(HWND hwnd);
@@ -87,4 +95,5 @@ private:
     int textShadowOffset[2] = {0, 0};
     bool autoSize = false;
     Anchor anchorPoint = Anchor::TopLeft;
+    bool alwaysOnTop = false;
 };
