@@ -86,12 +86,7 @@ int wmain(int argc, wchar_t *argv[]) {
                 }
                 case SDL_EVENT_MOUSE_BUTTON_UP: {
                     switch (e.button.button) {
-                    case SDL_BUTTON_LEFT: {
-                        SDL_Window *win = SDL_GetKeyboardFocus();
-                        auto *panel = findPanelByWindow(win);
-                        if (panel) panel->showSettingsWindow();
-                        break;
-                    }
+                    case SDL_BUTTON_LEFT:
                     case SDL_BUTTON_RIGHT: {
                         SDL_Window *win = SDL_GetKeyboardFocus();
                         auto *panel = findPanelByWindow(win);
@@ -100,7 +95,9 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING | (panel->isAlwaysOnTop() ? MF_CHECKED : 0), 1, L"&Always on top");
                         AppendMenuW(menu, MF_STRING | (panel->isAutoSize() ? MF_CHECKED : 0), 2, L"Auto&size");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
-                        AppendMenuW(menu, MF_STRING, 3, L"&Quit");
+                        AppendMenuW(menu, MF_STRING, 3, L"&Settings");
+                        AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
+                        AppendMenuW(menu, MF_STRING, 4, L"&Quit");
                         auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(win), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         POINT pt;
                         GetCursorPos(&pt);
@@ -113,8 +110,13 @@ int wmain(int argc, wchar_t *argv[]) {
                                 panel->setAutoSize(!panel->isAutoSize());
                                 break;
                             case 3:
+                                panel->showSettingsWindow();
+                                break;
+                            case 4:
+                                DestroyMenu(menu);
                                 goto QUIT;
                         }
+                        DestroyMenu(menu);
                         break;
                     }
                     }
