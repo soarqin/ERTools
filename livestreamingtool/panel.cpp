@@ -9,6 +9,7 @@
 #include <shlwapi.h>
 #include <fstream>
 #include <filesystem>
+#include <dwmapi.h>
 
 enum : int {
     MOUSE_GRAB_PADDING = 10,
@@ -55,7 +56,10 @@ void Panel::init(const char *n) {
     window = SDL_CreateWindow(n, w, h, (autoSize ? 0 : SDL_WINDOW_RESIZABLE) | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT);
     SDL_SetWindowPosition(window, x, y);
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);
-    renderer = SDL_CreateRenderer(window, "opengl", 0);
+    renderer = SDL_CreateRenderer(window, "direct3d11", 0);
+    if (renderer == nullptr) {
+        renderer = SDL_CreateRenderer(window, "opengl", 0);
+    }
 
     settings = new TextSettings();
     settings->face = fontFace;

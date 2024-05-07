@@ -64,7 +64,7 @@ int wmain(int argc, wchar_t *argv[]) {
     auto nextRenderTime = SDL_GetPerformanceCounter() / freq;
     auto nextUpdateTime = nextRenderTime / 1000000ULL * 1000000ULL;
     while (true) {
-        SDL_Delay(1);
+        SDL_Delay(5);
         SDL_Event e;
         while (SDL_PollEvent(&e)) {
             switch (e.type) {
@@ -112,7 +112,7 @@ int wmain(int argc, wchar_t *argv[]) {
         if (curTime < nextRenderTime) {
             continue;
         }
-        nextRenderTime += 1000000ULL / 60ULL;
+        nextRenderTime += 1000000ULL / 15ULL;
         for (auto &p: gPanels) {
             auto *panel = &p.second;
             panel->render();
