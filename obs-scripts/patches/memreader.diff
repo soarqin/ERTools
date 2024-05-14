@@ -1,0 +1,233 @@
+diff --git a/src/process.c b/src/process.c
+index 16b703d..fa5e05c 100644
+--- a/src/process.c
++++ b/src/process.c
+@@ -3,6 +3,7 @@
+ #include "module.h"
+ 
+ #include <psapi.h>
++#include <stdint.h>
+ 
+ process_t* check_process(lua_State *L, int index)
+ {
+@@ -30,19 +31,96 @@ void init_process(process_t* process, DWORD pid, HANDLE handle)
+ 	GetModuleFileNameEx(process->handle, NULL, process->path, sizeof(process->path) / sizeof(TCHAR));
+ }
+ 
++static SIZE_T process_read_common(process_t* process, LPVOID address, LPVOID buff, SIZE_T size)
++{
++	SIZE_T numBytesRead;
++	if (!ReadProcessMemory(process->handle, address, buff, size, &numBytesRead))
++		return (SIZE_T)-1;
++	return numBytesRead;
++}
++
+ static int process_read(lua_State *L)
+ {
+ 	process_t* process = check_process(L, 1);
+ 	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+ 	SIZE_T bytes = (SIZE_T)luaL_checkinteger(L, 3);
+ 
+-	char *buff = malloc(bytes);
+-	SIZE_T numBytesRead;
++	if (bytes <= 256)
++	{
++		char buff[256];
++		SIZE_T numBytesRead = process_read_common(process, address, buff, bytes);
++		if (numBytesRead == (SIZE_T)-1)
++			return push_last_error(L);
++		lua_pushlstring(L, buff, numBytesRead);
++	}
++	else
++	{
++		char *buff = malloc(bytes);
++		SIZE_T numBytesRead = process_read_common(process, address, buff, bytes);
++		if (numBytesRead == (SIZE_T)-1)
++		{
++			free(buff);
++			return push_last_error(L);
++		}
++		lua_pushlstring(L, buff, numBytesRead);
++		free(buff);
++	}
++	return 1;
++}
++
++static int process_readbyte(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
++
++	char buff = 0;
++	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(char));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readshort(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
++
++	short buff = 0;
++	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(short));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readint(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
++
++	int buff = 0;
++	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(int));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readlong(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	LPVOID address = (LPVOID)memaddress_checkptr(L, 2);
+ 
+-	if (!ReadProcessMemory(process->handle, address, buff, bytes, &numBytesRead))
++	long long buff = 0;
++	SIZE_T numBytesRead = process_read_common(process, address, &buff, sizeof(long long));
++	if (numBytesRead == (SIZE_T)-1)
+ 		return push_last_error(L);
+ 
+-	lua_pushlstring(L, buff, numBytesRead);
++	lua_pushinteger(L, buff);
+ 	return 1;
+ }
+ 
+@@ -60,6 +138,103 @@ static int process_read_relative(lua_State *L)
+ 	return process_read(L);
+ }
+ 
++
++static int process_readbyte_relative(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	int arg_count = lua_gettop(L);
++	int i;
++	int8_t buff = 0;
++	LPVOID addr = process->module;
++	LONG_PTR offset;
++	SIZE_T numBytesRead;
++	for (i = 2; i < arg_count; i++) {
++		offset = memaddress_checkptr(L, i);
++		numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &addr, sizeof(LPVOID));
++		if (numBytesRead == (SIZE_T)-1)
++			return push_last_error(L);
++	}
++	offset = memaddress_checkptr(L, arg_count);
++	numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &buff, sizeof(buff));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readshort_relative(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	int arg_count = lua_gettop(L);
++	int i;
++	int16_t buff = 0;
++	LPVOID addr = process->module;
++	LONG_PTR offset;
++	SIZE_T numBytesRead;
++	for (i = 2; i < arg_count; i++) {
++		offset = memaddress_checkptr(L, i);
++		numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &addr, sizeof(LPVOID));
++		if (numBytesRead == (SIZE_T)-1)
++			return push_last_error(L);
++	}
++	offset = memaddress_checkptr(L, arg_count);
++	numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &buff, sizeof(buff));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readint_relative(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	int arg_count = lua_gettop(L);
++	int i;
++	int32_t buff = 0;
++	LPVOID addr = process->module;
++	LONG_PTR offset;
++	SIZE_T numBytesRead;
++	for (i = 2; i < arg_count; i++) {
++		offset = memaddress_checkptr(L, i);
++		numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &addr, sizeof(LPVOID));
++		if (numBytesRead == (SIZE_T)-1)
++			return push_last_error(L);
++	}
++	offset = memaddress_checkptr(L, arg_count);
++	numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &buff, sizeof(buff));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
++static int process_readlong_relative(lua_State *L)
++{
++	process_t* process = check_process(L, 1);
++	int arg_count = lua_gettop(L);
++	int i;
++	int64_t buff = 0;
++	LPVOID addr = process->module;
++	LONG_PTR offset;
++	SIZE_T numBytesRead;
++	for (i = 2; i < arg_count; i++) {
++		offset = memaddress_checkptr(L, i);
++		numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &addr, sizeof(LPVOID));
++		if (numBytesRead == (SIZE_T)-1)
++			return push_last_error(L);
++	}
++	offset = memaddress_checkptr(L, arg_count);
++	numBytesRead = process_read_common(process, (LPVOID)((char*)addr + offset), &buff, sizeof(buff));
++	if (numBytesRead == (SIZE_T)-1)
++		return push_last_error(L);
++
++	lua_pushinteger(L, buff);
++	return 1;
++}
++
+ static int process_version(lua_State *L)
+ {
+ 	process_t* process = check_process(L, 1);
+@@ -194,7 +369,15 @@ static const luaL_Reg process_meta[] = {
+ static const luaL_Reg process_methods[] = {
+ 	{ "version", process_version },
+ 	{ "read", process_read },
++	{ "readbyte", process_readbyte },
++	{ "readshort", process_readshort },
++	{ "readint", process_readint },
++	{ "readlong", process_readlong },
+ 	{ "readrelative", process_read_relative },
++	{ "readbyte_relative", process_readbyte_relative },
++	{ "readshort_relative", process_readshort_relative },
++	{ "readint_relative", process_readint_relative },
++	{ "readlong_relative", process_readlong_relative },
+ 	{ "modules", process_modules },
+ 	{ "exitcode", process_exit_code },
+ 	{ NULL, NULL }
