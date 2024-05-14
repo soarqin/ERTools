@@ -51,6 +51,7 @@ public:
     explicit SaveFile(const std::string &data, const std::wstring &saveAs);
     void load(std::istream &stream);
     void resign(uint64_t userid);
+    void patchSlotTime(int slot, uint32_t millisec);
     [[nodiscard]] inline bool ok() const { return ok_; }
     bool exportToFile(const std::wstring &filename, int slot);
     bool importFromFile(const std::wstring &filename, int slot);

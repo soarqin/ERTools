@@ -82,6 +82,7 @@ int wmain(int argc, wchar_t *argv[]) {
     data.resize(size);
     file.read(data.data(), size);
     SaveFile savefile(data, savepath);
+    savefile.patchSlotTime(0, 0);
     savefile.resign(uid);
     MessageBoxW(nullptr, L"存档生成完毕", MSGBOX_CAPTION, 0);
     CoUninitialize();

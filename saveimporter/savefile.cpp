@@ -204,6 +204,20 @@ void SaveFile::resign(uint64_t userid) {
     fs.close();
 }
 
+void SaveFile::patchSlotTime(int slot, uint32_t millisec) {
+    {
+        auto &s = slots_[slot];
+        if (s->slotType != SaveSlot::Character) { return; }
+        *(uint32_t *)(s->data.data() + 8) = millisec;
+    }
+    for (auto &s: slots_) {
+        if (s->slotType == SaveSlot::Summary) {
+            *(uint16_t *)&s->data[0x195E + 0x24C * slot + 0x26] = millisec / 1000;
+            break;
+        }
+    }
+}
+
 bool SaveFile::exportToFile(const std::wstring &filename, int slot) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
     std::ofstream ofs(std::filesystem::path(filename), std::ios::out | std::ios::binary);
