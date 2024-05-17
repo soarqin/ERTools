@@ -30,7 +30,7 @@ std::vector<T> splitString(const T &str, typename T::value_type sep) {
     return result;
 }
 
-std::wstring selectFile(const std::wstring &title, const std::wstring &defaultFolder, const std::wstring &filters, bool folderOnly, bool openMode) {
+std::wstring selectFile(const std::wstring &title, const std::wstring &defaultFolder, const std::wstring &filters, const std::wstring &defaultExt, bool folderOnly, bool openMode) {
     IFileDialog *pfd;
     std::wstring result;
     if (SUCCEEDED(CoCreateInstance(openMode ? CLSID_FileOpenDialog : CLSID_FileSaveDialog, nullptr, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pfd)))) {
@@ -54,6 +54,7 @@ std::wstring selectFile(const std::wstring &title, const std::wstring &defaultFo
             pfd->SetOptions(dwOptions);
         }
         pfd->SetTitle(title.c_str());
+        if (!defaultExt.empty()) pfd->SetDefaultExtension(defaultExt.c_str());
         if (!filters.empty()) {
             auto sl = splitString(filters, L'|');
             auto cnt = sl.size() / 2;

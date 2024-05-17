@@ -36,14 +36,15 @@ inline void findUserIDOffset(CharSlot *slot, const std::function<void(int offset
     }, &param);
 }
 
-inline size_t findLevelOffset(const std::vector<uint8_t> &data) {
+inline size_t findStatOffset(const std::vector<uint8_t> &data, int level, const wchar_t name[0x11]) {
     const auto *ptr = data.data();
-    size_t sz = data.size() - 0x30;
+    size_t sz = data.size() - 0x130;
     for (size_t i = 0; i < sz; ++i) {
-        if (*(int*)(ptr + i) + *(int*)(ptr + i + 4) + *(int*)(ptr + i + 8) + *(int*)(ptr + i + 12) +
+        auto nl = *(int*)(ptr + i + 0x2C);
+        if (nl == level && *(int*)(ptr + i) + *(int*)(ptr + i + 4) + *(int*)(ptr + i + 8) + *(int*)(ptr + i + 12) +
             *(int*)(ptr + i + 16) + *(int*)(ptr + i + 20) + *(int*)(ptr + i + 24) + *(int*)(ptr + i + 28)
-            == 79 + *(int*)(ptr + i + 44)) {
-            return i + 44;
+            == 79 + nl && memcmp(name, ptr +i + 0x60, 0x22) == 0) {
+            return i;
         }
     }
     return 0;
@@ -62,7 +63,7 @@ SaveFile::SaveFile(const std::string &data, const std::wstring &saveAs) {
     load(stream);
     std::ofstream ofs(std::filesystem::path(saveAs), std::ios::out | std::ios::binary);
     if (ofs.is_open()) {
-        ofs.write((const char*)data.data(), data.size());
+        ofs.write((const char*)data.data(), (int)data.size());
         ofs.close();
     }
     if (ok_) filename_ = saveAs;
@@ -70,6 +71,9 @@ SaveFile::SaveFile(const std::string &data, const std::wstring &saveAs) {
 
 void SaveFile::load(std::istream &stream) {
     ok_ = false;
+    header_.clear();
+    slots_.clear();
+    summarySlot_ = -1;
     uint32_t magic = 0;
     stream.read((char*)&magic, sizeof(uint32_t));
     if (magic == 0x34444E42) {
@@ -93,6 +97,7 @@ void SaveFile::load(std::istream &stream) {
             } else if (slotSize == 0x60010){
                 slot = std::make_unique<SummarySlot>();
                 slot->slotType = SaveSlot::Summary;
+                summarySlot_ = i;
             } else {
                 slot = std::make_unique<SaveSlot>();
                 slot->slotType = SaveSlot::Other;
@@ -124,6 +129,7 @@ void SaveFile::load(std::istream &stream) {
                 slot = std::make_unique<SummarySlot>();
                 slot->slotType = SaveSlot::Summary;
                 slotSize = 0x60000;
+                summarySlot_ = i;
             } else {
                 slot = std::make_unique<SaveSlot>();
                 slot->slotType = SaveSlot::Other;
@@ -137,7 +143,8 @@ void SaveFile::load(std::istream &stream) {
     } else {
         return;
     }
-    for (auto &slot: slots_) {
+    for (size_t idx = 0; idx < slots_.size(); idx++) {
+        auto &slot = slots_[idx];
         switch (slot->slotType) {
             case SaveSlot::Character: {
                 auto *slot2 = (CharSlot *)slot.get();
@@ -147,11 +154,16 @@ void SaveFile::load(std::istream &stream) {
                     slot2->useridOffset = offset;
                     slot2->userid = *(uint64_t*)&slot2->data[offset];
                 });
-                auto offset = findLevelOffset(slot2->data);
-                if (offset >= 0x2C) {
-                    slot2->level = *(uint16_t*)(slot2->data.data() + offset);
-                    memcpy(slot2->stats, slot2->data.data() + offset - 0x2C, 8 * sizeof(uint32_t));
+                auto &summaryData = slots_[summarySlot_]->data;
+                auto rlevel = *(int*)&summaryData[0x195E + 0x24C * idx + 0x22];
+                const auto *rname = (const wchar_t *)&summaryData[0x195E + 0x24C * idx];
+                auto offset = findStatOffset(slot2->data, rlevel, rname);
+                if (offset > 0) {
+                    slot2->statOffset = (int)offset;
+                    slot2->level = *(uint16_t*)(slot2->data.data() + offset + 0x2C);
+                    memcpy(slot2->stats, slot2->data.data() + offset, 8 * sizeof(uint32_t));
                 } else {
+                    slot2->statOffset = 0;
                     slot2->level = 0;
                     memset(slot2->stats, 0, sizeof(slot2->stats));
                 }
@@ -199,9 +211,41 @@ void SaveFile::resign(uint64_t userid) {
         md5Hash(data.data(), data.size(), slot->md5hash);
         if (saveType_ == Steam)
             fs.write((const char*)slot->md5hash, 16);
-        fs.write((const char*)data.data(), data.size());
+        fs.write((const char*)data.data(), (int)data.size());
     }
     fs.close();
+}
+
+bool SaveFile::resign(int slot, uint64_t userid) {
+    if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
+    std::fstream fs(std::filesystem::path(filename_), std::ios::in | std::ios::out | std::ios::binary);
+    if (!fs.is_open()) {
+        return false;
+    }
+    {
+        auto *slot2 = (CharSlot*)slots_[slot].get();
+        auto &data = slot2->data;
+        slot2->userid = userid;
+        *(uint64_t*)&data[slot2->useridOffset] = userid;
+        fs.seekg(slot2->offset, std::ios::beg);
+        md5Hash(data.data(), data.size(), slot2->md5hash);
+        if (saveType_ == Steam)
+            fs.write((const char*)slot2->md5hash, 16);
+        fs.write((const char*)data.data(), (int)data.size());
+    }
+    {
+        auto *slot2 = (SummarySlot*)slots_[summarySlot_].get();
+        auto &data = slot2->data;
+        slot2->userid = userid;
+        *(uint64_t*)&data[4] = userid;
+        fs.seekg(slot2->offset, std::ios::beg);
+        md5Hash(data.data(), data.size(), slot2->md5hash);
+        if (saveType_ == Steam)
+            fs.write((const char*)slot2->md5hash, 16);
+        fs.write((const char*)data.data(), (int)data.size());
+    }
+    fs.close();
+    return true;
 }
 
 void SaveFile::patchSlotTime(int slot, uint32_t millisec) {
@@ -210,36 +254,44 @@ void SaveFile::patchSlotTime(int slot, uint32_t millisec) {
         if (s->slotType != SaveSlot::Character) { return; }
         *(uint32_t *)(s->data.data() + 8) = millisec;
     }
-    for (auto &s: slots_) {
-        if (s->slotType == SaveSlot::Summary) {
-            *(uint16_t *)&s->data[0x195E + 0x24C * slot + 0x26] = millisec / 1000;
-            break;
-        }
+    {
+        auto &s = slots_[summarySlot_];
+        *(uint16_t *)&s->data[0x195E + 0x24C * slot + 0x22 + 0x04] = millisec / 1000;
     }
 }
 
-bool SaveFile::exportToFile(const std::wstring &filename, int slot) {
+bool SaveFile::exportTo(std::vector<uint8_t> &buf, int slot) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
+    const auto &data = slots_[slot]->data;
+    buf.resize(data.size() + 0x24C);
+    memcpy(buf.data(), data.data(), data.size());
+    const auto &summary = slots_[summarySlot_]->data;
+    memcpy(buf.data() + data.size(), summary.data() + 0x195E + 0x24C * slot, 0x24C);
+    return true;
+}
+
+bool SaveFile::exportToFile(const std::wstring &filename, int slot) {
+    std::vector<uint8_t> buf;
+    if (!exportTo(buf, slot)) return false;
     std::ofstream ofs(std::filesystem::path(filename), std::ios::out | std::ios::binary);
     if (!ofs.is_open()) { return false; }
-    const auto &data = slots_[slot]->data;
-    ofs.write((const char*)data.data(), data.size());
+    ofs.write((const char*)buf.data(), (int)buf.size());
     ofs.close();
     return true;
 }
 
-bool SaveFile::importFromFile(const std::wstring &filename, int slot) {
+bool SaveFile::importFrom(const std::vector<uint8_t> &buf, int slot, const std::function<void()>& beforeResign, bool keepFace) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
-    std::ifstream ifs(std::filesystem::path(filename), std::ios::in | std::ios::binary);
-    if (!ifs.is_open()) { return false; }
-    ifs.seekg(0, std::ios::end);
-    auto &data = slots_[slot]->data;
-    if (ifs.tellg() != data.size()) { ifs.close(); return false; }
-    ifs.seekg(0, std::ios::beg);
-    ifs.read((char*)data.data(), data.size());
-    ifs.close();
-
     auto *slot2 = (CharSlot*)slots_[slot].get();
+    auto &data = slot2->data;
+    if (buf.size() != data.size() + 0x24C) { return false; }
+
+    std::vector<uint8_t> face;
+    if (keepFace) {
+        if (!exportFace(face, slot)) face.clear();
+    }
+    memcpy(data.data(), buf.data(), data.size());
+
     slot2->useridOffset = 0;
     slot2->userid = 0;
     findUserIDOffset(slot2, [slot2](int offset) {
@@ -247,117 +299,132 @@ bool SaveFile::importFromFile(const std::wstring &filename, int slot) {
         slot2->userid = *(uint64_t*)&slot2->data[offset];
     });
 
-    std::fstream fs(std::filesystem::path(filename_), std::ios::in | std::ios::out | std::ios::binary);
-
-    auto offset = findLevelOffset(data);
-    if (offset >= 0x2C) {
-        slot2->level = *(uint16_t*)(slot2->data.data() + offset);
-        memcpy(slot2->stats, slot2->data.data() + offset - 0x2C, 8 * sizeof(uint32_t));
+    auto *ndata = buf.data() + data.size();
+    auto level = *(int*)(ndata + 0x22);
+    const auto *name = (const wchar_t *)ndata;
+    auto offset = findStatOffset(data, level, name);
+    if (offset > 0) {
+        slot2->statOffset = (int)offset;
+        slot2->level = *(uint16_t*)(slot2->data.data() + offset + 0x2C);
+        memcpy(slot2->stats, slot2->data.data() + offset, 8 * sizeof(uint32_t));
     } else {
+        slot2->statOffset = 0;
         slot2->level = 0;
         memset(slot2->stats, 0, sizeof(slot2->stats));
     }
-    if (offset > 0) {
-        for (auto &s: slots_) {
-            if (s->slotType == SaveSlot::Summary) {
-                /* use global userid */
-                slot2->userid = ((SummarySlot*)s.get())->userid;
-                *(uint64_t*)&slot2->data[slot2->useridOffset] = slot2->userid;
-                /* copy level and name to summary */
-                *(uint16_t*)&s->data[0x195E + 0x24C * slot + 0x22] = slot2->level;
-                memcpy(&s->data[0x195E + 0x24C * slot], &data[offset + 0x34], 0x22);
-                md5Hash(s->data.data(), s->data.size(), s->md5hash);
-                fs.seekg(s->offset, std::ios::beg);
-                if (saveType_ == Steam)
-                    fs.write((const char*)s->md5hash, 16);
-                fs.write((const char*)s->data.data(), s->data.size());
-                break;
-            }
-        }
+
+    auto *summary = (SummarySlot*)slots_[summarySlot_].get();
+    summary->data[0x1954 + slot] = 1;
+    memcpy(&summary->data[0x195E + 0x24C * slot], ndata, 0x24C);
+    if (keepFace && !face.empty()) {
+        importFace(face, slot, false);
     }
-    fs.seekg(slot2->offset, std::ios::beg);
-    md5Hash(data.data(), data.size(), slot2->md5hash);
-    if (saveType_ == Steam)
-        fs.write((const char*)slot2->md5hash, 16);
-    fs.write((const char*)data.data(), data.size());
-    fs.close();
+    if (beforeResign) {
+        beforeResign();
+    }
+    resign(slot, summary->userid);
     return true;
 }
 
-bool SaveFile::exportFaceToFile(const std::wstring &filename, int slot) {
-    if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
-    std::ofstream ofs(std::filesystem::path(filename), std::ios::out | std::ios::binary);
-    if (!ofs.is_open()) { return false; }
-    const auto &data = slots_[slot]->data;
-    struct SearchData {
-        std::ofstream &ofs;
-        const std::vector<uint8_t> &data;
-    };
-    SearchData sd = {ofs, data};
-    kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
-        auto &sd = *reinterpret_cast<SearchData*>(data);
-        sd.ofs.write((const char*)sd.data.data() + offset, 0x120);
-    }, &sd);
-    ofs.close();
-    return true;
-}
-
-bool SaveFile::importFaceFromFile(const std::wstring &filename, int slot) {
+bool SaveFile::importFromFile(const std::wstring &filename, int slot, const std::function<void()>& beforeResign, bool keepFace) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
     std::ifstream ifs(std::filesystem::path(filename), std::ios::in | std::ios::binary);
     if (!ifs.is_open()) { return false; }
     ifs.seekg(0, std::ios::end);
-    uint8_t face[0x120];
-    if (ifs.tellg() != 0x120) { ifs.close(); return false; }
+    auto &data = slots_[slot]->data;
+    if (ifs.tellg() != data.size() + 0x24C) { ifs.close(); return false; }
     ifs.seekg(0, std::ios::beg);
-    ifs.read((char*)face, 0x120);
+    std::vector<uint8_t> buf(data.size() + 0x24C);
+    ifs.read((char*)buf.data(), (int)data.size() + 0x24C);
     ifs.close();
-    if (memcmp(face, "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12) != 0) { return false; }
+    return importFrom(buf, slot, beforeResign, keepFace);
+}
 
+bool SaveFile::exportFace(std::vector<uint8_t> &buf, int slot) {
+    if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
+    const auto &data = slots_[slot]->data;
+    struct SearchData {
+        std::vector<uint8_t> &buf;
+        const std::vector<uint8_t> &data;
+    };
+    SearchData sd = {buf, data};
+    kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
+        auto &sd = *reinterpret_cast<SearchData*>(data);
+        const auto *m = sd.data.data();
+        sd.buf.assign(m + offset, m + offset + 0x120);
+    }, &sd);
+    const auto *s = (const CharSlot*)slots_[slot].get();
+    buf.push_back(data[s->statOffset + 0x82]);
+    return true;
+}
+
+bool SaveFile::exportFaceToFile(const std::wstring &filename, int slot) {
+    std::vector<uint8_t> buf;
+    if (!exportFace(buf, slot)) { return false; }
+    std::ofstream ofs(std::filesystem::path(filename), std::ios::out | std::ios::binary);
+    if (!ofs.is_open()) { return false; }
+    ofs.write((const char*)buf.data(), (int)buf.size());
+    ofs.close();
+    return true;
+}
+
+bool SaveFile::importFace(const std::vector<uint8_t> &buf, int slot, bool resign) {
+    if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
+    if (memcmp(buf.data(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12) != 0) { return false; }
+
+    auto sex = buf[0x120];
     auto *slot2 = (CharSlot*)slots_[slot].get();
     auto &data = slot2->data;
     struct SearchData {
-        uint8_t *face;
+        const std::vector<uint8_t> &face;
         std::vector<uint8_t> &data;
     };
-    SearchData sd = {face, data};
+    SearchData sd = {buf, data};
     kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
         auto &sd = *reinterpret_cast<SearchData*>(data);
-        memcpy(sd.data.data() + offset, sd.face, 0x120);
+        memcpy(sd.data.data() + offset, sd.face.data(), 0x120);
     }, &sd);
-
-    std::fstream fs(std::filesystem::path(filename_), std::ios::in | std::ios::out | std::ios::binary);
-
-    for (auto &s: slots_) {
-        if (s->slotType == SaveSlot::Summary) {
-            memcpy(&s->data[0x195E + 0x24C * slot + 0x3A], face, 0x120);
-            md5Hash(s->data.data(), s->data.size(), s->md5hash);
-            fs.seekg(s->offset, std::ios::beg);
-            if (saveType_ == Steam)
-                fs.write((const char*)s->md5hash, 16);
-            fs.write((const char*)s->data.data(), s->data.size());
-            break;
-        }
+    slot2->data[slot2->statOffset + 0x82] = sex;
+    auto &s = slots_[summarySlot_];
+    memcpy(&s->data[0x195E + 0x24C * slot + 0x22 + 0x18], buf.data(), 0x120);
+    s->data[0x195E + 0x24C * slot + 0x242] = sex;
+    if (resign) {
+        std::fstream fs(std::filesystem::path(filename_), std::ios::in | std::ios::out | std::ios::binary);
+        if (!fs.is_open()) return false;
+        md5Hash(s->data.data(), s->data.size(), s->md5hash);
+        fs.seekg(s->offset, std::ios::beg);
+        if (saveType_ == Steam)
+            fs.write((const char *)s->md5hash, 16);
+        fs.write((const char *)s->data.data(), (int)s->data.size());
+        fs.seekg(slot2->offset, std::ios::beg);
+        md5Hash(data.data(), data.size(), slot2->md5hash);
+        if (saveType_ == Steam)
+            fs.write((const char *)slot2->md5hash, 16);
+        fs.write((const char *)data.data(), (int)data.size());
+        fs.close();
     }
-    fs.seekg(slot2->offset, std::ios::beg);
-    md5Hash(data.data(), data.size(), slot2->md5hash);
-    if (saveType_ == Steam)
-        fs.write((const char*)slot2->md5hash, 16);
-    fs.write((const char*)data.data(), data.size());
-    fs.close();
     return true;
+}
+
+bool SaveFile::importFaceFromFile(const std::wstring &filename, int slot, bool resign) {
+    std::ifstream ifs(std::filesystem::path(filename), std::ios::in | std::ios::binary);
+    if (!ifs.is_open()) { return false; }
+    ifs.seekg(0, std::ios::end);
+    if (ifs.tellg() != 0x120) { ifs.close(); return false; }
+    std::vector<uint8_t> face(0x120);
+    ifs.seekg(0, std::ios::beg);
+    ifs.read((char*)face.data(), 0x120);
+    ifs.close();
+
+    return importFace(face, slot, resign);
 }
 
 void SaveFile::listSlots(int slot, const std::function<void(int, const SaveSlot&)> &func) {
 #if defined(USE_CLI)
     fprintf(stdout, "SaveType: %s\n", saveType_ == Steam ? "Steam" : "PS4");
     if (saveType_ == Steam) {
-        for (auto &s: slots_) {
-            if (s->slotType == SaveSlot::Summary) {
-                fprintf(stdout, "User ID:  %llu\n", ((SummarySlot *)s.get())->userid);
-                break;
-            }
-        }
+        auto &s = slots_[summarySlot_];
+        fprintf(stdout, "User ID:  %llu\n", ((SummarySlot *)s.get())->userid);
     }
     if (slot < 0) {
         for (int i = 0; i < slots_.size(); ++i) {

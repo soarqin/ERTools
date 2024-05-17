@@ -1,4 +1,7 @@
+#include "savefile.h"
 #include "common.h"
+
+#include <toml.hpp>
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
@@ -18,20 +21,19 @@
     processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 #endif
 
-int generate(const std::wstring &path, const std::wstring &msg, const std::wstring &output) {
+int generate(const std::wstring &path, const std::wstring &msg, bool patchTimeToZero, bool keepFace, const std::wstring &output) {
     std::ifstream exe(std::filesystem::path(L"saveimporter.exe"), std::ios::binary);
     if (!exe.is_open()) {
         return -1;
     }
-    std::ifstream file(std::filesystem::path(path), std::ios::binary);
-    if (!file.is_open()) {
+    SaveFile save(path);
+    if (!save.ok()) {
         exe.close();
         return -2;
     }
     std::ofstream out(std::filesystem::path(!output.empty() ? output.c_str() : L"output.exe"), std::ios::binary);
     if (!out.is_open()) {
         exe.close();
-        file.close();
         return -3;
     }
     exe.seekg(0, std::ios::end);
@@ -40,20 +42,28 @@ int generate(const std::wstring &path, const std::wstring &msg, const std::wstri
     std::vector<uint8_t> data(size);
     exe.read(reinterpret_cast<char *>(data.data()), size);
     out.write(reinterpret_cast<char *>(data.data()), size);
-    file.seekg(0, std::ios::end);
-    size = file.tellg();
-    file.seekg(0, std::ios::beg);
-    data.resize(size);
-    file.read(reinterpret_cast<char *>(data.data()), size);
-    out.write(reinterpret_cast<char *>(data.data()), size);
-    out.write(reinterpret_cast<char *>(&size), 4);
-    size = int64_t(msg.length() * sizeof(wchar_t));
-    out.write(reinterpret_cast<const char *>(msg.c_str()), size);
-    out.write(reinterpret_cast<char *>(&size), 4);
+
+    int slotId = 0;
+    const auto *slot = save.charSlot(slotId);
+    size = (int)slot->data.size();
+    out.write(reinterpret_cast<const char *>(slot->data.data()), size);
+    const auto &slot2 = save.summarySlot();
+    out.write(reinterpret_cast<const char *>(slot2.data.data() + 0x195E + 0x24C * slotId), 0x24C);
+    size += 0x24C;
+    out.write(reinterpret_cast<const char *>(&size), 4);
+
+    toml::value val = {
+        {"KeepFace", keepFace},
+        {"PatchTimeToZero", patchTimeToZero},
+        {"Message", msg}
+    };
+    auto text = toml::format(val);
+    int sz = (int)text.length();
+    out.write(reinterpret_cast<const char *>(text.c_str()), sz);
+    out.write(reinterpret_cast<char *>(&sz), 4);
     uint32_t magic = 0x49535245; // ERSI
     out.write(reinterpret_cast<char *>(&magic), 4);
     exe.close();
-    file.close();
     out.close();
     return 0;
 }
@@ -102,13 +112,13 @@ INT_PTR CALLBACK DlgProc(HWND hwndDlg, UINT message, WPARAM wParam, LPARAM lPara
                     wchar_t savepath[MAX_PATH];
                     SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
                     PathAppendW(savepath, L"EldenRing");
-                    auto file = selectFile(L"选择存档文件", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", false);
+                    auto file = selectFile(L"选择存档文件", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
                     if (!file.empty())
                         SetWindowTextW(GetDlgItem(hwndDlg, 1001), file.c_str());
                     return TRUE;
                 }
                 case 1005: {
-                    auto file = selectFile(L"输出文件", L"", L"可执行文件|*.exe", false, false);
+                    auto file = selectFile(L"输出文件", L"", L"可执行文件|*.exe", L"exe", false, false);
                     if (!file.empty())
                         SetWindowTextW(GetDlgItem(hwndDlg, 1004), file.c_str());
                     return TRUE;
@@ -120,7 +130,9 @@ INT_PTR CALLBACK DlgProc(HWND hwndDlg, UINT message, WPARAM wParam, LPARAM lPara
                     GetDlgItemTextW(hwndDlg, 1003, msg, sizeof(msg));
                     wchar_t output[MAX_PATH];
                     GetDlgItemTextW(hwndDlg, 1004, output, sizeof(output));
-                    auto res = generate(path, msg, output);
+                    bool patchTimeToZero = SendMessageW(GetDlgItem(hwndDlg, 1007), BM_GETCHECK, 0, 0) > 0;
+                    bool keepFace = SendMessageW(GetDlgItem(hwndDlg, 1008), BM_GETCHECK, 0, 0) > 0;
+                    auto res = generate(path, msg, patchTimeToZero, keepFace, output);
                     switch (res) {
                         case -1:
                             MessageBoxW(hwndDlg, L"无法打开程序文件", L"错误", 0);

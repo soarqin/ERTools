@@ -1,5 +1,7 @@
 project(saveimporter CXX)
 
+option(SAVEIMPORTER_USE_CLI_ARGS "Use command line arguments" OFF)
+
 # Check for AVX2 support
 include(CheckCXXSourceRuns)
 if(MSVC)
@@ -43,17 +45,26 @@ add_executable(${PROJECT_NAME} WIN32
 )
 add_executable(${PROJECT_NAME}_maker WIN32
     maker.cpp
+    mem.cpp mem.h
+    savefile.cpp savefile.h
+    ${MD5_SRC}
     common.cpp common.h
     res/saveimporter_maker.rc ${RES_FILES}
 )
+if(SAVEIMPORTER_USE_CLI_ARGS)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE USE_CLI_ARGS)
+endif()
 target_include_directories(${PROJECT_NAME} PRIVATE .)
-target_link_libraries(${PROJECT_NAME} PRIVATE shlwapi)
-target_link_libraries(${PROJECT_NAME}_maker PRIVATE shlwapi)
+target_include_directories(${PROJECT_NAME}_maker PRIVATE .)
+target_link_libraries(${PROJECT_NAME} PRIVATE toml11::headers shlwapi)
+target_link_libraries(${PROJECT_NAME}_maker PRIVATE toml11::headers shlwapi)
 if(HAVE_AVX2_EXTENSIONS)
     if(MSVC)
         target_compile_options(${PROJECT_NAME} PUBLIC /arch:AVX2)
+        target_compile_options(${PROJECT_NAME}_maker PUBLIC /arch:AVX2)
     else()
         target_compile_options(${PROJECT_NAME} PUBLIC -mavx2)
+        target_compile_options(${PROJECT_NAME}_maker PUBLIC -mavx2)
     endif()
 endif()
 set_target_properties(${PROJECT_NAME} ${PROJECT_NAME}_maker PROPERTIES

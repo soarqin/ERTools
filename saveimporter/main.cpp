@@ -1,6 +1,8 @@
 #include "savefile.h"
 #include "common.h"
 
+#include <toml.hpp>
+
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <shellapi.h>
@@ -9,6 +11,7 @@
 #undef WIN32_LEAN_AND_MEAN
 #include <fstream>
 #include <cstdint>
+#include <filesystem>
 
 #if defined(_MSC_VER)
 #pragma comment(linker,"\"/manifestdependency:type='win32' \
@@ -24,6 +27,14 @@ int wmain(int argc, wchar_t *argv[]) {
     (void)argv;
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
 
+#if defined(USE_CLI_ARGS)
+    std::ifstream file(std::filesystem::path(argv[1]), std::ios::binary);
+    if (!file.is_open()) {
+        return -1;
+    }
+    auto cfg = toml::parse(file);
+    file.close();
+#else
     wchar_t path[MAX_PATH];
     GetModuleFileNameW(nullptr, path, sizeof(path));
     std::ifstream file(path, std::ios::binary);
@@ -41,50 +52,49 @@ int wmain(int argc, wchar_t *argv[]) {
     int size;
     file.read(reinterpret_cast<char *>(&size), 4);
     file.seekg(-size - 4, std::ios::cur);
-    std::wstring msg;
-    msg.resize((size + 1) / 2);
-    file.read(reinterpret_cast<char *>(msg.data()), size);
+    std::string td;
+    td.resize(size);
+    file.read(td.data(), size);
     file.seekg(-size, std::ios::cur);
+    std::istringstream is(td);
+    auto cfg = toml::parse(is);
+#endif
+    auto keepFace = toml::find_or(cfg, "KeepFace", false);
+    auto patchTimeToZero = toml::find_or(cfg, "PatchTimeToZero", false);
+    auto msg = toml::find_or(cfg, "Message", std::wstring());
     if (!msg.empty())
         MessageBoxW(nullptr, msg.c_str(), MSGBOX_CAPTION, 0);
 
     wchar_t savepath[MAX_PATH];
     SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
     PathAppendW(savepath, L"EldenRing");
-    auto res = selectFile(L"选择艾尔登法环存档目录(请选择数字ID子目录)", savepath, L"", true);
+    auto res = selectFile(L"选择艾尔登法环存档文件(进入数字ID子目录后选择，你需要至少运行一次游戏才能生成存档文件)", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
     if (res.empty()) return -1;
-    lstrcpyW(savepath, res.c_str());
-    wchar_t testPath[MAX_PATH];
-    lstrcpyW(testPath, savepath);
-    PathRemoveFileSpecW(testPath);
-    if (lstrcmpiW(PathFindFileNameW(testPath), L"EldenRing") != 0) {
-        MessageBoxW(nullptr, L"选择了无效的存档目录", MSGBOX_CAPTION, 0);
-        return -1;
-    }
-    auto *uidStr = PathFindFileNameW(savepath);
-    wchar_t *endptr;
-    uint64_t uid = std::wcstoull(uidStr, &endptr, 10);
-    if (endptr && *endptr != L'\0') {
-        MessageBoxW(nullptr, L"选择了无效的存档目录", MSGBOX_CAPTION, 0);
-        return -1;
-    }
-    PathAppendW(savepath, L"ER0000.sl2");
-    if (PathFileExistsW(savepath)) {
+    if (PathFileExistsW(res.c_str())) {
         if (MessageBoxW(nullptr, L"是否确认覆盖当前存档文件？(如有必要请确认已经备份了当前存档)", MSGBOX_CAPTION, MB_YESNO) == IDNO) {
             return -1;
         }
     }
 
+    auto slot = 0;
+    SaveFile savefile(res);
+#if defined(USE_CLI_ARGS)
+    savefile.importFromFile(argv[2], slot, [patchTimeToZero, &savefile, slot]() {
+        if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
+    }, keepFace);
+#else
+    std::vector<uint8_t> data;
     file.seekg(-4, std::ios::cur);
     file.read(reinterpret_cast<char *>(&size), 4);
     file.seekg(-size - 4, std::ios::cur);
-    std::string data;
     data.resize(size);
-    file.read(data.data(), size);
-    SaveFile savefile(data, savepath);
-    savefile.patchSlotTime(0, 0);
-    savefile.resign(uid);
-    MessageBoxW(nullptr, L"存档生成完毕", MSGBOX_CAPTION, 0);
+    file.read((char*)data.data(), size);
+    file.close();
+    savefile.importFrom(data, 0, [patchTimeToZero, &savefile, slot]() {
+        if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
+    }, keepFace);
+#endif
+    MessageBoxW(nullptr, L"存档导入完毕", MSGBOX_CAPTION, 0);
     CoUninitialize();
     return 0;
 }
