@@ -21,15 +21,12 @@
     processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 #endif
 
+SaveFile *save = nullptr;
+
 int generate(const std::wstring &path, const std::wstring &msg, bool patchTimeToZero, bool keepFace, const std::wstring &output) {
     std::ifstream exe(std::filesystem::path(L"saveimporter.exe"), std::ios::binary);
     if (!exe.is_open()) {
         return -1;
-    }
-    SaveFile save(path);
-    if (!save.ok()) {
-        exe.close();
-        return -2;
     }
     std::ofstream out(std::filesystem::path(!output.empty() ? output.c_str() : L"output.exe"), std::ios::binary);
     if (!out.is_open()) {
@@ -44,10 +41,10 @@ int generate(const std::wstring &path, const std::wstring &msg, bool patchTimeTo
     out.write(reinterpret_cast<char *>(data.data()), size);
 
     int slotId = 0;
-    const auto *slot = save.charSlot(slotId);
+    const auto *slot = save->charSlot(slotId);
     size = (int)slot->data.size();
     out.write(reinterpret_cast<const char *>(slot->data.data()), size);
-    const auto &slot2 = save.summarySlot();
+    const auto &slot2 = save->summarySlot();
     out.write(reinterpret_cast<const char *>(slot2.data.data() + 0x195E + 0x24C * slotId), 0x24C);
     size += 0x24C;
     out.write(reinterpret_cast<const char *>(&size), 4);
@@ -103,52 +100,91 @@ INT_PTR CALLBACK DlgProc(HWND hwndDlg, UINT message, WPARAM wParam, LPARAM lPara
             return TRUE;
         }
         case WM_COMMAND:
-            switch (LOWORD(wParam)) {
-                case IDOK:
-                case IDCANCEL:
-                    EndDialog(hwndDlg, 0);
-                    return TRUE;
-                case 1002: {
-                    wchar_t savepath[MAX_PATH];
-                    SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
-                    PathAppendW(savepath, L"EldenRing");
-                    auto file = selectFile(L"选择存档文件", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
-                    if (!file.empty())
-                        SetWindowTextW(GetDlgItem(hwndDlg, 1001), file.c_str());
-                    return TRUE;
-                }
-                case 1005: {
-                    auto file = selectFile(L"输出文件", L"", L"可执行文件|*.exe", L"exe", false, false);
-                    if (!file.empty())
-                        SetWindowTextW(GetDlgItem(hwndDlg, 1004), file.c_str());
-                    return TRUE;
-                }
-                case 1006: {
-                    wchar_t path[MAX_PATH];
-                    GetDlgItemTextW(hwndDlg, 1001, path, sizeof(path));
-                    wchar_t msg[MAX_PATH];
-                    GetDlgItemTextW(hwndDlg, 1003, msg, sizeof(msg));
-                    wchar_t output[MAX_PATH];
-                    GetDlgItemTextW(hwndDlg, 1004, output, sizeof(output));
-                    bool patchTimeToZero = SendMessageW(GetDlgItem(hwndDlg, 1007), BM_GETCHECK, 0, 0) > 0;
-                    bool keepFace = SendMessageW(GetDlgItem(hwndDlg, 1008), BM_GETCHECK, 0, 0) > 0;
-                    auto res = generate(path, msg, patchTimeToZero, keepFace, output);
-                    switch (res) {
-                        case -1:
-                            MessageBoxW(hwndDlg, L"无法打开程序文件", L"错误", 0);
-                            break;
-                        case -2:
-                            MessageBoxW(hwndDlg, L"无法打开存档文件", L"错误", 0);
-                            break;
-                        case -3:
-                            MessageBoxW(hwndDlg, L"无法创建输出文件", L"错误", 0);
-                            break;
-                        case 0:
-                            MessageBoxW(hwndDlg, L"生成完毕", L"成功", 0);
-                            break;
+            switch (HIWORD(wParam)) {
+                case LBN_SELCHANGE:
+                    switch (LOWORD(wParam)) {
+                        case 1009: {
+                            auto lb = GetDlgItem(hwndDlg, 1009);
+                            auto idx = SendMessageW(lb, LB_GETCURSEL, 0, 0);
+                            EnableWindow(GetDlgItem(hwndDlg, 1006), idx >= 0);
+                            return TRUE;
+                        }
                     }
-                    return TRUE;
-                }
+                    break;
+                case BN_CLICKED:
+                    switch (LOWORD(wParam)) {
+                        case IDOK:
+                        case IDCANCEL:
+                            if (save != nullptr) {
+                                delete save;
+                                save = nullptr;
+                            }
+                            EndDialog(hwndDlg, 0);
+                            return TRUE;
+                        case 1002: {
+                            wchar_t savepath[MAX_PATH];
+                            SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
+                            PathAppendW(savepath, L"EldenRing");
+                            auto file = selectFile(L"选择存档文件", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
+                            if (file.empty()) return TRUE;
+                            delete save;
+                            save = new(std::nothrow) SaveFile(file);
+                            if (save == nullptr || !save->ok()) {
+                                MessageBoxW(hwndDlg, L"无效的存档文件", L"错误", 0);
+                                delete save;
+                                save = nullptr;
+                                return TRUE;
+                            }
+                            SetWindowTextW(GetDlgItem(hwndDlg, 1001), file.c_str());
+                            auto lb = GetDlgItem(hwndDlg, 1009);
+                            SendMessageW(lb, LB_RESETCONTENT, 0, 0);
+                            save->listSlots(-1, [hwndDlg, lb](int idx, const SaveSlot &slot) {
+                                if (slot.slotType != SaveSlot::Character) return;
+                                const auto &c = (const CharSlot &)slot;
+                                if (!c.available) return;
+                                auto addedItemIndex = SendMessageW(lb, LB_ADDSTRING, 0, (LPARAM)c.charname.c_str());
+                                SendMessageW(lb, LB_SETITEMDATA, addedItemIndex, (LPARAM)idx);
+                                if (addedItemIndex == 0) {
+                                    SendMessageW(lb, LB_SETCURSEL, 0, 0);
+                                    EnableWindow(GetDlgItem(hwndDlg, 1006), TRUE);
+                                }
+                            });
+                            return TRUE;
+                        }
+                        case 1005: {
+                            auto file = selectFile(L"输出文件", L"", L"可执行文件|*.exe", L"exe", false, false);
+                            if (!file.empty())
+                                SetWindowTextW(GetDlgItem(hwndDlg, 1004), file.c_str());
+                            return TRUE;
+                        }
+                        case 1006: {
+                            wchar_t path[MAX_PATH];
+                            GetDlgItemTextW(hwndDlg, 1001, path, sizeof(path));
+                            wchar_t msg[MAX_PATH];
+                            GetDlgItemTextW(hwndDlg, 1003, msg, sizeof(msg));
+                            wchar_t output[MAX_PATH];
+                            GetDlgItemTextW(hwndDlg, 1004, output, sizeof(output));
+                            bool patchTimeToZero = SendMessageW(GetDlgItem(hwndDlg, 1007), BM_GETCHECK, 0, 0) > 0;
+                            bool keepFace = SendMessageW(GetDlgItem(hwndDlg, 1008), BM_GETCHECK, 0, 0) > 0;
+                            auto res = generate(path, msg, patchTimeToZero, keepFace, output);
+                            switch (res) {
+                                case 0:
+                                    MessageBoxW(hwndDlg, L"生成完毕", L"成功", 0);
+                                    break;
+                                case -1:
+                                    MessageBoxW(hwndDlg, L"无法打开程序文件", L"错误", 0);
+                                    break;
+                                case -3:
+                                    MessageBoxW(hwndDlg, L"无法创建输出文件", L"错误", 0);
+                                    break;
+                                default:
+                                    MessageBoxW(hwndDlg, L"未知错误", L"错误", 0);
+                                    break;
+                            }
+                            return TRUE;
+                        }
+                    }
+                    break;
             }
             break;
     }

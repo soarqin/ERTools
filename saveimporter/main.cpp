@@ -25,6 +25,8 @@ int wmain(int argc, wchar_t *argv[]) {
     // Unused argc, argv
     (void)argc;
     (void)argv;
+    INITCOMMONCONTROLSEX iccex = {sizeof(INITCOMMONCONTROLSEX), ICC_STANDARD_CLASSES};
+    InitCommonControlsEx(&iccex);
     CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
 
 #if defined(USE_CLI_ARGS)
@@ -70,14 +72,13 @@ int wmain(int argc, wchar_t *argv[]) {
     PathAppendW(savepath, L"EldenRing");
     auto res = selectFile(L"选择艾尔登法环存档文件(进入数字ID子目录后选择，你需要至少运行一次游戏才能生成存档文件)", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
     if (res.empty()) return -1;
-    if (PathFileExistsW(res.c_str())) {
-        if (MessageBoxW(nullptr, L"是否确认覆盖当前存档文件？(如有必要请确认已经备份了当前存档)", MSGBOX_CAPTION, MB_YESNO) == IDNO) {
-            return -1;
-        }
-    }
 
-    auto slot = 0;
+    int slot = 0;
     SaveFile savefile(res);
+    if (!savefile.ok()) {
+        MessageBoxW(nullptr, L"无效的存档文件！", MSGBOX_CAPTION, MB_ICONERROR);
+        return -1;
+    }
 #if defined(USE_CLI_ARGS)
     savefile.importFromFile(argv[2], slot, [patchTimeToZero, &savefile, slot]() {
         if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
@@ -90,7 +91,57 @@ int wmain(int argc, wchar_t *argv[]) {
     data.resize(size);
     file.read((char*)data.data(), size);
     file.close();
-    savefile.importFrom(data, 0, [patchTimeToZero, &savefile, slot]() {
+
+    TASKDIALOG_BUTTON buttons[10] = {
+        {-1, L"导入新角色槽"},
+    };
+    TASKDIALOG_BUTTON dbuttons[2] = {
+        {IDCANCEL, L"取消"},
+        {IDOK, L"导入"},
+    };
+    WCHAR names[10][32];
+    int count = 1;
+    savefile.listSlots(-1, [&buttons, &count, &names, &slot](int idx, const SaveSlot &s) {
+        if (s.slotType != SaveSlot::Character) return;
+        const auto &c = (const CharSlot &)s;
+        if (!c.available) {
+            if (buttons[0].nButtonID < 0) {
+                buttons[0].nButtonID = idx;
+                slot = idx;
+            }
+            return;
+        }
+        auto &b = buttons[count];
+        b.nButtonID = idx;
+        b.pszButtonText = names[count];
+        lstrcpyW(names[count], L"替换 ");
+        lstrcatW(names[count], c.charname.c_str());
+        count++;
+    });
+    TASKDIALOGCONFIG taskDialogConfig = {sizeof(TASKDIALOGCONFIG)};
+    taskDialogConfig.hInstance = GetModuleHandleW(nullptr);
+    taskDialogConfig.pszWindowTitle = L"选择导入角色槽";
+    taskDialogConfig.pszMainIcon = MAKEINTRESOURCEW(1);
+    if (keepFace) {
+        taskDialogConfig.pszContent = L"选择新角色槽会导入为新角色。\n选择现有角色槽时会替换角色并且保留捏脸，注意备份数据。";
+    } else {
+        taskDialogConfig.pszContent = L"选择新角色槽会导入为新角色。\n选择现有角色槽时会替换角色，注意备份数据。";
+    }
+    taskDialogConfig.cButtons = 2;
+    taskDialogConfig.pButtons = dbuttons;
+    if (buttons[0].nButtonID < 0) {
+        taskDialogConfig.cRadioButtons = count - 1;
+        taskDialogConfig.pRadioButtons = buttons + 1;
+    } else {
+        taskDialogConfig.cRadioButtons = count;
+        taskDialogConfig.pRadioButtons = buttons;
+    }
+    taskDialogConfig.nDefaultRadioButton = slot;
+    int sel;
+    if (TaskDialogIndirect(&taskDialogConfig, &sel, &slot, nullptr) != S_OK
+        || sel == IDCANCEL || slot < 0) return -1;
+
+    savefile.importFrom(data, slot, [patchTimeToZero, &savefile, slot]() {
         if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
     }, keepFace);
 #endif

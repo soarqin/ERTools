@@ -315,6 +315,7 @@ bool SaveFile::importFrom(const std::vector<uint8_t> &buf, int slot, const std::
 
     auto *summary = (SummarySlot*)slots_[summarySlot_].get();
     summary->data[0x1954 + slot] = 1;
+    summary->data[0x1334] = (int8_t)slot;
     memcpy(&summary->data[0x195E + 0x24C * slot], ndata, 0x24C);
     if (keepFace && !face.empty()) {
         importFace(face, slot, false);
