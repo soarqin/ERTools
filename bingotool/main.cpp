@@ -197,6 +197,11 @@ void startSync() {
                         }
                     }
                     if (dirty) {
+                        std::ofstream ofs("data/squares.txt");
+                        for (size_t i = 0; i < idx; i++) {
+                            ofs << sl[i] << std::endl;
+                        }
+                        ofs.close();
                         gCells.updateTextures(true);
                     }
                     for (int i = 0; i < 2; i++) {
@@ -208,11 +213,6 @@ void startSync() {
                                 gScoreWindows[i].updateTexture();
                             }
                         }
-                    }
-                    if (dirty) {
-                        std::ofstream ofs("data/squares.txt");
-                        ofs << s << std::endl;
-                        ofs.close();
                     }
                     break;
                 }
@@ -697,11 +697,11 @@ static int mainLoop() {
             continue;
         }
         nextRenderTime += 1000000ULL / 15ULL;
+        syncProcess();
         gCells.render();
         for (auto &sw : gScoreWindows) {
             sw.render();
         }
-        syncProcess();
     }
     QUIT:
     saveState();
