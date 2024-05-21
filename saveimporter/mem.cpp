@@ -17,7 +17,7 @@
 #include <malloc.h>
 #endif
 
-void kmpSearch(const void *full, size_t fullLen, const void *sub, size_t subLen, void (*func)(int, void*), void *userp) {
+void kmpSearch(const void *full, size_t fullLen, const void *sub, size_t subLen, bool (*func)(int, void*), void *userp) {
     int i, j, len;
     const auto *haystack = (const uint8_t *)full;
     const auto *needle = (const uint8_t *)sub;
@@ -57,7 +57,7 @@ void kmpSearch(const void *full, size_t fullLen, const void *sub, size_t subLen,
             i += j - lpsTable[j - 1];
             j = lpsTable[j - 1];
         } else {
-            func(i, userp);
+            if (func(i, userp)) return;
             i += j - lpsTable[j - 1];
             j = lpsTable[j - 1];
         }

@@ -29,10 +29,11 @@ inline void findUserIDOffset(CharSlot *slot, const std::function<void(int offset
         auto *slot = ((FindParam*)data)->slot;
         offset += *(int*)&slot->data[offset - 4];
         offset += 4;
-        if (memcmp(&slot->data[offset], "\x46\x4F\x45\x47\x00\x26\x04\x21", 8) != 0) return;
+        if (memcmp(&slot->data[offset], "\x46\x4F\x45\x47\x00\x26\x04\x21", 8) != 0) return false;
         offset += *(int*)&slot->data[offset - 4];
         offset += *(int*)&slot->data[offset] + 4 + 0x20078;
         ((FindParam*)data)->func(offset);
+        return true;
     }, &param);
 }
 
@@ -353,6 +354,7 @@ bool SaveFile::exportFace(std::vector<uint8_t> &buf, int slot) {
         auto &sd = *reinterpret_cast<SearchData*>(data);
         const auto *m = sd.data.data();
         sd.buf.assign(m + offset, m + offset + 0x120);
+        return true;
     }, &sd);
     const auto *s = (const CharSlot*)slots_[slot].get();
     buf.push_back(data[s->statOffset + 0x82]);
@@ -384,6 +386,7 @@ bool SaveFile::importFace(const std::vector<uint8_t> &buf, int slot, bool resign
     kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
         auto &sd = *reinterpret_cast<SearchData*>(data);
         memcpy(sd.data.data() + offset, sd.face.data(), 0x120);
+        return true;
     }, &sd);
     slot2->data[slot2->statOffset + 0x82] = sex;
     auto &s = slots_[summarySlot_];
