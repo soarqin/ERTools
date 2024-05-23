@@ -20,21 +20,22 @@ inline void readWString(std::wstring &output, const uint16_t *input) {
 }
 
 inline void findUserIDOffset(CharSlot *slot, const std::function<void(int offset)> &func) {
-    struct FindParam {
-        CharSlot *slot;
-        const std::function<void(int offset)> &func;
-    } param = {slot, func};
-    kmpSearch(slot->data.data() + 0x1E0000, slot->data.size() - 0x1E0000, "\x4D\x4F\x45\x47\x00\x26\x04\x21", 8, [](int offset, void *data) {
+    size_t pointer = 0x1E0000;
+    while (true) {
+        auto offset = boyer_moore(slot->data.data() + pointer, slot->data.size() - pointer, (const uint8_t *)"\x4D\x4F\x45\x47\x00\x26\x04\x21", 8);
+        if (offset == (size_t)-1) return;
         offset += 0x1E0000;
-        auto *slot = ((FindParam*)data)->slot;
-        offset += *(int*)&slot->data[offset - 4];
+        offset += *(int *)&slot->data[offset - 4];
         offset += 4;
-        if (memcmp(&slot->data[offset], "\x46\x4F\x45\x47\x00\x26\x04\x21", 8) != 0) return false;
-        offset += *(int*)&slot->data[offset - 4];
-        offset += *(int*)&slot->data[offset] + 4 + 0x20078;
-        ((FindParam*)data)->func(offset);
-        return true;
-    }, &param);
+        if (memcmp(&slot->data[offset], "\x46\x4F\x45\x47\x00\x26\x04\x21", 8) != 0) {
+            pointer = offset + 1;
+            continue;
+        }
+        offset += *(int *)&slot->data[offset - 4];
+        offset += *(int *)&slot->data[offset] + 4 + 0x20078;
+        func((int)offset);
+        return;
+    }
 }
 
 inline size_t findStatOffset(const std::vector<uint8_t> &data, int level, const wchar_t name[0x11]) {
@@ -345,17 +346,9 @@ bool SaveFile::importFromFile(const std::wstring &filename, int slot, const std:
 bool SaveFile::exportFace(std::vector<uint8_t> &buf, int slot) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
     const auto &data = slots_[slot]->data;
-    struct SearchData {
-        std::vector<uint8_t> &buf;
-        const std::vector<uint8_t> &data;
-    };
-    SearchData sd = {buf, data};
-    kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
-        auto &sd = *reinterpret_cast<SearchData*>(data);
-        const auto *m = sd.data.data();
-        sd.buf.assign(m + offset, m + offset + 0x120);
-        return true;
-    }, &sd);
+    const auto *m = data.data();
+    auto offset = boyer_moore(m, data.size(), (const uint8_t *)"\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12);
+    buf.assign(m + offset, m + offset + 0x120);
     const auto *s = (const CharSlot*)slots_[slot].get();
     buf.push_back(data[s->statOffset + 0x82]);
     return true;
@@ -382,12 +375,9 @@ bool SaveFile::importFace(const std::vector<uint8_t> &buf, int slot, bool resign
         const std::vector<uint8_t> &face;
         std::vector<uint8_t> &data;
     };
-    SearchData sd = {buf, data};
-    kmpSearch(data.data(), data.size(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12, [](int offset, void *data) {
-        auto &sd = *reinterpret_cast<SearchData*>(data);
-        memcpy(sd.data.data() + offset, sd.face.data(), 0x120);
-        return true;
-    }, &sd);
+    auto *m = data.data();
+    auto offset = boyer_moore(m, data.size(), (const uint8_t *)"\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12);
+    memcpy(m + offset, buf.data(), 0x120);
     slot2->data[slot2->statOffset + 0x82] = sex;
     auto &s = slots_[summarySlot_];
     memcpy(&s->data[0x195E + 0x24C * slot + 0x22 + 0x18], buf.data(), 0x120);
