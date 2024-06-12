@@ -189,7 +189,7 @@ void make_delta2(ptrdiff_t *delta2, const uint8_t *pat, size_t patlen) {
     }
 }
 
-// Returns pointer to first match.
+// Returns offset to first match.
 // See also glibc memmem() (non-BM) and std::boyer_moore_searcher (first-match).
 size_t boyer_moore(const uint8_t *string, size_t stringlen, const uint8_t *pat, size_t patlen) {
     ptrdiff_t delta1[ALPHABET_LEN];

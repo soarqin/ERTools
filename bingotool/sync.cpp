@@ -36,6 +36,7 @@ void on_connect(uv_connect_t *req, int status) {
         doReconnect();
         return;
     }
+    uv_tcp_keepalive(clientCtx, 1, 60);
     state = 0;
     uv_read_start((uv_stream_t*)clientCtx, [](uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) {
         auto *mem = new char[suggested_size];
