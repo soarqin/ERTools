@@ -11,7 +11,7 @@ struct Cell {
     void updateTexture();
     void render(int x, int y, int cx, int cy) const;
     int calculateMinimalWidth() const;
-    bool setText(const std::string &text);
+    bool setText(const std::string &text) const;
 
     SDL_Renderer *renderer = nullptr;
     SDL_Texture *texture = nullptr;
@@ -35,7 +35,7 @@ public:
     static void updateCellTextSettings(TextSettings *s);
     void updateScoreTextSettings();
     void resetCellFonts();
-    void updateTextures(bool fit = true);
+    void updateTextures(bool fit = false);
     void updateScoreTextures(int index);
     void reloadColorTexture();
     void reloadColorTexture(int index);
@@ -48,6 +48,8 @@ public:
 private:
     SDL_Window *window_ = nullptr;
     SDL_Renderer *renderer_ = nullptr;
+    SDL_Texture *texture_ = nullptr;
+    bool dirty_ = true;
     TextSettings *cellTextSettings_ = nullptr;
     Cell cells_[5][5];
     SDL_Texture *colorTexture_[2] = {nullptr, nullptr};

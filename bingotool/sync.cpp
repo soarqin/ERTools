@@ -20,11 +20,11 @@ static ChannelCallback syncCallback = nullptr;
 static ConnectionCallback syncOpenCallback = nullptr;
 static uv_timer_t reconnectTimer;
 
-void read_cb(uv_stream_t* stream, ssize_t nread, const uv_buf_t* buf);
+void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf);
 
 void doReconnect() {
     uv_timer_init(loop, &reconnectTimer);
-    uv_timer_start(&reconnectTimer, [](uv_timer_t* handle) {
+    uv_timer_start(&reconnectTimer, [](uv_timer_t *handle) {
         uv_timer_stop(handle);
         syncOpen(syncOpenCallback);
     }, 10000, 0);
@@ -38,14 +38,14 @@ void on_connect(uv_connect_t *req, int status) {
     }
     uv_tcp_keepalive(clientCtx, 1, 60);
     state = 0;
-    uv_read_start((uv_stream_t*)clientCtx, [](uv_handle_t* handle, size_t suggested_size, uv_buf_t* buf) {
+    uv_read_start((uv_stream_t *)clientCtx, [](uv_handle_t *handle, size_t suggested_size, uv_buf_t *buf) {
         auto *mem = new char[suggested_size];
         *buf = uv_buf_init(mem, suggested_size);
     }, read_cb);
     if (syncOpenCallback) syncOpenCallback();
 }
 
-void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf) {
+void read_cb(uv_stream_t */*stream*/, ssize_t nread, const uv_buf_t *buf) {
     if (nread == 0) return;
     if (nread < 0) {
         syncClose();
@@ -101,6 +101,8 @@ void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf) {
                 nread = 0;
                 break;
             }
+            default:
+                break;
         }
     }
     delete[] buf->base;
@@ -195,9 +197,9 @@ bool syncOpen(ConnectionCallback callback) {
 }
 
 void syncClose() {
-    if (clientCtx == nullptr || uv_is_closing((uv_handle_t*)clientCtx)) return;
-    uv_close((uv_handle_t*)clientCtx, [](uv_handle_t* handle) {
-        delete (uv_tcp_t*)handle;
+    if (clientCtx == nullptr || uv_is_closing((uv_handle_t *)clientCtx)) return;
+    uv_close((uv_handle_t *)clientCtx, [](uv_handle_t *handle) {
+        delete (uv_tcp_t *)handle;
         syncCallback = nullptr;
         state = 0;
         headerRead = 0;
@@ -233,7 +235,7 @@ const std::string &syncGetChannelPasswordForC() {
     return gPassword;
 }
 
-void write_cb(uv_write_t* req, int status);
+void write_cb(uv_write_t *req, int status);
 
 bool syncSendData(char type, const std::string &data) {
     if (gMode == 0 && gPassword.empty()) return false;
@@ -248,10 +250,10 @@ bool syncSendData(char type, const std::string &data) {
     auto *req = new uv_write_t;
     memset(req, 0, sizeof(uv_write_t));
     req->data = buf.base;
-    return uv_write(req, (uv_stream_t*)clientCtx, &buf, 1, write_cb) == 0;
+    return uv_write(req, (uv_stream_t *)clientCtx, &buf, 1, write_cb) == 0;
 }
 
-void write_cb(uv_write_t *req, int status) {
+void write_cb(uv_write_t *req, int /*status*/) {
     delete[] (char *)req->data;
     delete req;
 }
@@ -259,7 +261,7 @@ void write_cb(uv_write_t *req, int status) {
 bool syncSendData(char type, const std::vector<std::string> &data, char separator) {
     if (gMode == 0 && gPassword.empty()) return false;
     std::string n;
-    for (auto &s : data) {
+    for (auto &s: data) {
         n += s;
         n += separator;
     }

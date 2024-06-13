@@ -8,7 +8,6 @@
 #include <windows.h>
 #include <shlobj.h>
 #include <shlwapi.h>
-#include <gdiplus.h>
 #undef WIN32_LEAN_AND_MEAN
 #if defined(max)
 #undef max
@@ -130,7 +129,7 @@ std::string mergeString(const std::vector<std::string> &strs, char sep) {
     return result;
 }
 
-std::wstring mergeString(const std::vector<std::wstring> &strs, wchar_t sep) {
+[[maybe_unused]] std::wstring mergeString(const std::vector<std::wstring> &strs, wchar_t sep) {
     std::wstring result;
     for (auto &s: strs) {
         if (!result.empty()) result += sep;

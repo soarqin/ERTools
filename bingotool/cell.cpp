@@ -12,10 +12,12 @@
 #include <windows.h>
 #include <commctrl.h>
 #include <commdlg.h>
+/*
 #include <shlwapi.h>
 #include <shobjidl.h>
 #include <shlguid.h>
 #include <shellapi.h>
+*/
 #undef WIN32_LEAN_AND_MEAN
 #include <algorithm>
 #include <cmath>
@@ -95,7 +97,6 @@ void Cell::updateTexture() {
     }
     textSource->update();
     texture = SDL_CreateTextureFromSurface(renderer, textSource->surface);
-    SDL_SetTextureBlendMode(texture, SDL_BLENDMODE_BLEND);
     SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
 }
 
@@ -105,7 +106,12 @@ void Cell::render(int x, int y, int cx, int cy) const {
     auto st = dbl ? (status - 2) : status;
     if (st > 0 && gConfig.useColorTexture[st - 1]) {
         SDL_FRect dstrect = {fx, fy, fcx, fcy};
-        SDL_RenderTexture(renderer, gCells.colorTexture(st - 1), nullptr, &dstrect);
+        SDL_RenderTexture(renderer, gCells.colorTexture((int)st - 1), nullptr, &dstrect);
+        SDL_SetRenderDrawBlendMode(renderer, SDL_ComposeCustomBlendMode(SDL_BLENDFACTOR_ZERO, SDL_BLENDFACTOR_ONE, SDL_BLENDOPERATION_ADD, SDL_BLENDFACTOR_ONE, SDL_BLENDFACTOR_ZERO, SDL_BLENDOPERATION_ADD));
+        auto &col = gConfig.colorsInt[st];
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, col.a);
+        SDL_RenderFillRect(renderer, &dstrect);
+        SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
     } else {
         auto &col = gConfig.colorsInt[st];
         SDL_FRect dstrect = {fx, fy, fcx, fcy};
@@ -140,7 +146,7 @@ int Cell::calculateMinimalWidth() const {
     return width;
 }
 
-bool Cell::setText(const std::string &text) {
+bool Cell::setText(const std::string &text) const {
     auto utext = Utf8ToUnicode(text);
     if (utext == textSource->text) return false;
     textSource->text = std::move(utext);
@@ -187,7 +193,7 @@ void Cells::init() {
     window_ = SDL_CreateWindow("BingoTool",
                                gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                                gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                                   + (gConfig.simpleMode ? scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5 : 0),
+                                   + (gConfig.simpleMode ? (int)scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5 : 0),
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     renderer_ = SDL_CreateRenderer(window_, "direct3d11", 0);
@@ -229,6 +235,10 @@ void Cells::deinit() {
         delete scoreTextSettings_;
         scoreTextSettings_ = nullptr;
     }
+    if (texture_) {
+        SDL_DestroyTexture(texture_);
+        texture_ = nullptr;
+    }
     SDL_DestroyRenderer(renderer_);
     renderer_ = nullptr;
     SDL_DestroyWindow(window_);
@@ -236,41 +246,55 @@ void Cells::deinit() {
 }
 
 void Cells::render() {
-    SDL_SetRenderDrawColor(renderer_, 0, 0, 0, 0);
-    SDL_RenderClear(renderer_);
-    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
-    SDL_SetRenderDrawColor(renderer_, gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b, gConfig.cellBorderColor.a);
-    SDL_FRect rcOuter = {0, 0, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2),
-                         (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2)};
-    SDL_RenderFillRect(renderer_, &rcOuter);
-    SDL_SetRenderDrawColor(renderer_, gConfig.cellSpacingColor.r, gConfig.cellSpacingColor.g, gConfig.cellSpacingColor.b, gConfig.cellSpacingColor.a);
-    SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4),
-                         (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
-    SDL_RenderFillRect(renderer_, &rcInner);
-    SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
-    auto cx = gConfig.cellSize[0], cy = gConfig.cellSize[1];
-    for (int i = 0; i < 5; i++) {
-        auto y = i * (cy + gConfig.cellSpacing) + gConfig.cellBorder;
-        for (int j = 0; j < 5; j++) {
-            auto x = j * (cx + gConfig.cellSpacing) + gConfig.cellBorder;
-            auto &cell = gCells[i][j];
-            cell.render(x, y, cx, cy);
-        }
-    }
-
-    if (gConfig.simpleMode) {
+    if (dirty_) {
         int ww, wh;
         SDL_GetWindowSize(window_, &ww, &wh);
-        int fh = std::ceil(scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)));
-        int sw, sh;
-        SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
-        SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
-        SDL_RenderTexture(renderer_, scoreTexture_[0], nullptr, &rect);
-        SDL_QueryTexture(scoreTexture_[1], nullptr, nullptr, &sw, &sh);
-        rect = {(float)(ww - sw - 20), (float)(wh - fh + 5), (float)sw, (float)sh};
-        SDL_RenderTexture(renderer_, scoreTexture_[1], nullptr, &rect);
+        if (texture_) {
+            SDL_DestroyTexture(texture_);
+        }
+        texture_ = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, ww, wh);
+        SDL_SetRenderTarget(renderer_, texture_);
+        SDL_SetRenderDrawColor(renderer_, 0, 0, 0, 0);
+        SDL_RenderClear(renderer_);
+        SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_BLEND);
+        SDL_SetRenderDrawColor(renderer_, gConfig.cellBorderColor.r, gConfig.cellBorderColor.g, gConfig.cellBorderColor.b, gConfig.cellBorderColor.a);
+        SDL_FRect rcOuter = {0, 0, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2),
+                             (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2)};
+        SDL_RenderFillRect(renderer_, &rcOuter);
+        SDL_SetRenderDrawColor(renderer_,
+                               gConfig.cellSpacingColor.r,
+                               gConfig.cellSpacingColor.g,
+                               gConfig.cellSpacingColor.b,
+                               gConfig.cellSpacingColor.a);
+        SDL_FRect rcInner = {(float)gConfig.cellBorder, (float)gConfig.cellBorder, (float)(gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4),
+                             (float)(gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4)};
+        SDL_RenderFillRect(renderer_, &rcInner);
+        SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
+        auto cx = gConfig.cellSize[0], cy = gConfig.cellSize[1];
+        for (int i = 0; i < 5; i++) {
+            auto y = i * (cy + gConfig.cellSpacing) + gConfig.cellBorder;
+            for (int j = 0; j < 5; j++) {
+                auto x = j * (cx + gConfig.cellSpacing) + gConfig.cellBorder;
+                auto &cell = gCells[i][j];
+                cell.render(x, y, cx, cy);
+            }
+        }
+
+        if (gConfig.simpleMode) {
+            int fh = std::ceil(scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)));
+            int sw, sh;
+            SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
+            SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
+            SDL_RenderTexture(renderer_, scoreTexture_[0], nullptr, &rect);
+            SDL_QueryTexture(scoreTexture_[1], nullptr, nullptr, &sw, &sh);
+            rect = {(float)(ww - sw - 20), (float)(wh - fh + 5), (float)sw, (float)sh};
+            SDL_RenderTexture(renderer_, scoreTexture_[1], nullptr, &rect);
+        }
+        SDL_SetRenderTarget(renderer_, nullptr);
+        dirty_ = false;
     }
 
+    SDL_RenderTexture(renderer_, texture_, nullptr, nullptr);
     SDL_RenderPresent(renderer_);
 }
 
@@ -323,13 +347,13 @@ void Cells::fitCellsForText() {
                         c.textSource->extents_cx = gConfig.cellSize[0] * 9 / 10;
                     }
                 }
-                gCells.resizeWindow();
             }
             break;
         }
         default:
             break;
     }
+    gCells.resizeWindow();
 }
 
 void Cells::foreach(const std::function<void(Cell &, int, int)> &callback) {
@@ -344,7 +368,7 @@ void Cells::resizeWindow() {
     SDL_SetWindowSize(window_,
                       gConfig.cellSize[0] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2,
                       gConfig.cellSize[1] * 5 + gConfig.cellSpacing * 4 + gConfig.cellBorder * 2
-                          + (gConfig.simpleMode ? (scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5) : 0));
+                          + (gConfig.simpleMode ? ((int)scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5) : 0));
 }
 
 void Cells::updateCellTextSettings(TextSettings *s) {
@@ -395,6 +419,7 @@ void Cells::updateTextures(bool fit) {
     foreach([](Cell &cell, int, int) {
         cell.updateTexture();
     });
+    dirty_ = true;
 }
 
 void Cells::updateScoreTextures(int index) {
@@ -439,6 +464,7 @@ void Cells::updateScoreTextures(int index) {
     SDL_DestroyTexture(utexture);
     SDL_SetRenderTarget(renderer_, nullptr);
     SDL_SetTextureBlendMode(scoreTexture_[index], SDL_BLENDMODE_BLEND);
+    dirty_ = true;
 }
 
 void Cells::reloadColorTexture() {
@@ -595,6 +621,7 @@ void initConfigDialog(HWND hwnd) {
     noEnChangeNotification = false;
 }
 
+/*
 std::wstring openDialogForFontFileSelection(HWND hwnd) {
     IFileOpenDialog *pFileOpen;
     auto hr = CoCreateInstance(CLSID_FileOpenDialog, nullptr, CLSCTX_ALL, IID_IFileOpenDialog, reinterpret_cast<void **>(&pFileOpen));
@@ -640,6 +667,7 @@ std::wstring openDialogForFontFileSelection(HWND hwnd) {
     }
     return szFile;
 }
+*/
 
 bool chooseColor(HWND hwnd, SDL_Color &color, COLORREF custColors[16]) {
     CHOOSECOLORW cc = {sizeof(CHOOSECOLORW)};
@@ -687,7 +715,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
                 gConfig.fontFace = lf.lfFaceName;
                 gConfig.fontSize = gConfig.originalFontSize = cf.iPointSize / 10;
                 gConfig.fontStyle = (lf.lfWeight == FW_BOLD ? 1 : 0) | (lf.lfItalic ? 2 : 0);
-                gCells.updateTextures();
+                gCells.updateTextures(true);
                 auto edc = GetDlgItem(hwnd, IDC_TEXTFONT);
                 SetWindowTextW(edc, (gConfig.fontFace + L", " + std::to_wstring(gConfig.originalFontSize) + L"pt").c_str());
             }
@@ -700,7 +728,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             }
             textColorBrush = CreateSolidBrush(RGB(gConfig.textColor.r, gConfig.textColor.g, gConfig.textColor.b));
             InvalidateRect(GetDlgItem(hwnd, IDC_TEXTCOLOR), nullptr, TRUE);
-            gCells.updateTextures(false);
+            gCells.updateTextures();
             break;
         }
         case IDC_BGCOLOR: {
@@ -720,7 +748,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             textShadowColorBrush = CreateSolidBrush(RGB(gConfig.textShadowColor.r, gConfig.textShadowColor.g, gConfig.textShadowColor.b));
             InvalidateRect(GetDlgItem(hwnd, IDC_SHADOWCOLOR), nullptr, TRUE);
             Cells::updateCellTextSettings(gCells.cellTextSettings());
-            gCells.updateTextures(false);
+            gCells.updateTextures();
             break;
         }
         case IDC_BORDERCOLOR: {
@@ -842,7 +870,7 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_AUTOSIZE: {
             auto cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
             gConfig.cellAutoFit = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
-            gCells.updateTextures();
+            gCells.updateTextures(true);
             break;
         }
         case IDC_PLAYER1COLOR: {
@@ -950,7 +978,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
     switch (id) {
         case IDC_TEXTCOLORA: {
             setNewValFromControl(hwnd, IDC_TEXTCOLORA, gConfig.textColor.a, 0, 255, [](int newVal) {
-                gCells.updateTextures(false);
+                gCells.updateTextures();
                 return true;
             });
             break;
@@ -982,7 +1010,7 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_SHADOWCOLORA: {
             setNewValFromControl(hwnd, IDC_SHADOWCOLORA, gConfig.textShadowColor.a, 0, 255, [](int newVal) {
                 Cells::updateCellTextSettings(gCells.cellTextSettings());
-                gCells.updateTextures(false);
+                gCells.updateTextures();
                 return true;
             });
             break;
@@ -1008,16 +1036,14 @@ INT_PTR handleEditChange(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDC_CELLWIDTH: {
             setNewValFromControl(hwnd, IDC_CELLWIDTH, gConfig.originCellSizeX, 0, 1000, [](int newVal) {
                 gConfig.cellSize[0] = gConfig.originCellSizeX;
-                gCells.resizeWindow();
-                gCells.updateTextures();
+                gCells.updateTextures(true);
                 return true;
             });
             break;
         }
         case IDC_CELLHEIGHT: {
             setNewValFromControl(hwnd, IDC_CELLHEIGHT, gConfig.cellSize[1], 0, 1000, [](int newVal) {
-                gCells.resizeWindow();
-                gCells.updateTextures();
+                gCells.updateTextures(true);
                 return true;
             });
             break;
@@ -1321,6 +1347,8 @@ INT_PTR handleDrawItem(HWND hwnd, WPARAM wParam, LPARAM lParam) {
             }
             return TRUE;
         }
+        default:
+            break;
     }
     return DefWindowProcW(hwnd, WM_DRAWITEM, wParam, lParam);
 }

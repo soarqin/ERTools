@@ -246,7 +246,6 @@ void ScoreWindow::updateXYValue() {
 }
 
 void ScoreWindow::render() {
-    if (gConfig.simpleMode) return;
     for (int i = 0; i < 2; i++) {
         SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
         SDL_RenderClear(renderer[i]);

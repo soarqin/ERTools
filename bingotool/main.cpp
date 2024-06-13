@@ -108,7 +108,7 @@ static void randomCells(const std::string &filename) {
         cell.status = 0;
         cell.setText(result[idx++]);
     });
-    gCells.updateTextures();
+    gCells.updateTextures(true);
     gScoreWindows[0].reset();
     gScoreWindows[1].reset();
     sendJudgeSyncData();
@@ -336,6 +336,8 @@ static int mainLoop() {
                     }
                     break;
                 }
+                default:
+                    break;
             }
             return FALSE;
         });
@@ -699,6 +701,7 @@ static int mainLoop() {
         nextRenderTime += 1000000ULL / 15ULL;
         syncProcess();
         gCells.render();
+        if (gConfig.simpleMode) continue;
         for (auto &sw : gScoreWindows) {
             sw.render();
         }

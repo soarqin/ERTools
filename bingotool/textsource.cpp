@@ -14,10 +14,10 @@ static const auto EPSILON = std::numeric_limits<REAL>::epsilon();
 
 #ifndef clamp
 #define clamp(val, min_val, max_val) \
-    if (val < min_val)           \
-        val = min_val;       \
-    else if (val > max_val)      \
-        val = max_val;
+    if ((val) < (min_val))           \
+        val = min_val;               \
+    else if ((val) > (max_val))      \
+        val = max_val
 #endif
 
 #define MIN_SIZE_CX 2
@@ -241,7 +241,7 @@ void TextSource::calculateTextSizes(const StringFormat &format,
     }
 
     if (settings->vertical) {
-        if (bounding_box.Width < settings->face_size) {
+        if (bounding_box.Width < (float)settings->face_size) {
             text_size.cx = settings->face_size;
             bounding_box.Width = float(settings->face_size);
         } else {
@@ -250,7 +250,7 @@ void TextSource::calculateTextSizes(const StringFormat &format,
 
         text_size.cy = LONG(bounding_box.Height + EPSILON);
     } else {
-        if (bounding_box.Height < settings->face_size) {
+        if (bounding_box.Height < (float)settings->face_size) {
             text_size.cy = settings->face_size;
             bounding_box.Height = float(settings->face_size);
         } else {
@@ -261,8 +261,8 @@ void TextSource::calculateTextSizes(const StringFormat &format,
     }
 
     if (use_extents) {
-        text_size.cx = extents_cx;
-        text_size.cy = extents_cy;
+        text_size.cx = (long)extents_cx;
+        text_size.cy = (long)extents_cy;
     }
 
     text_size.cx += text_size.cx % 2;
@@ -418,7 +418,9 @@ void TextSource::setAntiAliasing(Graphics &graphics_bitmap) const {
     graphics_bitmap.SetSmoothingMode(SmoothingModeAntiAlias);
 }
 
+/*
 #define obs_data_get_uint32 (uint32_t) obs_data_get_int
+*/
 
 void TextSource::update() {
     if (!settings->font) settings->updateFont();
