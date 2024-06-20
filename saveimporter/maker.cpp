@@ -23,7 +23,7 @@
 
 SaveFile *save = nullptr;
 
-int generate(const std::wstring &path, const std::wstring &msg, bool patchTimeToZero, bool keepFace, const std::wstring &output) {
+int generate(int slotId, const std::wstring &msg, bool patchTimeToZero, bool keepFace, const std::wstring &output) {
     std::ifstream exe(std::filesystem::path(L"saveimporter.exe"), std::ios::binary);
     if (!exe.is_open()) {
         return -1;
@@ -40,7 +40,6 @@ int generate(const std::wstring &path, const std::wstring &msg, bool patchTimeTo
     exe.read(reinterpret_cast<char *>(data.data()), size);
     out.write(reinterpret_cast<char *>(data.data()), size);
 
-    int slotId = 0;
     const auto *slot = save->charSlot(slotId);
     size = (int)slot->data.size();
     out.write(reinterpret_cast<const char *>(slot->data.data()), size);
@@ -166,7 +165,9 @@ INT_PTR CALLBACK DlgProc(HWND hwndDlg, UINT message, WPARAM wParam, LPARAM lPara
                             GetDlgItemTextW(hwndDlg, 1004, output, sizeof(output));
                             bool patchTimeToZero = SendMessageW(GetDlgItem(hwndDlg, 1007), BM_GETCHECK, 0, 0) > 0;
                             bool keepFace = SendMessageW(GetDlgItem(hwndDlg, 1008), BM_GETCHECK, 0, 0) > 0;
-                            auto res = generate(path, msg, patchTimeToZero, keepFace, output);
+                            auto lb = GetDlgItem(hwndDlg, 1009);
+                            auto idx = SendMessageW(lb, LB_GETCURSEL, 0, 0);
+                            auto res = generate((int)idx, msg, patchTimeToZero, keepFace, output);
                             switch (res) {
                                 case 0:
                                     MessageBoxW(hwndDlg, L"生成完毕", L"成功", 0);
