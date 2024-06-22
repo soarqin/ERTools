@@ -1,0 +1,25 @@
+200000	Popiół wojny: Wir Suchego Liścia
+200100	Popiół wojny: Aspekty Tygla: Skrzydła
+400000	Popiół wojny: Wirujące pchnięcie grawitacyjne
+401000	Popiół wojny: Wybuchowa dłoń
+402000	Popiół wojny: Rzut przebijający
+403000	Popiół wojny: Rzut rozprostrzału
+404000	Popiół wojny: Ściana iskier
+405000	Popiół wojny: Pędzące iskry
+406000	Popiół wojny: Wściekłe zwierzę
+407000	Popiół wojny: Dzikie pazury
+409000	Popiół wojny: Martwy punkt
+410000	Popiół wojny: Szybkie cięcie
+411000	Popiół wojny: Oręż w górze
+412000	Popiół wojny: Postawa skrzydła
+413000	Popiół wojny: Błyskocisk
+414000	Popiół wojny: Ogniste przebicie
+415000	Popiół wojny: Pazur dzikiego lwa
+416000	Popiół wojny: Lodowe stąpnięcie boskiej bestii
+417000	Popiół wojny: Ognista włócznia
+418000	Popiół wojny: Karyjska suwerenność
+419000	Popiół wojny: Wrzask cierpienia
+422000	Popiół wojny: Przyzwanie ognia duchów
+505000	Popiół wojny: Trujący kwiat kwitnie dwa razy
+548000	Popiół wojny: Smocze łowy Igona
+800000	Popiół wojny: Uderzenie tarczą

@@ -2602,7 +2602,7 @@
 331310	
 331311	GRACIA PERDIDA DESCUBIERTA
 331312	
-331313	EMPEZAR
+331313	EMPEZAD
 331314	VICTORIA
 331315	EMPATE
 331316	DERROTA
@@ -2630,8 +2630,8 @@
 331338	RANGO DE CAZADOR AUMENTADO
 331339	RANGO DE CAZADOR AUMENTADO
 400000	
-401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
-401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401001	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
+401002	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
 401100	™
 401301	CONTINUAR
 401302	CARGAR PARTIDA
@@ -2709,7 +2709,7 @@
 506602	Equipo B
 506800	Todos los jugadores
 506801	Solo equipo aliado
-506900	La contraseña establecida se usará para que el matchmaking te empareje tanto con aliados como enemigos.
+506900	La contraseña establecida se usará para que el matchmaking te pueda emparejar tanto en el equipo aliado como en el enemigo.
 506901	La contraseña se usará para que el matchmaking te empareje con el equipo aliado. El equipo enemigo usará otra contraseña.
 507000	Combatiente supremo: <?mvpName?>
 507100	Establecer contraseña del Coliseo

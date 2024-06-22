@@ -1,0 +1,503 @@
+1500000	Main-gauche
+1500100	Main-gauche lourde
+1500200	Main-gauche acérée
+1500300	Main-gauche de qualité
+1500400	Main-gauche de feu
+1500500	Main-gauche pyrotechnique
+1500600	Main-gauche de foudre
+1500700	Main-gauche sacrée
+1500800	Main-gauche magique
+1500900	Main-gauche de glace
+1501000	Main-gauche empoisonnée
+1501100	Main-gauche sanguine
+1501200	Main-gauche occulte
+1510000	Épée courte de chevalier de Feu
+1510100	Épée courte lourde de chevalier de Feu
+1510200	Épée courte acérée de chevalier de Feu
+1510300	Épée courte de qualité de chev. de Feu
+1510400	Épée courte de feu de chevalier de Feu
+1510500	Épée courte pyrotech. de chev. de Feu
+1510600	Épée courte de foudre de chev. de Feu
+1510700	Épée courte sacrée de chevalier de Feu
+1510800	Épée courte magique de chev. de Feu
+1510900	Épée courte glacée de chev. de Feu
+1511000	Épée courte empois. de chev. de Feu
+1511100	Épée courte sanguine de chev. de Feu
+1511200	Épée courte occulte de chev. de Feu
+2510000	Épée de velours de sainte Trina
+2520000	Épée constellée
+2530000	Lame sorcière de Caria
+2540000	Épée à fourreau de pierre
+2550000	Épée de lumière
+2560000	Épée de ténèbres
+3500000	Épée-lance de cavalerie
+3500100	Épée-lance lourde
+3500200	Épée-lance acérée
+3500300	Épée-lance de qualité
+3500400	Épée-lance de feu
+3500500	Épée-lance pyrotechnique
+3500600	Épée-lance de foudre
+3500700	Épée-lance sacrée
+3500800	Épée-lance magique
+3500900	Épée-lance de glace
+3501000	Épée-lance empoisonnée
+3501100	Épée-lance sanguine
+3501200	Épée-lance occulte
+3510000	Espadon de la damnation
+3520000	Espadon saurien
+3520100	Espadon saurien lourd
+3520200	Espadon saurien acéré
+3520300	Espadon saurien de qualité
+3520400	Espadon saurien de feu
+3520500	Espadon saurien pyrotechnique
+3520600	Espadon saurien de foudre
+3520700	Espadon saurien sacré
+3520800	Espadon saurien magique
+3520900	Espadon saurien de glace
+3521000	Espadon saurien empoisonné
+3521100	Espadon saurien sanguin
+3521200	Espadon saurien occulte
+3550000	Espadon de la Solitude
+4500000	Espadon en minerai météorique ancien
+4520000	Espadon de chevalier de Feu
+4520100	Espadon de chevalier de Feu lourd
+4520200	Espadon de chevalier de Feu acéré
+4520300	Espadon de chevalier de Feu de qualité
+4520400	Espadon flamboyant de chevalier de Feu
+4520500	Espadon pyrotech. de chevalier de Feu
+4520600	Espadon foudroyant de chevalier de Feu
+4520700	Espadon sacré de chevalier de Feu
+4520800	Espadon magique de chevalier de Feu
+4520900	Espadon glacial de chevalier de Feu
+4521000	Espadon empoisonné de chevalier de Feu
+4521100	Espadon sanguin de chevalier de Feu
+4521200	Espadon occulte de chevalier de Feu
+4530000	Espadons de Radahn (seigneur)
+4540000	Espadon de la chevaleresse Lunerithyll
+4550000	Espadons de Radahn (légers)
+6500000	Espadon de Queelign
+6500100	Espadon de Queelign lourd
+6500200	Espadon de Queelign acéré
+6500300	Espadon de Queelign de qualité
+6500400	Espadon de Queelign de feu
+6500500	Espadon de Queelign pyrotechnique
+6500600	Espadon de Queelign de foudre
+6500700	Espadon de Queelign sacré
+6500800	Espadon de Queelign magique
+6500900	Espadon de Queelign de glace
+6501000	Espadon de Queelign empoisonné
+6501100	Espadon de Queelign sanguin
+6501200	Espadon de Queelign occulte
+7500000	Épée de spirite
+7510000	Falx
+7520000	Lame dansante de Ranah
+7530000	Épée de guerrier cornu
+8500000	Fendoir de putrescence
+8510000	Espadon de Freyja
+8510100	Espadon de Freyja lourd
+8510200	Espadon de Freyja acéré
+8510300	Espadon de Freyja de qualité
+8510400	Espadon de Freyja de feu
+8510500	Espadon de Freyja pyrotechnique
+8510600	Espadon de Freyja de foudre
+8510700	Espadon de Freyja sacré
+8510800	Espadon de Freyja magique
+8510900	Espadon de Freyja de glace
+8511000	Espadon de Freyja empoisonné
+8511100	Espadon de Freyja sanguin
+8511200	Espadon de Freyja occulte
+8520000	Espadon de guerrier cornu
+9500000	Épée nocturne
+10500000	Euporie
+10510000	Lame double en acier noir
+10510100	Lame double en acier noir lourde
+10510200	Lame double en acier noir acérée
+10510300	Lame double en acier noir de qualité
+10510400	Lame double en acier noir de feu
+10510500	Lame double en acier noir pyrotech.
+10510600	Lame double en acier noir de foudre
+10510700	Lame double en acier noir sacrée
+10510800	Lame double en acier noir magique
+10510900	Lame double en acier noir de glace
+10511000	Lame double en acier noir empoisonnée
+10511100	Lame double en acier noir sanguine
+10511200	Lame double en acier noir occulte
+11500000	Marteau pétrofloral
+12500000	Grand marteau forgegraphe
+12500100	Grand marteau forgegraphe lourd
+12500200	Grand marteau forgegraphe acéré
+12500300	Grand marteau forgegraphe de qualité
+12500400	Grand marteau forgegraphe de feu
+12500500	Grand marteau forgegraphe pyrotech.
+12500600	Grand marteau forgegraphe de foudre
+12500700	Grand marteau forgegraphe sacré
+12500800	Grand marteau forgegraphe magique
+12500900	Grand marteau forgegraphe de glace
+12501000	Grand marteau forgegraphe empoisonné
+12501100	Grand marteau forgegraphe sanguin
+12501200	Grand marteau forgegraphe occulte
+12510000	Marteau-enclume
+12520000	Grand marteau en acier noir
+12520100	Grand marteau en acier noir lourd
+12520200	Grand marteau en acier noir acéré
+12520300	Grand marteau en acier noir de qualité
+12520400	Grand marteau en acier noir de feu
+12520500	Grand marteau en acier noir pyrotech.
+12520600	Grand marteau en acier noir de foudre
+12520700	Grand marteau en acier noir sacré
+12520800	Grand marteau en acier noir magique
+12520900	Grand marteau en acier noir de glace
+12521000	Grand marteau en acier noir empoisonné
+12521100	Grand marteau en acier noir sanguin
+12521200	Grand marteau en acier noir occulte
+12530000	Bras de démon sanglant
+12530100	Bras de démon sanglant lourd
+12530200	Bras de démon sanglant acéré
+12530300	Bras de démon sanglant de qualité
+12530400	Bras de démon sanglant de feu
+12530500	Bras de démon sanglant pyrotechnique
+12530600	Bras de démon sanglant de foudre
+12530700	Bras de démon sanglant sacré
+12530800	Bras de démon sanglant magique
+12530900	Bras de démon sanglant de glace
+12531000	Bras de démon sanglant empoisonné
+12531100	Bras de démon sanglant sanguin
+12531200	Bras de démon sanglant occulte
+13500000	Fléau serpentin
+14500000	Hache forgegraphe
+14500100	Hache forgegraphe lourde
+14500200	Hache forgegraphe acérée
+14500300	Hache forgegraphe de qualité
+14500400	Hache forgegraphe de feu
+14500500	Hache forgegraphe pyrotechnique
+14500600	Hache forgegraphe de foudre
+14500700	Hache forgegraphe sacrée
+14500800	Hache forgegraphe magique
+14500900	Hache forgegraphe de glace
+14501000	Hache forgegraphe empoisonnée
+14501100	Hache forgegraphe sanguine
+14501200	Hache forgegraphe occulte
+14510000	Haches jum. du chevalier de la Mort
+14520000	Hache de soldat de Messmer
+14520100	Hache de soldat de Messmer lourde
+14520200	Hache de soldat de Messmer acérée
+14520300	Hache de soldat de Messmer de qualité
+14520400	Hache de soldat de Messmer de feu
+14520500	Hache de soldat de Messmer pyrotech.
+14520600	Hache de soldat de Messmer de foudre
+14520700	Hache de soldat de Messmer sacrée
+14520800	Hache de soldat de Messmer magique
+14520900	Hache de soldat de Messmer de glace
+14521000	Hache de soldat de Messmer empoisonnée
+14521100	Hache de soldat de Messmer sanguine
+14521200	Hache de soldat de Messmer occulte
+14540000	Hachette fourchelangue
+15500000	Hache longue du chevalier de la Mort
+15510000	Couteau de boucher de Bonny
+16500000	Lance forgegraphe
+16500100	Lance forgegraphe lourde
+16500200	Lance forgegraphe acérée
+16500300	Lance forgegraphe de qualité
+16500400	Lance forgegraphe de feu
+16500500	Lance forgegraphe pyrotechnique
+16500600	Lance forgegraphe de foudre
+16500700	Lance forgegraphe sacrée
+16500800	Lance forgegraphe magique
+16500900	Lance forgegraphe de glace
+16501000	Lance forgegraphe empoisonnée
+16501100	Lance forgegraphe sanguine
+16501200	Lance forgegraphe occulte
+16520000	Lance célère
+16520100	Lance célère lourde
+16520200	Lance célère acérée
+16520300	Lance célère de qualité
+16520400	Lance célère de feu
+16520500	Lance célère pyrotechnique
+16520600	Lance célère de foudre
+16520700	Lance célère sacrée
+16520800	Lance célère magique
+16520900	Lance célère de glace
+16521000	Lance célère empoisonnée
+16521100	Lance célère sanguine
+16521200	Lance célère occulte
+16540000	Fourche de démon sanglant
+16540100	Fourche de démon sanglant lourde
+16540200	Fourche de démon sanglant acérée
+16540300	Fourche de démon sanglant de qualité
+16540400	Fourche de démon sanglant de feu
+16540500	Fourche de démon sanglant pyrotech.
+16540600	Fourche de démon sanglant de foudre
+16540700	Fourche de démon sanglant sacrée
+16540800	Fourche de démon sanglant magique
+16540900	Fourche de démon sanglant de glace
+16541000	Fourche de démon sanglant empoisonnée
+16541100	Fourche de démon sanglant sanguine
+16541200	Fourche de démon sanglant occulte
+16550000	Lance sacrée de démon sanglant
+17500000	Lance de l'Empaleur
+17510000	Lance de soldat de Messmer
+17510100	Lance de soldat de Messmer lourde
+17510200	Lance de soldat de Messmer acérée
+17510300	Lance de soldat de Messmer de qualité
+17510400	Lance de soldat de Messmer de feu
+17510500	Lance de soldat de Messmer pyrotech.
+17510600	Lance de soldat de Messmer de foudre
+17510700	Lance de soldat de Messmer sacrée
+17510800	Lance de soldat de Messmer magique
+17510900	Lance de soldat de Messmer de glace
+17511000	Lance de soldat de Messmer empoisonnée
+17511100	Lance de soldat de Messmer sanguine
+17511200	Lance de soldat de Messmer occulte
+17520000	Bâton-lance barbelé
+18500000	Vouge de spirite
+18510000	Vouge du bourgeon
+19500000	Faux d'obsidienne
+20500000	Fouet dentu
+21500000	Aiguille secrète de Thiollier
+21510000	Pata
+21510100	Pata lourde
+21510200	Pata acérée
+21510300	Pata de qualité
+21510400	Pata de feu
+21510500	Pata pyrotechnique
+21510600	Pata de foudre
+21510700	Pata sacrée
+21510800	Pata magique
+21510900	Pata de glace
+21511000	Pata empoisonnée
+21511100	Pata sanguine
+21511200	Pata occulte
+21520000	Main empoisonnée
+21530000	Main frénétique
+21540000	Poing de golem
+21540100	Poing de golem lourd
+21540200	Poing de golem acéré
+21540300	Poing de golem de qualité
+21540400	Poing de golem de feu
+21540500	Poing de golem pyrotechnique
+21540600	Poing de golem de foudre
+21540700	Poing de golem sacré
+21540800	Poing de golem magique
+21540900	Poing de golem de glace
+21541000	Poing de golem empoisonné
+21541100	Poing de golem sanguin
+21541200	Poing de golem occulte
+21550000	Bouclier nocturne
+22500000	Griffes nocturnes
+23500000	Marteau de Devonia
+23510000	Fleur d'ombreflore
+23520000	Doigt scrutateur
+24500000	Torche de Nanaya
+24510000	Visage geignard
+30510000	Bouclier forgegraphe
+31500000	Bouclier de soldat de Messmer
+31500100	Bouclier de soldat de Messmer lourd
+31500200	Bouclier de soldat de Messmer acéré
+31500300	Bouc. de soldat de Messmer de qualité
+31500400	Bouclier de soldat de Messmer de feu
+31500500	Bouclier de soldat de Messmer pyro.
+31500600	Bouc. de soldat de Messmer de foudre
+31500700	Bouclier de soldat de Messmer sacré
+31500800	Bouclier de soldat de Messmer magique
+31500900	Bouclier de soldat de Messmer de glace
+31501000	Bouc. de soldat de Messmer empoisonné
+31501100	Bouclier de soldat de Messmer sanguin
+31501200	Bouclier de soldat de Messmer occulte
+31510000	Bouclier lupin
+31510100	Bouclier lupin lourd
+31510200	Bouclier lupin acéré
+31510300	Bouclier lupin de qualité
+31510400	Bouclier lupin de feu
+31510500	Bouclier lupin pyrotechnique
+31510600	Bouclier lupin de foudre
+31510700	Bouclier lupin sacré
+31510800	Bouclier lupin magique
+31510900	Bouclier lupin de glace
+31511000	Bouclier lupin empoisonné
+31511100	Bouclier lupin sanguin
+31511200	Bouclier lupin occulte
+31520000	Bouclier serpentin
+31520100	Bouclier serpentin lourd
+31520200	Bouclier serpentin acéré
+31520300	Bouclier serpentin de qualité
+31520400	Bouclier serpentin de feu
+31520500	Bouclier serpentin pyrotechnique
+31520600	Bouclier serpentin de foudre
+31520700	Bouclier serpentin sacré
+31520800	Bouclier serpentin magique
+31520900	Bouclier serpentin de glace
+31521000	Bouclier serpentin empoisonné
+31521100	Bouclier serpentin sanguin
+31521200	Bouclier serpentin occulte
+31530000	Bouclier léonin doré
+32500000	Pavois en acier noir
+32500100	Pavois en acier noir lourd
+32500200	Pavois en acier noir acéré
+32500300	Pavois en acier noir de qualité
+32500400	Pavois en acier noir de feu
+32500500	Pavois en acier noir pyrotechnique
+32500600	Pavois en acier noir de foudre
+32500700	Pavois en acier noir sacré
+32500800	Pavois en acier noir magique
+32500900	Pavois en acier noir de glace
+32501000	Pavois en acier noir empoisonné
+32501100	Pavois en acier noir sanguin
+32501200	Pavois en acier noir occulte
+32520000	Pavois en vert-de-gris
+33510000	Bâton de l'au-delà
+33520000	Bâton maternel
+34500000	Sceau de Mortefeuille
+34510000	Sceau de chevalier de Feu
+34520000	Sceau de l'arbre-spirale
+40500000	Arc en os
+41510000	Arc long d'Ansbach
+42500000	Arc géant d'Igon
+43500000	Arbalète à répétition
+43510000	Arbalète à dispersion
+44500000	Canon de Rabbath
+50540000	Flèche attrayante empennée
+50550000	Flèche attrayante
+51500000	Harpon d'Igon
+52520000	Carreau attrayant
+53500000	Grand carreau de Rabbath
+60500000	Arts de Mortefeuille
+60500100	Arts de Mortefeuille lourds
+60500200	Arts de Mortefeuille acérés
+60500300	Arts de Mortefeuille de qualité
+60500400	Arts de Mortefeuille de feu
+60500500	Arts de Mortefeuille pyrotechniques
+60500600	Arts de Mortefeuille de foudre
+60500700	Arts de Mortefeuille sacrés
+60500800	Arts de Mortefeuille magiques
+60500900	Arts de Mortefeuille de glace
+60501000	Arts de Mortefeuille empoisonnés
+60501100	Arts de Mortefeuille sanguins
+60501200	Arts de Mortefeuille occultes
+60510000	Jeu de jambes de Dane
+60510100	Jeu de jambes de Dane lourd
+60510200	Jeu de jambes de Dane acéré
+60510300	Jeu de jambes de Dane de qualité
+60510400	Jeu de jambes de Dane de feu
+60510500	Jeu de jambes de Dane pyrotechnique
+60510600	Jeu de jambes de Dane de foudre
+60510700	Jeu de jambes de Dane sacré
+60510800	Jeu de jambes de Dane magique
+60510900	Jeu de jambes de Dane de glace
+60511000	Jeu de jambes de Dane empoisonné
+60511100	Jeu de jambes de Dane sanguin
+60511200	Jeu de jambes de Dane occulte
+61500000	Flacon de parfum incendiaire
+61510000	Flacon de parfum glacial
+61520000	Flacon de parfum de la Flamme exaltée
+61530000	Flacon de parfum de foudre
+61540000	Flacon de parfum de poison mortel
+62500000	Bouclier de duel
+62500100	Bouclier de duel lourd
+62500200	Bouclier de duel acéré
+62500300	Bouclier de duel de qualité
+62500400	Bouclier de duel de feu
+62500500	Bouclier de duel pyrotechnique
+62500600	Bouclier de duel de foudre
+62500700	Bouclier de duel sacré
+62500800	Bouclier de duel magique
+62500900	Bouclier de duel de glace
+62501000	Bouclier de duel empoisonné
+62501100	Bouclier de duel sanguin
+62501200	Bouclier de duel occulte
+62510000	Bouclier d'estoc de Caria
+62510100	Bouclier d'estoc de Caria lourd
+62510200	Bouclier d'estoc de Caria acéré
+62510300	Bouclier d'estoc de Caria de qualité
+62510400	Bouclier d'estoc de Caria de feu
+62510500	Bouclier d'estoc de Caria pyrotech.
+62510600	Bouclier d'estoc de Caria de foudre
+62510700	Bouclier d'estoc de Caria sacré
+62510800	Bouclier d'estoc de Caria magique
+62510900	Bouclier d'estoc de Caria de glace
+62511000	Bouclier d'estoc de Caria empoisonné
+62511100	Bouclier d'estoc de Caria sanguin
+62511200	Bouclier d'estoc de Caria occulte
+63500000	Dague forgegraphe
+63500100	Dague forgegraphe lourde
+63500200	Dague forgegraphe acérée
+63500300	Dague forgegraphe de qualité
+63500400	Dague forgegraphe de feu
+63500500	Dague forgegraphe pyrotechnique
+63500600	Dague forgegraphe de foudre
+63500700	Dague forgegraphe sacrée
+63500800	Dague forgegraphe magique
+63500900	Dague forgegraphe de glace
+63501000	Dague forgegraphe empoisonnée
+63501100	Dague forgegraphe sanguine
+63501200	Dague forgegraphe occulte
+64500000	Lame-revers
+64500100	Lame-revers lourde
+64500200	Lame-revers acérée
+64500300	Lame-revers de qualité
+64500400	Lame-revers de feu
+64500500	Lame-revers pyrotechnique
+64500600	Lame-revers de foudre
+64500700	Lame-revers sacrée
+64500800	Lame-revers magique
+64500900	Lame-revers de glace
+64501000	Lame-revers empoisonnée
+64501100	Lame-revers sanguine
+64501200	Lame-revers occulte
+64510000	Chakram forgegraphe
+64510100	Chakram forgegraphe lourd
+64510200	Chakram forgegraphe acéré
+64510300	Chakram forgegraphe de qualité
+64510400	Chakram forgegraphe de feu
+64510500	Chakram forgegraphe pyrotechnique
+64510600	Chakram forgegraphe de foudre
+64510700	Chakram forgegraphe sacré
+64510800	Chakram forgegraphe magique
+64510900	Chakram forgegraphe de glace
+64511000	Chakram forgegraphe empoisonné
+64511100	Chakram forgegraphe sanguin
+64511200	Chakram forgegraphe occulte
+64520000	Chakram d'Exécrable
+66500000	Grand katana
+66500100	Grand katana lourd
+66500200	Grand katana acéré
+66500300	Grand katana de qualité
+66500400	Grand katana de feu
+66500500	Grand katana pyrotechnique
+66500600	Grand katana de foudre
+66500700	Grand katana sacré
+66500800	Grand katana magique
+66500900	Grand katana de glace
+66501000	Grand katana empoisonné
+66501100	Grand katana sanguin
+66501200	Grand katana occulte
+66510000	Grand katana de chasseur de dragon
+66520000	Grand katana de Rakshasa
+67500000	Damoiselle
+67500100	Damoiselle lourde
+67500200	Damoiselle acérée
+67500300	Damoiselle de qualité
+67500400	Damoiselle de feu
+67500500	Damoiselle pyrotechnique
+67500600	Damoiselle de foudre
+67500700	Damoiselle sacrée
+67500800	Damoiselle magique
+67500900	Damoiselle de glace
+67501000	Damoiselle empoisonnée
+67501100	Damoiselle sanguine
+67501200	Damoiselle occulte
+67510000	Épée de Leda
+67520000	Lames jumelles de Rellana
+68500000	Griffe bestiale
+68500100	Griffe bestiale lourde
+68500200	Griffe bestiale acérée
+68500300	Griffe bestiale de qualité
+68500400	Griffe bestiale de feu
+68500500	Griffe bestiale pyrotechnique
+68500600	Griffe bestiale de foudre
+68500700	Griffe bestiale sacrée
+68500800	Griffe bestiale magique
+68500900	Griffe bestiale de glace
+68501000	Griffe bestiale empoisonnée
+68501100	Griffe bestiale sanguine
+68501200	Griffe bestiale occulte
+68510000	Griffe de l'ours écarlate

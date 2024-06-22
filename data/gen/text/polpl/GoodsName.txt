@@ -2839,7 +2839,7 @@
 9148	
 9149	
 9150	Pojedynki
-9151	Walki połączone i ciężkie boje
+9151	Walki grupowe i ciężkie boje
 9152	Walka za pomocą prochów duchów
 9153	Wizerunek Mariki w Twierdzy Okrągłego Stołu
 9195	[ERROR]Gra wieloosobowa

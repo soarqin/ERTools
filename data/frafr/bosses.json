@@ -136,7 +136,7 @@
       },
       {
         "boss": "Veilleur de l'Arbre-Monde",
-        "place": "Catacombes de l'empaleur",
+        "place": "Catacombes de l'Empaleur",
         "flag_id": 30010800
       },
       {
@@ -318,7 +318,7 @@
         "flag_id": 1037420800
       },
       {
-        "boss": "Volatile funéraire",
+        "boss": "Volatile funèbre",
         "place": "Porte nord de la ville",
         "flag_id": 1036450800
       },
@@ -449,7 +449,7 @@
         "flag_id": 1049370800
       },
       {
-        "boss": "Volatile funéraire",
+        "boss": "Volatile funèbre",
         "place": "Rive sud du marais d'Ivoine",
         "flag_id": 1049370850
       },
@@ -850,7 +850,7 @@
         "flag_id": 1053560800
       },
       {
-        "boss": "Volatile funéraire",
+        "boss": "Volatile funèbre",
         "place": "",
         "flag_id": 1050570800
       },
@@ -938,7 +938,7 @@
         "flag_id": 1248550800
       },
       {
-        "boss": "Volatile funéraire",
+        "boss": "Volatile funèbre",
         "place": "",
         "flag_id": 1048570800
       }
@@ -1084,6 +1084,319 @@
         "place": "Marika brisée",
         "flag_id": 19000800,
         "rememberance": 15
+      }
+    ]
+  },
+  {
+    "region_name": "Plaine sépulcrale",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Dragon de flammes spectrales",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Chevalier de la Geôle Solitaire",
+        "place": "Mausolée occidental sans nom",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Chef des démons sanglants",
+        "place": "Grotte de l'embouchure",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Larmoyeur",
+        "place": "Geôle de larmoyeur",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Onze, épéiste semi-humain",
+        "place": "Geôles de Belurat",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Lion dansant de la bête divine",
+        "place": "Belurat, colonie de la tour",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, chevaleresse des Lunes jumelles",
+        "place": "Château d'Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Altus Occulte",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Dragon de flammes spectrales",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva, grand ours écarlate",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea, grand ours écarlate",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Dane Mortefeuille",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Edredd, chevalier Noir",
+        "place": "Fort de la Réprimande",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Garrew, chevalier Noir",
+        "place": "Fort de la faille brumeuse",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Ours écarlate",
+        "place": "Mausolée septentrional sans nom",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Mausolée oriental sans nom",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, mère des Doigts",
+        "place": "Cathédrale de Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Comte Ymir, mère des Doigts",
+        "place": "Cathédrale de Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Chevalier de la Mort",
+        "place": "Catacombes de la faille brumeuse",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Chevalier de la Mort",
+        "place": "Catacombes du Scorpion",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Labirith l'Exécrable",
+        "place": "Geôles de Bonny",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Hippopotame doré",
+        "place": "Château noir",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer l'Empaleur & Messmer, serpent maléfique",
+        "place": "Château noir",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Ruines antiques de Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, sainte du bourgeon",
+        "place": "Église du bourgeon",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Côte céruléenne",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Dragon de flammes spectrales",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Danseuse de Ranah",
+        "place": "Mausolée austral sans nom",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Chevalier putride",
+        "place": "Fissure des cercueils de pierre",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Tombeau secret de Charo",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Volatile funèbre",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Marigga, reine semi-humaine",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Pic déchiqueté",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Dragon du Pic déchiqueté",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Dragon du Pic déchiqueté",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Homme-dragon ancien",
+        "place": "Fosse au dragon",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Senessax, Dragon ancien",
+        "place": "Flanc du Pic déchiqueté",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle l'Effroyable",
+        "place": "Sommet du Pic déchiqueté",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Panorama occulte",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Sentinelle de l'Arbre",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Sentinelle de l'Arbre",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Créature stellaire",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Commandant Gaïus",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Avatar de l'Arbre-Occulte",
+        "place": "Base de l'Arbre-Occulte",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Bois abyssaux",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, inquisiteur en chef",
+        "place": "Catacombes de la lumière noire",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, seigneur de la Flamme exaltée",
+        "place": "Presbytère de Midra",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Radahn, futur consort & Radahn, consort de Miquella",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
       }
     ]
   }

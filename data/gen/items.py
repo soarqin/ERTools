@@ -159,37 +159,79 @@ idmap = {}
 
 def load_text(lang):
     global idmap
+
     for l in codecs.open('text\\' + lang + '\\WeaponName.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:
             continue
         idmap['W' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\WeaponName_dlc01.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['W' + l[:index]] = l[index+1:]
+
     for l in codecs.open('text\\' + lang + '\\ProtectorName.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:
             continue
         idmap['P' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\ProtectorName_dlc01.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['P' + l[:index]] = l[index+1:]
+
     for l in codecs.open('text\\' + lang + '\\AccessoryName.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:
             continue
         idmap['ACC' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\AccessoryName_dlc01.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['ACC' + l[:index]] = l[index+1:]
+
     for l in codecs.open('text\\' + lang + '\\GemName.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:
             continue
         idmap['AOW' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\GemName_dlc01.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['AOW' + l[:index]] = l[index+1:]
+
     for l in codecs.open('text\\' + lang + '\\GoodsName.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:
             continue
         idmap['G' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\GoodsName_dlc01.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['G' + l[:index]] = l[index+1:]
+
     for l in codecs.open('text\\' + lang + '\\GR_MenuText.txt', 'r', 'utf-8').readlines():
+        l = l.strip()
+        index = l.find('\t')
+        if index < 0:
+            continue
+        idmap['M' + l[:index]] = l[index+1:]
+    for l in codecs.open('text\\' + lang + '\\GR_MenuText_dlc01.txt', 'r', 'utf-8').readlines():
         l = l.strip()
         index = l.find('\t')
         if index < 0:

@@ -1,0 +1,76 @@
+10410	Bênção da Umbrárvore
+10411	Bênção da Cinza Espiritual Reverenciada
+30205	Força da bênção da Umbrárvore.\nAfeta apenas aqueles no reino das sombras\nque receberam a bênção da Umbrárvore.
+30206	Força da bênção do Cinza Espiritual Reverenciada.\nMelhora os espíritos e o corcel espectral, mas somente dentro das fronteiras do reino das sombras.
+40382	Apenas teclado
+40383	Mouse e teclado
+40524	Itens recentes
+60180	Corpo a corpo
+60181	Frasco de perfume
+60182	Escudo de fincada
+60183	Lâmina de arremesso
+60184	Lâmina de revés
+60185	Espada grande leve
+60186	Katana grande
+60187	Garra de fera
+63051	Utilizável em armas de corpo a corpo.
+63052	Utilizável em frascos de perfume.
+63053	Utilizável em escudos de fincada.
+63054	Utilizável em lâminas de arremesso.
+63055	Utilizável em lâminas de revés.
+63056	Utilizável em espadas grandes leves.
+63057	Utilizável em katanas grandes.
+63058	Utilizável em garras de feras.
+63059	Utilizável em armas perfurantes (exceto garras e lâminas de revés).
+63060	Utilizável em espadas grandes e colossais.
+63061	Utilizável em espadas e lanças (exceto armas pequenas, lâminas-gêmeas e lâminas de revés).
+80020	Pote Rachado Pesado
+110600	Exibir
+110601	Marcar itens novos
+110602	
+110603	Exibir aba de itens recentes
+110700	Som
+111024	Movimento do cursor no menu de mapa
+111025	Sensibilidade ao trocar de alvo
+225001	Comunhão do Dragão: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Oferendas
+241337	Umbra Altus
+241338	Costa Cerúlea
+241339	Sopé do Pico Irregular
+241340	Pico Irregular
+241341	Túmulo Escondido de Charo
+241342	Antigas Ruínas de Rauh
+241343	Umbravista
+241344	Floresta Abissal
+241345	Belurat, Assentamento da Torre
+241346	Enir-Ilim
+241347	Fortaleza das Sombras
+241348	Fortaleza das Sombras, Distrito da Igreja
+241349	Armazém de Espécime
+241350	Fissura dos Caixões de Pedra
+241351	Mansão de Midra
+241352	Castelo Ensis
+241353	Planície do Cemitério
+241354	Base de Rauh
+241417	Planície do Cemitério
+241418	Umbra Altus
+241419	Terra da Torre
+241420	Fortaleza das Sombras
+241500	Menu de funções do mapa
+241501	Exibição de status de multijogador
+241502	Lista de pedras de invocação
+241503	Ver controles
+241504	Explicações do Menu
+241600	Lista de pedras de invocação
+280060	Menu
+280600	Mapa
+331340	CORAÇÃO ROUBADO

@@ -1,0 +1,76 @@
+10410	Błogosławieństwo Ostrodrzewa
+10411	Błogosławieństwo prochów czcigodnego ducha
+30205	Siła błogosławieństwa Ostrodrzewa.\nDziała tylko na przebywających w Królestwie Cieni,\nktórzy otrzymali błogosławieństwo Ostrodrzewa.
+30206	Siła błogosławieństwa prochów czcigodnego ducha.\nWzmacnia przywołane duchy i widmowego wierzchowca, ale nie działa poza Królestwem Cieni.
+40382	Tylko klawiatura
+40383	Klawiatura i mysz
+40524	Ostatnie przedmioty
+60180	Walka wręcz
+60181	Butelka perfum
+60182	Tarcza pchnięć
+60183	Ostrze do rzucania
+60184	Zakrzywione ostrze
+60185	Lekki wielki miecz
+60186	Wielka katana
+60187	Szpon bestii
+63051	Do użytku na broni do walki wręcz
+63052	Do użytku na butelkach perfum
+63053	Do użytku na tarczach pchnięć
+63054	Do użytku na ostrzach do rzucania
+63055	Do użytku na zakrzywionych ostrzach
+63056	Do użytku na lekkich wielkich mieczach
+63057	Do użytku na wielkich katanach
+63058	Do użytku na szponach bestii
+63059	Do użytku na orężu kolnym (z wyjątkiem pazurów i zakrzywionych ostrzy)
+63060	Do użytku na dużych i olbrzymich mieczach
+63061	Do użytku na mieczach i włóczniach (z wyjątkiem małego oręża, podwójnych i zakrzywionych ostrzy)
+80020	Duży pęknięty garnek
+110600	Ekran
+110601	Zaznacz nowe przedmioty
+110602	
+110603	Pokaż zakładkę ostatnich przedmiotów
+110700	Dźwięk
+111024	Ruch kursora w menu mapy
+111025	Czułość namierzenia celu
+225001	Smocza komunia: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Dary
+241337	Ostrowyż Altus
+241338	Modre wybrzeże
+241339	Podnóże Wyszczerbionego Szczytu
+241340	Wyszczerbiony Szczyt
+241341	Ukryty grób Charo
+241342	Starożytne ruiny Rauh
+241343	Ostrowidok
+241344	Las Otchłani
+241345	Belurat, osada przy wieży
+241346	Enir-Ilim
+241347	Donżon cienia
+241348	Donżon cienia, dzielnica kościelna
+241349	Magazyn z okazami
+241350	Szczelina kamiennego sarkofagu
+241351	Włości Midry
+241352	Zamek Ensis
+241353	Cmentarna równina
+241354	Podnóże Rauh
+241417	Cmentarna równina
+241418	Ostrowyż Altus
+241419	Ziemie Wieży 
+241420	Donżon cienia
+241500	Menu funkcji mapy
+241501	Ekran statusu gry wieloosobowej
+241502	Lista puli przyzwania
+241503	Pokaż sterowanie
+241504	Menu wyjaśnienia
+241600	Lista puli przyzwania
+280060	Menu
+280600	Mapa
+331340	SKRADZIONE SERCE

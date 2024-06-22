@@ -166,7 +166,7 @@
 292100	Armure d'épéiste nokrienne
 293000	Double hennin de noctedame
 293100	Armure de noctedame
-294000	Hennin de épéiste nokrienne (altéré)
+294000	Hennin d'épéiste nokrienne (altéré)
 294100	Armure d'épéiste nokrienne (altérée)
 300000	Grand bandeau à cornes
 300100	Tunique en fourrure

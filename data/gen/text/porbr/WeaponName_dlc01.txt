@@ -1,0 +1,503 @@
+1500000	Main-Gauche
+1500100	Main-Gauche Pesada
+1500200	Main-Gauche Aguçada
+1500300	Main-Gauche de Qualidade
+1500400	Main-Gauche de Fogo
+1500500	Main-Gauche da Arte da Chama
+1500600	Main-Gauche de Relâmpago
+1500700	Main-Gauche Sagrada
+1500800	Main-Gauche Mágica
+1500900	Main-Gauche do Frio
+1501000	Main-Gauche Venenosa
+1501100	Main-Gauche do Sangue
+1501200	Main-Gauche do Oculto
+1510000	Adaga dos Cavaleiros de Fogo
+1510100	Adaga Pesada dos Cavaleiros de Fogo
+1510200	Adaga Aguçada dos Cavaleiros de Fogo
+1510300	Adaga de Qualidade dos Cavaleiros de Fogo
+1510400	Adaga de Fogo dos Cavaleiros de Fogo
+1510500	Adaga da Arte da Chama dos Cavaleiros de Fogo
+1510600	Adaga de Relâmpago dos Cavaleiros de Fogo
+1510700	Adaga Sagrada dos Cavaleiros de Fogo
+1510800	Adaga Mágica dos Cavaleiros de Fogo
+1510900	Adaga de Frio dos Cavaleiros de Fogo
+1511000	Adaga Venenosa dos Cavaleiros de Fogo
+1511100	Adaga de Sangue dos Cavaleiros de Fogo
+1511200	Adaga do Oculto dos Cavaleiros de Fogo
+2510000	Espada da Névoa de Sta. Trina
+2520000	Espada Estrelada
+2530000	Espada de Feitiçaria Cariana
+2540000	Espada Embainhada em Pedra
+2550000	Espada de Luz
+2560000	Espada de Trevas
+3500000	Espada-Lança
+3500100	Espada-Lança Pesada
+3500200	Espada-Lança Aguçada
+3500300	Espada-Lança de Qualidade
+3500400	Espada-Lança de Fogo
+3500500	Espada-Lança da Arte da Chama
+3500600	Espada-Lança de Relâmpago
+3500700	Espada-Lança Sagrada
+3500800	Espada-Lança Mágica
+3500900	Espada-Lança do Frio
+3501000	Espada-Lança Venenosa
+3501100	Espada-Lança do Sangue
+3501200	Espada-Lança do Oculto
+3510000	Espada Grande da Danação
+3520000	Espada Grande do Réptil
+3520100	Espada Grande do Réptil Pesada
+3520200	Espada Grande do Réptil Aguçada
+3520300	Espada Grande do Réptil de Qualidade
+3520400	Espada Grande do Réptil de Fogo
+3520500	Espada Grande do Réptil da Arte da Chama
+3520600	Espada Grande do Réptil de Relâmpago
+3520700	Espada Grande do Réptil Sagrada
+3520800	Espada Grande do Réptil Mágica
+3520900	Espada Grande do Réptil do Frio
+3521000	Espada Grande do Réptil Venenosa
+3521100	Espada Grande do Réptil do Sangue
+3521200	Espada Grande do Réptil do Oculto
+3550000	Espada Grande da Solidão
+4500000	Espada Grande de Minério Meteórico Antigo
+4520000	Espada Grande do Fogo
+4520100	Espada Grande Pesada do Fogo
+4520200	Espada Grande Aguçada do Fogo
+4520300	Espada Grande do Fogo de Qualidade
+4520400	Espada Grande do Fogo Concentrado
+4520500	Espada Grande da Arte da Chama do Fogo
+4520600	Espada Grande de Relâmpago do Fogo
+4520700	Espada Grande Sagrada do Fogo
+4520800	Espada Grande Mágica do Fogo
+4520900	Espada Grande Fria do Fogo
+4521000	Espada Grande Venenosa do Fogo
+4521100	Espada Grande do Fogo e do Sangue
+4521200	Espada Grande do Fogo Oculto
+4530000	Espada Grande de Radahn (Lorde)
+4540000	Espada da Cavaleira Moonrithyll
+4550000	Espada Grande de Radahn (Luz)
+6500000	Espada Grande de Queelign
+6500100	Espada Grande Pesada de Queelign
+6500200	Espada Grande Aguçada de Queelign
+6500300	Espada Grande de Qualidade de Queelign
+6500400	Espada Grande de Fogo de Queelign
+6500500	Espada Grande da Arte da Chama de Queelign
+6500600	Espada Grande de Relâmpago de Queelign
+6500700	Espada Grande Sagrada de Queelign
+6500800	Espada Grande Mágica de Queelign
+6500900	Espada Grande do Frio de Queelign
+6501000	Espada Grande Venenosa de Queelign
+6501100	Espada Grande do Sangue de Queelign
+6501200	Espada Grande do Oculto de Queelign
+7500000	Espada dos Espíritos
+7510000	Falx
+7520000	Lâmina Dançante de Ranah
+7530000	Espada do Guerreiro com Chifres
+8500000	Cutelo da Putrefação
+8510000	Espada Grande de Freyja
+8510100	Espada Grande Pesada de Freyja
+8510200	Espada Grande Aguçada de Freyja
+8510300	Espada Grande de Qualidade de Freyja
+8510400	Espada Grande de Fogo de Freyja
+8510500	Espada Grande da Arte da Chama de Freyja
+8510600	Espada Grande de Relâmpago de Freyja
+8510700	Espada Grande Sagrada de Freyja
+8510800	Espada Grande Mágica de Freyja
+8510900	Espada Grande do Frio de Freyja
+8511000	Espada Grande Venenosa de Freyja
+8511100	Espada Grande do Sangue de Freyja
+8511200	Espada Grande do Oculto de Freyja
+8520000	Espada Grande do Guerreiro com Chifres
+9500000	Espada da Noite
+10500000	Euporia
+10510000	Lâminas de Aço Preto
+10510100	Lâminas de Aço Preto Pesadas
+10510200	Lâminas de Aço Preto Aguçadas
+10510300	Lâminas de Aço Preto de Qualidade
+10510400	Lâminas de Aço Preto de Fogo
+10510500	Lâminas de Aço Preto da Arte da Chama
+10510600	Lâminas de Aço Preto de Relâmpago
+10510700	Lâminas de Aço Preto Sagradas
+10510800	Lâminas de Aço Preto Sagradas
+10510900	Lâminas de Aço Preto do Frio
+10511000	Lâminas de Aço Preto Venenosas
+10511100	Lâminas de Aço Preto do Sangue
+10511200	Lâminas de Aço Preto do Oculto
+11500000	Malho de Pedra-Flor
+12500000	Grande Martelo Forjescrito
+12500100	Grande Martelo Forjescrito Pesado
+12500200	Grande Martelo Forjescrito Aguçado
+12500300	Grande Martelo Forjescrito de Qualidade
+12500400	Grande Martelo Forjescrito de Fogo
+12500500	Grande Martelo Forjescrito da Arte da Chama
+12500600	Grande Martelo Forjescrito de Relâmpago
+12500700	Grande Martelo Forjescrito Sagrado
+12500800	Grande Martelo Forjescrito Mágico
+12500900	Grande Martelo Forjescrito do Frio
+12501000	Grande Martelo Forjescrito Venenoso
+12501100	Grande Martelo Forjescrito do Sangue
+12501200	Grande Martelo Forjescrito do Oculto
+12510000	Martelo de Bigorna
+12520000	Grande Martelo de Aço Preto
+12520100	Grande Martelo de Aço Preto Pesado
+12520200	Grande Martelo de Aço Preto Aguçado
+12520300	Grande Martelo de Aço Preto de Qualidade
+12520400	Grande Martelo de Aço Preto de Fogo
+12520500	Grande Martelo de Aço Preto da Arte da Chama
+12520600	Grande Martelo de Aço Preto de Relâmpago
+12520700	Grande Martelo de Aço Preto Sagrado
+12520800	Grande Martelo de Aço Preto Mágico
+12520900	Grande Martelo de Aço Preto do Frio
+12521000	Grande Martelo de Aço Preto Venenoso
+12521100	Grande Martelo de Aço Preto do Sangue
+12521200	Grande Martelo de Aço Preto do Oculto
+12530000	Braço de Demônio do Sangue
+12530100	Braço Pesado de Demônio do Sangue
+12530200	Braço Aguçado de Demônio do Sangue
+12530300	Braço de Qualidade de Demônio do Sangue
+12530400	Braço de Fogo de Demônio do Sangue
+12530500	Braço da Arte da Chama de Demônio do Sangue
+12530600	Braço de Relâmpago de Demônio do Sangue
+12530700	Braço Sagrado de Demônio do Sangue
+12530800	Braço Mágico de Demônio do Sangue
+12530900	Braço do Frio de Demônio do Sangue
+12531000	Braço Venenoso de Demônio do Sangue
+12531100	Braço do Sangue de Demônio do Sangue
+12531200	Braço do Oculto de Demônio do Sangue
+13500000	Mangual de Serpente
+14500000	Machado Forjescrito
+14500100	Machado Forjescrito Pesado
+14500200	Machado Forjescrito Aguçado
+14500300	Machado Forjescrito de Qualidade
+14500400	Machado Forjescrito de Fogo
+14500500	Machado Forjescrito da Arte da Chama
+14500600	Machado Forjescrito de Relâmpago
+14500700	Machado Forjescrito Sagrado
+14500800	Machado Forjescrito Mágico
+14500900	Machado Forjescrito do Frio
+14501000	Machado Forjescrito Venenoso
+14501100	Machado Forjescrito do Sangue
+14501200	Machado Forjescrito do Oculto
+14510000	Machados Duplos do Cavaleiro da Morte
+14520000	Machado Militar de Messmer
+14520100	Machado Pesado Militar de Messmer
+14520200	Machado Aguçado Militar de Messmer
+14520300	Machado de Qualidade Militar de Messmer
+14520400	Machado de Fogo Militar de Messmer
+14520500	Machado da Arte da Chama Militar de Messmer
+14520600	Machado de Relâmpago Militar de Messmer
+14520700	Machado Sagrado Militar de Messmer
+14520800	Machado Mágico Militar de Messmer
+14520900	Machado do Frio Militar de Messmer
+14521000	Machado Venenoso Militar de Messmer
+14521100	Machado do Sangue Militar de Messmer
+14521200	Machado do Oculto Militar de Messmer
+14540000	Machadinha de Língua Bifurcada
+15500000	Machado de Haste Longa do Cavaleiro da Morte
+15510000	Faca de Açougueiro de Bonny
+16500000	Lança Forjescrita
+16500100	Lança Forjescrita Pesada
+16500200	Lança Forjescrita Aguçada
+16500300	Lança Forjescrita de Qualidade
+16500400	Lança Forjescrita de Fogo
+16500500	Lança Forjescrita da Arte da Chama
+16500600	Lança Forjescrita de Relâmpago
+16500700	Lança Forjescrita Sagrada
+16500800	Lança Forjescrita Mágica
+16500900	Lança Forjescrita do Frio
+16501000	Lança Forjescrita Venenosa
+16501100	Lança Forjescrita do Sangue
+16501200	Lança Forjescrita do Oculto
+16520000	Lança Veloz
+16520100	Lança Veloz Pesada
+16520200	Lança Veloz Aguçada
+16520300	Lança Veloz de Qualidade
+16520400	Lança Veloz de Fogo
+16520500	Lança Veloz da Arte da Chama
+16520600	Lança Veloz de Relâmpago
+16520700	Lança Veloz Sagrada
+16520800	Lança Veloz Mágica
+16520900	Lança Veloz do Frio
+16521000	Lança Veloz Venenosa
+16521100	Lança Veloz do Sangue
+16521200	Lança Veloz do Oculto
+16540000	Garfo de Demônio do Sangue
+16540100	Garfo Pesado de Demônio do Sangue
+16540200	Garfo Aguçado de Demônio do Sangue
+16540300	Garfo de Qualidade de Demônio do Sangue
+16540400	Garfo de Fogo de Demônio do Sangue
+16540500	Garfo da Arte da Chama de Demônio do Sangue
+16540600	Garfo de Relâmpago de Demônio do Sangue
+16540700	Garfo Sagrado de Demônio do Sangue
+16540800	Garfo Mágico de Demônio do Sangue
+16540900	Garfo do Frio de Demônio do Sangue
+16541000	Garfo Venenoso de Demônio do Sangue
+16541100	Garfo do Sangue de Demônio do Sangue
+16541200	Garfo do Oculto de Demônio do Sangue
+16550000	Lança Sagrada de Demônio do Sangue
+17500000	Lança do Empalador
+17510000	Lança Militar de Messmer
+17510100	Lança Pesada Militar de Messmer
+17510200	Lança Aguçada Militar de Messmer
+17510300	Lança de Qualidade Militar de Messmer
+17510400	Lança de Fogo Militar de Messmer
+17510500	Lança da Arte da Chama Militar de Messmer
+17510600	Lança de Relâmpago Militar de Messmer
+17510700	Lança Sagrada Militar de Messmer
+17510800	Lança Mágica Militar de Messmer
+17510900	Lança do Frio Militar de Messmer
+17511000	Lança Venenosa Militar de Messmer
+17511100	Lança do Sangue Militar de Messmer
+17511200	Lança do Oculto Militar de Messmer
+17520000	Cajado-Lança Farpado
+18500000	Glaive dos Espíritos
+18510000	Glaive do Broto
+19500000	Lâmina de Obsidiana
+20500000	Chicote Dentado
+21500000	Agulha Oculta de Thiollier
+21510000	Pata
+21510100	Pata Pesada
+21510200	Pata Aguçada
+21510300	Pata de Qualidade
+21510400	Pata de Fogo
+21510500	Pata da Arte da Chama
+21510600	Pata de Relâmpago
+21510700	Pata Sagrada
+21510800	Pata Mágica
+21510900	Pata do Frio
+21511000	Pata Venenosa
+21511100	Pata do Sangue
+21511200	Pata do Oculto
+21520000	Mão Envenenada
+21530000	Mão Enlouquecida
+21540000	Punho de Golem
+21540100	Punho de Golem Pesado
+21540200	Punho de Golem Aguçado
+21540300	Punho de Golem de Qualidade
+21540400	Punho de Golem de Fogo
+21540500	Punho de Golem da Arte da Chama
+21540600	Punho de Golem de Relâmpago
+21540700	Punho de Golem Sagrado
+21540800	Punho de Golem Mágico
+21540900	Punho de Golem do Frio
+21541000	Punho de Golem Venenoso
+21541100	Punho de Golem do Sangue
+21541200	Punho de Golem do Oculto
+21550000	Escudo da Noite
+22500000	Garras da Noite
+23500000	Martelo de Devonia
+23510000	Flor de Girassol Sombrio
+23520000	Dedo Que Encara
+24500000	Tocha de Nanaya
+24510000	Visão de Lamúria
+30510000	Escudo Forjescrito
+31500000	Escudo Militar de Messmer
+31500100	Escudo Pesado Militar de Messmer
+31500200	Escudo Aguçado Militar de Messmer
+31500300	Escudo de Qualidade Militar de Messmer
+31500400	Escudo de Fogo Militar de Messmer
+31500500	Escudo da Arte da Chama Militar de Messmer
+31500600	Escudo de Relâmpago Militar de Messmer
+31500700	Escudo Sagrado Militar de Messmer
+31500800	Escudo Mágico Militar de Messmer
+31500900	Escudo do Frio Militar de Messmer
+31501000	Escudo Venenoso Militar de Messmer
+31501100	Escudo do Sangue Militar de Messmer
+31501200	Escudo do Oculto Militar de Messmer
+31510000	Escudo do Brasão de Lobo
+31510100	Escudo do Brasão de Lobo Pesado
+31510200	Escudo do Brasão de Lobo Aguçado
+31510300	Escudo do Brasão de Lobo de Qualidade
+31510400	Escudo do Brasão de Lobo de Fogo
+31510500	Escudo do Brasão de Lobo da Arte da Chama
+31510600	Escudo do Brasão de Lobo de Relâmpago
+31510700	Escudo do Brasão de Lobo Sagrado
+31510800	Escudo do Brasão de Lobo Mágico
+31510900	Escudo do Brasão de Lobo do Frio
+31511000	Escudo do Brasão de Lobo Venenoso
+31511100	Escudo do Brasão de Lobo do Sangue
+31511200	Escudo do Brasão de Lobo do Oculto
+31520000	Escudo do Brasão de Serpente
+31520100	Escudo do Brasão de Serpente Pesado
+31520200	Escudo do Brasão de Serpente Aguçado
+31520300	Escudo do Brasão de Serpente de Qualidade
+31520400	Escudo do Brasão de Serpente de Fogo
+31520500	Escudo do Brasão de Serpente da Arte da Chama
+31520600	Escudo do Brasão de Serpente de Relâmpago
+31520700	Escudo do Brasão de Serpente Sagrado
+31520800	Escudo do Brasão de Serpente Mágico
+31520900	Escudo do Brasão de Serpente do Frio
+31521000	Escudo do Brasão de Serpente Venenoso
+31521100	Escudo do Brasão de Serpente do Sangue
+31521200	Escudo do Brasão de Serpente do Oculto
+31530000	Escudo do Leão Dourado
+32500000	Grande Escudo de Aço Preto
+32500100	Grande Escudo de Aço Preto Pesado
+32500200	Grande Escudo de Aço Preto Aguçado
+32500300	Grande Escudo de Aço Preto de Qualidade
+32500400	Grande Escudo de Aço Preto de Fogo
+32500500	Grande Escudo de Aço Preto da Arte da Chama
+32500600	Grande Escudo de Aço Preto de Relâmpago
+32500700	Grande Escudo de Aço Preto Sagrado
+32500800	Grande Escudo de Aço Preto Mágico
+32500900	Grande Escudo de Aço Preto do Frio
+32501000	Grande Escudo de Aço Preto Venenoso
+32501100	Grande Escudo de Aço Preto do Sangue
+32501200	Grande Escudo de Aço Preto do Oculto
+32520000	Grande Escudo de Azinhavre
+33510000	Cajado do Grande Além
+33520000	Cajado Maternal
+34500000	Selo de Folhaseca
+34510000	Selo de Cavaleiro de Fogo
+34520000	Selo da Árvore Espiral
+40500000	Arco Ósseo
+41510000	Arco Longo de Ansbach
+42500000	Arco Grande de Igon
+43500000	Besta de Repetição
+43510000	Besta Dispersora
+44500000	Canhão de Rabbath
+50540000	Flecha Admiróssea (Com Penas)
+50550000	Flecha Admiróssea
+51500000	Arpão de Igon
+52520000	Seta Admiróssea
+53500000	Grande Seta de Rabbath
+60500000	Artes de Folhaseca
+60500100	Artes de Folhaseca Pesadas
+60500200	Artes de Folhaseca Aguçadas
+60500300	Artes de Folhaseca de Qualidade
+60500400	Artes de Folhaseca de Fogo
+60500500	Artes de Folhaseca da Arte da Chama
+60500600	Artes de Folhaseca de Relâmpago
+60500700	Artes de Folhaseca Sagradas
+60500800	Artes de Folhaseca Mágicas
+60500900	Artes de Folhaseca do Frio
+60501000	Artes de Folhaseca Venenosas
+60501100	Artes de Folhaseca do Sangue
+60501200	Artes de Folhaseca do Oculto
+60510000	Movimento de Pés de Dane
+60510100	Movimento de Pés Pesado de Dane
+60510200	Movimento de Pés Aguçado de Dane
+60510300	Movimento de Pés de Qualidade de Dane
+60510400	Movimento de Pés de Fogo de Dane
+60510500	Movimento de Pés da Arte da Chama de Dane
+60510600	Movimento de Pés de Relâmpago de Dane
+60510700	Movimento de Pés Sagrado de Dane
+60510800	Movimento de Pés Mágico de Dane
+60510900	Movimento de Pés do Frio de Dane
+60511000	Movimento de Pés Venenoso de Dane
+60511100	Movimento de Pés do Sangue de Dane
+60511200	Movimento de Pés do Oculto de Dane
+61500000	Frasco de Perfume de Faísca de Fogo
+61510000	Frasco de Perfume Congelante
+61520000	Frasco de Perfume da Chama Frenética
+61530000	Frasco de Perfume de Relâmpago
+61540000	Frasco de Perfume de Veneno Mortal
+62500000	Escudo de Duelo
+62500100	Escudo de Duelo Pesado
+62500200	Escudo de Duelo Aguçado
+62500300	Escudo de Duelo de Qualidade
+62500400	Escudo de Duelo de Fogo
+62500500	Escudo de Duelo da Arte da Chama
+62500600	Escudo de Duelo de Relâmpago
+62500700	Escudo de Duelo Sagrado
+62500800	Escudo de Duelo Mágico
+62500900	Escudo de Duelo do Frio
+62501000	Escudo de Duelo Venenoso
+62501100	Escudo de Duelo do Sangue
+62501200	Escudo de Duelo do Oculto
+62510000	Escudo de Fincada Cariano
+62510100	Escudo de Fincada Cariano Pesado
+62510200	Escudo de Fincada Cariano Aguçado
+62510300	Escudo de Fincada Cariano de Qualidade
+62510400	Escudo de Fincada Cariano de Fogo
+62510500	Escudo de Fincada Cariano da Arte da Chama
+62510600	Escudo de Fincada Cariano de Relâmpago
+62510700	Escudo de Fincada Cariano Sagrado
+62510800	Escudo de Fincada Cariano Mágico
+62510900	Escudo de Fincada Cariano do Frio
+62511000	Escudo de Fincada Cariano Venenoso
+62511100	Escudo de Fincada Cariano do Sangue
+62511200	Escudo de Fincada Cariano do Oculto
+63500000	Adaga Forjescrita
+63500100	Adaga Forjescrita Pesada
+63500200	Adaga Forjescrita Aguçada
+63500300	Adaga Forjescrita de Qualidade
+63500400	Adaga Forjescrita de Fogo
+63500500	Adaga Forjescrita da Arte da Chama
+63500600	Adaga Forjescrita de Relâmpago
+63500700	Adaga Forjescrita Sagrada
+63500800	Adaga Forjescrita Mágica
+63500900	Adaga Forjescrita do Frio
+63501000	Adaga Forjescrita Venenosa
+63501100	Adaga Forjescrita do Sangue
+63501200	Adaga Forjescrita do Oculto
+64500000	Lâmina de Revés
+64500100	Lâmina de Revés Pesada
+64500200	Lâmina de Revés Aguçada
+64500300	Lâmina de Revés de Qualidade
+64500400	Lâmina de Revés de Fogo
+64500500	Lâmina de Revés da Arte da Chama
+64500600	Lâmina de Revés de Relâmpago
+64500700	Lâmina de Revés Sagrada
+64500800	Lâmina de Revés Mágica
+64500900	Lâmina de Revés do Frio
+64501000	Lâmina de Revés Venenosa
+64501100	Lâmina de Revés do Sangue
+64501200	Lâmina de Revés do Oculto
+64510000	Chakram Forjescrito
+64510100	Chakram Forjescrito Pesado
+64510200	Chakram Forjescrito Aguçado
+64510300	Chakram Forjescrito de Qualidade
+64510400	Chakram Forjescrito de Fogo
+64510500	Chakram Forjescrito da Arte da Chama
+64510600	Chakram Forjescrito de Relâmpago
+64510700	Chakram Forjescrito Sagrado
+64510800	Chakram Forjescrito Mágico
+64510900	Chakram Forjescrito do Frio
+64511000	Chakram Forjescrito Venenoso
+64511100	Chakram Forjescrito do Sangue
+64511200	Chakram Forjescrito do Oculto
+64520000	Chakram dos Lâminas Malditas
+66500000	Katana Grande
+66500100	Katana Grande Pesada
+66500200	Katana Grande Aguçada
+66500300	Katana Grande de Qualidade
+66500400	Katana Grande de Fogo
+66500500	Katana Grande da Arte da Chama
+66500600	Katana Grande de Relâmpago
+66500700	Katana Grande Sagrada
+66500800	Katana Grande Mágica
+66500900	Katana Grande do Frio
+66501000	Katana Grande Venenosa
+66501100	Katana Grande do Sangue
+66501200	Katana Grande do Oculto
+66510000	Katana Grande do Caçador de Dragão
+66520000	Katana Grande de Rakshasa
+67500000	Milady
+67500100	Milady Pesada
+67500200	Milady Aguçada
+67500300	Milady de Qualidade
+67500400	Milady de Fogo
+67500500	Milady da Arte da Chama
+67500600	Milady de Relâmpago
+67500700	Milady Sagrada
+67500800	Milady Mágica
+67500900	Milady do Frio
+67501000	Milady Venenosa
+67501100	Milady do Sangue
+67501200	Milady do Oculto
+67510000	Espada de Leda
+67520000	Espadas da Lua de Fogo de Rellana
+68500000	Garra da Fera
+68500100	Garra Pesada da Fera
+68500200	Garra Aguçada da Fera
+68500300	Garra de Qualidade da Fera
+68500400	Garra de Fogo da Fera
+68500500	Garra da Arte da Chama da Fera
+68500600	Garra de Relâmpago da Fera
+68500700	Garra Sagrada da Fera
+68500800	Garra Mágica da Fera
+68500900	Garra do Frio da Fera
+68501000	Garra Venenosa da Fera
+68501100	Garra do Sangue da Fera
+68501200	Garra do Oculto da Fera
+68510000	Garra do Urso Vermelho

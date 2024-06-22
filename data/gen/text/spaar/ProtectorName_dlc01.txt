@@ -1,0 +1,145 @@
+3000000	Sombrero de Dane
+3000100	Túnica de Hojaseca
+3000200	Envolturas para los brazos de Hojaseca
+3000300	Botas altas de Hojaseca
+3001100	Túnica de Hojaseca (modificada)
+3010000	Yelmo de Gaius
+3010100	Armadura de Gaius
+3010200	Guanteletes de Gaius
+3010300	Grebas de Gaius
+5000000	Yelmo de Juramentista
+5000100	Armadura de Leda
+5000200	Guanteletes de Juramentista
+5000300	Grebas de Juramentista
+5002100	Armadura de Juramentista (modificada)
+5010000	Yelmo de cardenillo
+5010100	Armadura de cardenillo
+5010200	Guanteletes de cardenillo
+5010300	Grebas de cardenillo
+5020000	Cuero de Ralva
+5020100	Armadura de remaches de hierro
+5020200	Guanteletes de remaches de hierro
+5020300	Grebas de remaches de hierro
+5021000	Yelmo de colmillo
+5030000	Máscara de Thiollier
+5030100	Vestimenta de Thiollier
+5030200	Guantes de Thiollier
+5030300	Pantalones de Thiollier
+5031100	Vestimenta de Thiollier (modificada)
+5060000	Sombrero del Sumo Sacerdote
+5060100	Túnica del Sumo Sacerdote
+5060200	Guantes del Sumo Sacerdote
+5060300	Ropa interior del Sumo Sacerdote
+5062100	Túnica de Dedos
+5070000	Máscara de orugas
+5070100	Túnica de cordón trenzado
+5070200	Envolturas trenzadas para los brazos
+5070300	Taparrabos sucio
+5080000	Capucha de bailarín
+5080100	Vestido de bailarín
+5080200	Brazal de bailarín
+5080300	Pantalones de bailarín
+5081100	Vestido de bailarín (modificado)
+5090000	Yelmo de la Noche
+5090100	Armadura de la Noche
+5090200	Guanteletes de la Noche
+5090300	Grebas de la Noche
+5100000	Yelmo de Igon
+5100100	Armadura de Igon
+5100200	Guanteletes de Igon
+5100300	Taparrabos de Igon
+5101000	Yelmo de Igon (modificado)
+5101100	Armadura de Igon (modificada)
+5110000	Máscara del hombre sabio
+5110100	Atavío de Ansbach
+5110200	Mangas de Ansbach
+5110300	Botas de Ansbach
+5111100	Atavío de Ansbach (modificado)
+5120000	Yelmo de Freyja
+5120100	Armadura de Freyja
+5120200	Guanteletes de Freyja
+5120300	Grebas de Freyja
+5121100	Armadura de Freyja (modificada)
+5130000	Yelmo de soledad
+5130100	Armadura de soledad
+5130200	Guanteletes de soledad
+5130300	Grebas de soledad
+5131100	Armadura de soledad (modificada)
+5140000	Yelmo de soldado de Messmer
+5140100	Armadura de soldado de Messmer
+5140200	Guanteletes de soldado de Messmer
+5140300	Grebas de soldado de Messmer
+5141100	Armadura de soldado de Messmer (modificada)
+5150000	Yelmo de Caballero Negro
+5150100	Armadura de Caballero Negro
+5150200	Guanteletes de Caballero Negro
+5150300	Grebas de Caballero Negro
+5160000	Yelmo de rakshasa
+5160100	Armadura de rakshasa
+5160200	Guanteletes de rakshasa
+5160300	Grebas de rakshasa
+5180000	Yelmo de caballero ígneo
+5180100	Armadura de caballero ígneo
+5180200	Guanteletes de caballero ígneo
+5180300	Grebas de caballero ígneo
+5181100	Armadura de caballero ígneo (modificada)
+5182000	Yelmo de máscaras de la muerte
+5183000	Yelmo de la serpiente alada
+5184000	Capucha de Salza
+5190000	Cinta de cuero para la cabeza
+5190100	Atavío glorioso
+5190200	Envolturas de cuero para los brazos
+5190300	Envolturas de cuero para las piernas
+5191000	Corona de cuero
+5191100	Atavío de las Tierras Altas
+5200000	Yelmo de los Caballeros de la Muerte
+5200100	Armadura de los Caballeros de la Muerte
+5200200	Guanteletes de los Caballeros de la Muerte
+5200300	Grebas de los Caballeros de la Muerte
+5210000	Máscara de Filo Maldito
+5210100	Taparrabos de asceta
+5210200	Muñequeras de asceta
+5210300	Tobilleras de asceta
+5220000	Yelmo de Messmer
+5220100	Armadura de Messmer
+5220200	Guanteletes de Messmer
+5220300	Grebas de Messmer
+5221000	Yelmo de Messmer (modificado)
+5230000	Yelmo de ave sepulcral
+5230100	Armadura de pluma negra de ave sepulcral
+5230200	Brazaletes de ave sepulcral
+5230300	Tobilleras de ave sepulcral
+5231100	Armadura de ave sepulcral
+5240000	Yelmo de soldado raso
+5240100	Armadura de tela de soldado raso
+5240200	Guanteletes de soldado raso
+5240300	Grebas de soldado raso
+5250000	Yelmo de guerrero con cuernos
+5250100	Armadura de guerrero con cuernos
+5250200	Guanteletes de guerrero con cuernos
+5250300	Grebas de guerrero con cuernos
+5252000	Yelmo de la Bestia Divina
+5252100	Armadura de guerrero de la Bestia Divina
+5253000	Yelmo del Ave Divina
+5253100	Armadura de guerrero del Ave Divina
+5253200	Guanteletes de guerrero del Ave Divina
+5253300	Grebas de guerrero del Ave Divina
+5260000	Yelmo de Rellana
+5260100	Armadura de Rellana
+5260200	Guantes de Rellana
+5260300	Grebas de Rellana
+5270000	Yelmo del León Joven
+5270100	Armadura del León Joven
+5270200	Guanteletes del León Joven
+5270300	Grebas del León Joven
+5271100	Armadura del León Joven (modificada)
+5272000	Diadema de luz
+5280000	Yelmo sombrío de miliciano
+5280100	Armadura sombría de miliciano
+5280200	Guanteletes sombríos de miliciano
+5280300	Grebas sombrías de miliciano
+5290000	Cabeza de la Bestia Divina
+5300000	Flor de Santa Trina
+5310000	Yelmo martillo del Crisol
+5320000	Gran recipiente
+5330000	Cabeza de diablillo (león)

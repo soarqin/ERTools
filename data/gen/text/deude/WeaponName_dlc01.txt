@@ -1,0 +1,503 @@
+1500000	Linkshanddolch
+1500100	Schwerer Linkshanddolch
+1500200	Solider Linkshanddolch
+1500300	Wertiger Linkshanddolch
+1500400	Feuriger Linkshanddolch
+1500500	Flammender Linkshanddolch
+1500600	Blitzender Linkshanddolch
+1500700	Heiliger Linkshanddolch
+1500800	Magischer Linkshanddolch
+1500900	Eisiger Linkshanddolch
+1501000	Giftiger Linkshanddolch
+1501100	Blutiger Linkshanddolch
+1501200	Okkulter Linkshanddolch
+1510000	Dolch der Feuerritter
+1510100	Schwerer Dolch der Feuerritter
+1510200	Solider Dolch der Feuerritter
+1510300	Wertiger Dolch der Feuerritter
+1510400	Feuriger Dolch der Feuerritter
+1510500	Flammender Dolch der Feuerritter
+1510600	Blitzender Dolch der Feuerritter
+1510700	Heiliger Dolch der Feuerritter
+1510800	Magischer Dolch der Feuerritter
+1510900	Eisiger Dolch der Feuerritter
+1511000	Giftiger Dolch der Feuerritter
+1511100	Blutiger Dolch der Feuerritter
+1511200	Okkulter Dolch der Feuerritter
+2510000	Purpurnes Schwert von St. Trina
+2520000	Sternbildschwert
+2530000	Caria-Zauberschwert
+2540000	Steinummanteltes Schwert
+2550000	Schwert des Lichts
+2560000	Schwert der Finsternis
+3500000	Schwertlanze
+3500100	Schwere Schwertlanze
+3500200	Solide Schwertlanze
+3500300	Wertige Schwertlanze
+3500400	Feurige Schwertlanze
+3500500	Flammende Schwertlanze
+3500600	Blitzende Schwertlanze
+3500700	Heilige Schwertlanze
+3500800	Magische Schwertlanze
+3500900	Eisige Schwertlanze
+3501000	Giftige Schwertlanze
+3501100	Blutige Schwertlanze
+3501200	Okkulte Schwertlanze
+3510000	Großschwert der Verdammnis
+3520000	Echsen-Großschwert
+3520100	Schweres Echsen-Großschwert
+3520200	Solides Echsen-Großschwert
+3520300	Wertiges Echsen-Großschwert
+3520400	Feuriges Echsen-Großschwert
+3520500	Flammendes Echsen-Großschwert
+3520600	Blitzendes Echsen-Großschwert
+3520700	Heiliges Echsen-Großschwert
+3520800	Magisches Echsen-Großschwert
+3520900	Eisiges Echsen-Großschwert
+3521000	Giftiges Echsen-Großschwert
+3521100	Blutiges Echsen-Großschwert
+3521200	Okkultes Echsen-Großschwert
+3550000	Großschwert der Einsamkeit
+4500000	Uraltes Meteoritenerz-Großschwert
+4520000	Großschwert der Feuerritter
+4520100	Schweres Großschwert der Feuerritter
+4520200	Solides Großschwert der Feuerritter
+4520300	Wertiges Großschwert der Feuerritter
+4520400	Feuriges Großschwert der Feuerritter
+4520500	Flammendes Großschwert der Feuerritter
+4520600	Blitzendes Großschwert der Feuerritter
+4520700	Heiliges Großschwert der Feuerritter
+4520800	Magisches Großschwert der Feuerritter
+4520900	Eisiges Großschwert der Feuerritter
+4521000	Giftiges Großschwert der Feuerritter
+4521100	Blutiges Großschwert der Feuerritter
+4521200	Okkultes Großschwert der Feuerritter
+4530000	Großschwert von Radahn (Fürst)
+4540000	Moonrithylls Ritterschwert
+4550000	Großschwert von Radahn (Licht)
+6500000	Queeligns Großschwert
+6500100	Queeligns schweres Großschwert
+6500200	Queeligns solides Großschwert
+6500300	Queeligns wertiges Großschwert
+6500400	Queeligns feuriges Großschwert
+6500500	Queeligns flammendes Großschwert
+6500600	Queeligns blitzendes Großschwert
+6500700	Queeligns heiliges Großschwert
+6500800	Queeligns magisches Großschwert
+6500900	Queeligns eisiges Großschwert
+6501000	Queeligns giftiges Großschwert
+6501100	Queeligns blutiges Großschwert
+6501200	Queeligns okkultes Großschwert
+7500000	Schwert des Geistes
+7510000	Falx
+7520000	Tanzende Klinge Ranahs
+7530000	Schwert des Hornkriegers
+8500000	Fäulnisbeil
+8510000	Freyjas Großschwert
+8510100	Freyjas schweres Großschwert
+8510200	Freyjas solides Großschwert
+8510300	Freyjas wertiges Großschwert
+8510400	Freyjas feuriges Großschwert
+8510500	Freyjas flammendes Großschwert
+8510600	Freyjas blitzendes Großschwert
+8510700	Freyjas heiliges Großschwert
+8510800	Freyjas magisches Großschwert
+8510900	Freyjas eisiges Großschwert
+8511000	Freyjas giftiges Großschwert
+8511100	Freyjas blutiges Großschwert
+8511200	Freyjas okkultes Großschwert
+8520000	Großschwert des Hornkriegers
+9500000	Schwert der Nacht
+10500000	Euphorie
+10510000	Schwarze Stahldoppelklinge
+10510100	Schwere schwarze Stahldoppelklinge
+10510200	Solide schwarze Stahldoppelklinge
+10510300	Wertige schwarze Stahldoppelklinge
+10510400	Feurige schwarze Stahldoppelklinge
+10510500	Flammende schwarze Stahldoppelklinge
+10510600	Blitzende schwarze Stahldoppelklinge
+10510700	Heilige schwarze Stahldoppelklinge
+10510800	Magische schwarze Stahldoppelklinge
+10510900	Eisige schwarze Stahldoppelklinge
+10511000	Giftige schwarze Stahldoppelklinge
+10511100	Blutige schwarze Stahldoppelklinge
+10511200	Okkulte schwarze Stahldoppelklinge
+11500000	Blumenstein-Hammer
+12500000	Schmiedeschrift-Großhammer
+12500100	Schwerer Schmiedeschrift-Großhammer
+12500200	Solider Schmiedeschrift-Großhammer
+12500300	Wertiger Schmiedeschrift-Großhammer
+12500400	Feuriger Schmiedeschrift-Großhammer
+12500500	Flammender Schmiedeschrift-Großhammer
+12500600	Blitzender Schmiedeschrift-Großhammer
+12500700	Heiliger Schmiedeschrift-Großhammer
+12500800	Magischer Schmiedeschrift-Großhammer
+12500900	Eisiger Schmiedeschrift-Großhammer
+12501000	Giftiger Schmiedeschrift-Großhammer
+12501100	Blutiger Schmiedeschrift-Großhammer
+12501200	Okkulter Schmiedeschrift-Großhammer
+12510000	Ambosshammer
+12520000	Schwarzer Stahlgroßhammer
+12520100	Schwerer schwarzer Stahlgroßhammer
+12520200	Solider schwarzer Stahlgroßhammer
+12520300	Wertiger schwarzer Stahlgroßhammer
+12520400	Feuriger schwarzer Stahlgroßhammer
+12520500	Flammender schwarzer Stahlgroßhammer
+12520600	Blitzender schwarzer Stahlgroßhammer
+12520700	Heiliger schwarzer Stahlgroßhammer
+12520800	Magischer schwarzer Stahlgroßhammer
+12520900	Eisiger schwarzer Stahlgroßhammer
+12521000	Giftiger schwarzer Stahlgroßhammer
+12521100	Blutiger schwarzer Stahlgroßhammer
+12521200	Okkulter schwarzer Stahlgroßhammer
+12530000	Arm eines Blutunholds
+12530100	Schwerer Arm eines Blutunholds
+12530200	Solider Arm eines Blutunholds
+12530300	Wertiger Arm eines Blutunholds
+12530400	Feuriger Arm eines Blutunholds
+12530500	Flammender Arm eines Blutunholds
+12530600	Blitzender Arm eines Blutunholds
+12530700	Heiliger Arm eines Blutunholds
+12530800	Magischer Arm eines Blutunholds
+12530900	Eisiger Arm eines Blutunholds
+12531000	Giftiger Arm eines Blutunholds
+12531100	Blutiger Arm eines Blutunholds
+12531200	Okkulter Arm eines Blutunholds
+13500000	Schlangenflegel
+14500000	Schmiedeschrift-Axt
+14500100	Schwere Schmiedeschrift-Axt
+14500200	Solide Schmiedeschrift-Axt
+14500300	Wertige Schmiedeschrift-Axt
+14500400	Feurige Schmiedeschrift-Axt
+14500500	Flammende Schmiedeschrift-Axt
+14500600	Blitzende Schmiedeschrift-Axt
+14500700	Heilige Schmiedeschrift-Axt
+14500800	Magische Schmiedeschrift-Axt
+14500900	Eisige Schmiedeschrift-Axt
+14501000	Giftige Schmiedeschrift-Axt
+14501100	Blutige Schmiedeschrift-Axt
+14501200	Okkulte Schmiedeschrift-Axt
+14510000	Doppeläxte des Todesritters
+14520000	Messmer-Soldatenaxt
+14520100	Schwere Messmer-Soldatenaxt
+14520200	Solide Messmer-Soldatenaxt
+14520300	Wertige Messmer-Soldatenaxt
+14520400	Feurige Messmer-Soldatenaxt
+14520500	Flammende Messmer-Soldatenaxt
+14520600	Blitzende Messmer-Soldatenaxt
+14520700	Heilige Messmer-Soldatenaxt
+14520800	Magische Messmer-Soldatenaxt
+14520900	Eisige Messmer-Soldatenaxt
+14521000	Giftige Messmer-Soldatenaxt
+14521100	Blutige Messmer-Soldatenaxt
+14521200	Okkulte Messmer-Soldatenaxt
+14540000	Gespaltenes Zungenbeil
+15500000	Langstiel-Axt des Todesritters
+15510000	Fleischermesser aus Bonny
+16500000	Schmiedeschriftspeer
+16500100	Schwerer Schmiedeschriftspeer
+16500200	Solider Schmiedeschriftspeer
+16500300	Wertiger Schmiedeschriftspeer
+16500400	Feuriger Schmiedeschriftspeer
+16500500	Flammender Schmiedeschriftspeer
+16500600	Blitzender Schmiedeschriftspeer
+16500700	Heiliger Schmiedeschriftspeer
+16500800	Magischer Schmiedeschriftspeer
+16500900	Eisiger Schmiedeschriftspeer
+16501000	Giftiger Schmiedeschriftspeer
+16501100	Blutiger Schmiedeschriftspeer
+16501200	Okkulter Schmiedeschriftspeer
+16520000	Flinker Speer
+16520100	Schwerer flinker Speer
+16520200	Solider flinker Speer
+16520300	Wertiger flinker Speer
+16520400	Feuriger flinker Speer
+16520500	Flammender flinker Speer
+16520600	Blitzender flinker Speer
+16520700	Heiliger flinker Speer
+16520800	Magischer flinker Speer
+16520900	Eisiger flinker Speer
+16521000	Giftiger flinker Speer
+16521100	Blutiger flinker Speer
+16521200	Okkulter flinker Speer
+16540000	Forke der Blutunholde
+16540100	Schwere Forke der Blutunholde
+16540200	Solide Forke der Blutunholde
+16540300	Wertige Forke der Blutunholde
+16540400	Feurige Forke der Blutunholde
+16540500	Flammende Forke der Blutunholde
+16540600	Blitzende Forke der Blutunholde
+16540700	Heilige Forke der Blutunholde
+16540800	Magische Forke der Blutunholde
+16540900	Eisige Forke der Blutunholde
+16541000	Giftige Forke der Blutunholde
+16541100	Blutige Forke der Blutunholde
+16541200	Okkulte Forke der Blutunholde
+16550000	Heiliger Speer der Blutunholde
+17500000	Speer des Pfählers
+17510000	Messmer-Soldatenspeer
+17510100	Schwerer Messmer-Soldatenspeer
+17510200	Solider Messmer-Soldatenspeer
+17510300	Wertiger Messmer-Soldatenspeer
+17510400	Feuriger Messmer-Soldatenspeer
+17510500	Flammender Messmer-Soldatenspeer
+17510600	Blitzender Messmer-Soldatenspeer
+17510700	Heiliger Messmer-Soldatenspeer
+17510800	Magischer Messmer-Soldatenspeer
+17510900	Eisiger Messmer-Soldatenspeer
+17511000	Giftiger Messmer-Soldatenspeer
+17511100	Blutiger Messmer-Soldatenspeer
+17511200	Okkulter Messmer-Soldatenspeer
+17520000	Stachelstab-Speer
+18500000	Gleve des Geistes
+18510000	Stangenklinge der Knospe
+19500000	Obsidian-Lamina
+20500000	Zahnpeitsche
+21500000	Thiolliers versteckte Nadel
+21510000	Pata
+21510100	Schweres Pata
+21510200	Solides Pata
+21510300	Wertiges Pata
+21510400	Feuriges Pata
+21510500	Flammendes Pata
+21510600	Blitzendes Pata
+21510700	Heiliges Pata
+21510800	Magisches Pata
+21510900	Eisiges Pata
+21511000	Giftiges Pata
+21511100	Blutiges Pata
+21511200	Okkultes Pata
+21520000	Giftige Hand
+21530000	Wahnwitzige Hand
+21540000	Golemfaust
+21540100	Schwere Golemfaust
+21540200	Solide Golemfaust
+21540300	Wertige Golemfaust
+21540400	Feurige Golemfaust
+21540500	Flammende Golemfaust
+21540600	Blitzende Golemfaust
+21540700	Heilige Golemfaust
+21540800	Magische Golemfaust
+21540900	Eisige Golemfaust
+21541000	Giftige Golemfaust
+21541100	Blutige Golemfaust
+21541200	Okkulte Golemfaust
+21550000	Schild der Nacht
+22500000	Klauen der Nacht
+23500000	Devonias Hammer
+23510000	Schattensonnenblumen-Blüte
+23520000	Starrender Finger
+24500000	Nanayas Fackel
+24510000	Lamentierende Visage
+30510000	Schmiedeschriftschild
+31500000	Messmer-Soldatenschild
+31500100	Schwerer Messmer-Soldatenschild
+31500200	Solider Messmer-Soldatenschild
+31500300	Wertiger Messmer-Soldatenschild
+31500400	Feuriger Messmer-Soldatenschild
+31500500	Flammender Messmer-Soldatenschild
+31500600	Blitzender Messmer-Soldatenschild
+31500700	Heiliger Messmer-Soldatenschild
+31500800	Magischer Messmer-Soldatenschild
+31500900	Eisiger Messmer-Soldatenschild
+31501000	Giftiger Messmer-Soldatenschild
+31501100	Blutiger Messmer-Soldatenschild
+31501200	Okkulter Messmer-Soldatenschild
+31510000	Wolfswappenschild
+31510100	Schwerer Wolfswappenschild
+31510200	Solider Wolfswappenschild
+31510300	Wertiger Wolfswappenschild
+31510400	Feuriger Wolfswappenschild
+31510500	Flammender Wolfswappenschild
+31510600	Blitzender Wolfswappenschild
+31510700	Heiliger Wolfswappenschild
+31510800	Magischer Wolfswappenschild
+31510900	Eisiger Wolfswappenschild
+31511000	Giftiger Wolfswappenschild
+31511100	Blutiger Wolfswappenschild
+31511200	Okkulter Wolfswappenschild
+31520000	Schlangenwappenschild
+31520100	Schwerer Schlangenwappenschild
+31520200	Solider Schlangenwappenschild
+31520300	Wertiger Schlangenwappenschild
+31520400	Feuriger Schlangenwappenschild
+31520500	Flammender Schlangenwappenschild
+31520600	Blitzender Schlangenwappenschild
+31520700	Heiliger Schlangenwappenschild
+31520800	Magischer Schlangenwappenschild
+31520900	Eisiger Schlangenwappenschild
+31521000	Giftiger Schlangenwappenschild
+31521100	Blutiger Schlangenwappenschild
+31521200	Okkulter Schlangenwappenschild
+31530000	Goldener Löwenschild
+32500000	Schwarzer Stahlgroßschild
+32500100	Schwerer schwarzer Stahlgroßschild
+32500200	Solider schwarzer Stahlgroßschild
+32500300	Wertiger schwarzer Stahlgroßschild
+32500400	Feuriger schwarzer Stahlgroßschild
+32500500	Flammender schwarzer Stahlgroßschild
+32500600	Blitzender schwarzer Stahlgroßschild
+32500700	Heiliger schwarzer Stahlgroßschild
+32500800	Magischer schwarzer Stahlgroßschild
+32500900	Eisiger schwarzer Stahlgroßschild
+32501000	Giftiger schwarzer Stahlgroßschild
+32501100	Blutiger schwarzer Stahlgroßschild
+32501200	Okkulter schwarzer Stahlgroßschild
+32520000	Grünspan-Großschild
+33510000	Stab des großen Jenseits
+33520000	Mütterlicher Stab
+34500000	Trockenblatt-Siegel
+34510000	Siegel der Feuerritter
+34520000	Siegel des Spiralbaums
+40500000	Knochenbogen
+41510000	Ansbachs Langbogen
+42500000	Igons Großbogen
+43500000	Salvenarmbrust
+43510000	Streu-Armbrust
+44500000	Rabbaths Kanone
+50540000	Verlockender Pfeil (Gefiedert)
+50550000	Verlockender Pfeil
+51500000	Igons Harpune
+52520000	Verlockender Bolzen
+53500000	Rabbaths Großbolzen
+60500000	Trockenblatt-Kunst
+60500100	Schwere Trockenblatt-Kunst
+60500200	Solide Trockenblatt-Kunst
+60500300	Wertige Trockenblatt-Kunst
+60500400	Feurige Trockenblatt-Kunst
+60500500	Flammende Trockenblatt-Kunst
+60500600	Blitzende Trockenblatt-Kunst
+60500700	Heilige Trockenblatt-Kunst
+60500800	Magische Trockenblatt-Kunst
+60500900	Kalte Trockenblatt-Kunst
+60501000	Giftige Trockenblatt-Kunst
+60501100	Blutige Trockenblatt-Kunst
+60501200	Okkulte Trockenblatt-Kunst
+60510000	Danes Beinarbeit
+60510100	Danes schwere Beinarbeit
+60510200	Danes solide Beinarbeit
+60510300	Danes wertige Beinarbeit
+60510400	Danes feurige Beinarbeit
+60510500	Danes flammende Beinarbeit
+60510600	Danes blitzende Beinarbeit
+60510700	Danes heilige Beinarbeit
+60510800	Danes magische Beinarbeit
+60510900	Danes eisige Beinarbeit
+60511000	Danes giftige Beinarbeit
+60511100	Danes blutige Beinarbeit
+60511200	Danes okkulte Beinarbeit
+61500000	Feuerfunken-Parfümflasche
+61510000	Frost-Parfümflasche
+61520000	Parfümflasche der rasenden Flamme
+61530000	Blitzparfümflasche
+61540000	Tödliche Giftparfümflasche
+62500000	Duellantenschild
+62500100	Schwerer Duellantenschild
+62500200	Solider Duellantenschild
+62500300	Wertiger Duellantenschild
+62500400	Feuriger Duellantenschild
+62500500	Flammender Duellantenschild
+62500600	Blitzender Duellantenschild
+62500700	Heiliger Duellantenschild
+62500800	Magischer Duellantenschild
+62500900	Eisiger Duellantenschild
+62501000	Giftiger Duellantenschild
+62501100	Blutiger Duellantenschild
+62501200	Okkulter Duellantenschild
+62510000	Carianischer Stoßschild
+62510100	Schwerer Carianischer Stoßschild
+62510200	Solider Carianischer Stoßschild
+62510300	Wertiger Carianischer Stoßschild
+62510400	Feuriger Carianischer Stoßschild
+62510500	Flammender Carianischer Stoßschild
+62510600	Blitzender Carianischer Stoßschild
+62510700	Heiliger Carianischer Stoßschild
+62510800	Magischer Carianischer Stoßschild
+62510900	Eisiger Carianischer Stoßschild
+62511000	Giftiger Carianischer Stoßschild
+62511100	Blutiger Carianischer Stoßschild
+62511200	Okkulter Carianischer Stoßschild
+63500000	Schmiedeschrift-Dolch
+63500100	Schwerer Schmiedeschrift-Dolch
+63500200	Solider Schmiedeschrift-Dolch
+63500300	Wertiger Schmiedeschrift-Dolch
+63500400	Feuriger Schmiedeschrift-Dolch
+63500500	Flammender Schmiedeschrift-Dolch
+63500600	Blitzender Schmiedeschrift-Dolch
+63500700	Heiliger Schmiedeschrift-Dolch
+63500800	Magischer Schmiedeschrift-Dolch
+63500900	Eisiger Schmiedeschrift-Dolch
+63501000	Giftiger Schmiedeschrift-Dolch
+63501100	Blutiger Schmiedeschrift-Dolch
+63501200	Okkulter Schmiedeschrift-Dolch
+64500000	Rückhandklinge
+64500100	Schwere Rückhandklinge
+64500200	Solide Rückhandklinge
+64500300	Wertige Rückhandklinge
+64500400	Feurige Rückhandklinge
+64500500	Flammende Rückhandklinge
+64500600	Blitzende Rückhandklinge
+64500700	Heilige Rückhandklinge
+64500800	Magische Rückhandklinge
+64500900	Eisige Rückhandklinge
+64501000	Giftige Rückhandklinge
+64501100	Blutige Rückhandklinge
+64501200	Okkulte Rückhandklinge
+64510000	Schmiedeschrift-Cirque
+64510100	Schweres Schmiedeschrift-Cirque
+64510200	Solides Schmiedeschrift-Cirque
+64510300	Wertiges Schmiedeschrift-Cirque
+64510400	Feuriges Schmiedeschrift-Cirque
+64510500	Flammendes Schmiedeschrift-Cirque
+64510600	Blitzendes Schmiedeschrift-Cirque
+64510700	Heiliges Schmiedeschrift-Cirque
+64510800	Magisches Schmiedeschrift-Cirque
+64510900	Eisiges Schmiedeschrift-Cirque
+64511000	Giftiges Schmiedeschrift-Cirque
+64511100	Blutiges Schmiedeschrift-Cirque
+64511200	Okkultes Schmiedeschrift-Cirque
+64520000	Schmiedeschrift-Cirque d. Fluchklinge
+66500000	Großkatana
+66500100	Schweres Großkatana
+66500200	Solides Großkatana
+66500300	Wertiges Großkatana
+66500400	Feuriges Großkatana
+66500500	Flammendes Großkatana
+66500600	Blitzendes Großkatana
+66500700	Heiliges Großkatana
+66500800	Magisches Großkatana
+66500900	Eisiges Großkatana
+66501000	Giftiges Großkatana
+66501100	Blutiges Großkatana
+66501200	Okkultes Großkatana
+66510000	Drachenjäger-Großkatana
+66520000	Rakshasas Großkatana
+67500000	Milady
+67500100	Schwere Milady
+67500200	Solide Milady
+67500300	Wertige Milady
+67500400	Feurige Milady
+67500500	Flammende Milady
+67500600	Blitzende Milady
+67500700	Heilige Milady
+67500800	Magische Milady
+67500900	Eisige Milady
+67501000	Giftige Milady
+67501100	Blutige Milady
+67501200	Okkulte Milady
+67510000	Ledas Schwert
+67520000	Rellanas Zwillingsklingen
+68500000	Bestienklaue
+68500100	Schwere Bestienklaue
+68500200	Solide Bestienklaue
+68500300	Wertige Bestienklaue
+68500400	Feurige Bestienklaue
+68500500	Flammende Bestienklaue
+68500600	Blitzende Bestienklaue
+68500700	Heilige Bestienklaue
+68500800	Magische Bestienklaue
+68500900	Eisige Bestienklaue
+68501000	Giftige Bestienklaue
+68501100	Blutige Bestienklaue
+68501200	Okkulte Bestienklaue
+68510000	Klaue des roten Bären

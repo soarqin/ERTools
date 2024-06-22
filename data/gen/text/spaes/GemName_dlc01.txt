@@ -1,0 +1,25 @@
+200000	C. G.: Torb. hojaseca
+200100	C. G.: Características del crisol (Alas)
+400000	C. G.: Embestida gravit. giratoria
+401000	C. G.: Est. palma
+402000	Ceniza de Guerra: Lanzamiento perforante
+403000	Ceniza de Guerra: Lanzamiento disperso
+404000	Ceniza de Guerra: Muro de chispas
+405000	Ceniza de Guerra: Chispas ondulantes
+406000	Ceniza de Guerra: Bestia iracunda
+407000	Ceniza de Guerra: Garras salvajes
+409000	Ceniza de Guerra: Punto ciego
+410000	Ceniza de Guerra: Tajo rápido
+411000	C. G.: Posición elevada
+412000	C. G.: Posición lateral
+413000	C. G.: Rayo titil.
+414000	C. G.: Ensartado llam.
+415000	C. G.: Garra de león salvaje
+416000	C. G.: Pisotón helado de bestia divina
+417000	C. G.: Lanza llameante
+418000	C. G.: Soberanía cariana
+419000	C. G.: Alarido de pesar
+422000	C. G.: Invocac. llama esp.
+505000	C. G.: Flor venenosa doble
+548000	C. G.: Caza dracónica de Igon
+800000	Ceniza de Guerra: Arremetida con escudo

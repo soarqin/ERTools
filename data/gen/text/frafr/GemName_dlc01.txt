@@ -1,0 +1,25 @@
+200000	Cendres de guerre : Tourbillon de Mortefeuille
+200100	Cendres de guerre : Aspects du Creuset : ailes
+400000	Cendres de guerre : Frappe gravitationnelle rotative
+401000	Cendres de guerre : Coup de paume
+402000	Cendres de guerre : Lancer perforant
+403000	Cendres de guerre : Lancer multiple
+404000	Cendres de guerre : Mur étincelant
+405000	Cendres de guerre : Déferlement étincelant
+406000	Cendres de guerre : Fureur bestiale
+407000	Cendres de guerre : Griffes sauvages
+409000	Cendres de guerre : Angle mort
+410000	Cendres de guerre : Taillade rapide
+411000	Cendres de guerre : Quinte
+412000	Cendres de guerre : Posture unilatérale
+413000	Cendres de guerre : Charge fulminante
+414000	Cendres de guerre : Embrochement ardent
+415000	Cendres de guerre : Griffe du lion sauvage
+416000	Cendres de guerre : Écrasement glacial divin
+417000	Cendres de guerre : Lance de feu
+418000	Cendres de guerre : Souveraineté de Caria
+419000	Cendres de guerre : Cri de désespoir
+422000	Cendres de guerre : Invocation de flammes spectrales
+505000	Cendres de guerre : Floraison toxique
+548000	Cendres de guerre : Traque du dragon d'Igon
+800000	Cendres de guerre : Frappe de bouclier

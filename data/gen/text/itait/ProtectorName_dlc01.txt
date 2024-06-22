@@ -1,0 +1,145 @@
+3000000	Cappello di Dane
+3000100	Veste di Fogliamorta
+3000200	Fasce di Fogliamorta
+3000300	Stivali di Fogliamorta
+3001100	Veste di Fogliamorta alterata
+3010000	Elmo di Gaius
+3010100	Corazza di Gaius
+3010200	Guanti d'arme di Gaius
+3010300	Schinieri di Gaius
+5000000	Elmo dei cavalieri cercatori di voto
+5000100	Corazza di Leda
+5000200	Guanti d'arme dei cavalieri cercatori di voto
+5000300	Schinieri dei cavalieri cercatori di voto
+5002100	Corazza dei cavalieri cercatori di voto
+5010000	Elmo di verderame
+5010100	Corazza di verderame
+5010200	Guanti d'arme di verderame
+5010300	Schinieri di verderame
+5020000	Pelliccia di Ralva
+5020100	Corazza di borchie di ferro
+5020200	Guanti d'arme di borchie di ferro
+5020300	Schinieri di borchie di ferro
+5021000	Elmo zanna
+5030000	Maschera di Thiollier
+5030100	Abito di Thiollier
+5030200	Guanti di Thiollier
+5030300	Pantaloni di Thiollier
+5031100	Abito di Thiollier alterato
+5060000	Cappello del prelato
+5060100	Veste del prelato
+5060200	Guanti del prelato
+5060300	Biancheria del prelato
+5062100	Veste delle Dita
+5070000	Maschera dei bruchi
+5070100	Veste con corda intrecciata
+5070200	Fasce intrecciate
+5070300	Brache sudicie
+5080000	Cappuccio da danzatrice
+5080100	Abito da danzatrice
+5080200	Bracciale da danzatrice
+5080300	Pantaloni da danzatrice
+5081100	Abito da danzatrice alterato
+5090000	Elmo della notte
+5090100	Corazza della notte
+5090200	Guanti d'arme della notte
+5090300	Schinieri della notte
+5100000	Elmo di Igon
+5100100	Corazza di Igon
+5100200	Guanti d'arme di Igon
+5100300	Brache di Igon
+5101000	Elmo di Igon alterato
+5101100	Corazza di Igon alterata
+5110000	Maschera del saggio
+5110100	Tenuta di Ansbach
+5110200	Polsini di Ansbach
+5110300	Stivali di Ansbach
+5111100	Tenuta di Ansbach alterata
+5120000	Elmo di Freyja
+5120100	Corazza di Freyja
+5120200	Guanti d'arme di Freyja
+5120300	Schinieri di Freyja
+5121100	Corazza di Freyja alterata
+5130000	Elmo della solitudine
+5130100	Corazza della solitudine
+5130200	Guanti d'arme della solitudine
+5130300	Schinieri della solitudine
+5131100	Corazza della solitudine alterata
+5140000	Elmo da soldato di Messmer
+5140100	Corazza da soldato di Messmer
+5140200	Guanti d'arme da soldato di Messmer
+5140300	Schinieri da soldato di Messmer
+5141100	Corazza da soldato di Messmer alterata
+5150000	Elmo da cavaliere nero
+5150100	Corazza da cavaliere nero
+5150200	Guanti d'arme da cavaliere nero
+5150300	Schinieri da cavaliere nero
+5160000	Elmo di Rakshasa
+5160100	Corazza di Rakshasa
+5160200	Guanti d'arme di Rakshasa
+5160300	Schinieri di Rakshasa
+5180000	Elmo da cavaliere del fuoco
+5180100	Corazza da cavaliere del fuoco
+5180200	Guanti d'arme da cavaliere del fuoco
+5180300	Schinieri da cavaliere del fuoco
+5181100	Corazza da cavaliere del fuoco alterata
+5182000	Elmo con maschera della morte
+5183000	Elmo con serpente alato
+5184000	Cappuccio di Salza
+5190000	Fascia di cuoio
+5190100	Tenuta dei valorosi
+5190200	Fasce di cuoio
+5190300	Gambali di cuoio
+5191000	Corona di cuoio
+5191100	Tenuta degli altopiani
+5200000	Elmo da cavaliere della morte
+5200100	Corazza da cavaliere della morte
+5200200	Guanti d'arme da cavaliere della morte
+5200300	Schinieri da cavaliere della morte
+5210000	Maschera da Lama di sventura
+5210100	Brache da asceta
+5210200	Polsini da asceta
+5210300	Cavigliere da asceta
+5220000	Elmo di Messmer
+5220100	Corazza di Messmer
+5220200	Guanti d'arme di Messmer
+5220300	Schinieri di Messmer
+5221000	Elmo di Messmer alterato
+5230000	Elmo dell'uccello becchino
+5230100	Corazza dell'uccello becchino pennanera
+5230200	Bracciali dell'uccello becchino
+5230300	Cavigliere dell'uccello becchino
+5231100	Corazza dell'uccello becchino
+5240000	Elmo da soldato comune
+5240100	Corazza di stoffa da soldato comune
+5240200	Guanti d'arme da soldato comune
+5240300	Schinieri da soldato comune
+5250000	Elmo da guerriero con corna
+5250100	Corazza da guerriero con corna
+5250200	Guanti d'arme da guerriero con corna
+5250300	Schinieri da guerriero con corna
+5252000	Elmo della belva divina
+5252100	Corazza da guerriero della belva divina
+5253000	Elmo dell'uccello divino
+5253100	Corazza da guerriero dell'uccello divino
+5253200	Guanti d'arme da guerriero dell'uccello divino
+5253300	Schinieri da guerriero dell'uccello divino
+5260000	Elmo di Rellana
+5260100	Corazza di Rellana
+5260200	Guanti di Rellana
+5260300	Schinieri di Rellana
+5270000	Elmo del giovane leone
+5270100	Corazza del giovane leone
+5270200	Guanti d'arme del giovane leone
+5270300	Schinieri del giovane leone
+5271100	Corazza del giovane leone alterata
+5272000	Cerchietto di luce
+5280000	Elmo da miliziano ombra
+5280100	Corazza da miliziano ombra
+5280200	Guanti d'arme da miliziano ombra
+5280300	Schinieri da miliziano ombra
+5290000	Testa di belva divina
+5300000	Bocciolo di Santa Trina
+5310000	Elmo martello del Crogiolo
+5320000	Vaso gigante
+5330000	Testa di demone leonino

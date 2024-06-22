@@ -35,6 +35,7 @@ end
 
 local last_count = 0
 local last_region = 0
+local last_text = ''
 local last_running = false
 
 local function calc_flag_offset_and_bit(flag_id)
@@ -88,7 +89,7 @@ local function calculate_all_flag_offsets()
     for _, v2 in pairs(v) do
       v2.offset, v2.bit = calc_flag_offset_and_bit(v2.flag_id)
       if v2.bit == nil then
-        print(string.format("Boss flag cannot be found: %s %d", v2.boss, v2.flag_id))
+        print(string.format('Boss flag cannot be found: %s %d', v2.boss, v2.flag_id))
       end
     end
   end
@@ -132,6 +133,7 @@ local function update()
   end
   update_memory_address()
   local count = 0
+  local outstr = ''
   if only_rememberance then
     cbosses = {}
     for i, v in ipairs(rememberance_bosses) do
@@ -144,17 +146,25 @@ local function update()
     end
     if count == last_count then return end
     last_count = count
-    f = io.open(config.output_folder .. 'bosses.txt', 'w')
-    if f == nil then return end
-    f:write(string.format('追忆Boss: %d/%d\n', count, rememberance_boss_count))
+    outstr = outstr .. string.format('追忆Boss: %d/%d\n', count, rememberance_boss_count)
     for _, v in pairs(cbosses) do
-      f:write(string.format('%s %s\n', v[1], v[2]))
+      outstr = outstr .. string.format('%s %s\n', v[1], v[2])
     end
   else
+    local area = get_map_area()
+    if area == 0 then return end
     local rcount = 0
     local region_bosses = {}
     local other_bosses = {}
-    local r = regions[get_map_area() // 1000]
+    local r
+    if area < 100000 then
+      r = regions[area // 10]
+    elseif area < 1000000 then
+      r = regions[area // 100]
+    else
+      r = regions[area // 1000]
+    end
+
     local count_left
     if r then
       count_left = max_display_count - #bosses[r]
@@ -183,18 +193,14 @@ local function update()
     if count == last_count and r == last_region then return end
     last_count = count
     last_region = r
-    f = io.open(config.output_folder .. 'bosses.txt', 'w')
-    if f == nil then
-      return
-    end
-    f:write(string.format('全Boss: %d/%d\n', count, boss_count))
+    outstr = outstr .. string.format('全Boss: %d/%d\n', count, boss_count)
     if r ~= nil then
-      f:write(string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r]))
+      outstr = outstr .. string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r])
       for _, v in pairs(region_bosses) do
         if #v[3] > 0 then
-          f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
+          outstr = outstr .. string.format('%s %s - %s\n', v[1], v[2], v[3])
         else
-          f:write(string.format('%s %s\n', v[1], v[2]))
+          outstr = outstr .. string.format('%s %s\n', v[1], v[2])
         end
       end
     end
@@ -202,15 +208,20 @@ local function update()
     for _, v in pairs(other_bosses) do
       if last_region ~= v[4] then
         last_region = v[4]
-        f:write(string.format('%s:\n', region_name[last_region]))
+        outstr = outstr .. string.format('%s:\n', region_name[last_region])
       end
       if #v[3] > 0 then
-        f:write(string.format('%s %s - %s\n', v[1], v[2], v[3]))
+        outstr = outstr .. string.format('%s %s - %s\n', v[1], v[2], v[3])
       else
-        f:write(string.format('%s %s\n', v[1], v[2]))
+        outstr = outstr .. string.format('%s %s\n', v[1], v[2])
       end
     end
   end
+  if outstr == last_text then return end
+  last_text = outstr
+  f = io.open(config.output_folder .. 'bosses.txt', 'w')
+  if f == nil then return end
+  f:write(outstr)
   f:close()
 end
 

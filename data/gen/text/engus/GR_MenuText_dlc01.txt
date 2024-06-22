@@ -1,0 +1,76 @@
+10410	Scadutree Blessing
+10411	Revered Spirit Ash Blessing
+30205	Strength of the Scadutree Blessing.\nAffects only those within the realm of shadow\nwho have received the Scadutree Blessing.
+30206	Strength of the Revered Spirit Ash Blessing.\nEnhances summoned spirits and spectral steed, but only while within the bounds of the realm of shadow.
+40382	Keyboard Only
+40383	Keyboard and Mouse
+40524	Recent Items
+60180	Hand-to-Hand
+60181	Perfume Bottle
+60182	Thrusting Shield
+60183	Throwing Blade
+60184	Backhand Blade
+60185	Light Greatsword
+60186	Great Katana
+60187	Beast Claw
+63051	Usable on hand-to-hand weapons
+63052	Usable on perfume bottles
+63053	Usable on thrusting shields
+63054	Usable on throwing blades
+63055	Usable on backhand blades
+63056	Usable on light greatswords
+63057	Usable on great katana
+63058	Usable on beast claws
+63059	Usable on armaments capable of thrusting (claws and backhand blades excepted)
+63060	Usable on large and colossal swords
+63061	Usable on swords and spears (small armaments, twinblades, and backhand blades excepted)
+80020	Hefty Cracked Pot
+110600	Display
+110601	Mark New Items
+110602	
+110603	Show Recent Items Tab
+110700	Sound
+111024	Map Menu Cursor Movement
+111025	Target Changing Sensitivity
+225001	Dragon Communion: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Offerings
+241337	Scadu Altus
+241338	Cerulean Coast
+241339	Foot of the Jagged Peak
+241340	Jagged Peak
+241341	Charo's Hidden Grave
+241342	Ancient Ruins of Rauh
+241343	Scaduview
+241344	Abyssal Woods
+241345	Belurat, Tower Settlement
+241346	Enir-Ilim
+241347	Shadow Keep
+241348	Shadow Keep, Church District
+241349	Specimen Storehouse
+241350	Stone Coffin Fissure
+241351	Midra's Manse
+241352	Castle Ensis
+241353	Gravesite Plain
+241354	Rauh Base
+241417	Gravesite Plain
+241418	Scadu Altus
+241419	Land of the Tower
+241420	Shadow Keep
+241500	Map Functions Menu
+241501	Multiplayer Status Display
+241502	Summoning Pool List
+241503	View Controls
+241504	Menu Explanation
+241600	Summoning Pool List
+280060	Menu
+280600	Map
+331340	HEART STOLEN

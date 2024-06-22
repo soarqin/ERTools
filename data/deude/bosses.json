@@ -395,7 +395,7 @@
       },
       {
         "boss": "Wachhund des Erdenbaumbegräbnisses (Schwert) & Wachhund des Erdenbaumbegräbnisses (Zepter)",
-        "place": "Niedere Erdenbaumkatakomben",
+        "place": "Niederer Erdenbaumkatakomben",
         "flag_id": 30140800
       },
       {
@@ -1084,6 +1084,319 @@
         "place": "Gespaltene Marika",
         "flag_id": 19000800,
         "rememberance": 15
+      }
+    ]
+  },
+  {
+    "region_name": "Grabfeld-Ebene",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Geisterflammendrache",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Ritter des Einsamen Kerker",
+        "place": "Westliches namenloses Mausoleum",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Blutunhold-Anführer",
+        "place": "Höhle an der Flussmündung",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Kläger",
+        "place": "Kerker des Klägers",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Halbmenschen-Schwertmeister Onze",
+        "place": "Kerker von Belurat",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Göttliche Bestie - Tanzender Löwe",
+        "place": "Belurat, Turmsiedlung",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, Zwillings-Mondritterin",
+        "place": "Schloss Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Scadu Altus",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Geisterflammendrache",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva, der große rote Bär",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea, der große rote Bär",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Trockenblatt Dane",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Schwarzer Ritter Edredd",
+        "place": "Festung des Tadels",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Schwarzer Ritter Garrew",
+        "place": "Nebelriss-Festung",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Roter Bär",
+        "place": "Nördliches namenloses Mausoleum",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Östliches namenloses Mausoleum",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, Mutter der Finger",
+        "place": "Kathedrale von Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Fürst Ymir, Mutter der Finger",
+        "place": "Kathedrale von Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Todesritter",
+        "place": "Nebelriss-Katakomben",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Todesritter",
+        "place": "Katakomben am Skorpionsfluss",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Fluchklingen Labirith",
+        "place": "Kerker von Bonny",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Goldenes Nilpferd",
+        "place": "Schattenbergfried",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer der Pfähler & Böse Schlange Messmer",
+        "place": "Schattenbergfried",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Uralte Ruinen von Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, Heilige der Knospe",
+        "place": "Kirche der Knospe",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Himmelblaues Ufer",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Geisterflammendrache",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Tänzerin von Ranah",
+        "place": "Südliches namenloses Mausoleum",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Fäulnisritter",
+        "place": "Riss im Steinsarg",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Charos verstecktes Grab",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Todesritenvogel",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Halbmenschen-Königin Marigga",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Klingengipfel",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Klingengipfel-Drachling",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Klingengipfel-Drachling",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Uralter Drachenmensch",
+        "place": "Drachengrube",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Uralter Drache Senessax",
+        "place": "Berghang des Klingengipfels",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle der Schreckliche",
+        "place": "Spitze des Klingengipfels",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Aussicht von Scadu",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Baumwächter",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Baumwächter",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Sternenfallbestie",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Kommandant Gaius",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Avatar des Scadubaums",
+        "place": "Fuß des Scadubaums",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Abgrundwald",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, Ältester Inquisitor",
+        "place": "Dunkellichtkatakomben",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, Herr der Rasenden Flamme",
+        "place": "Midras Pfarrhaus",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Radahn, versprochener Gemahl & Radahn, Miquellas Gemahl",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
       }
     ]
   }

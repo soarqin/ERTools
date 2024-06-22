@@ -1,0 +1,145 @@
+3000000	Kapelusz Dane’a
+3000100	Szata Suchego Liścia
+3000200	Owijacze Suchego Liścia
+3000300	Muszkieterki Suchego Liścia
+3001100	Szata Suchego Liścia (przerobiona)
+3010000	Hełm Gajusza
+3010100	Zbroja Gajusza
+3010200	Rękawice Gajusza
+3010300	Nagolenniki Gajusza
+5000000	Hełm rycerza Przysięgi
+5000100	Zbroja Ledy
+5000200	Rękawice rycerza Przysięgi
+5000300	Nagolenniki rycerza Przysięgi
+5002100	Zbroja rycerza Przysięgi
+5010000	Hełm z werdygrisu
+5010100	Zbroja z werdygrisu
+5010200	Rękawice z werdygrisu
+5010300	Nagolenniki z werdygrisu
+5020000	Futro Ralvy
+5020100	Zbroja żelaznego nitu
+5020200	Rękawice żelaznego nitu
+5020300	Nagolenniki żelaznego nitu
+5021000	Hełm kła
+5030000	Maska Thiolliera
+5030100	Strój Thiolliera
+5030200	Rękawice Thiolliera
+5030300	Spodnie Thiolliera
+5031100	Strój Thiolliera (przerobiony)
+5060000	Kapelusz najwyższego kapłana
+5060100	Szata najwyższego kapłana
+5060200	Rękawice najwyższego kapłana
+5060300	Bielizna najwyższego kapłana
+5062100	Szata palca
+5070000	Maska gąsienic
+5070100	Szata z plecionym sznurem
+5070200	Plecione owijacze
+5070300	Brudna przepaska
+5080000	Kaptur tancerki
+5080100	Suknia tancerki
+5080200	Karwasz tancerki
+5080300	Spodnie tancerki
+5081100	Suknia tancerki (przerobiona)
+5090000	Hełm nocy
+5090100	Zbroja nocy
+5090200	Rękawice nocy
+5090300	Nagolenniki nocy
+5100000	Hełm Igona
+5100100	Zbroja Igona
+5100200	Rękawice Igona
+5100300	Przepaska Igona
+5101000	Hełm Igona (przerobiony)
+5101100	Zbroja Igona (przerobiona)
+5110000	Maska mędrca
+5110100	Strój Ansbacha
+5110200	Owijki Ansbacha
+5110300	Buty Ansbacha
+5111100	Strój Ansbacha (przerobiony)
+5120000	Hełm Freyi
+5120100	Zbroja Freyi
+5120200	Rękawice Freyi
+5120300	Nagolenniki Freyi
+5121100	Zbroja Freyi (przerobiona)
+5130000	Hełm samotności
+5130100	Zbroja samotności
+5130200	Rękawice samotności
+5130300	Nagolenniki samotności
+5131100	Zbroja samotności (przerobiona)
+5140000	Hełm żołnierza Messmera
+5140100	Zbroja żołnierza Messmera
+5140200	Rękawice żołnierza Messmera
+5140300	Nagolenniki żołnierza Messmera
+5141100	Zbroja żołnierza Messmera (przerobiona)
+5150000	Hełm Czarnego Rycerza
+5150100	Zbroja Czarnego Rycerza
+5150200	Rękawice Czarnego Rycerza
+5150300	Nagolenniki Czarnego Rycerza
+5160000	Hełm Rakshasy
+5160100	Zbroja Rakshasy
+5160200	Rękawice Rakshasy
+5160300	Nagolenniki Rakshasy
+5180000	Hełm rycerza ognia
+5180100	Zbroja rycerza ognia
+5180200	Rękawice rycerza ognia
+5180300	Nagolenniki rycerza ognia
+5181100	Zbroja rycerza ognia (przerobiona)
+5182000	Hełm maski śmierci
+5183000	Hełm skrzydlatego węża
+5184000	Kaptur Salzy
+5190000	Skórzana opaska
+5190100	Chwalebny strój
+5190200	Skórzane owijki
+5190300	Skórzane owijacze
+5191000	Skórzany hełm
+5191100	Strój wyżynny
+5200000	Hełm rycerza śmierci
+5200100	Zbroja rycerza śmierci
+5200200	Rękawice rycerza śmierci
+5200300	Nagolenniki rycerza śmierci
+5210000	Maska przeklętego ostrza
+5210100	Przepaska ascety
+5210200	Ochraniacze na nadgarstki ascety
+5210300	Ochraniacze na kostki ascety
+5220000	Hełm Messmera
+5220100	Zbroja Messmera
+5220200	Rękawice Messmera
+5220300	Nagolenniki Messmera
+5221000	Hełm Messmera (przerobiony)
+5230000	Hełm cmentarnego ptaka
+5230100	Zbroja cmentarnego ptaka czarnego pióra
+5230200	Bransolety cmentarnego ptaka
+5230300	Bransolety na kostkę cmentarnego ptaka
+5231100	Zbroja cmentarnego ptaka
+5240000	Hełm zwykłego żołnierza
+5240100	Wyściełana zbroja zwykłego żołnierza
+5240200	Rękawice zwykłego żołnierza
+5240300	Nagolenniki zwykłego żołnierza
+5250000	Hełm rogatego wojownika
+5250100	Zbroja rogatego wojownika
+5250200	Rękawice rogatego wojownika
+5250300	Nagolenniki rogatego wojownika
+5252000	Hełm boskiej bestii
+5252100	Zbroja wojownika boskiej bestii
+5253000	Hełm boskiego ptaka
+5253100	Zbroja wojownika boskiego ptaka
+5253200	Rękawice wojownika boskiego ptaka
+5253300	Nagolenniki wojownika boskiego ptaka
+5260000	Hełm Rellany
+5260100	Zbroja Rellany
+5260200	Rękawice Rellany
+5260300	Nagolenniki Rellany
+5270000	Hełm lwiątka
+5270100	Zbroja lwiątka
+5270200	Rękawice lwiątka
+5270300	Nagolenniki lwiątka
+5271100	Zbroja lwiątka (przerobiona)
+5272000	Diadem światła
+5280000	Spiczasty kaptur mrocza
+5280100	Zbroja mrocza
+5280200	Rękawice mrocza
+5280300	Nagolenniki mrocza
+5290000	Głowa boskiej bestii
+5300000	Kwiat św. Triny
+5310000	Młotkowy hełm Tygla
+5320000	Wielki słój
+5330000	Głowa chochlika (lew)

@@ -1,0 +1,76 @@
+10410	Béné. de l'Arbre-Occulte
+10411	Béné. de la cendre spirituelle
+30205	Puissance de la bénédiction de l'Arbre-Occulte.\nAffecte uniquement les résidents du Royaume des ombres\nayant reçu la bénédiction de l'Arbre-Occulte.
+30206	Puissance de la bénédiction de la cendre spirituelle vénérée.\nAméliore les esprits invoqués et le destrier spectral, mais seulement au sein du Royaume des ombres.
+40382	Clavier uniquement
+40383	Clavier et souris
+40524	Éléments récents
+60180	Combat rapproché
+60181	Flacon de parfum
+60182	Bouclier d'estoc
+60183	Lame de lancer
+60184	Lame-revers
+60185	Espadon léger
+60186	Grand katana
+60187	Griffe bestiale
+63051	Utilisable sur les armes de combat rapproché.
+63052	Utilisable sur les flacons de parfum.
+63053	Utilisable sur les boucliers d'estoc.
+63054	Utilisable sur les lames de lancer.
+63055	Utilisable sur les lames-revers
+63056	Utilisable sur les espadons légers.
+63057	Utilisable sur les grands katanas.
+63058	Utilisable sur les griffes bestiales.
+63059	Utilisable sur les armes capables d'estocades (sauf les griffes et les lames-revers).
+63060	Utilisable sur les épées de taille grande et colossale.
+63061	Utilisable sur les épées et les lances (sauf armes de petite taille, lames doubles et lames-revers).
+80020	Grand pot fissuré
+110600	Affichage
+110601	Indiquer nouveaux éléments
+110602	
+110603	Affic. onglet Éléments récents
+110700	Son
+111024	Déplac. curseur sur menu Carte
+111025	Sensi. changement de cible
+225001	Communion draconique de Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Offrandes
+241337	Altus Occulte
+241338	Côte céruléenne
+241339	Pied du Pic déchiqueté
+241340	Pic déchiqueté
+241341	Tombeau secret de Charo
+241342	Ruines antiques de Rauh
+241343	Panorama occulte
+241344	Bois abyssaux
+241345	Belurat, colonie de la tour
+241346	Enir-Ilim
+241347	Château noir
+241348	Château noir, quartier religieux
+241349	Entrepôt à semences
+241350	Fissure des cercueils de pierre
+241351	Presbytère de Midra
+241352	Château d'Ensis
+241353	Plaine sépulcrale
+241354	Base de Rauh
+241417	Plaine sépulcrale
+241418	Altus Occulte
+241419	Terres de la tour
+241420	Château noir
+241500	Fonctions du menu Carte
+241501	Affichage statut multijoueur
+241502	Liste recueils d'invocations
+241503	Afficher les commandes
+241504	Menu Explications
+241600	Liste recueils d'invocations
+280060	Menu
+280600	Carte
+331340	CŒUR DÉROBÉ

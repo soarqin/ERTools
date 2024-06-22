@@ -1,0 +1,503 @@
+1500000	Daga izquierda
+1500100	Daga izquierda pesada
+1500200	Daga izquierda ligera
+1500300	Daga izquierda de calidad
+1500400	Daga izquierda ígnea
+1500500	Daga izquierda llameante
+1500600	Daga izquierda fulgurante
+1500700	Daga izquierda sagrada
+1500800	Daga izquierda mágica
+1500900	Daga izquierda fría
+1501000	Daga izquierda venenosa
+1501100	Daga izquierda sangrienta
+1501200	Daga izquierda oculta
+1510000	Daga de Caballero de Fuego
+1510100	Daga de Caballero de Fuego pesada
+1510200	Daga de Caballero de Fuego ligera
+1510300	Daga de Caballero de Fuego de calidad
+1510400	Daga de Caballero de Fuego ígnea
+1510500	Daga de Caballero de Fuego llameante
+1510600	Daga de Caballero de Fuego fulgurante
+1510700	Daga de Caballero de Fuego sagrada
+1510800	Daga de Caballero de Fuego mágica
+1510900	Daga de Caballero de Fuego fría
+1511000	Daga de Caballero de Fuego venenosa
+1511100	Daga de Caballero de Fuego sangrienta
+1511200	Daga de Caballero de Fuego oculta
+2510000	Espada morada de Santa Trina
+2520000	Espada de alineación estelar
+2530000	Espada de hechicería cariana
+2540000	Espada en funda de piedra
+2550000	Espada de la luz
+2560000	Espada de la oscuridad
+3500000	Lanza espada
+3500100	Lanza espada pesada
+3500200	Lanza espada ligera
+3500300	Lanza espada de calidad
+3500400	Lanza espada de fuego
+3500500	Lanza espada llameante
+3500600	Lanza espada fulgurante
+3500700	Lanza espada sagrada
+3500800	Lanza espada mágica
+3500900	Lanza espada fría
+3501000	Lanza espada venenosa
+3501100	Lanza espada sangrienta
+3501200	Lanza espada oculta
+3510000	Espadón de Maldición
+3520000	Espadón de lagarto
+3520100	Espadón de lagarto pesado
+3520200	Espadón de lagarto ligero
+3520300	Espadón de lagarto de calidad
+3520400	Espadón de lagarto ígneo
+3520500	Espadón de lagarto llameante
+3520600	Espadón de lagarto fulgurante
+3520700	Espadón de lagarto sagrado
+3520800	Espadón de lagarto mágico
+3520900	Espadón de lagarto frío
+3521000	Espadón de lagarto venenoso
+3521100	Espadón de lagarto sangriento
+3521200	Espadón de lagarto oculto
+3550000	Espadón de la soledad
+4500000	Espadón de meteorito ancestral
+4520000	Espadón de Caballero de Fuego
+4520100	Espadón de Caballero de Fuego pesado
+4520200	Espadón de Caballero de Fuego ligero
+4520300	Espadón de Caballero de Fuego de cal.
+4520400	Espadón de Caballero de Fuego ígneo
+4520500	Espadón de Caballero de Fuego llam.
+4520600	Espadón de Caballero de Fuego fulg.
+4520700	Espadón de Caballero de Fuego sagrado
+4520800	Espadón de Caballero de Fuego mágico
+4520900	Espadón de Caballero de Fuego frío
+4521000	Espadón de Caballero de Fuego venen.
+4521100	Espadón de Caballero de Fuego sangr.
+4521200	Espadón de Caballero de Fuego oculto
+4530000	Espadón de Radahn (señor)
+4540000	Espada caballera de Moonrithyll
+4550000	Espadón de Radahn (luz)
+6500000	Espadón de Queelign
+6500100	Espadón de Queelign pesado
+6500200	Espadón de Queelign ligero
+6500300	Espadón de Queelign de calidad
+6500400	Espadón de Queelign ígneo
+6500500	Espadón de Queelign llameante
+6500600	Espadón de Queelign fulgurante
+6500700	Espadón de Queelign sagrado
+6500800	Espadón de Queelign mágico
+6500900	Espadón de Queelign frío
+6501000	Espadón de Queelign venenoso
+6501100	Espadón de Queelign sangriento
+6501200	Espadón de Queelign oculto
+7500000	Espada espiritual
+7510000	Falx
+7520000	Filo danzante de Ranah
+7530000	Espada de guerrero astado
+8500000	Machete de putrefacción
+8510000	Espadón de Freyja
+8510100	Espadón de Freyja pesado
+8510200	Espadón de Freyja ligero
+8510300	Espadón de Freyja de calidad
+8510400	Espadón de Freyja ígneo
+8510500	Espadón de Freyja llameante
+8510600	Espadón de Freyja fulgurante
+8510700	Espadón de Freyja sagrado
+8510800	Espadón de Freyja mágico
+8510900	Espadón de Freyja frío
+8511000	Espadón de Freyja venenoso
+8511100	Espadón de Freyja sangriento
+8511200	Espadón de Freyja oculto
+8520000	Espadón de guerrero astado
+9500000	Espada de la Noche
+10500000	Euporia
+10510000	Hoja doble de acero negro
+10510100	Hoja doble de acero negro pesada
+10510200	Hoja doble de acero negro ligera
+10510300	Hoja doble de acero negro de calidad
+10510400	Hoja doble de acero negro ígnea
+10510500	Hoja doble de acero negro llameante
+10510600	Hoja doble de acero negro fulgurante
+10510700	Hoja doble de acero negro sagrada
+10510800	Hoja doble de acero negro mágica
+10510900	Hoja doble de acero negro fría
+10511000	Hoja doble de acero negro venenosa
+10511100	Hoja doble de acero negro sangrienta
+10511200	Hoja doble de acero negro oculta
+11500000	Maza de flor pétrea
+12500000	Martillo de letra herrérica
+12500100	Martillo de letra herrérica pesado
+12500200	Martillo de letra herrérica ligero
+12500300	Martillo de letra herrérica de calidad
+12500400	Martillo de letra herrérica ígneo
+12500500	Martillo de letra herrérica llameante
+12500600	Martillo de letra herrérica fulgurante
+12500700	Martillo de letra herrérica sagrado
+12500800	Martillo de letra herrérica mágico
+12500900	Martillo de letra herrérica frío
+12501000	Martillo de letra herrérica venenoso
+12501100	Martillo de letra herrérica sangriento
+12501200	Martillo de letra herrérica oculto
+12510000	Martillo de yunque
+12520000	Martillo de acero negro
+12520100	Martillo de acero negro pesado
+12520200	Martillo de acero negro ligero
+12520300	Martillo de acero negro de calidad
+12520400	Martillo de acero negro ígneo
+12520500	Martillo de acero negro llameante
+12520600	Martillo de acero negro fulgurante
+12520700	Martillo de acero negro sagrado
+12520800	Martillo de acero negro mágico
+12520900	Martillo de acero negro frío
+12521000	Martillo de acero negro venenoso
+12521100	Martillo de acero negro sangriento
+12521200	Martillo de acero negro oculto
+12530000	Brazo de sanguinemigo
+12530100	Brazo de sanguinemigo pesado
+12530200	Brazo de sanguinemigo ligero
+12530300	Brazo de sanguinemigo de calidad
+12530400	Brazo de sanguinemigo ígneo
+12530500	Brazo de sanguinemigo llameante
+12530600	Brazo de sanguinemigo fulgurante
+12530700	Brazo de sanguinemigo sagrado
+12530800	Brazo de sanguinemigo mágico
+12530900	Brazo de sanguinemigo frío
+12531000	Brazo de sanguinemigo venenoso
+12531100	Brazo de sanguinemigo sangriento
+12531200	Brazo de sanguinemigo oculto
+13500000	Mayal de serpiente
+14500000	Hacha de letra herrérica
+14500100	Hacha de letra herrérica pesada
+14500200	Hacha de letra herrérica ligera
+14500300	Hacha de letra herrérica de calidad
+14500400	Hacha de letra herrérica ígnea
+14500500	Hacha de letra herrérica llameante
+14500600	Hacha de letra herrérica fulgurante
+14500700	Hacha de letra herrérica sagrada
+14500800	Hacha de letra herrérica mágica
+14500900	Hacha de letra herrérica fría
+14501000	Hacha de letra herrérica venenosa
+14501100	Hacha de letra herrérica sangrienta
+14501200	Hacha de letra herrérica oculta
+14510000	Hachas gem. del Caballero de la Muerte
+14520000	Hacha de soldado de Messmer
+14520100	Hacha de soldado de Messmer pesada
+14520200	Hacha de soldado de Messmer ligera
+14520300	Hacha de soldado de Messmer de cal.
+14520400	Hacha de soldado de Messmer ígnea
+14520500	Hacha de soldado de Messmer llam.
+14520600	Hacha de soldado de Messmer fulg.
+14520700	Hacha de soldado de Messmer sagrada
+14520800	Hacha de soldado de Messmer mágica
+14520900	Hacha de soldado de Messmer fría
+14521000	Hacha de soldado de Messmer venen.
+14521100	Hacha de soldado de Messmer sangr.
+14521200	Hacha de soldado de Messmer oculta
+14540000	Destral de lengua bífida
+15500000	Hacha larga del Caballero de la Muerte
+15510000	Cuchillo de carnicero de Bonny
+16500000	Lanza de letra herrérica
+16500100	Lanza de letra herrérica pesada
+16500200	Lanza de letra herrérica ligera
+16500300	Lanza de letra herrérica de calidad
+16500400	Lanza de letra herrérica ígnea
+16500500	Lanza de letra herrérica llameante
+16500600	Lanza de letra herrérica fulgurante
+16500700	Lanza de letra herrérica sagrada
+16500800	Lanza de letra herrérica mágica
+16500900	Lanza de letra herrérica fría
+16501000	Lanza de letra herrérica venenosa
+16501100	Lanza de letra herrérica sangrienta
+16501200	Lanza de letra herrérica oculta
+16520000	Lanza veloz
+16520100	Lanza veloz pesada
+16520200	Lanza veloz ligera
+16520300	Lanza veloz de calidad
+16520400	Lanza veloz ígnea
+16520500	Lanza veloz llameante
+16520600	Lanza veloz fulgurante
+16520700	Lanza veloz sagrada
+16520800	Lanza veloz mágica
+16520900	Lanza veloz fría
+16521000	Lanza veloz venenosa
+16521100	Lanza veloz sangrienta
+16521200	Lanza veloz oculta
+16540000	Tridente de sanguinemigo
+16540100	Tridente de sanguinemigo pesado
+16540200	Tridente de sanguinemigo ligero
+16540300	Tridente de sanguinemigo de calidad
+16540400	Tridente de sanguinemigo ígneo
+16540500	Tridente de sanguinemigo llameante
+16540600	Tridente de sanguinemigo fulgurante
+16540700	Tridente de sanguinemigo sagrado
+16540800	Tridente de sanguinemigo mágico
+16540900	Tridente de sanguinemigo frío
+16541000	Tridente de sanguinemigo venenoso
+16541100	Tridente de sanguinemigo sangriento
+16541200	Tridente de sanguinemigo oculto
+16550000	Lanza de sanguinemigo sagrada
+17500000	Lanza del Empalador
+17510000	Lanza de soldado de Messmer
+17510100	Lanza de soldado de Messmer pesada
+17510200	Lanza de soldado de Messmer ligera
+17510300	Lanza de soldado de Messmer de calidad
+17510400	Lanza de soldado de Messmer ígnea
+17510500	Lanza de soldado de Messmer llameante
+17510600	Lanza de soldado de Messmer fulgurante
+17510700	Lanza de soldado de Messmer sagrada
+17510800	Lanza de soldado de Messmer mágica
+17510900	Lanza de soldado de Messmer fría
+17511000	Lanza de soldado de Messmer venenosa
+17511100	Lanza de soldado de Messmer sangrienta
+17511200	Lanza de soldado de Messmer oculta
+17520000	Lanza bastón con pinchos
+18500000	Guja espiritual
+18510000	Hoja enastada del Brote
+19500000	Guadaña de obsidiana
+20500000	Látigo de diente
+21500000	Aguja oculta de Thiollier
+21510000	Dandpatta
+21510100	Dandpatta pesada
+21510200	Dandpatta ligera
+21510300	Dandpatta de calidad
+21510400	Dandpatta ígnea
+21510500	Dandpatta llameante
+21510600	Dandpatta fulgurante
+21510700	Dandpatta sagrada
+21510800	Dandpatta mágica
+21510900	Dandpatta fría
+21511000	Dandpatta venenosa
+21511100	Dandpatta sangrienta
+21511200	Dandpatta oculta
+21520000	Mano envenenada
+21530000	Mano enloquecida
+21540000	Puño de gólem
+21540100	Puño de gólem pesado
+21540200	Puño de gólem ligero
+21540300	Puño de gólem de calidad
+21540400	Puño de gólem ígneo
+21540500	Puño de gólem llameante
+21540600	Puño de gólem fulgurante
+21540700	Puño de gólem sagrado
+21540800	Puño de gólem mágico
+21540900	Puño de gólem frío
+21541000	Puño de gólem venenoso
+21541100	Puño de gólem sangriento
+21541200	Puño de gólem oculto
+21550000	Escudo de la noche
+22500000	Garras de la noche
+23500000	Martillo de Devonia
+23510000	Florecer de girasol sombrío
+23520000	Dedo observador
+24500000	Antorcha de Nanaya
+24510000	Rostro de lamento
+30510000	Escudo de letra herrérica
+31500000	Escudo de soldado de Messmer
+31500100	Escudo de soldado de Messmer pesado
+31500200	Escudo de soldado de Messmer ligero
+31500300	Escudo de soldado de Messmer de cal.
+31500400	Escudo de soldado de Messmer ígneo
+31500500	Escudo de soldado de Messmer llam.
+31500600	Escudo de soldado de Messmer fulg.
+31500700	Escudo de soldado de Messmer sagrado
+31500800	Escudo de soldado de Messmer mágico
+31500900	Escudo de soldado de Messmer frío
+31501000	Escudo de soldado de Messmer venen.
+31501100	Escudo de soldado de Messmer sangr.
+31501200	Escudo de soldado de Messmer oculto
+31510000	Escudo con blasón de lobo
+31510100	Escudo con blasón de lobo pesado
+31510200	Escudo con blasón de lobo ligero
+31510300	Escudo con blasón de lobo de calidad
+31510400	Escudo con blasón de lobo ígneo
+31510500	Escudo con blasón de lobo llameante
+31510600	Escudo con blasón de lobo fulgurante
+31510700	Escudo con blasón de lobo sagrado
+31510800	Escudo con blasón de lobo mágico
+31510900	Escudo con blasón de lobo frío
+31511000	Escudo con blasón de lobo venenoso
+31511100	Escudo con blasón de lobo sangriento
+31511200	Escudo con blasón de lobo oculto
+31520000	Escudo con blasón de serpiente
+31520100	Escudo con blasón de serpiente pesado
+31520200	Escudo con blasón de serpiente ligero
+31520300	Escudo con blasón de serpiente de cal.
+31520400	Escudo con blasón de serpiente ígneo
+31520500	Escudo con blasón de serpiente llam.
+31520600	Escudo con blasón de serpiente fulg.
+31520700	Escudo con blasón de serpiente sagrado
+31520800	Escudo con blasón de serpiente mágico
+31520900	Escudo con blasón de serpiente frío
+31521000	Escudo con blasón de serpiente venen.
+31521100	Escudo con blasón de serpiente sangr.
+31521200	Escudo con blasón de serpiente oculto
+31530000	Escudo de león dorado
+32500000	Pavés de acero negro
+32500100	Pavés de acero negro pesado
+32500200	Pavés de acero negro ligero
+32500300	Pavés de acero negro de calidad
+32500400	Pavés de acero negro ígneo
+32500500	Pavés de acero negro llameante
+32500600	Pavés de acero negro fulgurante
+32500700	Pavés de acero negro sagrado
+32500800	Pavés de acero negro mágico
+32500900	Pavés de acero negro frío
+32501000	Pavés de acero negro venenoso
+32501100	Pavés de acero negro sangriento
+32501200	Pavés de acero negro oculto
+32520000	Escudo grande de verdín
+33510000	Bastón del más allá
+33520000	Bastón materno
+34500000	Sello de hojaseca
+34510000	Sello de Caballero de Fuego
+34520000	Sello del Árbol Espiral
+40500000	Arco de hueso
+41510000	Arco largo de Ansbach
+42500000	Arco grande de Igon
+43500000	Ballesta de repetición
+43510000	Ballesta de extensión
+44500000	Cañón de Rabbath
+50540000	Flecha atrayente emplumada
+50550000	Flecha atrayente
+51500000	Arpón de Igon
+52520000	Saeta atrayente
+53500000	Saeta de Rabbath
+60500000	Artes marciales de hojaseca
+60500100	Artes marciales de hojaseca pesados
+60500200	Artes marciales de hojaseca ligeros
+60500300	Artes marciales de hojaseca de cal. 
+60500400	Artes marciales de hojaseca ígneos
+60500500	Artes marciales de hojaseca llam.
+60500600	Artes marciales de hojaseca fulg.
+60500700	Artes marciales de hojaseca sagrados
+60500800	Artes marciales de hojaseca mágicos
+60500900	Artes marciales de hojaseca fríos
+60501000	Artes marciales de hojaseca venen.
+60501100	Artes marciales de hojaseca sangr.
+60501200	Artes marciales de hojaseca ocultos
+60510000	Patada de Dane
+60510100	Patada de Dane pesada
+60510200	Patada de Dane ligera
+60510300	Patada de Dane de calidad
+60510400	Patada de Dane ígnea
+60510500	Patada de Dane llameante
+60510600	Patada de Dane fulgurante
+60510700	Patada de Dane sagrada
+60510800	Patada de Dane mágica
+60510900	Patada de Dane fría
+60511000	Patada de Dane venenosa
+60511100	Patada de Dane sangrienta
+60511200	Patada de Dane oculta
+61500000	Botella de perfume ígneo
+61510000	Botella de perfume gélido
+61520000	Botella de perfume de llama frenética
+61530000	Botella de perfume fulgurante
+61540000	Botella de perfume de veneno mortal
+62500000	Escudo de duelo
+62500100	Escudo de duelo pesado
+62500200	Escudo de duelo ligero
+62500300	Escudo de duelo de calidad
+62500400	Escudo de duelo ígneo
+62500500	Escudo de duelo llameante
+62500600	Escudo de duelo fulgurante
+62500700	Escudo de duelo sagrado
+62500800	Escudo de duelo mágico
+62500900	Escudo de duelo frío
+62501000	Escudo de duelo venenoso
+62501100	Escudo de duelo sangriento
+62501200	Escudo de duelo oculto
+62510000	Escudo de embestida cariano
+62510100	Escudo de embestida cariano pesado
+62510200	Escudo de embestida cariano ligero
+62510300	Escudo de embestida cariano de calidad
+62510400	Escudo de embestida cariano ígneo
+62510500	Escudo de embestida cariano llameante
+62510600	Escudo de embestida cariano fulgurante
+62510700	Escudo de embestida cariano sagrado
+62510800	Escudo de embestida cariano mágico
+62510900	Escudo de embestida cariano frío
+62511000	Escudo de embestida cariano venenoso
+62511100	Escudo de embestida cariano sangriento
+62511200	Escudo de embestida cariano oculto
+63500000	Daga de letra herrérica
+63500100	Daga de letra herrérica pesada
+63500200	Daga de letra herrérica ligera
+63500300	Daga de letra herrérica de calidad
+63500400	Daga de letra herrérica ígnea
+63500500	Daga de letra herrérica llameante
+63500600	Daga de letra herrérica fulgurante
+63500700	Daga de letra herrérica sagrada
+63500800	Daga de letra herrérica mágica
+63500900	Daga de letra herrérica fría
+63501000	Daga de letra herrérica venenosa
+63501100	Daga de letra herrérica sangrienta
+63501200	Daga de letra herrérica oculta
+64500000	Hoja de revés
+64500100	Hoja de revés pesada
+64500200	Hoja de revés ligera
+64500300	Hoja de revés de calidad
+64500400	Hoja de revés ígnea
+64500500	Hoja de revés llameante
+64500600	Hoja de revés fulgurante
+64500700	Hoja de revés sagrada
+64500800	Hoja de revés mágica
+64500900	Hoja de revés fría
+64501000	Hoja de revés venenosa
+64501100	Hoja de revés sangrienta
+64501200	Hoja de revés oculta
+64510000	Chakram de letra herrérica
+64510100	Chakram de letra herrérica pesado
+64510200	Chakram de letra herrérica ligero
+64510300	Chakram de letra herrérica de cal.
+64510400	Chakram de letra herrérica ígneo
+64510500	Chakram de letra herrérica llam.
+64510600	Chakram de letra herrérica fulg.
+64510700	Chakram de letra herrérica sagrado
+64510800	Chakram de letra herrérica mágico
+64510900	Chakram de letra herrérica frío
+64511000	Chakram de letra herrérica venenoso
+64511100	Chakram de letra herrérica sangriento
+64511200	Chakram de letra herrérica oculto
+64520000	Chakram de hojamaldita
+66500000	Gran catana
+66500100	Gran catana pesada
+66500200	Gran catana ligera
+66500300	Gran catana de calidad
+66500400	Gran catana ígnea
+66500500	Gran catana llameante
+66500600	Gran catana fulgurante
+66500700	Gran catana sagrada
+66500800	Gran catana mágica
+66500900	Gran catana fría
+66501000	Gran catana venenosa
+66501100	Gran catana sangrienta
+66501200	Gran catana oculta
+66510000	Gran catana cazadragones
+66520000	Gran catana de Rakshasa
+67500000	Milady
+67500100	Milady pesada
+67500200	Milady ligera
+67500300	Milady de calidad
+67500400	Milady ígnea
+67500500	Milady llameante
+67500600	Milady fulgurante
+67500700	Milady sagrada
+67500800	Milady mágica
+67500900	Milady fría
+67501000	Milady venenosa
+67501100	Milady sangrienta
+67501200	Milady oculta
+67510000	Espada de Leda
+67520000	Espadas gemelas de Rellana
+68500000	Garra de bestia
+68500100	Garra de bestia pesada
+68500200	Garra de bestia ligera
+68500300	Garra de bestia de calidad
+68500400	Garra de bestia ígnea
+68500500	Garra de bestia llameante
+68500600	Garra de bestia fulgurante
+68500700	Garra de bestia sagrada
+68500800	Garra de bestia mágica
+68500900	Garra de bestia fría
+68501000	Garra de bestia venenosa
+68501100	Garra de bestia sangrienta
+68501200	Garra de bestia oculta
+68510000	Garra de Oso Rojo

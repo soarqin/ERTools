@@ -1,0 +1,145 @@
+3000000	Chapeau de Dane
+3000100	Robe de Mortefeuille
+3000200	Bandes de Mortefeuille
+3000300	Bottes de Mortefeuille
+3001100	Robe de Mortefeuille (altérée)
+3010000	Heaume de Gaïus
+3010100	Armure de Gaïus
+3010200	Gantelets de Gaïus
+3010300	Jambières de Gaïus
+5000000	Heaume de Quêteur de serment
+5000100	Armure de Leda
+5000200	Gantelets de Quêteur de serment
+5000300	Jambières de Quêteur de serment
+5002100	Armure de Quêteur de serment
+5010000	Heaume en vert-de-gris
+5010100	Armure en vert-de-gris
+5010200	Gantelets en vert-de-gris
+5010300	Jambières en vert-de-gris
+5020000	Peau de Ralva
+5020100	Armure à rivets de fer
+5020200	Gantelets à rivets de fer
+5020300	Jambières à rivets de fer
+5021000	Casque à crocs
+5030000	Masque de Thiollier
+5030100	Tenue de Thiollier
+5030200	Gants de Thiollier
+5030300	Pantalon de Thiollier
+5031100	Tenue de Thiollier (altérée)
+5060000	Coiffe du grand prêtre
+5060100	Robe du grand prêtre
+5060200	Gants du grand prêtre
+5060300	Sous-vêtements du grand prêtre
+5062100	Robe des Doigts
+5070000	Masque de chenilles
+5070100	Tunique de cordes tressées
+5070200	Bandes de cordes tressées
+5070300	Pagne souillé
+5080000	Capuche de danseur
+5080100	Robe de danseur
+5080200	Bracelets de danseur
+5080300	Pantalon de danseur
+5081100	Robe de danseur (altérée)
+5090000	Heaume de la nuit
+5090100	Armure de la nuit
+5090200	Gantelets de la nuit
+5090300	Jambières de la nuit
+5100000	Casque d'Igon
+5100100	Armure d'Igon
+5100200	Gantelets d'Igon
+5100300	Pagne d'Igon
+5101000	Casque d'Igon (altéré)
+5101100	Armure d'Igon (altérée)
+5110000	Masque du sage
+5110100	Atours d'Ansbach
+5110200	Manchettes d'Ansbach
+5110300	Bottes d'Ansbach
+5111100	Atours d'Ansbach (altérés)
+5120000	Heaume de Freyja
+5120100	Armure de Freyja
+5120200	Gantelets de Freyja
+5120300	Jambières de Freyja
+5121100	Armure de Freyja (altérée)
+5130000	Heaume de la solitude
+5130100	Armure de la solitude
+5130200	Gantelets de la solitude
+5130300	Jambières de la solitude
+5131100	Armure de la solitude (altérée)
+5140000	Heaume de soldat de Messmer
+5140100	Armure de soldat de Messmer
+5140200	Gantelets de soldat de Messmer
+5140300	Jambières de soldat de Messmer
+5141100	Armure de soldat de Messmer (altérée)
+5150000	Heaume de chevalier Noir
+5150100	Armure de chevalier Noir
+5150200	Gantelets de chevalier Noir
+5150300	Jambières de chevalier Noir
+5160000	Heaume de Rakshasa
+5160100	Armure de Rakshasa
+5160200	Gantelets de Rakshasa
+5160300	Jambières de Rakshasa
+5180000	Casque de chevalier de Feu
+5180100	Armure de chevalier de Feu
+5180200	Gantelets de chevalier de Feu
+5180300	Jambières de chevalier de Feu
+5181100	Armure de chevalier de Feu (altérée)
+5182000	Heaume aux masques mortuaires
+5183000	Heaume au serpent ailé
+5184000	Capuche de Salza
+5190000	Bandeau en cuir
+5190100	Tenue glorieuse
+5190200	Bandes en cuir
+5190300	Pantalon en cuir
+5191000	Couronne en cuir
+5191100	Tenue montagnarde
+5200000	Heaume de chevalier de la Mort
+5200100	Armure de chevalier de la Mort
+5200200	Gantelets de chevalier de la Mort
+5200300	Jambières de chevalier de la Mort
+5210000	Masque d'Exécrable
+5210100	Pagne d'ascète
+5210200	Brassards d'ascète
+5210300	Chevillières d'ascète
+5220000	Heaume de Messmer
+5220100	Armure de Messmer
+5220200	Brassards de Messmer
+5220300	Jambières de Messmer
+5221000	Heaume de Messmer (altéré)
+5230000	Heaume d'oiseau sépulcral
+5230100	Ramage d'oiseau sépulcral 
+5230200	Bracelets d'oiseau sépulcral
+5230300	Chaînes de cheville d'oiseau sépulcral
+5231100	Ramage d'oiseau sépulcral (altéré)
+5240000	Heaume de soldat ordinaire
+5240100	Armure en tissu de soldat ordinaire
+5240200	Gantelets de soldat ordinaire
+5240300	Jambières de soldat ordinaire
+5250000	Heaume de guerrier cornu
+5250100	Armure de guerrier cornu
+5250200	Brassards de guerrier cornu
+5250300	Jambières de guerrier cornu
+5252000	Heaume de bête divine
+5252100	Armure de guerrier de la bête divine
+5253000	Heaume de l'oiseau divin
+5253100	Armure de guerrier aviaire divin
+5253200	Brassards de guerrier aviaire divin
+5253300	Jambières de guerrier aviaire divin
+5260000	Heaume de Rellana
+5260100	Armure de Rellana
+5260200	Gants de Rellana
+5260300	Jambières de Rellana
+5270000	Heaume du jeune lion
+5270100	Armure du jeune lion
+5270200	Gantelets du jeune lion
+5270300	Jambières du jeune lion
+5271100	Armure du jeune lion (altérée)
+5272000	Couronne de lumière
+5280000	Heaume de milicien obscur
+5280100	Armure de milicien obscur
+5280200	Gantelets de milicien obscur
+5280300	Jambières de milicien obscur
+5290000	Tête de bête divine
+5300000	Fleur de sainte Trina
+5310000	Heaume-marteau du Creuset
+5320000	Grande jarre
+5330000	Tête de diablotin (lion)

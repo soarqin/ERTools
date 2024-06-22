@@ -1,0 +1,25 @@
+200000	Cinza da Guerra: Redemoinho de Folhaseca
+200100	Cinza da Guerra: Aspectos do Crisol (Asas)
+400000	Cinza da Guerra: Impulso Gravitacional Giratório
+401000	Cinza da Guerra: Explosão de Palma
+402000	Cinza da Guerra: Arremesso Perfurante
+403000	Cinza da Guerra: Arremesso Disperso
+404000	Cinza da Guerra: Parede de Faíscas
+405000	Cinza da Guerra: Onda de Faíscas
+406000	Cinza da Guerra: Fera Furiosa
+407000	Cinza da Guerra: Garras Selvagens
+409000	Cinza da Guerra: Ponto Cego
+410000	Cinza da Guerra: Corte Rápido
+411000	Cinza da Guerra: Postura Aérea
+412000	Cinza da Guerra: Postura de Asa
+413000	Cinza da Guerra: Raio de Lampejo
+414000	Cinza da Guerra: Espeto Flamejante
+415000	Cinza da Guerra: Garra do Leão Selvagem
+416000	Cinza da Guerra: Pisão Congelante da Fera Divina
+417000	Cinza da Guerra: Lança Flamejante
+418000	Cinza da Guerra: Soberania Cariana
+419000	Cinza da Guerra: Grito de Tristeza
+422000	Cinza da Guerra: Chamado da Chama Espectral
+505000	Cinza da Guerra: A Flor Venenosa Brota Duas Vezes
+548000	Cinza da Guerra: Caçada de Draco de Igon
+800000	Cinza da Guerra: Ataque com Escudo

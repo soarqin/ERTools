@@ -2839,8 +2839,8 @@
 9148	
 9149	
 9150	Acerca de los duelos
-9151	Acerca de los Combates por equipos y los Combates épicos
-9152	Acerca del combate con cenizas de espíritu
+9151	Acerca de los combates en grupo
+9152	Acerca de los combates con cenizas de espíritu
 9153	Acerca de la efigie de Márika en la Mesa Redonda
 9195	[ERROR]Acerca del multijugador
 9196	

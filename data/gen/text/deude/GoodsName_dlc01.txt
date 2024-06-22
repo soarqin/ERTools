@@ -1,0 +1,1216 @@
+2000300	Schwerer Feuertopf
+2000301	
+2000302	
+2000303	
+2000304	
+2000305	
+2000306	
+2000307	
+2000308	
+2000309	
+2000310	Schwerer Steintopf
+2000311	
+2000312	
+2000313	
+2000314	
+2000315	
+2000316	
+2000317	
+2000318	
+2000319	
+2000320	Schwerer Blitztopf
+2000321	
+2000322	
+2000323	
+2000324	
+2000325	
+2000326	
+2000327	
+2000328	
+2000329	
+2000330	Schwerer Stinktopf
+2000331	
+2000332	
+2000333	
+2000334	
+2000335	
+2000336	
+2000337	
+2000338	
+2000339	
+2000340	Schwerer Schwarmtopf
+2000360	Schwerer Frosttopf
+2000361	
+2000362	
+2000363	
+2000364	
+2000365	
+2000366	
+2000367	
+2000368	
+2000369	
+2000370	Schwerer Gifttopf
+2000371	
+2000372	
+2000373	
+2000374	
+2000375	
+2000376	
+2000377	
+2000378	
+2000379	
+2000380	Schwerer Öltopf
+2000600	Schwerer Vulkantopf
+2000620	Schwerer Topf der rasenden Flamme
+2000650	Schwerer Grolltopf
+2000651	
+2000652	
+2000653	
+2000654	
+2000655	
+2000656	
+2000657	
+2000658	
+2000659	
+2000660	Schwerer Magietopf
+2000661	
+2000662	
+2000663	
+2000664	
+2000665	
+2000666	
+2000667	
+2000668	
+2000669	
+2000670	Schwerer Fäulnistopf
+2000671	
+2000672	
+2000673	
+2000674	
+2000675	
+2000676	
+2000677	
+2000678	
+2000679	
+2000680	Schwerer Ofentopf
+2000681	
+2000682	
+2000683	
+2000684	
+2000685	
+2000686	
+2000687	
+2000688	
+2000689	
+2000690	Schwerer roter Blitztopf
+2000691	
+2000692	
+2000693	
+2000694	
+2000695	
+2000696	
+2000697	
+2000698	
+2000699	
+2000700	Roter Blitztopf
+2000701	
+2000702	
+2000703	
+2000704	
+2000705	
+2000706	
+2000707	
+2000708	
+2000709	
+2000710	Topf der rasenden Flamme
+2000740	Ewiger Schlaftopf
+2000760	Topf der rasenden Flamme mit Kordel
+2000800	Geisterrosine
+2000900	Segen von Marika
+2000901	
+2000902	
+2000903	
+2000904	
+2000905	
+2000906	
+2000907	
+2000908	
+2000909	
+2000910	Einlullender Ast
+2001100	Fleisch der Drachenkommunion
+2001101	
+2001102	
+2001103	
+2001104	
+2001105	Drachenschuppenfleisch
+2001106	
+2001107	
+2001108	
+2001109	
+2001110	Fingerabdruckpräparat
+2001111	
+2001112	
+2001113	
+2001114	
+2001115	
+2001116	
+2001117	
+2001118	
+2001119	
+2001120	Zaubersichere eingelegte Leber
+2001121	
+2001122	
+2001123	
+2001124	
+2001125	
+2001126	
+2001127	
+2001128	
+2001129	
+2001130	Feuersichere eingelegte Leber
+2001131	
+2001132	
+2001133	
+2001134	
+2001135	
+2001136	
+2001137	
+2001138	
+2001139	
+2001140	Blitzsichere eingelegte Leber
+2001141	
+2001142	
+2001143	
+2001144	
+2001145	
+2001146	
+2001147	
+2001148	
+2001149	
+2001150	Heiligsichere eingelegte Leber
+2001151	
+2001152	
+2001153	
+2001154	
+2001155	
+2001156	
+2001157	
+2001158	
+2001159	
+2001160	Opale eingelegte Leber
+2001161	
+2001162	
+2001163	
+2001164	
+2001165	
+2001166	
+2001167	
+2001168	
+2001169	
+2001170	Gut eingelegter Schildkrötenhals
+2001200	Skorpionseintopf
+2001201	Gourmet-Skorpionseintopf
+2001202	Skorpionseintopf
+2001203	Gourmet-Skorpionseintopf
+2001204	
+2001205	
+2001206	
+2001207	
+2001208	
+2001209	
+2001210	Heiliges blutiges Fleisch
+2001211	
+2001212	
+2001213	
+2001214	
+2001215	
+2001216	
+2001217	
+2001218	
+2001219	
+2001220	Silbernes Horn
+2001221	
+2001222	
+2001223	
+2001224	
+2001225	
+2001226	
+2001227	
+2001228	
+2001229	
+2001230	Goldenes Horn
+2001400	Messmerfeuerfett
+2001401	
+2001402	
+2001403	
+2001404	
+2001405	
+2001406	
+2001407	
+2001408	
+2001409	
+2001410	Drachenblitzfett
+2001411	
+2001412	
+2001413	
+2001414	
+2001415	
+2001416	
+2001417	
+2001418	
+2001419	
+2001420	Königliches Magiefett
+2001421	
+2001422	
+2001423	
+2001424	
+2001425	
+2001426	
+2001427	
+2001428	
+2001429	
+2001430	Goldfett
+2001450	Ewiges Schlaffett
+2001480	Fett der Drachenkommunion
+2001500	Messmerfeuerfett mit Kordel
+2001501	
+2001502	
+2001503	
+2001504	
+2001505	
+2001506	
+2001507	
+2001508	
+2001509	
+2001510	Drachenblitzfett mit Kordel
+2001511	
+2001512	
+2001513	
+2001514	
+2001515	
+2001516	
+2001517	
+2001518	
+2001519	
+2001520	Königliches Magiefett mit Kordel
+2001521	
+2001522	
+2001523	
+2001524	
+2001525	
+2001526	
+2001527	
+2001528	
+2001529	
+2001530	Goldfett mit Kordel
+2001550	Ewiges Schlaffett mit Kordel
+2001600	Festliches Fett
+2001700	Innereienfleisch
+2001701	
+2001702	
+2001703	
+2001704	
+2001705	
+2001706	
+2001707	
+2001708	
+2001709	
+2001710	Harpune der Drachenkommunion
+2002000	Resonanzstein
+2002001	
+2002002	
+2002003	
+2002004	
+2002005	
+2002006	
+2002007	
+2002008	
+2002009	
+2002010	Steinherz
+2002011	
+2002012	
+2002013	
+2002014	
+2002015	
+2002016	
+2002017	
+2002018	
+2002019	
+2002020	Priesterinnenherz
+2002021	
+2002022	
+2002023	
+2002024	
+2002025	
+2002026	
+2002027	
+2002028	
+2002029	
+2002030	Maske des Klägers
+2002100	Segen des uralten Drachen
+2002120	Iris der Gnade
+2002121	
+2002122	
+2002123	
+2002124	
+2002125	
+2002126	
+2002127	
+2002128	
+2002129	
+2002130	Iris der Verfinsterung
+2002131	
+2002132	
+2002133	
+2002134	
+2002135	
+2002136	
+2002137	
+2002138	
+2002139	
+2002140	Thiolliers Arznei
+2002141	
+2002142	
+2002143	
+2002144	
+2002145	
+2002146	
+2002147	
+2002148	
+2002149	
+2002150	Redekopf: "Wehklagen"
+2002900	Echo des Wildschweinreiters
+2002901	Echo des Pfählers
+2002902	Echo der Schattensonnenblume
+2002903	Echo der Zwillings-Mondritterin
+2002904	Echo der Heiligen der Knospe
+2002905	Echo des tanzenden Löwen
+2002906	
+2002907	Echo eines Gottes und eines Fürsten
+2002908	Echo des Herrn der Rasenden Flamme
+2002909	Echo der Mutter der Finger
+2002910	Echo der Verwesung
+2002950	Ledas Rune
+2002951	Gebrochene Rune
+2002952	Schattenreich-Rune [1]
+2002953	Schattenreich-Rune [2]
+2002954	Schattenreich-Rune [3]
+2002955	Schattenreich-Rune [4]
+2002956	Schattenreich-Rune [5]
+2002957	Schattenreich-Rune [6]
+2002958	Schattenreich-Rune [7]
+2002959	Rune eines unbesungenen Helden
+2002960	Marikas Rune
+2003000	Bindungsstein
+2003001	Geiststein
+2003130	Gehörntes Kind
+2003131	
+2003132	
+2003133	
+2003134	
+2003135	
+2003136	
+2003137	
+2003138	
+2003139	
+2003140	Duftöl von Ranah
+2003141	
+2003142	
+2003143	
+2003144	
+2003145	
+2003146	
+2003147	
+2003148	
+2003149	
+2003150	Tibias Ruf
+2003151	
+2003152	
+2003153	
+2003154	
+2003155	
+2003156	
+2003157	
+2003158	
+2003159	
+2003160	Lodernde rasende Flamme
+2003161	
+2003162	
+2003163	
+2003164	
+2003165	
+2003166	
+2003167	
+2003168	
+2003169	
+2003170	Goldener Schwur
+2003171	
+2003172	
+2003173	
+2003174	
+2003175	
+2003176	
+2003177	
+2003178	
+2003179	
+2003180	Feuerspirale
+2003181	
+2003182	
+2003183	
+2003184	
+2003185	
+2003186	
+2003187	
+2003188	
+2003189	
+2003190	Feuer-Geiststein
+2003191	
+2003192	
+2003193	
+2003194	
+2003195	
+2003196	
+2003197	
+2003198	
+2003199	
+2003200	Schimmernder Nagel
+2003310	Stein der Sonnenwärme
+2003350	Bezaubernder Ast
+2004300	Miriams Verschwinden
+2004301	
+2004302	
+2004303	
+2004304	
+2004305	
+2004306	
+2004307	
+2004308	
+2004309	
+2004310	Schimmerklingen-Trio
+2004311	
+2004312	
+2004313	
+2004314	
+2004315	
+2004316	
+2004317	
+2004318	
+2004319	
+2004320	Rellanas Zwillingsmonde
+2004500	Schimmerstein-Nagel
+2004501	
+2004502	
+2004503	
+2004504	
+2004505	
+2004506	
+2004507	
+2004508	
+2004509	
+2004510	Schimmerstein-Nägel
+2004700	Steinklingen
+2004701	
+2004702	
+2004703	
+2004704	
+2004705	
+2004706	
+2004707	
+2004708	
+2004709	
+2004710	Gravitationsrakete
+2004900	Dornenmantel
+2004901	
+2004902	
+2004903	
+2004904	
+2004905	
+2004906	
+2004907	
+2004908	
+2004909	
+2004910	Undurchdringliche Dornen
+2005000	Ringe aus Spektrallicht
+2006200	Wirbel der Verwesung
+2006201	
+2006202	
+2006203	
+2006204	
+2006205	
+2006206	
+2006207	
+2006208	
+2006209	
+2006210	Masse der Verwesung
+2006300	Zornige Klinge Ansbachs
+2006400	Heilung aus der Ferne
+2006650	Aspekt des Schmelztiegels: Dornen
+2006651	
+2006652	
+2006653	
+2006654	
+2006655	
+2006656	
+2006657	
+2006658	
+2006659	
+2006660	Aspekt des Schmelztiegels: Blüte
+2006661	
+2006662	
+2006663	
+2006664	
+2006665	
+2006666	
+2006667	
+2006668	
+2006669	
+2006670	Niederer Erdenbaum
+2006671	
+2006672	
+2006673	
+2006674	
+2006675	
+2006676	
+2006677	
+2006678	
+2006679	
+2006680	Schattenland
+2006681	
+2006682	
+2006683	
+2006684	
+2006685	
+2006686	
+2006687	
+2006688	
+2006689	
+2006690	Zorn aus der Ferne
+2006691	
+2006692	
+2006693	
+2006694	
+2006695	
+2006696	
+2006697	
+2006698	
+2006699	
+2006700	Licht Miquellas
+2006701	
+2006702	
+2006703	
+2006704	
+2006705	
+2006706	
+2006707	
+2006708	
+2006709	
+2006710	Mehrschichtiger Ring des Lichts
+2006800	Gebrüll von Rugalea
+2006900	Ritterblitzspeer
+2006901	
+2006902	
+2006903	
+2006904	
+2006905	
+2006906	
+2006907	
+2006908	
+2006909	
+2006910	Drachenblitz von Florissax
+2006911	
+2006912	
+2006913	
+2006914	
+2006915	
+2006916	
+2006917	
+2006918	
+2006919	
+2006920	Elektroladung
+2007000	Bayles Tyrannei
+2007001	
+2007002	
+2007003	
+2007004	
+2007005	
+2007006	
+2007007	
+2007008	
+2007009	
+2007010	Bayles Flammenblitz
+2007011	
+2007012	
+2007013	
+2007014	
+2007015	
+2007016	
+2007017	
+2007018	
+2007019	
+2007020	Geisterflammen-Atem
+2007200	Verrottete Schmetterlinge
+2007201	
+2007202	
+2007203	
+2007204	
+2007205	
+2007206	
+2007207	
+2007208	
+2007209	
+2007210	Pestfaden-Speere
+2007300	Midras Rasende Flamme
+2007410	Flüchtiger Mikrokosmos
+2007411	
+2007412	
+2007413	
+2007414	
+2007415	
+2007416	
+2007417	
+2007418	
+2007419	
+2007420	Liebkosende Finger
+2007600	Wachsamer Geist
+2007700	Goldene Bögen
+2007701	
+2007702	
+2007703	
+2007704	
+2007705	
+2007706	
+2007707	
+2007708	
+2007709	
+2007710	Riesiger goldener Bogen
+2007711	
+2007712	
+2007713	
+2007714	
+2007715	
+2007716	
+2007717	
+2007718	
+2007719	
+2007720	Spira
+2007721	
+2007722	
+2007723	
+2007724	
+2007725	
+2007726	
+2007727	
+2007728	
+2007729	
+2007730	Göttlicher Bestien-Tornado
+2007731	
+2007732	
+2007733	
+2007734	
+2007735	
+2007736	
+2007737	
+2007738	
+2007739	
+2007740	Göttliche Vogelfedern
+2007800	Feuerschlange
+2007801	
+2007802	
+2007803	
+2007804	
+2007805	
+2007806	
+2007807	
+2007808	
+2007809	
+2007810	Feuerregen
+2007811	
+2007812	
+2007813	
+2007814	
+2007815	
+2007816	
+2007817	
+2007818	
+2007819	
+2007820	Messmers Kugel
+2008000	Miquellas Große Rune
+2008001	
+2008002	
+2008003	Igons Krummfinger
+2008004	Schlüssel zum Brunnenboden
+2008005	Schlüssel zur oberen Kerkerebene
+2008006	Schlüssel zur unteren Kerkerebene
+2008007	Mit Kreuz markierte Karte
+2008008	Gemeißelte Halskette
+2008009	
+2008010	
+2008011	Herz von Bayle
+2008012	Neue, mit Kreuz markierte Karte
+2008013	Lagerraumschlüssel
+2008014	Geheimritus-Schriftrolle
+2008015	Brief für Freyja
+2008016	Ruinenkarte
+2008017	Ruinenkarte (II)
+2008018	Ruinenkarte (III)
+2008019	Schwarzer Sirup
+2008020	
+2008021	Messmers Zunder
+2008022	
+2008023	Schlüssel zur Schlossmauer
+2008024	
+2008025	Notiz des Ofenbesitzers
+2008026	
+2008027	Nachricht von Leda
+2008028	Nachricht von Dane
+2008029	Sendschreiben des Mönchs
+2008030	Nachricht vom Kreuz des Lagerhauses
+2008031	Notiz: Versiegelte Geisterquellen
+2008032	Ausgerissene Tagebuchseite
+2008033	Larventräne
+2008034	Nachricht von Leda
+2008035	
+2008036	Schlüssel zum Gebetsraum
+2008037	Nachricht vom Schattenturm
+2008131	Notiz: Versiegelte Geisterquellen
+2008200	Gemälde "Einfall"
+2008201	Gemälde "Der heilige Turm"
+2008202	Gemälde "Gebiet der Drachen"
+2008600	Karte: Grabfeld-Ebene
+2008601	Karte: Scadu Altus
+2008602	Karte: Südufer
+2008603	Karte: Ruinen von Rauh
+2008604	Karte: Abgrund
+2008900	Moores Klangperle
+2008901	Ymirs Klangperle
+2008902	Klangperle des Kräuterkundigen
+2008903	Klangperle [1] des Pilzhändlers
+2008904	Klangperle [2] des Pilzhändlers
+2008905	Klangperle des Fetthändlers
+2008906	Klangperle des Schimmelhändlers
+2008907	Igons Klangperle
+2008908	Klangperle des Zauberkünstlers
+2008909	Klangperle des Kordelhändlers
+2009000	Ring von Miquella
+2009001	Möge der Beste gewinnen
+2009002	Zwei Finger
+2009003	Gehen wir gemeinsam
+2009004	Oh Mutter
+2009160	Über den Segen des Scadubaums
+2009161	Über Segen der Verehrten Geisterasche
+2009162	Über die neuen Inventarfunktionen
+2009301	Handbuch [6] der Sammlerbrut
+2009302	Handbuch [1] der Sammlerbrut
+2009303	Handbuch [2] der Sammlerbrut
+2009304	Handbuch [3] der Sammlerbrut
+2009305	Handbuch [4] der Sammlerbrut
+2009306	Handbuch [5] der Sammlerbrut
+2009307	Igons Handbuch [2]
+2009308	Handbuch [2] des Fingerwebers
+2009309	Handbuch [1] des Großen Herrschers
+2009310	Handbuch [4] des Großen Herrschers
+2009311	Handbuch [5] des Großen Herrschers
+2009312	Handbuch [12] des Großen Herrschers
+2009313	Handbuch [7] des Großen Herrschers
+2009314	Handbuch [9] des Großen Herrschers
+2009315	Handbuch [10] des Großen Herrschers
+2009316	Handbuch [11] des Großen Herrschers
+2009317	Handbuch [2] d. verrückten Handwerkers
+2009318	Handbuch [8] des Großen Herrschers
+2009319	Handbuch [3] des Großen Herrschers
+2009320	Handbuch [13] des Großen Herrschers
+2009321	Handbuch [14] des Großen Herrschers
+2009322	Handbuch [6] des Großen Herrschers
+2009323	Handbuch [2] des Großen Herrschers
+2009324	Handbuch [1] d. Uralten Drachenritters
+2009325	Handbuch [1] d. verrückten Handwerkers
+2009326	Handbuch [1] d. Schülers von St. Trina
+2009327	Handbuch [1] des Feuerritters
+2009328	Handbuch [2] d. Uralten Drachenritters
+2009329	Handbuch des getreuen Ritters
+2009330	Handbuch [1] des Militärpriesters
+2009331	Igons Handbuch [1]
+2009332	Handbuch [2] des Militärpriesters
+2009333	Handbuch [7] der Sammlerbrut
+2009334	Handbuch [3] d. Schülers von St. Trina
+2009335	Handbuch [2] des Grabhüters
+2009336	Handbuch [2] des Altertumsgelehrten
+2009337	Tibias Handbuch
+2009338	Handbuch [3] d. verrückten Handwerkers
+2009339	Handbuch [3] des Militärpriesters
+2009340	Handbuch [2] des Feuerritters
+2009341	Handbuch [1] des Altertumsgelehrten
+2009342	Handbuch [1] des Fingerwebers
+2009343	Handbuch [4] des Militärpriesters
+2009344	Handbuch [1] des Grabhüters
+2009345	Handbuch [2] d. Schülers von St. Trina
+2009500	Schwerer gesprungener Topf
+2010000	Scadubaum-Fragment
+2010100	Verehrte Geisterasche
+2011000	Smaragdgrüne Geheimnisträne
+2011001	
+2011002	
+2011003	
+2011004	
+2011005	
+2011006	
+2011007	
+2011008	
+2011009	
+2011010	Getrocknete purpurrote Träne
+2011011	
+2011012	
+2011013	
+2011014	
+2011015	
+2011016	
+2011017	
+2011018	
+2011019	
+2011020	Gesprungene purpurrote Träne
+2011021	
+2011022	
+2011023	
+2011024	
+2011025	
+2011026	
+2011027	
+2011028	
+2011029	
+2011030	Gesprungene himmelrote Träne
+2011031	
+2011032	
+2011033	
+2011034	
+2011035	
+2011036	
+2011037	
+2011038	
+2011039	
+2011040	Ölgetränkte Träne
+2011041	
+2011042	
+2011043	
+2011044	
+2011045	
+2011046	
+2011047	
+2011048	
+2011049	
+2011050	Gesprungene Blutsaugerträne
+2011051	
+2011052	
+2011053	
+2011054	
+2011055	
+2011056	
+2011057	
+2011058	
+2011059	
+2011060	Tallilien-Kristallträne
+2011061	
+2011062	
+2011063	
+2011064	
+2011065	
+2011066	
+2011067	
+2011068	
+2011069	
+2011070	Abwehrende Bleiträne
+2015000	Bestienhorn
+2015001	
+2015002	
+2015003	
+2015004	
+2015005	
+2015006	
+2015007	
+2015008	
+2015009	
+2015010	Geistercalculus
+2015011	
+2015012	
+2015013	
+2015014	
+2015015	
+2015016	
+2015017	
+2015018	
+2015019	
+2015020	Perlmuttartige Schuppe
+2015021	
+2015022	
+2015023	
+2015024	
+2015025	
+2015026	
+2015027	
+2015028	
+2015029	
+2015030	Skorpionleber
+2015031	
+2015032	
+2015033	
+2015034	
+2015035	
+2015036	
+2015037	
+2015038	
+2015039	
+2015040	Fliegenschimmel
+2020001	Radafrucht
+2020002	Rotfleischpilz
+2020003	Weißfleischpilz
+2020004	Harzknoten
+2020005	Taujuwel
+2020006	Schwarzer Feuerfalter
+2020007	Schimmerplatten-Glühwürmchen
+2020008	Gelbe Fulgurblüte
+2020009	Schattensonnenblume
+2020010	Giftiger Moosling
+2020011	Scharlachrote Knospe
+2020012	Blutamaryllis
+2020013	Gefrorene Made
+2020014	Tiefviolette Lilie
+2020015	Nektarblutknospe
+2020016	Winterlaternenfliege
+2020017	Pralle Traube
+2020018	Schädelknochen des Grabhüters
+2020019	Kot voller Hornsplitter
+2020020	Gasstein
+2020021	Geisterflammenblüte
+2020022	Grabgrille
+2020023	Drachenblume
+2020024	Fingerling
+2020025	Himmlische Blutknospe
+2020026	Geronnene Verwesung
+2020027	Rundstein
+2020028	Geistergrabstein
+2020029	Rauhnest
+2020030	Messmers Glut
+2020031	Gesegneter Knochensplitter
+2020032	Rote Fulgurblüte
+2020033	Nagelstein
+2020034	Scharfer Schotterstein
+2020035	Ofengesicht
+2200000	Fluchklingen Meera
+2200001	Fluchklingen Meera +1
+2200002	Fluchklingen Meera +2
+2200003	Fluchklingen Meera +3
+2200004	Fluchklingen Meera +4
+2200005	Fluchklingen Meera +5
+2200006	Fluchklingen Meera +6
+2200007	Fluchklingen Meera +7
+2200008	Fluchklingen Meera +8
+2200009	Fluchklingen Meera +9
+2200010	Fluchklingen Meera +10
+2201000	Asche des Hexers der Blutunholde
+2201001	Asche des Hexers der Blutunholde +1
+2201002	Asche des Hexers der Blutunholde +2
+2201003	Asche des Hexers der Blutunholde +3
+2201004	Asche des Hexers der Blutunholde +4
+2201005	Asche des Hexers der Blutunholde +5
+2201006	Asche des Hexers der Blutunholde +6
+2201007	Asche des Hexers der Blutunholde +7
+2201008	Asche des Hexers der Blutunholde +8
+2201009	Asche des Hexers der Blutunholde +9
+2201010	Asche des Hexers der Blutunholde +10
+2202000	Grabvogelasche
+2202001	Grabvogelasche +1
+2202002	Grabvogelasche +2
+2202003	Grabvogelasche +3
+2202004	Grabvogelasche +4
+2202005	Grabvogelasche +5
+2202006	Grabvogelasche +6
+2202007	Grabvogelasche +7
+2202008	Grabvogelasche +8
+2202009	Grabvogelasche +9
+2202010	Grabvogelasche +10
+2203000	Feuerritterin Hilde
+2203001	Feuerritterin Hilde +1
+2203002	Feuerritterin Hilde +2
+2203003	Feuerritterin Hilde +3
+2203004	Feuerritterin Hilde +4
+2203005	Feuerritterin Hilde +5
+2203006	Feuerritterin Hilde +6
+2203007	Feuerritterin Hilde +7
+2203008	Feuerritterin Hilde +8
+2203009	Feuerritterin Hilde +9
+2203010	Feuerritterin Hilde +10
+2204000	Spinnenskorpionasche
+2204001	Spinnenskorpionasche +1
+2204002	Spinnenskorpionasche +2
+2204003	Spinnenskorpionasche +3
+2204004	Spinnenskorpionasche +4
+2204005	Spinnenskorpionasche +5
+2204006	Spinnenskorpionasche +6
+2204007	Spinnenskorpionasche +7
+2204008	Spinnenskorpionasche +8
+2204009	Spinnenskorpionasche +9
+2204010	Spinnenskorpionasche +10
+2205000	Inquisitorinnenasche
+2205001	Inquisitorinnenasche +1
+2205002	Inquisitorinnenasche +2
+2205003	Inquisitorinnenasche +3
+2205004	Inquisitorinnenasche +4
+2205005	Inquisitorinnenasche +5
+2205006	Inquisitorinnenasche +6
+2205007	Inquisitorinnenasche +7
+2205008	Inquisitorinnenasche +8
+2205009	Inquisitorinnenasche +9
+2205010	Inquisitorinnenasche +10
+2206000	Halbmenschen-Schwertkämpfer Yosh
+2206001	Halbmenschen-Schwertkämpfer Yosh +1
+2206002	Halbmenschen-Schwertkämpfer Yosh +2
+2206003	Halbmenschen-Schwertkämpfer Yosh +3
+2206004	Halbmenschen-Schwertkämpfer Yosh +4
+2206005	Halbmenschen-Schwertkämpfer Yosh +5
+2206006	Halbmenschen-Schwertkämpfer Yosh +6
+2206007	Halbmenschen-Schwertkämpfer Yosh +7
+2206008	Halbmenschen-Schwertkämpfer Yosh +8
+2206009	Halbmenschen-Schwertkämpfer Yosh +9
+2206010	Halbmenschen-Schwertkämpfer Yosh +10
+2207000	Messmer-Soldatenasche
+2207001	Messmer-Soldatenasche +1
+2207002	Messmer-Soldatenasche +2
+2207003	Messmer-Soldatenasche +3
+2207004	Messmer-Soldatenasche +4
+2207005	Messmer-Soldatenasche +5
+2207006	Messmer-Soldatenasche +6
+2207007	Messmer-Soldatenasche +7
+2207008	Messmer-Soldatenasche +8
+2207009	Messmer-Soldatenasche +9
+2207010	Messmer-Soldatenasche +10
+2208000	Schwarzer Ritterkommandant Andreas
+2208001	Schwarzer Ritterkommandant Andreas +1
+2208002	Schwarzer Ritterkommandant Andreas +2
+2208003	Schwarzer Ritterkommandant Andreas +3
+2208004	Schwarzer Ritterkommandant Andreas +4
+2208005	Schwarzer Ritterkommandant Andreas +5
+2208006	Schwarzer Ritterkommandant Andreas +6
+2208007	Schwarzer Ritterkommandant Andreas +7
+2208008	Schwarzer Ritterkommandant Andreas +8
+2208009	Schwarzer Ritterkommandant Andreas +9
+2208010	Schwarzer Ritterkommandant Andreas +10
+2209000	Schwarzer Ritterkapitän Huw
+2209001	Schwarzer Ritterkapitän Huw +1
+2209002	Schwarzer Ritterkapitän Huw +2
+2209003	Schwarzer Ritterkapitän Huw +3
+2209004	Schwarzer Ritterkapitän Huw +4
+2209005	Schwarzer Ritterkapitän Huw +5
+2209006	Schwarzer Ritterkapitän Huw +6
+2209007	Schwarzer Ritterkapitän Huw +7
+2209008	Schwarzer Ritterkapitän Huw +8
+2209009	Schwarzer Ritterkapitän Huw +9
+2209010	Schwarzer Ritterkapitän Huw +10
+2210000	Großmaulwichtasche
+2210001	Großmaulwichtasche +1
+2210002	Großmaulwichtasche +2
+2210003	Großmaulwichtasche +3
+2210004	Großmaulwichtasche +4
+2210005	Großmaulwichtasche +5
+2210006	Großmaulwichtasche +6
+2210007	Großmaulwichtasche +7
+2210008	Großmaulwichtasche +8
+2210009	Großmaulwichtasche +9
+2210010	Großmaulwichtasche +10
+2211000	Menschenfliegenasche
+2211001	Menschenfliegenasche +1
+2211002	Menschenfliegenasche +2
+2211003	Menschenfliegenasche +3
+2211004	Menschenfliegenasche +4
+2211005	Menschenfliegenasche +5
+2211006	Menschenfliegenasche +6
+2211007	Menschenfliegenasche +7
+2211008	Menschenfliegenasche +8
+2211009	Menschenfliegenasche +9
+2211010	Menschenfliegenasche +10
+2212000	Taylew der Golemschmied
+2212001	Taylew der Golemschmied +1
+2212002	Taylew der Golemschmied +2
+2212003	Taylew der Golemschmied +3
+2212004	Taylew der Golemschmied +4
+2212005	Taylew der Golemschmied +5
+2212006	Taylew der Golemschmied +6
+2212007	Taylew der Golemschmied +7
+2212008	Taylew der Golemschmied +8
+2212009	Taylew der Golemschmied +9
+2212010	Taylew der Golemschmied +10
+2213000	Göttlicher Vogelkrieger Ornis
+2213001	Göttlicher Vogelkrieger Ornis +1
+2213002	Göttlicher Vogelkrieger Ornis +2
+2213003	Göttlicher Vogelkrieger Ornis +3
+2213004	Göttlicher Vogelkrieger Ornis +4
+2213005	Göttlicher Vogelkrieger Ornis +5
+2213006	Göttlicher Vogelkrieger Ornis +6
+2213007	Göttlicher Vogelkrieger Ornis +7
+2213008	Göttlicher Vogelkrieger Ornis +8
+2213009	Göttlicher Vogelkrieger Ornis +9
+2213010	Göttlicher Vogelkrieger Ornis +10
+2214000	Asche des Hornkriegers
+2214001	Asche des Hornkriegers +1
+2214002	Asche des Hornkriegers +2
+2214003	Asche des Hornkriegers +3
+2214004	Asche des Hornkriegers +4
+2214005	Asche des Hornkriegers +5
+2214006	Asche des Hornkriegers +6
+2214007	Asche des Hornkriegers +7
+2214008	Asche des Hornkriegers +8
+2214009	Asche des Hornkriegers +9
+2214010	Asche des Hornkriegers +10
+2215000	Uralter Drache Florissax
+2215001	Uralter Drache Florissax +1
+2215002	Uralter Drache Florissax +2
+2215003	Uralter Drache Florissax +3
+2215004	Uralter Drache Florissax +4
+2215005	Uralter Drache Florissax +5
+2215006	Uralter Drache Florissax +6
+2215007	Uralter Drache Florissax +7
+2215008	Uralter Drache Florissax +8
+2215009	Uralter Drache Florissax +9
+2215010	Uralter Drache Florissax +10
+2217000	Fingerkriecherasche
+2217001	Fingerkriecherasche +1
+2217002	Fingerkriecherasche +2
+2217003	Fingerkriecherasche +3
+2217004	Fingerkriecherasche +4
+2217005	Fingerkriecherasche +5
+2217006	Fingerkriecherasche +6
+2217007	Fingerkriecherasche +7
+2217008	Fingerkriecherasche +8
+2217009	Fingerkriecherasche +9
+2217010	Fingerkriecherasche +10
+2218000	Feuerritter Queelign
+2218001	Feuerritter Queelign +1
+2218002	Feuerritter Queelign +2
+2218003	Feuerritter Queelign +3
+2218004	Feuerritter Queelign +4
+2218005	Feuerritter Queelign +5
+2218006	Feuerritter Queelign +6
+2218007	Feuerritter Queelign +7
+2218008	Feuerritter Queelign +8
+2218009	Feuerritter Queelign +9
+2218010	Feuerritter Queelign +10
+2219000	Jolán, Schwerthand der Nacht
+2219001	Jolán, Schwerthand der Nacht +1
+2219002	Jolán, Schwerthand der Nacht +2
+2219003	Jolán, Schwerthand der Nacht +3
+2219004	Jolán, Schwerthand der Nacht +4
+2219005	Jolán, Schwerthand der Nacht +5
+2219006	Jolán, Schwerthand der Nacht +6
+2219007	Jolán, Schwerthand der Nacht +7
+2219008	Jolán, Schwerthand der Nacht +8
+2219009	Jolán, Schwerthand der Nacht +9
+2219010	Jolán, Schwerthand der Nacht +10
+2220000	Jolán und Anna
+2220001	Jolán und Anna +1
+2220002	Jolán und Anna +2
+2220003	Jolán und Anna +3
+2220004	Jolán und Anna +4
+2220005	Jolán und Anna +5
+2220006	Jolán und Anna +6
+2220007	Jolán und Anna +7
+2220008	Jolán und Anna +8
+2220009	Jolán und Anna +9
+2220010	Jolán und Anna +10

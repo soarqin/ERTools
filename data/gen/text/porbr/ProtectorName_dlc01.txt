@@ -1,0 +1,145 @@
+3000000	Chapéu de Dane
+3000100	Robe de Folhaseca
+3000200	Faixas de Braço de Folhaseca
+3000300	Botas de Cano Alto de Folhaseca
+3001100	Robe de Folhaseca (Alterado)
+3010000	Elmo de Gaius
+3010100	Armadura de Gaius
+3010200	Manoplas de Gaius
+3010300	Grevas de Gaius
+5000000	Elmo de Cavaleiro Juramentador
+5000100	Armadura de Leda
+5000200	Manoplas de Cavaleiro Juramentador
+5000300	Grevas de Cavaleiro Juramentador
+5002100	Armadura de Cavaleiro Juramentador
+5010000	Elmo de Azinhavre
+5010100	Armadura de Azinhavre
+5010200	Manoplas de Azinhavre
+5010300	Grevas de Azinhavre
+5020000	Pele de Ralva
+5020100	Armadura com Rebite de Ferro
+5020200	Manoplas com Rebite de Ferro
+5020300	Grevas com Rebite de Ferro
+5021000	Elmo de Presa
+5030000	Máscara de Thiollier
+5030100	Traje de Thiollier
+5030200	Luvas de Thiollier
+5030300	Calças de Thiollier
+5031100	Traje de Thiollier (Alterado)
+5060000	Chapéu de Sumo Sacerdote
+5060100	Robe de Sumo Sacerdote
+5060200	Luvas de Sumo Sacerdote
+5060300	Roupas de Baixo de Sumo Sacerdote
+5062100	Robe de Dedo
+5070000	Máscara de Lagarta
+5070100	Robe de Cordas Trançadas
+5070200	Faixas de Braço Trançadas
+5070300	Tanga Suja
+5080000	Capuz de Dançarina
+5080100	Vestido de Dançarina
+5080200	Braçadeiras de Dançarina
+5080300	Calças de Dançarina
+5081100	Vestido de Dançarina (Alterado)
+5090000	Elmo da Noite
+5090100	Armadura da Noite
+5090200	Manoplas da Noite
+5090300	Grevas da Noite
+5100000	Elmo de Igon
+5100100	Armadura de Igon
+5100200	Manoplas de Igon
+5100300	Tanga de Igon
+5101000	Elmo de Igon (Alterado)
+5101100	Armadura de Igon (Alterada)
+5110000	Máscara do Homem Sábio
+5110100	Traje de Ansbach
+5110200	Mangas de Ansbach
+5110300	Botas de Ansbach
+5111100	Traje de Ansbach (Alterado)
+5120000	Elmo de Freyja
+5120100	Armadura de Freyja
+5120200	Manoplas de Freyja
+5120300	Grevas de Freyja
+5121100	Armadura de Freyja (Alterada)
+5130000	Elmo da Solidão
+5130100	Armadura da Solidão
+5130200	Manoplas da Solidão
+5130300	Grevas da Solidão
+5131100	Armadura da Solidão (Alterada)
+5140000	Elmo Militar de Messmer
+5140100	Armadura Militar de Messmer
+5140200	Manoplas Militares de Messmer
+5140300	Grevas Militares de Messmer
+5141100	Armadura Militar de Messmer (Alterada)
+5150000	Elmo do Cavaleiro Negro
+5150100	Armadura do Cavaleiro Negro
+5150200	Manoplas do Cavaleiro Negro
+5150300	Grevas do Cavaleiro Negro
+5160000	Elmo de Rakshasa
+5160100	Armadura de Rakshasa
+5160200	Manoplas de Rakshasa
+5160300	Grevas de Rakshasa
+5180000	Elmo do Cavaleiro de Fogo
+5180100	Armadura do Cavaleiro de Fogo
+5180200	Manoplas do Cavaleiro de Fogo
+5180300	Grevas do Cavaleiro de Fogo
+5181100	Armadura do Cavaleiro de Fogo (Alterada)
+5182000	Elmo de Máscara da Morte
+5183000	Elmo da Serpente Alada
+5184000	Capuz de Salza
+5190000	Testeira de Couro
+5190100	Traje Glorificado
+5190200	Faixas de Braço de Couro
+5190300	Faixas de Perna de Couro
+5191000	Elmo de Couro
+5191100	Traje do Planalto (Alterado)
+5200000	Elmo de Cavaleiro da Morte
+5200100	Armadura de Cavaleiro da Morte
+5200200	Manoplas de Cavaleiro da Morte
+5200300	Grevas de Cavaleiro da Morte
+5210000	Máscara dos Lâmina Maldita
+5210100	Tanga de Asceta
+5210200	Punhos de Asceta
+5210300	Tornozeleiras de Asceta
+5220000	Elmo de Messmer
+5220100	Armadura de Messmer
+5220200	Manoplas de Messmer
+5220300	Grevas de Messmer
+5221000	Elmo de Messmer (Alterado)
+5230000	Elmo de Pássaro dos Túmulos
+5230100	Armadura Penapreta de Pássaro dos Túmulos
+5230200	Braceletes de Pássaro dos Túmulos
+5230300	Tornozeleiras de Pássaro dos Túmulos
+5231100	Armadura de Pássaro dos Túmulos
+5240000	Elmo de Soldado Comum
+5240100	Armadura de Tecido de Soldado Comum
+5240200	Manoplas de Soldado Comum
+5240300	Grevas de Soldado Comum
+5250000	Elmo de Guerreiro com Chifres
+5250100	Armadura de Guerreiro com Chifres
+5250200	Manoplas de Guerreiro com Chifres
+5250300	Grevas de Guerreiro com Chifres
+5252000	Elmo de Fera Divina
+5252100	Armadura de Guerreiro Fera Divina
+5253000	Elmo de Pássaro Divino
+5253100	Armadura de Guerreiro Pássaro Divino
+5253200	Manoplas de Guerreiro Pássaro Divino
+5253300	Grevas de Guerreiro Pássaro Divino
+5260000	Elmo de Rellana
+5260100	Armadura de Rellana
+5260200	Luvas de Rellana
+5260300	Grevas de Rellana
+5270000	Elmo do Jovem Leão
+5270100	Armadura do Jovem Leão
+5270200	Manoplas do Jovem Leão
+5270300	Grevas do Jovem Leão
+5271100	Armadura do Jovem Leão (Alterada)
+5272000	Coroa de Luz
+5280000	Elmo de Miliciano das Sombras
+5280100	Armadura de Miliciano das Sombras
+5280200	Manoplas de Miliciano das Sombras
+5280300	Grevas de Miliciano das Sombras
+5290000	Cabeça de Fera Divina
+5300000	Flor de Sta. Trina
+5310000	Elmo-Martelo do Crisol
+5320000	Grande Jarro
+5330000	Cabeça de Demônio (Leão)

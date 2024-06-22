@@ -1,0 +1,76 @@
+10410	Bendición del Noctárbol
+10411	Bendición de cenizas de espíritus venerados
+30205	Fortaleza de la bendición del Noctárbol.\nAfecta solo a aquellos dentro del Reino de las Sombras\nque hayan recibido la bendición del Noctárbol.
+30206	Fortaleza de la bendición de cenizas de espíritus venerados.\nMejora los espíritus invocados y el corcel espectral, pero solo dentro de los confines del Reino de las Sombras.
+40382	Solo teclado
+40383	Teclado y mouse
+40524	Objetos recientes
+60180	Cuerpo a cuerpo
+60181	Botella de perfume
+60182	Escudo de embestida
+60183	Hoja arrojadiza
+60184	Hoja de revés
+60185	Espadón ligero
+60186	Gran katana
+60187	Garra de bestia
+63051	Puede usarse en armas cuerpo a cuerpo.
+63052	Puede usarse en botellas de perfume.
+63053	Puede usarse en escudos de embestida.
+63054	Puede usarse en hojas arrojadizas.
+63055	Puede usarse en hojas de revés.
+63056	Puede usarse en espadones ligeros.
+63057	Puede usarse en katanas grandes.
+63058	Puede usarse en garras de bestia.
+63059	Se puede usar en armas con capacidad de embestida (excepto en garras y hojas de revés).
+63060	Se puede usar en espadas grandes y colosales.
+63061	Se puede usar en espadas y lanzas (excepto en armas pequeñas, hojas gemelas y hojas de revés).
+80020	Recipiente rajado pesado
+110600	Mostrar
+110601	Marcar objetos nuevos
+110602	
+110603	Mostrar pestaña de objetos recientes
+110700	Sonido
+111024	Movimiento de cursor del menú de mapa
+111025	Sensibilidad al cambiar de objetivo
+225001	Comunión del Dragón: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Ofrendas
+241337	Noctaltus
+241338	Costa Cerúlea
+241339	Pie de la cumbre escarpada
+241340	Cumbre escarpada
+241341	Tumba oculta de Charo
+241342	Ruinas antiguas de Rauh
+241343	Vista Nocturna
+241344	Bosque Abismal
+241345	Belurat, asentamiento de la torre
+241346	Enir-Ilim
+241347	Fortaleza Sombría
+241348	Fortaleza Sombría, Distrito de la Iglesia
+241349	Almacén de especímenes
+241350	Fisura del ataúd de piedra
+241351	Mansión de Midra
+241352	Castillo Ensis
+241353	Llanura de las Tumbas
+241354	Base de Rauh
+241417	Llanura de las Tumbas
+241418	Noctaltus
+241419	Tierra de la Torre
+241420	Fortaleza Sombría
+241500	Menú de funciones del mapa
+241501	Mostrar estado del modo multijugador
+241502	Lista de grupos de invocaciones
+241503	Ver controles
+241504	Explicación del menú
+241600	Lista de grupos de invocaciones
+280060	Menú
+280600	Mapa
+331340	CORAZÓN ROBADO

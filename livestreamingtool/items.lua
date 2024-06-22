@@ -200,8 +200,8 @@ local function calculate_items_count(addr_start, item_count, max_count)
   local total = 0
   for idx = 0, max_count-1 do
     local id = process.read_u32(addr)
-    if id ~= 0 and id ~= 0xFFFFFFFF then
-      local type = id >> 28
+    if id ~= 0 and id ~= -1 then
+      local type = (id >> 28) & 0x0F
       id = id & 0xFFFFFFF
       if type < 9 then
         for _, v in ipairs(check_list[type + 1]) do

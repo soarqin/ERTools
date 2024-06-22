@@ -2572,7 +2572,7 @@
 331171	Walczący
 331172	Walczący
 331173	Walczący
-331174	Złoty walczący
+331174	Wybitny walczący
 331175	
 331176	
 331177	
@@ -2602,7 +2602,7 @@
 331310	
 331311	ODKRYTO UTRACONĄ ŁASKĘ
 331312	
-331313	ROZPOCZNIJ
+331313	DO BOJU
 331314	ZWYCIĘSTWO
 331315	PAT
 331316	PORAŻKA
@@ -2630,8 +2630,8 @@
 331338	RANGA ŁOWCY ZWIĘKSZONA
 331339	RANGA ŁOWCY ZWIĘKSZONA
 400000	
-401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
-401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401001	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
+401002	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
 401100	™
 401301	KONTYNUUJ
 401302	WCZYTAJ GRĘ
@@ -2693,7 +2693,7 @@
 506122	Prochy duchów\ndozwolone
 506200	Pojedynek
 506201	Ciężki bój
-506202	Walka połączona
+506202	Walka grupowa
 506300	Dowolne miejsce
 506301	Koloseum Królewskie
 506302	Koloseum Pogrobna
@@ -2711,5 +2711,5 @@
 506801	Tylko sojusznicza drużyna
 506900	Hasło koloseum będzie używane w matchmakingu członków drużyny sojuszniczej i przeciwnej.
 506901	Hasło koloseum będzie używane tylko w matchmakingu członków drużyny sojuszniczej. Drużyna przeciwna zostanie dobrana z użyciem innego hasła.
-507000	Doskonały walczący: <?mvpName?>
+507000	Najlepszy walczący: <?mvpName?>
 507100	Wybierz hasło koloseum

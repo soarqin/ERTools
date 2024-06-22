@@ -1,0 +1,503 @@
+1500000	Mancina
+1500100	Mancina pesante
+1500200	Mancina incisiva
+1500300	Mancina di qualità
+1500400	Mancina incendiaria
+1500500	Mancina fiammante
+1500600	Mancina folgorante
+1500700	Mancina sacra
+1500800	Mancina magica
+1500900	Mancina fredda
+1501000	Mancina avvelenata
+1501100	Mancina sanguinaria
+1501200	Mancina occulta
+1510000	Pugnale da cavaliere del fuoco
+1510100	Pugnale da cavaliere del fuoco pesante
+1510200	Pugnale da cavaliere del fuoco incisivo
+1510300	Pugnale da cavaliere del fuoco di qualità
+1510400	Pugnale da cavaliere del fuoco incendiario
+1510500	Pugnale da cavaliere del fuoco fiammante
+1510600	Pugnale da cavaliere del fuoco folgorante
+1510700	Pugnale da cavaliere del fuoco sacro
+1510800	Pugnale da cavaliere del fuoco magico
+1510900	Pugnale da cavaliere del fuoco freddo
+1511000	Pugnale da cavaliere del fuoco avvelenato
+1511100	Pugnale da cavaliere del fuoco sanguinario
+1511200	Pugnale da cavaliere del fuoco occulto
+2510000	Spada violacea di Santa Trina
+2520000	Spada ammantata di stelle
+2530000	Spada da stregone cariano
+2540000	Spada nel fodero di roccia
+2550000	Spada della luce
+2560000	Spada delle tenebre
+3500000	Spada ad asta
+3500100	Spada ad asta pesante
+3500200	Spada ad asta incisiva
+3500300	Spada ad asta di qualità
+3500400	Spada ad asta incendiaria
+3500500	Spada ad asta fiammante
+3500600	Spada ad asta folgorante
+3500700	Spada ad asta sacra
+3500800	Spada ad asta magica
+3500900	Spada ad asta fredda
+3501000	Spada ad asta avvelenata
+3501100	Spada ad asta sanguinaria
+3501200	Spada ad asta occulta
+3510000	Spadone della dannazione
+3520000	Spadone sauriano
+3520100	Spadone sauriano pesante
+3520200	Spadone sauriano incisivo
+3520300	Spadone sauriano di qualità
+3520400	Spadone sauriano incendiario
+3520500	Spadone sauriano fiammante
+3520600	Spadone sauriano folgorante
+3520700	Spadone sauriano sacro
+3520800	Spadone sauriano magico
+3520900	Spadone sauriano freddo
+3521000	Spadone sauriano avvelenato
+3521100	Spadone sauriano sanguinario
+3521200	Spadone sauriano occulto
+3550000	Spadone della solitudine
+4500000	Spadone di metallo meteoritico antico
+4520000	Spadone da cavaliere del fuoco
+4520100	Spadone da cavaliere del fuoco pesante
+4520200	Spadone da cavaliere del fuoco incisivo
+4520300	Spadone da cavaliere del fuoco di qualità
+4520400	Spadone da cavaliere del fuoco incendiario
+4520500	Spadone da cavaliere del fuoco fiammante
+4520600	Spadone da cavaliere del fuoco folgorante
+4520700	Spadone da cavaliere del fuoco sacro
+4520800	Spadone da cavaliere del fuoco magico
+4520900	Spadone da cavaliere del fuoco freddo
+4521000	Spadone da cavaliere del fuoco avvelenato
+4521100	Spadone da cavaliere del fuoco sanguinario
+4521200	Spadone da cavaliere del fuoco occulto
+4530000	Spadone di Radahn (lord)
+4540000	Spada da cavaliere di Moonrithyll
+4550000	Spadone di Radahn (luce)
+6500000	Spadone di Queelign
+6500100	Spadone di Queelign pesante
+6500200	Spadone di Queelign incisivo
+6500300	Spadone di Queelign di qualità
+6500400	Spadone di Queelign incendiario
+6500500	Spadone di Queelign fiammante
+6500600	Spadone di Queelign folgorante
+6500700	Spadone di Queelign sacro
+6500800	Spadone di Queelign magico
+6500900	Spadone di Queelign freddo
+6501000	Spadone di Queelign avvelenato
+6501100	Spadone di Queelign sanguinario
+6501200	Spadone di Queelign occulto
+7500000	Spada spirituale
+7510000	Falx
+7520000	Lama danzante di Ranah
+7530000	Spada da guerriero con corna
+8500000	Mannaia putrescente
+8510000	Spadone di Freyja
+8510100	Spadone di Freyja pesante
+8510200	Spadone di Freyja incisivo
+8510300	Spadone di Freyja di qualità
+8510400	Spadone di Freyja incendiario
+8510500	Spadone di Freyja fiammante
+8510600	Spadone di Freyja folgorante
+8510700	Spadone di Freyja sacro
+8510800	Spadone di Freyja magico
+8510900	Spadone di Freyja freddo
+8511000	Spadone di Freyja avvelenato
+8511100	Spadone di Freyja sanguinario
+8511200	Spadone di Freyja occulto
+8520000	Spadone da guerriero con corna
+9500000	Katana della notte
+10500000	Euporia
+10510000	Lama gemella di acciaio nero
+10510100	Lama gemella di acciaio nero pesante
+10510200	Lama gemella di acciaio nero incisiva
+10510300	Lama gemella di acciaio nero di qualità
+10510400	Lama gemella di acciaio nero incendiaria
+10510500	Lama gemella di acciaio nero fiammante
+10510600	Lama gemella di acciaio nero folgorante
+10510700	Lama gemella di acciaio nero sacra
+10510800	Lama gemella di acciaio nero magica
+10510900	Lama gemella di acciaio nero fredda
+10511000	Lama gemella di acciaio nero avvelenata
+10511100	Lama gemella di acciaio nero sanguinaria
+10511200	Lama gemella di acciaio nero occulta
+11500000	Martello fiordipietra
+12500000	Granmartello forgigrafato
+12500100	Granmartello forgigrafato pesante
+12500200	Granmartello forgigrafato incisivo
+12500300	Granmartello forgigrafato di qualità
+12500400	Granmartello forgigrafato incendiario
+12500500	Granmartello forgigrafato fiammante
+12500600	Granmartello forgigrafato folgorante
+12500700	Granmartello forgigrafato sacro
+12500800	Granmartello forgigrafato magico
+12500900	Granmartello forgigrafato freddo
+12501000	Granmartello forgigrafato avvelenato
+12501100	Granmartello forgigrafato sanguinario
+12501200	Granmartello forgigrafato occulto
+12510000	Martello incudine
+12520000	Granmartello di acciaio nero
+12520100	Granmartello di acciaio nero pesante
+12520200	Granmartello di acciaio nero incisivo
+12520300	Granmartello di acciaio nero di qualità
+12520400	Granmartello di acciaio nero incendiario
+12520500	Granmartello di acciaio nero fiammante
+12520600	Granmartello di acciaio nero folgorante
+12520700	Granmartello di acciaio nero sacro
+12520800	Granmartello di acciaio nero magico
+12520900	Granmartello di acciaio nero freddo
+12521000	Granmartello di acciaio nero avvelenato
+12521100	Granmartello di acciaio nero sanguinario
+12521200	Granmartello di acciaio nero occulto
+12530000	Braccio di sanguidemone
+12530100	Braccio di sanguidemone pesante
+12530200	Braccio di sanguidemone incisivo
+12530300	Braccio di sanguidemone di qualità
+12530400	Braccio di sanguidemone incendiario
+12530500	Braccio di sanguidemone fiammante
+12530600	Braccio di sanguidemone folgorante
+12530700	Braccio di sanguidemone sacro
+12530800	Braccio di sanguidemone magico
+12530900	Braccio di sanguidemone freddo
+12531000	Braccio di sanguidemone avvelenato
+12531100	Braccio di sanguidemone sanguinario
+12531200	Braccio di sanguidemone occulto
+13500000	Flagello dei serpenti
+14500000	Ascia forgigrafata
+14500100	Ascia forgigrafata pesante
+14500200	Ascia forgigrafata incisiva
+14500300	Ascia forgigrafata di qualità
+14500400	Ascia forgigrafata incendiaria
+14500500	Ascia forgigrafata fiammante
+14500600	Ascia forgigrafata folgorante
+14500700	Ascia forgigrafata sacra
+14500800	Ascia forgigrafata magica
+14500900	Ascia forgigrafata fredda
+14501000	Ascia forgigrafata avvelenata
+14501100	Ascia forgigrafata sanguinaria
+14501200	Ascia forgigrafata occulta
+14510000	Asce gemelle del cavaliere della morte
+14520000	Ascia da soldato di Messmer
+14520100	Ascia da soldato di Messmer pesante
+14520200	Ascia da soldato di Messmer incisiva
+14520300	Ascia da soldato di Messmer di qualità
+14520400	Ascia da soldato di Messmer incendiaria
+14520500	Ascia da soldato di Messmer fiammante
+14520600	Ascia da soldato di Messmer folgorante
+14520700	Ascia da soldato di Messmer sacra
+14520800	Ascia da soldato di Messmer magica
+14520900	Ascia da soldato di Messmer fredda
+14521000	Ascia da soldato di Messmer avvelenata
+14521100	Ascia da soldato di Messmer sanguinaria
+14521200	Ascia da soldato di Messmer occulta
+14540000	Accetta biforcuta
+15500000	Ascia lunga del cavaliere della morte
+15510000	Coltellaccio da macellaio di Bonny
+16500000	Lancia forgigrafata
+16500100	Lancia forgigrafata pesante
+16500200	Lancia forgigrafata incisiva
+16500300	Lancia forgigrafata di qualità
+16500400	Lancia forgigrafata incendiaria
+16500500	Lancia forgigrafata fiammante
+16500600	Lancia forgigrafata folgorante
+16500700	Lancia forgigrafata sacra
+16500800	Lancia forgigrafata magica
+16500900	Lancia forgigrafata fredda
+16501000	Lancia forgigrafata avvelenata
+16501100	Lancia forgigrafata sanguinaria
+16501200	Lancia forgigrafata occulta
+16520000	Lancia celere
+16520100	Lancia celere pesante
+16520200	Lancia celere incisiva
+16520300	Lancia celere di qualità
+16520400	Lancia celere incendiaria
+16520500	Lancia celere fiammante
+16520600	Lancia celere folgorante
+16520700	Lancia celere sacra
+16520800	Lancia celere magica
+16520900	Lancia celere fredda
+16521000	Lancia celere avvelenata
+16521100	Lancia celere sanguinaria
+16521200	Lancia celere occulta
+16540000	Forcone del sanguidemone
+16540100	Forcone del sanguidemone pesante
+16540200	Forcone del sanguidemone incisivo
+16540300	Forcone del sanguidemone di qualità
+16540400	Forcone del sanguidemone incendiario
+16540500	Forcone del sanguidemone fiammante
+16540600	Forcone del sanguidemone folgorante
+16540700	Forcone del sanguidemone sacro
+16540800	Forcone del sanguidemone magico
+16540900	Forcone del sanguidemone freddo
+16541000	Forcone del sanguidemone avvelenato
+16541100	Forcone del sanguidemone sanguinario
+16541200	Forcone del sanguidemone occulto
+16550000	Lancia sacra del sanguidemone
+17500000	Lancia dell'Impalatore
+17510000	Lancia da soldato di Messmer
+17510100	Lancia da soldato di Messmer pesante
+17510200	Lancia da soldato di Messmer incisiva
+17510300	Lancia da soldato di Messmer di qualità
+17510400	Lancia da soldato di Messmer incendiaria
+17510500	Lancia da soldato di Messmer fiammante
+17510600	Lancia da soldato di Messmer folgorante
+17510700	Lancia da soldato di Messmer sacra
+17510800	Lancia da soldato di Messmer magica
+17510900	Lancia da soldato di Messmer fredda
+17511000	Lancia da soldato di Messmer avvelenata
+17511100	Lancia da soldato di Messmer sanguinaria
+17511200	Lancia da soldato di Messmer occulta
+17520000	Lancia-bastone spinata
+18500000	Falcione spirituale
+18510000	Lama ad asta del bocciolo
+19500000	Lamina di ossidiana
+20500000	Frusta dentata
+21500000	Ago nascosto di Thiollier
+21510000	Pata
+21510100	Pata pesante
+21510200	Pata incisivo
+21510300	Pata di qualità
+21510400	Pata incendiario
+21510500	Pata fiammante
+21510600	Pata folgorante
+21510700	Pata sacro
+21510800	Pata magico
+21510900	Pata freddo
+21511000	Pata avvelenato
+21511100	Pata sanguinario
+21511200	Pata occulto
+21520000	Mano avvelenata
+21530000	Mano scellerata
+21540000	Pugno di golem
+21540100	Pugno di golem pesante
+21540200	Pugno di golem incisivo
+21540300	Pugno di golem di qualità
+21540400	Pugno di golem incendiario
+21540500	Pugno di golem fiammante
+21540600	Pugno di golem folgorante
+21540700	Pugno di golem sacro
+21540800	Pugno di golem magico
+21540900	Pugno di golem freddo
+21541000	Pugno di golem avvelenato
+21541100	Pugno di golem sanguinario
+21541200	Pugno di golem occulto
+21550000	Scudo della notte
+22500000	Artigli della notte
+23500000	Martello di Devonia
+23510000	Bocciolo di girasole ombra
+23520000	Dito scrutatore
+24500000	Torcia di Nanaya
+24510000	Viso dolente
+30510000	Scudo forgigrafato
+31500000	Scudo da soldato di Messmer
+31500100	Scudo da soldato di Messmer pesante
+31500200	Scudo da soldato di Messmer incisivo
+31500300	Scudo da soldato di Messmer di qualità
+31500400	Scudo da soldato di Messmer incendiario
+31500500	Scudo da soldato di Messmer fiammante
+31500600	Scudo da soldato di Messmer folgorante
+31500700	Scudo da soldato di Messmer sacro
+31500800	Scudo da soldato di Messmer magico
+31500900	Scudo da soldato di Messmer freddo
+31501000	Scudo da soldato di Messmer avvelenato
+31501100	Scudo da soldato di Messmer sanguinario
+31501200	Scudo da soldato di Messmer occulto
+31510000	Scudo con stemma di lupo
+31510100	Scudo con stemma di lupo pesante
+31510200	Scudo con stemma di lupo incisivo
+31510300	Scudo con stemma di lupo di qualità
+31510400	Scudo con stemma di lupo incendiario
+31510500	Scudo con stemma di lupo fiammante
+31510600	Scudo con stemma di lupo folgorante
+31510700	Scudo con stemma di lupo sacro
+31510800	Scudo con stemma di lupo magico
+31510900	Scudo con stemma di lupo freddo
+31511000	Scudo con stemma di lupo avvelenato
+31511100	Scudo con stemma di lupo sanguinario
+31511200	Scudo con stemma di lupo occulto
+31520000	Scudo con stemma di serpe
+31520100	Scudo con stemma di serpe pesante
+31520200	Scudo con stemma di serpe incisivo
+31520300	Scudo con stemma di serpe di qualità
+31520400	Scudo con stemma di serpe incendiario
+31520500	Scudo con stemma di serpe fiammante
+31520600	Scudo con stemma di serpe folgorante
+31520700	Scudo con stemma di serpe sacro
+31520800	Scudo con stemma di serpe magico
+31520900	Scudo con stemma di serpe freddo
+31521000	Scudo con stemma di serpe avvelenato
+31521100	Scudo con stemma di serpe sanguinario
+31521200	Scudo con stemma di serpe occulto
+31530000	Scudo del leone dorato
+32500000	Granscudo di acciaio nero
+32500100	Granscudo di acciaio nero pesante
+32500200	Granscudo di acciaio nero incisivo
+32500300	Granscudo di acciaio nero di qualità
+32500400	Granscudo di acciaio nero incendiario
+32500500	Granscudo di acciaio nero fiammante
+32500600	Granscudo di acciaio nero folgorante
+32500700	Granscudo di acciaio nero sacro
+32500800	Granscudo di acciaio nero magico
+32500900	Granscudo di acciaio nero freddo
+32501000	Granscudo di acciaio nero avvelenato
+32501100	Granscudo di acciaio nero sanguinario
+32501200	Granscudo di acciaio nero occulto
+32520000	Granscudo di verderame
+33510000	Bastone del grande oltre
+33520000	Bastone materno
+34500000	Sigillo dei Fogliamorta
+34510000	Sigillo da cavaliere del fuoco
+34520000	Sigillo dello spiralbero
+40500000	Arco di ossa
+41510000	Arco lungo di Ansbach
+42500000	Arco pesante di Igon
+43500000	Balestra a ripetizione
+43510000	Balestra a ventaglio
+44500000	Cannone di Rabbath
+50540000	Freccia seducente piumata
+50550000	Freccia seducente
+51500000	Arpione di Igon
+52520000	Dardo seducente
+53500000	Dardo pesante di Rabbath
+60500000	Arti Fogliamorta
+60500100	Arti Fogliamorta pesanti
+60500200	Arti Fogliamorta incisive
+60500300	Arti Fogliamorta di qualità
+60500400	Arti Fogliamorta incendiarie
+60500500	Arti Fogliamorta fiammanti
+60500600	Arti Fogliamorta folgoranti
+60500700	Arti Fogliamorta sacre
+60500800	Arti Fogliamorta magiche
+60500900	Arti Fogliamorta fredde
+60501000	Arti Fogliamorta avvelenate
+60501100	Arti Fogliamorta sanguinarie
+60501200	Arti Fogliamorta occulte
+60510000	Passi di Dane
+60510100	Passi di Dane pesanti
+60510200	Passi di Dane incisivi
+60510300	Passi di Dane di qualità
+60510400	Passi di Dane incendiari
+60510500	Passi di Dane fiammanti
+60510600	Passi di Dane folgoranti
+60510700	Passi di Dane sacri
+60510800	Passi di Dane magici
+60510900	Passi di Dane freddi
+60511000	Passi di Dane avvelenati
+60511100	Passi di Dane sanguinari
+60511200	Passi di Dane occulti
+61500000	Bottiglia di profumo scintifuoco
+61510000	Bottiglia di profumo glaciale
+61520000	Bottiglia di profumo frenetica
+61530000	Bottiglia di profumo folgorante
+61540000	Bottiglia di profumo mortale
+62500000	Scudo da duello
+62500100	Scudo da duello pesante
+62500200	Scudo da duello incisivo
+62500300	Scudo da duello di qualità
+62500400	Scudo da duello incendiario
+62500500	Scudo da duello fiammante
+62500600	Scudo da duello folgorante
+62500700	Scudo da duello sacro
+62500800	Scudo da duello magico
+62500900	Scudo da duello freddo
+62501000	Scudo da duello avvelenato
+62501100	Scudo da duello sanguinario
+62501200	Scudo da duello occulto
+62510000	Scudo da affondo cariano
+62510100	Scudo da affondo cariano pesante
+62510200	Scudo da affondo cariano incisivo
+62510300	Scudo da affondo cariano di qualità
+62510400	Scudo da affondo cariano incendiario
+62510500	Scudo da affondo cariano fiammante
+62510600	Scudo da affondo cariano folgorante
+62510700	Scudo da affondo cariano sacro
+62510800	Scudo da affondo cariano magico
+62510900	Scudo da affondo cariano freddo
+62511000	Scudo da affondo cariano avvelenato
+62511100	Scudo da affondo cariano sanguinario
+62511200	Scudo da affondo cariano occulto
+63500000	Pugnale forgigrafato
+63500100	Pugnale forgigrafato pesante
+63500200	Pugnale forgigrafato incisivo
+63500300	Pugnale forgigrafato di qualità
+63500400	Pugnale forgigrafato incendiario
+63500500	Pugnale forgigrafato fiammante
+63500600	Pugnale forgigrafato folgorante
+63500700	Pugnale forgigrafato sacro
+63500800	Pugnale forgigrafato magico
+63500900	Pugnale forgigrafato freddo
+63501000	Pugnale forgigrafato avvelenato
+63501100	Pugnale forgigrafato sanguinario
+63501200	Pugnale forgigrafato occulto
+64500000	Lama rovesciata
+64500100	Lama rovesciata pesante
+64500200	Lama rovesciata incisiva
+64500300	Lama rovesciata di qualità
+64500400	Lama rovesciata incendiaria
+64500500	Lama rovesciata fiammante
+64500600	Lama rovesciata folgorante
+64500700	Lama rovesciata sacra
+64500800	Lama rovesciata magica
+64500900	Lama rovesciata fredda
+64501000	Lama rovesciata avvelenata
+64501100	Lama rovesciata sanguinaria
+64501200	Lama rovesciata occulta
+64510000	Chakram forgigrafato
+64510100	Chakram forgigrafato pesante
+64510200	Chakram forgigrafato incisivo
+64510300	Chakram forgigrafato di qualità
+64510400	Chakram forgigrafato incendiario
+64510500	Chakram forgigrafato fiammante
+64510600	Chakram forgigrafato folgorante
+64510700	Chakram forgigrafato sacro
+64510800	Chakram forgigrafato magico
+64510900	Chakram forgigrafato freddo
+64511000	Chakram forgigrafato avvelenato
+64511100	Chakram forgigrafato sanguinario
+64511200	Chakram forgigrafato occulto
+64520000	Chakram da Lama di sventura
+66500000	Katana gigante
+66500100	Katana gigante pesante
+66500200	Katana gigante incisiva
+66500300	Katana gigante di qualità
+66500400	Katana gigante incendiaria
+66500500	Katana gigante fiammante
+66500600	Katana gigante folgorante
+66500700	Katana gigante sacra
+66500800	Katana gigante magica
+66500900	Katana gigante fredda
+66501000	Katana gigante avvelenata
+66501100	Katana gigante sanguinaria
+66501200	Katana gigante occulta
+66510000	Katana gigante da caccia-draghi
+66520000	Katana gigante di Rakshasa
+67500000	Milady
+67500100	Milady pesante
+67500200	Milady incisiva
+67500300	Milady di qualità
+67500400	Milady incendiaria
+67500500	Milady fiammante
+67500600	Milady folgorante
+67500700	Milady sacra
+67500800	Milady magica
+67500900	Milady fredda
+67501000	Milady avvelenata
+67501100	Milady sanguinaria
+67501200	Milady occulta
+67510000	Spada di Leda
+67520000	Lame accoppiate di Rellana
+68500000	Artiglio ferino
+68500100	Artiglio ferino pesante
+68500200	Artiglio ferino incisivo
+68500300	Artiglio ferino di qualità
+68500400	Artiglio ferino incendiario
+68500500	Artiglio ferino fiammante
+68500600	Artiglio ferino folgorante
+68500700	Artiglio ferino sacro
+68500800	Artiglio ferino magico
+68500900	Artiglio ferino freddo
+68501000	Artiglio ferino avvelenato
+68501100	Artiglio ferino sanguinario
+68501200	Artiglio ferino occulto
+68510000	Artiglio di Orso rosso

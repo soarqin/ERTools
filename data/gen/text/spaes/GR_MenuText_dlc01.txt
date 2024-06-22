@@ -1,0 +1,76 @@
+10410	Bendición del Árbol Umbrío
+10411	Bend. de cenizas de espíritu ven.
+30205	Fuerza de la bendición del Árbol Umbrío.\nSolo afecta a quienes este bendijo\ny se hallan en el Reino de las Sombras.
+30206	Fuerza de la bendición de la ceniza de espíritu venerado.\nMejora a los espíritus invocados y al corcel espectral, pero solo funciona en el Reino de las Sombras.
+40382	Solo teclado
+40383	Teclado y ratón
+40524	Obj. rec.
+60180	Cuerpo a cuerpo
+60181	Botella perf.
+60182	Escudo embestida
+60183	Hoja arrojad.
+60184	Hoja de revés
+60185	Espadón ligero
+60186	Gran catana
+60187	Garra best.
+63051	Puede usarse en armas cuerpo a cuerpo.
+63052	Puede usarse en botellas de perfume.
+63053	Puede usarse en escudos de embestida.
+63054	Puede usarse en hojas arrojadizas.
+63055	Puede usarse en hojas de revés.
+63056	Puede usarse en espadones ligeros.
+63057	Puede usarse en grandes catanas.
+63058	Puede usarse en garras de bestia.
+63059	Puede usarse en armas de embestida (exceptuando garras y hojas de revés).
+63060	Puede usarse en espadas grandes y colosales.
+63061	Puede usarse en espadas y lanzas (exceptuando armamento pequeño, hojas dobles y hojas de revés).
+80020	Tarro agrietado grande
+110600	Pantalla
+110601	Marcar objetos nuevos
+110602	
+110603	Mostrar objetos recientes
+110700	Sonido
+111024	Movimiento del cursor en el mapa
+111025	Sensibilidad al cambiar de objetivo
+225001	Comunión Dragontina: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Ofrendas
+241337	Altiplano Sombrío
+241338	Costa Cerúlea
+241339	Pie del pico escarpado
+241340	Pico escarpado
+241341	Tumba oculta de Charo
+241342	Antiguas ruinas de Rauh
+241343	Vista Sombría
+241344	Bosque del abismo
+241345	Belurat, asentamiento de la torre
+241346	Enir-Ilim
+241347	Fortaleza sombría
+241348	Fortaleza sombría, distrito de la iglesia
+241349	Almacén de especímenes
+241350	Fisura en ataúd de piedra
+241351	Casa parroquial de Midra
+241352	Castillo de Ensis
+241353	Llanura de las Tumbas
+241354	Base de Rauh
+241417	Llanura de las Tumbas
+241418	Altiplano Sombrío
+241419	Territorios de la torre
+241420	Fortaleza sombría
+241500	Funciones del mapa
+241501	Mostrar estado multijugador
+241502	Lista de altares de invocación
+241503	Ver controles
+241504	Menú «Mapa»
+241600	Lista de altares de invocación
+280060	Menú
+280600	Mapa
+331340	CORAZÓN ROBADO

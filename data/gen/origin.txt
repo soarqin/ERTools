@@ -208,3 +208,62 @@ Leyndell, Ashen Capital|1105,1900:
 + Sir Gideon Ofnir, the All-Knowing|Erdtree Sanctuary:11050850
 + Godfrey, First Elden Lord|Elden Throne:11050800,14
 + Radagon of the Golden Order|Elden Beast|Fractured Marika:19000800,15
+
+Gravesite Plain|4100,4102,4300,6800,6801,6804,6805,6806,6810,6815,6820:
++ Ghostflame Dragon:2045440800
++ Blackgaol Knight|Western Nameless Mausoleum:2046410800
++ Chief Bloodfiend|Rivermouth Cave:43000800
++ Lamenter|Lamenter's Gaol:41020800
++ Demi-Human Swordmaster Onze|Belurat Gaol:41000800
++ Divine Beast Dancing Lion|Belurat, Tower Settlement:20000800,16
++ Rellana, Twin Moon Knight|Castle Ensis:2048440800,17
+
+Scadu Altus|4000,4001,4101,6900,6901,6902,6903,6904,6905,6906:
++ Ghostflame Dragon:2049430800
++ Ralva the Great Red Bear:2049450800
++ Rugalea the Great Red Bear:2044470800
++ Dryleaf Dane:2049440800
++ Black Knight Edredd|Fort of Reprimand:2049430850
++ Black Knight Garrew|Fog Rift Fort:2047450800
++ Red Bear|Northern Nameless Mausoleum:2046450800
++ Rakshasa|Eastern Nameless Mausoleum:2051440800
++ Metyr, Mother of Fingers|Cathedral of Manus Metyr:25000800,18
++ Count Ymir, Mother of Fingers|Cathedral of Manus Metyr:2051450800
++ Death Knight|Fog Rift Catacombs:40000800
++ Death Knight|Scorpion River Catacombs:40010800
++ Curseblade Labirith|Bonny Gaol:41010800
++ Golden Hippopotamus|Shadow Keep:21000850
++ Messmer the Impaler|Base Serpent Messmer|Shadow Keep:21010800,20
+
+Ancient Ruins of Rauh|6940:
++ Romina, Saint of the Bud|Church of the Bud:2044450800,21
+
+Cerulean Coast|2200,6830,6835:
++ Ghostflame Dragon:2048380850
++ Dancer of Ranah|Southern Nameless Mausoleum:2046380800
++ Putrescent Knight|Stone Coffin Fissure:22000800,22
+
+Charo's Hidden Grave|6840:
++ Death Rite Bird:2047390800
++ Demi-Human Queen Marigga:2046400800
+
+Jagged Peak|4301,6850:
++ Jagged Peak Drake:2049410800
++ Jagged Peak Drake:2052400700
++ Ancient Dragon-Man|Dragon's Pit:43010800
++ Ancient Dragon Senessax|Jagged Peak Mountainside:2054390850
++ Bayle the Dread|Jagged Peak Summit:2054390800
+
+Scaduview|6920,6930,6960:
++ Tree Sentinel:2050470800
++ Tree Sentinel:2050480860
++ Fallingstar Beast:2052480800
++ Commander Gaius:2049480800,19
++ Scadutree Avatar|Scadutree Base:2050480800,24
+
+Abyssal Woods|2800,4002,6860:
++ Jori, Elder Inquisitor|Darklight Catacombs:2052430800
++ Midra, Lord of Frenzied Flame|Midra's Manse:28000800,23
+
+Enir-Ilim|2001:
++ Promised Consort Radahn|Radahn, Consort of Miquella:20010800,25

@@ -1,0 +1,76 @@
+10410	Benedizione dell'Albero Ombra
+10411	Benedizione ceneri venerate
+30205	Intensità della benedizione dell'Albero Ombra.\nHa effetto solo nel regno dell'ombra\nsu chi ha ricevuto la benedizione.
+30206	Intensità della benedizione delle ceneri di spirito venerate.\nRafforza il destriero fantasma e gli spiriti evocati, ma solo all'interno del regno dell'ombra.
+40382	Solo tastiera
+40383	Mouse e tastiera
+40524	Oggetti recenti
+60180	Corpo a corpo
+60181	Bottiglia di profumo
+60182	Scudo da affondo
+60183	Lama da lancio
+60184	Lama rovesciata
+60185	Spadone leggero
+60186	Katana gigante
+60187	Artiglio ferino
+63051	Usabile su armi corpo a corpo
+63052	Usabile su bottiglie di profumo
+63053	Usabile su scudi da affondo
+63054	Usabile su lame da lancio
+63055	Usabile su lame rovesciate
+63056	Usabile su spadoni leggeri
+63057	Usabile su katana giganti
+63058	Usabile su artigli ferini
+63059	Usabile su armamenti da affondo (tranne artigli e lame rovesciate)
+63060	Usabile su spade grandi e colossali
+63061	Usabile su spade e lance (tranne armamenti piccoli, lame gemelle e lame rovesciate)
+80020	Vaso incrinato grande
+110600	Video
+110601	Contrassegna nuovi oggetti
+110602	
+110603	Mostra scheda Oggetti recenti
+110700	Audio
+111024	Movimento cursore menu mappa
+111025	Sensibilità cambio bersaglio
+225001	Comunione draconica: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Offerte
+241337	Altus Ombra
+241338	Costa cerulea
+241339	Base del picco frastagliato
+241340	Picco frastagliato
+241341	Tomba nascosta di Charo
+241342	Antiche rovine di Rauh
+241343	Ombravista
+241344	Boschi abissali
+241345	Belurat, insediamento della torre
+241346	Enir-Ilim
+241347	Rocca delle ombre
+241348	Rocca delle ombre, quartiere della chiesa
+241349	Magazzino di esemplari
+241350	Faglia dei sarcofagi di pietra
+241351	Canonica di Midra
+241352	Castello di Ensis
+241353	Piana dei sepolcri
+241354	Base di Rauh
+241417	Piana dei sepolcri
+241418	Altus Ombra
+241419	Regione della torre
+241420	Rocca delle ombre
+241500	Menu funzioni mappa
+241501	Visualizzazione stato multigiocatore
+241502	Elenco bacini evocazione
+241503	Visualizza comandi
+241504	Spiegazione menu
+241600	Elenco bacini evocazione
+280060	Menu
+280600	Mappa
+331340	CUORE RUBATO

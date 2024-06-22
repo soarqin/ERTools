@@ -1,0 +1,25 @@
+200000	Kriegsasche: Trockenblatt-Wirbelwind
+200100	Kriegsasche: Aspekt des Schmelztiegels (Flügel)
+400000	Kriegsasche: Wirbelnder Schwerkraftstoß
+401000	Kriegsasche: Handexplosion
+402000	Kriegsasche: Durchbohrender Wurf
+403000	Kriegsasche: Streuschuss-Wurf
+404000	Kriegsasche: Funkenwand
+405000	Kriegsasche: Rollende Funken
+406000	Kriegsasche: Tobende Bestie
+407000	Kriegsasche: Wilde Klauen
+409000	Kriegsasche: Toter Winkel
+410000	Kriegsasche: Schneller Schnitt
+411000	Kriegsasche: Überkopf-Haltung
+412000	Kriegsasche: Flügelhaltung
+413000	Kriegsasche: Blitzbolzen
+414000	Kriegsasche: Flammenspieß
+415000	Kriegsasche: Wilde Löwenkralle
+416000	Kriegsasche: Göttliches Bestien-Froststampfen
+417000	Kriegsasche: Flammenspeer
+418000	Kriegsasche: Carianische Souveränität
+419000	Kriegsasche: Schrei des Kummers
+422000	Kriegsasche: Ruf der Geisterflamme
+505000	Kriegsasche: Die giftige Blume blüht zweimal
+548000	Kriegsasche: Igons Drachlingjagd
+800000	Kriegsasche: Schildangriff

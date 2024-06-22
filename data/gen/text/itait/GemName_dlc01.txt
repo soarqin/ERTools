@@ -1,0 +1,25 @@
+200000	Cenere di guerra: Turbine Fogliamorta
+200100	Cenere di guerra: Ali del Crogiolo
+400000	Cenere di guerra: Affondo gravitazionale rotante
+401000	Cenere di guerra: Palmo esplosivo
+402000	Cenere di guerra: Lancio perforante
+403000	Cenere di guerra: Lancio multiplo
+404000	Cenere di guerra: Muro di scintille
+405000	Cenere di guerra: Scintille vorticanti
+406000	Cenere di guerra: Belva furente
+407000	Cenere di guerra: Artigli selvaggi
+409000	Cenere di guerra: Punto cieco
+410000	Cenere di guerra: Fendente rapido
+411000	Cenere di guerra: Postura alta
+412000	Cenere di guerra: Postura dell'ala
+413000	Cenere di guerra: Lampo fugace
+414000	Cenere di guerra: Fiamma perforante
+415000	Cenere di guerra: Artiglio leonino selvaggio
+416000	Cenere di guerra: Pestone della belva divina
+417000	Cenere di guerra: Lancia fiammeggiante
+418000	Cenere di guerra: Sovranità cariana
+419000	Cenere di guerra: Grido di sofferenza
+422000	Cenere di guerra: Richiamo spettrale
+505000	Cenere di guerra: Doppia fioritura velenosa
+548000	Cenere di guerra: Caccia al drago di Igon
+800000	Cenere di guerra: Affondo di scudo

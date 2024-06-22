@@ -1,0 +1,1216 @@
+2000300	Duży garnek ognia
+2000301	
+2000302	
+2000303	
+2000304	
+2000305	
+2000306	
+2000307	
+2000308	
+2000309	
+2000310	Duży garnek kamieni
+2000311	
+2000312	
+2000313	
+2000314	
+2000315	
+2000316	
+2000317	
+2000318	
+2000319	
+2000320	Duży garnek błyskawic
+2000321	
+2000322	
+2000323	
+2000324	
+2000325	
+2000326	
+2000327	
+2000328	
+2000329	
+2000330	Duży garnek zepsucia
+2000331	
+2000332	
+2000333	
+2000334	
+2000335	
+2000336	
+2000337	
+2000338	
+2000339	
+2000340	Duży garnek roju
+2000360	Duży zamrażający garnek
+2000361	
+2000362	
+2000363	
+2000364	
+2000365	
+2000366	
+2000367	
+2000368	
+2000369	
+2000370	Duży garnek trucizny
+2000371	
+2000372	
+2000373	
+2000374	
+2000375	
+2000376	
+2000377	
+2000378	
+2000379	
+2000380	Duży garnek oleju
+2000600	Duży wulkaniczny garnek
+2000620	Duży garnek oszalałego płomienia
+2000650	Duży garnek animozji
+2000651	
+2000652	
+2000653	
+2000654	
+2000655	
+2000656	
+2000657	
+2000658	
+2000659	
+2000660	Duży magiczny garnek
+2000661	
+2000662	
+2000663	
+2000664	
+2000665	
+2000666	
+2000667	
+2000668	
+2000669	
+2000670	Duży garnek zgnilizny
+2000671	
+2000672	
+2000673	
+2000674	
+2000675	
+2000676	
+2000677	
+2000678	
+2000679	
+2000680	Duży garnek pieca
+2000681	
+2000682	
+2000683	
+2000684	
+2000685	
+2000686	
+2000687	
+2000688	
+2000689	
+2000690	Duży garnek czerwonych błyskawic
+2000691	
+2000692	
+2000693	
+2000694	
+2000695	
+2000696	
+2000697	
+2000698	
+2000699	
+2000700	Garnek czerwonych błyskawic
+2000701	
+2000702	
+2000703	
+2000704	
+2000705	
+2000706	
+2000707	
+2000708	
+2000709	
+2000710	Garnek oszalałego płomienia
+2000740	Garnek wiecznego snu
+2000760	Garnek oszalałego płomienia ze sznurkiem
+2000800	Duchowy rodzynek
+2000900	Błogosławieństwo Mariki
+2000901	
+2000902	
+2000903	
+2000904	
+2000905	
+2000906	
+2000907	
+2000908	
+2000909	
+2000910	Usypiająca gałąź
+2001100	Ciało smoczej komunii
+2001101	
+2001102	
+2001103	
+2001104	
+2001105	Mięso smoczych łusek
+2001106	
+2001107	
+2001108	
+2001109	
+2001110	Panaceum odcisku palca
+2001111	
+2001112	
+2001113	
+2001114	
+2001115	
+2001116	
+2001117	
+2001118	
+2001119	
+2001120	Czaroodporna marynowana wątroba
+2001121	
+2001122	
+2001123	
+2001124	
+2001125	
+2001126	
+2001127	
+2001128	
+2001129	
+2001130	Ognioodporna marynowana wątroba
+2001131	
+2001132	
+2001133	
+2001134	
+2001135	
+2001136	
+2001137	
+2001138	
+2001139	
+2001140	Elektroodporna marynowana wątroba
+2001141	
+2001142	
+2001143	
+2001144	
+2001145	
+2001146	
+2001147	
+2001148	
+2001149	
+2001150	Świętoodporna marynowana wątroba
+2001151	
+2001152	
+2001153	
+2001154	
+2001155	
+2001156	
+2001157	
+2001158	
+2001159	
+2001160	Opalizująca marynowana wątroba
+2001161	
+2001162	
+2001163	
+2001164	
+2001165	
+2001166	
+2001167	
+2001168	
+2001169	
+2001170	Mocno marynowane mięso żółwia
+2001200	Skorpioni gulasz
+2001201	Wykwintny skorpioni gulasz
+2001202	Skorpioni gulasz
+2001203	Wykwintny skorpioni gulasz
+2001204	
+2001205	
+2001206	
+2001207	
+2001208	
+2001209	
+2001210	Święte krwawe ciało
+2001211	
+2001212	
+2001213	
+2001214	
+2001215	
+2001216	
+2001217	
+2001218	
+2001219	
+2001220	Srebrny róg
+2001221	
+2001222	
+2001223	
+2001224	
+2001225	
+2001226	
+2001227	
+2001228	
+2001229	
+2001230	Złoty róg
+2001400	Smar ogniowy Messmera
+2001401	
+2001402	
+2001403	
+2001404	
+2001405	
+2001406	
+2001407	
+2001408	
+2001409	
+2001410	Smar smoczego pioruna
+2001411	
+2001412	
+2001413	
+2001414	
+2001415	
+2001416	
+2001417	
+2001418	
+2001419	
+2001420	Królewski magiczny smar
+2001421	
+2001422	
+2001423	
+2001424	
+2001425	
+2001426	
+2001427	
+2001428	
+2001429	
+2001430	Złoty smar
+2001450	Smar wiecznego snu
+2001480	Smar smoczej komunii
+2001500	Smar Messmera ze sznureczkiem
+2001501	
+2001502	
+2001503	
+2001504	
+2001505	
+2001506	
+2001507	
+2001508	
+2001509	
+2001510	Smar smoczego pioruna ze sznureczkiem
+2001511	
+2001512	
+2001513	
+2001514	
+2001515	
+2001516	
+2001517	
+2001518	
+2001519	
+2001520	Królewski magiczny smar ze sznureczkiem
+2001521	
+2001522	
+2001523	
+2001524	
+2001525	
+2001526	
+2001527	
+2001528	
+2001529	
+2001530	Złoty smar ze sznureczkiem
+2001550	Smar wiecznego snu ze sznureczkiem
+2001600	Uroczysty smar
+2001700	Mięso smakowe
+2001701	
+2001702	
+2001703	
+2001704	
+2001705	
+2001706	
+2001707	
+2001708	
+2001709	
+2001710	Harpun smoczej komunii
+2002000	Nawiedzony kamień
+2002001	
+2002002	
+2002003	
+2002004	
+2002005	
+2002006	
+2002007	
+2002008	
+2002009	
+2002010	Kamienne serce
+2002011	
+2002012	
+2002013	
+2002014	
+2002015	
+2002016	
+2002017	
+2002018	
+2002019	
+2002020	Serce kapłanki
+2002021	
+2002022	
+2002023	
+2002024	
+2002025	
+2002026	
+2002027	
+2002028	
+2002029	
+2002030	Maska płaczki
+2002100	Błogosławieństwo starożytnego smoka
+2002120	Tęczówka pełna łaski
+2002121	
+2002122	
+2002123	
+2002124	
+2002125	
+2002126	
+2002127	
+2002128	
+2002129	
+2002130	Tęczówka okultacji
+2002131	
+2002132	
+2002133	
+2002134	
+2002135	
+2002136	
+2002137	
+2002138	
+2002139	
+2002140	Mikstura Thiolliera
+2002141	
+2002142	
+2002143	
+2002144	
+2002145	
+2002146	
+2002147	
+2002148	
+2002149	
+2002150	Gadająca głowa „Lament”
+2002900	Wizerunek jeźdźca na dziku
+2002901	Wizerunek Palownika
+2002902	Wizerunek cienistego słonecznika
+2002903	Wizerunek rycerza Bliźniaczych Księżyców
+2002904	Wizerunek świętej patronki pąków
+2002905	Wizerunek Tańczącego Lwa
+2002906	
+2002907	Wizerunek boga i władcy
+2002908	Wizerunek Władcy Oszalałego Płomienia
+2002909	Wizerunek Matki Palców
+2002910	Wizerunek zgnilizny
+2002950	Run Ledy
+2002951	Zniszczony run
+2002952	Run Królestwa Cieni [1]
+2002953	Run Królestwa Cieni [2]
+2002954	Run Królestwa Cieni [3]
+2002955	Run Królestwa Cieni [4]
+2002956	Run Królestwa Cieni [5]
+2002957	Run Królestwa Cieni [6]
+2002958	Run Królestwa Cieni [7]
+2002959	Run nieznanego bohatera
+2002960	Run Mariki
+2003000	Kamień więzi
+2003001	Duchowy kamień
+2003130	Rogate dziecko
+2003131	
+2003132	
+2003133	
+2003134	
+2003135	
+2003136	
+2003137	
+2003138	
+2003139	
+2003140	Olejek perfum Ranaha
+2003141	
+2003142	
+2003143	
+2003144	
+2003145	
+2003146	
+2003147	
+2003148	
+2003149	
+2003150	Zew Kościeja
+2003151	
+2003152	
+2003153	
+2003154	
+2003155	
+2003156	
+2003157	
+2003158	
+2003159	
+2003160	Wzbierający oszalały płomień
+2003161	
+2003162	
+2003163	
+2003164	
+2003165	
+2003166	
+2003167	
+2003168	
+2003169	
+2003170	Złota przysięga
+2003171	
+2003172	
+2003173	
+2003174	
+2003175	
+2003176	
+2003177	
+2003178	
+2003179	
+2003180	Ognisty pęk
+2003181	
+2003182	
+2003183	
+2003184	
+2003185	
+2003186	
+2003187	
+2003188	
+2003189	
+2003190	Ognisty duchowy kamień
+2003191	
+2003192	
+2003193	
+2003194	
+2003195	
+2003196	
+2003197	
+2003198	
+2003199	
+2003200	Połyskujący paznokieć
+2003310	Ogrzany słońcem kamień
+2003350	Mamiąca gałąź
+2004300	Zniknięcie Miriam
+2004301	
+2004302	
+2004303	
+2004304	
+2004305	
+2004306	
+2004307	
+2004308	
+2004309	
+2004310	Trójca błyskostrza
+2004311	
+2004312	
+2004313	
+2004314	
+2004315	
+2004316	
+2004317	
+2004318	
+2004319	
+2004320	Bliźniacze księżyce Rellany
+2004500	Błyskamienny paznokieć
+2004501	
+2004502	
+2004503	
+2004504	
+2004505	
+2004506	
+2004507	
+2004508	
+2004509	
+2004510	Błyskamienne paznokcie
+2004700	Kamienne ostrza
+2004701	
+2004702	
+2004703	
+2004704	
+2004705	
+2004706	
+2004707	
+2004708	
+2004709	
+2004710	Pocisk grawitacyjny
+2004900	Płaszcz kolców
+2004901	
+2004902	
+2004903	
+2004904	
+2004905	
+2004906	
+2004907	
+2004908	
+2004909	
+2004910	Niezniszczalne kolce
+2005000	Pierścienie widmowego światła
+2006200	Kłębowisko zgnilizny
+2006201	
+2006202	
+2006203	
+2006204	
+2006205	
+2006206	
+2006207	
+2006208	
+2006209	
+2006210	Masa zgnilizny
+2006300	Gniewna klinga Ansbacha
+2006400	Leczenie na odległość
+2006650	Aspekty Tygla: Ciernie
+2006651	
+2006652	
+2006653	
+2006654	
+2006655	
+2006656	
+2006657	
+2006658	
+2006659	
+2006660	Aspekty Tygla: Kwiecie
+2006661	
+2006662	
+2006663	
+2006664	
+2006665	
+2006666	
+2006667	
+2006668	
+2006669	
+2006670	Pomniejsze Złote drzewo
+2006671	
+2006672	
+2006673	
+2006674	
+2006675	
+2006676	
+2006677	
+2006678	
+2006679	
+2006680	Kraina Cienia
+2006681	
+2006682	
+2006683	
+2006684	
+2006685	
+2006686	
+2006687	
+2006688	
+2006689	
+2006690	Gniew na odległość
+2006691	
+2006692	
+2006693	
+2006694	
+2006695	
+2006696	
+2006697	
+2006698	
+2006699	
+2006700	Światło Miquelli
+2006701	
+2006702	
+2006703	
+2006704	
+2006705	
+2006706	
+2006707	
+2006708	
+2006709	
+2006710	Wielowarstwowe kręgi światła
+2006800	Ryk Rugalei
+2006900	Włócznia błyskawic rycerza
+2006901	
+2006902	
+2006903	
+2006904	
+2006905	
+2006906	
+2006907	
+2006908	
+2006909	
+2006910	Smoczy piorun Florissax
+2006911	
+2006912	
+2006913	
+2006914	
+2006915	
+2006916	
+2006917	
+2006918	
+2006919	
+2006920	Elektroładunek
+2007000	Tyrania Bayle’a
+2007001	
+2007002	
+2007003	
+2007004	
+2007005	
+2007006	
+2007007	
+2007008	
+2007009	
+2007010	Ognista błyskawica Bayle’a
+2007011	
+2007012	
+2007013	
+2007014	
+2007015	
+2007016	
+2007017	
+2007018	
+2007019	
+2007020	Zionięcie ogniem duchów
+2007200	Zgniłe motyle
+2007201	
+2007202	
+2007203	
+2007204	
+2007205	
+2007206	
+2007207	
+2007208	
+2007209	
+2007210	Włócznie nici szkodników
+2007300	Płomień szału Midry
+2007410	Ulotny mikrokosmos
+2007411	
+2007412	
+2007413	
+2007414	
+2007415	
+2007416	
+2007417	
+2007418	
+2007419	
+2007420	Czułe palce
+2007600	Czujny duch
+2007700	Złote łuki
+2007701	
+2007702	
+2007703	
+2007704	
+2007705	
+2007706	
+2007707	
+2007708	
+2007709	
+2007710	Olbrzymi złoty łuk
+2007711	
+2007712	
+2007713	
+2007714	
+2007715	
+2007716	
+2007717	
+2007718	
+2007719	
+2007720	Spirala
+2007721	
+2007722	
+2007723	
+2007724	
+2007725	
+2007726	
+2007727	
+2007728	
+2007729	
+2007730	Tornado boskiej bestii
+2007731	
+2007732	
+2007733	
+2007734	
+2007735	
+2007736	
+2007737	
+2007738	
+2007739	
+2007740	Pióra boskiego ptaka
+2007800	Ognisty wąż
+2007801	
+2007802	
+2007803	
+2007804	
+2007805	
+2007806	
+2007807	
+2007808	
+2007809	
+2007810	Deszcz ognia
+2007811	
+2007812	
+2007813	
+2007814	
+2007815	
+2007816	
+2007817	
+2007818	
+2007819	
+2007820	Kula Messmera
+2008000	Wielki Run Miquelli
+2008001	
+2008002	
+2008003	Zgięty palec Igona
+2008004	Klucz do czeluści studni
+2008005	Klucz do wyższego piętra więzienia
+2008006	Klucz do niższego piętra więzienia
+2008007	Mapa krzyży
+2008008	Podziurawiony naszyjnik
+2008009	
+2008010	
+2008011	Serce Bayle’a
+2008012	Nowa mapa krzyża
+2008013	Klucz do magazynu
+2008014	Zwój z tajemnym rytuałem
+2008015	List do Freyi
+2008016	Mapa ruin
+2008017	Mapa ruin (2.)
+2008018	Mapa ruin (3.)
+2008019	Czarny syrop
+2008020	
+2008021	Podpałka Messmera
+2008022	
+2008023	Klucz do ściany zamku
+2008024	
+2008025	Zapiski strażnika pieca
+2008026	
+2008027	Wiadomość od Ledy
+2008028	Wiadomość od Dane’a
+2008029	List mnicha
+2008030	Wiadomość krzyża w magazynie
+2008031	List: Zapieczętowany duchowy strumień
+2008032	Kartka wyrwana z pamiętnika
+2008033	Łza larwy
+2008034	Wiadomość od Ledy
+2008035	
+2008036	Klucz do kaplicy
+2008037	Wiadomość w wieży cienia
+2008131	List: Zapieczętowany duchowy strumień
+2008200	Obraz „Najazd”
+2008201	Obraz „Święta wieża”
+2008202	Obraz „Domena smoków”
+2008600	Mapa: Cmentarna Równina
+2008601	Mapa: Ostrowyż Altus
+2008602	Mapa: Południowe wybrzeże
+2008603	Mapa: Ruiny Rauh
+2008604	Mapa: Otchłań
+2008900	Dzwonek kulisty Moore’a
+2008901	Dzwonek kulisty Ymira
+2008902	Dzwonek kulisty zielarza
+2008903	Dzwonek kulisty sprzedawcy grzybów [1]
+2008904	Dzwonek kulisty sprzedawcy grzybów [2]
+2008905	Dzwonek kulisty handlarza tłuszczem
+2008906	Dzwonek kulisty kupca pleśni
+2008907	Dzwonek kulisty Igona
+2008908	Dzwonek kulisty czaromechanika
+2008909	Dzwonek kulisty sprzedawcy sznurków
+2009000	Pierścień Miquelli
+2009001	Niech zwyciężą najlepsi
+2009002	Dwa Palce
+2009003	Chodźmy razem
+2009004	O Matko
+2009160	O błogosławieństwie Ostrodrzewa
+2009161	O błog. prochów czcigodnego ducha
+2009162	O nowych opcjach ekwipunku\n
+2009301	Książka z przepisami rodu poszukiwaczy [6]
+2009302	Książka z przepisami rodu poszukiwaczy [1]
+2009303	Książka z przepisami rodu poszukiwaczy [2]
+2009304	Książka z przepisami rodu poszukiwaczy [3]
+2009305	Książka z przepisami rodu poszukiwaczy [4]
+2009306	Książka z przepisami rodu poszukiwaczy [5]
+2009307	Książka z przepisami Igona [2]
+2009308	Książka z przepisami tkacza palców [2]
+2009309	Książka z przepisami nadsłojtysa [1]
+2009310	Książka z przepisami nadsłojtysa [4]
+2009311	Książka z przepisami nadsłojtysa [5]
+2009312	Książka z przepisami nadsłojtysa [12]
+2009313	Książka z przepisami nadsłojtysa [7]
+2009314	Książka z przepisami nadsłojtysa [9]
+2009315	Książka z przepisami nadsłojtysa [10]
+2009316	Książka z przepisami nadsłojtysa [11]
+2009317	Książka z przepisami szalonego rzemieślnika [2]
+2009318	Książka z przepisami nadsłojtysa [8]
+2009319	Książka z przepisami nadsłojtysa [3]
+2009320	Książka z przepisami nadsłojtysa [13]
+2009321	Książka z przepisami nadsłojtysa [14]
+2009322	Książka z przepisami nadsłojtysa [6]
+2009323	Książka z przepisami nadsłojtysa [2]
+2009324	Książka z przepisami rycerza staroż. smoków [1]
+2009325	Książka z przepisami szalonego rzemieślnika [1]
+2009326	Książka z przepisami ucznia św. Triny [1]
+2009327	Książka z przepisami rycerza ognia [1]
+2009328	Książka z przepisami rycerza staroż. smoków [2]
+2009329	Książka z przepisami lojalnego rycerza
+2009330	Książka z przepisami duchownego z frontu [1]
+2009331	Książka z przepisami Igona [1]
+2009332	Książka z przepisami duchownego z frontu [2]
+2009333	Książka z przepisami rodu poszukiwaczy [7]
+2009334	Książka z przepisami ucznia św. Triny [3]
+2009335	Książka z przepisami strażnika grobów [2]
+2009336	Książka z przepisami uczonego starożytności [2]
+2009337	Książka z przepisami Kościeja
+2009338	Książka z przepisami szalonego rzemieślnika [3]
+2009339	Książka z przepisami duchownego z frontu [3]
+2009340	Książka z przepisami rycerza ognia [2]
+2009341	Książka z przepisami uczonego starożytności [1]
+2009342	Książka z przepisami tkacza palców [1]
+2009343	Książka z przepisami duchownego z frontu [4]
+2009344	Książka z przepisami strażnika grobów [1]
+2009345	Książka z przepisami ucznia św. Triny [2]
+2009500	Duży pęknięty garnek
+2010000	Odłamek Ostrodrzewa
+2010100	Prochy czcigodnego ducha
+2011000	Zielona ukryta łza
+2011001	
+2011002	
+2011003	
+2011004	
+2011005	
+2011006	
+2011007	
+2011008	
+2011009	
+2011010	Szkarłatnopęka wyschnięta łza
+2011011	
+2011012	
+2011013	
+2011014	
+2011015	
+2011016	
+2011017	
+2011018	
+2011019	
+2011020	Szkarłatnociekła pęknięta łza
+2011021	
+2011022	
+2011023	
+2011024	
+2011025	
+2011026	
+2011027	
+2011028	
+2011029	
+2011030	Modrociekła pęknięta łza
+2011031	
+2011032	
+2011033	
+2011034	
+2011035	
+2011036	
+2011037	
+2011038	
+2011039	
+2011040	Oleista łza
+2011041	
+2011042	
+2011043	
+2011044	
+2011045	
+2011046	
+2011047	
+2011048	
+2011049	
+2011050	Krwiopijcza pęknięta łza
+2011051	
+2011052	
+2011053	
+2011054	
+2011055	
+2011056	
+2011057	
+2011058	
+2011059	
+2011060	Konwaliowa kryształowa łza
+2011061	
+2011062	
+2011063	
+2011064	
+2011065	
+2011066	
+2011067	
+2011068	
+2011069	
+2011070	Odbijająca twardo-łza
+2015000	Róg bestii
+2015001	
+2015002	
+2015003	
+2015004	
+2015005	
+2015006	
+2015007	
+2015008	
+2015009	
+2015010	Duchowy złóg
+2015011	
+2015012	
+2015013	
+2015014	
+2015015	
+2015016	
+2015017	
+2015018	
+2015019	
+2015020	Perłowa łuska
+2015021	
+2015022	
+2015023	
+2015024	
+2015025	
+2015026	
+2015027	
+2015028	
+2015029	
+2015030	Wątroba skorpiopająka
+2015031	
+2015032	
+2015033	
+2015034	
+2015035	
+2015036	
+2015037	
+2015038	
+2015039	
+2015040	Musza pleśń
+2020001	Owoc rada
+2020002	Grzyb z czerwonym miąższem
+2020003	Grzyb z białym miąższem
+2020004	Żywica z sęku
+2020005	Klejnot porannej rosy
+2020006	Czarny widmowy świetlik
+2020007	Lśniący świetlik
+2020008	Żółty kwiat fulgurytu
+2020009	Cienisty słonecznik
+2020010	Toksyczny mszak
+2020011	Szkarłatny pąk
+2020012	Krwawy amarylis
+2020013	Zamrożona larwa
+2020014	Ciemnofioletowa lilia
+2020015	Pęd z krwawym nektarem
+2020016	Zimowy latarnik
+2020017	Nabrzmiałe winogrono
+2020018	Czaszka strażnika grobów
+2020019	Pokryte rogami odchody
+2020020	Gazowy kamień
+2020021	Rozkwit ognia duchów
+2020022	Cmentarny świerszcz
+2020023	Rozkwit smoczej ciepłoty\n
+2020024	Naśladowca palca
+2020025	Pęd z krwawego Niebianina
+2020026	Zakrzepła zgnilizna
+2020027	Okrągła skała
+2020028	Duchowy kamień nagrobny
+2020029	Gniazdo Rauh
+2020030	Żar Messmera
+2020031	Odłamek błogosławionej kości
+2020032	Czerwony kwiat fulgurytu
+2020033	Paznokamień
+2020034	Ostro zakończony kamień żwirowy
+2020035	Oblicze pieca
+2200000	Meera, przeklęte ostrze
+2200001	Meera, przeklęte ostrze +1
+2200002	Meera, przeklęte ostrze +2
+2200003	Meera, przeklęte ostrze +3
+2200004	Meera, przeklęte ostrze +4
+2200005	Meera, przeklęte ostrze +5
+2200006	Meera, przeklęte ostrze +6
+2200007	Meera, przeklęte ostrze +7
+2200008	Meera, przeklęte ostrze +8
+2200009	Meera, przeklęte ostrze +9
+2200010	Meera, przeklęte ostrze +10
+2201000	Prochy zaklinacza demonów krwi
+2201001	Prochy zaklinacza demonów krwi +1
+2201002	Prochy zaklinacza demonów krwi +2
+2201003	Prochy zaklinacza demonów krwi +3
+2201004	Prochy zaklinacza demonów krwi +4
+2201005	Prochy zaklinacza demonów krwi +5
+2201006	Prochy zaklinacza demonów krwi +6
+2201007	Prochy zaklinacza demonów krwi +7
+2201008	Prochy zaklinacza demonów krwi +8
+2201009	Prochy zaklinacza demonów krwi +9
+2201010	Prochy zaklinacza demonów krwi +10
+2202000	Prochy cmentarnego ptaka
+2202001	Prochy cmentarnego ptaka +1
+2202002	Prochy cmentarnego ptaka +2
+2202003	Prochy cmentarnego ptaka +3
+2202004	Prochy cmentarnego ptaka +4
+2202005	Prochy cmentarnego ptaka +5
+2202006	Prochy cmentarnego ptaka +6
+2202007	Prochy cmentarnego ptaka +7
+2202008	Prochy cmentarnego ptaka +8
+2202009	Prochy cmentarnego ptaka +9
+2202010	Prochy cmentarnego ptaka +10
+2203000	Hilde, rycerz ognia
+2203001	Hilde, rycerz ognia +1
+2203002	Hilde, rycerz ognia +2
+2203003	Hilde, rycerz ognia +3
+2203004	Hilde, rycerz ognia +4
+2203005	Hilde, rycerz ognia +5
+2203006	Hilde, rycerz ognia +6
+2203007	Hilde, rycerz ognia +7
+2203008	Hilde, rycerz ognia +8
+2203009	Hilde, rycerz ognia +9
+2203010	Hilde, rycerz ognia +10
+2204000	Prochy skorpiopająka
+2204001	Prochy skorpiopająka +1
+2204002	Prochy skorpiopająka +2
+2204003	Prochy skorpiopająka +3
+2204004	Prochy skorpiopająka +4
+2204005	Prochy skorpiopająka +5
+2204006	Prochy skorpiopająka +6
+2204007	Prochy skorpiopająka +7
+2204008	Prochy skorpiopająka +8
+2204009	Prochy skorpiopająka +9
+2204010	Prochy skorpiopająka +10
+2205000	Prochy inkwizytorek
+2205001	Prochy inkwizytorek +1
+2205002	Prochy inkwizytorek +2
+2205003	Prochy inkwizytorek +3
+2205004	Prochy inkwizytorek +4
+2205005	Prochy inkwizytorek +5
+2205006	Prochy inkwizytorek +6
+2205007	Prochy inkwizytorek +7
+2205008	Prochy inkwizytorek +8
+2205009	Prochy inkwizytorek +9
+2205010	Prochy inkwizytorek +10
+2206000	Yosh, szermierz-półczłowiek
+2206001	Yosh, szermierz-półczłowiek +1
+2206002	Yosh, szermierz-półczłowiek +2
+2206003	Yosh, szermierz-półczłowiek +3
+2206004	Yosh, szermierz-półczłowiek +4
+2206005	Yosh, szermierz-półczłowiek +5
+2206006	Yosh, szermierz-półczłowiek +6
+2206007	Yosh, szermierz-półczłowiek +7
+2206008	Yosh, szermierz-półczłowiek +8
+2206009	Yosh, szermierz-półczłowiek +9
+2206010	Yosh, szermierz-półczłowiek +10
+2207000	Prochy żołnierzy Messmera
+2207001	Prochy żołnierzy Messmera +1
+2207002	Prochy żołnierzy Messmera +2
+2207003	Prochy żołnierzy Messmera +3
+2207004	Prochy żołnierzy Messmera +4
+2207005	Prochy żołnierzy Messmera +5
+2207006	Prochy żołnierzy Messmera +6
+2207007	Prochy żołnierzy Messmera +7
+2207008	Prochy żołnierzy Messmera +8
+2207009	Prochy żołnierzy Messmera +9
+2207010	Prochy żołnierzy Messmera +10
+2208000	Andreas, dowódca Czarnych Rycerzy
+2208001	Andreas, dowódca Czarnych Rycerzy +1
+2208002	Andreas, dowódca Czarnych Rycerzy +2
+2208003	Andreas, dowódca Czarnych Rycerzy +3
+2208004	Andreas, dowódca Czarnych Rycerzy +4
+2208005	Andreas, dowódca Czarnych Rycerzy +5
+2208006	Andreas, dowódca Czarnych Rycerzy +6
+2208007	Andreas, dowódca Czarnych Rycerzy +7
+2208008	Andreas, dowódca Czarnych Rycerzy +8
+2208009	Andreas, dowódca Czarnych Rycerzy +9
+2208010	Andreas, dowódca Czarnych Rycerzy +10
+2209000	Huw, kapitan Czarnych Rycerzy
+2209001	Huw, kapitan Czarnych Rycerzy +1
+2209002	Huw, kapitan Czarnych Rycerzy +2
+2209003	Huw, kapitan Czarnych Rycerzy +3
+2209004	Huw, kapitan Czarnych Rycerzy +4
+2209005	Huw, kapitan Czarnych Rycerzy +5
+2209006	Huw, kapitan Czarnych Rycerzy +6
+2209007	Huw, kapitan Czarnych Rycerzy +7
+2209008	Huw, kapitan Czarnych Rycerzy +8
+2209009	Huw, kapitan Czarnych Rycerzy +9
+2209010	Huw, kapitan Czarnych Rycerzy +10
+2210000	Prochy chochlika wielkogębowego
+2210001	Prochy chochlika wielkogębowego +1
+2210002	Prochy chochlika wielkogębowego +2
+2210003	Prochy chochlika wielkogębowego +3
+2210004	Prochy chochlika wielkogębowego +4
+2210005	Prochy chochlika wielkogębowego +5
+2210006	Prochy chochlika wielkogębowego +6
+2210007	Prochy chochlika wielkogębowego +7
+2210008	Prochy chochlika wielkogębowego +8
+2210009	Prochy chochlika wielkogębowego +9
+2210010	Prochy chochlika wielkogębowego +10
+2211000	Prochy ludzi-much
+2211001	Prochy ludzi-much +1
+2211002	Prochy ludzi-much +2
+2211003	Prochy ludzi-much +3
+2211004	Prochy ludzi-much +4
+2211005	Prochy ludzi-much +5
+2211006	Prochy ludzi-much +6
+2211007	Prochy ludzi-much +7
+2211008	Prochy ludzi-much +8
+2211009	Prochy ludzi-much +9
+2211010	Prochy ludzi-much +10
+2212000	Taylew, kowal golemów
+2212001	Taylew, kowal golemów +1
+2212002	Taylew, kowal golemów +2
+2212003	Taylew, kowal golemów +3
+2212004	Taylew, kowal golemów +4
+2212005	Taylew, kowal golemów +5
+2212006	Taylew, kowal golemów +6
+2212007	Taylew, kowal golemów +7
+2212008	Taylew, kowal golemów +8
+2212009	Taylew, kowal golemów +9
+2212010	Taylew, kowal golemów +10
+2213000	Ornis, wojownik boskiego ptaka
+2213001	Ornis, wojownik boskiego ptaka +1
+2213002	Ornis, wojownik boskiego ptaka +2
+2213003	Ornis, wojownik boskiego ptaka +3
+2213004	Ornis, wojownik boskiego ptaka +4
+2213005	Ornis, wojownik boskiego ptaka +5
+2213006	Ornis, wojownik boskiego ptaka +6
+2213007	Ornis, wojownik boskiego ptaka +7
+2213008	Ornis, wojownik boskiego ptaka +8
+2213009	Ornis, wojownik boskiego ptaka +9
+2213010	Ornis, wojownik boskiego ptaka +10
+2214000	Prochy rogatego wojownika
+2214001	Prochy rogatego wojownika +1
+2214002	Prochy rogatego wojownika +2
+2214003	Prochy rogatego wojownika +3
+2214004	Prochy rogatego wojownika +4
+2214005	Prochy rogatego wojownika +5
+2214006	Prochy rogatego wojownika +6
+2214007	Prochy rogatego wojownika +7
+2214008	Prochy rogatego wojownika +8
+2214009	Prochy rogatego wojownika +9
+2214010	Prochy rogatego wojownika +10
+2215000	Florissax, starożytna smoczyca
+2215001	Florissax, starożytna smoczyca +1
+2215002	Florissax, starożytna smoczyca +2
+2215003	Florissax, starożytna smoczyca +3
+2215004	Florissax, starożytna smoczyca +4
+2215005	Florissax, starożytna smoczyca +5
+2215006	Florissax, starożytna smoczyca +6
+2215007	Florissax, starożytna smoczyca +7
+2215008	Florissax, starożytna smoczyca +8
+2215009	Florissax, starożytna smoczyca +9
+2215010	Florissax, starożytna smoczyca +10
+2217000	Prochy pełzającego palca
+2217001	Prochy pełzającego palca +1
+2217002	Prochy pełzającego palca +2
+2217003	Prochy pełzającego palca +3
+2217004	Prochy pełzającego palca +4
+2217005	Prochy pełzającego palca +5
+2217006	Prochy pełzającego palca +6
+2217007	Prochy pełzającego palca +7
+2217008	Prochy pełzającego palca +8
+2217009	Prochy pełzającego palca +9
+2217010	Prochy pełzającego palca +10
+2218000	Queelign, rycerz ognia
+2218001	Queelign, rycerz ognia +1
+2218002	Queelign, rycerz ognia +2
+2218003	Queelign, rycerz ognia +3
+2218004	Queelign, rycerz ognia +4
+2218005	Queelign, rycerz ognia +5
+2218006	Queelign, rycerz ognia +6
+2218007	Queelign, rycerz ognia +7
+2218008	Queelign, rycerz ognia +8
+2218009	Queelign, rycerz ognia +9
+2218010	Queelign, rycerz ognia +10
+2219000	Jolán, szermierka nocy
+2219001	Jolán, szermierka nocy +1
+2219002	Jolán, szermierka nocy +2
+2219003	Jolán, szermierka nocy +3
+2219004	Jolán, szermierka nocy +4
+2219005	Jolán, szermierka nocy +5
+2219006	Jolán, szermierka nocy +6
+2219007	Jolán, szermierka nocy +7
+2219008	Jolán, szermierka nocy +8
+2219009	Jolán, szermierka nocy +9
+2219010	Jolán, szermierka nocy +10
+2220000	Jolán i Anna
+2220001	Jolán i Anna +1
+2220002	Jolán i Anna +2
+2220003	Jolán i Anna +3
+2220004	Jolán i Anna +4
+2220005	Jolán i Anna +5
+2220006	Jolán i Anna +6
+2220007	Jolán i Anna +7
+2220008	Jolán i Anna +8
+2220009	Jolán i Anna +9
+2220010	Jolán i Anna +10

@@ -1,0 +1,76 @@
+10410	Segen des Scadubaums
+10411	Segen der Verehrten Geisterasche
+30205	Macht des Segens des Scadubaums.\nBetrifft nur diejenigen im Reich der Schatten,\ndie den Segen des Scadubaums erhalten haben.
+30206	Macht des Segens der Verehrten Geisterasche.\nBetrifft nur innerhalb des Reichs der Schatten beschworene Geister und das Spektralross.
+40382	Nur Tastatur
+40383	Tastatur und Maus
+40524	Kürzl. verw. Objekte
+60180	Hand-zu-Hand
+60181	Parfümflasche
+60182	Stoßschild
+60183	Wurfklinge
+60184	Rückhandklinge
+60185	Leichtes Großschwert
+60186	Großkatana
+60187	Bestienklaue
+63051	Zur Verwendung mit Hand-zu-Hand-Waffen.
+63052	Zur Verwendung mit Parfümflaschen.
+63053	Zur Verwendung mit Stoßschilden.
+63054	Zur Verwendung mit Wurfklingen.
+63055	Zur Verwendung mit Rückhandklingen.
+63056	Zur Verwendung mit leichten Großschwertern.
+63057	Zur Verwendung mit Großkatanas.
+63058	Zur Verwendung mit Bestienklauen.
+63059	Zur Verwendung mit durchbohrenden Waffen (außer mit Klauen und Rückhandklingen).
+63060	Zur Verwendung mit großen Schwertern und Riesenschwertern.
+63061	Zur Verwendung mit Schwertern und Speeren (außer mit kleinen Waffen, Doppelklingen und Rückhandklingen).
+80020	Schw. gesp. Topf
+110600	Anzeige
+110601	Neue Objekte markieren
+110602	
+110603	Kürzl. verw. Objekte anzeigen
+110700	Klang
+111024	Cursor-Bewegung im Kartenmenü
+111025	Empfindlichkeit bei Zieländerung
+225001	Drachenkommunion: Bayle
+225002	
+225003	
+225004	
+225005	
+225006	
+225007	
+225008	
+225009	
+225010	
+225011	Opfergaben
+241337	Scadu Altus
+241338	Himmelblaues Ufer
+241339	Fuß des Klingengipfels
+241340	Klingengipfel
+241341	Charos verstecktes Grab
+241342	Uralte Ruinen von Rauh
+241343	Aussicht von Scadu
+241344	Abgrundwald
+241345	Belurat, Turmsiedlung
+241346	Enir-Ilim
+241347	Schattenbergfried
+241348	Schattenbergfried, Kirchenbezirk
+241349	Probenlager
+241350	Riss im Steinsarg
+241351	Midras Pfarrhaus
+241352	Schloss Ensis
+241353	Grabfeld-Ebene
+241354	Fuß von Rauh
+241417	Grabfeld-Ebene
+241418	Scadu Altus
+241419	Land des Turms
+241420	Schattenbergfried
+241500	Kartenfunktionsmenü
+241501	Mehrspieler-Statusanzeige
+241502	Herbeirufungsreserven-Liste
+241503	Steuerung ansehen
+241504	Menüerklärung
+241600	Herbeirufungsreserven-Liste
+280060	Menü
+280600	Karte
+331340	HERZ GESTOHLEN

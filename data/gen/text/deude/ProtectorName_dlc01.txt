@@ -1,0 +1,145 @@
+3000000	Danes Hut
+3000100	Trockenblatt-Robe
+3000200	Trockenblatt-Armwickel
+3000300	Hohe Trockenblatt-Stiefel
+3001100	Trockenblatt-Robe (Geänd.)
+3010000	Gaius' Helm
+3010100	Gaius' Rüstung
+3010200	Gaius' Stulpen
+3010300	Gaius' Beinschutz
+5000000	Eidesuchender Ritterhelm
+5000100	Ledas Rüstung
+5000200	Eidesuchender Ritterstulpen
+5000300	Eidesuchender Ritterbeinschutz
+5002100	Eidesuchender Ritterrüstung
+5010000	Grünspan-Helm
+5010100	Grünspan-Rüstung
+5010200	Grünspan-Stulpen
+5010300	Grünspan-Beinschutz
+5020000	Ralvas Pelz
+5020100	Eisennieten Rüstung
+5020200	Eisennieten Stulpen
+5020300	Eisennieten Beinschutz
+5021000	Fang Helm
+5030000	Thiolliers Maske
+5030100	Thiolliers Gewand
+5030200	Thiolliers Handschuhe
+5030300	Thiolliers Hose
+5031100	Thiolliers Gewand (Geänd.)
+5060000	Hohepriester-Hut
+5060100	Hohepriester-Robe
+5060200	Hohepriester-Handschuhe
+5060300	Hohepriester-Untergewand
+5062100	Fingerrobe
+5070000	Raupenmaske
+5070100	Geflochtene Cord-Robe
+5070200	Geflochtene Armwickel
+5070300	Beschmutzter Lendenschurz
+5080000	Kapuze einer Tänzerin
+5080100	Kleid einer Tänzerin
+5080200	Armschutz einer Tänzerin
+5080300	Hose einer Tänzerin
+5081100	Kleid einer Tänzerin (Geänd.)
+5090000	Helm der Nacht
+5090100	Rüstung der Nacht
+5090200	Stulpen der Nacht
+5090300	Beinschutz der Nacht
+5100000	Igons Helm
+5100100	Igons Rüstung
+5100200	Igons Stulpen
+5100300	Igons Lendenschurz
+5101000	Igons Helm (Geänd.)
+5101100	Igons Rüstung (Geänd.)
+5110000	Maske des Weisen
+5110100	Ansbachs Kleidung
+5110200	Ansbachs Manschetten
+5110300	Ansbachs Stiefel
+5111100	Ansbachs Kleidung (Geänd.)
+5120000	Freyjas Helm
+5120100	Freyjas Rüstung
+5120200	Freyjas Stulpen
+5120300	Freyjas Beinschutz
+5121100	Freyja Rüstung (Geänd.)
+5130000	Helm der Einsamkeit
+5130100	Rüstung der Einsamkeit
+5130200	Stulpen der Einsamkeit
+5130300	Beinschutz der Einsamkeit
+5131100	Rüstung der Einsamkeit (Geänd.)
+5140000	Messmer-Soldatenhelm
+5140100	Messmer-Soldatenrüstung
+5140200	Messmer-Soldatenstulpen
+5140300	Messmer-Soldatenbeinschutz
+5141100	Messmer-Soldatenrüstung (Geänd.)
+5150000	Helm der Schwarzen Ritter
+5150100	Rüstung der Schwarzen Ritter
+5150200	Stulpen der Schwarzen Ritter
+5150300	Beinschutz der Schwarzen Ritter
+5160000	Rakshasa-Helm
+5160100	Rakshasa-Rüstung
+5160200	Rakshasa-Stulpen
+5160300	Rakshasa-Beinschutz
+5180000	Feuerritter-Helm
+5180100	Feuerritter-Rüstung
+5180200	Feuerritter-Stulpen
+5180300	Feuerritter-Beinschutz
+5181100	Feuerritter-Rüstung (Geänd.)
+5182000	Todesmasken-Helm
+5183000	Geflügelter Schlangenhelm
+5184000	Salzas Kapuze
+5190000	Lederstirnband
+5190100	Glorreiche Kleidung
+5190200	Lederarmwickel
+5190300	Lederbeinwickel
+5191000	Lederhelm
+5191100	Hochlandkleidung
+5200000	Todesritter-Helm
+5200100	Todesritter-Rüstung
+5200200	Todesritter-Stulpen
+5200300	Todesritter-Beinschutz
+5210000	Fluchklingen-Maske
+5210100	Kleidung des Asketen
+5210200	Handgelenksschütze der Asketen
+5210300	Knöchelschützer der Asketen
+5220000	Messmers Helm
+5220100	Messmers Rüstung
+5220200	Messmers Armschutz
+5220300	Messmers Beinschutz
+5221000	Messmers Helm (Geänd.)
+5230000	Grabvogel-Helm
+5230100	Schwarzfeder Grabvogel-Rüstung
+5230200	Grabvogel-Armreife
+5230300	Grabvogel-Fußreife
+5231100	Grabvogel-Rüstung
+5240000	Gewöhnlicher Soldatenhelm
+5240100	Gewöhnliche Soldatenstoffrüstung
+5240200	Gewöhnliche Soldatenstulpen
+5240300	Gewöhnlicher Soldatenbeinschutz
+5250000	Hornkrieger-Helm
+5250100	Hornkrieger-Rüstung
+5250200	Hornkrieger-Armschutz
+5250300	Hornkrieger-Beinschutz
+5252000	Göttlicher Bestienhelm
+5252100	Göttliche Bestienkrieger-Rüstung
+5253000	Göttlicher Vogelhelm
+5253100	Göttliche Vogelkrieger-Rüstung
+5253200	Göttliche Vogelkrieger-Armschutz
+5253300	Göttlicher Vogelkrieger-Beinschutz
+5260000	Rellanas Helm
+5260100	Rellanas Rüstung
+5260200	Rellanas Handschuhe
+5260300	Rellanas Beinschutz
+5270000	Helm des jungen Löwen
+5270100	Rüstung des jungen Löwen
+5270200	Stulpen des jungen Löwen
+5270300	Beinschutz des jungen Löwen
+5271100	Rüstung des jungen Löwen (Geänd.)
+5272000	Kranz des Lichts
+5280000	Helm der Schattenmilizionäre
+5280100	Rüstung der Schattenmilizionäre
+5280200	Handschuhe der Schattenmilizionäre
+5280300	Beinschutz der Schattenmilizionäre
+5290000	Göttlicher Bestienkopf
+5300000	St. Trinas Blüte
+5310000	Hammerhelm des Schmelztiegels
+5320000	Großes Gefäß
+5330000	Wichtkopf (Löwe)

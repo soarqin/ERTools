@@ -1,0 +1,1216 @@
+2000300	Recipiente de fuego pesado
+2000301	
+2000302	
+2000303	
+2000304	
+2000305	
+2000306	
+2000307	
+2000308	
+2000309	
+2000310	Recipiente de roca pesado
+2000311	
+2000312	
+2000313	
+2000314	
+2000315	
+2000316	
+2000317	
+2000318	
+2000319	
+2000320	Recipiente de rayo pesado
+2000321	
+2000322	
+2000323	
+2000324	
+2000325	
+2000326	
+2000327	
+2000328	
+2000329	
+2000330	Recipiente fétido pesado
+2000331	
+2000332	
+2000333	
+2000334	
+2000335	
+2000336	
+2000337	
+2000338	
+2000339	
+2000340	Recipiente de moscas pesado
+2000360	Recipiente de congelación pesado
+2000361	
+2000362	
+2000363	
+2000364	
+2000365	
+2000366	
+2000367	
+2000368	
+2000369	
+2000370	Recipiente de veneno pesado
+2000371	
+2000372	
+2000373	
+2000374	
+2000375	
+2000376	
+2000377	
+2000378	
+2000379	
+2000380	Recipiente de aceite pesado
+2000600	Recipiente volcánico pesado
+2000620	Recipiente de llama frenética pesado
+2000650	Recipiente de rencor pesado
+2000651	
+2000652	
+2000653	
+2000654	
+2000655	
+2000656	
+2000657	
+2000658	
+2000659	
+2000660	Recipiente mágico pesado
+2000661	
+2000662	
+2000663	
+2000664	
+2000665	
+2000666	
+2000667	
+2000668	
+2000669	
+2000670	Recipiente de podredumbre pesado
+2000671	
+2000672	
+2000673	
+2000674	
+2000675	
+2000676	
+2000677	
+2000678	
+2000679	
+2000680	Recipiente pesado del horno
+2000681	
+2000682	
+2000683	
+2000684	
+2000685	
+2000686	
+2000687	
+2000688	
+2000689	
+2000690	Recipiente de rayo rojo pesado
+2000691	
+2000692	
+2000693	
+2000694	
+2000695	
+2000696	
+2000697	
+2000698	
+2000699	
+2000700	Recipiente de rayo rojo
+2000701	
+2000702	
+2000703	
+2000704	
+2000705	
+2000706	
+2000707	
+2000708	
+2000709	
+2000710	Recipiente de llama frenética
+2000740	Recipiente de sueño eterno
+2000760	Recipiente de llama frenética con cuerda
+2000800	Pasa espiritual
+2000900	Bendición de Márida
+2000901	
+2000902	
+2000903	
+2000904	
+2000905	
+2000906	
+2000907	
+2000908	
+2000909	
+2000910	Rama arrulladora
+2001100	Carne de la Comunión del Dragón
+2001101	
+2001102	
+2001103	
+2001104	
+2001105	Carne de escamas de dragón
+2001106	
+2001107	
+2001108	
+2001109	
+2001110	Panacea de huellas digitales
+2001111	
+2001112	
+2001113	
+2001114	
+2001115	
+2001116	
+2001117	
+2001118	
+2001119	
+2001120	Hígado encurtido a prueba de hechizos
+2001121	
+2001122	
+2001123	
+2001124	
+2001125	
+2001126	
+2001127	
+2001128	
+2001129	
+2001130	Hígado encurtido a prueba de fuego
+2001131	
+2001132	
+2001133	
+2001134	
+2001135	
+2001136	
+2001137	
+2001138	
+2001139	
+2001140	Hígado encurtido a prueba de rayos
+2001141	
+2001142	
+2001143	
+2001144	
+2001145	
+2001146	
+2001147	
+2001148	
+2001149	
+2001150	Hígado encurtido a prueba de santidad
+2001151	
+2001152	
+2001153	
+2001154	
+2001155	
+2001156	
+2001157	
+2001158	
+2001159	
+2001160	Hígado encurtido opalino
+2001161	
+2001162	
+2001163	
+2001164	
+2001165	
+2001166	
+2001167	
+2001168	
+2001169	
+2001170	Cuello de tortuga bien encurtido
+2001200	Estofado de escorpión
+2001201	Estofado de escorpión gourmet
+2001202	Estofado de escorpión
+2001203	Estofado de escorpión gourmet
+2001204	
+2001205	
+2001206	
+2001207	
+2001208	
+2001209	
+2001210	Carne sangrienta sagrada
+2001211	
+2001212	
+2001213	
+2001214	
+2001215	
+2001216	
+2001217	
+2001218	
+2001219	
+2001220	Cuerno blando plateado
+2001221	
+2001222	
+2001223	
+2001224	
+2001225	
+2001226	
+2001227	
+2001228	
+2001229	
+2001230	Cuerno blando dorado
+2001400	Grasa de fuego de Messmer
+2001401	
+2001402	
+2001403	
+2001404	
+2001405	
+2001406	
+2001407	
+2001408	
+2001409	
+2001410	Grasa de rayo de dragón
+2001411	
+2001412	
+2001413	
+2001414	
+2001415	
+2001416	
+2001417	
+2001418	
+2001419	
+2001420	Grasa mágica real
+2001421	
+2001422	
+2001423	
+2001424	
+2001425	
+2001426	
+2001427	
+2001428	
+2001429	
+2001430	Grasa dorada
+2001450	Grasa de sueño eterno
+2001480	Grasa de la Comunión del Dragón
+2001500	Grasa de fuego de Messmer con cordel
+2001501	
+2001502	
+2001503	
+2001504	
+2001505	
+2001506	
+2001507	
+2001508	
+2001509	
+2001510	Grasa de rayo de dragón con cordel
+2001511	
+2001512	
+2001513	
+2001514	
+2001515	
+2001516	
+2001517	
+2001518	
+2001519	
+2001520	Grasa mágica real con cordel
+2001521	
+2001522	
+2001523	
+2001524	
+2001525	
+2001526	
+2001527	
+2001528	
+2001529	
+2001530	Grasa dorada con cordel
+2001550	Grasa de sueño eterno con cordel
+2001600	Grasa festiva
+2001700	Carne de entrañas
+2001701	
+2001702	
+2001703	
+2001704	
+2001705	
+2001706	
+2001707	
+2001708	
+2001709	
+2001710	Arpón de la Comunión del Dragón
+2002000	Piedra polter
+2002001	
+2002002	
+2002003	
+2002004	
+2002005	
+2002006	
+2002007	
+2002008	
+2002009	
+2002010	Corazón de piedra
+2002011	
+2002012	
+2002013	
+2002014	
+2002015	
+2002016	
+2002017	
+2002018	
+2002019	
+2002020	Corazón de sacerdotisa
+2002021	
+2002022	
+2002023	
+2002024	
+2002025	
+2002026	
+2002027	
+2002028	
+2002029	
+2002030	Máscara del lamentante
+2002100	Bendición del dragón antiguo
+2002120	Iris de gracia
+2002121	
+2002122	
+2002123	
+2002124	
+2002125	
+2002126	
+2002127	
+2002128	
+2002129	
+2002130	Iris de ocultamiento
+2002131	
+2002132	
+2002133	
+2002134	
+2002135	
+2002136	
+2002137	
+2002138	
+2002139	
+2002140	Brebaje de Thiollier
+2002141	
+2002142	
+2002143	
+2002144	
+2002145	
+2002146	
+2002147	
+2002148	
+2002149	
+2002150	Mollera parlante: "Lamento"
+2002900	Recuerdo del Jinete de Jabalíes
+2002901	Recuerdo del Empalador
+2002902	Recuerdo del Girasol Sombrío
+2002903	Recuerdo de la Caballera de las Lunas Gemelas
+2002904	Recuerdo de la Santa de los Capullos
+2002905	Recuerdo del León Danzante
+2002906	
+2002907	Recuerdo de un Dios y un Señor
+2002908	Recuerdo del Señor del Fuego Frenético
+2002909	Recuerdo de la Madre de los Dedos
+2002910	Recuerdo de la Putrescencia
+2002950	Runa de Leda
+2002951	Runa rota
+2002952	Runa del Reino de las Sombras [1]
+2002953	Runa del Reino de las Sombras [2]
+2002954	Runa del Reino de las Sombras [3]
+2002955	Runa del Reino de las Sombras [4]
+2002956	Runa del Reino de las Sombras [5]
+2002957	Runa del Reino de las Sombras [6]
+2002958	Runa del Reino de las Sombras [7]
+2002959	Runa de un héroe olvidado
+2002960	Runa de Márida
+2003000	Piedra vinculante
+2003001	Piedra espiritual
+2003130	Retoño con cuernos
+2003131	
+2003132	
+2003133	
+2003134	
+2003135	
+2003136	
+2003137	
+2003138	
+2003139	
+2003140	Aceite perfumado de Ranah
+2003141	
+2003142	
+2003143	
+2003144	
+2003145	
+2003146	
+2003147	
+2003148	
+2003149	
+2003150	Llamado de Tibia
+2003151	
+2003152	
+2003153	
+2003154	
+2003155	
+2003156	
+2003157	
+2003158	
+2003159	
+2003160	Llama frenética creciente
+2003161	
+2003162	
+2003163	
+2003164	
+2003165	
+2003166	
+2003167	
+2003168	
+2003169	
+2003170	Voto dorado
+2003171	
+2003172	
+2003173	
+2003174	
+2003175	
+2003176	
+2003177	
+2003178	
+2003179	
+2003180	Espiral de fuego
+2003181	
+2003182	
+2003183	
+2003184	
+2003185	
+2003186	
+2003187	
+2003188	
+2003189	
+2003190	Piedra espiritual de fuego
+2003191	
+2003192	
+2003193	
+2003194	
+2003195	
+2003196	
+2003197	
+2003198	
+2003199	
+2003200	Uña reluciente
+2003310	Roca de calidez
+2003350	Rama encantadora
+2004300	Desvanecimiento de Miriam
+2004301	
+2004302	
+2004303	
+2004304	
+2004305	
+2004306	
+2004307	
+2004308	
+2004309	
+2004310	Trío de destellojas
+2004311	
+2004312	
+2004313	
+2004314	
+2004315	
+2004316	
+2004317	
+2004318	
+2004319	
+2004320	Lunas gemelas de Rellana
+2004500	Clavo de destellita
+2004501	
+2004502	
+2004503	
+2004504	
+2004505	
+2004506	
+2004507	
+2004508	
+2004509	
+2004510	Clavos de destellita
+2004700	Hojas de piedra
+2004701	
+2004702	
+2004703	
+2004704	
+2004705	
+2004706	
+2004707	
+2004708	
+2004709	
+2004710	Misil gravitatorio
+2004900	Manto de espinas
+2004901	
+2004902	
+2004903	
+2004904	
+2004905	
+2004906	
+2004907	
+2004908	
+2004909	
+2004910	Espinas impenetrables
+2005000	Anillos de luz espectral
+2006200	Vórtice de putrescencia
+2006201	
+2006202	
+2006203	
+2006204	
+2006205	
+2006206	
+2006207	
+2006208	
+2006209	
+2006210	Masa de putrescencia
+2006300	Hoja furiosa de Ansbach
+2006400	Sanación a distancia
+2006650	Aspectos del Crisol: Espinas
+2006651	
+2006652	
+2006653	
+2006654	
+2006655	
+2006656	
+2006657	
+2006658	
+2006659	
+2006660	Aspectos del Crisol: Flor
+2006661	
+2006662	
+2006663	
+2006664	
+2006665	
+2006666	
+2006667	
+2006668	
+2006669	
+2006670	Terrárbol menor
+2006671	
+2006672	
+2006673	
+2006674	
+2006675	
+2006676	
+2006677	
+2006678	
+2006679	
+2006680	Tierra de la Sombra
+2006681	
+2006682	
+2006683	
+2006684	
+2006685	
+2006686	
+2006687	
+2006688	
+2006689	
+2006690	Ira a distancia
+2006691	
+2006692	
+2006693	
+2006694	
+2006695	
+2006696	
+2006697	
+2006698	
+2006699	
+2006700	Luz de Miquella
+2006701	
+2006702	
+2006703	
+2006704	
+2006705	
+2006706	
+2006707	
+2006708	
+2006709	
+2006710	Anillos superpuestos de luz
+2006800	Rugido de Rugalea
+2006900	Lanza de rayo de los caballeros
+2006901	
+2006902	
+2006903	
+2006904	
+2006905	
+2006906	
+2006907	
+2006908	
+2006909	
+2006910	Rayo de dragón de Florissax
+2006911	
+2006912	
+2006913	
+2006914	
+2006915	
+2006916	
+2006917	
+2006918	
+2006919	
+2006920	Carga eléctrica
+2007000	Tiranía de Bayle
+2007001	
+2007002	
+2007003	
+2007004	
+2007005	
+2007006	
+2007007	
+2007008	
+2007009	
+2007010	Rayo llameante de Bayle
+2007011	
+2007012	
+2007013	
+2007014	
+2007015	
+2007016	
+2007017	
+2007018	
+2007019	
+2007020	Aliento de llama espectral
+2007200	Mariposas podridas
+2007201	
+2007202	
+2007203	
+2007204	
+2007205	
+2007206	
+2007207	
+2007208	
+2007209	
+2007210	Lanzas de plagas entrelazadas
+2007300	Llama del frenesí de Midra
+2007410	Microcosmos efímero
+2007411	
+2007412	
+2007413	
+2007414	
+2007415	
+2007416	
+2007417	
+2007418	
+2007419	
+2007420	Dedos amorosos
+2007600	Espíritu vigilante
+2007700	Arcos dorados
+2007701	
+2007702	
+2007703	
+2007704	
+2007705	
+2007706	
+2007707	
+2007708	
+2007709	
+2007710	Arco dorado gigante
+2007711	
+2007712	
+2007713	
+2007714	
+2007715	
+2007716	
+2007717	
+2007718	
+2007719	
+2007720	Espiral
+2007721	
+2007722	
+2007723	
+2007724	
+2007725	
+2007726	
+2007727	
+2007728	
+2007729	
+2007730	Tornado de la Bestia Divina
+2007731	
+2007732	
+2007733	
+2007734	
+2007735	
+2007736	
+2007737	
+2007738	
+2007739	
+2007740	Plumas del Ave Divina
+2007800	Serpiente de fuego
+2007801	
+2007802	
+2007803	
+2007804	
+2007805	
+2007806	
+2007807	
+2007808	
+2007809	
+2007810	Lluvia de fuego
+2007811	
+2007812	
+2007813	
+2007814	
+2007815	
+2007816	
+2007817	
+2007818	
+2007819	
+2007820	Orbe de Messmer
+2008000	Runa Mayor de Miquella
+2008001	
+2008002	
+2008003	Dedo doblado de Igon
+2008004	Llave de las profundidades del pozo
+2008005	Llave del nivel superior de la prisión
+2008006	Llave del nivel inferior de la prisión
+2008007	Mapa de la cruz
+2008008	Collar con hueco agobiado
+2008009	
+2008010	
+2008011	Corazón de Bayle
+2008012	Nuevo mapa de la cruz
+2008013	Llave del almacén
+2008014	Pergamino del rito secreto
+2008015	Carta para Freyja
+2008016	Mapa de las ruinas
+2008017	Mapa de las ruinas (2.º)
+2008018	Mapa de las ruinas (3.º)
+2008019	Jarabe negro
+2008020	
+2008021	Yesca de Messmer
+2008022	
+2008023	
+2008024	
+2008025	Nota del custodio del horno
+2008026	
+2008027	Mensaje de Leda
+2008028	Mensaje de Dane
+2008029	Misiva del monje
+2008030	Mensaje de la cruz del almacén
+2008031	Nota: Manantiales espirituales sellados
+2008032	Página rota del diario
+2008033	Lágrima larval
+2008034	Mensaje de Leda
+2008035	
+2008036	Llave del cuarto de rezo
+2008037	Mensaje de la torre de la sombra
+2008131	Nota: Manantiales espirituales sellados
+2008200	Pintura: "Incursión"
+2008201	Pintura: "La torre sagrada"
+2008202	Pintura: "El territorio de los dragones"
+2008600	Mapa: Llanura de las Tumbas
+2008601	Mapa: Noctaltus
+2008602	Mapa: Orilla sur
+2008603	Mapa: Ruinas de Rauh
+2008604	Mapa: Abismo
+2008900	Rodamiento de campana de Moore
+2008901	Rodamiento de campana de Ymir
+2008902	Rodamiento de campana del herbolario
+2008903	Rodamiento de campana del vendedor de hongos [1]
+2008904	Rodamiento de campana del vendedor de hongos [2]
+2008905	Rodamiento de campana del vendedor de grasa
+2008906	Rodamiento de campana de Mercader de moho
+2008907	Rodamiento de campana de Igon
+2008908	Rodamiento de campana de Mecahechicero
+2008909	Rodamiento de campana de mercader de cordel
+2009000	Anillo de Miquella
+2009001	Que gane el mejor
+2009002	Los Dos Dedos
+2009003	Vámonos juntos
+2009004	Oh, Madre
+2009160	Acerca de la bendición del Noctárbol
+2009161	Acerca de la bendición de cenizas de espíritus venerados
+2009162	Acerca de las nuevas características del inventario
+2009301	Libro de preparaciones de la cría recolectora [6]
+2009302	Libro de preparaciones de la cría recolectora [1]
+2009303	Libro de preparaciones de la cría recolectora [2]
+2009304	Libro de preparaciones de la cría recolectora [3]
+2009305	Libro de preparaciones de la cría recolectora [4]
+2009306	Libro de preparaciones de la cría recolectora [5]
+2009307	Libro de preparaciones de Igon [2]
+2009308	Libro de preparaciones del Tejededos [2]
+2009309	Libro de preparaciones del Potentado Mayor [1]
+2009310	Libro de preparaciones del Potentado Mayor [4]
+2009311	Libro de preparaciones del Potentado Mayor [5]
+2009312	Libro de preparaciones del Potentado Mayor [12]
+2009313	Libro de preparaciones del Potentado Mayor [7]
+2009314	Libro de preparaciones del Potentado Mayor [9]
+2009315	Libro de preparaciones del Potentado Mayor [10]
+2009316	Libro de preparaciones del Potentado Mayor [11]
+2009317	Libro de preparaciones del artesano demente [2]
+2009318	Libro de preparaciones del Potentado Mayor [8]
+2009319	Libro de preparaciones del Potentado Mayor [3]
+2009320	Libro de preparaciones del Potentado Mayor [13]
+2009321	Libro de preparaciones del Potentado Mayor [14]
+2009322	Libro de preparaciones del Potentado Mayor [6]
+2009323	Libro de preparaciones del Potentado Mayor [2]
+2009324	Libro de preparaciones del caballero dragón antiguo [1]
+2009325	Libro de preparaciones del artesano demente [1]
+2009326	Libro de preparaciones del discípulo de Santa Trina [1]
+2009327	Libro de preparaciones de los Caballeros ígneos [1]
+2009328	Libro de preparaciones del caballero dragón antiguo [2]
+2009329	Libro de preparaciones de los caballeros leales
+2009330	Libro de preparaciones de los sacerdotes [1]
+2009331	Libro de preparaciones de Igon [1]
+2009332	Libro de preparaciones de los sacerdotes [2]
+2009333	Libro de preparaciones de la cría recolectora [7]
+2009334	Libro de preparaciones del discípulo de Santa Trina [3]
+2009335	Libro de preparaciones de los guardianes de tumbas [2]
+2009336	Libro de preparaciones de los expertos en antigüedades [2]
+2009337	Libro de preparaciones de Tibia
+2009338	Libro de preparaciones del artesano demente [3]
+2009339	Libro de preparaciones de los sacerdotes [3]
+2009340	Libro de preparaciones de los Caballeros ígneos [2]
+2009341	Libro de preparaciones de los expertos en antigüedades [1]
+2009342	Libro de preparaciones del Tejededos [1]
+2009343	Libro de preparaciones de los sacerdotes [4]
+2009344	Libro de preparaciones de los guardianes de tumbas [1]
+2009345	Libro de preparaciones del discípulo de Santa Trina [2]
+2009500	Recipiente rajado pesado
+2010000	Fragmento del Noctárbol
+2010100	Ceniza de espíritus venerados
+2011000	Lágrima oculta viridián
+2011001	
+2011002	
+2011003	
+2011004	
+2011005	
+2011006	
+2011007	
+2011008	
+2011009	
+2011010	Lágrima seca de explosión carmesí
+2011011	
+2011012	
+2011013	
+2011014	
+2011015	
+2011016	
+2011017	
+2011018	
+2011019	
+2011020	Lágrima rota de absorción carmesí
+2011021	
+2011022	
+2011023	
+2011024	
+2011025	
+2011026	
+2011027	
+2011028	
+2011029	
+2011030	Lágrima rota de absorción cerúlea
+2011031	
+2011032	
+2011033	
+2011034	
+2011035	
+2011036	
+2011037	
+2011038	
+2011039	
+2011040	Lágrima empapada de aceite
+2011041	
+2011042	
+2011043	
+2011044	
+2011045	
+2011046	
+2011047	
+2011048	
+2011049	
+2011050	Lágrima rota chupasangre
+2011051	
+2011052	
+2011053	
+2011054	
+2011055	
+2011056	
+2011057	
+2011058	
+2011059	
+2011060	Lágrima de cristal de lirio
+2011061	
+2011062	
+2011063	
+2011064	
+2011065	
+2011066	
+2011067	
+2011068	
+2011069	
+2011070	Lágrima sólida deflectora
+2015000	Cuerno de bestia
+2015001	
+2015002	
+2015003	
+2015004	
+2015005	
+2015006	
+2015007	
+2015008	
+2015009	
+2015010	Cálculo de espíritu
+2015011	
+2015012	
+2015013	
+2015014	
+2015015	
+2015016	
+2015017	
+2015018	
+2015019	
+2015020	Escama nacarada
+2015021	
+2015022	
+2015023	
+2015024	
+2015025	
+2015026	
+2015027	
+2015028	
+2015029	
+2015030	Hígado de escorpión
+2015031	
+2015032	
+2015033	
+2015034	
+2015035	
+2015036	
+2015037	
+2015038	
+2015039	
+2015040	Moho de mosca
+2020001	Fruta de Rada
+2020002	Hongo rojo
+2020003	Hongo blanco
+2020004	Resina nudosa
+2020005	Gema del rocío
+2020006	Mariposa ígnea negra
+2020007	Luciérnaga de destellita
+2020008	Flor fulgurosa amarilla
+2020009	Girasol sombrío
+2020010	Bestia tóxica de musgo
+2020011	Brote escarlata
+2020012	Amaryllis sanguínea
+2020013	Gusano congelado
+2020014	Lirio púrpura oscuro
+2020015	Brote de sangre almibarada
+2020016	Mosca con farol invernal
+2020017	Uva hinchada
+2020018	Cráneo del guardián de tumbas
+2020019	Excremento sembrado de cuernos
+2020020	Piedra gaseosa
+2020021	Flor de llama espectral
+2020022	Grillo fúnebre
+2020023	Flor de Calor del dragón
+2020024	Imitador de dedo
+2020025	Brote de sangre empírea
+2020026	Putrescencia solidificada
+2020027	Roca redonda
+2020028	Piedra de tumba espiritual
+2020029	Madriguera de Rauh
+2020030	Brasa de Messmer
+2020031	Fragmento de hueso bendecido
+2020032	Flor fulgurosa roja
+2020033	Piedra de uña
+2020034	Grava afilada
+2020035	Frente del horno
+2200000	Meera, Filo Maldito
+2200001	Meera, Filo Maldito +1
+2200002	Meera, Filo Maldito +2
+2200003	Meera, Filo Maldito +3
+2200004	Meera, Filo Maldito +4
+2200005	Meera, Filo Maldito +5
+2200006	Meera, Filo Maldito +6
+2200007	Meera, Filo Maldito +7
+2200008	Meera, Filo Maldito +8
+2200009	Meera, Filo Maldito +9
+2200010	Meera, Filo Maldito +10
+2201000	Cenizas del demonio sanguíneo embrujador
+2201001	Cenizas del demonio sanguíneo embrujador +1
+2201002	Cenizas del demonio sanguíneo embrujador +2
+2201003	Cenizas del demonio sanguíneo embrujador +3
+2201004	Cenizas del demonio sanguíneo embrujador +4
+2201005	Cenizas del demonio sanguíneo embrujador +5
+2201006	Cenizas del demonio sanguíneo embrujador +6
+2201007	Cenizas del demonio sanguíneo embrujador +7
+2201008	Cenizas del demonio sanguíneo embrujador +8
+2201009	Cenizas del demonio sanguíneo embrujador +9
+2201010	Cenizas del demonio sanguíneo embrujador +10
+2202000	Cenizas del ave sepulcral
+2202001	Cenizas del ave sepulcral +1
+2202002	Cenizas del ave sepulcral +2
+2202003	Cenizas del ave sepulcral +3
+2202004	Cenizas del ave sepulcral +4
+2202005	Cenizas del ave sepulcral +5
+2202006	Cenizas del ave sepulcral +6
+2202007	Cenizas del ave sepulcral +7
+2202008	Cenizas del ave sepulcral +8
+2202009	Cenizas del ave sepulcral +9
+2202010	Cenizas del ave sepulcral +10
+2203000	Hilde, Caballera Ígnea
+2203001	Hilde, Caballera Ígnea +1
+2203002	Hilde, Caballera Ígnea +2
+2203003	Hilde, Caballera Ígnea +3
+2203004	Hilde, Caballera Ígnea +4
+2203005	Hilde, Caballera Ígnea +5
+2203006	Hilde, Caballera Ígnea +6
+2203007	Hilde, Caballera Ígnea +7
+2203008	Hilde, Caballera Ígnea +8
+2203009	Hilde, Caballera Ígnea +9
+2203010	Hilde, Caballera Ígnea +10
+2204000	Cenizas del escorpión araña
+2204001	Cenizas del escorpión araña +1
+2204002	Cenizas del escorpión araña +2
+2204003	Cenizas del escorpión araña +3
+2204004	Cenizas del escorpión araña +4
+2204005	Cenizas del escorpión araña +5
+2204006	Cenizas del escorpión araña +6
+2204007	Cenizas del escorpión araña +7
+2204008	Cenizas del escorpión araña +8
+2204009	Cenizas del escorpión araña +9
+2204010	Cenizas del escorpión araña +10
+2205000	Cenizas de las Inquisidoras
+2205001	Cenizas de las Inquisidoras +1
+2205002	Cenizas de las Inquisidoras +2
+2205003	Cenizas de las Inquisidoras +3
+2205004	Cenizas de las Inquisidoras +4
+2205005	Cenizas de las Inquisidoras +5
+2205006	Cenizas de las Inquisidoras +6
+2205007	Cenizas de las Inquisidoras +7
+2205008	Cenizas de las Inquisidoras +8
+2205009	Cenizas de las Inquisidoras +9
+2205010	Cenizas de las Inquisidoras +10
+2206000	Yosh, el Espadachín Semihumano
+2206001	Yosh, el Espadachín Semihumano +1
+2206002	Yosh, el Espadachín Semihumano +2
+2206003	Yosh, el Espadachín Semihumano +3
+2206004	Yosh, el Espadachín Semihumano +4
+2206005	Yosh, el Espadachín Semihumano +5
+2206006	Yosh, el Espadachín Semihumano +6
+2206007	Yosh, el Espadachín Semihumano +7
+2206008	Yosh, el Espadachín Semihumano +8
+2206009	Yosh, el Espadachín Semihumano +9
+2206010	Yosh, el Espadachín Semihumano +10
+2207000	Cenizas de soldados de Messmer
+2207001	Cenizas de soldados de Messmer +1
+2207002	Cenizas de soldados de Messmer +2
+2207003	Cenizas de soldados de Messmer +3
+2207004	Cenizas de soldados de Messmer +4
+2207005	Cenizas de soldados de Messmer +5
+2207006	Cenizas de soldados de Messmer +6
+2207007	Cenizas de soldados de Messmer +7
+2207008	Cenizas de soldados de Messmer +8
+2207009	Cenizas de soldados de Messmer +9
+2207010	Cenizas de soldados de Messmer +10
+2208000	Andreas, Comandante de los Caballeros Negros
+2208001	Andreas, Comandante de los Caballeros Negros +1
+2208002	Andreas, Comandante de los Caballeros Negros +2
+2208003	Andreas, Comandante de los Caballeros Negros +3
+2208004	Andreas, Comandante de los Caballeros Negros +4
+2208005	Andreas, Comandante de los Caballeros Negros +5
+2208006	Andreas, Comandante de los Caballeros Negros +6
+2208007	Andreas, Comandante de los Caballeros Negros +7
+2208008	Andreas, Comandante de los Caballeros Negros +8
+2208009	Andreas, Comandante de los Caballeros Negros +9
+2208010	Andreas, Comandante de los Caballeros Negros +10
+2209000	Huw, Capitán de los Caballeros Negros
+2209001	Huw, Capitán de los Caballeros Negros +1
+2209002	Huw, Capitán de los Caballeros Negros +2
+2209003	Huw, Capitán de los Caballeros Negros +3
+2209004	Huw, Capitán de los Caballeros Negros +4
+2209005	Huw, Capitán de los Caballeros Negros +5
+2209006	Huw, Capitán de los Caballeros Negros +6
+2209007	Huw, Capitán de los Caballeros Negros +7
+2209008	Huw, Capitán de los Caballeros Negros +8
+2209009	Huw, Capitán de los Caballeros Negros +9
+2209010	Huw, Capitán de los Caballeros Negros +10
+2210000	Cenizas del diablillo bocón
+2210001	Cenizas del diablillo bocón +1
+2210002	Cenizas del diablillo bocón +2
+2210003	Cenizas del diablillo bocón +3
+2210004	Cenizas del diablillo bocón +4
+2210005	Cenizas del diablillo bocón +5
+2210006	Cenizas del diablillo bocón +6
+2210007	Cenizas del diablillo bocón +7
+2210008	Cenizas del diablillo bocón +8
+2210009	Cenizas del diablillo bocón +9
+2210010	Cenizas del diablillo bocón +10
+2211000	Cenizas de hombres moscas
+2211001	Cenizas de hombres moscas +1
+2211002	Cenizas de hombres moscas +2
+2211003	Cenizas de hombres moscas +3
+2211004	Cenizas de hombres moscas +4
+2211005	Cenizas de hombres moscas +5
+2211006	Cenizas de hombres moscas +6
+2211007	Cenizas de hombres moscas +7
+2211008	Cenizas de hombres moscas +8
+2211009	Cenizas de hombres moscas +9
+2211010	Cenizas de hombres moscas +10
+2212000	Taylew, el Gólem Herrero
+2212001	Taylew, el Gólem Herrero +1
+2212002	Taylew, el Gólem Herrero +2
+2212003	Taylew, el Gólem Herrero +3
+2212004	Taylew, el Gólem Herrero +4
+2212005	Taylew, el Gólem Herrero +5
+2212006	Taylew, el Gólem Herrero +6
+2212007	Taylew, el Gólem Herrero +7
+2212008	Taylew, el Gólem Herrero +8
+2212009	Taylew, el Gólem Herrero +9
+2212010	Taylew, el Gólem Herrero +10
+2213000	Ornis, guerrero del Ave Divina
+2213001	Ornis, guerrero del Ave Divina +1
+2213002	Ornis, guerrero del Ave Divina +2
+2213003	Ornis, guerrero del Ave Divina +3
+2213004	Ornis, guerrero del Ave Divina +4
+2213005	Ornis, guerrero del Ave Divina +5
+2213006	Ornis, guerrero del Ave Divina +6
+2213007	Ornis, guerrero del Ave Divina +7
+2213008	Ornis, guerrero del Ave Divina +8
+2213009	Ornis, guerrero del Ave Divina +9
+2213010	Ornis, guerrero del Ave Divina +10
+2214000	Cenizas de guerrero con cuernos
+2214001	Cenizas de guerrero con cuernos +1
+2214002	Cenizas de guerrero con cuernos +2
+2214003	Cenizas de guerrero con cuernos +3
+2214004	Cenizas de guerrero con cuernos +4
+2214005	Cenizas de guerrero con cuernos +5
+2214006	Cenizas de guerrero con cuernos +6
+2214007	Cenizas de guerrero con cuernos +7
+2214008	Cenizas de guerrero con cuernos +8
+2214009	Cenizas de guerrero con cuernos +9
+2214010	Cenizas de guerrero con cuernos +10
+2215000	Dragona antigua Florissax
+2215001	Dragona antigua Florissax +1
+2215002	Dragona antigua Florissax +2
+2215003	Dragona antigua Florissax +3
+2215004	Dragona antigua Florissax +4
+2215005	Dragona antigua Florissax +5
+2215006	Dragona antigua Florissax +6
+2215007	Dragona antigua Florissax +7
+2215008	Dragona antigua Florissax +8
+2215009	Dragona antigua Florissax +9
+2215010	Dragona antigua Florissax +10
+2217000	Cenizas de trepadedos
+2217001	Cenizas de trepadedos +1
+2217002	Cenizas de trepadedos +2
+2217003	Cenizas de trepadedos +3
+2217004	Cenizas de trepadedos +4
+2217005	Cenizas de trepadedos +5
+2217006	Cenizas de trepadedos +6
+2217007	Cenizas de trepadedos +7
+2217008	Cenizas de trepadedos +8
+2217009	Cenizas de trepadedos +9
+2217010	Cenizas de trepadedos +10
+2218000	Queelign, Caballero ígneo
+2218001	Queelign, Caballero ígneo +1
+2218002	Queelign, Caballero ígneo +2
+2218003	Queelign, Caballero ígneo +3
+2218004	Queelign, Caballero ígneo +4
+2218005	Queelign, Caballero ígneo +5
+2218006	Queelign, Caballero ígneo +6
+2218007	Queelign, Caballero ígneo +7
+2218008	Queelign, Caballero ígneo +8
+2218009	Queelign, Caballero ígneo +9
+2218010	Queelign, Caballero ígneo +10
+2219000	Jolán, Espadachina de la Noche
+2219001	Jolán, Espadachina de la Noche +1
+2219002	Jolán, Espadachina de la Noche +2
+2219003	Jolán, Espadachina de la Noche +3
+2219004	Jolán, Espadachina de la Noche +4
+2219005	Jolán, Espadachina de la Noche +5
+2219006	Jolán, Espadachina de la Noche +6
+2219007	Jolán, Espadachina de la Noche +7
+2219008	Jolán, Espadachina de la Noche +8
+2219009	Jolán, Espadachina de la Noche +9
+2219010	Jolán, Espadachina de la Noche +10
+2220000	Jolán y Anna
+2220001	Jolán y Anna +1
+2220002	Jolán y Anna +2
+2220003	Jolán y Anna +3
+2220004	Jolán y Anna +4
+2220005	Jolán y Anna +5
+2220006	Jolán y Anna +6
+2220007	Jolán y Anna +7
+2220008	Jolán y Anna +8
+2220009	Jolán y Anna +9
+2220010	Jolán y Anna +10

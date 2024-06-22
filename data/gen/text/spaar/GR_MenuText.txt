@@ -2602,7 +2602,7 @@
 331310	
 331311	GRACIA PERDIDA DESCUBIERTA
 331312	
-331313	COMENZAR
+331313	COMENZAD
 331314	VICTORIA
 331315	EMPATE
 331316	DERROTA
@@ -2630,8 +2630,8 @@
 331338	RANGO DE CAZADOR AVANZADO
 331339	RANGO DE CAZADOR AVANZADO
 400000	PRUEBA DE CARGA DE RED DE DARK SOULS™ Ⅲ VER. Usa Havok™\n©Copyright 1999-2015. Havok.com Inc. (o sus licenciatarios). Todos los derechos reservados. Consulta www.havok.com para obtener más información.
-401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
-401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401001	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
+401002	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
 401100	™
 401301	CONTINUAR
 401302	CARGAR PARTIDA

@@ -2630,8 +2630,8 @@
 331338	RANK DE CAÇADOR AVANÇADO
 331339	RANK DE CAÇADOR AVANÇADO
 400000	DARK SOULS™ Ⅲ NETWORK STRESS TEST VER. usa Havok™\n©Copyright 1999-2015. Havok.com Inc. (ou seus licenciadores). Todos os direitos reservados. Ver www.havok.com para mais detalhes.
-401001	©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
-401002	ELDEN RING™ & ©2022 BANDAI NAMCO Entertainment Inc. / ©2022 FromSoftware, Inc.
+401001	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
+401002	©Bandai Namco Entertainment Inc. / ©2024 FromSoftware, Inc.
 401100	™
 401301	CONTINUAR
 401302	CARREGAR JOGO

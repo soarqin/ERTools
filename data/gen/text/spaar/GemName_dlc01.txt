@@ -1,0 +1,25 @@
+200000	Ceniza de guerra: Remolino Hojaseca
+200100	Ceniza de guerra: Apariencia del Crisol (Alas)
+400000	Ceniza de guerra: Embestida de rotación gravitatoria
+401000	Ceniza de guerra: Palma explosiva
+402000	Ceniza de guerra: Lanzamiento perforante
+403000	Ceniza de guerra: Lanzamiento de dispersión
+404000	Ceniza de guerra: Muro de chispas
+405000	Ceniza de guerra: Chispas continuas
+406000	Ceniza de guerra: Bestia enfurecida
+407000	Ceniza de guerra: Garras salvajes
+409000	Ceniza de guerra: Punto ciego
+410000	Ceniza de guerra: Corte raudo
+411000	Ceniza de guerra: Postura elevada
+412000	Ceniza de guerra: Postura de ala
+413000	Ceniza de guerra: Rayo parpadeante
+414000	Ceniza de guerra: Brocheta ígnea
+415000	Ceniza de guerra: Garra del león salvaje
+416000	Ceniza de guerra: Pisotón gélido de la Bestia Divina
+417000	Ceniza de guerra: Lanza de fuego
+418000	Ceniza de guerra: Soberanía de Caria
+419000	Ceniza de guerra: Alarido de pena
+422000	Ceniza de guerra: Invocación de llama espectral
+505000	Ceniza de guerra: La flor venenosa brota dos veces
+548000	Ceniza de guerra: Cacería dragontina de Igon
+800000	Ceniza de guerra: Embestida de escudo

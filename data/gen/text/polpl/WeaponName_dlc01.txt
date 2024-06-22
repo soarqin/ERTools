@@ -1,0 +1,503 @@
+1500000	Lewak
+1500100	Ciężki lewak
+1500200	Wymyślny lewak
+1500300	Lewak wysokiej jakości
+1500400	Ognisty lewak
+1500500	Lewak sztuki płomienia
+1500600	Lewak błyskawic
+1500700	Święty lewak
+1500800	Magiczny lewak
+1500900	Lewak zimna
+1501000	Zatruty lewak
+1501100	Krwawy lewak
+1501200	Okultystyczny lewak
+1510000	Sztylet rycerza ognia
+1510100	Ciężki sztylet rycerza ognia
+1510200	Wymyślny sztylet rycerza ognia
+1510300	Wysokiej jakości sztylet rycerza ognia
+1510400	Ognisty sztylet rycerza ognia
+1510500	Sztylet sztuki płomienia rycerza ognia
+1510600	Sztylet błyskawic rycerza ognia
+1510700	Święty sztylet rycerza ognia
+1510800	Magiczny sztylet rycerza ognia
+1510900	Sztylet zimna rycerza ognia
+1511000	Zatruty sztylet rycerza ognia
+1511100	Krwawy sztylet rycerza ognia
+1511200	Okultystyczny sztylet rycerza ognia
+2510000	Purpurowy miecz św. Triny
+2520000	Gwiaździsty miecz
+2530000	Karyjski magiczny miecz
+2540000	Miecz w kamiennej pochwie
+2550000	Miecz Światła
+2560000	Miecz Ciemności
+3500000	Miecz lancowy
+3500100	Ciężki miecz lancowy
+3500200	Wymyślny miecz lancowy
+3500300	Miecz lancowy wysokiej jakości
+3500400	Ognisty miecz lancowy
+3500500	Miecz lancowy sztuki płomienia
+3500600	Miecz lancowy błyskawic
+3500700	Święty miecz lancowy
+3500800	Magiczny miecz lancowy
+3500900	Miecz lancowy zimna
+3501000	Zatruty miecz lancowy
+3501100	Krwawy miecz lancowy
+3501200	Okultystyczny miecz lancowy
+3510000	Wielki Miecz Potępienia
+3520000	Jaszczurzy wielki miecz
+3520100	Ciężki jaszczurzy wielki miecz
+3520200	Wymyślny jaszczurzy wielki miecz
+3520300	Wysokiej jakości jaszczurzy wielki miecz
+3520400	Ognisty jaszczurzy wielki miecz
+3520500	Jaszczurzy wielki miecz sztuki płomienia
+3520600	Jaszczurzy wielki miecz błyskawic
+3520700	Święty jaszczurzy wielki miecz
+3520800	Magiczny jaszczurzy wielki miecz
+3520900	Jaszczurzy wielki miecz zimna
+3521000	Zatruty jaszczurzy wielki miecz
+3521100	Krwawy jaszczurzy wielki miecz
+3521200	Okultystyczny jaszczurzy wielki miecz
+3550000	Wielki miecz samotności
+4500000	Wielki miecz z pradawnej rudy meteorytu
+4520000	Wielki miecz rycerza ognia
+4520100	Ciężki wielki miecz rycerza ognia
+4520200	Wymyślny wielki miecz rycerza ognia
+4520300	Wysokiej jakości wielki miecz rycerza ognia
+4520400	Ognisty wielki miecz rycerza ognia
+4520500	Wielki miecz sztuki płomienia rycerza ognia
+4520600	Wielki miecz błyskawic rycerza ognia
+4520700	Święty wielki miecz rycerza ognia
+4520800	Magiczny wielki miecz rycerza ognia
+4520900	Wielki miecz zimna rycerza ognia
+4521000	Zatruty wielki miecz rycerza ognia
+4521100	Krwawy wielki miecz rycerza ognia
+4521200	Okultystyczny wielki miecz rycerza ognia
+4530000	Wielkie miecze Radahna (Władca)
+4540000	Miecz rycerza Moonrithyll
+4550000	Wielkie miecze Radahna (Światło)
+6500000	Wielki miecz Queeligna
+6500100	Ciężki wielki miecz Queeligna
+6500200	Wymyślny wielki miecz Queeligna
+6500300	Wysokiej jakości wielki miecz Queeligna
+6500400	Ognisty wielki miecz Queeligna
+6500500	Wielki miecz sztuki płomienia Queeligna
+6500600	Wielki miecz błyskawic Queeligna
+6500700	Święty wielki miecz Queeligna
+6500800	Magiczny wielki miecz Queeligna
+6500900	Wielki miecz zimna Queeligna
+6501000	Zatruty wielki miecz Queeligna
+6501100	Krwawy wielki miecz Queeligna
+6501200	Okultystyczny wielki miecz Queeligna
+7500000	Duchowy miecz
+7510000	Falx
+7520000	Tańcząca klinga Ranaha
+7530000	Miecz rogatego wojownika
+8500000	Tasak Zgnilizny
+8510000	Wielki miecz Freyi
+8510100	Ciężki wielki miecz Freyi
+8510200	Wymyślny wielki miecz Freyi
+8510300	Wysokiej jakości wielki miecz Freyi
+8510400	Ognisty wielki miecz Freyi
+8510500	Wielki miecz sztuki płomienia Freyi
+8510600	Wielki miecz błyskawic Freyi
+8510700	Święty wielki miecz Freyi
+8510800	Magiczny wielki miecz Freyi
+8510900	Wielki miecz zimna Freyi
+8511000	Zatruty wielki miecz Freyi
+8511100	Krwawy wielki miecz Freyi
+8511200	Okultystyczny wielki miecz Freyi
+8520000	Wielki miecz rogatego wojownika
+9500000	Miecz Nocy
+10500000	Euporia
+10510000	Podwójne ostrze z czarnej stali
+10510100	Ciężkie podwójne ostrze z czarnej stali
+10510200	Wymyślne podwójne ostrze z czarnej stali
+10510300	Wysokiej jakości podwójne ostrze z czarnej stali
+10510400	Ogniste podwójne ostrze z czarnej stali
+10510500	Podwójne ostrze sztuki płomienia z czarnej stali
+10510600	Podwójne ostrze błyskawic z czarnej stali
+10510700	Święte podwójne ostrze z czarnej stali
+10510800	Magiczne podwójne ostrze z czarnej stali
+10510900	Podwójne ostrze zimna z czarnej stali
+10511000	Zatrute podwójne ostrze z czarnej stali
+10511100	Krwawe podwójne ostrze z czarnej stali
+10511200	Okultystyczne podwójne ostrze z czarnej stali
+11500000	Młot w kształcie pradawnego kwiatu
+12500000	Wielki młot z inskrypcją kowalską
+12500100	Ciężki wielki młot z inskrypcją kowalską
+12500200	Wymyślny wielki młot z inskrypcją kowalską
+12500300	Wielki młot wysokiej jakości z inskrypcją kowalską
+12500400	Ognisty wielki młot z inskrypcją kowalską
+12500500	Wielki młot sztuki płomienia z inskrypcją kowalską
+12500600	Wielki młot błyskawic z inskrypcją kowalską
+12500700	Święty wielki młot z inskrypcją kowalską
+12500800	Magiczny wielki młot z inskrypcją kowalską
+12500900	Wielki młot zimna z inskrypcją kowalską
+12501000	Zatruty wielki młot z inskrypcją kowalską
+12501100	Krwawy wielki młot z inskrypcją kowalską
+12501200	Okultystyczny wielki młot z inskrypcją kowalską
+12510000	Młot kowadła
+12520000	Wielki młot z czarnej stali
+12520100	Ciężki wielki młot z czarnej stali
+12520200	Wymyślny wielki młot z czarnej stali
+12520300	Wysokiej jakości ciężki wielki młot z czarnej stali
+12520400	Ognisty wielki młot z czarnej stali
+12520500	Wielki młot sztuki płomienia z czarnej stali
+12520600	Wielki młot błyskawic z czarnej stali
+12520700	Święty wielki młot z czarnej stali
+12520800	Magiczny wielki młot z czarnej stali
+12520900	Wielki młot zimna z czarnej stali
+12521000	Zatruty wielki młot z czarnej stali
+12521100	Krwawy wielki młot z czarnej stali
+12521200	Okultystyczny wielki młot z czarnej stali
+12530000	Ręka demona krwi
+12530100	Ciężka ręka demona krwi
+12530200	Wymyślna ręka demona krwi
+12530300	Wysokiej jakości ręka demona krwi
+12530400	Ognista ręka demona krwi
+12530500	Ręka sztuki płomienia demona krwi
+12530600	Ręka błyskawic demona krwi
+12530700	Święta ręka demona krwi
+12530800	Magiczna ręka demona krwi
+12530900	Ręka zimna demona krwi
+12531000	Zatruta ręka demona krwi
+12531100	Krwawa ręka demona krwi
+12531200	Okultystyczna ręka demona krwi
+13500000	Wężowy cep
+14500000	Topór z inskrypcją kowalską
+14500100	Ciężki topór z inskrypcją kowalską
+14500200	Wymyślny topór z inskrypcją kowalską
+14500300	Topór wysokiej jakości z inskrypcją kowalską
+14500400	Ognisty topór z inskrypcją kowalską
+14500500	Topór sztuki płomienia z inskrypcją kowalską
+14500600	Topór błyskawic z inskrypcją kowalską
+14500700	Święty topór z inskrypcją kowalską
+14500800	Magiczny topór z inskrypcją kowalską
+14500900	Topór zimna z inskrypcją kowalską
+14501000	Zatruty topór z inskrypcją kowalską
+14501100	Krwawy topór z inskrypcją kowalską
+14501200	Okultystyczny topór z inskrypcją kowalską
+14510000	Dwa topory Rycerza Śmierci
+14520000	Topór żołnierza Messmera
+14520100	Ciężki topór żołnierza Messmera
+14520200	Wymyślny topór żołnierza Messmera
+14520300	Wysokiej jakości topór żołnierza Messmera
+14520400	Ognisty topór żołnierza Messmera
+14520500	Topór sztuki płomienia żołnierza Messmera
+14520600	Topór błyskawic żołnierza Messmera
+14520700	Święty topór żołnierza Messmera
+14520800	Magiczny topór żołnierza Messmera
+14520900	Topór zimna żołnierza Messmera
+14521000	Zatruty topór żołnierza Messmera
+14521100	Krwawy topór żołnierza Messmera
+14521200	Okultystyczny topór żołnierza Messmera
+14540000	Topór gadziego języka
+15500000	Topór Rycerza Śmierci z długim trzonkiem
+15510000	Nóż rzeźnika z Bonny
+16500000	Włócznia z inskrypcją kowalską
+16500100	Ciężka włócznia z inskrypcją kowalską
+16500200	Wymyślna włócznia z inskrypcją kowalską
+16500300	Włócznia wysokiej jakości z inskrypcją kowalską
+16500400	Ognista włócznia z inskrypcją kowalską
+16500500	Włócznia sztuki płomienia z inskrypcją kowalską
+16500600	Włócznia błyskawic z inskrypcją kowalską
+16500700	Święta włócznia z inskrypcją kowalską
+16500800	Magiczna włócznia z inskrypcją kowalską
+16500900	Włócznia zimna z inskrypcją kowalską
+16501000	Zatruta włócznia z inskrypcją kowalską
+16501100	Krwawa włócznia z inskrypcją kowalską
+16501200	Okultystyczna włócznia z inskrypcją kowalską
+16520000	Zgrabna włócznia
+16520100	Ciężka zgrabna włócznia
+16520200	Wymyślna zgrabna włócznia
+16520300	Zgrabna włócznia wysokiej jakości
+16520400	Ognista zgrabna włócznia
+16520500	Zgrabna włócznia sztuki płomienia
+16520600	Zgrabna włócznia błyskawic
+16520700	Święta zgrabna włócznia
+16520800	Magiczna zgrabna włócznia
+16520900	Zgrabna włócznia zimna
+16521000	Zatruta zgrabna włócznia
+16521100	Krwawa zgrabna włócznia
+16521200	Okultystyczna zgrabna włócznia
+16540000	Widły demona krwi
+16540100	Ciężkie widły demona krwi
+16540200	Wymyślne widły demona krwi
+16540300	Wysokiej jakości widły demona krwi
+16540400	Ogniste widły demona krwi
+16540500	Widły sztuki płomienia demona krwi
+16540600	Widły błyskawic demona krwi
+16540700	Święte widły demona krwi
+16540800	Magiczne widły demona krwi
+16540900	Widły zimna demona krwi
+16541000	Zatrute widły demona krwi
+16541100	Krwawe widły demona krwi
+16541200	Okultystyczne widły demona krwi
+16550000	Święta włócznia demona krwi
+17500000	Włócznia Palownika
+17510000	Włócznia żołnierza Messmera
+17510100	Ciężka włócznia żołnierza Messmera
+17510200	Wymyślna włócznia żołnierza Messmera
+17510300	Wysokiej jakości włócznia żołnierza Messmera
+17510400	Ognista włócznia żołnierza Messmera
+17510500	Włócznia sztuki płomienia żołnierza Messmera
+17510600	Włócznia błyskawic żołnierza Messmera
+17510700	Święta włócznia żołnierza Messmera
+17510800	Magiczna włócznia żołnierza Messmera
+17510900	Włócznia zimna żołnierza Messmera
+17511000	Zatruta włócznia żołnierza Messmera
+17511100	Krwawa włócznia żołnierza Messmera
+17511200	Okultystyczna włócznia żołnierza Messmera
+17520000	Kolczasty kostur-włócznia
+18500000	Duchowa glewia
+18510000	Drzewcowe ostrze pąka
+19500000	Obsydianowa lamina
+20500000	Zębaty bicz
+21500000	Ukryta igła Thiolliera
+21510000	Pata
+21510100	Ciężka pata
+21510200	Wymyślna pata
+21510300	Pata wysokiej jakości
+21510400	Ognista pata
+21510500	Pata sztuki płomienia
+21510600	Pata błyskawic
+21510700	Święta pata
+21510800	Magiczna pata
+21510900	Pata zimna
+21511000	Zatruta pata
+21511100	Krwawa pata
+21511200	Okultystyczna pata
+21520000	Zatruta ręka
+21530000	Ręka szaleństwa
+21540000	Pięść golema
+21540100	Ciężka pięść golema
+21540200	Wymyślna pięść golema
+21540300	Wysokiej jakości pięść golema
+21540400	Ognista pięść golema
+21540500	Pięść sztuki płomienia golema
+21540600	Pięść błyskawic golema
+21540700	Święta pięść golema
+21540800	Magiczna pięść golema
+21540900	Pięść zimna golema
+21541000	Zatruta pięść golema
+21541100	Krwawa pięść golema
+21541200	Okultystyczna pięść golema
+21550000	Tarcza Nocy
+22500000	Pazury Nocy
+23500000	Młot Devonii
+23510000	Kwiat cienistego słonecznika
+23520000	Patrzący Palec
+24500000	Pochodnia Nanai
+24510000	Lamentujące Oblicze
+30510000	Tarcza z inskrypcją kowalską
+31500000	Tarcza żołnierza Messmera
+31500100	Ciężka tarcza żołnierza Messmera
+31500200	Wymyślna tarcza żołnierza Messmera
+31500300	Wysokiej jakości tarcza żołnierza Messmera
+31500400	Ognista tarcza żołnierza Messmera
+31500500	Tarcza sztuki płomienia żołnierza Messmera
+31500600	Tarcza błyskawic żołnierza Messmera
+31500700	Święta tarcza żołnierza Messmera
+31500800	Magiczna tarcza żołnierza Messmera
+31500900	Tarcza zimna żołnierza Messmera
+31501000	Zatruta tarcza żołnierza Messmera
+31501100	Krwawa tarcza żołnierza Messmera
+31501200	Okultystyczna tarcza żołnierza Messmera
+31510000	Tarcza wilczego herbu
+31510100	Ciężka tarcza wilczego herbu
+31510200	Wymyślna tarcza wilczego herbu
+31510300	Wysokiej jakości tarcza wilczego herbu
+31510400	Ognista tarcza wilczego herbu
+31510500	Tarcza sztuki płomienia wilczego herbu
+31510600	Tarcza błyskawic wilczego herbu
+31510700	Święta tarcza wilczego herbu
+31510800	Magiczna tarcza wilczego herbu
+31510900	Tarcza zimna wilczego herbu
+31511000	Zatruta tarcza wilczego herbu
+31511100	Krwawa tarcza wilczego herbu
+31511200	Okultystyczna tarcza wilczego herbu
+31520000	Tarcza wężowego herbu
+31520100	Ciężka tarcza wężowego herbu
+31520200	Wymyślna tarcza wężowego herbu
+31520300	Wysokiej jakości tarcza wężowego herbu
+31520400	Ognista tarcza wężowego herbu
+31520500	Tarcza sztuki płomienia wężowego herbu
+31520600	Tarcza błyskawic wężowego herbu
+31520700	Święta tarcza wężowego herbu
+31520800	Magiczna tarcza wężowego herbu
+31520900	Tarcza zimna wężowego herbu
+31521000	Zatruta tarcza wężowego herbu
+31521100	Krwawa tarcza wężowego herbu
+31521200	Okultystyczna tarcza wężowego herbu
+31530000	Tarcza złotego lwa
+32500000	Wielka tarcza z czarnej stali
+32500100	Ciężka wielka tarcza z czarnej stali
+32500200	Wymyślna wielka tarcza z czarnej stali
+32500300	Wielka tarcza wysokiej jakości z czarnej stali
+32500400	Ognista wielka tarcza z czarnej stali
+32500500	Wielka tarcza sztuki płomienia z czarnej stali
+32500600	Wielka tarcza błyskawic z czarnej stali
+32500700	Święta wielka tarcza z czarnej stali
+32500800	Magiczna wielka tarcza z czarnej stali
+32500900	Wielka tarcza zimna z czarnej stali
+32501000	Zatruta wielka tarcza z czarnej stali
+32501100	Krwawa wielka tarcza z czarnej stali
+32501200	Okultystyczna wielka tarcza z czarnej stali
+32520000	Wielka tarcza z werdygrisu
+33510000	Kostur z Zaświatów
+33520000	Matczyny Kostur
+34500000	Pieczęć Suchego Liścia
+34510000	Pieczęć rycerza ognia
+34520000	Pieczęć Spiralnego Drzewa
+40500000	Kościany łuk
+41510000	Długi łuk Ansbacha
+42500000	Wielki łuk Igona
+43500000	Kusza powtarzalna
+43510000	Kusza rozrzutu
+44500000	Armata Rabbatha
+50540000	Nęcąca strzała (z piórami)
+50550000	Nęcąca strzała
+51500000	Harpun Igona
+52520000	Nęcący bełt
+53500000	Wielki bełt Rabbatha
+60500000	Sztuka walki Suchego Liścia
+60500100	Ciężka sztuka walki Suchego Liścia
+60500200	Wymyślna sztuka walki Suchego Liścia
+60500300	Wysokiej jakości sztuka walki Suchego Liścia
+60500400	Ognista sztuka walki Suchego Liścia
+60500500	Sztuka walki sztuki płomienia Suchego Liścia
+60500600	Sztuka walki błyskawic Suchego Liścia 
+60500700	Święta sztuka walki Suchego Liścia
+60500800	Magiczna sztuka walki Suchego Liścia
+60500900	Sztuka walki zimna Suchego Liścia
+60501000	Zatruta sztuka walki Suchego Liścia
+60501100	Krwawa sztuka walki Suchego Liścia
+60501200	Okultystyczna sztuka walki Suchego Liścia
+60510000	Obuwie Dane’a
+60510100	Ciężkie obuwie Dane’a
+60510200	Wymyślne obuwie Dane’a
+60510300	Wysokiej jakości obuwie Dane’a
+60510400	Ogniste obuwie Dane’a
+60510500	Obuwie Dane’a sztuki płomienia
+60510600	Obuwie Dane’a błyskawic
+60510700	Święte obuwie Dane’a
+60510800	Magiczne obuwie Dane’a
+60510900	Obuwie Dane’a zimna
+60511000	Zatrute obuwie Dane’a
+60511100	Krwawe obuwie Dane’a
+60511200	Okultystyczne obuwie Dane’a
+61500000	Butelka perfum ognistej iskry
+61510000	Butelka perfum chłodu
+61520000	Butelka perfum oszalałego płomienia
+61530000	Butelka perfum błyskawic
+61540000	Butelka perfum zabójczej trucizny
+62500000	Tarcza pojedynkowa
+62500100	Ciężka tarcza pojedynkowa
+62500200	Wymyślna tarcza pojedynkowa
+62500300	Wysokiej jakości tarcza pojedynkowa
+62500400	Ognista tarcza pojedynkowa
+62500500	Tarcza pojedynkowa sztuki płomienia
+62500600	Tarcza pojedynkowa błyskawic
+62500700	Święta tarcza pojedynkowa
+62500800	Magiczna tarcza pojedynkowa
+62500900	Tarcza pojedynkowa zimna
+62501000	Zatruta tarcza pojedynkowa
+62501100	Krwawa tarcza pojedynkowa
+62501200	Okultystyczna tarcza pojedynkowa
+62510000	Karyjska tarcza pchnięć
+62510100	Ciężka karyjska tarcza pchnięć
+62510200	Wymyślna karyjska tarcza pchnięć
+62510300	Wysokiej jakości karyjska tarcza pchnięć
+62510400	Ognista karyjska tarcza pchnięć
+62510500	Karyjska tarcza pchnięć sztuki płomienia
+62510600	Karyjska tarcza pchnięć błyskawic
+62510700	Święta karyjska tarcza pchnięć
+62510800	Magiczna karyjska tarcza pchnięć
+62510900	Karyjska tarcza pchnięć zimna
+62511000	Zatruta karyjska tarcza pchnięć
+62511100	Krwawa karyjska tarcza pchnięć
+62511200	Okultystyczna karyjska tarcza pchnięć
+63500000	Sztylet z inskrypcją kowalską
+63500100	Ciężki sztylet z inskrypcją kowalską
+63500200	Wymyślny sztylet z inskrypcją kowalską
+63500300	Wysokiej jakości sztylet z inskrypcją kowalską
+63500400	Ognisty sztylet z inskrypcją kowalską
+63500500	Sztylet sztuki płomienia z inskrypcją kowalską
+63500600	Sztylet błyskawic z inskrypcją kowalską
+63500700	Święty sztylet z inskrypcją kowalską
+63500800	Magiczny sztylet z inskrypcją kowalską
+63500900	Sztylet zimna z inskrypcją kowalską
+63501000	Zatruty sztylet z inskrypcją kowalską
+63501100	Krwawy sztylet z inskrypcją kowalską
+63501200	Okultystyczny sztylet z inskrypcją kowalską
+64500000	Zakrzywione ostrze
+64500100	Ciężkie zakrzywione ostrze
+64500200	Wymyślne zakrzywione ostrze
+64500300	Wysokiej jakości zakrzywione ostrze
+64500400	Ogniste zakrzywione ostrze
+64500500	Zakrzywione ostrze sztuki płomienia
+64500600	Zakrzywione ostrze błyskawic
+64500700	Święte zakrzywione ostrze
+64500800	Magiczne zakrzywione ostrze
+64500900	Zakrzywione ostrze zimna
+64501000	Zatrute zakrzywione ostrze
+64501100	Krwawe zakrzywione ostrze
+64501200	Okultystyczne zakrzywione ostrze
+64510000	Kar z inskrypcją kowalską
+64510100	Ciężki kar z inskrypcją kowalską
+64510200	Wymyślny kar z inskrypcją kowalską
+64510300	Wysokiej jakości kar z inskrypcją kowalską
+64510400	Ognisty kar z inskrypcją kowalską
+64510500	Kar sztuki płomienia z inskrypcją kowalską
+64510600	Kar błyskawic z inskrypcją kowalską
+64510700	Święty kar z inskrypcją kowalską
+64510800	Magiczny kar z inskrypcją kowalską
+64510900	Kar zimna z inskrypcją kowalską
+64511000	Zatruty kar z inskrypcją kowalską
+64511100	Krwawy kar z inskrypcją kowalską
+64511200	Okultystyczny kar z inskrypcją kowalską
+64520000	Kar przeklętego ostrza
+66500000	Wielka katana
+66500100	Ciężka wielka katana
+66500200	Wymyślna wielka katana
+66500300	Wysokiej jakości wielka katana
+66500400	Ognista wielka katana
+66500500	Wielka katana sztuki płomienia
+66500600	Wielka katana błyskawic
+66500700	Święta wielka katana
+66500800	Magiczna wielka katana
+66500900	Wielka katana zimna
+66501000	Zatruta wielka katana
+66501100	Krwawa wielka katana
+66501200	Okultystyczna wielka katana
+66510000	Wielka katana łowcy smoków
+66520000	Wielka katana Rakshasy
+67500000	Dama
+67500100	Ciężka dama
+67500200	Wymyślna dama
+67500300	Dama wysokiej jakości
+67500400	Ognista dama
+67500500	Dama sztuki płomienia
+67500600	Dama błyskawic
+67500700	Święta dama
+67500800	Magiczna dama
+67500900	Dama zimna
+67501000	Zatruta dama
+67501100	Krwawa dama
+67501200	Okultystyczna dama
+67510000	Miecz Ledy
+67520000	Podwójne ostrze Rellany
+68500000	Szpon bestii
+68500100	Ciężki szpon bestii
+68500200	Wymyślny szpon bestii
+68500300	Wysokiej jakości szpon bestii
+68500400	Ognisty szpon bestii
+68500500	Szpon bestii sztuki płomienia
+68500600	Szpon bestii błyskawic
+68500700	Święty szpon bestii
+68500800	Magiczny szpon bestii
+68500900	Szpon bestii zimna
+68501000	Zatruty szpon bestii
+68501100	Krwawy szpon bestii
+68501200	Okultystyczny szpon bestii
+68510000	Pazur niedźwiedzia rudego
