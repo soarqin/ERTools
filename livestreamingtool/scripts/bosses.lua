@@ -147,16 +147,25 @@ local function update()
     end
     if count == last_count then return end
     last_count = count
-    outstr = ''
     outstr = outstr .. string.format('追忆Boss: %d/%d\n', count, rememberance_boss_count)
     for _, v in pairs(cbosses) do
       outstr = outstr .. string.format('%s %s\n', v[1], v[2])
     end
   else
+    local area = get_map_area()
+    if area == 0 then return end
     local rcount = 0
     local region_bosses = {}
     local other_bosses = {}
-    local r = regions[get_map_area() // 1000]
+    local r
+    if area < 100000 then
+      r = regions[area // 10]
+    elseif area < 1000000 then
+      r = regions[area // 100]
+    else
+      r = regions[area // 1000]
+    end
+
     local count_left
     if r then
       count_left = max_display_count - #bosses[r]
@@ -185,7 +194,6 @@ local function update()
     if count == last_count and r == last_region then return end
     last_count = count
     last_region = r
-    outstr = ''
     outstr = outstr .. string.format('全Boss: %d/%d\n', count, boss_count)
     if r ~= nil then
       outstr = outstr .. string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r])

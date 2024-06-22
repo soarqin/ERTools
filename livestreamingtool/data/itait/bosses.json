@@ -1086,5 +1086,318 @@
         "rememberance": 15
       }
     ]
+  },
+  {
+    "region_name": "Piana dei sepolcri",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Drago della fiamma spettrale",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Cavaliere della galera solitaria",
+        "place": "Mausoleo ignoto occidentale",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Capo sanguidemone",
+        "place": "Caverna sulla foce del fiume",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Dolente",
+        "place": "Prigione del dolente",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Maestro d'armi semiumano Onze",
+        "place": "Prigione di Belurat",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Leone danzante belva divina",
+        "place": "Belurat, insediamento della torre",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, cavaliera della Luna gemella",
+        "place": "Castello di Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Altus Ombra",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Drago della fiamma spettrale",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva, il grande orso rosso",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea, il grande orso rosso",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Dane Fogliamorta",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Edredd dei Cavalieri neri",
+        "place": "Forte delle reprimende",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Garrew dei Cavalieri neri",
+        "place": "Forte del varco nebbioso",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Orso rosso",
+        "place": "Mausoleo ignoto settentrionale",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Mausoleo ignoto orientale",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, Madre di Dita",
+        "place": "Cattedrale di Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Conte Ymir, Madre di Dita",
+        "place": "Cattedrale di Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Cavaliere della morte",
+        "place": "Catacombe del varco nebbioso",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Cavaliere della morte",
+        "place": "Catacombe del fiume degli scorpioni",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Lama di sventura Labirith",
+        "place": "Prigione di Bonny",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Ippopotamo d'oro",
+        "place": "Rocca delle ombre",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer l'Impalatore & Spregevole serpe Messmer",
+        "place": "Rocca delle ombre",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Antiche rovine di Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, santa del bocciolo",
+        "place": "Chiesa del bocciolo",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Costa cerulea",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Drago della fiamma spettrale",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Danzatrice di Ranah",
+        "place": "Mausoleo ignoto meridionale",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Cavaliere putrescente",
+        "place": "Faglia dei sarcofagi di pietra",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Tomba nascosta di Charo",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Uccello del rito di morte",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Regina semiumana Marigga",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Picco frastagliato",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Drago del picco frastagliato",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Drago del picco frastagliato",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Uomo-drago antico",
+        "place": "Fossa del drago",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Drago antico Senessax",
+        "place": "Versante del picco frastagliato",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle il Terribile",
+        "place": "Vetta del picco frastagliato",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Ombravista",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Sentinella dell'albero",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Sentinella dell'albero",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Belva meteoritica",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Comandante Gaius",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Avatar dell'Albero Ombra",
+        "place": "Base dell'Albero Ombra",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Boschi abissali",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, luminare dell'inquisizione",
+        "place": "Catacombe di Tetraluce",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, signore della Fiamma della frenesia",
+        "place": "Canonica di Midra",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Promesso consorte Radahn & Radahn, consorte di Miquella",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
+      }
+    ]
   }
 ]

@@ -28,7 +28,7 @@
       },
       {
         "boss": "Chefe Semi-humano(x2)",
-        "place": "Gruta da Passagem do Dragão",
+        "place": "Caverna do Passe do Dragão",
         "flag_id": 31150800
       },
       {
@@ -58,7 +58,7 @@
       },
       {
         "boss": "Patches",
-        "place": "Cavernas da Ala do Mausoléu",
+        "place": "Cavernas Turváguas",
         "flag_id": 31000800
       },
       {
@@ -1084,6 +1084,319 @@
         "place": "Marika Quebrada",
         "flag_id": 19000800,
         "rememberance": 15
+      }
+    ]
+  },
+  {
+    "region_name": "Planície do Cemitério",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Dragão da Chama Espectral",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Cavaleiro do Cárcere Solitário",
+        "place": "Mausoléu Anônimo do Oeste",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Chefe Demônio do Sangue",
+        "place": "Caverna da Foz",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Enlutado",
+        "place": "Cárcere do Enlutado",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Mestre Espadachim Semi-Humano Onze",
+        "place": "Cárcere de Belurat",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Fera Divina, o Leão Dançante",
+        "place": "Belurat, Assentamento da Torre",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, Cavaleira das Luas Gêmeas",
+        "place": "Castelo Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Umbra Altus",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Dragão da Chama Espectral",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva, o Grande Urso Vermelho",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea, o Grande Urso Vermelho",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Dane Folhaseca",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Edredd, Cavaleiro Negro",
+        "place": "Forte da Reprimenda",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Garrew, Cavaleiro Negro",
+        "place": "Forte da Fenda da Névoa",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Urso Vermelho",
+        "place": "Mausoléu Anônimo do Norte",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Mausoléu Anônimo do Leste",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, Mãe dos Dedos",
+        "place": "Catedral de Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Conde Ymir, Mãe dos Dedos",
+        "place": "Catedral de Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Cavaleiro da Morte",
+        "place": "Catacumbas da Fenda da Névoa",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Cavaleiro da Morte",
+        "place": "Catacumbas do Rio do Escorpião",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Lâmina Maldita Labirith",
+        "place": "Cárcere de Bonny",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Hipopótamo Dourado",
+        "place": "Fortaleza das Sombras",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer, o Empalador & Messmer, Serpente Vil",
+        "place": "Fortaleza das Sombras",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Antigas Ruínas de Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, Santa do Broto",
+        "place": "Igreja do Broto",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Costa Cerúlea",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Dragão da Chama Espectral",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Dançarina de Ranah",
+        "place": "Mausoléu Anônimo do Sul",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Cavaleiro Pútrido",
+        "place": "Fissura dos Caixões de Pedra",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Túmulo Escondido de Charo",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Pássaro do Rito Fúnebre",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Rainha Semi-Humana Marigga",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Pico Irregular",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Draco do Pico Irregular",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Draco do Pico Irregular",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Homem-Dragão Ancião",
+        "place": "Poço do Dragão",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Dragão Ancião Senessax",
+        "place": "Encosta do Pico Irregular",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle, o Horror",
+        "place": "Cume do Pico Irregular",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Umbravista",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Sentinela da Árvore",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Sentinela da Árvore",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Fera da Estrela Cadente",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Comandante Gaius",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Avatar da Umbrárvore",
+        "place": "Base da Umbrárvore",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Floresta Abissal",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, Inquisidor Ancião",
+        "place": "Catacumbas da Luz Negra",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, Lorde da Chama Frenética",
+        "place": "Mansão de Midra",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Radahn, o Consorte Prometido & Radahn, Consorte de Miquella",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
       }
     ]
   }

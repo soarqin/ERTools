@@ -229,7 +229,7 @@
       },
       {
         "boss": "Krysztalnik (kostur) & Krysztalnik (włócznia)",
-        "place": "Kryształowaj jaskinia Akademii",
+        "place": "Kryształowa jaskinia Akademii",
         "flag_id": 31060800
       },
       {
@@ -1084,6 +1084,319 @@
         "place": "Roztrzaskana Marika",
         "flag_id": 19000800,
         "rememberance": 15
+      }
+    ]
+  },
+  {
+    "region_name": "Cmentarna Równina",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Smok ognia duchów",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Rycerz Samotnego więzienia",
+        "place": "Bezimienne mauzoleum na zachodzie",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Wódz demonów krwi",
+        "place": "Pieczara przy ujściu rzeki",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Płaczka",
+        "place": "Loch płaczki",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Onze, szermierz-półczłowiek",
+        "place": "Loch Belurat",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Boska bestia, Tańczący Lew",
+        "place": "Belurat, osada przy wieży",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, rycerz Bliźniaczych Księżyców",
+        "place": "Zamek Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Ostrowyż Altus",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Smok ognia duchów",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva, wielki niedźwiedź rudy",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea, wielki niedźwiedź rudy",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Dane, Suchy Liść",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Edredd, czarny rycerz",
+        "place": "Fort Napomnienia",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Garrew, czarny rycerz",
+        "place": "Fort Mglistej szczeliny",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Niedźwiedź rudy",
+        "place": "Bezimienne mauzoleum na północy",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Bezimienne mauzoleum na wschodzie",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, Matka Palców",
+        "place": "Katedra Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Hrabia Ymir, Matka Palców",
+        "place": "Katedra Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Rycerz śmierci",
+        "place": "Katakumby Mglistej szczeliny",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Rycerz śmierci",
+        "place": "Katakumby Skorpioniej rzeki",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Labirith, przeklęte ostrze",
+        "place": "Loch Bonny",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Złoty hipopotam",
+        "place": "Donżon cienia",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer Palownik & Messmer, złośliwy wąż",
+        "place": "Donżon cienia",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Starożytne ruiny Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, święta patronka pąków",
+        "place": "Kościół Pąka",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Modre wybrzeże",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Smok ognia duchów",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Tancerka Ranaha",
+        "place": "Bezimienne mauzoleum na południu",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Gnijący rycerz",
+        "place": "Szczelina kamiennego sarkofagu",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Ukryty grób Charo",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Ptak rytuału śmierci",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Marigga, królowa półludzi",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Wyszczerbiony Szczyt",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Smokowiec Wyszczerbionego Szczytu",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Smokowiec Wyszczerbionego Szczytu",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Starożytny smokowiec",
+        "place": "Smocza jama",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Senessax, starożytna smoczyca",
+        "place": "Zbocze Wyszczerbionego Szczytu",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle Groza",
+        "place": "Wierzchołek Wyszczerbionego Szczytu",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Ostrowidok",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Strażnik Drzewa",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Strażnik Drzewa",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Bestia spadającej gwiazdy",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Dowódca Gajusz",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Awatar Ostrodrzewa",
+        "place": "Podnóże Ostrodrzewa",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Las Otchłani",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, starszy inkwizytor",
+        "place": "Katakumby Ciemnego Światła",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, Władca Oszalałego Płomienia",
+        "place": "Włości Midry",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Radahn, obiecany małżonek & Radahn, małżonek Miquelli",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
       }
     ]
   }

@@ -1086,5 +1086,318 @@
         "rememberance": 15
       }
     ]
+  },
+  {
+    "region_name": "Gravesite Plain",
+    "regions": [
+      4100,
+      4102,
+      4300,
+      6800,
+      6801,
+      6804,
+      6805,
+      6806,
+      6810,
+      6815,
+      6820
+    ],
+    "bosses": [
+      {
+        "boss": "Ghostflame Dragon",
+        "place": "",
+        "flag_id": 2045440800
+      },
+      {
+        "boss": "Blackgaol Knight",
+        "place": "Western Nameless Mausoleum",
+        "flag_id": 2046410800
+      },
+      {
+        "boss": "Chief Bloodfiend",
+        "place": "Rivermouth Cave",
+        "flag_id": 43000800
+      },
+      {
+        "boss": "Lamenter",
+        "place": "Lamenter's Gaol",
+        "flag_id": 41020800
+      },
+      {
+        "boss": "Demi-Human Swordmaster Onze",
+        "place": "Belurat Gaol",
+        "flag_id": 41000800
+      },
+      {
+        "boss": "Divine Beast Dancing Lion",
+        "place": "Belurat, Tower Settlement",
+        "flag_id": 20000800,
+        "rememberance": 16
+      },
+      {
+        "boss": "Rellana, Twin Moon Knight",
+        "place": "Castle Ensis",
+        "flag_id": 2048440800,
+        "rememberance": 17
+      }
+    ]
+  },
+  {
+    "region_name": "Scadu Altus",
+    "regions": [
+      4000,
+      4001,
+      4101,
+      6900,
+      6901,
+      6902,
+      6903,
+      6904,
+      6905,
+      6906
+    ],
+    "bosses": [
+      {
+        "boss": "Ghostflame Dragon",
+        "place": "",
+        "flag_id": 2049430800
+      },
+      {
+        "boss": "Ralva the Great Red Bear",
+        "place": "",
+        "flag_id": 2049450800
+      },
+      {
+        "boss": "Rugalea the Great Red Bear",
+        "place": "",
+        "flag_id": 2044470800
+      },
+      {
+        "boss": "Dryleaf Dane",
+        "place": "",
+        "flag_id": 2049440800
+      },
+      {
+        "boss": "Black Knight Edredd",
+        "place": "Fort of Reprimand",
+        "flag_id": 2049430850
+      },
+      {
+        "boss": "Black Knight Garrew",
+        "place": "Fog Rift Fort",
+        "flag_id": 2047450800
+      },
+      {
+        "boss": "Red Bear",
+        "place": "Northern Nameless Mausoleum",
+        "flag_id": 2046450800
+      },
+      {
+        "boss": "Rakshasa",
+        "place": "Eastern Nameless Mausoleum",
+        "flag_id": 2051440800
+      },
+      {
+        "boss": "Metyr, Mother of Fingers",
+        "place": "Cathedral of Manus Metyr",
+        "flag_id": 25000800,
+        "rememberance": 18
+      },
+      {
+        "boss": "Count Ymir, Mother of Fingers",
+        "place": "Cathedral of Manus Metyr",
+        "flag_id": 2051450800
+      },
+      {
+        "boss": "Death Knight",
+        "place": "Fog Rift Catacombs",
+        "flag_id": 40000800
+      },
+      {
+        "boss": "Death Knight",
+        "place": "Scorpion River Catacombs",
+        "flag_id": 40010800
+      },
+      {
+        "boss": "Curseblade Labirith",
+        "place": "Bonny Gaol",
+        "flag_id": 41010800
+      },
+      {
+        "boss": "Golden Hippopotamus",
+        "place": "Shadow Keep",
+        "flag_id": 21000850
+      },
+      {
+        "boss": "Messmer the Impaler & Base Serpent Messmer",
+        "place": "Shadow Keep",
+        "flag_id": 21010800,
+        "rememberance": 20
+      }
+    ]
+  },
+  {
+    "region_name": "Ancient Ruins of Rauh",
+    "regions": [
+      6940
+    ],
+    "bosses": [
+      {
+        "boss": "Romina, Saint of the Bud",
+        "place": "Church of the Bud",
+        "flag_id": 2044450800,
+        "rememberance": 21
+      }
+    ]
+  },
+  {
+    "region_name": "Cerulean Coast",
+    "regions": [
+      2200,
+      6830,
+      6835
+    ],
+    "bosses": [
+      {
+        "boss": "Ghostflame Dragon",
+        "place": "",
+        "flag_id": 2048380850
+      },
+      {
+        "boss": "Dancer of Ranah",
+        "place": "Southern Nameless Mausoleum",
+        "flag_id": 2046380800
+      },
+      {
+        "boss": "Putrescent Knight",
+        "place": "Stone Coffin Fissure",
+        "flag_id": 22000800,
+        "rememberance": 22
+      }
+    ]
+  },
+  {
+    "region_name": "Charo's Hidden Grave",
+    "regions": [
+      6840
+    ],
+    "bosses": [
+      {
+        "boss": "Death Rite Bird",
+        "place": "",
+        "flag_id": 2047390800
+      },
+      {
+        "boss": "Demi-Human Queen Marigga",
+        "place": "",
+        "flag_id": 2046400800
+      }
+    ]
+  },
+  {
+    "region_name": "Jagged Peak",
+    "regions": [
+      4301,
+      6850
+    ],
+    "bosses": [
+      {
+        "boss": "Jagged Peak Drake",
+        "place": "",
+        "flag_id": 2049410800
+      },
+      {
+        "boss": "Jagged Peak Drake",
+        "place": "",
+        "flag_id": 2052400700
+      },
+      {
+        "boss": "Ancient Dragon-Man",
+        "place": "Dragon's Pit",
+        "flag_id": 43010800
+      },
+      {
+        "boss": "Ancient Dragon Senessax",
+        "place": "Jagged Peak Mountainside",
+        "flag_id": 2054390850
+      },
+      {
+        "boss": "Bayle the Dread",
+        "place": "Jagged Peak Summit",
+        "flag_id": 2054390800
+      }
+    ]
+  },
+  {
+    "region_name": "Scaduview",
+    "regions": [
+      6920,
+      6930,
+      6960
+    ],
+    "bosses": [
+      {
+        "boss": "Tree Sentinel",
+        "place": "",
+        "flag_id": 2050470800
+      },
+      {
+        "boss": "Tree Sentinel",
+        "place": "",
+        "flag_id": 2050480860
+      },
+      {
+        "boss": "Fallingstar Beast",
+        "place": "",
+        "flag_id": 2052480800
+      },
+      {
+        "boss": "Commander Gaius",
+        "place": "",
+        "flag_id": 2049480800,
+        "rememberance": 19
+      },
+      {
+        "boss": "Scadutree Avatar",
+        "place": "Scadutree Base",
+        "flag_id": 2050480800,
+        "rememberance": 24
+      }
+    ]
+  },
+  {
+    "region_name": "Abyssal Woods",
+    "regions": [
+      2800,
+      4002,
+      6860
+    ],
+    "bosses": [
+      {
+        "boss": "Jori, Elder Inquisitor",
+        "place": "Darklight Catacombs",
+        "flag_id": 2052430800
+      },
+      {
+        "boss": "Midra, Lord of Frenzied Flame",
+        "place": "Midra's Manse",
+        "flag_id": 28000800,
+        "rememberance": 23
+      }
+    ]
+  },
+  {
+    "region_name": "Enir-Ilim",
+    "regions": [
+      2001
+    ],
+    "bosses": [
+      {
+        "boss": "Promised Consort Radahn & Radahn, Consort of Miquella",
+        "place": "",
+        "flag_id": 20010800,
+        "rememberance": 25
+      }
+    ]
   }
 ]
