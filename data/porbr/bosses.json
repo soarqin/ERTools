@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Fera Divina, o Leão Dançante",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Santa do Broto",
         "place": "Igreja do Broto",
         "flag_id": 2044450800,

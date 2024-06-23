@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Divine Beast Dancing Lion",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Saint of the Bud",
         "place": "Church of the Bud",
         "flag_id": 2044450800,

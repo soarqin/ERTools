@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Boska bestia, Tańczący Lew",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, święta patronka pąków",
         "place": "Kościół Pąka",
         "flag_id": 2044450800,

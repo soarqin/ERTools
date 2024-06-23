@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Göttliche Bestie - Tanzender Löwe",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Heilige der Knospe",
         "place": "Kirche der Knospe",
         "flag_id": 2044450800,
