@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "León Danzante, Bestia Divina",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Santa de los Capullos",
         "place": "Iglesia del Brote",
         "flag_id": 2044450800,

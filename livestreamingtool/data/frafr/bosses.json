@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Lion dansant de la bête divine",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, sainte du bourgeon",
         "place": "Église du bourgeon",
         "flag_id": 2044450800,
