@@ -862,7 +862,7 @@
       {
         "boss": "Feuerriese",
         "place": "Flammengipfel",
-        "flag_id": 1252520800,
+        "flag_id": 1052520800,
         "rememberance": 6
       }
     ]
@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Göttliche Bestie - Tanzender Löwe",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Heilige der Knospe",
         "place": "Kirche der Knospe",
         "flag_id": 2044450800,
@@ -1298,6 +1303,7 @@
     "region_name": "Klingengipfel",
     "regions": [
       4301,
+      6841,
       6850
     ],
     "bosses": [
@@ -1309,7 +1315,7 @@
       {
         "boss": "Klingengipfel-Drachling",
         "place": "",
-        "flag_id": 2052400700
+        "flag_id": 2052400800
       },
       {
         "boss": "Uralter Drachenmensch",

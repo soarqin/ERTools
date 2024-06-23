@@ -66,7 +66,7 @@ local function calc_flag_offset_and_bit(flag_id)
       return 0,nil
     end
   else
-    calculated_pointer = process.read_u32(addr + 0x20) * process.read_u32(current_element + 0x30) + process.read_u64(addr + 0x28)
+    calculated_pointer = process.read_u32(addr + 0x20) * process.read_u32(current_element + 0x30) + event_flag_address
   end
 
   if calculated_pointer == 0 then
@@ -112,7 +112,7 @@ end
 local function get_map_area()
   local addr = process.read_u64(address_table.field_area_addr)
   if addr == 0 then return 0 end
-  return process.read_u32(addr + 0xE4)
+  return process.read_u32(addr + 0xE8)
 end
 
 local function update()
@@ -156,14 +156,7 @@ local function update()
     local rcount = 0
     local region_bosses = {}
     local other_bosses = {}
-    local r
-    if area < 100000 then
-      r = regions[area // 10]
-    elseif area < 1000000 then
-      r = regions[area // 100]
-    else
-      r = regions[area // 1000]
-    end
+    local r = regions[area // 1000]
 
     local count_left
     if r then
@@ -193,7 +186,7 @@ local function update()
     if count == last_count and r == last_region then return end
     last_count = count
     last_region = r
-    outstr = outstr .. string.format('全Boss: %d/%d\n', count, boss_count)
+    outstr = outstr .. string.format('全Boss: %d/%d %d\n', count, boss_count, area)
     if r ~= nil then
       outstr = outstr .. string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r])
       for _, v in pairs(region_bosses) do

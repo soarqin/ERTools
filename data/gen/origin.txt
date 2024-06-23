@@ -163,7 +163,7 @@ Mountaintops of the Giants|3017,3018,3122,6501,6502:
 + Roundtable Knight Vyke|Lord Contender's Evergaol:1053560800
 + Death Rite Bird:1050570800
 + Commander Niall|Castle Sol:1051570800
-+ Fire Giant|Flame Peak:1252520800,6
++ Fire Giant|Flame Peak:1052520800,6
 
 Crumbling Farum Azula|1300:
 + Godskin Duo|Dragon Temple Altar:13000850
@@ -236,6 +236,7 @@ Scadu Altus|4000,4001,4101,6900,6901,6902,6903,6904,6905,6906:
 + Messmer the Impaler|Base Serpent Messmer|Shadow Keep:21010800,20
 
 Ancient Ruins of Rauh|6940:
++ Divine Beast Dancing Lion:2046460800
 + Romina, Saint of the Bud|Church of the Bud:2044450800,21
 
 Cerulean Coast|2200,6830,6835:
@@ -247,9 +248,9 @@ Charo's Hidden Grave|6840:
 + Death Rite Bird:2047390800
 + Demi-Human Queen Marigga:2046400800
 
-Jagged Peak|4301,6850:
+Jagged Peak|4301,6841,6850:
 + Jagged Peak Drake:2049410800
-+ Jagged Peak Drake:2052400700
++ Jagged Peak Drake:2052400800
 + Ancient Dragon-Man|Dragon's Pit:43010800
 + Ancient Dragon Senessax|Jagged Peak Mountainside:2054390850
 + Bayle the Dread|Jagged Peak Summit:2054390800

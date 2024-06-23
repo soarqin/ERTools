@@ -862,7 +862,7 @@
       {
         "boss": "Gigante de fuego",
         "place": "Cima Abrasadora",
-        "flag_id": 1252520800,
+        "flag_id": 1052520800,
         "rememberance": 6
       }
     ]
@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "León Danzante, Bestia Divina",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, Santa de los Capullos",
         "place": "Iglesia del Brote",
         "flag_id": 2044450800,
@@ -1298,6 +1303,7 @@
     "region_name": "Cumbre escarpada",
     "regions": [
       4301,
+      6841,
       6850
     ],
     "bosses": [
@@ -1309,7 +1315,7 @@
       {
         "boss": "Draco de la cumbre escarpada",
         "place": "",
-        "flag_id": 2052400700
+        "flag_id": 2052400800
       },
       {
         "boss": "Hombre-Dragón Antiguo",

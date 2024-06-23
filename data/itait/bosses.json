@@ -862,7 +862,7 @@
       {
         "boss": "Gigante di fuoco",
         "place": "Picco del fuoco",
-        "flag_id": 1252520800,
+        "flag_id": 1052520800,
         "rememberance": 6
       }
     ]
@@ -1243,6 +1243,11 @@
     ],
     "bosses": [
       {
+        "boss": "Leone danzante belva divina",
+        "place": "",
+        "flag_id": 2046460800
+      },
+      {
         "boss": "Romina, santa del bocciolo",
         "place": "Chiesa del bocciolo",
         "flag_id": 2044450800,
@@ -1298,6 +1303,7 @@
     "region_name": "Picco frastagliato",
     "regions": [
       4301,
+      6841,
       6850
     ],
     "bosses": [
@@ -1309,7 +1315,7 @@
       {
         "boss": "Drago del picco frastagliato",
         "place": "",
-        "flag_id": 2052400700
+        "flag_id": 2052400800
       },
       {
         "boss": "Uomo-drago antico",
