@@ -106,8 +106,7 @@ int wmain(int argc, wchar_t *argv[]) {
         const auto &c = (const CharSlot &)s;
         if (!c.available) {
             if (buttons[0].nButtonID < 0) {
-                buttons[0].nButtonID = idx;
-                slot = idx;
+                slot = buttons[0].nButtonID = idx | 0x10;
             }
             return;
         }
@@ -141,9 +140,9 @@ int wmain(int argc, wchar_t *argv[]) {
     if (TaskDialogIndirect(&taskDialogConfig, &sel, &slot, nullptr) != S_OK
         || sel == IDCANCEL || slot < 0) return -1;
 
-    savefile.importFrom(data, slot, [patchTimeToZero, &savefile, slot]() {
+    savefile.importFrom(data, slot & 0x0F, [patchTimeToZero, &savefile, slot]() {
         if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
-    }, keepFace);
+    }, keepFace && (slot & 0x10) != 0);
 #endif
     MessageBoxW(nullptr, L"存档导入完毕", MSGBOX_CAPTION, 0);
     CoUninitialize();
