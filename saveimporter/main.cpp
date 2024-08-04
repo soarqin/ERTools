@@ -92,22 +92,17 @@ int wmain(int argc, wchar_t *argv[]) {
     file.read((char*)data.data(), size);
     file.close();
 
-    TASKDIALOG_BUTTON buttons[10] = {
-        {-1, L"导入新角色槽"},
-    };
+    TASKDIALOG_BUTTON buttons[10] = {};
     TASKDIALOG_BUTTON dbuttons[2] = {
         {IDCANCEL, L"取消"},
         {IDOK, L"导入"},
     };
     WCHAR names[10][32];
-    int count = 1;
-    savefile.listSlots(-1, [&buttons, &count, &names, &slot](int idx, const SaveSlot &s) {
+    int count = 0;
+    savefile.listSlots(-1, [&buttons, &count, &names](int idx, const SaveSlot &s) {
         if (s.slotType != SaveSlot::Character) return;
         const auto &c = (const CharSlot &)s;
         if (!c.available) {
-            if (buttons[0].nButtonID < 0) {
-                slot = buttons[0].nButtonID = idx | 0x10;
-            }
             return;
         }
         auto &b = buttons[count];
@@ -128,13 +123,8 @@ int wmain(int argc, wchar_t *argv[]) {
     }
     taskDialogConfig.cButtons = 2;
     taskDialogConfig.pButtons = dbuttons;
-    if (buttons[0].nButtonID < 0) {
-        taskDialogConfig.cRadioButtons = count - 1;
-        taskDialogConfig.pRadioButtons = buttons + 1;
-    } else {
-        taskDialogConfig.cRadioButtons = count;
-        taskDialogConfig.pRadioButtons = buttons;
-    }
+    taskDialogConfig.cRadioButtons = count;
+    taskDialogConfig.pRadioButtons = buttons;
     taskDialogConfig.nDefaultRadioButton = slot;
     int sel;
     if (TaskDialogIndirect(&taskDialogConfig, &sel, &slot, nullptr) != S_OK
@@ -142,7 +132,7 @@ int wmain(int argc, wchar_t *argv[]) {
 
     savefile.importFrom(data, slot & 0x0F, [patchTimeToZero, &savefile, slot]() {
         if (patchTimeToZero) savefile.patchSlotTime(slot, 0);
-    }, keepFace && (slot & 0x10) != 0);
+    }, keepFace);
 #endif
     MessageBoxW(nullptr, L"存档导入完毕", MSGBOX_CAPTION, 0);
     CoUninitialize();
