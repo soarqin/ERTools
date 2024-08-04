@@ -371,10 +371,6 @@ bool SaveFile::importFace(const std::vector<uint8_t> &buf, int slot, bool resign
     auto sex = buf[0x120];
     auto *slot2 = (CharSlot*)slots_[slot].get();
     auto &data = slot2->data;
-    struct SearchData {
-        const std::vector<uint8_t> &face;
-        std::vector<uint8_t> &data;
-    };
     auto *m = data.data();
     auto offset = boyer_moore(m, data.size(), (const uint8_t *)"\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12);
     memcpy(m + offset, buf.data(), 0x120);
