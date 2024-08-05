@@ -97,7 +97,7 @@ void Cell::updateTexture() {
     }
     textSource->update();
     texture = SDL_CreateTextureFromSurface(renderer, textSource->surface);
-    SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
+    SDL_GetTextureSize(texture, &w, &h);
 }
 
 void Cell::render(int x, int y, int cx, int cy) const {
@@ -128,9 +128,8 @@ void Cell::render(int x, int y, int cx, int cy) const {
         SDL_RenderGeometry(renderer, nullptr, verts, 3, nullptr, 0);
     }
     if (texture) {
-        auto fw = (float)w, fh = (float)h;
-        auto l = (float)(cx - w) * .5f, t = (float)(cy - h) * .5f;
-        SDL_FRect rect = {fx + l, fy + t, fw, fh};
+        auto l = ((float)cx - w) * .5f, t = ((float)cy - h) * .5f;
+        SDL_FRect rect = {fx + l, fy + t, w, h};
         SDL_RenderTexture(renderer, texture, nullptr, &rect);
     }
 }
@@ -196,9 +195,9 @@ void Cells::init() {
                                    + (gConfig.simpleMode ? (int)scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)) + 5 : 0),
                                SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
     SDL_SetWindowPosition(window_, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
-    renderer_ = SDL_CreateRenderer(window_, "direct3d11", 0);
+    renderer_ = SDL_CreateRenderer(window_, "direct3d11");
     if (renderer_ == nullptr) {
-        renderer_ = SDL_CreateRenderer(window_, "opengl", 0);
+        renderer_ = SDL_CreateRenderer(window_, "opengl");
     }
     SDL_SetWindowHitTest(window_, HitTestCallback, nullptr);
     SDL_SetRenderDrawBlendMode(renderer_, SDL_BLENDMODE_NONE);
@@ -282,15 +281,16 @@ void Cells::render() {
 
         if (gConfig.simpleMode) {
             int fh = std::ceil(scoreTextSettings_->font->GetHeight((REAL)GetDeviceCaps(GetDC(nullptr), LOGPIXELSY)));
-            int sw, sh;
-            SDL_QueryTexture(scoreTexture_[0], nullptr, nullptr, &sw, &sh);
-            SDL_FRect rect = {20.f, (float)(wh - fh + 5), (float)sw, (float)sh};
+            float sw, sh;
+            SDL_GetTextureSize(scoreTexture_[0], &sw, &sh);
+            SDL_FRect rect = {20.f, (float)(wh - fh + 5), sw, sh};
             SDL_RenderTexture(renderer_, scoreTexture_[0], nullptr, &rect);
-            SDL_QueryTexture(scoreTexture_[1], nullptr, nullptr, &sw, &sh);
-            rect = {(float)(ww - sw - 20), (float)(wh - fh + 5), (float)sw, (float)sh};
+            SDL_GetTextureSize(scoreTexture_[1], &sw, &sh);
+            rect = {(float)(ww - sw - 20), (float)(wh - fh + 5), sw, sh};
             SDL_RenderTexture(renderer_, scoreTexture_[1], nullptr, &rect);
         }
         SDL_SetRenderTarget(renderer_, nullptr);
+        SDL_SetTextureBlendMode(texture_, SDL_BLENDMODE_NONE);
         dirty_ = false;
     }
 
@@ -422,6 +422,11 @@ void Cells::updateTextures(bool fit) {
     dirty_ = true;
 }
 
+void Cells::updateCellTexture(int x, int y) {
+    cells_[y][x].updateTexture();
+    dirty_ = true;
+}
+
 void Cells::updateScoreTextures(int index) {
     auto score = gScoreWindows[index].score;
     const auto &playerName = gScoreWindows[index].playerName;
@@ -446,15 +451,15 @@ void Cells::updateScoreTextures(int index) {
     } else {
         utexture = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
     }
-    int mw, mh;
-    SDL_QueryTexture(utexture, nullptr, nullptr, &mw, &mh);
+    float mw, mh;
+    SDL_GetTextureSize(utexture, &mw, &mh);
     if (scoreTexture_[index])
         SDL_DestroyTexture(scoreTexture_[index]);
     scoreTexture_[index] = SDL_CreateTexture(renderer_, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
     SDL_SetRenderTarget(renderer_, scoreTexture_[index]);
     SDL_SetRenderDrawColor(renderer_, 0, 0, 0, 0);
     SDL_RenderClear(renderer_);
-    SDL_FRect rc = {0, 0, (float)mw, (float)mh};
+    SDL_FRect rc = {0, 0, mw, mh};
     SDL_RenderTexture(renderer_, utexture, nullptr, &rc);
     if (gConfig.useColorTexture[index]) {
         SDL_SetTextureBlendMode(colorTexture_[index], SDL_BLENDMODE_MOD);
@@ -1386,7 +1391,7 @@ void Cells::showSettingsWindow() {
     if (configDialog) {
         initConfigDialog(configDialog);
     } else {
-        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window_), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(window_), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
     ShowWindow(configDialog, SW_SHOW);

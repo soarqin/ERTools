@@ -18,7 +18,7 @@ struct Cell {
     TextSettings *textSettings = nullptr;
     TextSource *textSource = nullptr;
     uint32_t status = 0;
-    int w = 0, h = 0;
+    float w = 0, h = 0;
     bool needDeallocTextSettings = false;
 };
 
@@ -36,6 +36,7 @@ public:
     void updateScoreTextSettings();
     void resetCellFonts();
     void updateTextures(bool fit = false);
+    void updateCellTexture(int x, int y);
     void updateScoreTextures(int index);
     void reloadColorTexture();
     void reloadColorTexture(int index);

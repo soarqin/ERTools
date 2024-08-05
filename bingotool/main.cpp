@@ -361,7 +361,7 @@ static int mainLoop() {
                 case SDL_EVENT_QUIT:
                     goto QUIT;
                 case SDL_EVENT_KEY_UP:
-                    if (e.key.keysym.sym == SDLK_r && (e.key.keysym.mod & SDL_KMOD_CTRL) != 0) {
+                    if (e.key.key == SDLK_R && (e.key.mod & SDL_KMOD_CTRL) != 0) {
                         randomCells("");
                     }
                     break;
@@ -380,7 +380,7 @@ static int mainLoop() {
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         switch (cmd) {
                             case 7:
@@ -476,25 +476,28 @@ static int mainLoop() {
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         if (syncMenu != nullptr) DestroyMenu(syncMenu);
                         DestroyMenu(tables);
                         switch (cmd) {
                             case 1: {
                                 cell.status = 1;
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 2: {
                                 cell.status = 2;
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 3: {
                                 cell.status = 0;
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
@@ -503,6 +506,7 @@ static int mainLoop() {
                                 gCells.foreach([](Cell &cell, int x, int y) {
                                     cell.status = 0;
                                 });
+                                gCells.updateTextures();
                                 gScoreWindows[0].reset();
                                 gScoreWindows[1].reset();
                                 sendJudgeSyncState();
@@ -592,7 +596,7 @@ static int mainLoop() {
                         AppendMenuW(menu, MF_STRING, 8, L"退出");
                         POINT pt;
                         GetCursorPos(&pt);
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(gCells.window()), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
                         DestroyMenu(menu);
                         switch (cmd) {
@@ -602,6 +606,7 @@ static int mainLoop() {
                                 } else {
                                     cell.status = 4;
                                 }
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
@@ -612,24 +617,28 @@ static int mainLoop() {
                                 } else {
                                     cell.status = 3;
                                 }
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 3: {
                                 cell.status = 0;
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 4: {
                                 gScoreWindows[0].setClear(!gScoreWindows[0].cleared);
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
                             }
                             case 5: {
                                 gScoreWindows[1].setClear(!gScoreWindows[1].cleared);
+                                gCells.updateCellTexture(dx, dy);
                                 updateScores();
                                 sendJudgeSyncState();
                                 break;
@@ -638,6 +647,7 @@ static int mainLoop() {
                                 gCells.foreach([](Cell &cell, int x, int y) {
                                     cell.status = 0;
                                 });
+                                gCells.updateTextures();
                                 gScoreWindows[0].reset();
                                 gScoreWindows[1].reset();
                                 sendJudgeSyncState();

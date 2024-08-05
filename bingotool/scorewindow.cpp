@@ -44,9 +44,9 @@ void ScoreWindow::createWindow() {
         std::string title = i == 0 ? "Score A" : "Player A";
         title.back() += index;
         window[i] = SDL_CreateWindow(title.c_str(), tw[i], th[i], SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
-        renderer[i] = SDL_CreateRenderer(window[i], "direct3d11", 0);
+        renderer[i] = SDL_CreateRenderer(window[i], "direct3d11");
         if (renderer[i] == nullptr) {
-            renderer[i] = SDL_CreateRenderer(window[i], "opengl", 0);
+            renderer[i] = SDL_CreateRenderer(window[i], "opengl");
         }
         SDL_SetWindowHitTest(window[i], ScoreWindowHitTestCallback, nullptr);
         int x, y;
@@ -166,15 +166,15 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         } else {
             utexture = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 8, 8);
         }
-        int mw, mh;
-        SDL_QueryTexture(utexture, nullptr, nullptr, &mw, &mh);
+        float mw, mh;
+        SDL_GetTextureSize(utexture, &mw, &mh);
         if (texture[i])
             SDL_DestroyTexture(texture[i]);
         texture[i] = SDL_CreateTexture(renderer[i], SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, mw, mh);
         SDL_SetRenderTarget(renderer[i], texture[i]);
         SDL_SetRenderDrawColor(renderer[i], 0, 0, 0, 0);
         SDL_RenderClear(renderer[i]);
-        SDL_FRect rc = {0, 0, (float)mw, (float)mh};
+        SDL_FRect rc = {0, 0, mw, mh};
         SDL_RenderTexture(renderer[i], utexture, nullptr, &rc);
         if (gConfig.useColorTexture[index]) {
             SDL_RenderTexture(renderer[i], colorMask[i], nullptr, nullptr);
@@ -183,7 +183,9 @@ void ScoreWindow::updateTexture(bool reloadMask) {
         SDL_SetRenderTarget(renderer[i], nullptr);
         SDL_SetTextureBlendMode(texture[i], SDL_BLENDMODE_BLEND);
 
-        SDL_QueryTexture(texture[i], nullptr, nullptr, &tw[i], &th[i]);
+        SDL_GetTextureSize(texture[i], &mw, &mh);
+        tw[i] = mw;
+        th[i] = mh;
         w[i] = tw[i] + gConfig.scorePadding * 2;
         h[i] = th[i] + gConfig.scorePadding * 2;
         SDL_SetWindowSize(window[i], w[i], h[i]);

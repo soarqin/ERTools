@@ -48,8 +48,10 @@ static std::string randomGroupEntry(RandomGroup *group, const std::unordered_map
                 res = randomGroupEntry(ref.group, mutualExclusions, exclusions, re);
                 if (res.empty()) {
                     group->totalWeight -= ref.weight;
-                    ite = group->groups.erase(ite);
-                    weight -= ref.weight;
+                    group->groups.erase(ite);
+                    if (group->groups.empty()) break;
+                    ite = group->groups.begin();
+                    weight = re() % group->totalWeight;
                     continue;
                 }
                 auto ite2 = mutualExclusions.find(group->name);
