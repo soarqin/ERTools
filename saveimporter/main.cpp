@@ -32,6 +32,7 @@ int wmain(int argc, wchar_t *argv[]) {
 #if defined(USE_CLI_ARGS)
     std::ifstream file(std::filesystem::path(argv[1]), std::ios::binary);
     if (!file.is_open()) {
+        CoUninitialize();
         return -1;
     }
     auto cfg = toml::parse(file);
@@ -41,6 +42,7 @@ int wmain(int argc, wchar_t *argv[]) {
     GetModuleFileNameW(nullptr, path, sizeof(path));
     std::ifstream file(path, std::ios::binary);
     if (!file.is_open()) {
+        CoUninitialize();
         return -1;
     }
     file.seekg(-4, std::ios::end);
@@ -48,6 +50,7 @@ int wmain(int argc, wchar_t *argv[]) {
     file.read(reinterpret_cast<char *>(&magic), 4);
     if (magic != 0x49535245) {
         MessageBoxW(nullptr, L"无效的存档导入文件!", MSGBOX_CAPTION, 0);
+        CoUninitialize();
         return -1;
     }
     file.seekg(-8, std::ios::end);
@@ -71,12 +74,16 @@ int wmain(int argc, wchar_t *argv[]) {
     SHGetSpecialFolderPathW(nullptr, savepath, CSIDL_APPDATA, false);
     PathAppendW(savepath, L"EldenRing");
     auto res = selectFile(L"选择艾尔登法环存档文件(进入数字ID子目录后选择，你需要至少运行一次游戏才能生成存档文件)", savepath, L"艾尔登法环存档文件|ER0000.sl2|所有文件|*.*", L"sl2", false);
-    if (res.empty()) return -1;
+    if (res.empty()) {
+        CoUninitialize();
+        return -1;
+    }
 
     int slot = 0;
     SaveFile savefile(res);
     if (!savefile.ok()) {
         MessageBoxW(nullptr, L"无效的存档文件！", MSGBOX_CAPTION, MB_ICONERROR);
+        CoUninitialize();
         return -1;
     }
 #if defined(USE_CLI_ARGS)
@@ -112,6 +119,11 @@ int wmain(int argc, wchar_t *argv[]) {
         lstrcatW(names[count], c.charname.c_str());
         count++;
     });
+    if (count <= 0) {
+        MessageBoxW(nullptr, L"没有可用的角色槽！", MSGBOX_CAPTION, 0);
+        CoUninitialize();
+        return -1;
+    }
     TASKDIALOGCONFIG taskDialogConfig = {sizeof(TASKDIALOGCONFIG)};
     taskDialogConfig.hInstance = GetModuleHandleW(nullptr);
     taskDialogConfig.pszWindowTitle = L"选择导入角色槽";
@@ -128,7 +140,10 @@ int wmain(int argc, wchar_t *argv[]) {
     taskDialogConfig.nDefaultRadioButton = slot;
     int sel;
     if (TaskDialogIndirect(&taskDialogConfig, &sel, &slot, nullptr) != S_OK
-        || sel == IDCANCEL || slot < 0) return -1;
+        || sel == IDCANCEL || slot < 0) {
+        CoUninitialize();
+        return -1;
+    }
 
     savefile.importFrom(data, slot & 0x0F, [patchTimeToZero, &savefile, slot]() {
         if (patchTimeToZero) savefile.patchSlotTime(slot, 0);

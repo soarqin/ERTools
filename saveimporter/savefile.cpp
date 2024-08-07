@@ -12,6 +12,7 @@
 #include <sstream>
 #include <filesystem>
 #include <cstring>
+#include <windows.h>
 
 inline void readWString(std::wstring &output, const uint16_t *input) {
     while (*input) {
@@ -38,14 +39,14 @@ inline void findUserIDOffset(CharSlot *slot, const std::function<void(int offset
     }
 }
 
-inline size_t findStatOffset(const std::vector<uint8_t> &data, int level, const wchar_t name[0x11]) {
+inline size_t findStatOffset(const std::vector<uint8_t> &data, int level, const wchar_t *name) {
     const auto *ptr = data.data();
     size_t sz = data.size() - 0x130;
     for (size_t i = 0; i < sz; ++i) {
         auto nl = *(int*)(ptr + i + 0x2C);
         if (nl == level && *(int*)(ptr + i) + *(int*)(ptr + i + 4) + *(int*)(ptr + i + 8) + *(int*)(ptr + i + 12) +
             *(int*)(ptr + i + 16) + *(int*)(ptr + i + 20) + *(int*)(ptr + i + 24) + *(int*)(ptr + i + 28)
-            == 79 + nl && memcmp(name, ptr +i + 0x60, 0x22) == 0) {
+            == 79 + nl && lstrcmpW(name, (const wchar_t*)(ptr + i + 0x60)) == 0) {
             return i;
         }
     }
@@ -350,7 +351,10 @@ bool SaveFile::exportFace(std::vector<uint8_t> &buf, int slot) {
     auto offset = boyer_moore(m, data.size(), (const uint8_t *)"\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12);
     buf.assign(m + offset, m + offset + 0x120);
     const auto *s = (const CharSlot*)slots_[slot].get();
-    buf.push_back(data[s->statOffset + 0x82]);
+    if (s->statOffset > 0)
+        buf.push_back(data[s->statOffset + 0x82]);
+    else
+        buf.push_back(255);
     return true;
 }
 
@@ -367,9 +371,10 @@ bool SaveFile::exportFaceToFile(const std::wstring &filename, int slot) {
 bool SaveFile::importFace(const std::vector<uint8_t> &buf, int slot, bool resign) {
     if (slot < 0 || slot >= slots_.size() || slots_[slot]->slotType != SaveSlot::Character) { return false; }
     if (memcmp(buf.data(), "\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12) != 0) { return false; }
-
     auto sex = buf[0x120];
+    if (sex == 0xFF) { return true; }
     auto *slot2 = (CharSlot*)slots_[slot].get();
+    if (slot2->statOffset == 0) { return false; }
     auto &data = slot2->data;
     auto *m = data.data();
     auto offset = boyer_moore(m, data.size(), (const uint8_t *)"\x46\x41\x43\x45\x04\x00\x00\x00\x20\x01\x00\x00", 12);
