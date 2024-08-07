@@ -155,6 +155,184 @@ incantations = [6420, 6421, 6422, 6423, 6440, 6441, 6460, 6450, 6470, 6480, 6490
 ashesofwar = [10600, 10700, 11000, 10000, 60700, 50300, 70000, 50600, 21200, 50900, 65100, 65000, 65400, 65300, 10300, 10100, 10200, 10900, 11200, 12400, 11400, 80000, 80100, 80200, 65200, 11500, 10500, 11100, 11600, 21000, 12200, 12300, 50200, 22000, 22500, 60000, 60100, 20300, 20000, 21900, 21800, 12000, 11800, 20900, 50800, 21400, 50500, 20700, 11300, 22100, 21600, 21700, 50400, 20100, 20800, 22200, 60400, 60500, 21300, 50700, 60300, 70100, 70200, 22800, 11900, 22400, 20400, 10800, 60600, 20200, 22700, 50100, 22600, 20500, 85000, 60200, 40200, 40000, 40100, 40500, 40400, 40600, 30200, 30700, 30600, 30000, 30800, 30100, 31000, 30500, 30900]
 spirits = [240000, 241000, 205000, 215000, 212000, 213000, 211000, 210000, 234000, 222000, 214000, 232000, 235000, 233000, 237000, 244000, 236000, 245000, 203000, 246000, 249000, 248000, 220000, 242000, 225000, 226000, 231000, 243000, 227000, 209000, 230000, 229000, 208000, 224000, 218000, 219000, 250000, 251000, 252000, 253000, 255000, 254000, 238000, 201000, 202000, 239000, 221000, 204000, 217000, 216000, 247000, 228000, 256000, 257000, 258000, 223000, 200000, 207000, 261000, 263000, 262000, 259000, 260000, 206000]
 
+weapons_dlc1 = [
+    {
+        'category': 60010,
+        'items': [1510000, 1500000]
+    },
+    {
+        'category': 60183,
+        'items': [63500000]
+    },
+    {
+        'category': 60015,
+        'items': [2540000, 2510000, 2550000, 2560000]
+    },
+    {
+        'category': 60185,
+        'items': [67500000, 67510000, 67520000]
+    },
+    {
+        'category': 60020,
+        'items': [3520000, 3550000, 3510000]
+    },
+    {
+        'category': 60025,
+        'items': [4520000, 4540000, 4500000, 4530000, 4550000]
+    },
+    {
+        'category': 60045,
+        'items': [2530000]
+    },
+    {
+        'category': 60046,
+        'items': [6500000, 3500000]
+    },
+    {
+        'category': 60030,
+        'items': [7500000, 7510000, 7520000, 7530000]
+    },
+    {
+        'category': 60035,
+        'items': [8510000, 8520000]
+    },
+    {
+        'category': 60184,
+        'items': [64500000, 64510000, 64520000]
+    },
+    {
+        'category': 60040,
+        'items': [9500000, 2520000]
+    },
+    {
+        'category': 60186,
+        'items': [66500000, 66510000, 66520000]
+    },
+    {
+        'category': 60043,
+        'items': [10510000, 10500000]
+    },
+    {
+        'category': 60050,
+        'items': [14540000, 14520000, 14500000, 14510000]
+    },
+    {
+        'category': 60055,
+        'items': [15510000, 15500000, 8500000]
+    },
+    {
+        'category': 60060,
+        'items': [11500000]
+    },
+    {
+        'category': 60065,
+        'items': [12520000, 12500000]
+    },
+    {
+        'category': 60067,
+        'items': [13500000]
+    },
+    {
+        'category': 60102,
+        'items': [12530000, 12510000, 23500000, 23510000, 23520000]
+    },
+    {
+        'category': 60070,
+        'items': [16520000, 16540000, 16500000]
+    },
+    {
+        'category': 60077,
+        'items': [17510000, 17520000, 16550000, 17500000]
+    },
+    {
+        'category': 60080,
+        'items': [18500000, 18510000]
+    },
+    {
+        'category': 60085,
+        'items': [19500000]
+    },
+    {
+        'category': 60155,
+        'items': [20500000]
+    },
+    {
+        'category': 60090,
+        'items': [21510000, 21520000, 21530000, 21500000, 21540000]
+    },
+    {
+        'category': 60180,
+        'items': [60500000, 60510000]
+    },
+    {
+        'category': 60100,
+        'items': [22500000]
+    },
+    {
+        'category': 60187,
+        'items': [68500000, 68510000]
+    },
+    {
+        'category': 60181,
+        'items': [61500000, 61530000, 61510000, 61520000, 61540000]
+    },
+    {
+        'category': 60104,
+        'items': [40500000]
+    },
+    {
+        'category': 60105,
+        'items': [41510000]
+    },
+    {
+        'category': 60110,
+        'items': [42500000]
+    },
+    {
+        'category': 60115,
+        'items': [43500000, 43510000]
+    },
+    {
+        'category': 60117,
+        'items': [44500000]
+    },
+    {
+        'category': 60120,
+        'items': [33520000, 33510000]
+    },
+    {
+        'category': 60130,
+        'items': [34500000, 34510000, 34520000]
+    },
+    {
+        'category': 60175,
+        'items': [24500000, 24510000]
+    },
+    {
+        'category': 60140,
+        'items': [30510000, 21550000]
+    },
+    {
+        'category': 60145,
+        'items': [31500000, 31510000, 31520000, 31530000]
+    },
+    {
+        'category': 60150,
+        'items': [32500000, 32520000]
+    },
+    {
+        'category': 60182,
+        'items': [62500000, 62510000]
+    }
+]
+arrows_dlc1 = [50550000, 50540000, 51500000, 52520000, 53500000]
+protectors_dlc1 = [5070000, 5070100, 5070200, 5070300, 5300000, 5272000, 5060000, [5060100, 5062100], 5060200, 5060300, 3000000, [3000100, 3001100], 3000200, 3000300, 5110000, [5110100, 5111100], 5110200, 5110300, 5330000, 5320000, 5030000, [5030100, 5031100], 5030200, 5030300, 5230000, 5230100, 5230200, 5230300, 5231100, 5080000, [5080100, 5081100], 5080200, 5080300, 5240000, 5240100, 5240200, 5240300, 5280000, 5280100, 5280200, 5280300, 5190000, 5190100, 5190200, 5190300, 5191000, 5191100, 5020000, 5020100, 5020200, 5020300, 5021000, [5100000, 5101000], [5100100, 5101100], 5100200, 5100300, 5210000, 5210100, 5210200, 5210300, 5120000, [5120100, 5121100], 5120200, 5120300, 5140000, [5140100, 5141100], 5140200, 5140300, 5090000, 5090100, 5090200, 5090300, [5220000, 5221000], 5220100, 5220200, 5220300, 5150000, 5150100, 5150200, 5150300, 5180000, [5180100, 5181100], 5180200, 5180300, 5183000, 5182000, 5184000, 5200000, 5200100, 5200200, 5200300, 5250000, 5250100, 5250200, 5250300, 5252000, 5252100, 5253000, 5253100, 5253200, 5253300, 5000000, 5002100, 5000200, 5000300, 5000100, 5160000, 5160100, 5160200, 5160300, 5260000, 5260100, 5260200, 5260300, 5130000, [5130100, 5131100], 5130200, 5130300, 5310000, 3010000, 3010100, 3010200, 3010300, 5270000, [5270100, 5271100], 5270200, 5270300, 5010000, 5010100, 5010200, 5010300, 5290000]
+accessories_dlc1 = [7000, 7140, 7010, 7150, 8000, 8200, 7020, 7030, 8020, 7090, 7100, 7110, 7120, 7130, 7050, 7040, 7060, 7080, 8120, 8040, 8090, 8130, 8140, 8070, 8150, 8190, 8220, 8030, 8110, 8180, 8170, 8210, 8010, 8240, 8060, 8160, 8230, 8050, 8100]
+sorceries_dlc1 = [2004310, 2004320, 2004300, 2004710, 2004700, 2004500, 2004510, 2007410, 2007420, 2004900, 2004910, 2005000, 2006210, 2006200]
+incantations_dlc1 = [2006690, 2006400, 2006670, 2006650, 2006660, 2006680, 2006710, 2006700, 2006900, 2006920, 2006910, 2007700, 2007710, 2007720, 2007600, 2007740, 2007730, 2007800, 2007810, 2007820, 2006800, 2006300, 2007210, 2007200, 2007300, 2007020, 2007000, 2007010]
+ashesofwar_dlc1 = [415000, 400000, 409000, 410000, 411000, 407000, 406000, 402000, 403000, 412000, 418000, 414000, 417000, 413000, 200100, 505000, 422000, 416000, 419000, 401000, 200000, 404000, 405000, 548000, 800000]
+spirits_dlc1 = [2211000, 2204000, 2217000, 2210000, 2202000, 2214000, 2201000, 2205000, 2207000, 2209000, 2208000, 2203000, 2218000, 2219000, 2220000, 2200000, 2206000, 2213000, 2212000, 2215000]
+
 idmap = {}
 
 def load_text(lang):
@@ -258,12 +436,33 @@ def generate(lang):
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/weapons.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
 
+    o = []
+    for v in weapons_dlc1:
+        cate = idmap['M' + str(v['category'])]
+        o2 = []
+        for i in v['items']:
+            o3 = {}
+            o3['id'] = i
+            o3['name'] = idmap['W' + str(i)]
+            o2.append(o3)
+        o.append({'category': cate, 'items': o2})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/weapons_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+
     # Arrows
     o = []
     for v in arrows:
         o.append({'id': v, 'name': idmap['W' + str(v)]})
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/arrows.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+    o = []
+    for v in arrows_dlc1:
+        o.append({'id': v, 'name': idmap['W' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/arrows_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
 
     # Protectors
     o = []
@@ -281,12 +480,35 @@ def generate(lang):
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/protectors.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
 
+    o = []
+    for v in protectors_dlc1:
+        if isinstance(v, list):
+            name = ''
+            for k in v:
+                if len(name) == 0:
+                    name = idmap['P' + str(k)]
+                else:
+                    name = name + '/' + idmap['P' + str(k)]
+        else:
+            name = idmap['P' + str(v)]
+        o.append({'id': v, 'name': name})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/protectors_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+
     # Accessories
     o = []
     for v in accessories:
         o.append({'id': v, 'name': idmap['ACC' + str(v)]})
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/accessories.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+    o = []
+    for v in accessories_dlc1:
+        o.append({'id': v, 'name': idmap['ACC' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/accessories_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
 
     # Sorceries
     o = []
@@ -295,12 +517,26 @@ def generate(lang):
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/sorceries.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
 
+    o = []
+    for v in sorceries_dlc1:
+        o.append({'id': v, 'name': idmap['G' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/sorceries_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+
     # Incantations
     o = []
     for v in incantations:
         o.append({'id': v, 'name': idmap['G' + str(v)]})
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/incantations.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+    o = []
+    for v in incantations_dlc1:
+        o.append({'id': v, 'name': idmap['G' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/incantations_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
 
     # Ashes of war
     o = []
@@ -309,12 +545,25 @@ def generate(lang):
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/ashesofwar.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
 
+    o = []
+    for v in ashesofwar_dlc1:
+        o.append({'id': v, 'name': idmap['AOW' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/ashesofwar_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+
     # Spirits
     o = []
     for v in spirits:
         o.append({'id': v, 'name': idmap['G' + str(v)]})
     os.makedirs('../' + lang, exist_ok=True)
     codecs.open('../' + lang + '/spirits.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
+
+    o = []
+    for v in spirits_dlc1:
+        o.append({'id': v, 'name': idmap['G' + str(v)]})
+    os.makedirs('../' + lang, exist_ok=True)
+    codecs.open('../' + lang + '/spirits_dlc1.json', 'w', 'utf-8').write(json.dumps(o, ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

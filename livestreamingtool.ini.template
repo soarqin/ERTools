@@ -21,6 +21,8 @@ only_rememberance=true
 max_display_count=20
 
 [items]
+; Check dlc items
+check_dlc_items=false
 ; Show weapon collection progress
 show_weapons_collections=false
 ; Show protector collection progress

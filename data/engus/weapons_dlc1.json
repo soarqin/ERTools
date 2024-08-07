@@ -1,0 +1,620 @@
+[
+  {
+    "category": "Dagger",
+    "items": [
+      {
+        "id": 1510000,
+        "name": "Fire Knight's Shortsword"
+      },
+      {
+        "id": 1500000,
+        "name": "Main-gauche"
+      }
+    ]
+  },
+  {
+    "category": "Throwing Blade",
+    "items": [
+      {
+        "id": 63500000,
+        "name": "Smithscript Dagger"
+      }
+    ]
+  },
+  {
+    "category": "Straight Sword",
+    "items": [
+      {
+        "id": 2540000,
+        "name": "Stone-Sheathed Sword"
+      },
+      {
+        "id": 2510000,
+        "name": "Velvet Sword of St. Trina"
+      },
+      {
+        "id": 2550000,
+        "name": "Sword of Light"
+      },
+      {
+        "id": 2560000,
+        "name": "Sword of Darkness"
+      }
+    ]
+  },
+  {
+    "category": "Light Greatsword",
+    "items": [
+      {
+        "id": 67500000,
+        "name": "Milady"
+      },
+      {
+        "id": 67510000,
+        "name": "Leda's Sword"
+      },
+      {
+        "id": 67520000,
+        "name": "Rellana's Twin Blades"
+      }
+    ]
+  },
+  {
+    "category": "Greatsword",
+    "items": [
+      {
+        "id": 3520000,
+        "name": "Lizard Greatsword"
+      },
+      {
+        "id": 3550000,
+        "name": "Greatsword of Solitude"
+      },
+      {
+        "id": 3510000,
+        "name": "Greatsword of Damnation"
+      }
+    ]
+  },
+  {
+    "category": "Colossal Sword",
+    "items": [
+      {
+        "id": 4520000,
+        "name": "Fire Knight's Greatsword"
+      },
+      {
+        "id": 4540000,
+        "name": "Moonrithyll's Knight Sword"
+      },
+      {
+        "id": 4500000,
+        "name": "Ancient Meteoric Ore Greatsword"
+      },
+      {
+        "id": 4530000,
+        "name": "Greatsword of Radahn (Lord)"
+      },
+      {
+        "id": 4550000,
+        "name": "Greatsword of Radahn (Light)"
+      }
+    ]
+  },
+  {
+    "category": "Thrusting Sword",
+    "items": [
+      {
+        "id": 2530000,
+        "name": "Carian Sorcery Sword"
+      }
+    ]
+  },
+  {
+    "category": "Heavy Thrusting Sword",
+    "items": [
+      {
+        "id": 6500000,
+        "name": "Queelign's Greatsword"
+      },
+      {
+        "id": 3500000,
+        "name": "Sword Lance"
+      }
+    ]
+  },
+  {
+    "category": "Curved Sword",
+    "items": [
+      {
+        "id": 7500000,
+        "name": "Spirit Sword"
+      },
+      {
+        "id": 7510000,
+        "name": "Falx"
+      },
+      {
+        "id": 7520000,
+        "name": "Dancing Blade of Ranah"
+      },
+      {
+        "id": 7530000,
+        "name": "Horned Warrior's Sword"
+      }
+    ]
+  },
+  {
+    "category": "Curved Greatsword",
+    "items": [
+      {
+        "id": 8510000,
+        "name": "Freyja's Greatsword"
+      },
+      {
+        "id": 8520000,
+        "name": "Horned Warrior's Greatsword"
+      }
+    ]
+  },
+  {
+    "category": "Backhand Blade",
+    "items": [
+      {
+        "id": 64500000,
+        "name": "Backhand Blade"
+      },
+      {
+        "id": 64510000,
+        "name": "Smithscript Cirque"
+      },
+      {
+        "id": 64520000,
+        "name": "Curseblade's Cirque"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9500000,
+        "name": "Sword of Night"
+      },
+      {
+        "id": 2520000,
+        "name": "Star-Lined Sword"
+      }
+    ]
+  },
+  {
+    "category": "Great Katana",
+    "items": [
+      {
+        "id": 66500000,
+        "name": "Great Katana"
+      },
+      {
+        "id": 66510000,
+        "name": "Dragon-Hunter's Great Katana"
+      },
+      {
+        "id": 66520000,
+        "name": "Rakshasa's Great Katana"
+      }
+    ]
+  },
+  {
+    "category": "Twinblade",
+    "items": [
+      {
+        "id": 10510000,
+        "name": "Black Steel Twinblade"
+      },
+      {
+        "id": 10500000,
+        "name": "Euporia"
+      }
+    ]
+  },
+  {
+    "category": "Axe",
+    "items": [
+      {
+        "id": 14540000,
+        "name": "Forked-Tongue Hatchet"
+      },
+      {
+        "id": 14520000,
+        "name": "Messmer Soldier's Axe"
+      },
+      {
+        "id": 14500000,
+        "name": "Smithscript Axe"
+      },
+      {
+        "id": 14510000,
+        "name": "Death Knight's Twin Axes"
+      }
+    ]
+  },
+  {
+    "category": "Greataxe",
+    "items": [
+      {
+        "id": 15510000,
+        "name": "Bonny Butchering Knife"
+      },
+      {
+        "id": 15500000,
+        "name": "Death Knight's Longhaft Axe"
+      },
+      {
+        "id": 8500000,
+        "name": "Putrescence Cleaver"
+      }
+    ]
+  },
+  {
+    "category": "Hammer",
+    "items": [
+      {
+        "id": 11500000,
+        "name": "Flowerstone Gavel"
+      }
+    ]
+  },
+  {
+    "category": "Great Hammer",
+    "items": [
+      {
+        "id": 12520000,
+        "name": "Black Steel Greathammer"
+      },
+      {
+        "id": 12500000,
+        "name": "Smithscript Greathammer"
+      }
+    ]
+  },
+  {
+    "category": "Flail",
+    "items": [
+      {
+        "id": 13500000,
+        "name": "Serpent Flail"
+      }
+    ]
+  },
+  {
+    "category": "Colossal Weapon",
+    "items": [
+      {
+        "id": 12530000,
+        "name": "Bloodfiend's Arm"
+      },
+      {
+        "id": 12510000,
+        "name": "Anvil Hammer"
+      },
+      {
+        "id": 23500000,
+        "name": "Devonia's Hammer"
+      },
+      {
+        "id": 23510000,
+        "name": "Shadow Sunflower Blossom"
+      },
+      {
+        "id": 23520000,
+        "name": "Gazing Finger"
+      }
+    ]
+  },
+  {
+    "category": "Spear",
+    "items": [
+      {
+        "id": 16520000,
+        "name": "Swift Spear"
+      },
+      {
+        "id": 16540000,
+        "name": "Bloodfiend's Fork"
+      },
+      {
+        "id": 16500000,
+        "name": "Smithscript Spear"
+      }
+    ]
+  },
+  {
+    "category": "Great Spear",
+    "items": [
+      {
+        "id": 17510000,
+        "name": "Messmer Soldier's Spear"
+      },
+      {
+        "id": 17520000,
+        "name": "Barbed Staff-Spear"
+      },
+      {
+        "id": 16550000,
+        "name": "Bloodfiend's Sacred Spear"
+      },
+      {
+        "id": 17500000,
+        "name": "Spear of the Impaler"
+      }
+    ]
+  },
+  {
+    "category": "Halberd",
+    "items": [
+      {
+        "id": 18500000,
+        "name": "Spirit Glaive"
+      },
+      {
+        "id": 18510000,
+        "name": "Poleblade of the Bud"
+      }
+    ]
+  },
+  {
+    "category": "Reaper",
+    "items": [
+      {
+        "id": 19500000,
+        "name": "Obsidian Lamina"
+      }
+    ]
+  },
+  {
+    "category": "Whip",
+    "items": [
+      {
+        "id": 20500000,
+        "name": "Tooth Whip"
+      }
+    ]
+  },
+  {
+    "category": "Fist",
+    "items": [
+      {
+        "id": 21510000,
+        "name": "Pata"
+      },
+      {
+        "id": 21520000,
+        "name": "Poisoned Hand"
+      },
+      {
+        "id": 21530000,
+        "name": "Madding Hand"
+      },
+      {
+        "id": 21500000,
+        "name": "Thiollier's Hidden Needle"
+      },
+      {
+        "id": 21540000,
+        "name": "Golem Fist"
+      }
+    ]
+  },
+  {
+    "category": "Hand-to-Hand",
+    "items": [
+      {
+        "id": 60500000,
+        "name": "Dryleaf Arts"
+      },
+      {
+        "id": 60510000,
+        "name": "Dane's Footwork"
+      }
+    ]
+  },
+  {
+    "category": "Claw",
+    "items": [
+      {
+        "id": 22500000,
+        "name": "Claws of Night"
+      }
+    ]
+  },
+  {
+    "category": "Beast Claw",
+    "items": [
+      {
+        "id": 68500000,
+        "name": "Beast Claw"
+      },
+      {
+        "id": 68510000,
+        "name": "Red Bear's Claw"
+      }
+    ]
+  },
+  {
+    "category": "Perfume Bottle",
+    "items": [
+      {
+        "id": 61500000,
+        "name": "Firespark Perfume Bottle"
+      },
+      {
+        "id": 61530000,
+        "name": "Lightning Perfume Bottle"
+      },
+      {
+        "id": 61510000,
+        "name": "Chilling Perfume Bottle"
+      },
+      {
+        "id": 61520000,
+        "name": "Frenzyflame Perfume Bottle"
+      },
+      {
+        "id": 61540000,
+        "name": "Deadly Poison Perfume Bottle"
+      }
+    ]
+  },
+  {
+    "category": "Light Bow",
+    "items": [
+      {
+        "id": 40500000,
+        "name": "Bone Bow"
+      }
+    ]
+  },
+  {
+    "category": "Bow",
+    "items": [
+      {
+        "id": 41510000,
+        "name": "Ansbach's Longbow"
+      }
+    ]
+  },
+  {
+    "category": "Greatbow",
+    "items": [
+      {
+        "id": 42500000,
+        "name": "Igon's Greatbow"
+      }
+    ]
+  },
+  {
+    "category": "Crossbow",
+    "items": [
+      {
+        "id": 43500000,
+        "name": "Repeating Crossbow"
+      },
+      {
+        "id": 43510000,
+        "name": "Spread Crossbow"
+      }
+    ]
+  },
+  {
+    "category": "Ballista",
+    "items": [
+      {
+        "id": 44500000,
+        "name": "Rabbath's Cannon"
+      }
+    ]
+  },
+  {
+    "category": "Glintstone Staff",
+    "items": [
+      {
+        "id": 33520000,
+        "name": "Maternal Staff"
+      },
+      {
+        "id": 33510000,
+        "name": "Staff of the Great Beyond"
+      }
+    ]
+  },
+  {
+    "category": "Sacred Seal",
+    "items": [
+      {
+        "id": 34500000,
+        "name": "Dryleaf Seal"
+      },
+      {
+        "id": 34510000,
+        "name": "Fire Knight's Seal"
+      },
+      {
+        "id": 34520000,
+        "name": "Spiraltree Seal"
+      }
+    ]
+  },
+  {
+    "category": "Torch",
+    "items": [
+      {
+        "id": 24500000,
+        "name": "Nanaya's Torch"
+      },
+      {
+        "id": 24510000,
+        "name": "Lamenting Visage"
+      }
+    ]
+  },
+  {
+    "category": "Small Shield",
+    "items": [
+      {
+        "id": 30510000,
+        "name": "Smithscript Shield"
+      },
+      {
+        "id": 21550000,
+        "name": "Shield of Night"
+      }
+    ]
+  },
+  {
+    "category": "Medium Shield",
+    "items": [
+      {
+        "id": 31500000,
+        "name": "Messmer Soldier Shield"
+      },
+      {
+        "id": 31510000,
+        "name": "Wolf Crest Shield"
+      },
+      {
+        "id": 31520000,
+        "name": "Serpent Crest Shield"
+      },
+      {
+        "id": 31530000,
+        "name": "Golden Lion Shield"
+      }
+    ]
+  },
+  {
+    "category": "Greatshield",
+    "items": [
+      {
+        "id": 32500000,
+        "name": "Black Steel Greatshield"
+      },
+      {
+        "id": 32520000,
+        "name": "Verdigris Greatshield"
+      }
+    ]
+  },
+  {
+    "category": "Thrusting Shield",
+    "items": [
+      {
+        "id": 62500000,
+        "name": "Dueling Shield"
+      },
+      {
+        "id": 62510000,
+        "name": "Carian Thrusting Shield"
+      }
+    ]
+  }
+]

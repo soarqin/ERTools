@@ -1,0 +1,620 @@
+[
+  {
+    "category": "Sztylet",
+    "items": [
+      {
+        "id": 1510000,
+        "name": "Sztylet rycerza ognia"
+      },
+      {
+        "id": 1500000,
+        "name": "Lewak"
+      }
+    ]
+  },
+  {
+    "category": "Ostrze do rzucania",
+    "items": [
+      {
+        "id": 63500000,
+        "name": "Sztylet z inskrypcją kowalską"
+      }
+    ]
+  },
+  {
+    "category": "Prosty miecz",
+    "items": [
+      {
+        "id": 2540000,
+        "name": "Miecz w kamiennej pochwie"
+      },
+      {
+        "id": 2510000,
+        "name": "Purpurowy miecz św. Triny"
+      },
+      {
+        "id": 2550000,
+        "name": "Miecz Światła"
+      },
+      {
+        "id": 2560000,
+        "name": "Miecz Ciemności"
+      }
+    ]
+  },
+  {
+    "category": "Lekki wielki miecz",
+    "items": [
+      {
+        "id": 67500000,
+        "name": "Dama"
+      },
+      {
+        "id": 67510000,
+        "name": "Miecz Ledy"
+      },
+      {
+        "id": 67520000,
+        "name": "Podwójne ostrze Rellany"
+      }
+    ]
+  },
+  {
+    "category": "Wielki miecz",
+    "items": [
+      {
+        "id": 3520000,
+        "name": "Jaszczurzy wielki miecz"
+      },
+      {
+        "id": 3550000,
+        "name": "Wielki miecz samotności"
+      },
+      {
+        "id": 3510000,
+        "name": "Wielki Miecz Potępienia"
+      }
+    ]
+  },
+  {
+    "category": "Olbrzymi miecz",
+    "items": [
+      {
+        "id": 4520000,
+        "name": "Wielki miecz rycerza ognia"
+      },
+      {
+        "id": 4540000,
+        "name": "Miecz rycerza Moonrithyll"
+      },
+      {
+        "id": 4500000,
+        "name": "Wielki miecz z pradawnej rudy meteorytu"
+      },
+      {
+        "id": 4530000,
+        "name": "Wielkie miecze Radahna (Władca)"
+      },
+      {
+        "id": 4550000,
+        "name": "Wielkie miecze Radahna (Światło)"
+      }
+    ]
+  },
+  {
+    "category": "Miecz do pchnięć",
+    "items": [
+      {
+        "id": 2530000,
+        "name": "Karyjski magiczny miecz"
+      }
+    ]
+  },
+  {
+    "category": "Ciężki miecz do pchnięć",
+    "items": [
+      {
+        "id": 6500000,
+        "name": "Wielki miecz Queeligna"
+      },
+      {
+        "id": 3500000,
+        "name": "Miecz lancowy"
+      }
+    ]
+  },
+  {
+    "category": "Zakrzywiony miecz",
+    "items": [
+      {
+        "id": 7500000,
+        "name": "Duchowy miecz"
+      },
+      {
+        "id": 7510000,
+        "name": "Falx"
+      },
+      {
+        "id": 7520000,
+        "name": "Tańcząca klinga Ranaha"
+      },
+      {
+        "id": 7530000,
+        "name": "Miecz rogatego wojownika"
+      }
+    ]
+  },
+  {
+    "category": "Zakrzywiony wielki miecz",
+    "items": [
+      {
+        "id": 8510000,
+        "name": "Wielki miecz Freyi"
+      },
+      {
+        "id": 8520000,
+        "name": "Wielki miecz rogatego wojownika"
+      }
+    ]
+  },
+  {
+    "category": "Zakrzywione ostrze",
+    "items": [
+      {
+        "id": 64500000,
+        "name": "Zakrzywione ostrze"
+      },
+      {
+        "id": 64510000,
+        "name": "Kar z inskrypcją kowalską"
+      },
+      {
+        "id": 64520000,
+        "name": "Kar przeklętego ostrza"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9500000,
+        "name": "Miecz Nocy"
+      },
+      {
+        "id": 2520000,
+        "name": "Gwiaździsty miecz"
+      }
+    ]
+  },
+  {
+    "category": "Wielka katana",
+    "items": [
+      {
+        "id": 66500000,
+        "name": "Wielka katana"
+      },
+      {
+        "id": 66510000,
+        "name": "Wielka katana łowcy smoków"
+      },
+      {
+        "id": 66520000,
+        "name": "Wielka katana Rakshasy"
+      }
+    ]
+  },
+  {
+    "category": "Podwójne ostrze",
+    "items": [
+      {
+        "id": 10510000,
+        "name": "Podwójne ostrze z czarnej stali"
+      },
+      {
+        "id": 10500000,
+        "name": "Euporia"
+      }
+    ]
+  },
+  {
+    "category": "Topór",
+    "items": [
+      {
+        "id": 14540000,
+        "name": "Topór gadziego języka"
+      },
+      {
+        "id": 14520000,
+        "name": "Topór żołnierza Messmera"
+      },
+      {
+        "id": 14500000,
+        "name": "Topór z inskrypcją kowalską"
+      },
+      {
+        "id": 14510000,
+        "name": "Dwa topory Rycerza Śmierci"
+      }
+    ]
+  },
+  {
+    "category": "Wielki topór",
+    "items": [
+      {
+        "id": 15510000,
+        "name": "Nóż rzeźnika z Bonny"
+      },
+      {
+        "id": 15500000,
+        "name": "Topór Rycerza Śmierci z długim trzonkiem"
+      },
+      {
+        "id": 8500000,
+        "name": "Tasak Zgnilizny"
+      }
+    ]
+  },
+  {
+    "category": "Młot",
+    "items": [
+      {
+        "id": 11500000,
+        "name": "Młot w kształcie pradawnego kwiatu"
+      }
+    ]
+  },
+  {
+    "category": "Wielki młot",
+    "items": [
+      {
+        "id": 12520000,
+        "name": "Wielki młot z czarnej stali"
+      },
+      {
+        "id": 12500000,
+        "name": "Wielki młot z inskrypcją kowalską"
+      }
+    ]
+  },
+  {
+    "category": "Korbacz",
+    "items": [
+      {
+        "id": 13500000,
+        "name": "Wężowy cep"
+      }
+    ]
+  },
+  {
+    "category": "Olbrzymia broń",
+    "items": [
+      {
+        "id": 12530000,
+        "name": "Ręka demona krwi"
+      },
+      {
+        "id": 12510000,
+        "name": "Młot kowadła"
+      },
+      {
+        "id": 23500000,
+        "name": "Młot Devonii"
+      },
+      {
+        "id": 23510000,
+        "name": "Kwiat cienistego słonecznika"
+      },
+      {
+        "id": 23520000,
+        "name": "Patrzący Palec"
+      }
+    ]
+  },
+  {
+    "category": "Włócznia",
+    "items": [
+      {
+        "id": 16520000,
+        "name": "Zgrabna włócznia"
+      },
+      {
+        "id": 16540000,
+        "name": "Widły demona krwi"
+      },
+      {
+        "id": 16500000,
+        "name": "Włócznia z inskrypcją kowalską"
+      }
+    ]
+  },
+  {
+    "category": "Wielka włócznia",
+    "items": [
+      {
+        "id": 17510000,
+        "name": "Włócznia żołnierza Messmera"
+      },
+      {
+        "id": 17520000,
+        "name": "Kolczasty kostur-włócznia"
+      },
+      {
+        "id": 16550000,
+        "name": "Święta włócznia demona krwi"
+      },
+      {
+        "id": 17500000,
+        "name": "Włócznia Palownika"
+      }
+    ]
+  },
+  {
+    "category": "Halabarda",
+    "items": [
+      {
+        "id": 18500000,
+        "name": "Duchowa glewia"
+      },
+      {
+        "id": 18510000,
+        "name": "Drzewcowe ostrze pąka"
+      }
+    ]
+  },
+  {
+    "category": "Kosa",
+    "items": [
+      {
+        "id": 19500000,
+        "name": "Obsydianowa lamina"
+      }
+    ]
+  },
+  {
+    "category": "Bicz",
+    "items": [
+      {
+        "id": 20500000,
+        "name": "Zębaty bicz"
+      }
+    ]
+  },
+  {
+    "category": "Pięść",
+    "items": [
+      {
+        "id": 21510000,
+        "name": "Pata"
+      },
+      {
+        "id": 21520000,
+        "name": "Zatruta ręka"
+      },
+      {
+        "id": 21530000,
+        "name": "Ręka szaleństwa"
+      },
+      {
+        "id": 21500000,
+        "name": "Ukryta igła Thiolliera"
+      },
+      {
+        "id": 21540000,
+        "name": "Pięść golema"
+      }
+    ]
+  },
+  {
+    "category": "Walka wręcz",
+    "items": [
+      {
+        "id": 60500000,
+        "name": "Sztuka walki Suchego Liścia"
+      },
+      {
+        "id": 60510000,
+        "name": "Obuwie Dane’a"
+      }
+    ]
+  },
+  {
+    "category": "Pazur",
+    "items": [
+      {
+        "id": 22500000,
+        "name": "Pazury Nocy"
+      }
+    ]
+  },
+  {
+    "category": "Szpon bestii",
+    "items": [
+      {
+        "id": 68500000,
+        "name": "Szpon bestii"
+      },
+      {
+        "id": 68510000,
+        "name": "Pazur niedźwiedzia rudego"
+      }
+    ]
+  },
+  {
+    "category": "Butelka perfum",
+    "items": [
+      {
+        "id": 61500000,
+        "name": "Butelka perfum ognistej iskry"
+      },
+      {
+        "id": 61530000,
+        "name": "Butelka perfum błyskawic"
+      },
+      {
+        "id": 61510000,
+        "name": "Butelka perfum chłodu"
+      },
+      {
+        "id": 61520000,
+        "name": "Butelka perfum oszalałego płomienia"
+      },
+      {
+        "id": 61540000,
+        "name": "Butelka perfum zabójczej trucizny"
+      }
+    ]
+  },
+  {
+    "category": "Lekki łuk",
+    "items": [
+      {
+        "id": 40500000,
+        "name": "Kościany łuk"
+      }
+    ]
+  },
+  {
+    "category": "Łuk",
+    "items": [
+      {
+        "id": 41510000,
+        "name": "Długi łuk Ansbacha"
+      }
+    ]
+  },
+  {
+    "category": "Wielki łuk",
+    "items": [
+      {
+        "id": 42500000,
+        "name": "Wielki łuk Igona"
+      }
+    ]
+  },
+  {
+    "category": "Kusza",
+    "items": [
+      {
+        "id": 43500000,
+        "name": "Kusza powtarzalna"
+      },
+      {
+        "id": 43510000,
+        "name": "Kusza rozrzutu"
+      }
+    ]
+  },
+  {
+    "category": "Balista",
+    "items": [
+      {
+        "id": 44500000,
+        "name": "Armata Rabbatha"
+      }
+    ]
+  },
+  {
+    "category": "Błyskamienny kostur",
+    "items": [
+      {
+        "id": 33520000,
+        "name": "Matczyny Kostur"
+      },
+      {
+        "id": 33510000,
+        "name": "Kostur z Zaświatów"
+      }
+    ]
+  },
+  {
+    "category": "Święta pieczęć",
+    "items": [
+      {
+        "id": 34500000,
+        "name": "Pieczęć Suchego Liścia"
+      },
+      {
+        "id": 34510000,
+        "name": "Pieczęć rycerza ognia"
+      },
+      {
+        "id": 34520000,
+        "name": "Pieczęć Spiralnego Drzewa"
+      }
+    ]
+  },
+  {
+    "category": "Pochodnia",
+    "items": [
+      {
+        "id": 24500000,
+        "name": "Pochodnia Nanai"
+      },
+      {
+        "id": 24510000,
+        "name": "Lamentujące Oblicze"
+      }
+    ]
+  },
+  {
+    "category": "Mała tarcza",
+    "items": [
+      {
+        "id": 30510000,
+        "name": "Tarcza z inskrypcją kowalską"
+      },
+      {
+        "id": 21550000,
+        "name": "Tarcza Nocy"
+      }
+    ]
+  },
+  {
+    "category": "Średnia tarcza",
+    "items": [
+      {
+        "id": 31500000,
+        "name": "Tarcza żołnierza Messmera"
+      },
+      {
+        "id": 31510000,
+        "name": "Tarcza wilczego herbu"
+      },
+      {
+        "id": 31520000,
+        "name": "Tarcza wężowego herbu"
+      },
+      {
+        "id": 31530000,
+        "name": "Tarcza złotego lwa"
+      }
+    ]
+  },
+  {
+    "category": "Wielka tarcza",
+    "items": [
+      {
+        "id": 32500000,
+        "name": "Wielka tarcza z czarnej stali"
+      },
+      {
+        "id": 32520000,
+        "name": "Wielka tarcza z werdygrisu"
+      }
+    ]
+  },
+  {
+    "category": "Tarcza pchnięć",
+    "items": [
+      {
+        "id": 62500000,
+        "name": "Tarcza pojedynkowa"
+      },
+      {
+        "id": 62510000,
+        "name": "Karyjska tarcza pchnięć"
+      }
+    ]
+  }
+]

@@ -1,0 +1,569 @@
+[
+  {
+    "id": 5070000,
+    "name": "Masque de chenilles"
+  },
+  {
+    "id": 5070100,
+    "name": "Tunique de cordes tressées"
+  },
+  {
+    "id": 5070200,
+    "name": "Bandes de cordes tressées"
+  },
+  {
+    "id": 5070300,
+    "name": "Pagne souillé"
+  },
+  {
+    "id": 5300000,
+    "name": "Fleur de sainte Trina"
+  },
+  {
+    "id": 5272000,
+    "name": "Couronne de lumière"
+  },
+  {
+    "id": 5060000,
+    "name": "Coiffe du grand prêtre"
+  },
+  {
+    "id": [
+      5060100,
+      5062100
+    ],
+    "name": "Robe du grand prêtre/Robe des Doigts"
+  },
+  {
+    "id": 5060200,
+    "name": "Gants du grand prêtre"
+  },
+  {
+    "id": 5060300,
+    "name": "Sous-vêtements du grand prêtre"
+  },
+  {
+    "id": 3000000,
+    "name": "Chapeau de Dane"
+  },
+  {
+    "id": [
+      3000100,
+      3001100
+    ],
+    "name": "Robe de Mortefeuille/Robe de Mortefeuille (altérée)"
+  },
+  {
+    "id": 3000200,
+    "name": "Bandes de Mortefeuille"
+  },
+  {
+    "id": 3000300,
+    "name": "Bottes de Mortefeuille"
+  },
+  {
+    "id": 5110000,
+    "name": "Masque du sage"
+  },
+  {
+    "id": [
+      5110100,
+      5111100
+    ],
+    "name": "Atours d'Ansbach/Atours d'Ansbach (altérés)"
+  },
+  {
+    "id": 5110200,
+    "name": "Manchettes d'Ansbach"
+  },
+  {
+    "id": 5110300,
+    "name": "Bottes d'Ansbach"
+  },
+  {
+    "id": 5330000,
+    "name": "Tête de diablotin (lion)"
+  },
+  {
+    "id": 5320000,
+    "name": "Grande jarre"
+  },
+  {
+    "id": 5030000,
+    "name": "Masque de Thiollier"
+  },
+  {
+    "id": [
+      5030100,
+      5031100
+    ],
+    "name": "Tenue de Thiollier/Tenue de Thiollier (altérée)"
+  },
+  {
+    "id": 5030200,
+    "name": "Gants de Thiollier"
+  },
+  {
+    "id": 5030300,
+    "name": "Pantalon de Thiollier"
+  },
+  {
+    "id": 5230000,
+    "name": "Heaume d'oiseau sépulcral"
+  },
+  {
+    "id": 5230100,
+    "name": "Ramage d'oiseau sépulcral"
+  },
+  {
+    "id": 5230200,
+    "name": "Bracelets d'oiseau sépulcral"
+  },
+  {
+    "id": 5230300,
+    "name": "Chaînes de cheville d'oiseau sépulcral"
+  },
+  {
+    "id": 5231100,
+    "name": "Ramage d'oiseau sépulcral (altéré)"
+  },
+  {
+    "id": 5080000,
+    "name": "Capuche de danseur"
+  },
+  {
+    "id": [
+      5080100,
+      5081100
+    ],
+    "name": "Robe de danseur/Robe de danseur (altérée)"
+  },
+  {
+    "id": 5080200,
+    "name": "Bracelets de danseur"
+  },
+  {
+    "id": 5080300,
+    "name": "Pantalon de danseur"
+  },
+  {
+    "id": 5240000,
+    "name": "Heaume de soldat ordinaire"
+  },
+  {
+    "id": 5240100,
+    "name": "Armure en tissu de soldat ordinaire"
+  },
+  {
+    "id": 5240200,
+    "name": "Gantelets de soldat ordinaire"
+  },
+  {
+    "id": 5240300,
+    "name": "Jambières de soldat ordinaire"
+  },
+  {
+    "id": 5280000,
+    "name": "Heaume de milicien obscur"
+  },
+  {
+    "id": 5280100,
+    "name": "Armure de milicien obscur"
+  },
+  {
+    "id": 5280200,
+    "name": "Gantelets de milicien obscur"
+  },
+  {
+    "id": 5280300,
+    "name": "Jambières de milicien obscur"
+  },
+  {
+    "id": 5190000,
+    "name": "Bandeau en cuir"
+  },
+  {
+    "id": 5190100,
+    "name": "Tenue glorieuse"
+  },
+  {
+    "id": 5190200,
+    "name": "Bandes en cuir"
+  },
+  {
+    "id": 5190300,
+    "name": "Pantalon en cuir"
+  },
+  {
+    "id": 5191000,
+    "name": "Couronne en cuir"
+  },
+  {
+    "id": 5191100,
+    "name": "Tenue montagnarde"
+  },
+  {
+    "id": 5020000,
+    "name": "Peau de Ralva"
+  },
+  {
+    "id": 5020100,
+    "name": "Armure à rivets de fer"
+  },
+  {
+    "id": 5020200,
+    "name": "Gantelets à rivets de fer"
+  },
+  {
+    "id": 5020300,
+    "name": "Jambières à rivets de fer"
+  },
+  {
+    "id": 5021000,
+    "name": "Casque à crocs"
+  },
+  {
+    "id": [
+      5100000,
+      5101000
+    ],
+    "name": "Casque d'Igon/Casque d'Igon (altéré)"
+  },
+  {
+    "id": [
+      5100100,
+      5101100
+    ],
+    "name": "Armure d'Igon/Armure d'Igon (altérée)"
+  },
+  {
+    "id": 5100200,
+    "name": "Gantelets d'Igon"
+  },
+  {
+    "id": 5100300,
+    "name": "Pagne d'Igon"
+  },
+  {
+    "id": 5210000,
+    "name": "Masque d'Exécrable"
+  },
+  {
+    "id": 5210100,
+    "name": "Pagne d'ascète"
+  },
+  {
+    "id": 5210200,
+    "name": "Brassards d'ascète"
+  },
+  {
+    "id": 5210300,
+    "name": "Chevillières d'ascète"
+  },
+  {
+    "id": 5120000,
+    "name": "Heaume de Freyja"
+  },
+  {
+    "id": [
+      5120100,
+      5121100
+    ],
+    "name": "Armure de Freyja/Armure de Freyja (altérée)"
+  },
+  {
+    "id": 5120200,
+    "name": "Gantelets de Freyja"
+  },
+  {
+    "id": 5120300,
+    "name": "Jambières de Freyja"
+  },
+  {
+    "id": 5140000,
+    "name": "Heaume de soldat de Messmer"
+  },
+  {
+    "id": [
+      5140100,
+      5141100
+    ],
+    "name": "Armure de soldat de Messmer/Armure de soldat de Messmer (altérée)"
+  },
+  {
+    "id": 5140200,
+    "name": "Gantelets de soldat de Messmer"
+  },
+  {
+    "id": 5140300,
+    "name": "Jambières de soldat de Messmer"
+  },
+  {
+    "id": 5090000,
+    "name": "Heaume de la nuit"
+  },
+  {
+    "id": 5090100,
+    "name": "Armure de la nuit"
+  },
+  {
+    "id": 5090200,
+    "name": "Gantelets de la nuit"
+  },
+  {
+    "id": 5090300,
+    "name": "Jambières de la nuit"
+  },
+  {
+    "id": [
+      5220000,
+      5221000
+    ],
+    "name": "Heaume de Messmer/Heaume de Messmer (altéré)"
+  },
+  {
+    "id": 5220100,
+    "name": "Armure de Messmer"
+  },
+  {
+    "id": 5220200,
+    "name": "Brassards de Messmer"
+  },
+  {
+    "id": 5220300,
+    "name": "Jambières de Messmer"
+  },
+  {
+    "id": 5150000,
+    "name": "Heaume de chevalier Noir"
+  },
+  {
+    "id": 5150100,
+    "name": "Armure de chevalier Noir"
+  },
+  {
+    "id": 5150200,
+    "name": "Gantelets de chevalier Noir"
+  },
+  {
+    "id": 5150300,
+    "name": "Jambières de chevalier Noir"
+  },
+  {
+    "id": 5180000,
+    "name": "Casque de chevalier de Feu"
+  },
+  {
+    "id": [
+      5180100,
+      5181100
+    ],
+    "name": "Armure de chevalier de Feu/Armure de chevalier de Feu (altérée)"
+  },
+  {
+    "id": 5180200,
+    "name": "Gantelets de chevalier de Feu"
+  },
+  {
+    "id": 5180300,
+    "name": "Jambières de chevalier de Feu"
+  },
+  {
+    "id": 5183000,
+    "name": "Heaume au serpent ailé"
+  },
+  {
+    "id": 5182000,
+    "name": "Heaume aux masques mortuaires"
+  },
+  {
+    "id": 5184000,
+    "name": "Capuche de Salza"
+  },
+  {
+    "id": 5200000,
+    "name": "Heaume de chevalier de la Mort"
+  },
+  {
+    "id": 5200100,
+    "name": "Armure de chevalier de la Mort"
+  },
+  {
+    "id": 5200200,
+    "name": "Gantelets de chevalier de la Mort"
+  },
+  {
+    "id": 5200300,
+    "name": "Jambières de chevalier de la Mort"
+  },
+  {
+    "id": 5250000,
+    "name": "Heaume de guerrier cornu"
+  },
+  {
+    "id": 5250100,
+    "name": "Armure de guerrier cornu"
+  },
+  {
+    "id": 5250200,
+    "name": "Brassards de guerrier cornu"
+  },
+  {
+    "id": 5250300,
+    "name": "Jambières de guerrier cornu"
+  },
+  {
+    "id": 5252000,
+    "name": "Heaume de bête divine"
+  },
+  {
+    "id": 5252100,
+    "name": "Armure de guerrier de la bête divine"
+  },
+  {
+    "id": 5253000,
+    "name": "Heaume de l'oiseau divin"
+  },
+  {
+    "id": 5253100,
+    "name": "Armure de guerrier aviaire divin"
+  },
+  {
+    "id": 5253200,
+    "name": "Brassards de guerrier aviaire divin"
+  },
+  {
+    "id": 5253300,
+    "name": "Jambières de guerrier aviaire divin"
+  },
+  {
+    "id": 5000000,
+    "name": "Heaume de Quêteur de serment"
+  },
+  {
+    "id": 5002100,
+    "name": "Armure de Quêteur de serment"
+  },
+  {
+    "id": 5000200,
+    "name": "Gantelets de Quêteur de serment"
+  },
+  {
+    "id": 5000300,
+    "name": "Jambières de Quêteur de serment"
+  },
+  {
+    "id": 5000100,
+    "name": "Armure de Leda"
+  },
+  {
+    "id": 5160000,
+    "name": "Heaume de Rakshasa"
+  },
+  {
+    "id": 5160100,
+    "name": "Armure de Rakshasa"
+  },
+  {
+    "id": 5160200,
+    "name": "Gantelets de Rakshasa"
+  },
+  {
+    "id": 5160300,
+    "name": "Jambières de Rakshasa"
+  },
+  {
+    "id": 5260000,
+    "name": "Heaume de Rellana"
+  },
+  {
+    "id": 5260100,
+    "name": "Armure de Rellana"
+  },
+  {
+    "id": 5260200,
+    "name": "Gants de Rellana"
+  },
+  {
+    "id": 5260300,
+    "name": "Jambières de Rellana"
+  },
+  {
+    "id": 5130000,
+    "name": "Heaume de la solitude"
+  },
+  {
+    "id": [
+      5130100,
+      5131100
+    ],
+    "name": "Armure de la solitude/Armure de la solitude (altérée)"
+  },
+  {
+    "id": 5130200,
+    "name": "Gantelets de la solitude"
+  },
+  {
+    "id": 5130300,
+    "name": "Jambières de la solitude"
+  },
+  {
+    "id": 5310000,
+    "name": "Heaume-marteau du Creuset"
+  },
+  {
+    "id": 3010000,
+    "name": "Heaume de Gaïus"
+  },
+  {
+    "id": 3010100,
+    "name": "Armure de Gaïus"
+  },
+  {
+    "id": 3010200,
+    "name": "Gantelets de Gaïus"
+  },
+  {
+    "id": 3010300,
+    "name": "Jambières de Gaïus"
+  },
+  {
+    "id": 5270000,
+    "name": "Heaume du jeune lion"
+  },
+  {
+    "id": [
+      5270100,
+      5271100
+    ],
+    "name": "Armure du jeune lion/Armure du jeune lion (altérée)"
+  },
+  {
+    "id": 5270200,
+    "name": "Gantelets du jeune lion"
+  },
+  {
+    "id": 5270300,
+    "name": "Jambières du jeune lion"
+  },
+  {
+    "id": 5010000,
+    "name": "Heaume en vert-de-gris"
+  },
+  {
+    "id": 5010100,
+    "name": "Armure en vert-de-gris"
+  },
+  {
+    "id": 5010200,
+    "name": "Gantelets en vert-de-gris"
+  },
+  {
+    "id": 5010300,
+    "name": "Jambières en vert-de-gris"
+  },
+  {
+    "id": 5290000,
+    "name": "Tête de bête divine"
+  }
+]

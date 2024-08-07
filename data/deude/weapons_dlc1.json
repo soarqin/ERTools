@@ -1,0 +1,620 @@
+[
+  {
+    "category": "Dolch",
+    "items": [
+      {
+        "id": 1510000,
+        "name": "Dolch der Feuerritter"
+      },
+      {
+        "id": 1500000,
+        "name": "Linkshanddolch"
+      }
+    ]
+  },
+  {
+    "category": "Wurfklinge",
+    "items": [
+      {
+        "id": 63500000,
+        "name": "Schmiedeschrift-Dolch"
+      }
+    ]
+  },
+  {
+    "category": "Gerades Schwert",
+    "items": [
+      {
+        "id": 2540000,
+        "name": "Steinummanteltes Schwert"
+      },
+      {
+        "id": 2510000,
+        "name": "Purpurnes Schwert von St. Trina"
+      },
+      {
+        "id": 2550000,
+        "name": "Schwert des Lichts"
+      },
+      {
+        "id": 2560000,
+        "name": "Schwert der Finsternis"
+      }
+    ]
+  },
+  {
+    "category": "Leichtes Großschwert",
+    "items": [
+      {
+        "id": 67500000,
+        "name": "Milady"
+      },
+      {
+        "id": 67510000,
+        "name": "Ledas Schwert"
+      },
+      {
+        "id": 67520000,
+        "name": "Rellanas Zwillingsklingen"
+      }
+    ]
+  },
+  {
+    "category": "Großschwert",
+    "items": [
+      {
+        "id": 3520000,
+        "name": "Echsen-Großschwert"
+      },
+      {
+        "id": 3550000,
+        "name": "Großschwert der Einsamkeit"
+      },
+      {
+        "id": 3510000,
+        "name": "Großschwert der Verdammnis"
+      }
+    ]
+  },
+  {
+    "category": "Riesenschwert",
+    "items": [
+      {
+        "id": 4520000,
+        "name": "Großschwert der Feuerritter"
+      },
+      {
+        "id": 4540000,
+        "name": "Moonrithylls Ritterschwert"
+      },
+      {
+        "id": 4500000,
+        "name": "Uraltes Meteoritenerz-Großschwert"
+      },
+      {
+        "id": 4530000,
+        "name": "Großschwert von Radahn (Fürst)"
+      },
+      {
+        "id": 4550000,
+        "name": "Großschwert von Radahn (Licht)"
+      }
+    ]
+  },
+  {
+    "category": "Stoßschwert",
+    "items": [
+      {
+        "id": 2530000,
+        "name": "Caria-Zauberschwert"
+      }
+    ]
+  },
+  {
+    "category": "Schweres Stoßschwert",
+    "items": [
+      {
+        "id": 6500000,
+        "name": "Queeligns Großschwert"
+      },
+      {
+        "id": 3500000,
+        "name": "Schwertlanze"
+      }
+    ]
+  },
+  {
+    "category": "Krummschwert",
+    "items": [
+      {
+        "id": 7500000,
+        "name": "Schwert des Geistes"
+      },
+      {
+        "id": 7510000,
+        "name": "Falx"
+      },
+      {
+        "id": 7520000,
+        "name": "Tanzende Klinge Ranahs"
+      },
+      {
+        "id": 7530000,
+        "name": "Schwert des Hornkriegers"
+      }
+    ]
+  },
+  {
+    "category": "Krummes Großschwert",
+    "items": [
+      {
+        "id": 8510000,
+        "name": "Freyjas Großschwert"
+      },
+      {
+        "id": 8520000,
+        "name": "Großschwert des Hornkriegers"
+      }
+    ]
+  },
+  {
+    "category": "Rückhandklinge",
+    "items": [
+      {
+        "id": 64500000,
+        "name": "Rückhandklinge"
+      },
+      {
+        "id": 64510000,
+        "name": "Schmiedeschrift-Cirque"
+      },
+      {
+        "id": 64520000,
+        "name": "Schmiedeschrift-Cirque d. Fluchklinge"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9500000,
+        "name": "Schwert der Nacht"
+      },
+      {
+        "id": 2520000,
+        "name": "Sternbildschwert"
+      }
+    ]
+  },
+  {
+    "category": "Großkatana",
+    "items": [
+      {
+        "id": 66500000,
+        "name": "Großkatana"
+      },
+      {
+        "id": 66510000,
+        "name": "Drachenjäger-Großkatana"
+      },
+      {
+        "id": 66520000,
+        "name": "Rakshasas Großkatana"
+      }
+    ]
+  },
+  {
+    "category": "Doppelklinge",
+    "items": [
+      {
+        "id": 10510000,
+        "name": "Schwarze Stahldoppelklinge"
+      },
+      {
+        "id": 10500000,
+        "name": "Euphorie"
+      }
+    ]
+  },
+  {
+    "category": "Axt",
+    "items": [
+      {
+        "id": 14540000,
+        "name": "Gespaltenes Zungenbeil"
+      },
+      {
+        "id": 14520000,
+        "name": "Messmer-Soldatenaxt"
+      },
+      {
+        "id": 14500000,
+        "name": "Schmiedeschrift-Axt"
+      },
+      {
+        "id": 14510000,
+        "name": "Doppeläxte des Todesritters"
+      }
+    ]
+  },
+  {
+    "category": "Großaxt",
+    "items": [
+      {
+        "id": 15510000,
+        "name": "Fleischermesser aus Bonny"
+      },
+      {
+        "id": 15500000,
+        "name": "Langstiel-Axt des Todesritters"
+      },
+      {
+        "id": 8500000,
+        "name": "Fäulnisbeil"
+      }
+    ]
+  },
+  {
+    "category": "Hammer",
+    "items": [
+      {
+        "id": 11500000,
+        "name": "Blumenstein-Hammer"
+      }
+    ]
+  },
+  {
+    "category": "Kriegshammer",
+    "items": [
+      {
+        "id": 12520000,
+        "name": "Schwarzer Stahlgroßhammer"
+      },
+      {
+        "id": 12500000,
+        "name": "Schmiedeschrift-Großhammer"
+      }
+    ]
+  },
+  {
+    "category": "Flegel",
+    "items": [
+      {
+        "id": 13500000,
+        "name": "Schlangenflegel"
+      }
+    ]
+  },
+  {
+    "category": "Gigantische Waffe",
+    "items": [
+      {
+        "id": 12530000,
+        "name": "Arm eines Blutunholds"
+      },
+      {
+        "id": 12510000,
+        "name": "Ambosshammer"
+      },
+      {
+        "id": 23500000,
+        "name": "Devonias Hammer"
+      },
+      {
+        "id": 23510000,
+        "name": "Schattensonnenblumen-Blüte"
+      },
+      {
+        "id": 23520000,
+        "name": "Starrender Finger"
+      }
+    ]
+  },
+  {
+    "category": "Speer",
+    "items": [
+      {
+        "id": 16520000,
+        "name": "Flinker Speer"
+      },
+      {
+        "id": 16540000,
+        "name": "Forke der Blutunholde"
+      },
+      {
+        "id": 16500000,
+        "name": "Schmiedeschriftspeer"
+      }
+    ]
+  },
+  {
+    "category": "Großer Speer",
+    "items": [
+      {
+        "id": 17510000,
+        "name": "Messmer-Soldatenspeer"
+      },
+      {
+        "id": 17520000,
+        "name": "Stachelstab-Speer"
+      },
+      {
+        "id": 16550000,
+        "name": "Heiliger Speer der Blutunholde"
+      },
+      {
+        "id": 17500000,
+        "name": "Speer des Pfählers"
+      }
+    ]
+  },
+  {
+    "category": "Hellebarde",
+    "items": [
+      {
+        "id": 18500000,
+        "name": "Gleve des Geistes"
+      },
+      {
+        "id": 18510000,
+        "name": "Stangenklinge der Knospe"
+      }
+    ]
+  },
+  {
+    "category": "Schnitter",
+    "items": [
+      {
+        "id": 19500000,
+        "name": "Obsidian-Lamina"
+      }
+    ]
+  },
+  {
+    "category": "Peitsche",
+    "items": [
+      {
+        "id": 20500000,
+        "name": "Zahnpeitsche"
+      }
+    ]
+  },
+  {
+    "category": "Faust",
+    "items": [
+      {
+        "id": 21510000,
+        "name": "Pata"
+      },
+      {
+        "id": 21520000,
+        "name": "Giftige Hand"
+      },
+      {
+        "id": 21530000,
+        "name": "Wahnwitzige Hand"
+      },
+      {
+        "id": 21500000,
+        "name": "Thiolliers versteckte Nadel"
+      },
+      {
+        "id": 21540000,
+        "name": "Golemfaust"
+      }
+    ]
+  },
+  {
+    "category": "Hand-zu-Hand",
+    "items": [
+      {
+        "id": 60500000,
+        "name": "Trockenblatt-Kunst"
+      },
+      {
+        "id": 60510000,
+        "name": "Danes Beinarbeit"
+      }
+    ]
+  },
+  {
+    "category": "Kralle",
+    "items": [
+      {
+        "id": 22500000,
+        "name": "Klauen der Nacht"
+      }
+    ]
+  },
+  {
+    "category": "Bestienklaue",
+    "items": [
+      {
+        "id": 68500000,
+        "name": "Bestienklaue"
+      },
+      {
+        "id": 68510000,
+        "name": "Klaue des roten Bären"
+      }
+    ]
+  },
+  {
+    "category": "Parfümflasche",
+    "items": [
+      {
+        "id": 61500000,
+        "name": "Feuerfunken-Parfümflasche"
+      },
+      {
+        "id": 61530000,
+        "name": "Blitzparfümflasche"
+      },
+      {
+        "id": 61510000,
+        "name": "Frost-Parfümflasche"
+      },
+      {
+        "id": 61520000,
+        "name": "Parfümflasche der rasenden Flamme"
+      },
+      {
+        "id": 61540000,
+        "name": "Tödliche Giftparfümflasche"
+      }
+    ]
+  },
+  {
+    "category": "Leichter Bogen",
+    "items": [
+      {
+        "id": 40500000,
+        "name": "Knochenbogen"
+      }
+    ]
+  },
+  {
+    "category": "Bogen",
+    "items": [
+      {
+        "id": 41510000,
+        "name": "Ansbachs Langbogen"
+      }
+    ]
+  },
+  {
+    "category": "Großbogen",
+    "items": [
+      {
+        "id": 42500000,
+        "name": "Igons Großbogen"
+      }
+    ]
+  },
+  {
+    "category": "Armbrust",
+    "items": [
+      {
+        "id": 43500000,
+        "name": "Salvenarmbrust"
+      },
+      {
+        "id": 43510000,
+        "name": "Streu-Armbrust"
+      }
+    ]
+  },
+  {
+    "category": "Balliste",
+    "items": [
+      {
+        "id": 44500000,
+        "name": "Rabbaths Kanone"
+      }
+    ]
+  },
+  {
+    "category": "Schimmersteinstab",
+    "items": [
+      {
+        "id": 33520000,
+        "name": "Mütterlicher Stab"
+      },
+      {
+        "id": 33510000,
+        "name": "Stab des großen Jenseits"
+      }
+    ]
+  },
+  {
+    "category": "Heiliges Siegel",
+    "items": [
+      {
+        "id": 34500000,
+        "name": "Trockenblatt-Siegel"
+      },
+      {
+        "id": 34510000,
+        "name": "Siegel der Feuerritter"
+      },
+      {
+        "id": 34520000,
+        "name": "Siegel des Spiralbaums"
+      }
+    ]
+  },
+  {
+    "category": "Fackel",
+    "items": [
+      {
+        "id": 24500000,
+        "name": "Nanayas Fackel"
+      },
+      {
+        "id": 24510000,
+        "name": "Lamentierende Visage"
+      }
+    ]
+  },
+  {
+    "category": "Kleiner Schild",
+    "items": [
+      {
+        "id": 30510000,
+        "name": "Schmiedeschriftschild"
+      },
+      {
+        "id": 21550000,
+        "name": "Schild der Nacht"
+      }
+    ]
+  },
+  {
+    "category": "Mittlerer Schild",
+    "items": [
+      {
+        "id": 31500000,
+        "name": "Messmer-Soldatenschild"
+      },
+      {
+        "id": 31510000,
+        "name": "Wolfswappenschild"
+      },
+      {
+        "id": 31520000,
+        "name": "Schlangenwappenschild"
+      },
+      {
+        "id": 31530000,
+        "name": "Goldener Löwenschild"
+      }
+    ]
+  },
+  {
+    "category": "Großschild",
+    "items": [
+      {
+        "id": 32500000,
+        "name": "Schwarzer Stahlgroßschild"
+      },
+      {
+        "id": 32520000,
+        "name": "Grünspan-Großschild"
+      }
+    ]
+  },
+  {
+    "category": "Stoßschild",
+    "items": [
+      {
+        "id": 62500000,
+        "name": "Duellantenschild"
+      },
+      {
+        "id": 62510000,
+        "name": "Carianischer Stoßschild"
+      }
+    ]
+  }
+]

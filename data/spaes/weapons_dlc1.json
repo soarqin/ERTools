@@ -1,0 +1,620 @@
+[
+  {
+    "category": "Daga",
+    "items": [
+      {
+        "id": 1510000,
+        "name": "Daga de Caballero de Fuego"
+      },
+      {
+        "id": 1500000,
+        "name": "Daga izquierda"
+      }
+    ]
+  },
+  {
+    "category": "Hoja arrojad.",
+    "items": [
+      {
+        "id": 63500000,
+        "name": "Daga de letra herrérica"
+      }
+    ]
+  },
+  {
+    "category": "Espada recta",
+    "items": [
+      {
+        "id": 2540000,
+        "name": "Espada en funda de piedra"
+      },
+      {
+        "id": 2510000,
+        "name": "Espada morada de Santa Trina"
+      },
+      {
+        "id": 2550000,
+        "name": "Espada de la luz"
+      },
+      {
+        "id": 2560000,
+        "name": "Espada de la oscuridad"
+      }
+    ]
+  },
+  {
+    "category": "Espadón ligero",
+    "items": [
+      {
+        "id": 67500000,
+        "name": "Milady"
+      },
+      {
+        "id": 67510000,
+        "name": "Espada de Leda"
+      },
+      {
+        "id": 67520000,
+        "name": "Espadas gemelas de Rellana"
+      }
+    ]
+  },
+  {
+    "category": "Espadón",
+    "items": [
+      {
+        "id": 3520000,
+        "name": "Espadón de lagarto"
+      },
+      {
+        "id": 3550000,
+        "name": "Espadón de la soledad"
+      },
+      {
+        "id": 3510000,
+        "name": "Espadón de Maldición"
+      }
+    ]
+  },
+  {
+    "category": "Espada colosal",
+    "items": [
+      {
+        "id": 4520000,
+        "name": "Espadón de Caballero de Fuego"
+      },
+      {
+        "id": 4540000,
+        "name": "Espada caballera de Moonrithyll"
+      },
+      {
+        "id": 4500000,
+        "name": "Espadón de meteorito ancestral"
+      },
+      {
+        "id": 4530000,
+        "name": "Espadón de Radahn (señor)"
+      },
+      {
+        "id": 4550000,
+        "name": "Espadón de Radahn (luz)"
+      }
+    ]
+  },
+  {
+    "category": "Espada de embestida",
+    "items": [
+      {
+        "id": 2530000,
+        "name": "Espada de hechicería cariana"
+      }
+    ]
+  },
+  {
+    "category": "Espada de embestida pesada",
+    "items": [
+      {
+        "id": 6500000,
+        "name": "Espadón de Queelign"
+      },
+      {
+        "id": 3500000,
+        "name": "Lanza espada"
+      }
+    ]
+  },
+  {
+    "category": "Espada curva",
+    "items": [
+      {
+        "id": 7500000,
+        "name": "Espada espiritual"
+      },
+      {
+        "id": 7510000,
+        "name": "Falx"
+      },
+      {
+        "id": 7520000,
+        "name": "Filo danzante de Ranah"
+      },
+      {
+        "id": 7530000,
+        "name": "Espada de guerrero astado"
+      }
+    ]
+  },
+  {
+    "category": "Espadón curvo",
+    "items": [
+      {
+        "id": 8510000,
+        "name": "Espadón de Freyja"
+      },
+      {
+        "id": 8520000,
+        "name": "Espadón de guerrero astado"
+      }
+    ]
+  },
+  {
+    "category": "Hoja de revés",
+    "items": [
+      {
+        "id": 64500000,
+        "name": "Hoja de revés"
+      },
+      {
+        "id": 64510000,
+        "name": "Chakram de letra herrérica"
+      },
+      {
+        "id": 64520000,
+        "name": "Chakram de hojamaldita"
+      }
+    ]
+  },
+  {
+    "category": "Catana",
+    "items": [
+      {
+        "id": 9500000,
+        "name": "Espada de la Noche"
+      },
+      {
+        "id": 2520000,
+        "name": "Espada de alineación estelar"
+      }
+    ]
+  },
+  {
+    "category": "Gran catana",
+    "items": [
+      {
+        "id": 66500000,
+        "name": "Gran catana"
+      },
+      {
+        "id": 66510000,
+        "name": "Gran catana cazadragones"
+      },
+      {
+        "id": 66520000,
+        "name": "Gran catana de Rakshasa"
+      }
+    ]
+  },
+  {
+    "category": "Hoja doble",
+    "items": [
+      {
+        "id": 10510000,
+        "name": "Hoja doble de acero negro"
+      },
+      {
+        "id": 10500000,
+        "name": "Euporia"
+      }
+    ]
+  },
+  {
+    "category": "Hacha",
+    "items": [
+      {
+        "id": 14540000,
+        "name": "Destral de lengua bífida"
+      },
+      {
+        "id": 14520000,
+        "name": "Hacha de soldado de Messmer"
+      },
+      {
+        "id": 14500000,
+        "name": "Hacha de letra herrérica"
+      },
+      {
+        "id": 14510000,
+        "name": "Hachas gem. del Caballero de la Muerte"
+      }
+    ]
+  },
+  {
+    "category": "Gran hacha",
+    "items": [
+      {
+        "id": 15510000,
+        "name": "Cuchillo de carnicero de Bonny"
+      },
+      {
+        "id": 15500000,
+        "name": "Hacha larga del Caballero de la Muerte"
+      },
+      {
+        "id": 8500000,
+        "name": "Machete de putrefacción"
+      }
+    ]
+  },
+  {
+    "category": "Martillo",
+    "items": [
+      {
+        "id": 11500000,
+        "name": "Maza de flor pétrea"
+      }
+    ]
+  },
+  {
+    "category": "Gran martillo",
+    "items": [
+      {
+        "id": 12520000,
+        "name": "Martillo de acero negro"
+      },
+      {
+        "id": 12500000,
+        "name": "Martillo de letra herrérica"
+      }
+    ]
+  },
+  {
+    "category": "Mayal",
+    "items": [
+      {
+        "id": 13500000,
+        "name": "Mayal de serpiente"
+      }
+    ]
+  },
+  {
+    "category": "Arma colosal",
+    "items": [
+      {
+        "id": 12530000,
+        "name": "Brazo de sanguinemigo"
+      },
+      {
+        "id": 12510000,
+        "name": "Martillo de yunque"
+      },
+      {
+        "id": 23500000,
+        "name": "Martillo de Devonia"
+      },
+      {
+        "id": 23510000,
+        "name": "Florecer de girasol sombrío"
+      },
+      {
+        "id": 23520000,
+        "name": "Dedo observador"
+      }
+    ]
+  },
+  {
+    "category": "Lanza",
+    "items": [
+      {
+        "id": 16520000,
+        "name": "Lanza veloz"
+      },
+      {
+        "id": 16540000,
+        "name": "Tridente de sanguinemigo"
+      },
+      {
+        "id": 16500000,
+        "name": "Lanza de letra herrérica"
+      }
+    ]
+  },
+  {
+    "category": "Lanza larga",
+    "items": [
+      {
+        "id": 17510000,
+        "name": "Lanza de soldado de Messmer"
+      },
+      {
+        "id": 17520000,
+        "name": "Lanza bastón con pinchos"
+      },
+      {
+        "id": 16550000,
+        "name": "Lanza de sanguinemigo sagrada"
+      },
+      {
+        "id": 17500000,
+        "name": "Lanza del Empalador"
+      }
+    ]
+  },
+  {
+    "category": "Alabarda",
+    "items": [
+      {
+        "id": 18500000,
+        "name": "Guja espiritual"
+      },
+      {
+        "id": 18510000,
+        "name": "Hoja enastada del Brote"
+      }
+    ]
+  },
+  {
+    "category": "Guadaña",
+    "items": [
+      {
+        "id": 19500000,
+        "name": "Guadaña de obsidiana"
+      }
+    ]
+  },
+  {
+    "category": "Látigo",
+    "items": [
+      {
+        "id": 20500000,
+        "name": "Látigo de diente"
+      }
+    ]
+  },
+  {
+    "category": "Puño",
+    "items": [
+      {
+        "id": 21510000,
+        "name": "Dandpatta"
+      },
+      {
+        "id": 21520000,
+        "name": "Mano envenenada"
+      },
+      {
+        "id": 21530000,
+        "name": "Mano enloquecida"
+      },
+      {
+        "id": 21500000,
+        "name": "Aguja oculta de Thiollier"
+      },
+      {
+        "id": 21540000,
+        "name": "Puño de gólem"
+      }
+    ]
+  },
+  {
+    "category": "Cuerpo a cuerpo",
+    "items": [
+      {
+        "id": 60500000,
+        "name": "Artes marciales de hojaseca"
+      },
+      {
+        "id": 60510000,
+        "name": "Patada de Dane"
+      }
+    ]
+  },
+  {
+    "category": "Garra",
+    "items": [
+      {
+        "id": 22500000,
+        "name": "Garras de la noche"
+      }
+    ]
+  },
+  {
+    "category": "Garra best.",
+    "items": [
+      {
+        "id": 68500000,
+        "name": "Garra de bestia"
+      },
+      {
+        "id": 68510000,
+        "name": "Garra de Oso Rojo"
+      }
+    ]
+  },
+  {
+    "category": "Botella perf.",
+    "items": [
+      {
+        "id": 61500000,
+        "name": "Botella de perfume ígneo"
+      },
+      {
+        "id": 61530000,
+        "name": "Botella de perfume fulgurante"
+      },
+      {
+        "id": 61510000,
+        "name": "Botella de perfume gélido"
+      },
+      {
+        "id": 61520000,
+        "name": "Botella de perfume de llama frenética"
+      },
+      {
+        "id": 61540000,
+        "name": "Botella de perfume de veneno mortal"
+      }
+    ]
+  },
+  {
+    "category": "Arco ligero",
+    "items": [
+      {
+        "id": 40500000,
+        "name": "Arco de hueso"
+      }
+    ]
+  },
+  {
+    "category": "Arco",
+    "items": [
+      {
+        "id": 41510000,
+        "name": "Arco largo de Ansbach"
+      }
+    ]
+  },
+  {
+    "category": "Arco grande",
+    "items": [
+      {
+        "id": 42500000,
+        "name": "Arco grande de Igon"
+      }
+    ]
+  },
+  {
+    "category": "Ballesta",
+    "items": [
+      {
+        "id": 43500000,
+        "name": "Ballesta de repetición"
+      },
+      {
+        "id": 43510000,
+        "name": "Ballesta de extensión"
+      }
+    ]
+  },
+  {
+    "category": "Balista",
+    "items": [
+      {
+        "id": 44500000,
+        "name": "Cañón de Rabbath"
+      }
+    ]
+  },
+  {
+    "category": "Bastón de piedra refulgente",
+    "items": [
+      {
+        "id": 33520000,
+        "name": "Bastón materno"
+      },
+      {
+        "id": 33510000,
+        "name": "Bastón del más allá"
+      }
+    ]
+  },
+  {
+    "category": "Sello sagrado",
+    "items": [
+      {
+        "id": 34500000,
+        "name": "Sello de hojaseca"
+      },
+      {
+        "id": 34510000,
+        "name": "Sello de Caballero de Fuego"
+      },
+      {
+        "id": 34520000,
+        "name": "Sello del Árbol Espiral"
+      }
+    ]
+  },
+  {
+    "category": "Antorcha",
+    "items": [
+      {
+        "id": 24500000,
+        "name": "Antorcha de Nanaya"
+      },
+      {
+        "id": 24510000,
+        "name": "Rostro de lamento"
+      }
+    ]
+  },
+  {
+    "category": "Escudo pequeño",
+    "items": [
+      {
+        "id": 30510000,
+        "name": "Escudo de letra herrérica"
+      },
+      {
+        "id": 21550000,
+        "name": "Escudo de la noche"
+      }
+    ]
+  },
+  {
+    "category": "Escudo mediano",
+    "items": [
+      {
+        "id": 31500000,
+        "name": "Escudo de soldado de Messmer"
+      },
+      {
+        "id": 31510000,
+        "name": "Escudo con blasón de lobo"
+      },
+      {
+        "id": 31520000,
+        "name": "Escudo con blasón de serpiente"
+      },
+      {
+        "id": 31530000,
+        "name": "Escudo de león dorado"
+      }
+    ]
+  },
+  {
+    "category": "Escudo grande",
+    "items": [
+      {
+        "id": 32500000,
+        "name": "Pavés de acero negro"
+      },
+      {
+        "id": 32520000,
+        "name": "Escudo grande de verdín"
+      }
+    ]
+  },
+  {
+    "category": "Escudo embestida",
+    "items": [
+      {
+        "id": 62500000,
+        "name": "Escudo de duelo"
+      },
+      {
+        "id": 62510000,
+        "name": "Escudo de embestida cariano"
+      }
+    ]
+  }
+]

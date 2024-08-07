@@ -7,6 +7,7 @@ local show_ashesofwar_collections = config.items.show_ashesofwar_collections
 local show_spirits_collections = config.items.show_spirits_collections
 local any_collections = show_weapons_collections or show_protectors_collections or show_accessories_collections or show_sorceries_collections or show_incantations_collections or show_ashesofwar_collections or show_spirits_collections
 local show_equipped = config.items.show_equipped
+local check_dlc_items = config.items.check_dlc_items
 
 local cjson = require('cjson')
 
@@ -59,7 +60,14 @@ if show_spirits_collections then
   check_list[5][#check_list[5] + 1] = {{}, function(id) return spirits_by_id[id] end, spirits, '骨灰'}
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons.json'))) do
+local suffix
+if check_dlc_items then
+  suffix = '_dlc1.json'
+else
+  suffix = '.json'
+end
+
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons'..suffix))) do
   local index = #categories + 1
   categories[index] = v.category
   for _, v2 in ipairs(v.items) do
@@ -69,7 +77,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapo
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/protectors.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/protectors'..suffix))) do
   local pindex = #protectors + 1
   if type(v.id) == 'table' then
     protectors[pindex] = { id = v.id[1], name = v.name }
@@ -82,7 +90,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/prote
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/accessories.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/accessories'..suffix))) do
   local pindex = #accessories + 1
   if type(v.id) == 'table' then
     accessories[pindex] = { id = v.id[1], name = v.name }
@@ -95,7 +103,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/acces
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/sorceries.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/sorceries'..suffix))) do
   local pindex = #sorceries + 1
   if type(v.id) == 'table' then
     sorceries[pindex] = { id = v.id[1], name = v.name }
@@ -108,7 +116,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/sorce
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/incantations.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/incantations'..suffix))) do
   local pindex = #incantations + 1
   if type(v.id) == 'table' then
     incantations[pindex] = { id = v.id[1], name = v.name }
@@ -121,7 +129,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/incan
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/ashesofwar.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/ashesofwar'..suffix))) do
   local pindex = #ashesofwar + 1
   if type(v.id) == 'table' then
     ashesofwar[pindex] = { id = v.id[1], name = v.name }
@@ -134,7 +142,7 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/ashes
   end
 end
 
-for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/spirits.json'))) do
+for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/spirits'..suffix))) do
   local pindex = #spirits + 1
   if type(v.id) == 'table' then
     spirits[pindex] = { id = v.id[1], name = v.name }

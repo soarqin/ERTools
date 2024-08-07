@@ -1,0 +1,569 @@
+[
+  {
+    "id": 5070000,
+    "name": "Máscara de Lagarta"
+  },
+  {
+    "id": 5070100,
+    "name": "Robe de Cordas Trançadas"
+  },
+  {
+    "id": 5070200,
+    "name": "Faixas de Braço Trançadas"
+  },
+  {
+    "id": 5070300,
+    "name": "Tanga Suja"
+  },
+  {
+    "id": 5300000,
+    "name": "Flor de Sta. Trina"
+  },
+  {
+    "id": 5272000,
+    "name": "Coroa de Luz"
+  },
+  {
+    "id": 5060000,
+    "name": "Chapéu de Sumo Sacerdote"
+  },
+  {
+    "id": [
+      5060100,
+      5062100
+    ],
+    "name": "Robe de Sumo Sacerdote/Robe de Dedo"
+  },
+  {
+    "id": 5060200,
+    "name": "Luvas de Sumo Sacerdote"
+  },
+  {
+    "id": 5060300,
+    "name": "Roupas de Baixo de Sumo Sacerdote"
+  },
+  {
+    "id": 3000000,
+    "name": "Chapéu de Dane"
+  },
+  {
+    "id": [
+      3000100,
+      3001100
+    ],
+    "name": "Robe de Folhaseca/Robe de Folhaseca (Alterado)"
+  },
+  {
+    "id": 3000200,
+    "name": "Faixas de Braço de Folhaseca"
+  },
+  {
+    "id": 3000300,
+    "name": "Botas de Cano Alto de Folhaseca"
+  },
+  {
+    "id": 5110000,
+    "name": "Máscara do Homem Sábio"
+  },
+  {
+    "id": [
+      5110100,
+      5111100
+    ],
+    "name": "Traje de Ansbach/Traje de Ansbach (Alterado)"
+  },
+  {
+    "id": 5110200,
+    "name": "Mangas de Ansbach"
+  },
+  {
+    "id": 5110300,
+    "name": "Botas de Ansbach"
+  },
+  {
+    "id": 5330000,
+    "name": "Cabeça de Demônio (Leão)"
+  },
+  {
+    "id": 5320000,
+    "name": "Grande Jarro"
+  },
+  {
+    "id": 5030000,
+    "name": "Máscara de Thiollier"
+  },
+  {
+    "id": [
+      5030100,
+      5031100
+    ],
+    "name": "Traje de Thiollier/Traje de Thiollier (Alterado)"
+  },
+  {
+    "id": 5030200,
+    "name": "Luvas de Thiollier"
+  },
+  {
+    "id": 5030300,
+    "name": "Calças de Thiollier"
+  },
+  {
+    "id": 5230000,
+    "name": "Elmo de Pássaro dos Túmulos"
+  },
+  {
+    "id": 5230100,
+    "name": "Armadura Penapreta de Pássaro dos Túmulos"
+  },
+  {
+    "id": 5230200,
+    "name": "Braceletes de Pássaro dos Túmulos"
+  },
+  {
+    "id": 5230300,
+    "name": "Tornozeleiras de Pássaro dos Túmulos"
+  },
+  {
+    "id": 5231100,
+    "name": "Armadura de Pássaro dos Túmulos"
+  },
+  {
+    "id": 5080000,
+    "name": "Capuz de Dançarina"
+  },
+  {
+    "id": [
+      5080100,
+      5081100
+    ],
+    "name": "Vestido de Dançarina/Vestido de Dançarina (Alterado)"
+  },
+  {
+    "id": 5080200,
+    "name": "Braçadeiras de Dançarina"
+  },
+  {
+    "id": 5080300,
+    "name": "Calças de Dançarina"
+  },
+  {
+    "id": 5240000,
+    "name": "Elmo de Soldado Comum"
+  },
+  {
+    "id": 5240100,
+    "name": "Armadura de Tecido de Soldado Comum"
+  },
+  {
+    "id": 5240200,
+    "name": "Manoplas de Soldado Comum"
+  },
+  {
+    "id": 5240300,
+    "name": "Grevas de Soldado Comum"
+  },
+  {
+    "id": 5280000,
+    "name": "Elmo de Miliciano das Sombras"
+  },
+  {
+    "id": 5280100,
+    "name": "Armadura de Miliciano das Sombras"
+  },
+  {
+    "id": 5280200,
+    "name": "Manoplas de Miliciano das Sombras"
+  },
+  {
+    "id": 5280300,
+    "name": "Grevas de Miliciano das Sombras"
+  },
+  {
+    "id": 5190000,
+    "name": "Testeira de Couro"
+  },
+  {
+    "id": 5190100,
+    "name": "Traje Glorificado"
+  },
+  {
+    "id": 5190200,
+    "name": "Faixas de Braço de Couro"
+  },
+  {
+    "id": 5190300,
+    "name": "Faixas de Perna de Couro"
+  },
+  {
+    "id": 5191000,
+    "name": "Elmo de Couro"
+  },
+  {
+    "id": 5191100,
+    "name": "Traje do Planalto (Alterado)"
+  },
+  {
+    "id": 5020000,
+    "name": "Pele de Ralva"
+  },
+  {
+    "id": 5020100,
+    "name": "Armadura com Rebite de Ferro"
+  },
+  {
+    "id": 5020200,
+    "name": "Manoplas com Rebite de Ferro"
+  },
+  {
+    "id": 5020300,
+    "name": "Grevas com Rebite de Ferro"
+  },
+  {
+    "id": 5021000,
+    "name": "Elmo de Presa"
+  },
+  {
+    "id": [
+      5100000,
+      5101000
+    ],
+    "name": "Elmo de Igon/Elmo de Igon (Alterado)"
+  },
+  {
+    "id": [
+      5100100,
+      5101100
+    ],
+    "name": "Armadura de Igon/Armadura de Igon (Alterada)"
+  },
+  {
+    "id": 5100200,
+    "name": "Manoplas de Igon"
+  },
+  {
+    "id": 5100300,
+    "name": "Tanga de Igon"
+  },
+  {
+    "id": 5210000,
+    "name": "Máscara dos Lâmina Maldita"
+  },
+  {
+    "id": 5210100,
+    "name": "Tanga de Asceta"
+  },
+  {
+    "id": 5210200,
+    "name": "Punhos de Asceta"
+  },
+  {
+    "id": 5210300,
+    "name": "Tornozeleiras de Asceta"
+  },
+  {
+    "id": 5120000,
+    "name": "Elmo de Freyja"
+  },
+  {
+    "id": [
+      5120100,
+      5121100
+    ],
+    "name": "Armadura de Freyja/Armadura de Freyja (Alterada)"
+  },
+  {
+    "id": 5120200,
+    "name": "Manoplas de Freyja"
+  },
+  {
+    "id": 5120300,
+    "name": "Grevas de Freyja"
+  },
+  {
+    "id": 5140000,
+    "name": "Elmo Militar de Messmer"
+  },
+  {
+    "id": [
+      5140100,
+      5141100
+    ],
+    "name": "Armadura Militar de Messmer/Armadura Militar de Messmer (Alterada)"
+  },
+  {
+    "id": 5140200,
+    "name": "Manoplas Militares de Messmer"
+  },
+  {
+    "id": 5140300,
+    "name": "Grevas Militares de Messmer"
+  },
+  {
+    "id": 5090000,
+    "name": "Elmo da Noite"
+  },
+  {
+    "id": 5090100,
+    "name": "Armadura da Noite"
+  },
+  {
+    "id": 5090200,
+    "name": "Manoplas da Noite"
+  },
+  {
+    "id": 5090300,
+    "name": "Grevas da Noite"
+  },
+  {
+    "id": [
+      5220000,
+      5221000
+    ],
+    "name": "Elmo de Messmer/Elmo de Messmer (Alterado)"
+  },
+  {
+    "id": 5220100,
+    "name": "Armadura de Messmer"
+  },
+  {
+    "id": 5220200,
+    "name": "Manoplas de Messmer"
+  },
+  {
+    "id": 5220300,
+    "name": "Grevas de Messmer"
+  },
+  {
+    "id": 5150000,
+    "name": "Elmo do Cavaleiro Negro"
+  },
+  {
+    "id": 5150100,
+    "name": "Armadura do Cavaleiro Negro"
+  },
+  {
+    "id": 5150200,
+    "name": "Manoplas do Cavaleiro Negro"
+  },
+  {
+    "id": 5150300,
+    "name": "Grevas do Cavaleiro Negro"
+  },
+  {
+    "id": 5180000,
+    "name": "Elmo do Cavaleiro de Fogo"
+  },
+  {
+    "id": [
+      5180100,
+      5181100
+    ],
+    "name": "Armadura do Cavaleiro de Fogo/Armadura do Cavaleiro de Fogo (Alterada)"
+  },
+  {
+    "id": 5180200,
+    "name": "Manoplas do Cavaleiro de Fogo"
+  },
+  {
+    "id": 5180300,
+    "name": "Grevas do Cavaleiro de Fogo"
+  },
+  {
+    "id": 5183000,
+    "name": "Elmo da Serpente Alada"
+  },
+  {
+    "id": 5182000,
+    "name": "Elmo de Máscara da Morte"
+  },
+  {
+    "id": 5184000,
+    "name": "Capuz de Salza"
+  },
+  {
+    "id": 5200000,
+    "name": "Elmo de Cavaleiro da Morte"
+  },
+  {
+    "id": 5200100,
+    "name": "Armadura de Cavaleiro da Morte"
+  },
+  {
+    "id": 5200200,
+    "name": "Manoplas de Cavaleiro da Morte"
+  },
+  {
+    "id": 5200300,
+    "name": "Grevas de Cavaleiro da Morte"
+  },
+  {
+    "id": 5250000,
+    "name": "Elmo de Guerreiro com Chifres"
+  },
+  {
+    "id": 5250100,
+    "name": "Armadura de Guerreiro com Chifres"
+  },
+  {
+    "id": 5250200,
+    "name": "Manoplas de Guerreiro com Chifres"
+  },
+  {
+    "id": 5250300,
+    "name": "Grevas de Guerreiro com Chifres"
+  },
+  {
+    "id": 5252000,
+    "name": "Elmo de Fera Divina"
+  },
+  {
+    "id": 5252100,
+    "name": "Armadura de Guerreiro Fera Divina"
+  },
+  {
+    "id": 5253000,
+    "name": "Elmo de Pássaro Divino"
+  },
+  {
+    "id": 5253100,
+    "name": "Armadura de Guerreiro Pássaro Divino"
+  },
+  {
+    "id": 5253200,
+    "name": "Manoplas de Guerreiro Pássaro Divino"
+  },
+  {
+    "id": 5253300,
+    "name": "Grevas de Guerreiro Pássaro Divino"
+  },
+  {
+    "id": 5000000,
+    "name": "Elmo de Cavaleiro Juramentador"
+  },
+  {
+    "id": 5002100,
+    "name": "Armadura de Cavaleiro Juramentador"
+  },
+  {
+    "id": 5000200,
+    "name": "Manoplas de Cavaleiro Juramentador"
+  },
+  {
+    "id": 5000300,
+    "name": "Grevas de Cavaleiro Juramentador"
+  },
+  {
+    "id": 5000100,
+    "name": "Armadura de Leda"
+  },
+  {
+    "id": 5160000,
+    "name": "Elmo de Rakshasa"
+  },
+  {
+    "id": 5160100,
+    "name": "Armadura de Rakshasa"
+  },
+  {
+    "id": 5160200,
+    "name": "Manoplas de Rakshasa"
+  },
+  {
+    "id": 5160300,
+    "name": "Grevas de Rakshasa"
+  },
+  {
+    "id": 5260000,
+    "name": "Elmo de Rellana"
+  },
+  {
+    "id": 5260100,
+    "name": "Armadura de Rellana"
+  },
+  {
+    "id": 5260200,
+    "name": "Luvas de Rellana"
+  },
+  {
+    "id": 5260300,
+    "name": "Grevas de Rellana"
+  },
+  {
+    "id": 5130000,
+    "name": "Elmo da Solidão"
+  },
+  {
+    "id": [
+      5130100,
+      5131100
+    ],
+    "name": "Armadura da Solidão/Armadura da Solidão (Alterada)"
+  },
+  {
+    "id": 5130200,
+    "name": "Manoplas da Solidão"
+  },
+  {
+    "id": 5130300,
+    "name": "Grevas da Solidão"
+  },
+  {
+    "id": 5310000,
+    "name": "Elmo-Martelo do Crisol"
+  },
+  {
+    "id": 3010000,
+    "name": "Elmo de Gaius"
+  },
+  {
+    "id": 3010100,
+    "name": "Armadura de Gaius"
+  },
+  {
+    "id": 3010200,
+    "name": "Manoplas de Gaius"
+  },
+  {
+    "id": 3010300,
+    "name": "Grevas de Gaius"
+  },
+  {
+    "id": 5270000,
+    "name": "Elmo do Jovem Leão"
+  },
+  {
+    "id": [
+      5270100,
+      5271100
+    ],
+    "name": "Armadura do Jovem Leão/Armadura do Jovem Leão (Alterada)"
+  },
+  {
+    "id": 5270200,
+    "name": "Manoplas do Jovem Leão"
+  },
+  {
+    "id": 5270300,
+    "name": "Grevas do Jovem Leão"
+  },
+  {
+    "id": 5010000,
+    "name": "Elmo de Azinhavre"
+  },
+  {
+    "id": 5010100,
+    "name": "Armadura de Azinhavre"
+  },
+  {
+    "id": 5010200,
+    "name": "Manoplas de Azinhavre"
+  },
+  {
+    "id": 5010300,
+    "name": "Grevas de Azinhavre"
+  },
+  {
+    "id": 5290000,
+    "name": "Cabeça de Fera Divina"
+  }
+]

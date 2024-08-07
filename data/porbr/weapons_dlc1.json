@@ -1,0 +1,620 @@
+[
+  {
+    "category": "Adaga",
+    "items": [
+      {
+        "id": 1510000,
+        "name": "Adaga dos Cavaleiros de Fogo"
+      },
+      {
+        "id": 1500000,
+        "name": "Main-Gauche"
+      }
+    ]
+  },
+  {
+    "category": "Lâmina de arremesso",
+    "items": [
+      {
+        "id": 63500000,
+        "name": "Adaga Forjescrita"
+      }
+    ]
+  },
+  {
+    "category": "Espada Reta",
+    "items": [
+      {
+        "id": 2540000,
+        "name": "Espada Embainhada em Pedra"
+      },
+      {
+        "id": 2510000,
+        "name": "Espada da Névoa de Sta. Trina"
+      },
+      {
+        "id": 2550000,
+        "name": "Espada de Luz"
+      },
+      {
+        "id": 2560000,
+        "name": "Espada de Trevas"
+      }
+    ]
+  },
+  {
+    "category": "Espada grande leve",
+    "items": [
+      {
+        "id": 67500000,
+        "name": "Milady"
+      },
+      {
+        "id": 67510000,
+        "name": "Espada de Leda"
+      },
+      {
+        "id": 67520000,
+        "name": "Espadas da Lua de Fogo de Rellana"
+      }
+    ]
+  },
+  {
+    "category": "Espada Grande",
+    "items": [
+      {
+        "id": 3520000,
+        "name": "Espada Grande do Réptil"
+      },
+      {
+        "id": 3550000,
+        "name": "Espada Grande da Solidão"
+      },
+      {
+        "id": 3510000,
+        "name": "Espada Grande da Danação"
+      }
+    ]
+  },
+  {
+    "category": "Espada Colossal",
+    "items": [
+      {
+        "id": 4520000,
+        "name": "Espada Grande do Fogo"
+      },
+      {
+        "id": 4540000,
+        "name": "Espada da Cavaleira Moonrithyll"
+      },
+      {
+        "id": 4500000,
+        "name": "Espada Grande de Minério Meteórico Antigo"
+      },
+      {
+        "id": 4530000,
+        "name": "Espada Grande de Radahn (Lorde)"
+      },
+      {
+        "id": 4550000,
+        "name": "Espada Grande de Radahn (Luz)"
+      }
+    ]
+  },
+  {
+    "category": "Espada de Fincada",
+    "items": [
+      {
+        "id": 2530000,
+        "name": "Espada de Feitiçaria Cariana"
+      }
+    ]
+  },
+  {
+    "category": "Espada Pesada de Fincada",
+    "items": [
+      {
+        "id": 6500000,
+        "name": "Espada Grande de Queelign"
+      },
+      {
+        "id": 3500000,
+        "name": "Espada-Lança"
+      }
+    ]
+  },
+  {
+    "category": "Espada Curva",
+    "items": [
+      {
+        "id": 7500000,
+        "name": "Espada dos Espíritos"
+      },
+      {
+        "id": 7510000,
+        "name": "Falx"
+      },
+      {
+        "id": 7520000,
+        "name": "Lâmina Dançante de Ranah"
+      },
+      {
+        "id": 7530000,
+        "name": "Espada do Guerreiro com Chifres"
+      }
+    ]
+  },
+  {
+    "category": "Espada Grande Curva",
+    "items": [
+      {
+        "id": 8510000,
+        "name": "Espada Grande de Freyja"
+      },
+      {
+        "id": 8520000,
+        "name": "Espada Grande do Guerreiro com Chifres"
+      }
+    ]
+  },
+  {
+    "category": "Lâmina de revés",
+    "items": [
+      {
+        "id": 64500000,
+        "name": "Lâmina de Revés"
+      },
+      {
+        "id": 64510000,
+        "name": "Chakram Forjescrito"
+      },
+      {
+        "id": 64520000,
+        "name": "Chakram dos Lâminas Malditas"
+      }
+    ]
+  },
+  {
+    "category": "Katana",
+    "items": [
+      {
+        "id": 9500000,
+        "name": "Espada da Noite"
+      },
+      {
+        "id": 2520000,
+        "name": "Espada Estrelada"
+      }
+    ]
+  },
+  {
+    "category": "Katana grande",
+    "items": [
+      {
+        "id": 66500000,
+        "name": "Katana Grande"
+      },
+      {
+        "id": 66510000,
+        "name": "Katana Grande do Caçador de Dragão"
+      },
+      {
+        "id": 66520000,
+        "name": "Katana Grande de Rakshasa"
+      }
+    ]
+  },
+  {
+    "category": "Lâminas-gêmeas",
+    "items": [
+      {
+        "id": 10510000,
+        "name": "Lâminas de Aço Preto"
+      },
+      {
+        "id": 10500000,
+        "name": "Euporia"
+      }
+    ]
+  },
+  {
+    "category": "Machado",
+    "items": [
+      {
+        "id": 14540000,
+        "name": "Machadinha de Língua Bifurcada"
+      },
+      {
+        "id": 14520000,
+        "name": "Machado Militar de Messmer"
+      },
+      {
+        "id": 14500000,
+        "name": "Machado Forjescrito"
+      },
+      {
+        "id": 14510000,
+        "name": "Machados Duplos do Cavaleiro da Morte"
+      }
+    ]
+  },
+  {
+    "category": "Grande Machado",
+    "items": [
+      {
+        "id": 15510000,
+        "name": "Faca de Açougueiro de Bonny"
+      },
+      {
+        "id": 15500000,
+        "name": "Machado de Haste Longa do Cavaleiro da Morte"
+      },
+      {
+        "id": 8500000,
+        "name": "Cutelo da Putrefação"
+      }
+    ]
+  },
+  {
+    "category": "Martelo",
+    "items": [
+      {
+        "id": 11500000,
+        "name": "Malho de Pedra-Flor"
+      }
+    ]
+  },
+  {
+    "category": "Grande Martelo",
+    "items": [
+      {
+        "id": 12520000,
+        "name": "Grande Martelo de Aço Preto"
+      },
+      {
+        "id": 12500000,
+        "name": "Grande Martelo Forjescrito"
+      }
+    ]
+  },
+  {
+    "category": "Mangual",
+    "items": [
+      {
+        "id": 13500000,
+        "name": "Mangual de Serpente"
+      }
+    ]
+  },
+  {
+    "category": "Arma Colossal",
+    "items": [
+      {
+        "id": 12530000,
+        "name": "Braço de Demônio do Sangue"
+      },
+      {
+        "id": 12510000,
+        "name": "Martelo de Bigorna"
+      },
+      {
+        "id": 23500000,
+        "name": "Martelo de Devonia"
+      },
+      {
+        "id": 23510000,
+        "name": "Flor de Girassol Sombrio"
+      },
+      {
+        "id": 23520000,
+        "name": "Dedo Que Encara"
+      }
+    ]
+  },
+  {
+    "category": "Lança",
+    "items": [
+      {
+        "id": 16520000,
+        "name": "Lança Veloz"
+      },
+      {
+        "id": 16540000,
+        "name": "Garfo de Demônio do Sangue"
+      },
+      {
+        "id": 16500000,
+        "name": "Lança Forjescrita"
+      }
+    ]
+  },
+  {
+    "category": "Lança Grande",
+    "items": [
+      {
+        "id": 17510000,
+        "name": "Lança Militar de Messmer"
+      },
+      {
+        "id": 17520000,
+        "name": "Cajado-Lança Farpado"
+      },
+      {
+        "id": 16550000,
+        "name": "Lança Sagrada de Demônio do Sangue"
+      },
+      {
+        "id": 17500000,
+        "name": "Lança do Empalador"
+      }
+    ]
+  },
+  {
+    "category": "Alabarda",
+    "items": [
+      {
+        "id": 18500000,
+        "name": "Glaive dos Espíritos"
+      },
+      {
+        "id": 18510000,
+        "name": "Glaive do Broto"
+      }
+    ]
+  },
+  {
+    "category": "Ceifador",
+    "items": [
+      {
+        "id": 19500000,
+        "name": "Lâmina de Obsidiana"
+      }
+    ]
+  },
+  {
+    "category": "Chicote",
+    "items": [
+      {
+        "id": 20500000,
+        "name": "Chicote Dentado"
+      }
+    ]
+  },
+  {
+    "category": "Punho",
+    "items": [
+      {
+        "id": 21510000,
+        "name": "Pata"
+      },
+      {
+        "id": 21520000,
+        "name": "Mão Envenenada"
+      },
+      {
+        "id": 21530000,
+        "name": "Mão Enlouquecida"
+      },
+      {
+        "id": 21500000,
+        "name": "Agulha Oculta de Thiollier"
+      },
+      {
+        "id": 21540000,
+        "name": "Punho de Golem"
+      }
+    ]
+  },
+  {
+    "category": "Corpo a corpo",
+    "items": [
+      {
+        "id": 60500000,
+        "name": "Artes de Folhaseca"
+      },
+      {
+        "id": 60510000,
+        "name": "Movimento de Pés de Dane"
+      }
+    ]
+  },
+  {
+    "category": "Garra",
+    "items": [
+      {
+        "id": 22500000,
+        "name": "Garras da Noite"
+      }
+    ]
+  },
+  {
+    "category": "Garra de fera",
+    "items": [
+      {
+        "id": 68500000,
+        "name": "Garra da Fera"
+      },
+      {
+        "id": 68510000,
+        "name": "Garra do Urso Vermelho"
+      }
+    ]
+  },
+  {
+    "category": "Frasco de perfume",
+    "items": [
+      {
+        "id": 61500000,
+        "name": "Frasco de Perfume de Faísca de Fogo"
+      },
+      {
+        "id": 61530000,
+        "name": "Frasco de Perfume de Relâmpago"
+      },
+      {
+        "id": 61510000,
+        "name": "Frasco de Perfume Congelante"
+      },
+      {
+        "id": 61520000,
+        "name": "Frasco de Perfume da Chama Frenética"
+      },
+      {
+        "id": 61540000,
+        "name": "Frasco de Perfume de Veneno Mortal"
+      }
+    ]
+  },
+  {
+    "category": "Arco Leve",
+    "items": [
+      {
+        "id": 40500000,
+        "name": "Arco Ósseo"
+      }
+    ]
+  },
+  {
+    "category": "Arco",
+    "items": [
+      {
+        "id": 41510000,
+        "name": "Arco Longo de Ansbach"
+      }
+    ]
+  },
+  {
+    "category": "Arco Grande",
+    "items": [
+      {
+        "id": 42500000,
+        "name": "Arco Grande de Igon"
+      }
+    ]
+  },
+  {
+    "category": "Besta",
+    "items": [
+      {
+        "id": 43500000,
+        "name": "Besta de Repetição"
+      },
+      {
+        "id": 43510000,
+        "name": "Besta Dispersora"
+      }
+    ]
+  },
+  {
+    "category": "Balista",
+    "items": [
+      {
+        "id": 44500000,
+        "name": "Canhão de Rabbath"
+      }
+    ]
+  },
+  {
+    "category": "Cajado Pedrilhante",
+    "items": [
+      {
+        "id": 33520000,
+        "name": "Cajado Maternal"
+      },
+      {
+        "id": 33510000,
+        "name": "Cajado do Grande Além"
+      }
+    ]
+  },
+  {
+    "category": "Selo Sagrado",
+    "items": [
+      {
+        "id": 34500000,
+        "name": "Selo de Folhaseca"
+      },
+      {
+        "id": 34510000,
+        "name": "Selo de Cavaleiro de Fogo"
+      },
+      {
+        "id": 34520000,
+        "name": "Selo da Árvore Espiral"
+      }
+    ]
+  },
+  {
+    "category": "Tocha",
+    "items": [
+      {
+        "id": 24500000,
+        "name": "Tocha de Nanaya"
+      },
+      {
+        "id": 24510000,
+        "name": "Visão de Lamúria"
+      }
+    ]
+  },
+  {
+    "category": "Escudo Pequeno",
+    "items": [
+      {
+        "id": 30510000,
+        "name": "Escudo Forjescrito"
+      },
+      {
+        "id": 21550000,
+        "name": "Escudo da Noite"
+      }
+    ]
+  },
+  {
+    "category": "Escudo médio",
+    "items": [
+      {
+        "id": 31500000,
+        "name": "Escudo Militar de Messmer"
+      },
+      {
+        "id": 31510000,
+        "name": "Escudo do Brasão de Lobo"
+      },
+      {
+        "id": 31520000,
+        "name": "Escudo do Brasão de Serpente"
+      },
+      {
+        "id": 31530000,
+        "name": "Escudo do Leão Dourado"
+      }
+    ]
+  },
+  {
+    "category": "Escudo Grande",
+    "items": [
+      {
+        "id": 32500000,
+        "name": "Grande Escudo de Aço Preto"
+      },
+      {
+        "id": 32520000,
+        "name": "Grande Escudo de Azinhavre"
+      }
+    ]
+  },
+  {
+    "category": "Escudo de fincada",
+    "items": [
+      {
+        "id": 62500000,
+        "name": "Escudo de Duelo"
+      },
+      {
+        "id": 62510000,
+        "name": "Escudo de Fincada Cariano"
+      }
+    ]
+  }
+]

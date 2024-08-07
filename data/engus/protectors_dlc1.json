@@ -1,0 +1,569 @@
+[
+  {
+    "id": 5070000,
+    "name": "Caterpillar Mask"
+  },
+  {
+    "id": 5070100,
+    "name": "Braided Cord Robe"
+  },
+  {
+    "id": 5070200,
+    "name": "Braided Arm Wraps"
+  },
+  {
+    "id": 5070300,
+    "name": "Soiled Loincloth"
+  },
+  {
+    "id": 5300000,
+    "name": "St. Trina's Blossom"
+  },
+  {
+    "id": 5272000,
+    "name": "Circlet of Light"
+  },
+  {
+    "id": 5060000,
+    "name": "High Priest Hat"
+  },
+  {
+    "id": [
+      5060100,
+      5062100
+    ],
+    "name": "High Priest Robe/Finger Robe"
+  },
+  {
+    "id": 5060200,
+    "name": "High Priest Gloves"
+  },
+  {
+    "id": 5060300,
+    "name": "High Priest Undergarments"
+  },
+  {
+    "id": 3000000,
+    "name": "Dane's Hat"
+  },
+  {
+    "id": [
+      3000100,
+      3001100
+    ],
+    "name": "Dryleaf Robe/Dryleaf Robe (Altered)"
+  },
+  {
+    "id": 3000200,
+    "name": "Dryleaf Arm Wraps"
+  },
+  {
+    "id": 3000300,
+    "name": "Dryleaf Cuissardes"
+  },
+  {
+    "id": 5110000,
+    "name": "Wise Man's Mask"
+  },
+  {
+    "id": [
+      5110100,
+      5111100
+    ],
+    "name": "Ansbach's Attire/Ansbach's Attire (Altered)"
+  },
+  {
+    "id": 5110200,
+    "name": "Ansbach's Manchettes"
+  },
+  {
+    "id": 5110300,
+    "name": "Ansbach's Boots"
+  },
+  {
+    "id": 5330000,
+    "name": "Imp Head (Lion)"
+  },
+  {
+    "id": 5320000,
+    "name": "Greatjar"
+  },
+  {
+    "id": 5030000,
+    "name": "Thiollier's Mask"
+  },
+  {
+    "id": [
+      5030100,
+      5031100
+    ],
+    "name": "Thiollier's Garb/Thiollier's Garb (Altered)"
+  },
+  {
+    "id": 5030200,
+    "name": "Thiollier's Gloves"
+  },
+  {
+    "id": 5030300,
+    "name": "Thiollier's Trousers"
+  },
+  {
+    "id": 5230000,
+    "name": "Gravebird Helm"
+  },
+  {
+    "id": 5230100,
+    "name": "Gravebird's Blackquill Armor"
+  },
+  {
+    "id": 5230200,
+    "name": "Gravebird Bracelets"
+  },
+  {
+    "id": 5230300,
+    "name": "Gravebird Anklets"
+  },
+  {
+    "id": 5231100,
+    "name": "Gravebird Armor"
+  },
+  {
+    "id": 5080000,
+    "name": "Dancer's Hood"
+  },
+  {
+    "id": [
+      5080100,
+      5081100
+    ],
+    "name": "Dancer's Dress/Dancer's Dress (Altered)"
+  },
+  {
+    "id": 5080200,
+    "name": "Dancer's Bracer"
+  },
+  {
+    "id": 5080300,
+    "name": "Dancer's Trousers"
+  },
+  {
+    "id": 5240000,
+    "name": "Common Soldier Helm"
+  },
+  {
+    "id": 5240100,
+    "name": "Common Soldier Cloth Armor"
+  },
+  {
+    "id": 5240200,
+    "name": "Common Soldier Gauntlets"
+  },
+  {
+    "id": 5240300,
+    "name": "Common Soldier Greaves"
+  },
+  {
+    "id": 5280000,
+    "name": "Shadow Militiaman Helm"
+  },
+  {
+    "id": 5280100,
+    "name": "Shadow Militiaman Armor"
+  },
+  {
+    "id": 5280200,
+    "name": "Shadow Militiaman Gauntlets"
+  },
+  {
+    "id": 5280300,
+    "name": "Shadow Militiaman Greaves"
+  },
+  {
+    "id": 5190000,
+    "name": "Leather Headband"
+  },
+  {
+    "id": 5190100,
+    "name": "Gloried Attire"
+  },
+  {
+    "id": 5190200,
+    "name": "Leather Arm Wraps"
+  },
+  {
+    "id": 5190300,
+    "name": "Leather Leg Wraps"
+  },
+  {
+    "id": 5191000,
+    "name": "Leather Crown"
+  },
+  {
+    "id": 5191100,
+    "name": "Highland Attire"
+  },
+  {
+    "id": 5020000,
+    "name": "Pelt of Ralva"
+  },
+  {
+    "id": 5020100,
+    "name": "Iron Rivet Armor"
+  },
+  {
+    "id": 5020200,
+    "name": "Iron Rivet Gauntlets"
+  },
+  {
+    "id": 5020300,
+    "name": "Iron Rivet Greaves"
+  },
+  {
+    "id": 5021000,
+    "name": "Fang Helm"
+  },
+  {
+    "id": [
+      5100000,
+      5101000
+    ],
+    "name": "Igon's Helm/Igon's Helm (Altered)"
+  },
+  {
+    "id": [
+      5100100,
+      5101100
+    ],
+    "name": "Igon's Armor/Igon's Armor (Altered)"
+  },
+  {
+    "id": 5100200,
+    "name": "Igon's Gauntlets"
+  },
+  {
+    "id": 5100300,
+    "name": "Igon's Loincloth"
+  },
+  {
+    "id": 5210000,
+    "name": "Curseblade Mask"
+  },
+  {
+    "id": 5210100,
+    "name": "Ascetic's Loincloth"
+  },
+  {
+    "id": 5210200,
+    "name": "Ascetic's Wrist Guards"
+  },
+  {
+    "id": 5210300,
+    "name": "Ascetic's Ankle Guards"
+  },
+  {
+    "id": 5120000,
+    "name": "Freyja's Helm"
+  },
+  {
+    "id": [
+      5120100,
+      5121100
+    ],
+    "name": "Freyja's Armor/Freyja's Armor (Altered)"
+  },
+  {
+    "id": 5120200,
+    "name": "Freyja's Gauntlets"
+  },
+  {
+    "id": 5120300,
+    "name": "Freyja's Greaves"
+  },
+  {
+    "id": 5140000,
+    "name": "Messmer Soldier Helm"
+  },
+  {
+    "id": [
+      5140100,
+      5141100
+    ],
+    "name": "Messmer Soldier Armor/Messmer Soldier Armor (Altered)"
+  },
+  {
+    "id": 5140200,
+    "name": "Messmer Soldier Gauntlets"
+  },
+  {
+    "id": 5140300,
+    "name": "Messmer Soldier Greaves"
+  },
+  {
+    "id": 5090000,
+    "name": "Helm of Night"
+  },
+  {
+    "id": 5090100,
+    "name": "Armor of Night"
+  },
+  {
+    "id": 5090200,
+    "name": "Gauntlets of Night"
+  },
+  {
+    "id": 5090300,
+    "name": "Greaves of Night"
+  },
+  {
+    "id": [
+      5220000,
+      5221000
+    ],
+    "name": "Messmer's Helm/Messmer's Helm (Altered)"
+  },
+  {
+    "id": 5220100,
+    "name": "Messmer's Armor"
+  },
+  {
+    "id": 5220200,
+    "name": "Messmer's Gauntlets"
+  },
+  {
+    "id": 5220300,
+    "name": "Messmer's Greaves"
+  },
+  {
+    "id": 5150000,
+    "name": "Black Knight Helm"
+  },
+  {
+    "id": 5150100,
+    "name": "Black Knight Armor"
+  },
+  {
+    "id": 5150200,
+    "name": "Black Knight Gauntlets"
+  },
+  {
+    "id": 5150300,
+    "name": "Black Knight Greaves"
+  },
+  {
+    "id": 5180000,
+    "name": "Fire Knight Helm"
+  },
+  {
+    "id": [
+      5180100,
+      5181100
+    ],
+    "name": "Fire Knight Armor/Fire Knight Armor (Altered)"
+  },
+  {
+    "id": 5180200,
+    "name": "Fire Knight Gauntlets"
+  },
+  {
+    "id": 5180300,
+    "name": "Fire Knight Greaves"
+  },
+  {
+    "id": 5183000,
+    "name": "Winged Serpent Helm"
+  },
+  {
+    "id": 5182000,
+    "name": "Death Mask Helm"
+  },
+  {
+    "id": 5184000,
+    "name": "Salza's Hood"
+  },
+  {
+    "id": 5200000,
+    "name": "Death Knight Helm"
+  },
+  {
+    "id": 5200100,
+    "name": "Death Knight Armor"
+  },
+  {
+    "id": 5200200,
+    "name": "Death Knight Gauntlets"
+  },
+  {
+    "id": 5200300,
+    "name": "Death Knight Greaves"
+  },
+  {
+    "id": 5250000,
+    "name": "Horned Warrior Helm"
+  },
+  {
+    "id": 5250100,
+    "name": "Horned Warrior Armor"
+  },
+  {
+    "id": 5250200,
+    "name": "Horned Warrior Gauntlets"
+  },
+  {
+    "id": 5250300,
+    "name": "Horned Warrior Greaves"
+  },
+  {
+    "id": 5252000,
+    "name": "Divine Beast Helm"
+  },
+  {
+    "id": 5252100,
+    "name": "Divine Beast Warrior Armor"
+  },
+  {
+    "id": 5253000,
+    "name": "Divine Bird Helm"
+  },
+  {
+    "id": 5253100,
+    "name": "Divine Bird Warrior Armor"
+  },
+  {
+    "id": 5253200,
+    "name": "Divine Bird Warrior Gauntlets"
+  },
+  {
+    "id": 5253300,
+    "name": "Divine Bird Warrior Greaves"
+  },
+  {
+    "id": 5000000,
+    "name": "Oathseeker Knight Helm"
+  },
+  {
+    "id": 5002100,
+    "name": "Oathseeker Knight Armor"
+  },
+  {
+    "id": 5000200,
+    "name": "Oathseeker Knight Gauntlets"
+  },
+  {
+    "id": 5000300,
+    "name": "Oathseeker Knight Greaves"
+  },
+  {
+    "id": 5000100,
+    "name": "Leda's Armor"
+  },
+  {
+    "id": 5160000,
+    "name": "Rakshasa Helm"
+  },
+  {
+    "id": 5160100,
+    "name": "Rakshasa Armor"
+  },
+  {
+    "id": 5160200,
+    "name": "Rakshasa Gauntlets"
+  },
+  {
+    "id": 5160300,
+    "name": "Rakshasa Greaves"
+  },
+  {
+    "id": 5260000,
+    "name": "Rellana's Helm"
+  },
+  {
+    "id": 5260100,
+    "name": "Rellana's Armor"
+  },
+  {
+    "id": 5260200,
+    "name": "Rellana's Gloves"
+  },
+  {
+    "id": 5260300,
+    "name": "Rellana's Greaves"
+  },
+  {
+    "id": 5130000,
+    "name": "Helm of Solitude"
+  },
+  {
+    "id": [
+      5130100,
+      5131100
+    ],
+    "name": "Armor of Solitude/Armor of Solitude (Altered)"
+  },
+  {
+    "id": 5130200,
+    "name": "Gauntlets of Solitude"
+  },
+  {
+    "id": 5130300,
+    "name": "Greaves of Solitude"
+  },
+  {
+    "id": 5310000,
+    "name": "Crucible Hammer-Helm"
+  },
+  {
+    "id": 3010000,
+    "name": "Gaius's Helm"
+  },
+  {
+    "id": 3010100,
+    "name": "Gaius's Armor"
+  },
+  {
+    "id": 3010200,
+    "name": "Gaius's Gauntlets"
+  },
+  {
+    "id": 3010300,
+    "name": "Gaius's Greaves"
+  },
+  {
+    "id": 5270000,
+    "name": "Young Lion's Helm"
+  },
+  {
+    "id": [
+      5270100,
+      5271100
+    ],
+    "name": "Young Lion's Armor/Young Lion's Armor (Altered)"
+  },
+  {
+    "id": 5270200,
+    "name": "Young Lion's Gauntlets"
+  },
+  {
+    "id": 5270300,
+    "name": "Young Lion's Greaves"
+  },
+  {
+    "id": 5010000,
+    "name": "Verdigris Helm"
+  },
+  {
+    "id": 5010100,
+    "name": "Verdigris Armor"
+  },
+  {
+    "id": 5010200,
+    "name": "Verdigris Gauntlets"
+  },
+  {
+    "id": 5010300,
+    "name": "Verdigris Greaves"
+  },
+  {
+    "id": 5290000,
+    "name": "Divine Beast Head"
+  }
+]
