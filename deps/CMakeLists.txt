@@ -9,13 +9,14 @@ set(LUA_BUILD_CLI OFF CACHE BOOL "Build lua cli program" FORCE)
 set(LUA_BUILD_LUAC OFF CACHE BOOL "Build luac compiler" FORCE)
 add_subdirectory(lua)
 add_subdirectory(toml11)
+add_subdirectory(json)
 
 set(MESSAGE_QUIET ON)
 add_subdirectory(fmt)
 set(MESSAGE_QUIET OFF)
 add_subdirectory(uv)
 
-foreach(target liblua_static luafilesystem uv_a cjson memreader SDL3-static freetype harfbuzz toml11 SDL3_gfx fmt)
+foreach(target liblua_static luafilesystem uv_a cjson memreader SDL3-static freetype harfbuzz toml11 nlohmann_json SDL3_gfx fmt)
     if(TARGET ${target})
         set_target_properties(${target} PROPERTIES
             RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
