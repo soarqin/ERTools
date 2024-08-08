@@ -23,6 +23,8 @@ max_display_count=20
 [items]
 ; Check dlc items
 check_dlc_items=false
+; Max items to display for each category
+max_items_displayed=10
 ; Show weapon collection progress
 show_weapons_collections=false
 ; Show protector collection progress

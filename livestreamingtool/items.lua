@@ -8,10 +8,12 @@ local show_spirits_collections = config.items.show_spirits_collections
 local any_collections = show_weapons_collections or show_protectors_collections or show_accessories_collections or show_sorceries_collections or show_incantations_collections or show_ashesofwar_collections or show_spirits_collections
 local show_equipped = config.items.show_equipped
 local check_dlc_items = config.items.check_dlc_items
+local max_items_displayed = config.items.max_items_displayed
 
 local cjson = require('cjson')
 
 local address_table = nil
+local game_version = 0
 
 local last_running = false
 local progress_str = ''
@@ -57,7 +59,7 @@ if show_ashesofwar_collections then
   check_list[9][#check_list[9] + 1] = {{}, function(id) return ashesofwar_by_id[id] end, ashesofwar, '战灰'}
 end
 if show_spirits_collections then
-  check_list[5][#check_list[5] + 1] = {{}, function(id) return spirits_by_id[id] end, spirits, '骨灰'}
+  check_list[5][#check_list[5] + 1] = {{}, function(id) return spirits_by_id[id // 100 * 100] end, spirits, '骨灰'}
 end
 
 local suffix
@@ -164,14 +166,25 @@ local function update_addresses()
   equip_address = addr + 0x328
 
   if any_collections then
-    inventory_address = process.read_u64(addr + 0x418)
-    if inventory_address == 0 then
-      inventory_size = 0
-      return
+    if game_version < 0x20200 then
+      addr = process.read_u64(addr + 0x5B8)
+    else
+      addr = process.read_u64(addr + 0x5D0)
     end
-    inventory_size = process.read_u32(addr + 0x420)
+    if addr ~= 0 then
+      inventory_address = process.read_u64(addr + 0x10)
+      if inventory_address == 0 then
+        inventory_size = 0
+        return
+      end
+      inventory_size = process.read_u32(addr + 0x18)
+    end
 
-    addr = process.read_u64(addr + 0x8B0)
+    if game_version < 0x10200 then
+      addr = process.read_u64(addr + 0x8B0)
+    else
+      addr = process.read_u64(addr + 0x8D0)
+    end
     if addr == 0 then return end
     storage_address = process.read_u64(addr + 0x10)
     if storage_address == 0 then
@@ -204,6 +217,12 @@ local function get_accessory_name(id)
 end
 
 local function calculate_items_count(addr_start, item_count, max_count)
+  local step
+  if game_version < 0x20200 then
+    step = 0x14
+  else
+    step = 0x18
+  end
   local addr = addr_start + 4
   local total = 0
   for idx = 0, max_count-1 do
@@ -224,7 +243,7 @@ local function calculate_items_count(addr_start, item_count, max_count)
         break
       end
     end
-    addr = addr + 0x14
+    addr = addr + step
   end
 end
 
@@ -240,6 +259,7 @@ local function update()
   if not last_running then
     last_running = true
     address_table = process.get_address_table()
+    game_version = process.game_version()
   end
   update_addresses()
   local progstr = ''
@@ -302,10 +322,10 @@ local function update()
         v2[1] = {}
       end
     end
-    if inventory_address ~= 0 then
+    if inventory_address ~= nil and inventory_address ~= 0 then
       calculate_items_count(inventory_address, inventory_size, 2688)
     end
-    if storage_address ~= 0 then
+    if storage_address ~= nil and storage_address ~= 0 then
       calculate_items_count(storage_address, storage_size, 1920)
     end
     for _, v in ipairs(check_list) do
@@ -320,15 +340,15 @@ local function update()
           if v2[1][i] == nil then
             str = str .. string.format('\n　%s', v3.name)
             show_count = show_count + 1
-            if show_count == 10 then break end
+            if show_count == max_items_displayed then break end
           end
         end
         if #progstr > 0 then
           progstr = progstr .. '\n'
         end
         if #str > 0 then
-          if cnt + 10 < #v2[3] then
-            progstr = progstr .. string.format('%s收集进度: %d/%d\n未收集%s(显示前10个):', v2[4], cnt, #v2[3], v2[4]) .. str
+          if cnt + max_items_displayed < #v2[3] then
+            progstr = progstr .. string.format('%s收集进度: %d/%d\n未收集%s(显示前%d个):', v2[4], cnt, #v2[3], v2[4], max_items_displayed) .. str
           else
             progstr = progstr .. string.format('%s收集进度: %d/%d\n未收集%s:', v2[4], cnt, #v2[3], v2[4]) .. str
           end

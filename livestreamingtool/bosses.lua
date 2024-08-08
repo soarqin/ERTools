@@ -5,6 +5,7 @@ local max_display_count = config.bosses.max_display_count
 -- addresses
 local address_table = nil
 local event_flag_address = 0
+local game_version = 0
 
 -- boss data
 local regions = {}
@@ -112,7 +113,11 @@ end
 local function get_map_area()
   local addr = process.read_u64(address_table.field_area_addr)
   if addr == 0 then return 0 end
-  return process.read_u32(addr + 0xE8)
+  if game_version < 0x20200 then
+    return process.read_u32(addr + 0xE4)
+  else
+    return process.read_u32(addr + 0xE8)
+  end
 end
 
 local function update()
@@ -130,6 +135,7 @@ local function update()
     last_running = true
     last_count = -1
     address_table = process.get_address_table()
+    game_version = process.game_version()
   end
   update_memory_address()
   local count = 0
@@ -186,7 +192,7 @@ local function update()
     if count == last_count and r == last_region then return end
     last_count = count
     last_region = r
-    outstr = outstr .. string.format('全Boss: %d/%d %d\n', count, boss_count, area)
+    outstr = outstr .. string.format('全Boss: %d/%d\n', count, boss_count)
     if r ~= nil then
       outstr = outstr .. string.format('%s: %d/%d\n', region_name[r], rcount, #bosses[r])
       for _, v in pairs(region_bosses) do
