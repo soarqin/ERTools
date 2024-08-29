@@ -34,6 +34,10 @@ uv.new_signal():start('sighup', function(...) os.exit(-1) end)
 -- add update timer
 uv.new_timer():start(0, config.update_interval, function()
   process.update()
+  local addr = process.read_u64(process.get_address_table().game_data_man_addr)
+  if addr == 0 then return end
+  igt = process.read_u32(addr + 0xA0)
+  if igt == 0 then return end
   for _, plugin in pairs(plugins) do
     plugin.update()
   end
