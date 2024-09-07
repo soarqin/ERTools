@@ -1,4 +1,9 @@
-local category_name = config.items2.category
+local category_set = {}
+local category_count = 0
+for token in string.gmatch(config.items2.category, "[^%s]+") do
+   category_set[token] = true
+   category_count = category_count + 1
+end
 
 local cjson = require('cjson')
 
@@ -21,7 +26,7 @@ local check_list = {{},{},{},{},{},{},{},{},{},{}}
 check_list[1][#check_list[1] + 1] = {{}, function(id) return weapons_by_id[id // 10000 * 10000] end, weapons, '武器'}
 
 for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons.json'))) do
-  if category_name == v.category then
+  if category_set[v.category] then
     local index = #categories + 1
     categories[index] = v.category
     for _, v2 in ipairs(v.items) do
@@ -33,9 +38,13 @@ for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapo
 end
 
 for _, v in ipairs(cjson.decode(util.read_file('data/'..config.language..'/weapons_dlc1.json'))) do
-  if category_name == v.category then
+  if category_set[v.category] then
     local index = #categories + 1
-    categories[index] = 'DLC'
+    if category_count > 1 then
+      categories[index] = 'DLC' .. v.category
+    else
+      categories[index] = 'DLC'
+    end
     for _, v2 in ipairs(v.items) do
       local windex = #weapons + 1
       weapons[windex] = { id = v2.id, name = v2.name, category = index }
