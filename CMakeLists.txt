@@ -22,3 +22,5 @@ add_subdirectory(bingotool)
 add_subdirectory(livestreamingtool)
 add_subdirectory(saveimporter)
 add_subdirectory(flagchecker)
+add_subdirectory(imepatcher)
+

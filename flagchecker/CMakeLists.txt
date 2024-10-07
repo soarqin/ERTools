@@ -7,6 +7,7 @@ option(wxWidgets_STATIC "wxWidgets link static libaries" ON)
 # find wxWidget
 if(wxWidgets_PREFIX)
     set(wxWidgets_CONFIG_OPTIONS --prefix=${wxWidgets_PREFIX})
+    set(wxWidgets_ROOT_DIR ${wxWidgets_PREFIX})
 endif()
 set(wxWidgets_USE_UNICODE ON)
 set(wxWidgets_USE_STATIC ${wxWidgets_STATIC})

@@ -343,7 +343,7 @@ static int mainLoop() {
         });
     }
 
-    if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
+    if (!SDL_Init(SDL_INIT_VIDEO)) {
         printf("SDL could not be initialized!\n"
                "SDL_Error: %s\n", SDL_GetError());
         return 0;
@@ -390,9 +390,9 @@ static int mainLoop() {
                                 goto QUIT;
                             case 9:
                                 if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), false);
                                 } else {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), true);
                                 }
                                 break;
                             default:
@@ -523,16 +523,16 @@ static int mainLoop() {
                                 goto QUIT;
                             case 9:
                                 if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), false);
                                     for (auto &w: gScoreWindows) {
-                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_FALSE);
-                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_FALSE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], false);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], false);
                                     }
                                 } else {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), true);
                                     for (auto &w: gScoreWindows) {
-                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_TRUE);
-                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_TRUE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], true);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], true);
                                     }
                                 }
                                 break;
@@ -661,16 +661,16 @@ static int mainLoop() {
                                 goto QUIT;
                             case 9:
                                 if (SDL_GetWindowFlags(gCells.window()) & SDL_WINDOW_ALWAYS_ON_TOP) {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_FALSE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), false);
                                     for (auto &w: gScoreWindows) {
-                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_FALSE);
-                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_FALSE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], false);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], false);
                                     }
                                 } else {
-                                    SDL_SetWindowAlwaysOnTop(gCells.window(), SDL_TRUE);
+                                    SDL_SetWindowAlwaysOnTop(gCells.window(), true);
                                     for (auto &w: gScoreWindows) {
-                                        SDL_SetWindowAlwaysOnTop(w.window[0], SDL_TRUE);
-                                        SDL_SetWindowAlwaysOnTop(w.window[1], SDL_TRUE);
+                                        SDL_SetWindowAlwaysOnTop(w.window[0], true);
+                                        SDL_SetWindowAlwaysOnTop(w.window[1], true);
                                     }
                                 }
                                 break;
