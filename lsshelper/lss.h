@@ -36,7 +36,7 @@ struct SplitTiming {
 
 class Lss {
 public:
-    explicit Lss(const wchar_t *filename);
+    int open(const wchar_t *filename);
     [[nodiscard]] inline bool loaded() const { return loaded_; }
     [[nodiscard]] inline const std::vector<SegNode> &segs() const { return segs_; }
     [[nodiscard]] inline const std::vector<SplitTiming> &splits() const { return splits_; }

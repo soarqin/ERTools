@@ -14,6 +14,7 @@
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
 #endif
+#include <wx/listctrl.h>
 
 namespace lss_helper {
 
@@ -25,7 +26,10 @@ public:
 private:
     void onLoad();
 
-    std::unique_ptr<lss::Lss> lss_;
+    std::unique_ptr<Lss> lss_;
+
+    wxListCtrl *segList_;
+    wxListBox *splitList_;
 };
 
 }

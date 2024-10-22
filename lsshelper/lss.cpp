@@ -19,15 +19,15 @@ inline std::string mapGameName(const std::string &name) {
     return "";
 }
 
-Lss::Lss(const wchar_t *filename) {
+int Lss::open(const wchar_t *filename) {
     loaded_ = false;
     auto result = doc_.load_file(filename);
     if (!result) {
-        return;
+        return -1;
     }
     auto gameName = mapGameName(doc_.child("Run").child("GameName").text().get());
     if (gameName.empty()) {
-        return;
+        return -2;
     }
     for (auto node: doc_.select_nodes("/Run/Segments/Segment")) {
         auto segment = node.node();
@@ -55,6 +55,7 @@ Lss::Lss(const wchar_t *filename) {
         }
     }
     loaded_ = true;
+    return 0;
 }
 
 }
