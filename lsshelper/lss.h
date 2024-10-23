@@ -24,29 +24,38 @@ struct SegNode {
     }
 };
 
-struct SplitType {
+struct SplitNode {
+    std::string when;
     std::string type;
-    std::vector<pugi::xml_node> nodes;
-};
+    pugi::xml_node split;
+    pugi::xml_node seg;
 
-struct SplitTiming {
-    std::string type;
-    std::vector<SplitType> splitTypes;
+    inline void assign(pugi::xml_node sg) const {
+        const_cast<SplitNode*>(this)->seg = sg;
+    }
 };
 
 class Lss {
 public:
     int open(const wchar_t *filename);
+    bool save();
     [[nodiscard]] inline bool loaded() const { return loaded_; }
+    [[nodiscard]] inline const std::string &gameName() const { return gameName_; }
     [[nodiscard]] inline const std::vector<SegNode> &segs() const { return segs_; }
-    [[nodiscard]] inline const std::vector<SplitTiming> &splits() const { return splits_; }
+    [[nodiscard]] inline const std::vector<SplitNode> &splits() const { return splits_; }
+
+private:
+    void makeBackup();
 
 private:
     pugi::xml_document doc_;
 
+    std::wstring filename_;
+
     bool loaded_ = false;
+    std::string gameName_;
     std::vector<SegNode> segs_;
-    std::vector<SplitTiming> splits_;
+    std::vector<SplitNode> splits_;
 };
 
 }

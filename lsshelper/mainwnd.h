@@ -9,6 +9,7 @@
 #pragma once
 
 #include "lss.h"
+#include "enums.h"
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
@@ -25,11 +26,15 @@ public:
 
 private:
     void onLoad();
+    void assignButtonClicked();
+    void removeButtonClicked();
 
-    std::unique_ptr<Lss> lss_;
+private:
+    Lss lss_;
+    Enums enums_;
 
     wxListCtrl *segList_;
-    wxListBox *splitList_;
+    wxListCtrl *splitList_;
 };
 
 }

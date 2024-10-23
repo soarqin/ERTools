@@ -9,14 +9,18 @@
 #include "mainwnd.h"
 
 #include "lss.h"
+#include "enums.h"
+
+#include <fmt/format.h>
 
 namespace lss_helper {
 
 MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
-                             wxDefaultPosition, wxSize(800, 450)) {
+                             wxDefaultPosition, wxSize(1200, 800)) {
     auto *bar = new wxMenuBar();
     auto *file = new wxMenu();
     file->Append(wxID_OPEN, wxT("&Open...\tCtrl-O"), wxT("Open a file"));
+    file->Append(wxID_SAVE, wxT("&Apply Changes\tCtrl-S"), wxT("Apply changes to current lss file, backup will be created"));
     file->Append(wxID_EXIT, wxT("E&xit\tAlt-X"), wxT("Quit this program"));
     bar->Append(file, wxT("&File"));
 
@@ -28,20 +32,47 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
 
     auto *sizer = new wxBoxSizer(wxHORIZONTAL);
     wxFrame::SetSizer(sizer);
-    segList_ = new wxListCtrl(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_NO_SORT_HEADER | wxLC_SINGLE_SEL);
-    segList_->InsertColumn(0, wxT("Name"));
-    segList_->InsertColumn(1, wxT("Assigned Split"));
-    segList_->SetColumnWidth(0, 120);
-    segList_->SetColumnWidth(1, 150);
-    sizer->Add(segList_, 1, wxEXPAND);
 
-    splitList_ = new wxListBox(this, wxID_ANY, wxDefaultPosition, wxDefaultSize);
+    /* Left */
+    segList_ = new wxListCtrl(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
+
+    /* Middle */
+    auto *middlePanel = new wxPanel(this, wxID_ANY);
+    auto *middleSizer = new wxBoxSizer(wxVERTICAL);
+    middlePanel->SetSizer(middleSizer);
+    auto *toLeft = new wxButton(middlePanel, wxID_ANY, wxT(" << "), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT);
+    auto *toRight = new wxButton(middlePanel, wxID_ANY, wxT(" >> "), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT);
+    middleSizer->Add(toLeft, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(toRight, 0, wxALIGN_CENTER_HORIZONTAL);
+
+    /* Right */
+    splitList_ = new wxListCtrl(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
+
+    sizer->Add(segList_, 1, wxEXPAND);
+    sizer->Add(middlePanel, 0, wxALIGN_CENTER_VERTICAL);
     sizer->Add(splitList_, 1, wxEXPAND);
+
+    segList_->AppendColumn(wxT("Segment Name"));
+    segList_->AppendColumn(wxT("Assigned Split"));
+    segList_->SetColumnWidth(0, 150);
+    segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
+
+    splitList_->AppendColumn(wxT("When"));
+    splitList_->AppendColumn(wxT("Type"));
+    splitList_->AppendColumn(wxT("Split"));
+    splitList_->SetColumnWidth(0, 150);
+    splitList_->SetColumnWidth(1, 100);
+    splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 
     Bind(wxEVT_MENU, [&](wxCommandEvent &event) {
         switch (event.GetId()) {
             case wxID_OPEN: {
                 onLoad();
+                break;
+            }
+            case wxID_SAVE: {
+                lss_.save();
                 break;
             }
             case wxID_EXIT:
@@ -57,6 +88,12 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
                 break;
         }
     });
+    toLeft->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
+        assignButtonClicked();
+    });
+    toRight->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
+        removeButtonClicked();
+    });
 }
 
 MainWnd::~MainWnd() = default;
@@ -71,8 +108,7 @@ void MainWnd::onLoad() {
     if (path.empty()) {
         return;
     }
-    lss_ = std::make_unique<Lss>();
-    auto res = lss_->open(path.wc_str());
+    auto res = lss_.open(path.wc_str());
     switch (res) {
         case -1: {
             wxMessageBox(wxT("Invalid lss file"), wxT("Error"), wxICON_ERROR);
@@ -84,31 +120,66 @@ void MainWnd::onLoad() {
         }
         default: break;
     }
+    enums_.load(lss_.gameName());
 
+    const auto &segs = lss_.segs();
     segList_->DeleteAllItems();
-    const auto &segs = lss_->segs();
     size_t sz = segs.size();
-    bool hasSplit = false;
     for (size_t i = 0; i < sz; i++) {
         const auto &seg = segs[i];
-        auto index = segList_->InsertItem(segList_->GetItemCount(), wxString::FromUTF8(seg.seg.child("Name").text().get()));
-        if (seg.split) {
-            segList_->SetItem(index, 1, wxString::FromUTF8(seg.split.text().get()));
-            hasSplit = true;
-        }
-        segList_->SetItemData(index, (long)i);
+        auto index = segList_->InsertItem(long(i), wxString::FromUTF8(seg.seg.child("Name").text().get()));
+        if (seg.split) segList_->SetItem(index, 1, wxString::FromUTF8(seg.split.text().get()));
+        segList_->SetItemData(index, long(i));
     }
-    segList_->SetColumnWidth(0, sz > 0 ? wxLIST_AUTOSIZE : 120);
-    segList_->SetColumnWidth(1, hasSplit ? wxLIST_AUTOSIZE : 150);
+    segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
 
-    splitList_->Clear();
-    for (const auto &split: lss_->splits()) {
-        const auto &timingType = split.type;
-        for (const auto &stype: split.splitTypes) {
-            const auto &splitType = stype.type;
-            for (const auto &node: stype.nodes) {
-                splitList_->Append(wxString::Format(wxT("[%s/%s] %s"), wxString::FromUTF8(timingType.c_str()), wxString::FromUTF8(splitType.c_str()), wxString::FromUTF8(node.text().get())));
-            }
+    splitList_->DeleteAllItems();
+    const auto &splits = lss_.splits();
+    auto sz1 = splits.size();
+    for (size_t i = 0; i < sz1; i++) {
+        const auto &split = splits[i];
+        auto index = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(split.when));
+        splitList_->SetItem(index, 1, wxString::FromUTF8(split.type));
+        auto splitName = split.split.text().get();
+        const auto &e = enums_(split.type, splitName);
+        splitList_->SetItem(index, 2, wxString::FromUTF8(e.disp.empty() ? splitName : e.disp));
+        splitList_->SetItemData(index, long(i));
+        splitList_->SetItemTextColour(index, split.seg ? wxColour(96, 96, 96) : splitList_->GetTextColour());
+    }
+    splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
+}
+
+void MainWnd::assignButtonClicked() {
+    auto toIndex = segList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    if (toIndex == -1) return;
+    auto fromIndex = splitList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    if (fromIndex == -1) return;
+    auto index = segList_->GetItemData(toIndex);
+    auto sindex = splitList_->GetItemData(fromIndex);
+    auto &segData = lss_.segs()[index];
+    auto &splitData = lss_.splits()[sindex];
+    segData.assign(splitData.split);
+    splitData.assign(segData.seg);
+    segList_->SetItem(toIndex, 1, wxString::FromUTF8(fmt::format("{}/{}/", splitData.when, splitData.type)) + splitList_->GetItemText(fromIndex, 2));
+    splitList_->SetItemTextColour(fromIndex, wxColour(96, 96, 96));
+}
+
+void MainWnd::removeButtonClicked() {
+    auto toIndex = segList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    if (toIndex == -1) return;
+    auto index = segList_->GetItemData(toIndex);
+    auto &segData = lss_.segs()[index];
+    segData.assign(pugi::xml_node());
+    segList_->SetItem(toIndex, 1, wxEmptyString);
+    const auto &splits = lss_.splits();
+    auto cnt = splitList_->GetItemCount();
+    for (long i = 0; i < cnt; i++) {
+        auto data = splitList_->GetItemData(i);
+        const auto &split = splits[data];
+        if (split.seg == segData.seg) {
+            split.assign(pugi::xml_node());
+            splitList_->SetItemTextColour(i, splitList_->GetTextColour());
+            break;
         }
     }
 }
