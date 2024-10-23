@@ -9,7 +9,6 @@
 #pragma once
 
 #include "lss.h"
-#include "enums.h"
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
@@ -31,7 +30,6 @@ private:
 
 private:
     Lss lss_;
-    Enums enums_;
 
     wxListCtrl *segList_;
     wxListCtrl *splitList_;

@@ -120,7 +120,6 @@ void MainWnd::onLoad() {
         }
         default: break;
     }
-    enums_.load(lss_.gameName());
 
     const auto &segs = lss_.segs();
     segList_->DeleteAllItems();
@@ -128,7 +127,7 @@ void MainWnd::onLoad() {
     for (size_t i = 0; i < sz; i++) {
         const auto &seg = segs[i];
         auto index = segList_->InsertItem(long(i), wxString::FromUTF8(seg.seg.child("Name").text().get()));
-        if (seg.split) segList_->SetItem(index, 1, wxString::FromUTF8(seg.split.text().get()));
+        if (!seg.split.empty()) segList_->SetItem(index, 1, wxString::FromUTF8(seg.split));
         segList_->SetItemData(index, long(i));
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
@@ -140,11 +139,9 @@ void MainWnd::onLoad() {
         const auto &split = splits[i];
         auto index = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(split.when));
         splitList_->SetItem(index, 1, wxString::FromUTF8(split.type));
-        auto splitName = split.split.text().get();
-        const auto &e = enums_(split.type, splitName);
-        splitList_->SetItem(index, 2, wxString::FromUTF8(e.disp.empty() ? splitName : e.disp));
+        splitList_->SetItem(index, 2, wxString::FromUTF8(split.displayName));
         splitList_->SetItemData(index, long(i));
-        splitList_->SetItemTextColour(index, split.seg ? wxColour(96, 96, 96) : splitList_->GetTextColour());
+        splitList_->SetItemTextColour(index, split.assigned != SplitNode::kFree ? wxColour(96, 96, 96) : splitList_->GetTextColour());
     }
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 }
@@ -158,9 +155,9 @@ void MainWnd::assignButtonClicked() {
     auto sindex = splitList_->GetItemData(fromIndex);
     auto &segData = lss_.segs()[index];
     auto &splitData = lss_.splits()[sindex];
-    segData.assign(splitData.split);
-    splitData.assign(segData.seg);
-    segList_->SetItem(toIndex, 1, wxString::FromUTF8(fmt::format("{}/{}/", splitData.when, splitData.type)) + splitList_->GetItemText(fromIndex, 2));
+    segData.assign(splitData.fullDisplayName);
+    splitData.setAssigned(SplitNode::kAssigned);
+    segList_->SetItem(toIndex, 1, wxString::FromUTF8(splitData.fullDisplayName));
     splitList_->SetItemTextColour(fromIndex, wxColour(96, 96, 96));
 }
 
@@ -169,19 +166,19 @@ void MainWnd::removeButtonClicked() {
     if (toIndex == -1) return;
     auto index = segList_->GetItemData(toIndex);
     auto &segData = lss_.segs()[index];
-    segData.assign(pugi::xml_node());
     segList_->SetItem(toIndex, 1, wxEmptyString);
     const auto &splits = lss_.splits();
     auto cnt = splitList_->GetItemCount();
     for (long i = 0; i < cnt; i++) {
         auto data = splitList_->GetItemData(i);
         const auto &split = splits[data];
-        if (split.seg == segData.seg) {
-            split.assign(pugi::xml_node());
+        if (split.fullDisplayName == segData.split) {
+            split.setAssigned(SplitNode::kFree);
             splitList_->SetItemTextColour(i, splitList_->GetTextColour());
             break;
         }
     }
+    segData.assign("");
 }
 
 }

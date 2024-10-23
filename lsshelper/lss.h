@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "enums.h"
+
 #include <pugixml.hpp>
 #include <vector>
 #include <tuple>
@@ -17,22 +19,32 @@ namespace lss_helper {
 
 struct SegNode {
     pugi::xml_node seg;
-    pugi::xml_node split;
+    std::string split;
 
-    inline void assign(pugi::xml_node sp) const {
+    inline void assign(const std::string &sp) const {
         const_cast<SegNode*>(this)->split = sp;
     }
 };
 
 struct SplitNode {
+    enum {
+        kFree = 0,
+        kAssigned = 1,
+        kReserved = 2,
+    };
     std::string when;
     std::string type;
-    pugi::xml_node split;
-    pugi::xml_node seg;
+    std::string xsiType;
+    std::string name;
+    std::string displayName;
+    std::string fullDisplayName;
 
-    inline void assign(pugi::xml_node sg) const {
-        const_cast<SplitNode*>(this)->seg = sg;
+    int assigned = kFree;
+
+    inline void setAssigned(int a) const {
+        const_cast<SplitNode*>(this)->assigned = a;
     }
+    void buildDisplayName();
 };
 
 class Lss {
