@@ -127,10 +127,11 @@ void MainWnd::onLoad() {
     for (size_t i = 0; i < sz; i++) {
         const auto &seg = segs[i];
         auto index = segList_->InsertItem(long(i), wxString::FromUTF8(seg.seg.child("Name").text().get()));
-        if (!seg.split.empty()) segList_->SetItem(index, 1, wxString::FromUTF8(seg.split));
+        if (!seg.split.empty()) segList_->SetItem(index, 1, wxString::FromUTF8(seg.splitName));
         segList_->SetItemData(index, long(i));
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
+    segList_->SetItemState(0, wxLIST_STATE_SELECTED, wxLIST_STATE_SELECTED);
 
     splitList_->DeleteAllItems();
     const auto &splits = lss_.splits();
@@ -141,7 +142,7 @@ void MainWnd::onLoad() {
         splitList_->SetItem(index, 1, wxString::FromUTF8(split.type));
         splitList_->SetItem(index, 2, wxString::FromUTF8(split.displayName));
         splitList_->SetItemData(index, long(i));
-        splitList_->SetItemTextColour(index, split.assigned != SplitNode::kFree ? wxColour(96, 96, 96) : splitList_->GetTextColour());
+        splitList_->SetItemTextColour(index, split.seg ? wxColour(96, 96, 96) : splitList_->GetTextColour());
     }
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 }
@@ -155,10 +156,16 @@ void MainWnd::assignButtonClicked() {
     auto sindex = splitList_->GetItemData(fromIndex);
     auto &segData = lss_.segs()[index];
     auto &splitData = lss_.splits()[sindex];
-    segData.assign(splitData.fullDisplayName);
-    splitData.setAssigned(SplitNode::kAssigned);
+    segData.assign(splitData.split, splitData.fullDisplayName);
+    splitData.assign(segData.seg);
     segList_->SetItem(toIndex, 1, wxString::FromUTF8(splitData.fullDisplayName));
     splitList_->SetItemTextColour(fromIndex, wxColour(96, 96, 96));
+    while (++toIndex < segList_->GetItemCount()) {
+        if (lss_.segs()[segList_->GetItemData(toIndex)].split.empty()) {
+            segList_->SetItemState(toIndex, wxLIST_STATE_SELECTED, wxLIST_STATE_SELECTED);
+            break;
+        }
+    }
 }
 
 void MainWnd::removeButtonClicked() {
@@ -172,13 +179,13 @@ void MainWnd::removeButtonClicked() {
     for (long i = 0; i < cnt; i++) {
         auto data = splitList_->GetItemData(i);
         const auto &split = splits[data];
-        if (split.fullDisplayName == segData.split) {
-            split.setAssigned(SplitNode::kFree);
+        if (split.split == segData.split) {
+            split.assign(pugi::xml_node());
             splitList_->SetItemTextColour(i, splitList_->GetTextColour());
             break;
         }
     }
-    segData.assign("");
+    segData.assign(pugi::xml_node(), "");
 }
 
 }

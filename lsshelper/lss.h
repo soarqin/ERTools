@@ -19,19 +19,16 @@ namespace lss_helper {
 
 struct SegNode {
     pugi::xml_node seg;
-    std::string split;
+    pugi::xml_node split;
+    std::string splitName;
 
-    inline void assign(const std::string &sp) const {
-        const_cast<SegNode*>(this)->split = sp;
+    inline void assign(const pugi::xml_node &n, const std::string &name) const {
+        const_cast<SegNode*>(this)->split = n;
+        const_cast<SegNode*>(this)->splitName = name;
     }
 };
 
 struct SplitNode {
-    enum {
-        kFree = 0,
-        kAssigned = 1,
-        kReserved = 2,
-    };
     std::string when;
     std::string type;
     std::string xsiType;
@@ -39,10 +36,11 @@ struct SplitNode {
     std::string displayName;
     std::string fullDisplayName;
 
-    int assigned = kFree;
+    pugi::xml_node split;
+    pugi::xml_node seg;
 
-    inline void setAssigned(int a) const {
-        const_cast<SplitNode*>(this)->assigned = a;
+    inline void assign(const pugi::xml_node &n) const {
+        const_cast<SplitNode*>(this)->seg = n;
     }
     void buildDisplayName();
 };

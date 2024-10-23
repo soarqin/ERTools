@@ -19,6 +19,8 @@ namespace lss_helper {
 static Enums sEnums;
 
 void SplitNode::buildDisplayName() {
+    name = split.text().get();
+    xsiType = split.attribute("xsi:type").as_string();
     const auto &e = sEnums(type, name);
     displayName = e.name.empty() ? name : e.disp;
     fullDisplayName = fmt::format("{}/{}/{}", when, type, displayName);
@@ -56,12 +58,10 @@ int Lss::open(const wchar_t *filename) {
         for (auto node2: node.node().select_nodes("Children/HierarchicalSplitTypeViewModel")) {
             auto splitType = node2.node().child(nodeName.c_str()).text().get();
             for (auto node3: node2.node().select_nodes("Children/HierarchicalSplitViewModel")) {
-                auto split = node3.node().child("Split");
                 auto &snode = splits_.emplace_back();
+                snode.split = node3.node().child("Split");
                 snode.when = timingType;
                 snode.type = splitType;
-                snode.xsiType = split.attribute("xsi:type").as_string();
-                snode.name = split.text().get();
                 snode.buildDisplayName();
             }
         }
@@ -69,6 +69,7 @@ int Lss::open(const wchar_t *filename) {
 
     pugi::xml_document doch;
     if (!doch.load_file((filename_ + L".helper").c_str())) return 0;
+/*
     auto unusedSplits = doch.child("UnusedSplits");
     if (!unusedSplits) return 0;
     auto gameName = unusedSplits.attribute("GameName").as_string();
@@ -81,6 +82,7 @@ int Lss::open(const wchar_t *filename) {
         snode.name = split.attribute("Name").as_string();
         snode.buildDisplayName();
     }
+*/
     loaded_ = true;
     return 0;
 }
@@ -90,48 +92,31 @@ bool Lss::save() {
     auto splitRootNode = doc_.select_node(fmt::format("/Run/AutoSplitterSettings/MainViewModel/{}ViewModel/Splits", gameName_).c_str()).node();
     if (!splitRootNode) return true;
 
-    makeBackup();
-    auto unusedSplits = doch.append_child("UnusedSplits");
-    unusedSplits.append_attribute("GameName").set_value(gameName_.c_str());
-    for (auto &split: splits_) {
-        if (split.assigned != SplitNode::kFree) {
-            auto timingTypeNode = splitRootNode.select_node(fmt::format("HierarchicalTimingTypeViewModel[TimingType='{}']", split.when).c_str()).node();
-            if (!timingTypeNode) {
-                auto tnode = splitRootNode.append_child("HierarchicalTimingTypeViewModel");
-                tnode.append_child("TimingType").text().set(split.when.c_str());
-                timingTypeNode = tnode;
-            }
-            auto splitTypeNode = timingTypeNode.select_node(fmt::format("Children/HierarchicalSplitTypeViewModel[{}SplitType='{}']", gameName_, split.type).c_str()).node();
-            if (!splitTypeNode) {
-                auto stnode = timingTypeNode.append_child("Children").append_child("HierarchicalSplitTypeViewModel");
-                stnode.append_child(fmt::format("{}SplitType", gameName_).c_str()).text().set(split.type.c_str());
-                splitTypeNode = stnode;
-            }
-            auto snode = splitTypeNode.select_node(fmt::format("Children/HierarchicalSplitViewModel[Split='{}']", split.name).c_str()).node();
-            if (!snode) {
-                snode = splitTypeNode.append_child("Children").append_child("HierarchicalSplitViewModel").append_child("Split");
-                snode.append_attribute("xsi:type").set_value(split.xsiType.c_str());
-                snode.text().set(split.name.c_str());
-            }
-        } else {
-            auto snode = unusedSplits.append_child("Split");
-            snode.append_attribute("When").set_value(split.when.c_str());
-            snode.append_attribute("Type").set_value(split.type.c_str());
-            snode.append_attribute("XsiType").set_value(split.xsiType.c_str());
-            snode.append_attribute("Name").set_value(split.name.c_str());
+    auto assignments = doch.append_child("Assignments");
+    assignments.append_attribute("GameName").set_value(gameName_.c_str());
+    size_t sz = splits_.size();
+    for (size_t i = 0; i < sz; i++) {
+        auto &split = splits_[i];
+        if (split.seg) {
             auto splitNode = splitRootNode.select_node(fmt::format("HierarchicalTimingTypeViewModel[TimingType='{}']/Children/HierarchicalSplitTypeViewModel[{}SplitType='{}']/Children/HierarchicalSplitViewModel[Split='{}']", split.when, gameName_, split.type, split.name).c_str()).node();
             if (splitNode) {
-                auto parent = splitNode.parent();
-                parent.remove_child(splitNode);
-                if (parent.children().empty()) {
-                    parent.parent().parent().remove_child(parent.parent());
+                auto snode = assignments.append_copy(split.split);
+                size_t sz2 = segs_.size();
+                for (size_t j = 0; j < sz2; j++) {
+                    if (segs_[j].seg == split.seg) {
+                        snode.append_attribute("SegIndex").set_value(j);
+                        snode.append_attribute("SegName").set_value(segs_[j].seg.child("Name").text().get());
+                        break;
+                    }
                 }
+                snode.append_attribute("When").set_value(split.when.c_str());
+                snode.append_attribute("Type").set_value(split.type.c_str());
             }
         }
     }
     auto dochFilename = filename_ + L".helper";
     doch.save_file(dochFilename.c_str(), "  ");
-    doc_.save_file(filename_.c_str(), "  ");
+    // doc_.save_file(filename_.c_str(), "  ");
     return false;
 }
 
