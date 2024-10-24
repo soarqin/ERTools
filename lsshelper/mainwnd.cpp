@@ -8,10 +8,10 @@
 
 #include "mainwnd.h"
 
+#include "splitdlg.h"
+
 #include "lss.h"
 #include "enums.h"
-
-#include <fmt/format.h>
 
 namespace lss_helper {
 
@@ -34,23 +34,29 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     wxFrame::SetSizer(sizer);
 
     /* Left */
-    segList_ = new wxListCtrl(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
+    segList_ = new wxListView(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
 
     /* Middle */
     auto *middlePanel = new wxPanel(this, wxID_ANY);
     auto *middleSizer = new wxBoxSizer(wxVERTICAL);
     middlePanel->SetSizer(middleSizer);
-    auto *toLeft = new wxButton(middlePanel, wxID_ANY, wxT(" << "), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT);
-    auto *toRight = new wxButton(middlePanel, wxID_ANY, wxT(" >> "), wxDefaultPosition, wxDefaultSize, wxBU_EXACTFIT);
-    middleSizer->Add(toLeft, 0, wxALIGN_CENTER_HORIZONTAL);
-    middleSizer->AddSpacer(10);
-    middleSizer->Add(toRight, 0, wxALIGN_CENTER_HORIZONTAL);
+    toLeft_ = new wxButton(middlePanel, wxID_ANY, wxT(" << "), wxDefaultPosition, wxSize(50, 30));
+    toRight_ = new wxButton(middlePanel, wxID_ANY, wxT(" >> "), wxDefaultPosition, wxSize(50, 30));
+    newSplit_ = new wxButton(middlePanel, wxID_ANY, wxT(" ++ "), wxDefaultPosition, wxSize(50, 30));
+    middleSizer->Add(toLeft_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(30);
+    middleSizer->Add(toRight_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(30);
+    middleSizer->Add(newSplit_, 0, wxALIGN_CENTER_HORIZONTAL);
+    toLeft_->Enable(false);
+    toRight_->Enable(false);
+    newSplit_->Enable(false);
 
     /* Right */
-    splitList_ = new wxListCtrl(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
+    splitList_ = new wxListView(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
 
     sizer->Add(segList_, 1, wxEXPAND);
-    sizer->Add(middlePanel, 0, wxALIGN_CENTER_VERTICAL);
+    sizer->Add(middlePanel, 0, wxEXPAND);
     sizer->Add(splitList_, 1, wxEXPAND);
 
     segList_->AppendColumn(wxT("Segment Name"));
@@ -88,11 +94,38 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
                 break;
         }
     });
-    toLeft->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
+    segList_->Bind(wxEVT_LIST_ITEM_SELECTED, [&](wxListEvent &event) {
+        auto index = event.GetIndex();
+        auto enable = index >= 0;
+        toLeft_->Enable(enable && splitList_->GetFirstSelected() >= 0);
+        auto data = segList_->GetItemData(index);
+        auto &seg = lss_.segs()[data];
+        toRight_->Enable(seg.split);
+        newSplit_->Enable(enable);
+    });
+    segList_->Bind(wxEVT_LIST_ITEM_DESELECTED, [&](wxListEvent &event) {
+        toLeft_->Enable(false);
+        toRight_->Enable(false);
+        newSplit_->Enable(false);
+    });
+    splitList_->Bind(wxEVT_LIST_ITEM_SELECTED, [&](wxListEvent &event) {
+        auto index = event.GetIndex();
+        auto enable = index >= 0;
+        toLeft_->Enable(enable && segList_->GetFirstSelected() >= 0);
+    });
+    splitList_->Bind(wxEVT_LIST_ITEM_DESELECTED, [&](wxListEvent &event) {
+        toLeft_->Enable(false);
+    });
+    toLeft_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
         assignButtonClicked();
     });
-    toRight->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
+    toRight_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
         removeButtonClicked();
+    });
+    newSplit_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
+        auto *dlg = new SplitDlg(this);
+        dlg->ShowModal();
+        dlg->Destroy();
     });
 }
 
@@ -131,7 +164,7 @@ void MainWnd::onLoad() {
         segList_->SetItemData(index, long(i));
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
-    segList_->SetItemState(0, wxLIST_STATE_SELECTED, wxLIST_STATE_SELECTED);
+    segList_->Select(0);
 
     splitList_->DeleteAllItems();
     const auto &splits = lss_.splits();
@@ -148,31 +181,48 @@ void MainWnd::onLoad() {
 }
 
 void MainWnd::assignButtonClicked() {
-    auto toIndex = segList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    auto toIndex = segList_->GetFirstSelected();
     if (toIndex == -1) return;
-    auto fromIndex = splitList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    auto fromIndex = splitList_->GetFirstSelected();
     if (fromIndex == -1) return;
     auto index = segList_->GetItemData(toIndex);
     auto sindex = splitList_->GetItemData(fromIndex);
-    auto &segData = lss_.segs()[index];
-    auto &splitData = lss_.splits()[sindex];
+    const auto &segs = lss_.segs();
+    auto &segData = segs[index];
+    const auto &splits = lss_.splits();
+    auto &splitData = splits[sindex];
+    if (splitData.seg) {
+        auto sz = segList_->GetItemCount();
+        for (int i = 0; i < sz; i++) {
+            auto data = segList_->GetItemData(i);
+            const auto &seg = segs[data];
+            if (seg.seg == splitData.seg) {
+                seg.assign(pugi::xml_node(), "");
+                segList_->SetItem(i, 1, wxEmptyString);
+                break;
+            }
+        }
+        splitList_->SetItemTextColour(fromIndex, splitList_->GetTextColour());
+    }
     segData.assign(splitData.split, splitData.fullDisplayName);
     splitData.assign(segData.seg);
     segList_->SetItem(toIndex, 1, wxString::FromUTF8(splitData.fullDisplayName));
     splitList_->SetItemTextColour(fromIndex, wxColour(96, 96, 96));
-    while (++toIndex < segList_->GetItemCount()) {
-        if (lss_.segs()[segList_->GetItemData(toIndex)].split.empty()) {
-            segList_->SetItemState(toIndex, wxLIST_STATE_SELECTED, wxLIST_STATE_SELECTED);
+    auto segCnt = segList_->GetItemCount();
+    while (++toIndex < segCnt) {
+        if (segs[segList_->GetItemData(toIndex)].split.empty()) {
+            segList_->Select(toIndex);
             break;
         }
     }
 }
 
 void MainWnd::removeButtonClicked() {
-    auto toIndex = segList_->GetNextItem(-1, wxLIST_NEXT_ALL, wxLIST_STATE_SELECTED);
+    auto toIndex = segList_->GetFirstSelected();
     if (toIndex == -1) return;
     auto index = segList_->GetItemData(toIndex);
     auto &segData = lss_.segs()[index];
+    if (!segData.split) return;
     segList_->SetItem(toIndex, 1, wxEmptyString);
     const auto &splits = lss_.splits();
     auto cnt = splitList_->GetItemCount();

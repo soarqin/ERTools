@@ -31,8 +31,9 @@ private:
 private:
     Lss lss_;
 
-    wxListCtrl *segList_;
-    wxListCtrl *splitList_;
+    wxListView *segList_;
+    wxListView *splitList_;
+    wxButton *toLeft_, *toRight_, *newSplit_;
 };
 
 }

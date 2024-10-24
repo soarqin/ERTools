@@ -16,6 +16,7 @@
 namespace lss_helper {
 
 struct EnumData {
+    uint32_t flagId = 0;
     std::string name;
     std::string disp;
     std::string desc;
@@ -24,12 +25,14 @@ struct EnumData {
 class Enums {
 public:
     bool load(const std::string &gameName);
-    [[nodiscard]] const EnumData &operator()(const std::string &stype, uint32_t flagId) const;
     [[nodiscard]] const EnumData &operator()(const std::string &stype, const std::string &name) const;
+    [[nodiscard]] const std::vector<EnumData> &operator[](const std::string &stype) const;
 
 private:
-    std::unordered_map<std::string, std::unordered_map<uint32_t, std::vector<EnumData>>> enums_;
+    std::unordered_map<std::string, std::vector<EnumData>> enums_;
     std::unordered_map<std::string, const EnumData&> mapper_;
 };
+
+extern Enums gEnums;
 
 }

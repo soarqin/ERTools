@@ -9,6 +9,7 @@ include(${wxWidgets_USE_FILE})
 add_executable(${PROJECT_NAME} WIN32
     main.cpp
     mainwnd.cpp mainwnd.h
+    splitdlg.cpp splitdlg.h
     lss.cpp lss.h
     enums.cpp enums.h
 

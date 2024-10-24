@@ -16,12 +16,10 @@
 
 namespace lss_helper {
 
-static Enums sEnums;
-
 void SplitNode::buildDisplayName() {
     name = split.text().get();
     xsiType = split.attribute("xsi:type").as_string();
-    const auto &e = sEnums(type, name);
+    const auto &e = gEnums(type, name);
     displayName = e.name.empty() ? name : e.disp;
     fullDisplayName = fmt::format("{}/{}/{}", when, type, displayName);
 }
@@ -42,7 +40,7 @@ int Lss::open(const wchar_t *filename) {
     if (gameName_.empty()) {
         return -2;
     }
-    sEnums.load(gameName_);
+    gEnums.load(gameName_);
     filename_ = filename;
     for (auto node: doc_.select_nodes("/Run/Segments/Segment")) {
         auto segment = node.node();

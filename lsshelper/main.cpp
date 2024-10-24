@@ -20,7 +20,7 @@ public:
         freopen("CONOUT$", "w", stderr);
 #endif
 
-        MSWEnableDarkMode(wxApp::DarkMode_Auto);
+        // MSWEnableDarkMode(wxApp::DarkMode_Auto);
         wxInitAllImageHandlers();
         (new MainWnd)->Show(true);
         return true;
