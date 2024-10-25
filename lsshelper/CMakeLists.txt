@@ -20,7 +20,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
     FOLDER app)
 target_include_directories(${PROJECT_NAME} PRIVATE .)
-target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES} nlohmann_json::headers fmt::fmt pugixml::pugixml)
+target_link_libraries(${PROJECT_NAME} ${wxWidgets_LIBRARIES} nlohmann_json::headers fmt::fmt pugixml::pugixml rapidfuzz::rapidfuzz)
 if (wxWidgets_LIBRARIES MATCHES "_lib\/")
     target_link_libraries(${PROJECT_NAME} gdiplus msimg32)
 endif ()

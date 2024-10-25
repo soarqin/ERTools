@@ -16,18 +16,36 @@
 
 namespace lss_helper {
 
-void SplitNode::buildDisplayName() {
-    name = split.text().get();
-    xsiType = split.attribute("xsi:type").as_string();
-    const auto &e = gEnums(type, name);
-    displayName = e.name.empty() ? name : e.disp;
-    fullDisplayName = fmt::format("{}/{}/{}", when, type, displayName);
-}
-
 inline std::string mapGameName(const std::string &name) {
     if (name == "Elden Ring")
         return "EldenRing";
     return "";
+}
+
+inline const char *typeToXsiType(const std::string &type) {
+    if (type == "Grace")
+        return "Grace";
+    if (type == "Boss")
+        return "Boss";
+    if (type == "ItemPickup")
+        return "ItemPickup";
+    if (type == "Position")
+        return "Position";
+    if (type == "Flag")
+        return "xsd:unsignedInt";
+    return "";
+}
+
+inline std::wstring toWideString(const std::string &str) {
+    return wxString::FromUTF8(str).ToStdWstring();
+}
+
+void SplitNode::buildDisplayName() {
+    name = split.text().get();
+    xsiType = split.attribute("xsi:type").as_string();
+    const auto &e = gEnums(type, name);
+    displayName = toWideString(e.name.empty() ? name : e.disp);
+    fullDisplayName = toWideString(fmt::format("{}/{}/", when, type, e.name.empty() ? name : e.disp));
 }
 
 int Lss::open(const wchar_t *filename) {
@@ -114,10 +132,118 @@ bool Lss::save() {
     }
     auto dochFilename = filename_ + L".helper";
     doch.save_file(dochFilename.c_str(), "  ");
-    // doc_.save_file(filename_.c_str(), "  ");
-    return false;
+    if (changed_) {
+        // makeBackup();
+        try {
+            doc_.save_file(filename_.c_str());
+        } catch (const std::exception &e) {
+            fmt::print("Error saving file: {}\n", e.what());
+            return false;
+        }
+        changed_ = false;
+    }
+    return true;
 }
 
+const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::string &type, const std::string &name, bool &wasAppend) {
+    for (auto &split: splits_) {
+        if (split.name == name && split.when == when && split.type == type) {
+            wasAppend = false;
+            return &split;
+        }
+    }
+    auto splitsNode = ensureSplitParent(when, type);
+    auto splitNode = splitsNode.select_node(fmt::format("HierarchicalSplitViewModel[Split='{}']", name).c_str()).node();
+    if (splitNode) {
+        wasAppend = false;
+        return nullptr;
+    } else {
+        splitNode = splitsNode.append_child("HierarchicalSplitViewModel").append_child("Split");
+        const auto *xsiType = typeToXsiType(type);
+        splitNode.append_attribute("xsi:type").set_value(xsiType);
+        splitNode.text().set(name.c_str());
+        SplitNode newNode;
+        newNode.split = splitNode;
+        newNode.when = when;
+        newNode.type = type;
+        newNode.buildDisplayName();
+        splits_.emplace_back(std::move(newNode));
+        changed_ = true;
+        wasAppend = true;
+        return &splits_.back();
+    }
+}
+
+pugi::xml_node Lss::ensureSplitTree() {
+    auto runNode = doc_.child("Run");
+    auto autoSplitterSettingsNode = runNode.child("AutoSplitterSettings");
+    if (!autoSplitterSettingsNode) {
+        autoSplitterSettingsNode = runNode.append_child("AutoSplitterSettings");
+    }
+    auto mainViewModelNode = autoSplitterSettingsNode.child("MainViewModel");
+    if (!mainViewModelNode) {
+        mainViewModelNode = autoSplitterSettingsNode.append_child("MainViewModel");
+        mainViewModelNode.append_attribute("xmlns:xsd").set_value("http://www.w3.org/2001/XMLSchema");
+        mainViewModelNode.append_attribute("xmlns:xsi").set_value("http://www.w3.org/2001/XMLSchema-instance");
+    }
+    auto selectedGameNode = mainViewModelNode.child("SelectedGame");
+    if (!selectedGameNode) {
+        selectedGameNode = mainViewModelNode.append_child("SelectedGame");
+        selectedGameNode.text().set(gameName_.c_str());
+    }
+    auto gameNameViewNodeName = fmt::format("{}ViewModel", gameName_);
+    auto gameViewModelNode = mainViewModelNode.child(gameNameViewNodeName.c_str());
+    if (!gameViewModelNode) {
+        gameViewModelNode = mainViewModelNode.append_child(gameNameViewNodeName.c_str());
+    }
+    auto startAutomaticallyNode = gameViewModelNode.child("StartAutomatically");
+    if (!startAutomaticallyNode) {
+        startAutomaticallyNode = gameViewModelNode.append_child("StartAutomatically");
+        startAutomaticallyNode.text().set("true");
+    }
+    auto lockIgtToZeroNode = gameViewModelNode.child("LockIgtToZero");
+    if (!lockIgtToZeroNode) {
+        lockIgtToZeroNode = gameViewModelNode.append_child("LockIgtToZero");
+        lockIgtToZeroNode.text().set("false");
+    }
+    auto enabledRemoveSplitNode = gameViewModelNode.child("EnabledRemoveSplit");
+    if (!enabledRemoveSplitNode) {
+        enabledRemoveSplitNode = gameViewModelNode.append_child("EnabledRemoveSplit");
+        enabledRemoveSplitNode.text().set("false");
+    }
+    auto splitsNode = gameViewModelNode.child("Splits");
+    if (!splitsNode) {
+        splitsNode = gameViewModelNode.append_child("Splits");
+    }
+    return splitsNode;
+}
+
+pugi::xml_node Lss::ensureSplitParent(const std::string &when, const std::string &type) {
+    if (!splitTree_)
+        splitTree_ = ensureSplitTree();
+    auto splitsNode = splitTree_;
+    auto timingTypeViewModelNode = splitsNode.select_node(fmt::format("HierarchicalTimingTypeViewModel[TimingType='{}']", when).c_str()).node();
+    if (!timingTypeViewModelNode) {
+        timingTypeViewModelNode = splitsNode.append_child("HierarchicalTimingTypeViewModel");
+        timingTypeViewModelNode.append_child("TimingType").text().set(when.c_str());
+    }
+    auto childrenNode = timingTypeViewModelNode.child("Children");
+    if (!childrenNode) {
+        childrenNode = timingTypeViewModelNode.append_child("Children");
+    }
+    auto splitTypeViewModelNode = childrenNode.select_node(fmt::format("HierarchicalSplitTypeViewModel[{}SplitType='{}']", gameName_, type).c_str()).node();
+    if (!splitTypeViewModelNode) {
+        splitTypeViewModelNode = childrenNode.append_child("HierarchicalSplitTypeViewModel");
+        splitTypeViewModelNode.append_child(fmt::format("{}SplitType", gameName_).c_str()).text().set(type.c_str());
+    }
+    childrenNode = splitTypeViewModelNode.child("Children");
+    if (!childrenNode) {
+        childrenNode = splitTypeViewModelNode.append_child("Children");
+    }
+    return childrenNode;
+}
+
+/*
 void Lss::makeBackup() {
     auto timestr = wxDateTime::Now().Format("%y%m%d_%H%M%S");
     auto backupFilename = fmt::format(L"{}.{}.bak", filename_, timestr.wc_str());
@@ -129,5 +255,6 @@ void Lss::makeBackup() {
     }
     doc_.save_file(backupFilename.c_str(), "  ");
 }
+*/
 
 }

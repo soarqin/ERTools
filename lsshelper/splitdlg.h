@@ -22,20 +22,25 @@ class SplitDlg : public wxDialog {
 public:
     explicit SplitDlg(wxWindow *parent, int lastWhen = 0, int lastType = 0);
     ~SplitDlg() override;
+    void getResult(std::string &when, std::string &type, std::string &name) const;
 
 private:
     void updateSplitList();
+    void pendForUpdate();
 
 private:
     wxChoice *whenChoice_;
     wxChoice *typeChoice_;
-    wxComboCtrl *splitList_;
-    wxListBox *splitListView_;
+    wxTextCtrl *splitFilter_;
+    wxListBox *splitDataList_;
 
     wxButton *okButton_;
     wxButton *cancelButton_;
 
+    wxTimer *updateTimer_;
+
     const std::vector<EnumData> *enumsList_;
+    std::vector<std::pair<const EnumData*, double>> filterList_;
 };
 
 }

@@ -20,6 +20,7 @@ struct EnumData {
     std::string name;
     std::string disp;
     std::string desc;
+    std::wstring wdisp;
 };
 
 class Enums {

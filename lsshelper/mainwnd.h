@@ -27,6 +27,11 @@ private:
     void onLoad();
     void assignButtonClicked();
     void removeButtonClicked();
+    void assignNewSplit();
+
+    void removeAssigned(int index, const SegNode &seg);
+    void removeAssigned(int index, const SplitNode &split);
+    void assignSplitToSeg(int toIndex, int fromIndex, const SegNode &seg, const SplitNode &split);
 
 private:
     Lss lss_;

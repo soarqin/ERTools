@@ -11,15 +11,26 @@
 #include <fmt/format.h>
 #include <nlohmann/json.hpp>
 #include <fstream>
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
 
 namespace lss_helper {
 
 Enums gEnums;
 
+std::wstring utf8towc(const std::string &utf8str) {
+    int len = MultiByteToWideChar(CP_UTF8, 0, utf8str.c_str(), -1, nullptr, 0);
+    if (len == 0) return {};
+    std::wstring wstr(len, 0);
+    MultiByteToWideChar(CP_UTF8, 0, utf8str.c_str(), -1, &wstr[0], len);
+    return std::move(wstr);
+}
+
 void from_json(const nlohmann::json &j, EnumData &data) {
     j.at("name").get_to(data.name);
     j.at("display_name").get_to(data.disp);
     j.at("description").get_to(data.desc);
+    data.wdisp = utf8towc(data.disp);
 }
 
 void from_json(const nlohmann::json &j, std::vector<EnumData> &m) {
