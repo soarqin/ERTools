@@ -45,19 +45,23 @@ void SplitNode::buildDisplayName() {
     xsiType = split.attribute("xsi:type").as_string();
     const auto &e = gEnums(type, name);
     displayName = toWideString(e.name.empty() ? name : e.disp);
-    fullDisplayName = toWideString(fmt::format("{}/{}/", when, type, e.name.empty() ? name : e.disp));
+    fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, e.name.empty() ? name : e.disp));
 }
 
 int Lss::open(const wchar_t *filename) {
     loaded_ = false;
-    auto result = doc_.load_file(filename);
+    pugi::xml_document doc;
+    auto result = doc.load_file(filename);
     if (!result) {
         return -1;
     }
-    gameName_ = mapGameName(doc_.child("Run").child("GameName").text().get());
+    gameName_ = mapGameName(doc.child("Run").child("GameName").text().get());
     if (gameName_.empty()) {
         return -2;
     }
+    segs_.clear();
+    splits_.clear();
+    doc_ = std::move(doc);
     gEnums.load(gameName_);
     filename_ = filename;
     for (auto node: doc_.select_nodes("/Run/Segments/Segment")) {
@@ -83,23 +87,39 @@ int Lss::open(const wchar_t *filename) {
         }
     }
 
+    changed_ = false;
+    loaded_ = true;
+
     pugi::xml_document doch;
     if (!doch.load_file((filename_ + L".helper").c_str())) return 0;
-/*
-    auto unusedSplits = doch.child("UnusedSplits");
-    if (!unusedSplits) return 0;
-    auto gameName = unusedSplits.attribute("GameName").as_string();
-    if (gameName != gameName_) return 0;
-    for (auto split: unusedSplits.children("Split")) {
-        auto &snode = splits_.emplace_back();
-        snode.when = split.attribute("When").as_string();
-        snode.type = split.attribute("Type").as_string();
-        snode.xsiType = split.attribute("XsiType").as_string();
-        snode.name = split.attribute("Name").as_string();
-        snode.buildDisplayName();
+    auto assignments = doch.child("Assignments");
+    if (!assignments) return 0;
+    if (assignments.attribute("GameName").as_string() != gameName_) return 0;
+    for (auto node: assignments.children()) {
+        auto segIndex = node.attribute("SegIndex").as_uint();
+        if (segIndex >= segs_.size()) continue;
+        const auto *seg = &segs_[segIndex];
+        if (!seg->seg) continue;
+        auto segName = node.attribute("SegName").as_string();
+        if (strcmp(segName, seg->seg.child("Name").text().get()) != 0) {
+            seg = nullptr;
+            for (auto &seg2: segs_) {
+                if (seg2.seg && strcmp(segName, seg2.seg.child("Name").text().get()) == 0) {
+                    seg = &seg2;
+                    break;
+                }
+            }
+            if (!seg) continue;
+        }
+        auto splitName = node.text().get();
+        auto when = node.attribute("When").as_string();
+        auto type = node.attribute("Type").as_string();
+        auto snode = find(when, type, splitName);
+        if (snode) {
+            snode->assign(seg->seg);
+            seg->assign(snode->split, snode->fullDisplayName);
+        }
     }
-*/
-    loaded_ = true;
     return 0;
 }
 
@@ -172,6 +192,15 @@ const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::stri
         wasAppend = true;
         return &splits_.back();
     }
+}
+
+const SplitNode *Lss::find(const std::string &when, const std::string &type, const std::string &name) {
+    for (auto &split: splits_) {
+        if (split.name == name && split.when == when && split.type == type) {
+            return &split;
+        }
+    }
+    return nullptr;
 }
 
 pugi::xml_node Lss::ensureSplitTree() {

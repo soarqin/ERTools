@@ -22,7 +22,12 @@ class SplitDlg : public wxDialog {
 public:
     explicit SplitDlg(wxWindow *parent, int lastWhen = 0, int lastType = 0);
     ~SplitDlg() override;
+    int ShowModal() override {
+        pendForUpdate();
+        return wxDialog::ShowModal();
+    }
     void getResult(std::string &when, std::string &type, std::string &name) const;
+    void setDefaultFilter(const std::wstring &filer);
 
 private:
     void updateSplitList();

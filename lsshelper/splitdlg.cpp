@@ -62,7 +62,6 @@ SplitDlg::SplitDlg(wxWindow *parent, int lastWhen, int lastType) : wxDialog(pare
     Bind(wxEVT_TIMER, [&](wxTimerEvent &event) {
         updateSplitList();
     });
-    pendForUpdate();
 }
 
 SplitDlg::~SplitDlg() = default;
@@ -72,6 +71,10 @@ void SplitDlg::getResult(std::string &when, std::string &type, std::string &name
     type = typeChoice_->GetStringSelection().utf8_string();
     auto sel = splitDataList_->GetSelection();
     name = sel >= 0 ? filterList_[sel].first->name : "";
+}
+
+void SplitDlg::setDefaultFilter(const std::wstring &filer) {
+    splitFilter_->SetValue(filer);
 }
 
 void SplitDlg::updateSplitList() {

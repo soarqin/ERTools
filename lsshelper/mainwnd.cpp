@@ -108,6 +108,18 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
         toRight_->Enable(false);
         newSplit_->Enable(false);
     });
+    segList_->Bind(wxEVT_LIST_ITEM_ACTIVATED, [&](wxListEvent &event) {
+        auto index = segList_->GetFirstSelected();
+        if (index >= 0) {
+            auto data = segList_->GetItemData(index);
+            auto &seg = lss_.segs()[data];
+            if (seg.split.empty()) {
+                assignNewSplit();
+            } else {
+                removeButtonClicked();
+            }
+        }
+    });
     splitList_->Bind(wxEVT_LIST_ITEM_SELECTED, [&](wxListEvent &event) {
         auto index = event.GetIndex();
         auto enable = index >= 0;
@@ -115,6 +127,9 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     });
     splitList_->Bind(wxEVT_LIST_ITEM_DESELECTED, [&](wxListEvent &event) {
         toLeft_->Enable(false);
+    });
+    splitList_->Bind(wxEVT_LIST_ITEM_ACTIVATED, [&](wxListEvent &event) {
+        assignButtonClicked();
     });
     toLeft_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
         assignButtonClicked();
@@ -163,6 +178,15 @@ void MainWnd::onLoad() {
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
     segList_->Select(0);
+    int selIdx = 0;
+    auto segCnt = segList_->GetItemCount();
+    while (selIdx < segCnt) {
+        if (segs[segList_->GetItemData(selIdx)].split.empty()) {
+            segList_->Select(selIdx);
+            break;
+        }
+        selIdx++;
+    }
 
     splitList_->DeleteAllItems();
     const auto &splits = lss_.splits();
@@ -213,6 +237,7 @@ void MainWnd::assignNewSplit() {
     static SplitDlg *dlg = nullptr;
     if (dlg == nullptr)
         dlg = new SplitDlg(this);
+    dlg->setDefaultFilter(segList_->GetItemText(toIndex).ToStdWstring());
     if (dlg->ShowModal() != wxID_OK) return;
     std::string when, type, name;
     dlg->getResult(when, type, name);

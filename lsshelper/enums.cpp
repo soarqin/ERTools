@@ -47,6 +47,7 @@ void from_json(const nlohmann::json &j, std::vector<EnumData> &m) {
 
 bool Enums::load(const std::string &gameName) {
     enums_.clear();
+    mapper_.clear();
     nlohmann::json j;
     std::ifstream ifs("enums.json");
     if (!ifs.is_open()) return false;

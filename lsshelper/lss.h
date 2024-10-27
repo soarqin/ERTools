@@ -54,6 +54,7 @@ public:
     [[nodiscard]] inline const std::vector<SegNode> &segs() const { return segs_; }
     [[nodiscard]] inline const std::vector<SplitNode> &splits() const { return splits_; }
     const SplitNode *findOrAppendSplit(const std::string &when, const std::string &type, const std::string &name, bool &wasAppend);
+    const SplitNode *find(const std::string &when, const std::string &type, const std::string &name);
 
 private:
     pugi::xml_node ensureSplitTree();
