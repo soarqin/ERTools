@@ -22,17 +22,15 @@ class EditSegmentDlg : public wxDialog {
 public:
     explicit EditSegmentDlg(wxWindow *parent);
     ~EditSegmentDlg() override;
-    int ShowModal() override {
-        pendForUpdate();
-        return wxDialog::ShowModal();
-    }
-    void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &name) const;
+    void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const;
     void setSegmentName(const std::string &name);
     void setDefaultFilter(const std::wstring &filer);
+    void setValue(const std::string &when, const std::string &type, const std::string &value);
 
 private:
     void updateSplitList();
     void pendForUpdate();
+    void fitOnTypeChanged();
 
 private:
     wxTextCtrl *segmentName_;
@@ -40,6 +38,16 @@ private:
     wxChoice *typeChoice_;
     wxTextCtrl *splitFilter_;
     wxListBox *splitDataList_;
+
+    wxTextCtrl *flagId_;
+    wxPanel *positionPanel_;
+    wxTextCtrl *positionArea_;
+    wxTextCtrl *positionBlock_;
+    wxTextCtrl *positionRegion_;
+    wxTextCtrl *positionSize_;
+    wxTextCtrl *positionX_;
+    wxTextCtrl *positionY_;
+    wxTextCtrl *positionZ_;
 
     wxButton *okButton_;
     wxButton *cancelButton_;

@@ -96,6 +96,16 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     splitList_->SetColumnWidth(1, 100);
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 
+    Bind(wxEVT_CLOSE_WINDOW, [&](wxCloseEvent &event) {
+        if (lss_.changed()) {
+            if (wxMessageBox(wxT("Save changes?"), wxT("Save"), wxYES_NO) != wxYES) {
+                event.Veto();
+                return;
+            }
+            lss_.save();
+        }
+        event.Skip();
+    });
     Bind(wxEVT_MENU, [&](wxCommandEvent &event) {
         switch (event.GetId()) {
             case wxID_OPEN: {
@@ -303,16 +313,26 @@ void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
         dlg = new EditSegmentDlg(this);
     std::string oldName = newSeg ? "" : segData->seg.child("Name").text().get();
     dlg->setSegmentName(oldName);
-    dlg->setDefaultFilter(newSeg ? L"" : segList_->GetItemText(toIndex).ToStdWstring());
+    if (!newSeg && segData->split) {
+        auto &splits = lss_.splits();
+        for (const auto &split: splits) {
+            if (split.split == segData->split) {
+                dlg->setValue(split.when, split.type, split.identifier);
+                break;
+            }
+        }
+    } else {
+        dlg->setDefaultFilter(newSeg ? L"" : segList_->GetItemText(toIndex).ToStdWstring());
+    }
     if (dlg->ShowModal() != wxID_OK) return;
-    std::string segmentName, when, type, name;
-    dlg->getResult(segmentName, when, type, name);
-    if (segmentName.empty() || name.empty()) {
+    std::string segmentName, when, type, identifier;
+    dlg->getResult(segmentName, when, type, identifier);
+    if (segmentName.empty() || identifier.empty()) {
         wxMessageBox(wxT("Name cannot be empty"), wxT("Error"), wxICON_ERROR);
         return;
     }
     bool wasAppend;
-    const auto *snode = lss_.findOrAppendSplit(when, type, name, wasAppend);
+    const auto *snode = lss_.findOrAppendSplit(when, type, identifier, wasAppend);
     if (snode == nullptr) {
         wxMessageBox(wxT("Wrong Split data!"), wxT("Error"), wxICON_ERROR);
         return;

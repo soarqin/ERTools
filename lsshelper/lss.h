@@ -32,7 +32,7 @@ struct SplitNode {
     std::string when;
     std::string type;
     std::string xsiType;
-    std::string name;
+    std::string identifier;
     std::wstring displayName;
     std::wstring fullDisplayName;
 
@@ -53,12 +53,13 @@ public:
     [[nodiscard]] inline const std::string &gameName() const { return gameName_; }
     [[nodiscard]] inline const std::vector<SegNode> &segs() const { return segs_; }
     [[nodiscard]] inline const std::vector<SplitNode> &splits() const { return splits_; }
+    [[nodiscard]] inline bool changed() const { return changed_; }
     inline void setChanged() { changed_ = true; }
     const SegNode &insertNewSegment(const std::string &name, int index = -1);
     void moveSegmentDown(int index);
     void deleteSegment(int index);
     void deleteSplit(int index);
-    const SplitNode *findOrAppendSplit(const std::string &when, const std::string &type, const std::string &name, bool &wasAppend);
+    const SplitNode *findOrAppendSplit(const std::string &when, const std::string &type, const std::string &identifier, bool &wasAppend);
     const SplitNode *find(const std::string &when, const std::string &type, const std::string &name);
 
 private:

@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME} WIN32
     editsegmentdlg.cpp editsegmentdlg.h
     lss.cpp lss.h
     enums.cpp enums.h
+    util.h
 
     res/manifest.rc
 )

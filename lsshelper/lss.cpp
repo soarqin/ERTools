@@ -8,6 +8,8 @@
 
 #include "lss.h"
 
+#include "util.h"
+
 #include <wx/filefn.h>
 #include <wx/datetime.h>
 #include <pugixml.hpp>
@@ -41,11 +43,21 @@ inline std::wstring toWideString(const std::string &str) {
 }
 
 void SplitNode::buildDisplayName() {
-    name = split.text().get();
-    xsiType = split.attribute("xsi:type").as_string();
-    const auto &e = gEnums(type, name);
-    displayName = toWideString(e.name.empty() ? name : e.disp);
-    fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, e.name.empty() ? name : e.disp));
+    if (type == "Position") {
+        identifier = fmt::format("{},{},{},{},{},{},{}", split.child("Area").text().get(), split.child("Block").text().get(), split.child("Region").text().get(), split.child("Size").text().get(), split.child("X").text().get(), split.child("Y").text().get(), split.child("Z").text().get());
+        displayName = toWideString(identifier);
+        fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, identifier));
+    } else if (type == "Flag") {
+        identifier = split.text().get();
+        displayName = toWideString(identifier);
+        fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, identifier));
+    } else {
+        identifier = split.text().get();
+        xsiType = split.attribute("xsi:type").as_string();
+        const auto &e = gEnums(type, identifier);
+        displayName = toWideString(e.name.empty() ? identifier : e.disp);
+        fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, e.name.empty() ? identifier : e.disp));
+    }
 }
 
 int Lss::open(const wchar_t *filename) {
@@ -134,7 +146,7 @@ bool Lss::save() {
     for (size_t i = 0; i < sz; i++) {
         auto &split = splits_[i];
         if (split.seg) {
-            auto splitNode = splitRootNode.select_node(fmt::format("HierarchicalTimingTypeViewModel[TimingType='{}']/Children/HierarchicalSplitTypeViewModel[{}SplitType='{}']/Children/HierarchicalSplitViewModel[Split='{}']", split.when, gameName_, split.type, split.name).c_str()).node();
+            auto splitNode = splitRootNode.select_node(fmt::format("HierarchicalTimingTypeViewModel[TimingType='{}']/Children/HierarchicalSplitTypeViewModel[{}SplitType='{}']/Children/HierarchicalSplitViewModel[Split='{}']", split.when, gameName_, split.type, split.identifier).c_str()).node();
             if (splitNode) {
                 auto snode = assignments.append_copy(split.split);
                 size_t sz2 = segs_.size();
@@ -222,15 +234,15 @@ void Lss::deleteSplit(int index) {
     changed_ = true;
 }
 
-const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::string &type, const std::string &name, bool &wasAppend) {
+const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::string &type, const std::string &identifier, bool &wasAppend) {
     for (auto &split: splits_) {
-        if (split.name == name && split.when == when && split.type == type) {
+        if (split.identifier == identifier && split.when == when && split.type == type) {
             wasAppend = false;
             return &split;
         }
     }
     auto splitsNode = ensureSplitParent(when, type);
-    auto splitNode = splitsNode.select_node(fmt::format("HierarchicalSplitViewModel[Split='{}']", name).c_str()).node();
+    auto splitNode = splitsNode.select_node(fmt::format("HierarchicalSplitViewModel[Split='{}']", identifier).c_str()).node();
     if (splitNode) {
         wasAppend = false;
         return nullptr;
@@ -238,7 +250,19 @@ const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::stri
         splitNode = splitsNode.append_child("HierarchicalSplitViewModel").append_child("Split");
         const auto *xsiType = typeToXsiType(type);
         splitNode.append_attribute("xsi:type").set_value(xsiType);
-        splitNode.text().set(name.c_str());
+        if (type == "Position") {
+            auto res = splitString(identifier, ',');
+            if (res.size() < 7) return nullptr;
+            splitNode.append_child("Area").text().set(res[0].c_str());
+            splitNode.append_child("Block").text().set(res[1].c_str());
+            splitNode.append_child("Region").text().set(res[2].c_str());
+            splitNode.append_child("Size").text().set(res[3].c_str());
+            splitNode.append_child("X").text().set(res[4].c_str());
+            splitNode.append_child("Y").text().set(res[5].c_str());
+            splitNode.append_child("Z").text().set(res[6].c_str());
+        } else {
+            splitNode.text().set(identifier.c_str());
+        }
         SplitNode newNode;
         newNode.split = splitNode;
         newNode.when = when;
@@ -253,7 +277,7 @@ const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::stri
 
 const SplitNode *Lss::find(const std::string &when, const std::string &type, const std::string &name) {
     for (auto &split: splits_) {
-        if (split.name == name && split.when == when && split.type == type) {
+        if (split.identifier == name && split.when == when && split.type == type) {
             return &split;
         }
     }
