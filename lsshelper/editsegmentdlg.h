@@ -18,15 +18,16 @@
 
 namespace lss_helper {
 
-class SplitDlg : public wxDialog {
+class EditSegmentDlg : public wxDialog {
 public:
-    explicit SplitDlg(wxWindow *parent, int lastWhen = 0, int lastType = 0);
-    ~SplitDlg() override;
+    explicit EditSegmentDlg(wxWindow *parent);
+    ~EditSegmentDlg() override;
     int ShowModal() override {
         pendForUpdate();
         return wxDialog::ShowModal();
     }
-    void getResult(std::string &when, std::string &type, std::string &name) const;
+    void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &name) const;
+    void setSegmentName(const std::string &name);
     void setDefaultFilter(const std::wstring &filer);
 
 private:
@@ -34,6 +35,7 @@ private:
     void pendForUpdate();
 
 private:
+    wxTextCtrl *segmentName_;
     wxChoice *whenChoice_;
     wxChoice *typeChoice_;
     wxTextCtrl *splitFilter_;

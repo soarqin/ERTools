@@ -151,18 +151,75 @@ bool Lss::save() {
         }
     }
     auto dochFilename = filename_ + L".helper";
-    doch.save_file(dochFilename.c_str(), "  ");
+    try {
+        doch.save_file(dochFilename.c_str(), "  ");
+    } catch (const std::exception &e) {
+        fmt::print("Error saving helper file: {}\n", e.what());
+        return false;
+    }
     if (changed_) {
         // makeBackup();
         try {
             doc_.save_file(filename_.c_str());
         } catch (const std::exception &e) {
-            fmt::print("Error saving file: {}\n", e.what());
+            fmt::print("Error saving lss file: {}\n", e.what());
             return false;
         }
         changed_ = false;
     }
     return true;
+}
+
+const SegNode &Lss::insertNewSegment(const std::string &name, int index) {
+    auto &seg = segs_.emplace_back();
+    auto segmentsNode = ensureSegmentParent();
+    auto segmentNode = index < 0 || size_t(index) >= segs_.size() ? segmentsNode.append_child("Segment") : segmentsNode.insert_child_before("Segment", segs_[index].seg);
+    segmentNode.append_child("Name").text().set(name.c_str());
+    seg.seg = segmentNode;
+    changed_ = true;
+    return seg;
+}
+
+void Lss::moveSegmentDown(int index) {
+    auto &seg = segs_[index].seg;
+    auto &seg2 = segs_[index + 1].seg;
+    seg.remove_child("SplitTimes");
+    seg.parent().insert_move_after(seg, seg2);
+    seg2.remove_child("SplitTimes");
+    std::swap(segs_[index].seg, segs_[index + 1].seg);
+    std::swap(segs_[index].split, segs_[index + 1].split);
+    std::swap(segs_[index].splitName, segs_[index + 1].splitName);
+    changed_ = true;
+}
+
+void Lss::deleteSegment(int index) {
+    auto &seg = segs_[index];
+    if (seg.split) {
+        for (auto &split: splits_) {
+            if (split.seg == seg.seg) {
+                split.assign(pugi::xml_node());
+                break;
+            }
+        }
+    }
+    seg.seg.parent().remove_child(segs_[index].seg);
+    segs_.erase(segs_.begin() + index);
+    changed_ = true;
+}
+
+void Lss::deleteSplit(int index) {
+    auto &split = splits_[index];
+    if (split.seg) {
+        for (auto &seg: segs_) {
+            if (seg.split == split.split) {
+                seg.assign(pugi::xml_node(), L"");
+                break;
+            }
+        }
+    }
+    split.split.parent().parent().remove_child(split.split.parent());
+    splits_.erase(splits_.begin() + index);
+    changed_ = true;
 }
 
 const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::string &type, const std::string &name, bool &wasAppend) {
@@ -201,6 +258,15 @@ const SplitNode *Lss::find(const std::string &when, const std::string &type, con
         }
     }
     return nullptr;
+}
+
+pugi::xml_node Lss::ensureSegmentParent() {
+    auto runNode = doc_.child("Run");
+    auto segmentsNode = runNode.child("Segments");
+    if (!segmentsNode) {
+        segmentsNode = runNode.append_child("Segments");
+    }
+    return segmentsNode;
 }
 
 pugi::xml_node Lss::ensureSplitTree() {

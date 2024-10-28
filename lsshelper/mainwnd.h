@@ -25,20 +25,24 @@ public:
 
 private:
     void onLoad();
+    void moveUpButtonClicked();
+    void moveDownButtonClicked();
     void assignButtonClicked();
-    void removeButtonClicked();
-    void assignNewSplit();
+    void unsignButtonClicked();
+    void editSegmentButtonClicked(bool newSeg = false, bool insertBelow = false);
+    void deleteSegmentButtonClicked();
+    void deleteSplitButtonClicked();
 
-    void removeAssigned(int index, const SegNode &seg);
-    void removeAssigned(int index, const SplitNode &split);
-    void assignSplitToSeg(int toIndex, int fromIndex, const SegNode &seg, const SplitNode &split);
+    void doUnsign(int index, const SegNode &seg);
+    void doUnsign(int index, const SplitNode &split);
+    void assignSplitToSegment(int toIndex, int fromIndex, const SegNode &seg, const SplitNode &split);
 
 private:
     Lss lss_;
 
     wxListView *segList_;
     wxListView *splitList_;
-    wxButton *toLeft_, *toRight_, *newSplit_;
+    wxButton *moveUp_, *moveDown_, *assign_, *unsign_, *editSegment_, *insertAbove_, *insertBelow_, *deleteSegment_, *deleteSplit_;
 };
 
 }

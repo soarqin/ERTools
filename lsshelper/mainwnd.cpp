@@ -8,7 +8,7 @@
 
 #include "mainwnd.h"
 
-#include "splitdlg.h"
+#include "editsegmentdlg.h"
 
 #include "lss.h"
 #include "enums.h"
@@ -40,17 +40,42 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     auto *middlePanel = new wxPanel(this, wxID_ANY);
     auto *middleSizer = new wxBoxSizer(wxVERTICAL);
     middlePanel->SetSizer(middleSizer);
-    toLeft_ = new wxButton(middlePanel, wxID_ANY, wxT(" << "), wxDefaultPosition, wxSize(50, 30));
-    toRight_ = new wxButton(middlePanel, wxID_ANY, wxT(" >> "), wxDefaultPosition, wxSize(50, 30));
-    newSplit_ = new wxButton(middlePanel, wxID_ANY, wxT(" ++ "), wxDefaultPosition, wxSize(50, 30));
-    middleSizer->Add(toLeft_, 0, wxALIGN_CENTER_HORIZONTAL);
-    middleSizer->AddSpacer(30);
-    middleSizer->Add(toRight_, 0, wxALIGN_CENTER_HORIZONTAL);
-    middleSizer->AddSpacer(30);
-    middleSizer->Add(newSplit_, 0, wxALIGN_CENTER_HORIZONTAL);
-    toLeft_->Enable(false);
-    toRight_->Enable(false);
-    newSplit_->Enable(false);
+    moveUp_ = new wxButton(middlePanel, wxID_ANY, wxT("Move Up"), wxDefaultPosition, wxSize(100, 30));
+    moveDown_ = new wxButton(middlePanel, wxID_ANY, wxT("Move Down"), wxDefaultPosition, wxSize(100, 30));
+    assign_ = new wxButton(middlePanel, wxID_ANY, wxT("Assign"), wxDefaultPosition, wxSize(100, 30));
+    unsign_ = new wxButton(middlePanel, wxID_ANY, wxT("Unsign"), wxDefaultPosition, wxSize(100, 30));
+    editSegment_ = new wxButton(middlePanel, wxID_ANY, wxT("Edit"), wxDefaultPosition, wxSize(100, 30));
+    insertAbove_ = new wxButton(middlePanel, wxID_ANY, wxT("Insert Above"), wxDefaultPosition, wxSize(100, 30));
+    insertBelow_ = new wxButton(middlePanel, wxID_ANY, wxT("Insert Below"), wxDefaultPosition, wxSize(100, 30));
+    deleteSegment_ = new wxButton(middlePanel, wxID_ANY, wxT("Delete Segment"), wxDefaultPosition, wxSize(100, 30));
+    deleteSplit_ = new wxButton(middlePanel, wxID_ANY, wxT("Delete Split"), wxDefaultPosition, wxSize(100, 30));
+
+    middleSizer->Add(moveUp_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(moveDown_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(40);
+    middleSizer->Add(assign_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(unsign_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(40);
+    middleSizer->Add(editSegment_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(insertAbove_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(insertBelow_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(40);
+    middleSizer->Add(deleteSegment_, 0, wxALIGN_CENTER_HORIZONTAL);
+    middleSizer->AddSpacer(10);
+    middleSizer->Add(deleteSplit_, 0, wxALIGN_CENTER_HORIZONTAL);
+    moveUp_->Enable(false);
+    moveDown_->Enable(false);
+    assign_->Enable(false);
+    unsign_->Enable(false);
+    editSegment_->Enable(false);
+    insertAbove_->Enable(false);
+    insertBelow_->Enable(false);
+    deleteSegment_->Enable(false);
+    deleteSplit_->Enable(false);
 
     /* Right */
     splitList_ = new wxListView(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT | wxLC_SINGLE_SEL);
@@ -97,49 +122,54 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     segList_->Bind(wxEVT_LIST_ITEM_SELECTED, [&](wxListEvent &event) {
         auto index = event.GetIndex();
         auto enable = index >= 0;
-        toLeft_->Enable(enable && splitList_->GetFirstSelected() >= 0);
-        auto data = segList_->GetItemData(index);
-        auto &seg = lss_.segs()[data];
-        toRight_->Enable(seg.split);
-        newSplit_->Enable(enable);
+        moveUp_->Enable(index > 0);
+        moveDown_->Enable(enable && index < segList_->GetItemCount() - 1);
+        assign_->Enable(enable && splitList_->GetFirstSelected() >= 0);
+        auto &seg = lss_.segs()[index];
+        unsign_->Enable(seg.split);
+        editSegment_->Enable(enable);
+        insertAbove_->Enable(enable);
+        insertBelow_->Enable(enable);
+        deleteSegment_->Enable(enable);
     });
     segList_->Bind(wxEVT_LIST_ITEM_DESELECTED, [&](wxListEvent &event) {
-        toLeft_->Enable(false);
-        toRight_->Enable(false);
-        newSplit_->Enable(false);
+        moveUp_->Enable(false);
+        moveDown_->Enable(false);
+        assign_->Enable(false);
+        unsign_->Enable(false);
+        editSegment_->Enable(false);
+        insertAbove_->Enable(false);
+        insertBelow_->Enable(false);
+        deleteSegment_->Enable(false);
     });
     segList_->Bind(wxEVT_LIST_ITEM_ACTIVATED, [&](wxListEvent &event) {
         auto index = segList_->GetFirstSelected();
-        if (index >= 0) {
-            auto data = segList_->GetItemData(index);
-            auto &seg = lss_.segs()[data];
-            if (seg.split.empty()) {
-                assignNewSplit();
-            } else {
-                removeButtonClicked();
-            }
-        }
+        if (index < 0) return;
+        auto &seg = lss_.segs()[index];
+        editSegmentButtonClicked();
     });
     splitList_->Bind(wxEVT_LIST_ITEM_SELECTED, [&](wxListEvent &event) {
         auto index = event.GetIndex();
         auto enable = index >= 0;
-        toLeft_->Enable(enable && segList_->GetFirstSelected() >= 0);
+        assign_->Enable(enable && segList_->GetFirstSelected() >= 0);
+        deleteSplit_->Enable(enable);
     });
     splitList_->Bind(wxEVT_LIST_ITEM_DESELECTED, [&](wxListEvent &event) {
-        toLeft_->Enable(false);
+        assign_->Enable(false);
+        deleteSplit_->Enable(false);
     });
     splitList_->Bind(wxEVT_LIST_ITEM_ACTIVATED, [&](wxListEvent &event) {
         assignButtonClicked();
     });
-    toLeft_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
-        assignButtonClicked();
-    });
-    toRight_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
-        removeButtonClicked();
-    });
-    newSplit_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) {
-        assignNewSplit();
-    });
+    moveUp_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { moveUpButtonClicked(); });
+    moveDown_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { moveDownButtonClicked(); });
+    assign_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { assignButtonClicked(); });
+    unsign_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { unsignButtonClicked(); });
+    editSegment_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { editSegmentButtonClicked(); });
+    insertAbove_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { editSegmentButtonClicked(true, false); });
+    insertBelow_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { editSegmentButtonClicked(true, true); });
+    deleteSegment_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { deleteSegmentButtonClicked(); });
+    deleteSplit_->Bind(wxEVT_BUTTON, [&](wxCommandEvent &event) { deleteSplitButtonClicked(); });
 }
 
 MainWnd::~MainWnd() = default;
@@ -172,17 +202,18 @@ void MainWnd::onLoad() {
     size_t sz = segs.size();
     for (size_t i = 0; i < sz; i++) {
         const auto &seg = segs[i];
-        auto index = segList_->InsertItem(long(i), wxString::FromUTF8(seg.seg.child("Name").text().get()));
-        if (!seg.split.empty()) segList_->SetItem(index, 1, seg.splitName);
-        segList_->SetItemData(index, long(i));
+        segList_->InsertItem(long(i), wxString::FromUTF8(seg.seg.child("Name").text().get()));
+        if (!seg.split.empty()) segList_->SetItem(long(i), 1, seg.splitName);
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
     segList_->Select(0);
+    segList_->EnsureVisible(0);
     int selIdx = 0;
     auto segCnt = segList_->GetItemCount();
     while (selIdx < segCnt) {
-        if (segs[segList_->GetItemData(selIdx)].split.empty()) {
+        if (segs[selIdx].split.empty()) {
             segList_->Select(selIdx);
+            segList_->EnsureVisible(selIdx);
             break;
         }
         selIdx++;
@@ -202,63 +233,141 @@ void MainWnd::onLoad() {
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 }
 
+void MainWnd::moveUpButtonClicked() {
+    auto index = segList_->GetFirstSelected();
+    if (index <= 0) return;
+    lss_.moveSegmentDown(index - 1);
+    auto &segs = lss_.segs();
+    segList_->SetItem(index, 0, wxString::FromUTF8(segs[index].seg.child("Name").text().get()));
+    segList_->SetItem(index, 1, segs[index].splitName);
+    segList_->SetItem(index - 1, 0, wxString::FromUTF8(segs[index - 1].seg.child("Name").text().get()));
+    segList_->SetItem(index - 1, 1, segs[index - 1].splitName);
+    segList_->Select(index - 1);
+    segList_->EnsureVisible(index - 1);
+}
+
+void MainWnd::moveDownButtonClicked() {
+    auto index = segList_->GetFirstSelected();
+    if (index < 0) return;
+    auto &segs = lss_.segs();
+    if (index >= segs.size() - 1) return;
+    lss_.moveSegmentDown(index);
+    segList_->SetItem(index, 0, wxString::FromUTF8(segs[index].seg.child("Name").text().get()));
+    segList_->SetItem(index, 1, segs[index].splitName);
+    segList_->SetItem(index + 1, 0, wxString::FromUTF8(segs[index + 1].seg.child("Name").text().get()));
+    segList_->SetItem(index + 1, 1, segs[index + 1].splitName);
+    segList_->Select(index + 1);
+    segList_->EnsureVisible(index + 1);
+}
+
 void MainWnd::assignButtonClicked() {
     auto toIndex = segList_->GetFirstSelected();
     if (toIndex == -1) return;
     auto fromIndex = splitList_->GetFirstSelected();
     if (fromIndex == -1) return;
-    auto index = segList_->GetItemData(toIndex);
     auto sindex = splitList_->GetItemData(fromIndex);
     const auto &segs = lss_.segs();
-    auto &segData = segs[index];
+    auto &segData = segs[toIndex];
     const auto &splits = lss_.splits();
     auto &splitData = splits[sindex];
     if (segData.split == splitData.split) return;
-    removeAssigned(toIndex, segData);
-    removeAssigned(fromIndex, splitData);
+    doUnsign(toIndex, segData);
+    doUnsign(fromIndex, splitData);
 
-    assignSplitToSeg(toIndex, fromIndex, segData, splitData);
+    assignSplitToSegment(toIndex, fromIndex, segData, splitData);
 }
 
-void MainWnd::removeButtonClicked() {
+void MainWnd::unsignButtonClicked() {
     auto toIndex = segList_->GetFirstSelected();
     if (toIndex == -1) return;
-    auto index = segList_->GetItemData(toIndex);
-    removeAssigned(toIndex, lss_.segs()[index]);
+    doUnsign(toIndex, lss_.segs()[toIndex]);
 }
 
-void MainWnd::assignNewSplit() {
-    auto toIndex = segList_->GetFirstSelected();
-    if (toIndex == -1) return;
-    auto index = segList_->GetItemData(toIndex);
-    auto &segData = lss_.segs()[index];
-    removeAssigned(toIndex, segData);
+void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
+    long toIndex;
+    const SegNode *segData = nullptr;
+    if (newSeg) {
+        toIndex = segList_->GetFirstSelected();
+        if (toIndex == -1) {
+            return;
+        }
+        if (insertBelow) toIndex++;
+    } else {
+        toIndex = segList_->GetFirstSelected();
+        if (toIndex == -1) return;
+        segData = &lss_.segs()[toIndex];
+    }
 
-    static SplitDlg *dlg = nullptr;
+    static EditSegmentDlg *dlg = nullptr;
     if (dlg == nullptr)
-        dlg = new SplitDlg(this);
-    dlg->setDefaultFilter(segList_->GetItemText(toIndex).ToStdWstring());
+        dlg = new EditSegmentDlg(this);
+    std::string oldName = newSeg ? "" : segData->seg.child("Name").text().get();
+    dlg->setSegmentName(oldName);
+    dlg->setDefaultFilter(newSeg ? L"" : segList_->GetItemText(toIndex).ToStdWstring());
     if (dlg->ShowModal() != wxID_OK) return;
-    std::string when, type, name;
-    dlg->getResult(when, type, name);
-    if (name.empty()) {
+    std::string segmentName, when, type, name;
+    dlg->getResult(segmentName, when, type, name);
+    if (segmentName.empty() || name.empty()) {
         wxMessageBox(wxT("Name cannot be empty"), wxT("Error"), wxICON_ERROR);
         return;
     }
     bool wasAppend;
     const auto *snode = lss_.findOrAppendSplit(when, type, name, wasAppend);
-    if (snode == nullptr || !wasAppend) {
-        wxMessageBox(wxT("Split already exists"), wxT("Error"), wxICON_ERROR);
+    if (snode == nullptr) {
+        wxMessageBox(wxT("Wrong Split data!"), wxT("Error"), wxICON_ERROR);
         return;
     }
-    auto sindex = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(snode->when));
-    splitList_->SetItem(sindex, 1, wxString::FromUTF8(snode->type));
-    splitList_->SetItem(sindex, 2, snode->displayName);
-    splitList_->SetItemData(sindex, long(lss_.splits().size() - 1));
-    assignSplitToSeg(toIndex, sindex, segData, *snode);
+    if (newSeg) {
+        segData = &lss_.insertNewSegment(segmentName, toIndex);
+        segList_->InsertItem(toIndex, wxString::FromUTF8(segmentName));
+    } else {
+        if (segmentName != oldName) {
+            segData->seg.child("Name").text().set(segmentName.c_str());
+            segList_->SetItem(toIndex, 0, wxString::FromUTF8(segmentName));
+            lss_.setChanged();
+        }
+    }
+    if (wasAppend) {
+        auto sindex = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(snode->when));
+        splitList_->SetItem(sindex, 1, wxString::FromUTF8(snode->type));
+        splitList_->SetItem(sindex, 2, snode->displayName);
+        splitList_->SetItemData(sindex, long(lss_.splits().size() - 1));
+        assignSplitToSegment(toIndex, sindex, *segData, *snode);
+    } else if (segData->split != snode->split) {
+        const auto &splits = lss_.splits();
+        auto sz = splitList_->GetItemCount();
+        for (int i = 0; i < sz; i++) {
+            const auto &splitNode = splits[splitList_->GetItemData(i)];
+            if (splitNode.split == snode->split) {
+                doUnsign(i, splitNode);
+                doUnsign(toIndex, *segData);
+                assignSplitToSegment(toIndex, i, *segData, *snode);
+                break;
+            }
+        }
+    }
 }
 
-void MainWnd::removeAssigned(int index, const SegNode &seg) {
+void MainWnd::deleteSegmentButtonClicked() {
+    auto index = segList_->GetFirstSelected();
+    if (index < 0) return;
+    auto &seg = lss_.segs()[index];
+    doUnsign(index, seg);
+    segList_->DeleteItem(index);
+    lss_.deleteSegment(index);
+}
+
+void MainWnd::deleteSplitButtonClicked() {
+    auto index = splitList_->GetFirstSelected();
+    if (index < 0) return;
+    auto sindex = splitList_->GetItemData(index);
+    auto &split = lss_.splits()[sindex];
+    doUnsign(index, split);
+    splitList_->DeleteItem(index);
+    lss_.deleteSplit(index);
+}
+
+void MainWnd::doUnsign(int index, const SegNode &seg) {
     if (!seg.split) return;
     const auto &splits = lss_.splits();
     auto cnt = splitList_->GetItemCount();
@@ -275,13 +384,12 @@ void MainWnd::removeAssigned(int index, const SegNode &seg) {
     segList_->SetItem(index, 1, wxEmptyString);
 }
 
-void MainWnd::removeAssigned(int index, const SplitNode &split) {
+void MainWnd::doUnsign(int index, const SplitNode &split) {
     if (!split.seg) return;
     auto sz = segList_->GetItemCount();
     const auto &segs = lss_.segs();
     for (int i = 0; i < sz; i++) {
-        auto data = segList_->GetItemData(i);
-        const auto &seg = segs[data];
+        const auto &seg = segs[i];
         if (seg.seg == split.seg) {
             seg.assign(pugi::xml_node(), L"");
             segList_->SetItem(i, 1, wxEmptyString);
@@ -292,16 +400,17 @@ void MainWnd::removeAssigned(int index, const SplitNode &split) {
     splitList_->SetItemTextColour(index, splitList_->GetTextColour());
 }
 
-void MainWnd::assignSplitToSeg(int toIndex, int fromIndex, const SegNode &segData, const SplitNode &splitData) {
-    segData.assign(splitData.split, splitData.fullDisplayName);
-    splitData.assign(segData.seg);
-    segList_->SetItem(toIndex, 1, splitData.fullDisplayName);
+void MainWnd::assignSplitToSegment(int toIndex, int fromIndex, const SegNode &seg, const SplitNode &split) {
+    seg.assign(split.split, split.fullDisplayName);
+    split.assign(seg.seg);
+    segList_->SetItem(toIndex, 1, split.fullDisplayName);
     splitList_->SetItemTextColour(fromIndex, wxColour(96, 96, 96));
     const auto &segs = lss_.segs();
     auto segCnt = segList_->GetItemCount();
     while (++toIndex < segCnt) {
-        if (segs[segList_->GetItemData(toIndex)].split.empty()) {
+        if (segs[toIndex].split.empty()) {
             segList_->Select(toIndex);
+            segList_->EnsureVisible(toIndex);
             break;
         }
     }

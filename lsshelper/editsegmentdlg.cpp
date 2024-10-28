@@ -6,24 +6,27 @@
  * https://opensource.org/licenses/MIT.
  */
 
-#include "splitdlg.h"
+#include "editsegmentdlg.h"
 
 #include <rapidfuzz/fuzz.hpp>
 #include <fmt/format.h>
 
 namespace lss_helper {
 
-SplitDlg::SplitDlg(wxWindow *parent, int lastWhen, int lastType) : wxDialog(parent, wxID_ANY, wxT("New Split"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
+EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wxT("New Split"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
     auto *sizer = new wxBoxSizer(wxVERTICAL);
 
     wxArrayString whenChoices = {"Immediate", "OnLoading", "OnBlackscreen"};
     wxArrayString typeChoices = {"Boss", "Grace", "ItemPickup", "Flag"};
+    segmentName_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
     whenChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, whenChoices);
     typeChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, typeChoices);
     splitFilter_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
     splitDataList_ = new wxListBox(this, wxID_ANY, wxPoint(0, 0), wxDefaultSize, 0, nullptr,wxLB_SINGLE);
-    whenChoice_->SetSelection(lastWhen);
-    typeChoice_->SetSelection(lastType);
+
+    segmentName_->SetHint("Segment Name");
+    whenChoice_->SetSelection(0);
+    typeChoice_->SetSelection(0);
 
     auto *buttonSizer = new wxBoxSizer(wxHORIZONTAL);
     okButton_ = new wxButton(this, wxID_OK, wxT("OK"), wxDefaultPosition, wxDefaultSize, 0);
@@ -34,6 +37,7 @@ SplitDlg::SplitDlg(wxWindow *parent, int lastWhen, int lastType) : wxDialog(pare
     auto *whenTypeSizer = new wxBoxSizer(wxHORIZONTAL);
     whenTypeSizer->Add(whenChoice_, 0, wxEXPAND | wxALL, 5);
     whenTypeSizer->Add(typeChoice_, 0, wxEXPAND | wxALL, 5);
+    sizer->Add(segmentName_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(whenTypeSizer, 0, wxEXPAND | wxALL, 5);
     sizer->Add(splitFilter_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(splitDataList_, 1, wxEXPAND | wxALL, 5);
@@ -64,20 +68,25 @@ SplitDlg::SplitDlg(wxWindow *parent, int lastWhen, int lastType) : wxDialog(pare
     });
 }
 
-SplitDlg::~SplitDlg() = default;
+EditSegmentDlg::~EditSegmentDlg() = default;
 
-void SplitDlg::getResult(std::string &when, std::string &type, std::string &name) const {
+void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std::string &type, std::string &name) const {
+    segmentName = segmentName_->GetValue().utf8_string();
     when = whenChoice_->GetStringSelection().utf8_string();
     type = typeChoice_->GetStringSelection().utf8_string();
     auto sel = splitDataList_->GetSelection();
     name = sel >= 0 ? filterList_[sel].first->name : "";
 }
 
-void SplitDlg::setDefaultFilter(const std::wstring &filer) {
+void EditSegmentDlg::setSegmentName(const std::string &name) {
+    segmentName_->SetValue(wxString::FromUTF8(name));
+}
+
+void EditSegmentDlg::setDefaultFilter(const std::wstring &filer) {
     splitFilter_->SetValue(filer);
 }
 
-void SplitDlg::updateSplitList() {
+void EditSegmentDlg::updateSplitList() {
     enumsList_ = &gEnums[typeChoice_->GetStringSelection().utf8_string()];
 
     filterList_.clear();
@@ -104,7 +113,7 @@ void SplitDlg::updateSplitList() {
     }
 }
 
-void SplitDlg::pendForUpdate() {
+void EditSegmentDlg::pendForUpdate() {
     updateTimer_->Start(300, true);
 }
 
