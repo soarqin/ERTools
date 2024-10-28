@@ -35,5 +35,4 @@
 /build/
 
 # CLion build folders
-/.idea/
 /cmake-build-*/

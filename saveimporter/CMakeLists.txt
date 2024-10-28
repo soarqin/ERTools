@@ -68,7 +68,8 @@ if(HAVE_AVX2_EXTENSIONS)
     endif()
 endif()
 set_target_properties(${PROJECT_NAME} ${PROJECT_NAME}_maker PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/$<0:>"
+    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/$<0:>"
     FOLDER "apps")
 if(MINGW)
     target_compile_options(${PROJECT_NAME} PRIVATE -Wno-ignored-attributes)

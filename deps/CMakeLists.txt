@@ -14,10 +14,11 @@ if (BUILD_LIVESTREAMINGTOOL)
     add_subdirectory(lua)
 endif ()
 
+add_subdirectory(rapidfuzz)
+add_subdirectory(inih)
 add_subdirectory(toml11)
 add_subdirectory(json)
 add_subdirectory(pugixml)
-add_subdirectory(rapidfuzz)
 
 set(MESSAGE_QUIET ON)
 add_subdirectory(fmt)
@@ -28,7 +29,12 @@ if (BUILD_FLAGCHECKER OR BUILD_LSS_HELPER)
     option(wxWidgets_STATIC "wxWidgets link static libaries" OFF)
 endif ()
 
-foreach (target liblua_static luafilesystem uv_a cjson memreader SDL3-static freetype harfbuzz toml11 nlohmann_json SDL3_gfx fmt rapidfuzz pugixml)
+if (BUILD_MOD_LOADER)
+    add_subdirectory(pattern16)
+    add_subdirectory(minhook)
+endif ()
+
+foreach (target liblua_static luafilesystem cjson memreader SDL3-static SDL3_gfx freetype harfbuzz rapidfuzz fmt toml11 nlohmann_json inih pugixml Pattern16)
     if (TARGET ${target})
         set_target_properties(${target} PROPERTIES
             RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
