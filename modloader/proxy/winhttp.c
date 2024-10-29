@@ -180,7 +180,7 @@ void *winhttp_FakeWinHttpWriteProxySettings() { return (void *)winhttp.OrignalWi
 bool load_winhttp_proxy() {
     wchar_t path[MAX_PATH], syspath[MAX_PATH];
     GetSystemDirectoryW(syspath, MAX_PATH);
-    wsprintfW(path, L"%s\\winhttp.dll", syspath);
+    _snwprintf(path, MAX_PATH, L"%s\\winhttp.dll", syspath);
     winhttp.dll = LoadLibraryW(path);
     if (!winhttp.dll) {
         fprintf(stderr, "Cannot load original winhttp.dll library\n");

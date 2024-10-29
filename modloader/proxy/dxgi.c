@@ -56,7 +56,7 @@ void *dxgi_FakeUpdateHMDEmulationStatus() { return (void *)dxgi.OrignalUpdateHMD
 bool load_dxgi_proxy() {
     wchar_t path[MAX_PATH], syspath[MAX_PATH];
     GetSystemDirectoryW(syspath, MAX_PATH);
-    wsprintfW(path, L"%s\\dxgi.dll", syspath);
+    _snwprintf(path, MAX_PATH, L"%s\\dxgi.dll", syspath);
     dxgi.dll = LoadLibraryW(path);
     if (!dxgi.dll) {
         fprintf(stderr, "Cannot load original dxgi.dll library\n");

@@ -10,7 +10,10 @@
 
 #include "mod.h"
 
-#include <MinHook.h>
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#include "detours.h"
+
 #include <shlwapi.h>
 #include <wchar.h>
 #include <stdio.h>
@@ -31,16 +34,16 @@ wchar_t *wstring_impl_str(wstring_impl_t *str) {
 }
 
 typedef enum {
-    READ            = 0,
-    WRITE           = 1,
+    READ = 0,
+    WRITE = 1,
     WRITE_OVERWRITE = 2,
-    READ_WRITE      = 3,
+    READ_WRITE = 3,
 
     // Custom mode specific to From Software's implementation
-    READ_EBL        = 9,
+    READ_EBL = 9,
 } AKOpenMode;
 
-typedef void * (__cdecl *map_archive_path_t)(wstring_impl_t *path, uint64_t p2, uint64_t p3, uint64_t p4, uint64_t p5, uint64_t p6);
+typedef void *(__cdecl *map_archive_path_t)(wstring_impl_t *path, uint64_t p2, uint64_t p3, uint64_t p4, uint64_t p5, uint64_t p6);
 typedef HANDLE (WINAPI *CreateFileW_t)(LPCWSTR lpFileName,
                                        DWORD dwDesiredAccess,
                                        DWORD dwShareMode,
@@ -48,7 +51,7 @@ typedef HANDLE (WINAPI *CreateFileW_t)(LPCWSTR lpFileName,
                                        DWORD dwCreationDisposition,
                                        DWORD dwFlagsAndAttributes,
                                        HANDLE hTemplateFile);
-typedef void* (__cdecl *ak_file_location_resolver_open_t)(uint64_t p1, wchar_t* path, AKOpenMode openMode, uint64_t p4, uint64_t p5, uint64_t p6);
+typedef void *(__cdecl *ak_file_location_resolver_open_t)(uint64_t p1, wchar_t *path, AKOpenMode openMode, uint64_t p4, uint64_t p5, uint64_t p6);
 
 
 static map_archive_path_t old_map_archive_path = NULL;
@@ -90,13 +93,13 @@ HANDLE WINAPI CreateFile_hooked(LPCWSTR lpFileName,
     return old_CreateFileW(replace == NULL ? lpFileName : replace, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
 }
 
-const wchar_t* prefixes[3] = {
+const wchar_t *prefixes[3] = {
     L"sd/",
     L"sd/enus/",
     L"sd/ja/",
 };
 
-void* __cdecl ak_file_location_resolver_open(uint64_t p1, wchar_t* path, AKOpenMode openMode, uint64_t p4, uint64_t p5, uint64_t p6) {
+void *__cdecl ak_file_location_resolver_open(uint64_t p1, wchar_t *path, AKOpenMode openMode, uint64_t p4, uint64_t p5, uint64_t p6) {
     const wchar_t *replace, *ext;
     if (wcsncmp(path, L"sd:/", 4) != 0)
         return old_ak_file_location_resolver_open(p1, path, openMode, p4, p5, p6);
@@ -104,18 +107,18 @@ void* __cdecl ak_file_location_resolver_open(uint64_t p1, wchar_t* path, AKOpenM
     ext = PathFindExtensionW(replace);
     if (ext != NULL && wcsicmp(ext, L".wem") == 0) {
         wchar_t new_path[MAX_PATH];
-        wsprintfW(new_path, L"wem/%c%c/%s", replace[0], replace[1], replace);
+        _snwprintf(new_path, MAX_PATH, L"wem/%c%c/%s", replace[0], replace[1], replace);
         const wchar_t *new_replace = mods_file_search(new_path);
         if (new_replace != NULL) {
-            return old_ak_file_location_resolver_open(p1, (wchar_t*)new_replace, openMode, p4, p5, p6);
+            return old_ak_file_location_resolver_open(p1, (wchar_t *)new_replace, openMode, p4, p5, p6);
         }
     }
     for (int i = 0; i < 3; i++) {
         wchar_t new_path[MAX_PATH];
-        wsprintfW(new_path, L"%s%s", prefixes[i], replace);
+        _snwprintf(new_path, MAX_PATH, L"%s%s", prefixes[i], replace);
         const wchar_t *new_replace = mods_file_search(new_path);
         if (new_replace != NULL) {
-            return old_ak_file_location_resolver_open(p1, (wchar_t*)new_replace, openMode, p4, p5, p6);
+            return old_ak_file_location_resolver_open(p1, (wchar_t *)new_replace, openMode, p4, p5, p6);
         }
     }
     return old_ak_file_location_resolver_open(p1, path, openMode, p4, p5, p6);
@@ -152,36 +155,50 @@ bool gamehook_install() {
     void *imageBase;
     size_t imageSize;
     uint8_t *addr;
-    static const uint8_t map_archive_aob[] = {0x48, 0x83, 0x7b, 0x20, 0x08, 0x48, 0x8d, 0x4b, 0x08, 0x72, 0x03, 0x48, 0x8b, 0x09, 0x4c, 0x8b, 0x4b, 0x18, 0x41, 0xb8, 0x05, 0x00, 0x00, 0x00, 0x4d, 0x3b, 0xc8};
-    static const uint8_t ak_file_location_resolver_aob[] = {0x4c, 0x89, 0x74, 0x24, 0x28, 0x48, 0x8b, 0x84, 0x24, 0x90, 0x00, 0x00, 0x00, 0x48, 0x89, 0x44, 0x24, 0x20, 0x4c, 0x8b, 0xce, 0x45, 0x8b, 0xc4, 0x49, 0x8b, 0xd7, 0x48, 0x8b, 0xcd, 0xe8};
+    static const uint8_t map_archive_aob[] = {0x48, 0x83, 0x7b, 0x20, 0x08, 0x48, 0x8d, 0x4b, 0x08, 0x72, 0x03, 0x48, 0x8b, 0x09, 0x4c, 0x8b, 0x4b, 0x18, 0x41, 0xb8, 0x05, 0x00,
+                                              0x00, 0x00, 0x4d, 0x3b, 0xc8};
+    static const uint8_t ak_file_location_resolver_aob[] = {0x4c, 0x89, 0x74, 0x24, 0x28, 0x48, 0x8b, 0x84, 0x24, 0x90, 0x00, 0x00, 0x00, 0x48, 0x89, 0x44, 0x24, 0x20, 0x4c, 0x8b,
+                                                            0xce, 0x45, 0x8b, 0xc4, 0x49, 0x8b, 0xd7, 0x48, 0x8b, 0xcd, 0xe8};
 
-    MH_Initialize();
+    DetourTransactionBegin();
     imageBase = get_module_image_base(&imageSize);
     addr = sig_scan(imageBase, imageSize, map_archive_aob, sizeof(map_archive_aob));
     if (!addr) {
         return false;
     }
-    addr += *(int32_t*)(addr - 4);
-    while (*(uint8_t*)addr == 0xE9) {
-        addr += *(int32_t*)(addr + 1) + 5;
+    addr += *(int32_t *)(addr - 4);
+    while (*(uint8_t *)addr == 0xE9) {
+        addr += *(int32_t *)(addr + 1) + 5;
     }
-    MH_CreateHook(addr, (void *)&map_archive_path, (void **)&old_map_archive_path);
-    MH_CreateHook(CreateFileW, (void *)&CreateFile_hooked, (void **)&old_CreateFileW);
+    old_map_archive_path = (map_archive_path_t)addr;
+    DetourAttach((PVOID *)&old_map_archive_path, map_archive_path);
+    old_CreateFileW = CreateFileW;
+    DetourAttach((PVOID *)&old_CreateFileW, CreateFile_hooked);
+    //MH_CreateHook(addr, (void *)&map_archive_path, (void **)&old_map_archive_path);
+    //MH_CreateHook(CreateFileW, (void *)&CreateFile_hooked, (void **)&old_CreateFileW);
 
     addr = sig_scan(imageBase, imageSize, ak_file_location_resolver_aob, sizeof(ak_file_location_resolver_aob));
     if (!addr) {
         return false;
     }
-    addr += *(int32_t*)(addr + 31) + 35;
-    while (*(uint8_t*)addr == 0xE9) {
-        addr += *(int32_t*)(addr + 1) + 5;
+    addr += *(int32_t *)(addr + 31) + 35;
+    while (*(uint8_t *)addr == 0xE9) {
+        addr += *(int32_t *)(addr + 1) + 5;
     }
-    MH_CreateHook(addr, (void *)&ak_file_location_resolver_open, (void **)&old_ak_file_location_resolver_open);
-    MH_EnableHook(MH_ALL_HOOKS);
+    old_ak_file_location_resolver_open = (ak_file_location_resolver_open_t)addr;
+    DetourAttach((PVOID *)&old_ak_file_location_resolver_open, ak_file_location_resolver_open);
+    DetourTransactionCommit();
+    //MH_CreateHook(addr, (void *)&ak_file_location_resolver_open, (void **)&old_ak_file_location_resolver_open);
+    //MH_EnableHook(MH_ALL_HOOKS);
     return true;
 }
 
 void gamehook_uninstall() {
-    MH_DisableHook(MH_ALL_HOOKS);
-    MH_Uninitialize();
+    //MH_DisableHook(MH_ALL_HOOKS);
+    //MH_Uninitialize();
+    DetourTransactionBegin();
+    DetourDetach((PVOID *)&old_map_archive_path, map_archive_path);
+    DetourDetach((PVOID *)&old_CreateFileW, CreateFile_hooked);
+    DetourDetach((PVOID *)&old_ak_file_location_resolver_open, ak_file_location_resolver_open);
+    DetourTransactionCommit();
 }

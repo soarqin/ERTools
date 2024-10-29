@@ -30,7 +30,7 @@ if (BUILD_FLAGCHECKER OR BUILD_LSS_HELPER)
 endif ()
 
 if (BUILD_MOD_LOADER)
-    add_subdirectory(minhook)
+    add_subdirectory(detours)
     add_subdirectory(uthash)
 endif ()
 

@@ -58,12 +58,12 @@ const wchar_t *filecache_add(const wchar_t *path, const wchar_t *replace) {
     if (file == NULL) {
         return NULL;
     }
-    HASH_ADD_KEYPTR(hh, files, file->base_path, lstrlenW(file->base_path), file);
+    HASH_ADD_KEYPTR(hh, files, file->base_path, wcslen(file->base_path), file);
     return file->native_path;
 }
 
 const wchar_t *filecache_find(const wchar_t *path) {
     file_t *file;
-    HASH_FIND(hh, files, path, lstrlenW(path), file);
+    HASH_FIND(hh, files, path, wcslen(path), file);
     return file == NULL ? NULL : file->native_path;
 }

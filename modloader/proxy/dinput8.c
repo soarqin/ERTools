@@ -28,7 +28,7 @@ void *dinput8_FakeGetdfDIJoystick() { return (void *)dinput8.OrignalGetdfDIJoyst
 bool load_dinput8_proxy() {
     wchar_t path[MAX_PATH], syspath[MAX_PATH];
     GetSystemDirectoryW(syspath, MAX_PATH);
-    wsprintfW(path, L"%s\\dinput8.dll", syspath);
+    _snwprintf(path, MAX_PATH, L"%s\\dinput8.dll", syspath);
     dinput8.dll = LoadLibraryW(path);
     if (!dinput8.dll) {
         fprintf(stderr, "Cannot load original dinput8.dll library\n");

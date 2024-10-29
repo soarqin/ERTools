@@ -17,11 +17,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <stdbool.h>
 
-static wchar_t game_folder[1024];
+static wchar_t game_folder[MAX_PATH];
 static uint32_t game_folder_length;
-wchar_t game_folder_pre[1024];
+wchar_t game_folder_pre[MAX_PATH];
 
 typedef struct mod_t {
     char *name;
@@ -33,10 +32,10 @@ int mod_count = 0;
 int mod_capacity = 0;
 
 void mods_init() {
-    GetCurrentDirectoryW(1024, game_folder_pre);
+    GetCurrentDirectoryW(MAX_PATH, game_folder_pre);
     PathCanonicalizeW(game_folder, game_folder_pre);
     PathRemoveBackslashW(game_folder);
-    game_folder_length = lstrlenW(game_folder);
+    game_folder_length = wcslen(game_folder);
 
     filecache_init();
     mods = NULL;
@@ -75,10 +74,10 @@ const wchar_t *mods_file_search(const wchar_t *path) {
     wchar_t cpath[MAX_PATH];
     const wchar_t *res;
     if (path[0] == '\\' || path[0] == '/')
-        lstrcpyW(cpath, path);
+        wcscpy(cpath, path);
     else
-        wsprintfW(cpath, L"\\%s", path);
-    for (int n = lstrlenW(cpath) - 1; n >= 0; n--) {
+        _snwprintf(cpath, MAX_PATH, L"\\%s", path);
+    for (int n = (int)wcslen(cpath) - 1; n >= 0; n--) {
         if (cpath[n] == L'/') cpath[n] = L'\\';
     }
     res = filecache_find(cpath);
@@ -87,7 +86,7 @@ const wchar_t *mods_file_search(const wchar_t *path) {
     }
     for (int i = 0; i < mod_count; i++) {
         wchar_t full_path[MAX_PATH];
-        wsprintfW(full_path, L"%s%s", mods[i].base_path, cpath);
+        _snwprintf(full_path, MAX_PATH, L"%s%s", mods[i].base_path, cpath);
         if (PathFileExistsW(full_path)) {
             return filecache_add(path, full_path);
         }
@@ -107,7 +106,7 @@ const wchar_t *mods_file_search_prefixed(const wchar_t *path) {
     }
     for (int i = 0; i < mod_count; i++) {
         wchar_t full_path[MAX_PATH];
-        wsprintfW(full_path, L"%s%s", mods[i].base_path, cpath);
+        _snwprintf(full_path, MAX_PATH, L"%s%s", mods[i].base_path, cpath);
         if (PathFileExistsW(full_path)) {
             return filecache_add(path, full_path);
         }
