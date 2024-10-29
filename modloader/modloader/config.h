@@ -8,23 +8,9 @@
 
 #pragma once
 
-#include <string>
+#include <wchar.h>
 
-namespace er::modloader {
+extern void config_load(void *module);
 
-class Config {
-public:
-    void load(void *module);
-
-    [[nodiscard]] const std::wstring &modulePath() const {
-        return modulePath_;
-    }
-    [[nodiscard]] std::wstring fullPath(const std::wstring &filename) const;
-
-private:
-    std::wstring modulePath_;
-};
-
-extern Config gConfig;
-
-}
+extern const wchar_t *module_path();
+extern void config_full_path(wchar_t *path, const wchar_t *filename);

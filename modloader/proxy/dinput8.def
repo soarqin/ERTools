@@ -1,0 +1,8 @@
+LIBRARY dinput8
+EXPORTS
+    DirectInput8Create=dinput8_FakeDirectInput8Create
+    DllCanUnloadNow=dinput8_FakeDllCanUnloadNow PRIVATE
+    DllGetClassObject=dinput8_FakeDllGetClassObject PRIVATE
+    DllRegisterServer=dinput8_FakeDllRegisterServer PRIVATE
+    DllUnregisterServer=dinput8_FakeDllUnregisterServer PRIVATE
+    GetdfDIJoystick=dinput8_FakeGetdfDIJoystick

@@ -8,8 +8,9 @@
 
 #pragma once
 
-#include <stdint.h>
-#include <stdbool.h>
+#include <wchar.h>
 
-extern bool gamehook_install();
-extern void gamehook_uninstall();
+extern void filecache_init();
+extern void filecache_uninit();
+extern const wchar_t *filecache_add(const wchar_t *path, const wchar_t *replace);
+extern const wchar_t *filecache_find(const wchar_t *path);

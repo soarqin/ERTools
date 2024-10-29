@@ -8,9 +8,16 @@
 
 #include "modloader/config.h"
 #include "modloader/gamehook.h"
+#include "modloader/mod.h"
+
+#include "proxy/winhttp.h"
+#include "proxy/dxgi.h"
+#include "proxy/dinput8.h"
 
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+
+#include <stdio.h>
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     UNREFERENCED_PARAMETER(lpReserved);
@@ -18,11 +25,22 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     switch (ul_reason_for_call) {
         case DLL_PROCESS_ATTACH:
             DisableThreadLibraryCalls(hModule);
-            er::modloader::gConfig.load(hModule);
-            er::modloader::GameHook::install();
+            load_winhttp_proxy();
+            load_dxgi_proxy();
+            load_dinput8_proxy();
+#if !defined(NDEBUG)
+            AllocConsole();
+            freopen("CONOUT$", "w", stdout);
+            freopen("CONOUT$", "w", stderr);
+            freopen("CONIN$", "r", stdin);
+#endif
+            config_load(hModule);
+            mods_init();
+            gamehook_install();
             break;
         case DLL_PROCESS_DETACH:
-            er::modloader::GameHook::uninstall();
+            gamehook_uninstall();
+            mods_uninit();
             break;
         default:
             break;
