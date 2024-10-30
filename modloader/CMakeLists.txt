@@ -18,10 +18,10 @@ add_library(${PROJECT_NAME} SHARED
     proxy/dxgi.c proxy/dxgi.h proxy/dxgi.def
 )
 set_target_properties(${PROJECT_NAME} PROPERTIES
-    OUTPUT_NAME ERModLoader
+    OUTPUT_NAME YAERModLoader
     PREFIX "")
 set_target_properties(modlauncher PROPERTIES
-    OUTPUT_NAME ERModLauncher)
+    OUTPUT_NAME YAERModLoader)
 set_target_properties(${PROJECT_NAME} modlauncher PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/$<0:>"
     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/$<0:>"

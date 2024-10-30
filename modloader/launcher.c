@@ -19,8 +19,8 @@
 #define ER_APP_ID 1245620
 
 static wchar_t full_game_path[MAX_PATH] = L"";
-static wchar_t full_config_path[MAX_PATH] = L"mod_loader.ini";
-static wchar_t full_modengine_dll[MAX_PATH] = L"ERModLoader.dll";
+static wchar_t full_config_path[MAX_PATH] = L"YAERModLoader.ini";
+static wchar_t full_modengine_dll[MAX_PATH] = L"YAERModLoader.dll";
 static bool suspend = false;
 
 bool parse_args(int argc, wchar_t *argv[]) {
@@ -80,7 +80,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine
     if (full_modengine_dll[0] == L'\0' || !PathFileExistsW(full_modengine_dll)) {
         GetModuleFileNameA(hInstance, filepath, MAX_PATH);
         PathRemoveFileSpecA(filepath);
-        PathAppendA(filepath, "ERModLoader.dll");
+        PathAppendA(filepath, "YAERModLoader.dll");
     } else {
         if (wcschr(full_modengine_dll, L':') == NULL && full_modengine_dll[0] != L'\\' && full_modengine_dll[0] != L'/') {
             char temp[MAX_PATH];

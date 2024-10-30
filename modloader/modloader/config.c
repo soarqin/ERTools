@@ -55,7 +55,7 @@ void config_load(void *module) {
     PathRemoveFileSpecW(modulePath_);
     PathRemoveBackslashW(modulePath_);
     if (config_path[0] == L'\0') {
-        config_full_path(config_path, L"mod_loader.ini");
+        config_full_path(config_path, L"YAERModLoader.ini");
     } else {
         if (wcschr(config_path, L':') == NULL && config_path[0] != L'\\' && config_path[0] != L'/') {
             wchar_t temp[MAX_PATH];
