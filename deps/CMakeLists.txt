@@ -30,11 +30,12 @@ if (BUILD_FLAGCHECKER OR BUILD_LSS_HELPER)
 endif ()
 
 if (BUILD_MOD_LOADER)
-    add_subdirectory(detours)
     add_subdirectory(uthash)
+    add_subdirectory(detours)
+    add_subdirectory(getopt)
 endif ()
 
-foreach (target liblua_static luafilesystem cjson memreader SDL3-static SDL3_gfx freetype harfbuzz rapidfuzz fmt toml11 nlohmann_json inih pugixml uthash detours)
+foreach (target liblua_static luafilesystem cjson memreader SDL3-static SDL3_gfx freetype harfbuzz rapidfuzz fmt toml11 nlohmann_json inih pugixml uthash detours wingetopt)
     if (TARGET ${target})
         set_target_properties(${target} PROPERTIES
             RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin

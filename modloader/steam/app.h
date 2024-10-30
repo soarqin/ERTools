@@ -7,3 +7,9 @@
  */
 
 #pragma once
+
+#include <wchar.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+extern bool app_find_game_path(uint32_t app_id, wchar_t *path);

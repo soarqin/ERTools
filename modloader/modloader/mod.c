@@ -39,7 +39,6 @@ void mods_init() {
 
     filecache_init();
     mods = NULL;
-    mods_add("test", L"mod");
 }
 
 void mods_uninit() {

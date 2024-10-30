@@ -1,27 +1,61 @@
-/*
- * Copyright (C) 2024, Soar Qin<soarchin@gmail.com>
-
- * Use of this source code is governed by an MIT-style
- * license that can be found in the LICENSE file or at
- * https://opensource.org/licenses/MIT.
- */
+/* Codes from: [libofdf](https://github.com/Jan200101/libofdf), licensed under MIT */
 
 #pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <stddef.h>
+#include <stdint.h>
 #include <wchar.h>
-#include <stdbool.h>
 
-typedef struct vdf_node_t vdf_node_t;
+enum vdf_data_type {
+    VDF_TYPE_NONE,
+    VDF_TYPE_ARRAY,
+    VDF_TYPE_STRING,
+    VDF_TYPE_INT
+};
 
-extern vdf_node_t *vdf_open(const wchar_t *path);
-extern void vdf_free(vdf_node_t *vdf);
-extern vdf_node_t *vdf_get_child(vdf_node_t *vdf, const char *key);
-extern void vdf_iterate(vdf_node_t *vdf,
-                        void (*child_callback)(const char *key, vdf_node_t **node, int count, void *data),
-                        void (*value_callback)(const char *key, const char *value, void *data),
-                        void *data);
-extern bool vdf_is_leaf(vdf_node_t *vdf);
-extern const char *vdf_get_key(vdf_node_t *vdf);
-extern const char *vdf_get_value(vdf_node_t *vdf);
-extern int vdf_get_child_count(vdf_node_t *vdf);
-extern vdf_node_t *vdf_get_child_by_index(vdf_node_t *vdf, int index);
+struct vdf_object;
+
+union vdf_data {
+    struct {
+        struct vdf_object **data_value;
+        size_t len;
+    } data_array;
+
+    struct {
+        char *str;
+        size_t len;
+    } data_string;
+
+    int64_t data_int;
+};
+
+struct vdf_object {
+    char *key;
+    struct vdf_object *parent;
+
+    enum vdf_data_type type;
+    union vdf_data data;
+
+    char *conditional;
+};
+
+struct vdf_object *vdf_parse_buffer(const char *, size_t);
+struct vdf_object *vdf_parse_file(const wchar_t *);
+
+size_t vdf_object_get_array_length(const struct vdf_object *);
+struct vdf_object *vdf_object_index_array(const struct vdf_object *, size_t);
+struct vdf_object *vdf_object_index_array_str(const struct vdf_object *, const char *);
+
+const char *vdf_object_get_string(const struct vdf_object *);
+int64_t vdf_object_get_int(const struct vdf_object *);
+
+void vdf_print_object(struct vdf_object *);
+void vdf_free_object(struct vdf_object *);
+
+#ifdef __cplusplus
+}
+#endif

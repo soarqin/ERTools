@@ -34,8 +34,8 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
             freopen("CONOUT$", "w", stderr);
             freopen("CONIN$", "r", stdin);
 #endif
-            config_load(hModule);
             mods_init();
+            config_load(hModule);
             gamehook_install();
             break;
         case DLL_PROCESS_DETACH:
