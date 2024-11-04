@@ -32,7 +32,7 @@ namespace lss_helper {
 
 class EditSegmentDlg : public wxDialog {
 public:
-    explicit EditSegmentDlg(wxWindow *parent);
+    explicit EditSegmentDlg(wxWindow *parent, bool isNewSplit);
     ~EditSegmentDlg() override;
     void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const;
     void setSegmentName(const std::string &name);

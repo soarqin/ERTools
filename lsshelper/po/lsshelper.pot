@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-04 20:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: editsegmentdlg.cpp:32
+msgid "New Segment"
+msgstr ""
+
+#: editsegmentdlg.cpp:32
+msgid "Edit Segment"
+msgstr ""
+
+#: editsegmentdlg.cpp:81
+msgid "Area:"
+msgstr ""
+
+#: editsegmentdlg.cpp:83
+msgid "Block:"
+msgstr ""
+
+#: editsegmentdlg.cpp:85
+msgid "Region:"
+msgstr ""
+
+#: editsegmentdlg.cpp:87
+msgid "Size:"
+msgstr ""
+
+#: editsegmentdlg.cpp:102
+msgid "OK"
+msgstr ""
+
+#: editsegmentdlg.cpp:103
+msgid "Cancel"
+msgstr ""
+
+#: editsegmentdlg.cpp:109
+msgid "When:"
+msgstr ""
+
+#: editsegmentdlg.cpp:111
+msgid "Type:"
+msgstr ""
+
+#: mainwnd.cpp:30
+msgid "SoulSplitter lss helper"
+msgstr ""
+
+#: mainwnd.cpp:34
+msgid "&Open...\tCtrl-O"
+msgstr ""
+
+#: mainwnd.cpp:34
+msgid "Open a file"
+msgstr ""
+
+#: mainwnd.cpp:35
+msgid "&Apply Changes\tCtrl-S"
+msgstr ""
+
+#: mainwnd.cpp:35
+msgid "Apply changes to current lss file, backup will be created"
+msgstr ""
+
+#: mainwnd.cpp:36
+msgid "E&xit\tAlt-X"
+msgstr ""
+
+#: mainwnd.cpp:36
+msgid "Quit this program"
+msgstr ""
+
+#: mainwnd.cpp:37
+msgid "&File"
+msgstr ""
+
+#: mainwnd.cpp:40
+msgid "&About...\tF1"
+msgstr ""
+
+#: mainwnd.cpp:40
+msgid "Show about dialog"
+msgstr ""
+
+#: mainwnd.cpp:41
+msgid "&Help"
+msgstr ""
+
+#: mainwnd.cpp:55
+msgid "Move Up"
+msgstr ""
+
+#: mainwnd.cpp:56
+msgid "Move Down"
+msgstr ""
+
+#: mainwnd.cpp:57
+msgid "Assign"
+msgstr ""
+
+#: mainwnd.cpp:58
+msgid "Unsign"
+msgstr ""
+
+#: mainwnd.cpp:59
+msgid "Edit"
+msgstr ""
+
+#: mainwnd.cpp:60
+msgid "Insert Above"
+msgstr ""
+
+#: mainwnd.cpp:61
+msgid "Insert Below"
+msgstr ""
+
+#: mainwnd.cpp:62
+msgid "Delete Segment"
+msgstr ""
+
+#: mainwnd.cpp:63
+msgid "Delete Split"
+msgstr ""
+
+#: mainwnd.cpp:99
+msgid "Segment Name"
+msgstr ""
+
+#: mainwnd.cpp:100
+msgid "Assigned Split"
+msgstr ""
+
+#: mainwnd.cpp:104
+msgid "When"
+msgstr ""
+
+#: mainwnd.cpp:105
+msgid "Type"
+msgstr ""
+
+#: mainwnd.cpp:106
+msgid "Split"
+msgstr ""
+
+#: mainwnd.cpp:113
+msgid "Save changes?"
+msgstr ""
+
+#: mainwnd.cpp:113
+msgid "Save"
+msgstr ""
+
+#: mainwnd.cpp:135
+msgid ""
+"SoulSplitter lss helper\n"
+"\n"
+"A tool to help you manage lss segments/splits\n"
+"\n"
+"Author: Soar Qin <soarchin@gmail.com>"
+msgstr ""
+
+#: mainwnd.cpp:137
+msgid "About"
+msgstr ""
+
+#: mainwnd.cpp:200
+msgid "Open file"
+msgstr ""
+
+#: mainwnd.cpp:201
+msgid "lss files (*.lss)|*.lss"
+msgstr ""
+
+#: mainwnd.cpp:212
+msgid "Invalid lss file"
+msgstr ""
+
+#: mainwnd.cpp:212 mainwnd.cpp:216 mainwnd.cpp:343 mainwnd.cpp:349
+msgid "Error"
+msgstr ""
+
+#: mainwnd.cpp:216
+msgid "Unsupported game"
+msgstr ""
+
+#: mainwnd.cpp:343
+msgid "Name cannot be empty"
+msgstr ""
+
+#: mainwnd.cpp:349
+msgid "Wrong Split data!"
+msgstr ""

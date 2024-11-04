@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: LSS Helper\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-04 20:42+0800\n"
+"PO-Revision-Date: 2024-11-04 20:58+0800\n"
+"Last-Translator: Soar Qin <soarchin@gmail.com>\n"
+"Language-Team: Soar Qin <soarchin@gmail.com\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: editsegmentdlg.cpp:32
+msgid "New Segment"
+msgstr "新节点"
+
+#: editsegmentdlg.cpp:32
+msgid "Edit Segment"
+msgstr "编辑节点"
+
+#: editsegmentdlg.cpp:81
+msgid "Area:"
+msgstr "大区："
+
+#: editsegmentdlg.cpp:83
+msgid "Block:"
+msgstr "区块"
+
+#: editsegmentdlg.cpp:85
+msgid "Region:"
+msgstr "地块"
+
+#: editsegmentdlg.cpp:87
+msgid "Size:"
+msgstr "大小"
+
+#: editsegmentdlg.cpp:102
+msgid "OK"
+msgstr "确定"
+
+#: editsegmentdlg.cpp:103
+msgid "Cancel"
+msgstr "取消"
+
+#: editsegmentdlg.cpp:109
+msgid "When:"
+msgstr "时机："
+
+#: editsegmentdlg.cpp:111
+msgid "Type:"
+msgstr "类型："
+
+#: mainwnd.cpp:30
+msgid "SoulSplitter lss helper"
+msgstr "SoulSplitter lss助手"
+
+#: mainwnd.cpp:34
+msgid "&Open...\tCtrl-O"
+msgstr "打开...(&O)\tCtrl-O"
+
+#: mainwnd.cpp:34
+msgid "Open a file"
+msgstr "打开文件"
+
+#: mainwnd.cpp:35
+msgid "&Apply Changes\tCtrl-S"
+msgstr "应用更改(&A)\tCtrl-S"
+
+#: mainwnd.cpp:35
+msgid "Apply changes to current lss file, backup will be created"
+msgstr "应用对当前 lss 文件的更改，创建备份"
+
+#: mainwnd.cpp:36
+msgid "E&xit\tAlt-X"
+msgstr "退出(&X)\tAlt-X"
+
+#: mainwnd.cpp:36
+msgid "Quit this program"
+msgstr "退出该程序"
+
+#: mainwnd.cpp:37
+msgid "&File"
+msgstr "文件(&F)"
+
+#: mainwnd.cpp:40
+msgid "&About...\tF1"
+msgstr "关于...(&A)\tF1"
+
+#: mainwnd.cpp:40
+msgid "Show about dialog"
+msgstr "显示关于对话框"
+
+#: mainwnd.cpp:41
+msgid "&Help"
+msgstr "帮助(&H)"
+
+#: mainwnd.cpp:55
+msgid "Move Up"
+msgstr "上移"
+
+#: mainwnd.cpp:56
+msgid "Move Down"
+msgstr "下移"
+
+#: mainwnd.cpp:57
+msgid "Assign"
+msgstr "关联"
+
+#: mainwnd.cpp:58
+msgid "Unsign"
+msgstr "解除关联"
+
+#: mainwnd.cpp:59
+msgid "Edit"
+msgstr "编辑"
+
+#: mainwnd.cpp:60
+msgid "Insert Above"
+msgstr "在上方插入"
+
+#: mainwnd.cpp:61
+msgid "Insert Below"
+msgstr "在下方插入"
+
+#: mainwnd.cpp:62
+msgid "Delete Segment"
+msgstr "删除节点"
+
+#: mainwnd.cpp:63
+msgid "Delete Split"
+msgstr "删除打点条件"
+
+#: mainwnd.cpp:99
+msgid "Segment Name"
+msgstr "节点名"
+
+#: mainwnd.cpp:100
+msgid "Assigned Split"
+msgstr "关联打点条件"
+
+#: mainwnd.cpp:104
+msgid "When"
+msgstr "时机"
+
+#: mainwnd.cpp:105
+msgid "Type"
+msgstr "类型"
+
+#: mainwnd.cpp:106
+msgid "Split"
+msgstr "打点条件"
+
+#: mainwnd.cpp:113
+msgid "Save changes?"
+msgstr "保存更改？"
+
+#: mainwnd.cpp:113
+msgid "Save"
+msgstr "保存"
+
+#: mainwnd.cpp:135
+msgid ""
+"SoulSplitter lss helper\n"
+"\n"
+"A tool to help you manage lss segments/splits\n"
+"\n"
+"Author: Soar Qin <soarchin@gmail.com>"
+msgstr ""
+"SoulSplitter lss 助手\n"
+"\n"
+"帮助你管理节点和打点条件的工具\n"
+"\n"
+"作者: Soar Qin <soarchin@gmail.com>"
+
+#: mainwnd.cpp:137
+msgid "About"
+msgstr "关羽"
+
+#: mainwnd.cpp:200
+msgid "Open file"
+msgstr "打开文件"
+
+#: mainwnd.cpp:201
+msgid "lss files (*.lss)|*.lss"
+msgstr "lss 文件 (*.lss)|*.lss"
+
+#: mainwnd.cpp:212
+msgid "Invalid lss file"
+msgstr "无效的lss文件"
+
+#: mainwnd.cpp:212 mainwnd.cpp:216 mainwnd.cpp:343 mainwnd.cpp:349
+msgid "Error"
+msgstr "错误"
+
+#: mainwnd.cpp:216
+msgid "Unsupported game"
+msgstr "不支持的游戏"
+
+#: mainwnd.cpp:343
+msgid "Name cannot be empty"
+msgstr "名称不能为空"
+
+#: mainwnd.cpp:349
+msgid "Wrong Split data!"
+msgstr "错误的打点条件数据"

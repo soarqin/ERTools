@@ -28,7 +28,8 @@
 
 namespace lss_helper {
 
-EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wxT("New Split"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
+EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit) : wxDialog(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
+    this->SetTitle(isNewSplit ? _("New Segment") : _("Edit Segment"));
     auto *sizer = new wxBoxSizer(wxVERTICAL);
 
     wxArrayString whenChoices = {"Immediate", "OnLoading", "OnBlackscreen"};
@@ -77,13 +78,13 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wx
     positionSizer->AddGrowableCol(1, 1);
     positionSizer->AddGrowableCol(3, 1);
     positionSizer->AddGrowableCol(5, 1);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Area:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Area:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     positionSizer->Add(positionArea_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Block:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Block:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     positionSizer->Add(positionBlock_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Region:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Region:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     positionSizer->Add(positionRegion_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Size:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Size:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     positionSizer->Add(positionSize_, 0, wxEXPAND | wxALL, 5);
     positionSizer->AddSpacer(0);
     positionSizer->AddSpacer(0);
@@ -98,16 +99,16 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wx
     positionPanel_->Hide();
 
     auto *buttonSizer = new wxBoxSizer(wxHORIZONTAL);
-    okButton_ = new wxButton(this, wxID_OK, wxT("OK"), wxDefaultPosition, wxDefaultSize, 0);
-    cancelButton_ = new wxButton(this, wxID_CANCEL, wxT("Cancel"), wxDefaultPosition, wxDefaultSize, 0);
+    okButton_ = new wxButton(this, wxID_OK, _("OK"), wxDefaultPosition, wxDefaultSize, 0);
+    cancelButton_ = new wxButton(this, wxID_CANCEL, _("Cancel"), wxDefaultPosition, wxDefaultSize, 0);
     okButton_->Enable(false);
     buttonSizer->Add(okButton_, 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     buttonSizer->Add(cancelButton_, 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
 
     auto *whenTypeSizer = new wxBoxSizer(wxHORIZONTAL);
-    whenTypeSizer->Add(new wxStaticText(this, wxID_ANY, wxT("When:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    whenTypeSizer->Add(new wxStaticText(this, wxID_ANY, _("When:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     whenTypeSizer->Add(whenChoice_, 0, wxEXPAND | wxALL, 5);
-    whenTypeSizer->Add(new wxStaticText(this, wxID_ANY, wxT("Type:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    whenTypeSizer->Add(new wxStaticText(this, wxID_ANY, _("Type:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
     whenTypeSizer->Add(typeChoice_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(segmentName_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(whenTypeSizer, 0, wxEXPAND | wxALL, 5);

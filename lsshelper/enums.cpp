@@ -59,6 +59,12 @@ void from_json(const nlohmann::json &j, std::vector<EnumData> &m) {
     }
 }
 
+static std::wstring languagePrefix;
+
+void Enums::setLanguagePrefix(const std::wstring &prefix) {
+    languagePrefix = prefix;
+}
+
 bool Enums::load(const std::string &gameName) {
     enums_.clear();
     mapper_.clear();
@@ -66,6 +72,8 @@ bool Enums::load(const std::string &gameName) {
     wchar_t path[MAX_PATH];
     GetModuleFileNameW(nullptr, path, MAX_PATH);
     PathRemoveFileSpecW(path);
+    PathAppendW(path, L"data");
+    PathAppendW(path, languagePrefix.c_str());
     PathAppendW(path, L"enums.json");
     std::ifstream ifs(path);
     if (!ifs.is_open()) return false;

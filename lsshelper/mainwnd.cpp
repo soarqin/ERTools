@@ -27,18 +27,18 @@
 
 namespace lss_helper {
 
-MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
+MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, _("SoulSplitter lss helper"),
                              wxDefaultPosition, wxSize(1200, 800)) {
     auto *bar = new wxMenuBar();
     auto *file = new wxMenu();
-    file->Append(wxID_OPEN, wxT("&Open...\tCtrl-O"), wxT("Open a file"));
-    file->Append(wxID_SAVE, wxT("&Apply Changes\tCtrl-S"), wxT("Apply changes to current lss file, backup will be created"));
-    file->Append(wxID_EXIT, wxT("E&xit\tAlt-X"), wxT("Quit this program"));
-    bar->Append(file, wxT("&File"));
+    file->Append(wxID_OPEN, _("&Open...\tCtrl-O"), _("Open a file"));
+    file->Append(wxID_SAVE, _("&Apply Changes\tCtrl-S"), _("Apply changes to current lss file, backup will be created"));
+    file->Append(wxID_EXIT, _("E&xit\tAlt-X"), _("Quit this program"));
+    bar->Append(file, _("&File"));
 
     auto *help = new wxMenu();
-    help->Append(wxID_ABOUT, wxT("&About...\tF1"), wxT("Show about dialog"));
-    bar->Append(help, wxT("&Help"));
+    help->Append(wxID_ABOUT, _("&About...\tF1"), _("Show about dialog"));
+    bar->Append(help, _("&Help"));
 
     wxFrame::SetMenuBar(bar);
 
@@ -52,15 +52,15 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     auto *middlePanel = new wxPanel(this, wxID_ANY);
     auto *middleSizer = new wxBoxSizer(wxVERTICAL);
     middlePanel->SetSizer(middleSizer);
-    moveUp_ = new wxButton(middlePanel, wxID_ANY, wxT("Move Up"), wxDefaultPosition, wxSize(100, 30));
-    moveDown_ = new wxButton(middlePanel, wxID_ANY, wxT("Move Down"), wxDefaultPosition, wxSize(100, 30));
-    assign_ = new wxButton(middlePanel, wxID_ANY, wxT("Assign"), wxDefaultPosition, wxSize(100, 30));
-    unsign_ = new wxButton(middlePanel, wxID_ANY, wxT("Unsign"), wxDefaultPosition, wxSize(100, 30));
-    editSegment_ = new wxButton(middlePanel, wxID_ANY, wxT("Edit"), wxDefaultPosition, wxSize(100, 30));
-    insertAbove_ = new wxButton(middlePanel, wxID_ANY, wxT("Insert Above"), wxDefaultPosition, wxSize(100, 30));
-    insertBelow_ = new wxButton(middlePanel, wxID_ANY, wxT("Insert Below"), wxDefaultPosition, wxSize(100, 30));
-    deleteSegment_ = new wxButton(middlePanel, wxID_ANY, wxT("Delete Segment"), wxDefaultPosition, wxSize(100, 30));
-    deleteSplit_ = new wxButton(middlePanel, wxID_ANY, wxT("Delete Split"), wxDefaultPosition, wxSize(100, 30));
+    moveUp_ = new wxButton(middlePanel, wxID_ANY, _("Move Up"), wxDefaultPosition, wxSize(100, 30));
+    moveDown_ = new wxButton(middlePanel, wxID_ANY, _("Move Down"), wxDefaultPosition, wxSize(100, 30));
+    assign_ = new wxButton(middlePanel, wxID_ANY, _("Assign"), wxDefaultPosition, wxSize(100, 30));
+    unsign_ = new wxButton(middlePanel, wxID_ANY, _("Unsign"), wxDefaultPosition, wxSize(100, 30));
+    editSegment_ = new wxButton(middlePanel, wxID_ANY, _("Edit"), wxDefaultPosition, wxSize(100, 30));
+    insertAbove_ = new wxButton(middlePanel, wxID_ANY, _("Insert Above"), wxDefaultPosition, wxSize(100, 30));
+    insertBelow_ = new wxButton(middlePanel, wxID_ANY, _("Insert Below"), wxDefaultPosition, wxSize(100, 30));
+    deleteSegment_ = new wxButton(middlePanel, wxID_ANY, _("Delete Segment"), wxDefaultPosition, wxSize(100, 30));
+    deleteSplit_ = new wxButton(middlePanel, wxID_ANY, _("Delete Split"), wxDefaultPosition, wxSize(100, 30));
 
     middleSizer->Add(moveUp_, 0, wxALIGN_CENTER_HORIZONTAL);
     middleSizer->AddSpacer(10);
@@ -96,21 +96,21 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
     sizer->Add(middlePanel, 0, wxEXPAND);
     sizer->Add(splitList_, 1, wxEXPAND);
 
-    segList_->AppendColumn(wxT("Segment Name"));
-    segList_->AppendColumn(wxT("Assigned Split"));
+    segList_->AppendColumn(_("Segment Name"));
+    segList_->AppendColumn(_("Assigned Split"));
     segList_->SetColumnWidth(0, 150);
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
 
-    splitList_->AppendColumn(wxT("When"));
-    splitList_->AppendColumn(wxT("Type"));
-    splitList_->AppendColumn(wxT("Split"));
+    splitList_->AppendColumn(_("When"));
+    splitList_->AppendColumn(_("Type"));
+    splitList_->AppendColumn(_("Split"));
     splitList_->SetColumnWidth(0, 150);
     splitList_->SetColumnWidth(1, 100);
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
 
     Bind(wxEVT_CLOSE_WINDOW, [&](wxCloseEvent &event) {
         if (lss_.changed()) {
-            if (wxMessageBox(wxT("Save changes?"), wxT("Save"), wxYES_NO) != wxYES) {
+            if (wxMessageBox(_("Save changes?"), _("Save"), wxYES_NO) != wxYES) {
                 event.Veto();
                 return;
             }
@@ -132,9 +132,9 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
                 Close(true);
                 break;
             case wxID_ABOUT: {
-                wxMessageBox(wxT("SoulSplitter lss helper\n\n"
+                wxMessageBox(_("SoulSplitter lss helper\n\n"
                                  "A tool to help you manage lss segments/splits\n\n"
-                                 "Author: Soar Qin <soarchin@gmail.com>"), wxT("About"));
+                                 "Author: Soar Qin <soarchin@gmail.com>"), _("About"));
                 break;
             }
             default:
@@ -197,8 +197,8 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, wxT("SoulSplitter lss helper"),
 MainWnd::~MainWnd() = default;
 
 void MainWnd::onLoad() {
-    wxFileDialog dialog(this, wxT("Open file"), wxEmptyString, wxEmptyString,
-                        wxT("lss files (*.lss)|*.lss"), wxFD_OPEN | wxFD_FILE_MUST_EXIST);
+    wxFileDialog dialog(this, _("Open file"), wxEmptyString, wxEmptyString,
+                        _("lss files (*.lss)|*.lss"), wxFD_OPEN | wxFD_FILE_MUST_EXIST);
     if (dialog.ShowModal() == wxID_CANCEL) {
         return;
     }
@@ -209,11 +209,11 @@ void MainWnd::onLoad() {
     auto res = lss_.open(path.wc_str());
     switch (res) {
         case -1: {
-            wxMessageBox(wxT("Invalid lss file"), wxT("Error"), wxICON_ERROR);
+            wxMessageBox(_("Invalid lss file"), _("Error"), wxICON_ERROR);
             break;
         }
         case -2: {
-            wxMessageBox(wxT("Unsupported game"), wxT("Error"), wxICON_ERROR);
+            wxMessageBox(_("Unsupported game"), _("Error"), wxICON_ERROR);
             break;
         }
         default: break;
@@ -322,7 +322,7 @@ void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
 
     static EditSegmentDlg *dlg = nullptr;
     if (dlg == nullptr)
-        dlg = new EditSegmentDlg(this);
+        dlg = new EditSegmentDlg(this, false);
     std::string oldName = newSeg ? "" : segData->seg.child("Name").text().get();
     dlg->setSegmentName(oldName);
     if (!newSeg && segData->split) {
@@ -340,13 +340,13 @@ void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
     std::string segmentName, when, type, identifier;
     dlg->getResult(segmentName, when, type, identifier);
     if (segmentName.empty() || identifier.empty()) {
-        wxMessageBox(wxT("Name cannot be empty"), wxT("Error"), wxICON_ERROR);
+        wxMessageBox(_("Name cannot be empty"), _("Error"), wxICON_ERROR);
         return;
     }
     bool wasAppend;
     const auto *snode = lss_.findOrAppendSplit(when, type, identifier, wasAppend);
     if (snode == nullptr) {
-        wxMessageBox(wxT("Wrong Split data!"), wxT("Error"), wxICON_ERROR);
+        wxMessageBox(_("Wrong Split data!"), _("Error"), wxICON_ERROR);
         return;
     }
     if (newSeg) {

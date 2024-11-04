@@ -19,6 +19,7 @@
  */
 
 #include "mainwnd.h"
+#include "enums.h"
 
 namespace lss_helper {
 
@@ -32,11 +33,29 @@ public:
         freopen("CONOUT$", "w", stderr);
 #endif
 
+        int lang = wxLocale::GetSystemLanguage();
+        wxLocale::AddCatalogLookupPathPrefix(wxT("data"));
+        locale = new wxLocale();
+        locale->Init(lang);
+        locale->AddCatalog(wxT("lsshelper"));
+        if (!locale->IsOk()) {
+            lang = wxLANGUAGE_ENGLISH_US;
+            locale->Init(lang);
+            locale->AddCatalog(wxT("lsshelper"));
+        }
+        Enums::setLanguagePrefix(wxLocale::GetLanguageCanonicalName(lang).ToStdWstring());
         MSWEnableDarkMode(wxApp::DarkMode_Auto);
-        // wxInitAllImageHandlers();
         (new MainWnd)->Show(true);
         return true;
     }
+
+    int OnExit() override {
+        delete locale;
+        return wxApp::OnExit();
+    }
+
+private:
+    wxLocale *locale;
 };
 
 }

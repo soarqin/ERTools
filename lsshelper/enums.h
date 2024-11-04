@@ -37,6 +37,7 @@ struct EnumData {
 
 class Enums {
 public:
+    static void setLanguagePrefix(const std::wstring &prefix);
     bool load(const std::string &gameName);
     [[nodiscard]] const EnumData &operator()(const std::string &stype, const std::string &name) const;
     [[nodiscard]] const std::vector<EnumData> &operator[](const std::string &stype) const;
