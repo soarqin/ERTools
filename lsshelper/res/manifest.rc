@@ -1,2 +1,3 @@
-#define wxUSE_DPI_AWARE_MANIFEST 2
-#include <wx/msw/wx.rc>
+  #define wxUSE_RC_MANIFEST 1
+  #define wxUSE_DPI_AWARE_MANIFEST 2
+  #include <wx/msw/wx.rc>

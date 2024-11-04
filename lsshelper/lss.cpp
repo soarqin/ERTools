@@ -1,9 +1,21 @@
 /*
- * Copyright (c) 2024 Soar Qin<soarchin@gmail.com>
- *
- * Use of this source code is governed by an MIT-style
- * license that can be found in the LICENSE file or at
- * https://opensource.org/licenses/MIT.
+ * LSS Helper - LiveSplit lss file helper
+ * Copyright (C) 2024  Soar Qin<soarchin@gmail.com>
+
+ * This file is part of LSS Helper.
+
+ * LSS Helper is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+
+ * LSS Helper is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with LSS Helper.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "lss.h"
@@ -12,6 +24,7 @@
 
 #include <wx/filefn.h>
 #include <wx/datetime.h>
+#include <wx/msgdlg.h>
 #include <pugixml.hpp>
 #include <fmt/format.h>
 #include <fmt/xchar.h>
@@ -81,7 +94,9 @@ int Lss::open(const wchar_t *filename) {
         auto &sn = segs_.emplace_back();
         sn.seg = segment;
         auto name = segment.child("Name").text().get();
-        fmt::print("Segment: {}\n", name);
+#if !defined(NDEBUG)
+        fmt::print(stdout, "Segment: {}\n", name);
+#endif
     }
     auto xpath = fmt::format("/Run/AutoSplitterSettings/MainViewModel/{}ViewModel/Splits/HierarchicalTimingTypeViewModel", gameName_);
     auto nodeName = fmt::format("{}SplitType", gameName_);
@@ -166,7 +181,11 @@ bool Lss::save() {
     try {
         doch.save_file(dochFilename.c_str(), "  ");
     } catch (const std::exception &e) {
+#if !defined(NDEBUG)
         fmt::print("Error saving helper file: {}\n", e.what());
+#else
+        wxMessageBox(fmt::format("Error saving helper file: {}", e.what()), "Error", wxICON_ERROR);
+#endif
         return false;
     }
     if (changed_) {
@@ -174,7 +193,11 @@ bool Lss::save() {
         try {
             doc_.save_file(filename_.c_str());
         } catch (const std::exception &e) {
+#if !defined(NDEBUG)
             fmt::print("Error saving lss file: {}\n", e.what());
+#else
+            wxMessageBox(fmt::format("Error saving lss file: {}", e.what()), "Error", wxICON_ERROR);
+#endif
             return false;
         }
         changed_ = false;
