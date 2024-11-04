@@ -249,7 +249,7 @@ void MainWnd::onLoad() {
         auto index = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(split.when));
         splitList_->SetItem(index, 1, wxString::FromUTF8(split.type));
         splitList_->SetItem(index, 2, split.displayName);
-        splitList_->SetItemData(index, long(i));
+        splitList_->SetItemPtrData(index, wxUIntPtr(i));
         splitList_->SetItemTextColour(index, split.seg ? wxColour(96, 96, 96) : splitList_->GetTextColour());
     }
     splitList_->SetColumnWidth(2, wxLIST_AUTOSIZE_USEHEADER);
@@ -363,7 +363,7 @@ void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
         auto sindex = splitList_->InsertItem(splitList_->GetItemCount(), wxString::FromUTF8(snode->when));
         splitList_->SetItem(sindex, 1, wxString::FromUTF8(snode->type));
         splitList_->SetItem(sindex, 2, snode->displayName);
-        splitList_->SetItemData(sindex, long(lss_.splits().size() - 1));
+        splitList_->SetItemPtrData(sindex, wxUIntPtr(lss_.splits().size() - 1));
         assignSplitToSegment(toIndex, sindex, *segData, *snode);
     } else if (segData->split != snode->split) {
         const auto &splits = lss_.splits();
@@ -396,6 +396,13 @@ void MainWnd::deleteSplitButtonClicked() {
     auto &split = lss_.splits()[sindex];
     doUnsign(index, split);
     splitList_->DeleteItem(index);
+    int sz = splitList_->GetItemCount();
+    for (int i = 0; i < sz; i++) {
+        auto oldIndex = splitList_->GetItemData(i);
+        if (oldIndex > sindex) {
+            splitList_->SetItemPtrData(i, oldIndex - 1);
+        }
+    }
     lss_.deleteSplit(index);
 }
 
