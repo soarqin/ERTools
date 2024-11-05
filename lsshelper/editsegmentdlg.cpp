@@ -28,12 +28,36 @@
 
 namespace lss_helper {
 
-EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit) : wxDialog(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
+EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::string &gameName) : wxDialog(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
     this->SetTitle(isNewSplit ? _("New Segment") : _("Edit Segment"));
     auto *sizer = new wxBoxSizer(wxVERTICAL);
 
-    wxArrayString whenChoices = {"Immediate", "OnLoading", "OnBlackscreen"};
-    wxArrayString typeChoices = {"Boss", "Grace", "ItemPickup", "Flag", "Position"};
+    if (gameName == "EldenRing") {
+        whenStrings_ = {"Immediate", "OnLoading", "OnBlackscreen"};
+        typeStrings_ = {"Boss", "Grace", "ItemPickup", "Flag", "Position"};
+    } else {
+        whenStrings_ = {"Immediate", "OnLoading"};
+        typeStrings_ = {"Boss", "Bonfire", "ItemPickup", "Flag", "Position", "Attribute"};
+    }
+
+    /* for gettext use */
+#if 0
+    _("Immediate");
+    _("OnLoading");
+    _("OnBlackscreen");
+    _("Boss");
+    _("Grace");
+    _("ItemPickup");
+    _("Flag");
+    _("Position");
+    _("Bonfire");
+    _("Attribute");
+#endif
+
+    wxArrayString whenChoices;
+    std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return _(str); });
+    wxArrayString typeChoices;
+    std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return _(str); });
     segmentName_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
     whenChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, whenChoices);
     typeChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, typeChoices);
@@ -49,21 +73,16 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit) : wxDialog(par
     positionY_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
     positionZ_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
 
-    segmentName_->SetHint("Segment Name");
+    segmentName_->SetHint(_("Segment Name"));
     whenChoice_->SetSelection(0);
     typeChoice_->SetSelection(0);
-    splitFilter_->SetHint("Filter");
-    flagId_->SetHint("Flag ID");
+    splitFilter_->SetHint(_("Filter"));
     wxIntegerValidator<uint32_t> intValidator;
     flagId_->SetValidator(intValidator);
     flagId_->Hide();
-    positionArea_->SetHint("Area");
     positionArea_->SetValidator(intValidator);
-    positionBlock_->SetHint("Block");
     positionBlock_->SetValidator(intValidator);
-    positionRegion_->SetHint("Region");
     positionRegion_->SetValidator(intValidator);
-    positionSize_->SetHint("Size");
     positionSize_->SetValidator(intValidator);
     wxFloatingPointValidator<float> posValidator(6, nullptr,wxNUM_VAL_NO_TRAILING_ZEROES);
     positionX_->SetHint("X");
@@ -152,9 +171,10 @@ EditSegmentDlg::~EditSegmentDlg() = default;
 
 void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const {
     segmentName = segmentName_->GetValue().utf8_string();
-    when = whenChoice_->GetStringSelection().utf8_string();
-    type = typeChoice_->GetStringSelection().utf8_string();
-    switch (typeChoice_->GetSelection()) {
+    when = whenStrings_[whenChoice_->GetSelection()];
+    auto typeIdx = typeChoice_->GetSelection();
+    type = typeStrings_[typeIdx];
+    switch (typeIdx) {
         case 3:
             identifier = fmt::format("{}", flagId_->GetValue().utf8_string());
             break;

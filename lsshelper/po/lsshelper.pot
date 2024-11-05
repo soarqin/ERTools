@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-04 20:42+0800\n"
+"POT-Creation-Date: 2024-11-05 21:19+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,35 +25,83 @@ msgstr ""
 msgid "Edit Segment"
 msgstr ""
 
-#: editsegmentdlg.cpp:81
+#: editsegmentdlg.cpp:45
+msgid "Immediate"
+msgstr ""
+
+#: editsegmentdlg.cpp:46
+msgid "OnLoading"
+msgstr ""
+
+#: editsegmentdlg.cpp:47
+msgid "OnBlackscreen"
+msgstr ""
+
+#: editsegmentdlg.cpp:48
+msgid "Boss"
+msgstr ""
+
+#: editsegmentdlg.cpp:49
+msgid "Grace"
+msgstr ""
+
+#: editsegmentdlg.cpp:50
+msgid "ItemPickup"
+msgstr ""
+
+#: editsegmentdlg.cpp:51
+msgid "Flag"
+msgstr ""
+
+#: editsegmentdlg.cpp:52
+msgid "Position"
+msgstr ""
+
+#: editsegmentdlg.cpp:53
+msgid "Bonfire"
+msgstr ""
+
+#: editsegmentdlg.cpp:54
+msgid "Attribute"
+msgstr ""
+
+#: editsegmentdlg.cpp:76 mainwnd.cpp:99
+msgid "Segment Name"
+msgstr ""
+
+#: editsegmentdlg.cpp:79
+msgid "Filter"
+msgstr ""
+
+#: editsegmentdlg.cpp:100
 msgid "Area:"
 msgstr ""
 
-#: editsegmentdlg.cpp:83
+#: editsegmentdlg.cpp:102
 msgid "Block:"
 msgstr ""
 
-#: editsegmentdlg.cpp:85
+#: editsegmentdlg.cpp:104
 msgid "Region:"
 msgstr ""
 
-#: editsegmentdlg.cpp:87
+#: editsegmentdlg.cpp:106
 msgid "Size:"
 msgstr ""
 
-#: editsegmentdlg.cpp:102
+#: editsegmentdlg.cpp:121
 msgid "OK"
 msgstr ""
 
-#: editsegmentdlg.cpp:103
+#: editsegmentdlg.cpp:122
 msgid "Cancel"
 msgstr ""
 
-#: editsegmentdlg.cpp:109
+#: editsegmentdlg.cpp:128
 msgid "When:"
 msgstr ""
 
-#: editsegmentdlg.cpp:111
+#: editsegmentdlg.cpp:130
 msgid "Type:"
 msgstr ""
 
@@ -135,10 +183,6 @@ msgstr ""
 
 #: mainwnd.cpp:63
 msgid "Delete Split"
-msgstr ""
-
-#: mainwnd.cpp:99
-msgid "Segment Name"
 msgstr ""
 
 #: mainwnd.cpp:100

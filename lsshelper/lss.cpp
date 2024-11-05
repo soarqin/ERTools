@@ -22,24 +22,26 @@
 
 #include "util.h"
 
-#include <wx/filefn.h>
 #include <wx/datetime.h>
 #include <wx/msgdlg.h>
 #include <pugixml.hpp>
 #include <fmt/format.h>
-#include <fmt/xchar.h>
 
 namespace lss_helper {
 
 inline std::string mapGameName(const std::string &name) {
     if (name == "Elden Ring")
         return "EldenRing";
+    if (name == "Dark Souls III" || name == "Dark Souls 3")
+        return "DarkSouls3";
     return "";
 }
 
 inline const char *typeToXsiType(const std::string &type) {
     if (type == "Grace")
         return "Grace";
+    if (type == "Bonfire")
+        return "Bonfire";
     if (type == "Boss")
         return "Boss";
     if (type == "ItemPickup")

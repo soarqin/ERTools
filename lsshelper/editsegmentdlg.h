@@ -32,7 +32,7 @@ namespace lss_helper {
 
 class EditSegmentDlg : public wxDialog {
 public:
-    explicit EditSegmentDlg(wxWindow *parent, bool isNewSplit);
+    explicit EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::string &gameName);
     ~EditSegmentDlg() override;
     void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const;
     void setSegmentName(const std::string &name);
@@ -68,6 +68,7 @@ private:
 
     const std::vector<EnumData> *enumsList_;
     std::vector<std::pair<const EnumData*, double>> filterList_;
+    std::vector<std::string> whenStrings_, typeStrings_;
 };
 
 }
