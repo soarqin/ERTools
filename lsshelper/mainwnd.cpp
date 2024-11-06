@@ -110,11 +110,16 @@ MainWnd::MainWnd() : wxFrame(nullptr, wxID_ANY, _("SoulSplitter lss helper"),
 
     Bind(wxEVT_CLOSE_WINDOW, [&](wxCloseEvent &event) {
         if (lss_.changed()) {
-            if (wxMessageBox(_("Save changes?"), _("Save"), wxYES_NO) != wxYES) {
-                event.Veto();
-                return;
+            switch (wxMessageBox(_("Save changes?"), _("Save"), wxYES_NO | wxCANCEL)) {
+                case wxYES:
+                    lss_.save();
+                    break;
+                case wxCANCEL:
+                    event.Veto();
+                    return;
+                case wxNO:
+                    break;
             }
-            lss_.save();
         }
         event.Skip();
     });
@@ -228,17 +233,19 @@ void MainWnd::onLoad() {
         if (!seg.split.empty()) segList_->SetItem(long(i), 1, seg.splitName);
     }
     segList_->SetColumnWidth(1, wxLIST_AUTOSIZE_USEHEADER);
-    segList_->Select(0);
-    segList_->EnsureVisible(0);
-    int selIdx = 0;
-    auto segCnt = segList_->GetItemCount();
-    while (selIdx < segCnt) {
-        if (segs[selIdx].split.empty()) {
-            segList_->Select(selIdx);
-            segList_->EnsureVisible(selIdx);
-            break;
+    if (segList_->GetItemCount() > 0) {
+        segList_->Select(0);
+        segList_->EnsureVisible(0);
+        int selIdx = 0;
+        auto segCnt = segList_->GetItemCount();
+        while (selIdx < segCnt) {
+            if (segs[selIdx].split.empty()) {
+                segList_->Select(selIdx);
+                segList_->EnsureVisible(selIdx);
+                break;
+            }
+            selIdx++;
         }
-        selIdx++;
     }
 
     splitList_->DeleteAllItems();

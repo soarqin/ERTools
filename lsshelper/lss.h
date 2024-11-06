@@ -54,7 +54,8 @@ struct SplitNode {
     inline void assign(const pugi::xml_node &n) const {
         const_cast<SplitNode*>(this)->seg = n;
     }
-    void buildDisplayName();
+    void buildDisplayNameER();
+    void buildDisplayNameDS3();
 };
 
 class Lss {
