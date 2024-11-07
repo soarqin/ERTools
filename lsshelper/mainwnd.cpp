@@ -329,7 +329,8 @@ void MainWnd::editSegmentButtonClicked(bool newSeg, bool insertBelow) {
 
     static EditSegmentDlg *dlg = nullptr;
     if (dlg == nullptr)
-        dlg = new EditSegmentDlg(this, false, lss_.gameName());
+        dlg = new EditSegmentDlg(this);
+    dlg->prepare(newSeg, lss_.gameName());
     std::string oldName = newSeg ? "" : segData->seg.child("Name").text().get();
     dlg->setSegmentName(oldName);
     if (!newSeg && segData->split) {

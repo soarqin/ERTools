@@ -32,8 +32,9 @@ namespace lss_helper {
 
 class EditSegmentDlg : public wxDialog {
 public:
-    explicit EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::string &gameName);
+    explicit EditSegmentDlg(wxWindow *parent);
     ~EditSegmentDlg() override;
+    void prepare(bool isNewSplit, const std::string &gameName);
     void getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const;
     void setSegmentName(const std::string &name);
     void setDefaultFilter(const std::wstring &filer);
@@ -45,6 +46,8 @@ private:
     void fitOnTypeChanged();
 
 private:
+    bool isER_ = false;
+
     wxTextCtrl *segmentName_;
     wxChoice *whenChoice_;
     wxChoice *typeChoice_;
@@ -53,6 +56,10 @@ private:
 
     wxTextCtrl *flagId_;
     wxPanel *positionPanel_;
+    wxStaticText *areaText_;
+    wxStaticText *blockText_;
+    wxStaticText *regionText_;
+    wxTextCtrl *positionDescription_;
     wxTextCtrl *positionArea_;
     wxTextCtrl *positionBlock_;
     wxTextCtrl *positionRegion_;

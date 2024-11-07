@@ -23,22 +23,14 @@
 #include "util.h"
 
 #include <wx/valnum.h>
+#include <wx/gbsizer.h>
 #include <rapidfuzz/fuzz.hpp>
 #include <fmt/format.h>
 
 namespace lss_helper {
 
-EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::string &gameName) : wxDialog(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
-    this->SetTitle(isNewSplit ? _("New Segment") : _("Edit Segment"));
+EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {
     auto *sizer = new wxBoxSizer(wxVERTICAL);
-
-    if (gameName == "EldenRing") {
-        whenStrings_ = {"Immediate", "OnLoading", "OnBlackscreen"};
-        typeStrings_ = {"Boss", "Grace", "ItemPickup", "Flag", "Position"};
-    } else {
-        whenStrings_ = {"Immediate", "OnLoading"};
-        typeStrings_ = {"Boss", "Bonfire", "ItemPickup", "Flag", "Position", "Attribute"};
-    }
 
     /* for gettext use */
 #if 0
@@ -54,17 +46,17 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::str
     _("Attribute");
 #endif
 
-    wxArrayString whenChoices;
-    std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return _(str); });
-    wxArrayString typeChoices;
-    std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return _(str); });
     segmentName_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
-    whenChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, whenChoices);
-    typeChoice_ = new wxChoice(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, typeChoices);
+    whenChoice_ = new wxChoice(this, wxID_ANY);
+    typeChoice_ = new wxChoice(this, wxID_ANY);
     splitFilter_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
     splitDataList_ = new wxListBox(this, wxID_ANY, wxPoint(0, 0), wxDefaultSize, 0, nullptr, wxLB_SINGLE);
     flagId_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
     positionPanel_ = new wxPanel(this, wxID_ANY);
+    positionDescription_ = new wxTextCtrl(positionPanel_, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
+    areaText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Area:"));
+    blockText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Block:"));
+    regionText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Region:"));
     positionArea_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
     positionBlock_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
     positionRegion_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
@@ -92,29 +84,29 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::str
     positionZ_->SetHint("Z");
     positionZ_->SetValidator(posValidator);
 
-    auto *positionSizer = new wxFlexGridSizer(6, 0, 0);
+    auto *positionSizer = new wxGridBagSizer();
     positionPanel_->SetSizer(positionSizer);
+    positionSizer->SetCols(6);
+    positionSizer->SetRows(4);
     positionSizer->AddGrowableCol(1, 1);
     positionSizer->AddGrowableCol(3, 1);
     positionSizer->AddGrowableCol(5, 1);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Area:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionArea_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Block:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionBlock_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Region:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionRegion_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Size:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionSize_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->AddSpacer(0);
-    positionSizer->AddSpacer(0);
-    positionSizer->AddSpacer(0);
-    positionSizer->AddSpacer(0);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("X:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionX_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Y:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionY_, 0, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Z:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionZ_, 0, wxEXPAND | wxALL, 5);
+    positionSizer->Add(areaText_, wxGBPosition(0, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionArea_, wxGBPosition(0, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(blockText_, wxGBPosition(0, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionBlock_, wxGBPosition(0, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(regionText_, wxGBPosition(0, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionRegion_, wxGBPosition(0, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Size:")), wxGBPosition(1, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionSize_, wxGBPosition(1, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("X:")), wxGBPosition(2, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionX_, wxGBPosition(2, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Y:")), wxGBPosition(2, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionY_, wxGBPosition(2, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Z:")), wxGBPosition(2, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionZ_, wxGBPosition(2, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Description:")), wxGBPosition(3, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer->Add(positionDescription_, wxGBPosition(3, 1), wxGBSpan(1, 5), wxEXPAND | wxALL, 5);
     positionPanel_->Hide();
 
     auto *buttonSizer = new wxBoxSizer(wxHORIZONTAL);
@@ -169,6 +161,38 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent, bool isNewSplit, const std::str
 
 EditSegmentDlg::~EditSegmentDlg() = default;
 
+void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
+    isER_ = gameName == "EldenRing";
+    this->SetTitle(isNewSplit ? _("New Segment") : _("Edit Segment"));
+    if (isER_) {
+        whenStrings_ = {"Immediate", "OnLoading", "OnBlackscreen"};
+        typeStrings_ = {"Boss", "Grace", "ItemPickup", "Flag", "Position"};
+        areaText_->Show();
+        blockText_->Show();
+        regionText_->Show();
+        positionArea_->Show();
+        positionBlock_->Show();
+        positionRegion_->Show();
+        positionDescription_->Show(false);
+    } else {
+        whenStrings_ = {"Immediate", "OnLoading"};
+        typeStrings_ = {"Boss", "Bonfire", "ItemPickup", "Flag", "Position", "Attribute"};
+        areaText_->Show(false);
+        blockText_->Show(false);
+        regionText_->Show(false);
+        positionArea_->Show(false);
+        positionBlock_->Show(false);
+        positionRegion_->Show(false);
+        positionDescription_->Show();
+    }
+    wxArrayString whenChoices;
+    std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return _(str); });
+    wxArrayString typeChoices;
+    std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return _(str); });
+    whenChoice_->Set(whenChoices);
+    typeChoice_->Set(typeChoices);
+}
+
 void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const {
     segmentName = segmentName_->GetValue().utf8_string();
     when = whenStrings_[whenChoice_->GetSelection()];
@@ -179,10 +203,16 @@ void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std:
             identifier = fmt::format("{}", flagId_->GetValue().utf8_string());
             break;
         case 4:
-            identifier = fmt::format("{},{},{},{},{},{},{}", positionArea_->GetValue().utf8_string(),
-                                     positionBlock_->GetValue().utf8_string(), positionRegion_->GetValue().utf8_string(),
-                                     positionSize_->GetValue().utf8_string(), positionX_->GetValue().utf8_string(),
-                                     positionY_->GetValue().utf8_string(), positionZ_->GetValue().utf8_string());
+            if (isER_) {
+                identifier = fmt::format("{},{},{},{},{},{},{}", positionArea_->GetValue().utf8_string(),
+                                         positionBlock_->GetValue().utf8_string(), positionRegion_->GetValue().utf8_string(),
+                                         positionSize_->GetValue().utf8_string(), positionX_->GetValue().utf8_string(),
+                                         positionY_->GetValue().utf8_string(), positionZ_->GetValue().utf8_string());
+            } else {
+                identifier = fmt::format("{},{},{},{},{}", positionDescription_->GetValue().utf8_string(),
+                                         positionX_->GetValue().utf8_string(), positionY_->GetValue().utf8_string(),
+                                         positionZ_->GetValue().utf8_string(), positionSize_->GetValue().utf8_string());
+            }
             break;
         default: {
             auto sel = splitDataList_->GetSelection();
@@ -201,12 +231,12 @@ void EditSegmentDlg::setDefaultFilter(const std::wstring &filer) {
 }
 
 void EditSegmentDlg::setValue(const std::string &when, const std::string &type, const std::string &value) {
-    whenChoice_->SetStringSelection(wxString::FromUTF8(when));
-    typeChoice_->SetStringSelection(wxString::FromUTF8(type));
+    whenChoice_->SetStringSelection(_(when.c_str()));
+    typeChoice_->SetStringSelection(_(type.c_str()));
     fitOnTypeChanged();
-    if (type == "Flag") {
+    if (type == _("Flag")) {
         flagId_->SetValue(wxString::FromUTF8(value));
-    } else if (type == "Position") {
+    } else if (type == _("Position")) {
         auto res = splitString(value, ',');
         if (res.size() < 7) return;
         positionArea_->SetValue(wxString::FromUTF8(res[0]));

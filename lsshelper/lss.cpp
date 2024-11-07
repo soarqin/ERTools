@@ -22,6 +22,9 @@
 
 #include "util.h"
 
+#if defined(NDEBUG)
+#include <wx/msgdlg.h>
+#endif
 #include <wx/datetime.h>
 #include <pugixml.hpp>
 #include <fmt/format.h>
