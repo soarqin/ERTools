@@ -23,7 +23,6 @@
 #include "util.h"
 
 #include <wx/valnum.h>
-#include <wx/gbsizer.h>
 #include <rapidfuzz/fuzz.hpp>
 #include <fmt/format.h>
 
@@ -51,24 +50,36 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wx
     typeChoice_ = new wxChoice(this, wxID_ANY);
     splitFilter_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
     splitDataList_ = new wxListBox(this, wxID_ANY, wxPoint(0, 0), wxDefaultSize, 0, nullptr, wxLB_SINGLE);
+    flagSizer_ = new wxBoxSizer(wxHORIZONTAL);
+    flagIdText_ = new wxStaticText(this, wxID_ANY, _("Flag ID:"));
     flagId_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionPanel_ = new wxPanel(this, wxID_ANY);
-    positionDescription_ = new wxTextCtrl(positionPanel_, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
-    areaText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Area:"));
-    blockText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Block:"));
-    regionText_ = new wxStaticText(positionPanel_, wxID_ANY, _("Region:"));
-    positionArea_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionBlock_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionRegion_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionSize_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionX_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionY_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
-    positionZ_ = new wxTextCtrl(positionPanel_, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    flagDescriptionText_ = new wxStaticText(this, wxID_ANY, _("Description:"));
+    flagDescription_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
+    positionSizer_ = new wxGridBagSizer();
+    positionDescription_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
+    positionAreaText_ = new wxStaticText(this, wxID_ANY, _("Area:"));
+    positionBlockText_ = new wxStaticText(this, wxID_ANY, _("Block:"));
+    positionRegionText_ = new wxStaticText(this, wxID_ANY, _("Region:"));
+    positionArea_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionBlock_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionRegion_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionSize_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionX_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionY_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    positionZ_ = new wxTextCtrl(this, wxID_ANY, "0", wxDefaultPosition, wxDefaultSize);
+    attributeSizer_ = new wxBoxSizer(wxHORIZONTAL);
+    attributeType_ = new wxChoice(this, wxID_ANY);
+    attributeLevel_ = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize);
 
     segmentName_->SetHint(_("Segment Name"));
     whenChoice_->SetSelection(0);
     typeChoice_->SetSelection(0);
     splitFilter_->SetHint(_("Filter"));
+
+    flagSizer_->Add(flagIdText_, 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    flagSizer_->Add(flagId_, 1, wxEXPAND | wxALL, 5);
+    flagSizer_->Add(flagDescriptionText_, 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    flagSizer_->Add(flagDescription_, 1, wxEXPAND | wxALL, 5);
     wxIntegerValidator<uint32_t> intValidator;
     flagId_->SetValidator(intValidator);
     flagId_->Hide();
@@ -84,30 +95,34 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wx
     positionZ_->SetHint("Z");
     positionZ_->SetValidator(posValidator);
 
-    auto *positionSizer = new wxGridBagSizer();
-    positionPanel_->SetSizer(positionSizer);
-    positionSizer->SetCols(6);
-    positionSizer->SetRows(4);
-    positionSizer->AddGrowableCol(1, 1);
-    positionSizer->AddGrowableCol(3, 1);
-    positionSizer->AddGrowableCol(5, 1);
-    positionSizer->Add(areaText_, wxGBPosition(0, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionArea_, wxGBPosition(0, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(blockText_, wxGBPosition(0, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionBlock_, wxGBPosition(0, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(regionText_, wxGBPosition(0, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionRegion_, wxGBPosition(0, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Size:")), wxGBPosition(1, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionSize_, wxGBPosition(1, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("X:")), wxGBPosition(2, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionX_, wxGBPosition(2, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Y:")), wxGBPosition(2, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionY_, wxGBPosition(2, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, wxT("Z:")), wxGBPosition(2, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionZ_, wxGBPosition(2, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
-    positionSizer->Add(new wxStaticText(positionPanel_, wxID_ANY, _("Description:")), wxGBPosition(3, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
-    positionSizer->Add(positionDescription_, wxGBPosition(3, 1), wxGBSpan(1, 5), wxEXPAND | wxALL, 5);
-    positionPanel_->Hide();
+    positionSizer_->SetCols(6);
+    positionSizer_->SetRows(4);
+    positionSizer_->AddGrowableCol(1, 1);
+    positionSizer_->AddGrowableCol(3, 1);
+    positionSizer_->AddGrowableCol(5, 1);
+    positionSizer_->Add(positionAreaText_, wxGBPosition(0, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionArea_, wxGBPosition(0, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(positionBlockText_, wxGBPosition(0, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionBlock_, wxGBPosition(0, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(positionRegionText_, wxGBPosition(0, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionRegion_, wxGBPosition(0, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(new wxStaticText(this, wxID_ANY, _("Size:")), wxGBPosition(1, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionSize_, wxGBPosition(1, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(new wxStaticText(this, wxID_ANY, wxT("X:")), wxGBPosition(2, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionX_, wxGBPosition(2, 1), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(new wxStaticText(this, wxID_ANY, wxT("Y:")), wxGBPosition(2, 2), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionY_, wxGBPosition(2, 3), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(new wxStaticText(this, wxID_ANY, wxT("Z:")), wxGBPosition(2, 4), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionZ_, wxGBPosition(2, 5), wxDefaultSpan, wxEXPAND | wxALL, 5);
+    positionSizer_->Add(new wxStaticText(this, wxID_ANY, _("Description:")), wxGBPosition(3, 0), wxDefaultSpan, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    positionSizer_->Add(positionDescription_, wxGBPosition(3, 1), wxGBSpan(1, 5), wxEXPAND | wxALL, 5);
+    positionSizer_->Show(false);
+
+    attributeSizer_->Add(new wxStaticText(this, wxID_ANY, _("Type:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    attributeSizer_->Add(attributeType_, 1, wxEXPAND | wxALL, 5);
+    attributeSizer_->Add(new wxStaticText(this, wxID_ANY, _("Level:")), 0, wxALIGN_CENTER_VERTICAL | wxALL, 5);
+    attributeSizer_->Add(attributeLevel_, 1, wxEXPAND | wxALL, 5);
+    attributeSizer_->Show(false);
 
     auto *buttonSizer = new wxBoxSizer(wxHORIZONTAL);
     okButton_ = new wxButton(this, wxID_OK, _("OK"), wxDefaultPosition, wxDefaultSize, 0);
@@ -125,8 +140,9 @@ EditSegmentDlg::EditSegmentDlg(wxWindow *parent) : wxDialog(parent, wxID_ANY, wx
     sizer->Add(whenTypeSizer, 0, wxEXPAND | wxALL, 5);
     sizer->Add(splitFilter_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(splitDataList_, 1, wxEXPAND | wxALL, 5);
-    sizer->Add(flagId_, 0, wxEXPAND | wxALL, 5);
-    sizer->Add(positionPanel_, 0, wxEXPAND | wxALL, 5);
+    sizer->Add(flagSizer_, 0, wxEXPAND | wxALL, 5);
+    sizer->Add(positionSizer_, 0, wxEXPAND | wxALL, 5);
+    sizer->Add(attributeSizer_, 0, wxEXPAND | wxALL, 5);
     sizer->Add(buttonSizer, 0, wxALIGN_RIGHT | wxALL, 5);
 
     wxDialog::SetSizer(sizer);
@@ -167,9 +183,11 @@ void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
     if (isER_) {
         whenStrings_ = {"Immediate", "OnLoading", "OnBlackscreen"};
         typeStrings_ = {"Boss", "Grace", "ItemPickup", "Flag", "Position"};
-        areaText_->Show();
-        blockText_->Show();
-        regionText_->Show();
+        flagDescriptionText_->Show(false);
+        flagDescription_->Show(false);
+        positionAreaText_->Show();
+        positionBlockText_->Show();
+        positionRegionText_->Show();
         positionArea_->Show();
         positionBlock_->Show();
         positionRegion_->Show();
@@ -177,9 +195,11 @@ void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
     } else {
         whenStrings_ = {"Immediate", "OnLoading"};
         typeStrings_ = {"Boss", "Bonfire", "ItemPickup", "Flag", "Position", "Attribute"};
-        areaText_->Show(false);
-        blockText_->Show(false);
-        regionText_->Show(false);
+        flagDescriptionText_->Show();
+        flagDescription_->Show();
+        positionAreaText_->Show(false);
+        positionBlockText_->Show(false);
+        positionRegionText_->Show(false);
         positionArea_->Show(false);
         positionBlock_->Show(false);
         positionRegion_->Show(false);
@@ -296,24 +316,35 @@ void EditSegmentDlg::pendForUpdate() {
 void EditSegmentDlg::fitOnTypeChanged() {
     switch (typeChoice_->GetSelection()) {
         case 3:
-            splitFilter_->Hide();
-            splitDataList_->Hide();
-            positionPanel_->Hide();
-            flagId_->Show();
+            splitFilter_->Show(false);
+            splitDataList_->Show(false);
+            flagSizer_->Show(true);
+            positionSizer_->Show(false);
+            attributeSizer_->Show(false);
             wxDialog::SetMinClientSize(wxSize(500, 0));
             break;
         case 4:
-            splitFilter_->Hide();
-            splitDataList_->Hide();
-            flagId_->Hide();
-            positionPanel_->Show();
+            splitFilter_->Show(false);
+            splitDataList_->Show(false);
+            flagSizer_->Show(false);
+            positionSizer_->Show(true);
+            attributeSizer_->Show(false);
+            wxDialog::SetMinClientSize(wxSize(500, 0));
+            break;
+        case 5:
+            splitFilter_->Show(false);
+            splitDataList_->Show(false);
+            flagSizer_->Show(false);
+            positionSizer_->Show(false);
+            attributeSizer_->Show(true);
             wxDialog::SetMinClientSize(wxSize(500, 0));
             break;
         default:
-            flagId_->Hide();
-            positionPanel_->Hide();
-            splitFilter_->Show();
-            splitDataList_->Show();
+            splitFilter_->Show(true);
+            splitDataList_->Show(true);
+            flagSizer_->Show(false);
+            positionSizer_->Show(false);
+            attributeSizer_->Show(false);
             wxDialog::SetMinClientSize(wxSize(500, 600));
             break;
     }

@@ -27,6 +27,7 @@
 #include <wx/wx.h>
 #endif
 #include <wx/combo.h>
+#include <wx/gbsizer.h>
 
 namespace lss_helper {
 
@@ -54,11 +55,15 @@ private:
     wxTextCtrl *splitFilter_;
     wxListBox *splitDataList_;
 
+    wxSizer *flagSizer_;
+    wxStaticText *flagDescriptionText_;
+    wxTextCtrl *flagDescription_;
+    wxStaticText *flagIdText_;
     wxTextCtrl *flagId_;
-    wxPanel *positionPanel_;
-    wxStaticText *areaText_;
-    wxStaticText *blockText_;
-    wxStaticText *regionText_;
+    wxGridBagSizer *positionSizer_;
+    wxStaticText *positionAreaText_;
+    wxStaticText *positionBlockText_;
+    wxStaticText *positionRegionText_;
     wxTextCtrl *positionDescription_;
     wxTextCtrl *positionArea_;
     wxTextCtrl *positionBlock_;
@@ -67,6 +72,9 @@ private:
     wxTextCtrl *positionX_;
     wxTextCtrl *positionY_;
     wxTextCtrl *positionZ_;
+    wxSizer *attributeSizer_;
+    wxChoice *attributeType_;
+    wxTextCtrl *attributeLevel_;
 
     wxButton *okButton_;
     wxButton *cancelButton_;
@@ -75,7 +83,7 @@ private:
 
     const std::vector<EnumData> *enumsList_;
     std::vector<std::pair<const EnumData*, double>> filterList_;
-    std::vector<std::string> whenStrings_, typeStrings_;
+    std::vector<std::string> whenStrings_, typeStrings_, attrTypeStrings_;
 };
 
 }
