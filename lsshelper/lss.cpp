@@ -97,7 +97,7 @@ void SplitNode::buildDisplayNameDS3() {
         displayName = toWideString(identifier);
         fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, identifier));
     } else if (type == "Flag") {
-        identifier = fmt::format("{},{},{}", split.child("Description").text().get(), split.child("Flag").text().get(), split.child("State").text().as_bool());
+        identifier = fmt::format("{},{}", split.child("Flag").text().get(), split.child("Description").text().get());
         displayName = toWideString(identifier);
         fullDisplayName = toWideString(fmt::format("{}/{}/{}", when, type, identifier));
     } else if (type == "Attribute") {
@@ -388,9 +388,9 @@ const SplitNode *Lss::findOrAppendSplit(const std::string &when, const std::stri
     } else if (type == "Flag") {
         auto res = splitString(identifier, ',');
         if (res.size() < 3) return nullptr;
-        splitNode.append_child("Flag").text().set(res[1].c_str());
-        splitNode.append_child("Description").text().set(res[0].c_str());
-        splitNode.append_child("State").text().set(res[2].c_str());
+        splitNode.append_child("Flag").text().set(res[0].c_str());
+        splitNode.append_child("Description").text().set(res[1].c_str());
+        splitNode.append_child("State").text().set("false");
     } else if (type == "Attribute") {
         auto res = splitString(identifier, ',');
         if (res.size() < 2) return nullptr;

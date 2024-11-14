@@ -195,6 +195,7 @@ void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
     } else {
         whenStrings_ = {"Immediate", "OnLoading"};
         typeStrings_ = {"Boss", "Bonfire", "ItemPickup", "Flag", "Position", "Attribute"};
+        attrTypeStrings_ = {"Vigor", "Attunement", "Endurance", "Vitality", "Strength", "Dexterity", "Intelligence", "Faith", "Luck", "SoulLevel", "Humanity"};
         flagDescriptionText_->Show();
         flagDescription_->Show();
         positionAreaText_->Show(false);
@@ -209,8 +210,11 @@ void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
     std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return _(str); });
     wxArrayString typeChoices;
     std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return _(str); });
+    wxArrayString attrTypeChoices;
+    std::transform(attrTypeStrings_.begin(), attrTypeStrings_.end(), std::back_inserter(attrTypeChoices), [](const std::string &str) { return _(str); });
     whenChoice_->Set(whenChoices);
     typeChoice_->Set(typeChoices);
+    attributeType_->Set(attrTypeChoices);
 }
 
 void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std::string &type, std::string &identifier) const {
@@ -220,7 +224,11 @@ void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std:
     type = typeStrings_[typeIdx];
     switch (typeIdx) {
         case 3:
-            identifier = fmt::format("{}", flagId_->GetValue().utf8_string());
+            if (isER_) {
+                identifier = fmt::format("{}", flagId_->GetValue().utf8_string());
+            } else {
+                identifier = fmt::format("{},{}", flagId_->GetValue().utf8_string(), flagDescription_->GetValue().utf8_string());
+            }
             break;
         case 4:
             if (isER_) {
@@ -233,6 +241,9 @@ void EditSegmentDlg::getResult(std::string &segmentName, std::string &when, std:
                                          positionX_->GetValue().utf8_string(), positionY_->GetValue().utf8_string(),
                                          positionZ_->GetValue().utf8_string(), positionSize_->GetValue().utf8_string());
             }
+            break;
+        case 5:
+            identifier = fmt::format("{},{}", attrTypeStrings_[attributeType_->GetSelection()], attributeLevel_->GetValue().utf8_string());
             break;
         default: {
             auto sel = splitDataList_->GetSelection();
@@ -255,17 +266,39 @@ void EditSegmentDlg::setValue(const std::string &when, const std::string &type, 
     typeChoice_->SetStringSelection(_(type.c_str()));
     fitOnTypeChanged();
     if (type == _("Flag")) {
-        flagId_->SetValue(wxString::FromUTF8(value));
+        if (isER_) {
+            flagId_->SetValue(wxString::FromUTF8(value));
+        } else {
+            auto res = splitString(value, ',');
+            if (res.size() < 2) return;
+            flagId_->SetValue(wxString::FromUTF8(res[0]));
+            flagDescription_->SetValue(wxString::FromUTF8(res[1]));
+        }
     } else if (type == _("Position")) {
         auto res = splitString(value, ',');
-        if (res.size() < 7) return;
-        positionArea_->SetValue(wxString::FromUTF8(res[0]));
-        positionBlock_->SetValue(wxString::FromUTF8(res[1]));
-        positionRegion_->SetValue(wxString::FromUTF8(res[2]));
-        positionSize_->SetValue(wxString::FromUTF8(res[3]));
-        positionX_->SetValue(wxString::FromUTF8(res[4]));
-        positionY_->SetValue(wxString::FromUTF8(res[5]));
-        positionZ_->SetValue(wxString::FromUTF8(res[6]));
+        if (isER_) {
+            if (res.size() < 7) return;
+            positionArea_->SetValue(wxString::FromUTF8(res[0]));
+            positionBlock_->SetValue(wxString::FromUTF8(res[1]));
+            positionRegion_->SetValue(wxString::FromUTF8(res[2]));
+            positionSize_->SetValue(wxString::FromUTF8(res[3]));
+            positionX_->SetValue(wxString::FromUTF8(res[4]));
+            positionY_->SetValue(wxString::FromUTF8(res[5]));
+            positionZ_->SetValue(wxString::FromUTF8(res[6]));
+        } else {
+            if (res.size() < 5) return;
+            positionDescription_->SetValue(wxString::FromUTF8(res[0]));
+            positionX_->SetValue(wxString::FromUTF8(res[1]));
+            positionY_->SetValue(wxString::FromUTF8(res[2]));
+            positionZ_->SetValue(wxString::FromUTF8(res[3]));
+            positionSize_->SetValue(wxString::FromUTF8(res[4]));
+        }
+    } else if (type == _("Attribute")) {
+        auto res = splitString(value, ',');
+        if (res.size() < 2) return;
+        auto ite = std::find(attrTypeStrings_.begin(), attrTypeStrings_.end(), res[0]);
+        attributeType_->SetSelection(ite == attrTypeStrings_.end() ? 0 : int(std::distance(attrTypeStrings_.begin(), ite)));
+        attributeLevel_->SetValue(wxString::FromUTF8(res[1]));
     } else {
         splitFilter_->SetValue(wxEmptyString);
         updateTimer_->Stop();
