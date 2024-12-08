@@ -316,7 +316,7 @@ void EditSegmentDlg::setValue(const std::string &when, const std::string &type, 
 }
 
 void EditSegmentDlg::updateSplitList() {
-    enumsList_ = &gEnums[typeChoice_->GetStringSelection().utf8_string()];
+    enumsList_ = &gEnums[typeStrings_[typeChoice_->GetSelection()]];
 
     filterList_.clear();
     splitDataList_->Clear();
