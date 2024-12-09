@@ -285,9 +285,7 @@ void Lss::moveSegmentDown(int index) {
     seg.remove_child("SplitTimes");
     seg.parent().insert_move_after(seg, seg2);
     seg2.remove_child("SplitTimes");
-    std::swap(segs_[index].seg, segs_[index + 1].seg);
-    std::swap(segs_[index].split, segs_[index + 1].split);
-    std::swap(segs_[index].splitName, segs_[index + 1].splitName);
+    std::swap(segs_[index], segs_[index + 1]);
     changed_ = true;
 }
 
