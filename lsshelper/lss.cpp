@@ -40,8 +40,8 @@ inline std::string mapGameName(const std::string &name) {
 }
 
 inline const char *typeToXsiTypeER(const std::string &type) {
-    if (type == "Bonfire")
-        return "Bonfire";
+    if (type == "Grace")
+        return "Grace";
     if (type == "Boss")
         return "Boss";
     if (type == "ItemPickup")
