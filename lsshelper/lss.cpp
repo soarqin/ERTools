@@ -270,13 +270,18 @@ bool Lss::save() {
 }
 
 const SegNode &Lss::insertNewSegment(const std::string &name, int index) {
-    auto &seg = segs_.emplace_back();
     auto segmentsNode = ensureSegmentParent();
-    auto segmentNode = index < 0 || size_t(index) >= segs_.size() ? segmentsNode.append_child("Segment") : segmentsNode.insert_child_before("Segment", segs_[index].seg);
+    auto toAppend = index < 0 || size_t(index) >= segs_.size();
+    auto segmentNode = toAppend ? segmentsNode.append_child("Segment") : segmentsNode.insert_child_before("Segment", segs_[index].seg);
     segmentNode.append_child("Name").text().set(name.c_str());
-    seg.seg = segmentNode;
     changed_ = true;
-    return seg;
+    if (toAppend) {
+        auto &seg = segs_.emplace_back();
+        seg.seg = segmentNode;
+        return seg;
+    }
+    segs_.emplace(segs_.begin() + index, SegNode { segmentNode });
+    return segs_[index];
 }
 
 void Lss::moveSegmentDown(int index) {
