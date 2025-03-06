@@ -123,11 +123,16 @@ local function get_offset_table()
     address_table.field_area_addr = 0x3d691f8
     address_table.game_data_man_addr = 0x3d5df58
     address_table.menu_man_imp = 0x3d6b7d0
+  elseif current_game_version <= 0x20400 then
+    address_table.event_flag_man_addr = 0x3d68448
+    address_table.field_area_addr = 0x3d691d8
+    address_table.game_data_man_addr = 0x3d5df38
+    address_table.menu_man_imp = 0x3d6b7b0
   else
-    address_table.event_flag_man_addr = 0x3d68468
-    address_table.field_area_addr = 0x3d691f8
-    address_table.game_data_man_addr = 0x3d5df58
-    address_table.menu_man_imp = 0x3d6b7d0
+    address_table.event_flag_man_addr = 0x3d68448
+    address_table.field_area_addr = 0x3d691d8
+    address_table.game_data_man_addr = 0x3d5df38
+    address_table.menu_man_imp = 0x3d6b7b0
   end
   address_table.event_flag_man_addr = process.base + address_table.event_flag_man_addr
   address_table.field_area_addr = process.base + address_table.field_area_addr
