@@ -128,6 +128,11 @@ local function get_offset_table()
     address_table.field_area_addr = 0x3d691d8
     address_table.game_data_man_addr = 0x3d5df38
     address_table.menu_man_imp = 0x3d6b7b0
+  elseif current_game_version <= 0x20400 then
+    address_table.event_flag_man_addr = 0x3d68448
+    address_table.field_area_addr = 0x3d691d8
+    address_table.game_data_man_addr = 0x3d5df38
+    address_table.menu_man_imp = 0x3d6b7b0
   else
     address_table.event_flag_man_addr = 0x3d68448
     address_table.field_area_addr = 0x3d691d8
@@ -147,6 +152,10 @@ local function search_for_game_process()
     if name == 'eldenring.exe' then
       process = memreader.openprocess(pid)
       if process == nil then
+        return
+      end
+      if process.base == 0 then
+        process = nil
         return
       end
       print('+ Game found')
