@@ -1,0 +1,5 @@
+#if defined(__GNUC__) || defined(__clang__)
+#define wxUSE_RC_MANIFEST 1
+#endif
+#define wxUSE_DPI_AWARE_MANIFEST 2
+#include <wx/msw/wx.rc>

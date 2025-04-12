@@ -7,6 +7,8 @@ find_package(wxWidgets REQUIRED COMPONENTS core base)
 include(${wxWidgets_USE_FILE})
 
 add_executable(${PROJECT_NAME} WIN32
+    res/manifest.rc
+
     main.cpp
     mainwnd.cpp mainwnd.h
     version.h
