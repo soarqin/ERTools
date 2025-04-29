@@ -207,11 +207,11 @@ void EditSegmentDlg::prepare(bool isNewSplit, const std::string &gameName) {
         positionDescription_->Show();
     }
     wxArrayString whenChoices;
-    std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return _(str); });
+    std::transform(whenStrings_.begin(), whenStrings_.end(), std::back_inserter(whenChoices), [](const std::string &str) { return wxString::FromUTF8(str); });
     wxArrayString typeChoices;
-    std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return _(str); });
+    std::transform(typeStrings_.begin(), typeStrings_.end(), std::back_inserter(typeChoices), [](const std::string &str) { return wxString::FromUTF8(str); });
     wxArrayString attrTypeChoices;
-    std::transform(attrTypeStrings_.begin(), attrTypeStrings_.end(), std::back_inserter(attrTypeChoices), [](const std::string &str) { return _(str); });
+    std::transform(attrTypeStrings_.begin(), attrTypeStrings_.end(), std::back_inserter(attrTypeChoices), [](const std::string &str) { return wxString::FromUTF8(str); });
     whenChoice_->Set(whenChoices);
     typeChoice_->Set(typeChoices);
     attributeType_->Set(attrTypeChoices);
@@ -262,8 +262,8 @@ void EditSegmentDlg::setDefaultFilter(const std::wstring &filer) {
 }
 
 void EditSegmentDlg::setValue(const std::string &when, const std::string &type, const std::string &value) {
-    whenChoice_->SetStringSelection(_(when.c_str()));
-    typeChoice_->SetStringSelection(_(type.c_str()));
+    whenChoice_->SetStringSelection(wxString::FromUTF8(when.c_str()));
+    typeChoice_->SetStringSelection(wxString::FromUTF8(type.c_str()));
     fitOnTypeChanged();
     if (type == _("Flag")) {
         if (isER_) {
