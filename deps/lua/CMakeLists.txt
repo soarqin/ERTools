@@ -4,7 +4,7 @@
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 # Changed by Vinicius Jarina (viniciusjarina@gmail.com)
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 PROJECT ( lua C )
 
@@ -71,9 +71,10 @@ IF ( LUA_USE_POSIX )
   ADD_DEFINITIONS (-DLUA_USE_POSIX)
 ENDIF ()
 
-IF ( LUA_USE_DLOPEN )
+IF ( LUA_USE_DLOPEN AND NOT APPLE)
   # Link to dynamic linker library "dl"
   LIST ( APPEND LIBS dl )
+  ADD_DEFINITIONS(-DLUA_USE_DLOPEN)
 ENDIF ()
 
 IF ( LUA_WIN )

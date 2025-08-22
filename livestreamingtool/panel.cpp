@@ -55,10 +55,7 @@ void Panel::init(const char *n) {
     window = SDL_CreateWindow(n, w, h, (autoSize ? 0 : SDL_WINDOW_RESIZABLE) | SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | (alwaysOnTop ? SDL_WINDOW_ALWAYS_ON_TOP : 0));
     SDL_SetWindowPosition(window, x, y);
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);
-    renderer = SDL_CreateRenderer(window, "direct3d11", 0);
-    if (renderer == nullptr) {
-        renderer = SDL_CreateRenderer(window, "opengl", 0);
-    }
+    renderer = SDL_CreateRenderer(window, nullptr);
 
     settings = new TextSettings();
     settings->face = fontFace;
@@ -86,16 +83,15 @@ void Panel::init(const char *n) {
 }
 
 void Panel::saveToConfig() {
-    toml::value data = {
+    toml::value data = toml::table{
         {
             "window",
-            {
+            toml::table{
                 {"x", x},
                 {"y", y},
                 {"w", w},
                 {"h", h},
-                {"backgroundColor",
-                 toml::array{backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a}},
+                {"backgroundColor", toml::array{backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a}},
                 {"autoSize", autoSize},
                 {"border", border},
                 {"anchor", int(anchorPoint)},
@@ -104,7 +100,7 @@ void Panel::saveToConfig() {
         },
         {
             "font",
-            {
+            toml::table{
                 {"fontFace", UnicodeToUtf8(fontFace)},
                 {"fontSize", fontSize},
                 {"fontStyle", fontStyle},
@@ -239,8 +235,9 @@ void Panel::updateTextTexture() {
 }
 
 void Panel::updateTextRenderRect() {
-    int ww, hh;
-    SDL_QueryTexture(texture, nullptr, nullptr, &ww, &hh);
+    auto props = SDL_GetTextureProperties(texture);
+    int ww = (int)SDL_GetNumberProperty(props, SDL_PROP_TEXTURE_WIDTH_NUMBER, 0);
+    int hh = (int)SDL_GetNumberProperty(props, SDL_PROP_TEXTURE_HEIGHT_NUMBER, 0);
     if (autoSize) {
         auto fw = ((ww + 1) & ~1) + border * 2;
         auto fh = ((hh + 1) & ~1) + border * 2;
@@ -380,14 +377,14 @@ void Panel::addText(const char *str) {
 void Panel::setAlwaysOnTop(bool top) {
     if (top == alwaysOnTop) return;
     alwaysOnTop = top;
-    SDL_SetWindowAlwaysOnTop(window, top ? SDL_TRUE : SDL_FALSE);
+    SDL_SetWindowAlwaysOnTop(window, top);
     saveToConfig();
 }
 
 void Panel::setAutoSize(bool as) {
     if (as == autoSize) return;
     autoSize = as;
-    SDL_SetWindowResizable(window, as ? SDL_FALSE : SDL_TRUE);
+    SDL_SetWindowResizable(window, !as);
     updateTextRenderRect();
     saveToConfig();
 }
@@ -398,7 +395,7 @@ void Panel::showSettingsWindow() {
     if (configDialog) {
         initConfigDialog(configDialog);
     } else {
-        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(window), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
     ShowWindow(configDialog, SW_SHOW);

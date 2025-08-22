@@ -4,7 +4,7 @@
 #       Windows: set LUA_DIR=c:\lua51
 
 project(lua-cjson C)
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 
 # Handle platforms missing isinf() macro (Eg, some Solaris systems).
 include(CheckSymbolExists)

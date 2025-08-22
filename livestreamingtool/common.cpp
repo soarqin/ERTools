@@ -13,7 +13,7 @@ SDL_Texture *loadTexture(SDL_Renderer *renderer, const unsigned char *buffer, in
     int pitch;
     pitch = width * bytesPerPixel;
     pitch = (pitch + 3) & ~3;
-    SDL_Surface *surface = SDL_CreateSurfaceFrom(data, width, height, pitch, SDL_PIXELFORMAT_ABGR8888);
+    SDL_Surface *surface = SDL_CreateSurfaceFrom(width, height, SDL_PIXELFORMAT_ABGR8888, data, pitch);
     if (surface == nullptr) {
         stbi_image_free(data);
         return nullptr;

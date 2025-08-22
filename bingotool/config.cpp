@@ -170,10 +170,10 @@ void Config::save() {
     auto colorToString = [](const SDL_Color &c) {
         return std::to_string(c.r) + "," + std::to_string(c.g) + "," + std::to_string(c.b) + "," + std::to_string(c.a);
     };
-    toml::value data = {
+    toml::value data = toml::table{
         {
             "cells_window",
-            {
+            toml::table{
                 {"width", originCellSizeX},
                 {"height", cellSize[1]},
                 {"spacing", cellSpacing},
@@ -184,20 +184,20 @@ void Config::save() {
                 {"text_color", colorToString(textColor)},
                 {"text_shadow", textShadow},
                 {"text_shadow_color", colorToString(textShadowColor)},
-                {"text_shadow_offset", {textShadowOffset[0], textShadowOffset[1]}},
+                {"text_shadow_offset", toml::array{textShadowOffset[0], textShadowOffset[1]}},
                 {"font_face", UnicodeToUtf8(fontFace)},
                 {"font_style", std::string(fontStyle & 1 ? "B" : "") + (fontStyle & 2 ? "I" : "")},
                 {"font_size", originalFontSize},
                 {"cell_color", colorToString(colorsInt[0])},
                 {"color1", colorToString(colorsInt[1])},
                 {"color2", colorToString(colorsInt[2])},
-                {"use_color_texture", {useColorTexture[0], useColorTexture[1]}},
-                {"color_texture", {colorTextureFile[0], colorTextureFile[1]}},
+                {"use_color_texture", toml::array{useColorTexture[0], useColorTexture[1]}},
+                {"color_texture", toml::array{colorTextureFile[0], colorTextureFile[1]}},
             }
         },
         {
             "scores_window",
-            {
+            toml::table{
                 {"player1", UnicodeToUtf8(playerName[0])},
                 {"player2", UnicodeToUtf8(playerName[1])},
                 {"font_face", UnicodeToUtf8(scoreFontFace)},
@@ -205,13 +205,13 @@ void Config::save() {
                 {"font_size", scoreFontSize},
                 {"text_shadow", scoreTextShadow},
                 {"text_shadow_color", colorToString(scoreTextShadowColor)},
-                {"text_shadow_offset", {scoreTextShadowOffset[0], scoreTextShadowOffset[1]}},
+                {"text_shadow_offset", toml::array{scoreTextShadowOffset[0], scoreTextShadowOffset[1]}},
                 {"name_font_face", UnicodeToUtf8(scoreNameFontFace)},
                 {"name_font_style", std::string(scoreNameFontStyle & 1 ? "B" : "") + (scoreNameFontStyle & 2 ? "I" : "")},
                 {"name_font_size", scoreNameFontSize},
                 {"name_text_shadow", scoreNameTextShadow},
                 {"name_text_shadow_color", colorToString(scoreNameTextShadowColor)},
-                {"name_text_shadow_offset", {scoreNameTextShadowOffset[0], scoreNameTextShadowOffset[1]}},
+                {"name_text_shadow_offset", toml::array{scoreNameTextShadowOffset[0], scoreNameTextShadowOffset[1]}},
                 {"background_color", colorToString(scoreBackgroundColor)},
                 {"padding", scorePadding},
                 {"round_corner", scoreRoundCorner},
@@ -223,10 +223,10 @@ void Config::save() {
         },
         {
             "rules",
-            {
+            toml::table{
                 {"bingo_brawlers_mode", bingoBrawlersMode},
-                {"scores", {scores[0], scores[1], scores[2], scores[3], scores[4]}},
-                {"none_first_scores", {nFScores[0], nFScores[1], nFScores[2], nFScores[3], nFScores[4]}},
+                {"scores", toml::array{scores[0], scores[1], scores[2], scores[3], scores[4]}},
+                {"none_first_scores", toml::array{nFScores[0], nFScores[1], nFScores[2], nFScores[3], nFScores[4]}},
                 {"line_score", lineScore},
                 {"max_per_row", maxPerRow},
                 {"clear_score", clearScore},

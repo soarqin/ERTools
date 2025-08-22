@@ -13,7 +13,8 @@
 #    include <mm_malloc.h>
 #endif
 
-namespace rapidfuzz::detail {
+namespace rapidfuzz {
+namespace detail {
 
 template <typename InputIt1, typename InputIt2, typename InputIt3>
 struct DecomposedSet {
@@ -31,6 +32,13 @@ struct DecomposedSet {
 static inline size_t abs_diff(size_t a, size_t b)
 {
     return a > b ? a - b : b - a;
+}
+
+template <typename TO, typename FROM>
+TO opt_static_cast(const FROM& value)
+{
+    /* calling the cast through this template function somehow avoids useless cast warnings */
+    return static_cast<TO>(value);
 }
 
 /**
@@ -87,6 +95,7 @@ static inline void rf_aligned_free(void* ptr)
 
 /**@}*/
 
-} // namespace rapidfuzz::detail
+} // namespace detail
+} // namespace rapidfuzz
 
 #include <rapidfuzz/details/common_impl.hpp>

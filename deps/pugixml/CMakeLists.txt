@@ -1,4 +1,6 @@
-project(pugixml CXX)
+cmake_minimum_required(VERSION 3.5...3.30)
+
+project(pugixml VERSION 1.15 LANGUAGES CXX)
 
 option(PUGIXML_WCHAR_MODE "Enable wchar_t mode" OFF)
 option(PUGIXML_COMPACT "Enable compact mode" OFF)

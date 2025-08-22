@@ -45,7 +45,7 @@ int wmain(int argc, wchar_t *argv[]) {
     ULONG_PTR gdiplusToken;
     Gdiplus::GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, nullptr);
 
-    if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO) < 0) {
+    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         printf("SDL could not be initialized!\n"
                "SDL_Error: %s\n", SDL_GetError());
         return 0;
@@ -98,7 +98,7 @@ int wmain(int argc, wchar_t *argv[]) {
                         AppendMenuW(menu, MF_STRING, 3, L"&Settings");
                         AppendMenuW(menu, MF_SEPARATOR, 0, nullptr);
                         AppendMenuW(menu, MF_STRING, 4, L"&Quit");
-                        auto hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(win), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
+                        auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(win), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
                         POINT pt;
                         GetCursorPos(&pt);
                         auto cmd = TrackPopupMenu(menu, TPM_LEFTALIGN | TPM_TOPALIGN | TPM_RETURNCMD | TPM_NONOTIFY, pt.x, pt.y, 0, hwnd, nullptr);
