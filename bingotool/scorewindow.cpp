@@ -44,10 +44,7 @@ void ScoreWindow::createWindow() {
         std::string title = i == 0 ? "Score A" : "Player A";
         title.back() += index;
         window[i] = SDL_CreateWindow(title.c_str(), tw[i], th[i], SDL_WINDOW_BORDERLESS | SDL_WINDOW_TRANSPARENT | SDL_WINDOW_ALWAYS_ON_TOP);
-        renderer[i] = SDL_CreateRenderer(window[i], "direct3d11");
-        if (renderer[i] == nullptr) {
-            renderer[i] = SDL_CreateRenderer(window[i], "opengl");
-        }
+        renderer[i] = SDL_CreateRenderer(window[i], nullptr);
         SDL_SetWindowHitTest(window[i], ScoreWindowHitTestCallback, nullptr);
         int x, y;
         auto *cellwin = gCells.window();
