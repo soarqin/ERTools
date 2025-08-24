@@ -11,16 +11,13 @@ static std::string gPassword;
 
 static uv_loop_t *loop = nullptr;
 static uv_tcp_t *clientCtx = nullptr;
-static int state = 0;
-static size_t headerRead = 0;
-static char header[4];
-static size_t msgPos = 0;
-static std::string msg;
+static std::vector<uint8_t> networkBuffer;
 static ChannelCallback syncCallback = nullptr;
 static ConnectionCallback syncOpenCallback = nullptr;
 static uv_timer_t reconnectTimer;
 
-void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf);
+static void read_cb(uv_stream_t *stream, ssize_t nread, const uv_buf_t *buf);
+static void write_cb(uv_write_t *req, int status);
 
 void doReconnect() {
     uv_timer_init(loop, &reconnectTimer);
@@ -30,14 +27,14 @@ void doReconnect() {
     }, 10000, 0);
 }
 
-void on_connect(uv_connect_t *req, int status) {
+static void on_connect(uv_connect_t *req, int status) {
     delete req;
     if (status < 0) {
         doReconnect();
         return;
     }
     uv_tcp_keepalive(clientCtx, 1, 60);
-    state = 0;
+    networkBuffer.clear();
     uv_read_start((uv_stream_t *)clientCtx, [](uv_handle_t *handle, size_t suggested_size, uv_buf_t *buf) {
         auto *mem = new char[suggested_size];
         *buf = uv_buf_init(mem, suggested_size);
@@ -45,7 +42,29 @@ void on_connect(uv_connect_t *req, int status) {
     if (syncOpenCallback) syncOpenCallback();
 }
 
-void read_cb(uv_stream_t */*stream*/, ssize_t nread, const uv_buf_t *buf) {
+static uint8_t simpleCrc(const uint8_t *data, size_t size) {
+    uint8_t crc = 0xFFu;
+    for (size_t i = 0; i < size; i++) {
+        crc ^= data[i] - 0x25u;
+    }
+    return crc;
+}
+
+static void processNetworkData(char type, const std::string &data) {
+    switch (type) {
+        case 'C':
+            syncSetChannelPasswordForC(data);
+            break;
+        case 'J':
+            syncSetChannelPassword(data);
+            break;
+        default:
+            syncCallback(type, data);
+            break;
+    }
+}
+
+static void read_cb(uv_stream_t */*stream*/, ssize_t nread, const uv_buf_t *buf) {
     if (nread == 0) return;
     if (nread < 0) {
         syncClose();
@@ -53,57 +72,19 @@ void read_cb(uv_stream_t */*stream*/, ssize_t nread, const uv_buf_t *buf) {
         return;
     }
     auto *data = buf->base;
-    while (nread > 0) {
-        switch (state) {
-            case 0: {
-                if (headerRead + nread < 4) {
-                    memcpy(header + headerRead, data, nread);
-                    headerRead += nread;
-                    break;
-                } else {
-                    auto toRead = (ssize_t)(4 - headerRead);
-                    memcpy(header + headerRead, data, toRead);
-                    msgPos = 0;
-                    msg.resize(*(int *)header);
-                    headerRead = 0;
-                    state = 1;
-                    data += toRead;
-                    nread -= toRead;
-                    if (nread == 0) break;
-                }
-                // fallthrough
-            }
-            case 1: {
-                if (nread + msgPos >= msg.size()) {
-                    auto toRead = (ssize_t)(msg.size() - msgPos);
-                    memcpy(&msg[msgPos], data, toRead);
-                    data += toRead;
-                    nread -= toRead;
-                    state = 0;
-                    msgPos = 0;
-                    switch (msg[0]) {
-                        case 'C':
-                            syncSetChannelPasswordForC(msg.substr(1));
-                            break;
-                        case 'J':
-                            syncSetChannelPassword(msg.substr(1));
-                            break;
-                        default:
-                            syncCallback(msg[0], msg.substr(1));
-                            break;
-                    }
-                    msg.clear();
-                    break;
-                }
-                memcpy(&msg[msgPos], data, nread);
-                msgPos += nread;
-                data += nread;
-                nread = 0;
-                break;
-            }
-            default:
-                break;
+    networkBuffer.insert(networkBuffer.end(), data, data + nread);
+    while (networkBuffer.size() >= 4) {
+        auto length = *(uint32_t*)&networkBuffer[0] & 0xFFFFFFu;
+        if (networkBuffer.size() < length + 4) break;
+        auto crc = networkBuffer[3];
+        if (crc != simpleCrc(&networkBuffer[4], length)) {
+            networkBuffer.clear();
+            syncClose();
+            doReconnect();
+            continue;
         }
+        processNetworkData(networkBuffer[4], std::string((char*)&networkBuffer[5], length));
+        networkBuffer.erase(networkBuffer.begin(), networkBuffer.begin() + length + 4);
     }
     delete[] buf->base;
 }
@@ -176,7 +157,7 @@ bool syncOpen(ConnectionCallback callback) {
     clientCtx = new uv_tcp_t;
     if (uv_tcp_init(loop, clientCtx) < 0)
         return false;
-    int port = 8307;
+    int port = 8309;
     auto h = gServer;
     auto pos = h.find(':');
     if (pos != std::string::npos) {
@@ -200,11 +181,7 @@ void syncClose() {
     if (clientCtx == nullptr || uv_is_closing((uv_handle_t *)clientCtx)) return;
     uv_close((uv_handle_t *)clientCtx, [](uv_handle_t *handle) {
         delete (uv_tcp_t *)handle;
-        syncCallback = nullptr;
-        state = 0;
-        headerRead = 0;
-        msgPos = 0;
-        msg.clear();
+        networkBuffer.clear();
     });
     clientCtx = nullptr;
 }
@@ -235,25 +212,25 @@ const std::string &syncGetChannelPasswordForC() {
     return gPassword;
 }
 
-void write_cb(uv_write_t *req, int status);
-
 bool syncSendData(char type, const std::string &data) {
     if (gMode == 0 && gPassword.empty()) return false;
-    auto len = (int)data.size();
+    auto len = (uint32_t)data.size();
+    if (len >= 0xFFFFFFu) return false;
     uv_buf_t buf;
     buf.len = (unsigned int)(4 + 1 + len);
     buf.base = new char[4 + 1 + len];
-    *(int *)buf.base = 1 + len;
+    *(uint32_t *)buf.base = 1 + len;
     buf.base[4] = type;
     if (len > 0)
         memcpy(buf.base + 5, data.c_str(), len);
+    buf.base[3] = simpleCrc((uint8_t*)buf.base + 4, 1 + len);
     auto *req = new uv_write_t;
     memset(req, 0, sizeof(uv_write_t));
     req->data = buf.base;
     return uv_write(req, (uv_stream_t *)clientCtx, &buf, 1, write_cb) == 0;
 }
 
-void write_cb(uv_write_t *req, int /*status*/) {
+static void write_cb(uv_write_t *req, int /*status*/) {
     delete[] (char *)req->data;
     delete req;
 }

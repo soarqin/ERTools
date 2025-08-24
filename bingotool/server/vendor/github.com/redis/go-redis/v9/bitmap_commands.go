@@ -12,10 +12,15 @@ type BitMapCmdable interface {
 	BitOpAnd(ctx context.Context, destKey string, keys ...string) *IntCmd
 	BitOpOr(ctx context.Context, destKey string, keys ...string) *IntCmd
 	BitOpXor(ctx context.Context, destKey string, keys ...string) *IntCmd
+	BitOpDiff(ctx context.Context, destKey string, keys ...string) *IntCmd
+	BitOpDiff1(ctx context.Context, destKey string, keys ...string) *IntCmd
+	BitOpAndOr(ctx context.Context, destKey string, keys ...string) *IntCmd
+	BitOpOne(ctx context.Context, destKey string, keys ...string) *IntCmd
 	BitOpNot(ctx context.Context, destKey string, key string) *IntCmd
 	BitPos(ctx context.Context, key string, bit int64, pos ...int64) *IntCmd
 	BitPosSpan(ctx context.Context, key string, bit int8, start, end int64, span string) *IntCmd
 	BitField(ctx context.Context, key string, values ...interface{}) *IntSliceCmd
+	BitFieldRO(ctx context.Context, key string, values ...interface{}) *IntSliceCmd
 }
 
 func (c cmdable) GetBit(ctx context.Context, key string, offset int64) *IntCmd {
@@ -45,22 +50,19 @@ const BitCountIndexByte string = "BYTE"
 const BitCountIndexBit string = "BIT"
 
 func (c cmdable) BitCount(ctx context.Context, key string, bitCount *BitCount) *IntCmd {
-	args := []interface{}{"bitcount", key}
+	args := make([]any, 2, 5)
+	args[0] = "bitcount"
+	args[1] = key
 	if bitCount != nil {
-		if bitCount.Unit == "" {
-			bitCount.Unit = "BYTE"
+		args = append(args, bitCount.Start, bitCount.End)
+		if bitCount.Unit != "" {
+			if bitCount.Unit != BitCountIndexByte && bitCount.Unit != BitCountIndexBit {
+				cmd := NewIntCmd(ctx)
+				cmd.SetErr(errors.New("redis: invalid bitcount index"))
+				return cmd
+			}
+			args = append(args, bitCount.Unit)
 		}
-		if bitCount.Unit != BitCountIndexByte && bitCount.Unit != BitCountIndexBit {
-			cmd := NewIntCmd(ctx)
-			cmd.SetErr(errors.New("redis: invalid bitcount index"))
-			return cmd
-		}
-		args = append(
-			args,
-			bitCount.Start,
-			bitCount.End,
-			string(bitCount.Unit),
-		)
 	}
 	cmd := NewIntCmd(ctx, args...)
 	_ = c(ctx, cmd)
@@ -80,20 +82,48 @@ func (c cmdable) bitOp(ctx context.Context, op, destKey string, keys ...string) 
 	return cmd
 }
 
+// BitOpAnd creates a new bitmap in which users are members of all given bitmaps
 func (c cmdable) BitOpAnd(ctx context.Context, destKey string, keys ...string) *IntCmd {
 	return c.bitOp(ctx, "and", destKey, keys...)
 }
 
+// BitOpOr creates a new bitmap in which users are member of at least one given bitmap
 func (c cmdable) BitOpOr(ctx context.Context, destKey string, keys ...string) *IntCmd {
 	return c.bitOp(ctx, "or", destKey, keys...)
 }
 
+// BitOpXor creates a new bitmap in which users are the result of XORing all given bitmaps
 func (c cmdable) BitOpXor(ctx context.Context, destKey string, keys ...string) *IntCmd {
 	return c.bitOp(ctx, "xor", destKey, keys...)
 }
 
+// BitOpNot creates a new bitmap in which users are not members of a given bitmap
 func (c cmdable) BitOpNot(ctx context.Context, destKey string, key string) *IntCmd {
 	return c.bitOp(ctx, "not", destKey, key)
+}
+
+// BitOpDiff creates a new bitmap in which users are members of bitmap X but not of any of bitmaps Y1, Y2, …
+// Introduced with Redis 8.2
+func (c cmdable) BitOpDiff(ctx context.Context, destKey string, keys ...string) *IntCmd {
+	return c.bitOp(ctx, "diff", destKey, keys...)
+}
+
+// BitOpDiff1 creates a new bitmap in which users are members of one or more of bitmaps Y1, Y2, … but not members of bitmap X
+// Introduced with Redis 8.2
+func (c cmdable) BitOpDiff1(ctx context.Context, destKey string, keys ...string) *IntCmd {
+	return c.bitOp(ctx, "diff1", destKey, keys...)
+}
+
+// BitOpAndOr creates a new bitmap in which users are members of bitmap X and also members of one or more of bitmaps Y1, Y2, …
+// Introduced with Redis 8.2
+func (c cmdable) BitOpAndOr(ctx context.Context, destKey string, keys ...string) *IntCmd {
+	return c.bitOp(ctx, "andor", destKey, keys...)
+}
+
+// BitOpOne creates a new bitmap in which users are members of exactly one of the given bitmaps
+// Introduced with Redis 8.2
+func (c cmdable) BitOpOne(ctx context.Context, destKey string, keys ...string) *IntCmd {
+	return c.bitOp(ctx, "one", destKey, keys...)
 }
 
 // BitPos is an API before Redis version 7.0, cmd: bitpos key bit start end

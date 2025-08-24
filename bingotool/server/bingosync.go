@@ -6,12 +6,13 @@ import (
 	"encoding/binary"
 	"encoding/json"
 	"fmt"
-	"github.com/redis/go-redis/v9"
 	"io"
 	"math/rand"
 	"net"
 	"sync"
 	"time"
+
+	"github.com/redis/go-redis/v9"
 )
 
 var letters = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -40,7 +41,8 @@ type Channel struct {
 type Client struct {
 	Conn    net.Conn
 	IsJudge bool
-	Cnl     *Channel
+	Chan    *Channel
+	Pending chan []byte
 }
 
 var channels = make(map[string]*Channel)
@@ -101,28 +103,44 @@ func getChannel(c string) *Channel {
 	return cnl
 }
 
-func sendMsg(conn net.Conn, t byte, m string) {
+func simpleCrc(data []byte) byte {
+	crc := byte(0xFF)
+	for _, b := range data {
+		crc ^= b - 0x25
+	}
+	return crc
+}
+
+func sendMsg(c *Client, t byte, m string) {
 	l := 1 + len(m)
+	if l > 0xFFFFFF {
+		return
+	}
 	s := make([]byte, 4+l)
 	binary.LittleEndian.PutUint32(s[0:4], uint32(l))
 	s[4] = t
 	copy(s[5:], m[:])
-	_, _ = conn.Write(s)
+	s[3] = simpleCrc(s[4:])
+	c.Pending <- s
 }
 
 func broadcastToPlayers(c *Channel, t byte, m string) {
 	l := 1 + len(m)
 	s := make([]byte, 4+l)
+	if l > 0xFFFFFF {
+		return
+	}
 	binary.LittleEndian.PutUint32(s[0:4], uint32(l))
 	s[4] = t
 	copy(s[5:], m[:])
+	s[3] = simpleCrc(s[4:])
 	c.clientsMux.Lock()
 	defer c.clientsMux.Unlock()
 	for k := range c.clients {
 		if k.IsJudge {
 			continue
 		}
-		_, _ = k.Conn.Write(s)
+		k.Pending <- s
 	}
 }
 
@@ -131,81 +149,78 @@ func (c *Client) EnterChannel(isJudge bool, channel string) {
 	if channel == "" {
 		if isJudge {
 			mutex.Lock()
-			for {
-				channel = randSeq(8)
-				if _, ok := channels[channel]; ok {
-					continue
-				}
-				break
+			channel = randSeq(8)
+			for _, ok := channels[channel]; ok; channel = randSeq(8) {
 			}
 			mutex.Unlock()
 			randChannel = true
 		} else {
 			_ = c.Conn.Close()
+			return
 		}
 	}
 	c.IsJudge = isJudge
-	c.Cnl = getChannel(channel)
-	if c.Cnl == nil {
+	c.Chan = getChannel(channel)
+	if c.Chan == nil {
 		return
 	}
-	c.Cnl.clientsMux.Lock()
-	c.Cnl.clients[c] = 1
-	c.Cnl.clientsMux.Unlock()
+	c.Chan.clientsMux.Lock()
+	c.Chan.clients[c] = 1
+	c.Chan.clientsMux.Unlock()
 	if c.IsJudge {
 		if randChannel {
-			sendMsg(c.Conn, 'J', channel)
+			sendMsg(c, 'J', channel)
 		}
-		sendMsg(c.Conn, 'C', c.Cnl.ClientPassword)
+		sendMsg(c, 'C', c.Chan.ClientPassword)
 	}
 }
 
 func (c *Client) LeaveChannel() {
-	if c.Cnl == nil {
+	close(c.Pending)
+	ch := c.Chan
+	if ch == nil {
 		return
 	}
-	c.Cnl.clientsMux.Lock()
-	if _, ok := c.Cnl.clients[c]; ok {
-		delete(c.Cnl.clients, c)
-	}
-	c.Cnl.clientsMux.Unlock()
-	c.Cnl = nil
+	c.Chan = nil
+	ch.clientsMux.Lock()
+	delete(ch.clients, c)
+	ch.clientsMux.Unlock()
 }
 
 func (c *Client) FetchOrUpdateTable(table string) {
-	if c.Cnl == nil {
+	if c.Chan == nil {
 		return
 	}
-	c.Cnl.tableMux.Lock()
-	defer c.Cnl.tableMux.Unlock()
+	c.Chan.tableMux.Lock()
+	defer c.Chan.tableMux.Unlock()
 	if c.IsJudge {
-		if c.Cnl.Table != table {
-			c.Cnl.Table = table
-			writeChannelDataToDB(c.Cnl)
-			broadcastToPlayers(c.Cnl, 'T', table)
+		if c.Chan.Table != table {
+			c.Chan.Table = table
+			writeChannelDataToDB(c.Chan)
+			broadcastToPlayers(c.Chan, 'T', table)
 		}
 	} else {
-		if c.Cnl != nil {
-			sendMsg(c.Conn, 'T', c.Cnl.Table)
+		if c.Chan != nil {
+			sendMsg(c, 'T', c.Chan.Table)
 		}
 	}
 }
 
 func (c *Client) FetchOrUpdateState(state string) {
-	if c.Cnl == nil {
+	if c.Chan == nil {
 		return
 	}
-	c.Cnl.stateMux.Lock()
-	defer c.Cnl.stateMux.Unlock()
+	c.Chan.stateMux.Lock()
+	defer c.Chan.stateMux.Unlock()
 	if c.IsJudge {
-		if c.Cnl.State != state {
-			c.Cnl.State = state
-			writeChannelDataToDB(c.Cnl)
-			broadcastToPlayers(c.Cnl, 'S', state)
+		if c.Chan.State != state {
+			c.Chan.State = state
+			writeChannelDataToDB(c.Chan)
+			broadcastToPlayers(c.Chan, 'S', state)
 		}
 	} else {
-		if c.Cnl != nil {
-			sendMsg(c.Conn, 'S', c.Cnl.State)
+		if c.Chan != nil {
+			sendMsg(c, 'S', c.Chan.State)
 		}
 	}
 }
@@ -245,11 +260,7 @@ func processRead(c *Client, conn net.Conn) {
 			}
 			break
 		}
-		ilen := int(l)
-		if ilen >= 0x40000 {
-			fmt.Println("Suspecious packet got, drop and close connection!")
-			break
-		}
+		ilen := int(l) & 0xFFFFFF
 		msg := make([]byte, ilen)
 		n, err := io.ReadFull(reader, msg)
 		if err != nil {
@@ -261,13 +272,23 @@ func processRead(c *Client, conn net.Conn) {
 		if n < ilen {
 			break
 		}
+		if simpleCrc(msg) != byte(l>>24) {
+			fmt.Println("Checksum mismatch, drop and close connection!")
+			break
+		}
 		handleMsg(c, msg[0], string(msg[1:]))
 	}
 	c.LeaveChannel()
 }
 
+func processWrite(c *Client) {
+	for data := range c.Pending {
+		_, _ = c.Conn.Write(data)
+	}
+}
+
 func main() {
-	listen, err := net.Listen("tcp", "0.0.0.0:8307")
+	listen, err := net.Listen("tcp", "0.0.0.0:8309")
 	if err != nil {
 		fmt.Println("Listen() failed, err: ", err)
 		return
@@ -287,7 +308,10 @@ func main() {
 			fmt.Println("Accept() failed, err: ", err)
 			continue
 		}
-		client := &Client{}
+		client := &Client{
+			Pending: make(chan []byte, 4),
+		}
 		go processRead(client, conn)
+		go processWrite(client)
 	}
 }
