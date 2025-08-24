@@ -82,6 +82,7 @@ void sendJudgeSyncData() {
     });
     n.emplace_back(UnicodeToUtf8(gConfig.playerName[0]));
     n.emplace_back(UnicodeToUtf8(gConfig.playerName[1]));
+    syncSendData('G', gConfig.scoreConfigSerialized());
     syncSendData('T', n);
     sendJudgeSyncState();
 }
@@ -181,6 +182,11 @@ void startSync() {
     syncOpen([]{
         syncSetChannel([](char t, const std::string &s) {
             switch (t) {
+                case 'G': {
+                    gConfig.deserializeScoreConfig(s);
+                    updateScores();
+                    break;
+                }
                 case 'T': {
                     if (syncGetMode() != 0) break;
                     auto sl = splitString(s, '\n');
@@ -264,6 +270,7 @@ void startSync() {
         if (syncGetMode() != 0) {
             sendJudgeSyncData();
         } else {
+            syncSendData('G', "");
             syncSendData('T', "");
             syncSendData('S', "");
         }

@@ -5,6 +5,7 @@
 #include "common.h"
 #include "config.h"
 #include "scorewindow.h"
+#include "sync.h"
 
 #include <SDL3_gfxPrimitives.h>
 #include <fmt/format.h>
@@ -44,6 +45,7 @@ static HBRUSH player1ColorBrush = nullptr;
 static HBRUSH player2ColorBrush = nullptr;
 static HBITMAP player1Bitmap = nullptr;
 static HBITMAP player2Bitmap = nullptr;
+static std::string oldScoreConfig;
 
 void Cell::deinit() {
     if (needDeallocTextSettings && textSettings) {
@@ -696,6 +698,11 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
         case IDCANCEL: {
             gConfig.save();
             ShowWindow(hwnd, SW_HIDE);
+            auto newScoreConfig = gConfig.scoreConfigSerialized();
+            if (oldScoreConfig != newScoreConfig) {
+                syncSendData('G', newScoreConfig);
+                oldScoreConfig = std::move(newScoreConfig);
+            }
             return 0;
         }
         case IDC_BTN_SEL_TEXTFONT: {
@@ -1391,8 +1398,43 @@ void Cells::showSettingsWindow() {
         auto hwnd = (HWND)SDL_GetPointerProperty(SDL_GetWindowProperties(window_), SDL_PROP_WINDOW_WIN32_HWND_POINTER, nullptr);
         configDialog = CreateDialogParamW(GetModuleHandleW(nullptr), MAKEINTRESOURCEW(129), hwnd, dlgProc, (LPARAM)this);
     }
+    auto enabled = syncGetMode() != 0;
+    EnableWindow(GetDlgItem(configDialog, IDC_BINGOBRAWLERS), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE0), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE0_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE1), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE1_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE2), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE2_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE3), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE3_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE4), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_SCORE4_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE0), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE0_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE1), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE1_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE2), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE2_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE3), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE3_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE4), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_NFSCORE4_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_LINESCORE), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_LINESCORE_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_MAXPERROW), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_MAXPERROW_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_CLEARSCORE), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_CLEARSCORE_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_CLEARQUESTDIFFMULT), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_CLEARQUESTDIFFMULT_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_BINGOSCORE), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_BINGOSCORE_UPDOWN), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_WINSCORE), enabled);
+    EnableWindow(GetDlgItem(configDialog, IDC_WINSCORE_UPDOWN), enabled);
     ShowWindow(configDialog, SW_SHOW);
     SetForegroundWindow(configDialog);
+    oldScoreConfig = gConfig.scoreConfigSerialized();
 }
 
 void Cells::updateScoreTextSettings() {

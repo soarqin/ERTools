@@ -2,6 +2,7 @@
 
 #include "common.h"
 
+#include <fmt/format.h>
 #include <toml.hpp>
 
 #include <fstream>
@@ -456,4 +457,41 @@ void Config::oldLoad() {
             playerName[1] = Utf8ToUnicode(value);
         }
     }
+}
+
+std::string Config::scoreConfigSerialized() {
+    return fmt::format("{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}",
+        bingoBrawlersMode,
+        scores[0], scores[1], scores[2], scores[3], scores[4],
+        nFScores[0], nFScores[1], nFScores[2], nFScores[3], nFScores[4],
+        lineScore,
+        maxPerRow,
+        clearScore,
+        clearQuestMultiplier,
+        bingoScore,
+        winScore
+    );
+}
+
+void Config::deserializeScoreConfig(const std::string &config) {
+    auto sl = splitString(config, ',');
+    if (sl.size() != 17) return;
+    bingoBrawlersMode = std::stoi(sl[0]);
+    scores[0] = std::stoi(sl[1]);
+    scores[1] = std::stoi(sl[2]);
+    scores[2] = std::stoi(sl[3]);
+    scores[3] = std::stoi(sl[4]);
+    scores[4] = std::stoi(sl[5]);
+    nFScores[0] = std::stoi(sl[6]);
+    nFScores[1] = std::stoi(sl[7]);
+    nFScores[2] = std::stoi(sl[8]);
+    nFScores[3] = std::stoi(sl[9]);
+    nFScores[4] = std::stoi(sl[10]);
+    lineScore = std::stoi(sl[11]);
+    maxPerRow = std::stoi(sl[12]);
+    clearScore = std::stoi(sl[13]);
+    clearQuestMultiplier = std::stoi(sl[14]);
+    bingoScore = std::stoi(sl[15]);
+    winScore = std::stoi(sl[16]);
+    save();
 }

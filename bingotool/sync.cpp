@@ -83,7 +83,7 @@ static void read_cb(uv_stream_t */*stream*/, ssize_t nread, const uv_buf_t *buf)
             doReconnect();
             continue;
         }
-        processNetworkData(networkBuffer[4], std::string((char*)&networkBuffer[5], length));
+        processNetworkData(networkBuffer[4], std::string((char*)&networkBuffer[5], length - 1));
         networkBuffer.erase(networkBuffer.begin(), networkBuffer.begin() + length + 4);
     }
     delete[] buf->base;

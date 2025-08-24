@@ -7,6 +7,8 @@ struct Config {
     void load();
     void save();
     void oldLoad();
+    std::string scoreConfigSerialized();
+    void deserializeScoreConfig(const std::string &config);
 
     bool simpleMode = false;
     int originCellSizeX = 150;

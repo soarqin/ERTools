@@ -28,14 +28,16 @@ func randSeq(n int) string {
 }
 
 type Channel struct {
-	clients        map[*Client]int
-	Name           string
-	Table          string
-	State          string
-	clientsMux     sync.Mutex
-	tableMux       sync.Mutex
-	stateMux       sync.Mutex
-	ClientPassword string
+	clients        map[*Client]int `json:"-"`
+	Name           string          `json:"name"`
+	Table          string          `json:"table"`
+	State          string          `json:"state"`
+	Config         string          `json:"config"`
+	clientsMux     sync.Mutex      `json:"-"`
+	tableMux       sync.Mutex      `json:"-"`
+	stateMux       sync.Mutex      `json:"-"`
+	configMux      sync.Mutex      `json:"-"`
+	ClientPassword string          `json:"client_password"`
 }
 
 type Client struct {
@@ -187,6 +189,25 @@ func (c *Client) LeaveChannel() {
 	ch.clientsMux.Unlock()
 }
 
+func (c *Client) FetchOrUpdateConfig(config string) {
+	if c.Chan == nil {
+		return
+	}
+	c.Chan.configMux.Lock()
+	defer c.Chan.configMux.Unlock()
+	if c.IsJudge {
+		if c.Chan.Config != config {
+			c.Chan.Config = config
+			writeChannelDataToDB(c.Chan)
+			broadcastToPlayers(c.Chan, 'G', config)
+		}
+	} else {
+		if c.Chan != nil {
+			sendMsg(c, 'G', c.Chan.Config)
+		}
+	}
+}
+
 func (c *Client) FetchOrUpdateTable(table string) {
 	if c.Chan == nil {
 		return
@@ -238,6 +259,8 @@ func handleMsg(c *Client, t byte, m string) {
 		}
 	case 'J':
 		c.EnterChannel(true, m)
+	case 'G':
+		c.FetchOrUpdateConfig(m)
 	case 'T':
 		c.FetchOrUpdateTable(m)
 	case 'S':
