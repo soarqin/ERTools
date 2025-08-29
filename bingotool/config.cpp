@@ -103,6 +103,7 @@ void Config::load() {
             colorTextureFile[0] = toml::get_or(ctv.at(0), colorTextureFile[0]);
             colorTextureFile[1] = toml::get_or(ctv.at(1), colorTextureFile[1]);
         }
+        cellNFStyle = toml::find_or(cells, "cell_none_first_style", cellNFStyle);
     }
     const auto score = toml::find_or(data, "scores_window", toml::value());
     if (score.is_table()) {
@@ -194,6 +195,7 @@ void Config::save() {
                 {"color2", colorToString(colorsInt[2])},
                 {"use_color_texture", toml::array{useColorTexture[0], useColorTexture[1]}},
                 {"color_texture", toml::array{colorTextureFile[0], colorTextureFile[1]}},
+                {"cell_none_first_style", cellNFStyle},
             }
         },
         {

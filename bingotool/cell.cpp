@@ -122,12 +122,28 @@ void Cell::render(int x, int y, int cx, int cy) const {
     }
     if (dbl) {
         auto &color = gConfig.colors[5 - status];
-        const SDL_Vertex verts[] = {
-            {SDL_FPoint{fx, fy + fcy}, color, SDL_FPoint{0},},
-            {SDL_FPoint{fx, fy + fcy * .7f}, color, SDL_FPoint{0},},
-            {SDL_FPoint{fx + fcx * .3f, fy + fcy}, color, SDL_FPoint{0},},
-        };
-        SDL_RenderGeometry(renderer, nullptr, verts, 3, nullptr, 0);
+        switch (gConfig.cellNFStyle) {
+            case 1: {
+                const SDL_Vertex verts[] = {
+                    {SDL_FPoint{fx, fy + fcy * .85f}, color, SDL_FPoint{0},},
+                    {SDL_FPoint{fx + fcx, fy + fcy * .85f}, color, SDL_FPoint{0},},
+                    {SDL_FPoint{fx + fcx, fy + fcy}, color, SDL_FPoint{0},},
+                    {SDL_FPoint{fx, fy + fcy}, color, SDL_FPoint{0},},
+                };
+                const int indices[] = {0, 1, 2, 2, 3, 0};
+                SDL_RenderGeometry(renderer, nullptr, verts, 4, indices, 6);
+                break;
+            }
+            default: {
+                const SDL_Vertex verts[] = {
+                    {SDL_FPoint{fx, fy + fcy}, color, SDL_FPoint{0},},
+                    {SDL_FPoint{fx, fy + fcy * .7f}, color, SDL_FPoint{0},},
+                    {SDL_FPoint{fx + fcx * .3f, fy + fcy}, color, SDL_FPoint{0},},
+                };
+                SDL_RenderGeometry(renderer, nullptr, verts, 3, nullptr, 0);
+                break;
+            }
+        }
     }
     if (texture) {
         auto l = ((float)cx - w) * .5f, t = ((float)cy - h) * .5f;
@@ -565,6 +581,11 @@ void initConfigDialog(HWND hwnd) {
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一缩小文字");
     SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"统一扩展宽度");
     SendMessageW(cbc, CB_SETCURSEL, gConfig.cellAutoFit, 0);
+    cbc = GetDlgItem(hwnd, IDC_NFSTYLE);
+    SendMessageW(cbc, CB_RESETCONTENT, 0, 0);
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"左下三角");
+    SendMessageW(cbc, CB_ADDSTRING, 0, (LPARAM)L"下方窄条");
+    SendMessageW(cbc, CB_SETCURSEL, gConfig.cellNFStyle, 0);
     cbc = GetDlgItem(hwnd, IDC_PLAYER1USETEXTURE);
     SendMessageW(cbc, BM_SETCHECK, gConfig.useColorTexture[0] ? BST_CHECKED : BST_UNCHECKED, 0);
     cbc = GetDlgItem(hwnd, IDC_PLAYER2USETEXTURE);
@@ -880,6 +901,12 @@ INT_PTR handleButtonClick(HWND hwnd, unsigned int id, LPARAM lParam) {
             auto cbc = GetDlgItem(hwnd, IDC_AUTOSIZE);
             gConfig.cellAutoFit = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
             gCells.updateTextures(true);
+            break;
+        }
+        case IDC_NFSTYLE: {
+            auto cbc = GetDlgItem(hwnd, IDC_NFSTYLE);
+            gConfig.cellNFStyle = (int)SendMessageW(cbc, CB_GETCURSEL, 0, 0);
+            gCells.updateTextures();
             break;
         }
         case IDC_PLAYER1COLOR: {

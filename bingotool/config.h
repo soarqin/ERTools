@@ -53,6 +53,10 @@ struct Config {
         {255, 0, 0, 0},
         {0, 0, 255, 0},
     };
+    /* 0 - Bottom-left triangle
+     * 1 - Bottom rectangle
+     */
+    int cellNFStyle = 0;
 
     /* 0 - Periodic
      * 1 - Bingo Brawlers Season 1/2
